@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
+              "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
+<refentry id="glBlendEquation">
+    <refmeta>
+        <refmetainfo>
+            <copyright>
+                <year>1991-2006</year>
+                <holder>Silicon Graphics, Inc.</holder>
+            </copyright>
+        </refmetainfo>
+        <refentrytitle>glBlendEquation</refentrytitle>
+        <manvolnum>3G</manvolnum>
+    </refmeta>
+    <refnamediv>
+        <refname>glBlendEquation</refname>
+        <refpurpose>set the blend equation</refpurpose>
+    </refnamediv>
+    <refsynopsisdiv><title>C Specification</title>
+        <funcsynopsis>
+            <funcprototype>
+                <funcdef> void <function>glBlendEquation</function></funcdef>
+                <paramdef> GLenum <parameter>mode</parameter></paramdef>
+            </funcprototype>
+        </funcsynopsis>
+    </refsynopsisdiv>
+    <!-- eqn: ignoring delim $$ -->
+    <refsect1><title>PARAMETERS</title>
+        <variablelist>
+        <varlistentry>
+            <term><parameter>mode</parameter></term>
+            <listitem>
+                <para>
+                    specifies how source and destination colors are combined.
+                    It must be <constant>GL_FUNC_ADD</constant>, <constant>GL_FUNC_SUBTRACT</constant>,
+                    <constant>GL_FUNC_REVERSE_SUBTRACT</constant>, <constant>GL_MIN</constant>, <constant>GL_MAX</constant>.
+                </para>
+            </listitem>
+        </varlistentry>
+        </variablelist>
+    </refsect1>
+    <refsect1><title>DESCRIPTION</title>
+        <para>
+            The blend equation determines how a new pixel (the ``source'' color)
+            is combined with a pixel already in the framebuffer (the ``destination''
+            color).
+        </para>
+        <variablelist>
+            <varlistentry>
+                <term><constant>GL_MIN</constant></term>
+                <listitem>
+                    <para>
+                        Sets the blend equation so that each component of the result color
+                        is the minimum of the corresponding components of the source and destination
+                        colors.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX</constant></term>
+                <listitem>
+                    <para>
+                        Sets the blend equation so that each component of the result color
+                        is the maximum of the corresponding components of the source and destination
+                        colors.
+                    </para>
+                </listitem>
+            </varlistentry>
+        </variablelist>
+        <para>
+            The remaining blend equations use the source and destination blend factors
+            specified by <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry>.
+            See <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry> for a description of the various blend factors.
+        </para>
+        <para>
+            In the equations that follow, source and destination
+            color components are referred to as
+            <inlineequation><mml:math>
+                <!-- eqn: ( R sub s, G sub s, B sub s, A sub s ):-->
+                <mml:mfenced open="(" close=")">
+                    <mml:msub><mml:mi mathvariant="italic">R</mml:mi>
+                    <mml:mi mathvariant="italic">s</mml:mi>
+                    </mml:msub>
+                    <mml:msub><mml:mi mathvariant="italic">G</mml:mi>
+                    <mml:mi mathvariant="italic">s</mml:mi>
+                    </mml:msub>
+                    <mml:msub><mml:mi mathvariant="italic">B</mml:mi>
+                    <mml:mi mathvariant="italic">s</mml:mi>
+                    </mml:msub>
+                    <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
+                    <mml:mi mathvariant="italic">s</mml:mi>
+                    </mml:msub>
+                </mml:mfenced>
+            </mml:math></inlineequation>
+            and
+            <inlineequation><mml:math>
+                <!-- eqn: ( R sub d, G sub d, B sub d, A sub d ):-->
+                <mml:mfenced open="(" close=")">
+                    <mml:msub><mml:mi mathvariant="italic">R</mml:mi>
+                    <mml:mi mathvariant="italic">d</mml:mi>
+                    </mml:msub>
+                    <mml:msub><mml:mi mathvariant="italic">G</mml:mi>
+                    <mml:mi mathvariant="italic">d</mml:mi>
+                    </mml:msub>
+                    <mml:msub><mml:mi mathvariant="italic">B</mml:mi>
+                    <mml:mi mathvariant="italic">d</mml:mi>
+                    </mml:msub>
+                    <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
+                    <mml:mi mathvariant="italic">d</mml:mi>
+                    </mml:msub>
+                </mml:mfenced>
+            </mml:math></inlineequation>
+            ,
+            respectively.
+            The result color is referred to as
+            <inlineequation><mml:math>
+                <!-- eqn: ( R sub r, G sub r, B sub r, A sub r ):-->
+                <mml:mfenced open="(" close=")">
+                    <mml:msub><mml:mi mathvariant="italic">R</mml:mi>
+                    <mml:mi mathvariant="italic">r</mml:mi>
+                    </mml:msub>
+                    <mml:msub><mml:mi mathvariant="italic">G</mml:mi>
+                    <mml:mi mathvariant="italic">r</mml:mi>
+                    </mml:msub>
+                    <mml:msub><mml:mi mathvariant="italic">B</mml:mi>
+                    <mml:mi mathvariant="italic">r</mml:mi>
+                    </mml:msub>
+                    <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
+                    <mml:mi mathvariant="italic">r</mml:mi>
+                    </mml:msub>
+                </mml:mfenced>
+            </mml:math></inlineequation>
+            .
+            The source and destination blend factors are denoted
+            <inlineequation><mml:math>
+                <!-- eqn: ( s sub R, s sub G, s sub B, s sub A ):-->
+                <mml:mfenced open="(" close=")">
+                    <mml:msub><mml:mi mathvariant="italic">s</mml:mi>
+                    <mml:mi mathvariant="italic">R</mml:mi>
+                    </mml:msub>
+                    <mml:msub><mml:mi mathvariant="italic">s</mml:mi>
+                    <mml:mi mathvariant="italic">G</mml:mi>
+                    </mml:msub>
+                    <mml:msub><mml:mi mathvariant="italic">s</mml:mi>
+                    <mml:mi mathvariant="italic">B</mml:mi>
+                    </mml:msub>
+                    <mml:msub><mml:mi mathvariant="italic">s</mml:mi>
+                    <mml:mi mathvariant="italic">A</mml:mi>
+                    </mml:msub>
+                </mml:mfenced>
+            </mml:math></inlineequation>
+            and
+            <inlineequation><mml:math>
+                <!-- eqn: ( d sub R, d sub G, d sub B, d sub A ):-->
+                <mml:mfenced open="(" close=")">
+                    <mml:msub><mml:mi mathvariant="italic">d</mml:mi>
+                    <mml:mi mathvariant="italic">R</mml:mi>
+                    </mml:msub>
+                    <mml:msub><mml:mi mathvariant="italic">d</mml:mi>
+                    <mml:mi mathvariant="italic">G</mml:mi>
+                    </mml:msub>
+                    <mml:msub><mml:mi mathvariant="italic">d</mml:mi>
+                    <mml:mi mathvariant="italic">B</mml:mi>
+                    </mml:msub>
+                    <mml:msub><mml:mi mathvariant="italic">d</mml:mi>
+                    <mml:mi mathvariant="italic">A</mml:mi>
+                    </mml:msub>
+                </mml:mfenced>
+            </mml:math></inlineequation>
+            , respectively.
+            For these equations all color components are understood to have values
+            in the range 
+            <inlineequation><mml:math>
+                <!-- eqn: [0,1]:-->
+                <mml:mfenced open="[" close="]">
+                    <mml:mn>0</mml:mn>
+                    <mml:mn>1</mml:mn>
+                </mml:mfenced>
+            </mml:math></inlineequation>
+            .
+        </para>
+        <variablelist>
+            <varlistentry>
+                <term><constant>GL_FUNC_ADD</constant></term>
+                <listitem>
+                    <para>
+                        Sets the blend equation so that the source and destination
+                        data are added.
+                        Each component of the source color is
+                        multiplied by the corresponding source factor, then
+                        each component of the destination color is multiplied
+                        by the corresponding destination factor.
+                        The result is the component-wise sum of the two products, clamped to the
+                        range 
+                        <inlineequation><mml:math>
+                            <!-- eqn: [0,1]:-->
+                            <mml:mfenced open="[" close="]">
+                                <mml:mn>0</mml:mn>
+                                <mml:mn>1</mml:mn>
+                            </mml:mfenced>
+                        </mml:math></inlineequation>
+                        .
+                        <informalequation><mml:math>
+                            <!-- eqn: Rr  =      min (1,  R sub s s sub R  +  R sub d d sub R ):-->
+                            <mml:mrow>
+                                <mml:mi mathvariant="italic">Rr</mml:mi>
+                                <mml:mo>=</mml:mo>
+                                <mml:mrow>
+                                    <mml:mi mathvariant="italic">min</mml:mi>
+                                    <mml:mo>&af;</mml:mo>
+                                    <mml:mfenced open="(" close=")">
+                                        <mml:mn>1</mml:mn>
+                                        <mml:mrow>
+                                            <mml:msub><mml:mi mathvariant="italic">R</mml:mi>
+                                            <mml:mi mathvariant="italic">s</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>&it;</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">s</mml:mi>
+                                            <mml:mi mathvariant="italic">R</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>+</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">R</mml:mi>
+                                            <mml:mi mathvariant="italic">d</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>&it;</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">d</mml:mi>
+                                            <mml:mi mathvariant="italic">R</mml:mi>
+                                            </mml:msub>
+                                        </mml:mrow>
+                                    </mml:mfenced>
+                                </mml:mrow>
+                            </mml:mrow>
+                        </mml:math></informalequation>
+                        <informalequation><mml:math>
+                            <!-- eqn: Gr  =    min (1,  G sub s s sub G  +  G sub d d sub G ):-->
+                            <mml:mrow>
+                                <mml:mi mathvariant="italic">Gr</mml:mi>
+                                <mml:mo>=</mml:mo>
+                                <mml:mrow>
+                                    <mml:mi mathvariant="italic">min</mml:mi>
+                                    <mml:mo>&af;</mml:mo>
+                                    <mml:mfenced open="(" close=")">
+                                        <mml:mn>1</mml:mn>
+                                        <mml:mrow>
+                                            <mml:msub><mml:mi mathvariant="italic">G</mml:mi>
+                                            <mml:mi mathvariant="italic">s</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>&it;</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">s</mml:mi>
+                                            <mml:mi mathvariant="italic">G</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>+</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">G</mml:mi>
+                                            <mml:mi mathvariant="italic">d</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>&it;</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">d</mml:mi>
+                                            <mml:mi mathvariant="italic">G</mml:mi>
+                                            </mml:msub>
+                                        </mml:mrow>
+                                    </mml:mfenced>
+                                </mml:mrow>
+                            </mml:mrow>
+                        </mml:math></informalequation>
+                        <informalequation><mml:math>
+                            <!-- eqn: Br  =    min (1,  B sub s s sub B  +  B sub d d sub B ):-->
+                            <mml:mrow>
+                                <mml:mi mathvariant="italic">Br</mml:mi>
+                                <mml:mo>=</mml:mo>
+                                <mml:mrow>
+                                    <mml:mi mathvariant="italic">min</mml:mi>
+                                    <mml:mo>&af;</mml:mo>
+                                    <mml:mfenced open="(" close=")">
+                                        <mml:mn>1</mml:mn>
+                                        <mml:mrow>
+                                            <mml:msub><mml:mi mathvariant="italic">B</mml:mi>
+                                            <mml:mi mathvariant="italic">s</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>&it;</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">s</mml:mi>
+                                            <mml:mi mathvariant="italic">B</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>+</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">B</mml:mi>
+                                            <mml:mi mathvariant="italic">d</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>&it;</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">d</mml:mi>
+                                            <mml:mi mathvariant="italic">B</mml:mi>
+                                            </mml:msub>
+                                        </mml:mrow>
+                                    </mml:mfenced>
+                                </mml:mrow>
+                            </mml:mrow>
+                        </mml:math></informalequation>
+                        <informalequation><mml:math>
+                            <!-- eqn: Ar  =    min (1,  A sub s s sub A  +  A sub d d sub A ):-->
+                            <mml:mrow>
+                                <mml:mi mathvariant="italic">Ar</mml:mi>
+                                <mml:mo>=</mml:mo>
+                                <mml:mrow>
+                                    <mml:mi mathvariant="italic">min</mml:mi>
+                                    <mml:mo>&af;</mml:mo>
+                                    <mml:mfenced open="(" close=")">
+                                        <mml:mn>1</mml:mn>
+                                        <mml:mrow>
+                                            <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
+                                            <mml:mi mathvariant="italic">s</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>&it;</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">s</mml:mi>
+                                            <mml:mi mathvariant="italic">A</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>+</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
+                                            <mml:mi mathvariant="italic">d</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>&it;</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">d</mml:mi>
+                                            <mml:mi mathvariant="italic">A</mml:mi>
+                                            </mml:msub>
+                                        </mml:mrow>
+                                    </mml:mfenced>
+                                </mml:mrow>
+                            </mml:mrow>
+                        </mml:math></informalequation>
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_FUNC_SUBTRACT</constant></term>
+                <listitem>
+                    <para>
+                        Is similar to <constant>GL_FUNC_ADD</constant> except the product of the destination factor and
+                        the destination color is component-wise subtracted from the product of the
+                        source factor and the source color.
+                        The result is clamped to the range 
+                        <inlineequation><mml:math>
+                            <!-- eqn: [0,1]:-->
+                            <mml:mfenced open="[" close="]">
+                                <mml:mn>0</mml:mn>
+                                <mml:mn>1</mml:mn>
+                            </mml:mfenced>
+                        </mml:math></inlineequation>
+                        .
+                        <informalequation><mml:math>
+                            <!-- eqn: Rr  =      max (0 ,  R sub s s sub R  -  R sub d d sub R ):-->
+                            <mml:mrow>
+                                <mml:mi mathvariant="italic">Rr</mml:mi>
+                                <mml:mo>=</mml:mo>
+                                <mml:mrow>
+                                    <mml:mi mathvariant="italic">max</mml:mi>
+                                    <mml:mo>&af;</mml:mo>
+                                    <mml:mfenced open="(" close=")">
+                                        <mml:mn>0</mml:mn>
+                                        <mml:mrow>
+                                            <mml:msub><mml:mi mathvariant="italic">R</mml:mi>
+                                            <mml:mi mathvariant="italic">s</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>&it;</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">s</mml:mi>
+                                            <mml:mi mathvariant="italic">R</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>-</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">R</mml:mi>
+                                            <mml:mi mathvariant="italic">d</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>&it;</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">d</mml:mi>
+                                            <mml:mi mathvariant="italic">R</mml:mi>
+                                            </mml:msub>
+                                        </mml:mrow>
+                                    </mml:mfenced>
+                                </mml:mrow>
+                            </mml:mrow>
+                        </mml:math></informalequation>
+                        <informalequation><mml:math>
+                            <!-- eqn: Gr  =    max (0 ,  G sub s s sub G  -  G sub d d sub G ):-->
+                            <mml:mrow>
+                                <mml:mi mathvariant="italic">Gr</mml:mi>
+                                <mml:mo>=</mml:mo>
+                                <mml:mrow>
+                                    <mml:mi mathvariant="italic">max</mml:mi>
+                                    <mml:mo>&af;</mml:mo>
+                                    <mml:mfenced open="(" close=")">
+                                        <mml:mn>0</mml:mn>
+                                        <mml:mrow>
+                                            <mml:msub><mml:mi mathvariant="italic">G</mml:mi>
+                                            <mml:mi mathvariant="italic">s</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>&it;</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">s</mml:mi>
+                                            <mml:mi mathvariant="italic">G</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>-</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">G</mml:mi>
+                                            <mml:mi mathvariant="italic">d</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>&it;</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">d</mml:mi>
+                                            <mml:mi mathvariant="italic">G</mml:mi>
+                                            </mml:msub>
+                                        </mml:mrow>
+                                    </mml:mfenced>
+                                </mml:mrow>
+                            </mml:mrow>
+                        </mml:math></informalequation>
+                        <informalequation><mml:math>
+                            <!-- eqn: Br  =    max (0 ,  B sub s s sub B  -  B sub d d sub B ):-->
+                            <mml:mrow>
+                                <mml:mi mathvariant="italic">Br</mml:mi>
+                                <mml:mo>=</mml:mo>
+                                <mml:mrow>
+                                    <mml:mi mathvariant="italic">max</mml:mi>
+                                    <mml:mo>&af;</mml:mo>
+                                    <mml:mfenced open="(" close=")">
+                                        <mml:mn>0</mml:mn>
+                                        <mml:mrow>
+                                            <mml:msub><mml:mi mathvariant="italic">B</mml:mi>
+                                            <mml:mi mathvariant="italic">s</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>&it;</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">s</mml:mi>
+                                            <mml:mi mathvariant="italic">B</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>-</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">B</mml:mi>
+                                            <mml:mi mathvariant="italic">d</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>&it;</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">d</mml:mi>
+                                            <mml:mi mathvariant="italic">B</mml:mi>
+                                            </mml:msub>
+                                        </mml:mrow>
+                                    </mml:mfenced>
+                                </mml:mrow>
+                            </mml:mrow>
+                        </mml:math></informalequation>
+                        <informalequation><mml:math>
+                            <!-- eqn: Ar  =    max (0 ,  A sub s s sub A  -  A sub d d sub A ):-->
+                            <mml:mrow>
+                                <mml:mi mathvariant="italic">Ar</mml:mi>
+                                <mml:mo>=</mml:mo>
+                                <mml:mrow>
+                                    <mml:mi mathvariant="italic">max</mml:mi>
+                                    <mml:mo>&af;</mml:mo>
+                                    <mml:mfenced open="(" close=")">
+                                        <mml:mn>0</mml:mn>
+                                        <mml:mrow>
+                                            <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
+                                            <mml:mi mathvariant="italic">s</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>&it;</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">s</mml:mi>
+                                            <mml:mi mathvariant="italic">A</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>-</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
+                                            <mml:mi mathvariant="italic">d</mml:mi>
+                                            </mml:msub>
+                                            <mml:mo>&it;</mml:mo>
+                                            <mml:msub><mml:mi mathvariant="italic">d</mml:mi>
+                                            <mml:mi mathvariant="italic">A</mml:mi>
+                                            </mml:msub>
+                                        </mml:mrow>
+                                    </mml:mfenced>
+                                </mml:mrow>
+                            </mml:mrow>
+                        </mml:math></informalequation>
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_FUNC_REVERSE_SUBTRACT</constant></term>
+                <listitem>
+                    <para>
+                        Is similar to <constant>GL_FUNC_ADD</constant> except the product of the source factor and the
+                        source color is component-wise subtracted from the product of the destination
+                        factor and the destination color.
+                        The result is clamped to the range 
+                        <inlineequation><mml:math>
+                            <!-- eqn: [0,1]:-->
+                            <mml:mfenced open="[" close="]">
+                                <mml:mn>0</mml:mn>
+                                <mml:mn>1</mml:mn>
+                            </mml:mfenced>
+                        </mml:math></inlineequation>
+                        .
+                    </para>
+                </listitem>
+            </varlistentry>
+        </variablelist>
+        <para>
+            <informalequation><mml:math>
+                <!-- eqn: Rr  =      max (0 ,  R sub d d sub R  -  R sub s s sub R ):-->
+                <mml:mrow>
+                    <mml:mi mathvariant="italic">Rr</mml:mi>
+                    <mml:mo>=</mml:mo>
+                    <mml:mrow>
+                        <mml:mi mathvariant="italic">max</mml:mi>
+                        <mml:mo>&af;</mml:mo>
+                        <mml:mfenced open="(" close=")">
+                            <mml:mn>0</mml:mn>
+                            <mml:mrow>
+                                <mml:msub><mml:mi mathvariant="italic">R</mml:mi>
+                                <mml:mi mathvariant="italic">d</mml:mi>
+                                </mml:msub>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:msub><mml:mi mathvariant="italic">d</mml:mi>
+                                <mml:mi mathvariant="italic">R</mml:mi>
+                                </mml:msub>
+                                <mml:mo>-</mml:mo>
+                                <mml:msub><mml:mi mathvariant="italic">R</mml:mi>
+                                <mml:mi mathvariant="italic">s</mml:mi>
+                                </mml:msub>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:msub><mml:mi mathvariant="italic">s</mml:mi>
+                                <mml:mi mathvariant="italic">R</mml:mi>
+                                </mml:msub>
+                            </mml:mrow>
+                        </mml:mfenced>
+                    </mml:mrow>
+                </mml:mrow>
+            </mml:math></informalequation>
+            <informalequation><mml:math>
+                <!-- eqn: Gr  =    max (0 ,  G sub d d sub G  -  G sub s s sub G ):-->
+                <mml:mrow>
+                    <mml:mi mathvariant="italic">Gr</mml:mi>
+                    <mml:mo>=</mml:mo>
+                    <mml:mrow>
+                        <mml:mi mathvariant="italic">max</mml:mi>
+                        <mml:mo>&af;</mml:mo>
+                        <mml:mfenced open="(" close=")">
+                            <mml:mn>0</mml:mn>
+                            <mml:mrow>
+                                <mml:msub><mml:mi mathvariant="italic">G</mml:mi>
+                                <mml:mi mathvariant="italic">d</mml:mi>
+                                </mml:msub>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:msub><mml:mi mathvariant="italic">d</mml:mi>
+                                <mml:mi mathvariant="italic">G</mml:mi>
+                                </mml:msub>
+                                <mml:mo>-</mml:mo>
+                                <mml:msub><mml:mi mathvariant="italic">G</mml:mi>
+                                <mml:mi mathvariant="italic">s</mml:mi>
+                                </mml:msub>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:msub><mml:mi mathvariant="italic">s</mml:mi>
+                                <mml:mi mathvariant="italic">G</mml:mi>
+                                </mml:msub>
+                            </mml:mrow>
+                        </mml:mfenced>
+                    </mml:mrow>
+                </mml:mrow>
+            </mml:math></informalequation>
+            <informalequation><mml:math>
+                <!-- eqn: Br  =    max (0 ,  B sub d d sub B  -  B sub s s sub B ):-->
+                <mml:mrow>
+                    <mml:mi mathvariant="italic">Br</mml:mi>
+                    <mml:mo>=</mml:mo>
+                    <mml:mrow>
+                        <mml:mi mathvariant="italic">max</mml:mi>
+                        <mml:mo>&af;</mml:mo>
+                        <mml:mfenced open="(" close=")">
+                            <mml:mn>0</mml:mn>
+                            <mml:mrow>
+                                <mml:msub><mml:mi mathvariant="italic">B</mml:mi>
+                                <mml:mi mathvariant="italic">d</mml:mi>
+                                </mml:msub>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:msub><mml:mi mathvariant="italic">d</mml:mi>
+                                <mml:mi mathvariant="italic">B</mml:mi>
+                                </mml:msub>
+                                <mml:mo>-</mml:mo>
+                                <mml:msub><mml:mi mathvariant="italic">B</mml:mi>
+                                <mml:mi mathvariant="italic">s</mml:mi>
+                                </mml:msub>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:msub><mml:mi mathvariant="italic">s</mml:mi>
+                                <mml:mi mathvariant="italic">B</mml:mi>
+                                </mml:msub>
+                            </mml:mrow>
+                        </mml:mfenced>
+                    </mml:mrow>
+                </mml:mrow>
+            </mml:math></informalequation>
+            <informalequation><mml:math>
+                <!-- eqn: Ar  =    max (0 ,  A sub d d sub A  -  A sub s s sub A ):-->
+                <mml:mrow>
+                    <mml:mi mathvariant="italic">Ar</mml:mi>
+                    <mml:mo>=</mml:mo>
+                    <mml:mrow>
+                        <mml:mi mathvariant="italic">max</mml:mi>
+                        <mml:mo>&af;</mml:mo>
+                        <mml:mfenced open="(" close=")">
+                            <mml:mn>0</mml:mn>
+                            <mml:mrow>
+                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
+                                <mml:mi mathvariant="italic">d</mml:mi>
+                                </mml:msub>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:msub><mml:mi mathvariant="italic">d</mml:mi>
+                                <mml:mi mathvariant="italic">A</mml:mi>
+                                </mml:msub>
+                                <mml:mo>-</mml:mo>
+                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
+                                <mml:mi mathvariant="italic">s</mml:mi>
+                                </mml:msub>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:msub><mml:mi mathvariant="italic">s</mml:mi>
+                                <mml:mi mathvariant="italic">A</mml:mi>
+                                </mml:msub>
+                            </mml:mrow>
+                        </mml:mfenced>
+                    </mml:mrow>
+                </mml:mrow>
+            </mml:math></informalequation>
+            The <constant>GL_MIN</constant> and <constant>GL_MAX</constant> equations are useful for applications
+            that analyze image data (image thresholding against a constant color,
+            for example).
+            The <constant>GL_FUNC_ADD</constant> equation is useful
+            for antialiasing and transparency, among other things.
+        </para>
+        <para>
+            Initially, the blend equation is set to <constant>GL_FUNC_ADD</constant>.
+        </para>
+        <para>
+        </para>
+    </refsect1>
+    <refsect1><title>NOTES</title>
+        <para>
+            <function>glBlendEquation</function> is part of the <code>ARB_imaging</code> subset. <function>glBlendEquation</function> is present only
+            if <code>ARB_imaging</code> is returned when <citerefentry><refentrytitle>glGetString</refentrytitle></citerefentry> is called with
+            <constant>GL_EXTENSIONS</constant> as its argument.
+        </para>
+        <para>
+            The <constant>GL_MIN</constant>, and <constant>GL_MAX</constant> equations do not use
+            the source or destination factors, only the source and destination colors.
+        </para>
+    </refsect1>
+    <refsect1><title>ERRORS</title>
+        <para>
+            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>mode</parameter> is not one of
+            <constant>GL_FUNC_ADD</constant>, <constant>GL_FUNC_SUBTRACT</constant>, <constant>GL_FUNC_REVERSE_SUBTRACT</constant>,
+            <constant>GL_MAX</constant>, or <constant>GL_MIN</constant>.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glBlendEquation</function> is executed
+            between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry> and the corresponding
+            execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
+        </para>
+    </refsect1>
+    <refsect1><title>ASSOCIATED GETS</title>
+        <para>
+        </para>
+        <variablelist>
+            <varlistentry>
+                <term><citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with an argument of <constant>GL_BLEND_EQUATION</constant></term>
+                <listitem>
+                </listitem>
+            </varlistentry>
+        </variablelist>
+    </refsect1>
+    <refsect1><title>SEE ALSO</title>
+        <para>
+            <citerefentry><refentrytitle>glGetString</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glBlendColor</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry>
+        </para>
+    </refsect1>
+    <refsect1><title>COPYRIGHT</title>
+        <para>
+            Copyright <trademark class="copyright"></trademark> 1991-2006
+            Silicon Graphics, Inc. This document is licensed under the SGI
+            Free Software B License. For details, see
+            <ulink url="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</ulink>.
+        </para>
+    </refsect1>
+</refentry>

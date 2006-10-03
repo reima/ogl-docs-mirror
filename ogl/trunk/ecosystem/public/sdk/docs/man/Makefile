@@ -14,6 +14,10 @@ DB2XHTML = $(XSLSS)/xhtml/docbook.xsl
 .xml.xhtml:
 	$(XSLT) --xinclude -o $@ $(DB2XHTML) $<
 
+# ARB Ecosystem man pages
+ARBXML = \
+    glBlendEquationSeparate.xml
+
 # SuperBible GL 1.5 man pages
 SUPERBIBLEXML = \
     glBeginQuery.xml \
@@ -354,7 +358,7 @@ SGIGLXXML = \
     glXWaitX.xml
 
 # XML man page source and XHTML targets
-GLXML  = $(SGIGLXML) $(3DLABSXML) $(SUPERBIBLEXML)
+GLXML  = $(SGIGLXML) $(3DLABSXML) $(SUPERBIBLEXML) $(ARBXML)
 GLUXML = $(SGIGLUXML)
 GLXXML = $(SGIGLXXML)
 XML    = $(GLXML) $(GLUXML) $(GLXXML)

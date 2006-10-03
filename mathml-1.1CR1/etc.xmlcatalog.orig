@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN" "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <delegatePublic publicIdStartString="-//OASIS//ENTITIES DocBook XML" catalog="file:///usr/share/sgml/docbook/xmlcatalog"/>
+  <delegatePublic publicIdStartString="-//OASIS//DTD DocBook XML" catalog="file:///usr/share/sgml/docbook/xmlcatalog"/>
+  <delegatePublic publicIdStartString="ISO 8879:1986" catalog="file:///usr/share/sgml/docbook/xmlcatalog"/>
+  <delegateSystem systemIdStartString="http://www.oasis-open.org/docbook/" catalog="file:///usr/share/sgml/docbook/xmlcatalog"/>
+  <delegateURI uriStartString="http://www.oasis-open.org/docbook/" catalog="file:///usr/share/sgml/docbook/xmlcatalog"/>
+  <rewriteSystem systemIdStartString="http://scrollkeeper.sourceforge.net/dtds/scrollkeeper-omf-1.0/scrollkeeper-omf.dtd" rewritePrefix="/usr/share/xml/scrollkeeper/dtds/scrollkeeper-omf.dtd"/>
+  <rewriteURI uriStartString="http://scrollkeeper.sourceforge.net/dtds/scrollkeeper-omf-1.0/scrollkeeper-omf.dtd" rewritePrefix="/usr/share/xml/scrollkeeper/dtds/scrollkeeper-omf.dtd"/>
+  <rewriteSystem systemIdStartString="http://docbook.sourceforge.net/release/xsl/1.69.1" rewritePrefix="file:///usr/share/sgml/docbook/xsl-stylesheets-1.69.1-5"/>
+  <rewriteURI uriStartString="http://docbook.sourceforge.net/release/xsl/1.69.1" rewritePrefix="file:///usr/share/sgml/docbook/xsl-stylesheets-1.69.1-5"/>
+  <rewriteSystem systemIdStartString="http://docbook.sourceforge.net/release/xsl/current" rewritePrefix="file:///usr/share/sgml/docbook/xsl-stylesheets-1.69.1-5"/>
+  <rewriteURI uriStartString="http://docbook.sourceforge.net/release/xsl/current" rewritePrefix="file:///usr/share/sgml/docbook/xsl-stylesheets-1.69.1-5"/>
+  <delegatePublic publicIdStartString="-//OASIS//DTD Simplified" catalog="file:///etc/xml/docbook-simple.xml"/>
+  <delegateURI uriStartString="http://www.oasis-open.org/docbook/xml/simple/1.0/" catalog="file:///etc/xml/docbook-simple.xml"/>
+  <delegateSystem systemIdStartString="http://www.oasis-open.org/docbook/xml/simple/1.0/" catalog="file:///etc/xml/docbook-simple.xml"/>
+  <delegatePublic publicIdStartString="-//Norman Walsh//DTD Slides" catalog="file:///etc/xml/docbook-slides.xml"/>
+  <delegateSystem systemIdStartString="http://docbook.sourceforge.net/release/slides" catalog="file:///etc/xml/docbook-slides.xml"/>
+  <delegateURI uriStartString="http://docbook.sourceforge.net/release/slides" catalog="file:///etc/xml/docbook-slides.xml"/>
+  <delegatePublic publicIdStartString="-//W3C//DTD XHTML 1.0" catalog="file:///usr/share/sgml/xhtml1/xmlcatalog"/>
+  <delegateSystem systemIdStartString="http://www.w3.org/TR/xhtml1/DTD" catalog="file:///usr/share/sgml/xhtml1/xmlcatalog"/>
+  <delegateURI uriStartString="http://www.w3.org/TR/xhtml1/DTD" catalog="file:///usr/share/sgml/xhtml1/xmlcatalog"/>
+  <system systemId="log4j.dtd" uri="file:///usr/share/sgml/log4j/log4j.dtd"/>
+  <nextCatalog catalog="/usr/share/xml/docbook-mathml-dtd-1.0/catalog.xml"/>
+  <delegatePublic publicIdStartString="-//W3C//DTD MathML 2.0//EN" catalog="file:///etc/xml/mathml.cat"/>
+  <delegatePublic publicIdStartString="-//W3C//DTD XHTML 1.1 plus MathML 2.0" catalog="file:///etc/xml/mathml.cat"/>
+  <delegateSystem systemIdStartString="http://www.w3.org/Math/DTD/mathml2" catalog="file:///etc/xml/mathml.cat"/>
+  <delegateURI uriStartString="http://www.w3.org/Math/DTD/mathml2" catalog="file:///etc/xml/mathml.cat"/>
+</catalog>

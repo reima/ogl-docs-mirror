@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glPushName</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glPushName"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glPushName — push and pop the name stack</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glPushName</b>(</code><var class="pdparam">name</var><code>)</code>;<br /> GLuint <var class="pdparam">name</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777300"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>name</code></em></span></dt><dd><p>
+                    Specifies a name that will be pushed onto the name stack.
+                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glPopName</b>(</code><var class="pdparam">void</var><code>)</code>;<br />  <var class="pdparam">void</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777219"></a><h2>DESCRIPTION</h2><p>
+            The name stack is used during selection mode to allow sets of rendering
+            commands to be uniquely identified.
+            It consists of an ordered set of unsigned integers and is initially empty.
+        </p><p>
+            <code class="function">glPushName</code> causes <em class="parameter"><code>name</code></em> to be pushed onto the name stack.
+            <span class="citerefentry"><span class="refentrytitle">glPopName</span></span> pops one name off the top of the stack.
+        </p><p>
+            The maximum name stack depth is implementation-dependent; call
+            <code class="constant">GL_MAX_NAME_STACK_DEPTH</code> to find out the value for a particular
+            implementation. It is an
+            error to push a name onto a full stack
+            or to pop a name off an empty stack.
+            It is also an error to manipulate the name stack between the execution of
+            <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
+            In any of these cases, the error flag is set and no other change is
+            made to GL state.
+        </p><p>
+            The name stack is always empty while the render mode is not <code class="constant">GL_SELECT</code>.
+            Calls to <code class="function">glPushName</code> or <span class="citerefentry"><span class="refentrytitle">glPopName</span></span> while the render mode is not
+            <code class="constant">GL_SELECT</code> are ignored.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763855"></a><h2>ERRORS</h2><p>
+            <code class="constant">GL_STACK_OVERFLOW</code> is generated if <code class="function">glPushName</code> is called while the
+            name stack is full.
+        </p><p>
+            <code class="constant">GL_STACK_UNDERFLOW</code> is generated if <span class="citerefentry"><span class="refentrytitle">glPopName</span></span> is called while the
+            name stack is empty.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glPushName</code> or <span class="citerefentry"><span class="refentrytitle">glPopName</span></span>
+            is executed between a call to <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding call to
+            <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763918"></a><h2>ASSOCIATED GETS</h2><p>
+            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_NAME_STACK_DEPTH</code>
+        </p><p>
+            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_MAX_NAME_STACK_DEPTH</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763948"></a><h2>SEE ALSO</h2><p>
+            <span class="citerefentry"><span class="refentrytitle">glInitNames</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glLoadName</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glRenderMode</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glSelectBuffer</span></span>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770527"></a><h2>COPYRIGHT</h2><p>
+            Copyright <span class="trademark"></span>© 1991-2006
+            Silicon Graphics, Inc. This document is licensed under the SGI
+            Free Software B License. For details, see
+            <a href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

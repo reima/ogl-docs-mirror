@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glPushClientAttrib</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glPushClientAttrib"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glPushClientAttrib — push and pop the client attribute stack</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glPushClientAttrib</b>(</code><var class="pdparam">mask</var><code>)</code>;<br /> GLbitfield <var class="pdparam">mask</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777289"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mask</code></em></span></dt><dd><p>
+                    Specifies a mask that indicates which attributes to save.  Values for
+                    <em class="parameter"><code>mask</code></em> are listed below.
+                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glPopClientAttrib</b>(</code><var class="pdparam">void</var><code>)</code>;<br />  <var class="pdparam">void</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777215"></a><h2>DESCRIPTION</h2><p>
+            <code class="function">glPushClientAttrib</code> takes one argument,
+            a mask that indicates which groups of client-state variables
+            to save on the client attribute stack.
+            Symbolic constants are used to set bits in the mask.
+            <em class="parameter"><code>mask</code></em>
+            is typically constructed by OR'ing several of these constants together.
+            The special mask
+            <code class="constant">GL_CLIENT_ALL_ATTRIB_BITS</code>
+            can be used to save all stackable client state.
+        </p><p>
+            The symbolic mask constants and their associated GL client state are as follows
+            (the second column lists which attributes are saved):
+        </p><p>
+            <code class="constant">GL_CLIENT_PIXEL_STORE_BIT</code>	Pixel storage modes
+            <code class="constant">GL_CLIENT_VERTEX_ARRAY_BIT</code>	Vertex arrays (and enables)
+        </p><p>
+            <span class="citerefentry"><span class="refentrytitle">glPopClientAttrib</span></span> restores the values of the client-state variables
+            saved with the last <code class="function">glPushClientAttrib</code>.
+            Those not saved are left unchanged.
+        </p><p>
+            It is an error to push attributes onto a full client attribute stack
+            or to pop attributes off an empty stack.
+            In either case, the error flag is set,
+            and no other change is made to GL state.
+        </p><p>
+            Initially, the client attribute stack is empty.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763851"></a><h2>NOTES</h2><p>
+            <code class="function">glPushClientAttrib</code> is available only if the GL version is 1.1 or greater.
+        </p><p>
+            Not all values for GL client state can be saved on the attribute stack.
+            For example, select and feedback state cannot be saved.
+        </p><p>
+            The depth of the attribute stack depends on the implementation,
+            but it must be at least 16.
+        </p><p>
+            Use <span class="citerefentry"><span class="refentrytitle">glPushAttrib</span></span> and <span class="citerefentry"><span class="refentrytitle">glPopAttrib</span></span> to push and restore
+            state that is kept on the server. Only pixel storage modes and
+            vertex array state may be pushed and popped with
+            <code class="function">glPushClientAttrib</code> and <span class="citerefentry"><span class="refentrytitle">glPopClientAttrib</span></span>.
+        </p><p>
+            When the <code class="code">ARB_multitexture</code> extension is supported, pushing and
+            popping client vertex array state applies to all supported texture units,
+            and the active client texture state.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763923"></a><h2>ERRORS</h2><p>
+            <code class="constant">GL_STACK_OVERFLOW</code> is generated if <code class="function">glPushClientAttrib</code> is called while
+            the attribute stack is full.
+        </p><p>
+            <code class="constant">GL_STACK_UNDERFLOW</code> is generated if <span class="citerefentry"><span class="refentrytitle">glPopClientAttrib</span></span> is called while
+            the attribute stack is empty.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770511"></a><h2>ASSOCIATED GETS</h2><p>
+            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_ATTRIB_STACK_DEPTH</code>
+        </p><p>
+            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_MAX_CLIENT_ATTRIB_STACK_DEPTH</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770540"></a><h2>SEE ALSO</h2><p>
+            <span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glDisableClientState</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glEdgeFlagPointer</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glEnableClientState</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glFogCoordPointer</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glGet</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glGetError</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glIndexPointer</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glNormalPointer</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glNewList</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glPushAttrib</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glTexCoordPointer</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glVertexPointer</span></span>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770622"></a><h2>COPYRIGHT</h2><p>
+            Copyright <span class="trademark"></span>© 1991-2006
+            Silicon Graphics, Inc. This document is licensed under the SGI
+            Free Software B License. For details, see
+            <a href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

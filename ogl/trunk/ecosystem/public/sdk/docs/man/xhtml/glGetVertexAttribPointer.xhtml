@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetVertexAttribPointer</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetVertexAttribPointer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetVertexAttributePointerv — Returns the address of the specified pointer</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef">void <b class="fsfunc">glGetVertexAttribPointerv</b>(</code></td><td><var class="pdparam">index</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pname</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pointer</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td>GLuint  </td><td><var class="pdparam">index</var>;</td></tr><tr><td>GLenum  </td><td><var class="pdparam">pname</var>;</td></tr><tr><td>GLvoid ** </td><td><var class="pdparam">pointer</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777289"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>index</code></em></span></dt><dd><p>Specifies the generic vertex attribute
+		    parameter to be queried.</p></dd><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>Specifies the symbolic name of the generic
+		    vertex attribute parameter to be queried. Must be
+		    <code class="constant">GL_VERTEX_ATTRIB_ARRAY_POINTER</code>.</p></dd><dt><span class="term"><em class="parameter"><code>params</code></em></span></dt><dd><p>Returns the requested data.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777220"></a><h2>Description</h2><p><code class="function">glGetVertexAttribPointer</code> returns
+	pointer information. <em class="parameter"><code>index</code></em> is the generic
+	vertex attribute to be queried, <em class="parameter"><code>pname</code></em> is
+	a symbolic constant indicating the pointer to be returned, and
+	<em class="parameter"><code>params</code></em> is a pointer to a location in
+	which to place the returned data. The accepted parameter names
+	are as follows:</p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_VERTEX_ATTRIB_ARRAY_POINTER</code></span></dt><dd><p> <em class="parameter"><code>params</code></em> returns a
+		    single value that is a pointer to the vertex
+		    attribute array for the generic vertex attribute
+		    specified by <em class="parameter"><code>index</code></em>.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763839"></a><h2>Notes</h2><p><code class="function">glGetVertexAttribPointer</code>
+	is available only if the GL version is 2.0 or greater.</p><p>The pointer returned is client-side state.</p><p>The initial value for each pointer is <code class="constant">NULL</code>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763865"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_VALUE</code>
+	is generated if <em class="parameter"><code>index</code></em>
+	is greater than or equal to <code class="constant">GL_MAX_VERTEX_ATTRIBS</code>.</p><p><code class="constant">GL_INVALID_ENUM</code>
+	is generated if <em class="parameter"><code>pname</code></em>
+	is not an accepted value.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763900"></a><h2>Associated Gets</h2><p><span class="citerefentry"><span class="refentrytitle">glGet</span></span>
+	with argument <code class="constant">GL_MAX_VERTEX_ATTRIBS</code></p><p><span class="citerefentry"><span class="refentrytitle">glGetVertexAttrib</span></span>
+	with arguments <em class="parameter"><code>index</code></em> and the name of a
+	generic vertex attribute parameter<em class="parameter"><code></code></em></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763934"></a><h2>See Also</h2><p><span class="citerefentry"><span class="refentrytitle">glVertexAttribPointer</span></span></p></div></div></body></html>

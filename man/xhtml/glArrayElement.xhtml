@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glArrayElement</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glArrayElement"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glArrayElement — render a vertex using the specified vertex array element</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glArrayElement</b>(</code><var class="pdparam">i</var><code>)</code>;<br /> GLint <var class="pdparam">i</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777306"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>i</code></em></span></dt><dd><p>
+                    Specifies an index into the enabled vertex data arrays.
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777199"></a><h2>DESCRIPTION</h2><p>
+            <code class="function">glArrayElement</code> commands are used within <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>/<span class="citerefentry"><span class="refentrytitle">glEnd</span></span> pairs to
+            specify vertex and attribute data for point, line, and polygon
+            primitives. If <code class="constant">GL_VERTEX_ARRAY</code> is enabled when <code class="function">glArrayElement</code> is called, a
+            single vertex is drawn, using
+            vertex and attribute data taken from location <em class="parameter"><code>i</code></em> of the enabled
+            arrays. If <code class="constant">GL_VERTEX_ARRAY</code> is not enabled, no drawing occurs but
+            the attributes corresponding to the enabled arrays are modified.
+        </p><p>
+            Use <code class="function">glArrayElement</code> to construct primitives by indexing vertex data, rather than
+            by streaming through arrays of data in first-to-last order. Because
+            each call specifies only a single vertex, it is possible to explicitly
+            specify per-primitive attributes such as a single normal for each
+            triangle.
+        </p><p>
+            Changes made to array data between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the
+            corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span> may affect calls to <code class="function">glArrayElement</code> that are made
+            within the same <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>/<span class="citerefentry"><span class="refentrytitle">glEnd</span></span> period in nonsequential ways.
+            That is, a call to
+            <code class="function">glArrayElement</code> that precedes a change to array data may
+            access the changed data, and a call that follows a change to array data
+            may access original data.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763863"></a><h2>NOTES</h2><p>
+            <code class="function">glArrayElement</code> is available only if the GL version is 1.1 or greater.
+        </p><p>
+            <code class="function">glArrayElement</code> is included in display lists. If <code class="function">glArrayElement</code> is entered into a
+            display list, the necessary array data (determined by the array
+            pointers and enables) is also entered into the display list. Because
+            the array pointers and enables are client-side state, their values
+            affect display lists when the lists are created, not when the lists
+            are executed.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763907"></a><h2>SEE ALSO</h2><p>
+            <span class="citerefentry"><span class="refentrytitle">glClientActiveTexture</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glEdgeFlagPointer</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glFogCoordPointer</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glGetPointerv</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glIndexPointer</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glInterleavedArrays</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glNormalPointer</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glSecondaryColorPointer</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glTexCoordPointer</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glVertexPointer</span></span>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770527"></a><h2>COPYRIGHT</h2><p>
+            Copyright <span class="trademark"></span>© 1991-2006
+            Silicon Graphics, Inc. This document is licensed under the SGI
+            Free Software B License. For details, see
+            <a href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

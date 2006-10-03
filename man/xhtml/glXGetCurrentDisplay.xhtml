@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXGetCurrentDisplay</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXGetCurrentDisplay"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXGetCurrentDisplay — get display for current context</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> Display * <b class="fsfunc">glXGetCurrentDisplay</b>(</code></p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777284"></a><h2>DESCRIPTION</h2><p>
+            <code class="function">glXGetCurrentDisplay</code> returns the display for the current context. If no 
+            context is current, <code class="constant">NULL</code> is returned. 
+        </p><p>
+            <code class="function">glXGetCurrentDisplay</code> returns client-side information. It does not make a round-trip 
+            to the server, and therefore does not flush any pending events.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777318"></a><h2>NOTES</h2><p>
+            <code class="function">glXGetCurrentDisplay</code> is only supported if the GLX version is 1.2 or greater.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777198"></a><h2>SEE ALSO</h2><p>
+            <span class="citerefentry"><span class="refentrytitle">glXGetCurrentContext</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glXGetCurrentDrawable</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glXQueryVersion</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glXQueryExtensionsString</span></span>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777228"></a><h2>COPYRIGHT</h2><p>
+            Copyright <span class="trademark"></span>© 1991-2006
+            Silicon Graphics, Inc. This document is licensed under the SGI
+            Free Software B License. For details, see
+            <a href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

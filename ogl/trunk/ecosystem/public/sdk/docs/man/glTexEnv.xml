@@ -25,6 +25,7 @@
                 <paramdef> GLfloat <parameter>param</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
+        <para></para>
         <funcsynopsis>
             <funcprototype>
                 <funcdef> void <function>glTexEnvi</function></funcdef>
@@ -42,7 +43,7 @@
             <listitem>
                 <para>
                     Specifies a texture environment.
-                    May be either <constant>GL_TEXTURE_ENV</constant> or <constant>GL_TEXTURE_FILTER_CONTROL</constant>.
+                    May be <constant>GL_TEXTURE_ENV</constant>, <constant>GL_TEXTURE_FILTER_CONTROL</constant> or <constant>GL_POINT_SPRITE</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -66,8 +67,9 @@
                     <constant>GL_OPERAND0_ALPHA</constant>,
                     <constant>GL_OPERAND1_ALPHA</constant>,
                     <constant>GL_OPERAND2_ALPHA</constant>,
-                    <constant>GL_RGB_SCALE</constant>, or
-                    <constant>GL_ALPHA_SCALE</constant>.
+                    <constant>GL_RGB_SCALE</constant>,
+                    <constant>GL_ALPHA_SCALE</constant>, or
+                    <constant>GL_COORD_REPLACE</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -80,9 +82,10 @@
                     <constant>GL_BLEND</constant>, <constant>GL_REPLACE</constant>, <constant>GL_SUBTRACT</constant>, <constant>GL_COMBINE</constant>,
                     <constant>GL_TEXTURE</constant>, <constant>GL_CONSTANT</constant>, <constant>GL_PRIMARY_COLOR</constant>, <constant>GL_PREVIOUS</constant>,
                     <constant>GL_SRC_COLOR</constant>, <constant>GL_ONE_MINUS_SRC_COLOR</constant>, <constant>GL_SRC_ALPHA</constant>,
-                    <constant>GL_ONE_MINUS_SRC_ALPHA</constant> or a
-                    single floating-point value for the texture level-of-detail bias, or 1.0,
-                    2.0, or 4.0 when specifying the <constant>GL_RGB_SCALE</constant> or <constant>GL_ALPHA_SCALE</constant>.
+                    <constant>GL_ONE_MINUS_SRC_ALPHA</constant>,
+                    a single boolean value for the point sprite texture coordinate replacement,
+                    a single floating-point value for the texture level-of-detail bias,
+                    or 1.0, 2.0, or 4.0 when specifying the <constant>GL_RGB_SCALE</constant> or <constant>GL_ALPHA_SCALE</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -2609,6 +2612,10 @@
             <constant>GL_TEXTURE_ENV_MODE</constant> defaults to <constant>GL_MODULATE</constant> and
             <constant>GL_TEXTURE_ENV_COLOR</constant> defaults to (0, 0, 0, 0).
         </para>
+        <para>
+            If <parameter>target</parameter> is <constant>GL_POINT_SPRITE</constant> and <parameter>pname</parameter> is <constant>GL_COORD_REPLACE</constant>, the boolean value specified 
+            is used to either enable or disable point sprite texture coordinate replacement. The default value is <constant>GL_FALSE</constant>.
+        </para>
     </refsect1>
     <refsect1><title>NOTES</title>
         <para>
@@ -2633,6 +2640,10 @@
             When the <code>ARB_multitexture</code> extension is supported, <function>glTexEnv</function> controls
             the texture environment for the current active texture unit, selected by
             <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
+        </para>
+        <para>
+            <constant>GL_POINT_SPRITE</constant> and <constant>GL_COORD_REPLACE</constant> are available
+            only if the GL version is 2.0 or greater.
         </para>
     </refsect1>
     <refsect1><title>ERRORS</title>

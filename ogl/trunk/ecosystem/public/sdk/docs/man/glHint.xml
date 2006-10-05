@@ -37,8 +37,9 @@
                     <constant>GL_LINE_SMOOTH_HINT</constant>,
                     <constant>GL_PERSPECTIVE_CORRECTION_HINT</constant>,
                     <constant>GL_POINT_SMOOTH_HINT</constant>,
-                    <constant>GL_POLYGON_SMOOTH_HINT</constant>, and
-                    <constant>GL_TEXTURE_COMPRESSION_HINT</constant>
+                    <constant>GL_POLYGON_SMOOTH_HINT</constant>,
+                    <constant>GL_TEXTURE_COMPRESSION_HINT</constant>, and
+                    <constant>GL_FRAGMENT_SHADER_DERIVATIVE_HINT</constant>
                     are accepted.
                 </para>
             </listitem>
@@ -113,6 +114,15 @@
                         by the GL implementation,
                         hinting <constant>GL_DONT_CARE</constant> or <constant>GL_FASTEST</constant> can result in per-vertex
                         calculation of fog effects.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_FRAGMENT_SHADER_DERIVATIVE_HINT</constant></term>
+                <listitem>
+                    <para>
+                        Indicates the accuracy of the derivative calculation for the GL shading language fragment processing built-in functions:
+                        <constant>dFdx</constant>, <constant>dFdy</constant>, and <constant>fwidth</constant>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -193,6 +203,10 @@
         </para>
         <para>
             <constant>GL_GENERATE_MIPMAP_HINT</constant> is available only if the GL version is 1.4
+            or greater.
+        </para>
+        <para>
+            <constant>GL_FRAGMENT_SHADER_DERIVATIVE_HINT</constant> is available only if the GL version is 2.0
             or greater.
         </para>
     </refsect1>

@@ -15,16 +15,21 @@
 <h1>OpenGL: Hello World using GLUT</h1>
 
 This is a temporary demo to test subversion and php!
+<br/>
+<br/>
 
+<table width="90%" border="0" bordercolor="#0000CC" bgcolor="#EEEEEE">
+<tr>
+<td>
 <pre>
 #if defined(__APPLE__) && defined(__MACH__)
-#  include <OpenGL/gl.h>
-#  include <OpenGL/glu.h>
-#  include <GLUT/glut.h>
+#  include &#60;OpenGL/gl.h&#62;
+#  include &#60;OpenGL/glu.h&#62;
+#  include &#60;GLUT/glut.h&#62;
 #else
-#  include <GL/gl.h>
-#  include <GL/glu.h>
-#  include <GL/glut.h>
+#  include &#60;GL/gl.h&#62;
+#  include &#60;GL/glu.h&#62;
+#  include &#60;GL/glut.h&#62;
 #endif
 
 void Display(void)
@@ -66,10 +71,12 @@ int main(int argc, char *argv[])
   
   return 0; 
 }
-
 </pre>
-
-
+</td>
+</tr>
+</table>  
+<br/>
+<br/>
 This is a temporary demo to test subversion and php!
 
 

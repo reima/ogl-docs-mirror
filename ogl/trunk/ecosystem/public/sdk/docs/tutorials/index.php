@@ -11,6 +11,7 @@ Temporary navigation aids until a better version comes along:
 <H2><A HREF="./ClockworkCoders/">ClockworkCoders</A></H2>
 <H2><A HREF="./CodeColony/">CodeColony</A></H2>
 <H2><A HREF="./GameTutorials/">GameTutorials</A></H2>
+<H2><A HREF="./Lighthouse3D/">Lighthouse3D</A></H2>
 <H2><A HREF="./NateRobins/">NateRobins</A></H2>
 <H2><A HREF="./PaulsProjects/">PaulsProjects</A></H2>
 <?php include("http://www.opengl.org/inc/sdk_footer.txt"); ?>

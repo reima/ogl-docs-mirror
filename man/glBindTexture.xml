@@ -73,22 +73,21 @@
             You may use <citerefentry><refentrytitle>glGenTextures</refentrytitle></citerefentry> to generate a set of new texture names.
         </para>
         <para>
-            When a texture is first bound, it assumes the dimensionality of its target:
-            A texture first bound to <constant>GL_TEXTURE_1D</constant> becomes one-dimensional, a
-            texture first bound to <constant>GL_TEXTURE_2D</constant> becomes two-dimensional, and a
-            texture first bound to <constant>GL_TEXTURE_3D</constant> becomes a three-dimensional
-            texture.  Likewise, a texture first bound to <constant>GL_TEXTURE_CUBE_MAP</constant>
+            When a texture is first bound, it assumes the specified target:
+            A texture first bound to <constant>GL_TEXTURE_1D</constant> becomes one-dimensional texture, a
+            texture first bound to <constant>GL_TEXTURE_2D</constant> becomes two-dimensional texture, a
+            texture first bound to <constant>GL_TEXTURE_3D</constant> becomes three-dimensional texture, and a
+            texture first bound to <constant>GL_TEXTURE_CUBE_MAP</constant>
             becomes a cube-mapped texture. The state of a one-dimensional texture
             immediately after it is first bound is equivalent to the state of the
             default <constant>GL_TEXTURE_1D</constant> at GL initialization, and similarly for two-
-            and three-dimensional textures.
+            and three-dimensional textures and cube-mapped textures.
         </para>
         <para>
             While a texture is bound, GL operations on the target to which it is
             bound affect the bound texture, and queries of the target to which it
-            is bound return state from the bound texture. If texture mapping of
-            the dimensionality of the target to which a texture is bound is
-            active, the bound texture is used.
+            is bound return state from the bound texture. If texture mapping is active
+            on the target to which a texture is bound, the bound texture is used.
             In effect, the texture targets become aliases for the textures currently
             bound to them, and the texture name zero refers to the default textures
             that were bound to them at initialization.
@@ -99,8 +98,7 @@
             deleted with <citerefentry><refentrytitle>glDeleteTextures</refentrytitle></citerefentry>.
         </para>
         <para>
-            Once created, a named texture may be re-bound to the target of the
-            matching dimensionality as often as needed.
+            Once created, a named texture may be re-bound to its same original target as often as needed.
             It is usually much faster to use <function>glBindTexture</function> to bind an existing named
             texture to one of the texture targets than it is to reload the texture image
             using <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>, or <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>.
@@ -125,7 +123,7 @@
             values.
         </para>
         <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>texture</parameter> has a dimensionality
+            <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>texture</parameter> was previously created with a target
             that doesn't match that of <parameter>target</parameter>.
         </para>
         <para>

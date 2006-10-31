@@ -7,15 +7,16 @@
                     <code class="constant">GL_LINE_SMOOTH_HINT</code>,
                     <code class="constant">GL_PERSPECTIVE_CORRECTION_HINT</code>,
                     <code class="constant">GL_POINT_SMOOTH_HINT</code>,
-                    <code class="constant">GL_POLYGON_SMOOTH_HINT</code>, and
-                    <code class="constant">GL_TEXTURE_COMPRESSION_HINT</code>
+                    <code class="constant">GL_POLYGON_SMOOTH_HINT</code>,
+                    <code class="constant">GL_TEXTURE_COMPRESSION_HINT</code>, and
+                    <code class="constant">GL_FRAGMENT_SHADER_DERIVATIVE_HINT</code>
                     are accepted.
                 </p></dd><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
                     Specifies a symbolic constant indicating the desired behavior.
                     <code class="constant">GL_FASTEST</code>,
                     <code class="constant">GL_NICEST</code>, and
                     <code class="constant">GL_DONT_CARE</code> are accepted.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763794"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763800"></a><h2>DESCRIPTION</h2><p>
             Certain aspects of GL behavior,
             when there is room for interpretation,
             can be controlled with hints.
@@ -45,6 +46,9 @@
                         by the GL implementation,
                         hinting <code class="constant">GL_DONT_CARE</code> or <code class="constant">GL_FASTEST</code> can result in per-vertex
                         calculation of fog effects.
+                    </p></dd><dt><span class="term"><code class="constant">GL_FRAGMENT_SHADER_DERIVATIVE_HINT</code></span></dt><dd><p>
+                        Indicates the accuracy of the derivative calculation for the GL shading language fragment processing built-in functions:
+                        <code class="constant">dFdx</code>, <code class="constant">dFdy</code>, and <code class="constant">fwidth</code>.
                     </p></dd><dt><span class="term"><code class="constant">GL_GENERATE_MIPMAP_HINT</code></span></dt><dd><p>
                         Indicates the quality of filtering when generating mipmap images.
                     </p></dd><dt><span class="term"><code class="constant">GL_LINE_SMOOTH_HINT</code></span></dt><dd><p>
@@ -73,7 +77,7 @@
                         should be compressed with as little image quality loss as possible.
                         <code class="constant">GL_NICEST</code> should be selected if the texture is to be retrieved by
                         <span class="citerefentry"><span class="refentrytitle">glGetCompressedTexImage</span></span> for reuse.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770678"></a><h2>NOTES</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770717"></a><h2>NOTES</h2><p>
             The interpretation of hints depends on the implementation.
             Some implementations ignore <code class="function">glHint</code> settings.
         </p><p>
@@ -82,14 +86,17 @@
         </p><p>
             <code class="constant">GL_GENERATE_MIPMAP_HINT</code> is available only if the GL version is 1.4
             or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770717"></a><h2>ERRORS</h2><p>
+        </p><p>
+            <code class="constant">GL_FRAGMENT_SHADER_DERIVATIVE_HINT</code> is available only if the GL version is 2.0
+            or greater.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770763"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if either <em class="parameter"><code>target</code></em> or <em class="parameter"><code>mode</code></em> is not
             an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glHint</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770766"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770813"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -2,8 +2,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetString</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetString"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetString — return a string describing the current GL connection</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> const GLubyte* <b class="fsfunc">glGetString</b>(</code><var class="pdparam">name</var><code>)</code>;<br /> GLenum <var class="pdparam">name</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777300"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>name</code></em></span></dt><dd><p>
                     Specifies a symbolic constant, one of
-                    <code class="constant">GL_VENDOR</code>, <code class="constant">GL_RENDERER</code>, <code class="constant">GL_VERSION</code>, or <code class="constant">GL_EXTENSIONS</code>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777206"></a><h2>DESCRIPTION</h2><p>
+                    <code class="constant">GL_VENDOR</code>, <code class="constant">GL_RENDERER</code>, <code class="constant">GL_VERSION</code>, <code class="constant">GL_SHADING_LANGUAGE_VERSION</code>, or <code class="constant">GL_EXTENSIONS</code>.
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777210"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glGetString</code> returns a pointer to a static string
             describing some aspect of the current GL connection.
             <em class="parameter"><code>name</code></em> can be one of the following:
@@ -17,6 +17,8 @@
                         It does not change from release to release.
                     </p></dd><dt><span class="term"><code class="constant">GL_VERSION</code></span></dt><dd><p>
                         Returns a version or release number.
+                    </p></dd><dt><span class="term"><code class="constant">GL_SHADING_LANGUAGE_VERSION</code></span></dt><dd><p>
+                        Returns a version or release number for the shading language.
                     </p></dd><dt><span class="term"><code class="constant">GL_EXTENSIONS</code></span></dt><dd><p>
                         Returns a space-separated list of supported extensions to GL.
                     </p></dd></dl></div><p>
@@ -35,7 +37,7 @@
             list of supported GL extensions.
             (Extension names never contain a space character.)
         </p><p>
-            The <code class="constant">GL_VERSION</code> string begins with a version number.
+            The <code class="constant">GL_VERSION</code> and <code class="constant">GL_SHADING_LANGUAGE_VERSION</code> strings begin with a version number.
             The version number uses one
             of these forms:
         </p><p>
@@ -48,19 +50,21 @@
             the vendor-specific information.
         </p><p>
             All strings are null-terminated.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763928"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763880"></a><h2>NOTES</h2><p>
             If an error is generated, <code class="function">glGetString</code> returns 0.
         </p><p>
             The client and server may support different versions or extensions.
             <code class="function">glGetString</code> always returns a compatible version number or list of extensions.
             The release number always describes the server.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763859"></a><h2>ERRORS</h2><p>
+        </p><p>
+            <code class="constant">GL_SHADING_LANGUAGE_VERSION</code> is available only if the GL version is 2.0 or greater.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770545"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>name</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetString</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770553"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770588"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

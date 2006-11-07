@@ -338,13 +338,24 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_BLEND_EQUATION</constant></term>
+                <term><constant>GL_BLEND_EQUATION_RGB</constant></term>
                 <listitem>
                     <para>
                         <parameter>params</parameter> returns one value, a symbolic constant indicating whether
-                        the blend equation is <constant>GL_FUNC_ADD</constant>, <constant>GL_MIN</constant> or
-                        <constant>GL_MAX</constant>.
-                        See <citerefentry><refentrytitle>glBlendEquation</refentrytitle></citerefentry>.
+                        the RGB blend equation is <constant>GL_FUNC_ADD</constant>, <constant>GL_FUNC_SUBTRACT</constant>, 
+                        <constant>GL_FUNC_REVERSE_SUBTRACT</constant>, <constant>GL_MIN</constant> or <constant>GL_MAX</constant>.
+                        See <citerefentry><refentrytitle>glBlendEquationSeparate</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_BLEND_EQUATION_ALPHA</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value, a symbolic constant indicating whether
+                        the Alpha blend equation is <constant>GL_FUNC_ADD</constant>, <constant>GL_FUNC_SUBTRACT</constant>, 
+                        <constant>GL_FUNC_REVERSE_SUBTRACT</constant>, <constant>GL_MIN</constant> or <constant>GL_MAX</constant>.
+                        See <citerefentry><refentrytitle>glBlendEquationSeparate</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -2367,6 +2378,15 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_POINT_SPRITE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single boolean value indicating whether point sprite is
+                        enabled. The initial value is <constant>GL_FALSE</constant>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_POLYGON_MODE</constant></term>
                 <listitem>
                     <para>
@@ -3538,6 +3558,12 @@
             are available only if the GL version is 1.4 or greater.
         </para>
         <para>
+            <constant>GL_POINT_SPRITE</constant>,
+            <constant>GL_BLEND_EQUATION_RGB</constant>, and
+            <constant>GL_BLEND_EQUATION_ALPHA</constant>
+            are available only if the GL version is 2.0 or greater.
+        </para>
+        <para>
             <constant>GL_LINE_WIDTH_GRANULARITY</constant> was deprecated in GL version 1.2.  Its
             functionality was replaced by <constant>GL_SMOOTH_LINE_WIDTH_GRANULARITY</constant>.
         </para>
@@ -3552,6 +3578,11 @@
         <para>
             <constant>GL_POINT_SIZE_RANGE</constant> was deprecated in GL version 1.2.  Its
             functionality was replaced by <constant>GL_SMOOTH_POINT_SIZE_RANGE</constant>.
+        </para>
+        <para>
+            <constant>GL_BLEND_EQUATION</constant> was deprecated in GL version 2.0.  Its
+            functionality was replaced by <constant>GL_BLEND_EQUATION_RGB</constant> and
+            <constant>GL_BLEND_EQUATION_ALPHA</constant>.
         </para>
         <para>
             <constant>GL_COLOR_MATRIX</constant>,

@@ -783,158 +783,374 @@
                     <para>
                         Specifies the comparison operator used when <constant>GL_TEXTURE_COMPARE_MODE</constant> is
                         set to <constant>GL_COMPARE_R_TO_TEXTURE</constant>.  Permissible values are:
-                        <variablelist>
-                            <varlistentry>
-                                <term><constant>GL_LEQUAL</constant></term>
-                                <listitem>
-                                    <para>
-                                        Specifies that the comparison of the 
-                                        <inlineequation><mml:math><mml:mi mathvariant="italic">r</mml:mi></mml:math></inlineequation>
-                                        texture coordinate to the depth
-                                        value evaluates to:
-                                    </para>
-                                    <para>
-                                        <informalequation><mml:math>
-                                            <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}:-->
-                                            <mml:mrow>
-                                                <mml:mi mathvariant="italic">result</mml:mi>
-                                                <mml:mo>=</mml:mo>
-                                                <mml:mfenced open="{" close="">
-                                                    <mml:mrow>
-                                                        <mml:mtable>
-                                                            <mml:mtr><mml:mtd>
-                                                                <mml:mn>1.0</mml:mn>
-                                                            </mml:mtd></mml:mtr>
-                                                            <mml:mtr><mml:mtd>
-                                                                <mml:mn>0.0</mml:mn>
-                                                            </mml:mtd></mml:mtr>
-                                                        </mml:mtable>
-                                                        <mml:mo>&it;</mml:mo>
-                                                        <mml:mtable>
-                                                            <mml:mtr><mml:mtd>
-                                                                <mml:mrow>
-                                                                    <mml:mi mathvariant="italic">r</mml:mi>
-                                                                    <mml:mo>&lt;=</mml:mo>
-                                                                    <mml:mfenced open="" close="">
-                                                                        <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
-                                                                        <mml:mi mathvariant="italic">t</mml:mi>
-                                                                        </mml:msub>
-                                                                    </mml:mfenced>
-                                                                </mml:mrow>
-                                                            </mml:mtd></mml:mtr>
-                                                            <mml:mtr><mml:mtd>
-                                                                <mml:mrow>
-                                                                    <mml:mi mathvariant="italic">r</mml:mi>
-                                                                    <mml:mo>&gt;</mml:mo>
-                                                                    <mml:mfenced open="" close="">
-                                                                        <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
-                                                                        <mml:mi mathvariant="italic">t</mml:mi>
-                                                                        </mml:msub>
-                                                                    </mml:mfenced>
-                                                                </mml:mrow>
-                                                            </mml:mtd></mml:mtr>
-                                                        </mml:mtable>
-                                                    </mml:mrow>
-                                                </mml:mfenced>
-                                            </mml:mrow>
-                                        </mml:math></informalequation>
-                                    </para>
-                                    <para>
-                                        where 
-                                        <inlineequation><mml:math><mml:mi mathvariant="italic">result</mml:mi></mml:math></inlineequation>
-                                        is the current 
-                                        <inlineequation><mml:math><mml:mi mathvariant="italic">r</mml:mi></mml:math></inlineequation>
-                                        texture coordinate, and 
-                                        <inlineequation><mml:math>
-                                            <!-- eqn: D sub t:-->
-                                            <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
-                                            <mml:mi mathvariant="italic">t</mml:mi>
-                                            </mml:msub>
-                                        </mml:math></inlineequation>
-                                        is the
-                                        depth texture value sampled from the currently bound depth texture.
-                                        <inlineequation><mml:math><mml:mi mathvariant="italic">result</mml:mi></mml:math></inlineequation>
-                                        is assigned to the either the luminance, intensity, or alpha (as
-                                        specified by <constant>GL_DEPTH_TEXTURE_MODE</constant>.)
-                                    </para>
-                                </listitem>
-                            </varlistentry>
-                            <varlistentry>
-                                <term><constant>GL_GEQUAL</constant>.</term>
-                                <listitem>
-                                    <para>
-                                        Specifies that the comparison of the 
-                                        <inlineequation><mml:math><mml:mi mathvariant="italic">r</mml:mi></mml:math></inlineequation>
-                                        texture coordinate to the depth
-                                        value evaluates to:
-                                    </para>
-                                    <para>
-                                        <informalequation><mml:math>
-                                            <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile { r >= {D sub t} above r < {D sub t}}:-->
-                                            <mml:mrow>
-                                                <mml:mi mathvariant="italic">result</mml:mi>
-                                                <mml:mo>=</mml:mo>
-                                                <mml:mfenced open="{" close="">
-                                                    <mml:mrow>
-                                                        <mml:mtable>
-                                                            <mml:mtr><mml:mtd>
-                                                                <mml:mn>1.0</mml:mn>
-                                                            </mml:mtd></mml:mtr>
-                                                            <mml:mtr><mml:mtd>
-                                                                <mml:mn>0.0</mml:mn>
-                                                            </mml:mtd></mml:mtr>
-                                                        </mml:mtable>
-                                                        <mml:mo>&it;</mml:mo>
-                                                        <mml:mtable>
-                                                            <mml:mtr><mml:mtd>
-                                                                <mml:mrow>
-                                                                    <mml:mi mathvariant="italic">r</mml:mi>
-                                                                    <mml:mo>&gt;=</mml:mo>
-                                                                    <mml:mfenced open="" close="">
-                                                                        <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
-                                                                        <mml:mi mathvariant="italic">t</mml:mi>
-                                                                        </mml:msub>
-                                                                    </mml:mfenced>
-                                                                </mml:mrow>
-                                                            </mml:mtd></mml:mtr>
-                                                            <mml:mtr><mml:mtd>
-                                                                <mml:mrow>
-                                                                    <mml:mi mathvariant="italic">r</mml:mi>
-                                                                    <mml:mo>&lt;</mml:mo>
-                                                                    <mml:mfenced open="" close="">
-                                                                        <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
-                                                                        <mml:mi mathvariant="italic">t</mml:mi>
-                                                                        </mml:msub>
-                                                                    </mml:mfenced>
-                                                                </mml:mrow>
-                                                            </mml:mtd></mml:mtr>
-                                                        </mml:mtable>
-                                                    </mml:mrow>
-                                                </mml:mfenced>
-                                            </mml:mrow>
-                                        </mml:math></informalequation>
-                                    </para>
-                                    <para>
-                                        where 
-                                        <inlineequation><mml:math><mml:mi mathvariant="italic">result</mml:mi></mml:math></inlineequation>
-                                        is the current 
-                                        <inlineequation><mml:math><mml:mi mathvariant="italic">r</mml:mi></mml:math></inlineequation>
-                                        texture coordinate, and 
-                                        <inlineequation><mml:math>
-                                            <!-- eqn: D sub t:-->
-                                            <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
-                                            <mml:mi mathvariant="italic">t</mml:mi>
-                                            </mml:msub>
-                                        </mml:math></inlineequation>
-                                        is the
-                                        depth texture value sampled from the currently bound depth texture.
-                                        <inlineequation><mml:math><mml:mi mathvariant="italic">result</mml:mi></mml:math></inlineequation>
-                                        is assigned to the either the luminance, intensity, or alpha (as
-                                        specified by <constant>GL_DEPTH_TEXTURE_MODE</constant>.)
-                                    </para>
-                                </listitem>
-                            </varlistentry>
-                        </variablelist>
+                        <informaltable frame="topbot">
+                            <tgroup cols="2" align="left">
+                                <colspec/>
+                                <colspec/>
+                                <thead>
+                                    <row>
+                                        <entry rowsep="1" align="left"><emphasis role="bold">
+                                        Texture Comparison Function
+                                        </emphasis></entry>
+                                        <entry rowsep="1" align="left"><emphasis role="bold">
+                                        Computed result 
+                                        </emphasis></entry>
+                                    </row>
+                                </thead>
+                                <tbody>
+                                    <row>
+                                        <entry align="left">
+                                        <constant>GL_LEQUAL</constant>
+                                        </entry>
+                                        <entry align="left">
+                                            <informalequation><mml:math>
+                                                <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}:-->
+                                                <mml:mrow>
+                                                    <mml:mi mathvariant="italic">result</mml:mi>
+                                                    <mml:mo>=</mml:mo>
+                                                    <mml:mfenced open="{" close="">
+                                                        <mml:mrow>
+                                                            <mml:mtable>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mn>1.0</mml:mn>
+                                                                </mml:mtd></mml:mtr>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mn>0.0</mml:mn>
+                                                                </mml:mtd></mml:mtr>
+                                                            </mml:mtable>
+                                                            <mml:mo>&it;&nbsp;&nbsp;</mml:mo>
+                                                            <mml:mtable>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mrow>
+                                                                        <mml:mi mathvariant="italic">r</mml:mi>
+                                                                        <mml:mo>&lt;=</mml:mo>
+                                                                        <mml:mfenced open="" close="">
+                                                                            <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
+                                                                            <mml:mi mathvariant="italic">t</mml:mi>
+                                                                            </mml:msub>
+                                                                        </mml:mfenced>
+                                                                    </mml:mrow>
+                                                                </mml:mtd></mml:mtr>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mrow>
+                                                                        <mml:mi mathvariant="italic">r</mml:mi>
+                                                                        <mml:mo>&gt;</mml:mo>
+                                                                        <mml:mfenced open="" close="">
+                                                                            <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
+                                                                            <mml:mi mathvariant="italic">t</mml:mi>
+                                                                            </mml:msub>
+                                                                        </mml:mfenced>
+                                                                    </mml:mrow>
+                                                                </mml:mtd></mml:mtr>
+                                                            </mml:mtable>
+                                                        </mml:mrow>
+                                                    </mml:mfenced>
+                                                </mml:mrow>
+                                            </mml:math></informalequation>
+                                        </entry>
+                                    </row>
+                                    <row>
+                                        <entry align="left">
+                                        <constant>GL_GEQUAL</constant>
+                                        </entry>
+                                        <entry align="left">
+                                            <informalequation><mml:math>
+                                                <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}:-->
+                                                <mml:mrow>
+                                                    <mml:mi mathvariant="italic">result</mml:mi>
+                                                    <mml:mo>=</mml:mo>
+                                                    <mml:mfenced open="{" close="">
+                                                        <mml:mrow>
+                                                            <mml:mtable>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mn>1.0</mml:mn>
+                                                                </mml:mtd></mml:mtr>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mn>0.0</mml:mn>
+                                                                </mml:mtd></mml:mtr>
+                                                            </mml:mtable>
+                                                            <mml:mo>&it;&nbsp;&nbsp;</mml:mo>
+                                                            <mml:mtable>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mrow>
+                                                                        <mml:mi mathvariant="italic">r</mml:mi>
+                                                                        <mml:mo>&gt;=</mml:mo>
+                                                                        <mml:mfenced open="" close="">
+                                                                            <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
+                                                                            <mml:mi mathvariant="italic">t</mml:mi>
+                                                                            </mml:msub>
+                                                                        </mml:mfenced>
+                                                                    </mml:mrow>
+                                                                </mml:mtd></mml:mtr>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mrow>
+                                                                        <mml:mi mathvariant="italic">r</mml:mi>
+                                                                        <mml:mo>&lt;</mml:mo>
+                                                                        <mml:mfenced open="" close="">
+                                                                            <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
+                                                                            <mml:mi mathvariant="italic">t</mml:mi>
+                                                                            </mml:msub>
+                                                                        </mml:mfenced>
+                                                                    </mml:mrow>
+                                                                </mml:mtd></mml:mtr>
+                                                            </mml:mtable>
+                                                        </mml:mrow>
+                                                    </mml:mfenced>
+                                                </mml:mrow>
+                                            </mml:math></informalequation>
+                                        </entry>
+                                    </row>
+                                    <row>
+                                        <entry align="left">
+                                        <constant>GL_LESS</constant>
+                                        </entry>
+                                        <entry align="left">
+                                            <informalequation><mml:math>
+                                                <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}:-->
+                                                <mml:mrow>
+                                                    <mml:mi mathvariant="italic">result</mml:mi>
+                                                    <mml:mo>=</mml:mo>
+                                                    <mml:mfenced open="{" close="">
+                                                        <mml:mrow>
+                                                            <mml:mtable>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mn>1.0</mml:mn>
+                                                                </mml:mtd></mml:mtr>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mn>0.0</mml:mn>
+                                                                </mml:mtd></mml:mtr>
+                                                            </mml:mtable>
+                                                            <mml:mo>&it;&nbsp;&nbsp;</mml:mo>
+                                                            <mml:mtable>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mrow>
+                                                                        <mml:mi mathvariant="italic">r</mml:mi>
+                                                                        <mml:mo>&lt;</mml:mo>
+                                                                        <mml:mfenced open="" close="">
+                                                                            <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
+                                                                            <mml:mi mathvariant="italic">t</mml:mi>
+                                                                            </mml:msub>
+                                                                        </mml:mfenced>
+                                                                    </mml:mrow>
+                                                                </mml:mtd></mml:mtr>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mrow>
+                                                                        <mml:mi mathvariant="italic">r</mml:mi>
+                                                                        <mml:mo>&gt;=</mml:mo>
+                                                                        <mml:mfenced open="" close="">
+                                                                            <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
+                                                                            <mml:mi mathvariant="italic">t</mml:mi>
+                                                                            </mml:msub>
+                                                                        </mml:mfenced>
+                                                                    </mml:mrow>
+                                                                </mml:mtd></mml:mtr>
+                                                            </mml:mtable>
+                                                        </mml:mrow>
+                                                    </mml:mfenced>
+                                                </mml:mrow>
+                                            </mml:math></informalequation>
+                                        </entry>
+                                    </row>
+                                    <row>
+                                        <entry align="left">
+                                        <constant>GL_GREATER</constant>
+                                        </entry>
+                                        <entry align="left">
+                                            <informalequation><mml:math>
+                                                <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}:-->
+                                                <mml:mrow>
+                                                    <mml:mi mathvariant="italic">result</mml:mi>
+                                                    <mml:mo>=</mml:mo>
+                                                    <mml:mfenced open="{" close="">
+                                                        <mml:mrow>
+                                                            <mml:mtable>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mn>1.0</mml:mn>
+                                                                </mml:mtd></mml:mtr>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mn>0.0</mml:mn>
+                                                                </mml:mtd></mml:mtr>
+                                                            </mml:mtable>
+                                                            <mml:mo>&it;&nbsp;&nbsp;</mml:mo>
+                                                            <mml:mtable>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mrow>
+                                                                        <mml:mi mathvariant="italic">r</mml:mi>
+                                                                        <mml:mo>&gt;</mml:mo>
+                                                                        <mml:mfenced open="" close="">
+                                                                            <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
+                                                                            <mml:mi mathvariant="italic">t</mml:mi>
+                                                                            </mml:msub>
+                                                                        </mml:mfenced>
+                                                                    </mml:mrow>
+                                                                </mml:mtd></mml:mtr>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mrow>
+                                                                        <mml:mi mathvariant="italic">r</mml:mi>
+                                                                        <mml:mo>&lt;=</mml:mo>
+                                                                        <mml:mfenced open="" close="">
+                                                                            <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
+                                                                            <mml:mi mathvariant="italic">t</mml:mi>
+                                                                            </mml:msub>
+                                                                        </mml:mfenced>
+                                                                    </mml:mrow>
+                                                                </mml:mtd></mml:mtr>
+                                                            </mml:mtable>
+                                                        </mml:mrow>
+                                                    </mml:mfenced>
+                                                </mml:mrow>
+                                            </mml:math></informalequation>
+                                        </entry>
+                                    </row>
+                                    <row>
+                                        <entry align="left">
+                                        <constant>GL_EQUAL</constant>
+                                        </entry>
+                                        <entry align="left">
+                                            <informalequation><mml:math>
+                                                <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}:-->
+                                                <mml:mrow>
+                                                    <mml:mi mathvariant="italic">result</mml:mi>
+                                                    <mml:mo>=</mml:mo>
+                                                    <mml:mfenced open="{" close="">
+                                                        <mml:mrow>
+                                                            <mml:mtable>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mn>1.0</mml:mn>
+                                                                </mml:mtd></mml:mtr>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mn>0.0</mml:mn>
+                                                                </mml:mtd></mml:mtr>
+                                                            </mml:mtable>
+                                                            <mml:mo>&it;&nbsp;&nbsp;</mml:mo>
+                                                            <mml:mtable>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mrow>
+                                                                        <mml:mi mathvariant="italic">r</mml:mi>
+                                                                        <mml:mo>=</mml:mo>
+                                                                        <mml:mfenced open="" close="">
+                                                                            <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
+                                                                            <mml:mi mathvariant="italic">t</mml:mi>
+                                                                            </mml:msub>
+                                                                        </mml:mfenced>
+                                                                    </mml:mrow>
+                                                                </mml:mtd></mml:mtr>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mrow>
+                                                                        <mml:mi mathvariant="italic">r</mml:mi>
+                                                                        <mml:mo>&ne;</mml:mo>
+                                                                        <mml:mfenced open="" close="">
+                                                                            <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
+                                                                            <mml:mi mathvariant="italic">t</mml:mi>
+                                                                            </mml:msub>
+                                                                        </mml:mfenced>
+                                                                    </mml:mrow>
+                                                                </mml:mtd></mml:mtr>
+                                                            </mml:mtable>
+                                                        </mml:mrow>
+                                                    </mml:mfenced>
+                                                </mml:mrow>
+                                            </mml:math></informalequation>
+                                        </entry>
+                                    </row>
+                                    <row>
+                                        <entry align="left">
+                                        <constant>GL_NOTEQUAL</constant>
+                                        </entry>
+                                        <entry align="left">
+                                            <informalequation><mml:math>
+                                                <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}:-->
+                                                <mml:mrow>
+                                                    <mml:mi mathvariant="italic">result</mml:mi>
+                                                    <mml:mo>=</mml:mo>
+                                                    <mml:mfenced open="{" close="">
+                                                        <mml:mrow>
+                                                            <mml:mtable>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mn>1.0</mml:mn>
+                                                                </mml:mtd></mml:mtr>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mn>0.0</mml:mn>
+                                                                </mml:mtd></mml:mtr>
+                                                            </mml:mtable>
+                                                            <mml:mo>&it;&nbsp;&nbsp;</mml:mo>
+                                                            <mml:mtable>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mrow>
+                                                                        <mml:mi mathvariant="italic">r</mml:mi>
+                                                                        <mml:mo>&ne;</mml:mo>
+                                                                        <mml:mfenced open="" close="">
+                                                                            <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
+                                                                            <mml:mi mathvariant="italic">t</mml:mi>
+                                                                            </mml:msub>
+                                                                        </mml:mfenced>
+                                                                    </mml:mrow>
+                                                                </mml:mtd></mml:mtr>
+                                                                <mml:mtr><mml:mtd>
+                                                                    <mml:mrow>
+                                                                        <mml:mi mathvariant="italic">r</mml:mi>
+                                                                        <mml:mo>=</mml:mo>
+                                                                        <mml:mfenced open="" close="">
+                                                                            <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
+                                                                            <mml:mi mathvariant="italic">t</mml:mi>
+                                                                            </mml:msub>
+                                                                        </mml:mfenced>
+                                                                    </mml:mrow>
+                                                                </mml:mtd></mml:mtr>
+                                                            </mml:mtable>
+                                                        </mml:mrow>
+                                                    </mml:mfenced>
+                                                </mml:mrow>
+                                            </mml:math></informalequation>
+                                        </entry>
+                                    </row>
+                                    <row>
+                                        <entry align="left">
+                                        <constant>GL_ALWAYS</constant>
+                                        </entry>
+                                        <entry align="left">
+                                            <informalequation>
+                                                <mml:math>
+                                                <mml:mrow>
+                                                    <mml:mi mathvariant="italic">result</mml:mi>
+                                                    <mml:mo>=</mml:mo>
+                                                    <mml:mi>1.0</mml:mi>
+                                                </mml:mrow>
+                                                </mml:math>
+                                            </informalequation>
+                                        </entry>
+                                    </row>
+                                    <row>
+                                        <entry align="left">
+                                        <constant>GL_NEVER</constant>
+                                        </entry>
+                                        <entry align="left">
+                                            <informalequation>
+                                                <mml:math>
+                                                <mml:mrow>
+                                                    <mml:mi mathvariant="italic">result</mml:mi>
+                                                    <mml:mo>=</mml:mo>
+                                                    <mml:mi>0.0</mml:mi>
+                                                </mml:mrow>
+                                                </mml:math>
+                                            </informalequation>
+                                        </entry>
+                                    </row>
+                                </tbody>
+                            </tgroup>
+                        </informaltable>
+                        where <inlineequation><mml:math><mml:mi mathvariant="italic">r</mml:mi></mml:math></inlineequation>
+                        is the current interpolated texture coordinate, and 
+                        <inlineequation><mml:math>
+                            <!-- eqn: D sub t:-->
+                            <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
+                            <mml:mi mathvariant="italic">t</mml:mi>
+                            </mml:msub>
+                        </mml:math></inlineequation>
+                        is the depth texture value sampled from the currently bound depth texture.
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">result</mml:mi></mml:math></inlineequation>
+                        is assigned to the either the luminance, intensity, or alpha (as
+                        specified by <constant>GL_DEPTH_TEXTURE_MODE</constant>.)
                     </para>
                 </listitem>
             </varlistentry>
@@ -975,6 +1191,13 @@
             <constant>GL_TEXTURE_COMPARE_FUNC</constant>, <constant>GL_DEPTH_TEXTURE_MODE</constant>, and
             <constant>GL_GENERATE_MIPMAP</constant> are available only if the GL version is 1.4 or
             greater.
+        </para>
+        <para>
+            <constant>GL_TEXTURE_COMPARE_FUNC</constant> allows the following additional comparison modes only
+            if the GL version is 1.5 or greater:
+            <constant>GL_LESS</constant>, <constant>GL_GREATER</constant>,
+            <constant>GL_EQUAL</constant>, <constant>GL_NOTEQUAL</constant>,
+            <constant>GL_ALWAYS</constant>, and <constant>GL_NEVER</constant>.
         </para>
         <para>
             Suppose that a program has enabled texturing (by calling <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry> with

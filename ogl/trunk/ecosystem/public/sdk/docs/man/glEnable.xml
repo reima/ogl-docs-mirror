@@ -589,6 +589,17 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_POINT_SPRITE</constant></term>
+                <listitem>
+                    <para>
+                        If enabled,
+                        calculate texture coordinates for points based on texture
+                        environment and point parameter settings.  Otherwise texture coordinates
+                        are constant across points.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_POLYGON_OFFSET_FILL</constant></term>
                 <listitem>
                     <para>
@@ -819,6 +830,26 @@
                     </para>
                 </listitem>
             </varlistentry>
+            <varlistentry>
+                <term><constant>GL_VERTEX_PROGRAM_POINT_SIZE</constant></term>
+                <listitem>
+                    <para>
+                        If enabled,
+                        and a vertex shader is active, then the derived point size is taken from the (potentially clipped) shader builtin
+                        <constant>gl_PointSize</constant> and clamped to the implementation-dependent point size range.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_VERTEX_PROGRAM_TWO_SIDE</constant></term>
+                <listitem>
+                    <para>
+                        If enabled,
+                        and a vertex shader is active, it specifies that the GL will choose between front and back colors based on the
+                        polygon's face direction of which the vertex being shaded is a part.  It has no effect on points or lines.
+                    </para>
+                </listitem>
+            </varlistentry>
         </variablelist>
     </refsect1>
     <refsect1><title>NOTES</title>
@@ -839,6 +870,12 @@
             <constant>GL_SAMPLE_COVERAGE</constant>,
             <constant>GL_TEXTURE_CUBE_MAP</constant>
             are available only if the GL version is 1.3 or greater.
+        </para>
+        <para>
+            <constant>GL_POINT_SPRITE</constant>,
+            <constant>GL_VERTEX_PROGRAM_POINT_SIZE</constant>, and
+            <constant>GL_VERTEX_PROGRAM_TWO_SIDE</constant>
+            is available only if the GL version is 2.0 or greater.
         </para>
         <para>
             <constant>GL_COLOR_TABLE</constant>, <constant>GL_CONVOLUTION_1D</constant>, <constant>GL_CONVOLUTION_2D</constant>,

@@ -22,10 +22,13 @@ ARBXML = \
 SUPERBIBLEXML = \
     glBeginQuery.xml \
     glBindBuffer.xml \
+    glDeleteBuffers.xml \
     glDeleteQueries.xml \
+    glGenBuffers.xml \
     glGenQueries.xml \
     glGetQueryiv.xml \
     glGetQueryObject.xml \
+    glIsBuffer.xml \
     glIsQuery.xml
 
 # 3Dlabs GL 2.0 man pages

@@ -21,6 +21,7 @@ ARBXML = \
 # SuperBible GL 1.5 man pages
 SUPERBIBLEXML = \
     glBeginQuery.xml \
+    glBindBuffer.xml \
     glDeleteQueries.xml \
     glGenQueries.xml \
     glGetQueryiv.xml \

@@ -48,14 +48,14 @@
 		<term><parameter>pname</parameter></term>
 		<listitem>
 		    <para>Specifies the symbolic name of the vertex
-		    attribute parameter to be queried.
+		    attribute parameter to be queried. Accepted values are
+		    <constant>GL_VERTEX_ATTRIB_ARRAY_BUFFER_BINDING</constant>,
 		    <constant>GL_VERTEX_ATTRIB_ARRAY_ENABLED</constant>,
 		    <constant>GL_VERTEX_ATTRIB_ARRAY_SIZE</constant>,
 		    <constant>GL_VERTEX_ATTRIB_ARRAY_STRIDE</constant>,
 		    <constant>GL_VERTEX_ATTRIB_ARRAY_TYPE</constant>,
-		    <constant>GL_VERTEX_ATTRIB_ARRAY_NORMALIZED</constant>,
-		    <constant>GL_CURRENT_VERTEX_ATTRIB</constant>
-		    are accepted.</para>
+		    <constant>GL_VERTEX_ATTRIB_ARRAY_NORMALIZED</constant>, or
+		    <constant>GL_CURRENT_VERTEX_ATTRIB</constant>.</para>
 		</listitem>
 	    </varlistentry>
 	    <varlistentry>
@@ -76,6 +76,17 @@
 	<para>The accepted parameter names are as follows:</para>
 
 	<variablelist>
+	    <varlistentry>
+		<term><constant>GL_VERTEX_ATTRIB_ARRAY_BUFFER_BINDING</constant></term>
+		<listitem>
+		    <para> <parameter>params</parameter> returns a
+		    single value, the name of the buffer object currently bound to
+                    the binding point corresponding to generic vertex attribute array 
+                    <parameter>index</parameter>. If no buffer object is bound, 
+                    0 is returned. The initial value is 0.</para>
+		</listitem>
+	    </varlistentry>
+
 	    <varlistentry>
 		<term><constant>GL_VERTEX_ATTRIB_ARRAY_ENABLED</constant></term>
 		<listitem>
@@ -154,13 +165,13 @@
 		    <parameter>index</parameter> is 0. The initial value
 		    for all other generic vertex attributes is
 		    (0,0,0,1).</para>
-
-		    <para>All of the parameters except
-		    <constant>GL_CURRENT_VERTEX_ATTRIB</constant>
-		    represent client-side state.</para>
 		</listitem>
 	    </varlistentry>
 	</variablelist>
+
+	<para>All of the parameters except <constant>GL_CURRENT_VERTEX_ATTRIB</constant>
+	represent client-side state.</para>
+
     </refsect1>
     <refsect1><title>Notes</title>
 	<para><function>glGetVertexAttrib</function> is available only
@@ -192,6 +203,7 @@
     </refsect1>
     <refsect1><title>See Also</title>
 	<para><citerefentry><refentrytitle>glBindAttribLocation</refentrytitle></citerefentry>,
+	<citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>,
 	<citerefentry><refentrytitle>glDisableVertexAttribArray</refentrytitle></citerefentry>,
 	<citerefentry><refentrytitle>glEnableVertexAttribArray</refentrytitle></citerefentry>,
 	<citerefentry><refentrytitle>glVertexAttrib</refentrytitle></citerefentry>,

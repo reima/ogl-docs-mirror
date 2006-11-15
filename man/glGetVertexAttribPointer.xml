@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
 	      "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry id="glGetVertexAttribPointer">
+<refentry id="glGetVertexAttribPointerv">
     <refmeta>
-	<refentrytitle>glGetVertexAttribPointer</refentrytitle>
+	<refentrytitle>glGetVertexAttribPointerv</refentrytitle>
 	<manvolnum>3G</manvolnum>
     </refmeta>
     <refnamediv>
 	<refname>glGetVertexAttributePointerv</refname>
-	<refpurpose>Returns the address of the specified pointer</refpurpose>
+	<refpurpose>return the address of the specified generic vertex attribute pointer</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>C Specification</title>
 	<funcsynopsis>
@@ -20,61 +20,53 @@
 	    </funcprototype>
 	</funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1><title>PARAMETERS</title>
 	<variablelist>
 	    <varlistentry>
 		<term><parameter>index</parameter></term>
 		<listitem>
 		    <para>Specifies the generic vertex attribute
-		    parameter to be queried.</para>
+		    parameter to be returned.</para>
 		</listitem>
 	    </varlistentry>
 	    <varlistentry>
 		<term><parameter>pname</parameter></term>
 		<listitem>
 		    <para>Specifies the symbolic name of the generic
-		    vertex attribute parameter to be queried. Must be
+		    vertex attribute parameter to be returned. Must be
 		    <constant>GL_VERTEX_ATTRIB_ARRAY_POINTER</constant>.</para>
 		</listitem>
 	    </varlistentry>
 	    <varlistentry>
-		<term><parameter>params</parameter></term>
+		<term><parameter>pointer</parameter></term>
 		<listitem>
-		    <para>Returns the requested data.</para>
+		    <para>Returns the pointer value.</para>
 		</listitem>
 	    </varlistentry>
 	</variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
-	<para><function>glGetVertexAttribPointer</function> returns
+    <refsect1><title>DESCRIPTION</title>
+	<para><function>glGetVertexAttribPointerv</function> returns
 	pointer information. <parameter>index</parameter> is the generic
 	vertex attribute to be queried, <parameter>pname</parameter> is
 	a symbolic constant indicating the pointer to be returned, and
 	<parameter>params</parameter> is a pointer to a location in
-	which to place the returned data. The accepted parameter names
-	are as follows:</para>
+	which to place the returned data.</para>
 
-	<variablelist>
-	    <varlistentry>
-		<term><constant>GL_VERTEX_ATTRIB_ARRAY_POINTER</constant></term>
-		<listitem>
-		    <para> <parameter>params</parameter> returns a
-		    single value that is a pointer to the vertex
-		    attribute array for the generic vertex attribute
-		    specified by <parameter>index</parameter>.</para>
-		</listitem>
-	    </varlistentry>
-	</variablelist>
+        <para>If a non-zero named buffer object was bound to the <constant>GL_ARRAY_BUFFER</constant> target 
+        (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) when the desired pointer was previously
+        specified, the <parameter>pointer</parameter> returned is a byte offset into the buffer object's data storage.
+        </para>
     </refsect1>
-    <refsect1><title>Notes</title>
-	<para><function>glGetVertexAttribPointer</function>
+    <refsect1><title>NOTES</title>
+	<para><function>glGetVertexAttribPointerv</function>
 	is available only if the GL version is 2.0 or greater.</para>
 
 	<para>The pointer returned is client-side state.</para>
 
-	<para>The initial value for each pointer is <constant>NULL</constant>.</para>
+	<para>The initial value for each pointer is 0.</para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1><title>ERRORS</title>
 	<para><constant>GL_INVALID_VALUE</constant>
 	is generated if <parameter>index</parameter>
 	is greater than or equal to <constant>GL_MAX_VERTEX_ATTRIBS</constant>.</para>
@@ -83,15 +75,12 @@
 	is generated if <parameter>pname</parameter>
 	is not an accepted value.</para>
     </refsect1>
-    <refsect1><title>Associated Gets</title>
+    <refsect1><title>ASSOCIATED GETS</title>
 	<para><citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
 	with argument <constant>GL_MAX_VERTEX_ATTRIBS</constant></para>
-
-	<para><citerefentry><refentrytitle>glGetVertexAttrib</refentrytitle></citerefentry>
-	with arguments <parameter>index</parameter> and the name of a
-	generic vertex attribute parameter<parameter></parameter></para>
     </refsect1>
-    <refsect1><title>See Also</title>
-	<para><citerefentry><refentrytitle>glVertexAttribPointer</refentrytitle></citerefentry></para>
+    <refsect1><title>SEE ALSO</title>
+	<para><citerefentry><refentrytitle>glGetVertexAttrib</refentrytitle></citerefentry>,
+	<citerefentry><refentrytitle>glVertexAttribPointer</refentrytitle></citerefentry></para>
     </refsect1>
 </refentry>

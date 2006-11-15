@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glVertexAttribPointer</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glVertexAttribPointer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glVertexAttribPointer — Defines a generic vertex attribute array</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef">void <b class="fsfunc">glVertexAttribPointer</b>(</code></td><td><var class="pdparam">index</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">size</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">normalized</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">stride</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pointer</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td>GLuint  </td><td><var class="pdparam">index</var>;</td></tr><tr><td>GLint  </td><td><var class="pdparam">size</var>;</td></tr><tr><td>GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td>GLboolean  </td><td><var class="pdparam">normalized</var>;</td></tr><tr><td>GLsizei  </td><td><var class="pdparam">stride</var>;</td></tr><tr><td>const GLvoid * </td><td><var class="pdparam">pointer</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777312"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>index</code></em></span></dt><dd><p>Specifies the index of the generic vertex
-		    attribute to be modified.</p></dd><dt><span class="term"><em class="parameter"><code>size</code></em></span></dt><dd><p>Specifies the number of values for each
-		    element of the generic vertex attribute array. Must
-		    be 1, 2, 3, or 4.</p></dd><dt><span class="term"><em class="parameter"><code>type</code></em></span></dt><dd><p>Specifies the data type of each component in
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glVertexAttribPointer</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glVertexAttribPointer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glVertexAttribPointer — define an array of generic vertex attribute data</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glVertexAttribPointer</b>(</code></td><td><var class="pdparam">index</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">size</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">normalized</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">stride</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pointer</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLuint  </td><td><var class="pdparam">index</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">size</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td> GLboolean  </td><td><var class="pdparam">normalized</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">stride</var>;</td></tr><tr><td> const GLvoid *  </td><td><var class="pdparam">pointer</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781681"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>index</code></em></span></dt><dd><p>Specifies the index of the generic vertex
+		    attribute to be modified.</p></dd><dt><span class="term"><em class="parameter"><code>size</code></em></span></dt><dd><p>Specifies the number of components per
+		    generic vertex attribute. Must
+		    be 1, 2, 3, or 4. The initial value is 4.</p></dd><dt><span class="term"><em class="parameter"><code>type</code></em></span></dt><dd><p>Specifies the data type of each component in
 		    the array. Symbolic constants
 		    <code class="constant">GL_BYTE</code>,
 		    <code class="constant">GL_UNSIGNED_BYTE</code>,
@@ -11,66 +11,62 @@
 		    <code class="constant">GL_UNSIGNED_SHORT</code>,
 		    <code class="constant">GL_INT</code>,
 		    <code class="constant">GL_UNSIGNED_INT</code>,
-		    <code class="constant">GL_FLOAT</code>, and
+		    <code class="constant">GL_FLOAT</code>, or
 		    <code class="constant">GL_DOUBLE</code> are
-		    accepted.</p></dd><dt><span class="term"><em class="parameter"><code>normalized</code></em></span></dt><dd><p>Specifies whether fixed-point data values
+		    accepted. The initial value is <code class="constant">GL_FLOAT</code>.</p></dd><dt><span class="term"><em class="parameter"><code>normalized</code></em></span></dt><dd><p>Specifies whether fixed-point data values
 		    should be normalized (<code class="constant">GL_TRUE</code>)
 		    or converted directly as fixed-point values
 		    (<code class="constant">GL_FALSE</code>) when they are
 		    accessed.</p></dd><dt><span class="term"><em class="parameter"><code>stride</code></em></span></dt><dd><p>Specifies the byte offset between consecutive
-		    attribute values. If <em class="parameter"><code>stride</code></em>
-		    is 0 (the initial value), the attribute values are
+		    generic vertex attributes. If <em class="parameter"><code>stride</code></em>
+		    is 0, the generic vertex attributes are
 		    understood to be tightly packed in the
-		    array.</p></dd><dt><span class="term"><em class="parameter"><code>pointer</code></em></span></dt><dd><p>Specifies a pointer to the first component of
-		    the first attribute value in the array.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763895"></a><h2>Description</h2><p><code class="function">glVertexAttribPointer</code> specifies the
-	location and data format of an array of generic vertex attribute
-	values to use when rendering. <em class="parameter"><code>size</code></em>
+		    array. The initial value is 0.</p></dd><dt><span class="term"><em class="parameter"><code>pointer</code></em></span></dt><dd><p>Specifies a pointer to the first component of
+		    the first generic vertex attribute in the array. The initial value is 0.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768268"></a><h2>DESCRIPTION</h2><p><code class="function">glVertexAttribPointer</code> specifies the
+	location and data format of the array of generic vertex attributes at index <em class="parameter"><code>index</code></em>
+	to use when rendering. <em class="parameter"><code>size</code></em>
 	specifies the number of components per attribute and must be 1,
 	2, 3, or 4. <em class="parameter"><code>type</code></em> specifies the data type
 	of each component, and <em class="parameter"><code>stride</code></em> specifies
-	the byte stride from one attribute to the next, allowing
-	attribute values to be intermixed with other attribute values or
-	stored in a separate array. A value of 0 for
-	<em class="parameter"><code>stride</code></em> indicates that the values are
-	stored sequentially in memory with no gaps between successive
-	elements. If set to <code class="constant">GL_TRUE</code>,
+	the byte stride from one attribute to the next, allowing vertices and
+	attributes to be packed into a single array or
+	stored in separate arrays. 
+        If set to <code class="constant">GL_TRUE</code>,
 	<em class="parameter"><code>normalized</code></em> indicates that values stored
 	in an integer format are to be mapped to the range [-1,1] (for
 	signed values) or [0,1] (for unsigned values) when they are
 	accessed and converted to floating point. Otherwise, values will
-	be converted to floats directly without normalization.</p><p>When a generic vertex attribute array is specified,
+	be converted to floats directly without normalization.</p><p>If a non-zero named buffer object is bound to the <code class="constant">GL_ARRAY_BUFFER</code> target 
+        (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while a generic vertex attribute array is
+        specified, <em class="parameter"><code>pointer</code></em> is treated as a byte offset into the buffer object's data storage.
+        Also, the buffer object binding (<code class="constant">GL_ARRAY_BUFFER_BINDING</code>) is saved as generic vertex attribute array
+        client-side state (<code class="constant">GL_VERTEX_ATTRIB_ARRAY_BUFFER_BINDING</code>) for index <em class="parameter"><code>index</code></em>.</p><p>When a generic vertex attribute array is specified,
 	<em class="parameter"><code>size</code></em>, <em class="parameter"><code>type</code></em>,
 	<em class="parameter"><code>normalized</code></em>,
 	<em class="parameter"><code>stride</code></em>, and
 	<em class="parameter"><code>pointer</code></em> are saved as client-side
-	state.</p><p>To enable and disable the generic vertex attribute array,
+	state, in addition to the current vertex array buffer object binding.</p><p>To enable and disable a generic vertex attribute array,
 	call
 	<span class="citerefentry"><span class="refentrytitle">glEnableVertexAttribArray</span></span>
 	and
 	<span class="citerefentry"><span class="refentrytitle">glDisableVertexAttribArray</span></span>
 	with <em class="parameter"><code>index</code></em>. If enabled, the generic
 	vertex attribute array is used when
-	<span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span>,
-	<span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span>,
-	<span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span>,
-	<span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span>,
-	<span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span>,
-	or
-	<span class="citerefentry"><span class="refentrytitle">glMultiDrawArrays</span></span>
-	is called.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770611"></a><h2>Notes</h2><p><code class="function">glVertexAttribPointer</code> is available
+        <span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span>, 
+        <span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span>, 
+        <span class="citerefentry"><span class="refentrytitle">glMultiDrawArrays</span></span>,
+        <span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span>, 
+        <span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span>, or 
+        <span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span>
+        is called.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775027"></a><h2>NOTES</h2><p><code class="function">glVertexAttribPointer</code> is available
 	only if the GL version is 2.0 or greater.</p><p>Each generic vertex attribute array is initially disabled
 	and isn't accessed when
-	<span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span>,
-	<span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span>,
-	<span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span>,
-	<span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span>,
-	<span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span>,
-	or
-	<span class="citerefentry"><span class="refentrytitle">glMultiDrawArrays</span></span>
-	is called.</p><p>Execution of <code class="function">glVertexAttribPointer</code> is
+        <span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span>, <span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span>, <span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span>,
+        <span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span>, <span class="citerefentry"><span class="refentrytitle">glMultiDrawArrays</span></span>, or <span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span>
+        is called.</p><p>Execution of <code class="function">glVertexAttribPointer</code> is
 	not allowed between the execution of
 	<span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
-	and
+	and the corresponding execution of
 	<span class="citerefentry"><span class="refentrytitle">glEnd</span></span>,
 	but an error may or may not be generated. If no error is
 	generated, the operation is undefined.</p><p><code class="function">glVertexAttribPointer</code> is typically
@@ -83,25 +79,40 @@
 	<span class="citerefentry"><span class="refentrytitle">glPushClientAttrib</span></span>
 	and
 	<span class="citerefentry"><span class="refentrytitle">glPopClientAttrib</span></span>
-	instead.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770724"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_VALUE</code> is generated if
+	instead.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775140"></a><h2>ERRORS</h2><p><code class="constant">GL_INVALID_VALUE</code> is generated if
 	<em class="parameter"><code>index</code></em> is greater than or equal to
 	<code class="constant">GL_MAX_VERTEX_ATTRIBS</code>.</p><p><code class="constant">GL_INVALID_VALUE</code> is generated if
 	<em class="parameter"><code>size</code></em> is not 1, 2, 3, or 4.</p><p><code class="constant">GL_INVALID_ENUM</code> is generated if
 	<em class="parameter"><code>type</code></em> is not an accepted value.</p><p><code class="constant">GL_INVALID_VALUE</code> is generated if
-	<em class="parameter"><code>stride</code></em> is negative.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770784"></a><h2>Associated Gets</h2><p><span class="citerefentry"><span class="refentrytitle">glGet</span></span>
+	<em class="parameter"><code>stride</code></em> is negative.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775202"></a><h2>ASSOCIATED GETS</h2><p><span class="citerefentry"><span class="refentrytitle">glGet</span></span>
 	with argument <code class="constant">GL_MAX_VERTEX_ATTRIBS</code></p><p><span class="citerefentry"><span class="refentrytitle">glGetVertexAttrib</span></span>
-	with arguments <em class="parameter"><code>index</code></em> and the name of a
-	vertex attribute parameter<em class="parameter"><code></code></em></p><p><span class="citerefentry"><span class="refentrytitle">glGetVertexAttribPointer</span></span>
+	with arguments <em class="parameter"><code>index</code></em> and <code class="constant">GL_VERTEX_ATTRIB_ARRAY_ENABLED</code></p><p><span class="citerefentry"><span class="refentrytitle">glGetVertexAttrib</span></span>
+	with arguments <em class="parameter"><code>index</code></em> and <code class="constant">GL_VERTEX_ATTRIB_ARRAY_SIZE</code></p><p><span class="citerefentry"><span class="refentrytitle">glGetVertexAttrib</span></span>
+	with arguments <em class="parameter"><code>index</code></em> and <code class="constant">GL_VERTEX_ATTRIB_ARRAY_TYPE</code></p><p><span class="citerefentry"><span class="refentrytitle">glGetVertexAttrib</span></span>
+	with arguments <em class="parameter"><code>index</code></em> and <code class="constant">GL_VERTEX_ATTRIB_ARRAY_NORMALIZED</code></p><p><span class="citerefentry"><span class="refentrytitle">glGetVertexAttrib</span></span>
+	with arguments <em class="parameter"><code>index</code></em> and <code class="constant">GL_VERTEX_ATTRIB_ARRAY_STRIDE</code></p><p><span class="citerefentry"><span class="refentrytitle">glGetVertexAttrib</span></span>
+	with arguments <em class="parameter"><code>index</code></em> and <code class="constant">GL_VERTEX_ATTRIB_ARRAY_BUFFER_BINDING</code></p><p><span class="citerefentry"><span class="refentrytitle">glGetVertexAttribPointer</span></span>
 	with arguments <em class="parameter"><code>index</code></em> and
-	<code class="constant">GL_VERTEX_ATTRIB_ARRAY_POINTER</code></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770835"></a><h2>See Also</h2><p><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span>,
+	<code class="constant">GL_VERTEX_ATTRIB_ARRAY_POINTER</code></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712501"></a><h2>SEE ALSO</h2><p><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glBindAttribLocation</span></span>,
+        <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>,
+        <span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glDisableVertexAttribArray</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glEnableVertexAttribArray</span></span>,
-	<span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span>,
+        <span class="citerefentry"><span class="refentrytitle">glEdgeFlagPointer</span></span>,
+        <span class="citerefentry"><span class="refentrytitle">glFogCoordPointer</span></span>,
+        <span class="citerefentry"><span class="refentrytitle">glIndexPointer</span></span>,
+        <span class="citerefentry"><span class="refentrytitle">glInterleavedArrays</span></span>,
+        <span class="citerefentry"><span class="refentrytitle">glMultiDrawArrays</span></span>,
+        <span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span>,
+        <span class="citerefentry"><span class="refentrytitle">glNormalPointer</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glPopClientAttrib</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glPushClientAttrib</span></span>,
-	<span class="citerefentry"><span class="refentrytitle">glVertexAttrib</span></span>
+        <span class="citerefentry"><span class="refentrytitle">glSecondaryColorPointer</span></span>,
+        <span class="citerefentry"><span class="refentrytitle">glTexCoordPointer</span></span>,
+	<span class="citerefentry"><span class="refentrytitle">glVertexAttrib</span></span>,
+        <span class="citerefentry"><span class="refentrytitle">glVertexPointer</span></span>
 	</p></div></div></body></html>

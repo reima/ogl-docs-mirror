@@ -23,7 +23,7 @@
                 <paramdef> GLint <parameter>size</parameter></paramdef>
                 <paramdef> GLenum <parameter>type</parameter></paramdef>
                 <paramdef> GLsizei <parameter>stride</parameter></paramdef>
-                <paramdef> const GLvoid * <parameter>ptr</parameter></paramdef>
+                <paramdef> const GLvoid * <parameter>pointer</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -64,17 +64,17 @@
             <listitem>
                 <para>
                     Specifies the byte offset between consecutive colors.
-                    If <parameter>stride</parameter> is 0 (the initial value), the colors are understood to be
+                    If <parameter>stride</parameter> is 0, the colors are understood to be
                     tightly packed in the array. The initial value is 0.
                 </para>
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>ptr</parameter></term>
+            <term><parameter>pointer</parameter></term>
             <listitem>
                 <para>
                     Specifies a pointer to the first component of the first color element
-                    in the array.
+                    in the array. The initial value is 0.
                 </para>
             </listitem>
         </varlistentry>
@@ -86,22 +86,31 @@
             to use when rendering.
             <parameter>size</parameter> specifies the number of components per color, and must be 3 or 4.
             <parameter>type</parameter> specifies the data type of each color component, and <parameter>stride</parameter>
-            specifies the byte stride from one color to the next allowing vertices and
+            specifies the byte stride from one color to the next, allowing vertices and
             attributes to be packed into a single array or stored in separate arrays.
             (Single-array storage may be more efficient on some implementations;
             see <citerefentry><refentrytitle>glInterleavedArrays</refentrytitle></citerefentry>.)
         </para>
         <para>
-            When a color array is specified,
-            <parameter>size</parameter>, <parameter>type</parameter>, <parameter>stride</parameter>, and <parameter>ptr</parameter> are saved as client-side
-            state.
+            If a non-zero named buffer object is bound to the <constant>GL_ARRAY_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a color array is
+            specified, <parameter>pointer</parameter> is treated as a byte offset into the buffer object's data storage.
+            Also, the buffer object binding (<constant>GL_ARRAY_BUFFER_BINDING</constant>) is saved as color vertex array
+            client-side state (<constant>GL_COLOR_ARRAY_BUFFER_BINDING</constant>).
         </para>
         <para>
-            To enable and disable the color array, call <citerefentry><refentrytitle>glEnableClientState</refentrytitle></citerefentry> and
-            <citerefentry><refentrytitle>glDisableClientState</refentrytitle></citerefentry> with the argument <constant>GL_COLOR_ARRAY</constant>. If
-            enabled, the color array is used when <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>, or <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry> is
-            called.
+            When a color array is specified,
+            <parameter>size</parameter>, <parameter>type</parameter>, <parameter>stride</parameter>, and <parameter>pointer</parameter> are saved as client-side
+            state, in addition to the current vertex array buffer object binding.
+        </para>
+        <para>
+            To enable and disable the color array, call
+            <citerefentry><refentrytitle>glEnableClientState</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glDisableClientState</refentrytitle></citerefentry> with the argument
+            <constant>GL_COLOR_ARRAY</constant>. If
+            enabled, the color array is used
+            when <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glMultiDrawElements</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>, or
+            <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry> is called.
         </para>
     </refsect1>
     <refsect1><title>NOTES</title>
@@ -110,8 +119,9 @@
         </para>
         <para>
             The color array is initially disabled and isn't accessed when
-            <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>,
-            or <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry> is called.
+            <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>, or <citerefentry><refentrytitle>glMultiDrawElements</refentrytitle></citerefentry>
+            is called.
         </para>
         <para>
             Execution of <function>glColorPointer</function> is not allowed between the execution of
@@ -153,24 +163,34 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_COLOR_ARRAY_STRIDE</constant>
         </para>
         <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_COLOR_ARRAY_BUFFER_BINDING</constant>
+        </para>
+        <para>
             <citerefentry><refentrytitle>glGetPointerv</refentrytitle></citerefentry> with argument <constant>GL_COLOR_ARRAY_POINTER</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>
         <para>
             <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glColor</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glDisableClientState</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEdgeFlagPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetPointerv</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glEnableClientState</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glFogCoordPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glIndexPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glInterleavedArrays</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glMultiDrawElements</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPopClientAttrib</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPushClientAttrib</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glSecondaryColorPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexCoordPointer</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glVertexAttribPointer</refentrytitle></citerefentry>
             <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>
         </para>
     </refsect1>

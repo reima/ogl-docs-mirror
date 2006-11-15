@@ -43,7 +43,7 @@
                     <constant>GL_SECONDARY_COLOR_ARRAY_POINTER</constant>,
                     <constant>GL_SELECTION_BUFFER_POINTER</constant>,
                     <constant>GL_TEXTURE_COORD_ARRAY_POINTER</constant>,
-                    and
+                    or
                     <constant>GL_VERTEX_ARRAY_POINTER</constant>
                     are accepted.
                 </para>
@@ -65,14 +65,21 @@
             indicating the pointer to be returned, and <parameter>params</parameter> is a pointer to a
             location in which to place the returned data.
         </para>
+        <para>
+            For all <parameter>pname</parameter> arguments except <constant>GL_FEEDBACK_BUFFER_POINTER</constant> and <constant>GL_SELECTION_BUFFER_POINTER</constant>,
+            if a non-zero named buffer object was bound to the <constant>GL_ARRAY_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) when the desired pointer was previously
+            specified, the pointer returned is a byte offset into the buffer object's data storage.
+            Buffer objects are only available in OpenGL versions 1.5 and greater.
+        </para>
     </refsect1>
     <refsect1><title>NOTES</title>
         <para>
             <function>glGetPointerv</function> is available only if the GL version is 1.1 or greater.
         </para>
         <para>
-            <constant>GL_FOG_COORDINATE_ARRAY_POINTER</constant> is available only if the GL version is
-            1.4 or greater.
+            <constant>GL_FOG_COORD_ARRAY_POINTER</constant> and <constant>GL_SECONDARY_COLOR_ARRAY_POINTER</constant> 
+            are available only if the GL version is 1.4 or greater.
         </para>
         <para>
             The pointers are all client-side state.
@@ -93,19 +100,19 @@
     </refsect1>
     <refsect1><title>SEE ALSO</title>
         <para>
-            <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glClientActiveTexture</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEdgeFlagPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glFogCoordPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glFeedbackBuffer</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetVertexAttribPointerv</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glIndexPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glInterleavedArrays</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glSecondaryColorPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glSelectBuffer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexCoordPointer</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glVertexAttribPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>
         </para>
     </refsect1>

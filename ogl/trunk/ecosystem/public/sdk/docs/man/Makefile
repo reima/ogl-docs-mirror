@@ -55,7 +55,7 @@ SUPERBIBLEXML = \
     glGetShader.xml \
     glGetUniformLocation.xml \
     glGetUniform.xml \
-    glGetVertexAttribPointer.xml \
+    glGetVertexAttribPointerv.xml \
     glGetVertexAttrib.xml \
     glIsProgram.xml \
     glIsShader.xml \

@@ -21,7 +21,7 @@
             <funcprototype>
                 <funcdef> void <function>glEdgeFlagPointer</function></funcdef>
                 <paramdef> GLsizei <parameter>stride</parameter></paramdef>
-                <paramdef> const GLvoid * <parameter>ptr</parameter></paramdef>
+                <paramdef> const GLvoid * <parameter>pointer</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -33,17 +33,17 @@
             <listitem>
                 <para>
                     Specifies the byte offset between consecutive edge flags.
-                    If <parameter>stride</parameter> is 0 (the initial value), the edge flags are understood
+                    If <parameter>stride</parameter> is 0, the edge flags are understood
                     to be tightly packed in the array. The initial value is 0.
                 </para>
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>ptr</parameter></term>
+            <term><parameter>pointer</parameter></term>
             <listitem>
                 <para>
                     Specifies a pointer to the first edge flag in the array. The initial
-                    value is zero.
+                    value is 0.
                 </para>
             </listitem>
         </varlistentry>
@@ -55,27 +55,27 @@
             flags to use when rendering. <parameter>stride</parameter> specifies the byte stride from one
             edge flag to the next, allowing vertices and attributes
             to be packed into a single array or stored in separate arrays.
-            (Single-array storage may be more efficient on some implementations;
-            see <citerefentry><refentrytitle>glInterleavedArrays</refentrytitle></citerefentry>.)
+        </para>
+        <para>
+            If a non-zero named buffer object is bound to the <constant>GL_ARRAY_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while an edge flag array is
+            specified, <parameter>pointer</parameter> is treated as a byte offset into the buffer object's data storage.
+            Also, the buffer object binding (<constant>GL_ARRAY_BUFFER_BINDING</constant>) is saved as edge flag vertex array
+            client-side state (<constant>GL_EDGE_FLAG_ARRAY_BUFFER_BINDING</constant>).
         </para>
         <para>
             When an edge flag array is
-            specified, <parameter>stride</parameter> and <parameter>ptr</parameter> are saved as client-side
-            state.
+            specified, <parameter>stride</parameter> and <parameter>pointer</parameter> are saved as client-side
+            state, in addition to the current vertex array buffer object binding.
         </para>
         <para>
-            To enable and disable the edge flag array, call <citerefentry><refentrytitle>glEnableClientState</refentrytitle></citerefentry> and
-            <citerefentry><refentrytitle>glDisableClientState</refentrytitle></citerefentry> with
-            the argument <constant>GL_EDGE_FLAG_ARRAY</constant>. If enabled, the edge flag array is used
-            when <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>, or <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry> is called.
-        </para>
-        <para>
-            Use <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry> to construct a sequence of primitives (all of
-            the same type)
-            from prespecified vertex and vertex attribute arrays.
-            Use <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry> to specify primitives
-            by indexing vertices and vertex attributes and <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry> to
-            construct a sequence of primitives by indexing vertices and vertex attributes.
+            To enable and disable the edge flag array, call
+            <citerefentry><refentrytitle>glEnableClientState</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glDisableClientState</refentrytitle></citerefentry> with the argument
+            <constant>GL_EDGE_FLAG_ARRAY</constant>. If
+            enabled, the edge flag array is used
+            when <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glMultiDrawElements</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>, or
+            <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry> is called.
         </para>
     </refsect1>
     <refsect1><title>NOTES</title>
@@ -83,8 +83,14 @@
             <function>glEdgeFlagPointer</function> is available only if the GL version is 1.1 or greater.
         </para>
         <para>
-            The edge flag array is initially disabled and it won't be accessed when
-            <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry> or <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry> is called.
+            Edge flags are not supported for interleaved vertex array formats
+            (see <citerefentry><refentrytitle>glInterleavedArrays</refentrytitle></citerefentry>).
+        </para>
+        <para>
+            The edge flag array is initially disabled and isn't accessed when
+            <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>, or <citerefentry><refentrytitle>glMultiDrawElements</refentrytitle></citerefentry>
+            is called.
         </para>
         <para>
             Execution of <function>glEdgeFlagPointer</function> is not allowed between the execution of
@@ -115,23 +121,34 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_EDGE_FLAG_ARRAY_STRIDE</constant>
         </para>
         <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_EDGE_FLAG_ARRAY_BUFFER_BINDING</constant>
+        </para>
+        <para>
             <citerefentry><refentrytitle>glGetPointerv</refentrytitle></citerefentry> with argument <constant>GL_EDGE_FLAG_ARRAY_POINTER</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>
         <para>
             <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glDisableClientState</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetPointerv</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glEdgeFlag</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glEnableClientState</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glFogCoordPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glIndexPointer</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glInterleavedArrays</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glMultiDrawElements</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPopClientAttrib</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPushClientAttrib</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glSecondaryColorPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexCoordPointer</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glVertexAttribPointer</refentrytitle></citerefentry>
             <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>
         </para>
     </refsect1>

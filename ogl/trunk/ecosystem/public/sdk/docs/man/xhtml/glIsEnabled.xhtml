@@ -79,7 +79,7 @@
                         </td><td align="left">
                         <span class="citerefentry"><span class="refentrytitle">glFog</span></span>
                         </td></tr><tr><td align="left">
-                        <code class="constant">GL_FOG_COORDINATE_ARRAY</code>
+                        <code class="constant">GL_FOG_COORD_ARRAY</code>
                         </td><td align="left">
                         <span class="citerefentry"><span class="refentrytitle">glFogCoordPointer</span></span>
                         </td></tr><tr><td align="left">
@@ -343,6 +343,9 @@
             <code class="constant">GL_TEXTURE_CUBE_MAP</code>
             are available only if the GL version is 1.3 or greater.
         </p><p>
+            <code class="constant">GL_FOG_COORD_ARRAY</code> and <code class="constant">GL_SECONDARY_COLOR_ARRAY</code>
+            are available only if the GL version is 1.4 or greater.
+        </p><p>
             <code class="constant">GL_POINT_SPRITE</code>,
             <code class="constant">GL_VERTEX_PROGRAM_POINT_SIZE</code>, and
             <code class="constant">GL_VERTEX_PROGRAM_TWO_SIDE</code>
@@ -355,7 +358,7 @@
             <code class="constant">GL_SEPARABLE_2D</code> are available only if <code class="code">ARB_imaging</code> is
             returned when <span class="citerefentry"><span class="refentrytitle">glGet</span></span> is called with <code class="constant">GL_EXTENSIONS</code>.
         </p><p>
-            When the <code class="code">ARB_multitexture</code> extension is supported, the following
+            For OpenGL versions 1.3 and greater, or when the <code class="code">ARB_multitexture</code> extension is supported, the following
             parameters return the associated value for the active texture unit:
             <code class="constant">GL_TEXTURE_1D</code>, <code class="constant">GL_TEXTURE_BINDING_1D</code>,
             <code class="constant">GL_TEXTURE_2D</code>, <code class="constant">GL_TEXTURE_BINDING_2D</code>,
@@ -372,17 +375,17 @@
             <code class="constant">GL_TEXTURE_COORD_ARRAY_SIZE</code>,
             <code class="constant">GL_TEXTURE_COORD_ARRAY_STRIDE</code>,
             <code class="constant">GL_TEXTURE_COORD_ARRAY_TYPE</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4784933"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4784947"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>cap</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glIsEnabled</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4784977"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4784991"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glEnable</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glEnableClientState</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785001"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785015"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

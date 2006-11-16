@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glNewList</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glNewList"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glNewList — create or replace a display list</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glNewList</b>(</code><var class="pdparam">list</var>, <var class="pdparam">mode</var><code>)</code>;<br /> GLuint <var class="pdparam">list</var>;<br /> GLenum <var class="pdparam">mode</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777306"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>list</code></em></span></dt><dd><p>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glNewList</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glNewList"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glNewList — create or replace a display list</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glNewList</b>(</code><var class="pdparam">list</var>, <var class="pdparam">mode</var><code>)</code>;<br /> GLuint <var class="pdparam">list</var>;<br /> GLenum <var class="pdparam">mode</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781675"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>list</code></em></span></dt><dd><p>
                     Specifies the display-list name.
                 </p></dd><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
                     Specifies the compilation mode,
                     which can be
                     <code class="constant">GL_COMPILE</code> or
                     <code class="constant">GL_COMPILE_AND_EXECUTE</code>.
-                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEndList</b>(</code><var class="pdparam">void</var><code>)</code>;<br />  <var class="pdparam">void</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763796"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEndList</b>(</code><var class="pdparam">void</var><code>)</code>;<br />  <var class="pdparam">void</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768165"></a><h2>DESCRIPTION</h2><p>
             Display lists are groups of GL commands that have been stored
             for subsequent execution.
             Display lists are created with <code class="function">glNewList</code>.
@@ -74,7 +74,7 @@
             <span class="citerefentry"><span class="refentrytitle">glPROXY_POST_CONVOLUTION_COLOR_TABLE</span></span>, or
             <span class="citerefentry"><span class="refentrytitle">glPROXY_POST_COLOR_MATRIX_COLOR_TABLE</span></span>.
         </p><p>
-            When the <code class="code">ARB_multitexture</code> extension is supported,
+            For OpenGL versions 1.3 and greater, or when the <code class="code">ARB_multitexture</code> extension is supported,
             <span class="citerefentry"><span class="refentrytitle">glClientActiveTexture</span></span> is not compiled into display lists, but
             executed immediately.
         </p><p>
@@ -84,7 +84,7 @@
             (specified in the <code class="function">glNewList</code> command).
             If a display list with name <em class="parameter"><code>list</code></em> already exists,
             it is replaced only when <span class="citerefentry"><span class="refentrytitle">glEndList</span></span> is called.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770739"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775108"></a><h2>NOTES</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glCallList</span></span> and <span class="citerefentry"><span class="refentrytitle">glCallLists</span></span> can be entered into display lists.
             Commands in the display list or lists executed by <span class="citerefentry"><span class="refentrytitle">glCallList</span></span>
             or <span class="citerefentry"><span class="refentrytitle">glCallLists</span></span> are not included in the display list being created,
@@ -94,7 +94,7 @@
             generated by commands in a display list must be generated when the list is
             executed. If the list is created in <code class="constant">GL_COMPILE</code> mode, errors are
             not generated until the list is executed.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770793"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775162"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>list</code></em> is 0.
         </p><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is not an accepted value.
@@ -112,18 +112,18 @@
             change is made to the previous contents of the display list, if any,
             and no other change is made to the GL state. (It is as if no attempt
             had been made to create the new display list.)
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770905"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775275"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glIsList</span></span>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_LIST_INDEX</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_LIST_MODE</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4708112"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712481"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glCallList</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glCallLists</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glDeleteLists</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glGenLists</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4708140"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712510"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glTexImage3D</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glTexImage3D"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glTexImage3D — specify a three-dimensional texture image</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glTexImage3D</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">level</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">internalFormat</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">width</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">height</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">depth</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">border</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">format</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pixels</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">level</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">internalFormat</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">width</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">height</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">depth</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">border</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">format</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td> const GLvoid *  </td><td><var class="pdparam">pixels</var>;</td></tr></table></div></div><p>
-    </p><div class="refsect1" lang="en" xml:lang="en"><a id="id4763785"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+    </p><div class="refsect1" lang="en" xml:lang="en"><a id="id4768154"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the target texture.
                     Must be <code class="constant">GL_TEXTURE_3D</code> or <code class="constant">GL_PROXY_TEXTURE_3D</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>level</code></em></span></dt><dd><p>
@@ -178,7 +178,7 @@
                     <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>pixels</code></em></span></dt><dd><p>
                     Specifies a pointer to the image data in memory.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4708321"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712690"></a><h2>DESCRIPTION</h2><p>
             Texturing maps a portion of a specified texture image
             onto each graphical primitive for which texturing is enabled.
             To enable and disable three-dimensional texturing, call <span class="citerefentry"><span class="refentrytitle">glEnable</span></span>
@@ -359,7 +359,7 @@
             A two-component image uses the R and A values.
             A three-component image uses the R, G, and B values.
             A four-component image uses all of the RGBA components.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4780163"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4784532"></a><h2>NOTES</h2><p>
             Texturing has no effect in color index mode.
         </p><p>
             The texture image can be represented by the same data formats
@@ -399,7 +399,7 @@
             <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code> are available only if the GL version
             is 1.2 or greater.
         </p><p>
-            When the <code class="code">ARB_multitexture</code> extension is supported, <code class="function">glTexImage3D</code>
+            For OpenGL versions 1.3 and greater, or when the <code class="code">ARB_multitexture</code> extension is supported, <code class="function">glTexImage3D</code>
             specifies the three-dimensional texture for the current texture unit,
             specified with <span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span>.
         </p><p>
@@ -424,7 +424,7 @@
                     </p></dd><dt><span class="term">5. Color component replacement by the color table specified for</span></dt><dd><p>
                         <code class="constant">GL_POST_COLOR_MATRIX_COLOR_TABLE</code>, if enabled.  See
                         <span class="citerefentry"><span class="refentrytitle">glColorTable</span></span>.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4780517"></a><h2>ERRORS</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4784886"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not <code class="constant">GL_TEXTURE_3D</code>
             or <code class="constant">GL_PROXY_TEXTURE_3D</code>.
         </p><p>
@@ -509,11 +509,11 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>internalFormat</code></em> is
             <code class="constant">GL_DEPTH_COMPONENT</code>, <code class="constant">GL_DEPTH_COMPONENT16</code>,
             <code class="constant">GL_DEPTH_COMPONENT24</code>, or <code class="constant">GL_DEPTH_COMPONENT32</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4780968"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785337"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetTexImage</span></span>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_TEXTURE_3D</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4780993"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785363"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glColorTable</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glCompressedTexImage1D</span></span>,
@@ -541,7 +541,7 @@
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781146"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785515"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

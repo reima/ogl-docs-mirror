@@ -186,7 +186,7 @@
             is 1.2 or greater.
         </para>
         <para>
-            When the <code>ARB_multitexture</code> extension is supported, <function>glTexSubImage1D</function>
+            For OpenGL versions 1.3 and greater, or when the <code>ARB_multitexture</code> extension is supported, <function>glTexSubImage1D</function>
             specifies a one-dimensional subtexture for the current texture unit,
             specified with <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
         </para>

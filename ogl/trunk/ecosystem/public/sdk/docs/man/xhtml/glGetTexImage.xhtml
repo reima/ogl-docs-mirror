@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetTexImage</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetTexImage"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetTexImage — return a texture image</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetTexImage</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">level</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">format</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pixels</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">level</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">format</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td> GLvoid *  </td><td><var class="pdparam">pixels</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777198"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetTexImage</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetTexImage"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetTexImage — return a texture image</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetTexImage</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">level</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">format</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pixels</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">level</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">format</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td> GLvoid *  </td><td><var class="pdparam">pixels</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781567"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies which texture is to be obtained.
                     <code class="constant">GL_TEXTURE_1D</code>, <code class="constant">GL_TEXTURE_2D</code>, <code class="constant">GL_TEXTURE_3D</code>,
                     <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_X</code>,
@@ -56,7 +56,7 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>pixels</code></em></span></dt><dd><p>
                     Returns the texture image.
                     Should be a pointer to an array of the type specified by <em class="parameter"><code>type</code></em>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770609"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774978"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glGetTexImage</code> returns a texture image into <em class="parameter"><code>pixels</code></em>.
             <em class="parameter"><code>target</code></em> specifies whether the desired texture image is one specified by
             <span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span> (<code class="constant">GL_TEXTURE_1D</code>),
@@ -112,12 +112,10 @@
             based on <em class="parameter"><code>format</code></em> and <em class="parameter"><code>type</code></em>.
             Be sure to take the pixel storage parameters into account,
             especially <code class="constant">GL_PACK_ALIGNMENT</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770880"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775250"></a><h2>NOTES</h2><p>
             If an error is generated,
             no change is made to the contents of <em class="parameter"><code>pixels</code></em>.
         </p><p>
-            When the <code class="code">ARB_multitexture</code> extension is supported, <code class="function">glGetTexImage</code> returns
-            the texture image for the active texture unit.
             The types <code class="constant">GL_UNSIGNED_BYTE_3_3_2</code>,
             <code class="constant">GL_UNSIGNED_BYTE_2_3_3_REV</code>,
             <code class="constant">GL_UNSIGNED_SHORT_5_6_5</code>,
@@ -133,7 +131,10 @@
             and the formats
             <code class="constant">GL_BGR</code>, and <code class="constant">GL_BGRA</code> are available only if the GL version is
             1.2 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4708141"></a><h2>ERRORS</h2><p>
+        </p><p>
+            For OpenGL versions 1.3 and greater, or when the <code class="code">ARB_multitexture</code> extension is supported, <code class="function">glGetTexImage</code> returns
+            the texture image for the active texture unit.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712515"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em>, <em class="parameter"><code>format</code></em>, or <em class="parameter"><code>type</code></em> is not
             an accepted value.
         </p><p>
@@ -178,7 +179,7 @@
             <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>, or
             <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code>, and <em class="parameter"><code>format</code></em> is neither <code class="constant">GL_RGBA</code>
             or <code class="constant">GL_BGRA</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4708241"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712619"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span> with argument <code class="constant">GL_TEXTURE_WIDTH</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span> with argument <code class="constant">GL_TEXTURE_HEIGHT</code>
@@ -188,7 +189,7 @@
             <span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span> with argument <code class="constant">GL_TEXTURE_INTERNAL_FORMAT</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with arguments <code class="constant">GL_PACK_ALIGNMENT</code> and others
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4708310"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712687"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span>,
@@ -201,7 +202,7 @@
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4708382"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712759"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

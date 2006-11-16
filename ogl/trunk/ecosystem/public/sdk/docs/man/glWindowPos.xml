@@ -301,7 +301,7 @@
             Likewise, <constant>GL_CURRENT_RASTER_TEXTURE_COORDS</constant> is updated as a function of
             <constant>GL_CURRENT_TEXTURE_COORDS</constant>, based on the texture matrix and the texture
             generation functions (see <citerefentry><refentrytitle>glTexGen</refentrytitle></citerefentry>).  The
-            <constant>GL_CURRENT_RASTER_DISTANCE</constant> is set updated to the <constant>GL_CURRENT_FOG_COORDINATE</constant>.
+            <constant>GL_CURRENT_RASTER_DISTANCE</constant> is set to the <constant>GL_CURRENT_FOG_COORD</constant>.
         </para>
         <para>
         </para>

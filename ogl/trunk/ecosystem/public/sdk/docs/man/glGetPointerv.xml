@@ -36,7 +36,7 @@
                     Symbolic constants
                     <constant>GL_COLOR_ARRAY_POINTER</constant>,
                     <constant>GL_EDGE_FLAG_ARRAY_POINTER</constant>,
-                    <constant>GL_FOG_COORDINATE_ARRAY_POINTER</constant>,
+                    <constant>GL_FOG_COORD_ARRAY_POINTER</constant>,
                     <constant>GL_FEEDBACK_BUFFER_POINTER</constant>,
                     <constant>GL_INDEX_ARRAY_POINTER</constant>,
                     <constant>GL_NORMAL_ARRAY_POINTER</constant>,

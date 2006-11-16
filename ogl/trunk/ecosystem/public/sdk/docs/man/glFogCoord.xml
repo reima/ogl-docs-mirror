@@ -78,22 +78,23 @@
     </refsect1>
     <refsect1><title>NOTES</title>
         <para>
+            <function>glFogCoord</function> is available only if the GL version is 1.4 or greater.
+        </para>
+        <para>
             The current fog coordinate can be updated at any time.  In particular,
             <function>glFogCoord</function> can be called between a call to <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry> and the corresponding
             call to <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
-        <para>
-        </para>
     </refsect1>
     <refsect1><title>ASSOCIATED GETS</title>
         <para>
-            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_CURRENT_FOG_COORDINATE</constant>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_CURRENT_FOG_COORD</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>
         <para>
             <citerefentry><refentrytitle>glFog</refentrytitle></citerefentry>,
-            <function>glFogCoordPointer</function>,
+            <citerefentry><refentrytitle>glFogCoordPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glVertex</refentrytitle></citerefentry>
         </para>
     </refsect1>

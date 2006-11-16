@@ -886,7 +886,7 @@
             from <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with an argument of <constant>GL_EXTENSIONS</constant>.
         </para>
         <para>
-            If <code>ARB_multitexture</code> is supported, <constant>GL_TEXTURE_1D</constant>,
+            For OpenGL versions 1.3 and greater, or when <code>ARB_multitexture</code> is supported, <constant>GL_TEXTURE_1D</constant>,
             <constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_3D</constant>, <constant>GL_TEXTURE_GEN_S</constant>,
             <constant>GL_TEXTURE_GEN_T</constant>, <constant>GL_TEXTURE_GEN_R</constant>, and <constant>GL_TEXTURE_GEN_Q</constant>
             enable or disable the respective state for the active texture unit
@@ -914,7 +914,7 @@
             <citerefentry><refentrytitle>glCullFace</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDepthFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDepthRange</refentrytitle></citerefentry>,
-            <function>glEnableClientState</function>,
+            <citerefentry><refentrytitle>glEnableClientState</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glFog</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry>,

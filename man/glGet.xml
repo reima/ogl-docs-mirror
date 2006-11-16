@@ -675,7 +675,7 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_CURRENT_FOG_COORDINATE</constant></term>
+                <term><constant>GL_CURRENT_FOG_COORD</constant></term>
                 <listitem>
                     <para>
                         <parameter>params</parameter> returns one value, the current fog coordinate.  The initial value
@@ -1009,7 +1009,7 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_FOG_COORDINATE_ARRAY_STRIDE</constant></term>
+                <term><constant>GL_FOG_COORD_ARRAY_STRIDE</constant></term>
                 <listitem>
                     <para>
                         <parameter>params</parameter> returns one value,
@@ -1020,7 +1020,7 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_FOG_COORDINATE_ARRAY_TYPE</constant></term>
+                <term><constant>GL_FOG_COORD_ARRAY_TYPE</constant></term>
                 <listitem>
                     <para>
                         <parameter>params</parameter> returns one value, the type of the fog coordinate array.
@@ -1030,10 +1030,10 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_FOG_COORDINATE_SOURCE</constant></term>
+                <term><constant>GL_FOG_COORD_SRC</constant></term>
                 <listitem>
                     <para>
-                        <parameter>params</parameter> returns one value, the symbolic constant of the fog SOURCE.
+                        <parameter>params</parameter> returns one value, a symbolic constant indicating the source of the fog coordinate.
                         The initial value is <constant>GL_FRAGMENT_DEPTH</constant>.
                         See <citerefentry><refentrytitle>glFog</refentrytitle></citerefentry>.
                     </para>
@@ -3550,11 +3550,19 @@
             <constant>GL_BLEND_DST_RGB</constant>,
             <constant>GL_BLEND_SRC_ALPHA</constant>,
             <constant>GL_BLEND_SRC_RGB</constant>,
+            <constant>GL_CURRENT_FOG_COORD</constant>,
+            <constant>GL_CURRENT_SECONDARY_COLOR</constant>,
+            <constant>GL_FOG_COORD_ARRAY_STRIDE</constant>,
+            <constant>GL_FOG_COORD_ARRAY_TYPE</constant>,
+            <constant>GL_FOG_COORD_SRC</constant>,
             <constant>GL_MAX_TEXTURE_LOD_BIAS</constant>,
             <constant>GL_POINT_SIZE_MIN</constant>,
             <constant>GL_POINT_SIZE_MAX</constant>,
-            <constant>GL_POINT_FADE_THRESHOLD_SIZE</constant>, and
-            <constant>GL_POINT_DISTANCE_ATTENUATION</constant>
+            <constant>GL_POINT_FADE_THRESHOLD_SIZE</constant>,
+            <constant>GL_POINT_DISTANCE_ATTENUATION</constant>,
+            <constant>GL_SECONDARY_COLOR_ARRAY_SIZE</constant>,
+            <constant>GL_SECONDARY_COLOR_ARRAY_STRIDE</constant>, and
+            <constant>GL_SECONDARY_COLOR_ARRAY_TYPE</constant>
             are available only if the GL version is 1.4 or greater.
         </para>
         <para>

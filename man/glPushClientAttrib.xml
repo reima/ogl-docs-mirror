@@ -99,7 +99,7 @@
             <function>glPushClientAttrib</function> and <citerefentry><refentrytitle>glPopClientAttrib</refentrytitle></citerefentry>.
         </para>
         <para>
-            When the <code>ARB_multitexture</code> extension is supported, pushing and
+            For OpenGL versions 1.3 and greater, or when the <code>ARB_multitexture</code> extension is supported, pushing and
             popping client vertex array state applies to all supported texture units,
             and the active client texture state.
         </para>

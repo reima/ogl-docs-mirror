@@ -40,9 +40,10 @@
         <para>
             The name stack is used during selection mode to allow sets of rendering
             commands to be uniquely identified.
-            It consists of an ordered set of unsigned integers.
-            <function>glLoadName</function> causes <parameter>name</parameter> to replace the value on the top of the name stack,
-            which is initially empty.
+            It consists of an ordered set of unsigned integers and is initially empty.
+        </para>
+        <para>
+            <function>glLoadName</function> causes <parameter>name</parameter> to replace the value on the top of the name stack.
         </para>
         <para>
             The name stack is always empty while the render mode is not <constant>GL_SELECT</constant>.

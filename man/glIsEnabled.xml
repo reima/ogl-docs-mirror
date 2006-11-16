@@ -193,7 +193,7 @@
                     </row>
                     <row>
                         <entry align="left">
-                        <constant>GL_FOG_COORDINATE_ARRAY</constant>
+                        <constant>GL_FOG_COORD_ARRAY</constant>
                         </entry>
                         <entry align="left">
                         <citerefentry><refentrytitle>glFogCoordPointer</refentrytitle></citerefentry>
@@ -702,6 +702,10 @@
             are available only if the GL version is 1.3 or greater.
         </para>
         <para>
+            <constant>GL_FOG_COORD_ARRAY</constant> and <constant>GL_SECONDARY_COLOR_ARRAY</constant>
+            are available only if the GL version is 1.4 or greater.
+        </para>
+        <para>
             <constant>GL_POINT_SPRITE</constant>,
             <constant>GL_VERTEX_PROGRAM_POINT_SIZE</constant>, and
             <constant>GL_VERTEX_PROGRAM_TWO_SIDE</constant>
@@ -716,7 +720,7 @@
             returned when <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> is called with <constant>GL_EXTENSIONS</constant>.
         </para>
         <para>
-            When the <code>ARB_multitexture</code> extension is supported, the following
+            For OpenGL versions 1.3 and greater, or when the <code>ARB_multitexture</code> extension is supported, the following
             parameters return the associated value for the active texture unit:
             <constant>GL_TEXTURE_1D</constant>, <constant>GL_TEXTURE_BINDING_1D</constant>,
             <constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_BINDING_2D</constant>,

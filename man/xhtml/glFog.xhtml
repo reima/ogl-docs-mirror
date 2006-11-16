@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glFog</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glFog"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glFog — specify fog parameters</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glFogf</b>(</code><var class="pdparam">pname</var>, <var class="pdparam">param</var><code>)</code>;<br /> GLenum <var class="pdparam">pname</var>;<br /> GLfloat <var class="pdparam">param</var>;</p></div><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glFogi</b>(</code><var class="pdparam">pname</var>, <var class="pdparam">param</var><code>)</code>;<br /> GLenum <var class="pdparam">pname</var>;<br /> GLint <var class="pdparam">param</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777188"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glFog</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glFog"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glFog — specify fog parameters</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glFogf</b>(</code><var class="pdparam">pname</var>, <var class="pdparam">param</var><code>)</code>;<br /> GLenum <var class="pdparam">pname</var>;<br /> GLfloat <var class="pdparam">param</var>;</p></div><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glFogi</b>(</code><var class="pdparam">pname</var>, <var class="pdparam">param</var><code>)</code>;<br /> GLenum <var class="pdparam">pname</var>;<br /> GLint <var class="pdparam">param</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781557"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
                     Specifies a single-valued fog parameter.
                     <code class="constant">GL_FOG_MODE</code>,
                     <code class="constant">GL_FOG_DENSITY</code>,
                     <code class="constant">GL_FOG_START</code>,
                     <code class="constant">GL_FOG_END</code>,
                     <code class="constant">GL_FOG_INDEX</code>, and
-                    <code class="constant">GL_FOG_COORDINATE_SOURCE</code>
+                    <code class="constant">GL_FOG_COORD_SRC</code>
                     are accepted.
                 </p></dd><dt><span class="term"><em class="parameter"><code>param</code></em></span></dt><dd><p>
                     Specifies the value that <em class="parameter"><code>pname</code></em> will be set to.
-                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glFogfv</b>(</code></td><td><var class="pdparam">pname</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">params</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">pname</var>;</td></tr><tr><td> const GLfloat *  </td><td><var class="pdparam">params</var>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glFogiv</b>(</code></td><td><var class="pdparam">pname</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">params</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">pname</var>;</td></tr><tr><td> const GLint *  </td><td><var class="pdparam">params</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763879"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
+                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glFogfv</b>(</code></td><td><var class="pdparam">pname</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">params</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">pname</var>;</td></tr><tr><td> const GLfloat *  </td><td><var class="pdparam">params</var>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glFogiv</b>(</code></td><td><var class="pdparam">pname</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">params</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">pname</var>;</td></tr><tr><td> const GLint *  </td><td><var class="pdparam">params</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768247"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
                     Specifies a fog parameter.
                     <code class="constant">GL_FOG_MODE</code>,
                     <code class="constant">GL_FOG_DENSITY</code>,
@@ -19,13 +19,13 @@
                     <code class="constant">GL_FOG_END</code>,
                     <code class="constant">GL_FOG_INDEX</code>,
                     <code class="constant">GL_FOG_COLOR</code>, and
-                    <code class="constant">GL_FOG_COORDINATE_SOURCE</code>
+                    <code class="constant">GL_FOG_COORD_SRC</code>
                     are accepted.
                 </p></dd><dt><span class="term"><em class="parameter"><code>params</code></em></span></dt><dd><p>
                     Specifies the value or values to be assigned to <em class="parameter"><code>pname</code></em>.
                     <code class="constant">GL_FOG_COLOR</code> requires an array of four values.
                     All other parameters accept an array containing only a single value.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770524"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774892"></a><h2>DESCRIPTION</h2><p>
             Fog is initially disabled.
             While enabled, fog affects rasterized geometry,
             bitmaps, and pixel blocks, but not buffer clear operations. To enable
@@ -105,9 +105,9 @@
                         </mml:math>
                         .
                         The initial fog color is (0, 0, 0, 0).
-                    </p></dd><dt><span class="term"><code class="constant">GL_FOG_COORDINATE_SOURCE</code></span></dt><dd><p>
+                    </p></dd><dt><span class="term"><code class="constant">GL_FOG_COORD_SRC</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> contains either of the following symbolic constants:
-                        <code class="constant">GL_FOG_COORDINATE</code> or <code class="constant">GL_FRAGMENT_DEPTH</code>.  <code class="constant">GL_FOG_COORDINATE</code>
+                        <code class="constant">GL_FOG_COORD</code> or <code class="constant">GL_FRAGMENT_DEPTH</code>.  <code class="constant">GL_FOG_COORD</code>
                         specifies that the current fog coordinate should be used as distance value
                         in the fog color computation.  <code class="constant">GL_FRAGMENT_DEPTH</code> specifies that the
                         current fragment depth should be used as distance value in the fog
@@ -124,9 +124,9 @@
             Let 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">c</mml:mi></mml:math>
             be either the distance in eye coordinate from the origin (in the
-            case that the <code class="constant">GL_FOG_COORDINATE_SOURCE</code> is <code class="constant">GL_FRAGMENT_DEPTH</code>) or
-            the current fog coordinate (in the case that <code class="constant">GL_FOG_COORDINATE_SOURCE</code>
-            is <code class="constant">GL_FOG_COORDINATE</code>).
+            case that the <code class="constant">GL_FOG_COORD_SRC</code> is <code class="constant">GL_FRAGMENT_DEPTH</code>) or
+            the current fog coordinate (in the case that <code class="constant">GL_FOG_COORD_SRC</code>
+            is <code class="constant">GL_FOG_COORD</code>).
             The equation for <code class="constant">GL_LINEAR</code> fog is
             </p><div class="informalequation"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -303,7 +303,10 @@
                 </mml:mrow>
             </mml:math></div><p>
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4707049"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711413"></a><h2>NOTES</h2><p>
+            <code class="constant">GL_FOG_COORD_SRC</code> is available only if the GL version is 1.4 or
+            greater.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711426"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>pname</code></em> is not an accepted value,
             or if <em class="parameter"><code>pname</code></em> is <code class="constant">GL_FOG_MODE</code> and <em class="parameter"><code>params</code></em> is not an accepted value.
         </p><p>
@@ -313,7 +316,7 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glFog</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4707133"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711512"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_FOG</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_FOG_COLOR</code>
@@ -327,9 +330,9 @@
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_FOG_END</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_FOG_MODE</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4706671"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711053"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glEnable</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4706684"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711067"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

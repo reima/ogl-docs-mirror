@@ -55,12 +55,12 @@
                     May be either <constant>GL_TEXTURE_ENV_MODE</constant>, <constant>GL_TEXTURE_LOD_BIAS</constant>,
                     <constant>GL_COMBINE_RGB</constant>,
                     <constant>GL_COMBINE_ALPHA</constant>,
-                    <constant>GL_SOURCE0_RGB</constant>,
-                    <constant>GL_SOURCE1_RGB</constant>,
-                    <constant>GL_SOURCE2_RGB</constant>,
-                    <constant>GL_SOURCE0_ALPHA</constant>,
-                    <constant>GL_SOURCE1_ALPHA</constant>,
-                    <constant>GL_SOURCE2_ALPHA</constant>,
+                    <constant>GL_SRC0_RGB</constant>,
+                    <constant>GL_SRC1_RGB</constant>,
+                    <constant>GL_SRC2_RGB</constant>,
+                    <constant>GL_SRC0_ALPHA</constant>,
+                    <constant>GL_SRC1_ALPHA</constant>,
+                    <constant>GL_SRC2_ALPHA</constant>,
                     <constant>GL_OPERAND0_RGB</constant>,
                     <constant>GL_OPERAND1_RGB</constant>,
                     <constant>GL_OPERAND2_RGB</constant>,
@@ -148,7 +148,10 @@
             fragment is textured.  When <parameter>target</parameter> is <constant>GL_TEXTURE_FILTER_CONTROL</constant>,
             <parameter>pname</parameter> must be <constant>GL_TEXTURE_LOD_BIAS</constant>.  When <parameter>target</parameter> is
             <constant>GL_TEXTURE_ENV</constant>, <parameter>pname</parameter> can be <constant>GL_TEXTURE_ENV_MODE</constant>,
-            <constant>GL_TEXTURE_ENV_COLOR</constant>, <constant>GL_COMBINE_RGB</constant>, or <constant>GL_COMBINE_ALPHA</constant>.
+            <constant>GL_TEXTURE_ENV_COLOR</constant>, <constant>GL_COMBINE_RGB</constant>, <constant>GL_COMBINE_ALPHA</constant>,
+            <constant>RGB_SCALE</constant>, <constant>ALPHA_SCALE</constant>, 
+            <constant>SRC0_RGB</constant>, <constant>SRC1_RGB</constant>, <constant>SRC2_RGB</constant>,
+            <constant>SRC0_ALPHA</constant>, <constant>SRC1_ALPHA</constant>, or <constant>SRC2_ALPHA</constant>.
         </para>
         <para>
             If <parameter>pname</parameter> is <constant>GL_TEXTURE_ENV_MODE</constant>,
@@ -247,31 +250,17 @@
                 <colspec/>
                 <thead>
                     <row>
-                        <entry align="center"><emphasis role="bold">
-                        Base internal
-                        </emphasis></entry>
-                        <entry align="center"><emphasis role="bold">
-                        Texture functions
-                        </emphasis></entry>
-                        <entry align="left">
-                        *** FIELD UNDEFINED ***
-                        </entry>
-                        <entry align="left">
-                        *** FIELD UNDEFINED ***
-                        </entry>
-                    </row>
-                    <row>
-                        <entry rowsep="1" align="center"><emphasis>
-                        format
-                        </emphasis></entry>
                         <entry rowsep="1" align="center">
-                        <constant>GL_MODULATE</constant>
+                        Texture Base Internal Format
                         </entry>
                         <entry rowsep="1" align="center">
-                        <constant>GL_DECAL</constant>
+                        <constant>GL_MODULATE Function</constant>
                         </entry>
                         <entry rowsep="1" align="center">
-                        <constant>GL_BLEND</constant>
+                        <constant>GL_DECAL Function</constant>
+                        </entry>
+                        <entry rowsep="1" align="center">
+                        <constant>GL_BLEND Function</constant>
                         </entry>
                     </row>
                 </thead>
@@ -937,25 +926,14 @@
                 <colspec/>
                 <thead>
                     <row>
-                        <entry align="center"><emphasis role="bold">
-                        Base internal
-                        </emphasis></entry>
-                        <entry align="center"><emphasis role="bold">
-                        Texture functions
-                        </emphasis></entry>
-                        <entry align="left">
-                        *** FIELD UNDEFINED ***
-                        </entry>
-                    </row>
-                    <row>
-                        <entry rowsep="1" align="center"><emphasis>
-                        format
-                        </emphasis></entry>
                         <entry rowsep="1" align="center">
-                        <constant>GL_REPLACE</constant>
+                        Texture Base Internal Format
                         </entry>
                         <entry rowsep="1" align="center">
-                        <constant>GL_ADD</constant>
+                        <constant>GL_REPLACE Function</constant>
+                        </entry>
+                        <entry rowsep="1" align="center">
+                        <constant>GL_ADD Function</constant>
                         </entry>
                     </row>
                 </thead>
@@ -1462,15 +1440,15 @@
         </para>
         <para>
             The following describes how the texture sources, as specified by
-            <constant>GL_SOURCE0_RGB</constant>, <constant>GL_SOURCE1_RGB</constant>, <constant>GL_SOURCE2_RGB</constant>,
-            <constant>GL_SOURCE0_ALPHA</constant>, <constant>GL_SOURCE1_ALPHA</constant>, and <constant>GL_SOURCE2_ALPHA</constant>,
+            <constant>GL_SRC0_RGB</constant>, <constant>GL_SRC1_RGB</constant>, <constant>GL_SRC2_RGB</constant>,
+            <constant>GL_SRC0_ALPHA</constant>, <constant>GL_SRC1_ALPHA</constant>, and <constant>GL_SRC2_ALPHA</constant>,
             are combined to produce a final texture color. In the following tables,
-            <constant>GL_SOURCE0_c</constant> is represented by 
+            <constant>GL_SRC0_c</constant> is represented by 
             <inlineequation><mml:math><mml:mi mathvariant="italic">Arg0</mml:mi></mml:math></inlineequation>
-            , <constant>GL_SOURCE1_c</constant> is
+            , <constant>GL_SRC1_c</constant> is
             represented by 
             <inlineequation><mml:math><mml:mi mathvariant="italic">Arg1</mml:mi></mml:math></inlineequation>
-            , and <constant>GL_SOURCE2_c</constant> is represented by 
+            , and <constant>GL_SRC2_c</constant> is represented by 
             <inlineequation><mml:math><mml:mi mathvariant="italic">Arg2</mml:mi></mml:math></inlineequation>
             .
         </para>
@@ -1927,7 +1905,7 @@
                 <thead>
                     <row>
                         <entry rowsep="1" align="left"><emphasis role="bold">
-                        <constant>GL_SOURCEn_RGB</constant>
+                        <constant>GL_SRCn_RGB</constant>
                         </emphasis></entry>
                         <entry rowsep="1" align="left"><emphasis role="bold">
                         <constant>GL_OPERANDn_RGB</constant>
@@ -2365,7 +2343,7 @@
                 <thead>
                     <row>
                         <entry rowsep="1" align="left"><emphasis role="bold">
-                        <constant>GL_SOURCEn_ALPHA</constant>
+                        <constant>GL_SRCn_ALPHA</constant>
                         </emphasis></entry>
                         <entry rowsep="1" align="left"><emphasis role="bold">
                         <constant>GL_OPERANDn_ALPHA</constant>
@@ -2637,7 +2615,7 @@
             version is 1.1 or greater.
         </para>
         <para>
-            When the <code>ARB_multitexture</code> extension is supported, <function>glTexEnv</function> controls
+            For OpenGL versions 1.3 and greater, or when the <code>ARB_multitexture</code> extension is supported, <function>glTexEnv</function> controls
             the texture environment for the current active texture unit, selected by
             <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
         </para>

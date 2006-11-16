@@ -45,7 +45,7 @@
                     <constant>GL_FOG_START</constant>,
                     <constant>GL_FOG_END</constant>,
                     <constant>GL_FOG_INDEX</constant>, and
-                    <constant>GL_FOG_COORDINATE_SOURCE</constant>
+                    <constant>GL_FOG_COORD_SRC</constant>
                     are accepted.
                 </para>
             </listitem>
@@ -89,7 +89,7 @@
                     <constant>GL_FOG_END</constant>,
                     <constant>GL_FOG_INDEX</constant>,
                     <constant>GL_FOG_COLOR</constant>, and
-                    <constant>GL_FOG_COORDINATE_SOURCE</constant>
+                    <constant>GL_FOG_COORD_SRC</constant>
                     are accepted.
                 </para>
             </listitem>
@@ -227,11 +227,11 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_FOG_COORDINATE_SOURCE</constant></term>
+                <term><constant>GL_FOG_COORD_SRC</constant></term>
                 <listitem>
                     <para>
                         <parameter>params</parameter> contains either of the following symbolic constants:
-                        <constant>GL_FOG_COORDINATE</constant> or <constant>GL_FRAGMENT_DEPTH</constant>.  <constant>GL_FOG_COORDINATE</constant>
+                        <constant>GL_FOG_COORD</constant> or <constant>GL_FRAGMENT_DEPTH</constant>.  <constant>GL_FOG_COORD</constant>
                         specifies that the current fog coordinate should be used as distance value
                         in the fog color computation.  <constant>GL_FRAGMENT_DEPTH</constant> specifies that the
                         current fragment depth should be used as distance value in the fog
@@ -252,9 +252,9 @@
             Let 
             <inlineequation><mml:math><mml:mi mathvariant="italic">c</mml:mi></mml:math></inlineequation>
             be either the distance in eye coordinate from the origin (in the
-            case that the <constant>GL_FOG_COORDINATE_SOURCE</constant> is <constant>GL_FRAGMENT_DEPTH</constant>) or
-            the current fog coordinate (in the case that <constant>GL_FOG_COORDINATE_SOURCE</constant>
-            is <constant>GL_FOG_COORDINATE</constant>).
+            case that the <constant>GL_FOG_COORD_SRC</constant> is <constant>GL_FRAGMENT_DEPTH</constant>) or
+            the current fog coordinate (in the case that <constant>GL_FOG_COORD_SRC</constant>
+            is <constant>GL_FOG_COORD</constant>).
             The equation for <constant>GL_LINEAR</constant> fog is
             <informalequation><mml:math>
                 <!-- eqn: f  =  {end  -  c} over {end  -  start}:-->
@@ -439,6 +439,12 @@
             </mml:math></informalequation>
         </para>
         <para>
+        </para>
+    </refsect1>
+    <refsect1><title>NOTES</title>
+        <para>
+            <constant>GL_FOG_COORD_SRC</constant> is available only if the GL version is 1.4 or
+            greater.
         </para>
     </refsect1>
     <refsect1><title>ERRORS</title>

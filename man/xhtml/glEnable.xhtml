@@ -420,19 +420,19 @@
             <code class="constant">GL_SEPARABLE_2D</code> are available only if <code class="code">ARB_imaging</code> is returned
             from <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with an argument of <code class="constant">GL_EXTENSIONS</code>.
         </p><p>
-            If <code class="code">ARB_multitexture</code> is supported, <code class="constant">GL_TEXTURE_1D</code>,
+            For OpenGL versions 1.3 and greater, or when <code class="code">ARB_multitexture</code> is supported, <code class="constant">GL_TEXTURE_1D</code>,
             <code class="constant">GL_TEXTURE_2D</code>, <code class="constant">GL_TEXTURE_3D</code>, <code class="constant">GL_TEXTURE_GEN_S</code>,
             <code class="constant">GL_TEXTURE_GEN_T</code>, <code class="constant">GL_TEXTURE_GEN_R</code>, and <code class="constant">GL_TEXTURE_GEN_Q</code>
             enable or disable the respective state for the active texture unit
             specified with <span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785512"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785513"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>cap</code></em> is not one of the values
             listed previously.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glEnable</code> or <span class="citerefentry"><span class="refentrytitle">glDisable</span></span>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785562"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785563"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glAlphaFunc</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span>,
@@ -441,7 +441,7 @@
             <span class="citerefentry"><span class="refentrytitle">glCullFace</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glDepthFunc</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glDepthRange</span></span>,
-            <code class="function">glEnableClientState</code>,
+            <span class="citerefentry"><span class="refentrytitle">glEnableClientState</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glFog</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span>,

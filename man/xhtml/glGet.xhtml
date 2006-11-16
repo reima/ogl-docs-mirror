@@ -294,7 +294,7 @@
                         returns the most negative representable integer value.
                         The initial value is (1, 1, 1, 1).
                         See <span class="citerefentry"><span class="refentrytitle">glColor</span></span>.
-                    </p></dd><dt><span class="term"><code class="constant">GL_CURRENT_FOG_COORDINATE</code></span></dt><dd><p>
+                    </p></dd><dt><span class="term"><code class="constant">GL_CURRENT_FOG_COORD</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> returns one value, the current fog coordinate.  The initial value
                         is 0.
                         See <span class="citerefentry"><span class="refentrytitle">glFogCoord</span></span>.
@@ -460,17 +460,17 @@
                         <em class="parameter"><code>params</code></em> returns a single boolean value indicating whether fogging is
                         enabled. The initial value is <code class="constant">GL_FALSE</code>.
                         See <span class="citerefentry"><span class="refentrytitle">glFog</span></span>.
-                    </p></dd><dt><span class="term"><code class="constant">GL_FOG_COORDINATE_ARRAY_STRIDE</code></span></dt><dd><p>
+                    </p></dd><dt><span class="term"><code class="constant">GL_FOG_COORD_ARRAY_STRIDE</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> returns one value,
                         the byte offset between consecutive fog coordinates in the fog coordinate
                         array. The initial value is 0.
                         See <span class="citerefentry"><span class="refentrytitle">glFogCoordPointer</span></span>.
-                    </p></dd><dt><span class="term"><code class="constant">GL_FOG_COORDINATE_ARRAY_TYPE</code></span></dt><dd><p>
+                    </p></dd><dt><span class="term"><code class="constant">GL_FOG_COORD_ARRAY_TYPE</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> returns one value, the type of the fog coordinate array.
                         The initial value is <code class="constant">GL_FLOAT</code>.
                         See <span class="citerefentry"><span class="refentrytitle">glFogCoordPointer</span></span>.
-                    </p></dd><dt><span class="term"><code class="constant">GL_FOG_COORDINATE_SOURCE</code></span></dt><dd><p>
-                        <em class="parameter"><code>params</code></em> returns one value, the symbolic constant of the fog SOURCE.
+                    </p></dd><dt><span class="term"><code class="constant">GL_FOG_COORD_SRC</code></span></dt><dd><p>
+                        <em class="parameter"><code>params</code></em> returns one value, a symbolic constant indicating the source of the fog coordinate.
                         The initial value is <code class="constant">GL_FRAGMENT_DEPTH</code>.
                         See <span class="citerefentry"><span class="refentrytitle">glFog</span></span>.
                     </p></dd><dt><span class="term"><code class="constant">GL_FOG_COLOR</code></span></dt><dd><p>
@@ -1621,11 +1621,19 @@
             <code class="constant">GL_BLEND_DST_RGB</code>,
             <code class="constant">GL_BLEND_SRC_ALPHA</code>,
             <code class="constant">GL_BLEND_SRC_RGB</code>,
+            <code class="constant">GL_CURRENT_FOG_COORD</code>,
+            <code class="constant">GL_CURRENT_SECONDARY_COLOR</code>,
+            <code class="constant">GL_FOG_COORD_ARRAY_STRIDE</code>,
+            <code class="constant">GL_FOG_COORD_ARRAY_TYPE</code>,
+            <code class="constant">GL_FOG_COORD_SRC</code>,
             <code class="constant">GL_MAX_TEXTURE_LOD_BIAS</code>,
             <code class="constant">GL_POINT_SIZE_MIN</code>,
             <code class="constant">GL_POINT_SIZE_MAX</code>,
-            <code class="constant">GL_POINT_FADE_THRESHOLD_SIZE</code>, and
-            <code class="constant">GL_POINT_DISTANCE_ATTENUATION</code>
+            <code class="constant">GL_POINT_FADE_THRESHOLD_SIZE</code>,
+            <code class="constant">GL_POINT_DISTANCE_ATTENUATION</code>,
+            <code class="constant">GL_SECONDARY_COLOR_ARRAY_SIZE</code>,
+            <code class="constant">GL_SECONDARY_COLOR_ARRAY_STRIDE</code>, and
+            <code class="constant">GL_SECONDARY_COLOR_ARRAY_TYPE</code>
             are available only if the GL version is 1.4 or greater.
         </p><p>
             <code class="constant">GL_POINT_SPRITE</code>,
@@ -1698,14 +1706,14 @@
             <code class="constant">GL_TEXTURE_COORD_ARRAY_SIZE</code>,
             <code class="constant">GL_TEXTURE_COORD_ARRAY_STRIDE</code>,
             <code class="constant">GL_TEXTURE_COORD_ARRAY_TYPE</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4794125"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4794160"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>pname</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGet</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4794172"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4794208"></a><h2>SEE ALSO</h2><p>
             <code class="function">glGetClipPlane</code>,
             <code class="function">glGetColorTable</code>,
             <code class="function">glGetColorTableParameter</code>,
@@ -1730,7 +1738,7 @@
             <code class="function">glGetTexLevelParameter</code>,
             <code class="function">glGetTexParameter</code>,
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4794336"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4794372"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

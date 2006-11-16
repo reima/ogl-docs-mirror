@@ -57,12 +57,12 @@
                     <constant>GL_TEXTURE_LOD_BIAS</constant>,
                     <constant>GL_COMBINE_RGB</constant>,
                     <constant>GL_COMBINE_ALPHA</constant>,
-                    <constant>GL_SOURCE0_RGB</constant>,
-                    <constant>GL_SOURCE1_RGB</constant>,
-                    <constant>GL_SOURCE2_RGB</constant>,
-                    <constant>GL_SOURCE0_ALPHA</constant>,
-                    <constant>GL_SOURCE1_ALPHA</constant>,
-                    <constant>GL_SOURCE2_ALPHA</constant>,
+                    <constant>GL_SRC0_RGB</constant>,
+                    <constant>GL_SRC1_RGB</constant>,
+                    <constant>GL_SRC2_RGB</constant>,
+                    <constant>GL_SRC0_ALPHA</constant>,
+                    <constant>GL_SRC1_ALPHA</constant>,
+                    <constant>GL_SRC2_ALPHA</constant>,
                     <constant>GL_OPERAND0_RGB</constant>,
                     <constant>GL_OPERAND1_RGB</constant>,
                     <constant>GL_OPERAND2_RGB</constant>,
@@ -90,6 +90,18 @@
             <function>glGetTexEnv</function> returns in <parameter>params</parameter> selected values of a texture environment that
             was specified with <citerefentry><refentrytitle>glTexEnv</refentrytitle></citerefentry>.
             <parameter>target</parameter> specifies a texture environment.
+        </para>
+        <para>
+            When <parameter>target</parameter> is <constant>GL_TEXTURE_FILTER_CONTROL</constant>,
+            <parameter>pname</parameter> must be <constant>GL_TEXTURE_LOD_BIAS</constant>.  
+            When <parameter>target</parameter> is <constant>GL_POINT_SPRITE</constant>,
+            <parameter>pname</parameter> must be <constant>GL_COORD_REPLACE</constant>.
+            When <parameter>target</parameter> is
+            <constant>GL_TEXTURE_ENV</constant>, <parameter>pname</parameter> can be <constant>GL_TEXTURE_ENV_MODE</constant>,
+            <constant>GL_TEXTURE_ENV_COLOR</constant>, <constant>GL_COMBINE_RGB</constant>, <constant>GL_COMBINE_ALPHA</constant>,
+            <constant>RGB_SCALE</constant>, <constant>ALPHA_SCALE</constant>, 
+            <constant>SRC0_RGB</constant>, <constant>SRC1_RGB</constant>, <constant>SRC2_RGB</constant>,
+            <constant>SRC0_ALPHA</constant>, <constant>SRC1_ALPHA</constant>, or <constant>SRC2_ALPHA</constant>.
         </para>
         <para>
             <parameter>pname</parameter> names a specific texture environment parameter, as follows:
@@ -152,7 +164,7 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_SOURCE0_RGB</constant></term>
+                <term><constant>GL_SRC0_RGB</constant></term>
                 <listitem>
                     <para>
                         <parameter>params</parameter> returns a single symbolic constant value representing the texture
@@ -161,7 +173,7 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_SOURCE1_RGB</constant></term>
+                <term><constant>GL_SRC1_RGB</constant></term>
                 <listitem>
                     <para>
                         <parameter>params</parameter> returns a single symbolic constant value representing the texture
@@ -170,7 +182,7 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_SOURCE2_RGB</constant></term>
+                <term><constant>GL_SRC2_RGB</constant></term>
                 <listitem>
                     <para>
                         <parameter>params</parameter> returns a single symbolic constant value representing the texture
@@ -179,7 +191,7 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_SOURCE0_ALPHA</constant></term>
+                <term><constant>GL_SRC0_ALPHA</constant></term>
                 <listitem>
                     <para>
                         <parameter>params</parameter> returns a single symbolic constant value representing the texture
@@ -188,7 +200,7 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_SOURCE1_ALPHA</constant></term>
+                <term><constant>GL_SRC1_ALPHA</constant></term>
                 <listitem>
                     <para>
                         <parameter>params</parameter> returns a single symbolic constant value representing the texture
@@ -197,7 +209,7 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_SOURCE2_ALPHA</constant></term>
+                <term><constant>GL_SRC2_ALPHA</constant></term>
                 <listitem>
                     <para>
                         <parameter>params</parameter> returns a single symbolic constant value representing the texture
@@ -294,18 +306,18 @@
             no change is made to the contents of <parameter>params</parameter>.
         </para>
         <para>
-            When the <code>ARB_multitexture</code> extension is supported, <function>glGetTexEnv</function> returns
+            For OpenGL versions 1.3 and greater, or when the <code>ARB_multitexture</code> extension is supported, <function>glGetTexEnv</function> returns
             the texture environment parameters for the active texture unit.
         </para>
         <para>
             <constant>GL_COMBINE_RGB</constant>,
             <constant>GL_COMBINE_ALPHA</constant>,
-            <constant>GL_SOURCE0_RGB</constant>,
-            <constant>GL_SOURCE1_RGB</constant>,
-            <constant>GL_SOURCE2_RGB</constant>,
-            <constant>GL_SOURCE0_ALPHA</constant>,
-            <constant>GL_SOURCE1_ALPHA</constant>,
-            <constant>GL_SOURCE2_ALPHA</constant>,
+            <constant>GL_SRC0_RGB</constant>,
+            <constant>GL_SRC1_RGB</constant>,
+            <constant>GL_SRC2_RGB</constant>,
+            <constant>GL_SRC0_ALPHA</constant>,
+            <constant>GL_SRC1_ALPHA</constant>,
+            <constant>GL_SRC2_ALPHA</constant>,
             <constant>GL_OPERAND0_RGB</constant>,
             <constant>GL_OPERAND1_RGB</constant>,
             <constant>GL_OPERAND2_RGB</constant>,

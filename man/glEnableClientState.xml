@@ -35,7 +35,7 @@
                     Symbolic constants
                     <constant>GL_COLOR_ARRAY</constant>,
                     <constant>GL_EDGE_FLAG_ARRAY</constant>,
-                    <constant>GL_FOG_COORDINATE_ARRAY</constant>,
+                    <constant>GL_FOG_COORD_ARRAY</constant>,
                     <constant>GL_INDEX_ARRAY</constant>,
                     <constant>GL_NORMAL_ARRAY</constant>,
                     <constant>GL_SECONDARY_COLOR_ARRAY</constant>,
@@ -101,7 +101,7 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_FOG_COORDINATE_ARRAY</constant></term>
+                <term><constant>GL_FOG_COORD_ARRAY</constant></term>
                 <listitem>
                     <para>
                         If enabled, the fog coordinate array is enabled for writing and used during
@@ -173,11 +173,11 @@
             <function>glEnableClientState</function> is available only if the GL version is 1.1 or greater.
         </para>
         <para>
-            <constant>GL_FOG_COORDINATE_ARRAY</constant> is available on if the GL version is 1.4 or
+            <constant>GL_FOG_COORD_ARRAY</constant> and <constant>GL_SECONDARY_COLOR_ARRAY</constant> are available only if the GL version is 1.4 or
             greater.
         </para>
         <para>
-            If <code>ARB_multitexture</code> is supported, enabling and disabling
+            For OpenGL versions 1.3 and greater, or when <code>ARB_multitexture</code> is supported, enabling and disabling
             <constant>GL_TEXTURE_COORD_ARRAY</constant> affects the active client texture unit.
             The active client texture unit is controlled with
             <citerefentry><refentrytitle>glClientActiveTexture</refentrytitle></citerefentry>.

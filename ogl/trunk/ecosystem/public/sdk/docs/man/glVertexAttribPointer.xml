@@ -198,6 +198,9 @@
 	<para><citerefentry><refentrytitle>glGetVertexAttrib</refentrytitle></citerefentry>
 	with arguments <parameter>index</parameter> and <constant>GL_VERTEX_ATTRIB_ARRAY_BUFFER_BINDING</constant></para>
 
+        <para><citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument 
+        <constant>GL_ARRAY_BUFFER_BINDING</constant></para>
+
 	<para><citerefentry><refentrytitle>glGetVertexAttribPointer</refentrytitle></citerefentry>
 	with arguments <parameter>index</parameter> and
 	<constant>GL_VERTEX_ATTRIB_ARRAY_POINTER</constant></para>

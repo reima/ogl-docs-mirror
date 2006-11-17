@@ -145,6 +145,9 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_FOG_COORD_ARRAY_BUFFER_BINDING</constant>
         </para>
         <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_ARRAY_BUFFER_BINDING</constant>
+        </para>
+        <para>
             <citerefentry><refentrytitle>glGetPointerv</refentrytitle></citerefentry> with argument <constant>GL_FOG_COORD_ARRAY_POINTER</constant>
         </para>
     </refsect1>

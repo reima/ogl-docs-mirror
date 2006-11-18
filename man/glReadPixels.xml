@@ -26,7 +26,7 @@
                 <paramdef> GLsizei <parameter>height</parameter></paramdef>
                 <paramdef> GLenum <parameter>format</parameter></paramdef>
                 <paramdef> GLenum <parameter>type</parameter></paramdef>
-                <paramdef> GLvoid * <parameter>pixels</parameter></paramdef>
+                <paramdef> GLvoid * <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -106,7 +106,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>pixels</parameter></term>
+            <term><parameter>data</parameter></term>
             <listitem>
                 <para>
                     Returns the pixel data.
@@ -120,7 +120,7 @@
             <function>glReadPixels</function> returns pixel data from the frame buffer,
             starting with the pixel whose lower left corner
             is at location (<parameter>x</parameter>, <parameter>y</parameter>),
-            into client memory starting at location <parameter>pixels</parameter>.
+            into client memory starting at location <parameter>data</parameter>.
             Several parameters control the processing of the pixel data before
             it is placed into client memory.
             These parameters are set with three commands:
@@ -129,6 +129,12 @@
             <citerefentry><refentrytitle>glPixelMap</refentrytitle></citerefentry>.
             This reference page describes the effects on <function>glReadPixels</function> of most,
             but not all of the parameters specified by these three commands.
+        </para>
+        <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_PACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a block of pixels is
+            requested, <parameter>data</parameter> is treated as a byte offset into the buffer object's data storage
+            rather than a pointer to client memory.
         </para>
         <para>
             When the <code>ARB_imaging</code> extension is supported, the pixel data may
@@ -174,13 +180,12 @@
                     <mml:mo>&lt;</mml:mo>
                     <mml:mi mathvariant="italic">height</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
             This pixel is said to be the 
             <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
             th pixel in the 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">j</mml:mi></mml:math></inlineequation>
-            th row.
+            <inlineequation><mml:math><mml:mi mathvariant="italic">j</mml:mi></mml:math></inlineequation>th
+            row.
             Pixels are returned in row order from the lowest to the highest row,
             left to right in each row.
         </para>
@@ -232,8 +237,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -307,8 +311,8 @@
                             <mml:msup><mml:mn>2</mml:mn>
                             <mml:mi mathvariant="italic">n</mml:mi>
                             </mml:msup>
-                        </mml:math></inlineequation>
-                        , but 
+                        </mml:math></inlineequation>,
+                        but 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
                         may be different for
                         different tables.
@@ -319,8 +323,8 @@
                             <mml:msup><mml:mn>2</mml:mn>
                             <mml:mi mathvariant="italic">n</mml:mi>
                             </mml:msup>
-                        </mml:math></inlineequation>
-                        , it must be masked against 
+                        </mml:math></inlineequation>,
+                        it must be masked against 
                         <inlineequation><mml:math>
                             <!-- eqn: 2 sup n - 1:-->
                             <mml:mrow>
@@ -330,8 +334,7 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                     </para>
                     <para>
                         If RGBA color components are stored in the color buffers,
@@ -350,8 +353,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         scaled to the size of its corresponding table, and is then
                         replaced by its mapping in the table
                         <constant>GL_PIXEL_MAP_c_TO_c</constant>,
@@ -375,8 +377,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -727,13 +728,12 @@
                     <mml:mo>+</mml:mo>
                     <mml:mi mathvariant="italic">i</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
             <constant>GL_RGB</constant> and <constant>GL_BGR</constant> return three values,
             <constant>GL_RGBA</constant> and <constant>GL_BGRA</constant> return four values,
             and <constant>GL_LUMINANCE_ALPHA</constant> returns two values for each pixel,
             with all values corresponding to a single pixel occupying contiguous space
-            in <parameter>pixels</parameter>.
+            in <parameter>data</parameter>.
             Storage parameters set by <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>,
             such as <constant>GL_PACK_LSB_FIRST</constant> and <constant>GL_PACK_SWAP_BYTES</constant>,
             affect the way that data is written into memory.
@@ -747,7 +747,7 @@
         </para>
         <para>
             If an error is generated,
-            no change is made to the contents of <parameter>pixels</parameter>.
+            no change is made to the contents of <parameter>data</parameter>.
         </para>
     </refsect1>
     <refsect1><title>ERRORS</title>
@@ -819,6 +819,9 @@
     <refsect1><title>ASSOCIATED GETS</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_INDEX_MODE</constant>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_PACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>

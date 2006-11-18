@@ -24,7 +24,7 @@
                 <paramdef> GLint <parameter>level</parameter></paramdef>
                 <paramdef> GLenum <parameter>format</parameter></paramdef>
                 <paramdef> GLenum <parameter>type</parameter></paramdef>
-                <paramdef> GLvoid * <parameter>pixels</parameter></paramdef>
+                <paramdef> GLvoid * <parameter>img</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -56,8 +56,8 @@
                     Level 
                     <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
                     is the 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                    th mipmap reduction image.
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>th
+                    mipmap reduction image.
                 </para>
             </listitem>
         </varlistentry>
@@ -109,7 +109,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>pixels</parameter></term>
+            <term><parameter>img</parameter></term>
             <listitem>
                 <para>
                     Returns the texture image.
@@ -121,7 +121,7 @@
     </refsect1>
     <refsect1><title>DESCRIPTION</title>
         <para>
-            <function>glGetTexImage</function> returns a texture image into <parameter>pixels</parameter>.
+            <function>glGetTexImage</function> returns a texture image into <parameter>img</parameter>.
             <parameter>target</parameter> specifies whether the desired texture image is one specified by
             <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry> (<constant>GL_TEXTURE_1D</constant>),
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry> (<constant>GL_TEXTURE_2D</constant> or any of
@@ -133,6 +133,11 @@
             See the reference pages <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>
             for a description of the acceptable values for the <parameter>format</parameter> and <parameter>type</parameter>
             parameters, respectively.
+        </para>
+        <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_PACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a texture image is
+            requested, <parameter>img</parameter> is treated as a byte offset into the buffer object's data storage.
         </para>
         <para>
             To understand the operation of <function>glGetTexImage</function>, consider the selected internal
@@ -171,7 +176,7 @@
             and alpha set to 1.
         </para>
         <para>
-            To determine the required size of <parameter>pixels</parameter>,
+            To determine the required size of <parameter>img</parameter>,
             use <citerefentry><refentrytitle>glGetTexLevelParameter</refentrytitle></citerefentry> to determine the dimensions of the
             internal texture image,
             then scale the required number of pixels by the storage required for
@@ -184,7 +189,7 @@
     <refsect1><title>NOTES</title>
         <para>
             If an error is generated,
-            no change is made to the contents of <parameter>pixels</parameter>.
+            no change is made to the contents of <parameter>img</parameter>.
         </para>
         <para>
             The types <constant>GL_UNSIGNED_BYTE_3_3_2</constant>,
@@ -230,8 +235,7 @@
                         <mml:mi mathvariant="italic">max</mml:mi>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             where 
             <inlineequation><mml:math><mml:mi mathvariant="italic">max</mml:mi></mml:math></inlineequation>
             is the returned value of <constant>GL_MAX_TEXTURE_SIZE</constant>.
@@ -276,6 +280,9 @@
         </para>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with arguments <constant>GL_PACK_ALIGNMENT</constant> and others
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_PACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>

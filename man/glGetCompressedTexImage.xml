@@ -41,7 +41,7 @@
                     <constant>GL_TEXTURE_CUBE_MAP_NEGATIVE_Y</constant>,
                     <constant>GL_TEXTURE_CUBE_MAP_POSITIVE_Z</constant>, and
                     <constant>GL_TEXTURE_CUBE_MAP_NEGATIVE_Z</constant>
-                    are accepted
+                    are accepted.
                 </para>
             </listitem>
         </varlistentry>
@@ -54,8 +54,8 @@
                     Level 
                     <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
                     is the 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                    th mipmap reduction image.
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>th
+                    mipmap reduction image.
                 </para>
             </listitem>
         </varlistentry>
@@ -79,6 +79,11 @@
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry> (<constant>GL_TEXTURE_2D</constant> or any of <constant>GL_TEXTURE_CUBE_MAP_*</constant>), or
             <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry> (<constant>GL_TEXTURE_3D</constant>).
             <parameter>lod</parameter> specifies the level-of-detail number of the desired image.
+        </para>
+        <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_PACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a texture image is
+            requested, <parameter>img</parameter> is treated as a byte offset into the buffer object's data storage.
         </para>
         <para>
             To minimize errors, first verify that the texture is compressed by calling
@@ -117,6 +122,9 @@
         </para>
         <para>
             <citerefentry><refentrytitle>glGetTexLevelParameter</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_INTERNAL_FORMAT</constant>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_PACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>

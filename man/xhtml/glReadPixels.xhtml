@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glReadPixels</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glReadPixels"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glReadPixels — read a block of pixels from the frame buffer</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glReadPixels</b>(</code></td><td><var class="pdparam">x</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">y</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">width</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">height</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">format</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pixels</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLint  </td><td><var class="pdparam">x</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">y</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">width</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">height</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">format</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td> GLvoid *  </td><td><var class="pdparam">pixels</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777215"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>x</code></em>, </span><span class="term"><em class="parameter"><code>y</code></em></span></dt><dd><p>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glReadPixels</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glReadPixels"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glReadPixels — read a block of pixels from the frame buffer</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glReadPixels</b>(</code></td><td><var class="pdparam">x</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">y</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">width</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">height</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">format</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">data</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLint  </td><td><var class="pdparam">x</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">y</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">width</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">height</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">format</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td> GLvoid *  </td><td><var class="pdparam">data</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781584"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>x</code></em>, </span><span class="term"><em class="parameter"><code>y</code></em></span></dt><dd><p>
                     Specify the window coordinates of the first pixel
                     that is read from the frame buffer.
                     This location is the lower left corner of a rectangular block of pixels.
@@ -46,13 +46,13 @@
                     <code class="constant">GL_UNSIGNED_INT_8_8_8_8_REV</code>,
                     <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>, or
                     <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code>.
-                </p></dd><dt><span class="term"><em class="parameter"><code>pixels</code></em></span></dt><dd><p>
+                </p></dd><dt><span class="term"><em class="parameter"><code>data</code></em></span></dt><dd><p>
                     Returns the pixel data.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770593"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774962"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glReadPixels</code> returns pixel data from the frame buffer,
             starting with the pixel whose lower left corner
             is at location (<em class="parameter"><code>x</code></em>, <em class="parameter"><code>y</code></em>),
-            into client memory starting at location <em class="parameter"><code>pixels</code></em>.
+            into client memory starting at location <em class="parameter"><code>data</code></em>.
             Several parameters control the processing of the pixel data before
             it is placed into client memory.
             These parameters are set with three commands:
@@ -61,6 +61,11 @@
             <span class="citerefentry"><span class="refentrytitle">glPixelMap</span></span>.
             This reference page describes the effects on <code class="function">glReadPixels</code> of most,
             but not all of the parameters specified by these three commands.
+        </p><p>
+            If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_PACK_BUFFER</code> target 
+            (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while a block of pixels is
+            requested, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data storage
+            rather than a pointer to client memory.
         </p><p>
             When the <code class="code">ARB_imaging</code> extension is supported, the pixel data may
             be processed by additional operations including color table lookup,
@@ -104,13 +109,12 @@
                     <mml:mo>&lt;</mml:mo>
                     <mml:mi mathvariant="italic">height</mml:mi>
                 </mml:mrow>
-            </mml:math>
-            .
+            </mml:math>.
             This pixel is said to be the 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
             th pixel in the 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">j</mml:mi></mml:math>
-            th row.
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">j</mml:mi></mml:math>th
+            row.
             Pixels are returned in row order from the lowest to the highest row,
             left to right in each row.
         </p><p>
@@ -144,8 +148,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math>
-                        .
+                        </mml:math>.
                     </p></dd><dt><span class="term"><code class="constant">GL_RED</code></span></dt><dd></dd><dt><span class="term"><code class="constant">GL_GREEN</code></span></dt><dd></dd><dt><span class="term"><code class="constant">GL_BLUE</code></span></dt><dd></dd><dt><span class="term"><code class="constant">GL_ALPHA</code></span></dt><dd></dd><dt><span class="term"><code class="constant">GL_RGB</code></span></dt><dd></dd><dt><span class="term"><code class="constant">GL_BGR</code></span></dt><dd></dd><dt><span class="term"><code class="constant">GL_RGBA</code></span></dt><dd></dd><dt><span class="term"><code class="constant">GL_BGRA</code></span></dt><dd></dd><dt><span class="term"><code class="constant">GL_LUMINANCE</code></span></dt><dd></dd><dt><span class="term"><code class="constant">GL_LUMINANCE_ALPHA</code></span></dt><dd><p>
                         Processing differs depending on whether color buffers store color indices
                         or RGBA color components.
@@ -168,8 +171,8 @@
                             <mml:msup><mml:mn>2</mml:mn>
                             <mml:mi mathvariant="italic">n</mml:mi>
                             </mml:msup>
-                        </mml:math>
-                        , but 
+                        </mml:math>,
+                        but 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
                         may be different for
                         different tables.
@@ -180,8 +183,8 @@
                             <mml:msup><mml:mn>2</mml:mn>
                             <mml:mi mathvariant="italic">n</mml:mi>
                             </mml:msup>
-                        </mml:math>
-                        , it must be masked against 
+                        </mml:math>,
+                        it must be masked against 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
@@ -191,8 +194,7 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math>
-                        .
+                        </mml:math>.
                     </p><p>
                         If RGBA color components are stored in the color buffers,
                         they are read from the color buffer selected by <span class="citerefentry"><span class="refentrytitle">glReadBuffer</span></span>.
@@ -210,8 +212,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         scaled to the size of its corresponding table, and is then
                         replaced by its mapping in the table
                         <code class="constant">GL_PIXEL_MAP_c_TO_c</code>,
@@ -234,8 +235,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math>
-                        .
+                        </mml:math>.
                     </p></dd></dl></div><p>
             The shift,
             scale,
@@ -522,24 +522,23 @@
                     <mml:mo>+</mml:mo>
                     <mml:mi mathvariant="italic">i</mml:mi>
                 </mml:mrow>
-            </mml:math>
-            .
+            </mml:math>.
             <code class="constant">GL_RGB</code> and <code class="constant">GL_BGR</code> return three values,
             <code class="constant">GL_RGBA</code> and <code class="constant">GL_BGRA</code> return four values,
             and <code class="constant">GL_LUMINANCE_ALPHA</code> returns two values for each pixel,
             with all values corresponding to a single pixel occupying contiguous space
-            in <em class="parameter"><code>pixels</code></em>.
+            in <em class="parameter"><code>data</code></em>.
             Storage parameters set by <span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span>,
             such as <code class="constant">GL_PACK_LSB_FIRST</code> and <code class="constant">GL_PACK_SWAP_BYTES</code>,
             affect the way that data is written into memory.
             See <span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span> for a description.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4780783"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785176"></a><h2>NOTES</h2><p>
             Values for pixels that lie outside the window
             connected to the current GL context are undefined.
         </p><p>
             If an error is generated,
-            no change is made to the contents of <em class="parameter"><code>pixels</code></em>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4780808"></a><h2>ERRORS</h2><p>
+            no change is made to the contents of <em class="parameter"><code>data</code></em>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785201"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>format</code></em> or <em class="parameter"><code>type</code></em> is not an
             accepted value.
         </p><p>
@@ -593,16 +592,18 @@
             <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>, and
             <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code> are available only if the GL version
             is 1.2 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781139"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785532"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_INDEX_MODE</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781157"></a><h2>SEE ALSO</h2><p>
+        </p><p>
+            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PIXEL_PACK_BUFFER_BINDING</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785562"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPixelMap</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glReadBuffer</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781197"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785602"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

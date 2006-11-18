@@ -20,7 +20,7 @@
         <funcsynopsis>
             <funcprototype>
                 <funcdef> void <function>glGetPolygonStipple</function></funcdef>
-                <paramdef> GLubyte * <parameter>mask</parameter></paramdef>
+                <paramdef> GLubyte * <parameter>pattern</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -28,7 +28,7 @@
     <refsect1><title>PARAMETERS</title>
         <variablelist>
         <varlistentry>
-            <term><parameter>mask</parameter></term>
+            <term><parameter>pattern</parameter></term>
             <listitem>
                 <para>
                     Returns the stipple pattern. The initial value is all 1's.
@@ -39,7 +39,7 @@
     </refsect1>
     <refsect1><title>DESCRIPTION</title>
         <para>
-            <function>glGetPolygonStipple</function> returns to <parameter>mask</parameter> a 
+            <function>glGetPolygonStipple</function> returns to <parameter>pattern</parameter> a 
             <inlineequation><mml:math>
                 <!-- eqn: 32  times  32:-->
                 <mml:mrow>
@@ -70,11 +70,16 @@
             (shift, offset, pixel map)
             are not applied to the returned stipple image.
         </para>
+        <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_PACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a polygon stipple pattern is
+            requested, <parameter>pattern</parameter> is treated as a byte offset into the buffer object's data storage.
+        </para>
     </refsect1>
     <refsect1><title>NOTES</title>
         <para>
             If an error is generated,
-            no change is made to the contents of <parameter>mask</parameter>.
+            no change is made to the contents of <parameter>pattern</parameter>.
         </para>
     </refsect1>
     <refsect1><title>ERRORS</title>
@@ -82,6 +87,11 @@
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glGetPolygonStipple</function>
             is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
+        </para>
+    </refsect1>
+    <refsect1><title>ASSOCIATED GETS</title>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_PACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>

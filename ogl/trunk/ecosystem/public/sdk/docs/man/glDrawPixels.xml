@@ -24,7 +24,7 @@
                 <paramdef> GLsizei <parameter>height</parameter></paramdef>
                 <paramdef> GLenum <parameter>format</parameter></paramdef>
                 <paramdef> GLenum <parameter>type</parameter></paramdef>
-                <paramdef> const GLvoid * <parameter>pixels</parameter></paramdef>
+                <paramdef> const GLvoid * <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -67,7 +67,7 @@
             <term><parameter>type</parameter></term>
             <listitem>
                 <para>
-                    Specifies the data type for <parameter>pixels</parameter>.
+                    Specifies the data type for <parameter>data</parameter>.
                     Symbolic constants
                     <constant>GL_UNSIGNED_BYTE</constant>,
                     <constant>GL_BYTE</constant>,
@@ -94,7 +94,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>pixels</parameter></term>
+            <term><parameter>data</parameter></term>
             <listitem>
                 <para>
                     Specifies a pointer to the pixel data.
@@ -126,7 +126,7 @@
             but not all, of the parameters specified by these four commands.
         </para>
         <para>
-            Data is read from <parameter>pixels</parameter> as a sequence of signed or unsigned bytes,
+            Data is read from <parameter>data</parameter> as a sequence of signed or unsigned bytes,
             signed or unsigned shorts, signed or unsigned integers, or
             single-precision floating-point values, depending on <parameter>type</parameter>.
             When <parameter>type</parameter> is one of <constant>GL_UNSIGNED_BYTE</constant>, <constant>GL_BYTE</constant>,
@@ -164,7 +164,7 @@
                 </mml:mrow>
             </mml:math></inlineequation>
             pixels are read from memory,
-            starting at location <parameter>pixels</parameter>.
+            starting at location <parameter>data</parameter>.
             By default, these pixels are taken from adjacent memory locations,
             except that after all <parameter>width</parameter> pixels are read,
             the read pointer is advanced to the next four-byte boundary.
@@ -175,6 +175,11 @@
             both before the first pixel is read
             and after all <parameter>width</parameter> pixels are read.
             See the <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry> reference page for details on these options.
+        </para>
+        <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a block of pixels is
+            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data storage.
         </para>
         <para>
             The 
@@ -1180,6 +1185,9 @@
         </para>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_CURRENT_RASTER_POSITION_VALID</constant>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>

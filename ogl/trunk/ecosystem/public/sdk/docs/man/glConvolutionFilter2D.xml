@@ -26,7 +26,7 @@
                 <paramdef> GLsizei <parameter>height</parameter></paramdef>
                 <paramdef> GLenum <parameter>format</parameter></paramdef>
                 <paramdef> GLenum <parameter>type</parameter></paramdef>
-                <paramdef> const GLvoid * <parameter>image</parameter></paramdef>
+                <paramdef> const GLvoid * <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -91,7 +91,7 @@
             <term><parameter>width</parameter></term>
             <listitem>
                 <para>
-                    The width of the pixel array referenced by <parameter>image</parameter>.
+                    The width of the pixel array referenced by <parameter>data</parameter>.
                 </para>
             </listitem>
         </varlistentry>
@@ -99,7 +99,7 @@
             <term><parameter>height</parameter></term>
             <listitem>
                 <para>
-                    The height of the pixel array referenced by <parameter>image</parameter>.
+                    The height of the pixel array referenced by <parameter>data</parameter>.
                 </para>
             </listitem>
         </varlistentry>
@@ -107,7 +107,7 @@
             <term><parameter>format</parameter></term>
             <listitem>
                 <para>
-                    The format of the pixel data in <parameter>image</parameter>.
+                    The format of the pixel data in <parameter>data</parameter>.
                     The allowable values are
                     <constant>GL_RED</constant>,
                     <constant>GL_GREEN</constant>,
@@ -126,7 +126,7 @@
             <term><parameter>type</parameter></term>
             <listitem>
                 <para>
-                    The type of the pixel data in <parameter>image</parameter>.
+                    The type of the pixel data in <parameter>data</parameter>.
                     Symbolic constants
                     <constant>GL_UNSIGNED_BYTE</constant>,
                     <constant>GL_BYTE</constant>,
@@ -153,7 +153,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>image</parameter></term>
+            <term><parameter>data</parameter></term>
             <listitem>
                 <para>
                     Pointer to a two-dimensional array of pixel data that is processed to
@@ -170,9 +170,14 @@
         </para>
         <para>
             The pixel array specified by <parameter>width</parameter>, <parameter>height</parameter>, <parameter>format</parameter>, <parameter>type</parameter>, and
-            <parameter>image</parameter> is extracted from memory and processed just as if
+            <parameter>data</parameter> is extracted from memory and processed just as if
             <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry> were called, but processing stops after the final
             expansion to RGBA is completed.
+        </para>
+        <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a convolution filter is
+            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data storage.
         </para>
         <para>
             The R, G, B, and A components of each pixel are next scaled by the four

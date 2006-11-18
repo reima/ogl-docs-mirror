@@ -29,7 +29,7 @@
                 <paramdef> GLint <parameter>border</parameter></paramdef>
                 <paramdef> GLenum <parameter>format</parameter></paramdef>
                 <paramdef> GLenum <parameter>type</parameter></paramdef>
-                <paramdef> const GLvoid * <parameter>pixels</parameter></paramdef>
+                <paramdef> const GLvoid * <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -142,8 +142,8 @@
                         </mml:mrow>
                     </mml:math></inlineequation>
                     for some integer 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                    . All
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
+                    All
                     implementations support texture images that are at least 64 texels
                     wide.
                 </para>
@@ -172,8 +172,8 @@
                         </mml:mrow>
                     </mml:math></inlineequation>
                     for some integer 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">m</mml:mi></mml:math></inlineequation>
-                    . All
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">m</mml:mi></mml:math></inlineequation>.
+                    All
                     implementations support texture images that are at least 64 texels
                     high.
                 </para>
@@ -202,8 +202,8 @@
                         </mml:mrow>
                     </mml:math></inlineequation>
                     for some integer 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">k</mml:mi></mml:math></inlineequation>
-                    . All
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">k</mml:mi></mml:math></inlineequation>.
+                    All
                     implementations support texture images that are at least 64 texels
                     deep.
                 </para>
@@ -268,7 +268,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>pixels</parameter></term>
+            <term><parameter>data</parameter></term>
             <listitem>
                 <para>
                     Specifies a pointer to the image data in memory.
@@ -297,7 +297,7 @@
             they are identical to the pixel formats used for <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>.
         </para>
         <para>
-            If <parameter>target</parameter> is <constant>GL_PROXY_TEXTURE_3D</constant>, no data is read from <parameter>pixels</parameter>, but
+            If <parameter>target</parameter> is <constant>GL_PROXY_TEXTURE_3D</constant>, no data is read from <parameter>data</parameter>, but
             all of the texture image state is recalculated, checked for
             consistency, and checked
             against the implementation's capabilities. If the implementation cannot
@@ -309,7 +309,7 @@
         </para>
         <para>
             If <parameter>target</parameter> is <constant>GL_TEXTURE_3D</constant>,
-            data is read from <parameter>pixels</parameter> as a sequence of signed or unsigned bytes,
+            data is read from <parameter>data</parameter> as a sequence of signed or unsigned bytes,
             shorts,
             or longs,
             or single-precision floating-point values,
@@ -328,6 +328,11 @@
             (see <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>).
         </para>
         <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a texture image is
+            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data storage.
+        </para>
+        <para>
             The first element corresponds to the lower left corner of the texture
             image.
             Subsequent elements progress left-to-right through the remaining texels
@@ -337,7 +342,7 @@
             image.
         </para>
         <para>
-            <parameter>format</parameter> determines the composition of each element in <parameter>pixels</parameter>.
+            <parameter>format</parameter> determines the composition of each element in <parameter>data</parameter>.
             It can assume one of eleven symbolic values:
         </para>
         <variablelist>
@@ -566,7 +571,7 @@
         </para>
         <para>
             A one-component texture image uses only the red component of the RGBA
-            color extracted from <parameter>pixels</parameter>.
+            color extracted from <parameter>data</parameter>.
             A two-component image uses the R and A values.
             A three-component image uses the R, G, and B values.
             A four-component image uses all of the RGBA components.
@@ -594,7 +599,7 @@
             version is 1.1 or greater.
         </para>
         <para>
-            <parameter>pixels</parameter> may be a null pointer.
+            <parameter>data</parameter> may be a null pointer.
             In this case texture memory is
             allocated to accommodate a texture of width <parameter>width</parameter>, height <parameter>height</parameter>,
             and depth <parameter>depth</parameter>.
@@ -634,8 +639,7 @@
                     <mml:mn>0</mml:mn>
                     <mml:mn>1</mml:mn>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            :
+            </mml:math></inlineequation>:
         </para>
         <variablelist>
             <varlistentry>
@@ -715,8 +719,7 @@
                         <mml:mi mathvariant="italic">max</mml:mi>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             where <emphasis>max</emphasis> is the returned value of <constant>GL_MAX_TEXTURE_SIZE</constant>.
         </para>
         <para>
@@ -786,6 +789,9 @@
         </para>
         <para>
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_3D</constant>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>

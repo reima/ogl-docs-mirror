@@ -25,7 +25,7 @@
                 <paramdef> GLsizei <parameter>width</parameter></paramdef>
                 <paramdef> GLenum <parameter>format</parameter></paramdef>
                 <paramdef> GLenum <parameter>type</parameter></paramdef>
-                <paramdef> const GLvoid * <parameter>table</parameter></paramdef>
+                <paramdef> const GLvoid * <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -97,7 +97,7 @@
             <term><parameter>width</parameter></term>
             <listitem>
                 <para>
-                    The number of entries in the color lookup table specified by <parameter>table</parameter>.
+                    The number of entries in the color lookup table specified by <parameter>data</parameter>.
                 </para>
             </listitem>
         </varlistentry>
@@ -105,7 +105,7 @@
             <term><parameter>format</parameter></term>
             <listitem>
                 <para>
-                    The format of the pixel data in <parameter>table</parameter>.
+                    The format of the pixel data in <parameter>data</parameter>.
                     The allowable values are
                     <constant>GL_RED</constant>,
                     <constant>GL_GREEN</constant>,
@@ -124,7 +124,7 @@
             <term><parameter>type</parameter></term>
             <listitem>
                 <para>
-                    The type of the pixel data in <parameter>table</parameter>.
+                    The type of the pixel data in <parameter>data</parameter>.
                     The allowable values are
                     <constant>GL_UNSIGNED_BYTE</constant>,
                     <constant>GL_BYTE</constant>,
@@ -149,7 +149,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>table</parameter></term>
+            <term><parameter>data</parameter></term>
             <listitem>
                 <para>
                     Pointer to a one-dimensional array of pixel data that is processed to
@@ -170,12 +170,17 @@
             and the other targets for the second case.
         </para>
         <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a color table is
+            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data storage.
+        </para>
+        <para>
             If <parameter>target</parameter> is <constant>GL_COLOR_TABLE</constant>,
             <constant>GL_POST_CONVOLUTION_COLOR_TABLE</constant>,
             or
             <constant>GL_POST_COLOR_MATRIX_COLOR_TABLE</constant>,
             <function>glColorTable</function> builds a color lookup table from an array of pixels.
-            The pixel array specified by <parameter>width</parameter>, <parameter>format</parameter>, <parameter>type</parameter>, and <parameter>table</parameter>
+            The pixel array specified by <parameter>width</parameter>, <parameter>format</parameter>, <parameter>type</parameter>, and <parameter>data</parameter>
             is extracted from memory and
             processed just as if <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry> were called, but processing
             stops after the final expansion to RGBA is completed.
@@ -746,6 +751,9 @@
     <refsect1><title>ASSOCIATED GETS</title>
         <para>
             <citerefentry><refentrytitle>glGetColorTableParameter</refentrytitle></citerefentry>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>

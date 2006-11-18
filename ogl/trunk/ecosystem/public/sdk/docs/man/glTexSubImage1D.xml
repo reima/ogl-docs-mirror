@@ -26,7 +26,7 @@
                 <paramdef> GLsizei <parameter>width</parameter></paramdef>
                 <paramdef> GLenum <parameter>format</parameter></paramdef>
                 <paramdef> GLenum <parameter>type</parameter></paramdef>
-                <paramdef> const GLvoid * <parameter>pixels</parameter></paramdef>
+                <paramdef> const GLvoid * <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -120,7 +120,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>pixels</parameter></term>
+            <term><parameter>data</parameter></term>
             <listitem>
                 <para>
                     Specifies a pointer to the image data in memory.
@@ -139,7 +139,7 @@
         <para>
             <function>glTexSubImage1D</function> redefines a contiguous subregion of an existing one-dimensional
             texture image.
-            The texels referenced by <parameter>pixels</parameter> replace the portion of the
+            The texels referenced by <parameter>data</parameter> replace the portion of the
             existing texture array with x indices <parameter>xoffset</parameter> and
             <inlineequation><mml:math>
                 <!-- eqn: xoffset + width - 1:-->
@@ -150,12 +150,17 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , inclusive.
+            </mml:math></inlineequation>,
+            inclusive.
             This region may not include any texels outside the range of the
             texture array as it was originally specified.
             It is not an error to specify a subtexture with width of 0, but
             such a specification has no effect.
+        </para>
+        <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a texture image is
+            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data storage.
         </para>
     </refsect1>
     <refsect1><title>NOTES</title>
@@ -192,7 +197,7 @@
         </para>
         <para>
             When the <code>ARB_imaging</code> extension is supported, the RGBA components
-            specified in <parameter>pixels</parameter> may be processed by the imaging pipeline.  See
+            specified in <parameter>data</parameter> may be processed by the imaging pipeline.  See
             <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry> for specific details.
         </para>
     </refsect1>
@@ -232,8 +237,7 @@
                         <mml:mi mathvariant="italic">b</mml:mi>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             or if 
             <inlineequation><mml:math>
                 <!-- eqn: (xoffset + width)  >  (w  -  b):-->
@@ -254,8 +258,7 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             where 
             <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>
             is the <constant>GL_TEXTURE_WIDTH</constant>, and 
@@ -313,6 +316,9 @@
         </para>
         <para>
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_1D</constant>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>

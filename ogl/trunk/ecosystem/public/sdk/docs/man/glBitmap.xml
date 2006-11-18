@@ -92,6 +92,11 @@
             The final argument is a pointer to the bitmap image itself.
         </para>
         <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a bitmap image is
+            specified, <parameter>bitmap</parameter> is treated as a byte offset into the buffer object's data storage.
+        </para>
+        <para>
             The bitmap image is interpreted like image data for the <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>
             command,
             with <parameter>width</parameter> and <parameter>height</parameter> corresponding to the width and height arguments
@@ -223,6 +228,9 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_CURRENT_RASTER_COLOR</constant>
         </para>
         <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_CURRENT_RASTER_SECONDARY_COLOR</constant>
+        </para>
+        <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_CURRENT_RASTER_DISTANCE</constant>
         </para>
         <para>
@@ -234,9 +242,13 @@
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_CURRENT_RASTER_POSITION_VALID</constant>
         </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
+        </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>
         <para>
+            <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>,

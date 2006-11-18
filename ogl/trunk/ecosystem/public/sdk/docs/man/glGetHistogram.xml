@@ -116,6 +116,11 @@
             modes that are applicable to 1D images are honored.
         </para>
         <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_PACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a histogram table is
+            requested, <parameter>values</parameter> is treated as a byte offset into the buffer object's data storage.
+        </para>
+        <para>
             Color components that are requested in the specified <parameter>format</parameter>, but which
             are not included in the internal format of the histogram, are returned as
             zero.
@@ -207,8 +212,6 @@
             execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
         <para>
-        </para>
-        <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>type</parameter> is one of
             <constant>GL_UNSIGNED_BYTE_3_3_2</constant>,
             <constant>GL_UNSIGNED_BYTE_2_3_3_REV</constant>,
@@ -229,11 +232,18 @@
             and <parameter>format</parameter> is neither <constant>GL_RGBA</constant> nor <constant>GL_BGRA</constant>.
         </para>
     </refsect1>
+    <refsect1><title>ASSOCIATED GETS</title>
+        <para>
+            <citerefentry><refentrytitle>glGetHistogramParameter</refentrytitle></citerefentry>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_PACK_BUFFER_BINDING</constant>
+        </para>
+    </refsect1>
     <refsect1><title>SEE ALSO</title>
         <para>
             <citerefentry><refentrytitle>glHistogram</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glResetHistogram</refentrytitle></citerefentry>,
-            <function>glGetHistogramParameter</function>
         </para>
     </refsect1>
     <refsect1><title>COPYRIGHT</title>

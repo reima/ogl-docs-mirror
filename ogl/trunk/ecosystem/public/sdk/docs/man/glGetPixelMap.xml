@@ -21,21 +21,21 @@
             <funcprototype>
                 <funcdef> void <function>glGetPixelMapfv</function></funcdef>
                 <paramdef> GLenum <parameter>map</parameter></paramdef>
-                <paramdef> GLfloat * <parameter>values</parameter></paramdef>
+                <paramdef> GLfloat * <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
                 <funcdef> void <function>glGetPixelMapuiv</function></funcdef>
                 <paramdef> GLenum <parameter>map</parameter></paramdef>
-                <paramdef> GLuint * <parameter>values</parameter></paramdef>
+                <paramdef> GLuint * <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
                 <funcdef> void <function>glGetPixelMapusv</function></funcdef>
                 <paramdef> GLenum <parameter>map</parameter></paramdef>
-                <paramdef> GLushort * <parameter>values</parameter></paramdef>
+                <paramdef> GLushort * <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -61,7 +61,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>values</parameter></term>
+            <term><parameter>data</parameter></term>
             <listitem>
                 <para>
                     Returns the pixel map contents.
@@ -74,7 +74,7 @@
         <para>
             See the <citerefentry><refentrytitle>glPixelMap</refentrytitle></citerefentry> reference page for a description of the acceptable
             values for the <parameter>map</parameter> parameter.
-            <function>glGetPixelMap</function> returns in <parameter>values</parameter> the contents of the pixel map
+            <function>glGetPixelMap</function> returns in <parameter>data</parameter> the contents of the pixel map
             specified in <parameter>map</parameter>.
             Pixel maps are used during the execution of
             <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry>,
@@ -97,6 +97,11 @@
             and depth components to other values.
         </para>
         <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_PACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a pixel map is
+            requested, <parameter>data</parameter> is treated as a byte offset into the buffer object's data storage.
+        </para>
+        <para>
             Unsigned integer values,
             if requested,
             are linearly mapped from the internal fixed or floating-point representation
@@ -114,7 +119,7 @@
     <refsect1><title>NOTES</title>
         <para>
             If an error is generated,
-            no change is made to the contents of <parameter>values</parameter>.
+            no change is made to the contents of <parameter>data</parameter>.
         </para>
     </refsect1>
     <refsect1><title>ERRORS</title>
@@ -160,6 +165,9 @@
         </para>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_MAX_PIXEL_MAP_TABLE</constant>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_PACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>

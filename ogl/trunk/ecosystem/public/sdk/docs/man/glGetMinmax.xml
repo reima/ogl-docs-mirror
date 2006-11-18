@@ -118,6 +118,11 @@
             determined by <parameter>types</parameter>.
         </para>
         <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_PACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while minimum and maximum pixel values are
+            requested, <parameter>values</parameter> is treated as a byte offset into the buffer object's data storage.
+        </para>
+        <para>
             No pixel transfer operations are performed on the return values, but pixel
             storage modes that are applicable to one-dimensional images are performed.
             Color components that are requested in the specified <parameter>format</parameter>, but that
@@ -236,11 +241,18 @@
             and <parameter>format</parameter> is neither <constant>GL_RGBA</constant> nor <constant>GL_BGRA</constant>.
         </para>
     </refsect1>
+    <refsect1><title>ASSOCIATED GETS</title>
+        <para>
+            <citerefentry><refentrytitle>glGetMinmaxParameter</refentrytitle></citerefentry>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_PACK_BUFFER_BINDING</constant>
+        </para>
+    </refsect1>
     <refsect1><title>SEE ALSO</title>
         <para>
             <citerefentry><refentrytitle>glMinmax</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glResetMinmax</refentrytitle></citerefentry>,
-            <function>glGetMinmaxParameter</function>
         </para>
     </refsect1>
     <refsect1><title>COPYRIGHT</title>

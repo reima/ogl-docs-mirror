@@ -127,6 +127,11 @@
             pixel storage modes are applied.
         </para>
         <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_PACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a separable convolution filter is
+            requested, <parameter>row</parameter>, <parameter>column</parameter>, and <parameter>span</parameter> are treated as a byte offset into the buffer object's data storage.
+        </para>
+        <para>
             Color components that are present in <parameter>format</parameter> but not included in the
             internal format of the filters are returned as zero.
             The assignments of internal color components to the components of <parameter>format</parameter>
@@ -253,6 +258,9 @@
     <refsect1><title>ASSOCIATED GETS</title>
         <para>
             <citerefentry><refentrytitle>glGetConvolutionParameter</refentrytitle></citerefentry>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_PACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>

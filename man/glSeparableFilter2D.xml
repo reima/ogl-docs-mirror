@@ -188,6 +188,11 @@
             but processing stops after the final expansion to RGBA is completed.
         </para>
         <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a convolution filter is
+            specified, <parameter>row</parameter> and <parameter>column</parameter> are treated as byte offsets into the buffer object's data storage.
+        </para>
+        <para>
             Next, the R, G, B, and A components of all pixels in both arrays are scaled
             by the four separable 2D <constant>GL_CONVOLUTION_FILTER_SCALE</constant> parameters and
             biased by the four separable 2D <constant>GL_CONVOLUTION_FILTER_BIAS</constant> parameters.
@@ -432,6 +437,9 @@
     <refsect1><title>ASSOCIATED GETS</title>
         <para>
             <citerefentry><refentrytitle>glGetConvolutionParameter</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glGetSeparableFilter</refentrytitle></citerefentry>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>

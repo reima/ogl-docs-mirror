@@ -122,6 +122,11 @@
             and <parameter>values</parameter> is a pointer to an array of <parameter>mapsize</parameter> map values.
         </para>
         <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a pixel transfer map is
+            specified, <parameter>values</parameter> is treated as a byte offset into the buffer object's data storage.
+        </para>
+        <para>
             The ten maps are as follows:
         </para>
         <variablelist>
@@ -514,6 +519,9 @@
         </para>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_MAX_PIXEL_MAP_TABLE</constant>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>

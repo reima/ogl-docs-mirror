@@ -20,7 +20,7 @@
         <funcsynopsis>
             <funcprototype>
                 <funcdef> void <function>glPolygonStipple</function></funcdef>
-                <paramdef> const GLubyte * <parameter>mask</parameter></paramdef>
+                <paramdef> const GLubyte * <parameter>pattern</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -28,7 +28,7 @@
     <refsect1><title>PARAMETERS</title>
         <variablelist>
         <varlistentry>
-            <term><parameter>mask</parameter></term>
+            <term><parameter>pattern</parameter></term>
             <listitem>
                 <para>
                     Specifies a pointer to a 
@@ -57,7 +57,7 @@
             Stippling is independent of polygon antialiasing.
         </para>
         <para>
-            <parameter>mask</parameter> is a pointer to a 
+            <parameter>pattern</parameter> is a pointer to a 
             <inlineequation><mml:math>
                 <!-- eqn: 32  times  32:-->
                 <mml:mrow>
@@ -95,6 +95,11 @@
             (shift, offset, pixel map)
             are not applied to the stipple image,
             however.
+        </para>
+        <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a stipple pattern is
+            specified, <parameter>pattern</parameter> is treated as a byte offset into the buffer object's data storage.
         </para>
         <para>
             To enable and disable polygon stippling, call
@@ -157,6 +162,9 @@
         </para>
         <para>
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_POLYGON_STIPPLE</constant>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>

@@ -142,8 +142,8 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , and the y indices <parameter>yoffset</parameter> and 
+            </mml:math></inlineequation>,
+            and the y indices <parameter>yoffset</parameter> and 
             <inlineequation><mml:math>
                 <!-- eqn: yoffset  +  height  -  1:-->
                 <mml:mrow>
@@ -153,19 +153,24 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , inclusive.  
+            </mml:math></inlineequation>,
+            inclusive.  
             This region may not include any texels
             outside the range of the texture array as it was originally specified.  It
             is not an error to specify a subtexture with width of 0, but such a
             specification has no effect.
         </para>
         <para>
-            <parameter>format</parameter> must be an supported extensions specified
+            <parameter>format</parameter> must be an extension-specified
             compressed-texture format.  The <parameter>format</parameter> of the compressed texture
             image is selected by the GL implementation that compressed it (see
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>) and should be queried at the time the texture was
             compressed with <citerefentry><refentrytitle>glGetTexLevelParameter</refentrytitle></citerefentry>.
+        </para>
+        <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a texture image is
+            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data storage.
         </para>
     </refsect1>
     <refsect1><title>NOTES</title>
@@ -213,6 +218,9 @@
         </para>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_COMPRESSED</constant>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
         </para>
         <para>
             <citerefentry><refentrytitle>glGetTexLevelParameter</refentrytitle></citerefentry> with arguments <constant>GL_TEXTURE_INTERNAL_FORMAT</constant>

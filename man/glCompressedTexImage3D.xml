@@ -85,8 +85,8 @@
                         </mml:mrow>
                     </mml:math></inlineequation>
                     for some integer 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                    . All
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
+                    All
                     implementations support texture images that are at least 64 texels
                     wide.
                 </para>
@@ -115,8 +115,8 @@
                         </mml:mrow>
                     </mml:math></inlineequation>
                     for some integer 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                    . All
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
+                    All
                     implementations support texture images that are at least 64 texels
                     wide.
                 </para>
@@ -145,8 +145,8 @@
                         </mml:mrow>
                     </mml:math></inlineequation>
                     for some integer 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                    . All
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
+                    All
                     implementations support texture images that are at least 64 texels
                     wide.
                 </para>
@@ -201,12 +201,17 @@
             greater than or equal to 1.
         </para>
         <para>
-            <parameter>internalformat</parameter> must be extension-specified compressed-texture format.
+            <parameter>internalformat</parameter> must be an extension-specified compressed-texture format.
             When a texture is loaded with <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry> using a generic compressed
             texture format (e.g., <constant>GL_COMPRESSED_RGB</constant>), the GL selects from one of
             its extensions supporting compressed textures.  In order to load the
             compressed texture image using <function>glCompressedTexImage3D</function>, query the compressed texture image's
             size and format using <citerefentry><refentrytitle>glGetTexLevelParameter</refentrytitle></citerefentry>.
+        </para>
+        <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a texture image is
+            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data storage.
         </para>
     </refsect1>
     <refsect1><title>NOTES</title>
@@ -244,6 +249,9 @@
         </para>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_COMPRESSED</constant>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
         </para>
         <para>
             <citerefentry><refentrytitle>glGetTexLevelParameter</refentrytitle></citerefentry> with arguments <constant>GL_TEXTURE_INTERNAL_FORMAT</constant>

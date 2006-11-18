@@ -30,7 +30,7 @@
                 <paramdef> GLsizei <parameter>depth</parameter></paramdef>
                 <paramdef> GLenum <parameter>format</parameter></paramdef>
                 <paramdef> GLenum <parameter>type</parameter></paramdef>
-                <paramdef> const GLvoid * <parameter>pixels</parameter></paramdef>
+                <paramdef> const GLvoid * <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -156,7 +156,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term>__pixels</term>
+            <term><parameter>data</parameter></term>
             <listitem>
                 <para>
                     Specifies a pointer to the image data in memory.
@@ -175,7 +175,7 @@
         <para>
             <function>glTexSubImage3D</function> redefines a contiguous subregion of an existing three-dimensional
             texture image.
-            The texels referenced by __pixels replace the portion of the
+            The texels referenced by <parameter>data</parameter> replace the portion of the
             existing texture array with x indices <parameter>xoffset</parameter> and
             <inlineequation><mml:math>
                 <!-- eqn: xoffset  +  width  -  1:-->
@@ -186,8 +186,8 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , inclusive,
+            </mml:math></inlineequation>,
+            inclusive,
             y indices <parameter>yoffset</parameter> and 
             <inlineequation><mml:math>
                 <!-- eqn: yoffset  +  height  -  1:-->
@@ -198,8 +198,8 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , inclusive,
+            </mml:math></inlineequation>,
+            inclusive,
             and z indices <parameter>zoffset</parameter> and 
             <inlineequation><mml:math>
                 <!-- eqn: zoffset  +  depth  -  1:-->
@@ -210,12 +210,17 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , inclusive.
+            </mml:math></inlineequation>,
+            inclusive.
             This region may not include any texels outside the range of the
             texture array as it was originally specified.
             It is not an error to specify a subtexture with zero width, height, or
             depth but such a specification has no effect.
+        </para>
+        <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a texture image is
+            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data storage.
         </para>
     </refsect1>
     <refsect1><title>NOTES</title>
@@ -252,7 +257,7 @@
         </para>
         <para>
             When the <code>ARB_imaging</code> extension is supported, the RGBA components
-            specified in __pixels may be processed by the imaging pipeline.  See
+            specified in <parameter>data</parameter> may be processed by the imaging pipeline.  See
             <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry> for specific details.
         </para>
     </refsect1>
@@ -291,8 +296,7 @@
                         <mml:mi mathvariant="italic">b</mml:mi>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: (xoffset  +  width)  >  (w - b):-->
                 <mml:mrow>
@@ -312,8 +316,7 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: yoffset  <   -b:-->
                 <mml:mrow>
@@ -324,8 +327,8 @@
                         <mml:mi mathvariant="italic">b</mml:mi>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , or 
+            </mml:math></inlineequation>,
+            or 
             <inlineequation><mml:math>
                 <!-- eqn: (yoffset  +  height)  >  (h - b):-->
                 <mml:mrow>
@@ -345,8 +348,7 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             or 
             <inlineequation><mml:math>
                 <!-- eqn: zoffset  <   -b:-->
@@ -358,8 +360,8 @@
                         <mml:mi mathvariant="italic">b</mml:mi>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , or 
+            </mml:math></inlineequation>,
+            or 
             <inlineequation><mml:math>
                 <!-- eqn: (zoffset  +  depth)  >  (d - b):-->
                 <mml:mrow>
@@ -379,8 +381,7 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             where 
             <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>
             is the <constant>GL_TEXTURE_WIDTH</constant>,
@@ -392,10 +393,9 @@
             <inlineequation><mml:math><mml:mi mathvariant="italic">b</mml:mi></mml:math></inlineequation>
             is the border width of the texture image being modified.
             Note that 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>
-            , 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">h</mml:mi></mml:math></inlineequation>
-            , and 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>,
+            <inlineequation><mml:math><mml:mi mathvariant="italic">h</mml:mi></mml:math></inlineequation>,
+            and 
             <inlineequation><mml:math><mml:mi mathvariant="italic">d</mml:mi></mml:math></inlineequation>
             include twice the border width.
         </para>
@@ -446,6 +446,9 @@
         </para>
         <para>
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_3D</constant>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>

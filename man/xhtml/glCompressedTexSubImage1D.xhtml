@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCompressedTexSubImage1D</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glCompressedTexSubImage1D"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCompressedTexSubImage1D — specify a one-dimensional texture subimage in a compressed format</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glCompressedTexSubImage1D</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">level</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">xoffset</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">width</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">format</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">imageSize</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">data</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">level</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">xoffset</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">width</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">format</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">imageSize</var>;</td></tr><tr><td> const GLvoid *  </td><td><var class="pdparam">data</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777202"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCompressedTexSubImage1D</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glCompressedTexSubImage1D"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCompressedTexSubImage1D — specify a one-dimensional texture subimage in a compressed format</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glCompressedTexSubImage1D</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">level</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">xoffset</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">width</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">format</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">imageSize</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">data</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">level</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">xoffset</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">width</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">format</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">imageSize</var>;</td></tr><tr><td> const GLvoid *  </td><td><var class="pdparam">data</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781571"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the target texture.
                     Must be <code class="constant">GL_TEXTURE_1D</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>level</code></em></span></dt><dd><p>
@@ -18,7 +18,7 @@
                     address specified by <em class="parameter"><code>data</code></em>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>data</code></em></span></dt><dd><p>
                     Specifies a pointer to the compressed image data in memory.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763918"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768287"></a><h2>DESCRIPTION</h2><p>
             Texturing maps a portion of a specified texture image onto each graphical
             primitive for which texturing is enabled.  To enable and disable
             one-dimensional texturing, call <span class="citerefentry"><span class="refentrytitle">glEnable</span></span> and <span class="citerefentry"><span class="refentrytitle">glDisable</span></span> with argument
@@ -36,21 +36,24 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             inclusive.  This region may not include any texels
             outside the range of the texture array as it was originally specified.  It
             is not an error to specify a subtexture with width of 0, but such a
             specification has no effect.
         </p><p>
-            <em class="parameter"><code>format</code></em> must be an supported extensions specified
+            <em class="parameter"><code>format</code></em> must be an extension-specified
             compressed-texture format.  The <em class="parameter"><code>format</code></em> of the compressed texture
             image is selected by the GL implementation that compressed it (see
             <span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span>), and should be queried at the time the texture was
             compressed with <span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770608"></a><h2>NOTES</h2><p>
+        </p><p>
+            If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target 
+            (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while a texture image is
+            specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data storage.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775000"></a><h2>NOTES</h2><p>
             <code class="function">glCompressedTexSubImage1D</code> is available only if the GL version is 1.3 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770622"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775014"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>format</code></em> is of the six
             generic compressed internal formats: <code class="constant">GL_COMPRESSED_ALPHA</code>,
             <code class="constant">GL_COMPRESSED_LUMINANCE</code>, <code class="constant">GL_COMPRESSED_LUMINANCE_ALPHA</code>,
@@ -68,16 +71,18 @@
             Undefined results, including abnormal program termination, are generated if
             <em class="parameter"><code>data</code></em> is not encoded in a manner consistent with the extension
             specification defining the internal compression format.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770714"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775106"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetCompressedTexImage</span></span>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_TEXTURE_COMPRESSED</code>
+        </p><p>
+            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span> with arguments <code class="constant">GL_TEXTURE_INTERNAL_FORMAT</code>
             and <code class="constant">GL_TEXTURE_COMPRESSED_IMAGE_SIZE</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_TEXTURE_1D</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770767"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775171"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glColorTable</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glCompressedTexImage1D</span></span>,
@@ -104,7 +109,7 @@
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770914"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712489"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

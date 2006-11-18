@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glTexImage3D</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glTexImage3D"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glTexImage3D — specify a three-dimensional texture image</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glTexImage3D</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">level</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">internalFormat</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">width</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">height</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">depth</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">border</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">format</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pixels</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">level</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">internalFormat</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">width</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">height</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">depth</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">border</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">format</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td> const GLvoid *  </td><td><var class="pdparam">pixels</var>;</td></tr></table></div></div><p>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glTexImage3D</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glTexImage3D"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glTexImage3D — specify a three-dimensional texture image</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glTexImage3D</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">level</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">internalFormat</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">width</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">height</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">depth</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">border</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">format</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">data</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">level</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">internalFormat</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">width</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">height</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">depth</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">border</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">format</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td> const GLvoid *  </td><td><var class="pdparam">data</var>;</td></tr></table></div></div><p>
     </p><div class="refsect1" lang="en" xml:lang="en"><a id="id4768154"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the target texture.
                     Must be <code class="constant">GL_TEXTURE_3D</code> or <code class="constant">GL_PROXY_TEXTURE_3D</code>.
@@ -84,8 +84,8 @@
                         </mml:mrow>
                     </mml:math>
                     for some integer 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
-                    . All
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>.
+                    All
                     implementations support texture images that are at least 64 texels
                     wide.
                 </p></dd><dt><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
@@ -108,8 +108,8 @@
                         </mml:mrow>
                     </mml:math>
                     for some integer 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">m</mml:mi></mml:math>
-                    . All
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">m</mml:mi></mml:math>.
+                    All
                     implementations support texture images that are at least 64 texels
                     high.
                 </p></dd><dt><span class="term"><em class="parameter"><code>depth</code></em></span></dt><dd><p>
@@ -132,8 +132,8 @@
                         </mml:mrow>
                     </mml:math>
                     for some integer 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">k</mml:mi></mml:math>
-                    . All
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">k</mml:mi></mml:math>.
+                    All
                     implementations support texture images that are at least 64 texels
                     deep.
                 </p></dd><dt><span class="term"><em class="parameter"><code>border</code></em></span></dt><dd><p>
@@ -176,9 +176,9 @@
                     <code class="constant">GL_UNSIGNED_INT_8_8_8_8_REV</code>,
                     <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>, and
                     <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code>.
-                </p></dd><dt><span class="term"><em class="parameter"><code>pixels</code></em></span></dt><dd><p>
+                </p></dd><dt><span class="term"><em class="parameter"><code>data</code></em></span></dt><dd><p>
                     Specifies a pointer to the image data in memory.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712690"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712693"></a><h2>DESCRIPTION</h2><p>
             Texturing maps a portion of a specified texture image
             onto each graphical primitive for which texturing is enabled.
             To enable and disable three-dimensional texturing, call <span class="citerefentry"><span class="refentrytitle">glEnable</span></span>
@@ -195,7 +195,7 @@
             The last three arguments describe how the image is represented in memory;
             they are identical to the pixel formats used for <span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span>.
         </p><p>
-            If <em class="parameter"><code>target</code></em> is <code class="constant">GL_PROXY_TEXTURE_3D</code>, no data is read from <em class="parameter"><code>pixels</code></em>, but
+            If <em class="parameter"><code>target</code></em> is <code class="constant">GL_PROXY_TEXTURE_3D</code>, no data is read from <em class="parameter"><code>data</code></em>, but
             all of the texture image state is recalculated, checked for
             consistency, and checked
             against the implementation's capabilities. If the implementation cannot
@@ -206,7 +206,7 @@
             1.
         </p><p>
             If <em class="parameter"><code>target</code></em> is <code class="constant">GL_TEXTURE_3D</code>,
-            data is read from <em class="parameter"><code>pixels</code></em> as a sequence of signed or unsigned bytes,
+            data is read from <em class="parameter"><code>data</code></em> as a sequence of signed or unsigned bytes,
             shorts,
             or longs,
             or single-precision floating-point values,
@@ -224,6 +224,10 @@
             with bit ordering determined by <code class="constant">GL_UNPACK_LSB_FIRST</code>
             (see <span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span>).
         </p><p>
+            If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target 
+            (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while a texture image is
+            specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data storage.
+        </p><p>
             The first element corresponds to the lower left corner of the texture
             image.
             Subsequent elements progress left-to-right through the remaining texels
@@ -232,7 +236,7 @@
             The final element corresponds to the upper right corner of the texture
             image.
         </p><p>
-            <em class="parameter"><code>format</code></em> determines the composition of each element in <em class="parameter"><code>pixels</code></em>.
+            <em class="parameter"><code>format</code></em> determines the composition of each element in <em class="parameter"><code>data</code></em>.
             It can assume one of eleven symbolic values:
         </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_COLOR_INDEX</code></span></dt><dd><p>
                         Each element is a single value,
@@ -355,11 +359,11 @@
             If the texture cannot be accommodated, texture state is set to 0.
         </p><p>
             A one-component texture image uses only the red component of the RGBA
-            color extracted from <em class="parameter"><code>pixels</code></em>.
+            color extracted from <em class="parameter"><code>data</code></em>.
             A two-component image uses the R and A values.
             A three-component image uses the R, G, and B values.
             A four-component image uses all of the RGBA components.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4784532"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4784558"></a><h2>NOTES</h2><p>
             Texturing has no effect in color index mode.
         </p><p>
             The texture image can be represented by the same data formats
@@ -375,7 +379,7 @@
             Internal formats other than 1, 2, 3, or 4 may be used only if the GL
             version is 1.1 or greater.
         </p><p>
-            <em class="parameter"><code>pixels</code></em> may be a null pointer.
+            <em class="parameter"><code>data</code></em> may be a null pointer.
             In this case texture memory is
             allocated to accommodate a texture of width <em class="parameter"><code>width</code></em>, height <em class="parameter"><code>height</code></em>,
             and depth <em class="parameter"><code>depth</code></em>.
@@ -412,8 +416,7 @@
                     <mml:mn>0</mml:mn>
                     <mml:mn>1</mml:mn>
                 </mml:mfenced>
-            </mml:math>
-            :
+            </mml:math>:
         </p><div class="variablelist"><dl><dt><span class="term">1. Color component replacement by the color table specified for</span></dt><dd><p>
                         <code class="constant">GL_COLOR_TABLE</code>, if enabled. See <span class="citerefentry"><span class="refentrytitle">glColorTable</span></span>.
                     </p></dd><dt><span class="term">2. Color component replacement by the color table specified for</span></dt><dd><p>
@@ -424,7 +427,7 @@
                     </p></dd><dt><span class="term">5. Color component replacement by the color table specified for</span></dt><dd><p>
                         <code class="constant">GL_POST_COLOR_MATRIX_COLOR_TABLE</code>, if enabled.  See
                         <span class="citerefentry"><span class="refentrytitle">glColorTable</span></span>.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4784886"></a><h2>ERRORS</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4784913"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not <code class="constant">GL_TEXTURE_3D</code>
             or <code class="constant">GL_PROXY_TEXTURE_3D</code>.
         </p><p>
@@ -453,8 +456,7 @@
                         <mml:mi mathvariant="italic">max</mml:mi>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             where <span class="emphasis"><em>max</em></span> is the returned value of <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>internalFormat</code></em> is not 1, 2, 3, 4, or one of the
@@ -509,11 +511,13 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>internalFormat</code></em> is
             <code class="constant">GL_DEPTH_COMPONENT</code>, <code class="constant">GL_DEPTH_COMPONENT16</code>,
             <code class="constant">GL_DEPTH_COMPONENT24</code>, or <code class="constant">GL_DEPTH_COMPONENT32</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785337"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785364"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetTexImage</span></span>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_TEXTURE_3D</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785363"></a><h2>SEE ALSO</h2><p>
+        </p><p>
+            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785401"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glColorTable</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glCompressedTexImage1D</span></span>,
@@ -541,7 +545,7 @@
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785515"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785554"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -130,11 +130,16 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , inclusive.  This region may not include any
+            </mml:math></inlineequation>,
+            inclusive.  This region may not include any
             entries outside the range of the color table as it was originally specified.
             It is not an error to specify a subtexture with width of 0, but such a
             specification has no effect.
+        </para>
+        <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a portion of a color table is
+            respecified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data storage.
         </para>
     </refsect1>
     <refsect1><title>NOTES</title>
@@ -185,10 +190,13 @@
             <citerefentry><refentrytitle>glGetColorTable</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetColorTableParameter</refentrytitle></citerefentry>
         </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
+        </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>
         <para>
-            <function>glColorSubTable</function>,
+            <citerefentry><refentrytitle>glColorTable</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glColorTableParameter</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyColorTable</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyColorSubTable</refentrytitle></citerefentry>,

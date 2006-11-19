@@ -264,6 +264,17 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_ARRAY_BUFFER_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the name of the buffer object
+                        currently bound to the target <constant>GL_ARRAY_BUFFER</constant>. If no buffer object
+                        is bound to this target, 0 is returned.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_ATTRIB_STACK_DEPTH</constant></term>
                 <listitem>
                     <para>
@@ -446,6 +457,19 @@
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether the color array is enabled. The initial value is <constant>GL_FALSE</constant>.
                         See <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_COLOR_ARRAY_BUFFER_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the name of the buffer object
+                        associated with the color array. This buffer object would have been bound to the 
+                        target <constant>GL_ARRAY_BUFFER</constant> at the time of the most recent call to 
+                        <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>. 
+                        If no buffer object was bound to this target, 0 is returned.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -970,6 +994,19 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_EDGE_FLAG_ARRAY_BUFFER_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the name of the buffer object
+                        associated with the edge flag array. This buffer object would have been bound to the 
+                        target <constant>GL_ARRAY_BUFFER</constant> at the time of the most recent call to 
+                        <citerefentry><refentrytitle>glEdgeFlagPointer</refentrytitle></citerefentry>. 
+                        If no buffer object was bound to this target, 0 is returned.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_EDGE_FLAG_ARRAY_STRIDE</constant></term>
                 <listitem>
                     <para>
@@ -977,6 +1014,17 @@
                         the byte offset between consecutive edge flags in the edge flag
                         array. The initial value is 0.
                         See <citerefentry><refentrytitle>glEdgeFlagPointer</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_ELEMENT_ARRAY_BUFFER_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the name of the buffer object
+                        currently bound to the target <constant>GL_ELEMENT_ARRAY_BUFFER</constant>. If no buffer object
+                        is bound to this target, 0 is returned.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1005,6 +1053,28 @@
                         <parameter>params</parameter> returns a single boolean value indicating whether fogging is
                         enabled. The initial value is <constant>GL_FALSE</constant>.
                         See <citerefentry><refentrytitle>glFog</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_FOG_COORD_ARRAY</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single boolean value indicating whether the fog coordinate array is enabled. The initial value is <constant>GL_FALSE</constant>.
+                        See <citerefentry><refentrytitle>glFogCoordPointer</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_FOG_COORD_ARRAY_BUFFER_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the name of the buffer object
+                        associated with the fog coordinate array. This buffer object would have been bound to the 
+                        target <constant>GL_ARRAY_BUFFER</constant> at the time of the most recent call to 
+                        <citerefentry><refentrytitle>glFogCoordPointer</refentrytitle></citerefentry>. 
+                        If no buffer object was bound to this target, 0 is returned.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1190,6 +1260,19 @@
                         <parameter>params</parameter> returns a single boolean value indicating whether the color
                         index array is enabled. The initial value is <constant>GL_FALSE</constant>.
                         See <citerefentry><refentrytitle>glIndexPointer</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_INDEX_ARRAY_BUFFER_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the name of the buffer object
+                        associated with the color index array. This buffer object would have been bound to the 
+                        target <constant>GL_ARRAY_BUFFER</constant> at the time of the most recent call to 
+                        <citerefentry><refentrytitle>glIndexPointer</refentrytitle></citerefentry>. 
+                        If no buffer object was bound to this target, 0 is returned.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -2034,6 +2117,19 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_NORMAL_ARRAY_BUFFER_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the name of the buffer object
+                        associated with the normal array. This buffer object would have been bound to the 
+                        target <constant>GL_ARRAY_BUFFER</constant> at the time of the most recent call to 
+                        <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>. 
+                        If no buffer object was bound to this target, 0 is returned.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_NORMAL_ARRAY_STRIDE</constant></term>
                 <listitem>
                     <para>
@@ -2282,6 +2378,28 @@
                         the size of the stencil-to-stencil pixel translation table.
                         The initial value is 1.
                         See <citerefentry><refentrytitle>glPixelMap</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_PIXEL_PACK_BUFFER_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the name of the buffer object
+                        currently bound to the target <constant>GL_PIXEL_PACK_BUFFER</constant>. If no buffer object
+                        is bound to this target, 0 is returned.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the name of the buffer object
+                        currently bound to the target <constant>GL_PIXEL_UNPACK_BUFFER</constant>. If no buffer object
+                        is bound to this target, 0 is returned.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -2838,6 +2956,28 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_SECONDARY_COLOR_ARRAY</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single boolean value indicating whether the secondary color array is enabled. The initial value is <constant>GL_FALSE</constant>.
+                        See <citerefentry><refentrytitle>glSecondaryColorPointer</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_SECONDARY_COLOR_ARRAY_BUFFER_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the name of the buffer object
+                        associated with the secondary color array. This buffer object would have been bound to the 
+                        target <constant>GL_ARRAY_BUFFER</constant> at the time of the most recent call to 
+                        <citerefentry><refentrytitle>glSecondaryColorPointer</refentrytitle></citerefentry>. 
+                        If no buffer object was bound to this target, 0 is returned.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_SECONDARY_COLOR_ARRAY_SIZE</constant></term>
                 <listitem>
                     <para>
@@ -3157,6 +3297,19 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_TEXTURE_COORD_ARRAY_BUFFER_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the name of the buffer object
+                        associated with the texture coordinate array. This buffer object would have been bound to the 
+                        target <constant>GL_ARRAY_BUFFER</constant> at the time of the most recent call to 
+                        <citerefentry><refentrytitle>glTexCoordPointer</refentrytitle></citerefentry>. 
+                        If no buffer object was bound to this target, 0 is returned.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_TEXTURE_COORD_ARRAY_SIZE</constant></term>
                 <listitem>
                     <para>
@@ -3400,6 +3553,19 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_VERTEX_ARRAY_BUFFER_BINDING</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the name of the buffer object
+                        associated with the vertex array. This buffer object would have been bound to the 
+                        target <constant>GL_ARRAY_BUFFER</constant> at the time of the most recent call to 
+                        <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>. 
+                        If no buffer object was bound to this target, 0 is returned.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_VERTEX_ARRAY_SIZE</constant></term>
                 <listitem>
                     <para>
@@ -3566,10 +3732,28 @@
             are available only if the GL version is 1.4 or greater.
         </para>
         <para>
+            <constant>GL_ARRAY_BUFFER_BINDING</constant>,
+            <constant>GL_VERTEX_ARRAY_BUFFER_BINDING</constant>,
+            <constant>GL_NORMAL_ARRAY_BUFFER_BINDING</constant>,
+            <constant>GL_COLOR_ARRAY_BUFFER_BINDING</constant>,
+            <constant>GL_INDEX_ARRAY_BUFFER_BINDING</constant>,
+            <constant>GL_TEXTURE_COORD_ARRAY_BUFFER_BINDING</constant>,
+            <constant>GL_EDGE_FLAG_ARRAY_BUFFER_BINDING</constant>,
+            <constant>GL_SECONDARY_COLOR_ARRAY_BUFFER_BINDING</constant>,
+            <constant>GL_FOG_COORD_ARRAY_BUFFER_BINDING</constant>, and
+            <constant>GL_ELEMENT_ARRAY_BUFFER_BINDING</constant>
+            are available only if the GL version is 1.5 or greater.
+        </para>
+        <para>
             <constant>GL_POINT_SPRITE</constant>,
             <constant>GL_BLEND_EQUATION_RGB</constant>, and
             <constant>GL_BLEND_EQUATION_ALPHA</constant>
             are available only if the GL version is 2.0 or greater.
+        </para>
+        <para>
+            <constant>GL_PIXEL_PACK_BUFFER_BINDING</constant> and
+            <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
+            are available only if the GL version is 2.1 or greater.
         </para>
         <para>
             <constant>GL_LINE_WIDTH_GRANULARITY</constant> was deprecated in GL version 1.2.  Its
@@ -3640,6 +3824,7 @@
             Likewise, the following parameters return the associated value for the
             active client texture unit:
             <constant>GL_TEXTURE_COORD_ARRAY</constant>,
+            <constant>GL_TEXTURE_COORD_ARRAY_BUFFER_BINDING</constant>,
             <constant>GL_TEXTURE_COORD_ARRAY_SIZE</constant>,
             <constant>GL_TEXTURE_COORD_ARRAY_STRIDE</constant>,
             <constant>GL_TEXTURE_COORD_ARRAY_TYPE</constant>.
@@ -3659,29 +3844,48 @@
     </refsect1>
     <refsect1><title>SEE ALSO</title>
         <para>
-            <function>glGetClipPlane</function>,
-            <function>glGetColorTable</function>,
-            <function>glGetColorTableParameter</function>,
-            <function>glGetConvolutionFilter</function>,
-            <function>glGetConvolutionParameter</function>,
-            <function>glGetError</function>,
-            <function>glGetHistogram</function>,
-            <function>glGetHistogramParameter</function>,
-            <function>glGetLight</function>,
-            <function>glGetMap</function>,
-            <function>glGetMaterial</function>,
-            <function>glGetMinmax</function>,
-            <function>glGetMinmaxParameter</function>,
-            <function>glGetPixelMap</function>,
-            <function>glGetPointerv</function>,
-            <function>glGetPolygonStipple</function>,
-            <function>glGetSeparableFilter</function>,
-            <function>glGetString</function>,
-            <function>glGetTexEnv</function>,
-            <function>glGetTexGen</function>,
-            <function>glGetTexImage</function>,
-            <function>glGetTexLevelParameter</function>,
-            <function>glGetTexParameter</function>,
+            <citerefentry><refentrytitle>glGetActiveAttrib</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetActiveUniform</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetAttachedShaders</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetAttribLocation</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetBufferParameter</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetBufferPointer</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetBufferSubData</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetClipPlane</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetColorTable</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetColorTableParameter</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetCompressedTexImage</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetConvolutionFilter</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetConvolutionParameter</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetError</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetHistogram</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetHistogramParameter</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetLight</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetMap</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetMaterial</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetMinmax</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetMinmaxParameter</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetPixelMap</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetPointerv</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetPolygonStipple</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetProgram</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetProgramInfoLog</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetQueryiv</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetQueryObject</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetSeparableFilter</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetShader</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetShaderInfoLog</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetShaderSource</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetString</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetTexEnv</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetTexGen</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetTexImage</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetTexLevelParameter</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetTexParameter</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetUniform</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetUniformLocation</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetVertexAttrib</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetVertexAttribPointerv</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry>
         </para>
     </refsect1>

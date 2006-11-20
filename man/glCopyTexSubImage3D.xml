@@ -200,7 +200,7 @@
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if the texture array has not
-            been defined by a previous <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry> or <citerefentry><refentrytitle>glCopyTexImage3D</refentrytitle></citerefentry> operation.
+            been defined by a previous <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry> operation.
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>level</parameter> is less than 0.

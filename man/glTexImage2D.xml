@@ -115,8 +115,16 @@
                     <constant>GL_RGB5_A1</constant>,
                     <constant>GL_RGBA8</constant>,
                     <constant>GL_RGB10_A2</constant>,
-                    <constant>GL_RGBA12</constant>, or
-                    <constant>GL_RGBA16</constant>.
+                    <constant>GL_RGBA12</constant>,
+                    <constant>GL_RGBA16</constant>,
+                    <constant>GL_SLUMINANCE</constant>,
+                    <constant>GL_SLUMINANCE8</constant>,
+                    <constant>GL_SLUMINANCE_ALPHA</constant>,
+                    <constant>GL_SLUMINANCE8_ALPHA8</constant>,
+                    <constant>GL_SRGB</constant>,
+                    <constant>GL_SRGB8</constant>,
+                    <constant>GL_SRGB_ALPHA</constant>, or 
+                    <constant>GL_SRGB8_ALPHA8</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -124,8 +132,7 @@
             <term><parameter>width</parameter></term>
             <listitem>
                 <para>
-                    Specifies the width of the texture image.
-                    Must be 
+                    Specifies the width of the texture image including the border if any. If the GL version does not support non-power-of-two sizes, this value must be 
                     <inlineequation><mml:math>
                         <!-- eqn: 2 sup n  +  2 ( border ):-->
                         <mml:mrow>
@@ -154,8 +161,7 @@
             <term><parameter>height</parameter></term>
             <listitem>
                 <para>
-                    Specifies the height of the texture image.
-                    Must be 
+                    Specifies the height of the texture image including the border if any. If the GL version does not support non-power-of-two sizes, this value must be 
                     <inlineequation><mml:math>
                         <!-- eqn: 2 sup m  +  2 ( border ):-->
                         <mml:mrow>
@@ -201,7 +207,7 @@
                     <constant>GL_BLUE</constant>,
                     <constant>GL_ALPHA</constant>,
                     <constant>GL_RGB</constant>,
-                    <constant>GL_BGR</constant>
+                    <constant>GL_BGR</constant>,
                     <constant>GL_RGBA</constant>,
                     <constant>GL_BGRA</constant>,
                     <constant>GL_LUMINANCE</constant>, and
@@ -250,12 +256,7 @@
     </refsect1>
     <refsect1><title>DESCRIPTION</title>
         <para>
-            Texturing maps a portion of a specified texture image onto each graphical
-            primitive for which texturing is enabled.  To enable and disable
-            two-dimensional texturing, call <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glDisable</refentrytitle></citerefentry> with
-            argument <constant>GL_TEXTURE_2D</constant>.  To enable and disable texturing using
-            cube-mapped texture, call <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glDisable</refentrytitle></citerefentry> with argument
-            <constant>GL_TEXTURE_CUBE_MAP</constant>.
+            Texturing maps a portion of a specified texture image onto each graphical primitive for which texturing is enabled.  To enable and disable two-dimensional texturing, call <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glDisable</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_2D</constant>.  To enable and disable texturing using cube-mapped texture, call <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glDisable</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_CUBE_MAP</constant>.
         </para>
         <para>
             To define texture images, call <function>glTexImage2D</function>.
@@ -270,7 +271,7 @@
             they are identical to the pixel formats used for <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>.
         </para>
         <para>
-            If <parameter>target</parameter> is <constant>GL_PROXY_TEXTURE_2D</constant>, no data is read from <parameter>data</parameter>, but
+            If <parameter>target</parameter> is <constant>GL_PROXY_TEXTURE_2D</constant> or <constant>GL_PROXY_TEXTURE_CUBE_MAP</constant>, no data is read from <parameter>data</parameter>, but
             all of the texture image state is recalculated, checked for
             consistency, and checked
             against the implementation's capabilities. If the implementation cannot
@@ -308,7 +309,7 @@
         </para>
         <para>
             <parameter>format</parameter> determines the composition of each element in <parameter>data</parameter>.
-            It can assume one of eleven symbolic values:
+            It can assume one of these symbolic values:
         </para>
         <variablelist>
             <varlistentry>
@@ -377,11 +378,6 @@
             <varlistentry>
                 <term><constant>GL_ALPHA</constant></term>
                 <listitem>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
-                <term><constant>GL_COMPRESSED_ALPHA</constant></term>
-                <listitem>
                     <para>
                         Each element is a single alpha component.
                         The GL converts it to floating point and assembles it into an RGBA element
@@ -390,18 +386,11 @@
                         added to the signed bias <constant>GL_c_BIAS</constant>,
                         and clamped to the range [0,1]
                         (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
-                        If the compressed for is specified, compress the texture into a compressed
-                        texture format.
                     </para>
                 </listitem>
             </varlistentry>
             <varlistentry>
                 <term><constant>GL_INTENSITY</constant></term>
-                <listitem>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
-                <term><constant>GL_COMPRESSED_INTENSITY</constant></term>
                 <listitem>
                     <para>
                         Each element is a single intensity value.
@@ -412,8 +401,6 @@
                         added to the signed bias <constant>GL_c_BIAS</constant>,
                         and clamped to the range [0,1]
                         (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
-                        If the compressed for is specified, compress the texture into a compressed
-                        texture format.
                     </para>
                 </listitem>
             </varlistentry>
@@ -425,11 +412,6 @@
             <varlistentry>
                 <term><constant>GL_BGR</constant></term>
                 <listitem>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
-                <term><constant>GL_COMPRESSED_RGB</constant></term>
-                <listitem>
                     <para>
                         Each element is an RGB triple.
                         The GL converts it to floating point and assembles it into an RGBA element
@@ -438,8 +420,6 @@
                         added to the signed bias <constant>GL_c_BIAS</constant>,
                         and clamped to the range [0,1]
                         (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
-                        If the compressed for is specified, compress the texture into a compressed
-                        texture format.
                     </para>
                 </listitem>
             </varlistentry>
@@ -451,29 +431,17 @@
             <varlistentry>
                 <term><constant>GL_BGRA</constant></term>
                 <listitem>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
-                <term><constant>GL_COMPRESSED_RGBA</constant></term>
-                <listitem>
                     <para>
                         Each element contains all four components.
                         Each component is multiplied by the signed scale factor <constant>GL_c_SCALE</constant>,
                         added to the signed bias <constant>GL_c_BIAS</constant>,
                         and clamped to the range [0,1]
                         (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
-                        If the compressed for is specified, compress the texture into a compressed
-                        texture format.
                     </para>
                 </listitem>
             </varlistentry>
             <varlistentry>
                 <term><constant>GL_LUMINANCE</constant></term>
-                <listitem>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
-                <term><constant>GL_COMPRESSED_LUMINANCE</constant></term>
                 <listitem>
                     <para>
                         Each element is a single luminance value.
@@ -484,18 +452,11 @@
                         added to the signed bias <constant>GL_c_BIAS</constant>,
                         and clamped to the range [0,1]
                         (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
-                        If the compressed for is specified, compress the texture into a compressed
-                        texture format.
                     </para>
                 </listitem>
             </varlistentry>
             <varlistentry>
                 <term><constant>GL_LUMINANCE_ALPHA</constant></term>
-                <listitem>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
-                <term><constant>GL_COMPRESSED_LUMINANCE_ALPHA</constant></term>
                 <listitem>
                     <para>
                         Each element is a luminance/alpha pair.
@@ -505,8 +466,17 @@
                         Each component is then multiplied by the signed scale factor <constant>GL_c_SCALE</constant>,
                         added to the signed bias <constant>GL_c_BIAS</constant>,
                         and clamped to the range [0,1] (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
-                        If the compressed for is specified, compress the texture into a compressed
-                        texture format.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_DEPTH_COMPONENT</constant></term>
+                <listitem>
+                    <para>
+                        Each element is a single depth value.
+                        The GL converts it to floating point, multiplies by the signed scale factor
+                        <constant>GL_DEPTH_SCALE</constant>, adds the signed bias <constant>GL_DEPTH_BIAS</constant>,
+                        and clamps to the range [0,1] (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
                     </para>
                 </listitem>
             </varlistentry>
@@ -526,25 +496,129 @@
             and <constant>GL_RGBA</constant> must match exactly. The numeric values 1, 2, 3, and 4
             may also be used to specify the above representations.)
         </para>
-        <variablelist>
-            <varlistentry>
-                <term><constant>GL_DEPTH_COMPONENT</constant></term>
-                <listitem>
-                    <para>
-                        Each element is a single depth value.
-                        The GL converts it to floating point, multiplies by the signed scale factor
-                        <constant>GL_DEPTH_SCALE</constant>, adds the signed bias <constant>GL_DEPTH_BIAS</constant>,
-                        and clamps to the range [0,1] (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
-                    </para>
-                </listitem>
-            </varlistentry>
-        </variablelist>
         <para>
-            Use the <constant>GL_PROXY_TEXTURE_2D</constant> target to try out a resolution and
+        	If the <parameter>internalFormat</parameter> parameter is one of the generic compressed formats,
+        	<constant>GL_COMPRESSED_ALPHA</constant>,
+        	<constant>GL_COMPRESSED_INTENSITY</constant>,
+        	<constant>GL_COMPRESSED_LUMINANCE</constant>,
+        	<constant>GL_COMPRESSED_LUMINANCE_ALPHA</constant>,
+        	<constant>GL_COMPRESSED_RGB</constant>, or
+        	<constant>GL_COMPRESSED_RGBA</constant>, the GL will replace the internal format with the symbolic constant for a specific internal format and compress the texture before storage.  If no corresponding internal format is available, or the GL can not compress that image for any reason, the internal format is instead replaced with a corresponding base internal format.
+        </para>
+        <para>
+            If the <parameter>internalFormat</parameter> parameter is 			
+            <constant>GL_SRGB</constant>,
+			<constant>GL_SRGB8</constant>,
+			<constant>GL_SRGB_ALPHA</constant>,
+			<constant>GL_SRGB8_ALPHA8</constant>,
+			<constant>GL_SLUMINANCE</constant>,
+			<constant>GL_SLUMINANCE8</constant>,
+			<constant>GL_SLUMINANCE_ALPHA</constant>, or
+			<constant>GL_SLUMINANCE8_ALPHA8</constant>, the texture is treated as if the red, green, blue, or luminance components are encoded in the sRGB color space.    Any alpha component is left unchanged.  The conversion from the sRGB encoded component 
+			<inlineequation><mml:math>
+                    <mml:msub><mml:mi mathvariant="italic">c</mml:mi>
+                    <mml:mi mathvariant="italic">s</mml:mi>
+                    </mml:msub>
+            </mml:math></inlineequation>
+			to a linear component 
+			<inlineequation><mml:math>
+                    <mml:msub><mml:mi mathvariant="italic">c</mml:mi>
+                    <mml:mi mathvariant="italic">l</mml:mi>
+                    </mml:msub>
+            </mml:math></inlineequation>
+            is:
+		</para>
+		<para>
+			<inlineequation><mml:math>
+			<mml:mrow>
+				<mml:msub>
+				  <mml:mi mathvariant="italic">c</mml:mi>
+				  <mml:mi mathvariant="italic">l</mml:mi>
+				</mml:msub>
+				<mml:mo>=</mml:mo>
+				<mml:mrow>
+				  <mml:mo>{</mml:mo>
+			
+				  <mml:mtable columnalign="left">
+					<mml:mtr>
+					  <mml:mtd columnalign="left">
+						<mml:mfrac>
+						  <mml:msub>
+							<mml:mi mathvariant="italic">c</mml:mi>
+							<mml:mi mathvariant="italic">s</mml:mi>
+						  </mml:msub>
+						  <mml:mn>12.92</mml:mn>
+						</mml:mfrac>
+					  </mml:mtd>
+					  <mml:mtd columnalign="left">
+						<mml:mrow>
+						  <mml:mspace width="1ex"/>
+						  <mml:mo>if</mml:mo>
+						  <mml:mspace width="1ex"/>
+						</mml:mrow>
+						<mml:msub>
+						  <mml:mi mathvariant="italic">c</mml:mi>
+						  <mml:mi mathvariant="italic">s</mml:mi>
+						</mml:msub>
+						<mml:mo>&le;</mml:mo>
+						<mml:mn>0.04045</mml:mn>
+					  </mml:mtd>
+					</mml:mtr>
+					<mml:mtr>
+					<mml:mtd columnalign="left">
+					<mml:msup>
+					  <mml:mrow>
+						<mml:mo>(</mml:mo>
+						<mml:mfrac>
+						  <mml:mrow>
+							<mml:msub>
+							  <mml:mi>c</mml:mi>
+							  <mml:mi>s</mml:mi>
+							</mml:msub>
+							<mml:mo>+</mml:mo>
+							<mml:mn>0.055</mml:mn>
+						  </mml:mrow>
+						  <mml:mn>1.055</mml:mn>
+						</mml:mfrac>
+						<mml:mo>)</mml:mo>
+					  </mml:mrow>
+					  <mml:mn>2.4</mml:mn>
+					</mml:msup>
+					</mml:mtd>
+          			  <mml:mtd columnalign="left">
+						<mml:mrow>
+						  <mml:mspace width="1ex"/>
+						  <mml:mo>if</mml:mo>
+						  <mml:mspace width="1ex"/>
+						</mml:mrow>
+						<mml:msub>
+						  <mml:mi mathvariant="italic">c</mml:mi>
+						  <mml:mi mathvariant="italic">s</mml:mi>
+						</mml:msub>
+						<mml:mo>&gt;</mml:mo>
+						<mml:mn>0.04045</mml:mn>
+					  </mml:mtd>
+					</mml:mtr>
+				  </mml:mtable>
+				</mml:mrow>
+				</mml:mrow>
+			</mml:math>
+			</inlineequation>
+		</para>
+		<para>
+			Assume 		
+			<inlineequation><mml:math>
+								<mml:msub><mml:mi mathvariant="italic">c</mml:mi>
+								<mml:mi mathvariant="italic">s</mml:mi>
+								</mml:msub>
+						</mml:math></inlineequation>
+			is the sRGB component in the range [0,1].
+       </para>
+        <para>
+            Use the <constant>GL_PROXY_TEXTURE_2D</constant> or <constant>GL_PROXY_TEXTURE_CUBE_MAP</constant> target to try out a resolution and
             format. The implementation will
             update and recompute its best match for the requested storage resolution
-            and format. To then query this state, call
-            <citerefentry><refentrytitle>glGetTexLevelParameter</refentrytitle></citerefentry>.
+            and format. To then query this state, call <citerefentry><refentrytitle>glGetTexLevelParameter</refentrytitle></citerefentry>.
             If the texture cannot be accommodated, texture state is set to 0.
         </para>
         <para>
@@ -555,11 +629,7 @@
             A four-component image uses all of the RGBA components.
         </para>
         <para>
-            Depth images are generally used for generating shadows using the GL's
-            texture comparison functionality.  The scene is
-            rendered from the viewpoint of the light, and the depth buffer value are
-            loaded into a depth texture.  See <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry> for details on
-            texture comparison.
+			Depth textures can be treated as LUMINANCE, INTENSITY or ALPHA textures during texture filtering and application. Image-based shadowing can be enabled by comparing texture r coordinates to depth texture values to generate a boolean result.  See <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry> for details on texture comparison.
         </para>
     </refsect1>
     <refsect1><title>NOTES</title>
@@ -588,15 +658,15 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term>2. Two-dimensional Convolution filtering, if enabled. See</term>
+                <term>2. Two-dimensional Convolution filtering, if enabled.</term>
                 <listitem>
                     <para>
-                        <citerefentry><refentrytitle>glConvolutionFilter1D</refentrytitle></citerefentry>.
+                        See <citerefentry><refentrytitle>glConvolutionFilter1D</refentrytitle></citerefentry>.
                     </para>
                     <para>
                         If a convolution filter changes the <parameter>width</parameter> of the texture (by
                         processing with a <constant>GL_CONVOLUTION_BORDER_MODE</constant> of <constant>GL_REDUCE</constant>, for
-                        example), the <parameter>width</parameter> must 
+                        example), and the GL does not support non-power-of-two textures, the <parameter>width</parameter> must 
                         <inlineequation><mml:math>
                             <!-- eqn: 2 sup n + 2 ( height ):-->
                             <mml:mrow>
@@ -608,7 +678,7 @@
                                     <mml:mn>2</mml:mn>
                                     <mml:mo>&af;</mml:mo>
                                     <mml:mfenced open="(" close=")">
-                                        <mml:mi mathvariant="italic">height</mml:mi>
+                                        <mml:mi mathvariant="italic">border</mml:mi>
                                     </mml:mfenced>
                                 </mml:mrow>
                             </mml:mrow>
@@ -658,8 +728,11 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term>5. Transformation by the color matrix.  See <citerefentry><refentrytitle>glMatrixMode</refentrytitle></citerefentry>.</term>
+                <term>5. Transformation by the color matrix.</term>
                 <listitem>
+                    <para>
+                        See <citerefentry><refentrytitle>glMatrixMode</refentrytitle></citerefentry>.
+                    </para>
                 </listitem>
             </varlistentry>
             <varlistentry>
@@ -675,8 +748,7 @@
                 <term>7. Color component replacement by the color table specified for</term>
                 <listitem>
                     <para>
-                        <constant>GL_POST_COLOR_MATRIX_COLOR_TABLE</constant>, if enabled.  See
-                        <citerefentry><refentrytitle>glColorTable</refentrytitle></citerefentry>.
+                        <constant>GL_POST_COLOR_MATRIX_COLOR_TABLE</constant>, if enabled.  See <citerefentry><refentrytitle>glColorTable</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -684,7 +756,7 @@
         <para>
             The texture image can be represented by the same data formats
             as the pixels in a <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry> command,
-            except that <constant>GL_STENCIL_INDEX</constant> and <constant>GL_DEPTH_COMPONENT</constant>
+            except that <constant>GL_STENCIL_INDEX</constant>
             cannot be used.
             <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry> modes affect texture images
             in exactly the way they affect <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>.
@@ -730,26 +802,53 @@
             is 1.2 or greater.
         </para>
         <para>
+            When the <code>ARB_multitexture</code> extension is supported or the GL version is 1.3 or greater, <function>glTexImage2D</function>
+            specifies the two-dimensional texture for the current texture unit,
+            specified with <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
+        </para>
+        <para>
+            <constant>GL_TEXTURE_CUBEMAP</constant> and <constant>GL_PROXY_TEXTURE_CUBEMAP</constant> are available only if the GL
+            version is 1.3 or greater.
+        </para>
+        <para>
             <constant>GL_DEPTH_COMPONENT</constant>, <constant>GL_DEPTH_COMPONENT16</constant>,
             <constant>GL_DEPTH_COMPONENT24</constant>, and <constant>GL_DEPTH_COMPONENT32</constant> are available only
             if the GL version is 1.4 or greater.
         </para>
         <para>
-            For OpenGL versions 1.3 and greater, or when the <code>ARB_multitexture</code> extension is supported, <function>glTexImage2D</function>
-            specifies the two-dimensional texture for the current texture unit,
-            specified with <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
+			Non-power-of-two textures are supported if the GL version is 2.0 or greater, or if the implementation exports the <constant>GL_ARB_texture_non_power_of_two</constant> extension.
+        </para>
+        <para>
+            The 
+			<constant>GL_SRGB</constant>,
+			<constant>GL_SRGB8</constant>,
+			<constant>GL_SRGB_ALPHA</constant>,
+			<constant>GL_SRGB8_ALPHA8</constant>,
+			<constant>GL_SLUMINANCE</constant>,
+			<constant>GL_SLUMINANCE8</constant>,
+			<constant>GL_SLUMINANCE_ALPHA</constant>, and
+			<constant>GL_SLUMINANCE8_ALPHA8</constant>
+			internal formats are only available if the GL version is 2.1 or greater.
         </para>
     </refsect1>
     <refsect1><title>ERRORS</title>
         <para>
-            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is not <constant>GL_TEXTURE_2D</constant>
-            or <constant>GL_PROXY_TEXTURE_2D</constant>.
+            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is not <constant>GL_TEXTURE_2D</constant>,
+            <constant>GL_PROXY_TEXTURE_2D</constant>,
+            <constant>GL_PROXY_TEXTURE_CUBE_MAP</constant>,
+			<constant>GL_TEXTURE_CUBE_MAP_POSITIVE_X</constant>,
+			<constant>GL_TEXTURE_CUBE_MAP_NEGATIVE_X</constant>,
+			<constant>GL_TEXTURE_CUBE_MAP_POSITIVE_Y</constant>,
+			<constant>GL_TEXTURE_CUBE_MAP_NEGATIVE_Y</constant>,
+			<constant>GL_TEXTURE_CUBE_MAP_POSITIVE_Z</constant>, or 
+			<constant>GL_TEXTURE_CUBE_MAP_NEGATIVE_Z</constant>.
         </para>
         <para>
-            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>format</parameter> is not an accepted
-            format constant.
-            Format constants other than <constant>GL_STENCIL_INDEX</constant> and <constant>GL_DEPTH_COMPONENT</constant>
-            are accepted.
+			<constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is one of the six cube map 2D image targets and the width and height parameters are not equal.
+        </para>
+        <para>
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>width</parameter> or <parameter>height</parameter> is less than 0
+            or greater than 2 + <constant>GL_MAX_TEXTURE_SIZE</constant>.
         </para>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>type</parameter> is not a type constant.
@@ -783,8 +882,10 @@
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>width</parameter> or <parameter>height</parameter> is less than 0
-            or greater than 2 + <constant>GL_MAX_TEXTURE_SIZE</constant>,
-            or if either cannot be represented as 
+            or greater than 2 + <constant>GL_MAX_TEXTURE_SIZE</constant>.
+        </para>
+        <para>
+            <constant>GL_INVALID_VALUE</constant> is generated if non-power-of-two textures are not supported and the <parameter>width</parameter> or <parameter>height</parameter> cannot be represented as 
             <inlineequation><mml:math>
                 <!-- eqn: 2 sup k  +  2(border):-->
                 <mml:mrow>
@@ -856,7 +957,7 @@
             <citerefentry><refentrytitle>glGetTexImage</refentrytitle></citerefentry>
         </para>
         <para>
-            <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_2D</constant>
+            <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_2D</constant> or <constant>GL_TEXTURE_CUBE_MAP</constant>
         </para>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>

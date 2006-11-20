@@ -104,8 +104,16 @@
                     <constant>GL_RGB5_A1</constant>,
                     <constant>GL_RGBA8</constant>,
                     <constant>GL_RGB10_A2</constant>,
-                    <constant>GL_RGBA12</constant>, or
-                    <constant>GL_RGBA16</constant>.
+                    <constant>GL_RGBA12</constant>,
+                    <constant>GL_RGBA16</constant>,
+                    <constant>GL_SLUMINANCE</constant>,
+                    <constant>GL_SLUMINANCE8</constant>,
+                    <constant>GL_SLUMINANCE_ALPHA</constant>,
+                    <constant>GL_SLUMINANCE8_ALPHA8</constant>,
+                    <constant>GL_SRGB</constant>,
+                    <constant>GL_SRGB8</constant>,
+                    <constant>GL_SRGB_ALPHA</constant>, or 
+                    <constant>GL_SRGB8_ALPHA8</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -218,15 +226,17 @@
             <constant>GL_READ_BUFFER</constant> are outside the window associated with the current
             rendering context, then the values obtained for those pixels are undefined.
         </para>
+        <para>
+            <function>glCopyTexImage1D</function> defines a one-dimensional texture image with pixels from the current
+            <constant>GL_READ_BUFFER</constant>.
+        </para>
+        <para>
+            When <parameter>internalformat</parameter> is one of the sRGB  types, the GL does not automatically convert the source pixels to the sRGB color space.  In this case, the <function>glPixelMap</function> function can be used to accomplish the conversion.
+        </para>
     </refsect1>
     <refsect1><title>NOTES</title>
         <para>
             <function>glCopyTexImage1D</function> is available only if the GL version is 1.1 or greater.
-        </para>
-        <para>
-            <constant>GL_DEPTH_COMPONENT</constant>, <constant>GL_DEPTH_COMPONENT16</constant>,
-            <constant>GL_DEPTH_COMPONENT24</constant>, and <constant>GL_DEPTH_COMPONENT32</constant> are available only
-            if the GL version is 1.4 or greater.
         </para>
         <para>
             Texturing has no effect in color index mode.
@@ -238,15 +248,32 @@
             An image with 0 width indicates a NULL texture.
         </para>
         <para>
-            When the <code>ARB_imaging</code> extension is supported, the RGBA components
-            copied from the framebuffer may be processed by the imaging pipeline.  See
-            <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry> for specific details.
+            When the <code>ARB_imaging</code> extension is supported, the RGBA components copied from the framebuffer may be processed by the imaging pipeline.  See <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry> for specific details.
+        </para>
+        <para>
+            <constant>GL_DEPTH_COMPONENT</constant>, <constant>GL_DEPTH_COMPONENT16</constant>,
+            <constant>GL_DEPTH_COMPONENT24</constant>, and <constant>GL_DEPTH_COMPONENT32</constant> are available only
+            if the GL version is 1.4 or greater.
+        </para>
+        <para>
+			Non-power-of-two textures are supported if the GL version is 2.0 or greater, or if the implementation exports the <constant>GL_ARB_texture_non_power_of_two</constant> extension.
+        </para>
+        <para>
+            The 
+			<constant>GL_SRGB</constant>,
+			<constant>GL_SRGB8</constant>,
+			<constant>GL_SRGB_ALPHA</constant>,
+			<constant>GL_SRGB8_ALPHA8</constant>,
+			<constant>GL_SLUMINANCE</constant>,
+			<constant>GL_SLUMINANCE8</constant>,
+			<constant>GL_SLUMINANCE_ALPHA</constant>, and
+			<constant>GL_SLUMINANCE8_ALPHA8</constant>
+			internal formats are only available if the GL version is 2.1 or greater.  See <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry> for specific details about sRGB conversion.
         </para>
     </refsect1>
     <refsect1><title>ERRORS</title>
         <para>
-            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is not one of the
-            allowable values.
+            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is not one of the allowable values.
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>level</parameter> is less than 0.
@@ -264,20 +291,19 @@
                     <mml:mi mathvariant="italic">max</mml:mi>
                 </mml:mrow>
             </mml:math></inlineequation>
-            ,
-            where 
+            , where
             <inlineequation><mml:math><mml:mi mathvariant="italic">max</mml:mi></mml:math></inlineequation>
             is the returned value of <constant>GL_MAX_TEXTURE_SIZE</constant>.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>internalformat</parameter> is not an
-            allowable value.
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>internalformat</parameter> is not an allowable value.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>width</parameter> is less than 0
-            or greater than
-            2 + <constant>GL_MAX_TEXTURE_SIZE</constant>,
-            or if it cannot be represented as 
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>width</parameter> is less than 0 or greater than
+            2 + <constant>GL_MAX_TEXTURE_SIZE</constant>.
+        </para>
+        <para>
+            <constant>GL_INVALID_VALUE</constant> is generated if non-power-of-two textures are not supported and the <parameter>width</parameter> cannot be represented as 
             <inlineequation><mml:math>
                 <!-- eqn: 2 sup n  +  2 ( border ):-->
                 <mml:mrow>
@@ -300,9 +326,7 @@
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>border</parameter> is not 0 or 1.
         </para>
         <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glCopyTexImage1D</function>
-            is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
-            and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
+            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glCopyTexImage1D</function> is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry> and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>target</parameter> is not

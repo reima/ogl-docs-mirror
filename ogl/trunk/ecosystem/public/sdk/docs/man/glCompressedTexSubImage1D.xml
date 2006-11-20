@@ -141,11 +141,18 @@
     </refsect1>
     <refsect1><title>ERRORS</title>
         <para>
-            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>format</parameter> is of the six
-            generic compressed internal formats: <constant>GL_COMPRESSED_ALPHA</constant>,
-            <constant>GL_COMPRESSED_LUMINANCE</constant>, <constant>GL_COMPRESSED_LUMINANCE_ALPHA</constant>,
-            <constant>GL_COMPRESSED_INTENSITY</constant>, <constant>GL_COMPRESSED_RGB</constant>, or
-            <constant>GL_COMPRESSED_RGBA</constant>.
+            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>format</parameter> is one of these generic compressed internal formats: 
+            <constant>GL_COMPRESSED_ALPHA</constant>,
+            <constant>GL_COMPRESSED_LUMINANCE</constant>, 
+            <constant>GL_COMPRESSED_LUMINANCE_ALPHA</constant>,
+            <constant>GL_COMPRESSED_INTENSITY</constant>,             
+            <constant>GL_COMPRESSED_RGB</constant>,
+            <constant>GL_COMPRESSED_RGBA</constant>,
+			<constant>GL_COMPRESSED_SLUMINANCE</constant>,
+			<constant>GL_COMPRESSED_SLUMINANCE_ALPHA</constant>,
+			<constant>GL_COMPRESSED_SRGB</constant>,
+			<constant>GL_COMPRESSED_SRGBA</constant>, or
+			<constant>GL_COMPRESSED_SRGB_ALPHA</constant>.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if parameter combinations are not

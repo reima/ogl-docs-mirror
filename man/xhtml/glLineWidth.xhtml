@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glLineWidth</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glLineWidth"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glLineWidth — specify the width of rasterized lines</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glLineWidth</b>(</code><var class="pdparam">width</var><code>)</code>;<br /> GLfloat <var class="pdparam">width</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777302"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>width</code></em></span></dt><dd><p>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glLineWidth</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glLineWidth"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glLineWidth — specify the width of rasterized lines</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glLineWidth</b>(</code><var class="pdparam">width</var><code>)</code>;<br /> GLfloat <var class="pdparam">width</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781671"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>width</code></em></span></dt><dd><p>
                     Specifies the width of rasterized lines.
                     The initial value is 1.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777196"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781566"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glLineWidth</code> specifies the rasterized width of both aliased and antialiased
             lines.
             Using a line width other than 1 has different effects,
@@ -61,23 +61,23 @@
             To query the range of supported widths and the size
             difference between supported widths within the range, call <span class="citerefentry"><span class="refentrytitle">glGet</span></span>
             with arguments <code class="constant">GL_ALIASED_LINE_WIDTH_RANGE</code>,
-            <code class="constant">GL_SMOOTH_LINE_WIDTH_RANGE</code>, <code class="constant">GL_SMOOTH_LINE_WIDTH_GRANULARITY</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763834"></a><h2>NOTES</h2><p>
+            <code class="constant">GL_SMOOTH_LINE_WIDTH_RANGE</code>, and <code class="constant">GL_SMOOTH_LINE_WIDTH_GRANULARITY</code>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768203"></a><h2>NOTES</h2><p>
             The line width specified by <code class="function">glLineWidth</code> is always returned when <code class="constant">GL_LINE_WIDTH</code>
             is queried.
-            Clamping and rounding for aliased and antialiased lines have no effect
-            on the specified value.
+            Clamping and rounding for aliased and antialiased lines have no effect on the specified value.
         </p><p>
-            Nonantialiased line width may be clamped to an implementation-dependent
-            maximum.  Call <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with <code class="constant">GL_ALIASED_LINE_WIDTH_RANGE</code> to
-            determine the maximum width.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770524"></a><h2>ERRORS</h2><p>
+            Nonantialiased line width may be clamped to an implementation-dependent maximum.  Call <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with <code class="constant">GL_ALIASED_LINE_WIDTH_RANGE</code> to determine the maximum width.
+        </p><p>
+            In OpenGL 1.2, the tokens <code class="constant">GL_LINE_WIDTH_RANGE</code> and <code class="constant">GL_LINE_WIDTH_GRANULARITY</code> were replaced by <code class="constant">GL_ALIASED_LINE_WIDTH_RANGE</code>,
+            <code class="constant">GL_SMOOTH_LINE_WIDTH_RANGE</code>, and <code class="constant">GL_SMOOTH_LINE_WIDTH_GRANULARITY</code>.  The old names are retained for backward compatibility, but should not be used in new code.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774921"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> is less than or equal to 0.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glLineWidth</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770568"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774966"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_LINE_WIDTH</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_ALIASED_LINE_WIDTH_RANGE</code>
@@ -87,9 +87,9 @@
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_SMOOTH_LINE_WIDTH_GRANULARITY</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_LINE_SMOOTH</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770633"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775031"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glEnable</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770646"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775044"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

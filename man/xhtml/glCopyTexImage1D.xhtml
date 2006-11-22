@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCopyTexImage1D</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glCopyTexImage1D"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCopyTexImage1D — copy pixels into a 1D texture image</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glCopyTexImage1D</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">level</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">internalformat</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">x</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">y</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">width</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">border</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">level</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">internalformat</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">x</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">y</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">width</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">border</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777200"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCopyTexImage1D</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glCopyTexImage1D"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCopyTexImage1D — copy pixels into a 1D texture image</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glCopyTexImage1D</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">level</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">internalformat</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">x</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">y</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">width</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">border</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">level</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">internalformat</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">x</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">y</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">width</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">border</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781569"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the target texture.
                     Must be <code class="constant">GL_TEXTURE_1D</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>level</code></em></span></dt><dd><p>
@@ -56,8 +56,16 @@
                     <code class="constant">GL_RGB5_A1</code>,
                     <code class="constant">GL_RGBA8</code>,
                     <code class="constant">GL_RGB10_A2</code>,
-                    <code class="constant">GL_RGBA12</code>, or
-                    <code class="constant">GL_RGBA16</code>.
+                    <code class="constant">GL_RGBA12</code>,
+                    <code class="constant">GL_RGBA16</code>,
+                    <code class="constant">GL_SLUMINANCE</code>,
+                    <code class="constant">GL_SLUMINANCE8</code>,
+                    <code class="constant">GL_SLUMINANCE_ALPHA</code>,
+                    <code class="constant">GL_SLUMINANCE8_ALPHA8</code>,
+                    <code class="constant">GL_SRGB</code>,
+                    <code class="constant">GL_SRGB8</code>,
+                    <code class="constant">GL_SRGB_ALPHA</code>, or 
+                    <code class="constant">GL_SRGB8_ALPHA8</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>x</code></em>, </span><span class="term"><em class="parameter"><code>y</code></em></span></dt><dd><p>
                     Specify the window coordinates of the left corner
                     of the row of pixels to be copied.
@@ -87,7 +95,7 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>border</code></em></span></dt><dd><p>
                     Specifies the width of the border.
                     Must be either 0 or 1.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770924"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775100"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glCopyTexImage1D</code> defines a one-dimensional texture image with pixels from the current
             <code class="constant">GL_READ_BUFFER</code>.
         </p><p>
@@ -140,12 +148,13 @@
             If any of the pixels within the specified row of the current
             <code class="constant">GL_READ_BUFFER</code> are outside the window associated with the current
             rendering context, then the values obtained for those pixels are undefined.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770847"></a><h2>NOTES</h2><p>
-            <code class="function">glCopyTexImage1D</code> is available only if the GL version is 1.1 or greater.
         </p><p>
-            <code class="constant">GL_DEPTH_COMPONENT</code>, <code class="constant">GL_DEPTH_COMPONENT16</code>,
-            <code class="constant">GL_DEPTH_COMPONENT24</code>, and <code class="constant">GL_DEPTH_COMPONENT32</code> are available only
-            if the GL version is 1.4 or greater.
+            <code class="function">glCopyTexImage1D</code> defines a one-dimensional texture image with pixels from the current
+            <code class="constant">GL_READ_BUFFER</code>.
+        </p><p>
+            When <em class="parameter"><code>internalformat</code></em> is one of the sRGB  types, the GL does not automatically convert the source pixels to the sRGB color space.  In this case, the <code class="function">glPixelMap</code> function can be used to accomplish the conversion.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712551"></a><h2>NOTES</h2><p>
+            <code class="function">glCopyTexImage1D</code> is available only if the GL version is 1.1 or greater.
         </p><p>
             Texturing has no effect in color index mode.
         </p><p>
@@ -153,12 +162,26 @@
         </p><p>
             An image with 0 width indicates a NULL texture.
         </p><p>
-            When the <code class="code">ARB_imaging</code> extension is supported, the RGBA components
-            copied from the framebuffer may be processed by the imaging pipeline.  See
-            <span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span> for specific details.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4708188"></a><h2>ERRORS</h2><p>
-            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not one of the
-            allowable values.
+            When the <code class="code">ARB_imaging</code> extension is supported, the RGBA components copied from the framebuffer may be processed by the imaging pipeline.  See <span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span> for specific details.
+        </p><p>
+            <code class="constant">GL_DEPTH_COMPONENT</code>, <code class="constant">GL_DEPTH_COMPONENT16</code>,
+            <code class="constant">GL_DEPTH_COMPONENT24</code>, and <code class="constant">GL_DEPTH_COMPONENT32</code> are available only
+            if the GL version is 1.4 or greater.
+        </p><p>
+			Non-power-of-two textures are supported if the GL version is 2.0 or greater, or if the implementation exports the <code class="constant">GL_ARB_texture_non_power_of_two</code> extension.
+        </p><p>
+            The 
+			<code class="constant">GL_SRGB</code>,
+			<code class="constant">GL_SRGB8</code>,
+			<code class="constant">GL_SRGB_ALPHA</code>,
+			<code class="constant">GL_SRGB8_ALPHA8</code>,
+			<code class="constant">GL_SLUMINANCE</code>,
+			<code class="constant">GL_SLUMINANCE8</code>,
+			<code class="constant">GL_SLUMINANCE_ALPHA</code>, and
+			<code class="constant">GL_SLUMINANCE8_ALPHA8</code>
+			internal formats are only available if the GL version is 2.1 or greater.  See <span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span> for specific details about sRGB conversion.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712679"></a><h2>ERRORS</h2><p>
+            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not one of the allowable values.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>level</code></em> is less than 0.
         </p><p>
@@ -174,18 +197,16 @@
                     <mml:mi mathvariant="italic">max</mml:mi>
                 </mml:mrow>
             </mml:math>
-            ,
-            where 
+            , where
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">max</mml:mi></mml:math>
             is the returned value of <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
         </p><p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>internalformat</code></em> is not an
-            allowable value.
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>internalformat</code></em> is not an allowable value.
         </p><p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> is less than 0
-            or greater than
-            2 + <code class="constant">GL_MAX_TEXTURE_SIZE</code>,
-            or if it cannot be represented as 
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> is less than 0 or greater than
+            2 + <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
+        </p><p>
+            <code class="constant">GL_INVALID_VALUE</code> is generated if non-power-of-two textures are not supported and the <em class="parameter"><code>width</code></em> cannot be represented as 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -206,9 +227,7 @@
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>border</code></em> is not 0 or 1.
         </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glCopyTexImage1D</code>
-            is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
-            and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glCopyTexImage1D</code> is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>target</code></em> is not
             <code class="constant">GL_TEXTURE_1D</code> or <code class="constant">GL_PROXY_TEXTURE_1D</code> and <em class="parameter"><code>internalformat</code></em> is
@@ -219,11 +238,11 @@
             <code class="constant">GL_DEPTH_COMPONENT</code>, <code class="constant">GL_DEPTH_COMPONENT16</code>,
             <code class="constant">GL_DEPTH_COMPONENT24</code>, or <code class="constant">GL_DEPTH_COMPONENT32</code> and there is depth
             buffer.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4708398"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711037"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetTexImage</span></span>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_TEXTURE_1D</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4708423"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711062"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage1D</span></span>,
@@ -237,7 +256,7 @@
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4706634"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711139"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

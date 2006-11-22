@@ -88,11 +88,18 @@
             <code class="constant">GL_PROXY_TEXTURE_CUBE_MAP</code> are available only if the GL version is 1.3
             or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775209"></a><h2>ERRORS</h2><p>
-            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>format</code></em> is of the six
-            generic compressed internal formats: <code class="constant">GL_COMPRESSED_ALPHA</code>,
-            <code class="constant">GL_COMPRESSED_LUMINANCE</code>, <code class="constant">GL_COMPRESSED_LUMINANCE_ALPHA</code>,
-            <code class="constant">GL_COMPRESSED_INTENSITY</code>, <code class="constant">GL_COMPRESSED_RGB</code>, or
-            <code class="constant">GL_COMPRESSED_RGBA</code>.
+            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>format</code></em> is one of these generic compressed internal formats: 
+            <code class="constant">GL_COMPRESSED_ALPHA</code>,
+            <code class="constant">GL_COMPRESSED_LUMINANCE</code>, 
+            <code class="constant">GL_COMPRESSED_LUMINANCE_ALPHA</code>,
+            <code class="constant">GL_COMPRESSED_INTENSITY</code>,             
+            <code class="constant">GL_COMPRESSED_RGB</code>,
+            <code class="constant">GL_COMPRESSED_RGBA</code>,
+			<code class="constant">GL_COMPRESSED_SLUMINANCE</code>,
+			<code class="constant">GL_COMPRESSED_SLUMINANCE_ALPHA</code>,
+			<code class="constant">GL_COMPRESSED_SRGB</code>,
+			<code class="constant">GL_COMPRESSED_SRGBA</code>, or
+			<code class="constant">GL_COMPRESSED_SRGB_ALPHA</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if parameter combinations are not
             supported by the specific compressed internal format as specified in the
@@ -105,7 +112,7 @@
             Undefined results, including abnormal program termination, are generated if
             <em class="parameter"><code>data</code></em> is not encoded in a manner consistent with the extension
             specification defining the internal compression format.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775294"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712487"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetCompressedTexImage</span></span>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_TEXTURE_COMPRESSED</code>
@@ -115,8 +122,8 @@
             <span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span> with arguments <code class="constant">GL_TEXTURE_INTERNAL_FORMAT</code>
             and <code class="constant">GL_TEXTURE_COMPRESSED_IMAGE_SIZE</code>
         </p><p>
-            <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_TEXTURE_2D</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712530"></a><h2>SEE ALSO</h2><p>
+            <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_TEXTURE_2D</code> or <code class="constant">GL_TEXTURE_CUBE_MAP</code> 
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712556"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glColorTable</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glCompressedTexImage1D</span></span>,
@@ -143,7 +150,7 @@
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712678"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712704"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

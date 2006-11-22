@@ -10,8 +10,7 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>internalformat</code></em></span></dt><dd><p>
                     Specifies the format of the compressed image data stored at address <em class="parameter"><code>data</code></em>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>width</code></em></span></dt><dd><p>
-                    Specifies the width of the texture image.
-                    Must be 
+                    Specifies the width of the texture image including the border if any. If the GL version does not support non-power-of-two sizes, this value must be 
                     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                         
                         <mml:mrow>
@@ -29,50 +28,35 @@
                         </mml:mrow>
                     </mml:math>
                     for some integer 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>.
-                    All
-                    implementations support texture images that are at least 64 texels
-                    wide. The height of the 1D texture image is 1.
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
+                    . All implementations support texture images that are at least 64 texels wide. The height of the 1D texture image is 1.
                 </p></dd><dt><span class="term"><em class="parameter"><code>border</code></em></span></dt><dd><p>
-                    Specifies the width of the border.
-                    Must be either 0 or 1.
+                    Specifies the width of the border. Must be either 0 or 1.
                 </p></dd><dt><span class="term"><em class="parameter"><code>imageSize</code></em></span></dt><dd><p>
-                    Specifies the number of unsigned bytes of image data starting at the
-                    address specified by <em class="parameter"><code>data</code></em>.
+                    Specifies the number of unsigned bytes of image data starting at the address specified by <em class="parameter"><code>data</code></em>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>data</code></em></span></dt><dd><p>
                     Specifies a pointer to the compressed image data in memory.
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712526"></a><h2>DESCRIPTION</h2><p>
-            Texturing maps a portion of a specified texture image onto each graphical
-            primitive for which texturing is enabled.  To enable and disable one-
-            dimensional texturing, call <span class="citerefentry"><span class="refentrytitle">glEnable</span></span> and <span class="citerefentry"><span class="refentrytitle">glDisable</span></span> with argument
-            <code class="constant">GL_TEXTURE_1D</code>.
+            Texturing maps a portion of a specified texture image onto each graphical primitive for which texturing is enabled.  To enable and disable one-dimensional texturing, call <span class="citerefentry"><span class="refentrytitle">glEnable</span></span> and <span class="citerefentry"><span class="refentrytitle">glDisable</span></span> with argument <code class="constant">GL_TEXTURE_1D</code>.
         </p><p>
-            <code class="function">glCompressedTexImage1D</code> loads a previously defined, and retrieved, compressed one-dimensional
-            texture image if <em class="parameter"><code>target</code></em> is <code class="constant">GL_TEXTURE_1D</code> (see <span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span>).
+            <code class="function">glCompressedTexImage1D</code> loads a previously defined, and retrieved, compressed one-dimensional texture image if <em class="parameter"><code>target</code></em> is <code class="constant">GL_TEXTURE_1D</code> (see <span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span>).
         </p><p>
             If <em class="parameter"><code>target</code></em> is <code class="constant">GL_PROXY_TEXTURE_1D</code>, no data is read from <em class="parameter"><code>data</code></em>, but
-            all of the texture image state is recalculated, checked for consistency,
-            and checked against the implementation's capabilities.  If the
-            implementation cannot handle a texture of the requested texture size, it
-            sets all of the image state to 0, but does not generate an error (see
-            <span class="citerefentry"><span class="refentrytitle">glGetError</span></span>). To query for an entire mipmap array, use an image array
-            level greater than or equal to 1.
+            all of the texture image state is recalculated, checked for consistency, and checked against the implementation's capabilities.  If the implementation cannot handle a texture of the requested texture size, it sets all of the image state to 0, but does not generate an error (see <span class="citerefentry"><span class="refentrytitle">glGetError</span></span>). To query for an entire mipmap array, use an image array level greater than or equal to 1.
         </p><p>
-            <em class="parameter"><code>internalformat</code></em> must be an extension-specified compressed-texture format.
-            When a texture is loaded with <span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span> using a generic compressed
-            texture format (e.g., <code class="constant">GL_COMPRESSED_RGB</code>) the GL selects from one of
+            <em class="parameter"><code>internalformat</code></em> must be extension-specified compressed-texture format. When a texture is loaded with <span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span> using a generic compressed  texture format (e.g., <code class="constant">GL_COMPRESSED_RGB</code>) the GL selects from one of
             its extensions supporting compressed textures.  In order to load the
-            compressed texture image using <code class="function">glCompressedTexImage1D</code>, query the compressed texture image's
-            size and format using <span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span>.
+            compressed texture image using <code class="function">glCompressedTexImage1D</code>, query the compressed texture image's size and format using <span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span>.
         </p><p>
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target 
             (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while a texture image is
             specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data storage.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712685"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712676"></a><h2>NOTES</h2><p>
             <code class="function">glCompressedTexImage1D</code> is available only if the GL version is 1.3 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712701"></a><h2>ERRORS</h2><p>
-            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>internalformat</code></em> is of the six
-            generic compressed internal formats: <code class="constant">GL_COMPRESSED_ALPHA</code>,
+        </p><p>
+			Non-power-of-two textures are supported if the GL version is 2.0 or greater, or if the implementation exports the <code class="constant">GL_ARB_texture_non_power_of_two</code> extension.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712702"></a><h2>ERRORS</h2><p>
+            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>internalformat</code></em> is of the generic compressed internal formats: <code class="constant">GL_COMPRESSED_ALPHA</code>,
             <code class="constant">GL_COMPRESSED_LUMINANCE</code>, <code class="constant">GL_COMPRESSED_LUMINANCE_ALPHA</code>,
             <code class="constant">GL_COMPRESSED_INTENSITY</code>, <code class="constant">GL_COMPRESSED_RGB</code>, or
             <code class="constant">GL_COMPRESSED_RGBA</code>.
@@ -88,7 +72,7 @@
             Undefined results, including abnormal program termination, are generated if
             <em class="parameter"><code>data</code></em> is not encoded in a manner consistent with the extension
             specification defining the internal compression format.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712791"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712794"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetCompressedTexImage</span></span>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_TEXTURE_COMPRESSED</code>
@@ -99,7 +83,7 @@
             and <code class="constant">GL_TEXTURE_COMPRESSED_IMAGE_SIZE</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_TEXTURE_1D</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712857"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712859"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glColorTable</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glCompressedTexImage2D</span></span>,

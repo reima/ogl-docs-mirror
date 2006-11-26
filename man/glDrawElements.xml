@@ -107,6 +107,8 @@
     <refsect1><title>NOTES</title>
         <para>
             <function>glDrawElements</function> is available only if the GL version is 1.1 or greater.
+        </para>
+        <para>
             <function>glDrawElements</function> is included in display lists. If <function>glDrawElements</function> is entered into a
             display list,
             the necessary array data (determined by the array pointers and
@@ -122,6 +124,10 @@
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>count</parameter> is negative.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to an
+            enabled array or the element array and the buffer object's data store is currently mapped.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glDrawElements</function> is executed between

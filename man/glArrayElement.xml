@@ -77,6 +77,15 @@
             are executed.
         </para>
     </refsect1>
+    <refsect1><title>ERRORS</title>
+        <para>
+            <constant>GL_INVALID_VALUE</constant> may be generated if <parameter>i</parameter> is negative.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to an
+            enabled array and the buffer object's data store is currently mapped.
+        </para>
+    </refsect1>
     <refsect1><title>SEE ALSO</title>
         <para>
             <citerefentry><refentrytitle>glClientActiveTexture</refentrytitle></citerefentry>,

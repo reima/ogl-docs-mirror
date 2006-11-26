@@ -197,6 +197,10 @@
             .
         </para>
         <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to an
+            enabled array or the element array and the buffer object's data store is currently mapped.
+        </para>
+        <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glDrawRangeElements</function> is executed between
             the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry> and the corresponding <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>

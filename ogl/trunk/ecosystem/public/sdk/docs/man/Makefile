@@ -28,6 +28,9 @@ SUPERBIBLEXML = \
     glDeleteQueries.xml \
     glGenBuffers.xml \
     glGenQueries.xml \
+    glGetBufferParameteriv.xml \
+    glGetBufferPointerv.xml \
+    glGetBufferSubData.xml \
     glGetQueryiv.xml \
     glGetQueryObject.xml \
     glIsBuffer.xml \

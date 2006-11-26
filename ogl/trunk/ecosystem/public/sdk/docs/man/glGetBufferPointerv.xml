@@ -44,7 +44,7 @@
             <term><parameter>pname</parameter></term>
             <listitem>
                 <para>
-                    Specifies the pointer to be returned.  Must be <constant>GL_BUFFER_MAP_POINTER</constant>.
+                    Specifies the pointer to be returned.  The symbolic constant must be <constant>GL_BUFFER_MAP_POINTER</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -61,8 +61,9 @@
     <refsect1><title>DESCRIPTION</title>
         <para>
             <function>glGetBufferPointerv</function> returns pointer information. <parameter>pname</parameter> is a symbolic constant
-            indicating the pointer to be returned, which must be <constant>GL_BUFFER_MAP_POINTER</constant>, 
-            and <parameter>params</parameter> is a pointer to a location in which to place the returned pointer value.
+            indicating the pointer to be returned, which must be <constant>GL_BUFFER_MAP_POINTER</constant>, the pointer
+            to which the buffer object's data store is mapped.  If the data store is not currently mapped, <constant>NULL</constant> is returned.
+            <parameter>params</parameter> is a pointer to a location in which to place the returned pointer value.
         </para>
     </refsect1>
     <refsect1><title>NOTES</title>

@@ -34,7 +34,8 @@ SUPERBIBLEXML = \
     glGetQueryiv.xml \
     glGetQueryObject.xml \
     glIsBuffer.xml \
-    glIsQuery.xml
+    glIsQuery.xml \
+    glMapBuffer.xml
 
 # 3Dlabs GL 2.0 man pages
 3DLABSXML = \

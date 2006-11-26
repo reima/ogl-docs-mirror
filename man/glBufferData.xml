@@ -63,7 +63,7 @@
             <term><parameter>usage</parameter></term>
             <listitem>
                 <para>
-                    Specifies the expected usage pattern of the data store.  The symbolic constant must be
+                    Specifies the expected usage pattern of the data store. The symbolic constant must be
                     <constant>GL_STREAM_DRAW</constant>, <constant>GL_STREAM_READ</constant>, <constant>GL_STREAM_COPY</constant>, 
                     <constant>GL_STATIC_DRAW</constant>, <constant>GL_STATIC_READ</constant>, <constant>GL_STATIC_COPY</constant>, 
                     <constant>GL_DYNAMIC_DRAW</constant>, <constant>GL_DYNAMIC_READ</constant>, or <constant>GL_DYNAMIC_COPY</constant>.

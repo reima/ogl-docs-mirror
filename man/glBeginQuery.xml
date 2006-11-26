@@ -52,10 +52,24 @@
         <funcsynopsis>
             <funcprototype>
                 <funcdef> void <function>glEndQuery</function></funcdef>
-                <paramdef>  <parameter>void</parameter></paramdef>
+                <paramdef> GLenum <parameter>target</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
+    <!-- eqn: ignoring delim $$ -->
+    <refsect1><title>PARAMETERS</title>
+        <variablelist>
+        <varlistentry>
+            <term><parameter>target</parameter></term>
+            <listitem>
+                <para>
+                    Specifies the target type of query object to be concluded.
+                    The symbolic constant must be <constant>GL_SAMPLES_PASSED</constant>.
+                </para>
+            </listitem>
+        </varlistentry>
+        </variablelist>
+    </refsect1>
     <refsect1><title>DESCRIPTION</title>
         <para>
             <function>glBeginQuery</function> and <citerefentry><refentrytitle>glEndQuery</refentrytitle></citerefentry> delimit the

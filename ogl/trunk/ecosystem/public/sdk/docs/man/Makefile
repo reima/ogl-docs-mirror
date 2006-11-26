@@ -22,6 +22,8 @@ ARBXML = \
 SUPERBIBLEXML = \
     glBeginQuery.xml \
     glBindBuffer.xml \
+    glBufferData.xml \
+    glBufferSubData.xml \
     glDeleteBuffers.xml \
     glDeleteQueries.xml \
     glGenBuffers.xml \

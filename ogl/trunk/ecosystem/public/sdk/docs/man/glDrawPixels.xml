@@ -179,7 +179,7 @@
         <para>
             If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
             (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a block of pixels is
-            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data storage.
+            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data store.
         </para>
         <para>
             The 
@@ -1124,11 +1124,19 @@
     </refsect1>
     <refsect1><title>ERRORS</title>
         <para>
+            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>format</parameter> or <parameter>type</parameter> is not one of
+            the accepted values.
+        </para>
+        <para>
+            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>type</parameter> is <constant>GL_BITMAP</constant> and
+            <parameter>format</parameter> is not either <constant>GL_COLOR_INDEX</constant> or <constant>GL_STENCIL_INDEX</constant>.
+        </para>
+        <para>
             <constant>GL_INVALID_VALUE</constant> is generated if either <parameter>width</parameter> or <parameter>height</parameter> is negative.
         </para>
         <para>
-            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>format</parameter> or <parameter>type</parameter> is not one of
-            the accepted values.
+            <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>format</parameter> is <constant>GL_STENCIL_INDEX</constant>
+            and there is no stencil buffer.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>format</parameter> is
@@ -1144,19 +1152,6 @@
             or
             <constant>GL_LUMINANCE_ALPHA</constant>,
             and the GL is in color index mode.
-        </para>
-        <para>
-            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>type</parameter> is <constant>GL_BITMAP</constant> and
-            <parameter>format</parameter> is not either <constant>GL_COLOR_INDEX</constant> or <constant>GL_STENCIL_INDEX</constant>.
-        </para>
-        <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>format</parameter> is <constant>GL_STENCIL_INDEX</constant>
-            and there is no stencil buffer.
-        </para>
-        <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glDrawPixels</function>
-            is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
-            and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>format</parameter> is one of
@@ -1177,6 +1172,25 @@
             <constant>GL_UNSIGNED_INT_10_10_10_2</constant>, or
             <constant>GL_UNSIGNED_INT_2_10_10_10_REV</constant>
             and <parameter>format</parameter> is neither <constant>GL_RGBA</constant> nor <constant>GL_BGRA</constant>.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_UNPACK_BUFFER</constant> target and the buffer object's data store is currently mapped.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_UNPACK_BUFFER</constant> target and the data would be unpacked from the buffer 
+            object such that the memory reads required would exceed the data store size.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_UNPACK_BUFFER</constant> target and <parameter>data</parameter> is not evenly divisible 
+            into the number of bytes needed to store in memory a datum indicated by <parameter>type</parameter>.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glDrawPixels</function>
+            is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
+            and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
     <refsect1><title>ASSOCIATED GETS</title>

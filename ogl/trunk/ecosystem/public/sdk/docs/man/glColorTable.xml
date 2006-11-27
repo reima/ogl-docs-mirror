@@ -172,7 +172,7 @@
         <para>
             If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
             (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a color table is
-            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data storage.
+            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data store.
         </para>
         <para>
             If <parameter>target</parameter> is <constant>GL_COLOR_TABLE</constant>,
@@ -727,9 +727,6 @@
             allowable values.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>width</parameter> is less than zero.
-        </para>
-        <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>format</parameter> is not one of the allowable
             values.
         </para>
@@ -738,9 +735,26 @@
             values.
         </para>
         <para>
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>width</parameter> is less than zero.
+        </para>
+        <para>
             <constant>GL_TABLE_TOO_LARGE</constant> is generated if the requested color table
             is too large to be supported by the implementation, and <parameter>target</parameter> is
             not a <constant>GL_PROXY_*</constant> target.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_UNPACK_BUFFER</constant> target and the buffer object's data store is currently mapped.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_UNPACK_BUFFER</constant> target and the data would be unpacked from the buffer 
+            object such that the memory reads required would exceed the data store size.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_UNPACK_BUFFER</constant> target and <parameter>data</parameter> is not evenly divisible 
+            into the number of bytes needed to store in memory a datum indicated by <parameter>type</parameter>.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glColorTable</function> is executed

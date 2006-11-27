@@ -73,7 +73,7 @@
         <para>
             If a non-zero named buffer object is bound to the <constant>GL_PIXEL_PACK_BUFFER</constant> target 
             (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a polygon stipple pattern is
-            requested, <parameter>pattern</parameter> is treated as a byte offset into the buffer object's data storage.
+            requested, <parameter>pattern</parameter> is treated as a byte offset into the buffer object's data store.
         </para>
     </refsect1>
     <refsect1><title>NOTES</title>
@@ -83,6 +83,15 @@
         </para>
     </refsect1>
     <refsect1><title>ERRORS</title>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_PACK_BUFFER</constant> target and the buffer object's data store is currently mapped.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_PACK_BUFFER</constant> target and the data would be packed to the buffer 
+            object such that the memory writes required would exceed the data store size.
+        </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glGetPolygonStipple</function>
             is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>

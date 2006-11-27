@@ -50,7 +50,7 @@
         </p><p>
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target 
             (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while a texture image is
-            specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data storage.
+            specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data store.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712676"></a><h2>NOTES</h2><p>
             <code class="function">glCompressedTexImage1D</code> is available only if the GL version is 1.3 or greater.
         </p><p>
@@ -61,18 +61,29 @@
             <code class="constant">GL_COMPRESSED_INTENSITY</code>, <code class="constant">GL_COMPRESSED_RGB</code>, or
             <code class="constant">GL_COMPRESSED_RGBA</code>.
         </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if parameter combinations are not
-            supported by the specific compressed internal format as specified in the
-            specific texture compression extension.
-        </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>imageSize</code></em> is not consistent with
             the format, dimensions, and contents of the specified compressed image
             data.
         </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if parameter combinations are not
+            supported by the specific compressed internal format as specified in the
+            specific texture compression extension.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and the buffer object's data store is currently mapped.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and the data would be unpacked from the buffer 
+            object such that the memory reads required would exceed the data store size.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glCompressedTexImage1D</code>
+            is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
+            and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
+        </p><p>
             Undefined results, including abnormal program termination, are generated if
             <em class="parameter"><code>data</code></em> is not encoded in a manner consistent with the extension
             specification defining the internal compression format.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712794"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712853"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetCompressedTexImage</span></span>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_TEXTURE_COMPRESSED</code>
@@ -83,7 +94,7 @@
             and <code class="constant">GL_TEXTURE_COMPRESSED_IMAGE_SIZE</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_TEXTURE_1D</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712859"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774880"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glColorTable</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glCompressedTexImage2D</span></span>,
@@ -110,7 +121,7 @@
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774967"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775027"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

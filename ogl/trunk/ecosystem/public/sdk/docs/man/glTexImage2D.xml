@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
               "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
 <refentry id="glTexImage2D">
@@ -296,7 +296,7 @@
         <para>
             If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
             (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a texture image is
-            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data storage.
+            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data store.
         </para>
         <para>
             The first element corresponds to the lower left corner of the texture
@@ -762,8 +762,6 @@
             in exactly the way they affect <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>.
         </para>
         <para>
-        </para>
-        <para>
             <function>glTexImage2D</function> and <constant>GL_PROXY_TEXTURE_2D</constant> are available only if the GL
             version is 1.1 or greater.
         </para>
@@ -779,11 +777,6 @@
             texture memory.
             The image is undefined if the user tries to apply
             an uninitialized portion of the texture image to a primitive.
-        </para>
-        <para>
-            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
-            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a texture image is
-            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data storage.
         </para>
         <para>
             Formats <constant>GL_BGR</constant>, and <constant>GL_BGRA</constant> and types
@@ -847,15 +840,15 @@
 			<constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is one of the six cube map 2D image targets and the width and height parameters are not equal.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>width</parameter> or <parameter>height</parameter> is less than 0
-            or greater than 2 + <constant>GL_MAX_TEXTURE_SIZE</constant>.
-        </para>
-        <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>type</parameter> is not a type constant.
         </para>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>type</parameter> is <constant>GL_BITMAP</constant> and
             <parameter>format</parameter> is not <constant>GL_COLOR_INDEX</constant>.
+        </para>
+        <para>
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>width</parameter> or <parameter>height</parameter> is less than 0
+            or greater than 2 + <constant>GL_MAX_TEXTURE_SIZE</constant>.
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>level</parameter> is less than 0.
@@ -909,11 +902,6 @@
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>border</parameter> is not 0 or 1.
         </para>
         <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glTexImage2D</function>
-            is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
-            and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
-        </para>
-        <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>type</parameter> is one of
             <constant>GL_UNSIGNED_BYTE_3_3_2</constant>,
             <constant>GL_UNSIGNED_BYTE_2_3_3_REV</constant>,
@@ -950,6 +938,25 @@
             <constant>GL_DEPTH_COMPONENT</constant>, <constant>GL_DEPTH_COMPONENT16</constant>,
             <constant>GL_DEPTH_COMPONENT24</constant>, or <constant>GL_DEPTH_COMPONENT32</constant>, and if <parameter>format</parameter> is
             not <constant>GL_DEPTH_COMPONENT</constant>.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_UNPACK_BUFFER</constant> target and the buffer object's data store is currently mapped.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_UNPACK_BUFFER</constant> target and the data would be unpacked from the buffer 
+            object such that the memory reads required would exceed the data store size.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_UNPACK_BUFFER</constant> target and <parameter>data</parameter> is not evenly divisible 
+            into the number of bytes needed to store in memory a datum indicated by <parameter>type</parameter>.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glTexImage2D</function>
+            is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
+            and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
     <refsect1><title>ASSOCIATED GETS</title>

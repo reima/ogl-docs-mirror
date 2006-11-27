@@ -64,7 +64,7 @@
         </p><p>
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_PACK_BUFFER</code> target 
             (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while a block of pixels is
-            requested, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data storage
+            requested, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data store
             rather than a pointer to client memory.
         </p><p>
             When the <code class="code">ARB_imaging</code> extension is supported, the pixel data may
@@ -556,10 +556,6 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>format</code></em> is <code class="constant">GL_DEPTH_COMPONENT</code>
             and there is no depth buffer.
         </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glReadPixels</code>
-            is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
-            and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>type</code></em> is one of
             <code class="constant">GL_UNSIGNED_BYTE_3_3_2</code>,
             <code class="constant">GL_UNSIGNED_BYTE_2_3_3_REV</code>,
@@ -592,18 +588,33 @@
             <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>, and
             <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code> are available only if the GL version
             is 1.2 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785532"></a><h2>ASSOCIATED GETS</h2><p>
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_PACK_BUFFER</code> target and the buffer object's data store is currently mapped.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_PACK_BUFFER</code> target and the data would be packed to the buffer 
+            object such that the memory writes required would exceed the data store size.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_PACK_BUFFER</code> target and <em class="parameter"><code>data</code></em> is not evenly divisible 
+            into the number of bytes needed to store in memory a datum indicated by <em class="parameter"><code>type</code></em>.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glReadPixels</code>
+            is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
+            and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785596"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_INDEX_MODE</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PIXEL_PACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785562"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785625"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPixelMap</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glReadBuffer</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785602"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785665"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

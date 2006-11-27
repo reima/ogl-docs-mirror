@@ -199,7 +199,7 @@
         </p><p>
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target 
             (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while a texture image is
-            specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data storage.
+            specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data store.
         </p><p>
             The first element corresponds to the lower left corner of the texture
             image.
@@ -524,7 +524,6 @@
             <span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span> and <span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span> modes affect texture images
             in exactly the way they affect <span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span>.
         </p><p>
-        </p><p>
             <code class="function">glTexImage2D</code> and <code class="constant">GL_PROXY_TEXTURE_2D</code> are available only if the GL
             version is 1.1 or greater.
         </p><p>
@@ -538,10 +537,6 @@
             texture memory.
             The image is undefined if the user tries to apply
             an uninitialized portion of the texture image to a primitive.
-        </p><p>
-            If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target 
-            (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while a texture image is
-            specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data storage.
         </p><p>
             Formats <code class="constant">GL_BGR</code>, and <code class="constant">GL_BGRA</code> and types
             <code class="constant">GL_UNSIGNED_BYTE_3_3_2</code>,
@@ -581,7 +576,7 @@
 			<code class="constant">GL_SLUMINANCE_ALPHA</code>, and
 			<code class="constant">GL_SLUMINANCE8_ALPHA8</code>
 			internal formats are only available if the GL version is 2.1 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785577"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785550"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not <code class="constant">GL_TEXTURE_2D</code>,
             <code class="constant">GL_PROXY_TEXTURE_2D</code>,
             <code class="constant">GL_PROXY_TEXTURE_CUBE_MAP</code>,
@@ -594,13 +589,13 @@
         </p><p>
 			<code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is one of the six cube map 2D image targets and the width and height parameters are not equal.
         </p><p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> or <em class="parameter"><code>height</code></em> is less than 0
-            or greater than 2 + <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
-        </p><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>type</code></em> is not a type constant.
         </p><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>type</code></em> is <code class="constant">GL_BITMAP</code> and
             <em class="parameter"><code>format</code></em> is not <code class="constant">GL_COLOR_INDEX</code>.
+        </p><p>
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> or <em class="parameter"><code>height</code></em> is less than 0
+            or greater than 2 + <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>level</code></em> is less than 0.
         </p><p>
@@ -647,10 +642,6 @@
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>border</code></em> is not 0 or 1.
         </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glTexImage2D</code>
-            is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
-            and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>type</code></em> is one of
             <code class="constant">GL_UNSIGNED_BYTE_3_3_2</code>,
             <code class="constant">GL_UNSIGNED_BYTE_2_3_3_REV</code>,
@@ -683,13 +674,28 @@
             <code class="constant">GL_DEPTH_COMPONENT</code>, <code class="constant">GL_DEPTH_COMPONENT16</code>,
             <code class="constant">GL_DEPTH_COMPONENT24</code>, or <code class="constant">GL_DEPTH_COMPONENT32</code>, and if <em class="parameter"><code>format</code></em> is
             not <code class="constant">GL_DEPTH_COMPONENT</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786183"></a><h2>ASSOCIATED GETS</h2><p>
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and the buffer object's data store is currently mapped.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and the data would be unpacked from the buffer 
+            object such that the memory reads required would exceed the data store size.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and <em class="parameter"><code>data</code></em> is not evenly divisible 
+            into the number of bytes needed to store in memory a datum indicated by <em class="parameter"><code>type</code></em>.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glTexImage2D</code>
+            is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
+            and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786219"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetTexImage</span></span>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_TEXTURE_2D</code> or <code class="constant">GL_TEXTURE_CUBE_MAP</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786224"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786260"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glColorTable</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glConvolutionFilter2D</span></span>,
@@ -712,7 +718,7 @@
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786349"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786386"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

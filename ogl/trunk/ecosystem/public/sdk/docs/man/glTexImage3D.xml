@@ -335,7 +335,7 @@
         <para>
             If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
             (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a texture image is
-            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data storage.
+            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data store.
         </para>
         <para>
             The first element corresponds to the lower left corner of the texture
@@ -670,8 +670,6 @@
             in exactly the way they affect <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>.
         </para>
         <para>
-        </para>
-        <para>
             <function>glTexImage3D</function> is available only if the GL version is 1.2 or greater.
         </para>
         <para>
@@ -846,11 +844,6 @@
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>border</parameter> is not 0 or 1.
         </para>
         <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glTexImage3D</function>
-            is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
-            and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
-        </para>
-        <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>type</parameter> is one of
             <constant>GL_UNSIGNED_BYTE_3_3_2</constant>,
             <constant>GL_UNSIGNED_BYTE_2_3_3_REV</constant>,
@@ -874,6 +867,25 @@
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>format</parameter> or <parameter>internalFormat</parameter> is
             <constant>GL_DEPTH_COMPONENT</constant>, <constant>GL_DEPTH_COMPONENT16</constant>,
             <constant>GL_DEPTH_COMPONENT24</constant>, or <constant>GL_DEPTH_COMPONENT32</constant>.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_UNPACK_BUFFER</constant> target and the buffer object's data store is currently mapped.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_UNPACK_BUFFER</constant> target and the data would be unpacked from the buffer 
+            object such that the memory reads required would exceed the data store size.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_UNPACK_BUFFER</constant> target and <parameter>data</parameter> is not evenly divisible 
+            into the number of bytes needed to store in memory a datum indicated by <parameter>type</parameter>.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glTexImage3D</function>
+            is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
+            and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
     <refsect1><title>ASSOCIATED GETS</title>

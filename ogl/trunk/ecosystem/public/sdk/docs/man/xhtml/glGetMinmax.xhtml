@@ -56,7 +56,7 @@
         </p><p>
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_PACK_BUFFER</code> target 
             (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while minimum and maximum pixel values are
-            requested, <em class="parameter"><code>values</code></em> is treated as a byte offset into the buffer object's data storage.
+            requested, <em class="parameter"><code>values</code></em> is treated as a byte offset into the buffer object's data store.
         </p><p>
             No pixel transfer operations are performed on the return values, but pixel
             storage modes that are applicable to one-dimensional images are performed.
@@ -106,10 +106,6 @@
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>types</code></em> is not one of the allowable
             values.
         </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetMinmax</code> is executed
-            between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding
-            execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>types</code></em> is one of
             <code class="constant">GL_UNSIGNED_BYTE_3_3_2</code>,
             <code class="constant">GL_UNSIGNED_BYTE_2_3_3_REV</code>,
@@ -127,14 +123,29 @@
             <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>, or
             <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code>
             and <em class="parameter"><code>format</code></em> is neither <code class="constant">GL_RGBA</code> nor <code class="constant">GL_BGRA</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712585"></a><h2>ASSOCIATED GETS</h2><p>
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_PACK_BUFFER</code> target and the buffer object's data store is currently mapped.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_PACK_BUFFER</code> target and the data would be packed to the buffer 
+            object such that the memory writes required would exceed the data store size.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_PACK_BUFFER</code> target and <em class="parameter"><code>values</code></em> is not evenly divisible 
+            into the number of bytes needed to store in memory a datum indicated by <em class="parameter"><code>type</code></em>.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetMinmax</code> is executed
+            between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding
+            execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712648"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetMinmaxParameter</span></span>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PIXEL_PACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712610"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712674"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glMinmax</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glResetMinmax</span></span>,
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712630"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712694"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -108,6 +108,11 @@
             <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry> are performed.
         </para>
         <para>
+            If a non-zero named buffer object is bound to the <constant>GL_PIXEL_PACK_BUFFER</constant> target 
+            (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a histogram table is
+            requested, <parameter>table</parameter> is treated as a byte offset into the buffer object's data store.
+        </para>
+        <para>
             Color components that are requested in
             the specified <parameter>format</parameter>, but which are not included in the internal
             format of the color lookup table, are returned as zero.  The
@@ -225,16 +230,37 @@
             and <parameter>format</parameter> is neither <constant>GL_RGBA</constant> nor <constant>GL_BGRA</constant>.
         </para>
         <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_PACK_BUFFER</constant> target and the buffer object's data store is currently mapped.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_PACK_BUFFER</constant> target and the data would be packed to the buffer 
+            object such that the memory writes required would exceed the data store size.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_PACK_BUFFER</constant> target and <parameter>table</parameter> is not evenly divisible 
+            into the number of bytes needed to store in memory a datum indicated by <parameter>type</parameter>.
+        </para>
+        <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glGetColorTable</function> is executed
             between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry> and the corresponding
             execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
+    <refsect1><title>ASSOCIATED GETS</title>
+        <para>
+            <citerefentry><refentrytitle>glGetColorTableParameter</refentrytitle></citerefentry>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_PACK_BUFFER_BINDING</constant>
+        </para>
+    </refsect1>
     <refsect1><title>SEE ALSO</title>
         <para>
             <citerefentry><refentrytitle>glColorTable</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glColorTableParameter</refentrytitle></citerefentry>,
-            <function>glGetColorTableParameter</function>
+            <citerefentry><refentrytitle>glColorTableParameter</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1><title>COPYRIGHT</title>

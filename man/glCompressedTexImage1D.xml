@@ -132,7 +132,7 @@
         <para>
             If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
             (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a texture image is
-            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data storage.
+            specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data store.
         </para>
     </refsect1>
     <refsect1><title>NOTES</title>
@@ -151,14 +151,28 @@
             <constant>GL_COMPRESSED_RGBA</constant>.
         </para>
         <para>
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>imageSize</parameter> is not consistent with
+            the format, dimensions, and contents of the specified compressed image
+            data.
+        </para>
+        <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if parameter combinations are not
             supported by the specific compressed internal format as specified in the
             specific texture compression extension.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>imageSize</parameter> is not consistent with
-            the format, dimensions, and contents of the specified compressed image
-            data.
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_UNPACK_BUFFER</constant> target and the buffer object's data store is currently mapped.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
+            <constant>GL_PIXEL_UNPACK_BUFFER</constant> target and the data would be unpacked from the buffer 
+            object such that the memory reads required would exceed the data store size.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glCompressedTexImage1D</function>
+            is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
+            and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
         <para>
             Undefined results, including abnormal program termination, are generated if

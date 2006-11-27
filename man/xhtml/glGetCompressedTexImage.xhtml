@@ -32,7 +32,7 @@
         </p><p>
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_PACK_BUFFER</code> target 
             (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while a texture image is
-            requested, <em class="parameter"><code>img</code></em> is treated as a byte offset into the buffer object's data storage.
+            requested, <em class="parameter"><code>img</code></em> is treated as a byte offset into the buffer object's data store.
         </p><p>
             To minimize errors, first verify that the texture is compressed by calling
             <span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span> with argument <code class="constant">GL_TEXTURE_COMPRESSED</code>.  If
@@ -52,7 +52,18 @@
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetCompressedTexImage</code> is used to retrieve a
             texture that is in an uncompressed internal format.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774996"></a><h2>ASSOCIATED GETS</h2><p>
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_PACK_BUFFER</code> target and the buffer object's data store is currently mapped.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_PACK_BUFFER</code> target and the data would be packed to the buffer 
+            object such that the memory writes required would exceed the data store size.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetCompressedTexImage</code>
+            is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
+            and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775056"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span> with argument <code class="constant">GL_TEXTURE_COMPRESSED</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span> with argument <code class="constant">GL_TEXTURE_COMPRESSED_IMAGE_SIZE</code>
@@ -60,7 +71,7 @@
             <span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span> with argument <code class="constant">GL_TEXTURE_INTERNAL_FORMAT</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PIXEL_PACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775051"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775110"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glCompressedTexImage1D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glCompressedTexImage2D</span></span>,
@@ -80,7 +91,7 @@
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span>
             				     
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775157"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775216"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

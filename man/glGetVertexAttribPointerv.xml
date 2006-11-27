@@ -55,7 +55,7 @@
 
         <para>If a non-zero named buffer object was bound to the <constant>GL_ARRAY_BUFFER</constant> target 
         (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) when the desired pointer was previously
-        specified, the <parameter>pointer</parameter> returned is a byte offset into the buffer object's data storage.
+        specified, the <parameter>pointer</parameter> returned is a byte offset into the buffer object's data store.
         </para>
     </refsect1>
     <refsect1><title>NOTES</title>

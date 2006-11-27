@@ -101,7 +101,7 @@
         </p><p>
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target 
             (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while a color table is
-            specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data storage.
+            specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data store.
         </p><p>
             If <em class="parameter"><code>target</code></em> is <code class="constant">GL_COLOR_TABLE</code>,
             <code class="constant">GL_POST_CONVOLUTION_COLOR_TABLE</code>,
@@ -431,32 +431,43 @@
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>internalformat</code></em> is not one of the
             allowable values.
         </p><p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> is less than zero.
-        </p><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>format</code></em> is not one of the allowable
             values.
         </p><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>type</code></em> is not one of the allowable
             values.
         </p><p>
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> is less than zero.
+        </p><p>
             <code class="constant">GL_TABLE_TOO_LARGE</code> is generated if the requested color table
             is too large to be supported by the implementation, and <em class="parameter"><code>target</code></em> is
             not a <code class="constant">GL_PROXY_*</code> target.
         </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and the buffer object's data store is currently mapped.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and the data would be unpacked from the buffer 
+            object such that the memory reads required would exceed the data store size.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and <em class="parameter"><code>data</code></em> is not evenly divisible 
+            into the number of bytes needed to store in memory a datum indicated by <em class="parameter"><code>type</code></em>.
+        </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glColorTable</code> is executed
             between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding
             execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785118"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785181"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetColorTableParameter</span></span>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785143"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785207"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glColorSubTable</span></span>,
             <code class="function">glColorTableParameter</code>,
             <span class="citerefentry"><span class="refentrytitle">glCopyColorTable</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glCopyColorSubTable</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glGetColorTable</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785180"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785243"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

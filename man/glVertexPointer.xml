@@ -89,7 +89,7 @@
         <para>
             If a non-zero named buffer object is bound to the <constant>GL_ARRAY_BUFFER</constant> target 
             (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a vertex array is
-            specified, <parameter>pointer</parameter> is treated as a byte offset into the buffer object's data storage.
+            specified, <parameter>pointer</parameter> is treated as a byte offset into the buffer object's data store.
             Also, the buffer object binding (<constant>GL_ARRAY_BUFFER_BINDING</constant>) is saved as vertex array
             client-side state (<constant>GL_VERTEX_ARRAY_BUFFER_BINDING</constant>).
         </para>

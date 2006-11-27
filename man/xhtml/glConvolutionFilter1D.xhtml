@@ -92,7 +92,7 @@
         </p><p>
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target 
             (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while a convolution filter is
-            specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data storage.
+            specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data store.
         </p><p>
             The R, G, B, and A components of each pixel are next scaled by the four
             1D <code class="constant">GL_CONVOLUTION_FILTER_SCALE</code> parameters and biased by the
@@ -215,21 +215,17 @@
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>internalformat</code></em> is not one of the
             allowable values.
         </p><p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> is less than zero or greater
-            than the maximum supported value.
-            This value may be queried with <span class="citerefentry"><span class="refentrytitle">glGetConvolutionParameter</span></span>
-            using target <code class="constant">GL_CONVOLUTION_1D</code> and name
-            <code class="constant">GL_MAX_CONVOLUTION_WIDTH</code>.
-        </p><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>format</code></em> is not one of the allowable
             values.
         </p><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>type</code></em> is not one of the allowable
             values.
         </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glConvolutionFilter1D</code> is executed
-            between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding
-            execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> is less than zero or greater
+            than the maximum supported value.
+            This value may be queried with <span class="citerefentry"><span class="refentrytitle">glGetConvolutionParameter</span></span>
+            using target <code class="constant">GL_CONVOLUTION_1D</code> and name
+            <code class="constant">GL_MAX_CONVOLUTION_WIDTH</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>format</code></em> is one of
             <code class="constant">GL_UNSIGNED_BYTE_3_3_2</code>,
@@ -248,16 +244,31 @@
             <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>, or
             <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code>
             and <em class="parameter"><code>type</code></em> is neither <code class="constant">GL_RGBA</code> nor <code class="constant">GL_BGRA</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711230"></a><h2>ASSOCIATED GETS</h2><p>
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and the buffer object's data store is currently mapped.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and the data would be unpacked from the buffer 
+            object such that the memory reads required would exceed the data store size.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and <em class="parameter"><code>data</code></em> is not evenly divisible 
+            into the number of bytes needed to store in memory a datum indicated by <em class="parameter"><code>type</code></em>.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glConvolutionFilter1D</code> is executed
+            between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding
+            execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711294"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetConvolutionParameter</span></span>, <span class="citerefentry"><span class="refentrytitle">glGetConvolutionFilter</span></span>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711260"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711324"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glConvolutionFilter2D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glSeparableFilter2D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glConvolutionParameter</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711290"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711354"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

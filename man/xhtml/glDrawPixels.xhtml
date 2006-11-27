@@ -116,7 +116,7 @@
         </p><p>
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target 
             (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while a block of pixels is
-            specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data storage.
+            specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data store.
         </p><p>
             The 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -863,10 +863,16 @@
             <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code> are only valid for <em class="parameter"><code>type</code></em> if the
             GL version is 1.2 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786519"></a><h2>ERRORS</h2><p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if either <em class="parameter"><code>width</code></em> or <em class="parameter"><code>height</code></em> is negative.
-        </p><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>format</code></em> or <em class="parameter"><code>type</code></em> is not one of
             the accepted values.
+        </p><p>
+            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>type</code></em> is <code class="constant">GL_BITMAP</code> and
+            <em class="parameter"><code>format</code></em> is not either <code class="constant">GL_COLOR_INDEX</code> or <code class="constant">GL_STENCIL_INDEX</code>.
+        </p><p>
+            <code class="constant">GL_INVALID_VALUE</code> is generated if either <em class="parameter"><code>width</code></em> or <em class="parameter"><code>height</code></em> is negative.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>format</code></em> is <code class="constant">GL_STENCIL_INDEX</code>
+            and there is no stencil buffer.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>format</code></em> is
             <code class="constant">GL_RED</code>,
@@ -881,16 +887,6 @@
             or
             <code class="constant">GL_LUMINANCE_ALPHA</code>,
             and the GL is in color index mode.
-        </p><p>
-            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>type</code></em> is <code class="constant">GL_BITMAP</code> and
-            <em class="parameter"><code>format</code></em> is not either <code class="constant">GL_COLOR_INDEX</code> or <code class="constant">GL_STENCIL_INDEX</code>.
-        </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>format</code></em> is <code class="constant">GL_STENCIL_INDEX</code>
-            and there is no stencil buffer.
-        </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glDrawPixels</code>
-            is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
-            and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>format</code></em> is one of
             <code class="constant">GL_UNSIGNED_BYTE_3_3_2</code>,
@@ -909,13 +905,28 @@
             <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>, or
             <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code>
             and <em class="parameter"><code>format</code></em> is neither <code class="constant">GL_RGBA</code> nor <code class="constant">GL_BGRA</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786801"></a><h2>ASSOCIATED GETS</h2><p>
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and the buffer object's data store is currently mapped.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and the data would be unpacked from the buffer 
+            object such that the memory reads required would exceed the data store size.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and <em class="parameter"><code>data</code></em> is not evenly divisible 
+            into the number of bytes needed to store in memory a datum indicated by <em class="parameter"><code>type</code></em>.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glDrawPixels</code>
+            is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
+            and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786865"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_CURRENT_RASTER_POSITION</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_CURRENT_RASTER_POSITION_VALID</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786843"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786906"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glAlphaFunc</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span>,
@@ -930,7 +941,7 @@
             <span class="citerefentry"><span class="refentrytitle">glScissor</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glStencilFunc</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glWindowPos</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786924"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786988"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

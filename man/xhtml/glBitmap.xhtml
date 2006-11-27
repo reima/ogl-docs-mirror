@@ -29,7 +29,7 @@
         </p><p>
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target 
             (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while a bitmap image is
-            specified, <em class="parameter"><code>bitmap</code></em> is treated as a byte offset into the buffer object's data storage.
+            specified, <em class="parameter"><code>bitmap</code></em> is treated as a byte offset into the buffer object's data store.
         </p><p>
             The bitmap image is interpreted like image data for the <span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span>
             command,
@@ -137,10 +137,17 @@
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775280"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> or <em class="parameter"><code>height</code></em> is negative.
         </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and the buffer object's data store is currently mapped.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
+            <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and the data would be unpacked from the buffer 
+            object such that the memory reads required would exceed the data store size.
+        </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glBitmap</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding execution of
             <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712497"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712535"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_CURRENT_RASTER_POSITION</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_CURRENT_RASTER_COLOR</code>
@@ -156,14 +163,14 @@
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_CURRENT_RASTER_POSITION_VALID</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712598"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712635"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glRasterPos</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glWindowPos</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712638"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712675"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

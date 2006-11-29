@@ -39,7 +39,6 @@ SUPERBIBLEXML = \
 
 # 3Dlabs GL 2.0 man pages
 3DLABSXML = \
-    API-Index.xml \
     glAttachShader.xml \
     glBindAttribLocation.xml \
     glCompileShader.xml \
@@ -71,9 +70,7 @@ SUPERBIBLEXML = \
     glUseProgram.xml \
     glValidateProgram.xml \
     glVertexAttribPointer.xml \
-    glVertexAttrib.xml \
-    ImpDepConstants.xml \
-    MigrationGuide.xml
+    glVertexAttrib.xml
 
 # SGI OpenGL 1.4 man pages
 SGIGLXML = \

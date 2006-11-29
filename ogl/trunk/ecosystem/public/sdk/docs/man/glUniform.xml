@@ -27,6 +27,12 @@
 	<refname>glUniformMatrix2fv</refname>
 	<refname>glUniformMatrix3fv</refname>
 	<refname>glUniformMatrix4fv</refname>
+	<refname>glUniformMatrix2x3fv</refname>
+	<refname>glUniformMatrix3x2fv</refname>
+	<refname>glUniformMatrix2x4fv</refname>
+	<refname>glUniformMatrix4x2fv</refname>
+	<refname>glUniformMatrix3x4fv</refname>
+	<refname>glUniformMatrix4x3fv</refname>
 	<refpurpose>Specify the value of a uniform variable for the current program object</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>C Specification</title>
@@ -173,9 +179,9 @@
 		<term><parameter>count</parameter></term>
 		<listitem>
 		    <para>Specifies the number of elements that are to
-		    be modified (this should be 1 if the targeted
-		    uniform variable is not an array, 1 or more if it is
-		    an array).</para>
+		    be modified. This should be 1 if the targeted
+		    uniform variable is not an array, and 1 or more if it is
+		    an array.</para>
 		</listitem>
 	    </varlistentry>
 	    <varlistentry>
@@ -212,6 +218,48 @@
 		<paramdef>GLboolean <parameter>transpose</parameter></paramdef>
 		<paramdef>const GLfloat *<parameter>value</parameter></paramdef>
 	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glUniformMatrix2x3fv</function></funcdef>
+		<paramdef>GLint <parameter>location</parameter></paramdef>
+		<paramdef>GLsizei <parameter>count</parameter></paramdef>
+		<paramdef>GLboolean <parameter>transpose</parameter></paramdef>
+		<paramdef>const GLfloat *<parameter>value</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glUniformMatrix3x2fv</function></funcdef>
+		<paramdef>GLint <parameter>location</parameter></paramdef>
+		<paramdef>GLsizei <parameter>count</parameter></paramdef>
+		<paramdef>GLboolean <parameter>transpose</parameter></paramdef>
+		<paramdef>const GLfloat *<parameter>value</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glUniformMatrix2x4fv</function></funcdef>
+		<paramdef>GLint <parameter>location</parameter></paramdef>
+		<paramdef>GLsizei <parameter>count</parameter></paramdef>
+		<paramdef>GLboolean <parameter>transpose</parameter></paramdef>
+		<paramdef>const GLfloat *<parameter>value</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glUniformMatrix4x2fv</function></funcdef>
+		<paramdef>GLint <parameter>location</parameter></paramdef>
+		<paramdef>GLsizei <parameter>count</parameter></paramdef>
+		<paramdef>GLboolean <parameter>transpose</parameter></paramdef>
+		<paramdef>const GLfloat *<parameter>value</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glUniformMatrix3x4fv</function></funcdef>
+		<paramdef>GLint <parameter>location</parameter></paramdef>
+		<paramdef>GLsizei <parameter>count</parameter></paramdef>
+		<paramdef>GLboolean <parameter>transpose</parameter></paramdef>
+		<paramdef>const GLfloat *<parameter>value</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glUniformMatrix4x3fv</function></funcdef>
+		<paramdef>GLint <parameter>location</parameter></paramdef>
+		<paramdef>GLsizei <parameter>count</parameter></paramdef>
+		<paramdef>GLboolean <parameter>transpose</parameter></paramdef>
+		<paramdef>const GLfloat *<parameter>value</parameter></paramdef>
+	    </funcprototype>
 	</funcsynopsis>
     </refsynopsisdiv>
     <refsect1><title>Parameters</title>
@@ -226,10 +274,10 @@
 	    <varlistentry>
 		<term><parameter>count</parameter></term>
 		<listitem>
-		    <para>Specifies the number of elements that are to
-		    be modified (this should be 1 if the targeted
-		    uniform variable is not an array, 1 or more if it is
-		    an array).</para>
+		    <para>Specifies the number of matrices that are to
+		    be modified. This should be 1 if the targeted
+		    uniform variable is not an array of matrices, and 1 or more if it is
+		    an array of matrices.</para>
 		</listitem>
 	    </varlistentry>
 	    <varlistentry>
@@ -324,14 +372,19 @@
 	<parameter>count</parameter></para>
 
 	<para>The commands
-	<function>glUniformFloatMatrix{2|3|4}fv</function> are used to
-	modify a matrix or an array of matrices. The number in the
-	command name is interpreted as the dimensionality of the matrix.
+	<function>glUniformFloatMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv</function> 
+        are used to modify a matrix or an array of matrices. The numbers in the
+	command name are interpreted as the dimensionality of the matrix.
 	The number <function>2</function> indicates a 2 &#215; 2 matrix
 	(i.e., 4 values), the number <function>3</function> indicates a
 	3 &#215; 3 matrix (i.e., 9 values), and the number
 	<function>4</function> indicates a 4 &#215; 4 matrix (i.e., 16
-	values). If <parameter>transpose</parameter> is
+	values). Non-square matrix dimensionality is explicit, with the first
+        number representing the number of columns and the second number
+        representing the number of rows.  For example, 
+        <function>2x4</function> indicates a 2 &#215; 4 matrix with 2 columns
+        and 4 rows (i.e., 8 values).
+        If <parameter>transpose</parameter> is
 	<constant>GL_FALSE</constant>, each matrix is assumed to be
 	supplied in column major order. If
 	<parameter>transpose</parameter> is
@@ -345,6 +398,9 @@
     <refsect1><title>Notes</title>
 	<para><function>glUniform</function> is available only if the GL
 	version is 2.0 or greater.</para>
+
+	<para><function>glUniformMatrix{2x3|3x2|2x4|4x2|3x4|4x3}fv</function> 
+        is available only if the GL version is 2.1 or greater.</para>
 
 	<para><function>glUniform1i</function> and
 	<function>glUniform1iv</function> are the only two functions

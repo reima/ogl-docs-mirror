@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetActiveUniform</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetActiveUniform"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetActiveUniform — Returns information about an active uniform variable for the specified program object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef">void <b class="fsfunc">glGetActiveUniform</b>(</code></td><td><var class="pdparam">program</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">index</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">bufSize</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">length</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">size</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">name</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td>GLuint  </td><td><var class="pdparam">program</var>;</td></tr><tr><td>GLuint  </td><td><var class="pdparam">index</var>;</td></tr><tr><td>GLsizei  </td><td><var class="pdparam">bufSize</var>;</td></tr><tr><td>GLsizei * </td><td><var class="pdparam">length</var>;</td></tr><tr><td>GLint * </td><td><var class="pdparam">size</var>;</td></tr><tr><td>GLenum * </td><td><var class="pdparam">type</var>;</td></tr><tr><td>GLchar * </td><td><var class="pdparam">name</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777320"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>program</code></em></span></dt><dd><p>Specifies the program object to be
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetActiveUniform</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetActiveUniform"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetActiveUniform — Returns information about an active uniform variable for the specified program object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef">void <b class="fsfunc">glGetActiveUniform</b>(</code></td><td><var class="pdparam">program</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">index</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">bufSize</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">length</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">size</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">name</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td>GLuint  </td><td><var class="pdparam">program</var>;</td></tr><tr><td>GLuint  </td><td><var class="pdparam">index</var>;</td></tr><tr><td>GLsizei  </td><td><var class="pdparam">bufSize</var>;</td></tr><tr><td>GLsizei * </td><td><var class="pdparam">length</var>;</td></tr><tr><td>GLint * </td><td><var class="pdparam">size</var>;</td></tr><tr><td>GLenum * </td><td><var class="pdparam">type</var>;</td></tr><tr><td>GLchar * </td><td><var class="pdparam">name</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781690"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>program</code></em></span></dt><dd><p>Specifies the program object to be
 		    queried.</p></dd><dt><span class="term"><em class="parameter"><code>index</code></em></span></dt><dd><p>Specifies the index of the uniform variable to
 		    be queried.</p></dd><dt><span class="term"><em class="parameter"><code>bufSize</code></em></span></dt><dd><p>Specifies the maximum number of characters
 		    OpenGL is allowed to write in the character buffer
@@ -11,7 +11,7 @@
 		    <code class="constant">NULL</code> is passed.</p></dd><dt><span class="term"><em class="parameter"><code>size</code></em></span></dt><dd><p>Returns the size of the uniform
 		    variable.</p></dd><dt><span class="term"><em class="parameter"><code>type</code></em></span></dt><dd><p>Returns the data type of the uniform
 		    variable.</p></dd><dt><span class="term"><em class="parameter"><code>name</code></em></span></dt><dd><p>Returns a null terminated string containing
-		    the name of the uniform variable.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763885"></a><h2>Description</h2><p><code class="function">glGetActiveUniform</code> returns
+		    the name of the uniform variable.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768254"></a><h2>Description</h2><p><code class="function">glGetActiveUniform</code> returns
 	information about an active uniform variable in the program
 	object specified by <em class="parameter"><code>program</code></em>. The number
 	of active uniform variables can be obtained by calling
@@ -74,6 +74,12 @@
 	<code class="constant">GL_FLOAT_MAT2</code>,
 	<code class="constant">GL_FLOAT_MAT3</code>,
 	<code class="constant">GL_FLOAT_MAT4</code>,
+	<code class="constant">GL_FLOAT_MAT2x3</code>,
+	<code class="constant">GL_FLOAT_MAT2x4</code>,
+	<code class="constant">GL_FLOAT_MAT3x2</code>,
+	<code class="constant">GL_FLOAT_MAT3x4</code>,
+	<code class="constant">GL_FLOAT_MAT4x2</code>,
+	<code class="constant">GL_FLOAT_MAT4x3</code>,
 	<code class="constant">GL_SAMPLER_1D</code>,
 	<code class="constant">GL_SAMPLER_2D</code>,
 	<code class="constant">GL_SAMPLER_3D</code>,
@@ -114,8 +120,15 @@
 	operation that failed. If an error occurs, the return values
 	<em class="parameter"><code>length</code></em>, <em class="parameter"><code>size</code></em>,
 	<em class="parameter"><code>type</code></em>, and <em class="parameter"><code>name</code></em>
-	will be unmodified.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770866"></a><h2>Notes</h2><p><code class="function">glGetActiveUniform</code> is available only
-	if the GL version is 2.0 or greater.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770882"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_VALUE</code> is generated if
+	will be unmodified.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775258"></a><h2>Notes</h2><p><code class="function">glGetActiveUniform</code> is available only
+	if the GL version is 2.0 or greater.</p><p><code class="constant">GL_FLOAT_MAT2x3</code>,
+	<code class="constant">GL_FLOAT_MAT2x4</code>,
+	<code class="constant">GL_FLOAT_MAT3x2</code>,
+	<code class="constant">GL_FLOAT_MAT3x4</code>,
+	<code class="constant">GL_FLOAT_MAT4x2</code>, and
+	<code class="constant">GL_FLOAT_MAT4x3</code>
+	will only be returned as a <em class="parameter"><code>type</code></em>
+        if the GL version is 2.1 or greater.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774891"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_VALUE</code> is generated if
 	<em class="parameter"><code>program</code></em> is not a value generated by
 	OpenGL.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
 	<em class="parameter"><code>program</code></em> is not a program object.</p><p><code class="constant">GL_INVALID_VALUE</code> is generated if
@@ -127,12 +140,12 @@
 	<span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
 	and the corresponding execution of
 	<span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.</p><p><code class="constant">GL_INVALID_VALUE</code> is generated if
-	<em class="parameter"><code>bufSize</code></em> is less than 0.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4708133"></a><h2>Associated Gets</h2><p><span class="citerefentry"><span class="refentrytitle">glGet</span></span>
+	<em class="parameter"><code>bufSize</code></em> is less than 0.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712558"></a><h2>Associated Gets</h2><p><span class="citerefentry"><span class="refentrytitle">glGet</span></span>
 	with argument <code class="constant">GL_MAX_VERTEX_UNIFORM_COMPONENTS
 	</code> or
 	<code class="constant">GL_MAX_FRAGMENT_UNIFORM_COMPONENTS</code>.</p><p><span class="citerefentry"><span class="refentrytitle">glGetProgram</span></span>
 	with argument <code class="constant">GL_ACTIVE_UNIFORMS</code> or
-	<code class="constant">GL_ACTIVE_UNIFORM_MAX_LENGTH</code>.</p><p><span class="citerefentry"><span class="refentrytitle">glIsProgram</span></span></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4708175"></a><h2>See Also</h2><p><span class="citerefentry"><span class="refentrytitle">glGetUniform</span></span>,
+	<code class="constant">GL_ACTIVE_UNIFORM_MAX_LENGTH</code>.</p><p><span class="citerefentry"><span class="refentrytitle">glIsProgram</span></span></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712600"></a><h2>See Also</h2><p><span class="citerefentry"><span class="refentrytitle">glGetUniform</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glGetUniformLocation</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glLinkProgram</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glUniform</span></span>,

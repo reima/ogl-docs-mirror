@@ -301,7 +301,7 @@
                 <listitem>
                     <para>
                         <parameter>params</parameter> returns one value,
-                        the number of auxiliary color buffers. The initial value is 0.
+                        the number of auxiliary color buffers available.
                     </para>
                 </listitem>
             </varlistentry>
@@ -740,11 +740,21 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_CURRENT_PROGRAM</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        the name of the program object that is currently active, or 0 if no program object is active.
+                        See <citerefentry><refentrytitle>glUseProgram</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_CURRENT_RASTER_COLOR</constant></term>
                 <listitem>
                     <para>
                         <parameter>params</parameter> returns four values:
-                        the red, green, blue, and alpha values of the current raster position.
+                        the red, green, blue, and alpha color values of the current raster position.
                         Integer values,
                         if requested,
                         are linearly mapped from the internal floating-point representation such
@@ -804,11 +814,32 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_CURRENT_RASTER_SECONDARY_COLOR</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns four values:
+                        the red, green, blue, and alpha secondary color values of the current raster position.
+                        Integer values,
+                        if requested,
+                        are linearly mapped from the internal floating-point representation such
+                        that 1.0 returns the most positive representable integer value,
+                        and 
+                        <inlineequation><mml:math>
+                            <!-- eqn: -1.0:-->
+                            <mml:mn>-1.0</mml:mn>
+                        </mml:math></inlineequation>
+                        returns the most negative representable integer
+                        value. The initial value is (1, 1, 1, 1).
+                        See <citerefentry><refentrytitle>glRasterPos</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_CURRENT_RASTER_TEXTURE_COORDS</constant></term>
                 <listitem>
                     <para>
                         <parameter>params</parameter> returns four values: the <emphasis>s</emphasis>, <emphasis>t</emphasis>, <emphasis>r</emphasis>, and <emphasis>q</emphasis>
-                        current raster texture coordinates. The initial value is (0, 0, 0, 1).
+                        texture coordinates of the current raster position. The initial value is (0, 0, 0, 1).
                         See <citerefentry><refentrytitle>glRasterPos</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glTexCoord</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -970,6 +1001,19 @@
                         a symbolic constant indicating which buffers are being drawn to.
                         See <citerefentry><refentrytitle>glDrawBuffer</refentrytitle></citerefentry>. The initial value is <constant>GL_BACK</constant> if there
                         are back buffers, otherwise it is <constant>GL_FRONT</constant>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_DRAW_BUFFER</constant><emphasis>i</emphasis></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        a symbolic constant indicating which buffers are being drawn to by the corresponding output color.
+                        See <citerefentry><refentrytitle>glDrawBuffers</refentrytitle></citerefentry>. 
+                        The initial value of <constant>GL_DRAW_BUFFER0</constant> is <constant>GL_BACK</constant> if there
+                        are back buffers, otherwise it is <constant>GL_FRONT</constant>.  The
+                        initial values of draw buffers for all other output colors is <constant>GL_NONE</constant>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1189,6 +1233,18 @@
                         <parameter>params</parameter> returns one value,
                         the start factor for the linear fog equation. The initial value is 0.
                         See <citerefentry><refentrytitle>glFog</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_FRAGMENT_SHADER_DERIVATIVE_HINT</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        a symbolic constant indicating the mode of the derivative accuracy hint 
+                        for fragment shaders. The initial value
+                        is <constant>GL_DONT_CARE</constant>.
+                        See <citerefentry><refentrytitle>glHint</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1902,6 +1958,19 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value, the maximum supported texture image units that 
+                        can be used to access texture maps from the vertex shader and the fragment processor combined. 
+                        If both the vertex shader and the fragment processing stage access the same texture image
+                        unit, then that counts as using two texture image units against this limit.
+                        The value must be at least 2.
+                        See <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_CUBE_MAP_TEXTURE_SIZE</constant></term>
                 <listitem>
                     <para>
@@ -1911,6 +1980,17 @@
                         If the GL version is 1.3 or greater, use <constant>GL_PROXY_TEXTURE_CUBE_MAP</constant>
                         to determine if a texture is too large.
                         See <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_DRAW_BUFFERS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value, the maximum number
+                        of simultaneous output colors allowed from a fragment shader using the 
+                        <code>gl_FragData</code> built-in array.  The value must be at least 1.
+                        See <citerefentry><refentrytitle>glDrawBuffers</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1942,6 +2022,17 @@
                         the maximum equation order supported by 1D and 2D
                         evaluators. The value must be at least 8.
                         See <citerefentry><refentrytitle>glMap1</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glMap2</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_FRAGMENT_UNIFORM_COMPONENTS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        the maximum number of individual floating-point, integer, or boolean values that can be held 
+                        in uniform variable storage for a fragment shader. The value must be at least 64.
+                        See <citerefentry><refentrytitle>glUniform</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -2009,6 +2100,29 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MAX_TEXTURE_COORDS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        the maximum number of texture coordinate sets available to vertex and fragment shaders.
+                        The value must be at least 2.
+                        See <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry> and
+                        <citerefentry><refentrytitle>glClientActiveTexture</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TEXTURE_IMAGE_UNITS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value, the maximum supported texture image units that 
+                        can be used to access texture maps from the fragment shader. 
+                        The value must be at least 2.
+                        See <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_TEXTURE_LOD_BIAS</constant></term>
                 <listitem>
                     <para>
@@ -2046,9 +2160,57 @@
                 <term><constant>GL_MAX_TEXTURE_UNITS</constant></term>
                 <listitem>
                     <para>
-                        <parameter>params</parameter> returns a single value indicating the number of texture units
-                        supported. The value must be at least 1.
+                        <parameter>params</parameter> returns a single value indicating the number of conventional 
+                        texture units supported. Each conventional texture unit includes both a texture coordinate set
+                        and a texture image unit.  Conventional texture units may be used for fixed-function (non-shader)
+                        rendering.  The value must be at least 2.  Additional texture coordinate sets and texture
+                        image units may be accessed from vertex and fragment shaders.
+                        See <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry> and
+                        <citerefentry><refentrytitle>glClientActiveTexture</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_VARYING_FLOATS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        the maximum number of interpolators available for processing varying variables used by
+                        vertex and fragment shaders. This value represents the number of individual floating-point 
+                        values that can be interpolated; varying variables declared as vectors, matrices, and arrays 
+                        will all consume multiple interpolators. The value must be at least 32.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_VERTEX_ATTRIBS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        the maximum number of 4-component generic vertex attributes accessible to a vertex shader. 
+                        The value must be at least 16.
+                        See <citerefentry><refentrytitle>glVertexAttrib</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value, the maximum supported texture image units that 
+                        can be used to access texture maps from the vertex shader. The value may be 0.
                         See <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_VERTEX_UNIFORM_COMPONENTS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        the maximum number of individual floating-point, integer, or boolean values that can be held 
+                        in uniform variable storage for a vertex shader. The value must be at least 512.
+                        See <citerefentry><refentrytitle>glUniform</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -3079,6 +3241,85 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_STENCIL_BACK_FAIL</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        a symbolic constant indicating what action is taken for back-facing polygons when the stencil
+                        test fails. The initial value is <constant>GL_KEEP</constant>.
+                        See <citerefentry><refentrytitle>glStencilOpSeparate</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_STENCIL_BACK_FUNC</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        a symbolic constant indicating what function is used for back-facing polygons to compare the
+                        stencil reference value with the stencil buffer value. The initial value
+                        is <constant>GL_ALWAYS</constant>.
+                        See <citerefentry><refentrytitle>glStencilFuncSeparate</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_STENCIL_BACK_PASS_DEPTH_FAIL</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        a symbolic constant indicating what action is taken for back-facing polygons when the stencil
+                        test passes,
+                        but the depth test fails. The initial value is <constant>GL_KEEP</constant>.
+                        See <citerefentry><refentrytitle>glStencilOpSeparate</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_STENCIL_BACK_PASS_DEPTH_PASS</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        a symbolic constant indicating what action is taken for back-facing polygons when the stencil
+                        test passes and the depth test passes. The initial value is <constant>GL_KEEP</constant>.
+                        See <citerefentry><refentrytitle>glStencilOpSeparate</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_STENCIL_BACK_REF</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        the reference value that is compared with the contents of the stencil
+                        buffer for back-facing polygons. The initial value is 0.
+                        See <citerefentry><refentrytitle>glStencilFuncSeparate</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_STENCIL_BACK_VALUE_MASK</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        the mask that is used for back-facing polygons to mask both the stencil reference value and the
+                        stencil buffer value before they are compared. The initial value is all 1's.
+                        See <citerefentry><refentrytitle>glStencilFuncSeparate</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_STENCIL_BACK_WRITEMASK</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        the mask that controls writing of the stencil bitplanes for back-facing polygons. The initial value
+                        is all 1's.
+                        See <citerefentry><refentrytitle>glStencilMaskSeparate</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_STENCIL_BITS</constant></term>
                 <listitem>
                     <para>
@@ -3106,6 +3347,9 @@
                         a symbolic constant indicating what action is taken when the stencil
                         test fails. The initial value is <constant>GL_KEEP</constant>.
                         See <citerefentry><refentrytitle>glStencilOp</refentrytitle></citerefentry>.
+                        If the GL version is 2.0 or greater, this stencil state only affects non-polygons
+                        and front-facing polygons.  Back-facing polygons use separate stencil state.
+                        See <citerefentry><refentrytitle>glStencilOpSeparate</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -3118,6 +3362,9 @@
                         stencil reference value with the stencil buffer value. The initial value
                         is <constant>GL_ALWAYS</constant>.
                         See <citerefentry><refentrytitle>glStencilFunc</refentrytitle></citerefentry>.
+                        If the GL version is 2.0 or greater, this stencil state only affects non-polygons
+                        and front-facing polygons.  Back-facing polygons use separate stencil state.
+                        See <citerefentry><refentrytitle>glStencilFuncSeparate</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -3130,6 +3377,9 @@
                         test passes,
                         but the depth test fails. The initial value is <constant>GL_KEEP</constant>.
                         See <citerefentry><refentrytitle>glStencilOp</refentrytitle></citerefentry>.
+                        If the GL version is 2.0 or greater, this stencil state only affects non-polygons
+                        and front-facing polygons.  Back-facing polygons use separate stencil state.
+                        See <citerefentry><refentrytitle>glStencilOpSeparate</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -3141,6 +3391,9 @@
                         a symbolic constant indicating what action is taken when the stencil
                         test passes and the depth test passes. The initial value is <constant>GL_KEEP</constant>.
                         See <citerefentry><refentrytitle>glStencilOp</refentrytitle></citerefentry>.
+                        If the GL version is 2.0 or greater, this stencil state only affects non-polygons
+                        and front-facing polygons.  Back-facing polygons use separate stencil state.
+                        See <citerefentry><refentrytitle>glStencilOpSeparate</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -3152,6 +3405,9 @@
                         the reference value that is compared with the contents of the stencil
                         buffer. The initial value is 0.
                         See <citerefentry><refentrytitle>glStencilFunc</refentrytitle></citerefentry>.
+                        If the GL version is 2.0 or greater, this stencil state only affects non-polygons
+                        and front-facing polygons.  Back-facing polygons use separate stencil state.
+                        See <citerefentry><refentrytitle>glStencilFuncSeparate</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -3173,6 +3429,9 @@
                         the mask that is used to mask both the stencil reference value and the
                         stencil buffer value before they are compared. The initial value is all 1's.
                         See <citerefentry><refentrytitle>glStencilFunc</refentrytitle></citerefentry>.
+                        If the GL version is 2.0 or greater, this stencil state only affects non-polygons
+                        and front-facing polygons.  Back-facing polygons use separate stencil state.
+                        See <citerefentry><refentrytitle>glStencilFuncSeparate</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -3184,6 +3443,9 @@
                         the mask that controls writing of the stencil bitplanes. The initial value
                         is all 1's.
                         See <citerefentry><refentrytitle>glStencilMask</refentrytitle></citerefentry>.
+                        If the GL version is 2.0 or greater, this stencil state only affects non-polygons
+                        and front-facing polygons.  Back-facing polygons use separate stencil state.
+                        See <citerefentry><refentrytitle>glStencilMaskSeparate</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -3599,6 +3861,31 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_VERTEX_PROGRAM_POINT_SIZE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single boolean value indicating whether vertex
+                        program point size mode is enabled. If enabled, and a vertex shader is active, then the
+                        point size is taken from the shader built-in <code>gl_PointSize</code>. If disabled,
+                        and a vertex shader is active, then the point size is taken from the point state as specified
+                        by <citerefentry><refentrytitle>glPointState</refentrytitle></citerefentry>.
+                        The initial value is <constant>GL_FALSE</constant>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_VERTEX_PROGRAM_TWO_SIDE</constant></term>
+                <listitem>
+                    <para>
+                        <parameter>params</parameter> returns a single boolean value indicating whether vertex
+                        program two-sided color mode is enabled. If enabled, and a vertex shader is active, then the
+                        GL chooses the back color output for back-facing polygons, and the front color output for
+                        non-polygons and front-facing polygons. If disabled, and a vertex shader is active, then the 
+                        front color output is always selected. The initial value is <constant>GL_FALSE</constant>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_VIEWPORT</constant></term>
                 <listitem>
                     <para>
@@ -3705,10 +3992,10 @@
             are available only if the GL version is 1.2 or greater.
         </para>
         <para>
-            <constant>GL_NUM_COMPRESSED_TEXTURE_FORMATS</constant>,
             <constant>GL_COMPRESSED_TEXTURE_FORMATS</constant>,
-            <constant>GL_TEXTURE_COMPRESSION_HINT</constant>, and
-            <constant>GL_TEXTURE_BINDING_CUBE_MAP</constant>
+            <constant>GL_NUM_COMPRESSED_TEXTURE_FORMATS</constant>,
+            <constant>GL_TEXTURE_BINDING_CUBE_MAP</constant>, and
+            <constant>GL_TEXTURE_COMPRESSION_HINT</constant>
             are available only if the GL version is 1.3 or greater.
         </para>
         <para>
@@ -3733,21 +4020,41 @@
         </para>
         <para>
             <constant>GL_ARRAY_BUFFER_BINDING</constant>,
-            <constant>GL_VERTEX_ARRAY_BUFFER_BINDING</constant>,
-            <constant>GL_NORMAL_ARRAY_BUFFER_BINDING</constant>,
             <constant>GL_COLOR_ARRAY_BUFFER_BINDING</constant>,
-            <constant>GL_INDEX_ARRAY_BUFFER_BINDING</constant>,
-            <constant>GL_TEXTURE_COORD_ARRAY_BUFFER_BINDING</constant>,
             <constant>GL_EDGE_FLAG_ARRAY_BUFFER_BINDING</constant>,
+            <constant>GL_ELEMENT_ARRAY_BUFFER_BINDING</constant>,
+            <constant>GL_FOG_COORD_ARRAY_BUFFER_BINDING</constant>,
+            <constant>GL_INDEX_ARRAY_BUFFER_BINDING</constant>,
+            <constant>GL_NORMAL_ARRAY_BUFFER_BINDING</constant>,
             <constant>GL_SECONDARY_COLOR_ARRAY_BUFFER_BINDING</constant>,
-            <constant>GL_FOG_COORD_ARRAY_BUFFER_BINDING</constant>, and
-            <constant>GL_ELEMENT_ARRAY_BUFFER_BINDING</constant>
+            <constant>GL_TEXTURE_COORD_ARRAY_BUFFER_BINDING</constant>, and
+            <constant>GL_VERTEX_ARRAY_BUFFER_BINDING</constant>
             are available only if the GL version is 1.5 or greater.
         </para>
         <para>
+            <constant>GL_BLEND_EQUATION_ALPHA</constant>,
+            <constant>GL_BLEND_EQUATION_RGB</constant>,
+            <constant>GL_DRAW_BUFFER</constant><emphasis>i</emphasis>,
+            <constant>GL_FRAGMENT_SHADER_DERIVATIVE_HINT</constant>,
+            <constant>GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS</constant>,
+            <constant>GL_MAX_DRAW_BUFFERS</constant>,
+            <constant>GL_MAX_FRAGMENT_UNIFORM_COMPONENTS</constant>,
+            <constant>GL_MAX_TEXTURE_COORDS</constant>,
+            <constant>GL_MAX_TEXTURE_IMAGE_UNITS</constant>,
+            <constant>GL_MAX_VARYING_FLOATS</constant>,
+            <constant>GL_MAX_VERTEX_ATTRIBS</constant>,
+            <constant>GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS</constant>,
+            <constant>GL_MAX_VERTEX_UNIFORM_COMPONENTS</constant>,
             <constant>GL_POINT_SPRITE</constant>,
-            <constant>GL_BLEND_EQUATION_RGB</constant>, and
-            <constant>GL_BLEND_EQUATION_ALPHA</constant>
+            <constant>GL_STENCIL_BACK_FAIL</constant>,
+            <constant>GL_STENCIL_BACK_FUNC</constant>,
+            <constant>GL_STENCIL_BACK_PASS_DEPTH_FAIL</constant>,
+            <constant>GL_STENCIL_BACK_PASS_DEPTH_PASS</constant>,
+            <constant>GL_STENCIL_BACK_REF</constant>,
+            <constant>GL_STENCIL_BACK_VALUE_MASK</constant>,
+            <constant>GL_STENCIL_BACK_WRITEMASK</constant>,
+            <constant>GL_VERTEX_PROGRAM_POINT_SIZE</constant>, and
+            <constant>GL_VERTEX_PROGRAM_TWO_SIDE</constant>
             are available only if the GL version is 2.0 or greater.
         </para>
         <para>

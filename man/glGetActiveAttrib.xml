@@ -142,7 +142,13 @@
 	<constant>GL_FLOAT_VEC4</constant>,
 	<constant>GL_FLOAT_MAT2</constant>,
 	<constant>GL_FLOAT_MAT3</constant>,
-	<constant>GL_FLOAT_MAT4</constant> may be returned. The
+	<constant>GL_FLOAT_MAT4</constant>,
+	<constant>GL_FLOAT_MAT2x3</constant>,
+	<constant>GL_FLOAT_MAT2x4</constant>,
+	<constant>GL_FLOAT_MAT3x2</constant>,
+	<constant>GL_FLOAT_MAT3x4</constant>,
+	<constant>GL_FLOAT_MAT4x2</constant>, or
+	<constant>GL_FLOAT_MAT4x3</constant> may be returned. The
 	<parameter>size</parameter> argument will return the size of the
 	attribute, in units of the type returned in
 	<parameter>type</parameter>.</para>
@@ -165,6 +171,15 @@
     <refsect1><title>Notes</title>
 	<para><function>glGetActiveAttrib</function>
 	is available only if the GL version is 2.0 or greater.</para>
+
+	<para><constant>GL_FLOAT_MAT2x3</constant>,
+	<constant>GL_FLOAT_MAT2x4</constant>,
+	<constant>GL_FLOAT_MAT3x2</constant>,
+	<constant>GL_FLOAT_MAT3x4</constant>,
+	<constant>GL_FLOAT_MAT4x2</constant>, and
+	<constant>GL_FLOAT_MAT4x3</constant>
+	will only be returned as a <parameter>type</parameter>
+        if the GL version is 2.1 or greater.</para>
     </refsect1>
     <refsect1><title>Errors</title>
 	<para><constant>GL_INVALID_VALUE</constant> is generated if

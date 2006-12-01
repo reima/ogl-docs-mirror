@@ -51,8 +51,7 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             where 
             <inlineequation><mml:math><mml:mi mathvariant="italic">m</mml:mi></mml:math></inlineequation>
             is the number of bits in the stencil buffer.
@@ -77,8 +76,11 @@
         <para>
             <citerefentry><refentrytitle>glClear</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glStencilFunc</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glStencilFuncSeparate</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glStencilMask</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glStencilMaskSeparate</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glStencilOp</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glStencilMask</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>glStencilOpSeparate</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1><title>COPYRIGHT</title>

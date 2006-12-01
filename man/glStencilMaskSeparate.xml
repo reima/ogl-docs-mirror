@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
               "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry id="glStencilMask">
+<refentry id="glStencilMaskSeparate">
     <refmeta>
         <refmetainfo>
             <copyright>
@@ -9,17 +9,18 @@
                 <holder>Silicon Graphics, Inc.</holder>
             </copyright>
         </refmetainfo>
-        <refentrytitle>glStencilMask</refentrytitle>
+        <refentrytitle>glStencilMaskSeparate</refentrytitle>
         <manvolnum>3G</manvolnum>
     </refmeta>
     <refnamediv>
-        <refname>glStencilMask</refname>
-        <refpurpose>control the front and back writing of individual bits in the stencil planes</refpurpose>
+        <refname>glStencilMaskSeparate</refname>
+        <refpurpose>control the front and/or back writing of individual bits in the stencil planes</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glStencilMask</function></funcdef>
+                <funcdef> void <function>glStencilMaskSeparate</function></funcdef>
+                <paramdef> GLenum <parameter>face</parameter></paramdef>
                 <paramdef> GLuint <parameter>mask</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
@@ -27,6 +28,18 @@
     <!-- eqn: ignoring delim $$ -->
     <refsect1><title>PARAMETERS</title>
         <variablelist>
+        <varlistentry>
+            <term><parameter>face</parameter></term>
+            <listitem>
+                <para>
+                    Specifies whether the front and/or back stencil writemask is updated.
+                    Three tokens are valid:
+                    <constant>GL_FRONT</constant>,
+                    <constant>GL_BACK</constant>, and
+                    <constant>GL_FRONT_AND_BACK</constant>.
+                </para>
+            </listitem>
+        </varlistentry>
         <varlistentry>
             <term><parameter>mask</parameter></term>
             <listitem>
@@ -41,7 +54,7 @@
     </refsect1>
     <refsect1><title>DESCRIPTION</title>
         <para>
-            <function>glStencilMask</function> controls the writing of individual bits in the stencil planes.
+            <function>glStencilMaskSeparate</function> controls the writing of individual bits in the stencil planes.
             The least significant 
             <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
             bits of <parameter>mask</parameter>,
@@ -59,20 +72,20 @@
             There can be two separate <parameter>mask</parameter> writemasks; one affects back-facing polygons, and the other
             affects front-facing polygons as well as other non-polygon primitives. 
             <citerefentry><refentrytitle>glStencilMask</refentrytitle></citerefentry> sets both front
-            and back stencil writemasks to the same values. Use <citerefentry><refentrytitle>glStencilMaskSeparate</refentrytitle></citerefentry>
-            to set front and back stencil writemasks to different values.
+            and back stencil writemasks to the same values, as if
+            <citerefentry><refentrytitle>glStencilMaskSeparate</refentrytitle></citerefentry> were called
+            with <parameter>face</parameter> set to <constant>GL_FRONT_AND_BACK</constant>.
         </para>
     </refsect1>
     <refsect1><title>NOTES</title>
-        <para>
-            <citerefentry><refentrytitle>glStencilMask</refentrytitle></citerefentry> is the same as
-            calling <citerefentry><refentrytitle>glStencilMaskSeparate</refentrytitle></citerefentry>
-            with <parameter>face</parameter> set to <constant>GL_FRONT_AND_BACK</constant>.
+	<para>
+            <function>glStencilMaskSeparate</function> is available only if
+            the GL version is 2.0 or greater.
         </para>
     </refsect1>
     <refsect1><title>ERRORS</title>
         <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glStencilMask</function>
+            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glStencilMaskSeparate</function>
             is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
@@ -91,7 +104,7 @@
             <citerefentry><refentrytitle>glIndexMask</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glStencilFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glStencilFuncSeparate</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glStencilMaskSeparate</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glStencilMask</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glStencilOp</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glStencilOpSeparate</refentrytitle></citerefentry>
         </para>

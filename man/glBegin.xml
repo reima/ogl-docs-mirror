@@ -80,8 +80,7 @@
                         Vertex 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
                         defines point 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        .
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
                         <inlineequation><mml:math><mml:mi mathvariant="italic">N</mml:mi></mml:math></inlineequation>
                         points are drawn.
                     </para>
@@ -113,8 +112,7 @@
                             </mml:mrow>
                         </mml:math></inlineequation>
                         define line 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        .
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
                         <inlineequation><mml:math>
                             <!-- eqn: N/2:-->
                             <mml:mfrac>
@@ -144,8 +142,7 @@
                             </mml:mrow>
                         </mml:math></inlineequation>
                         define line 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        .
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
                         <inlineequation><mml:math>
                             <!-- eqn: N - 1:-->
                             <mml:mrow>
@@ -177,16 +174,14 @@
                             </mml:mrow>
                         </mml:math></inlineequation>
                         define line 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        .
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
                         The last line, however, is defined by vertices 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">N</mml:mi></mml:math></inlineequation>
                         and 
                         <inlineequation><mml:math>
                             <!-- eqn: 1:-->
                             <mml:mn>1</mml:mn>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         <inlineequation><mml:math><mml:mi mathvariant="italic">N</mml:mi></mml:math></inlineequation>
                         lines are drawn.
                     </para>
@@ -207,8 +202,7 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>2</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        , 
+                        </mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: 3n - 1:-->
                             <mml:mrow>
@@ -218,8 +212,8 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        , and 
+                        </mml:math></inlineequation>,
+                        and 
                         <inlineequation><mml:math>
                             <!-- eqn: 3n:-->
                             <mml:mrow>
@@ -229,8 +223,7 @@
                             </mml:mrow>
                         </mml:math></inlineequation>
                         define triangle 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        .
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
                         <inlineequation><mml:math>
                             <!-- eqn: N/3:-->
                             <mml:mfrac>
@@ -248,10 +241,9 @@
                     <para>
                         Draws a connected group of triangles.  One triangle is defined for each
                         vertex presented after the first two vertices.  For odd 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        , vertices
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        , 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>,
+                        vertices
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: n + 1:-->
                             <mml:mrow>
@@ -259,8 +251,8 @@
                                 <mml:mo>+</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        , and 
+                        </mml:math></inlineequation>,
+                        and 
                         <inlineequation><mml:math>
                             <!-- eqn: n + 2:-->
                             <mml:mrow>
@@ -270,10 +262,10 @@
                             </mml:mrow>
                         </mml:math></inlineequation>
                         define triangle 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        .  For even 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        , vertices
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
+                        For even 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>,
+                        vertices
                         <inlineequation><mml:math>
                             <!-- eqn: n + 1:-->
                             <mml:mrow>
@@ -281,10 +273,9 @@
                                 <mml:mo>+</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        , 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        , and 
+                        </mml:math></inlineequation>,
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>,
+                        and 
                         <inlineequation><mml:math>
                             <!-- eqn: n + 2:-->
                             <mml:mrow>
@@ -294,8 +285,7 @@
                             </mml:mrow>
                         </mml:math></inlineequation>
                         define triangle 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        .  
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
                         <inlineequation><mml:math>
                             <!-- eqn: N - 2:-->
                             <mml:mrow>
@@ -319,8 +309,7 @@
                         <inlineequation><mml:math>
                             <!-- eqn: 1:-->
                             <mml:mn>1</mml:mn>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: n + 1:-->
                             <mml:mrow>
@@ -328,8 +317,7 @@
                                 <mml:mo>+</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         and 
                         <inlineequation><mml:math>
                             <!-- eqn: n + 2:-->
@@ -340,8 +328,7 @@
                             </mml:mrow>
                         </mml:math></inlineequation>
                         define triangle 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        .
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
                         <inlineequation><mml:math>
                             <!-- eqn: N - 2:-->
                             <mml:mrow>
@@ -369,8 +356,7 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>3</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        , 
+                        </mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: 4n - 2:-->
                             <mml:mrow>
@@ -380,8 +366,7 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>2</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        , 
+                        </mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: 4n - 1:-->
                             <mml:mrow>
@@ -391,8 +376,8 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        , and 
+                        </mml:math></inlineequation>,
+                        and 
                         <inlineequation><mml:math>
                             <!-- eqn: 4n:-->
                             <mml:mrow>
@@ -402,8 +387,7 @@
                             </mml:mrow>
                         </mml:math></inlineequation>
                         define quadrilateral 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        .
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
                         <inlineequation><mml:math>
                             <!-- eqn: N/4:-->
                             <mml:mfrac>
@@ -432,8 +416,7 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        , 
+                        </mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: 2n:-->
                             <mml:mrow>
@@ -441,8 +424,7 @@
                                 <mml:mo>&it;</mml:mo>
                                 <mml:mi mathvariant="italic">n</mml:mi>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        , 
+                        </mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: 2n + 2:-->
                             <mml:mrow>
@@ -452,8 +434,8 @@
                                 <mml:mo>+</mml:mo>
                                 <mml:mn>2</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        , and 
+                        </mml:math></inlineequation>,
+                        and 
                         <inlineequation><mml:math>
                             <!-- eqn: 2n + 1:-->
                             <mml:mrow>
@@ -465,8 +447,7 @@
                             </mml:mrow>
                         </mml:math></inlineequation>
                         define quadrilateral 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        .
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
                         <inlineequation><mml:math>
                             <!-- eqn: N/2 - 1:-->
                             <mml:mrow>
@@ -567,9 +548,12 @@
             <constant>GL_INVALID_OPERATION</constant> is generated if a command other than
             <citerefentry><refentrytitle>glVertex</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glColor</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glSecondaryColor</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glIndex</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glFogCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexCoord</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glMultiTexCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEvalCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEvalPoint</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>,
@@ -585,6 +569,7 @@
             <citerefentry><refentrytitle>glEnableClientState</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDisableClientState</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEdgeFlagPointer</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glFogCoordPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexCoordPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glSecondaryColorPointer</refentrytitle></citerefentry>,
@@ -606,9 +591,12 @@
             <citerefentry><refentrytitle>glEdgeFlag</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEvalCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEvalPoint</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glFogCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glIndex</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glMaterial</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glMultiTexCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glSecondaryColor</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glVertex</refentrytitle></citerefentry>
         </para>

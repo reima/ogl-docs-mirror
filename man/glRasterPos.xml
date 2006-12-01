@@ -125,12 +125,10 @@
             <listitem>
                 <para>
                     Specify the 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
-                    , 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
-                    , 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>
-                    , and 
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>,
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>,
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>,
+                    and 
                     <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>
                     object coordinates
                     (if present)
@@ -225,12 +223,10 @@
                     three,
                     or four elements,
                     specifying 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
-                    , 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
-                    , 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>
-                    , and 
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>,
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>,
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>,
+                    and 
                     <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>
                     coordinates, respectively.
                 </para>
@@ -249,16 +245,11 @@
         </para>
         <para>
             The current raster position consists of three window coordinates
-            (
-            <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
-            , 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
-            , 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>
-            ),
-            a clip coordinate value (
-            <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>
-            ),
+            (<inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>,
+            <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>,
+            <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>),
+            a clip coordinate value 
+            (<inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>),
             an eye coordinate distance,
             a valid bit,
             and associated color data and texture coordinates.
@@ -269,19 +260,16 @@
             <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>
             is not projected to window coordinates.
             <function>glRasterPos4</function> specifies object coordinates 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
-            , 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
-            , 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>
-            , and 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>,
+            <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>,
+            <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>,
+            and 
             <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>
             explicitly.
             <function>glRasterPos3</function> specifies object coordinate 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
-            , 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
-            , and 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>,
+            <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>,
+            and 
             <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>
             explicitly,
             while 
@@ -330,6 +318,7 @@
             or color index
             (in color index mode, state variable <constant>GL_CURRENT_INDEX</constant>)
             is used to update the current raster color.
+            <constant>GL_CURRENT_RASTER_SECONDARY_COLOR</constant> (in RGBA mode) is likewise updated.
         </para>
         <para>
             Likewise,
@@ -402,6 +391,9 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_CURRENT_RASTER_COLOR</constant>
         </para>
         <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_CURRENT_RASTER_SECONDARY_COLOR</constant>
+        </para>
+        <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_CURRENT_RASTER_INDEX</constant>
         </para>
         <para>
@@ -416,6 +408,7 @@
             <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glMultiTexCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexGen</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glVertex</refentrytitle></citerefentry>,

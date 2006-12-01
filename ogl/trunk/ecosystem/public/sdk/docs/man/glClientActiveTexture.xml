@@ -33,10 +33,9 @@
                 <para>
                     Specifies which texture unit to make active. The number
                     of texture units is implementation dependent, but must be at least
-                    two. <parameter>texture</parameter> must be one of <constant>GL_TEXTURE</constant>
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-                    ,
-                    where i ranges from 0 to the value of <constant>GL_MAX_TEXTURE_UNITS</constant> - 1, which is an
+                    two. <parameter>texture</parameter> must be one of 
+                    <constant>GL_TEXTURE</constant><inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>,
+                    where i ranges from 0 to the value of <constant>GL_MAX_TEXTURE_COORDS</constant> - 1, which is an
                     implementation-dependent value.  The initial value is
                     <constant>GL_TEXTURE0</constant>.
                 </para>
@@ -58,17 +57,18 @@
             <code>ARB_multitexture</code> is included in the string returned by
             <citerefentry><refentrytitle>glGetString</refentrytitle></citerefentry> when called with the argument <constant>GL_EXTENSIONS</constant>.
         </para>
-        <para>
-            <function>glClientActiveTexture</function> sets <constant>GL_CLIENT_ACTIVE_TEXTURE</constant> to the active texture unit.
-        </para>
     </refsect1>
     <refsect1><title>ERRORS</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>texture</parameter> is not one of
-            <constant>GL_TEXTURE</constant>
-            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-            , where
-            i ranges from 0 to the value of <constant>GL_MAX_TEXTURE_UNITS</constant> - 1.
+            <constant>GL_TEXTURE</constant><inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>,
+            where
+            i ranges from 0 to the value of <constant>GL_MAX_TEXTURE_COORDS</constant> - 1.
+        </para>
+    </refsect1>
+    <refsect1><title>ASSOCIATED GETS</title>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_CLIENT_ACTIVE_TEXTURE</constant> or <constant>GL_MAX_TEXTURE_COORDS</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>

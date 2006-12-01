@@ -840,7 +840,7 @@
                     <para>
                         <parameter>params</parameter> returns four values: the <emphasis>s</emphasis>, <emphasis>t</emphasis>, <emphasis>r</emphasis>, and <emphasis>q</emphasis>
                         texture coordinates of the current raster position. The initial value is (0, 0, 0, 1).
-                        See <citerefentry><refentrytitle>glRasterPos</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glTexCoord</refentrytitle></citerefentry>.
+                        See <citerefentry><refentrytitle>glRasterPos</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glMultiTexCoord</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -869,7 +869,7 @@
                         <parameter>params</parameter> returns four values:
                         the <emphasis>s</emphasis>, <emphasis>t</emphasis>, <emphasis>r</emphasis>, and <emphasis>q</emphasis> current texture
                         coordinates. The initial value is (0, 0, 0, 1).
-                        See <citerefentry><refentrytitle>glTexCoord</refentrytitle></citerefentry>.
+                        See <citerefentry><refentrytitle>glMultiTexCoord</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -4058,6 +4058,7 @@
             are available only if the GL version is 2.0 or greater.
         </para>
         <para>
+            <constant>GL_CURRENT_RASTER_SECONDARY_COLOR</constant>,
             <constant>GL_PIXEL_PACK_BUFFER_BINDING</constant> and
             <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
             are available only if the GL version is 2.1 or greater.

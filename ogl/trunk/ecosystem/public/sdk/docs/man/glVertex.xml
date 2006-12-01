@@ -214,24 +214,18 @@
                     The elements of a two-element array are 
                     <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
                     and 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
-                    ;
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>;
                     of a three-element array, 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
-                    , 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
-                    , and 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>
-                    ;
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>,
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>,
+                    and 
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>;
                     and of a four-element array, 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
-                    , 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
-                    , 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>
-                    , and 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>
-                    .
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>,
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>,
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>,
+                    and 
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>.
                 </para>
             </listitem>
         </varlistentry>
@@ -254,10 +248,9 @@
             defaults to 0 and
             <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>
             defaults to 1.  When 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
-            , 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
-            , and 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>,
+            <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>,
+            and 
             <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>
             are specified, 
             <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>
@@ -280,10 +273,11 @@
             <citerefentry><refentrytitle>glFogCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glIndex</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glMaterial</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glMultiTexCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glRect</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexCoord</refentrytitle></citerefentry>,
-            <function>glVertexPointer</function>
+            <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1><title>COPYRIGHT</title>

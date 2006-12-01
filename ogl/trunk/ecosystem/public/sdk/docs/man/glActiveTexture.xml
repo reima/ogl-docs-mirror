@@ -33,11 +33,12 @@
                 <para>
                     Specifies which texture unit to make active. The number
                     of texture units is implementation dependent, but must be at least
-                    two. <parameter>texture</parameter> must be one of <constant>GL_TEXTURE</constant>
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-                    , where
-                    i ranges from 0 to the value of <constant>GL_MAX_TEXTURE_UNITS</constant> - 1, which is an
-                    implementation-dependent value.  The initial value is <constant>GL_TEXTURE0</constant>.
+                    two. <parameter>texture</parameter> must be one of 
+                    <constant>GL_TEXTURE</constant><inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>,
+                    where
+                    i ranges from 0 to the larger of (<constant>GL_MAX_TEXTURE_COORDS</constant> - 1)
+                    and (<constant>GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS</constant> - 1). 
+                    The initial value is <constant>GL_TEXTURE0</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -64,16 +65,19 @@
     <refsect1><title>ERRORS</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>texture</parameter> is not one of
-            <constant>GL_TEXTURE</constant>
-            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-            ,
-            where i ranges from 0 to the value of <constant>GL_MAX_TEXTURE_UNITS</constant> - 1.
+            <constant>GL_TEXTURE</constant><inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>,
+            where i ranges from 0 to the larger of (<constant>GL_MAX_TEXTURE_COORDS</constant> - 1)
+            and (<constant>GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS</constant> - 1).
+        </para>
+    </refsect1>
+    <refsect1><title>ASSOCIATED GETS</title>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_ACTIVE_TEXTURE</constant>, <constant>GL_MAX_TEXTURE_COORDS</constant>, or <constant>GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>
         <para>
             <citerefentry><refentrytitle>glClientActiveTexture</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetIntegerv</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glMultiTexCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry>
         </para>

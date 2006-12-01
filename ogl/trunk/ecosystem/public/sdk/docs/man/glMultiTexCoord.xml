@@ -161,12 +161,11 @@
             <term><parameter>target</parameter></term>
             <listitem>
                 <para>
-                    Specifies texture unit whose coordinates should be modified.  The number
+                    Specifies the texture unit whose coordinates should be modified. The number
                     of texture units is implementation dependent, but must be at least
-                    two. Must be one of <constant>GL_TEXTURE</constant>
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-                    , 
-                    where i ranges from 0 to <constant>GL_MAX_TEXTURE_UNITS</constant> - 1,
+                    two. Symbolic constant must be one of 
+                    <constant>GL_TEXTURE</constant><inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>,
+                    where i ranges from 0 to <constant>GL_MAX_TEXTURE_COORDS</constant> - 1,
                     which is an implementation-dependent value.
                 </para>
             </listitem>
@@ -179,7 +178,7 @@
             <listitem>
                 <para>
                     Specify <parameter>s</parameter>, <parameter>t</parameter>, <parameter>r</parameter>, and <parameter>q</parameter> texture coordinates for
-                    <parameter>target</parameter> texture unit.  Not all parameters are present in all forms
+                    <parameter>target</parameter> texture unit. Not all parameters are present in all forms
                     of the command.
                 </para>
             </listitem>
@@ -306,12 +305,11 @@
             <term><parameter>target</parameter></term>
             <listitem>
                 <para>
-                    Specifies texture unit whose coordinates should be modified.  The number
+                    Specifies the texture unit whose coordinates should be modified. The number
                     of texture units is implementation dependent, but must be at least
-                    two. Must be one of <constant>GL_TEXTURE</constant>
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-                    ,
-                    where i ranges from 0 to <constant>GL_MAX_TEXTURE_UNITS</constant> - 1,
+                    two. Symbolic constant must be one of 
+                    <constant>GL_TEXTURE</constant><inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>,
+                    where i ranges from 0 to <constant>GL_MAX_TEXTURE_COORDS</constant> - 1,
                     which is an implementation-dependent value.
                 </para>
             </listitem>
@@ -322,12 +320,10 @@
                 <para>
                     Specifies a pointer to an array of one, two, three, or four elements,
                     which in turn specify the 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
-                    , 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">t</mml:mi></mml:math></inlineequation>
-                    , 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">r</mml:mi></mml:math></inlineequation>
-                    , and 
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>,
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">t</mml:mi></mml:math></inlineequation>,
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">r</mml:mi></mml:math></inlineequation>,
+                    and 
                     <inlineequation><mml:math><mml:mi mathvariant="italic">q</mml:mi></mml:math></inlineequation>
                     texture coordinates.
                 </para>
@@ -349,8 +345,7 @@
                     <mml:mn>0</mml:mn>
                     <mml:mn>1</mml:mn>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            ;
+            </mml:math></inlineequation>;
             a call to <function>glMultiTexCoord2</function>
             sets them to 
             <inlineequation><mml:math>
@@ -361,8 +356,7 @@
                     <mml:mn>0</mml:mn>
                     <mml:mn>1</mml:mn>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
             Similarly, <function>glMultiTexCoord3</function> specifies the texture coordinates as
             <inlineequation><mml:math>
                 <!-- eqn: (s, t, r, 1):-->
@@ -372,8 +366,8 @@
                     <mml:mi mathvariant="italic">r</mml:mi>
                     <mml:mn>1</mml:mn>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            , and
+            </mml:math></inlineequation>,
+            and
             <function>glMultiTexCoord4</function>
             defines all four components explicitly as
             <inlineequation><mml:math>
@@ -384,8 +378,7 @@
                     <mml:mi mathvariant="italic">r</mml:mi>
                     <mml:mi mathvariant="italic">q</mml:mi>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
         </para>
         <para>
             The current texture coordinates are part of the data
@@ -410,8 +403,7 @@
                     <mml:mn>0</mml:mn>
                     <mml:mn>1</mml:mn>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
         </para>
         <para>
         </para>
@@ -432,14 +424,16 @@
             It is always the case that <constant>GL_TEXTURE</constant>
             <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
             = <constant>GL_TEXTURE0</constant> + 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-            .
+            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>.
         </para>
     </refsect1>
     <refsect1><title>ASSOCIATED GETS</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_CURRENT_TEXTURE_COORDS</constant> with appropriate
             texture unit selected.
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_MAX_TEXTURE_COORDS</constant>
         </para>
     </refsect1>
     <refsect1><title>SEE ALSO</title>

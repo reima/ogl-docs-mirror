@@ -385,7 +385,7 @@
                     </p></dd><dt><span class="term"><code class="constant">GL_CURRENT_RASTER_TEXTURE_COORDS</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> returns four values: the <span class="emphasis"><em>s</em></span>, <span class="emphasis"><em>t</em></span>, <span class="emphasis"><em>r</em></span>, and <span class="emphasis"><em>q</em></span>
                         texture coordinates of the current raster position. The initial value is (0, 0, 0, 1).
-                        See <span class="citerefentry"><span class="refentrytitle">glRasterPos</span></span> and <span class="citerefentry"><span class="refentrytitle">glTexCoord</span></span>.
+                        See <span class="citerefentry"><span class="refentrytitle">glRasterPos</span></span> and <span class="citerefentry"><span class="refentrytitle">glMultiTexCoord</span></span>.
                     </p></dd><dt><span class="term"><code class="constant">GL_CURRENT_SECONDARY_COLOR</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> returns four values: the red, green, blue, and alpha values of the
                         current secondary color.  Integer values, if requested, are linearly mapped
@@ -402,7 +402,7 @@
                         <em class="parameter"><code>params</code></em> returns four values:
                         the <span class="emphasis"><em>s</em></span>, <span class="emphasis"><em>t</em></span>, <span class="emphasis"><em>r</em></span>, and <span class="emphasis"><em>q</em></span> current texture
                         coordinates. The initial value is (0, 0, 0, 1).
-                        See <span class="citerefentry"><span class="refentrytitle">glTexCoord</span></span>.
+                        See <span class="citerefentry"><span class="refentrytitle">glMultiTexCoord</span></span>.
                     </p></dd><dt><span class="term"><code class="constant">GL_DEPTH_BIAS</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> returns one value,
                         the depth bias factor used during pixel transfers. The initial value is 0.
@@ -1910,6 +1910,7 @@
             <code class="constant">GL_VERTEX_PROGRAM_TWO_SIDE</code>
             are available only if the GL version is 2.0 or greater.
         </p><p>
+            <code class="constant">GL_CURRENT_RASTER_SECONDARY_COLOR</code>,
             <code class="constant">GL_PIXEL_PACK_BUFFER_BINDING</code> and
             <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
             are available only if the GL version is 2.1 or greater.
@@ -1980,14 +1981,14 @@
             <code class="constant">GL_TEXTURE_COORD_ARRAY_SIZE</code>,
             <code class="constant">GL_TEXTURE_COORD_ARRAY_STRIDE</code>,
             <code class="constant">GL_TEXTURE_COORD_ARRAY_TYPE</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4795806"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4795810"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>pname</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGet</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4795853"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4795858"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetActiveAttrib</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glGetActiveUniform</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glGetAttachedShaders</span></span>,
@@ -2031,7 +2032,7 @@
             <span class="citerefentry"><span class="refentrytitle">glGetVertexAttrib</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glGetVertexAttribPointerv</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4796091"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4796096"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

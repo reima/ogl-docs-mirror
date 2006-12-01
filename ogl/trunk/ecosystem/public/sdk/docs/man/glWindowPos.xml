@@ -88,10 +88,8 @@
             <listitem>
                 <para>
                     Specify the 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
-                    , 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
-                    , 
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>,
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>,
                     <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>
                     coordinates for the raster position.
                 </para>
@@ -157,10 +155,8 @@
                 <para>
                     Specifies a pointer to an array of two or three elements,
                     specifying 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
-                    , 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
-                    , 
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>,
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>,
                     <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>
                     coordinates, respectively.
                 </para>
@@ -293,9 +289,8 @@
             calculation (see <citerefentry><refentrytitle>glLight</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glLightModel</refentrytitle></citerefentry>, and <citerefentry><refentrytitle>glShadeModel</refentrytitle></citerefentry>).
             If lighting is disabled, current color (in RGBA mode, state variable
             <constant>GL_CURRENT_COLOR</constant>) or color index (in color index mode, state variable
-            <constant>GL_CURRENT_INDEX</constant>) is used to update the current raster color.  The
-            raster position's secondary color (in RGBA mode) is likewise updated, but
-            cannot be queried.
+            <constant>GL_CURRENT_INDEX</constant>) is used to update the current raster color.
+            <constant>GL_CURRENT_RASTER_SECONDARY_COLOR</constant> (in RGBA mode) is likewise updated.
         </para>
         <para>
             Likewise, <constant>GL_CURRENT_RASTER_TEXTURE_COORDS</constant> is updated as a function of
@@ -346,6 +341,9 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_CURRENT_RASTER_COLOR</constant>
         </para>
         <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_CURRENT_RASTER_SECONDARY_COLOR</constant>
+        </para>
+        <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_CURRENT_RASTER_INDEX</constant>
         </para>
         <para>
@@ -360,6 +358,7 @@
             <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glMultiTexCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glRasterPos</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexGen</refentrytitle></citerefentry>,

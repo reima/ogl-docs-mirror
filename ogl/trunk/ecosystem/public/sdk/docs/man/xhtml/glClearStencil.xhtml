@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glClearStencil</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glClearStencil"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glClearStencil — specify the clear value for the stencil buffer</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glClearStencil</b>(</code><var class="pdparam">s</var><code>)</code>;<br /> GLint <var class="pdparam">s</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777305"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>s</code></em></span></dt><dd><p>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glClearStencil</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glClearStencil"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glClearStencil — specify the clear value for the stencil buffer</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glClearStencil</b>(</code><var class="pdparam">s</var><code>)</code>;<br /> GLint <var class="pdparam">s</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781674"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>s</code></em></span></dt><dd><p>
                     Specifies the index used when the stencil buffer is cleared.
                     The initial value is 0.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777200"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781569"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glClearStencil</code> specifies the index used by <span class="citerefentry"><span class="refentrytitle">glClear</span></span> to clear the stencil buffer.
             <em class="parameter"><code>s</code></em> is masked with 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -15,25 +15,27 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             where 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">m</mml:mi></mml:math>
             is the number of bits in the stencil buffer.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763812"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768180"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glClearStencil</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763842"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768211"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_STENCIL_CLEAR_VALUE</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_STENCIL_BITS</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763871"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768240"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glClear</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glStencilFunc</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glStencilFuncSeparate</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glStencilMask</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glStencilMaskSeparate</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glStencilOp</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glStencilMask</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763901"></a><h2>COPYRIGHT</h2><p>
+            <span class="citerefentry"><span class="refentrytitle">glStencilOpSeparate</span></span>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768286"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

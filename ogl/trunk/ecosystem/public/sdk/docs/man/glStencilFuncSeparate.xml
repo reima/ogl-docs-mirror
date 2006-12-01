@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
               "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry id="glStencilFunc">
+<refentry id="glStencilFuncSeparate">
     <refmeta>
         <refmetainfo>
             <copyright>
@@ -9,18 +9,19 @@
                 <holder>Silicon Graphics, Inc.</holder>
             </copyright>
         </refmetainfo>
-        <refentrytitle>glStencilFunc</refentrytitle>
+        <refentrytitle>glStencilFuncSeparate</refentrytitle>
         <manvolnum>3G</manvolnum>
     </refmeta>
     <refnamediv>
-        <refname>glStencilFunc</refname>
-        <refpurpose>set front and back function and reference value for stencil testing</refpurpose>
+        <refname>glStencilFuncSeparate</refname>
+        <refpurpose>set front and/or back function and reference value for stencil testing</refpurpose>
     </refnamediv>
     <!-- eqn: ignoring delim $$ -->
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glStencilFunc</function></funcdef>
+                <funcdef> void <function>glStencilFuncSeparate</function></funcdef>
+                <paramdef> GLenum <parameter>face</parameter></paramdef>
                 <paramdef> GLenum <parameter>func</parameter></paramdef>
                 <paramdef> GLint <parameter>ref</parameter></paramdef>
                 <paramdef> GLuint <parameter>mask</parameter></paramdef>
@@ -29,6 +30,18 @@
     </refsynopsisdiv>
     <refsect1><title>PARAMETERS</title>
         <variablelist>
+        <varlistentry>
+            <term><parameter>face</parameter></term>
+            <listitem>
+                <para>
+                    Specifies whether front and/or back stencil state is updated.
+                    Three tokens are valid:
+                    <constant>GL_FRONT</constant>,
+                    <constant>GL_BACK</constant>, and
+                    <constant>GL_FRONT_AND_BACK</constant>.
+                </para>
+            </listitem>
+        </varlistentry>
         <varlistentry>
             <term><parameter>func</parameter></term>
             <listitem>
@@ -113,8 +126,9 @@
             <parameter>mask</parameter> parameters; one affects back-facing polygons, and the other
             affects front-facing polygons as well as other non-polygon primitives. 
             <citerefentry><refentrytitle>glStencilFunc</refentrytitle></citerefentry> sets both front
-            and back stencil state to the same values. Use <citerefentry><refentrytitle>glStencilFuncSeparate</refentrytitle></citerefentry>
-            to set front and back stencil state to different values.
+            and back stencil state to the same values, as if 
+            <citerefentry><refentrytitle>glStencilFuncSeparate</refentrytitle></citerefentry> were called
+            with <parameter>face</parameter> set to <constant>GL_FRONT_AND_BACK</constant>.
         </para>
         <para>
             <parameter>func</parameter> is a symbolic constant that determines the stencil comparison function.
@@ -239,16 +253,15 @@
         </variablelist>
     </refsect1>
     <refsect1><title>NOTES</title>
+	<para>
+            <function>glStencilFuncSeparate</function> is available only if
+            the GL version is 2.0 or greater.
+        </para>
         <para>
             Initially, the stencil test is disabled.
             If there is no stencil buffer,
             no stencil modification can occur and it is as if
             the stencil test always passes.
-        </para>
-        <para>
-            <citerefentry><refentrytitle>glStencilFunc</refentrytitle></citerefentry> is the same as
-            calling <citerefentry><refentrytitle>glStencilFuncSeparate</refentrytitle></citerefentry>
-            with <parameter>face</parameter> set to <constant>GL_FRONT_AND_BACK</constant>.
         </para>
     </refsect1>
     <refsect1><title>ERRORS</title>
@@ -257,7 +270,7 @@
             accepted values.
         </para>
         <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glStencilFunc</function>
+            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glStencilFuncSeparate</function>
             is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
@@ -281,7 +294,7 @@
             <citerefentry><refentrytitle>glDepthFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glLogicOp</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glStencilFuncSeparate</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glStencilFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glStencilMask</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glStencilMaskSeparate</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glStencilOp</refentrytitle></citerefentry>,

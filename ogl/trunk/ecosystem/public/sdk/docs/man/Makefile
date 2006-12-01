@@ -16,7 +16,10 @@ DB2XHTML = $(XSLSS)/xhtml/docbook.xsl
 
 # ARB Ecosystem man pages
 ARBXML = \
-    glBlendEquationSeparate.xml
+    glBlendEquationSeparate.xml \
+    glStencilFuncSeparate.xml \
+    glStencilMaskSeparate.xml \
+    glStencilOpSeparate.xml
 
 # SuperBible GL 1.5 man pages
 SUPERBIBLEXML = \

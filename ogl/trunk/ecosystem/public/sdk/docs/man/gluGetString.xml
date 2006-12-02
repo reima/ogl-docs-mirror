@@ -75,8 +75,7 @@
     </refsect1>
     <refsect1><title>NOTES</title>
         <para>
-            <function>gluGetString</function> only returns information about GLU extensions. Call
-            @&lt;<emphasis role="bold">glGetString</emphasis>&gt;@dnl 
+            <function>gluGetString</function> only returns information about GLU extensions. Call <function>glGetString</function>
              to get a list of GL extensions.
         </para>
         <para>

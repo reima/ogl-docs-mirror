@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluTessEndPolygon</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluTessEndPolygon"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluTessEndPolygon — delimit a polygon description</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">gluTessEndPolygon</b>(</code></td><td><var class="pdparam">tess</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLUtesselator*  </td><td><var class="pdparam">tess</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777290"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>tess</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluTessEndPolygon</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluTessEndPolygon"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluTessEndPolygon — delimit a polygon description</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">gluTessEndPolygon</b>(</code></td><td><var class="pdparam">tess</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLUtesselator*  </td><td><var class="pdparam">tess</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781753"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>tess</code></em></span></dt><dd><p>
                     Specifies the tessellation object (created with <span class="citerefentry"><span class="refentrytitle">gluNewTess</span></span>).
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777321"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781648"></a><h2>DESCRIPTION</h2><p>
             <span class="citerefentry"><span class="refentrytitle">gluTessBeginPolygon</span></span> and <code class="function">gluTessEndPolygon</code> delimit the
             definition of a convex, concave, or self-intersecting polygon. Within
             each <span class="citerefentry"><span class="refentrytitle">gluTessBeginPolygon</span></span>/<code class="function">gluTessEndPolygon</code> pair, there must be
@@ -16,7 +16,7 @@
             Once <code class="function">gluTessEndPolygon</code> is called, the polygon is tessellated, and the
             resulting triangles are described through callbacks.
             See <span class="citerefentry"><span class="refentrytitle">gluTessCallback</span></span> for descriptions of the callback functions.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763817"></a><h2>EXAMPLE</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768281"></a><h2>EXAMPLE</h2><p>
             A quadrilateral with a triangular hole in it can be described like this:
             </p><pre class="programlisting">
 gluTessBeginPolygon(tobj, NULL);
@@ -42,7 +42,7 @@ gluTessEndPolygon(tobj);
             addresses, 
             since the values stored at these addresses will not be read by
             the tesselator until <code class="function">gluTessEndPolygon</code> is called.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763891"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768354"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">gluNewTess</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluTessBeginContour</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluTessBeginPolygon</span></span>,
@@ -50,7 +50,7 @@ gluTessEndPolygon(tobj);
             <span class="citerefentry"><span class="refentrytitle">gluTessNormal</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluTessProperty</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluTessVertex</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763936"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768399"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

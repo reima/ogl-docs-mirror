@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glEnable</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glEnable"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glEnable — enable or disable server-side GL capabilities</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEnable</b>(</code><var class="pdparam">cap</var><code>)</code>;<br /> GLenum <var class="pdparam">cap</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781669"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>cap</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glEnable</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glEnable"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glEnable — enable or disable server-side GL capabilities</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEnable</b>(</code><var class="pdparam">cap</var><code>)</code>;<br /> GLenum <var class="pdparam">cap</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781749"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>cap</code></em></span></dt><dd><p>
                     Specifies a symbolic constant indicating a GL capability.
-                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glDisable</b>(</code><var class="pdparam">cap</var><code>)</code>;<br /> GLenum <var class="pdparam">cap</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781587"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>cap</code></em></span></dt><dd><p>
+                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glDisable</b>(</code><var class="pdparam">cap</var><code>)</code>;<br /> GLenum <var class="pdparam">cap</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781667"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>cap</code></em></span></dt><dd><p>
                     Specifies a symbolic constant indicating a GL capability.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768161"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768238"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glEnable</code> and <span class="citerefentry"><span class="refentrytitle">glDisable</span></span> enable and disable various capabilities.
             Use <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> or <span class="citerefentry"><span class="refentrytitle">glGet</span></span> to determine the current setting
             of any capability. The initial value for each capability with the
@@ -392,7 +392,7 @@
                         If enabled,
                         and a vertex shader is active, it specifies that the GL will choose between front and back colors based on the
                         polygon's face direction of which the vertex being shaded is a part.  It has no effect on points or lines.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4710712"></a><h2>NOTES</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4710846"></a><h2>NOTES</h2><p>
             <code class="constant">GL_POLYGON_OFFSET_FILL</code>, <code class="constant">GL_POLYGON_OFFSET_LINE</code>,
             <code class="constant">GL_POLYGON_OFFSET_POINT</code>,
             <code class="constant">GL_COLOR_LOGIC_OP</code>, and <code class="constant">GL_INDEX_LOGIC_OP</code> are available
@@ -425,14 +425,14 @@
             <code class="constant">GL_TEXTURE_GEN_T</code>, <code class="constant">GL_TEXTURE_GEN_R</code>, and <code class="constant">GL_TEXTURE_GEN_Q</code>
             enable or disable the respective state for the active texture unit
             specified with <span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785513"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785594"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>cap</code></em> is not one of the values
             listed previously.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glEnable</code> or <span class="citerefentry"><span class="refentrytitle">glDisable</span></span>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785563"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785644"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glAlphaFunc</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span>,
@@ -465,7 +465,7 @@
             <span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785739"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785820"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

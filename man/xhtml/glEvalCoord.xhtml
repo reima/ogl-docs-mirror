@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glEvalCoord</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glEvalCoord"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glEvalCoord — evaluate enabled one- and two-dimensional maps</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEvalCoord1f</b>(</code><var class="pdparam">u</var><code>)</code>;<br /> GLfloat <var class="pdparam">u</var>;</p></div><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEvalCoord1d</b>(</code><var class="pdparam">u</var><code>)</code>;<br /> GLdouble <var class="pdparam">u</var>;</p></div><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEvalCoord2f</b>(</code><var class="pdparam">u</var>, <var class="pdparam">v</var><code>)</code>;<br /> GLfloat <var class="pdparam">u</var>;<br /> GLfloat <var class="pdparam">v</var>;</p></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glEvalCoord2d</b>(</code></td><td><var class="pdparam">u</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">v</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLdouble  </td><td><var class="pdparam">u</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">v</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763791"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>u</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glEvalCoord</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glEvalCoord"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glEvalCoord — evaluate enabled one- and two-dimensional maps</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEvalCoord1f</b>(</code><var class="pdparam">u</var><code>)</code>;<br /> GLfloat <var class="pdparam">u</var>;</p></div><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEvalCoord1d</b>(</code><var class="pdparam">u</var><code>)</code>;<br /> GLdouble <var class="pdparam">u</var>;</p></div><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEvalCoord2f</b>(</code><var class="pdparam">u</var>, <var class="pdparam">v</var><code>)</code>;<br /> GLfloat <var class="pdparam">u</var>;<br /> GLfloat <var class="pdparam">v</var>;</p></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glEvalCoord2d</b>(</code></td><td><var class="pdparam">u</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">v</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLdouble  </td><td><var class="pdparam">u</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">v</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768242"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>u</code></em></span></dt><dd><p>
                     Specifies a value that is the domain coordinate 
                     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">u</mml:mi></mml:math>
                     to the basis function
@@ -11,7 +11,7 @@
                     to the basis function
                     defined in a previous <span class="citerefentry"><span class="refentrytitle">glMap2</span></span> command.
                     This argument is not present in a <code class="function">glEvalCoord1</code> command.
-                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEvalCoord1fv</b>(</code><var class="pdparam">u</var><code>)</code>;<br /> const GLfloat * <var class="pdparam">u</var>;</p></div><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEvalCoord1dv</b>(</code><var class="pdparam">u</var><code>)</code>;<br /> const GLdouble * <var class="pdparam">u</var>;</p></div><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEvalCoord2fv</b>(</code><var class="pdparam">u</var><code>)</code>;<br /> const GLfloat * <var class="pdparam">u</var>;</p></div><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEvalCoord2dv</b>(</code><var class="pdparam">u</var><code>)</code>;<br /> const GLdouble * <var class="pdparam">u</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770540"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>u</code></em></span></dt><dd><p>
+                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEvalCoord1fv</b>(</code><var class="pdparam">u</var><code>)</code>;<br /> const GLfloat * <var class="pdparam">u</var>;</p></div><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEvalCoord1dv</b>(</code><var class="pdparam">u</var><code>)</code>;<br /> const GLdouble * <var class="pdparam">u</var>;</p></div><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEvalCoord2fv</b>(</code><var class="pdparam">u</var><code>)</code>;<br /> const GLfloat * <var class="pdparam">u</var>;</p></div><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEvalCoord2dv</b>(</code><var class="pdparam">u</var><code>)</code>;<br /> const GLdouble * <var class="pdparam">u</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774987"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>u</code></em></span></dt><dd><p>
                     Specifies a pointer to an array containing
                     either one or two domain coordinates.
                     The first coordinate is 
@@ -21,7 +21,7 @@
                     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">v</mml:mi></mml:math>
                     ,
                     which is present only in <code class="function">glEvalCoord2</code> versions.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770603"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775051"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glEvalCoord1</code> evaluates enabled one-dimensional maps at argument
             <em class="parameter"><code>u</code></em>.
             <code class="function">glEvalCoord2</code> does the same for two-dimensional maps using
@@ -153,7 +153,7 @@
                     <mml:mfrac>
                         <mml:mi mathvariant="bold">m</mml:mi>
                         <mml:mfenced open="" close="">
-                            <mml:mfenced open="∥" close="∥">
+                            <mml:mfenced open="&#x2225;" close="&#x2225;">
                                 <mml:mi mathvariant="bold">m</mml:mi>
                             </mml:mfenced>
                         </mml:mfenced>
@@ -168,7 +168,7 @@
             If neither automatic normal generation nor a normal map is enabled,
             no normal is generated for
             <code class="function">glEvalCoord2</code> commands.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4708515"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712967"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_MAP1_VERTEX_3</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_MAP1_VERTEX_4</code>
@@ -208,7 +208,7 @@
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_AUTO_NORMAL</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGetMap</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4706582"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711060"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glColor</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glEnable</span></span>,
@@ -221,7 +221,7 @@
             <span class="citerefentry"><span class="refentrytitle">glNormal</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexCoord</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glVertex</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4706651"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711130"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

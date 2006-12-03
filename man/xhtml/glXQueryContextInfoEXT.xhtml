@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXQueryContextInfoEXT</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXQueryContextInfoEXT"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXQueryContextInfoEXT — query context information</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> int <b class="fsfunc">glXQueryContextInfoEXT</b>(</code></td><td><var class="pdparam">dpy</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">ctx</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">attribute</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">value</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> Display *  </td><td><var class="pdparam">dpy</var>;</td></tr><tr><td> GLXContext  </td><td><var class="pdparam">ctx</var>;</td></tr><tr><td> int  </td><td><var class="pdparam">attribute</var>;</td></tr><tr><td> int *  </td><td><var class="pdparam">value</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777314"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>dpy</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXQueryContextInfoEXT</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXQueryContextInfoEXT"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXQueryContextInfoEXT — query context information</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> int <b class="fsfunc">glXQueryContextInfoEXT</b>(</code></td><td><var class="pdparam">dpy</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">ctx</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">attribute</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">value</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> Display *  </td><td><var class="pdparam">dpy</var>;</td></tr><tr><td> GLXContext  </td><td><var class="pdparam">ctx</var>;</td></tr><tr><td> int  </td><td><var class="pdparam">attribute</var>;</td></tr><tr><td> int *  </td><td><var class="pdparam">value</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781640"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>dpy</code></em></span></dt><dd><p>
                     Specifies the connection to the X server.
                 </p></dd><dt><span class="term"><em class="parameter"><code>ctx</code></em></span></dt><dd><p>
                     Specifies a GLX rendering context.
@@ -9,7 +9,7 @@
                     <code class="constant">GLX_SHARED_CONTEXT_EXT</code>, <code class="constant">GLX_VISUAL_ID_EXT</code>, or <code class="constant">GLX_SCREEN_EXT</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>value</code></em></span></dt><dd><p>
                     Contains the return value for <em class="parameter"><code>attribute</code></em>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763821"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768286"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glXQueryContextInfoEXT</code> sets <em class="parameter"><code>value</code></em> to the value of <em class="parameter"><code>attribute</code></em> with respect to <em class="parameter"><code>ctx</code></em>.
             <code class="function">glXQueryContextInfoEXT</code> returns an error code if it fails for any reason. Otherwise,
             <code class="constant">Success</code> is returned.
@@ -30,7 +30,7 @@
             is included in the string returned by <span class="citerefentry"><span class="refentrytitle">glXQueryExtensionsString</span></span>,
             when called with argument <code class="constant">GLX_EXTENSIONS</code>,
             extension <code class="code">EXT_import_context</code> is supported.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770538"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775001"></a><h2>ERRORS</h2><p>
             <code class="constant">GLXBadContext</code> is generated if <em class="parameter"><code>ctx</code></em> does not
             refer to a valid context.
         </p><p>
@@ -38,11 +38,11 @@
             context attribute.
         </p><p>
             fred <code class="constant">GLX_BAD_CONTEXT</code> is returned if <em class="parameter"><code>attribute</code></em> is not a valid context.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770588"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775050"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glXCreateContext</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glXQueryVersion</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glXQueryExtensionsString</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770612"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775074"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

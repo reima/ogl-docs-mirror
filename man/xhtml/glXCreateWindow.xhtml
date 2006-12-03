@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXCreateWindow</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXCreateWindow"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXCreateWindow — create an on-screen rendering area</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> GLXWindow <b class="fsfunc">glXCreateWindow</b>(</code></td><td><var class="pdparam">dpy</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">config</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">win</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">attrib_list</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> Display *  </td><td><var class="pdparam">dpy</var>;</td></tr><tr><td> GLXFBConfig  </td><td><var class="pdparam">config</var>;</td></tr><tr><td> Window  </td><td><var class="pdparam">win</var>;</td></tr><tr><td> const int *  </td><td><var class="pdparam">attrib_list</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777191"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>dpy</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXCreateWindow</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXCreateWindow"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXCreateWindow — create an on-screen rendering area</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> GLXWindow <b class="fsfunc">glXCreateWindow</b>(</code></td><td><var class="pdparam">dpy</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">config</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">win</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">attrib_list</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> Display *  </td><td><var class="pdparam">dpy</var>;</td></tr><tr><td> GLXFBConfig  </td><td><var class="pdparam">config</var>;</td></tr><tr><td> Window  </td><td><var class="pdparam">win</var>;</td></tr><tr><td> const int *  </td><td><var class="pdparam">attrib_list</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781640"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>dpy</code></em></span></dt><dd><p>
                     Specifies the connection to the X server.
                 </p></dd><dt><span class="term"><em class="parameter"><code>config</code></em></span></dt><dd><p>
                     Specifies a GLXFBConfig structure with the desired attributes for the
@@ -10,7 +10,7 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>attrib_list</code></em></span></dt><dd><p>
                     Currently unused. This must be set to <code class="constant">NULL</code> or be an empty list
                     (i.e., one in which the first element is <code class="constant">None</code>).
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763830"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768278"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glXCreateWindow</code> creates an on-screen rendering area from an existing X window
             that was created with a visual matching <em class="parameter"><code>config</code></em>. The XID of the
             GLXWindow is returned.
@@ -18,13 +18,13 @@
             can be used to render into this window.
             Use <span class="citerefentry"><span class="refentrytitle">glXMakeContextCurrent</span></span> to associate the rendering area with a GLX
             rendering context.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763878"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768326"></a><h2>NOTES</h2><p>
             <code class="function">glXCreateWindow</code> is available only if the GLX version is 1.3 or greater.
         </p><p>
             If the GLX version is 1.1 or 1.0, the GL version must be 1.0.
             If the GLX version is 1.2, then the GL version must be 1.1.
             If the GLX version is 1.3, then the GL version must be 1.2.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763903"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768351"></a><h2>ERRORS</h2><p>
             <code class="constant">BadMatch</code> is generated if <em class="parameter"><code>win</code></em> was not created with a visual
             that corresponds to <em class="parameter"><code>config</code></em>.
         </p><p>
@@ -43,11 +43,11 @@
             <code class="constant">GLXBadFBConfig</code> is generated if <em class="parameter"><code>config</code></em> is not a valid
             GLXFBConfig.
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770559"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775007"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glXChooseFBConfig</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glXDestroyPixmap</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glXMakeContextCurrent</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770582"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775030"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glFogCoordPointer</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glFogCoordPointer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glFogCoordPointer — define an array of fog coordinates</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glFogCoordPointer</b>(</code></td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">stride</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pointer</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">stride</var>;</td></tr><tr><td> GLvoid *  </td><td><var class="pdparam">pointer</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781674"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>type</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glFogCoordPointer</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glFogCoordPointer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glFogCoordPointer — define an array of fog coordinates</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glFogCoordPointer</b>(</code></td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">stride</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pointer</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">stride</var>;</td></tr><tr><td> GLvoid *  </td><td><var class="pdparam">pointer</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781768"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>type</code></em></span></dt><dd><p>
                     Specifies the data type of each fog coordinate.
                     Symbolic constants
                     <code class="constant">GL_FLOAT</code>,
@@ -13,7 +13,7 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>pointer</code></em></span></dt><dd><p>
                     Specifies a pointer to the first coordinate of the first fog coordinate in the
                     array. The initial value is 0.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768174"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768268"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glFogCoordPointer</code> specifies the location and data format of an array of fog coordinates
             to use when rendering.  <em class="parameter"><code>type</code></em> specifies the data type of each fog
             coordinate, and <em class="parameter"><code>stride</code></em> specifies the byte stride from one fog coordinate to
@@ -37,7 +37,7 @@
             when <span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span>, <span class="citerefentry"><span class="refentrytitle">glMultiDrawArrays</span></span>, <span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span>, <span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span>, or
             <span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span> is called.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774878"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774970"></a><h2>NOTES</h2><p>
             <code class="function">glFogCoordPointer</code> is available only if the GL version is 1.4 or greater.
         </p><p>
             Fog coordinates are not supported for interleaved vertex array formats
@@ -59,12 +59,12 @@
             therefore not saved or restored by <span class="citerefentry"><span class="refentrytitle">glPushAttrib</span></span> and <span class="citerefentry"><span class="refentrytitle">glPopAttrib</span></span>.
             Use <span class="citerefentry"><span class="refentrytitle">glPushClientAttrib</span></span> and
             <span class="citerefentry"><span class="refentrytitle">glPopClientAttrib</span></span> instead.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775008"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775102"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>type</code></em> is not either <code class="constant">GL_FLOAT</code>
             or <code class="constant">GL_DOUBLE</code>.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>stride</code></em> is negative.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775049"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775142"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_FOG_COORD_ARRAY</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_FOG_COORD_ARRAY_STRIDE</code>
@@ -76,7 +76,7 @@
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_ARRAY_BUFFER_BINDING</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGetPointerv</span></span> with argument <code class="constant">GL_FOG_COORD_ARRAY_POINTER</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775125"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775219"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span>,
@@ -98,7 +98,7 @@
             <span class="citerefentry"><span class="refentrytitle">glTexCoordPointer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glVertexAttribPointer</span></span>
             <span class="citerefentry"><span class="refentrytitle">glVertexPointer</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775245"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775339"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -3,10 +3,10 @@
 # XSLT processor - other possibilities like Saxon exist
 XSLT	= xsltproc
 
-# Location of the Docbook modular stylesheets, and the specific
+# Location of locally customized stylesheet, which imports
+# the Docbook modular stylesheets, and the specifically
 # stylesheet to convert Docbook+MathML => XHTML+MathML
-XSLSS	= /usr/share/sgml/docbook/xsl-stylesheets
-DB2XHTML = $(XSLSS)/xhtml/docbook.xsl
+DB2XHTML = opengl-man.xsl
 
 .SUFFIXES: .gl .xml .html .xhtml .ck.xhtml .tex .pdf .3G .tar .tar.gz
 .PHONY: man html pdf tex

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluQuadricNormals</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluQuadricNormals"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluQuadricNormals — specify what kind of normals are desired for quadrics</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">gluQuadricNormals</b>(</code></td><td><var class="pdparam">quad</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">normal</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLUquadric*  </td><td><var class="pdparam">quad</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">normal</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777299"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>quad</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluQuadricNormals</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluQuadricNormals"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluQuadricNormals — specify what kind of normals are desired for quadrics</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">gluQuadricNormals</b>(</code></td><td><var class="pdparam">quad</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">normal</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLUquadric*  </td><td><var class="pdparam">quad</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">normal</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781763"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>quad</code></em></span></dt><dd><p>
                     Specifies the quadrics object (created with <span class="citerefentry"><span class="refentrytitle">gluNewQuadric</span></span>).
                 </p></dd><dt><span class="term"><em class="parameter"><code>normal</code></em></span></dt><dd><p>
                     Specifies the desired type of normals. Valid values are
                     <code class="constant">GLU_NONE</code>,
                     <code class="constant">GLU_FLAT</code>, and
                     <code class="constant">GLU_SMOOTH</code>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777226"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781688"></a><h2>DESCRIPTION</h2><p>
             <code class="function">gluQuadricNormals</code> specifies what kind of normals are desired for quadrics rendered with
             <em class="parameter"><code>quad</code></em>. The legal values are as follows:
         </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GLU_NONE</code></span></dt><dd><p>
@@ -17,12 +17,12 @@
                     </p></dd><dt><span class="term"><code class="constant">GLU_SMOOTH</code></span></dt><dd><p>
                         One normal is generated for every vertex of a quadric. This is the
                         initial value.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763853"></a><h2>SEE ALSO</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768316"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">gluNewQuadric</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluQuadricDrawStyle</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluQuadricOrientation</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluQuadricTexture</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763881"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768345"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

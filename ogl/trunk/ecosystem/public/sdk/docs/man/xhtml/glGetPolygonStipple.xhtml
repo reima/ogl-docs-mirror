@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetPolygonStipple</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetPolygonStipple"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetPolygonStipple — return the polygon stipple pattern</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetPolygonStipple</b>(</code></td><td><var class="pdparam">pattern</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLubyte *  </td><td><var class="pdparam">pattern</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781659"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pattern</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetPolygonStipple</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetPolygonStipple"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetPolygonStipple — return the polygon stipple pattern</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetPolygonStipple</b>(</code></td><td><var class="pdparam">pattern</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLubyte *  </td><td><var class="pdparam">pattern</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781753"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pattern</code></em></span></dt><dd><p>
                     Returns the stipple pattern. The initial value is all 1's.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781688"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781647"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glGetPolygonStipple</code> returns to <em class="parameter"><code>pattern</code></em> a 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -37,10 +37,10 @@
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_PACK_BUFFER</code> target 
             (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while a polygon stipple pattern is
             requested, <em class="parameter"><code>pattern</code></em> is treated as a byte offset into the buffer object's data store.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768234"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768378"></a><h2>NOTES</h2><p>
             If an error is generated,
             no change is made to the contents of <em class="parameter"><code>pattern</code></em>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768252"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768397"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
             <code class="constant">GL_PIXEL_PACK_BUFFER</code> target and the buffer object's data store is currently mapped.
         </p><p>
@@ -51,14 +51,14 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetPolygonStipple</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768317"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774962"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PIXEL_PACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712489"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774979"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPolygonStipple</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712519"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775008"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

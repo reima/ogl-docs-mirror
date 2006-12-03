@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXUseXFont</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXUseXFont"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXUseXFont — create bitmap display lists from an X font</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glXUseXFont</b>(</code></td><td><var class="pdparam">font</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">first</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">count</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">listBase</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> Font  </td><td><var class="pdparam">font</var>;</td></tr><tr><td> int  </td><td><var class="pdparam">first</var>;</td></tr><tr><td> int  </td><td><var class="pdparam">count</var>;</td></tr><tr><td> int  </td><td><var class="pdparam">listBase</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777189"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>font</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXUseXFont</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXUseXFont"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXUseXFont — create bitmap display lists from an X font</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glXUseXFont</b>(</code></td><td><var class="pdparam">font</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">first</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">count</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">listBase</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> Font  </td><td><var class="pdparam">font</var>;</td></tr><tr><td> int  </td><td><var class="pdparam">first</var>;</td></tr><tr><td> int  </td><td><var class="pdparam">count</var>;</td></tr><tr><td> int  </td><td><var class="pdparam">listBase</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781774"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>font</code></em></span></dt><dd><p>
                     Specifies the font from which character glyphs are to be taken.
                 </p></dd><dt><span class="term"><em class="parameter"><code>first</code></em></span></dt><dd><p>
                     Specifies the index of the first glyph to be taken.
@@ -8,7 +8,7 @@
                     Specifies the number of glyphs to be taken.
                 </p></dd><dt><span class="term"><em class="parameter"><code>listBase</code></em></span></dt><dd><p>
                     Specifies the index of the first display list to be generated.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763821"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768269"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glXUseXFont</code> generates <em class="parameter"><code>count</code></em> display lists,
             named <em class="parameter"><code>listBase</code></em> through 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -106,7 +106,7 @@
             Empty display lists are created for all glyphs that are requested and
             are not defined in <em class="parameter"><code>font</code></em>.
             <code class="function">glXUseXFont</code> is ignored if there is no current GLX context.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770771"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775218"></a><h2>ERRORS</h2><p>
             <code class="constant">BadFont</code> is generated if <em class="parameter"><code>font</code></em> is not a valid font.
         </p><p>
             <code class="constant">GLXBadContextState</code> is generated if the current GLX context is
@@ -115,10 +115,10 @@
             <code class="constant">GLXBadCurrentWindow</code> is generated if the drawable associated
             with the current context of the calling thread is a window, and that
             window is no longer valid.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770811"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775259"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glBitmap</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glXMakeCurrent</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770829"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775277"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

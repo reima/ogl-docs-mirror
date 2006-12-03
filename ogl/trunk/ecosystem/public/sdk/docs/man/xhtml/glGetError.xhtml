@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetError</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetError"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetError — return error information</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> GLenum <b class="fsfunc">glGetError</b>(</code><var class="pdparam">void</var><code>)</code>;<br />  <var class="pdparam">void</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777300"></a><h2>DESCRIPTION</h2><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetError</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetError"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetError — return error information</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> GLenum <b class="fsfunc">glGetError</b>(</code><var class="pdparam">void</var><code>)</code>;<br />  <var class="pdparam">void</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781749"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glGetError</code> returns the value of the error flag.
             Each detectable error is assigned a numeric code and symbolic name.
             When an error occurs,
@@ -68,14 +68,14 @@
             or frame buffer contents.
             If the generating command returns a value, it returns 0.
             If <code class="function">glGetError</code> itself generates an error, it returns 0.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770563"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775010"></a><h2>NOTES</h2><p>
             <code class="constant">GL_TABLE_TOO_LARGE</code> was introduced in GL version 1.2.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770575"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775022"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetError</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
             In this case, <code class="function">glGetError</code> returns 0.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770611"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775059"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

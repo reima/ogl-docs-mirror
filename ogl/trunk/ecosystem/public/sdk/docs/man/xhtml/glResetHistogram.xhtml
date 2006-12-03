@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glResetHistogram</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glResetHistogram"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glResetHistogram — reset histogram table entries to zero</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glResetHistogram</b>(</code><var class="pdparam">target</var><code>)</code>;<br /> GLenum <var class="pdparam">target</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777288"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glResetHistogram</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glResetHistogram"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glResetHistogram — reset histogram table entries to zero</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glResetHistogram</b>(</code><var class="pdparam">target</var><code>)</code>;<br /> GLenum <var class="pdparam">target</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781750"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Must be
                     <code class="constant">GL_HISTOGRAM</code>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777319"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781645"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glResetHistogram</code> resets all the elements of the current histogram table to zero.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777200"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781661"></a><h2>NOTES</h2><p>
             <code class="function">glResetHistogram</code> is present only if <code class="code">ARB_imaging</code> is returned when <span class="citerefentry"><span class="refentrytitle">glGetString</span></span>
             is called with an argument of <code class="constant">GL_EXTENSIONS</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777225"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781688"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not <code class="constant">GL_HISTOGRAM</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glResetHistogram</code> is executed
             between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding
             execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763817"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768279"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glHistogram</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763830"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768292"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

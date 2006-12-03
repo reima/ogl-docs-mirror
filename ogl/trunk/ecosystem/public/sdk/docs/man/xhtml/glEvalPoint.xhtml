@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glEvalPoint</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glEvalPoint"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glEvalPoint — generate and evaluate a single point in a mesh</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEvalPoint1</b>(</code><var class="pdparam">i</var><code>)</code>;<br /> GLint <var class="pdparam">i</var>;</p></div><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEvalPoint2</b>(</code><var class="pdparam">i</var>, <var class="pdparam">j</var><code>)</code>;<br /> GLint <var class="pdparam">i</var>;<br /> GLint <var class="pdparam">j</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777197"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>i</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glEvalPoint</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glEvalPoint"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glEvalPoint — generate and evaluate a single point in a mesh</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEvalPoint1</b>(</code><var class="pdparam">i</var><code>)</code>;<br /> GLint <var class="pdparam">i</var>;</p></div><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEvalPoint2</b>(</code><var class="pdparam">i</var>, <var class="pdparam">j</var><code>)</code>;<br /> GLint <var class="pdparam">i</var>;<br /> GLint <var class="pdparam">j</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781644"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>i</code></em></span></dt><dd><p>
                     Specifies the integer value for grid domain variable 
                     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
                     .
@@ -8,7 +8,7 @@
                     Specifies the integer value for grid domain variable 
                     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">j</mml:mi></mml:math>
                     (<code class="function">glEvalPoint2</code> only).
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763819"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768266"></a><h2>DESCRIPTION</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glMapGrid</span></span> and <span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span> are used in tandem to efficiently
             generate and evaluate a series of evenly spaced map domain values.
             <code class="function">glEvalPoint</code> can be used to evaluate a single grid point in the same gridspace
@@ -261,7 +261,7 @@ glEvalCoord2( $i^cdot^DELTA u ~+~ u sub 1$, $j^cdot^DELTA v ~+~ v sub 1$ );
                 </mml:msub>
             </mml:math>
             .
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4708392"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712846"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_MAP1_GRID_DOMAIN</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_MAP2_GRID_DOMAIN</code>
@@ -269,13 +269,13 @@ glEvalCoord2( $i^cdot^DELTA u ~+~ u sub 1$, $j^cdot^DELTA v ~+~ v sub 1$ );
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_MAP1_GRID_SEGMENTS</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_MAP2_GRID_SEGMENTS</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4708444"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712899"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glEvalCoord</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glMap1</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glMap2</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glMapGrid</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4708478"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712933"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetConvolutionParameter</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetConvolutionParameter"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetConvolutionParameter — get convolution parameters</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetConvolutionParameterfv</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pname</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">params</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">pname</var>;</td></tr><tr><td> GLfloat *  </td><td><var class="pdparam">params</var>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetConvolutionParameteriv</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pname</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">params</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">pname</var>;</td></tr><tr><td> GLint *  </td><td><var class="pdparam">params</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777205"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetConvolutionParameter</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetConvolutionParameter"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetConvolutionParameter — get convolution parameters</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetConvolutionParameterfv</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pname</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">params</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">pname</var>;</td></tr><tr><td> GLfloat *  </td><td><var class="pdparam">params</var>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetConvolutionParameteriv</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pname</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">params</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">pname</var>;</td></tr><tr><td> GLint *  </td><td><var class="pdparam">params</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781666"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     The filter whose parameters are to be retrieved.
                     Must be one of
                     <code class="constant">GL_CONVOLUTION_1D</code>,
@@ -20,7 +20,7 @@
                     <code class="constant">GL_MAX_CONVOLUTION_HEIGHT</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>params</code></em></span></dt><dd><p>
                     Pointer to storage for the parameters to be retrieved.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763871"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768333"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glGetConvolutionParameter</code> retrieves convolution parameters.
             <em class="parameter"><code>target</code></em> determines which convolution filter is queried.
             <em class="parameter"><code>pname</code></em> determines which parameter is returned:
@@ -54,7 +54,7 @@
                         The maximum acceptable filter image width.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_CONVOLUTION_HEIGHT</code></span></dt><dd><p>
                         The maximum acceptable filter image height.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770672"></a><h2>ERRORS</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775134"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not one of the allowable
             values.
         </p><p>
@@ -68,11 +68,11 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetConvolutionParameter</code> is executed
             between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding
             execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770763"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775226"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetConvolutionFilter</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glGetSeparableFilter2D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glConvolutionParameter</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4770788"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775250"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

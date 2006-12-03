@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCallList</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glCallList"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCallList — execute a display list</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glCallList</b>(</code><var class="pdparam">list</var><code>)</code>;<br /> GLuint <var class="pdparam">list</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777300"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>list</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCallList</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glCallList"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCallList — execute a display list</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glCallList</b>(</code><var class="pdparam">list</var><code>)</code>;<br /> GLuint <var class="pdparam">list</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781749"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>list</code></em></span></dt><dd><p>
                     Specifies the integer name of the display list to be executed.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777192"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781641"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glCallList</code> causes the named display list to be executed.
             The commands saved in the display list are executed in order,
             just as if they were called without using a display list.
@@ -24,23 +24,23 @@
             <span class="citerefentry"><span class="refentrytitle">glPopAttrib</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPushMatrix</span></span>,
             and <span class="citerefentry"><span class="refentrytitle">glPopMatrix</span></span> to preserve GL state across <code class="function">glCallList</code> calls.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763827"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768274"></a><h2>NOTES</h2><p>
             Display lists can be executed between a call to <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding call to <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>,
             as long as the display list includes only commands that are allowed
             in this interval.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763848"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768296"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_MAX_LIST_NESTING</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glIsList</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763873"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768321"></a><h2>SEE ALSO</h2><p>
             <code class="function">glCallLists</code>,
             <span class="citerefentry"><span class="refentrytitle">glDeleteLists</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glGenLists</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glNewList</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPushAttrib</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPushMatrix</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4763915"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768363"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

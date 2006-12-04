@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glRenderMode</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glRenderMode"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glRenderMode — set rasterization mode</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> GLint <b class="fsfunc">glRenderMode</b>(</code><var class="pdparam">mode</var><code>)</code>;<br /> GLenum <var class="pdparam">mode</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781745"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
+                    Specifies the rasterization mode.
+                    Three values are accepted:
+                    <code class="constant">GL_RENDER</code>,
+                    <code class="constant">GL_SELECT</code>, and
+                    <code class="constant">GL_FEEDBACK</code>.
+                    The initial value is <code class="constant">GL_RENDER</code>.
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781656"></a><h2>DESCRIPTION</h2><p>
+            <code class="function">glRenderMode</code> sets the rasterization mode.
+            It takes one argument,
+            <em class="parameter"><code>mode</code></em>,
+            which can assume one of three predefined values:
+        </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_RENDER</code></span></dt><dd><p>
+                        Render mode. Primitives are rasterized,
+                        producing pixel fragments,
+                        which are written into the frame buffer.
+                        This is the normal mode
+                        and also the default mode.
+                    </p></dd><dt><span class="term"><code class="constant">GL_SELECT</code></span></dt><dd><p>
+                        Selection mode.
+                        No pixel fragments are produced,
+                        and no change to the frame buffer contents is made.
+                        Instead,
+                        a record of the names of primitives that would have been drawn
+                        if the render mode had been <code class="constant">GL_RENDER</code> is returned in a select buffer,
+                        which must be created (see <span class="citerefentry"><span class="refentrytitle">glSelectBuffer</span></span>) before selection mode
+                        is entered.
+                    </p></dd><dt><span class="term"><code class="constant">GL_FEEDBACK</code></span></dt><dd><p>
+                        Feedback mode.
+                        No pixel fragments are produced,
+                        and no change to the frame buffer contents is made.
+                        Instead,
+                        the coordinates and attributes of vertices that would have been drawn
+                        if the render mode had been <code class="constant">GL_RENDER</code> is returned in a feedback buffer,
+                        which must be created (see <span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span>) before feedback mode
+                        is entered.
+                    </p></dd></dl></div><p>
+            The return value of <code class="function">glRenderMode</code> is determined by the render mode at the time
+            <code class="function">glRenderMode</code> is called,
+            rather than by <em class="parameter"><code>mode</code></em>.
+            The values returned for the three render modes are as follows:
+        </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_RENDER</code></span></dt><dd><p>
+                        0.
+                    </p></dd><dt><span class="term"><code class="constant">GL_SELECT</code></span></dt><dd><p>
+                        The number of hit records transferred to the select buffer.
+                    </p></dd><dt><span class="term"><code class="constant">GL_FEEDBACK</code></span></dt><dd><p>
+                        The number of values (not vertices) transferred to the feedback buffer.
+                    </p></dd></dl></div><p>
+            See the <span class="citerefentry"><span class="refentrytitle">glSelectBuffer</span></span> and <span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span> reference pages for
+            more details concerning selection and feedback operation.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774975"></a><h2>NOTES</h2><p>
+            If an error is generated,
+            <code class="function">glRenderMode</code> returns 0 regardless of the current render mode.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774993"></a><h2>ERRORS</h2><p>
+            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is not one of the three
+            accepted values.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <span class="citerefentry"><span class="refentrytitle">glSelectBuffer</span></span> is called
+            while the render mode is <code class="constant">GL_SELECT</code>,
+            or if <code class="function">glRenderMode</code> is called with argument <code class="constant">GL_SELECT</code> before
+            <span class="citerefentry"><span class="refentrytitle">glSelectBuffer</span></span> is called at least once.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span> is called
+            while the render mode is <code class="constant">GL_FEEDBACK</code>,
+            or if <code class="function">glRenderMode</code> is called with argument <code class="constant">GL_FEEDBACK</code> before
+            <span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span> is called at least once.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glRenderMode</code>
+            is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
+            and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775106"></a><h2>ASSOCIATED GETS</h2><p>
+            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_RENDER_MODE</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775123"></a><h2>SEE ALSO</h2><p>
+            <span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glInitNames</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glLoadName</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glPassThrough</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glPushName</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glSelectBuffer</span></span>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775163"></a><h2>COPYRIGHT</h2><p>
+            Copyright <span class="trademark"></span>© 1991-2006
+            Silicon Graphics, Inc. This document is licensed under the SGI
+            Free Software B License. For details, see
+            <a href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

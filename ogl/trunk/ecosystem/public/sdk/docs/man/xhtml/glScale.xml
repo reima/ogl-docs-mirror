@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glScale</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glScale"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glScale — multiply the current matrix by a general scaling matrix</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glScaled</b>(</code></td><td><var class="pdparam">x</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">y</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">z</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLdouble  </td><td><var class="pdparam">x</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">y</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">z</var>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glScalef</b>(</code></td><td><var class="pdparam">x</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">y</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">z</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLfloat  </td><td><var class="pdparam">x</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">y</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">z</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781652"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>x</code></em>, </span><span class="term"><em class="parameter"><code>y</code></em>, </span><span class="term"><em class="parameter"><code>z</code></em></span></dt><dd><p>
+                    Specify scale factors along the <span class="emphasis"><em>x</em></span>, <span class="emphasis"><em>y</em></span>, and <span class="emphasis"><em>z</em></span> axes, respectively.
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768247"></a><h2>DESCRIPTION</h2><p>
+            <code class="function">glScale</code> produces a nonuniform scaling along the <span class="emphasis"><em>x</em></span>, <span class="emphasis"><em>y</em></span>, and
+            <span class="emphasis"><em>z</em></span> axes.
+            The three parameters indicate the desired scale factor along
+            each of the three axes.
+        </p><p>
+            The current matrix
+            (see <span class="citerefentry"><span class="refentrytitle">glMatrixMode</span></span>)
+            is multiplied by this scale matrix,
+            and the product replaces the current matrix
+            as if <code class="function">glScale</code> were called with the following matrix
+            as its argument:
+        </p><p>
+            </p><div class="informalequation"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+                
+                <mml:mfenced open="(" close=")">
+                    <mml:mtable>
+                        <mml:mtr>
+                            <mml:mtd>
+                                <mml:mi mathvariant="italic">x</mml:mi>
+                            </mml:mtd>
+                            <mml:mtd>
+                                <mml:mn>0</mml:mn>
+                            </mml:mtd>
+                            <mml:mtd>
+                                <mml:mn>0</mml:mn>
+                            </mml:mtd>
+                            <mml:mtd>
+                                <mml:mn>0</mml:mn>
+                            </mml:mtd>
+                        </mml:mtr>
+                        <mml:mtr>
+                            <mml:mtd>
+                                <mml:mn>0</mml:mn>
+                            </mml:mtd>
+                            <mml:mtd>
+                                <mml:mi mathvariant="italic">y</mml:mi>
+                            </mml:mtd>
+                            <mml:mtd>
+                                <mml:mn>0</mml:mn>
+                            </mml:mtd>
+                            <mml:mtd>
+                                <mml:mn>0</mml:mn>
+                            </mml:mtd>
+                        </mml:mtr>
+                        <mml:mtr>
+                            <mml:mtd>
+                                <mml:mn>0</mml:mn>
+                            </mml:mtd>
+                            <mml:mtd>
+                                <mml:mn>0</mml:mn>
+                            </mml:mtd>
+                            <mml:mtd>
+                                <mml:mi mathvariant="italic">z</mml:mi>
+                            </mml:mtd>
+                            <mml:mtd>
+                                <mml:mn>0</mml:mn>
+                            </mml:mtd>
+                        </mml:mtr>
+                        <mml:mtr>
+                            <mml:mtd>
+                                <mml:mn>0</mml:mn>
+                            </mml:mtd>
+                            <mml:mtd>
+                                <mml:mn>0</mml:mn>
+                            </mml:mtd>
+                            <mml:mtd>
+                                <mml:mn>0</mml:mn>
+                            </mml:mtd>
+                            <mml:mtd>
+                                <mml:mn>1</mml:mn>
+                            </mml:mtd>
+                        </mml:mtr>
+                    </mml:mtable>
+                </mml:mfenced>
+            </mml:math></div><p>
+        </p><p>
+            If the matrix mode is either <code class="constant">GL_MODELVIEW</code> or <code class="constant">GL_PROJECTION</code>,
+            all objects drawn after <code class="function">glScale</code> is called are scaled.
+        </p><p>
+            Use <span class="citerefentry"><span class="refentrytitle">glPushMatrix</span></span> and <span class="citerefentry"><span class="refentrytitle">glPopMatrix</span></span> to save and restore
+            the unscaled coordinate
+            system.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775036"></a><h2>NOTES</h2><p>
+            If scale factors other than 1 are applied to the modelview matrix
+            and lighting is enabled, lighting often appears wrong.
+            In that case, enable automatic normalization of normals by
+            calling <span class="citerefentry"><span class="refentrytitle">glEnable</span></span> with the argument <code class="constant">GL_NORMALIZE</code>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775060"></a><h2>ERRORS</h2><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glScale</code>
+            is executed between the execution of
+            <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
+            and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775092"></a><h2>ASSOCIATED GETS</h2><p>
+            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_MATRIX_MODE</code>
+        </p><p>
+            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_COLOR_MATRIX</code>
+        </p><p>
+            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_MODELVIEW_MATRIX</code>
+        </p><p>
+            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PROJECTION_MATRIX</code>
+        </p><p>
+            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_TEXTURE_MATRIX</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775156"></a><h2>SEE ALSO</h2><p>
+            <span class="citerefentry"><span class="refentrytitle">glMatrixMode</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glMultMatrix</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glPushMatrix</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glRotate</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glTranslate</span></span>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775191"></a><h2>COPYRIGHT</h2><p>
+            Copyright <span class="trademark"></span>© 1991-2006
+            Silicon Graphics, Inc. This document is licensed under the SGI
+            Free Software B License. For details, see
+            <a href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

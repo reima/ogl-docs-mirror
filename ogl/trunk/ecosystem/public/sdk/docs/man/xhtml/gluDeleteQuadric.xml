@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluDeleteQuadric</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluDeleteQuadric"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluDeleteQuadric — destroy a quadrics object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">gluDeleteQuadric</b>(</code><var class="pdparam">quad</var><code>)</code>;<br /> GLUquadric* <var class="pdparam">quad</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781749"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>quad</code></em></span></dt><dd><p>
+                    Specifies the quadrics object to be destroyed.
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781640"></a><h2>DESCRIPTION</h2><p>
+            <code class="function">gluDeleteQuadric</code> destroys the quadrics object (created with <span class="citerefentry"><span class="refentrytitle">gluNewQuadric</span></span>)
+            and frees any memory it uses. 
+            Once <code class="function">gluDeleteQuadric</code> has been called, <em class="parameter"><code>quad</code></em> cannot be used again.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781674"></a><h2>SEE ALSO</h2><p>
+            <span class="citerefentry"><span class="refentrytitle">gluNewQuadric</span></span>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768229"></a><h2>COPYRIGHT</h2><p>
+            Copyright <span class="trademark"></span>© 1991-2006
+            Silicon Graphics, Inc. This document is licensed under the SGI
+            Free Software B License. For details, see
+            <a href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

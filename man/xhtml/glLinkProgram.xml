@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glLinkProgram</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glLinkProgram"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glLinkProgram — Links a program object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glLinkProgram</b>(</code><var class="pdparam">program</var><code>)</code>;<br />GLuint <var class="pdparam">program</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781731"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>program</code></em></span></dt><dd><p>Specifies the handle of the program object to be linked.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781757"></a><h2>Description</h2><p><code class="function">glLinkProgram</code> links the program
+	object specified by <em class="parameter"><code>program</code></em>. If any
+	shader objects of type <code class="constant">GL_VERTEX_SHADER</code> are
+	attached to <em class="parameter"><code>program</code></em>, they will be used to
+	create an executable that will run on the programmable vertex
+	processor. If any shader objects of type
+	<code class="constant">GL_FRAGMENT_SHADER</code> are attached to
+	<em class="parameter"><code>program</code></em>, they will be used to create an
+	executable that will run on the programmable fragment
+	processor.</p><p>The status of the link operation will be stored as part of
+	the program object's state. This value will be set to
+	<code class="constant">GL_TRUE</code> if the program object was linked
+	without errors and is ready for use, and
+	<code class="constant">GL_FALSE</code> otherwise. It can be queried by
+	calling
+	<span class="citerefentry"><span class="refentrytitle">glGetProgram</span></span>
+	with arguments <em class="parameter"><code>program</code></em> and
+	<code class="constant">GL_LINK_STATUS</code>.</p><p>As a result of a successful link operation, all active
+	user-defined uniform variables belonging to
+	<em class="parameter"><code>program</code></em> will be initialized to 0, and
+	each of the program object's active uniform variables will be
+	assigned a location that can be queried by calling
+	<span class="citerefentry"><span class="refentrytitle">glGetUniformLocation</span></span>.
+	Also, any active user-defined attribute variables that have not
+	been bound to a generic vertex attribute index will be bound to
+	one at this time.</p><p>Linking of a program object can fail for a number of
+	reasons as specified in the <span class="emphasis"><em>OpenGL Shading Language
+	Specification</em></span>. The following lists some of the
+	conditions that will cause a link error.</p><div class="itemizedlist"><ul type="disc"><li><p>The number of active attribute variables supported
+		by the implementation has been exceeded.</p></li><li><p>The storage limit for uniform variables has been
+		exceeded.</p></li><li><p>The number of active uniform variables supported
+		by the implementation has been exceeded.</p></li><li><p>The <code class="function">main</code> function is missing
+		for the vertex shader or the fragment shader.</p></li><li><p>A varying variable actually used in the fragment
+		shader is not declared in the same way (or is not
+		declared at all) in the vertex shader.</p></li><li><p>A reference to a function or variable name is
+		unresolved.</p></li><li><p>A shared global is declared with two different
+		types or two different initial values.</p></li><li><p>One or more of the attached shader objects has not
+		been successfully compiled.</p></li><li><p>Binding a generic attribute matrix caused some
+		rows of the matrix to fall outside the allowed maximum
+		of <code class="constant">GL_MAX_VERTEX_ATTRIBS</code>.</p></li><li><p>Not enough contiguous vertex attribute slots could
+		be found to bind attribute matrices.</p></li></ul></div><p>When a program object has been successfully linked, the
+	program object can be made part of current state by calling
+	<span class="citerefentry"><span class="refentrytitle">glUseProgram</span></span>.
+	Whether or not the link operation was successful, the program
+	object's information log will be overwritten. The information
+	log can be retrieved by calling
+	<span class="citerefentry"><span class="refentrytitle">glGetProgramInfoLog</span></span>.</p><p><code class="function">glLinkProgram</code> will also install the
+	generated executables as part of the current rendering state if
+	the link operation was successful and the specified program
+	object is already currently in use as a result of a previous
+	call to
+	<span class="citerefentry"><span class="refentrytitle">glUseProgram</span></span>.
+	If the program object currently in use is relinked
+	unsuccessfully, its link status will be set to
+	<code class="constant">GL_FALSE</code> , but the executables and
+	associated state will remain part of the current state until a
+	subsequent call to <code class="function">glUseProgram</code> removes it
+	from use. After it is removed from use, it cannot be made part
+	of current state until it has been successfully relinked.</p><p>If <em class="parameter"><code>program</code></em> contains shader objects
+	of type <code class="constant">GL_VERTEX_SHADER</code> but does not
+	contain shader objects of type
+	<code class="constant">GL_FRAGMENT_SHADER</code>, the vertex shader will
+	be linked against the implicit interface for fixed functionality
+	fragment processing. Similarly, if
+	<em class="parameter"><code>program</code></em> contains shader objects of type
+	<code class="constant">GL_FRAGMENT_SHADER</code> but it does not contain
+	shader objects of type <code class="constant">GL_VERTEX_SHADER</code>,
+	the fragment shader will be linked against the implicit
+	interface for fixed functionality vertex processing.</p><p>The program object's information log is updated and the
+	program is generated at the time of the link operation. After
+	the link operation, applications are free to modify attached
+	shader objects, compile attached shader objects, detach shader
+	objects, delete shader objects, and attach additional shader
+	objects. None of these operations affects the information log or
+	the program that is part of the program object.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775064"></a><h2>Notes</h2><p><code class="function">glLinkProgram</code>
+	is available only if the GL version is 2.0 or greater.</p><p>If the link operation is unsuccessful, any information about a previous link operation on <em class="parameter"><code>program</code></em>
+	is lost (i.e., a failed link does not restore the old state of <em class="parameter"><code>program</code></em>
+	). Certain information can still be retrieved from <em class="parameter"><code>program</code></em>
+	even after an unsuccessful link operation. See for instance <span class="citerefentry"><span class="refentrytitle">glGetActiveAttrib </span></span>
+	and <span class="citerefentry"><span class="refentrytitle">glGetActiveUniform</span></span>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775114"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_VALUE</code>
+	is generated if <em class="parameter"><code>program</code></em>
+	is not a value generated by OpenGL.</p><p><code class="constant">GL_INVALID_OPERATION</code>
+	is generated if <em class="parameter"><code>program</code></em>
+	is not a program object.</p><p><code class="constant">GL_INVALID_OPERATION</code>
+	is generated if <code class="function">glLinkProgram</code>
+	is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
+	and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775167"></a><h2>Associated Gets</h2><p><span class="citerefentry"><span class="refentrytitle">glGet</span></span>
+	with the argument <code class="constant">GL_CURRENT_PROGRAM</code></p><p><span class="citerefentry"><span class="refentrytitle">glGetActiveAttrib </span></span>
+	with argument <em class="parameter"><code>program</code></em>
+	and the index of an active attribute variable</p><p><span class="citerefentry"><span class="refentrytitle">glGetActiveUniform</span></span>
+	with argument <em class="parameter"><code>program</code></em>
+	and the index of an active uniform variable<em class="parameter"><code></code></em></p><p><span class="citerefentry"><span class="refentrytitle">glGetAttachedShaders</span></span>
+	with argument <em class="parameter"><code>program</code></em></p><p><span class="citerefentry"><span class="refentrytitle">glGetAttribLocation</span></span>
+	with argument <em class="parameter"><code>program</code></em>
+	and an attribute variable name</p><p><span class="citerefentry"><span class="refentrytitle">glGetProgram</span></span>
+	with arguments <em class="parameter"><code>program</code></em>
+	and <code class="constant">GL_LINK_STATUS</code></p><p><span class="citerefentry"><span class="refentrytitle">glGetProgramInfoLog</span></span>
+	with argument <em class="parameter"><code>program</code></em></p><p><span class="citerefentry"><span class="refentrytitle">glGetUniform</span></span>
+	with argument <em class="parameter"><code>program</code></em>
+	and a uniform variable location</p><p><span class="citerefentry"><span class="refentrytitle">glGetUniformLocation</span></span>
+	with argument <em class="parameter"><code>program</code></em>
+	and a uniform variable name</p><p><span class="citerefentry"><span class="refentrytitle">glIsProgram</span></span></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775299"></a><h2>See Also</h2><p><span class="citerefentry"><span class="refentrytitle">glAttachShader</span></span>,
+	<span class="citerefentry"><span class="refentrytitle">glBindAttribLocation</span></span>,
+	<span class="citerefentry"><span class="refentrytitle">glCompileShader</span></span>,
+	<span class="citerefentry"><span class="refentrytitle">glCreateProgram</span></span>,
+	<span class="citerefentry"><span class="refentrytitle">glDeleteProgram</span></span>,
+	<span class="citerefentry"><span class="refentrytitle">glDetachShader</span></span>,
+	<span class="citerefentry"><span class="refentrytitle">glUniform</span></span>,
+	<span class="citerefentry"><span class="refentrytitle">glUseProgram</span></span>,
+	<span class="citerefentry"><span class="refentrytitle">glValidateProgram</span></span></p></div></div></body></html>

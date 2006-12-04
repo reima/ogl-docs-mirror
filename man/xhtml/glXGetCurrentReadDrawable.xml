@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXGetCurrentReadDrawable</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXGetCurrentReadDrawable"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXGetCurrentReadDrawable — return the current drawable</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> GLXDrawable <b class="fsfunc">glXGetCurrentReadDrawable</b>(</code></p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781720"></a><h2>DESCRIPTION</h2><p>
+            <code class="function">glXGetCurrentReadDrawable</code> returns the current read drawable,
+            as specified by <code class="constant">read</code> parameter
+            of <span class="citerefentry"><span class="refentrytitle">glXMakeContextCurrent</span></span>.
+            If there is no current drawable,
+            <code class="constant">None</code> is returned.
+        </p><p>
+            <code class="function">glXGetCurrentReadDrawable</code> returns client-side information.
+            It does not make a round-trip to the server.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781765"></a><h2>NOTES</h2><p>
+            <code class="function">glXGetCurrentReadDrawable</code> is only supported if the GLX version is 1.3 or greater.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781644"></a><h2>SEE ALSO</h2><p>
+            <span class="citerefentry"><span class="refentrytitle">glXGetCurrentContext</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glXGetCurrentDisplay</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glXGetCurrentDrawable</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glXMakeContextCurrent</span></span>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781674"></a><h2>COPYRIGHT</h2><p>
+            Copyright <span class="trademark"></span>© 1991-2006
+            Silicon Graphics, Inc. This document is licensed under the SGI
+            Free Software B License. For details, see
+            <a href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

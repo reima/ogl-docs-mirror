@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXGetContextIDEXT</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXGetContextIDEXT"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXGetContextIDEXT — get the XID for a context.</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> GLXContextID <b class="fsfunc">glXGetContextIDEXT</b>(</code></td><td><var class="pdparam">ctx</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> const GLXContext  </td><td><var class="pdparam">ctx</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781750"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>ctx</code></em></span></dt><dd><p>
+                    Specifies a GLX rendering context.
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781640"></a><h2>DESCRIPTION</h2><p>
+            <code class="function">glXGetContextIDEXT</code> returns the XID associated with a GLXContext.
+        </p><p>
+            No round trip is forced to the server; unlike most X calls that
+            return a value, <code class="function">glXGetContextIDEXT</code> does not flush any pending events.
+        </p><p>
+            <code class="function">glXGetContextIDEXT</code> is part of the <code class="code">EXT_import_context</code> extension,
+            not part of the core GLX command set. If _glxextstring(EXT_import_context)
+            is included in the string returned by <span class="citerefentry"><span class="refentrytitle">glXQueryExtensionsString</span></span>,
+            when called with argument <code class="constant">GLX_EXTENSIONS</code>,
+            extension <code class="code">EXT_import_context</code> is supported.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768248"></a><h2>ERRORS</h2><p>
+            <code class="constant">GLXBadContext</code> is generated if <em class="parameter"><code>ctx</code></em> does not
+            refer to a valid context.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768267"></a><h2>SEE ALSO</h2><p>
+            <span class="citerefentry"><span class="refentrytitle">glXCreateContext</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glXQueryVersion</span></span>,
+            <span class="citerefentry"><span class="refentrytitle">glXQueryExtensionsString</span></span>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768290"></a><h2>COPYRIGHT</h2><p>
+            Copyright <span class="trademark"></span>© 1991-2006
+            Silicon Graphics, Inc. This document is licensed under the SGI
+            Free Software B License. For details, see
+            <a href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+        </p></div></div></body></html>

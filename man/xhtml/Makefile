@@ -11,7 +11,7 @@ DB2XHTML = opengl-man.xsl
 .SUFFIXES: .gl .xml .html .xhtml .ck.xhtml .tex .pdf .3G .tar .tar.gz
 .PHONY: man html pdf tex
 
-.xml.xhtml:
+%.xml: ../%.xml
 	$(XSLT) --xinclude -o $@ $(DB2XHTML) $<
 
 # ARB Ecosystem man pages
@@ -373,12 +373,10 @@ GLUXML = $(SGIGLUXML)
 GLXXML = $(SGIGLXXML)
 XML    = $(GLXML) $(GLUXML) $(GLXXML)
 
-XHTML	= $(XML:.xml=.xhtml)
-
-default: $(XHTML)
+default: $(XML)
 
 clean:
 	$(RM) $(TEX_FILES) *.log *.aux *.toc *.dvi *.out
 
 clobber: clean
-	$(RM) $(XHTML) $(PDF_FILES)
+	$(RM) $(XML) $(PDF_FILES)

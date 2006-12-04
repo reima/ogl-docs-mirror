@@ -11,7 +11,7 @@ DB2XHTML = opengl-man.xsl
 .SUFFIXES: .gl .xml .html .xhtml .ck.xhtml .tex .pdf .3G .tar .tar.gz
 .PHONY: man html pdf tex
 
-%.xml: ../%.xml
+%.xml: ../%.xml opengl-man.xsl
 	$(XSLT) --xinclude -o $@ $(DB2XHTML) $<
 
 # ARB Ecosystem man pages

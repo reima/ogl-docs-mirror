@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluNurbsCurve</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluNurbsCurve"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluNurbsCurve — define the shape of a NURBS curve</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">gluNurbsCurve</b>(</code></td><td><var class="pdparam">nurb</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">knotCount</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">knots</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">stride</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">control</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">order</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLUnurbs*  </td><td><var class="pdparam">nurb</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">knotCount</var>;</td></tr><tr><td> GLfloat *  </td><td><var class="pdparam">knots</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">stride</var>;</td></tr><tr><td> GLfloat *  </td><td><var class="pdparam">control</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">order</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781658"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>nurb</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluNurbsCurve</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluNurbsCurve"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluNurbsCurve — define the shape of a NURBS curve</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">gluNurbsCurve</b>(</code></td><td><var class="pdparam">nurb</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">knotCount</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">knots</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">stride</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">control</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">order</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLUnurbs*  </td><td><var class="pdparam">nurb</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">knotCount</var>;</td></tr><tr><td> GLfloat *  </td><td><var class="pdparam">knots</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">stride</var>;</td></tr><tr><td> GLfloat *  </td><td><var class="pdparam">control</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">order</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781870"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>nurb</code></em></span></dt><dd><p>
                     Specifies the NURBS object (created with <span class="citerefentry"><span class="refentrytitle">gluNewNurbsRenderer</span></span>).
                 </p></dd><dt><span class="term"><em class="parameter"><code>knotCount</code></em></span></dt><dd><p>
                     Specifies the number of knots in <em class="parameter"><code>knots</code></em>.
@@ -23,7 +23,7 @@
                     one-dimensional evaluator types (such as <code class="constant">GLU_MAP1_VERTEX_3</code> or 
                     <code class="constant">GLU_MAP1_COLOR_4</code>). Between a <span class="citerefentry"><span class="refentrytitle">gluBeginTrim</span></span>/<span class="citerefentry"><span class="refentrytitle">gluEndTrim</span></span> pair,
                     the only valid types are <code class="constant">GLU_MAP1_TRIM_2</code> and <code class="constant">GLU_MAP1_TRIM_3</code>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774976"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775187"></a><h2>DESCRIPTION</h2><p>
             Use <code class="function">gluNurbsCurve</code> to describe a NURBS curve.
         </p><p>
             When <code class="function">gluNurbsCurve</code> appears between a <span class="citerefentry"><span class="refentrytitle">gluBeginCurve</span></span>/<span class="citerefentry"><span class="refentrytitle">gluEndCurve</span></span> pair, it is 
@@ -45,7 +45,7 @@
             parameter space.
             See the <span class="citerefentry"><span class="refentrytitle">gluBeginTrim</span></span> reference page for more discussion about trimming
             curves.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775143"></a><h2>EXAMPLE</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775354"></a><h2>EXAMPLE</h2><p>
             The following commands render a textured NURBS curve with normals:
             </p><pre class="programlisting">
 gluBeginCurve(nobj);
@@ -54,14 +54,14 @@ gluBeginCurve(nobj);
    gluNurbsCurve(nobj, ..., GL_MAP1_VERTEX_4);
 gluEndCurve(nobj);
             </pre><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775167"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775379"></a><h2>NOTES</h2><p>
             To define trim curves that stitch well, use <span class="citerefentry"><span class="refentrytitle">gluPwlCurve</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775182"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775394"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">gluBeginCurve</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluBeginTrim</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluNewNurbsRenderer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluPwlCurve</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775212"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775423"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

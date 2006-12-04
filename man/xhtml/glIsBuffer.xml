@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glIsBuffer</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glIsBuffer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glIsBuffer — determine if a name corresponds to a buffer object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> GLboolean <b class="fsfunc">glIsBuffer</b>(</code><var class="pdparam">buffer</var><code>)</code>;<br /> GLuint <var class="pdparam">buffer</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781743"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>buffer</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glIsBuffer</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glIsBuffer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glIsBuffer — determine if a name corresponds to a buffer object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> GLboolean <b class="fsfunc">glIsBuffer</b>(</code><var class="pdparam">buffer</var><code>)</code>;<br /> GLuint <var class="pdparam">buffer</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781956"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>buffer</code></em></span></dt><dd><p>
                     Specifies a value that may be the name of a buffer object.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781635"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781985"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glIsBuffer</code> returns <code class="constant">GL_TRUE</code> if <em class="parameter"><code>buffer</code></em> is currently the name of a buffer object.
             If <em class="parameter"><code>buffer</code></em> is zero, or is a non-zero value that is not currently the
             name of a buffer object, or if an error occurs, <code class="function">glIsBuffer</code> returns <code class="constant">GL_FALSE</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781681"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781893"></a><h2>NOTES</h2><p>
             <code class="function">glIsBuffer</code> is available only if the GL version is 1.5 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768241"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781910"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glIsBuffer</code> is executed
             between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding
             execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768272"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768483"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glDeleteBuffers</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glGenBuffers</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768300"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768511"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 2005
             by Sams Publishing.
         </p></div></div></body></html>

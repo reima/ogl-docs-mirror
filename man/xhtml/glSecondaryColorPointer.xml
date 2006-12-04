@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glSecondaryColorPointer</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glSecondaryColorPointer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glSecondaryColorPointer — define an array of secondary colors</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glSecondaryColorPointer</b>(</code></td><td><var class="pdparam">size</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">stride</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pointer</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLint  </td><td><var class="pdparam">size</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">stride</var>;</td></tr><tr><td> const GLvoid *  </td><td><var class="pdparam">pointer</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781753"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>size</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glSecondaryColorPointer</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glSecondaryColorPointer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glSecondaryColorPointer — define an array of secondary colors</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glSecondaryColorPointer</b>(</code></td><td><var class="pdparam">size</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">stride</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pointer</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLint  </td><td><var class="pdparam">size</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">stride</var>;</td></tr><tr><td> const GLvoid *  </td><td><var class="pdparam">pointer</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781854"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>size</code></em></span></dt><dd><p>
                     Specifies the number of components per color. Must be 3.
                 </p></dd><dt><span class="term"><em class="parameter"><code>type</code></em></span></dt><dd><p>
                     Specifies the data type of each color component in the array.
@@ -23,7 +23,7 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>pointer</code></em></span></dt><dd><p>
                     Specifies a pointer to the first component of the first color element
                     in the array. The initial value is 0.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768304"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768542"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glSecondaryColorPointer</code> specifies the location and data format of an array of color components
             to use when rendering.
             <em class="parameter"><code>size</code></em> specifies the number of components per color, and must be 3.
@@ -47,7 +47,7 @@
             <span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span>, <span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span>, <span class="citerefentry"><span class="refentrytitle">glMultiDrawArrays</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span>, <span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span>, or <span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span>
             is called.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775018"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775256"></a><h2>NOTES</h2><p>
             <code class="function">glSecondaryColorPointer</code> is available only if the GL version is 1.4 or greater.
         </p><p>
             Secondary colors are not supported for interleaved vertex array formats
@@ -68,13 +68,13 @@
             Secondary color array parameters are client-side state and are therefore
             not saved or restored by <span class="citerefentry"><span class="refentrytitle">glPushAttrib</span></span> and <span class="citerefentry"><span class="refentrytitle">glPopAttrib</span></span>.  Use
             <span class="citerefentry"><span class="refentrytitle">glPushClientAttrib</span></span> and <span class="citerefentry"><span class="refentrytitle">glPopClientAttrib</span></span> instead.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775149"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775387"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>size</code></em> is not 3.
         </p><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>type</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>stride</code></em> is negative.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775196"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775434"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_SECONDARY_COLOR_ARRAY</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_SECONDARY_COLOR_ARRAY_SIZE</code>
@@ -88,7 +88,7 @@
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_ARRAY_BUFFER_BINDING</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGetPointerv</span></span> with argument <code class="constant">GL_SECONDARY_COLOR_ARRAY_POINTER</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775286"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775524"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span>,
@@ -110,7 +110,7 @@
             <span class="citerefentry"><span class="refentrytitle">glTexCoordPointer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glVertexAttribPointer</span></span>
             <span class="citerefentry"><span class="refentrytitle">glVertexPointer</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712577"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712810"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

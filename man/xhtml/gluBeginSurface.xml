@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluBeginSurface</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluBeginSurface"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluBeginSurface — delimit a NURBS surface definition</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">gluBeginSurface</b>(</code><var class="pdparam">nurb</var><code>)</code>;<br /> GLUnurbs* <var class="pdparam">nurb</var>;</p></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">gluEndSurface</b>(</code><var class="pdparam">nurb</var><code>)</code>;<br /> GLUnurbs* <var class="pdparam">nurb</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781640"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>nurb</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluBeginSurface</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluBeginSurface"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluBeginSurface — delimit a NURBS surface definition</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">gluBeginSurface</b>(</code><var class="pdparam">nurb</var><code>)</code>;<br /> GLUnurbs* <var class="pdparam">nurb</var>;</p></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">gluEndSurface</b>(</code><var class="pdparam">nurb</var><code>)</code>;<br /> GLUnurbs* <var class="pdparam">nurb</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781987"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>nurb</code></em></span></dt><dd><p>
                     Specifies the NURBS object (created with <span class="citerefentry"><span class="refentrytitle">gluNewNurbsRenderer</span></span>).
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781670"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781881"></a><h2>DESCRIPTION</h2><p>
             Use <code class="function">gluBeginSurface</code> to mark the beginning of a NURBS 
             surface definition. After 
             calling <code class="function">gluBeginSurface</code>, make one or more calls to
@@ -22,7 +22,7 @@
             <span class="citerefentry"><span class="refentrytitle">glPopAttrib</span></span>.  
             See the <span class="citerefentry"><span class="refentrytitle">glPushAttrib</span></span> reference page for details on exactly what state
             these calls preserve.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768329"></a><h2>EXAMPLE</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768540"></a><h2>EXAMPLE</h2><p>
             The following commands render a textured NURBS surface with normals;
             the texture coordinates and normals are also described as NURBS surfaces:
             </p><pre class="programlisting">
@@ -32,7 +32,7 @@ gluBeginSurface(nobj);
    gluNurbsSurface(nobj, ..., GL_MAP2_VERTEX_4);
 gluEndSurface(nobj);
             </pre><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768358"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768569"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">gluBeginCurve</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluBeginTrim</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluNewNurbsRenderer</span></span>,
@@ -40,7 +40,7 @@ gluEndSurface(nobj);
             <span class="citerefentry"><span class="refentrytitle">gluNurbsSurface</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluPwlCurve</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPushAttrib</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774952"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768614"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glColorMask</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glColorMask"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glColorMask — enable and disable writing of frame buffer color components</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glColorMask</b>(</code></td><td><var class="pdparam">red</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">green</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">blue</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">alpha</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLboolean  </td><td><var class="pdparam">red</var>;</td></tr><tr><td> GLboolean  </td><td><var class="pdparam">green</var>;</td></tr><tr><td> GLboolean  </td><td><var class="pdparam">blue</var>;</td></tr><tr><td> GLboolean  </td><td><var class="pdparam">alpha</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781631"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>red</code></em>, </span><span class="term"><em class="parameter"><code>green</code></em>, </span><span class="term"><em class="parameter"><code>blue</code></em>, </span><span class="term"><em class="parameter"><code>alpha</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glColorMask</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glColorMask"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glColorMask — enable and disable writing of frame buffer color components</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glColorMask</b>(</code></td><td><var class="pdparam">red</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">green</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">blue</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">alpha</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLboolean  </td><td><var class="pdparam">red</var>;</td></tr><tr><td> GLboolean  </td><td><var class="pdparam">green</var>;</td></tr><tr><td> GLboolean  </td><td><var class="pdparam">blue</var>;</td></tr><tr><td> GLboolean  </td><td><var class="pdparam">alpha</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781979"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>red</code></em>, </span><span class="term"><em class="parameter"><code>green</code></em>, </span><span class="term"><em class="parameter"><code>blue</code></em>, </span><span class="term"><em class="parameter"><code>alpha</code></em></span></dt><dd><p>
                     Specify whether red, green, blue, and alpha can or cannot be written
                     into the frame buffer.
                     The initial values are all <code class="constant">GL_TRUE</code>,
                     indicating that the color components can be written.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768231"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781901"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glColorMask</code> specifies whether the individual color components in the frame buffer
             can or cannot be written.
             If <em class="parameter"><code>red</code></em> is <code class="constant">GL_FALSE</code>,
@@ -17,15 +17,15 @@
             Changes to individual bits of components cannot be controlled.
             Rather,
             changes are either enabled or disabled for entire color components.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768272"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768483"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glColorMask</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768300"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768512"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_COLOR_WRITEMASK</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_RGBA_MODE</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768329"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768541"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glClear</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glColor</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span>,
@@ -34,7 +34,7 @@
             <span class="citerefentry"><span class="refentrytitle">glIndexPointer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glIndexMask</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glStencilMask</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768379"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768591"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

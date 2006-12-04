@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glDrawBuffer</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glDrawBuffer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glDrawBuffer — specify which color buffers are to be drawn into</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glDrawBuffer</b>(</code><var class="pdparam">mode</var><code>)</code>;<br /> GLenum <var class="pdparam">mode</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781748"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glDrawBuffer</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glDrawBuffer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glDrawBuffer — specify which color buffers are to be drawn into</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glDrawBuffer</b>(</code><var class="pdparam">mode</var><code>)</code>;<br /> GLenum <var class="pdparam">mode</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781961"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
                     Specifies up to four color buffers to be drawn into.
                     Symbolic constants
                     <code class="constant">GL_NONE</code>,
@@ -19,7 +19,7 @@
                     to query the number of available aux buffers.)
                     The initial value is <code class="constant">GL_FRONT</code> for single-buffered contexts,
                     and <code class="constant">GL_BACK</code> for double-buffered contexts.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768265"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768476"></a><h2>DESCRIPTION</h2><p>
             When colors are written to the frame buffer,
             they are written into the color buffers specified by <code class="function">glDrawBuffer</code>.
             The specifications are as follows:
@@ -81,13 +81,13 @@
             <span class="emphasis"><em>back</em></span>
             buffers.
             The context is selected at GL initialization.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775104"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775315"></a><h2>NOTES</h2><p>
             It is always the case that <code class="constant">GL_AUX</code>
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
             = <code class="constant">GL_AUX0</code> + 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
             .
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775143"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775355"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if none of the buffers indicated
@@ -96,17 +96,17 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glDrawBuffer</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775204"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775415"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_DRAW_BUFFER</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_AUX_BUFFERS</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775232"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775444"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glColorMask</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glIndexMask</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glLogicOp</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glReadBuffer</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775267"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775479"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

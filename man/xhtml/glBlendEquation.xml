@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glBlendEquation</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glBlendEquation"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glBlendEquation — specify the equation used for both the RGB blend equation and the Alpha blend equation</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glBlendEquation</b>(</code><var class="pdparam">mode</var><code>)</code>;<br /> GLenum <var class="pdparam">mode</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781749"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glBlendEquation</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glBlendEquation"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glBlendEquation — specify the equation used for both the RGB blend equation and the Alpha blend equation</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glBlendEquation</b>(</code><var class="pdparam">mode</var><code>)</code>;<br /> GLenum <var class="pdparam">mode</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781962"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
                     specifies how source and destination colors are combined.
                     It must be <code class="constant">GL_FUNC_ADD</code>, <code class="constant">GL_FUNC_SUBTRACT</code>,
                     <code class="constant">GL_FUNC_REVERSE_SUBTRACT</code>, <code class="constant">GL_MIN</code>, <code class="constant">GL_MAX</code>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781660"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781871"></a><h2>DESCRIPTION</h2><p>
             The blend equations determine how a new pixel (the ''source'' color)
             is combined with a pixel already in the framebuffer (the ''destination''
             color).  This function sets both the RGB blend equation and the alpha 
@@ -723,10 +723,10 @@
         </p><p>
             Initially, both the RGB blend equation and the alpha blend equation are set to <code class="constant">GL_FUNC_ADD</code>.
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785597"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785824"></a><h2>NOTES</h2><p>
             The <code class="constant">GL_MIN</code>, and <code class="constant">GL_MAX</code> equations do not use
             the source or destination factors, only the source and destination colors.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785617"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785844"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is not one of
             <code class="constant">GL_FUNC_ADD</code>, <code class="constant">GL_FUNC_SUBTRACT</code>, <code class="constant">GL_FUNC_REVERSE_SUBTRACT</code>,
             <code class="constant">GL_MAX</code>, or <code class="constant">GL_MIN</code>.
@@ -734,16 +734,16 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glBlendEquation</code> is executed
             between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding
             execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785682"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785910"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with an argument of <code class="constant">GL_BLEND_EQUATION_RGB</code>
          </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with an argument of <code class="constant">GL_BLEND_EQUATION_ALPHA</code>
-         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785712"></a><h2>SEE ALSO</h2><p>
+         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785939"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetString</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glBlendColor</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span>
             <span class="citerefentry"><span class="refentrytitle">glBlendFuncSeparate</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785741"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785968"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

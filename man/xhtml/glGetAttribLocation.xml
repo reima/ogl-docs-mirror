@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetAttribLocation</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetAttribLocation"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetAttribLocation — Returns the location of an attribute variable</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef">GLint <b class="fsfunc">glGetAttribLocation</b>(</code></td><td><var class="pdparam">program</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">name</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td>GLuint  </td><td><var class="pdparam">program</var>;</td></tr><tr><td>const GLchar * </td><td><var class="pdparam">name</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781739"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>program</code></em></span></dt><dd><p>Specifies the program object to be
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetAttribLocation</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetAttribLocation"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetAttribLocation — Returns the location of an attribute variable</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef">GLint <b class="fsfunc">glGetAttribLocation</b>(</code></td><td><var class="pdparam">program</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">name</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td>GLuint  </td><td><var class="pdparam">program</var>;</td></tr><tr><td>const GLchar * </td><td><var class="pdparam">name</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781940"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>program</code></em></span></dt><dd><p>Specifies the program object to be
 		    queried.</p></dd><dt><span class="term"><em class="parameter"><code>name</code></em></span></dt><dd><p>Points to a null terminated string containing
 		    the name of the attribute variable whose location is
-		    to be queried.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781650"></a><h2>Description</h2><p><code class="function">glGetAttribLocation</code> queries the
+		    to be queried.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781851"></a><h2>Description</h2><p><code class="function">glGetAttribLocation</code> queries the
 	previously linked program object specified by
 	<em class="parameter"><code>program</code></em> for the attribute variable
 	specified by <em class="parameter"><code>name</code></em> and returns the index
@@ -27,8 +27,8 @@
 	<span class="citerefentry"><span class="refentrytitle">glLinkProgram</span></span>
 	was called for the specified program object. Attribute bindings
 	that have been specified since the last link operation are not
-	returned by <code class="function">glGetAttribLocation</code>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768293"></a><h2>Notes</h2><p><code class="function">glGetAttribLocation</code> is available only
-	if the GL version is 2.0 or greater.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768309"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
+	returned by <code class="function">glGetAttribLocation</code>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768492"></a><h2>Notes</h2><p><code class="function">glGetAttribLocation</code> is available only
+	if the GL version is 2.0 or greater.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768508"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
 	<em class="parameter"><code>program</code></em> is not a value generated by
 	OpenGL.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
 	<em class="parameter"><code>program</code></em> is not a program object.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
@@ -38,9 +38,9 @@
 	execution of
 	<span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
 	and the corresponding execution of
-	<span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768382"></a><h2>Associated Gets</h2><p><span class="citerefentry"><span class="refentrytitle">glGetActiveAttrib</span></span>
+	<span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768580"></a><h2>Associated Gets</h2><p><span class="citerefentry"><span class="refentrytitle">glGetActiveAttrib</span></span>
 	with argument <em class="parameter"><code>program</code></em> and the index of an
-	active attribute</p><p><span class="citerefentry"><span class="refentrytitle">glIsProgram</span></span></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774955"></a><h2>See Also</h2><p><span class="citerefentry"><span class="refentrytitle">glBindAttribLocation</span></span>,
+	active attribute</p><p><span class="citerefentry"><span class="refentrytitle">glIsProgram</span></span></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768606"></a><h2>See Also</h2><p><span class="citerefentry"><span class="refentrytitle">glBindAttribLocation</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glLinkProgram</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glVertexAttrib</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glVertexAttribPointer</span></span></p></div></div></body></html>

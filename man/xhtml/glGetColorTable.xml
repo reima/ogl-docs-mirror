@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetColorTable</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetColorTable"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetColorTable — retrieve contents of a color lookup table</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetColorTable</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">format</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">table</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">format</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td> GLvoid *  </td><td><var class="pdparam">table</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781631"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetColorTable</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetColorTable"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetColorTable — retrieve contents of a color lookup table</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetColorTable</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">format</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">table</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">format</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td> GLvoid *  </td><td><var class="pdparam">table</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781979"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Must be <code class="constant">GL_COLOR_TABLE</code>,
                     <code class="constant">GL_POST_CONVOLUTION_COLOR_TABLE</code>,
                     or
@@ -45,7 +45,7 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>table</code></em></span></dt><dd><p>
                     Pointer to a one-dimensional array of pixel data containing the contents
                     of the color table.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774973"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775183"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glGetColorTable</code> returns in <em class="parameter"><code>table</code></em> the contents of the color table specified
             by <em class="parameter"><code>target</code></em>. No pixel transfer operations are performed, but pixel
             storage modes that are applicable to
@@ -89,11 +89,11 @@
                         </td><td align="left">
                         Red
                         </td></tr></tbody></table></div><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775223"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775433"></a><h2>NOTES</h2><p>
             <code class="function">glGetColorTable</code> is present only if <code class="code">ARB_imaging</code> is returned when <span class="citerefentry"><span class="refentrytitle">glGetString</span></span>
             is called with an argument of <code class="constant">GL_EXTENSIONS</code>.
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775254"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775464"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not one of the allowable
             values.
         </p><p>
@@ -135,14 +135,14 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetColorTable</code> is executed
             between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding
             execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712675"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712878"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetColorTableParameter</span></span>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PIXEL_PACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712701"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712904"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glColorTable</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glColorTableParameter</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712720"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712923"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

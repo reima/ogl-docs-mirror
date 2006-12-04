@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetMinmax</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetMinmax"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetMinmax — get minimum and maximum pixel values</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetMinmax</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">reset</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">format</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">types</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">values</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLboolean  </td><td><var class="pdparam">reset</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">format</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">types</var>;</td></tr><tr><td> GLvoid *  </td><td><var class="pdparam">values</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781638"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetMinmax</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetMinmax"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetMinmax — get minimum and maximum pixel values</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetMinmax</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">reset</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">format</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">types</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">values</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLboolean  </td><td><var class="pdparam">reset</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">format</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">types</var>;</td></tr><tr><td> GLvoid *  </td><td><var class="pdparam">values</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781986"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Must be
                     <code class="constant">GL_MINMAX</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>reset</code></em></span></dt><dd><p>
@@ -46,7 +46,7 @@
                     are accepted.
                 </p></dd><dt><span class="term"><em class="parameter"><code>values</code></em></span></dt><dd><p>
                     A pointer to storage for the returned values.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775000"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775211"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glGetMinmax</code> returns the accumulated minimum and maximum pixel values (computed on a
             per-component basis) in a one-dimensional image of width 2.  The first set
             of return values are the minima, and the second set of return values
@@ -94,10 +94,10 @@
             to the return values are reset to their initial
             values.  Minimum and maximum values that are not returned are not
             modified, even if <em class="parameter"><code>reset</code></em> is <code class="constant">GL_TRUE</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775280"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775492"></a><h2>NOTES</h2><p>
             <code class="function">glGetMinmax</code> is present only if <code class="code">ARB_imaging</code> is returned when <span class="citerefentry"><span class="refentrytitle">glGetString</span></span>
             is called with an argument of <code class="constant">GL_EXTENSIONS</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775308"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775520"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not <code class="constant">GL_MINMAX</code>.
         </p><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>format</code></em> is not one of the allowable
@@ -138,14 +138,14 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetMinmax</code> is executed
             between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding
             execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712726"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712930"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetMinmaxParameter</span></span>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PIXEL_PACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712752"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712955"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glMinmax</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glResetMinmax</span></span>,
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712771"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712975"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

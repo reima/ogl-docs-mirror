@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glRotate</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glRotate"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glRotate — multiply the current matrix by a rotation matrix</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glRotated</b>(</code></td><td><var class="pdparam">angle</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">x</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">y</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">z</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLdouble  </td><td><var class="pdparam">angle</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">x</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">y</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">z</var>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glRotatef</b>(</code></td><td><var class="pdparam">angle</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">x</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">y</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">z</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLfloat  </td><td><var class="pdparam">angle</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">x</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">y</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">z</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781680"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>angle</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glRotate</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glRotate"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glRotate — multiply the current matrix by a rotation matrix</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glRotated</b>(</code></td><td><var class="pdparam">angle</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">x</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">y</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">z</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLdouble  </td><td><var class="pdparam">angle</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">x</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">y</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">z</var>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glRotatef</b>(</code></td><td><var class="pdparam">angle</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">x</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">y</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">z</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLfloat  </td><td><var class="pdparam">angle</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">x</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">y</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">z</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781892"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>angle</code></em></span></dt><dd><p>
                     Specifies the angle of rotation, in degrees.
                 </p></dd><dt><span class="term"><em class="parameter"><code>x</code></em>, </span><span class="term"><em class="parameter"><code>y</code></em>, </span><span class="term"><em class="parameter"><code>z</code></em></span></dt><dd><p>
                     Specify the <span class="emphasis"><em>x</em></span>, <span class="emphasis"><em>y</em></span>, and <span class="emphasis"><em>z</em></span> coordinates of a vector, respectively.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768293"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768503"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glRotate</code> produces a rotation of <em class="parameter"><code>angle</code></em> degrees around
             the vector 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -296,7 +296,7 @@
             all objects drawn after <code class="function">glRotate</code> is called are rotated.
             Use <span class="citerefentry"><span class="refentrytitle">glPushMatrix</span></span> and <span class="citerefentry"><span class="refentrytitle">glPopMatrix</span></span> to save and restore
             the unrotated coordinate system.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712967"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713170"></a><h2>NOTES</h2><p>
             This rotation follows the right-hand rule, so
             if the vector 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -309,11 +309,11 @@
             </mml:math>
             points toward the
             user, the rotation will be counterclockwise.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711050"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711273"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glRotate</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711081"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711303"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_MATRIX_MODE</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_COLOR_MATRIX</code>
@@ -323,13 +323,13 @@
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PROJECTION_MATRIX</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_TEXTURE_MATRIX</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711145"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711368"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glMatrixMode</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glMultMatrix</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPushMatrix</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glScale</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTranslate</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711180"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711402"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

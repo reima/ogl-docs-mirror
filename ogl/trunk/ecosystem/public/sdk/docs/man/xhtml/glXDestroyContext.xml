@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXDestroyContext</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXDestroyContext"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXDestroyContext — destroy a GLX context</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glXDestroyContext</b>(</code></td><td><var class="pdparam">dpy</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">ctx</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> Display *  </td><td><var class="pdparam">dpy</var>;</td></tr><tr><td> GLXContext  </td><td><var class="pdparam">ctx</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781757"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>dpy</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXDestroyContext</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXDestroyContext"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXDestroyContext — destroy a GLX context</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glXDestroyContext</b>(</code></td><td><var class="pdparam">dpy</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">ctx</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> Display *  </td><td><var class="pdparam">dpy</var>;</td></tr><tr><td> GLXContext  </td><td><var class="pdparam">ctx</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781956"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>dpy</code></em></span></dt><dd><p>
                     Specifies the connection to the X server.
                 </p></dd><dt><span class="term"><em class="parameter"><code>ctx</code></em></span></dt><dd><p>
                     Specifies the GLX context to be destroyed.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781667"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781865"></a><h2>DESCRIPTION</h2><p>
             If the GLX rendering context <em class="parameter"><code>ctx</code></em> is not current to any thread,
             <code class="function">glXDestroyContext</code> 
             destroys it immediately.
@@ -12,13 +12,13 @@
             <em class="parameter"><code>ctx</code></em> is destroyed when it becomes not current to any thread.
             In either case, the resource ID
             referenced by <em class="parameter"><code>ctx</code></em> is freed immediately.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768246"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768448"></a><h2>ERRORS</h2><p>
             <code class="constant">GLXBadContext</code> is generated if <em class="parameter"><code>ctx</code></em> is not a valid GLX context.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768266"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768467"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glXCreateContext</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glXCreateNewContext</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glXMakeCurrent</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768289"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768489"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

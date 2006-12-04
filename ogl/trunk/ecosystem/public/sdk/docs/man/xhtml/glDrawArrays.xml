@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glDrawArrays</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glDrawArrays"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glDrawArrays — render primitives from array data</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glDrawArrays</b>(</code></td><td><var class="pdparam">mode</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">first</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">count</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">mode</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">first</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">count</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781763"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glDrawArrays</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glDrawArrays"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glDrawArrays — render primitives from array data</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glDrawArrays</b>(</code></td><td><var class="pdparam">mode</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">first</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">count</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">mode</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">first</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">count</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781975"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
                     Specifies what kind of primitives to render.
                     Symbolic constants
                     <code class="constant">GL_POINTS</code>,
@@ -17,7 +17,7 @@
                     Specifies the starting index in the enabled arrays.
                 </p></dd><dt><span class="term"><em class="parameter"><code>count</code></em></span></dt><dd><p>
                     Specifies the number of indices to be rendered.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768282"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768493"></a><h2>DESCRIPTION</h2><p>
             <code class="function">glDrawArrays</code> specifies multiple geometric primitives
             with very few subroutine calls. Instead of calling a GL procedure
             to pass each individual vertex, normal, texture coordinate, edge
@@ -38,7 +38,7 @@
             <code class="constant">GL_COLOR_ARRAY</code> is enabled, the value of the current color is
             undefined after <code class="function">glDrawArrays</code> executes. Attributes that aren't
             modified remain well defined.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768391"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768602"></a><h2>NOTES</h2><p>
             <code class="function">glDrawArrays</code> is available only if the GL version is 1.1 or greater.
         </p><p>
             <code class="function">glDrawArrays</code> is included in display lists. If <code class="function">glDrawArrays</code> is entered into a
@@ -48,7 +48,7 @@
             entered into the display list. Because the array pointers and
             enables are client-side state, their values affect display lists
             when the lists are created, not when the lists are executed.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774990"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775202"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>count</code></em> is negative.
@@ -58,7 +58,7 @@
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glDrawArrays</code> is executed between
             the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775056"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775268"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span>,
@@ -72,7 +72,7 @@
             <span class="citerefentry"><span class="refentrytitle">glSecondaryColorPointer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexCoordPointer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glVertexPointer</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775134"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775345"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

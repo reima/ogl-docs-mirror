@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluSphere</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluSphere"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluSphere — draw a sphere</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">gluSphere</b>(</code></td><td><var class="pdparam">quad</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">radius</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">slices</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">stacks</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLUquadric*  </td><td><var class="pdparam">quad</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">radius</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">slices</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">stacks</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781634"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>quad</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluSphere</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluSphere"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluSphere — draw a sphere</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">gluSphere</b>(</code></td><td><var class="pdparam">quad</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">radius</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">slices</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">stacks</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLUquadric*  </td><td><var class="pdparam">quad</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">radius</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">slices</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">stacks</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781982"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>quad</code></em></span></dt><dd><p>
                     Specifies the quadrics object (created with <span class="citerefentry"><span class="refentrytitle">gluNewQuadric</span></span>).
                 </p></dd><dt><span class="term"><em class="parameter"><code>radius</code></em></span></dt><dd><p>
                     Specifies the radius of the sphere.
@@ -11,7 +11,7 @@
                     Specifies the number of subdivisions along the <span class="emphasis"><em>z</em></span> axis
                     (similar to lines of
                     latitude).
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768276"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768488"></a><h2>DESCRIPTION</h2><p>
             <code class="function">gluSphere</code> draws a sphere of the given radius centered around the origin. The
             sphere is subdivided around the <span class="emphasis"><em>z</em></span> axis into slices and along the 
             <span class="emphasis"><em>z</em></span> axis 
@@ -51,14 +51,14 @@
             +<span class="emphasis"><em>x</em></span> axis, 
             to 0.5 at the \-<span class="emphasis"><em>y</em></span> axis, to 0.75 at the \-<span class="emphasis"><em>x</em></span> axis, and back to 1.0 
             at the +<span class="emphasis"><em>y</em></span> axis.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774985"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775197"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">gluCylinder</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluDisk</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluNewQuadric</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluPartialDisk</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluQuadricOrientation</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluQuadricTexture</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775025"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775236"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

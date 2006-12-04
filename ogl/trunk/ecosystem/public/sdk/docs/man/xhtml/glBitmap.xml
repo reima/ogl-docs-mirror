@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glBitmap</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glBitmap"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glBitmap — draw a bitmap</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glBitmap</b>(</code></td><td><var class="pdparam">width</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">height</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">xorig</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">yorig</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">xmove</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">ymove</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">bitmap</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLsizei  </td><td><var class="pdparam">width</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">height</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">xorig</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">yorig</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">xmove</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">ymove</var>;</td></tr><tr><td> const GLubyte *  </td><td><var class="pdparam">bitmap</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781658"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>width</code></em>, </span><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glBitmap</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glBitmap"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glBitmap — draw a bitmap</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glBitmap</b>(</code></td><td><var class="pdparam">width</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">height</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">xorig</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">yorig</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">xmove</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">ymove</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">bitmap</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLsizei  </td><td><var class="pdparam">width</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">height</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">xorig</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">yorig</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">xmove</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">ymove</var>;</td></tr><tr><td> const GLubyte *  </td><td><var class="pdparam">bitmap</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781870"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>width</code></em>, </span><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
                     Specify the pixel width and height of the bitmap image.
                 </p></dd><dt><span class="term"><em class="parameter"><code>xorig</code></em>, </span><span class="term"><em class="parameter"><code>yorig</code></em></span></dt><dd><p>
                     Specify the location of the origin in the bitmap image.
@@ -11,7 +11,7 @@
                     after the bitmap is drawn.
                 </p></dd><dt><span class="term"><em class="parameter"><code>bitmap</code></em></span></dt><dd><p>
                     Specifies the address of the bitmap image.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768319"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768530"></a><h2>DESCRIPTION</h2><p>
             A bitmap is a binary image.
             When drawn,
             the bitmap is positioned relative to the current raster position,
@@ -128,13 +128,13 @@
             <em class="parameter"><code>xmove</code></em> and <em class="parameter"><code>ymove</code></em>.
             No change is made to the <span class="emphasis"><em>z</em></span> coordinate of the current raster position,
             or to the current raster color, texture coordinates, or index.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775312"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775523"></a><h2>NOTES</h2><p>
             To set a valid raster position outside the viewport, first set a valid
             raster position inside the viewport, then call <code class="function">glBitmap</code> with NULL
             as the <em class="parameter"><code>bitmap</code></em> parameter and with <em class="parameter"><code>xmove</code></em> and <em class="parameter"><code>ymove</code></em> set to
             the offsets of the new raster position. This technique is useful when
             panning an image around the viewport.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775355"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775566"></a><h2>ERRORS</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> or <em class="parameter"><code>height</code></em> is negative.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
@@ -147,7 +147,7 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glBitmap</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding execution of
             <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712613"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712812"></a><h2>ASSOCIATED GETS</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_CURRENT_RASTER_POSITION</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_CURRENT_RASTER_COLOR</code>
@@ -163,14 +163,14 @@
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_CURRENT_RASTER_POSITION_VALID</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712713"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712913"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glRasterPos</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glWindowPos</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712753"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712953"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

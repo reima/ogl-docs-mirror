@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluPickMatrix</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluPickMatrix"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluPickMatrix — define a picking region</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">gluPickMatrix</b>(</code></td><td><var class="pdparam">x</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">y</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">delX</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">delY</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">viewport</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLdouble  </td><td><var class="pdparam">x</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">y</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">delX</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">delY</var>;</td></tr><tr><td> GLint *  </td><td><var class="pdparam">viewport</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781642"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>x</code></em>, </span><span class="term"><em class="parameter"><code>y</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluPickMatrix</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluPickMatrix"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluPickMatrix — define a picking region</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">gluPickMatrix</b>(</code></td><td><var class="pdparam">x</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">y</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">delX</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">delY</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">viewport</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLdouble  </td><td><var class="pdparam">x</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">y</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">delX</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">delY</var>;</td></tr><tr><td> GLint *  </td><td><var class="pdparam">viewport</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781990"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>x</code></em>, </span><span class="term"><em class="parameter"><code>y</code></em></span></dt><dd><p>
                     Specify the center of a picking region in window coordinates.
                 </p></dd><dt><span class="term"><em class="parameter"><code>delX</code></em>, </span><span class="term"><em class="parameter"><code>delY</code></em></span></dt><dd><p>
                     Specify the width and height, respectively, of the picking region in window 
                     coordinates.
                 </p></dd><dt><span class="term"><em class="parameter"><code>viewport</code></em></span></dt><dd><p>
                     Specifies the current viewport (as from a <span class="citerefentry"><span class="refentrytitle">glGetIntegerv</span></span> call).
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768272"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768481"></a><h2>DESCRIPTION</h2><p>
             <code class="function">gluPickMatrix</code> creates a projection matrix that can be used to restrict drawing
             to a small region of the viewport.
             This is typically useful to
@@ -33,7 +33,7 @@
             <code class="constant">GLU_AUTO_LOAD_MATRIX</code>.  If <code class="constant">GLU_AUTO_LOAD_MATRIX</code> is not
             turned off, then any NURBS surface rendered is subdivided differently with
             the pick matrix than the way it was subdivided without the pick matrix.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768382"></a><h2>EXAMPLE</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768591"></a><h2>EXAMPLE</h2><p>
             When rendering a scene as follows:
             </p><pre class="programlisting">
 glMatrixMode(GL_PROJECTION);
@@ -51,13 +51,13 @@ gluPerspective(...);
 glMatrixMode(GL_MODELVIEW);
 /* Draw the scene */
             </pre><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774962"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768623"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">gluPerspective</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glLoadIndentity</span></span>, 
             <span class="citerefentry"><span class="refentrytitle">glMultMatrix</span></span>, 
             <span class="citerefentry"><span class="refentrytitle">glRenderMode</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4774995"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775205"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

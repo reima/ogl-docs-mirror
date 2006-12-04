@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluTessNormal</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluTessNormal"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluTessNormal — specify a normal for a polygon</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">gluTessNormal</b>(</code></td><td><var class="pdparam">tess</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">valueX</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">valueY</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">valueZ</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLUtesselator*  </td><td><var class="pdparam">tess</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">valueX</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">valueY</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">valueZ</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781634"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>tess</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluTessNormal</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluTessNormal"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluTessNormal — specify a normal for a polygon</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">gluTessNormal</b>(</code></td><td><var class="pdparam">tess</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">valueX</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">valueY</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">valueZ</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLUtesselator*  </td><td><var class="pdparam">tess</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">valueX</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">valueY</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">valueZ</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781982"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>tess</code></em></span></dt><dd><p>
                     Specifies the tessellation object (created with <span class="citerefentry"><span class="refentrytitle">gluNewTess</span></span>).
                 </p></dd><dt><span class="term"><em class="parameter"><code>valueX</code></em></span></dt><dd><p>
                     Specifies the first component of the normal.
@@ -8,7 +8,7 @@
                     Specifies the second component of the normal.
                 </p></dd><dt><span class="term"><em class="parameter"><code>valueZ</code></em></span></dt><dd><p>
                     Specifies the third component of the normal.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768266"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768476"></a><h2>DESCRIPTION</h2><p>
             <code class="function">gluTessNormal</code> describes a normal for a polygon that the program is defining.
             All input data will be projected onto a plane perpendicular to one of 
             the three coordinate axes before tessellation and all output triangles
@@ -29,10 +29,10 @@
         </p><p>
             The supplied normal persists until it is changed by another call to 
             <code class="function">gluTessNormal</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768339"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768550"></a><h2>SEE ALSO</h2><p>
             <span class="citerefentry"><span class="refentrytitle">gluTessBeginPolygon</span></span>, 
             <span class="citerefentry"><span class="refentrytitle">gluTessEndPolygon</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768358"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768569"></a><h2>COPYRIGHT</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

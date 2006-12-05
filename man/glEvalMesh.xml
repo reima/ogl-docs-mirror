@@ -345,7 +345,7 @@ for ( j = <parameter>j1</parameter>; j &lt; <parameter>j2</parameter>; j += 1 ) 
 		                <mml:mn>1</mml:mn>
 		            </mml:msub>
 			    <mml:mo>,</mml:mo>
-			    <!-- i \cdot DELTA v + v sub 1 :-->
+			    <!-- j \cdot DELTA v + v sub 1 :-->
 			    <mml:mrow>
 			        <mml:mn>j</mml:mn>
 				<mml:mo>&CenterDot;</mml:mo>

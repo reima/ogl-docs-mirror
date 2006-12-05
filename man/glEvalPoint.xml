@@ -63,14 +63,25 @@
             <function>glEvalPoint</function> can be used to evaluate a single grid point in the same gridspace
             that is traversed by <citerefentry><refentrytitle>glEvalMesh</refentrytitle></citerefentry>.
             Calling <function>glEvalPoint1</function> is equivalent to calling
-        </para>
-        <para>
             <programlisting>
-glEvalCoord1( $i^cdot^DELTA u ~+~ u sub 1$ );
-            </programlisting>
+glEvalCoord1( <mml:math>
+	          <!-- eqn: i \cdot DELTA u + u sub 1 :-->
+     	          <mml:mrow>
+     	              <mml:mrow>
+     	                  <mml:mn>i</mml:mn>
+     	                  <mml:mo>&CenterDot;</mml:mo>
+     	                  <mml:mo>&Delta;</mml:mo>
+     	                  <mml:mi mathvariant="italic">u</mml:mi>
+     	              </mml:mrow>
+     	              <mml:mo>+</mml:mo>
+     	              <mml:msub>
+     	                  <mml:mi mathvariant="italic">u</mml:mi>
+     	                  <mml:mn>1</mml:mn>
+     	              </mml:msub>
+     	          </mml:mrow>
+              </mml:math> );
+         </programlisting>
             where
-        </para>
-        <para>
             <informalequation><mml:math>
                 <!-- eqn: DELTA u  =  ( u sub 2 - u sub 1 )  /  n:-->
                 <mml:mrow>
@@ -241,10 +252,37 @@ glEvalCoord1( $i^cdot^DELTA u ~+~ u sub 1$ );
             </mml:math></inlineequation>
             are the arguments to the most recent <citerefentry><refentrytitle>glMapGrid2</refentrytitle></citerefentry> command.
             Then the <function>glEvalPoint2</function> command is equivalent to calling
-        </para>
-        <para>
             <programlisting>
-glEvalCoord2( $i^cdot^DELTA u ~+~ u sub 1$, $j^cdot^DELTA v ~+~ v sub 1$ );
+glEvalCoord2( <mml:math>
+			<!-- i \cdot DELTA u + u sub 1 :-->
+		        <mml:mrow>
+			    <mml:mrow>
+			        <mml:mn>i</mml:mn>
+				<mml:mo>&CenterDot;</mml:mo>
+			        <mml:mo>&Delta;</mml:mo>
+		                <mml:mi mathvariant="italic">u</mml:mi>
+			    </mml:mrow>
+		            <mml:mo>+</mml:mo>
+		            <mml:msub>
+		                <mml:mi mathvariant="italic">u</mml:mi>
+		                <mml:mn>1</mml:mn>
+		            </mml:msub>
+			    <mml:mo>,</mml:mo>
+			    <!-- j \cdot DELTA v + v sub 1 :-->
+			    <mml:mrow>
+			        <mml:mn>j</mml:mn>
+				<mml:mo>&CenterDot;</mml:mo>
+			        <mml:mo>&Delta;</mml:mo>
+		                <mml:mi mathvariant="italic">v</mml:mi>
+
+			    </mml:mrow>
+		            <mml:mo>+</mml:mo>
+		            <mml:msub>
+		                <mml:mi mathvariant="italic">v</mml:mi>
+		                <mml:mn>1</mml:mn>
+		            </mml:msub>
+			</mml:mrow>
+		    </mml:math> );
             </programlisting>
             The only absolute numeric requirements are that if 
             <inlineequation><mml:math>

@@ -52,7 +52,8 @@
             to save on the attribute stack.
             Symbolic constants are used to set bits in the mask.
             <parameter>mask</parameter>
-            is typically constructed by ORing several of these constants together.
+            is typically constructed by specifying the bitwise-or of several 
+            of these constants together.
             The special mask
             <constant>GL_ALL_ATTRIB_BITS</constant>
             can be used to save all stackable states.

@@ -172,7 +172,7 @@
             secondary color is assigned the value computed from the specular term of
             the lighting computation. Both the primary and secondary current colors are
             applied to each fragment, regardless of the state of <constant>GL_COLOR_SUM</constant>,
-            under such conditions.  When <constant>GL_SPEARATE_SPECULAR_COLOR</constant> is specified,
+            under such conditions.  When <constant>GL_SEPARATE_SPECULAR_COLOR</constant> is specified,
             the value returned from querying the current secondary color is undefined.
         </para>
         <para>

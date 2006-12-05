@@ -339,7 +339,21 @@
                         <entry align="left">
                         </entry>
                         <entry align="left">
-                        <constant>GL_LIGHT</constant><emphasis>i</emphasis> where 0\ &lt;= <emphasis>i</emphasis>&lt;<constant>GL_MAX_LIGHTS</constant>
+                        <constant>GL_LIGHT</constant><emphasis>i</emphasis>
+			where
+			<mml:math>
+			    <mml:mrow>
+				<mml:apply>
+				    <mml:leq/>
+				    <mml:mn>0</mml:mn>
+				    <mml:mi>i</mml:mi>
+			        </mml:apply>
+				<mml:mo>&lt;</mml:mo>
+				<mml:mtext>
+				    <constant>GL_MAX_LIGHTS</constant>
+				</mml:mtext>
+			    </mml:mrow>
+			</mml:math>
                         </entry>
                     </row>
                     <row>

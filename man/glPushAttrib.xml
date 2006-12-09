@@ -24,7 +24,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>mask</parameter></term>
@@ -45,7 +45,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glPushAttrib</function> takes one argument,
             a mask that indicates which groups of state variables
@@ -1209,7 +1209,7 @@
             Initially, the attribute stack is empty.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             Not all values for GL state can be saved on the attribute stack.
             For example,
@@ -1227,7 +1227,7 @@
             popping texture state applies to all supported texture units.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_STACK_OVERFLOW</constant> is generated if <function>glPushAttrib</function> is called while
             the attribute stack is full.
@@ -1242,7 +1242,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_ATTRIB_STACK_DEPTH</constant>
         </para>
@@ -1250,7 +1250,7 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_MAX_ATTRIB_STACK_DEPTH</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetClipPlane</refentrytitle></citerefentry>,
@@ -1270,7 +1270,7 @@
             <citerefentry><refentrytitle>glPushClientAttrib</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

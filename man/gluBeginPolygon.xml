@@ -33,7 +33,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>tess</parameter></term>
@@ -45,7 +45,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>gluBeginPolygon</function> and <citerefentry><refentrytitle>gluEndPolygon</refentrytitle></citerefentry> delimit the definition of a
             nonconvex polygon.
@@ -65,7 +65,7 @@
             See <citerefentry><refentrytitle>gluTessCallback</refentrytitle></citerefentry> for descriptions of the callback functions.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             This command is obsolete and is provided for backward compatibility
             only. Calls to <function>gluBeginPolygon</function> are mapped to 
@@ -92,7 +92,7 @@ gluEndPolygon(tobj);
             </programlisting>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluNewTess</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>gluNextContour</refentrytitle></citerefentry>,
@@ -102,7 +102,7 @@ gluEndPolygon(tobj);
             <citerefentry><refentrytitle>gluTessVertex</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

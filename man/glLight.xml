@@ -35,7 +35,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>light</parameter></term>
@@ -93,7 +93,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>light</parameter></term>
@@ -138,7 +138,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glLight</function> sets the values of individual light source parameters.
             <parameter>light</parameter> names the light and is a symbolic name of the form <constant>GL_LIGHT</constant>
@@ -385,7 +385,7 @@
             </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             It is always the case that <constant>GL_LIGHT</constant>
             <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
@@ -394,7 +394,7 @@
             .
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if either <parameter>light</parameter> or <parameter>pname</parameter>
             is not an accepted value.
@@ -428,7 +428,7 @@
             <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry> and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGetLight</refentrytitle></citerefentry>
         </para>
@@ -436,14 +436,14 @@
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_LIGHTING</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glColorMaterial</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glLightModel</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glMaterial</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

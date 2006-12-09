@@ -33,7 +33,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>tess</parameter></term>
@@ -45,7 +45,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>gluTessBeginContour</function> and <citerefentry><refentrytitle>gluTessEndContour</refentrytitle></citerefentry> delimit the definition of a
             polygon contour. Within each <function>gluTessBeginContour</function>/<citerefentry><refentrytitle>gluTessEndContour</refentrytitle></citerefentry>
@@ -55,7 +55,7 @@
             <function>gluTessBeginContour</function> can only be called between <citerefentry><refentrytitle>gluTessBeginPolygon</refentrytitle></citerefentry> and <citerefentry><refentrytitle>gluTessEndPolygon</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluNewTess</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>gluTessBeginPolygon</refentrytitle></citerefentry>,
@@ -66,7 +66,7 @@
             <citerefentry><refentrytitle>gluTessVertex</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

@@ -27,7 +27,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -99,7 +99,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glGetConvolutionFilter</function> returns the current 1D or 2D convolution filter kernel as an image.
             The one- or two-dimensional image is placed in <parameter>image</parameter> according to the
@@ -187,7 +187,7 @@
         <para>
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             <function>glGetConvolutionFilter</function> is present only if <code>ARB_imaging</code> is returned when <citerefentry><refentrytitle>glGetString</refentrytitle></citerefentry>
             is called with an argument of <constant>GL_EXTENSIONS</constant>.
@@ -197,7 +197,7 @@
             <citerefentry><refentrytitle>glGetSeparableFilter</refentrytitle></citerefentry> rather than <function>glGetConvolutionFilter</function>.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is not one of the allowable
             values.
@@ -250,7 +250,7 @@
             execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGetConvolutionParameter</refentrytitle></citerefentry>
         </para>
@@ -258,7 +258,7 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_PACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glGetSeparableFilter</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glConvolutionParameter</refentrytitle></citerefentry>,
@@ -266,7 +266,7 @@
             <citerefentry><refentrytitle>glConvolutionFilter2D</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

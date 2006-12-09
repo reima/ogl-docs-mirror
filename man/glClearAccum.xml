@@ -27,7 +27,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>red</parameter></term>
@@ -44,7 +44,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glClearAccum</function> specifies the red, green, blue, and alpha values used by <citerefentry><refentrytitle>glClear</refentrytitle></citerefentry>
             to clear the accumulation buffer.
@@ -62,25 +62,25 @@
             .
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glClearAccum</function>
             is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_ACCUM_CLEAR_VALUE</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glAccum</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glClear</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

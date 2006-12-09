@@ -29,7 +29,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>x</parameter></term>
@@ -67,7 +67,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glCopyPixels</function> copies a screen-aligned rectangle of pixels
             from the specified frame buffer location to a region relative to the
@@ -549,13 +549,13 @@ glCopyPixels(0, 0, 1, 1, <constant>GL_COLOR</constant>);
         <para>
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             Modes specified by <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry> have no effect on the operation
             of <function>glCopyPixels</function>.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>type</parameter> is not an accepted value.
         </para>
@@ -576,7 +576,7 @@ glCopyPixels(0, 0, 1, 1, <constant>GL_COLOR</constant>);
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_CURRENT_RASTER_POSITION</constant>
         </para>
@@ -584,7 +584,7 @@ glCopyPixels(0, 0, 1, 1, <constant>GL_COLOR</constant>);
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_CURRENT_RASTER_POSITION_VALID</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glColorTable</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glConvolutionFilter1D</refentrytitle></citerefentry>,
@@ -604,7 +604,7 @@ glCopyPixels(0, 0, 1, 1, <constant>GL_COLOR</constant>);
             <citerefentry><refentrytitle>glWindowPos</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

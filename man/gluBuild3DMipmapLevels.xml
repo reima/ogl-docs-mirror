@@ -35,7 +35,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -195,7 +195,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>gluBuild3DMipmapLevels</function> builds a subset of prefiltered three-dimensional texture maps of
             decreasing resolutions called a mipmap. This is used for the antialiasing of
@@ -361,7 +361,7 @@
             for <parameter>type</parameter> parameter.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             <function>gluBuild3DMipmapLevels</function> is only available if the GLU version is 1.3 or greater.
         </para>
@@ -382,7 +382,7 @@
             is 1.2 or greater.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GLU_INVALID_VALUE</constant> is returned if <parameter>level</parameter> &gt; <parameter>base</parameter>, <parameter>base</parameter> &lt; 0,
             <parameter>max</parameter> &lt; <parameter>base</parameter>, or <parameter>max</parameter> is &gt; the highest mipmap level for <parameter>data</parameter>.
@@ -419,7 +419,7 @@
             and <parameter>format</parameter> is neither <constant>GLU_RGBA</constant> nor <constant>GLU_BGRA</constant>.
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluBuild1DMipmapLevels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>gluBuild1DMipmaps</refentrytitle></citerefentry>,
@@ -435,7 +435,7 @@
             <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glMap1</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glMap1"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glMap1 — define a one-dimensional evaluator</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glMap1f</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">u1</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">u2</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">stride</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">order</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">points</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">u1</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">u2</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">stride</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">order</var>;</td></tr><tr><td> const GLfloat *  </td><td><var class="pdparam">points</var>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glMap1d</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">u1</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">u2</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">stride</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">order</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">points</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">u1</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">u2</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">stride</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">order</var>;</td></tr><tr><td> const GLdouble *  </td><td><var class="pdparam">points</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768466"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glMap1</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glMap1"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glMap1 — define a one-dimensional evaluator</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glMap1f</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">u1</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">u2</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">stride</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">order</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">points</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">u1</var>;</td></tr><tr><td> GLfloat  </td><td><var class="pdparam">u2</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">stride</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">order</var>;</td></tr><tr><td> const GLfloat *  </td><td><var class="pdparam">points</var>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glMap1d</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">u1</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">u2</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">stride</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">order</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">points</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">u1</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">u2</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">stride</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">order</var>;</td></tr><tr><td> const GLdouble *  </td><td><var class="pdparam">points</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768472"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the kind of values that are generated by the evaluator.
                     Symbolic constants
                     <code class="constant">GL_MAP1_VERTEX_3</code>,
@@ -36,7 +36,7 @@
                     Must be positive.
                 </p></dd><dt><span class="term"><em class="parameter"><code>points</code></em></span></dt><dd><p>
                     Specifies a pointer to the array of control points.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712843"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712881"></a><h2>Description</h2><p>
             Evaluators provide a way to use polynomial or rational polynomial mapping
             to produce vertices,
             normals,
@@ -392,12 +392,12 @@
             <em class="parameter"><code>order</code></em> is the number of control points in the array.
             <em class="parameter"><code>stride</code></em> specifies how many float or double locations to advance the internal
             memory pointer to reach the next control point.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4784958"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4784849"></a><h2>Notes</h2><p>
             As is the case with all GL commands that accept pointers to data,
             it is as if the contents of <em class="parameter"><code>points</code></em> were copied by <code class="function">glMap1</code> before <code class="function">glMap1</code>
             returns.
             Changes to the contents of <em class="parameter"><code>points</code></em> have no effect after <code class="function">glMap1</code> is called.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785004"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4784892"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>u1</code></em> is equal to <em class="parameter"><code>u2</code></em>.
@@ -415,7 +415,7 @@
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glMap1</code> is called and the value
             of <code class="constant">GL_ACTIVE_TEXTURE</code> is not <code class="constant">GL_TEXTURE0</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785126"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785008"></a><h2>Associated Gets</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetMap</span></span>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_MAX_EVAL_ORDER</code>
@@ -437,7 +437,7 @@
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_MAP1_TEXTURE_COORD_3</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_MAP1_TEXTURE_COORD_4</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785257"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785139"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glColor</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glEnable</span></span>,
@@ -449,7 +449,7 @@
             <span class="citerefentry"><span class="refentrytitle">glNormal</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexCoord</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glVertex</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785323"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785202"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

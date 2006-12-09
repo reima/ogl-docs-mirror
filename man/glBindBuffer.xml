@@ -25,7 +25,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -50,7 +50,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glBindBuffer</function> lets you create or use a named buffer object. Calling <function>glBindBuffer</function> with
             <parameter>target</parameter> set to
@@ -153,7 +153,7 @@
             on its initial binding target.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             <function>glBindBuffer</function> is available only if the GL version is 1.5 or greater.
         </para>
@@ -162,7 +162,7 @@
             available only if the GL version is 2.1 or greater.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is not one of the allowable
             values.
@@ -173,7 +173,7 @@
             execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_ARRAY_BUFFER_BINDING</constant>
         </para>
@@ -187,7 +187,7 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glDeleteBuffers</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGenBuffers</refentrytitle></citerefentry>,
@@ -195,10 +195,12 @@
             <citerefentry><refentrytitle>glIsBuffer</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"></trademark> 2005
-            by Sams Publishing.
+            Copyright <trademark class="copyright"></trademark> 2005 Addison-Wesley. 
+            This material may be distributed subject to the terms and conditions set forth in 
+            the Open Publication License, v 1.0, 8 June 1999.
+            <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.
         </para>
     </refsect1>
 </refentry>

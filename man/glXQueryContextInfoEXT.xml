@@ -28,7 +28,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>dpy</parameter></term>
@@ -65,7 +65,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glXQueryContextInfoEXT</function> sets <parameter>value</parameter> to the value of <parameter>attribute</parameter> with respect to <parameter>ctx</parameter>.
             <function>glXQueryContextInfoEXT</function> returns an error code if it fails for any reason. Otherwise,
@@ -112,7 +112,7 @@
             extension <code>EXT_import_context</code> is supported.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GLXBadContext</constant> is generated if <parameter>ctx</parameter> does not
             refer to a valid context.
@@ -125,14 +125,14 @@
             fred <constant>GLX_BAD_CONTEXT</constant> is returned if <parameter>attribute</parameter> is not a valid context.
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glXCreateContext</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXQueryVersion</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXQueryExtensionsString</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glIsProgram</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glIsProgram"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glIsProgram — Determines if a name corresponds to a program object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">GLboolean <b class="fsfunc">glIsProgram</b>(</code><var class="pdparam">program</var><code>)</code>;<br />GLuint <var class="pdparam">program</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711228"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>program</code></em></span></dt><dd><p>Specifies a potential program object.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781967"></a><h2>Description</h2><p><code class="function">glIsProgram</code> returns
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glIsProgram</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glIsProgram"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glIsProgram — Determines if a name corresponds to a program object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">GLboolean <b class="fsfunc">glIsProgram</b>(</code><var class="pdparam">program</var><code>)</code>;<br />GLuint <var class="pdparam">program</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781951"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>program</code></em></span></dt><dd><p>Specifies a potential program object.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781975"></a><h2>Description</h2><p><code class="function">glIsProgram</code> returns
 	<code class="constant">GL_TRUE</code> if <em class="parameter"><code>program</code></em>
 	is the name of a program object. If
 	<em class="parameter"><code>program</code></em> is zero or a non-zero value that
 	is not the name of a program object, <code class="function">glIsProgram
-	</code> returns <code class="constant">GL_FALSE</code>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781873"></a><h2>Notes</h2><p><code class="function">glIsProgram</code> is available only if the
+	</code> returns <code class="constant">GL_FALSE</code>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781878"></a><h2>Notes</h2><p><code class="function">glIsProgram</code> is available only if the
 	GL version is 2.0 or greater.</p><p>No error is generated if <em class="parameter"><code>program</code></em> is
-	not a valid program object name.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781900"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
+	not a valid program object name.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781903"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
 	<code class="function">glIsProgram</code> is executed between the
 	execution of
 	<span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
@@ -27,7 +27,7 @@
 	with arguments <em class="parameter"><code>program</code></em> and the location
 	of a uniform variable</p><p><span class="citerefentry"><span class="refentrytitle">glGetUniformLocation</span></span>
 	with arguments <em class="parameter"><code>program</code></em> and the name of a
-	uniform variable</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768600"></a><h2>See Also</h2><p><span class="citerefentry"><span class="refentrytitle">glAttachShader</span></span>,
+	uniform variable</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768593"></a><h2>See Also</h2><p><span class="citerefentry"><span class="refentrytitle">glAttachShader</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glBindAttribLocation</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glCreateProgram</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glDeleteProgram</span></span>,
@@ -35,4 +35,9 @@
 	<span class="citerefentry"><span class="refentrytitle">glLinkProgram</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glUniform</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glUseProgram</span></span>,
-	<span class="citerefentry"><span class="refentrytitle">glValidateProgram</span></span></p></div></div></body></html>
+	<span class="citerefentry"><span class="refentrytitle">glValidateProgram</span></span></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775195"></a><h2>Copyright</h2><p>
+            Copyright <span class="trademark"></span>© 2003-2005 3Dlabs Inc. Ltd. 
+            This material may be distributed subject to the terms and conditions set forth in 
+            the Open Publication License, v 1.0, 8 June 1999.
+            <a href="http://opencontent.org/openpub/" target="_top">http://opencontent.org/openpub/</a>.
+        </p></div></div></body></html>

@@ -24,7 +24,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             The name stack is used during selection mode to allow sets of rendering
             commands to be uniquely identified.
@@ -36,14 +36,14 @@
             Calls to <function>glInitNames</function> while the render mode is not <constant>GL_SELECT</constant> are ignored.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glInitNames</function>
             is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry> and the corresponding execution of
             <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_NAME_STACK_DEPTH</constant>
         </para>
@@ -51,7 +51,7 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_MAX_NAME_STACK_DEPTH</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glLoadName</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPushName</refentrytitle></citerefentry>,
@@ -59,7 +59,7 @@
             <citerefentry><refentrytitle>glSelectBuffer</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

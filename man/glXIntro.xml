@@ -201,7 +201,7 @@ int main( int argc, char *argv[] )
         <para>
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             An X color map must be created and passed to <citerefentry><refentrytitle>XCreateWindow</refentrytitle></citerefentry>.
         </para>
@@ -282,7 +282,7 @@ int main( int argc, char *argv[] )
         <para>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glIntro</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glFinish</refentrytitle></citerefentry>,
@@ -327,7 +327,7 @@ int main( int argc, char *argv[] )
             <citerefentry><refentrytitle>XSync</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

@@ -24,7 +24,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>list</parameter></term>
@@ -36,13 +36,13 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glIsList</function> returns <constant>GL_TRUE</constant> if <parameter>list</parameter> is the name
             of a display list and returns <constant>GL_FALSE</constant> otherwise.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glIsList</function>
             is executed between the execution of
@@ -50,7 +50,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glCallList</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCallLists</refentrytitle></citerefentry>,
@@ -59,7 +59,7 @@
             <citerefentry><refentrytitle>glNewList</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

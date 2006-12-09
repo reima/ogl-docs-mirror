@@ -25,7 +25,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>face</parameter></term>
@@ -54,7 +54,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glPolygonMode</function> controls the interpretation of polygons for rasterization.
             <parameter>face</parameter> describes which polygons <parameter>mode</parameter> applies to:
@@ -123,14 +123,14 @@ glPolygonMode(<constant>GL_FRONT</constant>, <constant>GL_LINE</constant>);
             </programlisting>
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             Vertices are marked as boundary or nonboundary with an edge flag.
             Edge flags are generated internally by the GL when it decomposes
             polygons; they can be set explicitly using <citerefentry><refentrytitle>glEdgeFlag</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if either <parameter>face</parameter> or <parameter>mode</parameter> is not
             an accepted value.
@@ -141,12 +141,12 @@ glPolygonMode(<constant>GL_FRONT</constant>, <constant>GL_LINE</constant>);
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_POLYGON_MODE</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEdgeFlag</refentrytitle></citerefentry>,
@@ -156,7 +156,7 @@ glPolygonMode(<constant>GL_FRONT</constant>, <constant>GL_LINE</constant>);
             <citerefentry><refentrytitle>glPolygonStipple</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

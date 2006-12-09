@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetBufferParameteriv</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetBufferParameteriv"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetBufferParameteriv — return parameters of a buffer object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetBufferParameteriv</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">value</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">data</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">value</var>;</td></tr><tr><td> GLint *  </td><td><var class="pdparam">data</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781979"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetBufferParameteriv</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetBufferParameteriv"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetBufferParameteriv — return parameters of a buffer object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetBufferParameteriv</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">value</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">data</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">value</var>;</td></tr><tr><td> GLint *  </td><td><var class="pdparam">data</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781977"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the target buffer object.
                     The symbolic constant must be <code class="constant">GL_ARRAY_BUFFER</code>, 
                     <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code>,
@@ -12,7 +12,7 @@
                     <code class="constant">GL_BUFFER_SIZE</code>, or <code class="constant">GL_BUFFER_USAGE</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>data</code></em></span></dt><dd><p>
                     Returns the requested parameter.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768488"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768482"></a><h2>Description</h2><p>
             <code class="function">glGetBufferParameteriv</code> returns in <em class="parameter"><code>data</code></em> a selected parameter of the buffer object
             specified by <em class="parameter"><code>target</code></em>.
         </p><p>
@@ -29,7 +29,7 @@
                     </p></dd><dt><span class="term"><code class="constant">GL_BUFFER_USAGE</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> returns the buffer object's usage pattern.  The initial value is
                         <code class="constant">GL_STATIC_DRAW</code>.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775193"></a><h2>NOTES</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775176"></a><h2>Notes</h2><p>
             If an error is generated,
             no change is made to the contents of <em class="parameter"><code>data</code></em>.
         </p><p>
@@ -37,7 +37,7 @@
         </p><p>
             Targets <code class="constant">GL_PIXEL_PACK_BUFFER</code> and <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> are available 
             only if the GL version is 2.1 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775236"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775216"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> or <em class="parameter"><code>value</code></em> is not an
             accepted value.
         </p><p>
@@ -46,12 +46,14 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetBufferParameteriv</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775302"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775280"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glBufferData</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glMapBuffer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glUnmapBuffer</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775330"></a><h2>COPYRIGHT</h2><p>
-            Copyright <span class="trademark"></span>© 2005
-            by Sams Publishing.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775308"></a><h2>Copyright</h2><p>
+            Copyright <span class="trademark"></span>© 2005 Addison-Wesley. 
+            This material may be distributed subject to the terms and conditions set forth in 
+            the Open Publication License, v 1.0, 8 June 1999.
+            <a href="http://opencontent.org/openpub/" target="_top">http://opencontent.org/openpub/</a>.
         </p></div></div></body></html>

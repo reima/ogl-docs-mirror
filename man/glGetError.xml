@@ -24,7 +24,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glGetError</function> returns the value of the error flag.
             Each detectable error is assigned a numeric code and symbolic name.
@@ -149,12 +149,12 @@
             If <function>glGetError</function> itself generates an error, it returns 0.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             <constant>GL_TABLE_TOO_LARGE</constant> was introduced in GL version 1.2.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glGetError</function>
             is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
@@ -162,7 +162,7 @@
             In this case, <function>glGetError</function> returns 0.
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

@@ -25,7 +25,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -61,7 +61,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -78,7 +78,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glMapBuffer</function> maps to the client's address space the entire data store of the buffer object 
             currently bound to <parameter>target</parameter>. The data can then be directly read and/or written relative to 
@@ -109,7 +109,7 @@
             is recreated with <function>glBufferData</function>.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             If an error is generated, <function>glMapBuffer</function> returns <constant>NULL</constant>, and
             <function>glUnmapBuffer</function> returns <constant>GL_FALSE</constant>.
@@ -126,7 +126,7 @@
             but results will be undefined and will likely vary across GL implementations.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is not 
             <constant>GL_ARRAY_BUFFER</constant>, <constant>GL_ELEMENT_ARRAY_BUFFER</constant>, 
@@ -158,7 +158,7 @@
             execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGetBufferPointerv</refentrytitle></citerefentry> with argument <constant>GL_BUFFER_MAP_POINTER</constant>
         </para>
@@ -166,7 +166,7 @@
             <citerefentry><refentrytitle>glGetBufferParameteriv</refentrytitle></citerefentry> with argument <constant>GL_BUFFER_MAPPED</constant>,  <constant>GL_BUFFER_ACCESS</constant>, or <constant>GL_BUFFER_USAGE</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBufferData</refentrytitle></citerefentry>,
@@ -174,10 +174,12 @@
             <citerefentry><refentrytitle>glDeleteBuffers</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"></trademark> 2005
-            by Sams Publishing.
+            Copyright <trademark class="copyright"></trademark> 2005 Addison-Wesley. 
+            This material may be distributed subject to the terms and conditions set forth in 
+            the Open Publication License, v 1.0, 8 June 1999.
+            <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.
         </para>
     </refsect1>
 </refentry>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluDeleteTess</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluDeleteTess"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluDeleteTess — destroy a tessellation object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">gluDeleteTess</b>(</code><var class="pdparam">tess</var><code>)</code>;<br /> GLUtesselator* <var class="pdparam">tess</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781960"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>tess</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluDeleteTess</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluDeleteTess"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluDeleteTess — destroy a tessellation object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">gluDeleteTess</b>(</code><var class="pdparam">tess</var><code>)</code>;<br /> GLUtesselator* <var class="pdparam">tess</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781965"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>tess</code></em></span></dt><dd><p>
                     Specifies the tessellation object to destroy.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781988"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781855"></a><h2>Description</h2><p>
             <code class="function">gluDeleteTess</code> destroys the indicated tessellation object (which was created
             with <span class="citerefentry"><span class="refentrytitle">gluNewTess</span></span>) and frees any memory that it used.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781874"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781875"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">gluBeginPolygon</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluNewTess</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluTessCallback</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781897"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781898"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

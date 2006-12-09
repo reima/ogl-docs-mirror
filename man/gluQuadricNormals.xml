@@ -26,7 +26,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>quad</parameter></term>
@@ -49,7 +49,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>gluQuadricNormals</function> specifies what kind of normals are desired for quadrics rendered with
             <parameter>quad</parameter>. The legal values are as follows:
@@ -82,7 +82,7 @@
             </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluNewQuadric</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>gluQuadricDrawStyle</refentrytitle></citerefentry>,
@@ -90,7 +90,7 @@
             <citerefentry><refentrytitle>gluQuadricTexture</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

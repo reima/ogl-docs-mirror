@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glBeginQuery</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glBegin"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glBeginQuery — delimit the boundaries of a query object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glBeginQuery</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">id</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLuint  </td><td><var class="pdparam">id</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781966"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glBeginQuery</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glBegin"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glBeginQuery — delimit the boundaries of a query object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glBeginQuery</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">id</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLuint  </td><td><var class="pdparam">id</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781974"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the target type of query object established between
                     <code class="function">glBeginQuery</code> and the subsequent <span class="citerefentry"><span class="refentrytitle">glEndQuery</span></span>.
                     The symbolic constant must be <code class="constant">GL_SAMPLES_PASSED</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>id</code></em></span></dt><dd><p>
                     Specifies the name of a query object.
-                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEndQuery</b>(</code><var class="pdparam">target</var><code>)</code>;<br /> GLenum <var class="pdparam">target</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768466"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glEndQuery</b>(</code><var class="pdparam">target</var><code>)</code>;<br /> GLenum <var class="pdparam">target</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768470"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the target type of query object to be concluded.
                     The symbolic constant must be <code class="constant">GL_SAMPLES_PASSED</code>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768502"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768501"></a><h2>Description</h2><p>
             <code class="function">glBeginQuery</code> and <span class="citerefentry"><span class="refentrytitle">glEndQuery</span></span> delimit the
             boundaries of a query object.  If a query object with name <em class="parameter"><code>id</code></em> does not yet exist it is created.
         </p><p>
@@ -22,7 +22,7 @@
             Querying the <code class="constant">GL_QUERY_RESULT</code> implicitly flushes the GL pipeline until the rendering delimited by the
             query object has completed and the result is available.  <code class="constant">GL_QUERY_RESULT_AVAILABLE</code> can be queried to
             determine if the result is immediately available or if the rendering is not yet complete.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768596"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768579"></a><h2>Notes</h2><p>
             If the samples-passed count exceeds the maximum value representable in the number of available bits, as reported by
             <span class="citerefentry"><span class="refentrytitle">glGetQueryiv</span></span> with <em class="parameter"><code>pname</code></em>
             <code class="constant">GL_QUERY_COUNTER_BITS</code>, the count becomes undefined.
@@ -37,7 +37,7 @@
         </p><p>
             <code class="function">glBeginQuery</code> and <span class="citerefentry"><span class="refentrytitle">glEndQuery</span></span>
             are available only if the GL version is 1.5 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775222"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775199"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not <code class="constant">GL_SAMPLES_PASSED</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glBeginQuery</code> is executed while
@@ -54,13 +54,15 @@
             <span class="citerefentry"><span class="refentrytitle">glEndQuery</span></span> is executed between the execution of
             <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding execution of
             <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775348"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775318"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glDeleteQueries</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glGenQueries</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glGetQueryiv</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glGetQueryObject</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glIsQuery</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775381"></a><h2>COPYRIGHT</h2><p>
-            Copyright <span class="trademark"></span>© 2005
-            by Sams Publishing.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775351"></a><h2>Copyright</h2><p>
+            Copyright <span class="trademark"></span>© 2005 Addison-Wesley. 
+            This material may be distributed subject to the terms and conditions set forth in 
+            the Open Publication License, v 1.0, 8 June 1999.
+            <a href="http://opencontent.org/openpub/" target="_top">http://opencontent.org/openpub/</a>.
         </p></div></div></body></html>

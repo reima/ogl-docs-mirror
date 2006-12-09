@@ -27,7 +27,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>func</parameter></term>
@@ -84,7 +84,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             Stenciling,
             like depth-buffering,
@@ -238,7 +238,7 @@
             </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             Initially, the stencil test is disabled.
             If there is no stencil buffer,
@@ -251,7 +251,7 @@
             with <parameter>face</parameter> set to <constant>GL_FRONT_AND_BACK</constant>.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>func</parameter> is not one of the eight
             accepted values.
@@ -262,7 +262,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument 
             <constant>GL_STENCIL_FUNC</constant>, <constant>GL_STENCIL_VALUE_MASK</constant>, 
@@ -274,7 +274,7 @@
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_STENCIL_TEST</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glAlphaFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry>,
@@ -288,7 +288,7 @@
             <citerefentry><refentrytitle>glStencilOpSeparate</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

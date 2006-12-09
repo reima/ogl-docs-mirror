@@ -25,7 +25,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>cap</parameter></term>
@@ -55,7 +55,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>cap</parameter></term>
@@ -67,7 +67,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glEnableClientState</function> and <citerefentry><refentrytitle>glDisableClientState</refentrytitle></citerefentry>
             enable or disable individual client-side capabilities. By default, all
@@ -168,7 +168,7 @@
             </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             <function>glEnableClientState</function> is available only if the GL version is 1.1 or greater.
         </para>
@@ -183,7 +183,7 @@
             <citerefentry><refentrytitle>glClientActiveTexture</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>cap</parameter> is not an accepted value.
         </para>
@@ -193,7 +193,7 @@
             no error is generated, the behavior is undefined.
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glClientActiveTexture</refentrytitle></citerefentry>,
@@ -212,7 +212,7 @@
             <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

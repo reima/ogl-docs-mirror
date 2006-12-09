@@ -34,7 +34,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -76,7 +76,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glGetConvolutionParameter</function> retrieves convolution parameters.
             <parameter>target</parameter> determines which convolution filter is queried.
@@ -169,7 +169,7 @@
             </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is not one of the allowable
             values.
@@ -189,14 +189,14 @@
             execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glGetConvolutionFilter</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetSeparableFilter2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glConvolutionParameter</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

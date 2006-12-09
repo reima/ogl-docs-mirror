@@ -31,7 +31,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -113,7 +113,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             Texturing maps a portion of a specified texture image onto each graphical primitive for which texturing is enabled.  To enable and disable one-dimensional texturing, call <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glDisable</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_1D</constant>.
         </para>
@@ -135,7 +135,7 @@
             specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data store.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             <function>glCompressedTexImage1D</function> is available only if the GL version is 1.3 or greater.
         </para>
@@ -143,7 +143,7 @@
 			Non-power-of-two textures are supported if the GL version is 2.0 or greater, or if the implementation exports the <constant>GL_ARB_texture_non_power_of_two</constant> extension.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>internalformat</parameter> is of the generic compressed internal formats: <constant>GL_COMPRESSED_ALPHA</constant>,
             <constant>GL_COMPRESSED_LUMINANCE</constant>, <constant>GL_COMPRESSED_LUMINANCE_ALPHA</constant>,
@@ -180,7 +180,7 @@
             specification defining the internal compression format.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGetCompressedTexImage</refentrytitle></citerefentry>
         </para>
@@ -198,7 +198,7 @@
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_1D</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glColorTable</refentrytitle></citerefentry>,
@@ -228,7 +228,7 @@
             <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

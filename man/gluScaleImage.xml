@@ -33,7 +33,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>format</parameter></term>
@@ -149,7 +149,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>gluScaleImage</function> scales a pixel image using the appropriate pixel store modes to 
             unpack data from the source image and pack data into the destination image.
@@ -168,7 +168,7 @@
             the acceptable values for the <parameter>format</parameter>, <parameter>typeIn</parameter>, and <parameter>typeOut</parameter> parameters.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             Formats <constant>GLU_BGR</constant>, and <constant>GLU_BGRA</constant>, and types 
             <constant>GLU_UNSIGNED_BYTE_3_3_2</constant>,
@@ -186,7 +186,7 @@
             is 1.2 or greater.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GLU_INVALID_VALUE</constant> is returned if <parameter>wIn</parameter>, <parameter>hIn</parameter>, <parameter>wOut</parameter>, or <parameter>hOut</parameter>
             is negative.
@@ -226,7 +226,7 @@
             and <parameter>format</parameter> is neither <constant>GLU_RGBA</constant> nor <constant>GLU_BGRA</constant>.
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluBuild1DMipmaps</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>gluBuild2DMipmaps</refentrytitle></citerefentry>,
@@ -236,7 +236,7 @@
             <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

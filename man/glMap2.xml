@@ -49,7 +49,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -235,7 +235,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             Evaluators provide a way to use polynomial or rational polynomial mapping
             to produce vertices,
@@ -889,7 +889,7 @@
             .
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             As is the case with all GL commands that accept pointers to data,
             it is as if the contents of <parameter>points</parameter> were copied by <function>glMap2</function> before <function>glMap2</function>
@@ -903,7 +903,7 @@
             vertices.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is not an accepted value.
         </para>
@@ -930,7 +930,7 @@
             of <constant>GL_ACTIVE_TEXTURE</constant> is not <constant>GL_TEXTURE0</constant>.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGetMap</refentrytitle></citerefentry>
         </para>
@@ -965,7 +965,7 @@
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_MAP2_TEXTURE_COORD_4</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glColor</refentrytitle></citerefentry>,
@@ -980,7 +980,7 @@
             <citerefentry><refentrytitle>glVertex</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

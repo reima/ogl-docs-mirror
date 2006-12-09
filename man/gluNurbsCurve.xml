@@ -31,7 +31,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>nurb</parameter></term>
@@ -100,7 +100,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             Use <function>gluNurbsCurve</function> to describe a NURBS curve.
         </para>
@@ -139,12 +139,12 @@ gluEndCurve(nobj);
             </programlisting>
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             To define trim curves that stitch well, use <citerefentry><refentrytitle>gluPwlCurve</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluBeginCurve</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>gluBeginTrim</refentrytitle></citerefentry>,
@@ -152,7 +152,7 @@ gluEndCurve(nobj);
             <citerefentry><refentrytitle>gluPwlCurve</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

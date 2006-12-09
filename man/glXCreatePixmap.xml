@@ -28,7 +28,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>dpy</parameter></term>
@@ -66,7 +66,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glXCreatePixmap</function> creates an off-screen rendering area and returns its XID.
             Any GLX rendering context that was created with respect to <parameter>config</parameter>
@@ -75,7 +75,7 @@
             rendering context.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             <function>glXCreatePixmap</function> is available only if the GLX version is 1.3 or greater.
         </para>
@@ -85,7 +85,7 @@
             If the GLX version is 1.3, then the GL version must be 1.2.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>BadMatch</constant> is generated if <parameter>pixmap</parameter> was not created with a visual
             that corresponds to <parameter>config</parameter>.
@@ -111,7 +111,7 @@
         <para>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glXChooseFBConfig</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXCreateGLXPixmap</refentrytitle></citerefentry>,
@@ -119,7 +119,7 @@
             <citerefentry><refentrytitle>glXMakeContextCurrent</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

@@ -24,7 +24,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>gluNewTess</function> creates and returns a pointer to a new tessellation object.
             This object must be referred to when calling
@@ -32,14 +32,14 @@
             0 means that there is not enough memory to allocate the object.
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluTessBeginPolygon</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>gluDeleteTess</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>gluTessCallback</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

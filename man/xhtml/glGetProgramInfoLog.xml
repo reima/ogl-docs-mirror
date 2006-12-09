@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetProgramInfoLog</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetProgramInfoLog"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetProgramInfoLog — Returns the information log for a program object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef">void <b class="fsfunc">glGetProgramInfoLog</b>(</code></td><td><var class="pdparam">program</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">maxLength</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">length</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">infoLog</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td>GLuint  </td><td><var class="pdparam">program</var>;</td></tr><tr><td>GLsizei  </td><td><var class="pdparam">maxLength</var>;</td></tr><tr><td>GLsizei * </td><td><var class="pdparam">length</var>;</td></tr><tr><td>GLchar * </td><td><var class="pdparam">infoLog</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781954"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>program</code></em></span></dt><dd><p>Specifies the program object whose information
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetProgramInfoLog</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetProgramInfoLog"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetProgramInfoLog — Returns the information log for a program object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef">void <b class="fsfunc">glGetProgramInfoLog</b>(</code></td><td><var class="pdparam">program</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">maxLength</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">length</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">infoLog</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td>GLuint  </td><td><var class="pdparam">program</var>;</td></tr><tr><td>GLsizei  </td><td><var class="pdparam">maxLength</var>;</td></tr><tr><td>GLsizei * </td><td><var class="pdparam">length</var>;</td></tr><tr><td>GLchar * </td><td><var class="pdparam">infoLog</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781972"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>program</code></em></span></dt><dd><p>Specifies the program object whose information
 		    log is to be queried.</p></dd><dt><span class="term"><em class="parameter"><code>maxLength</code></em></span></dt><dd><p>Specifies the size of the character buffer for
 		    storing the returned information log.</p></dd><dt><span class="term"><em class="parameter"><code>length</code></em></span></dt><dd><p>Returns the length of the string returned in
 		    <em class="parameter"><code>infoLog</code></em> (excluding the null
 		    terminator).</p></dd><dt><span class="term"><em class="parameter"><code>infoLog</code></em></span></dt><dd><p>Specifies an array of characters that is used
-		    to return the information log.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768456"></a><h2>Description</h2><p><code class="function">glGetProgramInfoLog</code> returns the
+		    to return the information log.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768464"></a><h2>Description</h2><p><code class="function">glGetProgramInfoLog</code> returns the
 	information log for the specified program object. The
 	information log for a program object is modified when the
 	program object is linked or validated. The string that is
@@ -26,14 +26,14 @@
 	last validation operation. It may contain diagnostic messages,
 	warning messages, and other information. When a program object
 	is created, its information log will be a string of length
-	0.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768551"></a><h2>Notes</h2><p><code class="function">glGetProgramInfoLog</code> is available only
+	0.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768541"></a><h2>Notes</h2><p><code class="function">glGetProgramInfoLog</code> is available only
 	if the GL version is 2.0 or greater.</p><p>The information log for a program object is the OpenGL
 	implementer's primary mechanism for conveying information about
 	linking and validating. Therefore, the information log can be
 	helpful to application developers during the development
 	process, even when these operations are successful. Application
 	developers should not expect different OpenGL implementations to
-	produce identical information logs.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768586"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_VALUE</code> is generated if
+	produce identical information logs.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768566"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_VALUE</code> is generated if
 	<em class="parameter"><code>program</code></em> is not a value generated by
 	OpenGL.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
 	<em class="parameter"><code>program</code></em> is not a program object.</p><p><code class="constant">GL_INVALID_VALUE</code> is generated if
@@ -42,8 +42,13 @@
 	execution of
 	<span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
 	and the corresponding execution of
-	<span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775193"></a><h2>Associated Gets</h2><p><span class="citerefentry"><span class="refentrytitle">glGetProgram</span></span>
-	with argument <code class="constant">GL_INFO_LOG_LENGTH</code></p><p><span class="citerefentry"><span class="refentrytitle">glIsProgram</span></span></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775214"></a><h2>See Also</h2><p><span class="citerefentry"><span class="refentrytitle">glCompileShader</span></span>,
+	<span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775182"></a><h2>Associated Gets</h2><p><span class="citerefentry"><span class="refentrytitle">glGetProgram</span></span>
+	with argument <code class="constant">GL_INFO_LOG_LENGTH</code></p><p><span class="citerefentry"><span class="refentrytitle">glIsProgram</span></span></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775203"></a><h2>See Also</h2><p><span class="citerefentry"><span class="refentrytitle">glCompileShader</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glGetShaderInfoLog</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glLinkProgram</span></span>,
-	<span class="citerefentry"><span class="refentrytitle">glValidateProgram</span></span></p></div></div></body></html>
+	<span class="citerefentry"><span class="refentrytitle">glValidateProgram</span></span></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775228"></a><h2>Copyright</h2><p>
+            Copyright <span class="trademark"></span>© 2003-2005 3Dlabs Inc. Ltd. 
+            This material may be distributed subject to the terms and conditions set forth in 
+            the Open Publication License, v 1.0, 8 June 1999.
+            <a href="http://opencontent.org/openpub/" target="_top">http://opencontent.org/openpub/</a>.
+        </p></div></div></body></html>

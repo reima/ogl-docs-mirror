@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetHistogramParameter</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetHistogramParameter"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetHistogramParameter — get histogram parameters</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetHistogramParameterfv</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pname</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">params</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">pname</var>;</td></tr><tr><td> GLfloat *  </td><td><var class="pdparam">params</var>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetHistogramParameteriv</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pname</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">params</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">pname</var>;</td></tr><tr><td> GLint *  </td><td><var class="pdparam">params</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781881"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetHistogramParameter</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetHistogramParameter"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetHistogramParameter — get histogram parameters</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetHistogramParameterfv</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pname</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">params</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">pname</var>;</td></tr><tr><td> GLfloat *  </td><td><var class="pdparam">params</var>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetHistogramParameteriv</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pname</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">params</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">pname</var>;</td></tr><tr><td> GLint *  </td><td><var class="pdparam">params</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781879"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Must be one of
                     <code class="constant">GL_HISTOGRAM</code> or
                     <code class="constant">GL_PROXY_HISTOGRAM</code>.
@@ -17,7 +17,7 @@
                     <code class="constant">GL_HISTOGRAM_SINK</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>params</code></em></span></dt><dd><p>
                     Pointer to storage for the returned values.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768535"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768529"></a><h2>Description</h2><p>
             <code class="function">glGetHistogramParameter</code> is used to query parameter values for the current histogram or for
             a proxy.  The histogram state information may be queried by calling
             <code class="function">glGetHistogramParameter</code> with a <em class="parameter"><code>target</code></em> of <code class="constant">GL_HISTOGRAM</code> (to
@@ -66,10 +66,10 @@
                         </td><td align="left">
                         Value of the <span class="emphasis"><em>sink</em></span> parameter
                         </td></tr></tbody></table></div><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775420"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775392"></a><h2>Notes</h2><p>
             <code class="function">glGetHistogramParameter</code> is present only if <code class="code">ARB_imaging</code> is returned when <span class="citerefentry"><span class="refentrytitle">glGetString</span></span>
             is called with an argument of <code class="constant">GL_EXTENSIONS</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775449"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775420"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not one of the allowable
             values.
         </p><p>
@@ -79,10 +79,10 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetHistogramParameter</code> is executed
             between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding
             execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775510"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775478"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetHistogram</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glHistogram</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775529"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775497"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

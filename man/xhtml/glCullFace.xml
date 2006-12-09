@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCullFace</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glCullFace"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCullFace — specify whether front- or back-facing facets can be culled</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glCullFace</b>(</code><var class="pdparam">mode</var><code>)</code>;<br /> GLenum <var class="pdparam">mode</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781956"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCullFace</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glCullFace"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCullFace — specify whether front- or back-facing facets can be culled</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glCullFace</b>(</code><var class="pdparam">mode</var><code>)</code>;<br /> GLenum <var class="pdparam">mode</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781963"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
                     Specifies whether front- or back-facing facets are candidates for culling.
                     Symbolic constants
                     <code class="constant">GL_FRONT</code>, <code class="constant">GL_BACK</code>, and <code class="constant">GL_FRONT_AND_BACK</code> are accepted.
                     The initial value is <code class="constant">GL_BACK</code>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781866"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781869"></a><h2>Description</h2><p>
             <code class="function">glCullFace</code> specifies whether front- or back-facing facets are culled
             (as specified by <span class="emphasis"><em>mode</em></span>) when facet culling is enabled. Facet
             culling is initially disabled.
@@ -20,23 +20,23 @@
             <span class="citerefentry"><span class="refentrytitle">glFrontFace</span></span> specifies which of the clockwise and counterclockwise facets
             are front-facing and back-facing.
             See <span class="citerefentry"><span class="refentrytitle">glFrontFace</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768466"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768465"></a><h2>Notes</h2><p>
             If <em class="parameter"><code>mode</code></em> is <code class="constant">GL_FRONT_AND_BACK</code>, no facets are drawn, but other
             primitives such as points and lines are drawn.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768488"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768485"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glCullFace</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768532"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768527"></a><h2>Associated Gets</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_CULL_FACE</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_CULL_FACE_MODE</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768561"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768557"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glEnable</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glFrontFace</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768579"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768575"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

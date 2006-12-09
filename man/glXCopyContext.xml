@@ -28,7 +28,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>dpy</parameter></term>
@@ -64,7 +64,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glXCopyContext</function> copies selected groups of state variables from <parameter>src</parameter> to <parameter>dst</parameter>.
             <parameter>mask</parameter> indicates which groups of state variables are to be copied.
@@ -98,7 +98,7 @@
             context for the calling thread.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
         </para>
         <para>
@@ -116,7 +116,7 @@
             is equivalent to a <emphasis>process</emphasis>.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>BadMatch</constant> is generated if rendering contexts <parameter>src</parameter> and <parameter>dst</parameter>
             do not share an address space
@@ -135,14 +135,14 @@
             a valid GLX context.
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glPushAttrib</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXCreateContext</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXIsDirect</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

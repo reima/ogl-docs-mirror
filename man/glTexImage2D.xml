@@ -35,7 +35,7 @@
     <!-- eqn: ignoring delim $$ -->
     <para>
     </para>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -254,7 +254,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             Texturing maps a portion of a specified texture image onto each graphical primitive for which texturing is enabled.  To enable and disable two-dimensional texturing, call <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glDisable</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_2D</constant>.  To enable and disable texturing using cube-mapped texture, call <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glDisable</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_CUBE_MAP</constant>.
         </para>
@@ -632,7 +632,7 @@
 			Depth textures can be treated as LUMINANCE, INTENSITY or ALPHA textures during texture filtering and application. Image-based shadowing can be enabled by comparing texture r coordinates to depth texture values to generate a boolean result.  See <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry> for details on texture comparison.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             Texturing has no effect in color index mode.
         </para>
@@ -824,7 +824,7 @@
 			internal formats are only available if the GL version is 2.1 or greater.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is not <constant>GL_TEXTURE_2D</constant>,
             <constant>GL_PROXY_TEXTURE_2D</constant>,
@@ -959,7 +959,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGetTexImage</refentrytitle></citerefentry>
         </para>
@@ -970,7 +970,7 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glColorTable</refentrytitle></citerefentry>,
@@ -996,7 +996,7 @@
             <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

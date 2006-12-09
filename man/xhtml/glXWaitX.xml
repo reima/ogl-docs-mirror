@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXWaitX</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXWaitX"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXWaitX — complete X execution prior to subsequent GL calls</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glXWaitX</b>(</code></p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781952"></a><h2>DESCRIPTION</h2><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXWaitX</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXWaitX"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXWaitX — complete X execution prior to subsequent GL calls</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glXWaitX</b>(</code></p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781958"></a><h2>Description</h2><p>
             X rendering calls made prior to <code class="function">glXWaitX</code> are guaranteed to be
             executed before GL rendering calls made after <code class="function">glXWaitX</code>.
             Although the same result can be achieved using <span class="citerefentry"><span class="refentrytitle">XSync</span></span>,
@@ -9,18 +9,18 @@
             are on separate machines.
         </p><p>
             <code class="function">glXWaitX</code> is ignored if there is no current GLX context.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781866"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781866"></a><h2>Notes</h2><p>
             <code class="function">glXWaitX</code> may or may not flush the GL stream.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781880"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781882"></a><h2>Errors</h2><p>
             <code class="constant">GLXBadCurrentWindow</code> is generated if the drawable associated
             with the current context of the calling thread is a window, and that
             window is no longer valid.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781897"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781897"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glFinish</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glFlush</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glXWaitGL</span></span>,
             <span class="citerefentry"><span class="refentrytitle">XSync</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768467"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768467"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

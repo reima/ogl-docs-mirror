@@ -56,15 +56,15 @@ SUPERBIBLEXML = \
     glGetActiveUniform.xml \
     glGetAttachedShaders.xml \
     glGetAttribLocation.xml \
-    glGetProgramInfoLog.xml \
     glGetProgram.xml \
+    glGetProgramInfoLog.xml \
+    glGetShader.xml \
     glGetShaderInfoLog.xml \
     glGetShaderSource.xml \
-    glGetShader.xml \
-    glGetUniformLocation.xml \
     glGetUniform.xml \
-    glGetVertexAttribPointerv.xml \
+    glGetUniformLocation.xml \
     glGetVertexAttrib.xml \
+    glGetVertexAttribPointerv.xml \
     glIsProgram.xml \
     glIsShader.xml \
     glLinkProgram.xml \
@@ -72,8 +72,8 @@ SUPERBIBLEXML = \
     glUniform.xml \
     glUseProgram.xml \
     glValidateProgram.xml \
-    glVertexAttribPointer.xml \
-    glVertexAttrib.xml
+    glVertexAttrib.xml \
+    glVertexAttribPointer.xml
 
 # SGI OpenGL 1.4 man pages
 SGIGLXML = \

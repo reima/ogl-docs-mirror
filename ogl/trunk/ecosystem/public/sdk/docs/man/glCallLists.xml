@@ -26,7 +26,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>n</parameter></term>
@@ -70,7 +70,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glCallLists</function> causes each display list in the list of names passed as <parameter>lists</parameter>
             to be executed.
@@ -225,7 +225,7 @@
             and <citerefentry><refentrytitle>glPopMatrix</refentrytitle></citerefentry> to preserve GL state across <function>glCallLists</function> calls.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             Display lists can be executed between a call to <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
             and the corresponding call to <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>,
@@ -233,7 +233,7 @@
             in this interval.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>n</parameter> is negative.
         </para>
@@ -251,7 +251,7 @@
             <constant>GL_4_BYTES</constant>.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_LIST_BASE</constant>
         </para>
@@ -262,7 +262,7 @@
             <citerefentry><refentrytitle>glIsList</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glCallList</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDeleteLists</refentrytitle></citerefentry>,
@@ -273,7 +273,7 @@
             <citerefentry><refentrytitle>glPushMatrix</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

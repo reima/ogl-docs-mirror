@@ -28,7 +28,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>size</parameter></term>
@@ -74,7 +74,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glTexCoordPointer</function> specifies the location and data format of an array of texture
             coordinates to use when rendering.  
@@ -109,7 +109,7 @@
             is called.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             <function>glTexCoordPointer</function> is available only if the GL version is 1.1 or greater.
         </para>
@@ -141,7 +141,7 @@
             <citerefentry><refentrytitle>glPopClientAttrib</refentrytitle></citerefentry> instead.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>size</parameter> is not 1, 2, 3, or 4.
         </para>
@@ -152,7 +152,7 @@
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>stride</parameter> is negative.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_COORD_ARRAY</constant>
         </para>
@@ -175,7 +175,7 @@
             <citerefentry><refentrytitle>glGetPointerv</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_COORD_ARRAY_POINTER</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>,
@@ -202,7 +202,7 @@
             <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glRenderMode</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glRenderMode"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glRenderMode — set rasterization mode</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> GLint <b class="fsfunc">glRenderMode</b>(</code><var class="pdparam">mode</var><code>)</code>;<br /> GLenum <var class="pdparam">mode</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781957"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glRenderMode</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glRenderMode"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glRenderMode — set rasterization mode</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> GLint <b class="fsfunc">glRenderMode</b>(</code><var class="pdparam">mode</var><code>)</code>;<br /> GLenum <var class="pdparam">mode</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781964"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
                     Specifies the rasterization mode.
                     Three values are accepted:
                     <code class="constant">GL_RENDER</code>,
                     <code class="constant">GL_SELECT</code>, and
                     <code class="constant">GL_FEEDBACK</code>.
                     The initial value is <code class="constant">GL_RENDER</code>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781865"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781868"></a><h2>Description</h2><p>
             <code class="function">glRenderMode</code> sets the rasterization mode.
             It takes one argument,
             <em class="parameter"><code>mode</code></em>,
@@ -50,10 +50,10 @@
                     </p></dd></dl></div><p>
             See the <span class="citerefentry"><span class="refentrytitle">glSelectBuffer</span></span> and <span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span> reference pages for
             more details concerning selection and feedback operation.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775180"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768608"></a><h2>Notes</h2><p>
             If an error is generated,
             <code class="function">glRenderMode</code> returns 0 regardless of the current render mode.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775200"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775178"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is not one of the three
             accepted values.
         </p><p>
@@ -70,16 +70,16 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glRenderMode</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775312"></a><h2>ASSOCIATED GETS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775287"></a><h2>Associated Gets</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_RENDER_MODE</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775330"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775304"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glInitNames</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glLoadName</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPassThrough</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPushName</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glSelectBuffer</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775370"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775342"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -26,7 +26,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>size</parameter></term>
@@ -46,7 +46,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glSelectBuffer</function> has two arguments:
             <parameter>buffer</parameter> is a pointer to an array of unsigned integers,
@@ -120,7 +120,7 @@
             a negative hit record count is returned.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             The contents of <parameter>buffer</parameter> is undefined until <citerefentry><refentrytitle>glRenderMode</refentrytitle></citerefentry> is called
             with an argument other than <constant>GL_SELECT</constant>.
@@ -130,7 +130,7 @@
             can result in hits.  <citerefentry><refentrytitle>glWindowPos</refentrytitle></citerefentry> will always generate a selection hit.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>size</parameter> is negative.
         </para>
@@ -146,7 +146,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_NAME_STACK_DEPTH</constant>
         </para>
@@ -157,7 +157,7 @@
             <citerefentry><refentrytitle>glGetPointerv</refentrytitle></citerefentry> with argument <constant>GL_SELECTION_BUFFER_POINTER</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glFeedbackBuffer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glInitNames</refentrytitle></citerefentry>,
@@ -166,7 +166,7 @@
             <citerefentry><refentrytitle>glRenderMode</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

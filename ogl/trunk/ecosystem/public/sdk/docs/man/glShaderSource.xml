@@ -116,4 +116,12 @@
 	<citerefentry><refentrytitle>glCreateShader</refentrytitle></citerefentry>,
 	<citerefentry><refentrytitle>glDeleteShader</refentrytitle></citerefentry></para>
     </refsect1>
+    <refsect1><title>Copyright</title>
+        <para>
+            Copyright <trademark class="copyright"></trademark> 2003-2005 3Dlabs Inc. Ltd. 
+            This material may be distributed subject to the terms and conditions set forth in 
+            the Open Publication License, v 1.0, 8 June 1999.
+            <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.
+        </para>
+    </refsect1>
 </refentry>

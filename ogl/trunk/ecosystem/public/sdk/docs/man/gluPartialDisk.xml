@@ -31,7 +31,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>quad</parameter></term>
@@ -92,7 +92,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>gluPartialDisk</function> renders a partial disk on the 
             <inlineequation><mml:math>
@@ -145,7 +145,7 @@
             at (0, \-<emphasis>r</emphasis>, 0) it is (0.5, 0.0).
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluCylinder</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>gluDisk</refentrytitle></citerefentry>,
@@ -155,7 +155,7 @@
             <citerefentry><refentrytitle>gluSphere</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

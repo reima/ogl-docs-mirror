@@ -27,7 +27,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>dpy</parameter></term>
@@ -56,7 +56,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glXMakeCurrent</function> does two things:
             It makes <parameter>ctx</parameter> the current GLX rendering context of the calling thread,
@@ -92,7 +92,7 @@
             and drawable (if any) remain unchanged.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             A <emphasis>process</emphasis> is a single-execution environment,
             implemented in a single address space,
@@ -108,7 +108,7 @@
             is equivalent to a <emphasis>process</emphasis>.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>BadMatch</constant> is generated if <parameter>drawable</parameter> was not
             created with the same X screen and visual as <parameter>ctx</parameter>.
@@ -145,7 +145,7 @@
             insufficient resources to complete the allocation.
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glXCreateContext</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXCreateGLXPixmap</refentrytitle></citerefentry>
@@ -156,7 +156,7 @@
             <citerefentry><refentrytitle>glXMakeContextCurrent</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

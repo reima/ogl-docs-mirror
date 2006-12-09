@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluTessProperty</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluTessProperty"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluTessProperty — set a tessellation object property</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">gluTessProperty</b>(</code></td><td><var class="pdparam">tess</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">which</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">data</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLUtesselator*  </td><td><var class="pdparam">tess</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">which</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">data</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781975"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>tess</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluTessProperty</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluTessProperty"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluTessProperty — set a tessellation object property</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">gluTessProperty</b>(</code></td><td><var class="pdparam">tess</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">which</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">data</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLUtesselator*  </td><td><var class="pdparam">tess</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">which</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">data</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781980"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>tess</code></em></span></dt><dd><p>
                     Specifies the tessellation object (created with <span class="citerefentry"><span class="refentrytitle">gluNewTess</span></span>).
                 </p></dd><dt><span class="term"><em class="parameter"><code>which</code></em></span></dt><dd><p>
                     Specifies the property to be set. Valid values are
@@ -9,7 +9,7 @@
                     <code class="constant">GLU_TESS_TOLERANCE</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>data</code></em></span></dt><dd><p>
                     Specifies the value of the indicated property.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768464"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768465"></a><h2>Description</h2><p>
             <code class="function">gluTessProperty</code> is used to control properties stored in a tessellation object. These
             properties affect the way that the polygons are interpreted and rendered. 
             The legal values for <em class="parameter"><code>which</code></em> are as follows:
@@ -62,10 +62,10 @@
                         an edge only if the implementation is unable to distinguish which side of
                         the edge the vertex lies on. Two edges are merged only when both endpoints
                         are identical.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775253"></a><h2>SEE ALSO</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775208"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">gluGetTessProperty</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluNewTess</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775270"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775226"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

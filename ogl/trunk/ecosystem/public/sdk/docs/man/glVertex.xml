@@ -114,7 +114,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>x</parameter></term>
@@ -204,7 +204,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>v</parameter></term>
@@ -231,7 +231,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glVertex</function> commands are used within <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>/<citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry> pairs to specify
             point, line, and polygon vertices.  The current color, normal, texture
@@ -257,13 +257,13 @@
             defaults to 1.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             Invoking <function>glVertex</function> outside of a <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>/<citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry> pair
             results in undefined behavior.
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCallList</refentrytitle></citerefentry>,
@@ -280,7 +280,7 @@
             <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

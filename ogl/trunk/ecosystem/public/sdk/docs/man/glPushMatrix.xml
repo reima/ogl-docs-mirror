@@ -32,7 +32,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             There is a stack of matrices for each of the matrix modes.
             In <constant>GL_MODELVIEW</constant> mode,
@@ -64,7 +64,7 @@
             and no other change is made to GL state.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_STACK_OVERFLOW</constant> is generated if <function>glPushMatrix</function> is called while
             the current matrix stack is full.
@@ -79,7 +79,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_MATRIX_MODE</constant>
         </para>
@@ -117,7 +117,7 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_MAX_TEXTURE_STACK_DEPTH</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glFrustum</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glLoadIdentity</refentrytitle></citerefentry>,
@@ -133,7 +133,7 @@
             <citerefentry><refentrytitle>glViewport</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

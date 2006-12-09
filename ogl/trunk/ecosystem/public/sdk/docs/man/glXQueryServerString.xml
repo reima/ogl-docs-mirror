@@ -27,7 +27,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>dpy</parameter></term>
@@ -56,7 +56,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glXQueryServerString</function> 
             returns a pointer to a static, null-terminated string 
@@ -66,7 +66,7 @@
             <constant>NULL</constant> is returned. 
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             <function>glXQueryServerString</function> is available only if the GLX version is 1.1 or greater.
         </para>
@@ -82,14 +82,14 @@
             client.
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glXQueryVersion</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXGetClientString</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXQueryExtensionsString</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

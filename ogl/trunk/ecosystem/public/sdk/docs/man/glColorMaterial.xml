@@ -25,7 +25,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>face</parameter></term>
@@ -59,7 +59,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glColorMaterial</function> specifies which material parameters track the current color.
             When <constant>GL_COLOR_MATERIAL</constant> is enabled,
@@ -73,7 +73,7 @@
             <constant>GL_COLOR_MATERIAL</constant> is initially disabled.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             <function>glColorMaterial</function> makes it possible to change a subset of material parameters for each
             vertex using only the <citerefentry><refentrytitle>glColor</refentrytitle></citerefentry> command,
@@ -98,7 +98,7 @@
             made to the tracking lighting parameter of the current color.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>face</parameter> or <parameter>mode</parameter> is not an
             accepted value.
@@ -108,7 +108,7 @@
             the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry> and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_COLOR_MATERIAL</constant>
         </para>
@@ -119,7 +119,7 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_COLOR_MATERIAL_FACE</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glColor</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>,
@@ -132,7 +132,7 @@
             <citerefentry><refentrytitle>glMaterial</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

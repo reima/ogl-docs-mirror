@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluGetString</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluGetString"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluGetString — return a string describing the GLU version or GLU extensions </p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> const GLubyte * <b class="fsfunc">gluGetString</b>(</code></td><td><var class="pdparam">name</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">name</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781959"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>name</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluGetString</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluGetString"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluGetString — return a string describing the GLU version or GLU extensions </p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> const GLubyte * <b class="fsfunc">gluGetString</b>(</code></td><td><var class="pdparam">name</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">name</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781966"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>name</code></em></span></dt><dd><p>
                     Specifies a symbolic constant, one of 
                     <code class="constant">GLU_VERSION</code>, or <code class="constant">GLU_EXTENSIONS</code>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781993"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781862"></a><h2>Description</h2><p>
             <code class="function">gluGetString</code> returns a pointer to a static string describing the 
             GLU version or the GLU extensions that are supported.
         </p><p>
@@ -29,19 +29,19 @@
             (Extension names never contain spaces.)
         </p><p>
             All strings are null-terminated.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768491"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768484"></a><h2>Notes</h2><p>
             <code class="function">gluGetString</code> only returns information about GLU extensions. Call <code class="function">glGetString</code>
              to get a list of GL extensions.
         </p><p>
             <code class="function">gluGetString</code> is an initialization routine. Calling it after
             a <span class="citerefentry"><span class="refentrytitle">glNewList</span></span> results in undefined behavior.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768530"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768522"></a><h2>Errors</h2><p>
             NULL is returned if <em class="parameter"><code>name</code></em> is not
             <code class="constant">GLU_VERSION</code> or <code class="constant">GLU_EXTENSIONS</code>.
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768556"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768547"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetString</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768569"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768560"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

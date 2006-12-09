@@ -25,7 +25,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>size</parameter></term>
@@ -38,7 +38,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glPointSize</function> specifies the rasterized diameter of both aliased and antialiased
             points.  Using a point size other than 1 has different effects, depending
@@ -332,7 +332,7 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with arguments <constant>GL_ALIASED_POINT_SIZE_RANGE</constant>.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             The point size specified by <function>glPointSize</function> is always returned when
             <constant>GL_POINT_SIZE</constant> is queried.  Clamping and rounding for aliased and
@@ -351,7 +351,7 @@
             <constant>GL_SMOOTH_POINT_SIZE_GRANULARITY</constant>.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>size</parameter> is less than or equal to 0.
         </para>
@@ -361,7 +361,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_ALIASED_POINT_SIZE_RANGE</constant>
         </para>
@@ -390,13 +390,13 @@
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_POINT_SMOOTH</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPointParameter</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

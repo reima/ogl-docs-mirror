@@ -23,7 +23,7 @@
 	    </funcprototype>
 	</funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
 	<variablelist>
 	    <varlistentry>
 		<term><parameter>index</parameter></term>
@@ -85,7 +85,7 @@
 	    </varlistentry>
 	</variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
 	<para><function>glVertexAttribPointer</function> specifies the
 	location and data format of the array of generic vertex attributes at index <parameter>index</parameter>
 	to use when rendering. <parameter>size</parameter>
@@ -130,7 +130,7 @@
         <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>
         is called.</para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
 	<para><function>glVertexAttribPointer</function> is available
 	only if the GL version is 2.0 or greater.</para>
 
@@ -162,7 +162,7 @@
 	<citerefentry><refentrytitle>glPopClientAttrib</refentrytitle></citerefentry>
 	instead.</para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
 	<para><constant>GL_INVALID_VALUE</constant> is generated if
 	<parameter>index</parameter> is greater than or equal to
 	<constant>GL_MAX_VERTEX_ATTRIBS</constant>.</para>
@@ -176,7 +176,7 @@
 	<para><constant>GL_INVALID_VALUE</constant> is generated if
 	<parameter>stride</parameter> is negative.</para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
 	<para><citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
 	with argument <constant>GL_MAX_VERTEX_ATTRIBS</constant></para>
 
@@ -205,7 +205,7 @@
 	with arguments <parameter>index</parameter> and
 	<constant>GL_VERTEX_ATTRIB_ARRAY_POINTER</constant></para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
 	<para><citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>,
 	<citerefentry><refentrytitle>glBindAttribLocation</refentrytitle></citerefentry>,
         <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>,
@@ -229,5 +229,13 @@
 	<citerefentry><refentrytitle>glVertexAttrib</refentrytitle></citerefentry>,
         <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>
 	</para>
+    </refsect1>
+    <refsect1><title>Copyright</title>
+        <para>
+            Copyright <trademark class="copyright"></trademark> 2003-2005 3Dlabs Inc. Ltd. 
+            This material may be distributed subject to the terms and conditions set forth in 
+            the Open Publication License, v 1.0, 8 June 1999.
+            <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.
+        </para>
     </refsect1>
 </refentry>

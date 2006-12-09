@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXChooseVisual</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXChooseVisual"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXChooseVisual — return a visual that matches specified attributes</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> XVisualInfo* <b class="fsfunc">glXChooseVisual</b>(</code></td><td><var class="pdparam">dpy</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">screen</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">attribList</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> Display *  </td><td><var class="pdparam">dpy</var>;</td></tr><tr><td> int  </td><td><var class="pdparam">screen</var>;</td></tr><tr><td> int *  </td><td><var class="pdparam">attribList</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781976"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>dpy</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXChooseVisual</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXChooseVisual"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXChooseVisual — return a visual that matches specified attributes</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> XVisualInfo* <b class="fsfunc">glXChooseVisual</b>(</code></td><td><var class="pdparam">dpy</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">screen</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">attribList</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> Display *  </td><td><var class="pdparam">dpy</var>;</td></tr><tr><td> int  </td><td><var class="pdparam">screen</var>;</td></tr><tr><td> int *  </td><td><var class="pdparam">attribList</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781980"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>dpy</code></em></span></dt><dd><p>
                     Specifies the connection to the X server.
                 </p></dd><dt><span class="term"><em class="parameter"><code>screen</code></em></span></dt><dd><p>
                     Specifies the screen number.
                 </p></dd><dt><span class="term"><em class="parameter"><code>attribList</code></em></span></dt><dd><p>
                     Specifies a list of boolean attributes and integer attribute/value pairs.
                     The last attribute must be <code class="constant">None</code>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781912"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768452"></a><h2>Description</h2><p>
             <code class="function">glXChooseVisual</code> returns a pointer to an XVisualInfo structure describing the visual
             that best meets a minimum specification.
             The boolean GLX attributes of the visual that is returned will match the
@@ -128,7 +128,7 @@
                         visuals with no alpha accumulation buffer are preferred.
                         Otherwise, the largest possible alpha accumulation buffer
                         of at least the minimum size is preferred.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775546"></a><h2>EXAMPLES</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775430"></a><h2>EXAMPLES</h2><p>
         </p><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>attribList</code></em> =</span></dt><dd><p>
                         {<code class="constant">GLX_RGBA</code>,
                         <code class="constant">GLX_RED_SIZE</code>, 4,
@@ -147,7 +147,7 @@
             a depth buffer,
             a stencil buffer,
             or an accumulation buffer.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775235"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775493"></a><h2>Notes</h2><p>
             <code class="constant">XVisualInfo</code> is defined in <span class="emphasis"><em>Xutil.h.</em></span>
             It is a structure that includes <span class="emphasis"><em>visual</em></span>, <span class="emphasis"><em>visualID</em></span>, <span class="emphasis"><em>screen</em></span>, and
             <span class="emphasis"><em>depth</em></span> elements.
@@ -168,13 +168,13 @@
             GLXPixmaps are supported for visuals whose
             <code class="constant">GLX_BUFFER_SIZE</code>
             is one of the pixmap depths supported by the X server.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712855"></a><h2>ERRORS</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775579"></a><h2>Errors</h2><p>
             <code class="constant">NULL</code> is returned if an undefined GLX attribute is encountered in
             <em class="parameter"><code>attribList</code></em>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712876"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775599"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glXCreateContext</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glXGetConfig</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712894"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712840"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

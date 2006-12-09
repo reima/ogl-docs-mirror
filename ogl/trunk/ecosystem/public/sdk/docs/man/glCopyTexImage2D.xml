@@ -32,7 +32,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -202,7 +202,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glCopyTexImage2D</function> defines a two-dimensional texture image, or cube-map texture image
             with pixels from the current
@@ -280,7 +280,7 @@
             When <parameter>internalformat</parameter> is one of the sRGB  types, the GL does not automatically convert the source pixels to the sRGB color space.  In this case, the <function>glPixelMap</function> function can be used to accomplish the conversion.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             <function>glCopyTexImage2D</function> is available only if the GL version is 1.1 or greater.
         </para>
@@ -324,7 +324,7 @@
 			internal formats are only available if the GL version is 2.1 or greater.  See <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry> for specific details about sRGB conversion.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is not <constant>GL_TEXTURE_2D</constant>.
         </para>
@@ -401,7 +401,7 @@
             buffer.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGetTexImage</refentrytitle></citerefentry>
         </para>
@@ -409,7 +409,7 @@
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_2D</constant> or <constant>GL_TEXTURE_CUBE_MAP</constant> 
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glCopyPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexImage1D</refentrytitle></citerefentry>,
@@ -426,7 +426,7 @@
             <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

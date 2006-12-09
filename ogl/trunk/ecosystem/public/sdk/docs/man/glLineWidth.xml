@@ -25,7 +25,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>width</parameter></term>
@@ -38,7 +38,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glLineWidth</function> specifies the rasterized width of both aliased and antialiased
             lines.
@@ -103,7 +103,7 @@
             <constant>GL_SMOOTH_LINE_WIDTH_RANGE</constant>, and <constant>GL_SMOOTH_LINE_WIDTH_GRANULARITY</constant>.
         </para>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             The line width specified by <function>glLineWidth</function> is always returned when <constant>GL_LINE_WIDTH</constant>
             is queried.
@@ -117,7 +117,7 @@
             <constant>GL_SMOOTH_LINE_WIDTH_RANGE</constant>, and <constant>GL_SMOOTH_LINE_WIDTH_GRANULARITY</constant>.  The old names are retained for backward compatibility, but should not be used in new code.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>width</parameter> is less than or equal to 0.
         </para>
@@ -127,7 +127,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ASSOCIATED GETS</title>
+    <refsect1><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_LINE_WIDTH</constant>
         </para>
@@ -144,12 +144,12 @@
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_LINE_SMOOTH</constant>
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

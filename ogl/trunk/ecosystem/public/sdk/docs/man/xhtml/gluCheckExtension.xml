@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluCheckExtension</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluCheckExtension"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluCheckExtension — determines if an extension name is supported</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> GLboolean <b class="fsfunc">gluCheckExtension</b>(</code></td><td><var class="pdparam">extName</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">extString</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> const GLubyte *  </td><td><var class="pdparam">extName</var>;</td></tr><tr><td> const GLubyte *  </td><td><var class="pdparam">extString</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781954"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>extName</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluCheckExtension</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluCheckExtension"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluCheckExtension — determines if an extension name is supported</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> GLboolean <b class="fsfunc">gluCheckExtension</b>(</code></td><td><var class="pdparam">extName</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">extString</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> const GLubyte *  </td><td><var class="pdparam">extName</var>;</td></tr><tr><td> const GLubyte *  </td><td><var class="pdparam">extString</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781971"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>extName</code></em></span></dt><dd><p>
                     Specifies an extension name.
                 </p></dd><dt><span class="term"><em class="parameter"><code>extString</code></em></span></dt><dd><p>
                     Specifies a space-separated list of extension names supported. 
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781865"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781879"></a><h2>Description</h2><p>
             <code class="function">gluCheckExtension</code> returns <code class="constant">GLU_TRUE</code> if <em class="parameter"><code>extName</code></em> is supported otherwise 
             <code class="constant">GLU_FALSE</code> is returned.
         </p><p>
@@ -13,7 +13,7 @@
             <span class="citerefentry"><span class="refentrytitle">gluGetString</span></span>, <span class="citerefentry"><span class="refentrytitle">glXGetClientString</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glXQueryExtensionsString</span></span>, or <span class="citerefentry"><span class="refentrytitle">glXQueryServerString</span></span>,
             respectively, as <em class="parameter"><code>extString</code></em>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768477"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768485"></a><h2>Notes</h2><p>
             Cases where one extension name is a substring of another are
             correctly handled.
         </p><p>
@@ -22,13 +22,13 @@
             Extension names should not contain embedded spaces.
         </p><p>
             All strings are null-terminated.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768512"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768515"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">gluGetString</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glGetString</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glXGetClientString</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glXQueryExtensionsString</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glXQueryServerString</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768546"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768549"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

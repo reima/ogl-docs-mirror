@@ -24,7 +24,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>cap</parameter></term>
@@ -44,7 +44,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>PARAMETERS</title>
+    <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>cap</parameter></term>
@@ -56,7 +56,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>DESCRIPTION</title>
+    <refsect1><title>Description</title>
         <para>
             <function>glEnable</function> and <citerefentry><refentrytitle>glDisable</refentrytitle></citerefentry> enable and disable various capabilities.
             Use <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> or <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> to determine the current setting
@@ -852,7 +852,7 @@
             </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>NOTES</title>
+    <refsect1><title>Notes</title>
         <para>
             <constant>GL_POLYGON_OFFSET_FILL</constant>, <constant>GL_POLYGON_OFFSET_LINE</constant>,
             <constant>GL_POLYGON_OFFSET_POINT</constant>,
@@ -893,7 +893,7 @@
             specified with <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>ERRORS</title>
+    <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>cap</parameter> is not one of the values
             listed previously.
@@ -904,7 +904,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>SEE ALSO</title>
+    <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glAlphaFunc</refentrytitle></citerefentry>,
@@ -940,7 +940,7 @@
             <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>COPYRIGHT</title>
+    <refsect1><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

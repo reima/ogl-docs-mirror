@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluPerspective</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluPerspective"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluPerspective — set up a perspective projection matrix</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">gluPerspective</b>(</code></td><td><var class="pdparam">fovy</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">aspect</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">zNear</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">zFar</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLdouble  </td><td><var class="pdparam">fovy</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">aspect</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">zNear</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">zFar</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781982"></a><h2>PARAMETERS</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>fovy</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluPerspective</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluPerspective"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluPerspective — set up a perspective projection matrix</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">gluPerspective</b>(</code></td><td><var class="pdparam">fovy</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">aspect</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">zNear</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">zFar</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLdouble  </td><td><var class="pdparam">fovy</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">aspect</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">zNear</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">zFar</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781851"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>fovy</code></em></span></dt><dd><p>
                     Specifies the field of view angle, in degrees, in the <span class="emphasis"><em>y</em></span> direction.
                 </p></dd><dt><span class="term"><em class="parameter"><code>aspect</code></em></span></dt><dd><p>
                     Specifies the aspect ratio that determines
@@ -12,7 +12,7 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>zFar</code></em></span></dt><dd><p>
                     Specifies the distance from the viewer to the far clipping plane
                     (always positive).
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768495"></a><h2>DESCRIPTION</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768492"></a><h2>Description</h2><p>
             <code class="function">gluPerspective</code> specifies a viewing frustum into the world coordinate system.
             In general, the aspect ratio in <code class="function">gluPerspective</code> should match the aspect ratio
             of the associated viewport. For example, 
@@ -154,7 +154,7 @@
                     </mml:mtable>
                 </mml:mfenced>
             </mml:math></div><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775262"></a><h2>NOTES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775243"></a><h2>Notes</h2><p>
             Depth buffer precision is affected by the values specified for
             <em class="parameter"><code>zNear</code></em> and <em class="parameter"><code>zFar</code></em>.
             The greater the ratio of <em class="parameter"><code>zFar</code></em> to <em class="parameter"><code>zNear</code></em> is,
@@ -193,12 +193,12 @@
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">r</mml:mi></mml:math>
             approaches infinity as <em class="parameter"><code>zNear</code></em> approaches 0,
             <em class="parameter"><code>zNear</code></em> must never be set to 0.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712821"></a><h2>SEE ALSO</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712853"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">gluOrtho2D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glFrustum</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glLoadIdentity</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glMultMatrix</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712850"></a><h2>COPYRIGHT</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712882"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

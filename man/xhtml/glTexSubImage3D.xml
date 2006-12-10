@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0013)about:internet -->
 <?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glTexSubImage3D</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glTexSubImage3D"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glTexSubImage3D — specify a three-dimensional texture subimage</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glTexSubImage3D</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">level</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">xoffset</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">yoffset</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">zoffset</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">width</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">height</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">depth</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">format</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">data</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">level</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">xoffset</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">yoffset</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">zoffset</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">width</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">height</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">depth</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">format</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td> const GLvoid *  </td><td><var class="pdparam">data</var>;</td></tr></table></div></div><p>
-    </p><div class="refsect1" lang="en" xml:lang="en"><a id="id4768455"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term">/<em class="parameter"><code>target</code></em></span></dt><dd><p>
+    </p><div class="refsect1" lang="en" xml:lang="en"><a id="id4781906"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term">/<em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the target texture.
                     Must be <code class="constant">GL_TEXTURE_3D</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>level</code></em></span></dt><dd><p>
@@ -59,7 +60,7 @@
                     <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>data</code></em></span></dt><dd><p>
                     Specifies a pointer to the image data in memory.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775354"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775382"></a><h2>Description</h2><p>
             Texturing maps a portion of a specified texture image
             onto each graphical primitive for which texturing is enabled.
             To enable and disable three-dimensional texturing, call <span class="citerefentry"><span class="refentrytitle">glEnable</span></span>
@@ -112,7 +113,7 @@
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target 
             (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while a texture image is
             specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data store.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775555"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775603"></a><h2>Notes</h2><p>
             <code class="function">glTexSubImage3D</code> is available only if the GL version is 1.2 or greater.
         </p><p>
             Texturing has no effect in color index mode.
@@ -142,7 +143,7 @@
             When the <code class="code">ARB_imaging</code> extension is supported, the RGBA components
             specified in <em class="parameter"><code>data</code></em> may be processed by the imaging pipeline.  See
             <span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span> for specific details.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712920"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712925"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if /<em class="parameter"><code>target</code></em> is not <code class="constant">GL_TEXTURE_3D</code>.
         </p><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>format</code></em> is not an accepted
@@ -318,13 +319,13 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glTexSubImage3D</code> is executed
             between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding
             execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711775"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711783"></a><h2>Associated Gets</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetTexImage</span></span>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_TEXTURE_3D</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711812"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711820"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glCopyTexImage1D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span>,
@@ -342,7 +343,7 @@
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711906"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4784897"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

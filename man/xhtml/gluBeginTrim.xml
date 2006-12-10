@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluBeginTrim</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluBeginTrim"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluBeginTrim — delimit a NURBS trimming loop definition</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">gluBeginTrim</b>(</code><var class="pdparam">nurb</var><code>)</code>;<br /> GLUnurbs* <var class="pdparam">nurb</var>;</p></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">gluEndTrim</b>(</code><var class="pdparam">nurb</var><code>)</code>;<br /> GLUnurbs* <var class="pdparam">nurb</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781857"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>nurb</code></em></span></dt><dd><p>
+<!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluBeginTrim</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluBeginTrim"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluBeginTrim — delimit a NURBS trimming loop definition</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">gluBeginTrim</b>(</code><var class="pdparam">nurb</var><code>)</code>;<br /> GLUnurbs* <var class="pdparam">nurb</var>;</p></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">gluEndTrim</b>(</code><var class="pdparam">nurb</var><code>)</code>;<br /> GLUnurbs* <var class="pdparam">nurb</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781986"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>nurb</code></em></span></dt><dd><p>
                     Specifies the NURBS object (created with <span class="citerefentry"><span class="refentrytitle">gluNewNurbsRenderer</span></span>).
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781888"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781880"></a><h2>Description</h2><p>
             Use <code class="function">gluBeginTrim</code> to mark the beginning of a
             trimming loop and <span class="citerefentry"><span class="refentrytitle">gluEndTrim</span></span> to mark the end 
             of a trimming loop. A trimming loop is 
@@ -60,7 +61,7 @@
         </p><p>
             If no trimming information is given
             for a NURBS surface, the entire surface is drawn.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768576"></a><h2>EXAMPLE</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768593"></a><h2>EXAMPLE</h2><p>
             This code fragment defines a trimming loop that consists of one
             piecewise linear curve, and two NURBS curves:
             </p><pre class="programlisting">
@@ -70,13 +71,13 @@ gluBeginTrim(nobj);
    gluNurbsCurve(..., GLU_MAP1_TRIM_3);
 gluEndTrim(nobj);
             </pre><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768596"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768613"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">gluBeginSurface</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluNewNurbsRenderer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluNurbsCallback</span></span>, 
             <span class="citerefentry"><span class="refentrytitle">gluNurbsCurve</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluPwlCurve</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775181"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775197"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

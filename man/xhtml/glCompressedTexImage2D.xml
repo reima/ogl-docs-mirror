@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCompressedTexImage2D</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glCompressedTexImage2D"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCompressedTexImage2D — specify a two-dimensional texture image in a compressed format</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glCompressedTexImage2D</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">level</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">internalformat</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">width</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">height</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">border</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">imageSize</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">data</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">level</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">internalformat</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">width</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">height</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">border</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">imageSize</var>;</td></tr><tr><td> const GLvoid *  </td><td><var class="pdparam">data</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781885"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCompressedTexImage2D</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glCompressedTexImage2D"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCompressedTexImage2D — specify a two-dimensional texture image in a compressed format</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glCompressedTexImage2D</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">level</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">internalformat</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">width</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">height</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">border</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">imageSize</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">data</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">level</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">internalformat</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">width</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">height</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">border</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">imageSize</var>;</td></tr><tr><td> const GLvoid *  </td><td><var class="pdparam">data</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781881"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the target texture.
                     Must be <code class="constant">GL_TEXTURE_2D</code>, <code class="constant">GL_PROXY_TEXTURE_2D</code>,
                     <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_X</code>,
@@ -83,7 +84,7 @@
                     address specified by <em class="parameter"><code>data</code></em>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>data</code></em></span></dt><dd><p>
                     Specifies a pointer to the compressed image data in memory.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775569"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775574"></a><h2>Description</h2><p>
             Texturing maps a portion of a specified texture image onto each graphical
             primitive for which texturing is enabled.  To enable and disable
             two-dimensional texturing, call <span class="citerefentry"><span class="refentrytitle">glEnable</span></span> and <span class="citerefentry"><span class="refentrytitle">glDisable</span></span> with argument
@@ -112,7 +113,7 @@
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target 
             (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while a texture image is
             specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data store.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775321"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775368"></a><h2>Notes</h2><p>
             <code class="function">glCompressedTexImage2D</code> is available only if the GL version is 1.3 or greater.
         </p><p>
 			Non-power-of-two textures are supported if the GL version is 2.0 or greater, or if the implementation exports the <code class="constant">GL_ARB_texture_non_power_of_two</code> extension.
@@ -124,7 +125,7 @@
 			<code class="constant">GL_COMPRESSED_SLUMINANCE</code>, and
 			<code class="constant">GL_COMPRESSED_SLUMINANCE_ALPHA</code> 
 			internal formats are only available if the GL version is 2.1 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775372"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712808"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>internalformat</code></em> is not one of these
             generic compressed internal formats: 
             <code class="constant">GL_COMPRESSED_ALPHA</code>,
@@ -161,7 +162,7 @@
             Undefined results, including abnormal program termination, are generated if
             <em class="parameter"><code>data</code></em> is not encoded in a manner consistent with the extension
             specification defining the internal compression format.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712969"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712981"></a><h2>Associated Gets</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetCompressedTexImage</span></span>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_TEXTURE_COMPRESSED</code>
@@ -172,7 +173,7 @@
             and <code class="constant">GL_TEXTURE_COMPRESSED_IMAGE_SIZE</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_TEXTURE_2D</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713035"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713046"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glColorTable</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glCompressedTexImage1D</span></span>,
@@ -198,7 +199,7 @@
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713170"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713189"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -2,6 +2,7 @@
 
 # XSLT processor - other possibilities like Saxon exist
 XSLT	= xsltproc
+SED	= sed
 
 # Location of locally customized stylesheet, which imports
 # the Docbook modular stylesheets, and the specifically
@@ -12,7 +13,9 @@ DB2XHTML = opengl-man.xsl
 .PHONY: man html pdf tex
 
 %.xml: ../%.xml opengl-man.xsl
-	$(XSLT) --xinclude -o $@ $(DB2XHTML) $<
+	$(XSLT) --xinclude -o $@.tmp $(DB2XHTML) $<
+	$(SED) 's/<?xml-stylesheet/<!-- saved from url=(0013)about:internet -->\n<?xml-stylesheet/g' $@.tmp > $@
+	$(RM) $@.tmp
 
 # ARB Ecosystem man pages
 ARBXML = \

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetShader</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetShader"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetShaderiv — Returns a parameter from a shader object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef">void <b class="fsfunc">glGetShaderiv</b>(</code></td><td><var class="pdparam">shader</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pname</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">params</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td>GLuint  </td><td><var class="pdparam">shader</var>;</td></tr><tr><td>GLenum  </td><td><var class="pdparam">pname</var>;</td></tr><tr><td>GLint * </td><td><var class="pdparam">params</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781965"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>shader</code></em></span></dt><dd><p>Specifies the shader object to be
+<!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetShader</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetShader"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetShaderiv — Returns a parameter from a shader object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef">void <b class="fsfunc">glGetShaderiv</b>(</code></td><td><var class="pdparam">shader</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pname</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">params</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td>GLuint  </td><td><var class="pdparam">shader</var>;</td></tr><tr><td>GLenum  </td><td><var class="pdparam">pname</var>;</td></tr><tr><td>GLint * </td><td><var class="pdparam">params</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781956"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>shader</code></em></span></dt><dd><p>Specifies the shader object to be
 		    queried.</p></dd><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>Specifies the object parameter. Accepted
 		    symbolic names are
 		    <code class="constant">GL_SHADER_TYPE</code>,
 		    <code class="constant">GL_DELETE_STATUS</code>,
 		    <code class="constant">GL_COMPILE_STATUS</code>,
 		    <code class="constant">GL_INFO_LOG_LENGTH</code>,
-		    <code class="constant">GL_SHADER_SOURCE_LENGTH</code>.</p></dd><dt><span class="term"><em class="parameter"><code>params</code></em></span></dt><dd><p>Returns the requested object parameter.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768450"></a><h2>Description</h2><p><code class="function">glGetShader</code>
+		    <code class="constant">GL_SHADER_SOURCE_LENGTH</code>.</p></dd><dt><span class="term"><em class="parameter"><code>params</code></em></span></dt><dd><p>Returns the requested object parameter.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781903"></a><h2>Description</h2><p><code class="function">glGetShader</code>
 	returns in <em class="parameter"><code>params</code></em>
 	the value of a parameter for a specific shader object. The
 	following parameters are defined:</p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_SHADER_TYPE</code></span></dt><dd><p> <em class="parameter"><code>params</code></em> returns
@@ -36,9 +37,9 @@
 		    termination character. (i.e., the size of the
 		    character buffer required to store the shader
 		    source). If no source code exists, 0 is
-		    returned.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775203"></a><h2>Notes</h2><p><code class="function">glGetShader</code> is available only if the
+		    returned.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775218"></a><h2>Notes</h2><p><code class="function">glGetShader</code> is available only if the
 	GL version is 2.0 or greater.</p><p>If an error is generated, no change is made to the
-	contents of <em class="parameter"><code>params</code></em>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775228"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_VALUE</code> is generated if
+	contents of <em class="parameter"><code>params</code></em>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775246"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_VALUE</code> is generated if
 	<em class="parameter"><code>shader</code></em> is not a value generated by
 	OpenGL.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
 	<em class="parameter"><code>shader</code></em> does not refer to a shader
@@ -48,13 +49,13 @@
 	execution of
 	<span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
 	and the corresponding execution of
-	<span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775294"></a><h2>Associated Gets</h2><p><span class="citerefentry"><span class="refentrytitle">glGetShaderInfoLog</span></span>
+	<span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775317"></a><h2>Associated Gets</h2><p><span class="citerefentry"><span class="refentrytitle">glGetShaderInfoLog</span></span>
 	with argument <em class="parameter"><code>shader</code></em></p><p><span class="citerefentry"><span class="refentrytitle">glGetShaderSource</span></span>
-	with argument <em class="parameter"><code>shader</code></em></p><p><span class="citerefentry"><span class="refentrytitle">glIsShader</span></span></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775329"></a><h2>See Also</h2><p><span class="citerefentry"><span class="refentrytitle">glCompileShader</span></span>,
+	with argument <em class="parameter"><code>shader</code></em></p><p><span class="citerefentry"><span class="refentrytitle">glIsShader</span></span></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775353"></a><h2>See Also</h2><p><span class="citerefentry"><span class="refentrytitle">glCompileShader</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glCreateShader</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glDeleteShader</span></span>,
 	<span class="citerefentry"><span class="refentrytitle">glGetProgram</span></span>,
-	<span class="citerefentry"><span class="refentrytitle">glShaderSource</span></span></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775359"></a><h2>Copyright</h2><p>
+	<span class="citerefentry"><span class="refentrytitle">glShaderSource</span></span></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775384"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2003-2005 3Dlabs Inc. Ltd. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.

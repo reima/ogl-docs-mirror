@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluBuild3DMipmapLevels</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluBuild3DMipmapLevels"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluBuild3DMipmapLevels — builds a subset of three-dimensional mipmap levels</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> GLint <b class="fsfunc">gluBuild3DMipmapLevels</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">internalFormat</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">width</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">height</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">depth</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">format</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">level</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">base</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">max</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">data</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">internalFormat</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">width</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">height</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">depth</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">format</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">level</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">base</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">max</var>;</td></tr><tr><td> const void *  </td><td><var class="pdparam">data</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768454"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluBuild3DMipmapLevels</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluBuild3DMipmapLevels"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluBuild3DMipmapLevels — builds a subset of three-dimensional mipmap levels</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> GLint <b class="fsfunc">gluBuild3DMipmapLevels</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">internalFormat</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">width</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">height</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">depth</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">format</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">level</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">base</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">max</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">data</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">internalFormat</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">width</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">height</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">depth</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">format</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">level</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">base</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">max</var>;</td></tr><tr><td> const void *  </td><td><var class="pdparam">data</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781905"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the target texture.  Must be <code class="constant">GLU_TEXTURE_3D</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>internalFormat</code></em></span></dt><dd><p>
                     Requests the internal storage format of the texture image.  The most
@@ -100,7 +101,7 @@
                     Specifies the maximum mipmap level to pass to <span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>data</code></em></span></dt><dd><p>
                     Specifies a pointer to the image data in memory.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775509"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775543"></a><h2>Description</h2><p>
             <code class="function">gluBuild3DMipmapLevels</code> builds a subset of prefiltered three-dimensional texture maps of
             decreasing resolutions called a mipmap. This is used for the antialiasing of
             texture mapped primitives.
@@ -258,7 +259,7 @@
             acceptable values for <em class="parameter"><code>format</code></em> parameter. See the <span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span> 
             reference page for a description of the acceptable values 
             for <em class="parameter"><code>type</code></em> parameter.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711374"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711546"></a><h2>Notes</h2><p>
             <code class="function">gluBuild3DMipmapLevels</code> is only available if the GLU version is 1.3 or greater.
         </p><p>
             Formats <code class="constant">GLU_BGR</code>, and <code class="constant">GLU_BGRA</code>, and types 
@@ -275,7 +276,7 @@
             <code class="constant">GLU_UNSIGNED_INT_10_10_10_2</code>, and
             <code class="constant">GLU_UNSIGNED_INT_2_10_10_10_REV</code> are only available if the GL version 
             is 1.2 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711451"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711631"></a><h2>Errors</h2><p>
             <code class="constant">GLU_INVALID_VALUE</code> is returned if <em class="parameter"><code>level</code></em> &gt; <em class="parameter"><code>base</code></em>, <em class="parameter"><code>base</code></em> &lt; 0,
             <em class="parameter"><code>max</code></em> &lt; <em class="parameter"><code>base</code></em>, or <em class="parameter"><code>max</code></em> is &gt; the highest mipmap level for <em class="parameter"><code>data</code></em>.
         </p><p>
@@ -301,7 +302,7 @@
         </p><p>
             <code class="constant">GLU_INVALID_OPERATION</code> is returned if <em class="parameter"><code>type</code></em> is <code class="constant">GLU_UNSIGNED_INT_10_10_10_2</code> or <code class="constant">GLU_UNSIGNED_INT_2_10_10_10_REV</code>
             and <em class="parameter"><code>format</code></em> is neither <code class="constant">GLU_RGBA</code> nor <code class="constant">GLU_BGRA</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711761"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711356"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">gluBuild1DMipmapLevels</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluBuild1DMipmaps</span></span>,
             <span class="citerefentry"><span class="refentrytitle">gluBuild2DMipmapLevels</span></span>,
@@ -314,7 +315,7 @@
             <span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span>, 
             <span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711831"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711429"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

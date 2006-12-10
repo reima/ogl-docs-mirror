@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glMatrixMode</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glMatrixMode"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glMatrixMode — specify which matrix is the current matrix</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glMatrixMode</b>(</code><var class="pdparam">mode</var><code>)</code>;<br /> GLenum <var class="pdparam">mode</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781965"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
+<!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glMatrixMode</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glMatrixMode"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glMatrixMode — specify which matrix is the current matrix</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glMatrixMode</b>(</code><var class="pdparam">mode</var><code>)</code>;<br /> GLenum <var class="pdparam">mode</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781956"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
                     Specifies which matrix stack is the target
                     for subsequent matrix operations.
                     Three values are accepted:
@@ -10,7 +11,7 @@
                     The initial value is <code class="constant">GL_MODELVIEW</code>.
                     Additionally, if the <code class="code">ARB_imaging</code> extension is supported,
                     <code class="constant">GL_COLOR</code> is also accepted.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781879"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781878"></a><h2>Description</h2><p>
             <code class="function">glMatrixMode</code> sets the current matrix mode.
             <em class="parameter"><code>mode</code></em> can assume one of four values:
         </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_MODELVIEW</code></span></dt><dd><p>
@@ -25,22 +26,22 @@
             To find out which matrix stack is currently the target of all matrix
             operations, call <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_MATRIX_MODE</code>. The initial
             value is <code class="constant">GL_MODELVIEW</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768529"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768539"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glMatrixMode</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768572"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768584"></a><h2>Associated Gets</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_MATRIX_MODE</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768590"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768601"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glLoadMatrix</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glLoadTransposeMatrix</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glMultMatrix</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glMultTransposeMatrix</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPopMatrix</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPushMatrix</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775181"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775192"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

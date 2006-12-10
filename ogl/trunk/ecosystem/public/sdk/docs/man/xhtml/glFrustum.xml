@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glFrustum</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glFrustum"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glFrustum — multiply the current matrix by a perspective matrix</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glFrustum</b>(</code></td><td><var class="pdparam">Left</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">Right</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">bottom</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">top</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">nearVal</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">farVal</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLdouble  </td><td><var class="pdparam">Left</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">Right</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">bottom</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">top</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">nearVal</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">farVal</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781867"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>Left</code></em>, </span><span class="term"><em class="parameter"><code>Right</code></em></span></dt><dd><p>
+<!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glFrustum</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glFrustum"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glFrustum — multiply the current matrix by a perspective matrix</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glFrustum</b>(</code></td><td><var class="pdparam">Left</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">Right</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">bottom</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">top</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">nearVal</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">farVal</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLdouble  </td><td><var class="pdparam">Left</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">Right</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">bottom</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">top</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">nearVal</var>;</td></tr><tr><td> GLdouble  </td><td><var class="pdparam">farVal</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781861"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>Left</code></em>, </span><span class="term"><em class="parameter"><code>Right</code></em></span></dt><dd><p>
                     Specify the coordinates for the left and right vertical clipping planes.
                 </p></dd><dt><span class="term"><em class="parameter"><code>bottom</code></em>, </span><span class="term"><em class="parameter"><code>top</code></em></span></dt><dd><p>
                     Specify the coordinates for the bottom and top horizontal clipping planes.
                 </p></dd><dt><span class="term"><em class="parameter"><code>nearVal</code></em>, </span><span class="term"><em class="parameter"><code>farVal</code></em></span></dt><dd><p>
                     Specify the distances to the near and far depth clipping planes.
                     Both distances must be positive.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768494"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768495"></a><h2>Description</h2><p>
             <code class="function">glFrustum</code> describes a perspective matrix that produces a perspective projection.
             The current matrix (see <span class="citerefentry"><span class="refentrytitle">glMatrixMode</span></span>) is multiplied by this matrix
             and the result replaces the current matrix, as if
@@ -232,7 +233,7 @@
         </p><p>
             Use <span class="citerefentry"><span class="refentrytitle">glPushMatrix</span></span> and <span class="citerefentry"><span class="refentrytitle">glPopMatrix</span></span> to save and restore
             the current matrix stack.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775359"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775370"></a><h2>Notes</h2><p>
             Depth buffer precision is affected by the values specified for
             <em class="parameter"><code>nearVal</code></em> and <em class="parameter"><code>farVal</code></em>.
             The greater the ratio of <em class="parameter"><code>farVal</code></em> to <em class="parameter"><code>nearVal</code></em> is,
@@ -270,14 +271,14 @@
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">r</mml:mi></mml:math>
             approaches infinity as <em class="parameter"><code>nearVal</code></em> approaches 0,
             <em class="parameter"><code>nearVal</code></em> must never be set to 0.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775561"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775578"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>nearVal</code></em> or <em class="parameter"><code>farVal</code></em> is not
             positive, or if <em class="parameter"><code>Left</code></em> = <em class="parameter"><code>Right</code></em>, or <em class="parameter"><code>bottom</code></em> = <em class="parameter"><code>top</code></em>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glFrustum</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775495"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775518"></a><h2>Associated Gets</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_MATRIX_MODE</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_MODELVIEW_MATRIX</code>
@@ -287,13 +288,13 @@
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_TEXTURE_MATRIX</code>
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_COLOR_MATRIX</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711378"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711321"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glOrtho</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glMatrixMode</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glMultMatrix</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glPushMatrix</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glViewport</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711412"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711356"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

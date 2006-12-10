@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glLogicOp</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glLogicOp"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glLogicOp — specify a logical pixel operation for color index rendering</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glLogicOp</b>(</code><var class="pdparam">opcode</var><code>)</code>;<br /> GLenum <var class="pdparam">opcode</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781963"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>opcode</code></em></span></dt><dd><p>
+<!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glLogicOp</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glLogicOp"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glLogicOp — specify a logical pixel operation for color index rendering</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glLogicOp</b>(</code><var class="pdparam">opcode</var><code>)</code>;<br /> GLenum <var class="pdparam">opcode</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781955"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>opcode</code></em></span></dt><dd><p>
                     Specifies a symbolic constant that selects a logical operation.
                     The following symbols are accepted:
                     <code class="constant">GL_CLEAR</code>,
@@ -19,7 +20,7 @@
                     <code class="constant">GL_AND_INVERTED</code>,
                     <code class="constant">GL_OR_REVERSE</code>, and
                     <code class="constant">GL_OR_INVERTED</code>. The initial value is <code class="constant">GL_COPY</code>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768462"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768464"></a><h2>Description</h2><p>
             <code class="function">glLogicOp</code> specifies a logical operation that,
             when enabled,
             is applied between the incoming color index or RGBA color
@@ -108,7 +109,7 @@
             As these bitwise operators suggest,
             the logical operation is applied independently to each bit pair of the
             source and destination indices or colors.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775432"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775461"></a><h2>Notes</h2><p>
             Color index logical operations are always supported. RGBA logical
             operations are supported only if the GL version is 1.1 or greater.
         </p><p>
@@ -116,23 +117,23 @@
             logical operations are performed separately for each enabled buffer,
             using for the destination value the contents of that buffer
             (see <span class="citerefentry"><span class="refentrytitle">glDrawBuffer</span></span>).
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775457"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775490"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>opcode</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glLogicOp</code>
             is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
             and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775499"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775532"></a><h2>Associated Gets</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_LOGIC_OP_MODE</code>.
         </p><p>
             <span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span> with argument <code class="constant">GL_COLOR_LOGIC_OP</code> or <code class="constant">GL_INDEX_LOGIC_OP</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775533"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775566"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glAlphaFunc</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glDrawBuffer</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glEnable</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glStencilOp</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775566"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775600"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

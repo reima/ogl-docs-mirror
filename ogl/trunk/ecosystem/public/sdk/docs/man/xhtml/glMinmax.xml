@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glMinmax</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glMinmax"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glMinmax — define minmax table</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glMinmax</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">internalformat</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">sink</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">internalformat</var>;</td></tr><tr><td> GLboolean  </td><td><var class="pdparam">sink</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781978"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glMinmax</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glMinmax"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glMinmax — define minmax table</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glMinmax</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">internalformat</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">sink</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">internalformat</var>;</td></tr><tr><td> GLboolean  </td><td><var class="pdparam">sink</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781970"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     The minmax table whose parameters are to be set.
                     Must be
                     <code class="constant">GL_MINMAX</code>.
@@ -45,7 +46,7 @@
                     process and no drawing or texture loading will take place.
                     If <code class="constant">GL_FALSE</code>, pixels will proceed to the final conversion process after
                     minmax.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768594"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768606"></a><h2>Description</h2><p>
             When <code class="constant">GL_MINMAX</code> is enabled, the RGBA components of incoming pixels are
             compared to the minimum and maximum values for each component, which are
             stored in the two-element minmax table.
@@ -75,10 +76,10 @@
             no further processing of the pixels takes place, and no drawing,
             texture loading, or pixel readback will result.
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775232"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775260"></a><h2>Notes</h2><p>
             <code class="function">glMinmax</code> is present only if <code class="code">ARB_imaging</code> is returned when <span class="citerefentry"><span class="refentrytitle">glGetString</span></span>
             is called with an argument of <code class="constant">GL_EXTENSIONS</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775260"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775288"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not one of the allowable
             values.
         </p><p>
@@ -88,12 +89,12 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glMinmax</code> is executed
             between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding
             execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775318"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775350"></a><h2>Associated Gets</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetMinmaxParameter</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775331"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775363"></a><h2>See Also</h2><p>
             <span class="citerefentry"><span class="refentrytitle">glGetMinmax</span></span>,
             <span class="citerefentry"><span class="refentrytitle">glResetMinmax</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775350"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775382"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

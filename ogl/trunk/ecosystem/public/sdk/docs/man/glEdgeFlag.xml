@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEdgeFlag</function></funcdef>
-                <paramdef> GLboolean <parameter>flag</parameter></paramdef>
+                <funcdef>void <function>glEdgeFlag</function></funcdef>
+                <paramdef>GLboolean <parameter>flag</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -40,8 +40,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEdgeFlagv</function></funcdef>
-                <paramdef> const GLboolean * <parameter>flag</parameter></paramdef>
+                <funcdef>void <function>glEdgeFlagv</function></funcdef>
+                <paramdef>const GLboolean * <parameter>flag</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

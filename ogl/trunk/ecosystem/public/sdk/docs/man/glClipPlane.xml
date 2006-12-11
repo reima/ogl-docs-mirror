@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glClipPlane</function></funcdef>
-                <paramdef> GLenum <parameter>plane</parameter></paramdef>
-                <paramdef> const GLdouble * <parameter>equation</parameter></paramdef>
+                <funcdef>void <function>glClipPlane</function></funcdef>
+                <paramdef>GLenum <parameter>plane</parameter></paramdef>
+                <paramdef>const GLdouble * <parameter>equation</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

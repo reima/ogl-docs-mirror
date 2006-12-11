@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLboolean <function>glIsEnabled</function></funcdef>
-                <paramdef> GLenum <parameter>cap</parameter></paramdef>
+                <funcdef>GLboolean <function>glIsEnabled</function></funcdef>
+                <paramdef>GLenum <parameter>cap</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

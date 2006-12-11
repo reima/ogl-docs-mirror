@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glSampleCoverage</function></funcdef>
-                <paramdef> GLclampf <parameter>value</parameter></paramdef>
-                <paramdef> GLboolean <parameter>invert</parameter></paramdef>
+                <funcdef>void <function>glSampleCoverage</function></funcdef>
+                <paramdef>GLclampf <parameter>value</parameter></paramdef>
+                <paramdef>GLboolean <parameter>invert</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

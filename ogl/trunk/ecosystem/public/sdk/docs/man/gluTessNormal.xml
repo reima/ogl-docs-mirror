@@ -19,11 +19,11 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluTessNormal</function></funcdef>
-                <paramdef> GLUtesselator* <parameter>tess</parameter></paramdef>
-                <paramdef> GLdouble <parameter>valueX</parameter></paramdef>
-                <paramdef> GLdouble <parameter>valueY</parameter></paramdef>
-                <paramdef> GLdouble <parameter>valueZ</parameter></paramdef>
+                <funcdef>void <function>gluTessNormal</function></funcdef>
+                <paramdef>GLUtesselator* <parameter>tess</parameter></paramdef>
+                <paramdef>GLdouble <parameter>valueX</parameter></paramdef>
+                <paramdef>GLdouble <parameter>valueY</parameter></paramdef>
+                <paramdef>GLdouble <parameter>valueZ</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

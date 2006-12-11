@@ -19,10 +19,10 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glNormalPointer</function></funcdef>
-                <paramdef> GLenum <parameter>type</parameter></paramdef>
-                <paramdef> GLsizei <parameter>stride</parameter></paramdef>
-                <paramdef> const GLvoid * <parameter>pointer</parameter></paramdef>
+                <funcdef>void <function>glNormalPointer</function></funcdef>
+                <paramdef>GLenum <parameter>type</parameter></paramdef>
+                <paramdef>GLsizei <parameter>stride</parameter></paramdef>
+                <paramdef>const GLvoid * <parameter>pointer</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

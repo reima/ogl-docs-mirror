@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glClearIndex</function></funcdef>
-                <paramdef> GLfloat <parameter>c</parameter></paramdef>
+                <funcdef>void <function>glClearIndex</function></funcdef>
+                <paramdef>GLfloat <parameter>c</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

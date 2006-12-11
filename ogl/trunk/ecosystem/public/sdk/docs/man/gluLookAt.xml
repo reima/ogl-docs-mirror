@@ -19,16 +19,16 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluLookAt</function></funcdef>
-                <paramdef> GLdouble <parameter>eyeX</parameter></paramdef>
-                <paramdef> GLdouble <parameter>eyeY</parameter></paramdef>
-                <paramdef> GLdouble <parameter>eyeZ</parameter></paramdef>
-                <paramdef> GLdouble <parameter>centerX</parameter></paramdef>
-                <paramdef> GLdouble <parameter>centerY</parameter></paramdef>
-                <paramdef> GLdouble <parameter>centerZ</parameter></paramdef>
-                <paramdef> GLdouble <parameter>upX</parameter></paramdef>
-                <paramdef> GLdouble <parameter>upY</parameter></paramdef>
-                <paramdef> GLdouble <parameter>upZ</parameter></paramdef>
+                <funcdef>void <function>gluLookAt</function></funcdef>
+                <paramdef>GLdouble <parameter>eyeX</parameter></paramdef>
+                <paramdef>GLdouble <parameter>eyeY</parameter></paramdef>
+                <paramdef>GLdouble <parameter>eyeZ</parameter></paramdef>
+                <paramdef>GLdouble <parameter>centerX</parameter></paramdef>
+                <paramdef>GLdouble <parameter>centerY</parameter></paramdef>
+                <paramdef>GLdouble <parameter>centerZ</parameter></paramdef>
+                <paramdef>GLdouble <parameter>upX</parameter></paramdef>
+                <paramdef>GLdouble <parameter>upY</parameter></paramdef>
+                <paramdef>GLdouble <parameter>upZ</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

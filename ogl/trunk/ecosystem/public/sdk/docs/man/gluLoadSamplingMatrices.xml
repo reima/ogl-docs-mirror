@@ -19,11 +19,11 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluLoadSamplingMatrices</function></funcdef>
-                <paramdef> GLUnurbs* <parameter>nurb</parameter></paramdef>
-                <paramdef> const GLfloat * <parameter>model</parameter></paramdef>
-                <paramdef> const GLfloat * <parameter>perspective</parameter></paramdef>
-                <paramdef> const GLint * <parameter>view</parameter></paramdef>
+                <funcdef>void <function>gluLoadSamplingMatrices</function></funcdef>
+                <paramdef>GLUnurbs* <parameter>nurb</parameter></paramdef>
+                <paramdef>const GLfloat * <parameter>model</parameter></paramdef>
+                <paramdef>const GLfloat * <parameter>perspective</parameter></paramdef>
+                <paramdef>const GLint * <parameter>view</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

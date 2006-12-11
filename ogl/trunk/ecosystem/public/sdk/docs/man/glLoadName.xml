@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glLoadName</function></funcdef>
-                <paramdef> GLuint <parameter>name</parameter></paramdef>
+                <funcdef>void <function>glLoadName</function></funcdef>
+                <paramdef>GLuint <parameter>name</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

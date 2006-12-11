@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glNewList</function></funcdef>
-                <paramdef> GLuint <parameter>list</parameter></paramdef>
-                <paramdef> GLenum <parameter>mode</parameter></paramdef>
+                <funcdef>void <function>glNewList</function></funcdef>
+                <paramdef>GLuint <parameter>list</parameter></paramdef>
+                <paramdef>GLenum <parameter>mode</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -51,8 +51,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEndList</function></funcdef>
-                <paramdef>  <parameter>void</parameter></paramdef>
+                <funcdef>void <function>glEndList</function></funcdef>
+                <paramdef> <parameter>void</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

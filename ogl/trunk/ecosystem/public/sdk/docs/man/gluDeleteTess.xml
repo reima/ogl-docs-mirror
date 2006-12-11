@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluDeleteTess</function></funcdef>
-                <paramdef> GLUtesselator* <parameter>tess</parameter></paramdef>
+                <funcdef>void <function>gluDeleteTess</function></funcdef>
+                <paramdef>GLUtesselator* <parameter>tess</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

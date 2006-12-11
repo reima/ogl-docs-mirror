@@ -19,14 +19,14 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluNurbsCurve</function></funcdef>
-                <paramdef> GLUnurbs* <parameter>nurb</parameter></paramdef>
-                <paramdef> GLint <parameter>knotCount</parameter></paramdef>
-                <paramdef> GLfloat * <parameter>knots</parameter></paramdef>
-                <paramdef> GLint <parameter>stride</parameter></paramdef>
-                <paramdef> GLfloat * <parameter>control</parameter></paramdef>
-                <paramdef> GLint <parameter>order</parameter></paramdef>
-                <paramdef> GLenum <parameter>type</parameter></paramdef>
+                <funcdef>void <function>gluNurbsCurve</function></funcdef>
+                <paramdef>GLUnurbs* <parameter>nurb</parameter></paramdef>
+                <paramdef>GLint <parameter>knotCount</parameter></paramdef>
+                <paramdef>GLfloat * <parameter>knots</parameter></paramdef>
+                <paramdef>GLint <parameter>stride</parameter></paramdef>
+                <paramdef>GLfloat * <parameter>control</parameter></paramdef>
+                <paramdef>GLint <parameter>order</parameter></paramdef>
+                <paramdef>GLenum <parameter>type</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

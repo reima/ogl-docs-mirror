@@ -19,23 +19,23 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glGetPixelMapfv</function></funcdef>
-                <paramdef> GLenum <parameter>map</parameter></paramdef>
-                <paramdef> GLfloat * <parameter>data</parameter></paramdef>
+                <funcdef>void <function>glGetPixelMapfv</function></funcdef>
+                <paramdef>GLenum <parameter>map</parameter></paramdef>
+                <paramdef>GLfloat * <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glGetPixelMapuiv</function></funcdef>
-                <paramdef> GLenum <parameter>map</parameter></paramdef>
-                <paramdef> GLuint * <parameter>data</parameter></paramdef>
+                <funcdef>void <function>glGetPixelMapuiv</function></funcdef>
+                <paramdef>GLenum <parameter>map</parameter></paramdef>
+                <paramdef>GLuint * <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glGetPixelMapusv</function></funcdef>
-                <paramdef> GLenum <parameter>map</parameter></paramdef>
-                <paramdef> GLushort * <parameter>data</parameter></paramdef>
+                <funcdef>void <function>glGetPixelMapusv</function></funcdef>
+                <paramdef>GLenum <parameter>map</parameter></paramdef>
+                <paramdef>GLushort * <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

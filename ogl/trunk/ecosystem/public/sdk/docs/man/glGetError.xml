@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLenum <function>glGetError</function></funcdef>
-                <paramdef>  <parameter>void</parameter></paramdef>
+                <funcdef>GLenum <function>glGetError</function></funcdef>
+                <paramdef> <parameter>void</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

@@ -19,11 +19,11 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glDrawElements</function></funcdef>
-                <paramdef> GLenum <parameter>mode</parameter></paramdef>
-                <paramdef> GLsizei <parameter>count</parameter></paramdef>
-                <paramdef> GLenum <parameter>type</parameter></paramdef>
-                <paramdef> const GLvoid * <parameter>indices</parameter></paramdef>
+                <funcdef>void <function>glDrawElements</function></funcdef>
+                <paramdef>GLenum <parameter>mode</parameter></paramdef>
+                <paramdef>GLsizei <parameter>count</parameter></paramdef>
+                <paramdef>GLenum <parameter>type</parameter></paramdef>
+                <paramdef>const GLvoid * <parameter>indices</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

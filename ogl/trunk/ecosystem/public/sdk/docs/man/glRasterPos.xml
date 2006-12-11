@@ -19,98 +19,98 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos2s</function></funcdef>
-                <paramdef> GLshort <parameter>x</parameter></paramdef>
-                <paramdef> GLshort <parameter>y</parameter></paramdef>
+                <funcdef>void <function>glRasterPos2s</function></funcdef>
+                <paramdef>GLshort <parameter>x</parameter></paramdef>
+                <paramdef>GLshort <parameter>y</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos2i</function></funcdef>
-                <paramdef> GLint <parameter>x</parameter></paramdef>
-                <paramdef> GLint <parameter>y</parameter></paramdef>
+                <funcdef>void <function>glRasterPos2i</function></funcdef>
+                <paramdef>GLint <parameter>x</parameter></paramdef>
+                <paramdef>GLint <parameter>y</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos2f</function></funcdef>
-                <paramdef> GLfloat <parameter>x</parameter></paramdef>
-                <paramdef> GLfloat <parameter>y</parameter></paramdef>
+                <funcdef>void <function>glRasterPos2f</function></funcdef>
+                <paramdef>GLfloat <parameter>x</parameter></paramdef>
+                <paramdef>GLfloat <parameter>y</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos2d</function></funcdef>
-                <paramdef> GLdouble <parameter>x</parameter></paramdef>
-                <paramdef> GLdouble <parameter>y</parameter></paramdef>
+                <funcdef>void <function>glRasterPos2d</function></funcdef>
+                <paramdef>GLdouble <parameter>x</parameter></paramdef>
+                <paramdef>GLdouble <parameter>y</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos3s</function></funcdef>
-                <paramdef> GLshort <parameter>x</parameter></paramdef>
-                <paramdef> GLshort <parameter>y</parameter></paramdef>
-                <paramdef> GLshort <parameter>z</parameter></paramdef>
+                <funcdef>void <function>glRasterPos3s</function></funcdef>
+                <paramdef>GLshort <parameter>x</parameter></paramdef>
+                <paramdef>GLshort <parameter>y</parameter></paramdef>
+                <paramdef>GLshort <parameter>z</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos3i</function></funcdef>
-                <paramdef> GLint <parameter>x</parameter></paramdef>
-                <paramdef> GLint <parameter>y</parameter></paramdef>
-                <paramdef> GLint <parameter>z</parameter></paramdef>
+                <funcdef>void <function>glRasterPos3i</function></funcdef>
+                <paramdef>GLint <parameter>x</parameter></paramdef>
+                <paramdef>GLint <parameter>y</parameter></paramdef>
+                <paramdef>GLint <parameter>z</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos3f</function></funcdef>
-                <paramdef> GLfloat <parameter>x</parameter></paramdef>
-                <paramdef> GLfloat <parameter>y</parameter></paramdef>
-                <paramdef> GLfloat <parameter>z</parameter></paramdef>
+                <funcdef>void <function>glRasterPos3f</function></funcdef>
+                <paramdef>GLfloat <parameter>x</parameter></paramdef>
+                <paramdef>GLfloat <parameter>y</parameter></paramdef>
+                <paramdef>GLfloat <parameter>z</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos3d</function></funcdef>
-                <paramdef> GLdouble <parameter>x</parameter></paramdef>
-                <paramdef> GLdouble <parameter>y</parameter></paramdef>
-                <paramdef> GLdouble <parameter>z</parameter></paramdef>
+                <funcdef>void <function>glRasterPos3d</function></funcdef>
+                <paramdef>GLdouble <parameter>x</parameter></paramdef>
+                <paramdef>GLdouble <parameter>y</parameter></paramdef>
+                <paramdef>GLdouble <parameter>z</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos4s</function></funcdef>
-                <paramdef> GLshort <parameter>x</parameter></paramdef>
-                <paramdef> GLshort <parameter>y</parameter></paramdef>
-                <paramdef> GLshort <parameter>z</parameter></paramdef>
-                <paramdef> GLshort <parameter>w</parameter></paramdef>
+                <funcdef>void <function>glRasterPos4s</function></funcdef>
+                <paramdef>GLshort <parameter>x</parameter></paramdef>
+                <paramdef>GLshort <parameter>y</parameter></paramdef>
+                <paramdef>GLshort <parameter>z</parameter></paramdef>
+                <paramdef>GLshort <parameter>w</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos4i</function></funcdef>
-                <paramdef> GLint <parameter>x</parameter></paramdef>
-                <paramdef> GLint <parameter>y</parameter></paramdef>
-                <paramdef> GLint <parameter>z</parameter></paramdef>
-                <paramdef> GLint <parameter>w</parameter></paramdef>
+                <funcdef>void <function>glRasterPos4i</function></funcdef>
+                <paramdef>GLint <parameter>x</parameter></paramdef>
+                <paramdef>GLint <parameter>y</parameter></paramdef>
+                <paramdef>GLint <parameter>z</parameter></paramdef>
+                <paramdef>GLint <parameter>w</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos4f</function></funcdef>
-                <paramdef> GLfloat <parameter>x</parameter></paramdef>
-                <paramdef> GLfloat <parameter>y</parameter></paramdef>
-                <paramdef> GLfloat <parameter>z</parameter></paramdef>
-                <paramdef> GLfloat <parameter>w</parameter></paramdef>
+                <funcdef>void <function>glRasterPos4f</function></funcdef>
+                <paramdef>GLfloat <parameter>x</parameter></paramdef>
+                <paramdef>GLfloat <parameter>y</parameter></paramdef>
+                <paramdef>GLfloat <parameter>z</parameter></paramdef>
+                <paramdef>GLfloat <parameter>w</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos4d</function></funcdef>
-                <paramdef> GLdouble <parameter>x</parameter></paramdef>
-                <paramdef> GLdouble <parameter>y</parameter></paramdef>
-                <paramdef> GLdouble <parameter>z</parameter></paramdef>
-                <paramdef> GLdouble <parameter>w</parameter></paramdef>
+                <funcdef>void <function>glRasterPos4d</function></funcdef>
+                <paramdef>GLdouble <parameter>x</parameter></paramdef>
+                <paramdef>GLdouble <parameter>y</parameter></paramdef>
+                <paramdef>GLdouble <parameter>z</parameter></paramdef>
+                <paramdef>GLdouble <parameter>w</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -142,74 +142,74 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos2sv</function></funcdef>
-                <paramdef> const GLshort * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glRasterPos2sv</function></funcdef>
+                <paramdef>const GLshort * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos2iv</function></funcdef>
-                <paramdef> const GLint * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glRasterPos2iv</function></funcdef>
+                <paramdef>const GLint * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos2fv</function></funcdef>
-                <paramdef> const GLfloat * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glRasterPos2fv</function></funcdef>
+                <paramdef>const GLfloat * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos2dv</function></funcdef>
-                <paramdef> const GLdouble * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glRasterPos2dv</function></funcdef>
+                <paramdef>const GLdouble * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos3sv</function></funcdef>
-                <paramdef> const GLshort * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glRasterPos3sv</function></funcdef>
+                <paramdef>const GLshort * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos3iv</function></funcdef>
-                <paramdef> const GLint * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glRasterPos3iv</function></funcdef>
+                <paramdef>const GLint * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos3fv</function></funcdef>
-                <paramdef> const GLfloat * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glRasterPos3fv</function></funcdef>
+                <paramdef>const GLfloat * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos3dv</function></funcdef>
-                <paramdef> const GLdouble * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glRasterPos3dv</function></funcdef>
+                <paramdef>const GLdouble * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos4sv</function></funcdef>
-                <paramdef> const GLshort * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glRasterPos4sv</function></funcdef>
+                <paramdef>const GLshort * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos4iv</function></funcdef>
-                <paramdef> const GLint * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glRasterPos4iv</function></funcdef>
+                <paramdef>const GLint * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos4fv</function></funcdef>
-                <paramdef> const GLfloat * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glRasterPos4fv</function></funcdef>
+                <paramdef>const GLfloat * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRasterPos4dv</function></funcdef>
-                <paramdef> const GLdouble * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glRasterPos4dv</function></funcdef>
+                <paramdef>const GLdouble * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

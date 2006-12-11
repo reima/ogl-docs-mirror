@@ -19,40 +19,40 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMapGrid1d</function></funcdef>
-                <paramdef> GLint <parameter>un</parameter></paramdef>
-                <paramdef> GLdouble <parameter>u1</parameter></paramdef>
-                <paramdef> GLdouble <parameter>u2</parameter></paramdef>
+                <funcdef>void <function>glMapGrid1d</function></funcdef>
+                <paramdef>GLint <parameter>un</parameter></paramdef>
+                <paramdef>GLdouble <parameter>u1</parameter></paramdef>
+                <paramdef>GLdouble <parameter>u2</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMapGrid1f</function></funcdef>
-                <paramdef> GLint <parameter>un</parameter></paramdef>
-                <paramdef> GLfloat <parameter>u1</parameter></paramdef>
-                <paramdef> GLfloat <parameter>u2</parameter></paramdef>
+                <funcdef>void <function>glMapGrid1f</function></funcdef>
+                <paramdef>GLint <parameter>un</parameter></paramdef>
+                <paramdef>GLfloat <parameter>u1</parameter></paramdef>
+                <paramdef>GLfloat <parameter>u2</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMapGrid2d</function></funcdef>
-                <paramdef> GLint <parameter>un</parameter></paramdef>
-                <paramdef> GLdouble <parameter>u1</parameter></paramdef>
-                <paramdef> GLdouble <parameter>u2</parameter></paramdef>
-                <paramdef> GLint <parameter>vn</parameter></paramdef>
-                <paramdef> GLdouble <parameter>v1</parameter></paramdef>
-                <paramdef> GLdouble <parameter>v2</parameter></paramdef>
+                <funcdef>void <function>glMapGrid2d</function></funcdef>
+                <paramdef>GLint <parameter>un</parameter></paramdef>
+                <paramdef>GLdouble <parameter>u1</parameter></paramdef>
+                <paramdef>GLdouble <parameter>u2</parameter></paramdef>
+                <paramdef>GLint <parameter>vn</parameter></paramdef>
+                <paramdef>GLdouble <parameter>v1</parameter></paramdef>
+                <paramdef>GLdouble <parameter>v2</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMapGrid2f</function></funcdef>
-                <paramdef> GLint <parameter>un</parameter></paramdef>
-                <paramdef> GLfloat <parameter>u1</parameter></paramdef>
-                <paramdef> GLfloat <parameter>u2</parameter></paramdef>
-                <paramdef> GLint <parameter>vn</parameter></paramdef>
-                <paramdef> GLfloat <parameter>v1</parameter></paramdef>
-                <paramdef> GLfloat <parameter>v2</parameter></paramdef>
+                <funcdef>void <function>glMapGrid2f</function></funcdef>
+                <paramdef>GLint <parameter>un</parameter></paramdef>
+                <paramdef>GLfloat <parameter>u1</parameter></paramdef>
+                <paramdef>GLfloat <parameter>u2</parameter></paramdef>
+                <paramdef>GLint <parameter>vn</parameter></paramdef>
+                <paramdef>GLfloat <parameter>v1</parameter></paramdef>
+                <paramdef>GLfloat <parameter>v2</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

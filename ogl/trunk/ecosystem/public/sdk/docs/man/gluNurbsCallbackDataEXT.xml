@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluNurbsCallbackDataEXT</function></funcdef>
-                <paramdef> GLUnurbs* <parameter>nurb</parameter></paramdef>
-                <paramdef> GLvoid* <parameter>userData</parameter></paramdef>
+                <funcdef>void <function>gluNurbsCallbackDataEXT</function></funcdef>
+                <paramdef>GLUnurbs* <parameter>nurb</parameter></paramdef>
+                <paramdef>GLvoid* <parameter>userData</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

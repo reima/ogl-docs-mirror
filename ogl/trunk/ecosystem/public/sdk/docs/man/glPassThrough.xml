@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPassThrough</function></funcdef>
-                <paramdef> GLfloat <parameter>token</parameter></paramdef>
+                <funcdef>void <function>glPassThrough</function></funcdef>
+                <paramdef>GLfloat <parameter>token</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

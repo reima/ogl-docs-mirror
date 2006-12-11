@@ -19,38 +19,38 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRectd</function></funcdef>
-                <paramdef> GLdouble <parameter>x1</parameter></paramdef>
-                <paramdef> GLdouble <parameter>y1</parameter></paramdef>
-                <paramdef> GLdouble <parameter>x2</parameter></paramdef>
-                <paramdef> GLdouble <parameter>y2</parameter></paramdef>
+                <funcdef>void <function>glRectd</function></funcdef>
+                <paramdef>GLdouble <parameter>x1</parameter></paramdef>
+                <paramdef>GLdouble <parameter>y1</parameter></paramdef>
+                <paramdef>GLdouble <parameter>x2</parameter></paramdef>
+                <paramdef>GLdouble <parameter>y2</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRectf</function></funcdef>
-                <paramdef> GLfloat <parameter>x1</parameter></paramdef>
-                <paramdef> GLfloat <parameter>y1</parameter></paramdef>
-                <paramdef> GLfloat <parameter>x2</parameter></paramdef>
-                <paramdef> GLfloat <parameter>y2</parameter></paramdef>
+                <funcdef>void <function>glRectf</function></funcdef>
+                <paramdef>GLfloat <parameter>x1</parameter></paramdef>
+                <paramdef>GLfloat <parameter>y1</parameter></paramdef>
+                <paramdef>GLfloat <parameter>x2</parameter></paramdef>
+                <paramdef>GLfloat <parameter>y2</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRecti</function></funcdef>
-                <paramdef> GLint <parameter>x1</parameter></paramdef>
-                <paramdef> GLint <parameter>y1</parameter></paramdef>
-                <paramdef> GLint <parameter>x2</parameter></paramdef>
-                <paramdef> GLint <parameter>y2</parameter></paramdef>
+                <funcdef>void <function>glRecti</function></funcdef>
+                <paramdef>GLint <parameter>x1</parameter></paramdef>
+                <paramdef>GLint <parameter>y1</parameter></paramdef>
+                <paramdef>GLint <parameter>x2</parameter></paramdef>
+                <paramdef>GLint <parameter>y2</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRects</function></funcdef>
-                <paramdef> GLshort <parameter>x1</parameter></paramdef>
-                <paramdef> GLshort <parameter>y1</parameter></paramdef>
-                <paramdef> GLshort <parameter>x2</parameter></paramdef>
-                <paramdef> GLshort <parameter>y2</parameter></paramdef>
+                <funcdef>void <function>glRects</function></funcdef>
+                <paramdef>GLshort <parameter>x1</parameter></paramdef>
+                <paramdef>GLshort <parameter>y1</parameter></paramdef>
+                <paramdef>GLshort <parameter>x2</parameter></paramdef>
+                <paramdef>GLshort <parameter>y2</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -79,30 +79,30 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRectdv</function></funcdef>
-                <paramdef> const GLdouble * <parameter>v1</parameter></paramdef>
-                <paramdef> const GLdouble * <parameter>v2</parameter></paramdef>
+                <funcdef>void <function>glRectdv</function></funcdef>
+                <paramdef>const GLdouble * <parameter>v1</parameter></paramdef>
+                <paramdef>const GLdouble * <parameter>v2</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRectfv</function></funcdef>
-                <paramdef> const GLfloat * <parameter>v1</parameter></paramdef>
-                <paramdef> const GLfloat * <parameter>v2</parameter></paramdef>
+                <funcdef>void <function>glRectfv</function></funcdef>
+                <paramdef>const GLfloat * <parameter>v1</parameter></paramdef>
+                <paramdef>const GLfloat * <parameter>v2</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRectiv</function></funcdef>
-                <paramdef> const GLint * <parameter>v1</parameter></paramdef>
-                <paramdef> const GLint * <parameter>v2</parameter></paramdef>
+                <funcdef>void <function>glRectiv</function></funcdef>
+                <paramdef>const GLint * <parameter>v1</parameter></paramdef>
+                <paramdef>const GLint * <parameter>v2</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRectsv</function></funcdef>
-                <paramdef> const GLshort * <parameter>v1</parameter></paramdef>
-                <paramdef> const GLshort * <parameter>v2</parameter></paramdef>
+                <funcdef>void <function>glRectsv</function></funcdef>
+                <paramdef>const GLshort * <parameter>v1</parameter></paramdef>
+                <paramdef>const GLshort * <parameter>v2</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

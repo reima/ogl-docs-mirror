@@ -19,11 +19,11 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLXWindow <function>glXCreateWindow</function></funcdef>
-                <paramdef> Display * <parameter>dpy</parameter></paramdef>
-                <paramdef> GLXFBConfig <parameter>config</parameter></paramdef>
-                <paramdef> Window <parameter>win</parameter></paramdef>
-                <paramdef> const int * <parameter>attrib_list</parameter></paramdef>
+                <funcdef>GLXWindow <function>glXCreateWindow</function></funcdef>
+                <paramdef>Display * <parameter>dpy</parameter></paramdef>
+                <paramdef>GLXFBConfig <parameter>config</parameter></paramdef>
+                <paramdef>Window <parameter>win</parameter></paramdef>
+                <paramdef>const int * <parameter>attrib_list</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

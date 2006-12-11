@@ -19,10 +19,10 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glDrawArrays</function></funcdef>
-                <paramdef> GLenum <parameter>mode</parameter></paramdef>
-                <paramdef> GLint <parameter>first</parameter></paramdef>
-                <paramdef> GLsizei <parameter>count</parameter></paramdef>
+                <funcdef>void <function>glDrawArrays</function></funcdef>
+                <paramdef>GLenum <parameter>mode</parameter></paramdef>
+                <paramdef>GLint <parameter>first</parameter></paramdef>
+                <paramdef>GLsizei <parameter>count</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

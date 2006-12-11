@@ -19,18 +19,18 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluNurbsSurface</function></funcdef>
-                <paramdef> GLUnurbs* <parameter>nurb</parameter></paramdef>
-                <paramdef> GLint <parameter>sKnotCount</parameter></paramdef>
-                <paramdef> GLfloat* <parameter>sKnots</parameter></paramdef>
-                <paramdef> GLint <parameter>tKnotCount</parameter></paramdef>
-                <paramdef> GLfloat* <parameter>tKnots</parameter></paramdef>
-                <paramdef> GLint <parameter>sStride</parameter></paramdef>
-                <paramdef> GLint <parameter>tStride</parameter></paramdef>
-                <paramdef> GLfloat* <parameter>control</parameter></paramdef>
-                <paramdef> GLint <parameter>sOrder</parameter></paramdef>
-                <paramdef> GLint <parameter>tOrder</parameter></paramdef>
-                <paramdef> GLenum <parameter>type</parameter></paramdef>
+                <funcdef>void <function>gluNurbsSurface</function></funcdef>
+                <paramdef>GLUnurbs* <parameter>nurb</parameter></paramdef>
+                <paramdef>GLint <parameter>sKnotCount</parameter></paramdef>
+                <paramdef>GLfloat* <parameter>sKnots</parameter></paramdef>
+                <paramdef>GLint <parameter>tKnotCount</parameter></paramdef>
+                <paramdef>GLfloat* <parameter>tKnots</parameter></paramdef>
+                <paramdef>GLint <parameter>sStride</parameter></paramdef>
+                <paramdef>GLint <parameter>tStride</parameter></paramdef>
+                <paramdef>GLfloat* <parameter>control</parameter></paramdef>
+                <paramdef>GLint <parameter>sOrder</parameter></paramdef>
+                <paramdef>GLint <parameter>tOrder</parameter></paramdef>
+                <paramdef>GLenum <parameter>type</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

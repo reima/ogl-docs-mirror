@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLint <function>glRenderMode</function></funcdef>
-                <paramdef> GLenum <parameter>mode</parameter></paramdef>
+                <funcdef>GLint <function>glRenderMode</function></funcdef>
+                <paramdef>GLenum <parameter>mode</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

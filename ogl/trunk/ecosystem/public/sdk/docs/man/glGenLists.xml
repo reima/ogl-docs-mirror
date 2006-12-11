@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLuint <function>glGenLists</function></funcdef>
-                <paramdef> GLsizei <parameter>range</parameter></paramdef>
+                <funcdef>GLuint <function>glGenLists</function></funcdef>
+                <paramdef>GLsizei <parameter>range</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

@@ -19,11 +19,11 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> int <function>glXQueryContext</function></funcdef>
-                <paramdef> Display * <parameter>dpy</parameter></paramdef>
-                <paramdef> GLXContext <parameter>ctx</parameter></paramdef>
-                <paramdef> int <parameter>attribute</parameter></paramdef>
-                <paramdef> int * <parameter>value</parameter></paramdef>
+                <funcdef>int <function>glXQueryContext</function></funcdef>
+                <paramdef>Display * <parameter>dpy</parameter></paramdef>
+                <paramdef>GLXContext <parameter>ctx</parameter></paramdef>
+                <paramdef>int <parameter>attribute</parameter></paramdef>
+                <paramdef>int * <parameter>value</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

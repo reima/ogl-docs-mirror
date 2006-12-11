@@ -19,11 +19,11 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glBlendFuncSeparate</function></funcdef>
-                <paramdef> GLenum <parameter>srcRGB</parameter></paramdef>
-                <paramdef> GLenum <parameter>dstRGB</parameter></paramdef>
-                <paramdef> GLenum <parameter>srcAlpha</parameter></paramdef>
-                <paramdef> GLenum <parameter>dstAlpha</parameter></paramdef>
+                <funcdef>void <function>glBlendFuncSeparate</function></funcdef>
+                <paramdef>GLenum <parameter>srcRGB</parameter></paramdef>
+                <paramdef>GLenum <parameter>dstRGB</parameter></paramdef>
+                <paramdef>GLenum <parameter>srcAlpha</parameter></paramdef>
+                <paramdef>GLenum <parameter>dstAlpha</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

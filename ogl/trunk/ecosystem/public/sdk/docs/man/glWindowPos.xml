@@ -19,62 +19,62 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glWindowPos2s</function></funcdef>
-                <paramdef> GLshort <parameter>x</parameter></paramdef>
-                <paramdef> GLshort <parameter>y</parameter></paramdef>
+                <funcdef>void <function>glWindowPos2s</function></funcdef>
+                <paramdef>GLshort <parameter>x</parameter></paramdef>
+                <paramdef>GLshort <parameter>y</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glWindowPos2i</function></funcdef>
-                <paramdef> GLint <parameter>x</parameter></paramdef>
-                <paramdef> GLint <parameter>y</parameter></paramdef>
+                <funcdef>void <function>glWindowPos2i</function></funcdef>
+                <paramdef>GLint <parameter>x</parameter></paramdef>
+                <paramdef>GLint <parameter>y</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glWindowPos2f</function></funcdef>
-                <paramdef> GLfloat <parameter>x</parameter></paramdef>
-                <paramdef> GLfloat <parameter>y</parameter></paramdef>
+                <funcdef>void <function>glWindowPos2f</function></funcdef>
+                <paramdef>GLfloat <parameter>x</parameter></paramdef>
+                <paramdef>GLfloat <parameter>y</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glWindowPos2d</function></funcdef>
-                <paramdef> GLdouble <parameter>x</parameter></paramdef>
-                <paramdef> GLdouble <parameter>y</parameter></paramdef>
+                <funcdef>void <function>glWindowPos2d</function></funcdef>
+                <paramdef>GLdouble <parameter>x</parameter></paramdef>
+                <paramdef>GLdouble <parameter>y</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glWindowPos3s</function></funcdef>
-                <paramdef> GLshort <parameter>x</parameter></paramdef>
-                <paramdef> GLshort <parameter>y</parameter></paramdef>
-                <paramdef> GLshort <parameter>z</parameter></paramdef>
+                <funcdef>void <function>glWindowPos3s</function></funcdef>
+                <paramdef>GLshort <parameter>x</parameter></paramdef>
+                <paramdef>GLshort <parameter>y</parameter></paramdef>
+                <paramdef>GLshort <parameter>z</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glWindowPos3i</function></funcdef>
-                <paramdef> GLint <parameter>x</parameter></paramdef>
-                <paramdef> GLint <parameter>y</parameter></paramdef>
-                <paramdef> GLint <parameter>z</parameter></paramdef>
+                <funcdef>void <function>glWindowPos3i</function></funcdef>
+                <paramdef>GLint <parameter>x</parameter></paramdef>
+                <paramdef>GLint <parameter>y</parameter></paramdef>
+                <paramdef>GLint <parameter>z</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glWindowPos3f</function></funcdef>
-                <paramdef> GLfloat <parameter>x</parameter></paramdef>
-                <paramdef> GLfloat <parameter>y</parameter></paramdef>
-                <paramdef> GLfloat <parameter>z</parameter></paramdef>
+                <funcdef>void <function>glWindowPos3f</function></funcdef>
+                <paramdef>GLfloat <parameter>x</parameter></paramdef>
+                <paramdef>GLfloat <parameter>y</parameter></paramdef>
+                <paramdef>GLfloat <parameter>z</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glWindowPos3d</function></funcdef>
-                <paramdef> GLdouble <parameter>x</parameter></paramdef>
-                <paramdef> GLdouble <parameter>y</parameter></paramdef>
-                <paramdef> GLdouble <parameter>z</parameter></paramdef>
+                <funcdef>void <function>glWindowPos3d</function></funcdef>
+                <paramdef>GLdouble <parameter>x</parameter></paramdef>
+                <paramdef>GLdouble <parameter>y</parameter></paramdef>
+                <paramdef>GLdouble <parameter>z</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -100,50 +100,50 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glWindowPos2sv</function></funcdef>
-                <paramdef> const GLshort * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glWindowPos2sv</function></funcdef>
+                <paramdef>const GLshort * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glWindowPos2iv</function></funcdef>
-                <paramdef> const GLint * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glWindowPos2iv</function></funcdef>
+                <paramdef>const GLint * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glWindowPos2fv</function></funcdef>
-                <paramdef> const GLfloat * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glWindowPos2fv</function></funcdef>
+                <paramdef>const GLfloat * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glWindowPos2dv</function></funcdef>
-                <paramdef> const GLdouble * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glWindowPos2dv</function></funcdef>
+                <paramdef>const GLdouble * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glWindowPos3sv</function></funcdef>
-                <paramdef> const GLshort * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glWindowPos3sv</function></funcdef>
+                <paramdef>const GLshort * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glWindowPos3iv</function></funcdef>
-                <paramdef> const GLint * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glWindowPos3iv</function></funcdef>
+                <paramdef>const GLint * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glWindowPos3fv</function></funcdef>
-                <paramdef> const GLfloat * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glWindowPos3fv</function></funcdef>
+                <paramdef>const GLfloat * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glWindowPos3dv</function></funcdef>
-                <paramdef> const GLdouble * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glWindowPos3dv</function></funcdef>
+                <paramdef>const GLdouble * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

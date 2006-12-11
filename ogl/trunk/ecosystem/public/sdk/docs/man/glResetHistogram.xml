@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glResetHistogram</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
+                <funcdef>void <function>glResetHistogram</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

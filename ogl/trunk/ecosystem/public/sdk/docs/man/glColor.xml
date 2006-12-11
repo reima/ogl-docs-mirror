@@ -19,138 +19,138 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor3b</function></funcdef>
-                <paramdef> GLbyte <parameter>red</parameter></paramdef>
-                <paramdef> GLbyte <parameter>green</parameter></paramdef>
-                <paramdef> GLbyte <parameter>blue</parameter></paramdef>
+                <funcdef>void <function>glColor3b</function></funcdef>
+                <paramdef>GLbyte <parameter>red</parameter></paramdef>
+                <paramdef>GLbyte <parameter>green</parameter></paramdef>
+                <paramdef>GLbyte <parameter>blue</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor3s</function></funcdef>
-                <paramdef> GLshort <parameter>red</parameter></paramdef>
-                <paramdef> GLshort <parameter>green</parameter></paramdef>
-                <paramdef> GLshort <parameter>blue</parameter></paramdef>
+                <funcdef>void <function>glColor3s</function></funcdef>
+                <paramdef>GLshort <parameter>red</parameter></paramdef>
+                <paramdef>GLshort <parameter>green</parameter></paramdef>
+                <paramdef>GLshort <parameter>blue</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor3i</function></funcdef>
-                <paramdef> GLint <parameter>red</parameter></paramdef>
-                <paramdef> GLint <parameter>green</parameter></paramdef>
-                <paramdef> GLint <parameter>blue</parameter></paramdef>
+                <funcdef>void <function>glColor3i</function></funcdef>
+                <paramdef>GLint <parameter>red</parameter></paramdef>
+                <paramdef>GLint <parameter>green</parameter></paramdef>
+                <paramdef>GLint <parameter>blue</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor3f</function></funcdef>
-                <paramdef> GLfloat <parameter>red</parameter></paramdef>
-                <paramdef> GLfloat <parameter>green</parameter></paramdef>
-                <paramdef> GLfloat <parameter>blue</parameter></paramdef>
+                <funcdef>void <function>glColor3f</function></funcdef>
+                <paramdef>GLfloat <parameter>red</parameter></paramdef>
+                <paramdef>GLfloat <parameter>green</parameter></paramdef>
+                <paramdef>GLfloat <parameter>blue</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor3d</function></funcdef>
-                <paramdef> GLdouble <parameter>red</parameter></paramdef>
-                <paramdef> GLdouble <parameter>green</parameter></paramdef>
-                <paramdef> GLdouble <parameter>blue</parameter></paramdef>
+                <funcdef>void <function>glColor3d</function></funcdef>
+                <paramdef>GLdouble <parameter>red</parameter></paramdef>
+                <paramdef>GLdouble <parameter>green</parameter></paramdef>
+                <paramdef>GLdouble <parameter>blue</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor3ub</function></funcdef>
-                <paramdef> GLubyte <parameter>red</parameter></paramdef>
-                <paramdef> GLubyte <parameter>green</parameter></paramdef>
-                <paramdef> GLubyte <parameter>blue</parameter></paramdef>
+                <funcdef>void <function>glColor3ub</function></funcdef>
+                <paramdef>GLubyte <parameter>red</parameter></paramdef>
+                <paramdef>GLubyte <parameter>green</parameter></paramdef>
+                <paramdef>GLubyte <parameter>blue</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor3us</function></funcdef>
-                <paramdef> GLushort <parameter>red</parameter></paramdef>
-                <paramdef> GLushort <parameter>green</parameter></paramdef>
-                <paramdef> GLushort <parameter>blue</parameter></paramdef>
+                <funcdef>void <function>glColor3us</function></funcdef>
+                <paramdef>GLushort <parameter>red</parameter></paramdef>
+                <paramdef>GLushort <parameter>green</parameter></paramdef>
+                <paramdef>GLushort <parameter>blue</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor3ui</function></funcdef>
-                <paramdef> GLuint <parameter>red</parameter></paramdef>
-                <paramdef> GLuint <parameter>green</parameter></paramdef>
-                <paramdef> GLuint <parameter>blue</parameter></paramdef>
+                <funcdef>void <function>glColor3ui</function></funcdef>
+                <paramdef>GLuint <parameter>red</parameter></paramdef>
+                <paramdef>GLuint <parameter>green</parameter></paramdef>
+                <paramdef>GLuint <parameter>blue</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor4b</function></funcdef>
-                <paramdef> GLbyte <parameter>red</parameter></paramdef>
-                <paramdef> GLbyte <parameter>green</parameter></paramdef>
-                <paramdef> GLbyte <parameter>blue</parameter></paramdef>
-                <paramdef> GLbyte <parameter>alpha</parameter></paramdef>
+                <funcdef>void <function>glColor4b</function></funcdef>
+                <paramdef>GLbyte <parameter>red</parameter></paramdef>
+                <paramdef>GLbyte <parameter>green</parameter></paramdef>
+                <paramdef>GLbyte <parameter>blue</parameter></paramdef>
+                <paramdef>GLbyte <parameter>alpha</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor4s</function></funcdef>
-                <paramdef> GLshort <parameter>red</parameter></paramdef>
-                <paramdef> GLshort <parameter>green</parameter></paramdef>
-                <paramdef> GLshort <parameter>blue</parameter></paramdef>
-                <paramdef> GLshort <parameter>alpha</parameter></paramdef>
+                <funcdef>void <function>glColor4s</function></funcdef>
+                <paramdef>GLshort <parameter>red</parameter></paramdef>
+                <paramdef>GLshort <parameter>green</parameter></paramdef>
+                <paramdef>GLshort <parameter>blue</parameter></paramdef>
+                <paramdef>GLshort <parameter>alpha</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor4i</function></funcdef>
-                <paramdef> GLint <parameter>red</parameter></paramdef>
-                <paramdef> GLint <parameter>green</parameter></paramdef>
-                <paramdef> GLint <parameter>blue</parameter></paramdef>
-                <paramdef> GLint <parameter>alpha</parameter></paramdef>
+                <funcdef>void <function>glColor4i</function></funcdef>
+                <paramdef>GLint <parameter>red</parameter></paramdef>
+                <paramdef>GLint <parameter>green</parameter></paramdef>
+                <paramdef>GLint <parameter>blue</parameter></paramdef>
+                <paramdef>GLint <parameter>alpha</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor4f</function></funcdef>
-                <paramdef> GLfloat <parameter>red</parameter></paramdef>
-                <paramdef> GLfloat <parameter>green</parameter></paramdef>
-                <paramdef> GLfloat <parameter>blue</parameter></paramdef>
-                <paramdef> GLfloat <parameter>alpha</parameter></paramdef>
+                <funcdef>void <function>glColor4f</function></funcdef>
+                <paramdef>GLfloat <parameter>red</parameter></paramdef>
+                <paramdef>GLfloat <parameter>green</parameter></paramdef>
+                <paramdef>GLfloat <parameter>blue</parameter></paramdef>
+                <paramdef>GLfloat <parameter>alpha</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor4d</function></funcdef>
-                <paramdef> GLdouble <parameter>red</parameter></paramdef>
-                <paramdef> GLdouble <parameter>green</parameter></paramdef>
-                <paramdef> GLdouble <parameter>blue</parameter></paramdef>
-                <paramdef> GLdouble <parameter>alpha</parameter></paramdef>
+                <funcdef>void <function>glColor4d</function></funcdef>
+                <paramdef>GLdouble <parameter>red</parameter></paramdef>
+                <paramdef>GLdouble <parameter>green</parameter></paramdef>
+                <paramdef>GLdouble <parameter>blue</parameter></paramdef>
+                <paramdef>GLdouble <parameter>alpha</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor4ub</function></funcdef>
-                <paramdef> GLubyte <parameter>red</parameter></paramdef>
-                <paramdef> GLubyte <parameter>green</parameter></paramdef>
-                <paramdef> GLubyte <parameter>blue</parameter></paramdef>
-                <paramdef> GLubyte <parameter>alpha</parameter></paramdef>
+                <funcdef>void <function>glColor4ub</function></funcdef>
+                <paramdef>GLubyte <parameter>red</parameter></paramdef>
+                <paramdef>GLubyte <parameter>green</parameter></paramdef>
+                <paramdef>GLubyte <parameter>blue</parameter></paramdef>
+                <paramdef>GLubyte <parameter>alpha</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor4us</function></funcdef>
-                <paramdef> GLushort <parameter>red</parameter></paramdef>
-                <paramdef> GLushort <parameter>green</parameter></paramdef>
-                <paramdef> GLushort <parameter>blue</parameter></paramdef>
-                <paramdef> GLushort <parameter>alpha</parameter></paramdef>
+                <funcdef>void <function>glColor4us</function></funcdef>
+                <paramdef>GLushort <parameter>red</parameter></paramdef>
+                <paramdef>GLushort <parameter>green</parameter></paramdef>
+                <paramdef>GLushort <parameter>blue</parameter></paramdef>
+                <paramdef>GLushort <parameter>alpha</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor4ui</function></funcdef>
-                <paramdef> GLuint <parameter>red</parameter></paramdef>
-                <paramdef> GLuint <parameter>green</parameter></paramdef>
-                <paramdef> GLuint <parameter>blue</parameter></paramdef>
-                <paramdef> GLuint <parameter>alpha</parameter></paramdef>
+                <funcdef>void <function>glColor4ui</function></funcdef>
+                <paramdef>GLuint <parameter>red</parameter></paramdef>
+                <paramdef>GLuint <parameter>green</parameter></paramdef>
+                <paramdef>GLuint <parameter>blue</parameter></paramdef>
+                <paramdef>GLuint <parameter>alpha</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -181,98 +181,98 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor3bv</function></funcdef>
-                <paramdef> const GLbyte * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glColor3bv</function></funcdef>
+                <paramdef>const GLbyte * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor3sv</function></funcdef>
-                <paramdef> const GLshort * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glColor3sv</function></funcdef>
+                <paramdef>const GLshort * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor3iv</function></funcdef>
-                <paramdef> const GLint * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glColor3iv</function></funcdef>
+                <paramdef>const GLint * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor3fv</function></funcdef>
-                <paramdef> const GLfloat * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glColor3fv</function></funcdef>
+                <paramdef>const GLfloat * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor3dv</function></funcdef>
-                <paramdef> const GLdouble * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glColor3dv</function></funcdef>
+                <paramdef>const GLdouble * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor3ubv</function></funcdef>
-                <paramdef> const GLubyte * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glColor3ubv</function></funcdef>
+                <paramdef>const GLubyte * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor3usv</function></funcdef>
-                <paramdef> const GLushort * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glColor3usv</function></funcdef>
+                <paramdef>const GLushort * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor3uiv</function></funcdef>
-                <paramdef> const GLuint * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glColor3uiv</function></funcdef>
+                <paramdef>const GLuint * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor4bv</function></funcdef>
-                <paramdef> const GLbyte * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glColor4bv</function></funcdef>
+                <paramdef>const GLbyte * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor4sv</function></funcdef>
-                <paramdef> const GLshort * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glColor4sv</function></funcdef>
+                <paramdef>const GLshort * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor4iv</function></funcdef>
-                <paramdef> const GLint * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glColor4iv</function></funcdef>
+                <paramdef>const GLint * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor4fv</function></funcdef>
-                <paramdef> const GLfloat * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glColor4fv</function></funcdef>
+                <paramdef>const GLfloat * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor4dv</function></funcdef>
-                <paramdef> const GLdouble * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glColor4dv</function></funcdef>
+                <paramdef>const GLdouble * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor4ubv</function></funcdef>
-                <paramdef> const GLubyte * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glColor4ubv</function></funcdef>
+                <paramdef>const GLubyte * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor4usv</function></funcdef>
-                <paramdef> const GLushort * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glColor4usv</function></funcdef>
+                <paramdef>const GLushort * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColor4uiv</function></funcdef>
-                <paramdef> const GLuint * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glColor4uiv</function></funcdef>
+                <paramdef>const GLuint * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

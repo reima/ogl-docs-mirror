@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluQuadricOrientation</function></funcdef>
-                <paramdef> GLUquadric* <parameter>quad</parameter></paramdef>
-                <paramdef> GLenum <parameter>orientation</parameter></paramdef>
+                <funcdef>void <function>gluQuadricOrientation</function></funcdef>
+                <paramdef>GLUquadric* <parameter>quad</parameter></paramdef>
+                <paramdef>GLenum <parameter>orientation</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glDeleteLists</function></funcdef>
-                <paramdef> GLuint <parameter>list</parameter></paramdef>
-                <paramdef> GLsizei <parameter>range</parameter></paramdef>
+                <funcdef>void <function>glDeleteLists</function></funcdef>
+                <paramdef>GLuint <parameter>list</parameter></paramdef>
+                <paramdef>GLsizei <parameter>range</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

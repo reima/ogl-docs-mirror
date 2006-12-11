@@ -19,7 +19,7 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLUnurbs* <function>gluNewNurbsRenderer</function></funcdef>
+                <funcdef>GLUnurbs* <function>gluNewNurbsRenderer</function></funcdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

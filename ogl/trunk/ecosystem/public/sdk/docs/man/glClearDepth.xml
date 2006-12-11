@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glClearDepth</function></funcdef>
-                <paramdef> GLclampd <parameter>depth</parameter></paramdef>
+                <funcdef>void <function>glClearDepth</function></funcdef>
+                <paramdef>GLclampd <parameter>depth</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

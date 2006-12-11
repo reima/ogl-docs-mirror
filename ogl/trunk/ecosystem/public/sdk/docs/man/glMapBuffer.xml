@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void * <function>glMapBuffer</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLenum <parameter>access</parameter></paramdef>
+                <funcdef>void * <function>glMapBuffer</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLenum <parameter>access</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -55,8 +55,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLboolean <function>glUnmapBuffer</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
+                <funcdef>GLboolean <function>glUnmapBuffer</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

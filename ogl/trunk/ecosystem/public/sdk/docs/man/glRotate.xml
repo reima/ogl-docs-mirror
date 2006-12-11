@@ -19,20 +19,20 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRotated</function></funcdef>
-                <paramdef> GLdouble <parameter>angle</parameter></paramdef>
-                <paramdef> GLdouble <parameter>x</parameter></paramdef>
-                <paramdef> GLdouble <parameter>y</parameter></paramdef>
-                <paramdef> GLdouble <parameter>z</parameter></paramdef>
+                <funcdef>void <function>glRotated</function></funcdef>
+                <paramdef>GLdouble <parameter>angle</parameter></paramdef>
+                <paramdef>GLdouble <parameter>x</parameter></paramdef>
+                <paramdef>GLdouble <parameter>y</parameter></paramdef>
+                <paramdef>GLdouble <parameter>z</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glRotatef</function></funcdef>
-                <paramdef> GLfloat <parameter>angle</parameter></paramdef>
-                <paramdef> GLfloat <parameter>x</parameter></paramdef>
-                <paramdef> GLfloat <parameter>y</parameter></paramdef>
-                <paramdef> GLfloat <parameter>z</parameter></paramdef>
+                <funcdef>void <function>glRotatef</function></funcdef>
+                <paramdef>GLfloat <parameter>angle</parameter></paramdef>
+                <paramdef>GLfloat <parameter>x</parameter></paramdef>
+                <paramdef>GLfloat <parameter>y</parameter></paramdef>
+                <paramdef>GLfloat <parameter>z</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

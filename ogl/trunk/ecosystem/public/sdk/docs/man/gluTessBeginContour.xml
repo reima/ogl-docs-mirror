@@ -19,16 +19,16 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluTessBeginContour</function></funcdef>
-                <paramdef> GLUtesselator* <parameter>tess</parameter></paramdef>
+                <funcdef>void <function>gluTessBeginContour</function></funcdef>
+                <paramdef>GLUtesselator* <parameter>tess</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluTessEndContour</function></funcdef>
-                <paramdef> GLUtesselator* <parameter>tess</parameter></paramdef>
+                <funcdef>void <function>gluTessEndContour</function></funcdef>
+                <paramdef>GLUtesselator* <parameter>tess</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

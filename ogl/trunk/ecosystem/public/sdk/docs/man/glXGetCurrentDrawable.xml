@@ -19,7 +19,7 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLXDrawable <function>glXGetCurrentDrawable</function></funcdef>
+                <funcdef>GLXDrawable <function>glXGetCurrentDrawable</function></funcdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

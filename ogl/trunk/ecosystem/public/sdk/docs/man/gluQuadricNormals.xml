@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluQuadricNormals</function></funcdef>
-                <paramdef> GLUquadric* <parameter>quad</parameter></paramdef>
-                <paramdef> GLenum <parameter>normal</parameter></paramdef>
+                <funcdef>void <function>gluQuadricNormals</function></funcdef>
+                <paramdef>GLUquadric* <parameter>quad</parameter></paramdef>
+                <paramdef>GLenum <parameter>normal</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

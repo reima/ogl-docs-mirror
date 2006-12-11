@@ -19,7 +19,7 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLUquadric* <function>gluNewQuadric</function></funcdef>
+                <funcdef>GLUquadric* <function>gluNewQuadric</function></funcdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

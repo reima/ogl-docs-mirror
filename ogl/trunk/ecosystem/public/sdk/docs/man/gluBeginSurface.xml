@@ -19,16 +19,16 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluBeginSurface</function></funcdef>
-                <paramdef> GLUnurbs* <parameter>nurb</parameter></paramdef>
+                <funcdef>void <function>gluBeginSurface</function></funcdef>
+                <paramdef>GLUnurbs* <parameter>nurb</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluEndSurface</function></funcdef>
-                <paramdef> GLUnurbs* <parameter>nurb</parameter></paramdef>
+                <funcdef>void <function>gluEndSurface</function></funcdef>
+                <paramdef>GLUnurbs* <parameter>nurb</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

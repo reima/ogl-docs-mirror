@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glDrawPixels</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glDrawPixels"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glDrawPixels — write a block of pixels to the frame buffer</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glDrawPixels</b>(</code></td><td><var class="pdparam">width</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">height</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">format</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">type</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">data</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLsizei  </td><td><var class="pdparam">width</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">height</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">format</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">type</var>;</td></tr><tr><td> const GLvoid *  </td><td><var class="pdparam">data</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781989"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>width</code></em>, </span><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glDrawPixels</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glDrawPixels"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glDrawPixels — write a block of pixels to the frame buffer</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glDrawPixels</b>(</code></td><td>GLsizei  </td><td><var class="pdparam">width</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">height</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">format</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>const GLvoid *  </td><td><var class="pdparam">data</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782020"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>width</code></em>, </span><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
                     Specify the dimensions of the pixel rectangle to be written
                     into the frame buffer.
                 </p></dd><dt><span class="term"><em class="parameter"><code>format</code></em></span></dt><dd><p>
@@ -46,23 +46,23 @@
                     are accepted.
                 </p></dd><dt><span class="term"><em class="parameter"><code>data</code></em></span></dt><dd><p>
                     Specifies a pointer to the pixel data.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775198"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768659"></a><h2>Description</h2><p>
             <code class="function">glDrawPixels</code> reads pixel data from memory and writes it into the frame buffer
             relative to the current raster position, provided that the raster
             position is valid.  Use
-            <span class="citerefentry"><span class="refentrytitle">glRasterPos</span></span> or <span class="citerefentry"><span class="refentrytitle">glWindowPos</span></span> to set the current raster position; use
-            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_CURRENT_RASTER_POSITION_VALID</code>
+            <a href="glRasterPos.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glRasterPos</span></span></a> or <a href="glWindowPos.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glWindowPos</span></span></a> to set the current raster position; use
+            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_POSITION_VALID</code>
             to determine if the specified raster position is valid, and
-            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_CURRENT_RASTER_POSITION</code>
+            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_POSITION</code>
             to query the raster position.
         </p><p>
             Several parameters define the encoding of pixel data in memory
             and control the processing of the pixel data
             before it is placed in the frame buffer.
             These parameters are set with four commands:
-            <span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glPixelMap</span></span>, and <span class="citerefentry"><span class="refentrytitle">glPixelZoom</span></span>.
+            <a href="glPixelStore.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>,
+            <a href="glPixelTransfer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>,
+            <a href="glPixelMap.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelMap</span></span></a>, and <a href="glPixelZoom.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelZoom</span></span></a>.
             This reference page describes the effects on <code class="function">glDrawPixels</code> of many,
             but not all, of the parameters specified by these four commands.
         </p><p>
@@ -92,7 +92,7 @@
             If <em class="parameter"><code>type</code></em> is <code class="constant">GL_BITMAP</code>, the data must be unsigned bytes, and
             <em class="parameter"><code>format</code></em> must be either <code class="constant">GL_COLOR_INDEX</code> or <code class="constant">GL_STENCIL_INDEX</code>.
             Each unsigned byte is treated as eight 1-bit pixels, with bit ordering
-            determined by <code class="constant">GL_UNPACK_LSB_FIRST</code> (see <span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span>).
+            determined by <code class="constant">GL_UNPACK_LSB_FIRST</code> (see <a href="glPixelStore.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>).
         </p><p>
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -107,16 +107,16 @@
             By default, these pixels are taken from adjacent memory locations,
             except that after all <em class="parameter"><code>width</code></em> pixels are read,
             the read pointer is advanced to the next four-byte boundary.
-            The four-byte row alignment is specified by <span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span> with
+            The four-byte row alignment is specified by <a href="glPixelStore.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> with
             argument <code class="constant">GL_UNPACK_ALIGNMENT</code>,
             and it can be set to one, two, four, or eight bytes.
             Other pixel store parameters specify different read pointer advancements,
             both before the first pixel is read
             and after all <em class="parameter"><code>width</code></em> pixels are read.
-            See the <span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span> reference page for details on these options.
+            See the <a href="glPixelStore.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> reference page for details on these options.
         </p><p>
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target 
-            (see <span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span>) while a block of pixels is
+            (see <a href="glBindBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>) while a block of pixels is
             specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data store.
         </p><p>
             The 
@@ -130,8 +130,8 @@
             </mml:math>
             pixels that are read from memory are
             each operated on in the same way,
-            based on the values of several parameters specified by <span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span>
-            and <span class="citerefentry"><span class="refentrytitle">glPixelMap</span></span>.
+            based on the values of several parameters specified by <a href="glPixelTransfer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>
+            and <a href="glPixelMap.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelMap</span></span></a>.
             The details of these operations,
             as well as the target buffer into which the pixels are drawn,
             are specific to the format of the pixels,
@@ -722,7 +722,7 @@
                     </p></dd></dl></div><p>
             The rasterization described so far assumes pixel zoom factors of 1.
             If
-            <span class="citerefentry"><span class="refentrytitle">glPixelZoom</span></span> is used to change the 
+            <a href="glPixelZoom.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelZoom</span></span></a> is used to change the 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">x</mml:mi></mml:math>
             and 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">y</mml:mi></mml:math>
@@ -846,7 +846,7 @@
                 </mml:msub>
             </mml:math>
             is the value of <code class="constant">GL_ZOOM_Y</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786732"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786516"></a><h2>Notes</h2><p>
             <code class="constant">GL_BGR</code> and <code class="constant">GL_BGRA</code> are only valid for <em class="parameter"><code>format</code></em> if the GL
             version is 1.2 or greater.
         </p><p>
@@ -863,7 +863,7 @@
             <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>, and
             <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code> are only valid for <em class="parameter"><code>type</code></em> if the
             GL version is 1.2 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786820"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786600"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>format</code></em> or <em class="parameter"><code>type</code></em> is not one of
             the accepted values.
         </p><p>
@@ -919,30 +919,30 @@
             into the number of bytes needed to store in memory a datum indicated by <em class="parameter"><code>type</code></em>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glDrawPixels</code>
-            is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
-            and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787166"></a><h2>Associated Gets</h2><p>
-            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_CURRENT_RASTER_POSITION</code>
+            is executed between the execution of <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
+            and the corresponding execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786926"></a><h2>Associated Gets</h2><p>
+            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_POSITION</code>
         </p><p>
-            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_CURRENT_RASTER_POSITION_VALID</code>
+            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_POSITION_VALID</code>
         </p><p>
-            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787208"></a><h2>See Also</h2><p>
-            <span class="citerefentry"><span class="refentrytitle">glAlphaFunc</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glDepthFunc</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glLogicOp</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glPixelMap</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glPixelZoom</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glRasterPos</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glScissor</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glStencilFunc</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glWindowPos</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787289"></a><h2>Copyright</h2><p>
+            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786968"></a><h2>See Also</h2><p>
+            <a href="glAlphaFunc.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glAlphaFunc</span></span></a>,
+            <a href="glBlendFunc.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span></a>,
+            <a href="glCopyPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
+            <a href="glDepthFunc.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDepthFunc</span></span></a>,
+            <a href="glLogicOp.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLogicOp</span></span></a>,
+            <a href="glPixelMap.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelMap</span></span></a>,
+            <a href="glPixelStore.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>,
+            <a href="glPixelTransfer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>,
+            <a href="glPixelZoom.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelZoom</span></span></a>,
+            <a href="glRasterPos.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glRasterPos</span></span></a>,
+            <a href="glReadPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>,
+            <a href="glScissor.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glScissor</span></span></a>,
+            <a href="glStencilFunc.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glStencilFunc</span></span></a>,
+            <a href="glWindowPos.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glWindowPos</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787046"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

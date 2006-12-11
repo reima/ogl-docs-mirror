@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glBlendEquationSeparate</function></funcdef>
-                <paramdef> GLenum <parameter>modeRGB</parameter></paramdef>
-                <paramdef> GLenum <parameter>modeAlpha</parameter></paramdef>
+                <funcdef>void <function>glBlendEquationSeparate</function></funcdef>
+                <paramdef>GLenum <parameter>modeRGB</parameter></paramdef>
+                <paramdef>GLenum <parameter>modeAlpha</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

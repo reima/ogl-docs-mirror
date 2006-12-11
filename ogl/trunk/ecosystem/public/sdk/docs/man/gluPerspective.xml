@@ -19,11 +19,11 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluPerspective</function></funcdef>
-                <paramdef> GLdouble <parameter>fovy</parameter></paramdef>
-                <paramdef> GLdouble <parameter>aspect</parameter></paramdef>
-                <paramdef> GLdouble <parameter>zNear</parameter></paramdef>
-                <paramdef> GLdouble <parameter>zFar</parameter></paramdef>
+                <funcdef>void <function>gluPerspective</function></funcdef>
+                <paramdef>GLdouble <parameter>fovy</parameter></paramdef>
+                <paramdef>GLdouble <parameter>aspect</parameter></paramdef>
+                <paramdef>GLdouble <parameter>zNear</parameter></paramdef>
+                <paramdef>GLdouble <parameter>zFar</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

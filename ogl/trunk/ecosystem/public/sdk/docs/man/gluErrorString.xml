@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> const GLubyte * <function>gluErrorString</function></funcdef>
-                <paramdef> GLenum <parameter>error</parameter></paramdef>
+                <funcdef>const GLubyte * <function>gluErrorString</function></funcdef>
+                <paramdef>GLenum <parameter>error</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

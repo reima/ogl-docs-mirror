@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glGenTextures</function></funcdef>
-                <paramdef> GLsizei <parameter>n</parameter></paramdef>
-                <paramdef> GLuint * <parameter>textures</parameter></paramdef>
+                <funcdef>void <function>glGenTextures</function></funcdef>
+                <paramdef>GLsizei <parameter>n</parameter></paramdef>
+                <paramdef>GLuint * <parameter>textures</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

@@ -20,10 +20,10 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glStencilFunc</function></funcdef>
-                <paramdef> GLenum <parameter>func</parameter></paramdef>
-                <paramdef> GLint <parameter>ref</parameter></paramdef>
-                <paramdef> GLuint <parameter>mask</parameter></paramdef>
+                <funcdef>void <function>glStencilFunc</function></funcdef>
+                <paramdef>GLenum <parameter>func</parameter></paramdef>
+                <paramdef>GLint <parameter>ref</parameter></paramdef>
+                <paramdef>GLuint <parameter>mask</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEnable</function></funcdef>
-                <paramdef> GLenum <parameter>cap</parameter></paramdef>
+                <funcdef>void <function>glEnable</function></funcdef>
+                <paramdef>GLenum <parameter>cap</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -39,8 +39,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glDisable</function></funcdef>
-                <paramdef> GLenum <parameter>cap</parameter></paramdef>
+                <funcdef>void <function>glDisable</function></funcdef>
+                <paramdef>GLenum <parameter>cap</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

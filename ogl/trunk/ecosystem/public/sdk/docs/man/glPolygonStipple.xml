@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPolygonStipple</function></funcdef>
-                <paramdef> const GLubyte * <parameter>pattern</parameter></paramdef>
+                <funcdef>void <function>glPolygonStipple</function></funcdef>
+                <paramdef>const GLubyte * <parameter>pattern</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetLight</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetLight"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetLight — return light source parameter values</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetLightfv</b>(</code></td><td><var class="pdparam">light</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pname</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">params</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">light</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">pname</var>;</td></tr><tr><td> GLfloat *  </td><td><var class="pdparam">params</var>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glGetLightiv</b>(</code></td><td><var class="pdparam">light</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">pname</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">params</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">light</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">pname</var>;</td></tr><tr><td> GLint *  </td><td><var class="pdparam">params</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781875"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>light</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetLight</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetLight"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetLight — return light source parameter values</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetLightfv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">light</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetLightiv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">light</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781908"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>light</code></em></span></dt><dd><p>
                     Specifies a light source.
                     The number of possible lights depends on the implementation,
                     but at least eight lights are supported.
@@ -25,7 +25,7 @@
                     <code class="constant">GL_QUADRATIC_ATTENUATION</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>params</code></em></span></dt><dd><p>
                     Returns the requested data.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768577"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768596"></a><h2>Description</h2><p>
             <code class="function">glGetLight</code> returns in <em class="parameter"><code>params</code></em> the value or values of a light source parameter.
             <em class="parameter"><code>light</code></em> names the light and is a symbolic name of the form <code class="constant">GL_LIGHT</code>
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
@@ -118,8 +118,8 @@
                         are computed by rounding the internal floating-point values to the
                         nearest integer value.
                         The returned values are those maintained in eye coordinates.
-                        They will not be equal to the values specified using <span class="citerefentry"><span class="refentrytitle">glLight</span></span>,
-                        unless the modelview matrix was identity at the time <span class="citerefentry"><span class="refentrytitle">glLight</span></span> was
+                        They will not be equal to the values specified using <a href="glLight.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLight</span></span></a>,
+                        unless the modelview matrix was identity at the time <a href="glLight.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLight</span></span></a> was
                         called. The initial value is (0, 0, 1, 0).
                     </p></dd><dt><span class="term"><code class="constant">GL_SPOT_DIRECTION</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> returns three integer or floating-point values representing the
@@ -129,8 +129,8 @@
                         are computed by rounding the internal floating-point values to the
                         nearest integer value.
                         The returned values are those maintained in eye coordinates.
-                        They will not be equal to the values specified using <span class="citerefentry"><span class="refentrytitle">glLight</span></span>,
-                        unless the modelview matrix was identity at the time <span class="citerefentry"><span class="refentrytitle">glLight</span></span> was called.
+                        They will not be equal to the values specified using <a href="glLight.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLight</span></span></a>,
+                        unless the modelview matrix was identity at the time <a href="glLight.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLight</span></span></a> was called.
                         Although spot direction is normalized before being used in the lighting
                         equation,
                         the returned values are the transformed versions of the specified values
@@ -179,7 +179,7 @@
                         when requested,
                         is computed by rounding the internal floating-point representation to
                         the nearest integer. The initial value is 0.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712921"></a><h2>Notes</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711144"></a><h2>Notes</h2><p>
             It is always the case that <code class="constant">GL_LIGHT</code>
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
             = <code class="constant">GL_LIGHT0</code> + 
@@ -188,16 +188,16 @@
         </p><p>
             If an error is generated,
             no change is made to the contents of <em class="parameter"><code>params</code></em>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712976"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711195"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>light</code></em> or <em class="parameter"><code>pname</code></em> is not an
             accepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetLight</code>
-            is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
-            and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713026"></a><h2>See Also</h2><p>
-            <span class="citerefentry"><span class="refentrytitle">glLight</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713039"></a><h2>Copyright</h2><p>
+            is executed between the execution of <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
+            and the corresponding execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713111"></a><h2>See Also</h2><p>
+            <a href="glLight.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLight</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713124"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

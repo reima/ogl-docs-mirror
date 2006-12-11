@@ -19,12 +19,12 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluPickMatrix</function></funcdef>
-                <paramdef> GLdouble <parameter>x</parameter></paramdef>
-                <paramdef> GLdouble <parameter>y</parameter></paramdef>
-                <paramdef> GLdouble <parameter>delX</parameter></paramdef>
-                <paramdef> GLdouble <parameter>delY</parameter></paramdef>
-                <paramdef> GLint * <parameter>viewport</parameter></paramdef>
+                <funcdef>void <function>gluPickMatrix</function></funcdef>
+                <paramdef>GLdouble <parameter>x</parameter></paramdef>
+                <paramdef>GLdouble <parameter>y</parameter></paramdef>
+                <paramdef>GLdouble <parameter>delX</parameter></paramdef>
+                <paramdef>GLdouble <parameter>delY</parameter></paramdef>
+                <paramdef>GLint * <parameter>viewport</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

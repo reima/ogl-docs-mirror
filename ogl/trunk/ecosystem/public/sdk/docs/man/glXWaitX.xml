@@ -19,7 +19,7 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glXWaitX</function></funcdef>
+                <funcdef>void <function>glXWaitX</function></funcdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

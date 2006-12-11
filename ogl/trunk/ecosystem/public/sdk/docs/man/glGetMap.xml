@@ -19,26 +19,26 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glGetMapdv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLenum <parameter>query</parameter></paramdef>
-                <paramdef> GLdouble * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glGetMapdv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLenum <parameter>query</parameter></paramdef>
+                <paramdef>GLdouble * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glGetMapfv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLenum <parameter>query</parameter></paramdef>
-                <paramdef> GLfloat * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glGetMapfv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLenum <parameter>query</parameter></paramdef>
+                <paramdef>GLfloat * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glGetMapiv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLenum <parameter>query</parameter></paramdef>
-                <paramdef> GLint * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glGetMapiv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLenum <parameter>query</parameter></paramdef>
+                <paramdef>GLint * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glBindTexture</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLuint <parameter>texture</parameter></paramdef>
+                <funcdef>void <function>glBindTexture</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLuint <parameter>texture</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

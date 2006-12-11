@@ -19,138 +19,138 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord1s</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLshort <parameter>s</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord1s</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLshort <parameter>s</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord1i</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLint <parameter>s</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord1i</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLint <parameter>s</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord1f</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLfloat <parameter>s</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord1f</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLfloat <parameter>s</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord1d</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLdouble <parameter>s</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord1d</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLdouble <parameter>s</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord2s</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLshort <parameter>s</parameter></paramdef>
-                <paramdef> GLshort <parameter>t</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord2s</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLshort <parameter>s</parameter></paramdef>
+                <paramdef>GLshort <parameter>t</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord2i</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLint <parameter>s</parameter></paramdef>
-                <paramdef> GLint <parameter>t</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord2i</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLint <parameter>s</parameter></paramdef>
+                <paramdef>GLint <parameter>t</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord2f</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLfloat <parameter>s</parameter></paramdef>
-                <paramdef> GLfloat <parameter>t</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord2f</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLfloat <parameter>s</parameter></paramdef>
+                <paramdef>GLfloat <parameter>t</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord2d</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLdouble <parameter>s</parameter></paramdef>
-                <paramdef> GLdouble <parameter>t</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord2d</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLdouble <parameter>s</parameter></paramdef>
+                <paramdef>GLdouble <parameter>t</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord3s</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLshort <parameter>s</parameter></paramdef>
-                <paramdef> GLshort <parameter>t</parameter></paramdef>
-                <paramdef> GLshort <parameter>r</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord3s</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLshort <parameter>s</parameter></paramdef>
+                <paramdef>GLshort <parameter>t</parameter></paramdef>
+                <paramdef>GLshort <parameter>r</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord3i</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLint <parameter>s</parameter></paramdef>
-                <paramdef> GLint <parameter>t</parameter></paramdef>
-                <paramdef> GLint <parameter>r</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord3i</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLint <parameter>s</parameter></paramdef>
+                <paramdef>GLint <parameter>t</parameter></paramdef>
+                <paramdef>GLint <parameter>r</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord3f</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLfloat <parameter>s</parameter></paramdef>
-                <paramdef> GLfloat <parameter>t</parameter></paramdef>
-                <paramdef> GLfloat <parameter>r</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord3f</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLfloat <parameter>s</parameter></paramdef>
+                <paramdef>GLfloat <parameter>t</parameter></paramdef>
+                <paramdef>GLfloat <parameter>r</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord3d</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLdouble <parameter>s</parameter></paramdef>
-                <paramdef> GLdouble <parameter>t</parameter></paramdef>
-                <paramdef> GLdouble <parameter>r</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord3d</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLdouble <parameter>s</parameter></paramdef>
+                <paramdef>GLdouble <parameter>t</parameter></paramdef>
+                <paramdef>GLdouble <parameter>r</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord4s</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLshort <parameter>s</parameter></paramdef>
-                <paramdef> GLshort <parameter>t</parameter></paramdef>
-                <paramdef> GLshort <parameter>r</parameter></paramdef>
-                <paramdef> GLshort <parameter>q</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord4s</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLshort <parameter>s</parameter></paramdef>
+                <paramdef>GLshort <parameter>t</parameter></paramdef>
+                <paramdef>GLshort <parameter>r</parameter></paramdef>
+                <paramdef>GLshort <parameter>q</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord4i</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLint <parameter>s</parameter></paramdef>
-                <paramdef> GLint <parameter>t</parameter></paramdef>
-                <paramdef> GLint <parameter>r</parameter></paramdef>
-                <paramdef> GLint <parameter>q</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord4i</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLint <parameter>s</parameter></paramdef>
+                <paramdef>GLint <parameter>t</parameter></paramdef>
+                <paramdef>GLint <parameter>r</parameter></paramdef>
+                <paramdef>GLint <parameter>q</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord4f</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLfloat <parameter>s</parameter></paramdef>
-                <paramdef> GLfloat <parameter>t</parameter></paramdef>
-                <paramdef> GLfloat <parameter>r</parameter></paramdef>
-                <paramdef> GLfloat <parameter>q</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord4f</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLfloat <parameter>s</parameter></paramdef>
+                <paramdef>GLfloat <parameter>t</parameter></paramdef>
+                <paramdef>GLfloat <parameter>r</parameter></paramdef>
+                <paramdef>GLfloat <parameter>q</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord4d</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLdouble <parameter>s</parameter></paramdef>
-                <paramdef> GLdouble <parameter>t</parameter></paramdef>
-                <paramdef> GLdouble <parameter>r</parameter></paramdef>
-                <paramdef> GLdouble <parameter>q</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord4d</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLdouble <parameter>s</parameter></paramdef>
+                <paramdef>GLdouble <parameter>t</parameter></paramdef>
+                <paramdef>GLdouble <parameter>r</parameter></paramdef>
+                <paramdef>GLdouble <parameter>q</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -188,114 +188,114 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord1sv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> const GLshort * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord1sv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>const GLshort * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord1iv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> const GLint * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord1iv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>const GLint * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord1fv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> const GLfloat * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord1fv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>const GLfloat * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord1dv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> const GLdouble * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord1dv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>const GLdouble * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord2sv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> const GLshort * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord2sv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>const GLshort * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord2iv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> const GLint * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord2iv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>const GLint * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord2fv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> const GLfloat * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord2fv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>const GLfloat * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord2dv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> const GLdouble * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord2dv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>const GLdouble * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord3sv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> const GLshort * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord3sv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>const GLshort * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord3iv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> const GLint * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord3iv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>const GLint * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord3fv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> const GLfloat * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord3fv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>const GLfloat * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord3dv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> const GLdouble * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord3dv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>const GLdouble * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord4sv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> const GLshort * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord4sv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>const GLshort * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord4iv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> const GLint * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord4iv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>const GLint * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord4fv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> const GLfloat * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord4fv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>const GLfloat * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultiTexCoord4dv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> const GLdouble * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glMultiTexCoord4dv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>const GLdouble * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

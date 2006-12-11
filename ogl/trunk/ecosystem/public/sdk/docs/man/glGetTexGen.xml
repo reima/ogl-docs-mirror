@@ -19,26 +19,26 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glGetTexGendv</function></funcdef>
-                <paramdef> GLenum <parameter>coord</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> GLdouble * <parameter>params</parameter></paramdef>
+                <funcdef>void <function>glGetTexGendv</function></funcdef>
+                <paramdef>GLenum <parameter>coord</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLdouble * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glGetTexGenfv</function></funcdef>
-                <paramdef> GLenum <parameter>coord</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> GLfloat * <parameter>params</parameter></paramdef>
+                <funcdef>void <function>glGetTexGenfv</function></funcdef>
+                <paramdef>GLenum <parameter>coord</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLfloat * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glGetTexGeniv</function></funcdef>
-                <paramdef> GLenum <parameter>coord</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> GLint * <parameter>params</parameter></paramdef>
+                <funcdef>void <function>glGetTexGeniv</function></funcdef>
+                <paramdef>GLenum <parameter>coord</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLint * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

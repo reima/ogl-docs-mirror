@@ -20,28 +20,28 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEvalCoord1f</function></funcdef>
-                <paramdef> GLfloat <parameter>u</parameter></paramdef>
+                <funcdef>void <function>glEvalCoord1f</function></funcdef>
+                <paramdef>GLfloat <parameter>u</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEvalCoord1d</function></funcdef>
-                <paramdef> GLdouble <parameter>u</parameter></paramdef>
+                <funcdef>void <function>glEvalCoord1d</function></funcdef>
+                <paramdef>GLdouble <parameter>u</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEvalCoord2f</function></funcdef>
-                <paramdef> GLfloat <parameter>u</parameter></paramdef>
-                <paramdef> GLfloat <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glEvalCoord2f</function></funcdef>
+                <paramdef>GLfloat <parameter>u</parameter></paramdef>
+                <paramdef>GLfloat <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEvalCoord2d</function></funcdef>
-                <paramdef> GLdouble <parameter>u</parameter></paramdef>
-                <paramdef> GLdouble <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glEvalCoord2d</function></funcdef>
+                <paramdef>GLdouble <parameter>u</parameter></paramdef>
+                <paramdef>GLdouble <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -75,26 +75,26 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEvalCoord1fv</function></funcdef>
-                <paramdef> const GLfloat * <parameter>u</parameter></paramdef>
+                <funcdef>void <function>glEvalCoord1fv</function></funcdef>
+                <paramdef>const GLfloat * <parameter>u</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEvalCoord1dv</function></funcdef>
-                <paramdef> const GLdouble * <parameter>u</parameter></paramdef>
+                <funcdef>void <function>glEvalCoord1dv</function></funcdef>
+                <paramdef>const GLdouble * <parameter>u</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEvalCoord2fv</function></funcdef>
-                <paramdef> const GLfloat * <parameter>u</parameter></paramdef>
+                <funcdef>void <function>glEvalCoord2fv</function></funcdef>
+                <paramdef>const GLfloat * <parameter>u</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEvalCoord2dv</function></funcdef>
-                <paramdef> const GLdouble * <parameter>u</parameter></paramdef>
+                <funcdef>void <function>glEvalCoord2dv</function></funcdef>
+                <paramdef>const GLdouble * <parameter>u</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

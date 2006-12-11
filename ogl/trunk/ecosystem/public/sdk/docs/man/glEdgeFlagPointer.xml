@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEdgeFlagPointer</function></funcdef>
-                <paramdef> GLsizei <parameter>stride</parameter></paramdef>
-                <paramdef> const GLvoid * <parameter>pointer</parameter></paramdef>
+                <funcdef>void <function>glEdgeFlagPointer</function></funcdef>
+                <paramdef>GLsizei <parameter>stride</parameter></paramdef>
+                <paramdef>const GLvoid * <parameter>pointer</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

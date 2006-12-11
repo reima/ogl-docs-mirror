@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCopyColorTable</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glCopyColorTable"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCopyColorTable — copy pixels into a color table</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> void <b class="fsfunc">glCopyColorTable</b>(</code></td><td><var class="pdparam">target</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">internalformat</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">x</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">y</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">width</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLenum  </td><td><var class="pdparam">target</var>;</td></tr><tr><td> GLenum  </td><td><var class="pdparam">internalformat</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">x</var>;</td></tr><tr><td> GLint  </td><td><var class="pdparam">y</var>;</td></tr><tr><td> GLsizei  </td><td><var class="pdparam">width</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781990"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCopyColorTable</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glCopyColorTable"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCopyColorTable — copy pixels into a color table</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glCopyColorTable</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">internalformat</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">x</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">y</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">width</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782020"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     The color table target. Must be
                     <code class="constant">GL_COLOR_TABLE</code>,
                     <code class="constant">GL_POST_CONVOLUTION_COLOR_TABLE</code>,
@@ -55,10 +55,10 @@
                     to be transferred to the color table.
                 </p></dd><dt><span class="term"><em class="parameter"><code>width</code></em></span></dt><dd><p>
                     The width of the pixel rectangle.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775241"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775246"></a><h2>Description</h2><p>
             <code class="function">glCopyColorTable</code> loads a color table with pixels from the current
             <code class="constant">GL_READ_BUFFER</code> (rather than from main memory, as is the case for
-            <span class="citerefentry"><span class="refentrytitle">glColorTable</span></span>).
+            <a href="glColorTable.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glColorTable</span></span></a>).
         </p><p>
             The screen-aligned pixel rectangle with lower-left corner at (<em class="parameter"><code>x</code></em>,\ <em class="parameter"><code>y</code></em>)
             having width <em class="parameter"><code>width</code></em> and height 1
@@ -67,13 +67,13 @@
             context, the values obtained for those pixels are undefined.
         </p><p>
             The pixels in the rectangle are processed just as if
-            <span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span> were called, with <em class="parameter"><code>internalformat</code></em> set to RGBA,
+            <a href="glReadPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a> were called, with <em class="parameter"><code>internalformat</code></em> set to RGBA,
             but processing stops after the final conversion to RGBA.
         </p><p>
             The four scale parameters and the four bias parameters that are defined
             for the table are then used to scale and bias the R, G, B, and A components
             of each pixel. The scale and bias parameters are set by calling
-            <span class="citerefentry"><span class="refentrytitle">glColorTableParameter</span></span>.
+            <a href="glColorTableParameter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glColorTableParameter</span></span></a>.
         </p><p>
             Next, the R, G, B, and A values are clamped to the range 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -185,10 +185,10 @@
             </mml:math>
             .
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713051"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713019"></a><h2>Notes</h2><p>
             <code class="function">glCopyColorTable</code> is available only if <code class="code">ARB_imaging</code> is returned from calling
-            <span class="citerefentry"><span class="refentrytitle">glGetString</span></span> with an argument of <code class="constant">GL_EXTENSIONS</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713079"></a><h2>Errors</h2><p>
+            <a href="glGetString.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetString</span></span></a> with an argument of <code class="constant">GL_EXTENSIONS</code>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713047"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated when <em class="parameter"><code>target</code></em> is not one of the
             allowable values.
         </p><p>
@@ -201,16 +201,16 @@
             is too large to be supported by the implementation.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glCopyColorTable</code> is executed
-            between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding
-            execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713162"></a><h2>Associated Gets</h2><p>
-            <span class="citerefentry"><span class="refentrytitle">glGetColorTable</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glGetColorTableParameter</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713180"></a><h2>See Also</h2><p>
-            <span class="citerefentry"><span class="refentrytitle">glColorTable</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glColorTableParameter</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713205"></a><h2>Copyright</h2><p>
+            between the execution of <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding
+            execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713126"></a><h2>Associated Gets</h2><p>
+            <a href="glGetColorTable.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetColorTable</span></span></a>,
+            <a href="glGetColorTableParameter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetColorTableParameter</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713144"></a><h2>See Also</h2><p>
+            <a href="glColorTable.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glColorTable</span></span></a>,
+            <a href="glColorTableParameter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glColorTableParameter</span></span></a>,
+            <a href="glReadPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713168"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

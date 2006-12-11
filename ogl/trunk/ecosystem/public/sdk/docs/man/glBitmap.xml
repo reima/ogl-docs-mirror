@@ -19,14 +19,14 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glBitmap</function></funcdef>
-                <paramdef> GLsizei <parameter>width</parameter></paramdef>
-                <paramdef> GLsizei <parameter>height</parameter></paramdef>
-                <paramdef> GLfloat <parameter>xorig</parameter></paramdef>
-                <paramdef> GLfloat <parameter>yorig</parameter></paramdef>
-                <paramdef> GLfloat <parameter>xmove</parameter></paramdef>
-                <paramdef> GLfloat <parameter>ymove</parameter></paramdef>
-                <paramdef> const GLubyte * <parameter>bitmap</parameter></paramdef>
+                <funcdef>void <function>glBitmap</function></funcdef>
+                <paramdef>GLsizei <parameter>width</parameter></paramdef>
+                <paramdef>GLsizei <parameter>height</parameter></paramdef>
+                <paramdef>GLfloat <parameter>xorig</parameter></paramdef>
+                <paramdef>GLfloat <parameter>yorig</parameter></paramdef>
+                <paramdef>GLfloat <parameter>xmove</parameter></paramdef>
+                <paramdef>GLfloat <parameter>ymove</parameter></paramdef>
+                <paramdef>const GLubyte * <parameter>bitmap</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

@@ -19,14 +19,14 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultMatrixd</function></funcdef>
-                <paramdef> const GLdouble * <parameter>m</parameter></paramdef>
+                <funcdef>void <function>glMultMatrixd</function></funcdef>
+                <paramdef>const GLdouble * <parameter>m</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultMatrixf</function></funcdef>
-                <paramdef> const GLfloat * <parameter>m</parameter></paramdef>
+                <funcdef>void <function>glMultMatrixf</function></funcdef>
+                <paramdef>const GLfloat * <parameter>m</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

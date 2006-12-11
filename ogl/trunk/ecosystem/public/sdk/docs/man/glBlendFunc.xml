@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glBlendFunc</function></funcdef>
-                <paramdef> GLenum <parameter>sfactor</parameter></paramdef>
-                <paramdef> GLenum <parameter>dfactor</parameter></paramdef>
+                <funcdef>void <function>glBlendFunc</function></funcdef>
+                <paramdef>GLenum <parameter>sfactor</parameter></paramdef>
+                <paramdef>GLenum <parameter>dfactor</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

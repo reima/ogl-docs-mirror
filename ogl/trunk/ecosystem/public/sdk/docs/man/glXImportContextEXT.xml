@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLXContext <function>glXImportContextEXT</function></funcdef>
-                <paramdef> Display * <parameter>dpy</parameter></paramdef>
-                <paramdef> GLXContextID <parameter>contextID</parameter></paramdef>
+                <funcdef>GLXContext <function>glXImportContextEXT</function></funcdef>
+                <paramdef>Display * <parameter>dpy</parameter></paramdef>
+                <paramdef>GLXContextID <parameter>contextID</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

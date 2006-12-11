@@ -19,10 +19,10 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glGetCompressedTexImage</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLint <parameter>lod</parameter></paramdef>
-                <paramdef> GLvoid * <parameter>img</parameter></paramdef>
+                <funcdef>void <function>glGetCompressedTexImage</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLint <parameter>lod</parameter></paramdef>
+                <paramdef>GLvoid * <parameter>img</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glLineStipple</function></funcdef>
-                <paramdef> GLint <parameter>factor</parameter></paramdef>
-                <paramdef> GLushort <parameter>pattern</parameter></paramdef>
+                <funcdef>void <function>glLineStipple</function></funcdef>
+                <paramdef>GLint <parameter>factor</parameter></paramdef>
+                <paramdef>GLushort <parameter>pattern</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

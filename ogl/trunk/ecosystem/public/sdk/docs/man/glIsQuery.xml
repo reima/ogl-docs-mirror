@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLboolean <function>glIsQuery</function></funcdef>
-                <paramdef> GLuint <parameter>id</parameter></paramdef>
+                <funcdef>GLboolean <function>glIsQuery</function></funcdef>
+                <paramdef>GLuint <parameter>id</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

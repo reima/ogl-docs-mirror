@@ -19,14 +19,14 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultTransposeMatrixd</function></funcdef>
-                <paramdef> const GLdouble <parameter>m[16]</parameter></paramdef>
+                <funcdef>void <function>glMultTransposeMatrixd</function></funcdef>
+                <paramdef>const GLdouble <parameter>m[16]</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMultTransposeMatrixf</function></funcdef>
-                <paramdef> const GLfloat <parameter>m[16]</parameter></paramdef>
+                <funcdef>void <function>glMultTransposeMatrixf</function></funcdef>
+                <paramdef>const GLfloat <parameter>m[16]</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

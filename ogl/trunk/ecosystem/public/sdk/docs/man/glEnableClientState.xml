@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEnableClientState</function></funcdef>
-                <paramdef> GLenum <parameter>cap</parameter></paramdef>
+                <funcdef>void <function>glEnableClientState</function></funcdef>
+                <paramdef>GLenum <parameter>cap</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -50,8 +50,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glDisableClientState</function></funcdef>
-                <paramdef> GLenum <parameter>cap</parameter></paramdef>
+                <funcdef>void <function>glDisableClientState</function></funcdef>
+                <paramdef>GLenum <parameter>cap</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

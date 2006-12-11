@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glXDestroyWindow</function></funcdef>
-                <paramdef> Display * <parameter>dpy</parameter></paramdef>
-                <paramdef> GLXWindow <parameter>win</parameter></paramdef>
+                <funcdef>void <function>glXDestroyWindow</function></funcdef>
+                <paramdef>Display * <parameter>dpy</parameter></paramdef>
+                <paramdef>GLXWindow <parameter>win</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

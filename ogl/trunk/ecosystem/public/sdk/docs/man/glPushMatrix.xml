@@ -19,16 +19,16 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPushMatrix</function></funcdef>
-                <paramdef>  <parameter>void</parameter></paramdef>
+                <funcdef>void <function>glPushMatrix</function></funcdef>
+                <paramdef> <parameter>void</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPopMatrix</function></funcdef>
-                <paramdef>  <parameter>void</parameter></paramdef>
+                <funcdef>void <function>glPopMatrix</function></funcdef>
+                <paramdef> <parameter>void</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

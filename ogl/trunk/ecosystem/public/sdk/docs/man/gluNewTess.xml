@@ -19,7 +19,7 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLUtesselator* <function>gluNewTess</function></funcdef>
+                <funcdef>GLUtesselator* <function>gluNewTess</function></funcdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

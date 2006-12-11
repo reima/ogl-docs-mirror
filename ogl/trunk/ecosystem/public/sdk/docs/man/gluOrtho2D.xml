@@ -19,11 +19,11 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluOrtho2D</function></funcdef>
-                <paramdef> GLdouble <parameter>left</parameter></paramdef>
-                <paramdef> GLdouble <parameter>right</parameter></paramdef>
-                <paramdef> GLdouble <parameter>bottom</parameter></paramdef>
-                <paramdef> GLdouble <parameter>top</parameter></paramdef>
+                <funcdef>void <function>gluOrtho2D</function></funcdef>
+                <paramdef>GLdouble <parameter>left</parameter></paramdef>
+                <paramdef>GLdouble <parameter>right</parameter></paramdef>
+                <paramdef>GLdouble <parameter>bottom</parameter></paramdef>
+                <paramdef>GLdouble <parameter>top</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

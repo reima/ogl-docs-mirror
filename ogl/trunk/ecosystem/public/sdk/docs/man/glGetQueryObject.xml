@@ -19,18 +19,18 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glGetQueryObjectiv</function></funcdef>
-                <paramdef> GLuint <parameter>id</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> GLint * <parameter>params</parameter></paramdef>
+                <funcdef>void <function>glGetQueryObjectiv</function></funcdef>
+                <paramdef>GLuint <parameter>id</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLint * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glGetQueryObjectuiv</function></funcdef>
-                <paramdef> GLuint <parameter>id</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> GLuint * <parameter>params</parameter></paramdef>
+                <funcdef>void <function>glGetQueryObjectuiv</function></funcdef>
+                <paramdef>GLuint <parameter>id</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLuint * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPixelZoom</function></funcdef>
-                <paramdef> GLfloat <parameter>xfactor</parameter></paramdef>
-                <paramdef> GLfloat <parameter>yfactor</parameter></paramdef>
+                <funcdef>void <function>glPixelZoom</function></funcdef>
+                <paramdef>GLfloat <parameter>xfactor</parameter></paramdef>
+                <paramdef>GLfloat <parameter>yfactor</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

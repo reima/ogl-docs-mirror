@@ -19,16 +19,16 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLint <function>gluUnProject</function></funcdef>
-                <paramdef> GLdouble <parameter>winX</parameter></paramdef>
-                <paramdef> GLdouble <parameter>winY</parameter></paramdef>
-                <paramdef> GLdouble <parameter>winZ</parameter></paramdef>
-                <paramdef> const GLdouble * <parameter>model</parameter></paramdef>
-                <paramdef> const GLdouble * <parameter>proj</parameter></paramdef>
-                <paramdef> const GLint * <parameter>view</parameter></paramdef>
-                <paramdef> GLdouble* <parameter>objX</parameter></paramdef>
-                <paramdef> GLdouble* <parameter>objY</parameter></paramdef>
-                <paramdef> GLdouble* <parameter>objZ</parameter></paramdef>
+                <funcdef>GLint <function>gluUnProject</function></funcdef>
+                <paramdef>GLdouble <parameter>winX</parameter></paramdef>
+                <paramdef>GLdouble <parameter>winY</parameter></paramdef>
+                <paramdef>GLdouble <parameter>winZ</parameter></paramdef>
+                <paramdef>const GLdouble * <parameter>model</parameter></paramdef>
+                <paramdef>const GLdouble * <parameter>proj</parameter></paramdef>
+                <paramdef>const GLint * <parameter>view</parameter></paramdef>
+                <paramdef>GLdouble* <parameter>objX</parameter></paramdef>
+                <paramdef>GLdouble* <parameter>objY</parameter></paramdef>
+                <paramdef>GLdouble* <parameter>objZ</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

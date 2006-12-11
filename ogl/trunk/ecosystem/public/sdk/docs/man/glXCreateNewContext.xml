@@ -19,12 +19,12 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLXContext <function>glXCreateNewContext</function></funcdef>
-                <paramdef> Display * <parameter>dpy</parameter></paramdef>
-                <paramdef> GLXFBConfig <parameter>config</parameter></paramdef>
-                <paramdef> int <parameter>render_type</parameter></paramdef>
-                <paramdef> GLXContext <parameter>share_list</parameter></paramdef>
-                <paramdef> Bool <parameter>direct</parameter></paramdef>
+                <funcdef>GLXContext <function>glXCreateNewContext</function></funcdef>
+                <paramdef>Display * <parameter>dpy</parameter></paramdef>
+                <paramdef>GLXFBConfig <parameter>config</parameter></paramdef>
+                <paramdef>int <parameter>render_type</parameter></paramdef>
+                <paramdef>GLXContext <parameter>share_list</parameter></paramdef>
+                <paramdef>Bool <parameter>direct</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

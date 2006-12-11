@@ -19,7 +19,7 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> Display * <function>glXGetCurrentDisplay</function></funcdef>
+                <funcdef>Display * <function>glXGetCurrentDisplay</function></funcdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

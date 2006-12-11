@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPolygonOffset</function></funcdef>
-                <paramdef> GLfloat <parameter>factor</parameter></paramdef>
-                <paramdef> GLfloat <parameter>units</parameter></paramdef>
+                <funcdef>void <function>glPolygonOffset</function></funcdef>
+                <paramdef>GLfloat <parameter>factor</parameter></paramdef>
+                <paramdef>GLfloat <parameter>units</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

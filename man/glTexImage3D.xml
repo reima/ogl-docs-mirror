@@ -19,17 +19,17 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexImage3D</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLint <parameter>level</parameter></paramdef>
-                <paramdef> GLint <parameter>internalFormat</parameter></paramdef>
-                <paramdef> GLsizei <parameter>width</parameter></paramdef>
-                <paramdef> GLsizei <parameter>height</parameter></paramdef>
-                <paramdef> GLsizei <parameter>depth</parameter></paramdef>
-                <paramdef> GLint <parameter>border</parameter></paramdef>
-                <paramdef> GLenum <parameter>format</parameter></paramdef>
-                <paramdef> GLenum <parameter>type</parameter></paramdef>
-                <paramdef> const GLvoid * <parameter>data</parameter></paramdef>
+                <funcdef>void <function>glTexImage3D</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLint <parameter>level</parameter></paramdef>
+                <paramdef>GLint <parameter>internalFormat</parameter></paramdef>
+                <paramdef>GLsizei <parameter>width</parameter></paramdef>
+                <paramdef>GLsizei <parameter>height</parameter></paramdef>
+                <paramdef>GLsizei <parameter>depth</parameter></paramdef>
+                <paramdef>GLint <parameter>border</parameter></paramdef>
+                <paramdef>GLenum <parameter>format</parameter></paramdef>
+                <paramdef>GLenum <parameter>type</parameter></paramdef>
+                <paramdef>const GLvoid * <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPolygonMode</function></funcdef>
-                <paramdef> GLenum <parameter>face</parameter></paramdef>
-                <paramdef> GLenum <parameter>mode</parameter></paramdef>
+                <funcdef>void <function>glPolygonMode</function></funcdef>
+                <paramdef>GLenum <parameter>face</parameter></paramdef>
+                <paramdef>GLenum <parameter>mode</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

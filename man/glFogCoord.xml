@@ -19,14 +19,14 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glFogCoordd</function></funcdef>
-                <paramdef> GLfloat <parameter>coord</parameter></paramdef>
+                <funcdef>void <function>glFogCoordd</function></funcdef>
+                <paramdef>GLfloat <parameter>coord</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glFogCoordf</function></funcdef>
-                <paramdef> GLfloat <parameter>coord</parameter></paramdef>
+                <funcdef>void <function>glFogCoordf</function></funcdef>
+                <paramdef>GLfloat <parameter>coord</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -45,14 +45,14 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glFogCoorddv</function></funcdef>
-                <paramdef> GLfloat * <parameter>coord</parameter></paramdef>
+                <funcdef>void <function>glFogCoorddv</function></funcdef>
+                <paramdef>GLfloat * <parameter>coord</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glFogCoordfv</function></funcdef>
-                <paramdef> GLfloat * <parameter>coord</parameter></paramdef>
+                <funcdef>void <function>glFogCoordfv</function></funcdef>
+                <paramdef>GLfloat * <parameter>coord</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

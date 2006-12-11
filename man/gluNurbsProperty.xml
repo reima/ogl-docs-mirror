@@ -19,10 +19,10 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluNurbsProperty</function></funcdef>
-                <paramdef> GLUnurbs* <parameter>nurb</parameter></paramdef>
-                <paramdef> GLenum <parameter>property</parameter></paramdef>
-                <paramdef> GLfloat <parameter>value</parameter></paramdef>
+                <funcdef>void <function>gluNurbsProperty</function></funcdef>
+                <paramdef>GLUnurbs* <parameter>nurb</parameter></paramdef>
+                <paramdef>GLenum <parameter>property</parameter></paramdef>
+                <paramdef>GLfloat <parameter>value</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

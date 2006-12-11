@@ -19,15 +19,15 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glSeparableFilter2D</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLenum <parameter>internalformat</parameter></paramdef>
-                <paramdef> GLsizei <parameter>width</parameter></paramdef>
-                <paramdef> GLsizei <parameter>height</parameter></paramdef>
-                <paramdef> GLenum <parameter>format</parameter></paramdef>
-                <paramdef> GLenum <parameter>type</parameter></paramdef>
-                <paramdef> const GLvoid * <parameter>row</parameter></paramdef>
-                <paramdef> const GLvoid * <parameter>column</parameter></paramdef>
+                <funcdef>void <function>glSeparableFilter2D</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLenum <parameter>internalformat</parameter></paramdef>
+                <paramdef>GLsizei <parameter>width</parameter></paramdef>
+                <paramdef>GLsizei <parameter>height</parameter></paramdef>
+                <paramdef>GLenum <parameter>format</parameter></paramdef>
+                <paramdef>GLenum <parameter>type</parameter></paramdef>
+                <paramdef>const GLvoid * <parameter>row</parameter></paramdef>
+                <paramdef>const GLvoid * <parameter>column</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

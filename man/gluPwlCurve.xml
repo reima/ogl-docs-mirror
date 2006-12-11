@@ -19,12 +19,12 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluPwlCurve</function></funcdef>
-                <paramdef> GLUnurbs* <parameter>nurb</parameter></paramdef>
-                <paramdef> GLint <parameter>count</parameter></paramdef>
-                <paramdef> GLfloat* <parameter>data</parameter></paramdef>
-                <paramdef> GLint <parameter>stride</parameter></paramdef>
-                <paramdef> GLenum <parameter>type</parameter></paramdef>
+                <funcdef>void <function>gluPwlCurve</function></funcdef>
+                <paramdef>GLUnurbs* <parameter>nurb</parameter></paramdef>
+                <paramdef>GLint <parameter>count</parameter></paramdef>
+                <paramdef>GLfloat* <parameter>data</parameter></paramdef>
+                <paramdef>GLint <parameter>stride</parameter></paramdef>
+                <paramdef>GLenum <parameter>type</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

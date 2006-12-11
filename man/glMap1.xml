@@ -19,24 +19,24 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMap1f</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLfloat <parameter>u1</parameter></paramdef>
-                <paramdef> GLfloat <parameter>u2</parameter></paramdef>
-                <paramdef> GLint <parameter>stride</parameter></paramdef>
-                <paramdef> GLint <parameter>order</parameter></paramdef>
-                <paramdef> const GLfloat * <parameter>points</parameter></paramdef>
+                <funcdef>void <function>glMap1f</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLfloat <parameter>u1</parameter></paramdef>
+                <paramdef>GLfloat <parameter>u2</parameter></paramdef>
+                <paramdef>GLint <parameter>stride</parameter></paramdef>
+                <paramdef>GLint <parameter>order</parameter></paramdef>
+                <paramdef>const GLfloat * <parameter>points</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMap1d</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLdouble <parameter>u1</parameter></paramdef>
-                <paramdef> GLdouble <parameter>u2</parameter></paramdef>
-                <paramdef> GLint <parameter>stride</parameter></paramdef>
-                <paramdef> GLint <parameter>order</parameter></paramdef>
-                <paramdef> const GLdouble * <parameter>points</parameter></paramdef>
+                <funcdef>void <function>glMap1d</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLdouble <parameter>u1</parameter></paramdef>
+                <paramdef>GLdouble <parameter>u2</parameter></paramdef>
+                <paramdef>GLint <parameter>stride</parameter></paramdef>
+                <paramdef>GLint <parameter>order</parameter></paramdef>
+                <paramdef>const GLdouble * <parameter>points</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

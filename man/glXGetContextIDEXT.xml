@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLXContextID <function>glXGetContextIDEXT</function></funcdef>
-                <paramdef> const GLXContext <parameter>ctx</parameter></paramdef>
+                <funcdef>GLXContextID <function>glXGetContextIDEXT</function></funcdef>
+                <paramdef>const GLXContext <parameter>ctx</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

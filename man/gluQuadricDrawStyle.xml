@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluQuadricDrawStyle</function></funcdef>
-                <paramdef> GLUquadric* <parameter>quad</parameter></paramdef>
-                <paramdef> GLenum <parameter>draw</parameter></paramdef>
+                <funcdef>void <function>gluQuadricDrawStyle</function></funcdef>
+                <paramdef>GLUquadric* <parameter>quad</parameter></paramdef>
+                <paramdef>GLenum <parameter>draw</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

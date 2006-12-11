@@ -19,10 +19,10 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> Bool <function>glXQueryExtension</function></funcdef>
-                <paramdef> Display * <parameter>dpy</parameter></paramdef>
-                <paramdef> int * <parameter>errorBase</parameter></paramdef>
-                <paramdef> int * <parameter>eventBase</parameter></paramdef>
+                <funcdef>Bool <function>glXQueryExtension</function></funcdef>
+                <paramdef>Display * <parameter>dpy</parameter></paramdef>
+                <paramdef>int * <parameter>errorBase</parameter></paramdef>
+                <paramdef>int * <parameter>eventBase</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

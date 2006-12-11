@@ -19,18 +19,18 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColorTableParameterfv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> const GLfloat * <parameter>params</parameter></paramdef>
+                <funcdef>void <function>glColorTableParameterfv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>const GLfloat * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColorTableParameteriv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> const GLint * <parameter>params</parameter></paramdef>
+                <funcdef>void <function>glColorTableParameteriv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>const GLint * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

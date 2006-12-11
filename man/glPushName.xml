@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPushName</function></funcdef>
-                <paramdef> GLuint <parameter>name</parameter></paramdef>
+                <funcdef>void <function>glPushName</function></funcdef>
+                <paramdef>GLuint <parameter>name</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -39,8 +39,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPopName</function></funcdef>
-                <paramdef>  <parameter>void</parameter></paramdef>
+                <funcdef>void <function>glPopName</function></funcdef>
+                <paramdef> <parameter>void</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

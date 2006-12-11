@@ -19,10 +19,10 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLXFBConfig * <function>glXGetFBConfigs</function></funcdef>
-                <paramdef> Display * <parameter>dpy</parameter></paramdef>
-                <paramdef> int <parameter>screen</parameter></paramdef>
-                <paramdef> int * <parameter>nelements</parameter></paramdef>
+                <funcdef>GLXFBConfig * <function>glXGetFBConfigs</function></funcdef>
+                <paramdef>Display * <parameter>dpy</parameter></paramdef>
+                <paramdef>int <parameter>screen</parameter></paramdef>
+                <paramdef>int * <parameter>nelements</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

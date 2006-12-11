@@ -19,11 +19,11 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glClearColor</function></funcdef>
-                <paramdef> GLclampf <parameter>red</parameter></paramdef>
-                <paramdef> GLclampf <parameter>green</parameter></paramdef>
-                <paramdef> GLclampf <parameter>blue</parameter></paramdef>
-                <paramdef> GLclampf <parameter>alpha</parameter></paramdef>
+                <funcdef>void <function>glClearColor</function></funcdef>
+                <paramdef>GLclampf <parameter>red</parameter></paramdef>
+                <paramdef>GLclampf <parameter>green</parameter></paramdef>
+                <paramdef>GLclampf <parameter>blue</parameter></paramdef>
+                <paramdef>GLclampf <parameter>alpha</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

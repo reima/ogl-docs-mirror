@@ -19,17 +19,17 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPointParameterf</function></funcdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> GLfloat <parameter>param</parameter></paramdef>
+                <funcdef>void <function>glPointParameterf</function></funcdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLfloat <parameter>param</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <para></para>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPointParameteri</function></funcdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> GLint <parameter>param</parameter></paramdef>
+                <funcdef>void <function>glPointParameteri</function></funcdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLint <parameter>param</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -62,17 +62,17 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPointParameterfv</function></funcdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> const GLfloat * <parameter>params</parameter></paramdef>
+                <funcdef>void <function>glPointParameterfv</function></funcdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>const GLfloat * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <para></para>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPointParameteriv</function></funcdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> const GLint * <parameter>params</parameter></paramdef>
+                <funcdef>void <function>glPointParameteriv</function></funcdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>const GLint * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

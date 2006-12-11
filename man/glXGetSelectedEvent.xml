@@ -19,10 +19,10 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glXGetSelectedEvent</function></funcdef>
-                <paramdef> Display * <parameter>dpy</parameter></paramdef>
-                <paramdef> GLXDrawable <parameter>draw</parameter></paramdef>
-                <paramdef> unsigned long * <parameter>event_mask</parameter></paramdef>
+                <funcdef>void <function>glXGetSelectedEvent</function></funcdef>
+                <paramdef>Display * <parameter>dpy</parameter></paramdef>
+                <paramdef>GLXDrawable <parameter>draw</parameter></paramdef>
+                <paramdef>unsigned long * <parameter>event_mask</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

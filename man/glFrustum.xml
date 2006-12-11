@@ -19,13 +19,13 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glFrustum</function></funcdef>
-                <paramdef> GLdouble <parameter>Left</parameter></paramdef>
-                <paramdef> GLdouble <parameter>Right</parameter></paramdef>
-                <paramdef> GLdouble <parameter>bottom</parameter></paramdef>
-                <paramdef> GLdouble <parameter>top</parameter></paramdef>
-                <paramdef> GLdouble <parameter>nearVal</parameter></paramdef>
-                <paramdef> GLdouble <parameter>farVal</parameter></paramdef>
+                <funcdef>void <function>glFrustum</function></funcdef>
+                <paramdef>GLdouble <parameter>Left</parameter></paramdef>
+                <paramdef>GLdouble <parameter>Right</parameter></paramdef>
+                <paramdef>GLdouble <parameter>bottom</parameter></paramdef>
+                <paramdef>GLdouble <parameter>top</parameter></paramdef>
+                <paramdef>GLdouble <parameter>nearVal</parameter></paramdef>
+                <paramdef>GLdouble <parameter>farVal</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

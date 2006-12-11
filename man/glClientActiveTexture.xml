@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glClientActiveTexture</function></funcdef>
-                <paramdef> GLenum <parameter>texture</parameter></paramdef>
+                <funcdef>void <function>glClientActiveTexture</function></funcdef>
+                <paramdef>GLenum <parameter>texture</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

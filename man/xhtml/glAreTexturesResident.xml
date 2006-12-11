@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glAreTexturesResident</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glAreTexturesResident"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glAreTexturesResident — determine if textures are loaded in texture memory</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef"> GLboolean <b class="fsfunc">glAreTexturesResident</b>(</code></td><td><var class="pdparam">n</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">textures</var>, </td><td> </td></tr><tr><td> </td><td><var class="pdparam">residences</var><code>)</code>;</td><td> </td></tr></table><table border="0" summary="Function argument synopsis" cellspacing="0" cellpadding="0"><tr><td> GLsizei  </td><td><var class="pdparam">n</var>;</td></tr><tr><td> const GLuint *  </td><td><var class="pdparam">textures</var>;</td></tr><tr><td> GLboolean *  </td><td><var class="pdparam">residences</var>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781974"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>n</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glAreTexturesResident</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glAreTexturesResident"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glAreTexturesResident — determine if textures are loaded in texture memory</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">GLboolean <b class="fsfunc">glAreTexturesResident</b>(</code></td><td>GLsizei  </td><td><var class="pdparam">n</var>, </td></tr><tr><td> </td><td>const GLuint *  </td><td><var class="pdparam">textures</var>, </td></tr><tr><td> </td><td>GLboolean *  </td><td><var class="pdparam">residences</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782022"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>n</code></em></span></dt><dd><p>
                     Specifies the number of textures to be queried.
                 </p></dd><dt><span class="term"><em class="parameter"><code>textures</code></em></span></dt><dd><p>
                     Specifies an array containing the names of the textures to be queried.
@@ -9,7 +9,7 @@
                     Specifies an array in which the texture residence status is returned.
                     The residence status of a texture named by an element of <em class="parameter"><code>textures</code></em> is
                     returned in the corresponding element of <em class="parameter"><code>residences</code></em>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768462"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768503"></a><h2>Description</h2><p>
             GL establishes
             a ``working set'' of textures that are resident in texture memory.
             These textures can be bound to a texture target much more efficiently
@@ -27,12 +27,12 @@
         </p><p>
             The residence status of a single bound texture may also be queried
             by calling
-            <span class="citerefentry"><span class="refentrytitle">glGetTexParameter</span></span> with the <span class="emphasis"><em>target</em></span> argument set to the
+            <a href="glGetTexParameter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetTexParameter</span></span></a> with the <span class="emphasis"><em>target</em></span> argument set to the
             target to which the texture is bound, and the <span class="emphasis"><em>pname</em></span> argument
             set to <code class="constant">GL_TEXTURE_RESIDENT</code>.
             This is the only way that the residence status of a default texture can be
             queried.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768597"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768622"></a><h2>Notes</h2><p>
             <code class="function">glAreTexturesResident</code> is available only if the GL version is 1.1 or greater.
         </p><p>
             <code class="function">glAreTexturesResident</code> returns the residency status of the textures at the time of
@@ -44,7 +44,7 @@
         </p><p>
             Some implementations may not load a texture until the first use of
             that texture.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775196"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775214"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>n</code></em> is negative.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if any element in <em class="parameter"><code>textures</code></em>
@@ -52,20 +52,20 @@
             <code class="constant">GL_FALSE</code> and the contents of <em class="parameter"><code>residences</code></em> is indeterminate.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glAreTexturesResident</code> is executed
-            between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span> and the corresponding
-            execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775268"></a><h2>Associated Gets</h2><p>
-            <span class="citerefentry"><span class="refentrytitle">glGetTexParameter</span></span> with parameter name <code class="constant">GL_TEXTURE_RESIDENT</code>
+            between the execution of <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding
+            execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775282"></a><h2>Associated Gets</h2><p>
+            <a href="glGetTexParameter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetTexParameter</span></span></a> with parameter name <code class="constant">GL_TEXTURE_RESIDENT</code>
             retrieves the residence status of a currently bound texture.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775290"></a><h2>See Also</h2><p>
-            <span class="citerefentry"><span class="refentrytitle">glBindTexture</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glGetTexParameter</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glPrioritizeTextures</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775336"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775301"></a><h2>See Also</h2><p>
+            <a href="glBindTexture.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBindTexture</span></span></a>,
+            <a href="glGetTexParameter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetTexParameter</span></span></a>,
+            <a href="glPrioritizeTextures.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPrioritizeTextures</span></span></a>,
+            <a href="glTexImage1D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>,
+            <a href="glTexImage2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>,
+            <a href="glTexImage3D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>,
+            <a href="glTexParameter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775345"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

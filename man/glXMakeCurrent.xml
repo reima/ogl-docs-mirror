@@ -19,10 +19,10 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> Bool <function>glXMakeCurrent</function></funcdef>
-                <paramdef> Display * <parameter>dpy</parameter></paramdef>
-                <paramdef> GLXDrawable <parameter>drawable</parameter></paramdef>
-                <paramdef> GLXContext <parameter>ctx</parameter></paramdef>
+                <funcdef>Bool <function>glXMakeCurrent</function></funcdef>
+                <paramdef>Display * <parameter>dpy</parameter></paramdef>
+                <paramdef>GLXDrawable <parameter>drawable</parameter></paramdef>
+                <paramdef>GLXContext <parameter>ctx</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

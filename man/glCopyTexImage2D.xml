@@ -19,15 +19,15 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glCopyTexImage2D</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLint <parameter>level</parameter></paramdef>
-                <paramdef> GLenum <parameter>internalformat</parameter></paramdef>
-                <paramdef> GLint <parameter>x</parameter></paramdef>
-                <paramdef> GLint <parameter>y</parameter></paramdef>
-                <paramdef> GLsizei <parameter>width</parameter></paramdef>
-                <paramdef> GLsizei <parameter>height</parameter></paramdef>
-                <paramdef> GLint <parameter>border</parameter></paramdef>
+                <funcdef>void <function>glCopyTexImage2D</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLint <parameter>level</parameter></paramdef>
+                <paramdef>GLenum <parameter>internalformat</parameter></paramdef>
+                <paramdef>GLint <parameter>x</parameter></paramdef>
+                <paramdef>GLint <parameter>y</parameter></paramdef>
+                <paramdef>GLsizei <parameter>width</parameter></paramdef>
+                <paramdef>GLsizei <parameter>height</parameter></paramdef>
+                <paramdef>GLint <parameter>border</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

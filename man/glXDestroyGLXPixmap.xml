@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glXDestroyGLXPixmap</function></funcdef>
-                <paramdef> Display * <parameter>dpy</parameter></paramdef>
-                <paramdef> GLXPixmap <parameter>pix</parameter></paramdef>
+                <funcdef>void <function>glXDestroyGLXPixmap</function></funcdef>
+                <paramdef>Display * <parameter>dpy</parameter></paramdef>
+                <paramdef>GLXPixmap <parameter>pix</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

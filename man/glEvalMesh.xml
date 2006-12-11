@@ -19,10 +19,10 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEvalMesh1</function></funcdef>
-                <paramdef> GLenum <parameter>mode</parameter></paramdef>
-                <paramdef> GLint <parameter>i1</parameter></paramdef>
-                <paramdef> GLint <parameter>i2</parameter></paramdef>
+                <funcdef>void <function>glEvalMesh1</function></funcdef>
+                <paramdef>GLenum <parameter>mode</parameter></paramdef>
+                <paramdef>GLint <parameter>i1</parameter></paramdef>
+                <paramdef>GLint <parameter>i2</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -56,12 +56,12 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEvalMesh2</function></funcdef>
-                <paramdef> GLenum <parameter>mode</parameter></paramdef>
-                <paramdef> GLint <parameter>i1</parameter></paramdef>
-                <paramdef> GLint <parameter>i2</parameter></paramdef>
-                <paramdef> GLint <parameter>j1</parameter></paramdef>
-                <paramdef> GLint <parameter>j2</parameter></paramdef>
+                <funcdef>void <function>glEvalMesh2</function></funcdef>
+                <paramdef>GLenum <parameter>mode</parameter></paramdef>
+                <paramdef>GLint <parameter>i1</parameter></paramdef>
+                <paramdef>GLint <parameter>i2</parameter></paramdef>
+                <paramdef>GLint <parameter>j1</parameter></paramdef>
+                <paramdef>GLint <parameter>j2</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

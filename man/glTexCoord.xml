@@ -19,122 +19,122 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord1s</function></funcdef>
-                <paramdef> GLshort <parameter>s</parameter></paramdef>
+                <funcdef>void <function>glTexCoord1s</function></funcdef>
+                <paramdef>GLshort <parameter>s</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord1i</function></funcdef>
-                <paramdef> GLint <parameter>s</parameter></paramdef>
+                <funcdef>void <function>glTexCoord1i</function></funcdef>
+                <paramdef>GLint <parameter>s</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord1f</function></funcdef>
-                <paramdef> GLfloat <parameter>s</parameter></paramdef>
+                <funcdef>void <function>glTexCoord1f</function></funcdef>
+                <paramdef>GLfloat <parameter>s</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord1d</function></funcdef>
-                <paramdef> GLdouble <parameter>s</parameter></paramdef>
+                <funcdef>void <function>glTexCoord1d</function></funcdef>
+                <paramdef>GLdouble <parameter>s</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord2s</function></funcdef>
-                <paramdef> GLshort <parameter>s</parameter></paramdef>
-                <paramdef> GLshort <parameter>t</parameter></paramdef>
+                <funcdef>void <function>glTexCoord2s</function></funcdef>
+                <paramdef>GLshort <parameter>s</parameter></paramdef>
+                <paramdef>GLshort <parameter>t</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord2i</function></funcdef>
-                <paramdef> GLint <parameter>s</parameter></paramdef>
-                <paramdef> GLint <parameter>t</parameter></paramdef>
+                <funcdef>void <function>glTexCoord2i</function></funcdef>
+                <paramdef>GLint <parameter>s</parameter></paramdef>
+                <paramdef>GLint <parameter>t</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord2f</function></funcdef>
-                <paramdef> GLfloat <parameter>s</parameter></paramdef>
-                <paramdef> GLfloat <parameter>t</parameter></paramdef>
+                <funcdef>void <function>glTexCoord2f</function></funcdef>
+                <paramdef>GLfloat <parameter>s</parameter></paramdef>
+                <paramdef>GLfloat <parameter>t</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord2d</function></funcdef>
-                <paramdef> GLdouble <parameter>s</parameter></paramdef>
-                <paramdef> GLdouble <parameter>t</parameter></paramdef>
+                <funcdef>void <function>glTexCoord2d</function></funcdef>
+                <paramdef>GLdouble <parameter>s</parameter></paramdef>
+                <paramdef>GLdouble <parameter>t</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord3s</function></funcdef>
-                <paramdef> GLshort <parameter>s</parameter></paramdef>
-                <paramdef> GLshort <parameter>t</parameter></paramdef>
-                <paramdef> GLshort <parameter>r</parameter></paramdef>
+                <funcdef>void <function>glTexCoord3s</function></funcdef>
+                <paramdef>GLshort <parameter>s</parameter></paramdef>
+                <paramdef>GLshort <parameter>t</parameter></paramdef>
+                <paramdef>GLshort <parameter>r</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord3i</function></funcdef>
-                <paramdef> GLint <parameter>s</parameter></paramdef>
-                <paramdef> GLint <parameter>t</parameter></paramdef>
-                <paramdef> GLint <parameter>r</parameter></paramdef>
+                <funcdef>void <function>glTexCoord3i</function></funcdef>
+                <paramdef>GLint <parameter>s</parameter></paramdef>
+                <paramdef>GLint <parameter>t</parameter></paramdef>
+                <paramdef>GLint <parameter>r</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord3f</function></funcdef>
-                <paramdef> GLfloat <parameter>s</parameter></paramdef>
-                <paramdef> GLfloat <parameter>t</parameter></paramdef>
-                <paramdef> GLfloat <parameter>r</parameter></paramdef>
+                <funcdef>void <function>glTexCoord3f</function></funcdef>
+                <paramdef>GLfloat <parameter>s</parameter></paramdef>
+                <paramdef>GLfloat <parameter>t</parameter></paramdef>
+                <paramdef>GLfloat <parameter>r</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord3d</function></funcdef>
-                <paramdef> GLdouble <parameter>s</parameter></paramdef>
-                <paramdef> GLdouble <parameter>t</parameter></paramdef>
-                <paramdef> GLdouble <parameter>r</parameter></paramdef>
+                <funcdef>void <function>glTexCoord3d</function></funcdef>
+                <paramdef>GLdouble <parameter>s</parameter></paramdef>
+                <paramdef>GLdouble <parameter>t</parameter></paramdef>
+                <paramdef>GLdouble <parameter>r</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord4s</function></funcdef>
-                <paramdef> GLshort <parameter>s</parameter></paramdef>
-                <paramdef> GLshort <parameter>t</parameter></paramdef>
-                <paramdef> GLshort <parameter>r</parameter></paramdef>
-                <paramdef> GLshort <parameter>q</parameter></paramdef>
+                <funcdef>void <function>glTexCoord4s</function></funcdef>
+                <paramdef>GLshort <parameter>s</parameter></paramdef>
+                <paramdef>GLshort <parameter>t</parameter></paramdef>
+                <paramdef>GLshort <parameter>r</parameter></paramdef>
+                <paramdef>GLshort <parameter>q</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord4i</function></funcdef>
-                <paramdef> GLint <parameter>s</parameter></paramdef>
-                <paramdef> GLint <parameter>t</parameter></paramdef>
-                <paramdef> GLint <parameter>r</parameter></paramdef>
-                <paramdef> GLint <parameter>q</parameter></paramdef>
+                <funcdef>void <function>glTexCoord4i</function></funcdef>
+                <paramdef>GLint <parameter>s</parameter></paramdef>
+                <paramdef>GLint <parameter>t</parameter></paramdef>
+                <paramdef>GLint <parameter>r</parameter></paramdef>
+                <paramdef>GLint <parameter>q</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord4f</function></funcdef>
-                <paramdef> GLfloat <parameter>s</parameter></paramdef>
-                <paramdef> GLfloat <parameter>t</parameter></paramdef>
-                <paramdef> GLfloat <parameter>r</parameter></paramdef>
-                <paramdef> GLfloat <parameter>q</parameter></paramdef>
+                <funcdef>void <function>glTexCoord4f</function></funcdef>
+                <paramdef>GLfloat <parameter>s</parameter></paramdef>
+                <paramdef>GLfloat <parameter>t</parameter></paramdef>
+                <paramdef>GLfloat <parameter>r</parameter></paramdef>
+                <paramdef>GLfloat <parameter>q</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord4d</function></funcdef>
-                <paramdef> GLdouble <parameter>s</parameter></paramdef>
-                <paramdef> GLdouble <parameter>t</parameter></paramdef>
-                <paramdef> GLdouble <parameter>r</parameter></paramdef>
-                <paramdef> GLdouble <parameter>q</parameter></paramdef>
+                <funcdef>void <function>glTexCoord4d</function></funcdef>
+                <paramdef>GLdouble <parameter>s</parameter></paramdef>
+                <paramdef>GLdouble <parameter>t</parameter></paramdef>
+                <paramdef>GLdouble <parameter>r</parameter></paramdef>
+                <paramdef>GLdouble <parameter>q</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -157,98 +157,98 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord1sv</function></funcdef>
-                <paramdef> const GLshort * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glTexCoord1sv</function></funcdef>
+                <paramdef>const GLshort * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord1iv</function></funcdef>
-                <paramdef> const GLint * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glTexCoord1iv</function></funcdef>
+                <paramdef>const GLint * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord1fv</function></funcdef>
-                <paramdef> const GLfloat * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glTexCoord1fv</function></funcdef>
+                <paramdef>const GLfloat * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord1dv</function></funcdef>
-                <paramdef> const GLdouble * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glTexCoord1dv</function></funcdef>
+                <paramdef>const GLdouble * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord2sv</function></funcdef>
-                <paramdef> const GLshort * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glTexCoord2sv</function></funcdef>
+                <paramdef>const GLshort * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord2iv</function></funcdef>
-                <paramdef> const GLint * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glTexCoord2iv</function></funcdef>
+                <paramdef>const GLint * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord2fv</function></funcdef>
-                <paramdef> const GLfloat * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glTexCoord2fv</function></funcdef>
+                <paramdef>const GLfloat * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord2dv</function></funcdef>
-                <paramdef> const GLdouble * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glTexCoord2dv</function></funcdef>
+                <paramdef>const GLdouble * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord3sv</function></funcdef>
-                <paramdef> const GLshort * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glTexCoord3sv</function></funcdef>
+                <paramdef>const GLshort * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord3iv</function></funcdef>
-                <paramdef> const GLint * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glTexCoord3iv</function></funcdef>
+                <paramdef>const GLint * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord3fv</function></funcdef>
-                <paramdef> const GLfloat * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glTexCoord3fv</function></funcdef>
+                <paramdef>const GLfloat * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord3dv</function></funcdef>
-                <paramdef> const GLdouble * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glTexCoord3dv</function></funcdef>
+                <paramdef>const GLdouble * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord4sv</function></funcdef>
-                <paramdef> const GLshort * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glTexCoord4sv</function></funcdef>
+                <paramdef>const GLshort * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord4iv</function></funcdef>
-                <paramdef> const GLint * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glTexCoord4iv</function></funcdef>
+                <paramdef>const GLint * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord4fv</function></funcdef>
-                <paramdef> const GLfloat * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glTexCoord4fv</function></funcdef>
+                <paramdef>const GLfloat * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexCoord4dv</function></funcdef>
-                <paramdef> const GLdouble * <parameter>v</parameter></paramdef>
+                <funcdef>void <function>glTexCoord4dv</function></funcdef>
+                <paramdef>const GLdouble * <parameter>v</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

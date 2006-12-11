@@ -19,18 +19,18 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glLightf</function></funcdef>
-                <paramdef> GLenum <parameter>light</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> GLfloat <parameter>param</parameter></paramdef>
+                <funcdef>void <function>glLightf</function></funcdef>
+                <paramdef>GLenum <parameter>light</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLfloat <parameter>param</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glLighti</function></funcdef>
-                <paramdef> GLenum <parameter>light</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> GLint <parameter>param</parameter></paramdef>
+                <funcdef>void <function>glLighti</function></funcdef>
+                <paramdef>GLenum <parameter>light</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLint <parameter>param</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -78,18 +78,18 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glLightfv</function></funcdef>
-                <paramdef> GLenum <parameter>light</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> const GLfloat * <parameter>params</parameter></paramdef>
+                <funcdef>void <function>glLightfv</function></funcdef>
+                <paramdef>GLenum <parameter>light</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>const GLfloat * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glLightiv</function></funcdef>
-                <paramdef> GLenum <parameter>light</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> const GLint * <parameter>params</parameter></paramdef>
+                <funcdef>void <function>glLightiv</function></funcdef>
+                <paramdef>GLenum <parameter>light</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>const GLint * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

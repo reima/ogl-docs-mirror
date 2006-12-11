@@ -19,13 +19,13 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glGetSeparableFilter</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLenum <parameter>format</parameter></paramdef>
-                <paramdef> GLenum <parameter>type</parameter></paramdef>
-                <paramdef> GLvoid * <parameter>row</parameter></paramdef>
-                <paramdef> GLvoid * <parameter>column</parameter></paramdef>
-                <paramdef> GLvoid * <parameter>span</parameter></paramdef>
+                <funcdef>void <function>glGetSeparableFilter</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLenum <parameter>format</parameter></paramdef>
+                <paramdef>GLenum <parameter>type</parameter></paramdef>
+                <paramdef>GLvoid * <parameter>row</parameter></paramdef>
+                <paramdef>GLvoid * <parameter>column</parameter></paramdef>
+                <paramdef>GLvoid * <parameter>span</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

@@ -19,10 +19,10 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluQuadricCallback</function></funcdef>
-                <paramdef> GLUquadric* <parameter>quad</parameter></paramdef>
-                <paramdef> GLenum <parameter>which</parameter></paramdef>
-                <paramdef> _GLUfuncptr <parameter>CallBackFunc</parameter></paramdef>
+                <funcdef>void <function>gluQuadricCallback</function></funcdef>
+                <paramdef>GLUquadric* <parameter>quad</parameter></paramdef>
+                <paramdef>GLenum <parameter>which</parameter></paramdef>
+                <paramdef>_GLUfuncptr <parameter>CallBackFunc</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

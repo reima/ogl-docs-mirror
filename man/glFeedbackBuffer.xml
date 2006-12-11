@@ -19,10 +19,10 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glFeedbackBuffer</function></funcdef>
-                <paramdef> GLsizei <parameter>size</parameter></paramdef>
-                <paramdef> GLenum <parameter>type</parameter></paramdef>
-                <paramdef> GLfloat * <parameter>buffer</parameter></paramdef>
+                <funcdef>void <function>glFeedbackBuffer</function></funcdef>
+                <paramdef>GLsizei <parameter>size</parameter></paramdef>
+                <paramdef>GLenum <parameter>type</parameter></paramdef>
+                <paramdef>GLfloat * <parameter>buffer</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

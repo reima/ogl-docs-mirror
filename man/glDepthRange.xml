@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glDepthRange</function></funcdef>
-                <paramdef> GLclampd <parameter>nearVal</parameter></paramdef>
-                <paramdef> GLclampd <parameter>farVal</parameter></paramdef>
+                <funcdef>void <function>glDepthRange</function></funcdef>
+                <paramdef>GLclampd <parameter>nearVal</parameter></paramdef>
+                <paramdef>GLclampd <parameter>farVal</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

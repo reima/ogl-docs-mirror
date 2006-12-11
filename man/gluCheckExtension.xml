@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLboolean <function>gluCheckExtension</function></funcdef>
-                <paramdef> const GLubyte * <parameter>extName</parameter></paramdef>
-                <paramdef> const GLubyte * <parameter>extString</parameter></paramdef>
+                <funcdef>GLboolean <function>gluCheckExtension</function></funcdef>
+                <paramdef>const GLubyte * <parameter>extName</parameter></paramdef>
+                <paramdef>const GLubyte * <parameter>extString</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

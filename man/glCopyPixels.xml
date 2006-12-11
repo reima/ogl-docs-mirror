@@ -19,12 +19,12 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glCopyPixels</function></funcdef>
-                <paramdef> GLint <parameter>x</parameter></paramdef>
-                <paramdef> GLint <parameter>y</parameter></paramdef>
-                <paramdef> GLsizei <parameter>width</parameter></paramdef>
-                <paramdef> GLsizei <parameter>height</parameter></paramdef>
-                <paramdef> GLenum <parameter>type</parameter></paramdef>
+                <funcdef>void <function>glCopyPixels</function></funcdef>
+                <paramdef>GLint <parameter>x</parameter></paramdef>
+                <paramdef>GLint <parameter>y</parameter></paramdef>
+                <paramdef>GLsizei <parameter>width</parameter></paramdef>
+                <paramdef>GLsizei <parameter>height</parameter></paramdef>
+                <paramdef>GLenum <parameter>type</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

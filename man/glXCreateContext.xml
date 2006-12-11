@@ -19,11 +19,11 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLXContext <function>glXCreateContext</function></funcdef>
-                <paramdef> Display * <parameter>dpy</parameter></paramdef>
-                <paramdef> XVisualInfo * <parameter>vis</parameter></paramdef>
-                <paramdef> GLXContext <parameter>shareList</parameter></paramdef>
-                <paramdef> Bool <parameter>direct</parameter></paramdef>
+                <funcdef>GLXContext <function>glXCreateContext</function></funcdef>
+                <paramdef>Display * <parameter>dpy</parameter></paramdef>
+                <paramdef>XVisualInfo * <parameter>vis</parameter></paramdef>
+                <paramdef>GLXContext <parameter>shareList</parameter></paramdef>
+                <paramdef>Bool <parameter>direct</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

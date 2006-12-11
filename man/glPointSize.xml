@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPointSize</function></funcdef>
-                <paramdef> GLfloat <parameter>size</parameter></paramdef>
+                <funcdef>void <function>glPointSize</function></funcdef>
+                <paramdef>GLfloat <parameter>size</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

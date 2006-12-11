@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluDeleteQuadric</function></funcdef>
-                <paramdef> GLUquadric* <parameter>quad</parameter></paramdef>
+                <funcdef>void <function>gluDeleteQuadric</function></funcdef>
+                <paramdef>GLUquadric* <parameter>quad</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

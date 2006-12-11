@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glBeginQuery</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLuint <parameter>id</parameter></paramdef>
+                <funcdef>void <function>glBeginQuery</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLuint <parameter>id</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -51,8 +51,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEndQuery</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
+                <funcdef>void <function>glEndQuery</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

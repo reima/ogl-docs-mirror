@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glArrayElement</function></funcdef>
-                <paramdef> GLint <parameter>i</parameter></paramdef>
+                <funcdef>void <function>glArrayElement</function></funcdef>
+                <paramdef>GLint <parameter>i</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

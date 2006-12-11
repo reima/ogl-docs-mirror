@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glAlphaFunc</function></funcdef>
-                <paramdef> GLenum <parameter>func</parameter></paramdef>
-                <paramdef> GLclampf <parameter>ref</parameter></paramdef>
+                <funcdef>void <function>glAlphaFunc</function></funcdef>
+                <paramdef>GLenum <parameter>func</parameter></paramdef>
+                <paramdef>GLclampf <parameter>ref</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

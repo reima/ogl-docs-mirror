@@ -20,42 +20,42 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glNormal3b</function></funcdef>
-                <paramdef> GLbyte <parameter>nx</parameter></paramdef>
-                <paramdef> GLbyte <parameter>ny</parameter></paramdef>
-                <paramdef> GLbyte <parameter>nz</parameter></paramdef>
+                <funcdef>void <function>glNormal3b</function></funcdef>
+                <paramdef>GLbyte <parameter>nx</parameter></paramdef>
+                <paramdef>GLbyte <parameter>ny</parameter></paramdef>
+                <paramdef>GLbyte <parameter>nz</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glNormal3d</function></funcdef>
-                <paramdef> GLdouble <parameter>nx</parameter></paramdef>
-                <paramdef> GLdouble <parameter>ny</parameter></paramdef>
-                <paramdef> GLdouble <parameter>nz</parameter></paramdef>
+                <funcdef>void <function>glNormal3d</function></funcdef>
+                <paramdef>GLdouble <parameter>nx</parameter></paramdef>
+                <paramdef>GLdouble <parameter>ny</parameter></paramdef>
+                <paramdef>GLdouble <parameter>nz</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glNormal3f</function></funcdef>
-                <paramdef> GLfloat <parameter>nx</parameter></paramdef>
-                <paramdef> GLfloat <parameter>ny</parameter></paramdef>
-                <paramdef> GLfloat <parameter>nz</parameter></paramdef>
+                <funcdef>void <function>glNormal3f</function></funcdef>
+                <paramdef>GLfloat <parameter>nx</parameter></paramdef>
+                <paramdef>GLfloat <parameter>ny</parameter></paramdef>
+                <paramdef>GLfloat <parameter>nz</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glNormal3i</function></funcdef>
-                <paramdef> GLint <parameter>nx</parameter></paramdef>
-                <paramdef> GLint <parameter>ny</parameter></paramdef>
-                <paramdef> GLint <parameter>nz</parameter></paramdef>
+                <funcdef>void <function>glNormal3i</function></funcdef>
+                <paramdef>GLint <parameter>nx</parameter></paramdef>
+                <paramdef>GLint <parameter>ny</parameter></paramdef>
+                <paramdef>GLint <parameter>nz</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glNormal3s</function></funcdef>
-                <paramdef> GLshort <parameter>nx</parameter></paramdef>
-                <paramdef> GLshort <parameter>ny</parameter></paramdef>
-                <paramdef> GLshort <parameter>nz</parameter></paramdef>
+                <funcdef>void <function>glNormal3s</function></funcdef>
+                <paramdef>GLshort <parameter>nx</parameter></paramdef>
+                <paramdef>GLshort <parameter>ny</parameter></paramdef>
+                <paramdef>GLshort <parameter>nz</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

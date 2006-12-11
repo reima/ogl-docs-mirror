@@ -19,10 +19,10 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> Bool <function>glXQueryVersion</function></funcdef>
-                <paramdef> Display * <parameter>dpy</parameter></paramdef>
-                <paramdef> int * <parameter>major</parameter></paramdef>
-                <paramdef> int * <parameter>minor</parameter></paramdef>
+                <funcdef>Bool <function>glXQueryVersion</function></funcdef>
+                <paramdef>Display * <parameter>dpy</parameter></paramdef>
+                <paramdef>int * <parameter>major</parameter></paramdef>
+                <paramdef>int * <parameter>minor</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

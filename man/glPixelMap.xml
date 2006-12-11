@@ -19,26 +19,26 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPixelMapfv</function></funcdef>
-                <paramdef> GLenum <parameter>map</parameter></paramdef>
-                <paramdef> GLsizei <parameter>mapsize</parameter></paramdef>
-                <paramdef> const GLfloat * <parameter>values</parameter></paramdef>
+                <funcdef>void <function>glPixelMapfv</function></funcdef>
+                <paramdef>GLenum <parameter>map</parameter></paramdef>
+                <paramdef>GLsizei <parameter>mapsize</parameter></paramdef>
+                <paramdef>const GLfloat * <parameter>values</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPixelMapuiv</function></funcdef>
-                <paramdef> GLenum <parameter>map</parameter></paramdef>
-                <paramdef> GLsizei <parameter>mapsize</parameter></paramdef>
-                <paramdef> const GLuint * <parameter>values</parameter></paramdef>
+                <funcdef>void <function>glPixelMapuiv</function></funcdef>
+                <paramdef>GLenum <parameter>map</parameter></paramdef>
+                <paramdef>GLsizei <parameter>mapsize</parameter></paramdef>
+                <paramdef>const GLuint * <parameter>values</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPixelMapusv</function></funcdef>
-                <paramdef> GLenum <parameter>map</parameter></paramdef>
-                <paramdef> GLsizei <parameter>mapsize</parameter></paramdef>
-                <paramdef> const GLushort * <parameter>values</parameter></paramdef>
+                <funcdef>void <function>glPixelMapusv</function></funcdef>
+                <paramdef>GLenum <parameter>map</parameter></paramdef>
+                <paramdef>GLsizei <parameter>mapsize</parameter></paramdef>
+                <paramdef>const GLushort * <parameter>values</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

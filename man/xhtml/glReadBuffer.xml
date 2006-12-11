@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glReadBuffer</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glReadBuffer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glReadBuffer — select a color buffer source for pixels</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glReadBuffer</b>(</code><var class="pdparam">mode</var><code>)</code>;<br /> GLenum <var class="pdparam">mode</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781956"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glReadBuffer</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glReadBuffer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glReadBuffer — select a color buffer source for pixels</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glReadBuffer</b>(</code>GLenum <var class="pdparam">mode</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781987"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
                     Specifies a color buffer.
                     Accepted values are
                     <code class="constant">GL_FRONT_LEFT</code>,
@@ -14,12 +14,12 @@
                     <code class="constant">GL_RIGHT</code>, and
                     <code class="constant">GL_AUX</code><span class="emphasis"><em>i</em></span>,
                     where <span class="emphasis"><em>i</em></span> is between 0 and the value of <code class="constant">GL_AUX_BUFFERS</code> minus 1.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781897"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781923"></a><h2>Description</h2><p>
             <code class="function">glReadBuffer</code> specifies a color buffer as the source for subsequent
-            <span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span>, <span class="citerefentry"><span class="refentrytitle">glCopyTexImage1D</span></span>, <span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage1D</span></span>, <span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage2D</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage3D</span></span>, and
-            <span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span> commands.
+            <a href="glReadPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>, <a href="glCopyTexImage1D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage1D</span></span></a>, <a href="glCopyTexImage2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a>,
+            <a href="glCopyTexSubImage1D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage1D</span></span></a>, <a href="glCopyTexSubImage2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage2D</span></span></a>,
+            <a href="glCopyTexSubImage3D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage3D</span></span></a>, and
+            <a href="glCopyPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a> commands.
             <em class="parameter"><code>mode</code></em> accepts one of twelve or more predefined values.
             (<code class="constant">GL_AUX0</code> through <code class="constant">GL_AUX3</code> are always defined.)
             In a fully configured system,
@@ -39,7 +39,7 @@
         </p><p>
             <em class="parameter"><code>mode</code></em> is initially <code class="constant">GL_FRONT</code> in single-buffered configurations
             and <code class="constant">GL_BACK</code> in double-buffered configurations.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768586"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768594"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is not one of the twelve
             (or more) accepted values.
         </p><p>
@@ -47,20 +47,20 @@
             that does not exist.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glReadBuffer</code>
-            is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
-            and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775193"></a><h2>Associated Gets</h2><p>
-            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_READ_BUFFER</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775210"></a><h2>See Also</h2><p>
-            <span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glCopyTexImage1D</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage1D</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage2D</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage3D</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glDrawBuffer</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775261"></a><h2>Copyright</h2><p>
+            is executed between the execution of <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
+            and the corresponding execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768652"></a><h2>Associated Gets</h2><p>
+            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_READ_BUFFER</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775222"></a><h2>See Also</h2><p>
+            <a href="glCopyPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
+            <a href="glCopyTexImage1D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage1D</span></span></a>,
+            <a href="glCopyTexImage2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a>,
+            <a href="glCopyTexSubImage1D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage1D</span></span></a>,
+            <a href="glCopyTexSubImage2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage2D</span></span></a>,
+            <a href="glCopyTexSubImage3D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage3D</span></span></a>,
+            <a href="glDrawBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawBuffer</span></span></a>,
+            <a href="glReadPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775271"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

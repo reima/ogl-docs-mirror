@@ -20,11 +20,11 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glStencilOpSeparate</function></funcdef>
-                <paramdef> GLenum <parameter>face</parameter></paramdef>
-                <paramdef> GLenum <parameter>sfail</parameter></paramdef>
-                <paramdef> GLenum <parameter>dpfail</parameter></paramdef>
-                <paramdef> GLenum <parameter>dppass</parameter></paramdef>
+                <funcdef>void <function>glStencilOpSeparate</function></funcdef>
+                <paramdef>GLenum <parameter>face</parameter></paramdef>
+                <paramdef>GLenum <parameter>sfail</parameter></paramdef>
+                <paramdef>GLenum <parameter>dpfail</parameter></paramdef>
+                <paramdef>GLenum <parameter>dppass</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

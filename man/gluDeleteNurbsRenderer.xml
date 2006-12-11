@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluDeleteNurbsRenderer</function></funcdef>
-                <paramdef> GLUnurbs* <parameter>nurb</parameter></paramdef>
+                <funcdef>void <function>gluDeleteNurbsRenderer</function></funcdef>
+                <paramdef>GLUnurbs* <parameter>nurb</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluQuadricTexture</function></funcdef>
-                <paramdef> GLUquadric* <parameter>quad</parameter></paramdef>
-                <paramdef> GLboolean <parameter>texture</parameter></paramdef>
+                <funcdef>void <function>gluQuadricTexture</function></funcdef>
+                <paramdef>GLUquadric* <parameter>quad</parameter></paramdef>
+                <paramdef>GLboolean <parameter>texture</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

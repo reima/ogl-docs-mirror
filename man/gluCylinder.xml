@@ -19,13 +19,13 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluCylinder</function></funcdef>
-                <paramdef> GLUquadric* <parameter>quad</parameter></paramdef>
-                <paramdef> GLdouble <parameter>base</parameter></paramdef>
-                <paramdef> GLdouble <parameter>top</parameter></paramdef>
-                <paramdef> GLdouble <parameter>height</parameter></paramdef>
-                <paramdef> GLint <parameter>slices</parameter></paramdef>
-                <paramdef> GLint <parameter>stacks</parameter></paramdef>
+                <funcdef>void <function>gluCylinder</function></funcdef>
+                <paramdef>GLUquadric* <parameter>quad</parameter></paramdef>
+                <paramdef>GLdouble <parameter>base</parameter></paramdef>
+                <paramdef>GLdouble <parameter>top</parameter></paramdef>
+                <paramdef>GLdouble <parameter>height</parameter></paramdef>
+                <paramdef>GLint <parameter>slices</parameter></paramdef>
+                <paramdef>GLint <parameter>stacks</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

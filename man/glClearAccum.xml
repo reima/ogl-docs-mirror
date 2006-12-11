@@ -19,11 +19,11 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glClearAccum</function></funcdef>
-                <paramdef> GLfloat <parameter>red</parameter></paramdef>
-                <paramdef> GLfloat <parameter>green</parameter></paramdef>
-                <paramdef> GLfloat <parameter>blue</parameter></paramdef>
-                <paramdef> GLfloat <parameter>alpha</parameter></paramdef>
+                <funcdef>void <function>glClearAccum</function></funcdef>
+                <paramdef>GLfloat <parameter>red</parameter></paramdef>
+                <paramdef>GLfloat <parameter>green</parameter></paramdef>
+                <paramdef>GLfloat <parameter>blue</parameter></paramdef>
+                <paramdef>GLfloat <parameter>alpha</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

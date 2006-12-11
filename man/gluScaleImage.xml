@@ -19,16 +19,16 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLint <function>gluScaleImage</function></funcdef>
-                <paramdef> GLenum <parameter>format</parameter></paramdef>
-                <paramdef> GLsizei <parameter>wIn</parameter></paramdef>
-                <paramdef> GLsizei <parameter>hIn</parameter></paramdef>
-                <paramdef> GLenum <parameter>typeIn</parameter></paramdef>
-                <paramdef> const void * <parameter>dataIn</parameter></paramdef>
-                <paramdef> GLsizei <parameter>wOut</parameter></paramdef>
-                <paramdef> GLsizei <parameter>hOut</parameter></paramdef>
-                <paramdef> GLenum <parameter>typeOut</parameter></paramdef>
-                <paramdef> GLvoid* <parameter>dataOut</parameter></paramdef>
+                <funcdef>GLint <function>gluScaleImage</function></funcdef>
+                <paramdef>GLenum <parameter>format</parameter></paramdef>
+                <paramdef>GLsizei <parameter>wIn</parameter></paramdef>
+                <paramdef>GLsizei <parameter>hIn</parameter></paramdef>
+                <paramdef>GLenum <parameter>typeIn</parameter></paramdef>
+                <paramdef>const void * <parameter>dataIn</parameter></paramdef>
+                <paramdef>GLsizei <parameter>wOut</parameter></paramdef>
+                <paramdef>GLsizei <parameter>hOut</parameter></paramdef>
+                <paramdef>GLenum <parameter>typeOut</parameter></paramdef>
+                <paramdef>GLvoid* <parameter>dataOut</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

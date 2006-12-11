@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glSelectBuffer</function></funcdef>
-                <paramdef> GLsizei <parameter>size</parameter></paramdef>
-                <paramdef> GLuint * <parameter>buffer</parameter></paramdef>
+                <funcdef>void <function>glSelectBuffer</function></funcdef>
+                <paramdef>GLsizei <parameter>size</parameter></paramdef>
+                <paramdef>GLuint * <parameter>buffer</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

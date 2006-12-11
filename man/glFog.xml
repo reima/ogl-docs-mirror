@@ -19,16 +19,16 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glFogf</function></funcdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> GLfloat <parameter>param</parameter></paramdef>
+                <funcdef>void <function>glFogf</function></funcdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLfloat <parameter>param</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glFogi</function></funcdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> GLint <parameter>param</parameter></paramdef>
+                <funcdef>void <function>glFogi</function></funcdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLint <parameter>param</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -63,16 +63,16 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glFogfv</function></funcdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> const GLfloat * <parameter>params</parameter></paramdef>
+                <funcdef>void <function>glFogfv</function></funcdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>const GLfloat * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glFogiv</function></funcdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> const GLint * <parameter>params</parameter></paramdef>
+                <funcdef>void <function>glFogiv</function></funcdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>const GLint * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

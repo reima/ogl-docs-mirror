@@ -19,18 +19,18 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glScaled</function></funcdef>
-                <paramdef> GLdouble <parameter>x</parameter></paramdef>
-                <paramdef> GLdouble <parameter>y</parameter></paramdef>
-                <paramdef> GLdouble <parameter>z</parameter></paramdef>
+                <funcdef>void <function>glScaled</function></funcdef>
+                <paramdef>GLdouble <parameter>x</parameter></paramdef>
+                <paramdef>GLdouble <parameter>y</parameter></paramdef>
+                <paramdef>GLdouble <parameter>z</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glScalef</function></funcdef>
-                <paramdef> GLfloat <parameter>x</parameter></paramdef>
-                <paramdef> GLfloat <parameter>y</parameter></paramdef>
-                <paramdef> GLfloat <parameter>z</parameter></paramdef>
+                <funcdef>void <function>glScalef</function></funcdef>
+                <paramdef>GLfloat <parameter>x</parameter></paramdef>
+                <paramdef>GLfloat <parameter>y</parameter></paramdef>
+                <paramdef>GLfloat <parameter>z</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLboolean <function>glIsBuffer</function></funcdef>
-                <paramdef> GLuint <parameter>buffer</parameter></paramdef>
+                <funcdef>GLboolean <function>glIsBuffer</function></funcdef>
+                <paramdef>GLuint <parameter>buffer</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

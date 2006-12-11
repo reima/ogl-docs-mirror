@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glXDestroyPbuffer</function></funcdef>
-                <paramdef> Display * <parameter>dpy</parameter></paramdef>
-                <paramdef> GLXPbuffer <parameter>pbuf</parameter></paramdef>
+                <funcdef>void <function>glXDestroyPbuffer</function></funcdef>
+                <paramdef>Display * <parameter>dpy</parameter></paramdef>
+                <paramdef>GLXPbuffer <parameter>pbuf</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

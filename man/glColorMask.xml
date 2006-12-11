@@ -19,11 +19,11 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glColorMask</function></funcdef>
-                <paramdef> GLboolean <parameter>red</parameter></paramdef>
-                <paramdef> GLboolean <parameter>green</parameter></paramdef>
-                <paramdef> GLboolean <parameter>blue</parameter></paramdef>
-                <paramdef> GLboolean <parameter>alpha</parameter></paramdef>
+                <funcdef>void <function>glColorMask</function></funcdef>
+                <paramdef>GLboolean <parameter>red</parameter></paramdef>
+                <paramdef>GLboolean <parameter>green</parameter></paramdef>
+                <paramdef>GLboolean <parameter>blue</parameter></paramdef>
+                <paramdef>GLboolean <parameter>alpha</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

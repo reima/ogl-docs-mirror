@@ -19,26 +19,26 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexGeni</function></funcdef>
-                <paramdef> GLenum <parameter>coord</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> GLint <parameter>param</parameter></paramdef>
+                <funcdef>void <function>glTexGeni</function></funcdef>
+                <paramdef>GLenum <parameter>coord</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLint <parameter>param</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexGenf</function></funcdef>
-                <paramdef> GLenum <parameter>coord</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> GLfloat <parameter>param</parameter></paramdef>
+                <funcdef>void <function>glTexGenf</function></funcdef>
+                <paramdef>GLenum <parameter>coord</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLfloat <parameter>param</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexGend</function></funcdef>
-                <paramdef> GLenum <parameter>coord</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> GLdouble <parameter>param</parameter></paramdef>
+                <funcdef>void <function>glTexGend</function></funcdef>
+                <paramdef>GLenum <parameter>coord</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLdouble <parameter>param</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -78,26 +78,26 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexGeniv</function></funcdef>
-                <paramdef> GLenum <parameter>coord</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> const GLint * <parameter>params</parameter></paramdef>
+                <funcdef>void <function>glTexGeniv</function></funcdef>
+                <paramdef>GLenum <parameter>coord</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>const GLint * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexGenfv</function></funcdef>
-                <paramdef> GLenum <parameter>coord</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> const GLfloat * <parameter>params</parameter></paramdef>
+                <funcdef>void <function>glTexGenfv</function></funcdef>
+                <paramdef>GLenum <parameter>coord</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>const GLfloat * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glTexGendv</function></funcdef>
-                <paramdef> GLenum <parameter>coord</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> const GLdouble * <parameter>params</parameter></paramdef>
+                <funcdef>void <function>glTexGendv</function></funcdef>
+                <paramdef>GLenum <parameter>coord</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>const GLdouble * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

@@ -19,20 +19,20 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glGetTexLevelParameterfv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLint <parameter>level</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> GLfloat * <parameter>params</parameter></paramdef>
+                <funcdef>void <function>glGetTexLevelParameterfv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLint <parameter>level</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLfloat * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glGetTexLevelParameteriv</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLint <parameter>level</parameter></paramdef>
-                <paramdef> GLenum <parameter>pname</parameter></paramdef>
-                <paramdef> GLint * <parameter>params</parameter></paramdef>
+                <funcdef>void <function>glGetTexLevelParameteriv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLint <parameter>level</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLint * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

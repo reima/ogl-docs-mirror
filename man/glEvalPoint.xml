@@ -19,15 +19,15 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEvalPoint1</function></funcdef>
-                <paramdef> GLint <parameter>i</parameter></paramdef>
+                <funcdef>void <function>glEvalPoint1</function></funcdef>
+                <paramdef>GLint <parameter>i</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEvalPoint2</function></funcdef>
-                <paramdef> GLint <parameter>i</parameter></paramdef>
-                <paramdef> GLint <parameter>j</parameter></paramdef>
+                <funcdef>void <function>glEvalPoint2</function></funcdef>
+                <paramdef>GLint <parameter>i</parameter></paramdef>
+                <paramdef>GLint <parameter>j</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

@@ -19,32 +19,32 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMap2f</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLfloat <parameter>u1</parameter></paramdef>
-                <paramdef> GLfloat <parameter>u2</parameter></paramdef>
-                <paramdef> GLint <parameter>ustride</parameter></paramdef>
-                <paramdef> GLint <parameter>uorder</parameter></paramdef>
-                <paramdef> GLfloat <parameter>v1</parameter></paramdef>
-                <paramdef> GLfloat <parameter>v2</parameter></paramdef>
-                <paramdef> GLint <parameter>vstride</parameter></paramdef>
-                <paramdef> GLint <parameter>vorder</parameter></paramdef>
-                <paramdef> const GLfloat * <parameter>points</parameter></paramdef>
+                <funcdef>void <function>glMap2f</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLfloat <parameter>u1</parameter></paramdef>
+                <paramdef>GLfloat <parameter>u2</parameter></paramdef>
+                <paramdef>GLint <parameter>ustride</parameter></paramdef>
+                <paramdef>GLint <parameter>uorder</parameter></paramdef>
+                <paramdef>GLfloat <parameter>v1</parameter></paramdef>
+                <paramdef>GLfloat <parameter>v2</parameter></paramdef>
+                <paramdef>GLint <parameter>vstride</parameter></paramdef>
+                <paramdef>GLint <parameter>vorder</parameter></paramdef>
+                <paramdef>const GLfloat * <parameter>points</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glMap2d</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLdouble <parameter>u1</parameter></paramdef>
-                <paramdef> GLdouble <parameter>u2</parameter></paramdef>
-                <paramdef> GLint <parameter>ustride</parameter></paramdef>
-                <paramdef> GLint <parameter>uorder</parameter></paramdef>
-                <paramdef> GLdouble <parameter>v1</parameter></paramdef>
-                <paramdef> GLdouble <parameter>v2</parameter></paramdef>
-                <paramdef> GLint <parameter>vstride</parameter></paramdef>
-                <paramdef> GLint <parameter>vorder</parameter></paramdef>
-                <paramdef> const GLdouble * <parameter>points</parameter></paramdef>
+                <funcdef>void <function>glMap2d</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLdouble <parameter>u1</parameter></paramdef>
+                <paramdef>GLdouble <parameter>u2</parameter></paramdef>
+                <paramdef>GLint <parameter>ustride</parameter></paramdef>
+                <paramdef>GLint <parameter>uorder</parameter></paramdef>
+                <paramdef>GLdouble <parameter>v1</parameter></paramdef>
+                <paramdef>GLdouble <parameter>v2</parameter></paramdef>
+                <paramdef>GLint <parameter>vstride</parameter></paramdef>
+                <paramdef>GLint <parameter>vorder</parameter></paramdef>
+                <paramdef>const GLdouble * <parameter>points</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

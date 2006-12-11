@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> const char * <function>glXGetClientString</function></funcdef>
-                <paramdef> Display * <parameter>dpy</parameter></paramdef>
-                <paramdef> int <parameter>name</parameter></paramdef>
+                <funcdef>const char * <function>glXGetClientString</function></funcdef>
+                <paramdef>Display * <parameter>dpy</parameter></paramdef>
+                <paramdef>int <parameter>name</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

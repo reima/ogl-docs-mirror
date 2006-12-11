@@ -19,7 +19,7 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> GLXContext <function>glXGetCurrentContext</function></funcdef>
+                <funcdef>GLXContext <function>glXGetCurrentContext</function></funcdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

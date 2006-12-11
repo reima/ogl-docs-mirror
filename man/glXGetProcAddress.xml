@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void(*)() <function>glXGetProcAddress</function></funcdef>
-                <paramdef> const GLubyte * <parameter>procName</parameter></paramdef>
+                <funcdef>void(*)() <function>glXGetProcAddress</function></funcdef>
+                <paramdef>const GLubyte * <parameter>procName</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

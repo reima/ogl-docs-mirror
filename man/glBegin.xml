@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glBegin</function></funcdef>
-                <paramdef> GLenum <parameter>mode</parameter></paramdef>
+                <funcdef>void <function>glBegin</function></funcdef>
+                <paramdef>GLenum <parameter>mode</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -52,8 +52,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glEnd</function></funcdef>
-                <paramdef>  <parameter>void</parameter></paramdef>
+                <funcdef>void <function>glEnd</function></funcdef>
+                <paramdef> <parameter>void</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

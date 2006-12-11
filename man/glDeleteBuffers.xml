@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glDeleteBuffers</function></funcdef>
-                <paramdef> GLsizei <parameter>n</parameter></paramdef>
-                <paramdef> const GLuint * <parameter>buffers</parameter></paramdef>
+                <funcdef>void <function>glDeleteBuffers</function></funcdef>
+                <paramdef>GLsizei <parameter>n</parameter></paramdef>
+                <paramdef>const GLuint * <parameter>buffers</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

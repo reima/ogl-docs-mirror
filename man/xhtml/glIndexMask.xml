@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glIndexMask</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glIndexMask"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glIndexMask — control the writing of individual bits in the color index buffers</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef"> void <b class="fsfunc">glIndexMask</b>(</code><var class="pdparam">mask</var><code>)</code>;<br /> GLuint <var class="pdparam">mask</var>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781958"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mask</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glIndexMask</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glIndexMask"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glIndexMask — control the writing of individual bits in the color index buffers</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glIndexMask</b>(</code>GLuint <var class="pdparam">mask</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781990"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mask</code></em></span></dt><dd><p>
                     Specifies a bit mask to enable and disable the writing of individual bits
                     in the color index buffers.
                     Initially, the mask is all 1's.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781989"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782018"></a><h2>Description</h2><p>
             <code class="function">glIndexMask</code> controls the writing of individual bits in the color index buffers.
             The least significant 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
@@ -22,22 +22,22 @@
         </p><p>
             This mask is used only in color index mode,
             and it affects only the buffers currently selected for writing
-            (see <span class="citerefentry"><span class="refentrytitle">glDrawBuffer</span></span>).
+            (see <a href="glDrawBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawBuffer</span></span></a>).
             Initially, all bits are enabled for writing.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768463"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781944"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glIndexMask</code>
-            is executed between the execution of <span class="citerefentry"><span class="refentrytitle">glBegin</span></span>
-            and the corresponding execution of <span class="citerefentry"><span class="refentrytitle">glEnd</span></span>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768493"></a><h2>Associated Gets</h2><p>
-            <span class="citerefentry"><span class="refentrytitle">glGet</span></span> with argument <code class="constant">GL_INDEX_WRITEMASK</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768510"></a><h2>See Also</h2><p>
-            <span class="citerefentry"><span class="refentrytitle">glColorMask</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glDepthMask</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glDrawBuffer</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glIndex</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glIndexPointer</span></span>,
-            <span class="citerefentry"><span class="refentrytitle">glStencilMask</span></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768550"></a><h2>Copyright</h2><p>
+            is executed between the execution of <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
+            and the corresponding execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768518"></a><h2>Associated Gets</h2><p>
+            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_INDEX_WRITEMASK</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768535"></a><h2>See Also</h2><p>
+            <a href="glColorMask.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glColorMask</span></span></a>,
+            <a href="glDepthMask.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDepthMask</span></span></a>,
+            <a href="glDrawBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawBuffer</span></span></a>,
+            <a href="glIndex.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glIndex</span></span></a>,
+            <a href="glIndexPointer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glIndexPointer</span></span></a>,
+            <a href="glStencilMask.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glStencilMask</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768574"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

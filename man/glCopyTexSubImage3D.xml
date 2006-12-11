@@ -19,16 +19,16 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glCopyTexSubImage3D</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLint <parameter>level</parameter></paramdef>
-                <paramdef> GLint <parameter>xoffset</parameter></paramdef>
-                <paramdef> GLint <parameter>yoffset</parameter></paramdef>
-                <paramdef> GLint <parameter>zoffset</parameter></paramdef>
-                <paramdef> GLint <parameter>x</parameter></paramdef>
-                <paramdef> GLint <parameter>y</parameter></paramdef>
-                <paramdef> GLsizei <parameter>width</parameter></paramdef>
-                <paramdef> GLsizei <parameter>height</parameter></paramdef>
+                <funcdef>void <function>glCopyTexSubImage3D</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLint <parameter>level</parameter></paramdef>
+                <paramdef>GLint <parameter>xoffset</parameter></paramdef>
+                <paramdef>GLint <parameter>yoffset</parameter></paramdef>
+                <paramdef>GLint <parameter>zoffset</parameter></paramdef>
+                <paramdef>GLint <parameter>x</parameter></paramdef>
+                <paramdef>GLint <parameter>y</parameter></paramdef>
+                <paramdef>GLsizei <parameter>width</parameter></paramdef>
+                <paramdef>GLsizei <parameter>height</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

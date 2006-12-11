@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>gluNextContour</function></funcdef>
-                <paramdef> GLUtesselator* <parameter>tess</parameter></paramdef>
-                <paramdef> GLenum <parameter>type</parameter></paramdef>
+                <funcdef>void <function>gluNextContour</function></funcdef>
+                <paramdef>GLUtesselator* <parameter>tess</parameter></paramdef>
+                <paramdef>GLenum <parameter>type</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

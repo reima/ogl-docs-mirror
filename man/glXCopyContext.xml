@@ -19,11 +19,11 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glXCopyContext</function></funcdef>
-                <paramdef> Display * <parameter>dpy</parameter></paramdef>
-                <paramdef> GLXContext <parameter>src</parameter></paramdef>
-                <paramdef> GLXContext <parameter>dst</parameter></paramdef>
-                <paramdef> unsigned long <parameter>mask</parameter></paramdef>
+                <funcdef>void <function>glXCopyContext</function></funcdef>
+                <paramdef>Display * <parameter>dpy</parameter></paramdef>
+                <paramdef>GLXContext <parameter>src</parameter></paramdef>
+                <paramdef>GLXContext <parameter>dst</parameter></paramdef>
+                <paramdef>unsigned long <parameter>mask</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

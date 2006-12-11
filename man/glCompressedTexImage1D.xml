@@ -19,14 +19,14 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glCompressedTexImage1D</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLint <parameter>level</parameter></paramdef>
-                <paramdef> GLenum <parameter>internalformat</parameter></paramdef>
-                <paramdef> GLsizei <parameter>width</parameter></paramdef>
-                <paramdef> GLint <parameter>border</parameter></paramdef>
-                <paramdef> GLsizei <parameter>imageSize</parameter></paramdef>
-                <paramdef> const GLvoid * <parameter>data</parameter></paramdef>
+                <funcdef>void <function>glCompressedTexImage1D</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLint <parameter>level</parameter></paramdef>
+                <paramdef>GLenum <parameter>internalformat</parameter></paramdef>
+                <paramdef>GLsizei <parameter>width</parameter></paramdef>
+                <paramdef>GLint <parameter>border</parameter></paramdef>
+                <paramdef>GLsizei <parameter>imageSize</parameter></paramdef>
+                <paramdef>const GLvoid * <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

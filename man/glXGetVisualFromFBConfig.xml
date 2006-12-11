@@ -19,9 +19,9 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> XVisualInfo * <function>glXGetVisualFromFBConfig</function></funcdef>
-                <paramdef> Display * <parameter>dpy</parameter></paramdef>
-                <paramdef> GLXFBConfig <parameter>config</parameter></paramdef>
+                <funcdef>XVisualInfo * <function>glXGetVisualFromFBConfig</function></funcdef>
+                <paramdef>Display * <parameter>dpy</parameter></paramdef>
+                <paramdef>GLXFBConfig <parameter>config</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

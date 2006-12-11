@@ -19,11 +19,11 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glBufferData</function></funcdef>
-                <paramdef> GLenum <parameter>target</parameter></paramdef>
-                <paramdef> GLsizeiptr <parameter>size</parameter></paramdef>
-                <paramdef> const GLvoid * <parameter>data</parameter></paramdef>
-                <paramdef> GLenum <parameter>usage</parameter></paramdef>
+                <funcdef>void <function>glBufferData</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLsizeiptr <parameter>size</parameter></paramdef>
+                <paramdef>const GLvoid * <parameter>data</parameter></paramdef>
+                <paramdef>GLenum <parameter>usage</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

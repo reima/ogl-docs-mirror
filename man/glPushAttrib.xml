@@ -19,8 +19,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPushAttrib</function></funcdef>
-                <paramdef> GLbitfield <parameter>mask</parameter></paramdef>
+                <funcdef>void <function>glPushAttrib</function></funcdef>
+                <paramdef>GLbitfield <parameter>mask</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -40,8 +40,8 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef> void <function>glPopAttrib</function></funcdef>
-                <paramdef>  <parameter>void</parameter></paramdef>
+                <funcdef>void <function>glPopAttrib</function></funcdef>
+                <paramdef> <parameter>void</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

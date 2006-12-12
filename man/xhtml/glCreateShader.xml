@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCreateShader</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glCreateShader"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCreateShader — Creates a shader object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">GLuint <b class="fsfunc">glCreateShader</b>(</code>GLenum <var class="pdparam">shaderType</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711265"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>shaderType</code></em></span></dt><dd><p>Specifies the type of shader to be created.
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCreateShader</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glCreateShader"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCreateShader — Creates a shader object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">GLuint <b class="fsfunc">glCreateShader</b>(</code>GLenum <var class="pdparam">shaderType</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782016"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>shaderType</code></em></span></dt><dd><p>Specifies the type of shader to be created.
 		    Must be either <code class="constant">GL_VERTEX_SHADER</code>
-		    or <code class="constant">GL_FRAGMENT_SHADER</code>.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782007"></a><h2>Description</h2><p><code class="function">glCreateShader</code> creates an empty
+		    or <code class="constant">GL_FRAGMENT_SHADER</code>.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782049"></a><h2>Description</h2><p><code class="function">glCreateShader</code> creates an empty
 	shader object and returns a non-zero value by which it can be
 	referenced. A shader object is used to maintain the source code
 	strings that define a shader. <em class="parameter"><code>shaderType</code></em>
@@ -19,7 +19,7 @@
 	<code class="constant">GL_SHADER_TYPE</code> parameter is set to either
 	<code class="constant">GL_VERTEX_SHADER</code> or
 	<code class="constant">GL_FRAGMENT_SHADER</code>, depending on the value
-	of <em class="parameter"><code>shaderType</code></em>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781927"></a><h2>Notes</h2><p><code class="function">glCreateShader</code> is available only if
+	of <em class="parameter"><code>shaderType</code></em>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768511"></a><h2>Notes</h2><p><code class="function">glCreateShader</code> is available only if
 	the GL version is 2.0 or greater.</p><p>Like display lists and texture objects, the name space for
 	shader objects may be shared across a set of contexts, as long
 	as the server sides of the contexts share the same address
@@ -27,22 +27,22 @@
 	objects and the data associated with those attached objects are
 	shared as well.</p><p>Applications are responsible for providing the
 	synchronization across API calls when objects are accessed from
-	different execution threads.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768499"></a><h2>Errors</h2><p>This function returns 0 if an error occurs creating the
+	different execution threads.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768540"></a><h2>Errors</h2><p>This function returns 0 if an error occurs creating the
 	shader object.</p><p><code class="constant">GL_INVALID_ENUM</code> is generated if
 	<em class="parameter"><code>shaderType</code></em> is not an accepted value.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
 	<code class="function">glCreateShader</code> is executed between the
 	execution of
-	<a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
+	<a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
 	and the corresponding execution of
-	<a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768545"></a><h2>Associated Gets</h2><p><a href="glGetShader.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetShader</span></span></a>
-	with a valid shader object and the parameter to be queried</p><p><a href="glGetShaderInfoLog.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetShaderInfoLog</span></span></a>
-	with a valid shader object</p><p><a href="glGetShaderSource.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetShaderSource</span></span></a>
-	with a valid shader object</p><p><a href="glIsShader.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glIsShader</span></span></a></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768579"></a><h2>See Also</h2><p><a href="glAttachShader.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glAttachShader</span></span></a>,
-	<a href="glCompileShader.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCompileShader</span></span></a>,
-	<a href="glDeleteShader.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDeleteShader</span></span></a>,
-	<a href="glDetachShader.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDetachShader</span></span></a>,
-	<a href="glShaderSource.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glShaderSource</span></span></a>
-	</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768610"></a><h2>Copyright</h2><p>
+	<a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768585"></a><h2>Associated Gets</h2><p><a href="glGetShader.xml"><span class="citerefentry"><span class="refentrytitle">glGetShader</span></span></a>
+	with a valid shader object and the parameter to be queried</p><p><a href="glGetShaderInfoLog.xml"><span class="citerefentry"><span class="refentrytitle">glGetShaderInfoLog</span></span></a>
+	with a valid shader object</p><p><a href="glGetShaderSource.xml"><span class="citerefentry"><span class="refentrytitle">glGetShaderSource</span></span></a>
+	with a valid shader object</p><p><a href="glIsShader.xml"><span class="citerefentry"><span class="refentrytitle">glIsShader</span></span></a></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768619"></a><h2>See Also</h2><p><a href="glAttachShader.xml"><span class="citerefentry"><span class="refentrytitle">glAttachShader</span></span></a>,
+	<a href="glCompileShader.xml"><span class="citerefentry"><span class="refentrytitle">glCompileShader</span></span></a>,
+	<a href="glDeleteShader.xml"><span class="citerefentry"><span class="refentrytitle">glDeleteShader</span></span></a>,
+	<a href="glDetachShader.xml"><span class="citerefentry"><span class="refentrytitle">glDetachShader</span></span></a>,
+	<a href="glShaderSource.xml"><span class="citerefentry"><span class="refentrytitle">glShaderSource</span></span></a>
+	</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768650"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2003-2005 3Dlabs Inc. Ltd. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.

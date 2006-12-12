@@ -159,7 +159,7 @@
 	<para>If the link operation is unsuccessful, any information about a previous link operation on <parameter>program</parameter>
 	is lost (i.e., a failed link does not restore the old state of <parameter>program</parameter>
 	). Certain information can still be retrieved from <parameter>program</parameter>
-	even after an unsuccessful link operation. See for instance <citerefentry><refentrytitle>glGetActiveAttrib </refentrytitle></citerefentry>
+	even after an unsuccessful link operation. See for instance <citerefentry><refentrytitle>glGetActiveAttrib</refentrytitle></citerefentry>
 	and <citerefentry><refentrytitle>glGetActiveUniform</refentrytitle></citerefentry>.</para>
     </refsect1>
     <refsect1><title>Errors</title>
@@ -177,7 +177,7 @@
     <refsect1><title>Associated Gets</title>
 	<para><citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
 	with the argument <constant>GL_CURRENT_PROGRAM</constant></para>
-	<para><citerefentry><refentrytitle>glGetActiveAttrib </refentrytitle></citerefentry>
+	<para><citerefentry><refentrytitle>glGetActiveAttrib</refentrytitle></citerefentry>
 	with argument <parameter>program</parameter>
 	and the index of an active attribute variable</para>
 	<para><citerefentry><refentrytitle>glGetActiveUniform</refentrytitle></citerefentry>

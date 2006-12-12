@@ -115,9 +115,8 @@
 	<citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.</para>
     </refsect1>
     <refsect1><title>Associated Gets</title>
-	<para><citerefentry><refentrytitle>glGetActiveUniform
-	</refentrytitle></citerefentry> with arguments
-	<parameter>program</parameter> and the index of an active
+	<para><citerefentry><refentrytitle>glGetActiveUniform</refentrytitle></citerefentry>
+	with arguments <parameter>program</parameter> and the index of an active
 	uniform variable</para>
 
 	<para><citerefentry><refentrytitle>glGetProgram</refentrytitle></citerefentry>

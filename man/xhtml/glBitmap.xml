@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glBitmap</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glBitmap"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glBitmap — draw a bitmap</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glBitmap</b>(</code></td><td>GLsizei  </td><td><var class="pdparam">width</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">height</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">xorig</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">yorig</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">xmove</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">ymove</var>, </td></tr><tr><td> </td><td>const GLubyte *  </td><td><var class="pdparam">bitmap</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781901"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>width</code></em>, </span><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glBitmap</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glBitmap"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glBitmap — draw a bitmap</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glBitmap</b>(</code></td><td>GLsizei  </td><td><var class="pdparam">width</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">height</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">xorig</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">yorig</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">xmove</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">ymove</var>, </td></tr><tr><td> </td><td>const GLubyte *  </td><td><var class="pdparam">bitmap</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781926"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>width</code></em>, </span><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
                     Specify the pixel width and height of the bitmap image.
                 </p></dd><dt><span class="term"><em class="parameter"><code>xorig</code></em>, </span><span class="term"><em class="parameter"><code>yorig</code></em></span></dt><dd><p>
                     Specify the location of the origin in the bitmap image.
@@ -12,7 +12,7 @@
                     after the bitmap is drawn.
                 </p></dd><dt><span class="term"><em class="parameter"><code>bitmap</code></em></span></dt><dd><p>
                     Specifies the address of the bitmap image.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768556"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768586"></a><h2>Description</h2><p>
             A bitmap is a binary image.
             When drawn,
             the bitmap is positioned relative to the current raster position,
@@ -29,18 +29,18 @@
             The final argument is a pointer to the bitmap image itself.
         </p><p>
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target 
-            (see <a href="glBindBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>) while a bitmap image is
+            (see <a href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>) while a bitmap image is
             specified, <em class="parameter"><code>bitmap</code></em> is treated as a byte offset into the buffer object's data store.
         </p><p>
-            The bitmap image is interpreted like image data for the <a href="glDrawPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>
+            The bitmap image is interpreted like image data for the <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>
             command,
             with <em class="parameter"><code>width</code></em> and <em class="parameter"><code>height</code></em> corresponding to the width and height arguments
             of that command,
             and with <span class="emphasis"><em>type</em></span> set to <code class="constant">GL_BITMAP</code>
             and <span class="emphasis"><em>format</em></span> set to <code class="constant">GL_COLOR_INDEX</code>.
-            Modes specified using <a href="glPixelStore.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> affect the
+            Modes specified using <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> affect the
             interpretation of bitmap image data;
-            modes specified using <a href="glPixelTransfer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a> do not.
+            modes specified using <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a> do not.
         </p><p>
             If the current raster position is invalid, <code class="function">glBitmap</code> is ignored.
             Otherwise,
@@ -129,13 +129,13 @@
             <em class="parameter"><code>xmove</code></em> and <em class="parameter"><code>ymove</code></em>.
             No change is made to the <span class="emphasis"><em>z</em></span> coordinate of the current raster position,
             or to the current raster color, texture coordinates, or index.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775527"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775579"></a><h2>Notes</h2><p>
             To set a valid raster position outside the viewport, first set a valid
             raster position inside the viewport, then call <code class="function">glBitmap</code> with NULL
             as the <em class="parameter"><code>bitmap</code></em> parameter and with <em class="parameter"><code>xmove</code></em> and <em class="parameter"><code>ymove</code></em> set to
             the offsets of the new raster position. This technique is useful when
             panning an image around the viewport.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775565"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775621"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> or <em class="parameter"><code>height</code></em> is negative.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
@@ -146,32 +146,32 @@
             object such that the memory reads required would exceed the data store size.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glBitmap</code>
-            is executed between the execution of <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding execution of
-            <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775642"></a><h2>Associated Gets</h2><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_POSITION</code>
+            is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding execution of
+            <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712875"></a><h2>Associated Gets</h2><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_POSITION</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_COLOR</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_COLOR</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_SECONDARY_COLOR</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_SECONDARY_COLOR</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_DISTANCE</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_DISTANCE</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_INDEX</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_INDEX</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_TEXTURE_COORDS</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_TEXTURE_COORDS</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_POSITION_VALID</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_POSITION_VALID</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712916"></a><h2>See Also</h2><p>
-            <a href="glBindBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>,
-            <a href="glDrawPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>,
-            <a href="glPixelStore.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>,
-            <a href="glPixelTransfer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>,
-            <a href="glRasterPos.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glRasterPos</span></span></a>,
-            <a href="glWindowPos.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glWindowPos</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712955"></a><h2>Copyright</h2><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712976"></a><h2>See Also</h2><p>
+            <a href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>,
+            <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>,
+            <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>,
+            <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>,
+            <a href="glRasterPos.xml"><span class="citerefentry"><span class="refentrytitle">glRasterPos</span></span></a>,
+            <a href="glWindowPos.xml"><span class="citerefentry"><span class="refentrytitle">glWindowPos</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713015"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

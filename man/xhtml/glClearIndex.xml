@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glClearIndex</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glClearIndex"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glClearIndex — specify the clear value for the color index buffers</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glClearIndex</b>(</code>GLfloat <var class="pdparam">c</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781991"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>c</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glClearIndex</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glClearIndex"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glClearIndex — specify the clear value for the color index buffers</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glClearIndex</b>(</code>GLfloat <var class="pdparam">c</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782016"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>c</code></em></span></dt><dd><p>
                     Specifies the index used when the color index buffers are cleared.
                     The initial value is 0.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782018"></a><h2>Description</h2><p>
-            <code class="function">glClearIndex</code> specifies the index used by <a href="glClear.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glClear</span></span></a>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782047"></a><h2>Description</h2><p>
+            <code class="function">glClearIndex</code> specifies the index used by <a href="glClear.xml"><span class="citerefentry"><span class="refentrytitle">glClear</span></span></a>
             to clear the color index buffers.
             <em class="parameter"><code>c</code></em> is not clamped.
             Rather,
@@ -26,17 +26,17 @@
             where 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">m</mml:mi></mml:math>
             is the number of bits in a color index stored in the frame buffer.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768504"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768534"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glClearIndex</code>
-            is executed between the execution of <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-            and the corresponding execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768534"></a><h2>Associated Gets</h2><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_INDEX_CLEAR_VALUE</code>
+            is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
+            and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768564"></a><h2>Associated Gets</h2><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_INDEX_CLEAR_VALUE</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_INDEX_BITS</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768563"></a><h2>See Also</h2><p>
-            <a href="glClear.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glClear</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768577"></a><h2>Copyright</h2><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_INDEX_BITS</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768594"></a><h2>See Also</h2><p>
+            <a href="glClear.xml"><span class="citerefentry"><span class="refentrytitle">glClear</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768607"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

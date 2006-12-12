@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glMaterial</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glMaterial"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glMaterial — specify material parameters for the lighting model</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glMaterialf</b>(</code></td><td>GLenum  </td><td><var class="pdparam">face</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glMateriali</b>(</code></td><td>GLenum  </td><td><var class="pdparam">face</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781904"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>face</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glMaterial</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glMaterial"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glMaterial — specify material parameters for the lighting model</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glMaterialf</b>(</code></td><td>GLenum  </td><td><var class="pdparam">face</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glMateriali</b>(</code></td><td>GLenum  </td><td><var class="pdparam">face</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781930"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>face</code></em></span></dt><dd><p>
                     Specifies which face or faces are being updated.
                     Must be one of
                     <code class="constant">GL_FRONT</code>,
@@ -13,7 +13,7 @@
                     Must be <code class="constant">GL_SHININESS</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>param</code></em></span></dt><dd><p>
                     Specifies the value that parameter <code class="constant">GL_SHININESS</code> will be set to.
-                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glMaterialfv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">face</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLfloat *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glMaterialiv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">face</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLint *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768616"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>face</code></em></span></dt><dd><p>
+                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glMaterialfv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">face</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLfloat *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glMaterialiv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">face</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLint *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768645"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>face</code></em></span></dt><dd><p>
                     Specifies which face or faces are being updated.
                     Must be one of
                     <code class="constant">GL_FRONT</code>,
@@ -31,7 +31,7 @@
                     <code class="constant">GL_COLOR_INDEXES</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>params</code></em></span></dt><dd><p>
                     Specifies a pointer to the value or values that <em class="parameter"><code>pname</code></em> will be set to.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775277"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775315"></a><h2>Description</h2><p>
             <code class="function">glMaterial</code> assigns values to material parameters.
             There are two matched sets of material parameters.
             One,
@@ -46,7 +46,7 @@
             The other set,
             <span class="emphasis"><em>back-facing</em></span>,
             is used to shade back-facing polygons only when two-sided lighting is enabled.
-            Refer to the <a href="glLightModel.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLightModel</span></span></a> reference page for details concerning one- and
+            Refer to the <a href="glLightModel.xml"><span class="citerefentry"><span class="refentrytitle">glLightModel</span></span></a> reference page for details concerning one- and
             two-sided lighting calculations.
         </p><p>
             <code class="function">glMaterial</code> takes three arguments.
@@ -65,7 +65,7 @@
         </p><p>
             Material parameters are used in the lighting equation that is optionally
             applied to each vertex.
-            The equation is discussed in the <a href="glLightModel.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLightModel</span></span></a> reference page.
+            The equation is discussed in the <a href="glLightModel.xml"><span class="citerefentry"><span class="refentrytitle">glLightModel</span></span></a> reference page.
             The parameters that can be specified using <code class="function">glMaterial</code>,
             and their interpretations by the lighting equation, are as follows:
         </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_AMBIENT</code></span></dt><dd><p>
@@ -154,22 +154,22 @@
                         These three values,
                         and <code class="constant">GL_SHININESS</code>,
                         are the only material values used by the color index mode lighting equation.
-                        Refer to the <a href="glLightModel.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLightModel</span></span></a> reference page for a discussion
+                        Refer to the <a href="glLightModel.xml"><span class="citerefentry"><span class="refentrytitle">glLightModel</span></span></a> reference page for a discussion
                         of color index lighting.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712873"></a><h2>Notes</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712972"></a><h2>Notes</h2><p>
             The material parameters can be updated at any time.
             In particular,
-            <code class="function">glMaterial</code> can be called between a call to <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding
-            call to <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+            <code class="function">glMaterial</code> can be called between a call to <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding
+            call to <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
             If only a single material parameter is to be changed per vertex,
             however,
-            <a href="glColorMaterial.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glColorMaterial</span></span></a> is preferred over <code class="function">glMaterial</code>
-            (see <a href="glColorMaterial.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glColorMaterial</span></span></a>).
+            <a href="glColorMaterial.xml"><span class="citerefentry"><span class="refentrytitle">glColorMaterial</span></span></a> is preferred over <code class="function">glMaterial</code>
+            (see <a href="glColorMaterial.xml"><span class="citerefentry"><span class="refentrytitle">glColorMaterial</span></span></a>).
         </p><p>
             While the ambient, diffuse, specular and emission material parameters
             all have alpha components, only the diffuse alpha component is used in
             the lighting computation.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712923"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713030"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if either <em class="parameter"><code>face</code></em> or <em class="parameter"><code>pname</code></em> is not
             an accepted value.
         </p><p>
@@ -182,13 +182,13 @@
                 </mml:mfenced>
             </mml:math>
             is specified.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712982"></a><h2>Associated Gets</h2><p>
-            <a href="glGetMaterial.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetMaterial</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712995"></a><h2>See Also</h2><p>
-            <a href="glColorMaterial.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glColorMaterial</span></span></a>,
-            <a href="glLight.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLight</span></span></a>,
-            <a href="glLightModel.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLightModel</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713019"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713089"></a><h2>Associated Gets</h2><p>
+            <a href="glGetMaterial.xml"><span class="citerefentry"><span class="refentrytitle">glGetMaterial</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713102"></a><h2>See Also</h2><p>
+            <a href="glColorMaterial.xml"><span class="citerefentry"><span class="refentrytitle">glColorMaterial</span></span></a>,
+            <a href="glLight.xml"><span class="citerefentry"><span class="refentrytitle">glLight</span></span></a>,
+            <a href="glLightModel.xml"><span class="citerefentry"><span class="refentrytitle">glLightModel</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713126"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

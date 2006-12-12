@@ -55,7 +55,7 @@
         </para>
         <para>
             For GLX windows and pixmaps, a suitable X drawable (using either
-            <citerefentry><refentrytitle>XCreateWindow</refentrytitle></citerefentry> or <citerefentry><refentrytitle>XCreatePixmap</refentrytitle></citerefentry>, respectively) with a matching
+            <function>XCreateWindow</function> or <function>XCreatePixmap</function>, respectively) with a matching
             visual must be created first.  Call <citerefentry><refentrytitle>glXGetVisualFromFBConfig</refentrytitle></citerefentry> to obtain
             the necessary XVisualInfo structure for creating the X drawable.  For
             pbuffers, no underlying X drawable is required.
@@ -80,7 +80,7 @@
             Both core X and OpenGL commands can be used to operate on drawables;
             however, the X and OpenGL command streams are not synchronized.
             Synchronization can be explicitly specified using by calling <citerefentry><refentrytitle>glXWaitGL</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXWaitX</refentrytitle></citerefentry>, <citerefentry><refentrytitle>XSync</refentrytitle></citerefentry>, and <citerefentry><refentrytitle>XFlush</refentrytitle></citerefentry>.
+            <citerefentry><refentrytitle>glXWaitX</refentrytitle></citerefentry>, <function>XSync</function>, and <function>XFlush</function>.
         </para>
         <para>
         </para>
@@ -203,7 +203,7 @@ int main( int argc, char *argv[] )
     </refsect1>
     <refsect1><title>Notes</title>
         <para>
-            An X color map must be created and passed to <citerefentry><refentrytitle>XCreateWindow</refentrytitle></citerefentry>.
+            An X color map must be created and passed to <function>XCreateWindow</function>.
         </para>
         <para>
             A GLX context must be created and bound to a GLX drawable before OpenGL
@@ -238,8 +238,7 @@ int main( int argc, char *argv[] )
             an extension exist in the library.
         </para>
         <para>
-            OpenGL itself is capable of being extended.  Refer to <citerefentry><refentrytitle>glIntro</refentrytitle></citerefentry> for more
-            information.
+            OpenGL itself is capable of being extended.
         </para>
         <para>
         </para>
@@ -263,7 +262,7 @@ int main( int argc, char *argv[] )
         </para>
         <para>
             GLX 1.2 corresponds to OpenGL version 1.1 and introduces the following new
-            call: <citerefentry><refentrytitle>glGetCurrentDisplay</refentrytitle></citerefentry>.
+            call: <citerefentry><refentrytitle>glXGetCurrentDisplay</refentrytitle></citerefentry>.
         </para>
         <para>
             GLX 1.1 corresponds to OpenGL version 1.0 and introduces the following new
@@ -271,8 +270,8 @@ int main( int argc, char *argv[] )
             <citerefentry><refentrytitle>glXGetClientString</refentrytitle></citerefentry>.
         </para>
         <para>
-            Call <citerefentry><refentrytitle>glQueryVersion</refentrytitle></citerefentry> to determine at runtime what version of GLX is
-            available. <citerefentry><refentrytitle>glQueryVersion</refentrytitle></citerefentry> returns the version that is supported on the
+            Call <citerefentry><refentrytitle>glXQueryVersion</refentrytitle></citerefentry> to determine at runtime what version of GLX is
+            available. <citerefentry><refentrytitle>glXQueryVersion</refentrytitle></citerefentry> returns the version that is supported on the
             connection. Thus, if 1.3 is returned, both the client and server support GLX
             1.3.  You can also check the GLX version at compile time: GLX_VERSION_1_1
             will be defined in glx.h if GLX 1.1 calls are supported, GLX_VERSION_1_2
@@ -284,47 +283,46 @@ int main( int argc, char *argv[] )
     </refsect1>
     <refsect1><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glIntro</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glFinish</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glFlush</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXGetProcAddress</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXChooseVisual</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXCopyContext</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXCreateContext</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXCreateGLXPixmap</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXCreateNewContext</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXCreatePbuffer</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXCreatePixmap</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXCreateWindow</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXDestroyContext</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXDestroyPbuffer</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXDestroyPixmap</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXDestroyWindow</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXGetClientString</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXGetConfig</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXGetCurrentDisplay</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXGetCurrentReadDrawable</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXGetFBConfigAttrib</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXGetFBConfigs</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXGetProcAddress</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXGetSelectedEvent</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXGetVisualFromFBConfig</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXIsDirect</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXMakeContextCurrent</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXMakeCurrent</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXQueryContext</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXQueryDrawable</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXQueryExtension</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXQueryExtensionsString</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXQueryServerString</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXQueryVersion</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXSelectEvent</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXSwapBuffers</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXUseXFont</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXWaitGL</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXWaitX</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXGetFBConfigs</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXGetFBConfigAttrib</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXGetVisualFromFBConfig</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXCreateWindow</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXDestroyWindow</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXCreatePixmap</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXDestroyPixmap</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXCreatePbuffer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXDestroyPbuffer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXQueryDrawable</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXCreateNewContext</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXMakeContextCurrent</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXGetCurrentReadDrawable</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXGetCurrentDisplay</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXQueryContext</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXSelectEvent</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXGetSelectedEvent</refentrytitle></citerefentry>.
-            <citerefentry><refentrytitle>XCreateColormap</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>XCreateWindow</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>XSync</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>glXWaitX</refentrytitle></citerefentry>.
+            <function>XCreateColormap</function>,
+            <function>XCreateWindow</function>,
+            <function>XSync</function>
         </para>
     </refsect1>
     <refsect1><title>Copyright</title>

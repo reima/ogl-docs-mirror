@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glPolygonStipple</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glPolygonStipple"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glPolygonStipple — set the polygon stippling pattern</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glPolygonStipple</b>(</code></td><td>const GLubyte *  </td><td><var class="pdparam">pattern</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781991"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pattern</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glPolygonStipple</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glPolygonStipple"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glPolygonStipple — set the polygon stippling pattern</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glPolygonStipple</b>(</code></td><td>const GLubyte *  </td><td><var class="pdparam">pattern</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782033"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pattern</code></em></span></dt><dd><p>
                     Specifies a pointer to a 
                     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                         
@@ -12,11 +12,11 @@
                         </mml:mrow>
                     </mml:math>
                     stipple pattern that will be unpacked
-                    from memory in the same way that <a href="glDrawPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a> unpacks pixels.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768647"></a><h2>Description</h2><p>
+                    from memory in the same way that <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a> unpacks pixels.
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781938"></a><h2>Description</h2><p>
             Polygon stippling,
             like line stippling
-            (see <a href="glLineStipple.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLineStipple</span></span></a>),
+            (see <a href="glLineStipple.xml"><span class="citerefentry"><span class="refentrytitle">glLineStipple</span></span></a>),
             masks out certain fragments produced by rasterization,
             creating a pattern.
             Stippling is independent of polygon antialiasing.
@@ -31,7 +31,7 @@
                 </mml:mrow>
             </mml:math>
             stipple pattern that is stored
-            in memory just like the pixel data supplied to a <a href="glDrawPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>
+            in memory just like the pixel data supplied to a <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>
             call with
             <span class="emphasis"><em></em></span>
             height
@@ -52,7 +52,7 @@
             </mml:math>
             array
             of 1-bit color indices packed in unsigned bytes.
-            <a href="glPixelStore.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> parameters like <code class="constant">GL_UNPACK_SWAP_BYTES</code>
+            <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> parameters like <code class="constant">GL_UNPACK_SWAP_BYTES</code>
             and <code class="constant">GL_UNPACK_LSB_FIRST</code> affect the assembling of the bits into a
             stipple pattern.
             Pixel transfer operations
@@ -61,11 +61,11 @@
             however.
         </p><p>
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target 
-            (see <a href="glBindBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>) while a stipple pattern is
+            (see <a href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>) while a stipple pattern is
             specified, <em class="parameter"><code>pattern</code></em> is treated as a byte offset into the buffer object's data store.
         </p><p>
             To enable and disable polygon stippling, call
-            <a href="glEnable.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a> and <a href="glDisable.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDisable</span></span></a>
+            <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a> and <a href="glDisable.xml"><span class="citerefentry"><span class="refentrytitle">glDisable</span></span></a>
             with argument <code class="constant">GL_POLYGON_STIPPLE</code>. Polygon stippling is initially
             disabled. If it's enabled,
             a rasterized polygon fragment with window coordinates 
@@ -109,7 +109,7 @@
             of the stipple pattern is 1 (one).
             When polygon stippling is disabled, it is as if the stipple pattern
             consists of all 1's.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775292"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775371"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
             <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and the buffer object's data store is currently mapped.
         </p><p>
@@ -118,20 +118,20 @@
             object such that the memory reads required would exceed the data store size.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glPolygonStipple</code>
-            is executed between the execution of <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-            and the corresponding execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775350"></a><h2>Associated Gets</h2><p>
-            <a href="glGetPolygonStipple.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetPolygonStipple</span></span></a>
+            is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
+            and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775433"></a><h2>Associated Gets</h2><p>
+            <a href="glGetPolygonStipple.xml"><span class="citerefentry"><span class="refentrytitle">glGetPolygonStipple</span></span></a>
         </p><p>
-            <a href="glIsEnabled.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_POLYGON_STIPPLE</code>
+            <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_POLYGON_STIPPLE</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775387"></a><h2>See Also</h2><p>
-            <a href="glDrawPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>,
-            <a href="glLineStipple.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLineStipple</span></span></a>,
-            <a href="glPixelStore.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>,
-            <a href="glPixelTransfer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775416"></a><h2>Copyright</h2><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775470"></a><h2>See Also</h2><p>
+            <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>,
+            <a href="glLineStipple.xml"><span class="citerefentry"><span class="refentrytitle">glLineStipple</span></span></a>,
+            <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>,
+            <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775500"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

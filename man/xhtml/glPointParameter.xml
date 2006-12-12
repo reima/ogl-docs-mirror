@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glPointParameter</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glPointParameter"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glPointParameter — specify point parameters</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glPointParameterf</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div><p></p><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glPointParameteri</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782029"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glPointParameter</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glPointParameter"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glPointParameter — specify point parameters</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glPointParameterf</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div><p></p><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glPointParameteri</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781936"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
                     Specifies a single-valued point parameter.
                     <code class="constant">GL_POINT_SIZE_MIN</code>,
                     <code class="constant">GL_POINT_SIZE_MAX</code>,
@@ -10,7 +10,7 @@
                     are accepted.
                 </p></dd><dt><span class="term"><em class="parameter"><code>param</code></em></span></dt><dd><p>
                     Specifies the value that <em class="parameter"><code>pname</code></em> will be set to.
-                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glPointParameterfv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLfloat *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div><p></p><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glPointParameteriv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLint *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768572"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
+                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glPointParameterfv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLfloat *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div><p></p><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glPointParameteriv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLint *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768619"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
                     Specifies a point parameter.
                     <code class="constant">GL_POINT_SIZE_MIN</code>,
                     <code class="constant">GL_POINT_SIZE_MAX</code>,
@@ -22,7 +22,7 @@
                     Specifies the value or values to be assigned to <em class="parameter"><code>pname</code></em>.
                     <code class="constant">GL_POINT_DISTANCE_ATTENUATION</code> requires an array of three values.
                     All other parameters accept an array containing only a single value.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768650"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775256"></a><h2>Description</h2><p>
             The following values are accepted for <em class="parameter"><code>pname</code></em>:
         </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_POINT_SIZE_MIN</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> is a single floating-point value that specifies the minimum point size.  The default value is 0.0.
@@ -48,11 +48,11 @@
                     </p></dd><dt><span class="term"><code class="constant">GL_POINT_SPRITE_COORD_ORIGIN</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> is a single enum specifying the point sprite texture coordinate origin, either <code class="constant">GL_LOWER_LEFT</code> or <code class="constant">GL_UPPER_LEFT</code>. 
                         The default value is <code class="constant">GL_UPPER_LEFT</code>.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775380"></a><h2>Notes</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775444"></a><h2>Notes</h2><p>
             <code class="function">glPointParameter</code> is available only if the GL version is 1.4 or greater.
         </p><p>
             <code class="constant">GL_POINT_SPRITE_COORD_ORIGIN</code> is available only if the GL version is 2.0 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775404"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775470"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated If the value specified for
             <code class="constant">GL_POINT_SIZE_MIN</code>, <code class="constant">GL_POINT_SIZE_MAX</code>, or
             <code class="constant">GL_POINT_FADE_THRESHOLD_SIZE</code> is less than zero.
@@ -64,19 +64,19 @@
             <code class="constant">GL_POINT_SIZE_MAX</code>, the point size after clamping is undefined, but no
             error is generated.
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775466"></a><h2>Associated Gets</h2><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_POINT_SIZE_MIN</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775537"></a><h2>Associated Gets</h2><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_POINT_SIZE_MIN</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_POINT_SIZE_MAX</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_POINT_SIZE_MAX</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_POINT_FADE_THRESHOLD_SIZE</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_POINT_FADE_THRESHOLD_SIZE</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_POINT_DISTANCE_ATTENUATION</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_POINT_DISTANCE_ATTENUATION</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_POINT_SPRITE_COORD_ORIGIN</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775531"></a><h2>See Also</h2><p>
-            <a href="glPointSize.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPointSize</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775545"></a><h2>Copyright</h2><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_POINT_SPRITE_COORD_ORIGIN</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775602"></a><h2>See Also</h2><p>
+            <a href="glPointSize.xml"><span class="citerefentry"><span class="refentrytitle">glPointSize</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775615"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

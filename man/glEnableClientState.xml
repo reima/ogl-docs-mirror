@@ -83,7 +83,7 @@
                 <listitem>
                     <para>
                         If enabled, the color array is enabled for writing and used during
-                        rendering when <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElement</refentrytitle></citerefentry>,
+                        rendering when <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
                         <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry> <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>, or
                         <citerefentry><refentrytitle>glMultiDrawElements</refentrytitle></citerefentry> is called. See <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>.
                     </para>
@@ -94,7 +94,7 @@
                 <listitem>
                     <para>
                         If enabled, the edge flag array is enabled for writing and used during
-                        rendering when <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElement</refentrytitle></citerefentry>,
+                        rendering when <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
                         <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry> <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>, or
                         <citerefentry><refentrytitle>glMultiDrawElements</refentrytitle></citerefentry> is called. See <citerefentry><refentrytitle>glEdgeFlagPointer</refentrytitle></citerefentry>.
                     </para>
@@ -105,7 +105,7 @@
                 <listitem>
                     <para>
                         If enabled, the fog coordinate array is enabled for writing and used during
-                        rendering when <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElement</refentrytitle></citerefentry>,
+                        rendering when <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
                         <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry> <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>, or
                         <citerefentry><refentrytitle>glMultiDrawElements</refentrytitle></citerefentry> is called. See <citerefentry><refentrytitle>glFogCoordPointer</refentrytitle></citerefentry>.
                     </para>
@@ -116,7 +116,7 @@
                 <listitem>
                     <para>
                         If enabled, the index array is enabled for writing and used during
-                        rendering when <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElement</refentrytitle></citerefentry>,
+                        rendering when <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
                         <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry> <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>, or
                         <citerefentry><refentrytitle>glMultiDrawElements</refentrytitle></citerefentry> is called. See <citerefentry><refentrytitle>glIndexPointer</refentrytitle></citerefentry>.
                     </para>
@@ -127,7 +127,7 @@
                 <listitem>
                     <para>
                         If enabled, the normal array is enabled for writing and used during
-                        rendering when <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElement</refentrytitle></citerefentry>,
+                        rendering when <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
                         <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry> <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>, or
                         <citerefentry><refentrytitle>glMultiDrawElements</refentrytitle></citerefentry> is called. See <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>.
                     </para>
@@ -139,7 +139,7 @@
                     <para>
                         If enabled, the secondary color array is enabled for writing and used
                         during rendering when <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
-                        <citerefentry><refentrytitle>glDrawElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry> <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>, or
+                        <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry> <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>, or
                         <citerefentry><refentrytitle>glMultiDrawElements</refentrytitle></citerefentry> is called. See <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -150,7 +150,7 @@
                     <para>
                         If enabled, the texture coordinate array is enabled for writing and used
                         during rendering when <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
-                        <citerefentry><refentrytitle>glDrawElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry> <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>, or
+                        <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry> <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>, or
                         <citerefentry><refentrytitle>glMultiDrawElements</refentrytitle></citerefentry> is called. See <citerefentry><refentrytitle>glTexCoordPointer</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -160,7 +160,7 @@
                 <listitem>
                     <para>
                         If enabled, the vertex array is enabled for writing and used during
-                        rendering when <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElement</refentrytitle></citerefentry>,
+                        rendering when <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
                         <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry> <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>, or
                         <citerefentry><refentrytitle>glMultiDrawElements</refentrytitle></citerefentry> is called.  See <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>.
                     </para>

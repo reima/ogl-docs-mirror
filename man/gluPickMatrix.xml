@@ -116,7 +116,7 @@ glMatrixMode(GL_MODELVIEW);
         <para>
             <citerefentry><refentrytitle>gluPerspective</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glLoadIndentity</refentrytitle></citerefentry>, 
+            <citerefentry><refentrytitle>glLoadIdentity</refentrytitle></citerefentry>, 
             <citerefentry><refentrytitle>glMultMatrix</refentrytitle></citerefentry>, 
             <citerefentry><refentrytitle>glRenderMode</refentrytitle></citerefentry>
         </para>

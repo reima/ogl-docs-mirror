@@ -373,7 +373,7 @@
                 <listitem>
                     <para>
                         The maximum width that can be specified to 
-                        <citerefentry><refentrytitle>glCreateGLXPbuffer</refentrytitle></citerefentry>.
+                        <citerefentry><refentrytitle>glXCreatePbuffer</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -382,7 +382,7 @@
                 <listitem>
                     <para>
                         The maximum height that can be specified to 
-                        <citerefentry><refentrytitle>glCreateGLXPbuffer</refentrytitle></citerefentry>.
+                        <citerefentry><refentrytitle>glXCreatePbuffer</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>

@@ -472,9 +472,8 @@
 	<para><citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
 	with the argument <constant>GL_CURRENT_PROGRAM</constant></para>
 
-	<para><citerefentry><refentrytitle>glGetActiveUniform
-	</refentrytitle></citerefentry> with the handle of a program
-	object and the index of an active uniform variable</para>
+	<para><citerefentry><refentrytitle>glGetActiveUniform</refentrytitle></citerefentry>
+	with the handle of a program object and the index of an active uniform variable</para>
 
 	<para><citerefentry><refentrytitle>glGetUniform</refentrytitle></citerefentry>
 	with the handle of a program object and the location of a

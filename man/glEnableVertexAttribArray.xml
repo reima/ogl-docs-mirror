@@ -81,7 +81,7 @@
 	<constant>GL_VERTEX_ATTRIB_ARRAY_ENABLED</constant>
 	<parameter></parameter></para>
 
-	<para><citerefentry><refentrytitle>glGetVertexAttribPointer</refentrytitle></citerefentry>
+	<para><citerefentry><refentrytitle>glGetVertexAttribPointerv</refentrytitle></citerefentry>
 	with arguments <parameter>index</parameter> and
 	<constant>GL_VERTEX_ATTRIB_ARRAY_POINTER</constant></para>
     </refsect1>

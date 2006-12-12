@@ -143,7 +143,7 @@
             <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEdgeFlagPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEnableClientState</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetPointer</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetPointerv</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glIndexPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glSecondaryColorPointer</refentrytitle></citerefentry>,

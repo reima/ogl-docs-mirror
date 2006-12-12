@@ -6,9 +6,7 @@
 
 <xsl:param name="funcsynopsis.style">ansi</xsl:param>
 <xsl:param name="citerefentry.link" select="'1'"></xsl:param>
-<xsl:template name="generate.citerefentry.link">
-  <xsl:value-of select="refentrytitle"/>.xml
-</xsl:template>
+<xsl:template name="generate.citerefentry.link"><xsl:value-of select="refentrytitle"/>.xml</xsl:template>
 
 <xsl:template match="*" mode="process.root">
   <xsl:variable name="doc" select="self::*"/>

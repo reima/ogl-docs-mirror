@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glLogicOp</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glLogicOp"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glLogicOp — specify a logical pixel operation for color index rendering</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glLogicOp</b>(</code>GLenum <var class="pdparam">opcode</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781987"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>opcode</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glLogicOp</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glLogicOp"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glLogicOp — specify a logical pixel operation for color index rendering</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glLogicOp</b>(</code>GLenum <var class="pdparam">opcode</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782012"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>opcode</code></em></span></dt><dd><p>
                     Specifies a symbolic constant that selects a logical operation.
                     The following symbols are accepted:
                     <code class="constant">GL_CLEAR</code>,
@@ -20,14 +20,14 @@
                     <code class="constant">GL_AND_INVERTED</code>,
                     <code class="constant">GL_OR_REVERSE</code>, and
                     <code class="constant">GL_OR_INVERTED</code>. The initial value is <code class="constant">GL_COPY</code>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768490"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768521"></a><h2>Description</h2><p>
             <code class="function">glLogicOp</code> specifies a logical operation that,
             when enabled,
             is applied between the incoming color index or RGBA color
             and the color index or RGBA color at the corresponding location in the
             frame buffer.
             To enable or disable the logical operation, call
-            <a href="glEnable.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a> and <a href="glDisable.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDisable</span></span></a>
+            <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a> and <a href="glDisable.xml"><span class="citerefentry"><span class="refentrytitle">glDisable</span></span></a>
             using the symbolic constant <code class="constant">GL_COLOR_LOGIC_OP</code> for RGBA mode or
             <code class="constant">GL_INDEX_LOGIC_OP</code> for color index mode. The initial value is
             disabled for both operations.
@@ -109,31 +109,31 @@
             As these bitwise operators suggest,
             the logical operation is applied independently to each bit pair of the
             source and destination indices or colors.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775457"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775517"></a><h2>Notes</h2><p>
             Color index logical operations are always supported. RGBA logical
             operations are supported only if the GL version is 1.1 or greater.
         </p><p>
             When more than one RGBA color or index buffer is enabled for drawing,
             logical operations are performed separately for each enabled buffer,
             using for the destination value the contents of that buffer
-            (see <a href="glDrawBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawBuffer</span></span></a>).
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775482"></a><h2>Errors</h2><p>
+            (see <a href="glDrawBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glDrawBuffer</span></span></a>).
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775547"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>opcode</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glLogicOp</code>
-            is executed between the execution of <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-            and the corresponding execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775524"></a><h2>Associated Gets</h2><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_LOGIC_OP_MODE</code>.
+            is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
+            and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775589"></a><h2>Associated Gets</h2><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_LOGIC_OP_MODE</code>.
         </p><p>
-            <a href="glIsEnabled.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_COLOR_LOGIC_OP</code> or <code class="constant">GL_INDEX_LOGIC_OP</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775558"></a><h2>See Also</h2><p>
-            <a href="glAlphaFunc.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glAlphaFunc</span></span></a>,
-            <a href="glBlendFunc.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span></a>,
-            <a href="glDrawBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawBuffer</span></span></a>,
-            <a href="glEnable.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,
-            <a href="glStencilOp.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glStencilOp</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775591"></a><h2>Copyright</h2><p>
+            <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_COLOR_LOGIC_OP</code> or <code class="constant">GL_INDEX_LOGIC_OP</code>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775624"></a><h2>See Also</h2><p>
+            <a href="glAlphaFunc.xml"><span class="citerefentry"><span class="refentrytitle">glAlphaFunc</span></span></a>,
+            <a href="glBlendFunc.xml"><span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span></a>,
+            <a href="glDrawBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glDrawBuffer</span></span></a>,
+            <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,
+            <a href="glStencilOp.xml"><span class="citerefentry"><span class="refentrytitle">glStencilOp</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775656"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

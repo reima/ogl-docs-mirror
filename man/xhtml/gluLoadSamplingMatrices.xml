@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluLoadSamplingMatrices</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluLoadSamplingMatrices"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluLoadSamplingMatrices — load NURBS sampling and culling matrices</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">gluLoadSamplingMatrices</b>(</code></td><td>GLUnurbs*  </td><td><var class="pdparam">nurb</var>, </td></tr><tr><td> </td><td>const GLfloat *  </td><td><var class="pdparam">model</var>, </td></tr><tr><td> </td><td>const GLfloat *  </td><td><var class="pdparam">perspective</var>, </td></tr><tr><td> </td><td>const GLint *  </td><td><var class="pdparam">view</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781897"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>nurb</code></em></span></dt><dd><p>
-                    Specifies the NURBS object (created with <a href="gluNewNurbsRenderer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">gluNewNurbsRenderer</span></span></a>).
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluLoadSamplingMatrices</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluLoadSamplingMatrices"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluLoadSamplingMatrices — load NURBS sampling and culling matrices</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">gluLoadSamplingMatrices</b>(</code></td><td>GLUnurbs*  </td><td><var class="pdparam">nurb</var>, </td></tr><tr><td> </td><td>const GLfloat *  </td><td><var class="pdparam">model</var>, </td></tr><tr><td> </td><td>const GLfloat *  </td><td><var class="pdparam">perspective</var>, </td></tr><tr><td> </td><td>const GLint *  </td><td><var class="pdparam">view</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781918"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>nurb</code></em></span></dt><dd><p>
+                    Specifies the NURBS object (created with <a href="gluNewNurbsRenderer.xml"><span class="citerefentry"><span class="refentrytitle">gluNewNurbsRenderer</span></span></a>).
                 </p></dd><dt><span class="term"><em class="parameter"><code>model</code></em></span></dt><dd><p>
-                    Specifies a modelview matrix (as from a <a href="glGetFloatv.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetFloatv</span></span></a> call).
+                    Specifies a modelview matrix (as from a <a href="glGetFloatv.xml"><span class="citerefentry"><span class="refentrytitle">glGetFloatv</span></span></a> call).
                 </p></dd><dt><span class="term"><em class="parameter"><code>perspective</code></em></span></dt><dd><p>
-                    Specifies a projection matrix (as from a <a href="glGetFloatv.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetFloatv</span></span></a> call).
+                    Specifies a projection matrix (as from a <a href="glGetFloatv.xml"><span class="citerefentry"><span class="refentrytitle">glGetFloatv</span></span></a> call).
                 </p></dd><dt><span class="term"><em class="parameter"><code>view</code></em></span></dt><dd><p>
-                    Specifies a viewport (as from a <a href="glGetIntegerv.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetIntegerv</span></span></a> call).
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768539"></a><h2>Description</h2><p>
+                    Specifies a viewport (as from a <a href="glGetIntegerv.xml"><span class="citerefentry"><span class="refentrytitle">glGetIntegerv</span></span></a> call).
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768561"></a><h2>Description</h2><p>
             <code class="function">gluLoadSamplingMatrices</code> uses <em class="parameter"><code>model</code></em>, <em class="parameter"><code>perspective</code></em>, and <em class="parameter"><code>view</code></em> to recompute the sampling and culling 
             matrices stored in <em class="parameter"><code>nurb</code></em>.
             The sampling matrix determines how finely a NURBS curve or surface
@@ -20,16 +20,16 @@
             rendering (when the <code class="constant">GLU_CULLING</code> property is turned on).
         </p><p>
             <code class="function">gluLoadSamplingMatrices</code> is necessary only if the <code class="constant">GLU_AUTO_LOAD_MATRIX</code> property is turned
-            off (see <a href="gluNurbsProperty.xml&#10;"><span class="citerefentry"><span class="refentrytitle">gluNurbsProperty</span></span></a>).
+            off (see <a href="gluNurbsProperty.xml"><span class="citerefentry"><span class="refentrytitle">gluNurbsProperty</span></span></a>).
             Although it can be convenient to leave the <code class="constant">GLU_AUTO_LOAD_MATRIX</code>
             property turned on, there can be a performance penalty for doing so.
             (A round trip to the GL server is needed to fetch the current values
             of the modelview matrix, projection matrix, and viewport.)
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768619"></a><h2>See Also</h2><p>
-            <a href="gluGetNurbsProperty.xml&#10;"><span class="citerefentry"><span class="refentrytitle">gluGetNurbsProperty</span></span></a>,
-            <a href="gluNewNurbsRenderer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">gluNewNurbsRenderer</span></span></a>,
-            <a href="gluNurbsProperty.xml&#10;"><span class="citerefentry"><span class="refentrytitle">gluNurbsProperty</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768643"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768658"></a><h2>See Also</h2><p>
+            <a href="gluGetNurbsProperty.xml"><span class="citerefentry"><span class="refentrytitle">gluGetNurbsProperty</span></span></a>,
+            <a href="gluNewNurbsRenderer.xml"><span class="citerefentry"><span class="refentrytitle">gluNewNurbsRenderer</span></span></a>,
+            <a href="gluNurbsProperty.xml"><span class="citerefentry"><span class="refentrytitle">gluNurbsProperty</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768682"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -430,9 +430,8 @@
 	<para><citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
 	with the argument <constant>GL_CURRENT_PROGRAM</constant></para>
 
-	<para><citerefentry><refentrytitle>glGetActiveAttrib
-	</refentrytitle></citerefentry> with argument
-	<parameter>program</parameter> and the index of an active
+	<para><citerefentry><refentrytitle>glGetActiveAttrib</refentrytitle></citerefentry>
+	with argument <parameter>program</parameter> and the index of an active
 	attribute variable</para>
 
 	<para><citerefentry><refentrytitle>glGetAttribLocation</refentrytitle></citerefentry>

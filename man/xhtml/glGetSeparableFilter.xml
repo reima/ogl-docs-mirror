@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetSeparableFilter</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetSeparableFilter"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetSeparableFilter — get separable convolution filter kernel images</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetSeparableFilter</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">format</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>GLvoid *  </td><td><var class="pdparam">row</var>, </td></tr><tr><td> </td><td>GLvoid *  </td><td><var class="pdparam">column</var>, </td></tr><tr><td> </td><td>GLvoid *  </td><td><var class="pdparam">span</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782027"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glGetSeparableFilter</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetSeparableFilter"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetSeparableFilter — get separable convolution filter kernel images</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetSeparableFilter</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">format</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>GLvoid *  </td><td><var class="pdparam">row</var>, </td></tr><tr><td> </td><td>GLvoid *  </td><td><var class="pdparam">column</var>, </td></tr><tr><td> </td><td>GLvoid *  </td><td><var class="pdparam">span</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781934"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     The separable filter to be retrieved.
                     Must be
                     <code class="constant">GL_SEPARABLE_2D</code>.
@@ -48,7 +48,7 @@
                     Pointer to storage for the column filter image.
                 </p></dd><dt><span class="term"><em class="parameter"><code>span</code></em></span></dt><dd><p>
                     Pointer to storage for the span filter image (currently unused).
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775229"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775296"></a><h2>Description</h2><p>
             <code class="function">glGetSeparableFilter</code> returns the two one-dimensional filter kernel images for the
             current separable 2D convolution filter.
             The row image is placed in <em class="parameter"><code>row</code></em> and the column image is placed in
@@ -58,7 +58,7 @@
             pixel storage modes are applied.
         </p><p>
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_PACK_BUFFER</code> target 
-            (see <a href="glBindBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>) while a separable convolution filter is
+            (see <a href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>) while a separable convolution filter is
             requested, <em class="parameter"><code>row</code></em>, <em class="parameter"><code>column</code></em>, and <em class="parameter"><code>span</code></em> are treated as a byte offset into the buffer object's data store.
         </p><p>
             Color components that are present in <em class="parameter"><code>format</code></em> but not included in the
@@ -95,12 +95,12 @@
                         </td><td align="left">
                         Red
                         </td></tr></tbody></table></div><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775494"></a><h2>Notes</h2><p>
-            <code class="function">glGetSeparableFilter</code> is present only if <code class="code">ARB_imaging</code> is returned when <a href="glGetString.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetString</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775581"></a><h2>Notes</h2><p>
+            <code class="function">glGetSeparableFilter</code> is present only if <code class="code">ARB_imaging</code> is returned when <a href="glGetString.xml"><span class="citerefentry"><span class="refentrytitle">glGetString</span></span></a>
             is called with an argument of <code class="constant">GL_EXTENSIONS</code>.
         </p><p>
-            Non-separable 2D filters must be retrieved with <a href="glGetConvolutionFilter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetConvolutionFilter</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775532"></a><h2>Errors</h2><p>
+            Non-separable 2D filters must be retrieved with <a href="glGetConvolutionFilter.xml"><span class="citerefentry"><span class="refentrytitle">glGetConvolutionFilter</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775618"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not <code class="constant">GL_SEPARABLE_2D</code>.
         </p><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>format</code></em> is not one of the allowable
@@ -139,17 +139,17 @@
             into the number of bytes needed to store in memory a datum indicated by <em class="parameter"><code>type</code></em>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetSeparableFilter</code> is executed
-            between the execution of <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding
-            execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712948"></a><h2>Associated Gets</h2><p>
-            <a href="glGetConvolutionParameter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetConvolutionParameter</span></span></a>
+            between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding
+            execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713040"></a><h2>Associated Gets</h2><p>
+            <a href="glGetConvolutionParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetConvolutionParameter</span></span></a>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_PACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712973"></a><h2>See Also</h2><p>
-            <a href="glGetConvolutionFilter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetConvolutionFilter</span></span></a>,
-            <a href="glConvolutionParameter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glConvolutionParameter</span></span></a>,
-            <a href="glSeparableFilter2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glSeparableFilter2D</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712997"></a><h2>Copyright</h2><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_PACK_BUFFER_BINDING</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713066"></a><h2>See Also</h2><p>
+            <a href="glGetConvolutionFilter.xml"><span class="citerefentry"><span class="refentrytitle">glGetConvolutionFilter</span></span></a>,
+            <a href="glConvolutionParameter.xml"><span class="citerefentry"><span class="refentrytitle">glConvolutionParameter</span></span></a>,
+            <a href="glSeparableFilter2D.xml"><span class="citerefentry"><span class="refentrytitle">glSeparableFilter2D</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713091"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

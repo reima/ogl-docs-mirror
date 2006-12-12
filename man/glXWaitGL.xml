@@ -54,7 +54,7 @@
             <citerefentry><refentrytitle>glFinish</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glFlush</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXWaitX</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>XSync</refentrytitle></citerefentry>
+            <function>XSync</function>
         </para>
     </refsect1>
     <refsect1><title>Copyright</title>

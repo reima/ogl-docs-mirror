@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXImportContextEXT</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXImportContextEXT"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXImportContextEXT — import another process's indirect rendering context.</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">GLXContext <b class="fsfunc">glXImportContextEXT</b>(</code></td><td>Display *  </td><td><var class="pdparam">dpy</var>, </td></tr><tr><td> </td><td>GLXContextID  </td><td><var class="pdparam">contextID</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782000"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>dpy</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXImportContextEXT</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXImportContextEXT"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXImportContextEXT — import another process's indirect rendering context.</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">GLXContext <b class="fsfunc">glXImportContextEXT</b>(</code></td><td>Display *  </td><td><var class="pdparam">dpy</var>, </td></tr><tr><td> </td><td>GLXContextID  </td><td><var class="pdparam">contextID</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782041"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>dpy</code></em></span></dt><dd><p>
                     Specifies the connection to the X server.
                 </p></dd><dt><span class="term"><em class="parameter"><code>contextID</code></em></span></dt><dd><p>
                     Specifies a GLX rendering context.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781906"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781950"></a><h2>Description</h2><p>
             <code class="function">glXImportContextEXT</code> creates a GLXContext given the XID of an existing GLXContext.
-            It may be used in place of <a href="glXCreateContext.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glXCreateContext</span></span></a>,
+            It may be used in place of <a href="glXCreateContext.xml"><span class="citerefentry"><span class="refentrytitle">glXCreateContext</span></span></a>,
             to share another process's indirect rendering context.
         </p><p>
             Only the server-side context information can be shared between
             X clients; client-side state, such as pixel storage modes,
             cannot be shared. Thus, <code class="function">glXImportContextEXT</code> must allocate memory to store
             client-side information. This memory is freed by calling
-            <a href="glXFreeContextEXT.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glXFreeContextEXT</span></span></a>.
+            <a href="glXFreeContextEXT.xml"><span class="citerefentry"><span class="refentrytitle">glXFreeContextEXT</span></span></a>.
         </p><p>
             This call does not create a new XID.  It merely makes an
             existing object available to the importing client (Display *).
@@ -29,19 +29,19 @@
         </p><p>
             <code class="function">glXImportContextEXT</code> is part of the <code class="code">EXT_import_context</code> extension,
             not part of the core GLX command set. If _glxextstring(EXT_import_context)
-            is included in the string returned by <a href="glXQueryExtensionsString.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glXQueryExtensionsString</span></span></a>,
+            is included in the string returned by <a href="glXQueryExtensionsString.xml"><span class="citerefentry"><span class="refentrytitle">glXQueryExtensionsString</span></span></a>,
             when called with argument <code class="constant">GLX_EXTENSIONS</code>,
             extension <code class="code">EXT_import_context</code> is supported.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768545"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768613"></a><h2>Errors</h2><p>
             <code class="constant">GLXBadContext</code> is generated if <em class="parameter"><code>contextID</code></em> does not
             refer to a valid context.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768564"></a><h2>See Also</h2><p>
-            <a href="glXCreateContext.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glXCreateContext</span></span></a>,
-            <a href="glXQueryVersion.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glXQueryVersion</span></span></a>,
-            <a href="glXQueryExtensionsString.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glXQueryExtensionsString</span></span></a>,
-            <a href="glXGetContextIDEXT.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glXGetContextIDEXT</span></span></a>,
-            <a href="glXFreeContextEXT.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glXFreeContextEXT</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768598"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768633"></a><h2>See Also</h2><p>
+            <a href="glXCreateContext.xml"><span class="citerefentry"><span class="refentrytitle">glXCreateContext</span></span></a>,
+            <a href="glXQueryVersion.xml"><span class="citerefentry"><span class="refentrytitle">glXQueryVersion</span></span></a>,
+            <a href="glXQueryExtensionsString.xml"><span class="citerefentry"><span class="refentrytitle">glXQueryExtensionsString</span></span></a>,
+            <a href="glXGetContextIDEXT.xml"><span class="citerefentry"><span class="refentrytitle">glXGetContextIDEXT</span></span></a>,
+            <a href="glXFreeContextEXT.xml"><span class="citerefentry"><span class="refentrytitle">glXFreeContextEXT</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768667"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

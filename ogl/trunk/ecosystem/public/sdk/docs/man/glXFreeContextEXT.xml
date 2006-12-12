@@ -49,7 +49,7 @@
     <refsect1><title>Description</title>
         <para>
             <function>glXFreeContextEXT</function> frees the client-side part of a GLXContext that 
-            was created with <citerefentry><refentrytitle>glXImportContext</refentrytitle></citerefentry>. <function>glXFreeContextEXT</function> does not 
+            was created with <citerefentry><refentrytitle>glXImportContextEXT</refentrytitle></citerefentry>. <function>glXFreeContextEXT</function> does not 
             free the server-side context information or the XID 
             associated with the server-side context.
         </para>

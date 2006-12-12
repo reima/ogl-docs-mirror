@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glLoadIdentity</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glLoadIdentity"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glLoadIdentity — replace the current matrix with the identity matrix</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glLoadIdentity</b>(</code> <var class="pdparam">void</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781988"></a><h2>Description</h2><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glLoadIdentity</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glLoadIdentity"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glLoadIdentity — replace the current matrix with the identity matrix</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glLoadIdentity</b>(</code> <var class="pdparam">void</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782030"></a><h2>Description</h2><p>
             <code class="function">glLoadIdentity</code> replaces the current matrix with the identity matrix.
-            It is semantically equivalent to calling <a href="glLoadMatrix.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLoadMatrix</span></span></a>
+            It is semantically equivalent to calling <a href="glLoadMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glLoadMatrix</span></span></a>
             with the identity matrix
         </p><p>
         </p><p>
@@ -75,28 +75,28 @@
         </p><p>
         </p><p>
             but in some cases it is more efficient.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768582"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768629"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glLoadIdentity</code>
-            is executed between the execution of <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-            and the corresponding execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768611"></a><h2>Associated Gets</h2><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MATRIX_MODE</code>
+            is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
+            and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768656"></a><h2>Associated Gets</h2><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MATRIX_MODE</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_COLOR_MATRIX</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_COLOR_MATRIX</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MODELVIEW_MATRIX</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MODELVIEW_MATRIX</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PROJECTION_MATRIX</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PROJECTION_MATRIX</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_TEXTURE_MATRIX</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775226"></a><h2>See Also</h2><p>
-            <a href="glLoadMatrix.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLoadMatrix</span></span></a>,
-            <a href="glLoadTransposeMatrix.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLoadTransposeMatrix</span></span></a>,
-            <a href="glMatrixMode.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glMatrixMode</span></span></a>,
-            <a href="glMultMatrix.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glMultMatrix</span></span></a>,
-            <a href="glMultTransposeMatrix.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glMultTransposeMatrix</span></span></a>,
-            <a href="glPushMatrix.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPushMatrix</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775265"></a><h2>Copyright</h2><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_TEXTURE_MATRIX</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775270"></a><h2>See Also</h2><p>
+            <a href="glLoadMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glLoadMatrix</span></span></a>,
+            <a href="glLoadTransposeMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glLoadTransposeMatrix</span></span></a>,
+            <a href="glMatrixMode.xml"><span class="citerefentry"><span class="refentrytitle">glMatrixMode</span></span></a>,
+            <a href="glMultMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glMultMatrix</span></span></a>,
+            <a href="glMultTransposeMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glMultTransposeMatrix</span></span></a>,
+            <a href="glPushMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glPushMatrix</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775310"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glSeparableFilter2D</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glSeparableFilter2D"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glSeparableFilter2D — define a separable two-dimensional convolution filter</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glSeparableFilter2D</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">internalformat</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">width</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">height</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">format</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>const GLvoid *  </td><td><var class="pdparam">row</var>, </td></tr><tr><td> </td><td>const GLvoid *  </td><td><var class="pdparam">column</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781907"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glSeparableFilter2D</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glSeparableFilter2D"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glSeparableFilter2D — define a separable two-dimensional convolution filter</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glSeparableFilter2D</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">internalformat</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">width</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">height</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">format</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>const GLvoid *  </td><td><var class="pdparam">row</var>, </td></tr><tr><td> </td><td>const GLvoid *  </td><td><var class="pdparam">column</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781949"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Must be <code class="constant">GL_SEPARABLE_2D</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>internalformat</code></em></span></dt><dd><p>
                     The internal format of the convolution filter kernel.
@@ -94,23 +94,23 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>column</code></em></span></dt><dd><p>
                     Pointer to a one-dimensional array of pixel data that is processed to
                     build the column filter kernel.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775479"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775562"></a><h2>Description</h2><p>
             <code class="function">glSeparableFilter2D</code> builds a two-dimensional separable convolution filter kernel from
             two arrays of pixels.
         </p><p>
             The pixel arrays specified by (<em class="parameter"><code>width</code></em>, <em class="parameter"><code>format</code></em>, <em class="parameter"><code>type</code></em>, <em class="parameter"><code>row</code></em>)
             and (<em class="parameter"><code>height</code></em>, <em class="parameter"><code>format</code></em>, <em class="parameter"><code>type</code></em>, <em class="parameter"><code>column</code></em>) are processed just as if
-            they had been passed to <a href="glDrawPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>,
+            they had been passed to <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>,
             but processing stops after the final expansion to RGBA is completed.
         </p><p>
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target 
-            (see <a href="glBindBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>) while a convolution filter is
+            (see <a href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>) while a convolution filter is
             specified, <em class="parameter"><code>row</code></em> and <em class="parameter"><code>column</code></em> are treated as byte offsets into the buffer object's data store.
         </p><p>
             Next, the R, G, B, and A components of all pixels in both arrays are scaled
             by the four separable 2D <code class="constant">GL_CONVOLUTION_FILTER_SCALE</code> parameters and
             biased by the four separable 2D <code class="constant">GL_CONVOLUTION_FILTER_BIAS</code> parameters.
-            (The scale and bias parameters are set by <a href="glConvolutionParameter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glConvolutionParameter</span></span></a>
+            (The scale and bias parameters are set by <a href="glConvolutionParameter.xml"><span class="citerefentry"><span class="refentrytitle">glConvolutionParameter</span></span></a>
             using the <code class="constant">GL_SEPARABLE_2D</code> target and the names
             <code class="constant">GL_CONVOLUTION_FILTER_SCALE</code> and <code class="constant">GL_CONVOLUTION_FILTER_BIAS</code>.
             The parameters themselves are vectors of four values that are applied to red,
@@ -210,11 +210,11 @@
             corresponding <code class="constant">GL_POST_CONVOLUTION_c_BIAS</code> parameters (where
             <span class="emphasis"><em>c</em></span> takes on the values <span class="bold"><strong>RED</strong></span>, <span class="bold"><strong>GREEN</strong></span>, <span class="bold"><strong>BLUE</strong></span>, and
             <span class="bold"><strong>ALPHA</strong></span>).
-            These parameters are set by <a href="glPixelTransfer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711325"></a><h2>Notes</h2><p>
-            <code class="function">glSeparableFilter2D</code> is present only if <code class="code">ARB_imaging</code> is returned when <a href="glGetString.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetString</span></span></a>
+            These parameters are set by <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711448"></a><h2>Notes</h2><p>
+            <code class="function">glSeparableFilter2D</code> is present only if <code class="code">ARB_imaging</code> is returned when <a href="glGetString.xml"><span class="citerefentry"><span class="refentrytitle">glGetString</span></span></a>
             is called with an argument of <code class="constant">GL_EXTENSIONS</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711353"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711477"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not
             <code class="constant">GL_SEPARABLE_2D</code>.
         </p><p>
@@ -229,13 +229,13 @@
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> is less than zero or greater
             than the maximum supported value.
-            This value may be queried with <a href="glGetConvolutionParameter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetConvolutionParameter</span></span></a>
+            This value may be queried with <a href="glGetConvolutionParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetConvolutionParameter</span></span></a>
             using target <code class="constant">GL_SEPARABLE_2D</code> and name
             <code class="constant">GL_MAX_CONVOLUTION_WIDTH</code>.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>height</code></em> is less than zero or greater
             than the maximum supported value.
-            This value may be queried with <a href="glGetConvolutionParameter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetConvolutionParameter</span></span></a>
+            This value may be queried with <a href="glGetConvolutionParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetConvolutionParameter</span></span></a>
             using target <code class="constant">GL_SEPARABLE_2D</code> and name
             <code class="constant">GL_MAX_CONVOLUTION_HEIGHT</code>.
         </p><p>
@@ -270,18 +270,18 @@
             into the number of bytes needed to store in memory a datum indicated by <em class="parameter"><code>type</code></em>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glSeparableFilter2D</code> is executed
-            between the execution of <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding
-            execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711660"></a><h2>Associated Gets</h2><p>
-            <a href="glGetConvolutionParameter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetConvolutionParameter</span></span></a>, <a href="glGetSeparableFilter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetSeparableFilter</span></span></a>
+            between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding
+            execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711805"></a><h2>Associated Gets</h2><p>
+            <a href="glGetConvolutionParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetConvolutionParameter</span></span></a>, <a href="glGetSeparableFilter.xml"><span class="citerefentry"><span class="refentrytitle">glGetSeparableFilter</span></span></a>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711690"></a><h2>See Also</h2><p>
-            <a href="glConvolutionFilter1D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glConvolutionFilter1D</span></span></a>,
-            <a href="glConvolutionFilter2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glConvolutionFilter2D</span></span></a>,
-            <a href="glConvolutionParameter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glConvolutionParameter</span></span></a>,
-            <a href="glPixelTransfer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711720"></a><h2>Copyright</h2><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711836"></a><h2>See Also</h2><p>
+            <a href="glConvolutionFilter1D.xml"><span class="citerefentry"><span class="refentrytitle">glConvolutionFilter1D</span></span></a>,
+            <a href="glConvolutionFilter2D.xml"><span class="citerefentry"><span class="refentrytitle">glConvolutionFilter2D</span></span></a>,
+            <a href="glConvolutionParameter.xml"><span class="citerefentry"><span class="refentrytitle">glConvolutionParameter</span></span></a>,
+            <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711866"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

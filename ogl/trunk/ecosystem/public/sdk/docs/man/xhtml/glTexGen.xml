@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glTexGen</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glTexGen"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glTexGen — control the generation of texture coordinates</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glTexGeni</b>(</code></td><td>GLenum  </td><td><var class="pdparam">coord</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glTexGenf</b>(</code></td><td>GLenum  </td><td><var class="pdparam">coord</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glTexGend</b>(</code></td><td>GLenum  </td><td><var class="pdparam">coord</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLdouble  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768490"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>coord</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glTexGen</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glTexGen"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glTexGen — control the generation of texture coordinates</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glTexGeni</b>(</code></td><td>GLenum  </td><td><var class="pdparam">coord</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glTexGenf</b>(</code></td><td>GLenum  </td><td><var class="pdparam">coord</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glTexGend</b>(</code></td><td>GLenum  </td><td><var class="pdparam">coord</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLdouble  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768513"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>coord</code></em></span></dt><dd><p>
                     Specifies a texture coordinate.
                     Must be one of <code class="constant">GL_S</code>, <code class="constant">GL_T</code>, <code class="constant">GL_R</code>, or <code class="constant">GL_Q</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
@@ -11,7 +11,7 @@
                     Specifies a single-valued texture generation parameter,
                     one of <code class="constant">GL_OBJECT_LINEAR</code>, <code class="constant">GL_EYE_LINEAR</code>, <code class="constant">GL_SPHERE_MAP</code>,
                     <code class="constant">GL_NORMAL_MAP</code>, or <code class="constant">GL_REFLECTION_MAP</code>.
-                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glTexGeniv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">coord</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLint *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glTexGenfv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">coord</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLfloat *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glTexGendv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">coord</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLdouble *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775266"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>coord</code></em></span></dt><dd><p>
+                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glTexGeniv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">coord</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLint *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glTexGenfv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">coord</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLfloat *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glTexGendv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">coord</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLdouble *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775296"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>coord</code></em></span></dt><dd><p>
                     Specifies a texture coordinate.
                     Must be one of <code class="constant">GL_S</code>, <code class="constant">GL_T</code>, <code class="constant">GL_R</code>, or <code class="constant">GL_Q</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
@@ -34,7 +34,7 @@
                     Otherwise,
                     <em class="parameter"><code>params</code></em> holds the coefficients for the texture-coordinate generation function
                     specified by <em class="parameter"><code>pname</code></em>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775405"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775448"></a><h2>Description</h2><p>
             <code class="function">glTexGen</code> selects a texture-coordinate generation function
             or supplies coefficients for one of the functions.
             <em class="parameter"><code>coord</code></em> names one of the (<span class="emphasis"><em>s</em></span>, <span class="emphasis"><em>t</em></span>, <span class="emphasis"><em>r</em></span>, <span class="emphasis"><em>q</em></span>) texture
@@ -576,7 +576,7 @@
             </mml:math>
         </p><p>
             To enable or disable a texture-coordinate generation function, call
-            <a href="glEnable.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a> or <a href="glDisable.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDisable</span></span></a>
+            <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a> or <a href="glDisable.xml"><span class="citerefentry"><span class="refentrytitle">glDisable</span></span></a>
             with one of the symbolic texture-coordinate names
             (<code class="constant">GL_TEXTURE_GEN_S</code>,
             <code class="constant">GL_TEXTURE_GEN_T</code>,
@@ -603,8 +603,8 @@
         </p><p>
             When the <code class="code">ARB_multitexture</code> extension is supported, <code class="function">glTexGen</code> set the
             texture generation parameters for the currently active texture unit,
-            selected with <a href="glActiveTexture.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785603"></a><h2>Errors</h2><p>
+            selected with <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785697"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated when <em class="parameter"><code>coord</code></em> or <em class="parameter"><code>pname</code></em> is not an
             accepted defined value,
             or when <em class="parameter"><code>pname</code></em> is <code class="constant">GL_TEXTURE_GEN_MODE</code> and <em class="parameter"><code>params</code></em> is not an
@@ -615,34 +615,34 @@
             and <em class="parameter"><code>coord</code></em> is either <code class="constant">GL_R</code> or <code class="constant">GL_Q</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glTexGen</code>
-            is executed between the execution of <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-            and the corresponding execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785711"></a><h2>Associated Gets</h2><p>
-            <a href="glGetTexGen.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetTexGen</span></span></a>
+            is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
+            and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785807"></a><h2>Associated Gets</h2><p>
+            <a href="glGetTexGen.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexGen</span></span></a>
         </p><p>
-            <a href="glIsEnabled.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_GEN_S</code>
+            <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_GEN_S</code>
         </p><p>
-            <a href="glIsEnabled.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_GEN_T</code>
+            <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_GEN_T</code>
         </p><p>
-            <a href="glIsEnabled.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_GEN_R</code>
+            <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_GEN_R</code>
         </p><p>
-            <a href="glIsEnabled.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_GEN_Q</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785771"></a><h2>See Also</h2><p>
-            <a href="glActiveTexture.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>,
-            <a href="glCopyPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
-            <a href="glCopyTexImage2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a>,
-            <a href="glCopyTexSubImage1D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage1D</span></span></a>,
-            <a href="glCopyTexSubImage2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage2D</span></span></a>,
-            <a href="glCopyTexSubImage3D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage3D</span></span></a>,
-            <a href="glTexEnv.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexEnv</span></span></a>,
-            <a href="glTexImage1D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>,
-            <a href="glTexImage2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>,
-            <a href="glTexImage3D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>,
-            <a href="glTexParameter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>,
-            <a href="glTexSubImage1D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span></a>,
-            <a href="glTexSubImage2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>,
-            <a href="glTexSubImage3D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785850"></a><h2>Copyright</h2><p>
+            <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_GEN_Q</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785867"></a><h2>See Also</h2><p>
+            <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>,
+            <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
+            <a href="glCopyTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a>,
+            <a href="glCopyTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage1D</span></span></a>,
+            <a href="glCopyTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage2D</span></span></a>,
+            <a href="glCopyTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage3D</span></span></a>,
+            <a href="glTexEnv.xml"><span class="citerefentry"><span class="refentrytitle">glTexEnv</span></span></a>,
+            <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>,
+            <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>,
+            <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>,
+            <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>,
+            <a href="glTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span></a>,
+            <a href="glTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>,
+            <a href="glTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785950"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glFogCoordPointer</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glFogCoordPointer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glFogCoordPointer — define an array of fog coordinates</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glFogCoordPointer</b>(</code></td><td>GLenum  </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">stride</var>, </td></tr><tr><td> </td><td>GLvoid *  </td><td><var class="pdparam">pointer</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782005"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>type</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glFogCoordPointer</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glFogCoordPointer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glFogCoordPointer — define an array of fog coordinates</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glFogCoordPointer</b>(</code></td><td>GLenum  </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">stride</var>, </td></tr><tr><td> </td><td>GLvoid *  </td><td><var class="pdparam">pointer</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782048"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>type</code></em></span></dt><dd><p>
                     Specifies the data type of each fog coordinate.
                     Symbolic constants
                     <code class="constant">GL_FLOAT</code>,
@@ -14,7 +14,7 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>pointer</code></em></span></dt><dd><p>
                     Specifies a pointer to the first coordinate of the first fog coordinate in the
                     array. The initial value is 0.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768494"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768554"></a><h2>Description</h2><p>
             <code class="function">glFogCoordPointer</code> specifies the location and data format of an array of fog coordinates
             to use when rendering.  <em class="parameter"><code>type</code></em> specifies the data type of each fog
             coordinate, and <em class="parameter"><code>stride</code></em> specifies the byte stride from one fog coordinate to
@@ -22,7 +22,7 @@
             or stored in separate arrays.
         </p><p>
             If a non-zero named buffer object is bound to the <code class="constant">GL_ARRAY_BUFFER</code> target 
-            (see <a href="glBindBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>) while a fog coordinate array is
+            (see <a href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>) while a fog coordinate array is
             specified, <em class="parameter"><code>pointer</code></em> is treated as a byte offset into the buffer object's data store.
             Also, the buffer object binding (<code class="constant">GL_ARRAY_BUFFER_BINDING</code>) is saved as fog coordinate vertex array
             client-side state (<code class="constant">GL_FOG_COORD_ARRAY_BUFFER_BINDING</code>).
@@ -32,74 +32,74 @@
             state, in addition to the current vertex array buffer object binding.
         </p><p>
             To enable and disable the fog coordinate array, call
-            <a href="glEnableClientState.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnableClientState</span></span></a> and <a href="glDisableClientState.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDisableClientState</span></span></a> with the argument
+            <a href="glEnableClientState.xml"><span class="citerefentry"><span class="refentrytitle">glEnableClientState</span></span></a> and <a href="glDisableClientState.xml"><span class="citerefentry"><span class="refentrytitle">glDisableClientState</span></span></a> with the argument
             <code class="constant">GL_FOG_COORD_ARRAY</code>. If
             enabled, the fog coordinate array is used
-            when <a href="glDrawArrays.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>, <a href="glMultiDrawArrays.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glMultiDrawArrays</span></span></a>, <a href="glDrawElements.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>,
-            <a href="glMultiDrawElements.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span></a>, <a href="glDrawRangeElements.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span></a>, or
-            <a href="glArrayElement.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a> is called.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768632"></a><h2>Notes</h2><p>
+            when <a href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>, <a href="glMultiDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawArrays</span></span></a>, <a href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>,
+            <a href="glMultiDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span></a>, <a href="glDrawRangeElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span></a>, or
+            <a href="glArrayElement.xml"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a> is called.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775250"></a><h2>Notes</h2><p>
             <code class="function">glFogCoordPointer</code> is available only if the GL version is 1.4 or greater.
         </p><p>
             Fog coordinates are not supported for interleaved vertex array formats
-            (see <a href="glInterleavedArrays.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glInterleavedArrays</span></span></a>).
+            (see <a href="glInterleavedArrays.xml"><span class="citerefentry"><span class="refentrytitle">glInterleavedArrays</span></span></a>).
         </p><p>
             The fog coordinate array is initially disabled and isn't accessed when
-            <a href="glArrayElement.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a>, <a href="glDrawElements.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>, <a href="glDrawRangeElements.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span></a>,
-            <a href="glDrawArrays.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>, <a href="glMultiDrawArrays.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glMultiDrawArrays</span></span></a>, or <a href="glMultiDrawElements.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span></a>
+            <a href="glArrayElement.xml"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a>, <a href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>, <a href="glDrawRangeElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span></a>,
+            <a href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>, <a href="glMultiDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawArrays</span></span></a>, or <a href="glMultiDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span></a>
             is called.
         </p><p>
             Execution of <code class="function">glFogCoordPointer</code> is not allowed between the execution of
-            <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>,
+            <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>,
             but an error may or may not be generated. If no error is generated,
             the operation is undefined.
         </p><p>
             <code class="function">glFogCoordPointer</code> is typically implemented on the client side with no protocol.
         </p><p>
             Fog coordinate array parameters are client-side state and are
-            therefore not saved or restored by <a href="glPushAttrib.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPushAttrib</span></span></a> and <a href="glPopAttrib.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPopAttrib</span></span></a>.
-            Use <a href="glPushClientAttrib.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPushClientAttrib</span></span></a> and
-            <a href="glPopClientAttrib.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPopClientAttrib</span></span></a> instead.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775302"></a><h2>Errors</h2><p>
+            therefore not saved or restored by <a href="glPushAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPushAttrib</span></span></a> and <a href="glPopAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPopAttrib</span></span></a>.
+            Use <a href="glPushClientAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPushClientAttrib</span></span></a> and
+            <a href="glPopClientAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPopClientAttrib</span></span></a> instead.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775381"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>type</code></em> is not either <code class="constant">GL_FLOAT</code>
             or <code class="constant">GL_DOUBLE</code>.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>stride</code></em> is negative.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775342"></a><h2>Associated Gets</h2><p>
-            <a href="glIsEnabled.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_FOG_COORD_ARRAY</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775422"></a><h2>Associated Gets</h2><p>
+            <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_FOG_COORD_ARRAY</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_FOG_COORD_ARRAY_STRIDE</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_FOG_COORD_ARRAY_STRIDE</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_FOG_COORD_ARRAY_TYPE</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_FOG_COORD_ARRAY_TYPE</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_FOG_COORD_ARRAY_BUFFER_BINDING</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_FOG_COORD_ARRAY_BUFFER_BINDING</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_ARRAY_BUFFER_BINDING</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_ARRAY_BUFFER_BINDING</code>
         </p><p>
-            <a href="glGetPointerv.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetPointerv</span></span></a> with argument <code class="constant">GL_FOG_COORD_ARRAY_POINTER</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775419"></a><h2>See Also</h2><p>
-            <a href="glArrayElement.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a>,
-            <a href="glBindBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>,
-            <a href="glColorPointer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span></a>,
-            <a href="glDisableClientState.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDisableClientState</span></span></a>,
-            <a href="glDrawArrays.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>,
-            <a href="glDrawElements.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>,
-            <a href="glDrawRangeElements.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span></a>,
-            <a href="glEdgeFlagPointer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEdgeFlagPointer</span></span></a>,
-            <a href="glEnableClientState.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnableClientState</span></span></a>,
-            <a href="glFogCoord.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glFogCoord</span></span></a>,
-            <a href="glIndexPointer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glIndexPointer</span></span></a>,
-            <a href="glInterleavedArrays.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glInterleavedArrays</span></span></a>,
-            <a href="glMultiDrawArrays.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glMultiDrawArrays</span></span></a>,
-            <a href="glMultiDrawElements.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span></a>,
-            <a href="glNormalPointer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glNormalPointer</span></span></a>,
-            <a href="glPopClientAttrib.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPopClientAttrib</span></span></a>,
-            <a href="glPushClientAttrib.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPushClientAttrib</span></span></a>,
-            <a href="glSecondaryColorPointer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glSecondaryColorPointer</span></span></a>,
-            <a href="glTexCoordPointer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexCoordPointer</span></span></a>,
-            <a href="glVertexAttribPointer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glVertexAttribPointer</span></span></a>
-            <a href="glVertexPointer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glVertexPointer</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775533"></a><h2>Copyright</h2><p>
+            <a href="glGetPointerv.xml"><span class="citerefentry"><span class="refentrytitle">glGetPointerv</span></span></a> with argument <code class="constant">GL_FOG_COORD_ARRAY_POINTER</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775499"></a><h2>See Also</h2><p>
+            <a href="glArrayElement.xml"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a>,
+            <a href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>,
+            <a href="glColorPointer.xml"><span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span></a>,
+            <a href="glDisableClientState.xml"><span class="citerefentry"><span class="refentrytitle">glDisableClientState</span></span></a>,
+            <a href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>,
+            <a href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>,
+            <a href="glDrawRangeElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span></a>,
+            <a href="glEdgeFlagPointer.xml"><span class="citerefentry"><span class="refentrytitle">glEdgeFlagPointer</span></span></a>,
+            <a href="glEnableClientState.xml"><span class="citerefentry"><span class="refentrytitle">glEnableClientState</span></span></a>,
+            <a href="glFogCoord.xml"><span class="citerefentry"><span class="refentrytitle">glFogCoord</span></span></a>,
+            <a href="glIndexPointer.xml"><span class="citerefentry"><span class="refentrytitle">glIndexPointer</span></span></a>,
+            <a href="glInterleavedArrays.xml"><span class="citerefentry"><span class="refentrytitle">glInterleavedArrays</span></span></a>,
+            <a href="glMultiDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawArrays</span></span></a>,
+            <a href="glMultiDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span></a>,
+            <a href="glNormalPointer.xml"><span class="citerefentry"><span class="refentrytitle">glNormalPointer</span></span></a>,
+            <a href="glPopClientAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPopClientAttrib</span></span></a>,
+            <a href="glPushClientAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPushClientAttrib</span></span></a>,
+            <a href="glSecondaryColorPointer.xml"><span class="citerefentry"><span class="refentrytitle">glSecondaryColorPointer</span></span></a>,
+            <a href="glTexCoordPointer.xml"><span class="citerefentry"><span class="refentrytitle">glTexCoordPointer</span></span></a>,
+            <a href="glVertexAttribPointer.xml"><span class="citerefentry"><span class="refentrytitle">glVertexAttribPointer</span></span></a>
+            <a href="glVertexPointer.xml"><span class="citerefentry"><span class="refentrytitle">glVertexPointer</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775619"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

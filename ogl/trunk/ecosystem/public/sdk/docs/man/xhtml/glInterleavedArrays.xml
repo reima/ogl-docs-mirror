@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glInterleavedArrays</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glInterleavedArrays"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glInterleavedArrays — simultaneously specify and enable several interleaved arrays</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glInterleavedArrays</b>(</code></td><td>GLenum  </td><td><var class="pdparam">format</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">stride</var>, </td></tr><tr><td> </td><td>const GLvoid *  </td><td><var class="pdparam">pointer</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782004"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>format</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glInterleavedArrays</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glInterleavedArrays"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glInterleavedArrays — simultaneously specify and enable several interleaved arrays</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glInterleavedArrays</b>(</code></td><td>GLenum  </td><td><var class="pdparam">format</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">stride</var>, </td></tr><tr><td> </td><td>const GLvoid *  </td><td><var class="pdparam">pointer</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782046"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>format</code></em></span></dt><dd><p>
                     Specifies the type of array to enable. Symbolic constants
                     <code class="constant">GL_V2F</code>,
                     <code class="constant">GL_V3F</code>,
@@ -21,7 +21,7 @@
                     are accepted.
                 </p></dd><dt><span class="term"><em class="parameter"><code>stride</code></em></span></dt><dd><p>
                     Specifies the offset in bytes between each aggregate array element.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768510"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768565"></a><h2>Description</h2><p>
             <code class="function">glInterleavedArrays</code> lets you specify and enable individual color,
             normal,
             texture and vertex
@@ -47,22 +47,22 @@
             C.  If a color is extracted as 4 unsigned bytes, the vertex
             array element which follows is located at the first possible
             floating-point aligned address.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768580"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768668"></a><h2>Notes</h2><p>
             <code class="function">glInterleavedArrays</code> is available only if the GL version is 1.1 or greater.
         </p><p>
             If <code class="function">glInterleavedArrays</code> is called while compiling a display list, it is not
             compiled into the list, and it is executed immediately.
         </p><p>
             Execution of <code class="function">glInterleavedArrays</code> is not allowed between the execution of
-            <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>,
+            <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>,
             but an error may or may not be generated. If no error is generated,
             the operation is undefined.
         </p><p>
             <code class="function">glInterleavedArrays</code> is typically implemented on the client side.
         </p><p>
             Vertex array parameters are client-side state and are therefore not
-            saved or restored by <a href="glPushAttrib.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPushAttrib</span></span></a> and <a href="glPopAttrib.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPopAttrib</span></span></a>.
-            Use <a href="glPushClientAttrib.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPushClientAttrib</span></span></a> and <a href="glPopClientAttrib.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPopClientAttrib</span></span></a> instead.
+            saved or restored by <a href="glPushAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPushAttrib</span></span></a> and <a href="glPopAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPopAttrib</span></span></a>.
+            Use <a href="glPushClientAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPushClientAttrib</span></span></a> and <a href="glPopClientAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPopClientAttrib</span></span></a> instead.
         </p><p>
             For OpenGL versions 1.3 and greater, or when the <code class="code">ARB_multitexture</code> extension is supported, <code class="function">glInterleavedArrays</code>
             only updates the texture coordinate array for the client active texture
@@ -70,25 +70,25 @@
             updated, regardless of whether the client texture unit is enabled or not.
         </p><p>
             Secondary color values are not supported in interleaved vertex array formats.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775241"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775329"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>format</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>stride</code></em> is negative.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775274"></a><h2>See Also</h2><p>
-            <a href="glArrayElement.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a>,
-            <a href="glClientActiveTexture.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glClientActiveTexture</span></span></a>,
-            <a href="glColorPointer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span></a>,
-            <a href="glDrawArrays.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>,
-            <a href="glDrawElements.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>,
-            <a href="glEdgeFlagPointer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEdgeFlagPointer</span></span></a>,
-            <a href="glEnableClientState.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnableClientState</span></span></a>,
-            <a href="glGetPointer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetPointer</span></span></a>,
-            <a href="glIndexPointer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glIndexPointer</span></span></a>,
-            <a href="glNormalPointer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glNormalPointer</span></span></a>,
-            <a href="glSecondaryColorPointer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glSecondaryColorPointer</span></span></a>,
-            <a href="glTexCoordPointer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexCoordPointer</span></span></a>,
-            <a href="glVertexPointer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glVertexPointer</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775348"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775362"></a><h2>See Also</h2><p>
+            <a href="glArrayElement.xml"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a>,
+            <a href="glClientActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glClientActiveTexture</span></span></a>,
+            <a href="glColorPointer.xml"><span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span></a>,
+            <a href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>,
+            <a href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>,
+            <a href="glEdgeFlagPointer.xml"><span class="citerefentry"><span class="refentrytitle">glEdgeFlagPointer</span></span></a>,
+            <a href="glEnableClientState.xml"><span class="citerefentry"><span class="refentrytitle">glEnableClientState</span></span></a>,
+            <a href="glGetPointerv.xml"><span class="citerefentry"><span class="refentrytitle">glGetPointerv</span></span></a>,
+            <a href="glIndexPointer.xml"><span class="citerefentry"><span class="refentrytitle">glIndexPointer</span></span></a>,
+            <a href="glNormalPointer.xml"><span class="citerefentry"><span class="refentrytitle">glNormalPointer</span></span></a>,
+            <a href="glSecondaryColorPointer.xml"><span class="citerefentry"><span class="refentrytitle">glSecondaryColorPointer</span></span></a>,
+            <a href="glTexCoordPointer.xml"><span class="citerefentry"><span class="refentrytitle">glTexCoordPointer</span></span></a>,
+            <a href="glVertexPointer.xml"><span class="citerefentry"><span class="refentrytitle">glVertexPointer</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775439"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -28,7 +28,7 @@
         <para>
             X rendering calls made prior to <function>glXWaitX</function> are guaranteed to be
             executed before GL rendering calls made after <function>glXWaitX</function>.
-            Although the same result can be achieved using <citerefentry><refentrytitle>XSync</refentrytitle></citerefentry>,
+            Although the same result can be achieved using <function>XSync</function>,
             <function>glXWaitX</function> does not require a round trip to the server,
             and it is therefore more efficient in cases where client and server
             are on separate machines.
@@ -54,7 +54,7 @@
             <citerefentry><refentrytitle>glFinish</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glFlush</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXWaitGL</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>XSync</refentrytitle></citerefentry>
+            <function>XSync</function>
         </para>
     </refsect1>
     <refsect1><title>Copyright</title>

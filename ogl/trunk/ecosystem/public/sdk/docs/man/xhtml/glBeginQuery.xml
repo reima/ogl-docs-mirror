@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glBeginQuery</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glBegin"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glBeginQuery — delimit the boundaries of a query object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glBeginQuery</b>(</code>GLenum <var class="pdparam">target</var>, GLuint <var class="pdparam">id</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781997"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glBeginQuery</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glBegin"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glBeginQuery — delimit the boundaries of a query object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glBeginQuery</b>(</code>GLenum <var class="pdparam">target</var>, GLuint <var class="pdparam">id</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782023"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the target type of query object established between
-                    <code class="function">glBeginQuery</code> and the subsequent <a href="glEndQuery.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEndQuery</span></span></a>.
+                    <code class="function">glBeginQuery</code> and the subsequent <a href="glEndQuery.xml"><span class="citerefentry"><span class="refentrytitle">glEndQuery</span></span></a>.
                     The symbolic constant must be <code class="constant">GL_SAMPLES_PASSED</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>id</code></em></span></dt><dd><p>
                     Specifies the name of a query object.
-                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glEndQuery</b>(</code>GLenum <var class="pdparam">target</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768496"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glEndQuery</b>(</code>GLenum <var class="pdparam">target</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768521"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the target type of query object to be concluded.
                     The symbolic constant must be <code class="constant">GL_SAMPLES_PASSED</code>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768526"></a><h2>Description</h2><p>
-            <code class="function">glBeginQuery</code> and <a href="glEndQuery.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEndQuery</span></span></a> delimit the
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768557"></a><h2>Description</h2><p>
+            <code class="function">glBeginQuery</code> and <a href="glEndQuery.xml"><span class="citerefentry"><span class="refentrytitle">glEndQuery</span></span></a> delimit the
             boundaries of a query object.  If a query object with name <em class="parameter"><code>id</code></em> does not yet exist it is created.
         </p><p>
             When <code class="function">glBeginQuery</code> is executed, the query object's samples-passed counter is reset to 0.  Subsequent
             rendering will increment the counter once for every sample that passes the depth test.  When <code class="function">glEndQuery</code>
             is executed, the samples-passed counter is assigned to the query object's result value.  This value can be queried by
-            calling <a href="glGetQueryObject.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetQueryObject</span></span></a> with <em class="parameter"><code>pname</code></em>
+            calling <a href="glGetQueryObject.xml"><span class="citerefentry"><span class="refentrytitle">glGetQueryObject</span></span></a> with <em class="parameter"><code>pname</code></em>
             <code class="constant">GL_QUERY_RESULT</code>.
         </p><p>
             Querying the <code class="constant">GL_QUERY_RESULT</code> implicitly flushes the GL pipeline until the rendering delimited by the
             query object has completed and the result is available.  <code class="constant">GL_QUERY_RESULT_AVAILABLE</code> can be queried to
             determine if the result is immediately available or if the rendering is not yet complete.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768604"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768650"></a><h2>Notes</h2><p>
             If the samples-passed count exceeds the maximum value representable in the number of available bits, as reported by
-            <a href="glGetQueryiv.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetQueryiv</span></span></a> with <em class="parameter"><code>pname</code></em>
+            <a href="glGetQueryiv.xml"><span class="citerefentry"><span class="refentrytitle">glGetQueryiv</span></span></a> with <em class="parameter"><code>pname</code></em>
             <code class="constant">GL_QUERY_COUNTER_BITS</code>, the count becomes undefined.
         </p><p>
             An implementation may support 0 bits in its samples-passed counter, in which case query results are always undefined
@@ -36,15 +36,15 @@
             counter individually for each sample of a fragment that passes the depth test, or it may choose to increment the counter for
             all samples of a fragment if any one of them passes the depth test.
         </p><p>
-            <code class="function">glBeginQuery</code> and <a href="glEndQuery.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEndQuery</span></span></a>
+            <code class="function">glBeginQuery</code> and <a href="glEndQuery.xml"><span class="citerefentry"><span class="refentrytitle">glEndQuery</span></span></a>
             are available only if the GL version is 1.5 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775222"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775277"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not <code class="constant">GL_SAMPLES_PASSED</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glBeginQuery</code> is executed while
             a query object of the same <em class="parameter"><code>target</code></em> is already active.
         </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <a href="glEndQuery.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEndQuery</span></span></a>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <a href="glEndQuery.xml"><span class="citerefentry"><span class="refentrytitle">glEndQuery</span></span></a>
             is executed when a query object of the same <em class="parameter"><code>target</code></em> is not active.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>id</code></em> is 0.
@@ -52,16 +52,16 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>id</code></em> is the name of an already active query object.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glBeginQuery</code> or
-            <a href="glEndQuery.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEndQuery</span></span></a> is executed between the execution of
-            <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding execution of
-            <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775340"></a><h2>See Also</h2><p>
-            <a href="glDeleteQueries.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDeleteQueries</span></span></a>,
-            <a href="glGenQueries.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGenQueries</span></span></a>,
-            <a href="glGetQueryiv.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetQueryiv</span></span></a>,
-            <a href="glGetQueryObject.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetQueryObject</span></span></a>,
-            <a href="glIsQuery.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glIsQuery</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775374"></a><h2>Copyright</h2><p>
+            <a href="glEndQuery.xml"><span class="citerefentry"><span class="refentrytitle">glEndQuery</span></span></a> is executed between the execution of
+            <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding execution of
+            <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775402"></a><h2>See Also</h2><p>
+            <a href="glDeleteQueries.xml"><span class="citerefentry"><span class="refentrytitle">glDeleteQueries</span></span></a>,
+            <a href="glGenQueries.xml"><span class="citerefentry"><span class="refentrytitle">glGenQueries</span></span></a>,
+            <a href="glGetQueryiv.xml"><span class="citerefentry"><span class="refentrytitle">glGetQueryiv</span></span></a>,
+            <a href="glGetQueryObject.xml"><span class="citerefentry"><span class="refentrytitle">glGetQueryObject</span></span></a>,
+            <a href="glIsQuery.xml"><span class="citerefentry"><span class="refentrytitle">glIsQuery</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775436"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2005 Addison-Wesley. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.

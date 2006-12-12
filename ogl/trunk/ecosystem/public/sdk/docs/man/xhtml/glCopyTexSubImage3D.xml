@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
 <?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCopyTexSubImage3D</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glCopyTexSubImage3D"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCopyTexSubImage3D — copy a three-dimensional texture subimage</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glCopyTexSubImage3D</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">level</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">xoffset</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">yoffset</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">zoffset</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">x</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">y</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">width</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">height</var><code>)</code>;</td></tr></table></div></div><p>
-    </p><div class="refsect1" lang="en" xml:lang="en"><a id="id4781919"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term">/<em class="parameter"><code>target</code></em></span></dt><dd><p>
+    </p><div class="refsect1" lang="en" xml:lang="en"><a id="id4781962"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term">/<em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the target texture.
                     Must be <code class="constant">GL_TEXTURE_3D</code>
                 </p></dd><dt><span class="term"><em class="parameter"><code>level</code></em></span></dt><dd><p>
@@ -22,10 +22,10 @@
                     Specifies the width of the texture subimage.
                 </p></dd><dt><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
                     Specifies the height of the texture subimage.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768634"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775245"></a><h2>Description</h2><p>
             <code class="function">glCopyTexSubImage3D</code> replaces a rectangular portion of a three-dimensional
             texture image with pixels from the current <code class="constant">GL_READ_BUFFER</code> (rather
-            than from main memory, as is the case for <a href="glTexSubImage3D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>).
+            than from main memory, as is the case for <a href="glTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>).
         </p><p>
             The screen-aligned pixel rectangle with lower left corner at
             (<em class="parameter"><code>x</code></em>,\ <em class="parameter"><code>y</code></em>) and with
@@ -57,7 +57,7 @@
             inclusive, at z index <em class="parameter"><code>zoffset</code></em> and at the mipmap level specified by <em class="parameter"><code>level</code></em>.
         </p><p>
             The pixels in the rectangle are processed exactly as if
-            <a href="glCopyPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a> had been called, but the process stops just before
+            <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a> had been called, but the process stops just before
             final conversion.
             At this point, all pixel component values are clamped to the range 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -82,23 +82,23 @@
             No change is made to the <span class="emphasis"><em>internalformat</em></span>, <span class="emphasis"><em>width</em></span>,
             <span class="emphasis"><em>height</em></span>, <span class="emphasis"><em>depth</em></span>, or <span class="emphasis"><em>border</em></span> parameters of the specified texture
             array or to texel values outside the specified subregion.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775424"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775508"></a><h2>Notes</h2><p>
             <code class="function">glCopyTexSubImage3D</code> is available only if the GL version is 1.2 or greater.
         </p><p>
             Texturing has no effect in color index mode.
         </p><p>
-            <a href="glPixelStore.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> and <a href="glPixelTransfer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a> modes affect texture images
-            in exactly the way they affect <a href="glDrawPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>.
+            <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> and <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a> modes affect texture images
+            in exactly the way they affect <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>.
         </p><p>
             When the <code class="code">ARB_imaging</code> extension is supported, the RGBA components
             copied from the framebuffer may be processed by the imaging pipeline, as
-            if they were a two-dimensional texture.  See <a href="glTexImage2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a> for
+            if they were a two-dimensional texture.  See <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a> for
             specific details.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775479"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775566"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if /<em class="parameter"><code>target</code></em> is not <code class="constant">GL_TEXTURE_3D</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if the texture array has not
-            been defined by a previous <a href="glTexImage3D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a> operation.
+            been defined by a previous <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a> operation.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>level</code></em> is less than 0.
         </p><p>
@@ -238,31 +238,31 @@
             include twice the border width.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glCopyTexSubImage3D</code> is executed
-            between the execution of <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding
-            execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713222"></a><h2>Associated Gets</h2><p>
-            <a href="glGetTexImage.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetTexImage</span></span></a>
+            between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding
+            execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711346"></a><h2>Associated Gets</h2><p>
+            <a href="glGetTexImage.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexImage</span></span></a>
         </p><p>
-            <a href="glIsEnabled.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_3D</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713248"></a><h2>See Also</h2><p>
-            <a href="glCopyPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
-            <a href="glCopyTexImage1D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage1D</span></span></a>,
-            <a href="glCopyTexImage2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a>,
-            <a href="glCopyTexSubImage1D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage1D</span></span></a>,
-            <a href="glCopyTexSubImage2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage2D</span></span></a>,
-            <a href="glPixelStore.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>,
-            <a href="glPixelTransfer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>,
-            <a href="glReadBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glReadBuffer</span></span></a>,
-            <a href="glTexEnv.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexEnv</span></span></a>,
-            <a href="glTexGen.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexGen</span></span></a>,
-            <a href="glTexImage1D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>,
-            <a href="glTexImage2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>,
-            <a href="glTexImage3D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>,
-            <a href="glTexParameter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>,
-            <a href="glTexSubImage1D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span></a>,
-            <a href="glTexSubImage2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>,
-            <a href="glTexSubImage3D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711392"></a><h2>Copyright</h2><p>
+            <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_3D</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711372"></a><h2>See Also</h2><p>
+            <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
+            <a href="glCopyTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage1D</span></span></a>,
+            <a href="glCopyTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a>,
+            <a href="glCopyTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage1D</span></span></a>,
+            <a href="glCopyTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage2D</span></span></a>,
+            <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>,
+            <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>,
+            <a href="glReadBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glReadBuffer</span></span></a>,
+            <a href="glTexEnv.xml"><span class="citerefentry"><span class="refentrytitle">glTexEnv</span></span></a>,
+            <a href="glTexGen.xml"><span class="citerefentry"><span class="refentrytitle">glTexGen</span></span></a>,
+            <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>,
+            <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>,
+            <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>,
+            <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>,
+            <a href="glTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span></a>,
+            <a href="glTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>,
+            <a href="glTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711470"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

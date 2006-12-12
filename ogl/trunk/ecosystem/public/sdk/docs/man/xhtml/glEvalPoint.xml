@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glEvalPoint</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glEvalPoint"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glEvalPoint — generate and evaluate a single point in a mesh</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glEvalPoint1</b>(</code>GLint <var class="pdparam">i</var><code>)</code>;</p></div><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glEvalPoint2</b>(</code>GLint <var class="pdparam">i</var>, GLint <var class="pdparam">j</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782019"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>i</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glEvalPoint</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glEvalPoint"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glEvalPoint — generate and evaluate a single point in a mesh</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glEvalPoint1</b>(</code>GLint <var class="pdparam">i</var><code>)</code>;</p></div><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glEvalPoint2</b>(</code>GLint <var class="pdparam">i</var>, GLint <var class="pdparam">j</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782045"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>i</code></em></span></dt><dd><p>
                     Specifies the integer value for grid domain variable 
                     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
                     .
@@ -9,11 +9,11 @@
                     Specifies the integer value for grid domain variable 
                     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">j</mml:mi></mml:math>
                     (<code class="function">glEvalPoint2</code> only).
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768500"></a><h2>Description</h2><p>
-            <a href="glMapGrid.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glMapGrid</span></span></a> and <a href="glEvalMesh.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a> are used in tandem to efficiently
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768527"></a><h2>Description</h2><p>
+            <a href="glMapGrid.xml"><span class="citerefentry"><span class="refentrytitle">glMapGrid</span></span></a> and <a href="glEvalMesh.xml"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a> are used in tandem to efficiently
             generate and evaluate a series of evenly spaced map domain values.
             <code class="function">glEvalPoint</code> can be used to evaluate a single grid point in the same gridspace
-            that is traversed by <a href="glEvalMesh.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a>.
+            that is traversed by <a href="glEvalMesh.xml"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a>.
             Calling <code class="function">glEvalPoint1</code> is equivalent to calling
             </p><pre class="programlisting">
 glEvalCoord1( <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -75,7 +75,7 @@ glEvalCoord1( <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow=
                 <mml:mn>2</mml:mn>
                 </mml:msub>
             </mml:math>
-            are the arguments to the most recent <a href="glMapGrid1.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glMapGrid1</span></span></a> command.
+            are the arguments to the most recent <a href="glMapGrid1.xml"><span class="citerefentry"><span class="refentrytitle">glMapGrid1</span></span></a> command.
             The one absolute numeric requirement is that if 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -198,7 +198,7 @@ glEvalCoord1( <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow=
                 <mml:mn>2</mml:mn>
                 </mml:msub>
             </mml:math>
-            are the arguments to the most recent <a href="glMapGrid2.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glMapGrid2</span></span></a> command.
+            are the arguments to the most recent <a href="glMapGrid2.xml"><span class="citerefentry"><span class="refentrytitle">glMapGrid2</span></span></a> command.
             Then the <code class="function">glEvalPoint2</code> command is equivalent to calling
             </p><pre class="programlisting">
 glEvalCoord2( <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -303,21 +303,21 @@ glEvalCoord2( <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow=
                 </mml:msub>
             </mml:math>
             .
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713184"></a><h2>Associated Gets</h2><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP1_GRID_DOMAIN</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713225"></a><h2>Associated Gets</h2><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP1_GRID_DOMAIN</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP2_GRID_DOMAIN</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP2_GRID_DOMAIN</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP1_GRID_SEGMENTS</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP1_GRID_SEGMENTS</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP2_GRID_SEGMENTS</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713237"></a><h2>See Also</h2><p>
-            <a href="glEvalCoord.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEvalCoord</span></span></a>,
-            <a href="glEvalMesh.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a>,
-            <a href="glMap1.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glMap1</span></span></a>,
-            <a href="glMap2.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glMap2</span></span></a>,
-            <a href="glMapGrid.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glMapGrid</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711323"></a><h2>Copyright</h2><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP2_GRID_SEGMENTS</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711332"></a><h2>See Also</h2><p>
+            <a href="glEvalCoord.xml"><span class="citerefentry"><span class="refentrytitle">glEvalCoord</span></span></a>,
+            <a href="glEvalMesh.xml"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a>,
+            <a href="glMap1.xml"><span class="citerefentry"><span class="refentrytitle">glMap1</span></span></a>,
+            <a href="glMap2.xml"><span class="citerefentry"><span class="refentrytitle">glMap2</span></span></a>,
+            <a href="glMapGrid.xml"><span class="citerefentry"><span class="refentrytitle">glMapGrid</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711366"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

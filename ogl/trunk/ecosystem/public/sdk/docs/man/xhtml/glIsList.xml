@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glIsList</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glIsList"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glIsList — determine if a name corresponds to a display list</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">GLboolean <b class="fsfunc">glIsList</b>(</code>GLuint <var class="pdparam">list</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781987"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>list</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glIsList</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glIsList"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glIsList — determine if a name corresponds to a display list</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">GLboolean <b class="fsfunc">glIsList</b>(</code>GLuint <var class="pdparam">list</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782012"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>list</code></em></span></dt><dd><p>
                     Specifies a potential display-list name.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782013"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782040"></a><h2>Description</h2><p>
             <code class="function">glIsList</code> returns <code class="constant">GL_TRUE</code> if <em class="parameter"><code>list</code></em> is the name
             of a display list and returns <code class="constant">GL_FALSE</code> otherwise.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781905"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781932"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glIsList</code>
             is executed between the execution of
-            <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-            and the corresponding execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781935"></a><h2>See Also</h2><p>
-            <a href="glCallList.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCallList</span></span></a>,
-            <a href="glCallLists.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCallLists</span></span></a>,
-            <a href="glDeleteLists.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDeleteLists</span></span></a>,
-            <a href="glGenLists.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGenLists</span></span></a>,
-            <a href="glNewList.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glNewList</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768512"></a><h2>Copyright</h2><p>
+            <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
+            and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781963"></a><h2>See Also</h2><p>
+            <a href="glCallList.xml"><span class="citerefentry"><span class="refentrytitle">glCallList</span></span></a>,
+            <a href="glCallLists.xml"><span class="citerefentry"><span class="refentrytitle">glCallLists</span></span></a>,
+            <a href="glDeleteLists.xml"><span class="citerefentry"><span class="refentrytitle">glDeleteLists</span></span></a>,
+            <a href="glGenLists.xml"><span class="citerefentry"><span class="refentrytitle">glGenLists</span></span></a>,
+            <a href="glNewList.xml"><span class="citerefentry"><span class="refentrytitle">glNewList</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768538"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -36,9 +36,8 @@
 	successfully compiling the shader objects with
 	<citerefentry><refentrytitle>glCompileShader</refentrytitle></citerefentry>,
 	and successfully linking the program object with
-	<citerefentry><refentrytitle>glLinkProgram.
-	</refentrytitle></citerefentry> These executables are made part
-	of current state when
+	<citerefentry><refentrytitle>glLinkProgram</refentrytitle></citerefentry>.
+	These executables are made part of current state when
 	<citerefentry><refentrytitle>glUseProgram</refentrytitle></citerefentry>
 	is called. Program objects can be deleted by calling
 	<citerefentry><refentrytitle>glDeleteProgram</refentrytitle></citerefentry>.

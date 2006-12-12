@@ -68,7 +68,7 @@
             visuals have priority over DirectColor and StaticColor visuals,
             respectively.
             If no conforming visual exists, <constant>NULL</constant> is returned.
-            To free the data returned by this function, use <citerefentry><refentrytitle>XFree</refentrytitle></citerefentry>.
+            To free the data returned by this function, use <function>XFree</function>.
         </para>
         <para>
             All boolean GLX attributes default to <constant>False</constant>
@@ -324,7 +324,7 @@
             <emphasis>depth</emphasis> elements.
         </para>
         <para>
-            <function>glXChooseVisual</function> is implemented as a client-side utility using only <citerefentry><refentrytitle>XGetVisualInfo</refentrytitle></citerefentry>
+            <function>glXChooseVisual</function> is implemented as a client-side utility using only <function>XGetVisualInfo</function>
             and <citerefentry><refentrytitle>glXGetConfig</refentrytitle></citerefentry>.
             Calls to these two routines can be used to implement selection algorithms
             other than the generic one implemented by <function>glXChooseVisual</function>.

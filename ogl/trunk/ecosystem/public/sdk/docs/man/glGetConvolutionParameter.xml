@@ -192,7 +192,7 @@
     <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glGetConvolutionFilter</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetSeparableFilter2D</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetSeparableFilter</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glConvolutionParameter</refentrytitle></citerefentry>
         </para>
     </refsect1>

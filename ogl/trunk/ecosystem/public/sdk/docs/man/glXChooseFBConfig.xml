@@ -74,7 +74,7 @@
             If an error occurs, no frame buffer configurations exist on the
             specified screen, or if no frame buffer configurations match the
             specified attributes, then <constant>NULL</constant> is returned.
-            Use <citerefentry><refentrytitle>XFree</refentrytitle></citerefentry> to free the memory returned by
+            Use <function>XFree</function> to free the memory returned by
             <function>glXChooseFBConfig</function>.
         </para>
         <para>
@@ -599,7 +599,7 @@
             be used to implement selection algorithms other than the generic 
             one implemented by <function>glXChooseFBConfig</function>. Call <function>glXChooseFBConfig</function> to retrieve all the frame buffer configurations 
             on a particular screen or, alternatively, all the frame buffer configurations with
-            a particular set of attributes. Next, call <citerefentry><refentrytitle>glGetFBConfigAttrib</refentrytitle></citerefentry>
+            a particular set of attributes. Next, call <citerefentry><refentrytitle>glXGetFBConfigAttrib</refentrytitle></citerefentry>
             to retrieve additional attributes for the frame buffer configurations and then
             select between them.
         </para>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glShadeModel</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glShadeModel"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glShadeModel — select flat or smooth shading</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glShadeModel</b>(</code>GLenum <var class="pdparam">mode</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781990"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glShadeModel</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glShadeModel"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glShadeModel — select flat or smooth shading</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glShadeModel</b>(</code>GLenum <var class="pdparam">mode</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782016"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
                     Specifies a symbolic value representing a shading technique.
                     Accepted values are <code class="constant">GL_FLAT</code> and <code class="constant">GL_SMOOTH</code>.
                     The initial value is <code class="constant">GL_SMOOTH</code>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782027"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781920"></a><h2>Description</h2><p>
             GL primitives can have either flat or smooth shading.
             Smooth shading,
             the default,
@@ -21,7 +21,7 @@
             lighting is disabled.
         </p><p>
             Flat and smooth shading are indistinguishable for points.
-            Starting when <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> is issued and counting vertices and
+            Starting when <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> is issued and counting vertices and
             primitives from 1, the GL gives each flat-shaded line segment 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
             the
@@ -120,21 +120,21 @@
                         </td></tr></tbody></table></div><p>
             Flat and smooth shading are specified by <code class="function">glShadeModel</code> with <em class="parameter"><code>mode</code></em> set to
             <code class="constant">GL_FLAT</code> and <code class="constant">GL_SMOOTH</code>, respectively.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775609"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775661"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is any value other than
             <code class="constant">GL_FLAT</code> or <code class="constant">GL_SMOOTH</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glShadeModel</code>
-            is executed between the execution of <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-            and the corresponding execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775303"></a><h2>Associated Gets</h2><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_SHADE_MODEL</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775321"></a><h2>See Also</h2><p>
-            <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>,
-            <a href="glColor.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glColor</span></span></a>,
-            <a href="glLight.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLight</span></span></a>,
-            <a href="glLightModel.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLightModel</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775351"></a><h2>Copyright</h2><p>
+            is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
+            and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775387"></a><h2>Associated Gets</h2><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_SHADE_MODEL</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775404"></a><h2>See Also</h2><p>
+            <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>,
+            <a href="glColor.xml"><span class="citerefentry"><span class="refentrytitle">glColor</span></span></a>,
+            <a href="glLight.xml"><span class="citerefentry"><span class="refentrytitle">glLight</span></span></a>,
+            <a href="glLightModel.xml"><span class="citerefentry"><span class="refentrytitle">glLightModel</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775432"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

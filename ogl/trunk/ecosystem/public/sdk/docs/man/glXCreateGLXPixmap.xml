@@ -110,7 +110,7 @@
         <para>
             <citerefentry><refentrytitle>glXCreateContext</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXCreatePixmap</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXDestoryGLXPixmap</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXDestroyGLXPixmap</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXIsDirect</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXMakeCurrent</refentrytitle></citerefentry>
         </para>

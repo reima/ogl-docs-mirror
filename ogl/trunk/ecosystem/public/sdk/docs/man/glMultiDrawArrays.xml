@@ -142,7 +142,7 @@
             <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEdgeFlagPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glFogCooordPointer</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glFogCoordPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetPointerv</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glIndexPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glInterleavedArrays</refentrytitle></citerefentry>,

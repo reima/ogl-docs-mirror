@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glRenderMode</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glRenderMode"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glRenderMode — set rasterization mode</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">GLint <b class="fsfunc">glRenderMode</b>(</code>GLenum <var class="pdparam">mode</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781987"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glRenderMode</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glRenderMode"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glRenderMode — set rasterization mode</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">GLint <b class="fsfunc">glRenderMode</b>(</code>GLenum <var class="pdparam">mode</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782014"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
                     Specifies the rasterization mode.
                     Three values are accepted:
                     <code class="constant">GL_RENDER</code>,
                     <code class="constant">GL_SELECT</code>, and
                     <code class="constant">GL_FEEDBACK</code>.
                     The initial value is <code class="constant">GL_RENDER</code>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782028"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781922"></a><h2>Description</h2><p>
             <code class="function">glRenderMode</code> sets the rasterization mode.
             It takes one argument,
             <em class="parameter"><code>mode</code></em>,
@@ -26,7 +26,7 @@
                         Instead,
                         a record of the names of primitives that would have been drawn
                         if the render mode had been <code class="constant">GL_RENDER</code> is returned in a select buffer,
-                        which must be created (see <a href="glSelectBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glSelectBuffer</span></span></a>) before selection mode
+                        which must be created (see <a href="glSelectBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glSelectBuffer</span></span></a>) before selection mode
                         is entered.
                     </p></dd><dt><span class="term"><code class="constant">GL_FEEDBACK</code></span></dt><dd><p>
                         Feedback mode.
@@ -35,7 +35,7 @@
                         Instead,
                         the coordinates and attributes of vertices that would have been drawn
                         if the render mode had been <code class="constant">GL_RENDER</code> is returned in a feedback buffer,
-                        which must be created (see <a href="glFeedbackBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span></a>) before feedback mode
+                        which must be created (see <a href="glFeedbackBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span></a>) before feedback mode
                         is entered.
                     </p></dd></dl></div><p>
             The return value of <code class="function">glRenderMode</code> is determined by the render mode at the time
@@ -49,38 +49,38 @@
                     </p></dd><dt><span class="term"><code class="constant">GL_FEEDBACK</code></span></dt><dd><p>
                         The number of values (not vertices) transferred to the feedback buffer.
                     </p></dd></dl></div><p>
-            See the <a href="glSelectBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glSelectBuffer</span></span></a> and <a href="glFeedbackBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span></a> reference pages for
+            See the <a href="glSelectBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glSelectBuffer</span></span></a> and <a href="glFeedbackBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span></a> reference pages for
             more details concerning selection and feedback operation.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768634"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775238"></a><h2>Notes</h2><p>
             If an error is generated,
             <code class="function">glRenderMode</code> returns 0 regardless of the current render mode.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768650"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775254"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is not one of the three
             accepted values.
         </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <a href="glSelectBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glSelectBuffer</span></span></a> is called
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <a href="glSelectBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glSelectBuffer</span></span></a> is called
             while the render mode is <code class="constant">GL_SELECT</code>,
             or if <code class="function">glRenderMode</code> is called with argument <code class="constant">GL_SELECT</code> before
-            <a href="glSelectBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glSelectBuffer</span></span></a> is called at least once.
+            <a href="glSelectBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glSelectBuffer</span></span></a> is called at least once.
         </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <a href="glFeedbackBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span></a> is called
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <a href="glFeedbackBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span></a> is called
             while the render mode is <code class="constant">GL_FEEDBACK</code>,
             or if <code class="function">glRenderMode</code> is called with argument <code class="constant">GL_FEEDBACK</code> before
-            <a href="glFeedbackBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span></a> is called at least once.
+            <a href="glFeedbackBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span></a> is called at least once.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glRenderMode</code>
-            is executed between the execution of <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-            and the corresponding execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775311"></a><h2>Associated Gets</h2><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_RENDER_MODE</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775329"></a><h2>See Also</h2><p>
-            <a href="glFeedbackBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span></a>,
-            <a href="glInitNames.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glInitNames</span></span></a>,
-            <a href="glLoadName.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glLoadName</span></span></a>,
-            <a href="glPassThrough.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPassThrough</span></span></a>,
-            <a href="glPushName.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glPushName</span></span></a>,
-            <a href="glSelectBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glSelectBuffer</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775367"></a><h2>Copyright</h2><p>
+            is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
+            and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775368"></a><h2>Associated Gets</h2><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_RENDER_MODE</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775385"></a><h2>See Also</h2><p>
+            <a href="glFeedbackBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span></a>,
+            <a href="glInitNames.xml"><span class="citerefentry"><span class="refentrytitle">glInitNames</span></span></a>,
+            <a href="glLoadName.xml"><span class="citerefentry"><span class="refentrytitle">glLoadName</span></span></a>,
+            <a href="glPassThrough.xml"><span class="citerefentry"><span class="refentrytitle">glPassThrough</span></span></a>,
+            <a href="glPushName.xml"><span class="citerefentry"><span class="refentrytitle">glPushName</span></span></a>,
+            <a href="glSelectBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glSelectBuffer</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775425"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -50,7 +50,7 @@
             If <parameter>config</parameter> is a valid GLX frame buffer configuration
             and it has an associated X Visual, then
             information describing that visual is returned; otherwise <constant>NULL</constant>
-            is returned. Use <citerefentry><refentrytitle>XFree</refentrytitle></citerefentry> to free the data returned.
+            is returned. Use <function>XFree</function> to free the data returned.
         </para>
     </refsect1>
     <refsect1><title>Notes</title>

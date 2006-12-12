@@ -115,7 +115,7 @@
         <para>
             <citerefentry><refentrytitle>glXChooseFBConfig</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXCreateGLXPixmap</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glXDestoryWindow</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glXDestroyWindow</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXMakeContextCurrent</refentrytitle></citerefentry>
         </para>
     </refsect1>

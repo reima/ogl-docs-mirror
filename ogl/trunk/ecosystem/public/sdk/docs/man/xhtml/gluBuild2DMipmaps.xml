@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluBuild2DMipmaps</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluBuild2DMipmaps"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluBuild2DMipmaps — builds a two-dimensional mipmap</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">GLint <b class="fsfunc">gluBuild2DMipmaps</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">internalFormat</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">width</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">height</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">format</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>const void *  </td><td><var class="pdparam">data</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781901"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluBuild2DMipmaps</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluBuild2DMipmaps"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluBuild2DMipmaps — builds a two-dimensional mipmap</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">GLint <b class="fsfunc">gluBuild2DMipmaps</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">internalFormat</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">width</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">height</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">format</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>const void *  </td><td><var class="pdparam">data</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781943"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the target texture.  Must be <code class="constant">GLU_TEXTURE_2D</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>internalFormat</code></em></span></dt><dd><p>
                     Requests the internal storage format of the texture image.  The most
@@ -94,13 +94,13 @@
                     <code class="constant">GLU_UNSIGNED_INT_2_10_10_10_REV</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>data</code></em></span></dt><dd><p>
                     Specifies a pointer to the image data in memory.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775428"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775508"></a><h2>Description</h2><p>
             <code class="function">gluBuild2DMipmaps</code> builds a series of prefiltered two-dimensional texture maps of decreasing
             resolutions called a mipmap. This is used for the antialiasing of
             texture-mapped primitives.
         </p><p>
             A return value of zero indicates success, otherwise a GLU error code is
-            returned (see <a href="gluErrorString.xml&#10;"><span class="citerefentry"><span class="refentrytitle">gluErrorString</span></span></a>).
+            returned (see <a href="gluErrorString.xml"><span class="citerefentry"><span class="refentrytitle">gluErrorString</span></span></a>).
         </p><p>
             Initially, the <em class="parameter"><code>width</code></em> and <em class="parameter"><code>height</code></em> of <em class="parameter"><code>data</code></em> are checked to see if they
             are a power of 2. If not, a copy of <em class="parameter"><code>data</code></em> (not <em class="parameter"><code>data</code></em>), is scaled up
@@ -111,11 +111,11 @@
             scale up to 64 in <em class="parameter"><code>width</code></em> and down to 16 in depth, before mipmapping takes
             place.
         </p><p>
-            Then, proxy textures (see <a href="glTexImage2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>) are used to determine if
+            Then, proxy textures (see <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>) are used to determine if
             the implementation can fit the requested texture. If not, both dimensions
             are continually halved until it fits. (If the OpenGL version is \(&lt;= 1.0,
             both maximum texture dimensions are clamped to the value returned
-            by <a href="glGetIntegerv.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetIntegerv</span></span></a> with the argument <code class="constant">GLU_MAX_TEXTURE_SIZE</code>.)
+            by <a href="glGetIntegerv.xml"><span class="citerefentry"><span class="refentrytitle">glGetIntegerv</span></span></a> with the argument <code class="constant">GLU_MAX_TEXTURE_SIZE</code>.)
         </p><p>
             Next, a series of mipmap levels is built by decimating a copy of <em class="parameter"><code>data</code></em>
             in half along both dimensions until size 
@@ -151,7 +151,7 @@
             </mml:math>
             configuration. Here, two texels are averaged instead.)
         </p><p>
-            <a href="glTexImage2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a> is called to load each of these mipmap levels.
+            <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a> is called to load each of these mipmap levels.
             Level 0 is a copy of <em class="parameter"><code>data</code></em>.  The highest level is
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -243,13 +243,13 @@
             . These
             correspond to levels 0 through 6, respectively.
         </p><p>
-            See the <a href="glTexImage1D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a> reference page for a description of the
-            acceptable values for <em class="parameter"><code>format</code></em> parameter. See the <a href="glDrawPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a> 
+            See the <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a> reference page for a description of the
+            acceptable values for <em class="parameter"><code>format</code></em> parameter. See the <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a> 
             reference page for a description of the acceptable values 
             for <em class="parameter"><code>type</code></em> parameter.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712982"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713007"></a><h2>Notes</h2><p>
             Note that there is no direct way of querying the maximum level. This can
-            be derived indirectly via <a href="glGetTexLevelParameter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span></a>. First, query
+            be derived indirectly via <a href="glGetTexLevelParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span></a>. First, query
             for the width and height actually used at level 0.  (The width and
             height may not be equal to <em class="parameter"><code>width</code></em> and <em class="parameter"><code>height</code></em> respectively since proxy
             textures might have scaled them to fit the implementation.)  Then the
@@ -276,7 +276,7 @@
                 </mml:mrow>
             </mml:math>
             .
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711318"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711408"></a><h2>Notes</h2><p>
             Formats <code class="constant">GLU_BGR</code>, and <code class="constant">GLU_BGRA</code>, and types 
             <code class="constant">GLU_UNSIGNED_BYTE_3_3_2</code>,
             <code class="constant">GLU_UNSIGNED_BYTE_2_3_3_REV</code>,
@@ -291,7 +291,7 @@
             <code class="constant">GLU_UNSIGNED_INT_10_10_10_2</code>, and
             <code class="constant">GLU_UNSIGNED_INT_2_10_10_10_REV</code> are only available if the GL version 
             is 1.2 or greater and if the GLU version is 1.3 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711386"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711483"></a><h2>Errors</h2><p>
             <code class="constant">GLU_INVALID_VALUE</code> is returned if <em class="parameter"><code>width</code></em> or <em class="parameter"><code>height</code></em> is &lt; 1.
         </p><p>
             <code class="constant">GLU_INVALID_ENUM</code> is returned if <em class="parameter"><code>internalFormat</code></em>, <em class="parameter"><code>format</code></em>, or <em class="parameter"><code>type</code></em> is not 
@@ -314,20 +314,20 @@
         </p><p>
             <code class="constant">GLU_INVALID_OPERATION</code> is returned if <em class="parameter"><code>type</code></em> is <code class="constant">GLU_UNSIGNED_INT_10_10_10_2</code> or <code class="constant">GLU_UNSIGNED_INT_2_10_10_10_REV</code>
             and <em class="parameter"><code>format</code></em> is neither <code class="constant">GLU_RGBA</code> nor <code class="constant">GLU_BGRA</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711641"></a><h2>See Also</h2><p>
-            <a href="gluBuild1DMipmapLevels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">gluBuild1DMipmapLevels</span></span></a>,
-            <a href="gluBuild1DMipmaps.xml&#10;"><span class="citerefentry"><span class="refentrytitle">gluBuild1DMipmaps</span></span></a>,
-            <a href="gluBuild2DMipmapLevels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">gluBuild2DMipmapLevels</span></span></a>,
-            <a href="gluBuild3DMipmapLevels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">gluBuild3DMipmapLevels</span></span></a>,
-            <a href="gluBuild3DMipmaps.xml&#10;"><span class="citerefentry"><span class="refentrytitle">gluBuild3DMipmaps</span></span></a>,
-            <a href="gluErrorString.xml&#10;"><span class="citerefentry"><span class="refentrytitle">gluErrorString</span></span></a>, 
-            <a href="glDrawPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>,
-            <a href="glGetTexImage.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetTexImage</span></span></a>,
-            <a href="glGetTexLevelParameter.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span></a>,
-            <a href="glTexImage1D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>,
-            <a href="glTexImage2D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>, 
-            <a href="glTexImage3D.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711711"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711738"></a><h2>See Also</h2><p>
+            <a href="gluBuild1DMipmapLevels.xml"><span class="citerefentry"><span class="refentrytitle">gluBuild1DMipmapLevels</span></span></a>,
+            <a href="gluBuild1DMipmaps.xml"><span class="citerefentry"><span class="refentrytitle">gluBuild1DMipmaps</span></span></a>,
+            <a href="gluBuild2DMipmapLevels.xml"><span class="citerefentry"><span class="refentrytitle">gluBuild2DMipmapLevels</span></span></a>,
+            <a href="gluBuild3DMipmapLevels.xml"><span class="citerefentry"><span class="refentrytitle">gluBuild3DMipmapLevels</span></span></a>,
+            <a href="gluBuild3DMipmaps.xml"><span class="citerefentry"><span class="refentrytitle">gluBuild3DMipmaps</span></span></a>,
+            <a href="gluErrorString.xml"><span class="citerefentry"><span class="refentrytitle">gluErrorString</span></span></a>, 
+            <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>,
+            <a href="glGetTexImage.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexImage</span></span></a>,
+            <a href="glGetTexLevelParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span></a>,
+            <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>,
+            <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>, 
+            <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711811"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

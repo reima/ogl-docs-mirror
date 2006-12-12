@@ -3868,7 +3868,7 @@
                         program point size mode is enabled. If enabled, and a vertex shader is active, then the
                         point size is taken from the shader built-in <code>gl_PointSize</code>. If disabled,
                         and a vertex shader is active, then the point size is taken from the point state as specified
-                        by <citerefentry><refentrytitle>glPointState</refentrytitle></citerefentry>.
+                        by <citerefentry><refentrytitle>glPointSize</refentrytitle></citerefentry>.
                         The initial value is <constant>GL_FALSE</constant>.
                     </para>
                 </listitem>
@@ -4156,8 +4156,8 @@
             <citerefentry><refentrytitle>glGetActiveUniform</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetAttachedShaders</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetAttribLocation</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetBufferParameter</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetBufferPointer</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetBufferParameteriv</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetBufferPointerv</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetBufferSubData</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetClipPlane</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetColorTable</refentrytitle></citerefentry>,

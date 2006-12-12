@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glAccum</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glAccum"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glAccum — operate on the accumulation buffer</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glAccum</b>(</code>GLenum <var class="pdparam">op</var>, GLfloat <var class="pdparam">value</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781998"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>op</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glAccum</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glAccum"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glAccum — operate on the accumulation buffer</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glAccum</b>(</code>GLenum <var class="pdparam">op</var>, GLfloat <var class="pdparam">value</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782022"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>op</code></em></span></dt><dd><p>
                     Specifies the accumulation buffer operation.
                     Symbolic constants
                     <code class="constant">GL_ACCUM</code>,
@@ -13,7 +13,7 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>value</code></em></span></dt><dd><p>
                     Specifies a floating-point value used in the accumulation buffer operation.
                     <em class="parameter"><code>op</code></em> determines how <em class="parameter"><code>value</code></em> is used.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781938"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768512"></a><h2>Description</h2><p>
             The accumulation buffer is an extended-range color buffer.
             Images are not rendered into it.
             Rather,
@@ -28,7 +28,7 @@
             red, green, blue, and alpha values.
             The number of bits per component in the accumulation buffer
             depends on the implementation. You can examine this number
-            by calling <a href="glGetIntegerv.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGetIntegerv</span></span></a> four times,
+            by calling <a href="glGetIntegerv.xml"><span class="citerefentry"><span class="refentrytitle">glGetIntegerv</span></span></a> four times,
             with arguments <code class="constant">GL_ACCUM_RED_BITS</code>,
             <code class="constant">GL_ACCUM_GREEN_BITS</code>,
             <code class="constant">GL_ACCUM_BLUE_BITS</code>,
@@ -71,7 +71,7 @@
             The operations are as follows:
         </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_ACCUM</code></span></dt><dd><p>
                         Obtains R, G, B, and A values
-                        from the buffer currently selected for reading (see <a href="glReadBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glReadBuffer</span></span></a>).
+                        from the buffer currently selected for reading (see <a href="glReadBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glReadBuffer</span></span></a>).
                         Each component value is divided by 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
@@ -165,39 +165,39 @@
                         dithering,
                         and color writemasks.
                     </p></dd></dl></div><p>
-            To clear the accumulation buffer, call <a href="glClearAccum.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glClearAccum</span></span></a> with R, G, B,
-            and A values to set it to, then call <a href="glClear.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glClear</span></span></a> with the
+            To clear the accumulation buffer, call <a href="glClearAccum.xml"><span class="citerefentry"><span class="refentrytitle">glClearAccum</span></span></a> with R, G, B,
+            and A values to set it to, then call <a href="glClear.xml"><span class="citerefentry"><span class="refentrytitle">glClear</span></span></a> with the
             accumulation buffer enabled.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712860"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775622"></a><h2>Notes</h2><p>
             Only pixels within the current scissor box are updated by a
             <code class="function">glAccum</code> operation.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712876"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775640"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>op</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if there is no accumulation buffer.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glAccum</code>
             is executed between the execution of
-            <a href="glBegin.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding execution of <a href="glEnd.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712928"></a><h2>Associated Gets</h2><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_ACCUM_RED_BITS</code>
+            <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711135"></a><h2>Associated Gets</h2><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_ACCUM_RED_BITS</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_ACCUM_GREEN_BITS</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_ACCUM_GREEN_BITS</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_ACCUM_BLUE_BITS</code>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_ACCUM_BLUE_BITS</code>
         </p><p>
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_ACCUM_ALPHA_BITS</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712980"></a><h2>See Also</h2><p>
-            <a href="glClear.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glClear</span></span></a>,
-            <a href="glClearAccum.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glClearAccum</span></span></a>,
-            <a href="glCopyPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
-            <a href="glDrawBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glDrawBuffer</span></span></a>,
-            <a href="glGet.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>,
-            <a href="glReadBuffer.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glReadBuffer</span></span></a>,
-            <a href="glReadPixels.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>,
-            <a href="glScissor.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glScissor</span></span></a>,
-            <a href="glStencilOp.xml&#10;"><span class="citerefentry"><span class="refentrytitle">glStencilOp</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713034"></a><h2>Copyright</h2><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_ACCUM_ALPHA_BITS</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711187"></a><h2>See Also</h2><p>
+            <a href="glClear.xml"><span class="citerefentry"><span class="refentrytitle">glClear</span></span></a>,
+            <a href="glClearAccum.xml"><span class="citerefentry"><span class="refentrytitle">glClearAccum</span></span></a>,
+            <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
+            <a href="glDrawBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glDrawBuffer</span></span></a>,
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>,
+            <a href="glReadBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glReadBuffer</span></span></a>,
+            <a href="glReadPixels.xml"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>,
+            <a href="glScissor.xml"><span class="citerefentry"><span class="refentrytitle">glScissor</span></span></a>,
+            <a href="glStencilOp.xml"><span class="citerefentry"><span class="refentrytitle">glStencilOp</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711243"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

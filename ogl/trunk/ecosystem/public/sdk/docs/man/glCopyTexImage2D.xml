@@ -389,12 +389,6 @@
             execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
         <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>target</parameter> is not
-            <constant>GL_TEXTURE_1D</constant> or <constant>GL_PROXY_TEXTURE_1D</constant> and <parameter>internalformat</parameter> is
-            <constant>GL_DEPTH_COMPONENT</constant>, <constant>GL_DEPTH_COMPONENT16</constant>,
-            <constant>GL_DEPTH_COMPONENT24</constant>, or <constant>GL_DEPTH_COMPONENT32</constant>.
-        </para>
-        <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>internalformat</parameter> is
             <constant>GL_DEPTH_COMPONENT</constant>, <constant>GL_DEPTH_COMPONENT16</constant>,
             <constant>GL_DEPTH_COMPONENT24</constant>, or <constant>GL_DEPTH_COMPONENT32</constant> and there is no depth

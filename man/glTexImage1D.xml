@@ -856,12 +856,6 @@
             and <parameter>format</parameter> is neither <constant>GL_RGBA</constant> nor <constant>GL_BGRA</constant>.
         </para>
         <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>target</parameter> is not
-            <constant>GL_TEXTURE_1D</constant> or <constant>GL_PROXY_TEXTURE_1D</constant> and <parameter>internalFormat</parameter> is
-            <constant>GL_DEPTH_COMPONENT</constant>, <constant>GL_DEPTH_COMPONENT16</constant>,
-            <constant>GL_DEPTH_COMPONENT24</constant>, or <constant>GL_DEPTH_COMPONENT32</constant>.
-        </para>
-        <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>format</parameter> is
             <constant>GL_DEPTH_COMPONENT</constant> and <parameter>internalFormat</parameter> is not
             <constant>GL_DEPTH_COMPONENT</constant>, <constant>GL_DEPTH_COMPONENT16</constant>,
@@ -870,7 +864,7 @@
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>internalFormat</parameter> is
             <constant>GL_DEPTH_COMPONENT</constant>, <constant>GL_DEPTH_COMPONENT16</constant>,
-            <constant>GL_DEPTH_COMPONENT24</constant>, or <constant>GL_DEPTH_COMPONENT32</constant>, and if <parameter>format</parameter> is
+            <constant>GL_DEPTH_COMPONENT24</constant>, or <constant>GL_DEPTH_COMPONENT32</constant>, and <parameter>format</parameter> is
             not <constant>GL_DEPTH_COMPONENT</constant>.
         </para>
         <para>

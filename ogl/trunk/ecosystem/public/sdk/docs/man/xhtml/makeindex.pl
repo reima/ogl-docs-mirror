@@ -22,16 +22,16 @@ print '<?xml version="1.0" encoding="UTF-8"?>
 html, body
 {   color: #000;
 	padding: 4px 4px;
-	margin: 50px 0 0 0;
+	margin: 0px 0 0 0;
 	text-align: center;
 	font-family: Arial, Lucida, sans-serif;
 
 }
-body {font-size: .85em;}
+body {font-size: .75em;}
 
 #container {
-	margin: 0 auto;
-	width: 600px;
+	margin: 10px;
+	width: 180px;
 }
 
 table.sample {
@@ -56,10 +56,10 @@ table.sample td {
 
 </head>
 <body>
+<a name="top"></a>
 <div id="container">
-
-
-<a name="#top"></a>
+<h1>OpenGL 2.1 Reference Pages</h1>
+<br/><br/>
 
 ';
 }
@@ -78,15 +78,15 @@ sub TableElementForFilename {
 	my $strippedname = $name;
 	$strippedname =~ s/\.xml//;
 	print "\t";
-	print '<tr><td><a href="' , $name , '">';
+	print '<tr><td><a target="pagedisp" href="' , $name , '">';
 	print "$strippedname";
 	print "</a></td></tr>\n";
 }
 
 sub BeginTable {
 	my $letter = shift;
-	print "<a name=\"$letter\"></a>\n";
-	print '<table width="350px" align="center" class="sample">';
+	print "<a name=\"$letter\"></a><br/><br/>\n";
+	print '<table width="200px" align="center" class="sample">';
 	print "\t<th>";
 	print "$letter</th>\n";
 }
@@ -94,7 +94,7 @@ sub BeginTable {
 sub EndTable {
 	print "\t";
 	print '<tr><td><center><a href="#top">Top</a></center></td></tr>';
-	print "\n</table><br/><br/><br/><br/><br/>\n\n";
+	print "\n</table>\n\n";
 }
 
 
@@ -187,7 +187,7 @@ foreach (@toc)
 	print $_;
 	print "</a>&nbsp;&nbsp;\n";
 }
-print "<br/><br/><br/><br/>\n\n\n";
+print "<br/><br/>\n\n\n";
 
 # output the tables
 

@@ -19,19 +19,20 @@ print '<?xml version="1.0" encoding="UTF-8"?>
 <title>OpenGL Documentation</title>
 <style type="text/css">
 
-html, body
+html, body, table
 {   color: #000;
 	padding: 4px 4px;
 	margin: 0px 0 0 0;
 	text-align: center;
 	font-family: Arial, Lucida, sans-serif;
+	font-size: 10pt;
 
 }
-body {font-size: .75em;}
 
 #container {
 	margin: 10px;
-	width: 180px;
+	font-size: 14pt;
+	text-decoration:none;
 }
 
 table.sample {
@@ -57,7 +58,6 @@ table.sample td {
 </head>
 <body>
 <a name="top"></a>
-<div id="container">
 <h1>OpenGL 2.1 Reference Pages</h1>
 <br/><br/>
 
@@ -66,7 +66,6 @@ table.sample td {
 
 sub PrintFooter {
 print '
-</div>
 </body>
 </html>
 ';
@@ -86,7 +85,7 @@ sub TableElementForFilename {
 sub BeginTable {
 	my $letter = shift;
 	print "<a name=\"$letter\"></a><br/><br/>\n";
-	print '<table width="200px" align="center" class="sample">';
+	print '<table width="200" align="center" class="sample">';
 	print "\t<th>";
 	print "$letter</th>\n";
 }
@@ -179,15 +178,17 @@ if ($#gl > 0)
 	if ($#glX > 0) { push (@toc, "glX"); }
 }
 
+
+print '<div id="container">';
 foreach (@toc)
 {
-	print '<a href="#';
+	print '<b><a href="#';
 	print $_;
-	print '">';
+	print '" style="text-decoration:none"> ';
 	print $_;
-	print "</a>&nbsp;&nbsp;\n";
+	print " </a></b> &nbsp; ";
 }
-print "<br/><br/>\n\n\n";
+print "</div>\n\n\n";
 
 # output the tables
 

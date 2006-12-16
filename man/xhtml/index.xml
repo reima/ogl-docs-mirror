@@ -6,19 +6,20 @@
 <title>OpenGL Documentation</title>
 <style type="text/css">
 
-html, body
+html, body, table
 {   color: #000;
 	padding: 4px 4px;
 	margin: 0px 0 0 0;
 	text-align: center;
 	font-family: Arial, Lucida, sans-serif;
+	font-size: 10pt;
 
 }
-body {font-size: .75em;}
 
 #container {
 	margin: 10px;
-	width: 180px;
+	font-size: 14pt;
+	text-decoration:none;
 }
 
 table.sample {
@@ -44,37 +45,14 @@ table.sample td {
 </head>
 <body>
 <a name="top"></a>
-<div id="container">
 <h1>OpenGL 2.1 Reference Pages</h1>
 <br/><br/>
 
-<a href="#A">A</a>&nbsp;&nbsp;
-<a href="#B">B</a>&nbsp;&nbsp;
-<a href="#C">C</a>&nbsp;&nbsp;
-<a href="#D">D</a>&nbsp;&nbsp;
-<a href="#E">E</a>&nbsp;&nbsp;
-<a href="#F">F</a>&nbsp;&nbsp;
-<a href="#G">G</a>&nbsp;&nbsp;
-<a href="#H">H</a>&nbsp;&nbsp;
-<a href="#I">I</a>&nbsp;&nbsp;
-<a href="#L">L</a>&nbsp;&nbsp;
-<a href="#M">M</a>&nbsp;&nbsp;
-<a href="#N">N</a>&nbsp;&nbsp;
-<a href="#O">O</a>&nbsp;&nbsp;
-<a href="#P">P</a>&nbsp;&nbsp;
-<a href="#R">R</a>&nbsp;&nbsp;
-<a href="#S">S</a>&nbsp;&nbsp;
-<a href="#T">T</a>&nbsp;&nbsp;
-<a href="#U">U</a>&nbsp;&nbsp;
-<a href="#V">V</a>&nbsp;&nbsp;
-<a href="#W">W</a>&nbsp;&nbsp;
-<a href="#glu">glu</a>&nbsp;&nbsp;
-<a href="#glX">glX</a>&nbsp;&nbsp;
-<br/><br/>
+<div id="container"><b><a href="#A" style="text-decoration:none"> A </a></b> &nbsp; <b><a href="#B" style="text-decoration:none"> B </a></b> &nbsp; <b><a href="#C" style="text-decoration:none"> C </a></b> &nbsp; <b><a href="#D" style="text-decoration:none"> D </a></b> &nbsp; <b><a href="#E" style="text-decoration:none"> E </a></b> &nbsp; <b><a href="#F" style="text-decoration:none"> F </a></b> &nbsp; <b><a href="#G" style="text-decoration:none"> G </a></b> &nbsp; <b><a href="#H" style="text-decoration:none"> H </a></b> &nbsp; <b><a href="#I" style="text-decoration:none"> I </a></b> &nbsp; <b><a href="#L" style="text-decoration:none"> L </a></b> &nbsp; <b><a href="#M" style="text-decoration:none"> M </a></b> &nbsp; <b><a href="#N" style="text-decoration:none"> N </a></b> &nbsp; <b><a href="#O" style="text-decoration:none"> O </a></b> &nbsp; <b><a href="#P" style="text-decoration:none"> P </a></b> &nbsp; <b><a href="#R" style="text-decoration:none"> R </a></b> &nbsp; <b><a href="#S" style="text-decoration:none"> S </a></b> &nbsp; <b><a href="#T" style="text-decoration:none"> T </a></b> &nbsp; <b><a href="#U" style="text-decoration:none"> U </a></b> &nbsp; <b><a href="#V" style="text-decoration:none"> V </a></b> &nbsp; <b><a href="#W" style="text-decoration:none"> W </a></b> &nbsp; <b><a href="#glu" style="text-decoration:none"> glu </a></b> &nbsp; <b><a href="#glX" style="text-decoration:none"> glX </a></b> &nbsp; </div>
 
 
 <a name="A"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>A</th>
+<table width="200" align="center" class="sample">	<th>A</th>
 	<tr><td><a target="pagedisp" href="glAccum.xml">glAccum</a></td></tr>
 	<tr><td><a target="pagedisp" href="glActiveTexture.xml">glActiveTexture</a></td></tr>
 	<tr><td><a target="pagedisp" href="glAlphaFunc.xml">glAlphaFunc</a></td></tr>
@@ -85,7 +63,7 @@ table.sample td {
 </table>
 
 <a name="B"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>B</th>
+<table width="200" align="center" class="sample">	<th>B</th>
 	<tr><td><a target="pagedisp" href="glBegin.xml">glBegin</a></td></tr>
 	<tr><td><a target="pagedisp" href="glBeginQuery.xml">glBeginQuery</a></td></tr>
 	<tr><td><a target="pagedisp" href="glBindAttribLocation.xml">glBindAttribLocation</a></td></tr>
@@ -103,7 +81,7 @@ table.sample td {
 </table>
 
 <a name="C"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>C</th>
+<table width="200" align="center" class="sample">	<th>C</th>
 	<tr><td><a target="pagedisp" href="glCallList.xml">glCallList</a></td></tr>
 	<tr><td><a target="pagedisp" href="glCallLists.xml">glCallLists</a></td></tr>
 	<tr><td><a target="pagedisp" href="glClear.xml">glClear</a></td></tr>
@@ -149,7 +127,7 @@ table.sample td {
 </table>
 
 <a name="D"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>D</th>
+<table width="200" align="center" class="sample">	<th>D</th>
 	<tr><td><a target="pagedisp" href="glDeleteBuffers.xml">glDeleteBuffers</a></td></tr>
 	<tr><td><a target="pagedisp" href="glDeleteLists.xml">glDeleteLists</a></td></tr>
 	<tr><td><a target="pagedisp" href="glDeleteProgram.xml">glDeleteProgram</a></td></tr>
@@ -173,7 +151,7 @@ table.sample td {
 </table>
 
 <a name="E"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>E</th>
+<table width="200" align="center" class="sample">	<th>E</th>
 	<tr><td><a target="pagedisp" href="glEdgeFlag.xml">glEdgeFlag</a></td></tr>
 	<tr><td><a target="pagedisp" href="glEdgeFlagPointer.xml">glEdgeFlagPointer</a></td></tr>
 	<tr><td><a target="pagedisp" href="glEnable.xml">glEnable</a></td></tr>
@@ -195,7 +173,7 @@ table.sample td {
 </table>
 
 <a name="F"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>F</th>
+<table width="200" align="center" class="sample">	<th>F</th>
 	<tr><td><a target="pagedisp" href="glFeedbackBuffer.xml">glFeedbackBuffer</a></td></tr>
 	<tr><td><a target="pagedisp" href="glFinish.xml">glFinish</a></td></tr>
 	<tr><td><a target="pagedisp" href="glFlush.xml">glFlush</a></td></tr>
@@ -208,7 +186,7 @@ table.sample td {
 </table>
 
 <a name="G"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>G</th>
+<table width="200" align="center" class="sample">	<th>G</th>
 	<tr><td><a target="pagedisp" href="glGenBuffers.xml">glGenBuffers</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGenLists.xml">glGenLists</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGenQueries.xml">glGenQueries</a></td></tr>
@@ -263,14 +241,14 @@ table.sample td {
 </table>
 
 <a name="H"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>H</th>
+<table width="200" align="center" class="sample">	<th>H</th>
 	<tr><td><a target="pagedisp" href="glHint.xml">glHint</a></td></tr>
 	<tr><td><a target="pagedisp" href="glHistogram.xml">glHistogram</a></td></tr>
 	<tr><td><center><a href="#top">Top</a></center></td></tr>
 </table>
 
 <a name="I"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>I</th>
+<table width="200" align="center" class="sample">	<th>I</th>
 	<tr><td><a target="pagedisp" href="glIndex.xml">glIndex</a></td></tr>
 	<tr><td><a target="pagedisp" href="glIndexMask.xml">glIndexMask</a></td></tr>
 	<tr><td><a target="pagedisp" href="glIndexPointer.xml">glIndexPointer</a></td></tr>
@@ -287,7 +265,7 @@ table.sample td {
 </table>
 
 <a name="L"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>L</th>
+<table width="200" align="center" class="sample">	<th>L</th>
 	<tr><td><a target="pagedisp" href="glLight.xml">glLight</a></td></tr>
 	<tr><td><a target="pagedisp" href="glLightModel.xml">glLightModel</a></td></tr>
 	<tr><td><a target="pagedisp" href="glLineStipple.xml">glLineStipple</a></td></tr>
@@ -303,7 +281,7 @@ table.sample td {
 </table>
 
 <a name="M"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>M</th>
+<table width="200" align="center" class="sample">	<th>M</th>
 	<tr><td><a target="pagedisp" href="glMap1.xml">glMap1</a></td></tr>
 	<tr><td><a target="pagedisp" href="glMap2.xml">glMap2</a></td></tr>
 	<tr><td><a target="pagedisp" href="glMapBuffer.xml">glMapBuffer</a></td></tr>
@@ -322,7 +300,7 @@ table.sample td {
 </table>
 
 <a name="N"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>N</th>
+<table width="200" align="center" class="sample">	<th>N</th>
 	<tr><td><a target="pagedisp" href="glNewList.xml">glNewList</a></td></tr>
 	<tr><td><a target="pagedisp" href="glNormal.xml">glNormal</a></td></tr>
 	<tr><td><a target="pagedisp" href="glNormalPointer.xml">glNormalPointer</a></td></tr>
@@ -330,13 +308,13 @@ table.sample td {
 </table>
 
 <a name="O"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>O</th>
+<table width="200" align="center" class="sample">	<th>O</th>
 	<tr><td><a target="pagedisp" href="glOrtho.xml">glOrtho</a></td></tr>
 	<tr><td><center><a href="#top">Top</a></center></td></tr>
 </table>
 
 <a name="P"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>P</th>
+<table width="200" align="center" class="sample">	<th>P</th>
 	<tr><td><a target="pagedisp" href="glPassThrough.xml">glPassThrough</a></td></tr>
 	<tr><td><a target="pagedisp" href="glPixelMap.xml">glPixelMap</a></td></tr>
 	<tr><td><a target="pagedisp" href="glPixelStore.xml">glPixelStore</a></td></tr>
@@ -360,7 +338,7 @@ table.sample td {
 </table>
 
 <a name="R"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>R</th>
+<table width="200" align="center" class="sample">	<th>R</th>
 	<tr><td><a target="pagedisp" href="glRasterPos.xml">glRasterPos</a></td></tr>
 	<tr><td><a target="pagedisp" href="glReadBuffer.xml">glReadBuffer</a></td></tr>
 	<tr><td><a target="pagedisp" href="glReadPixels.xml">glReadPixels</a></td></tr>
@@ -373,7 +351,7 @@ table.sample td {
 </table>
 
 <a name="S"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>S</th>
+<table width="200" align="center" class="sample">	<th>S</th>
 	<tr><td><a target="pagedisp" href="glSampleCoverage.xml">glSampleCoverage</a></td></tr>
 	<tr><td><a target="pagedisp" href="glScale.xml">glScale</a></td></tr>
 	<tr><td><a target="pagedisp" href="glScissor.xml">glScissor</a></td></tr>
@@ -393,7 +371,7 @@ table.sample td {
 </table>
 
 <a name="T"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>T</th>
+<table width="200" align="center" class="sample">	<th>T</th>
 	<tr><td><a target="pagedisp" href="glTexCoord.xml">glTexCoord</a></td></tr>
 	<tr><td><a target="pagedisp" href="glTexCoord1.xml">glTexCoord1</a></td></tr>
 	<tr><td><a target="pagedisp" href="glTexCoord2.xml">glTexCoord2</a></td></tr>
@@ -414,7 +392,7 @@ table.sample td {
 </table>
 
 <a name="U"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>U</th>
+<table width="200" align="center" class="sample">	<th>U</th>
 	<tr><td><a target="pagedisp" href="glUniform.xml">glUniform</a></td></tr>
 	<tr><td><a target="pagedisp" href="glUnmapBuffer.xml">glUnmapBuffer</a></td></tr>
 	<tr><td><a target="pagedisp" href="glUseProgram.xml">glUseProgram</a></td></tr>
@@ -422,7 +400,7 @@ table.sample td {
 </table>
 
 <a name="V"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>V</th>
+<table width="200" align="center" class="sample">	<th>V</th>
 	<tr><td><a target="pagedisp" href="glValidateProgram.xml">glValidateProgram</a></td></tr>
 	<tr><td><a target="pagedisp" href="glVertex.xml">glVertex</a></td></tr>
 	<tr><td><a target="pagedisp" href="glVertex2.xml">glVertex2</a></td></tr>
@@ -436,13 +414,13 @@ table.sample td {
 </table>
 
 <a name="W"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>W</th>
+<table width="200" align="center" class="sample">	<th>W</th>
 	<tr><td><a target="pagedisp" href="glWindowPos.xml">glWindowPos</a></td></tr>
 	<tr><td><center><a href="#top">Top</a></center></td></tr>
 </table>
 
 <a name="glu"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>glu</th>
+<table width="200" align="center" class="sample">	<th>glu</th>
 	<tr><td><a target="pagedisp" href="gluBeginCurve.xml">gluBeginCurve</a></td></tr>
 	<tr><td><a target="pagedisp" href="gluBeginPolygon.xml">gluBeginPolygon</a></td></tr>
 	<tr><td><a target="pagedisp" href="gluBeginSurface.xml">gluBeginSurface</a></td></tr>
@@ -506,7 +484,7 @@ table.sample td {
 </table>
 
 <a name="glX"></a><br/><br/>
-<table width="200px" align="center" class="sample">	<th>glX</th>
+<table width="200" align="center" class="sample">	<th>glX</th>
 	<tr><td><a target="pagedisp" href="glXChooseFBConfig.xml">glXChooseFBConfig</a></td></tr>
 	<tr><td><a target="pagedisp" href="glXChooseVisual.xml">glXChooseVisual</a></td></tr>
 	<tr><td><a target="pagedisp" href="glXCopyContext.xml">glXCopyContext</a></td></tr>
@@ -554,6 +532,5 @@ table.sample td {
 </table>
 
 
-</div>
 </body>
 </html>

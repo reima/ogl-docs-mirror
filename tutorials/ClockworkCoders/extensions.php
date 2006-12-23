@@ -4,13 +4,13 @@
 
 <title>OpenGL Extensions Tutorial</title>
 
-<?php include("http://www.opengl.org/inc/sdk_head.txt"); ?>
+<?php include("http://www.opengl.org/sdk/inc/sdk_head.txt"); ?>
 
 </head>
 
 <body>
 
-<?php include("http://www.opengl.org/inc/sdk_body_start.txt"); ?>
+<?php include("http://www.opengl.org/sdk/inc/sdk_body_start.txt"); ?>
 
 <h1>OpenGL Extensions Tutorial</h1>
 by Martin Christen, christen[at]clockworkcoders.com
@@ -294,7 +294,7 @@ If "GL_ARB_shading_language_100" is present, the other extensions related to
 the shading language must be present too: "GL_ARB_shader_objects",
 "GL_ARB_fragment_shader", and "GL_ARB_vertex_shader".
 
-<?php include("http://www.opengl.org/inc/sdk_footer.txt"); ?>
+<?php include("http://www.opengl.org/sdk/inc/sdk_footer.txt"); ?>
 
 </body>
 

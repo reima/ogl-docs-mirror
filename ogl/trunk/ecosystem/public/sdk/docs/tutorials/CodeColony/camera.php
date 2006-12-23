@@ -1,11 +1,11 @@
 <html>
 <head>
 <title>Camera - by CodeColony.de</title>
-<?php include("http://www.opengl.org/inc/sdk_head.txt"); ?>
+<?php include("http://www.opengl.org/sdk/inc/sdk_head.txt"); ?>
 </head>
 
 <body>
-<?php include("http://www.opengl.org/inc/sdk_body_start.txt"); ?>
+<?php include("http://www.opengl.org/sdk/inc/sdk_body_start.txt"); ?>
 <h1>The CodeColony Camera</h1>
 <h2>Before you start</h2>
 <p>
@@ -93,7 +93,7 @@ Any comments? Contact me!<br>
 <a href="mailto:philipp.crocoll@web.de">philipp.crocoll@web.de</a><br>
 <a href="http://www.codecolony.de">www.codecolony.de</a>
 </p>
-<?php include("http://www.opengl.org/inc/sdk_footer.txt"); ?>
+<?php include("http://www.opengl.org/sdk/inc/sdk_footer.txt"); ?>
 </body>
 
 </html>

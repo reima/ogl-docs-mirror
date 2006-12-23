@@ -4,13 +4,13 @@
 
 <title>Hello OpenGL</title>
 
-<?php include("http://www.opengl.org/sdk/inc/sdk_head.txt"); ?>
+<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_head.txt"); ?>
 
 </head>
 
 <body>
 
-<?php include("http://www.opengl.org/sdk/inc/sdk_body_start.txt"); ?>
+<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
 
 <h1>OpenGL: Hello World using GLUT</h1>
 
@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
 This is a temporary demo to test subversion and php!
 
 
-<?php include("http://www.opengl.org/sdk/inc/sdk_footer.txt"); ?>
+<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 
 </body>
 

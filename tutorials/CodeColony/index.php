@@ -1,11 +1,11 @@
 <html>
 <head>
 <title>CodeColony.de SDK contribution</title>
-<?php include("http://www.opengl.org/sdk/inc/sdk_head.txt"); ?>
+<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_head.txt"); ?>
 </head>
 
 <body>
-<?php include("http://www.opengl.org/sdk/inc/sdk_body_start.txt"); ?>
+<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
 <h1>Simple Index</h1>
 
 <a href="camera.php">Camera</a><br>
@@ -15,7 +15,7 @@
 
 <a href="http://www.codecolony.de">www.codecolony.de</a>
 
-<?php include("http://www.opengl.org/sdk/inc/sdk_footer.txt"); ?>
+<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 </body>
 
 </html>

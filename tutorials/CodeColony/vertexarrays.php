@@ -1,11 +1,11 @@
 <html>
 <head>
 <title>Vertex Arrays - by CodeColony.de</title>
-<?php include("http://www.opengl.org/sdk/inc/sdk_head.txt"); ?>
+<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_head.txt"); ?>
 </head>
 
 <body>
-<?php include("http://www.opengl.org/sdk/inc/sdk_body_start.txt"); ?>
+<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
 <h1>Vertex Arrays</h1>
 <h2>Before you start</h2>
 <p>
@@ -137,6 +137,6 @@ Any comments? Contact me!<br>
 <a href="mailto:philipp.crocoll@web.de">philipp.crocoll@web.de</a><br>
 <a href="http://www.codecolony.de">www.codecolony.de</a>
 </p>
-<?php include("http://www.opengl.org/sdk/inc/sdk_footer.txt"); ?>
+<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 </body>
 </html>

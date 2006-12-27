@@ -7,7 +7,7 @@
 <p>
   <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?></p>
 <h2>Clockworkcoders Tutorials </h2>
-<table width="100%" border="1" cellpadding="8" cellspacing="4" bordercolor="#000066" bgcolor="#999999">
+<table width="85%" border="1" cellpadding="8" cellspacing="4" bordercolor="#000066" bgcolor="#999999">
   <tr>
     <td width="3%" height="245" align="center" valign="top" bgcolor="#9999FF"><div align="left">
       <p>&nbsp;</p>
@@ -25,18 +25,19 @@
 programs.
     <h3>&nbsp;</h3>
     <h3>Checking Presence of GLSL</h3>
-    To check if the OpenGL Shading Language is present, the extension
+    <p>To check if the OpenGL Shading Language is present, the extension
 &quot;<span style="font-weight: bold">GL_ARB_shading_language_100</span>&quot; must be available. If this extension is
 present, the actual version of the OpenGL Shading Language can be queried
 with glGetString(<span style="font-weight: bold">GL_SHADING_LANGUAGE_VERSION_ARB</span>). The format of the returned
-string is:<br>
+string is:</p>
+<p>
 &quot;major.minor.release vendor_info_string&quot;. (with &quot;release&quot; and
   &quot;vendor_info_string&quot; being optional). Version numbers have 1 or more
-  digits.<br>
+  digits.</p>
+<p>
   Unfortunately this is not possible with the initial version of the OpenGL
   Shading Language. If the query returns an &quot;GL_INVALID_ENUM&quot; error, then you
-  can assume it is version 1.051 (major=1, minor=0, revision=51). <br>
-  <br />
+  can assume it is version 1.051 (major=1, minor=0, revision=51). </p>
   <table width="90%" border="0" bgcolor="#EEEEEE">
   <tbody>
     <tr>
@@ -60,9 +61,9 @@ string is:<br>
 </table>
 <br />
 <br />
-If &quot;GL_ARB_shading_language_100&quot; is present, the other extensions related to
-the shading language must be present too: &quot;GL_ARB_shader_objects&quot;,
-&quot;GL_ARB_fragment_shader&quot;, and &quot;GL_ARB_vertex_shader&quot;.
+<p>If &quot;<span style="font-weight: bold">GL_ARB_shading_language_100</span>&quot; is present, the other extensions related to
+the shading language must be present too: &quot;<span style="font-weight: bold">GL_ARB_shader_objects</span>&quot;,
+&quot;<span style="font-weight: bold">GL_ARB_fragment_shader</span>&quot;, and &quot;<span style="font-weight: bold">GL_ARB_vertex_shader</span>&quot;.</p>
 
 <p>&nbsp;</p>
     <!-- InstanceEndEditable -->
@@ -76,10 +77,10 @@ the shading language must be present too: &quot;GL_ARB_shader_objects&quot;,
           <!-- InstanceEndEditable --></td>
         </tr>
       </table>
-      </td>
+    </td>
   </tr>
 </table>
-<p>
+<p><br>
   <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 </p>
 </body>

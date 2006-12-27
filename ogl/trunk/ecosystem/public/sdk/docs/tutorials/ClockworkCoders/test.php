@@ -7,7 +7,7 @@
 <p>
   <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?></p>
 <h2>Clockworkcoders Tutorials </h2>
-<table width="100%" border="1" cellpadding="8" cellspacing="4" bordercolor="#000066" bgcolor="#999999">
+<table width="85%" border="1" cellpadding="8" cellspacing="4" bordercolor="#000066" bgcolor="#999999">
   <tr>
     <td width="3%" height="245" align="center" valign="top" bgcolor="#9999FF"><div align="left">
       <p>&nbsp;</p>
@@ -268,10 +268,10 @@ the shading language must be present too: &quot;GL_ARB_shader_objects&quot;,
           <!-- InstanceEndEditable --></td>
         </tr>
       </table>
-      </td>
+    </td>
   </tr>
 </table>
-<p>
+<p><br>
   <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 </p>
 </body>

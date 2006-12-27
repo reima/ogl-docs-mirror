@@ -7,7 +7,7 @@
 <p>
   <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?></p>
 <h2>Clockworkcoders Tutorials </h2>
-<table width="100%" border="1" cellpadding="8" cellspacing="4" bordercolor="#000066" bgcolor="#999999">
+<table width="85%" border="1" cellpadding="8" cellspacing="4" bordercolor="#000066" bgcolor="#999999">
   <tr>
     <td width="3%" height="245" align="center" valign="top" bgcolor="#9999FF"><div align="left">
       <p>&nbsp;</p>
@@ -23,25 +23,28 @@
     <h2>Introduction</h2>
     <p>OpenGL Extensions are usually made available to access new features of 3D
       graphics hardware. Hardware vendors define new functions and/or tokens that
-      enhance the existing features of OpenGL.<br>
+      enhance the existing features of OpenGL.</p>
+<p>
       Extensions created by a single vendor are called
       &quot;<strong>vendor-specific</strong>&quot; and extensions created by several vendors
-      are called &quot;<strong>multivendor</strong>&quot; extensions.<br>
+      are called &quot;<strong>multivendor</strong>&quot; extensions.</p>
+<p>
       If a vendor-specific or multivendor extension proves to be a good
       enhancement, the OpenGL Architecture Review Board (ARB) may promote it to an
-      &quot;<strong>ARB approved</strong>&quot; extension.<br>
-      If the extension is very useful, the ARB may decide to integrate the
+      &quot;<strong>ARB approved</strong>&quot; extension.</p>
+<p>If the extension is very useful, the ARB may decide to integrate the
       extension as a &quot;<strong>core feature</strong>&quot; to OpenGL. This happened for
       example with the OpenGL Shading Language which is now a core feature of
-      OpenGL 2.0 and higher.<br>
+      OpenGL 2.0 and higher.</p>
+<p>
       This concept makes OpenGL very powerful, because source code remains
       backwards compatible. OpenGL programs written 10 years ago still work
       today.</p>
     <h2>&nbsp;</h2>
     <h2>Detecting Extensions</h2>
-    Once you have a valid OpenGL context, you can get a list of all extensions
+<p>Once you have a valid OpenGL context, you can get a list of all extensions
 with glGetString(GL_EXTENSIONS). It returns a space delimited char-array of
-all available extensions. <br />
+all available extensions. </p>
 <br />
 <table width="90%" border="0" bgcolor="#EEEEEE">
   <tbody>
@@ -96,10 +99,11 @@ All extensions have the form: GL_VENDOR_extension_name, where &quot;VENDOR&quot;
   specific extensions and &quot;GLX&quot; for X-Windows specific extensions. </p>
 <p>&nbsp;</p>
 <h2>Using Extensions</h2>
-Using extensions in your C++ code is - unfortunately - platform specific. The
+<p>Using extensions in your C++ code is - unfortunately - platform specific. The
 address of the function (function pointer) must be retrieved from the OpenGL
 implementation (e.g. hardware driver). Under Windows this can be done using
-&quot;wglGetProcAddress&quot;.<br>
+&quot;wglGetProcAddress&quot;.</p>
+<p>
 To save a lot of time handling all function pointers and tokens of all
   extensions for several platforms, there are some good OpenSource solutions
   available which simplify this process. One of them is &quot;GLEW&quot;, available at <a
@@ -107,28 +111,29 @@ href="http://glew.sourceforge.net">http://glew.sourceforge.net</a>. Another
   implementation is &quot;GLee&quot;, available at <a
 href="http://elf-stone.com/glee.php">http://elf-stone.com/glee.php</a>. Both
   are good ways to handle extensions and are released under a modified BSD
-  license. (Make sure to read the licenses for details.) 
+  license. (Make sure to read the licenses for details.) </p>
   <h2>&nbsp;</h2>
   <h2>Introduction to GLEW</h2>
-  I am going to use GLEW, without a real reason - GLee is just as good. The
+<p>I am going to use GLEW, without a real reason - GLee is just as good. The
 latest version of GLEW is 1.3.5 and supports OpenGL 2.1 core functionality
-and some other new extensions.
+and some other new extensions.</p>
 <h3>&nbsp;</h3>
 <h3>Installation</h3>
-GLEW can be compiled statically or dynamically. If you create a static lib,
+<p>GLEW can be compiled statically or dynamically. If you create a static lib,
 make sure to create a preprocessor variable &quot;GLEW_STATIC&quot; under Windows.
 Another way is to copy &quot;glew.c&quot; and &quot;glew.h&quot; directly to your code (you also
 have to define &quot;GLEW_STATIC&quot; under Windows). This is my preferred way because
-it makes cross platform management easier.<br>
-You can download a sample OpenGL project using GLEW + FreeGLUT here: 
+it makes cross compiler/platform management easier.</p>
+<p>You can download my sample OpenGL project using GLEW + FreeGLUT here: </p>
 <p><a href="downloads/OpenGL_Extensions_Tutorial.zip" style="font-weight: bold">Download:
-  OpenGL_Extensions_Tutorial.zip</a></p>
-<p>It is a Visual Studio 7.1 project. And can be converted to 8.0 (Express Edition and higher). </p>
+  OpenGL_Extensions_Tutorial.zip</a> (GLEW and FreeGLUT is already included) </p>
+<p>It is a Visual Studio 7.1 project. It can be converted to 8.0 (Express Edition and higher).<br>
+  <span style="font-style: italic">(If you create a project/makefile for a different platform/compiler, please send it to: christen[at]clockworkcoders.com and I will put it here.)  </span></p>
 <h3>&nbsp;</h3>
 <h3>Initializing GLEW</h3>
-GLEW requires an initialization. When you do this initialization a valid
+<p>GLEW requires an initialization. When you do this initialization a valid
 OpenGL rendering context must be available. (In most cases this means an
-OpenGL window must be present and active). <br />
+OpenGL window must be present and active). </p>
 <br />
 <table width="90%" border="0" bgcolor="#EEEEEE">
   <tbody>
@@ -146,10 +151,10 @@ std::cout &quot;Using GLEW Version: &quot; glewGetString(GLEW_VERSION);</pre>
 <br />
 <h3>&nbsp;</h3>
 <h3>Checking OpenGL Version</h3>
-GLEW allows checking if all core extensions of a certain OpenGL Version (1.1,
+<p>GLEW allows checking if all core extensions of a certain OpenGL Version (1.1,
 1.2, 1.3, 1.5, 2.0, 2.1) are available. If you have for example OpenGL 1.3
 installed, then the core extensions of OpenGL 1.2 and 1.1 will be present
-too. <br />
+too.</p>
 <br />
 <table width="90%" border="0" bgcolor="#EEEEEE">
   <tbody>
@@ -165,8 +170,8 @@ too. <br />
 <br />
 <h3>&nbsp;</h3>
 <h3>Checking Extensions</h3>
-There are two ways to check an extension: over a GLEW macro or &ndash; as a slower
-alternative &ndash; over a string. <br />
+<p>There are two ways to check an extension: over a GLEW macro or &ndash; as a slower
+alternative &ndash; over a string. </p>
 <br />
 <table width="90%" border="0" bgcolor="#EEEEEE">
   <tbody>
@@ -194,11 +199,10 @@ alternative &ndash; over a string. <br />
 <br />
 <h3>&nbsp;</h3>
 <h3>Platform specific extensions</h3>
-Platform specific extensions can also be queried using a GLEW macro. or using
+<p>Platform specific extensions can also be queried using a GLEW macro. or using
 the functions &quot;wglewIsSupported&quot; or &quot;glxglewIsSupported&quot;). To use platform
 specific extensions include &quot;wglew.h&quot; or &quot;glxglew.h&quot; after the regular
-&quot;glew.h&quot;. <br />
-<br />
+&quot;glew.h&quot;. </p>
 <table width="90%" border="0" bgcolor="#EEEEEE">
   <tbody>
     <tr>
@@ -230,10 +234,10 @@ specific extensions include &quot;wglew.h&quot; or &quot;glxglew.h&quot; after t
           <!-- InstanceEndEditable --></td>
         </tr>
       </table>
-      </td>
+    </td>
   </tr>
 </table>
-<p>
+<p><br>
   <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 </p>
 </body>

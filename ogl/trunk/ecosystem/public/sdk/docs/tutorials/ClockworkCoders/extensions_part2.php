@@ -38,7 +38,7 @@ string is:</p>
   Unfortunately this is not possible with the initial version of the OpenGL
   Shading Language. If the query returns an &quot;GL_INVALID_ENUM&quot; error, then you
   can assume it is version 1.051 (major=1, minor=0, revision=51). </p>
-  <table width="90%" border="0" bgcolor="#EEEEEE">
+  <table width="90%" border="0" align="center" bgcolor="#EEEEEE">
   <tbody>
     <tr>
       <td><pre>if (glewIsSupported(&quot;ARB_shading_language_100&quot;)) 
@@ -54,8 +54,7 @@ string is:</p>
       // parse string sVersion to get major, minor, revision
    }
 }
-        </pre>
-      </td>
+</pre></td>
     </tr>
   </tbody>
 </table>

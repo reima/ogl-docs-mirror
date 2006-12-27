@@ -7,7 +7,7 @@
 <p>
   <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?></p>
 <h2>Clockworkcoders Tutorials </h2>
-<table width="85%" border="1" cellpadding="8" cellspacing="4" bordercolor="#000066" bgcolor="#999999">
+<table width="97%" border="0" align="center" cellpadding="6" cellspacing="0" bordercolor="#000066" bgcolor="#999999">
   <tr>
     <td width="3%" height="245" align="center" valign="top" bgcolor="#9999FF"><div align="left">
       <p>&nbsp;</p>
@@ -46,7 +46,7 @@
 with glGetString(GL_EXTENSIONS). It returns a space delimited char-array of
 all available extensions. </p>
 <br />
-<table width="90%" border="0" bgcolor="#EEEEEE">
+<table width="90%" border="0" align="center" bgcolor="#EEEEEE">
   <tbody>
     <tr>
       <td><pre>const GLubyte* sExtensions = glGetString(GL_EXTENSIONS);</pre>
@@ -135,7 +135,7 @@ it makes cross compiler/platform management easier.</p>
 OpenGL rendering context must be available. (In most cases this means an
 OpenGL window must be present and active). </p>
 <br />
-<table width="90%" border="0" bgcolor="#EEEEEE">
+<table width="90%" border="0" align="center" bgcolor="#EEEEEE">
   <tbody>
     <tr>
       <td><pre>GLenum err = glewInit();
@@ -156,7 +156,7 @@ std::cout &quot;Using GLEW Version: &quot; glewGetString(GLEW_VERSION);</pre>
 installed, then the core extensions of OpenGL 1.2 and 1.1 will be present
 too.</p>
 <br />
-<table width="90%" border="0" bgcolor="#EEEEEE">
+<table width="90%" border="0" align="center" bgcolor="#EEEEEE">
   <tbody>
     <tr>
       <td><pre>if (GLEW_VERSION_1_5)
@@ -173,7 +173,7 @@ too.</p>
 <p>There are two ways to check an extension: over a GLEW macro or &ndash; as a slower
 alternative &ndash; over a string. </p>
 <br />
-<table width="90%" border="0" bgcolor="#EEEEEE">
+<table width="90%" border="0" align="center" bgcolor="#EEEEEE">
   <tbody>
     <tr>
       <td><pre>if (GLEW_ARB_vertex_program) 
@@ -185,7 +185,7 @@ alternative &ndash; over a string. </p>
   </tbody>
 </table>
 <br />
-<table width="90%" border="0" bgcolor="#EEEEEE">
+<table width="90%" border="0" align="center" bgcolor="#EEEEEE">
   <tbody>
     <tr>
       <td><pre>if (glewIsSupported(&quot;GL_ARB_vertex_program&quot;)) 
@@ -203,7 +203,7 @@ alternative &ndash; over a string. </p>
 the functions &quot;wglewIsSupported&quot; or &quot;glxglewIsSupported&quot;). To use platform
 specific extensions include &quot;wglew.h&quot; or &quot;glxglew.h&quot; after the regular
 &quot;glew.h&quot;. </p>
-<table width="90%" border="0" bgcolor="#EEEEEE">
+<table width="90%" border="0" align="center" bgcolor="#EEEEEE">
   <tbody>
     <tr>
       <td><pre>if (WGLEW_ARB_pbuffer)

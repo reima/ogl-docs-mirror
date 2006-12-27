@@ -4,25 +4,19 @@
 <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_head.txt"); ?>
 </head>
 <body>
-<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
-
-<!-- InstanceBeginEditable name="Title" -->
-<h1>Clockworkcoders OpenGL Tutorials</h1>
-<!-- InstanceEndEditable -->
-<table width="100%" border="1" cellpadding="8" cellspacing="12" bordercolor="#000066" bgcolor="#999999">
+<p>
+  <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?></p>
+<h2>Clockworkcoders Tutorials </h2>
+<table width="100%" border="1" cellpadding="8" cellspacing="4" bordercolor="#000066" bgcolor="#999999">
   <tr>
-    <td width="16%" height="245" align="center" valign="top" bgcolor="#9999FF"><div align="left">
-      <p><a href="Templates/badlink.html">Hom</a><a href="Templates/index.html">e</a><br />
-            <br />
-          <a href="Templates/badlink.html">GLSL Tutorials</a></p>
-      <p class="Stil1"><a href="Templates/badlink.html">Geometry Shader Tutorials</a></p>
-      <p><a href="Templates/badlink.html">Downloads</a></p>
+    <td width="3%" height="245" align="center" valign="top" bgcolor="#9999FF"><div align="left">
+      <p>&nbsp;</p>
       <br/>
       <br/>
       <br/>
       </p>
     </div></td>
-    <td width="84%" align="left" valign="top" bgcolor="#FFFFCC"><!-- InstanceBeginEditable name="Tutorial Name" -->
+    <td width="97%" align="left" valign="top" bgcolor="#FFFFCC"><!-- InstanceBeginEditable name="Tutorial Name" -->
       <h1>OpenGL Extensions Tutorial</h1>
     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="Tutorial Text" -->
     <h2>Introduction</h2>
@@ -277,7 +271,6 @@ the shading language must be present too: &quot;GL_ARB_shader_objects&quot;,
       </td>
   </tr>
 </table>
-<p>&nbsp;</p>
 <p>
   <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 </p>

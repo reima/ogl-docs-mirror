@@ -1,87 +1,63 @@
-<html>
-
+<html><!-- InstanceBegin template="/Templates/tutorial.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
-
-<title>Hello OpenGL</title>
-
+<title>Tutorials</title>
 <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_head.txt"); ?>
-
 </head>
-
 <body>
-
-<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
-
-<h1>OpenGL: Hello World using GLUT</h1>
-
-This is a temporary demo to test subversion and php!
-<br/>
-<br/>
-
-<table width="90%" border="0" bordercolor="#0000CC" bgcolor="#EEEEEE">
-<tr>
-<td>
-<pre>
-#if defined(__APPLE__) && defined(__MACH__)
-#  include &#60;OpenGL/gl.h&#62;
-#  include &#60;OpenGL/glu.h&#62;
-#  include &#60;GLUT/glut.h&#62;
-#else
-#  include &#60;GL/gl.h&#62;
-#  include &#60;GL/glu.h&#62;
-#  include &#60;GL/glut.h&#62;
-#endif
-
-void Display(void)
-{   
-   glClear ( GL_COLOR_BUFFER_BIT );    
-   glutWireSphere(1.0,32,32);   
-   glutSwapBuffers();
-}
-
-void Reshape(int w, int h)
-{
-   glViewport(0,0, (GLsizei) w, (GLsizei) h);
-   glMatrixMode(GL_PROJECTION);
-   glLoadIdentity();
-
-   GLdouble aspect = (GLdouble) w/((h)?h:1.0);
-   gluPerspective(45.0f, aspect, 1.0f, 100.0f);
-
-   glMatrixMode(GL_MODELVIEW);
-   glLoadIdentity();
-
-   gluLookAt(0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
-
-   glutPostRedisplay();
-}
-
-int main(int argc, char *argv[])
-{   
-  glutInitWindowSize(640, 480);
-  glutInitWindowPosition ( 100, 100 );
-  glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE );
-  glutInit(&argc, argv);
-  
-  glutCreateWindow( "Hello World" );
-  glutDisplayFunc( Display );
-  glutReshapeFunc( Reshape );
-   
-  glutMainLoop();
-  
-  return 0; 
-}
-</pre>
-</td>
-</tr>
-</table>  
-<br/>
-<br/>
-This is a temporary demo to test subversion and php!
-
-
-<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
-
+<p>
+  <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?></p>
+<h2>Clockworkcoders Tutorials </h2>
+<table width="100%" border="1" cellpadding="8" cellspacing="4" bordercolor="#000066" bgcolor="#999999">
+  <tr>
+    <td width="3%" height="245" align="center" valign="top" bgcolor="#9999FF"><div align="left">
+      <p>&nbsp;</p>
+      <br/>
+      <br/>
+      <br/>
+      </p>
+    </div></td>
+    <td width="97%" align="left" valign="top" bgcolor="#FFFFCC"><!-- InstanceBeginEditable name="Tutorial Name" -->
+      <h1>Clockworkcoders Tutorials Index</h1>
+    <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="Tutorial Text" -->
+      <h2><br>
+        A. Introduction to the OpenGL Shading Language </h2>
+      <p><a href="extensions.php">Using OpenGL Extensions</a> (<a href="extensions.php">part 1</a>,<a href="extensions_part2.php"> part 2</a>) </p>
+    <p><a href="glsl_overview.php">OpenGL Shading Language (GLSL) overview</a><br>  
+        <br>
+        <a href="loading.php">Loading and compiling GLSL programs</a></p>
+    <p> <a href="uniform.php">Uniform Variables</a></p>
+    <p><a href="varying.php">Varying Variables</a></p>
+    <p><a href="vertex.php">Vertex Attributes</a></p>
+    <p><a href="lighting.php">Per Fragment Lighting</a>   </p>
+    <p><a href="texturing.php">Texturing</a></p>
+    <p><a href="discard.php">Discarding Fragments: &quot;Color Key&quot; </a></p>
+    <p><a href="multitexturing.php">Multitexturing</a></p>
+    <h2>B. Advanced Effects </h2>
+    <p><a href="toon_shading.php">Toon Shading</a></p>
+    <p><a href="noise.php">Using Noise</a><br>
+      <br>
+        <a href="bumpmap.php">Bump Mapping</a> </p>
+    <h2>C. General Purpose GPU Programming </h2>
+    <p><a href="float.php">Using Floating Point Buffers</a><br> 
+      <br>
+      <a href="image_processing.php">Image Processing </a></p>
+    <p><a href="raytracing.php">Ray Tracing on GPU </a></p>
+    <p>&nbsp;</p>
+    <!-- InstanceEndEditable -->
+    <table width="100%" border="0">
+        <tr>
+          <td width="50%" align="left" valign="middle"><!-- InstanceBeginEditable name="Link To Previous" -->
+            <h3>&nbsp;</h3>
+          <!-- InstanceEndEditable --></td>
+          <td width="81%" align="right" valign="middle"><!-- InstanceBeginEditable name="Link To Next" --><h3>&nbsp;</h3>
+          <!-- InstanceEndEditable --></td>
+        </tr>
+      </table>
+      </td>
+  </tr>
+</table>
+<p>
+  <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
+</p>
 </body>
-
-</html>
+<!-- InstanceEnd --></html>

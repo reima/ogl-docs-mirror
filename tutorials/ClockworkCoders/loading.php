@@ -36,7 +36,7 @@
 }       </pre></td>
       </tr>
       <tr>
-        <td bgcolor="#CCCC99"><span style="font-style: italic">Vertex Shader Source Code </span></td>
+        <td bgcolor="#CCCCFF"><span style="font-style: italic">Vertex Shader Source Code </span></td>
       </tr>
     </table>
     <h2>A Simple Fragment Shader </h2>
@@ -50,12 +50,12 @@
 }        </pre></td>
       </tr>
       <tr>
-        <td bgcolor="#CCCC99"><span style="font-style: italic">Fragment Shader Source Code </span></td>
+        <td bgcolor="#CCCCFF"><span style="font-style: italic">Fragment Shader Source Code </span></td>
       </tr>
     </table>
     <h2>Loading Shader</h2>
     <p>Now we have two simple shaders, a vertex and a fragment shader. If the shaders are located in text files they must be loaded into memory first. <span style="font-weight: bold">This part has nothing to do with OpenGL</span>, it is a simple ASCII file loader. If you write your shaders in Unicode (for the comments), you have to write your own loader. The actual program in memory should be in ASCII. You could also embed your shaders into your C++ code using a static char array. In other words: it doesn't matter how you get your shaders into memory. I recommend using ASCII files. This way you can change your shader code without recompiling your application. The source here simply loads an ASCII Shader File: </p>
-    <table width="90%" border="0" bordercolor="#0000CC" bgcolor="#EEEEEE">
+    <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
         <td><pre>unsigned long getFileLength(ifstream&amp; file)<br>{<br>    if(!file.good()) return 0;<br>    <br>    unsigned long pos=file.tellg();<br>    file.seekg(0,ios::end);<br>    unsigned long len = file.tellg();<br>    file.seekg(ios::beg);<br>    <br>    return len;<br>}
 
@@ -70,13 +70,13 @@ int unloadshader(GLubyte** ShaderSource)
 }</pre></td>
       </tr>
       <tr>
-        <td bgcolor="#CCCC99"><span style="font-style: italic">C++ Source Code </span></td>
+        <td bgcolor="#CCCCFF"><span style="font-style: italic">C++ Source Code </span></td>
       </tr>
     </table>
     <p>&nbsp;</p>
     <h2>Compiling Shader</h2>
     <p>First you have to create an OpenGL &quot;Shader Object&quot; specifying what kind of shader it is (e.g. Vertex Shader, Geometry Shader, or Fragment Shader) . A shader object can be created using the OpenGL function <a href="http://www.opengl.org/sdk/docs/man/xhtml/glCreateShader.xml" target="_blank">glCreateShader</a> with the arguments GL_VERTEX_SHADER or GL_FRAGMENT_SHADER (or GL_GEOMETRY_SHADER_EXT).</p>
-    <table width="90%" border="0" bordercolor="#0000CC" bgcolor="#EEEEEE">
+    <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
         <td><pre>GLuint vertexShader, fragmentShader;
 <br>vertexShaderObject = glCreateShader(GL_VERTEX_SHADER);
@@ -84,32 +84,32 @@ fragmentShaderObject = glCreateShader(GL_FRAGMENT_SHADER);
 </pre></td>
       </tr>
       <tr>
-        <td bgcolor="#CCCC99"><span style="font-style: italic">C++ Source Code </span></td>
+        <td bgcolor="#CCCCFF"><span style="font-style: italic">C++ Source Code </span></td>
       </tr>
     </table>
     <p><br>
       Once you created the shader objects you can attach (or replace) the shader source code to that object using the OpenGL function <a href="http://www.opengl.org/sdk/docs/man/xhtml/glShaderSource.xml" target="_blank">glShaderSource</a>:</p>
-    <table width="90%" border="0" bordercolor="#0000CC" bgcolor="#EEEEEE">
+    <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
         <td><pre>glShaderSourceARB(vertexShaderObject, 1, &amp;VertexShaderSource, &amp;vlength);<br>glShaderSourceARB(fragmentShaderObject, 1, &amp;FragmentShaderSource, &amp;flength);</pre></td>
       </tr>
       <tr>
-        <td bgcolor="#CCCC99"><span style="font-style: italic">C++ Source Code </span></td>
+        <td bgcolor="#CCCCFF"><span style="font-style: italic">C++ Source Code </span></td>
       </tr>
     </table>
     <p>Now it is time to compile!  This can be done using the OpenGL function <a href="http://www.opengl.org/sdk/docs/man/xhtml/glCompileShader.xml" target="_blank">glCompileShader</a>:</p>
-    <table width="90%" border="0" bordercolor="#0000CC" bgcolor="#EEEEEE">
+    <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
         <td><pre>glCompileShaderARB(vertexShaderObject);
 
 glCompileShaderARB(fragmentShaderObject);</pre></td>
       </tr>
       <tr>
-        <td bgcolor="#CCCC99"><span style="font-style: italic">C++ Source Code </span></td>
+        <td bgcolor="#CCCCFF"><span style="font-style: italic">C++ Source Code </span></td>
       </tr>
     </table>
     <p>Now the shaders are probably compiled. But what if you made some typo when entering the shader source code ? To check if the compile was successful or not you can use glGetObjectParameteriv with &quot;GL_COMPILE_STATUS&quot; argument. </p>
-    <table width="90%" border="0" bordercolor="#0000CC" bgcolor="#EEEEEE">
+    <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
         <td><pre>GLint compiled;
 
@@ -120,11 +120,11 @@ if (compiled)
 }        </pre></td>
       </tr>
       <tr>
-        <td bgcolor="#CCCC99"><span style="font-style: italic">C++ Source Code. </span></td>
+        <td bgcolor="#CCCCFF"><span style="font-style: italic">C++ Source Code. </span></td>
       </tr>
     </table>
     <p>If compilation failed, the exact cause can be checked using <a href="http://www.opengl.org/sdk/docs/man/xhtml/glGetShaderInfoLog.xml" target="_blank">glGetShaderInfoLog</a>. This usually returns a log message with the error description. The contents of the returned log is  depends on the implementation/driver.</p>
-    <table width="90%" border="0" bordercolor="#0000CC" bgcolor="#EEEEEE">
+    <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
         <td><pre>GLint blen = 0;	<br>GLsizei slen = 0;
 
@@ -139,14 +139,14 @@ glGetShaderiv(ShaderObject, GL_INFO_LOG_LENGTH , &amp;blen);
 }</pre>          </td>
       </tr>
       <tr>
-        <td bgcolor="#CCCC99"><span style="font-style: italic">C++ Source Code </span></td>
+        <td bgcolor="#CCCCFF"><span style="font-style: italic">C++ Source Code </span></td>
       </tr>
     </table>
     <h2>Linking</h2>
     <p>A vertex shader and fragment shader (and geometry shader) must be put together to a unit before it is possible to link. This unit is called &quot;Program Object&quot;. The Program Object is created using <a href="http://www.opengl.org/sdk/docs/man/xhtml/glCreateProgram.xml" target="_blank">glCreateProgram</a>.</p>
     <p>The OpenGL function <a href="http://www.opengl.org/sdk/docs/man/xhtml/glAttachShader.xml" target="_blank">glAttachShader</a> can attach a Shader Objects to a Program Object.</p>
     <p style="font-style: italic">(When using geometry shaders, you have to specify input primitive Type, output primitive type and maximal number of vertices before linking. But for now forget about geometry shaders.) </p>
-    <table width="90%" border="0" bordercolor="#0000CC" bgcolor="#EEEEEE">
+    <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
         <td><pre>
 
@@ -157,12 +157,12 @@ glAttachShader(ProgramObject, fragmentShaderObject);
 <br>glLinkProgram(ProgramObject);        </pre></td>
       </tr>
       <tr>
-        <td bgcolor="#CCCC99"><span style="font-style: italic">C++ Source Code </span></td>
+        <td bgcolor="#CCCCFF"><span style="font-style: italic">C++ Source Code </span></td>
       </tr>
     </table>
     <p>&nbsp;</p>
     <p>To check if linking was successful, glGetObjectParameteriv can be used again, similar to compiling.</p>
-    <table width="90%" border="0" bordercolor="#0000CC" bgcolor="#EEEEEE">
+    <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
         <td><pre>GLint linked;
 glGetProgramiv(ProgramObject, GL_LINK_STATUS, &amp;linked);
@@ -171,7 +171,7 @@ if (linked)
 }       </pre></td>
       </tr>
       <tr>
-        <td bgcolor="#CCCC99"><span style="font-style: italic">C++ Source Code </span></td>
+        <td bgcolor="#CCCCFF"><span style="font-style: italic">C++ Source Code </span></td>
       </tr>
     </table>
     <p><br>
@@ -180,7 +180,7 @@ if (linked)
     <p>Once you have a linked Program Object, it is very easy to use that shader with the OpenGL function <a href="http://www.opengl.org/sdk/docs/man/xhtml/glUseProgram.xml" target="_blank">glUseProgram</a> with the program object as argument. To stop using the program you can call glUseProgram(0).</p>
     <p>As you see it is pretty easy to load, compile, link and use shaders, on the other side it is pretty complicated if you use many different shaders in your code. I created some C++ classes which simplify the whole process.</p>
     <p>the class cwc::glShaderManager loads, compiles and links a GLSL program specifed from memory It returns a cwc::glShader, which holds/represents the &quot;Program Object&quot;.</p>
-    <table width="90%" border="0" bordercolor="#0000CC" bgcolor="#EEEEEE">
+    <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
         <td><pre>#include &quot;glsl.h&quot;<br>
 cwc::glShaderManager SM;<br>cwc::glShader *shader;
@@ -195,10 +195,10 @@ shader-&gt;end();
         </pre></td>
       </tr>
       <tr>
-        <td bgcolor="#CCCC99"><span style="font-style: italic">C++ Source Code </span></td>
+        <td bgcolor="#CCCCFF"><span style="font-style: italic">C++ Source Code </span></td>
       </tr>
     </table>
-    <p> In future tutorials, this way is used to load/compile/link shaders to reduce the code overhead. </p>
+    <p> In future tutorials, this way is used to load/compile/link shaders to reduce code overhead. </p>
     <p><a href="downloads/GLSL_Loading.zip" style="font-weight: bold">Download:
       GLSL_Loading.zip</a> (Visual Studio 8 Project)<br>
       <span style="font-style: italic">(If you create a project/makefile for a different platform/compiler, please send it to: christen(at)clockworkcoders.com and I will put it here.) </span></p>
@@ -210,7 +210,7 @@ shader-&gt;end();
             <h3><a href="Templates/index.php">Return to Index</a></h3>
           <!-- InstanceEndEditable --></td>
           <td width="81%" align="right" valign="middle"><!-- InstanceBeginEditable name="Link To Next" -->
-            <h3>Link To Next</h3>
+            <h3><a href="uniform.php">Next: Uniform Variables</a></h3>
           <!-- InstanceEndEditable --></td>
         </tr>
       </table>    </td>

@@ -24,7 +24,7 @@
       <p><a href="extensions.php">Using OpenGL Extensions</a> (<a href="extensions.php">part 1</a>,<a href="extensions_part2.php"> part 2</a>) </p>
     <p><a href="glsl_overview.php">OpenGL Shading Language (GLSL) overview</a><br>  
         <br>
-        <a href="loading.php">Loading, Compiling, L </a><a href="loading.php">inking, and Using GLSL programs</a></p>
+        <a href="loading.php">Loading, Compiling, L</a><a href="loading.php">inking, and Using GLSL programs</a></p>
     <p> <a href="uniform.php">Uniform Variables</a></p>
     <p><a href="varying.php">Varying Variables</a></p>
     <p><a href="vertex.php">Vertex Attributes</a></p>

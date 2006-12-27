@@ -7,7 +7,7 @@
 <p>
   <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?></p>
 <h2>Clockworkcoders Tutorials </h2>
-<table width="100%" border="1" cellpadding="8" cellspacing="4" bordercolor="#000066" bgcolor="#999999">
+<table width="85%" border="1" cellpadding="8" cellspacing="4" bordercolor="#000066" bgcolor="#999999">
   <tr>
     <td width="3%" height="245" align="center" valign="top" bgcolor="#9999FF"><div align="left">
       <p>&nbsp;</p>
@@ -28,9 +28,10 @@
     <p>The vertex processor is a programmable unit that operates on incoming vertex attributes, such as position, color, texture coordinates, and so on. The vertex processor is intended to perform traditional graphics operations such as vertex transformation, normal transformation/normalization, texture coordinate generation, and texture coordinate transformation.<br>
       The vertex processor only has one vertex as input and only writes one vertex as output. <span style="font-weight: bold">Topological information of the vertices is not available</span>.    </p>
     <h3>Programmable Geometry Processor</h3>
-    <p> In the greometry processor you have access to the geometry. It is even possible to create new geometry. However, the geometry shader is not part of the OpenGL Shading Language specification and is a <span style="font-weight: bold">multivendor extension</span>, currently available (as beta) in NVidia GeForce 8 series graphics cards. </p>
+    <p> The greometry processor allows access to the geometry (lines, triangles, quads etc.). It is even possible to create new geometry. However, the geometry shader is <span style="font-weight: bold">not</span> part of the OpenGL Shading Language specification. It is a <span style="font-weight: bold">multivendor extension</span> and  currently available (for developers) on NVidia GeForce 8 series graphics cards. Because this is a very important extension to the OpenGL Shading Language it is mentioned here and in some tutorials. (If you don't want or can't use Geometry Shaders, simply ignore this and let the fixed function pipeline do it!) </p>
     <h3>Programmable  Fragment Processor</h3>
     <p>The fragment processor is intended to perform traditional graphics operations such as operations on interpolated values, texture access, texture application, fog, and color sum.  </p>
+    <p>&nbsp;</p>
     <p>&nbsp;</p>
     <!-- InstanceEndEditable -->
     <table width="100%" border="0">
@@ -42,10 +43,11 @@
             <h3><a href="extensions.php"></a><a href="loading.php">Next: Loading and compiling GLSL programs</a></h3>
           <!-- InstanceEndEditable --></td>
         </tr>
-      </table>      </td>
+      </table>
+    </td>
   </tr>
 </table>
-<p>
+<p><br>
   <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 </p>
 </body>

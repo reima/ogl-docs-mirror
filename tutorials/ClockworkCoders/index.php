@@ -7,7 +7,7 @@
 <p>
   <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?></p>
 <h2>Clockworkcoders Tutorials </h2>
-<table width="100%" border="1" cellpadding="8" cellspacing="4" bordercolor="#000066" bgcolor="#999999">
+<table width="85%" border="1" cellpadding="8" cellspacing="4" bordercolor="#000066" bgcolor="#999999">
   <tr>
     <td width="3%" height="245" align="center" valign="top" bgcolor="#9999FF"><div align="left">
       <p>&nbsp;</p>
@@ -24,7 +24,7 @@
       <p><a href="extensions.php">Using OpenGL Extensions</a> (<a href="extensions.php">part 1</a>,<a href="extensions_part2.php"> part 2</a>) </p>
     <p><a href="glsl_overview.php">OpenGL Shading Language (GLSL) overview</a><br>  
         <br>
-        <a href="loading.php">Loading and compiling GLSL programs</a></p>
+        <a href="loading.php">Loading, Compiling, L </a><a href="loading.php">inking, and Using GLSL programs</a></p>
     <p> <a href="uniform.php">Uniform Variables</a></p>
     <p><a href="varying.php">Varying Variables</a></p>
     <p><a href="vertex.php">Vertex Attributes</a></p>
@@ -53,10 +53,10 @@
           <!-- InstanceEndEditable --></td>
         </tr>
       </table>
-      </td>
+    </td>
   </tr>
 </table>
-<p>
+<p><br>
   <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 </p>
 </body>

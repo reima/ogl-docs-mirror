@@ -6,20 +6,13 @@
 <title>Untitled Document</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
-<style type="text/css">
-<!--
-.Stil1 {font-family: Geneva, Arial, Helvetica, sans-serif}
-.style1 {	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-}
--->
-</style>
+<p>
+   <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
+</p>
 </head>
 
 <body>
-<p>
-  <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
-</p>
+
 <!-- InstanceBeginEditable name="Title" -->
 <h1>Clockworkcoders OpenGL Tutorials</h1>
 <!-- InstanceEndEditable -->
@@ -288,7 +281,7 @@ the shading language must be present too: &quot;GL_ARB_shader_objects&quot;,
           <!-- InstanceEndEditable --></td>
         </tr>
       </table>
-    </td>
+      </td>
   </tr>
 </table>
 <p>&nbsp;</p>

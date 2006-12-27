@@ -19,9 +19,11 @@
     <td width="97%" align="left" valign="top" bgcolor="#FFFFCC"><!-- InstanceBeginEditable name="Tutorial Name" -->
       <h1>OpenGL Extensions: Part 2 </h1>
     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="Tutorial Text" -->
+    <h2>&nbsp;</h2>
     <h2>OpenGL Shading Language Extensions</h2>
     Now we know enough about extensions to actually use them for our GLSL
 programs.
+    <h3>&nbsp;</h3>
     <h3>Checking Presence of GLSL</h3>
     To check if the OpenGL Shading Language is present, the extension
 &quot;<span style="font-weight: bold">GL_ARB_shading_language_100</span>&quot; must be available. If this extension is

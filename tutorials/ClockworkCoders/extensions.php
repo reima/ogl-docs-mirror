@@ -19,6 +19,7 @@
     <td width="97%" align="left" valign="top" bgcolor="#FFFFCC"><!-- InstanceBeginEditable name="Tutorial Name" -->
       <h1>OpenGL Extensions Tutorial</h1>
     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="Tutorial Text" -->
+    <h2>&nbsp;</h2>
     <h2>Introduction</h2>
     <p>OpenGL Extensions are usually made available to access new features of 3D
       graphics hardware. Hardware vendors define new functions and/or tokens that
@@ -28,14 +29,15 @@
       are called &quot;<strong>multivendor</strong>&quot; extensions.<br>
       If a vendor-specific or multivendor extension proves to be a good
       enhancement, the OpenGL Architecture Review Board (ARB) may promote it to an
-  &quot;<strong>ARB approved</strong>&quot; extension.<br>
-  If the extension is very useful, the ARB may decide to integrate the
+      &quot;<strong>ARB approved</strong>&quot; extension.<br>
+      If the extension is very useful, the ARB may decide to integrate the
       extension as a &quot;<strong>core feature</strong>&quot; to OpenGL. This happened for
       example with the OpenGL Shading Language which is now a core feature of
       OpenGL 2.0 and higher.<br>
       This concept makes OpenGL very powerful, because source code remains
       backwards compatible. OpenGL programs written 10 years ago still work
       today.</p>
+    <h2>&nbsp;</h2>
     <h2>Detecting Extensions</h2>
     Once you have a valid OpenGL context, you can get a list of all extensions
 with glGetString(GL_EXTENSIONS). It returns a space delimited char-array of
@@ -89,10 +91,10 @@ All extensions have the form: GL_VENDOR_extension_name, where &quot;VENDOR&quot;
     </tr>
   </tbody>
 </table>
-<br />
- There are also other prefixes than &quot;GL&quot;: Those
-are platform specific extensions. The most famous are &quot;WGL&quot; for Windows
-specific extensions and &quot;GLX&quot; for X-Windows specific extensions.
+<p>There are also other prefixes than &quot;GL&quot;: Those
+  are platform specific extensions. The most famous are &quot;WGL&quot; for Windows
+  specific extensions and &quot;GLX&quot; for X-Windows specific extensions. </p>
+<p>&nbsp;</p>
 <h2>Using Extensions</h2>
 Using extensions in your C++ code is - unfortunately - platform specific. The
 address of the function (function pointer) must be retrieved from the OpenGL
@@ -106,10 +108,12 @@ href="http://glew.sourceforge.net">http://glew.sourceforge.net</a>. Another
 href="http://elf-stone.com/glee.php">http://elf-stone.com/glee.php</a>. Both
   are good ways to handle extensions and are released under a modified BSD
   license. (Make sure to read the licenses for details.) 
+  <h2>&nbsp;</h2>
   <h2>Introduction to GLEW</h2>
-I am going to use GLEW, without a real reason - GLee is just as good. The
+  I am going to use GLEW, without a real reason - GLee is just as good. The
 latest version of GLEW is 1.3.5 and supports OpenGL 2.1 core functionality
 and some other new extensions.
+<h3>&nbsp;</h3>
 <h3>Installation</h3>
 GLEW can be compiled statically or dynamically. If you create a static lib,
 make sure to create a preprocessor variable &quot;GLEW_STATIC&quot; under Windows.
@@ -119,8 +123,8 @@ it makes cross platform management easier.<br>
 You can download a sample OpenGL project using GLEW + FreeGLUT here: 
 <p><a href="downloads/OpenGL_Extensions_Tutorial.zip" style="font-weight: bold">Download:
   OpenGL_Extensions_Tutorial.zip</a></p>
-<p>It is a Visual Studio 7.1 project. And can be converted to 8.0 without
-  problems.</p>
+<p>It is a Visual Studio 7.1 project. And can be converted to 8.0 (Express Edition and higher). </p>
+<h3>&nbsp;</h3>
 <h3>Initializing GLEW</h3>
 GLEW requires an initialization. When you do this initialization a valid
 OpenGL rendering context must be available. (In most cases this means an
@@ -140,6 +144,7 @@ std::cout &quot;Using GLEW Version: &quot; glewGetString(GLEW_VERSION);</pre>
   </tbody>
 </table>
 <br />
+<h3>&nbsp;</h3>
 <h3>Checking OpenGL Version</h3>
 GLEW allows checking if all core extensions of a certain OpenGL Version (1.1,
 1.2, 1.3, 1.5, 2.0, 2.1) are available. If you have for example OpenGL 1.3
@@ -158,6 +163,7 @@ too. <br />
   </tbody>
 </table>
 <br />
+<h3>&nbsp;</h3>
 <h3>Checking Extensions</h3>
 There are two ways to check an extension: over a GLEW macro or &ndash; as a slower
 alternative &ndash; over a string. <br />
@@ -186,6 +192,7 @@ alternative &ndash; over a string. <br />
   </tbody>
 </table>
 <br />
+<h3>&nbsp;</h3>
 <h3>Platform specific extensions</h3>
 Platform specific extensions can also be queried using a GLEW macro. or using
 the functions &quot;wglewIsSupported&quot; or &quot;glxglewIsSupported&quot;). To use platform
@@ -204,6 +211,7 @@ specific extensions include &quot;wglew.h&quot; or &quot;glxglew.h&quot; after t
   </tbody>
 </table>
 <br />
+<h2>&nbsp;</h2>
 <h2>Exercises</h2>
 <p>1. Write a program which detects the OpenGL core version installed on your
   machine and print the result to console. (use GLEW or GLee for this!)<br>

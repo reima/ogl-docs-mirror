@@ -1,10 +1,10 @@
-<html>
-
+<html><!-- InstanceBegin template="/Templates/tutorial.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <title>Tutorials</title>
 <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_head.txt"); ?>
 </head>
 <body>
+<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
 
 <!-- InstanceBeginEditable name="Title" -->
 <h1>Clockworkcoders OpenGL Tutorials</h1>

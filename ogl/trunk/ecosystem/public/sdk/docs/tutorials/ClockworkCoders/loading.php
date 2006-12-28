@@ -9,20 +9,20 @@
 <h2>Clockworkcoders Tutorials </h2>
 <table width="97%" border="0" align="center" cellpadding="6" cellspacing="0" bordercolor="#000066" bgcolor="#999999">
   <tr>
-    <td width="3%" height="245" align="center" valign="top" bgcolor="#9999FF"><div align="left">
+    <td width="4" height="245" bgcolor="#9999FF"><div align="left">
       <p>&nbsp;</p>
       <br/>
       <br/>
       <br/>
       </p>
     </div></td>
-    <td width="97%" align="left" valign="top" bgcolor="#FFFFCC"><!-- InstanceBeginEditable name="Tutorial Name" -->
+    <td width="1169" align="left" valign="top" bgcolor="#FFFFCC"><!-- InstanceBeginEditable name="Tutorial Name" -->
       <h1>Loading, Compiling, Linking, and Using GLSL Programs</h1>
     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="Tutorial Text" -->
-    <h2 align="left"><img src="screenshot_load.gif" alt="tutorial image" width="302" height="244"></h2>
+    <h2 align="center"><img src="screenshot_load.gif" alt="tutorial image" width="302" height="244"></h2>
     <h2>A Simple Vertex Shader</h2>
     <p>This vertex shader scales all vertices in x and y direction. This doesn't really make much sense, but it is a good example to get started with. All vertices of our primitive (or object or scene) will go through this program. gl_Vertex is the current vertex which is being processed by this program. The vertex has the same (untransformed) values like you specify in glVertex3f(x,y,z) in your C++ program. The gl_ModelViewProjectionMatrix is the concatenated modelview and projection matrix. At this point I assume you know what the modelview and projection matrices are, otherwise you can look it up in the <a href="http://www.opengl.org/sdk/docs/man/xhtml/glMatrixMode.xml" target="_blank">OpenGL SDK</a>. </p>
-    <table width="90%" border="0" bordercolor="#0000CC" bgcolor="#EEEEEE">
+    <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
         <td><pre>void main(void)
 {
@@ -42,7 +42,7 @@
     <h2>A Simple Fragment Shader </h2>
     <p>A fragment is basically a pixel before it is rasterized. If you render a fully visible triangle then all pixels between the three vertices must be drawn. Before those pixels are drawn they go through the fragment processor and for each possible pixel the fragment program is exectuted.</p>
     <p>In this simple example every fragment is set to green. gl_FragColor holds the output color.</p>
-    <table width="90%" border="0" bordercolor="#0000CC" bgcolor="#EEEEEE">
+    <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
         <td><pre>void main (void)  
 {     
@@ -207,7 +207,7 @@ shader-&gt;end();
     <table width="100%" border="0">
         <tr>
           <td width="50%" align="left" valign="middle"><!-- InstanceBeginEditable name="Link To Previous" -->
-            <h3><a href="Templates/index.php">Return to Index</a></h3>
+            <h3><a href="index.php">Return to Index</a></h3>
           <!-- InstanceEndEditable --></td>
           <td width="81%" align="right" valign="middle"><!-- InstanceBeginEditable name="Link To Next" -->
             <h3><a href="uniform.php">Next: Uniform Variables</a></h3>

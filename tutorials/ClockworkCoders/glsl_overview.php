@@ -9,14 +9,14 @@
 <h2>Clockworkcoders Tutorials </h2>
 <table width="97%" border="0" align="center" cellpadding="6" cellspacing="0" bordercolor="#000066" bgcolor="#999999">
   <tr>
-    <td width="3%" height="245" align="center" valign="top" bgcolor="#9999FF"><div align="left">
+    <td width="4" height="245" bgcolor="#9999FF"><div align="left">
       <p>&nbsp;</p>
       <br/>
       <br/>
       <br/>
       </p>
     </div></td>
-    <td width="97%" align="left" valign="top" bgcolor="#FFFFCC"><!-- InstanceBeginEditable name="Tutorial Name" -->
+    <td width="1169" align="left" valign="top" bgcolor="#FFFFCC"><!-- InstanceBeginEditable name="Tutorial Name" -->
       <h1>OpenGL Shading Language Overview </h1>
     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="Tutorial Text" -->
     <p>&nbsp;</p>
@@ -31,7 +31,6 @@
     <p> The greometry processor allows access to the geometry (lines, triangles, quads etc.). It is even possible to create new geometry. However, the geometry shader is <span style="font-weight: bold">not</span> part of the OpenGL Shading Language specification. It is a <span style="font-weight: bold">multivendor extension</span> and  currently available (for developers) on NVidia GeForce 8 series graphics cards. Because this is a very important extension to the OpenGL Shading Language it is mentioned here and in some tutorials. (If you don't want or can't use Geometry Shaders, simply ignore this and let the fixed function pipeline do it!) </p>
     <h3>Programmable  Fragment Processor</h3>
     <p>The fragment processor is intended to perform traditional graphics operations such as operations on interpolated values, texture access, texture application, fog, and color sum.  </p>
-    <p>&nbsp;</p>
     <p>&nbsp;</p>
     <!-- InstanceEndEditable -->
     <table width="100%" border="0">

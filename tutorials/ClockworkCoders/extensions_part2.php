@@ -9,14 +9,14 @@
 <h2>Clockworkcoders Tutorials </h2>
 <table width="97%" border="0" align="center" cellpadding="6" cellspacing="0" bordercolor="#000066" bgcolor="#999999">
   <tr>
-    <td width="3%" height="245" align="center" valign="top" bgcolor="#9999FF"><div align="left">
+    <td width="4" height="245" bgcolor="#9999FF"><div align="left">
       <p>&nbsp;</p>
       <br/>
       <br/>
       <br/>
       </p>
     </div></td>
-    <td width="97%" align="left" valign="top" bgcolor="#FFFFCC"><!-- InstanceBeginEditable name="Tutorial Name" -->
+    <td width="1169" align="left" valign="top" bgcolor="#FFFFCC"><!-- InstanceBeginEditable name="Tutorial Name" -->
       <h1>OpenGL Extensions: Part 2 </h1>
     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="Tutorial Text" -->
     <h2>&nbsp;</h2>

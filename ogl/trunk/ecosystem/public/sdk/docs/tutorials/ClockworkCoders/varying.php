@@ -24,7 +24,7 @@
     <p>Varying can be used only with the data types float, vec2, vec3, vec4, mat2, mat3, mat4. (arrays of them too.)</p>
     <h2>Example</h2>
     <p align="center"><img src="varying.gif" width="262" height="206"></p>
-    <p>Im the example before (Vertex Attributes) the color attribute was used to transform the vertex position, this time we actually use the color value in its correct purpose and pass it down to the fragment shader. The color value is interpolated this way. If you disable the shader you should get the same result - the fixed function pipeline does the same with the color!</p>
+    <p>In the example before (Vertex Attributes) the color attribute was used to transform the vertex position, this time we actually use the color value in its correct purpose and pass it down (as varying variable) to the fragment shader. The color value is interpolated this way. If you disable the shader you should get the same result - the fixed function pipeline does the same with the color!</p>
     <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
         <td><pre>varying vec4 vColor;</pre>
@@ -66,7 +66,7 @@
             <h3><a href="uniform.php"></a><a href="attributes.php">Previous: Vertex Attributes</a></h3>
           <!-- InstanceEndEditable --></td>
           <td width="81%" align="right" valign="middle"><!-- InstanceBeginEditable name="Link To Next" -->
-            <h3><a href="vertex.php"></a><a href="index.php">Return to Index</a></h3>
+            <h3><a href="vertex.php"></a><a href="texturing.php">Next: Texturing</a><a href="index.php"></a></h3>
           <!-- InstanceEndEditable --></td>
         </tr>
       </table>

@@ -17,7 +17,7 @@
       </p>
     </div></td>
     <td width="1169" align="left" valign="top" bgcolor="#FFFFCC"><!-- InstanceBeginEditable name="Tutorial Name" -->
-      <h1>About Tutorials </h1>
+      <h1>About Clockworkcoders Tutorials </h1>
     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="Tutorial Text" -->
     <p style="font-weight: bold">About the Author </p>
     <p>Clockworkcoders Tutorials are written by Martin Christen. Martin is a researcher at the University of Applied Sciences Northwestern Switzerland (FHNW).</p>
@@ -39,6 +39,8 @@
     <p><span style="font-weight: bold">Tutorial Source Code</span><br>
       Copyright (C) 2006 by Martin Christen &lt;christen&lt;at&gt;clockworkcoders.com&gt;<br>
     All rights reserved. </p>
+    <p>Some tutorials also use certain image libraries, please read the included copyright file for more information.</p>
+    <p>&nbsp; </p>
     <!-- InstanceEndEditable -->
     <table width="100%" border="0">
         <tr>

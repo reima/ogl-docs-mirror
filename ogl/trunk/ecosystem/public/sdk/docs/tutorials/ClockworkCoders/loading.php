@@ -21,7 +21,7 @@
     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="Tutorial Text" -->
     <h2 align="center"><img src="screenshot_load.gif" alt="tutorial image" width="302" height="244"></h2>
     <h2>A Simple Vertex Shader</h2>
-    <p>This vertex shader scales all vertices in x and y direction. This doesn't really make much sense, but it is a good example to get started with. All vertices of our primitive (or object or scene) will go through this program. gl_Vertex is the current vertex which is being processed by this program. The vertex has the same (untransformed) values like you specify in glVertex3f(x,y,z) in your C++ program. The gl_ModelViewProjectionMatrix is the concatenated modelview and projection matrix. At this point I assume you know what the modelview and projection matrices are, otherwise you can look it up in the <a href="http://www.opengl.org/sdk/docs/man/xhtml/glMatrixMode.xml" target="_blank">OpenGL SDK</a>. </p>
+    <p>This vertex shader scales all vertices in x and y direction. This doesn't really make much sense, but it is a good example to get started with. All vertices of our primitive (or object or scene) will go through this program. gl_Vertex is the current vertex which is being processed by this program. The vertex has the same (untransformed) values like you specify in glVertex3f(x,y,z) in your C++ program. The gl_ModelViewProjectionMatrix is the concatenated modelview and projection matrix.  I assume you know what the modelview and projection matrices are, otherwise you can look it up in the <a href="http://www.opengl.org/sdk/docs/man/xhtml/glMatrixMode.xml" target="_blank">OpenGL SDK</a>. </p>
     <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
         <td><pre>void main(void)
@@ -179,7 +179,7 @@ if (linked)
     <h2>Using Shaders</h2>
     <p>Once you have a linked Program Object, it is very easy to use that shader with the OpenGL function <a href="http://www.opengl.org/sdk/docs/man/xhtml/glUseProgram.xml" target="_blank">glUseProgram</a> with the program object as argument. To stop using the program you can call glUseProgram(0).</p>
     <p>As you see it is pretty easy to load, compile, link and use shaders, on the other side it is pretty complicated if you use many different shaders in your code. I created some C++ classes which simplify the whole process.</p>
-    <p>the class cwc::glShaderManager loads, compiles and links a GLSL program specifed from memory It returns a cwc::glShader, which holds/represents the &quot;Program Object&quot;.</p>
+    <p>the class cwc::glShaderManager loads, compiles and links a GLSL program (from file or memory). It returns a cwc::glShader, which holds/represents the &quot;Program Object&quot;.</p>
     <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
         <td><pre>#include &quot;glsl.h&quot;<br>

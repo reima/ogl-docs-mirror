@@ -237,6 +237,7 @@ specific extensions include &quot;wglew.h&quot; or &quot;glxglew.h&quot; after t
     </td>
   </tr>
 </table>
+<p align="center"><img src="author.gif" width="377" height="21"></p>
 <p><br>
   <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 </p>

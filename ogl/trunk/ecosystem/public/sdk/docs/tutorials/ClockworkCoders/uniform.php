@@ -80,7 +80,8 @@ if (loc != -1)
       </tr>
     </table>
     <p>The uniform location remains valid until you link the program again, so there is no need to call glGetUniformLocation every frame.</p>
-    <p>In the example project the above example shaders are used and the vertex value and color value is changed with a timer function.</p>
+    <h2>Example Project </h2>
+    <p>In this example project the above example shaders are used and the vertex position and color value is changed with a timer function.</p>
     <p><a href="downloads/GLSL_Uniform.zip" style="font-weight: bold">Download:
       GLSL_Uniform.zip</a> (Visual Studio 8 Project)<br>
       <span style="font-style: italic">(If you create a project/makefile for a different platform/compiler, please send it to: christen(at)clockworkcoders.com and I will put it here.) </span> </p>
@@ -100,6 +101,7 @@ if (loc != -1)
     </td>
   </tr>
 </table>
+<p align="center"><img src="author.gif" width="377" height="21"></p>
 <p><br>
   <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 </p>

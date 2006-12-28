@@ -28,10 +28,9 @@
     <p> <a href="uniform.php">Uniform Variables</a></p>
     <p><a href="attributes.php">Vertex Attributes</a></p>
     <p><a href="varying.php">Varying Variables</a></p>
-    <p><a href="lighting.php">Per Fragment Lighting</a>   </p>
     <p><a href="texturing.php">Texturing</a></p>
-    <p><a href="discard.php">Discarding Fragments: &quot;Color Key&quot; </a></p>
-    <p><a href="multitexturing.php">Multitexturing</a></p>
+    <p><a href="lighting.php">Per Fragment Lighting</a></p>
+    <p><a href="discard.php">Discarding Fragments: &quot;Color Key&quot;</a></p>
     <h2>B. Advanced Effects </h2>
     <p><a href="toon_shading.php">Toon Shading</a></p>
     <p><a href="noise.php">Using Noise</a><br>

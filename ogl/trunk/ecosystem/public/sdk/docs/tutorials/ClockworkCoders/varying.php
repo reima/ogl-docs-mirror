@@ -55,7 +55,7 @@
     <h2>Example Project </h2>
     <p>In this example project the above example shaders are used.</p>
     <p><a href="downloads/GLSL_Varying.zip" style="font-weight: bold">Download:
-      GLSL_Uniform.zip</a> (Visual Studio 8 Project)<br>
+      GLSL_Varying.zip</a> (Visual Studio 8 Project)<br>
         <span style="font-style: italic">(If you create a project/makefile for a different platform/compiler, please send it to: christen(at)clockworkcoders.com and I will put it here.) </span></p>
     <p>&nbsp; </p>
     <p>&nbsp;</p>

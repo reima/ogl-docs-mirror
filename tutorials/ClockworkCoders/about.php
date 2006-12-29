@@ -23,7 +23,8 @@
     <p>Clockworkcoders Tutorials are written by Martin Christen. Martin is a researcher at the University of Applied Sciences Northwestern Switzerland (FHNW).</p>
     <p>You can contact him at: <img src="email.gif" width="199" height="21" align="absmiddle"></p>
     <p style="font-weight: bold">Source Code</p>
-    <p>I decided to include &quot;ready to compile&quot; examples only. 3rd party dependencies are resolved by including all 3rd party libraries/sources in the download. This means that Freeglut and GLEW is embedded in the source.</p>
+    <p>I decided to include &quot;ready to compile&quot; examples. 3rd party dependencies are resolved by including all 3rd party libraries/sources in the download. This means that Freeglut and GLEW is embedded in the source. And also other libraries (for example FreeImage) are included as source when downloading certain examples.<br>
+      This increases download size, but from my experience 90% of all feedback I get are questions about compiling... </p>
     <p><span style="font-weight: bold">License</span><br>
         <br>
       All example source code is licensed under a modified zlib/BSD license,  you can do with it whatever you want but you can't claim you wrote it. All downloads contain 3rd party libraries with similar licenses, please read and accept the licences before using the source code. </p>

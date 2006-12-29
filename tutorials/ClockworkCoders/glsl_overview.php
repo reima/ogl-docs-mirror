@@ -32,6 +32,11 @@
     <h3>Programmable  Fragment Processor</h3>
     <p>The fragment processor is intended to perform traditional graphics operations such as operations on interpolated values, texture access, texture application, fog, and color sum.  </p>
     <p>&nbsp;</p>
+    <h2>Language</h2>
+    <p>The  OpenGL Shading Language is similar to C. Vertex Shaders, Geometry Shaders and Fragment shaders must have a main-entry function &quot;void main()&quot;.</p>
+    <p>I could write a specification of the whole language here but I believe the better approach is to learn by example. In the next section a simple shader source code is introduced. Every section has a simple source code to download. A good way to learn GLSL is to download those example and modify it, do your own &quot;experiments&quot;!</p>
+    <p>You should also download the  official GLSL language specification. You can get it <a href="http://www.opengl.org/registry/" target="_blank">here</a> (under &quot;Miscellaneous Documents&quot;). </p>
+    <p>&nbsp;</p>
     <!-- InstanceEndEditable -->
     <table width="100%" border="0">
         <tr>

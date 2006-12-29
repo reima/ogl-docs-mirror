@@ -243,7 +243,7 @@ void main(void)
         <td bgcolor="#CCCCFF">Fragment Shader Source Code</td>
       </tr>
     </table>
-    <p>You probably noticed the &quot;.xy&quot; and &quot;.bgra&quot;. The order of components in GLSL can be changed. This can be done by appending the component names in the order you want. You can even repeat comonents. In this example &quot;.bgra&quot; is used. This technique can also be used to convert vectors, for example vec4 to vec2. </p>
+    <p>You probably noticed the &quot;.xy&quot; and &quot;.bgra&quot;. The order of components in GLSL can be changed. This can be done by appending the component names in the order you want. You can even repeat components. In this example &quot;.bgra&quot; is used. This technique can also be used to convert vectors, for example vec4 to vec2. </p>
     <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
         <td><pre>vec4 TestVec = vec4(1.0, 2.0, 3.0, 4.0);<br>

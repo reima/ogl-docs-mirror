@@ -129,7 +129,7 @@ glEnd();    </pre></td>
     <p>Setting attribute values can be done using <a href="http://www.opengl.org/sdk/docs/man/xhtml/glVertexAttrib.xml" target="_blank">glVertexAttrib</a> function. </p>
     <p>Unfortunately there are certain limitations when using this on NVidia Hardware.  According to NVidia:<br>
       &quot;<span style="font-style: italic">GLSL attempts to eliminate aliasing of vertex attributes but this is integral to NVIDIA&rsquo;s hardware approach and necessary for maintaining compatibility with existing OpenGL applications that NVIDIA customers rely on. NVIDIA&rsquo;s GLSL implementation therefore does not allow built-in vertex attributes to collide with a generic vertex attributes that is assigned to a particular vertex  attribute index with glBindAttribLocation. For example, you should not use gl_Normal (a built-in vertex attribute) and also use glBindAttribLocation to bind a generic vertex attribute named &quot;whatever&quot; to vertex attribute index 2 because gl_Normal aliases to index 2.</span>&quot;</p>
-    <p>In other words, NVidia hardware indices are reserved for built-in attributes. You can't use the following indices.</p>
+    <p>In other words, NVidia hardware indices are reserved for built-in attributes: </p>
     <table width="28%" border="0" align="center" bgcolor="#DDFFEE">
       <tr>
         <td width="74%">gl_Vertex</td>

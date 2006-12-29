@@ -34,10 +34,10 @@
     <p>&nbsp; </p>
     <h2>Built in Vertex Attributes</h2>
     <p>In many cases the built in vertex attributes are sufficent to use. In the C++ program you can use the regular OpenGL function to set vertex attribute values, for example glVertex3f for the position. </p>
-    <table width="50%" border="0" align="center" bgcolor="#DDFFEE">
+    <table width="77%" border="0" align="center" bgcolor="#DDFFEE">
       <tr>
-        <td width="32%"><span style="font-weight: bold">gl_Vertex</span></td>
-        <td width="68%">Position (vec4) </td>
+        <td width="39%"><span style="font-weight: bold">gl_Vertex</span></td>
+        <td width="61%">Position (vec4) </td>
       </tr>
       <tr>
         <td><span style="font-weight: bold">gl_Normal</span></td>

@@ -21,10 +21,10 @@
     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="Tutorial Text" -->
     <h2>Introduction</h2>
     <p>Textures are basically a chuck of memory, often using  R,G,B(,A) values with 8 bits per channel. Usually textures contain image data, but it is data, you can do with it whatever you want. In GLSL a texture is specified as a uniform variable. Textures have their own type, which is one of the following: </p>
-    <table width="55%" border="0" align="center" bgcolor="#DDFFEE">
+    <table width="72%" border="1" align="center" bgcolor="#DDFFEE">
       <tr>
-        <td width="38%"><span style="font-weight: bold">sampler1D</span></td>
-        <td width="62%">1D texture</td>
+        <td width="33%"><span style="font-weight: bold">sampler1D</span></td>
+        <td width="67%">1D texture</td>
       </tr>
       <tr>
         <td><span style="font-weight: bold">sampler2D</span></td>
@@ -59,10 +59,10 @@
     <p align="left">There are texture lookup functions to access the image data. Texture lookup functions can be called in the vertex and fragment shader. When looking up a texture in the vertex shader, level of detail is not yet computed, however there are some special lookup functions for that (function names end with &quot;Lod&quot;).<br>
     The parameter &quot;bias&quot; is only available in the fragment shader It is an optional parameter you can use to add to the current level of detail.<br>
     Function names ending with &quot;Proj&quot; are the projective versions, the texture coordinate is divided by the last component of the texture coordinate vector. </p>
-    <table width="63%" border="0" align="center" bgcolor="#DDFFEE">
+    <table width="73%" border="0" align="center" bgcolor="#DDFFEE">
       <tr>
-        <td width="95%">vec4 <span style="font-weight: bold">texture1D</span>(sampler1D s, float coord [, float bias]) </td>
-        <td width="5%">&nbsp;</td>
+        <td width="96%">vec4 <span style="font-weight: bold">texture1D</span>(sampler1D s, float coord [, float bias]) </td>
+        <td width="4%">&nbsp;</td>
       </tr>
       <tr>
         <td>vec4 <span style="font-weight: bold">texture1DProj</span>(sampler1D s, vec2 coord [,float bias]) </td>
@@ -280,7 +280,6 @@ vec2 d = TextVec.zx;      // (3.0, 1.0)
     <p><a href="downloads/GLSL_Texture.zip" style="font-weight: bold">Download:
       GLSL_Texture.zip</a> (Visual Studio 8 Project)<br>
         <span style="font-style: italic">(If you create a project/makefile for a different platform/compiler, please send it to: christen(at)clockworkcoders.com and I will put it here.) </span></p>
-    <p>&nbsp;</p>
     <p>&nbsp;</p>
     <!-- InstanceEndEditable -->
     <table width="100%" border="0">

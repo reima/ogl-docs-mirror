@@ -135,7 +135,7 @@ void main(void)
           </pre></td>
       </tr>
       <tr>
-        <td bgcolor="#CCCCFF">Vertex Shader Source Code </td>
+        <td bgcolor="#CCCCFF"><span style="font-style: italic">Vertex Shader Source Code </span></td>
       </tr>
     </table>
     <p>The current vertex position is transformed to eye space. This is done by multiplying the modelview matrix with the vertex position. The normal is passed to the fragment shader. <br>
@@ -148,13 +148,14 @@ void main(void)
 {
    vec3 L = normalize(gl_LightSource[0].position.xyz - v);   
    vec4 Idiff = gl_FrontLightProduct[0].diffuse * max(dot(N,L), 0.0);  
+   Idiff = clamp(Idiff, 0.0, 1.0); 
 
    gl_FragColor = Idiff;
 }
         </pre></td>
       </tr>
       <tr>
-        <td bgcolor="#CCCCFF">Fragment Shader Source Code </td>
+        <td bgcolor="#CCCCFF"><span style="font-style: italic">Fragment Shader Source Code </span></td>
       </tr>
     </table>
     <p>Lambert's Law is calculated for every fragment. Please note that the normal is an interpolated value and is may not be normalized, this is disregarded because the error is small. </p>
@@ -166,16 +167,16 @@ void main(void)
     <p align="center" style="font-weight: bold"><img src="lighting-ambient.png" width="324" height="255"></p>
     <p align="center">Image: Ambient Term </p>
     <p>Ambient reflection is a gross approximation            of multiple reflections from indirect light sources (e.g., the surfaces            of walls and tables in a room that reflect off the lights from light            sources). Ambient reflection produces a constant illumination on all            surface, regardless of their orientation. If you look at the faces            of a cube to which only ambient reflection is applied, all the faces            are illuminated by the same amount of light. Ambient reflection itself        produces very little realism in images.</p>
-    <p>Some Famous Shading Models you can implement: </p>
+    <p>Some famous shading models are: </p>
     <h3>Phong Shading Model </h3>
     <p>Bui Tuong Phong published his illumination model in 1973: "<a href="http://portal.acm.org/citation.cfm?id=906584&dl=ACM&coll=&CFID=15151515&CFTOKEN=6184618">Illumination for Computer-Generated Images</a>".</p>
     <h3>Blinn-Phong Shading Model </h3>
-    <p>This model was introduces by Blinn, James F. Models of Light Reflection for Computer Synthesized Pictures. Computer Graphics (SIGGRAPH 77 Proceedings) 11(2) July 1977, p. 192-198.</p>
+    <p>This model was introduces by Blinn, James F. <a href="http://portal.acm.org/citation.cfm?id=563893">Models of Light Reflection for Computer Synthesized Pictures</a>. Computer Graphics (SIGGRAPH 77 Proceedings) 11(2) July 1977, p. 192-198.</p>
     <h3>Cook-Torrance Shading Model </h3>
     <p>Robert L. Cook, Kenneth E. Torrance,  <a href="http://portal.acm.org/citation.cfm?id=357293">A reflectance model for computer graphics</a>, 1982. </p>
     <h3>Schlick Shading Model </h3>
     <p>This lighting model was created by Christophe Schlick, <a href="http://dept-info.labri.fr/~schlick/DOC/ewr3.html" title="http://dept-info.labri.fr/~schlick/DOC/ewr3.html" rel="nofollow">A Customizable Reflectance Model for Everyday Rendering</a>, Fourth Eurographics Workshop on Rendering, 1993.</p>
-    <h2>Implementing a Phong Shader (for one Point-Light) </h2>
+    <h2>Implementing Phong Shader (for one Point-Light) </h2>
     <p>&nbsp;</p>
     <table width="44%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
@@ -189,7 +190,7 @@ void main(void)
           </pre>          </td>
       </tr>
       <tr>
-        <td bgcolor="#CCCCFF">Vertex Shader Source Code </td>
+        <td bgcolor="#CCCCFF"><span style="font-style: italic">Vertex Shader Source Code </span></td>
       </tr>
     </table>
     <br>
@@ -204,22 +205,66 @@ void main(void)
    vec4 Iamb = gl_FrontLightProduct[0].ambient;    
 
    //calculate Diffuse Term:  
-   vec4 Idiff = gl_FrontLightProduct[0].diffuse * max(dot(N,L), 0.0);    
+   vec4 Idiff = gl_FrontLightProduct[0].diffuse * max(dot(N,L), 0.0);
+   Idiff = clamp(Idiff, 0.0, 1.0);     
    
    // calculate Specular Term:
    vec4 Ispec = gl_FrontLightProduct[0].specular 
-                * pow(max(dot(R,E),0.0),0.3*gl_FrontMaterial.shininess);</pre>
+                * pow(max(dot(R,E),0.0),0.3*gl_FrontMaterial.shininess);
+   Ispec = clamp(Ispec, 0.0, 1.0); </pre>
           <pre>   // write Total Color:  
    gl_FragColor = gl_FrontLightModelProduct.sceneColor + Iamb + Idiff + Ispec;     
 }
           </pre>          </td>
       </tr>
       <tr>
-        <td bgcolor="#CCCCFF">Fragment Shader Source Code </td>
+        <td bgcolor="#CCCCFF"><span style="font-style: italic">Fragment Shader Source Code</span> </td>
       </tr>
     </table>
+    <h2>Using More Lights</h2>
+    <p align="center"><img src="lighting-3lights.png" width="324" height="255"> </p>
+    <p align="left">To support more than one light you can simply add a loop to the fragment shader. For reasons of performance it is not a good idea to use a uniform variable for the loop, therefore the best approach is to compile different shaders for different numbers of lights. (Only the fragment shader changes, the vertex shader is same as above.) </p>
+    <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
+      <tr>
+        <td><pre>varying vec3 vN;
+varying vec3 v; </pre>
+          <pre>#define MAX_LIGHTS 3 </pre>
+          <pre>void main (void) 
+{ 
+   vec3 N = normalize(vN);
+   vec4 finalColor = vec4(0.0, 0.0, 0.0, 0.0);
+   
+   for (int i=0;i&lt;MAX_LIGHTS;i++)
+   {
+      vec3 L = normalize(gl_LightSource[i].position.xyz - v); 
+      vec3 E = normalize(-v); // we are in Eye Coordinates, so EyePos is (0,0,0) 
+      vec3 R = normalize(-reflect(L,N)); 
+   
+      //calculate Ambient Term: 
+      vec4 Iamb = gl_FrontLightProduct[i].ambient; </pre>
+          <pre>      //calculate Diffuse Term: 
+      vec4 Idiff = gl_FrontLightProduct[i].diffuse * max(dot(N,L), 0.0);
+      Idiff = clamp(Idiff, 0.0, 1.0); 
+   
+      // calculate Specular Term:
+      vec4 Ispec = gl_FrontLightProduct[i].specular 
+             * pow(max(dot(R,E),0.0),0.3*gl_FrontMaterial.shininess);
+      Ispec = clamp(Ispec, 0.0, 1.0); 
+   
+      finalColor += Iamb + Idiff + Ispec;
+   }
+   
+   // write Total Color: 
+   gl_FragColor = gl_FrontLightModelProduct.sceneColor + finalColor; 
+}</pre>          </td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCCCFF"><span style="font-style: italic">Fragment Shader Source Code </span></td>
+      </tr>
+    </table>
+    <p align="left">&nbsp; </p>
     <h2>Example Project </h2>
-    <p>In this example project the above example shaders are used. You can use this as base to implement it for more lights and/or different shading models. </p>
+    <p>In this example project the  phong shader with 1 light is included. You can use this as base to implement it to support more lights and/or different shading models.</p>
     <p><a href="downloads/GLSL_Lighting.zip" style="font-weight: bold">Download:
       GLSL_Lighting.zip</a> (Visual Studio 8 Project)<br>
         <span style="font-style: italic">(If you create a project/makefile for a different platform/compiler, please send it to: christen(at)clockworkcoders.com and I will put it here.) </span></p>

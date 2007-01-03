@@ -116,7 +116,7 @@ glEnd();    </pre></td>
     <br>
     <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
-        <td><pre>void main (void)  <br>{     <br>   gl_FragColor = gl_FragColor = vec4(0.0,0.0,1.0,1.0);  <br>}</pre></td>
+        <td><pre>void main (void)  <br>{     <br>   gl_FragColor = vec4(0.0,0.0,1.0,1.0);  <br>}</pre></td>
       </tr>
       <tr>
         <td bgcolor="#CCCCFF"><span style="font-style: italic">Fragment Shader Source Code </span></td>

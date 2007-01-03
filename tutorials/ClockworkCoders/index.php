@@ -20,7 +20,7 @@
       <h1>Clockworkcoders Tutorials Index</h1>
     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="Tutorial Text" -->
       <h2><br>
-        A. Introduction to the OpenGL Shading Language </h2>
+        Introduction to the OpenGL Shading Language </h2>
       <p><a href="extensions.php">Using OpenGL Extensions</a> (<a href="extensions.php">part 1</a>,<a href="extensions_part2.php"> part 2</a>) </p>
     <p><a href="glsl_overview.php">OpenGL Shading Language (GLSL) overview</a><br>  
         <br>
@@ -31,16 +31,6 @@
     <p><a href="texturing.php">Texturing</a></p>
     <p><a href="lighting.php">Per Fragment Lighting</a></p>
     <p><a href="discard.php">Discarding Fragments: &quot;Color Key&quot;</a></p>
-    <h2>B. Advanced Effects </h2>
-    <p><a href="toon_shading.php">Toon Shading</a></p>
-    <p><a href="noise.php">Using Noise</a><br>
-      <br>
-        <a href="bumpmap.php">Bump Mapping</a> </p>
-    <h2>C. General Purpose GPU Programming </h2>
-    <p><a href="float.php">Using Floating Point Buffers</a><br> 
-      <br>
-      <a href="image_processing.php">Image Processing </a></p>
-    <p><a href="raytracing.php">Ray Tracing on GPU </a></p>
     <p>&nbsp;</p>
     <!-- InstanceEndEditable -->
     <table width="100%" border="0">

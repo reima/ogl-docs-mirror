@@ -19,6 +19,23 @@
     <td width="1169" align="left" valign="top" bgcolor="#FFFFCC"><!-- InstanceBeginEditable name="Tutorial Name" -->
       <h1>Discarding Fragments </h1>
     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="Tutorial Text" -->
+    <p>It is possible to tell the fragment shader it shouldn't write any pixel. This can be done using the &quot;discard&quot; statement.</p>
+    <p>This can be used - for example - to implement a color key. </p>
+    <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
+      <tr>
+        <td><pre>varying vec2 vTexCoord;
+
+
+void main (void)  <br>{     
+   if (pixel in texture == key_value)
+     discard;
+<br>   gl_FragColor = vec4(0.0,0.0,1.0,1.0);  <br>}</pre></td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCCCFF"><span style="font-style: italic">Fragment Shader Source Code </span></td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
     <p>&nbsp;</p>
     <!-- InstanceEndEditable -->
     <table width="100%" border="0">

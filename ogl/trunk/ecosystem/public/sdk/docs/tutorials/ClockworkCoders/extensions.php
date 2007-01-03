@@ -58,7 +58,7 @@ all available extensions. </p>
 <br />
 All extensions have the form: GL_VENDOR_extension_name, where &quot;VENDOR&quot; may be
 - but not limited to - one of the following:
-<table border="1" align="center">
+<table border="1" align="center" bgcolor="ddffee">
   <caption>
   </caption>
   <tbody>

@@ -4,12 +4,12 @@
 <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_head.txt"); ?>
 </head>
 <body>
-<p>
-  <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?></p>
+<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
+
 <h2>Clockworkcoders Tutorials </h2>
 <table width="97%" border="0" align="center" cellpadding="6" cellspacing="0" bordercolor="#000066" bgcolor="#999999">
   <tr>
-    <td width="4" height="245" bgcolor="#9999FF"><div align="left">
+    <td height="245" bgcolor="#9999FF"><div align="left">
       <p>&nbsp;</p>
       <br/>
       <br/>
@@ -280,12 +280,11 @@ varying vec3 v; </pre>
             <h3><a href="discard.php">Next: Discarding Fragments </a></h3>
           <!-- InstanceEndEditable --></td>
         </tr>
-      </table>    </td>
+      </table>
+    </td>
   </tr>
 </table>
 <p align="center"><img src="author.gif" width="377" height="21"></p>
-<p><br>
-  <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
-</p>
+<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 </body>
 <!-- InstanceEnd --></html>

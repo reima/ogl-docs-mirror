@@ -86,6 +86,8 @@ anyway, and we need to force HTML semantics in this case.</h:p>
 <xsl:variable name="mpdialog">
 var cookieName = "MathPlayerInstall=";
 function MPInstall(){
+<!-- IE7 has native support for MathML, so exit early if IE7 detected -->
+ if (typeof document.body.style.maxHeight != "undefined") return null;
  var showDialog=true;
  var c = document.cookie;
  var i = c.indexOf(cookieName);

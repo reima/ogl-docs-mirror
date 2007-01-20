@@ -6,15 +6,12 @@ print
    where dir contains a directory full of OpenGL .xml man pages
 
    probably want to redirect output into a file like
-   makeindex man/xhtml > man/xhtml/index.xml
+   makeindex man/xhtml > man/xhtml/index.html
 "
 }
 
 sub PrintHeader {
-print '<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl">
+print '<html>
 <head>
 <title>OpenGL Documentation</title>
 <style type="text/css">

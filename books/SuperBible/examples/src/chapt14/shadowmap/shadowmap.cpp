@@ -7,23 +7,27 @@
 #include <stdio.h>
 
 GLboolean ambientShadowAvailable = GL_FALSE;
+GLboolean npotTexturesAvailable = GL_FALSE;
 GLboolean controlCamera = GL_TRUE;      // xyz keys will control lightpos
 GLboolean noShadows = GL_FALSE;         // normal lighting
 GLboolean showShadowMap = GL_FALSE;     // show the shadowmap texture
 
 GLfloat factor = 4.0f;                  // for polygon offset
 
-GLint windowWidth = 512;                // window size
+GLint windowWidth = 1024;               // window size
 GLint windowHeight = 512;
 
-GLint shadowSize = 512;                 // set based on window size
+GLint shadowWidth = 1024;               // set based on window size
+GLint shadowHeight = 512;
 GLuint shadowTextureID;
 
 GLfloat ambientLight[] = { 0.2f, 0.2f, 0.2f, 1.0f};
 GLfloat diffuseLight[] = { 0.7f, 0.7f, 0.7f, 1.0f};
 GLfloat noLight[]      = { 0.0f, 0.0f, 0.0f, 1.0f};
 GLfloat lightPos[]     = { 100.0f, 300.0f, 100.0f, 1.0f};
+
 GLfloat cameraPos[]    = { 100.0f, 150.0f, 200.0f, 1.0f};
+GLdouble cameraZoom = 0.3;
 
 // Called to draw scene objects
 void DrawModels(void)
@@ -99,7 +103,7 @@ void RegenerateShadowMap(void)
     gluLookAt(lightPos[0], lightPos[1], lightPos[2], 
               0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f);
     glGetFloatv(GL_MODELVIEW_MATRIX, lightModelview);
-    glViewport(0, 0, shadowSize, shadowSize);
+    glViewport(0, 0, shadowWidth, shadowHeight);
 
     // Clear the depth buffer only
     glClear(GL_DEPTH_BUFFER_BIT);
@@ -119,7 +123,7 @@ void RegenerateShadowMap(void)
 
     // Copy depth values into depth texture
     glCopyTexImage2D(GL_TEXTURE_2D, 0, GL_DEPTH_COMPONENT, 
-                     0, 0, shadowSize, shadowSize, 0);
+                     0, 0, shadowWidth, shadowHeight, 0);
 
     // Restore normal drawing state
     glShadeModel(GL_SMOOTH);
@@ -144,11 +148,22 @@ void RenderScene(void)
     // Track camera angle
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluPerspective(45.0f, 1.0f, 1.0f, 1000.0f);
+    if (windowWidth > windowHeight)
+    {
+        GLdouble ar = (GLdouble)windowWidth / (GLdouble)windowHeight;
+        glFrustum(-ar * cameraZoom, ar * cameraZoom, -cameraZoom, cameraZoom, 1.0, 1000.0);
+    }
+    else
+    {
+        GLdouble ar = (GLdouble)windowHeight / (GLdouble)windowWidth;
+        glFrustum(-cameraZoom, cameraZoom, -ar * cameraZoom, ar * cameraZoom, 1.0, 1000.0);
+    }
+
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
     gluLookAt(cameraPos[0], cameraPos[1], cameraPos[2], 
               0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f);
+
     glViewport(0, 0, windowWidth, windowHeight);
     
     // Track light position
@@ -171,21 +186,19 @@ void RenderScene(void)
         glDisable(GL_LIGHTING);
         glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_REPLACE);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_COMPARE_MODE, GL_NONE);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
         // Show the shadowMap at its actual size relative to window
         glBegin(GL_QUADS);
             glTexCoord2f(0.0f, 0.0f);
             glVertex2f(-1.0f, -1.0f);
             glTexCoord2f(1.0f, 0.0f);
-            glVertex2f(((GLfloat)shadowSize/(GLfloat)windowWidth)*2.0f-1.0f, 
+            glVertex2f(((GLfloat)shadowWidth/(GLfloat)windowWidth)*2.0f-1.0f, 
                        -1.0f);
             glTexCoord2f(1.0f, 1.0f);
-            glVertex2f(((GLfloat)shadowSize/(GLfloat)windowWidth)*2.0f-1.0f, 
-                       ((GLfloat)shadowSize/(GLfloat)windowHeight)*2.0f-1.0f);
+            glVertex2f(((GLfloat)shadowWidth/(GLfloat)windowWidth)*2.0f-1.0f, 
+                       ((GLfloat)shadowHeight/(GLfloat)windowHeight)*2.0f-1.0f);
             glTexCoord2f(0.0f, 1.0f);
             glVertex2f(-1.0f, 
-                       ((GLfloat)shadowSize/(GLfloat)windowHeight)*2.0f-1.0f);
+                       ((GLfloat)shadowHeight/(GLfloat)windowHeight)*2.0f-1.0f);
         glEnd();
         glDisable(GL_TEXTURE_2D);
         glEnable(GL_LIGHTING);
@@ -237,8 +250,6 @@ void RenderScene(void)
         glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_COMPARE_MODE, 
                         GL_COMPARE_R_TO_TEXTURE);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 
         // Set up the eye plane for projecting the shadow map on the scene
         glEnable(GL_TEXTURE_GEN_S);
@@ -283,7 +294,7 @@ void SetupRC()
         exit(0);
     }
 
-    // Check for optional extension
+    // Check for optional extensions
     if (GLEE_ARB_shadow_ambient)
     {
         ambientShadowAvailable = GL_TRUE;
@@ -292,6 +303,17 @@ void SetupRC()
     {
         fprintf(stderr, "GL_ARB_shadow_ambient extension not available!\n");
         fprintf(stderr, "Extra ambient rendering pass will be required.\n\n");
+        Sleep(2000);
+    }
+
+    if (GLEE_VERSION_2_0 || GLEE_ARB_texture_non_power_of_two)
+    {
+        npotTexturesAvailable = GL_TRUE;
+    }
+    else
+    {
+        fprintf(stderr, "Neither OpenGL 2.0 nor GL_ARB_texture_non_power_of_two extension\n");
+        fprintf(stderr, "is available!  Shadow map will be lower resolution (lower quality).\n\n");
         Sleep(2000);
     }
 
@@ -323,6 +345,8 @@ void SetupRC()
     glBindTexture(GL_TEXTURE_2D, shadowTextureID);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_DEPTH_TEXTURE_MODE, GL_INTENSITY);
     if (ambientShadowAvailable)
         glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_COMPARE_FAIL_VALUE_ARB, 
@@ -497,20 +521,27 @@ void ChangeSize(int w, int h)
 {
     GLint i;
     
-    windowWidth = w;
-    windowHeight = h;
+    windowWidth = shadowWidth = w;
+    windowHeight = shadowHeight = h;
     
-    // Find the largest power of two that will fit in window
-    if (w > h)
-        shadowSize = h;
-    else
-        shadowSize = w;
+    if (!npotTexturesAvailable)
+    {
+        // Find the largest power of two that will fit in window.
 
-    // Try each size until we get one that's too big
-    i = 0;
-    while ((1 << i) <= shadowSize)
-        i++;
-    shadowSize = (1 << (i-1));
+        // Try each width until we get one that's too big
+        i = 0;
+        while ((1 << i) <= shadowWidth)
+            i++;
+        shadowWidth = (1 << (i-1));
+
+        // Now for height
+        i = 0;
+        while ((1 << i) <= shadowHeight)
+            i++;
+        shadowHeight = (1 << (i-1));
+    }
+
+    RegenerateShadowMap();
 }
 
 int main(int argc, char* argv[])

@@ -115,6 +115,13 @@
 			<File
 				RelativePath="..\..\..\..\src\chapt04\Transform\transform.cpp">
 			</File>
+			<Filter
+				Name="shared"
+				Filter="">
+				<File
+					RelativePath="..\..\..\..\src\shared\math3d.cpp">
+				</File>
+			</Filter>
 		</Filter>
 		<Filter
 			Name="Header Files"

@@ -12,7 +12,7 @@
 // Called to draw scene
 void RenderScene(void)
     {
-    M3DMatrix33f rotationMatrix, translationMatrix, transformationMatrix;
+    M3DMatrix44f rotationMatrix, translationMatrix, transformationMatrix;
 
     static GLfloat yRot = 0.0f;         // Rotation angle for animation
     yRot += 0.5f;

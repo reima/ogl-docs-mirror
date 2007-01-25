@@ -165,7 +165,7 @@ void ChangeSize(int w, int h)
 int main(int argc, char* argv[])
     {
     glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH | GLUT_ACCUM);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH | GLUT_ACCUM);
     glutInitWindowSize(800,600);
     glutCreateWindow("Motion Blur with the Accumulation Buffer");
     glutReshapeFunc(ChangeSize);

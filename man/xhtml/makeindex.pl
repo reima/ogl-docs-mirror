@@ -121,25 +121,48 @@ my @glu;
 my @gl;
 
 my @realEntrypoints;
+my @pageNames;
 
 #pre-create list of all true entrypoint names
 
 foreach (@files)
 {
-	$parentName = $ARGV[1] . '/' . $_;
-	if (open(PARENT, $parentName))
+	if (/xml/)
 	{
-		@funcs = <PARENT>;
-		@funcs = grep(/<funcdef>/, @funcs);
-		foreach (@funcs)
+		$parentName = $ARGV[1] . '/' . $_;
+		if (open(PARENT, $parentName))
 		{
-			$func = $_;
-			$func =~ s/.*<function>//;
-			$func =~ s/<\/function>.*\n//;
+			@funcs = <PARENT>;
+			@funcs = grep(/<funcdef>/, @funcs);
+			foreach (@funcs)
+			{
+				$func = $_;
+				$func =~ s/.*<function>//;
+				$func =~ s/<\/function>.*\n//;
 
-			push (@realEntrypoints, $func);
+				push (@realEntrypoints, $func);
+			}
+			close(PARENT);
 		}
-		close(PARENT);
+	}
+}
+
+#pre-create list of page names
+
+foreach (@files)
+{
+	if (/xml/)
+	{
+		$parentName = $ARGV[1] . '/' . $_;
+		if (open(PARENT, $parentName))
+		{
+        	        my $entrypoint = $_;
+                	$entrypoint =~ s/\.xml//;
+
+			push (@pageNames, $entrypoint);
+
+			close(PARENT);
+		}
 	}
 }
 
@@ -157,19 +180,34 @@ foreach (@files)
                 my $entrypoint = $_;
                 $entrypoint =~ s/\.xml//;
 
-		my $parentName = $ARGV[1] . '/' . $_;
-                if (open(PARENT, $parentName))
-                {
-			$needIndexEntry = 1;
-			close(PARENT);
+		foreach (@pageNames)
+		{
+			if ($_ eq $entrypoint)
+			{
+				# it has its own man page
+				$needIndexEntry = 1;
+			}
 		}
-		else
+
+		if ($needIndexEntry == 0)
 		{
 			foreach (@realEntrypoints)
 			{
 				if ($_ eq $entrypoint)
 				{
+					# it's a real entrypoint, but make sure not a variation
 					$needIndexEntry = 1;
+
+					foreach (@pageNames)
+					{
+						my $alteredEntrypoint = $entrypoint;
+						$alteredEntrypoint =~ s/$_//;
+
+						if (!($alteredEntrypoint eq $entrypoint))
+						{
+							$needIndexEntry = 0;
+						}
+					}
 				}
 			}
 		}

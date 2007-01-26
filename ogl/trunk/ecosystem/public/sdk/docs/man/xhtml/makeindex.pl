@@ -2,11 +2,12 @@
 
 sub Usage {
 print 
-"Usage: makeindex dir
-   where dir contains a directory full of OpenGL .xml man pages
+"Usage: makeindex xhtmldir xmldir
+   where xhtmldir contains a directory full of OpenGL .xml XHTML man pages -AND-
+   where xmldir contains a directory full of OpenGL .xml source XML man pages
 
    probably want to redirect output into a file like
-   makeindex man/xhtml > man/xhtml/index.html
+   ./makeindex.pl . .. > ./index.html
 "
 }
 
@@ -99,12 +100,13 @@ sub EndTable {
 #  main
 ##############
 
-if (@ARGV != 1)
+if (@ARGV != 2)
 {
 	Usage();
 	die;
 }
 
+# grab list of generated XHTML files
 opendir(DIR,$ARGV[0]) or die "couldn't open directory";
 
 @files = readdir(DIR);
@@ -118,10 +120,27 @@ my @glut;
 my @glu;
 my @gl;
 
-# output the index
+my @realEntrypoints;
+
+#pre-create list of all true entrypoint names
+
 foreach (@files)
 {
+	$parentName = $ARGV[1] . '/' . $_;
+	if (open(PARENT, $parentName))
+	{
+		@funcs = <PARENT>;
+		@funcs = grep(/<funcdef>/, @funcs);
+		foreach (@funcs)
+		{
+			$func = $_;
+			$func =~ s/.*<function>//;
+			$func =~ s/<\/function>.*\n//;
 
+			push (@realEntrypoints, $func);
+		}
+		close(PARENT);
+	}
 }
 
 #sort the files into gl, glut, glu, and glX
@@ -130,21 +149,49 @@ foreach (@files)
 {
 	if (/xml/)
 	{
-		if (/^glX/)
-		{
-			 push (@glX, $_);
+                # filter out entrypoint variations that don't have their own man pages
+		my $needIndexEntry = 0;
+
+                # continue only if parent page exists (e.g. glColor) OR 
+                # different parent page exists with matching entrypoint (e.g. glEnd)
+                my $entrypoint = $_;
+                $entrypoint =~ s/\.xml//;
+
+		my $parentName = $ARGV[1] . '/' . $_;
+                if (open(PARENT, $parentName))
+                {
+			$needIndexEntry = 1;
+			close(PARENT);
 		}
-		elsif (/^glut/)
+		else
 		{
-			 push (@glut, $_);
+			foreach (@realEntrypoints)
+			{
+				if ($_ eq $entrypoint)
+				{
+					$needIndexEntry = 1;
+				}
+			}
 		}
-		elsif (/^glu/)
+
+		if ($needIndexEntry)
 		{
-			 push (@glu, $_);
-		}
-		elsif (/^gl/)
-		{
-			 push (@gl, $_);
+			if (/^glX/)
+			{
+				push (@glX, $_);
+			}
+			elsif (/^glut/)
+			{
+				push (@glut, $_);
+			}
+			elsif (/^glu/)
+			{
+				push (@glu, $_);
+			}
+			elsif (/^gl/)
+			{
+				push (@gl, $_);
+			}
 		}
 	}
 }

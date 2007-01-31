@@ -7,8 +7,8 @@
 <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
 <H1>Tutorials</H1>
 
-The tutorials section includes a variety of contributions aimed at making OpenGL easy to learn by 
-explanation and example.
+<P>The tutorials section includes a variety of contributions aimed at making OpenGL easy to learn by 
+explanation and example.</P>
 
 <P><A HREF="./ClockworkCoders/">ClockworkCoders</A> offer tutorials focusing on the OpenGL Shading 
 Language. Learn how to set up the extensions, compile and link shaders, and make use of them to achieve

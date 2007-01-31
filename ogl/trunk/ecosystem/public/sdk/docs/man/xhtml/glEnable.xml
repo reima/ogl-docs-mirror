@@ -349,18 +349,19 @@
                         See <a href="glStencilFunc.xml"><span class="citerefentry"><span class="refentrytitle">glStencilFunc</span></span></a> and <a href="glStencilOp.xml"><span class="citerefentry"><span class="refentrytitle">glStencilOp</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_1D</code></span></dt><dd><p>
                         If enabled, one-dimensional texturing is performed
-                        (unless two- or three-dimensional texturing is also enabled).
+                        (unless two- or three-dimensional or cube-mapped texturing is also enabled).
                         See <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_2D</code></span></dt><dd><p>
                         If enabled, two-dimensional texturing is performed
-                        (unless three-dimensional texturing is also enabled).
+                        (unless three-dimensional or cube-mapped texturing is also enabled).
                         See <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_3D</code></span></dt><dd><p>
-                        If enabled, three-dimensional texturing is performed.
+                        If enabled, three-dimensional texturing is performed
+                        (unless cube-mapped texturing is also enabled).
                         See <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_CUBE_MAP</code></span></dt><dd><p>
-                        If enabled, texture coordinates are generated using the cube-mapped texture
-                        function.  See <a href="glTexGen.xml"><span class="citerefentry"><span class="refentrytitle">glTexGen</span></span></a>.
+                        If enabled, cube-mapped texturing is performed.
+                        See <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_GEN_Q</code></span></dt><dd><p>
                         If enabled,
                         the <span class="emphasis"><em>q</em></span> texture coordinate is computed using
@@ -393,7 +394,7 @@
                         If enabled,
                         and a vertex shader is active, it specifies that the GL will choose between front and back colors based on the
                         polygon's face direction of which the vertex being shaded is a part.  It has no effect on points or lines.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711117"></a><h2>Notes</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785553"></a><h2>Notes</h2><p>
             <code class="constant">GL_POLYGON_OFFSET_FILL</code>, <code class="constant">GL_POLYGON_OFFSET_LINE</code>,
             <code class="constant">GL_POLYGON_OFFSET_POINT</code>,
             <code class="constant">GL_COLOR_LOGIC_OP</code>, and <code class="constant">GL_INDEX_LOGIC_OP</code> are available
@@ -426,14 +427,14 @@
             <code class="constant">GL_TEXTURE_GEN_T</code>, <code class="constant">GL_TEXTURE_GEN_R</code>, and <code class="constant">GL_TEXTURE_GEN_Q</code>
             enable or disable the respective state for the active texture unit
             specified with <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785872"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785736"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>cap</code></em> is not one of the values
             listed previously.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glEnable</code> or <a href="glDisable.xml"><span class="citerefentry"><span class="refentrytitle">glDisable</span></span></a>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785921"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785786"></a><h2>See Also</h2><p>
             <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>,
             <a href="glAlphaFunc.xml"><span class="citerefentry"><span class="refentrytitle">glAlphaFunc</span></span></a>,
             <a href="glBlendFunc.xml"><span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span></a>,
@@ -466,7 +467,7 @@
             <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>,
             <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>,
             <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786098"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785962"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

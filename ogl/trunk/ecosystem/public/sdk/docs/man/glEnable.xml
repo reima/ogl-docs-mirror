@@ -749,7 +749,7 @@
                 <listitem>
                     <para>
                         If enabled, one-dimensional texturing is performed
-                        (unless two- or three-dimensional texturing is also enabled).
+                        (unless two- or three-dimensional or cube-mapped texturing is also enabled).
                         See <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -759,7 +759,7 @@
                 <listitem>
                     <para>
                         If enabled, two-dimensional texturing is performed
-                        (unless three-dimensional texturing is also enabled).
+                        (unless three-dimensional or cube-mapped texturing is also enabled).
                         See <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -768,7 +768,8 @@
                 <term><constant>GL_TEXTURE_3D</constant></term>
                 <listitem>
                     <para>
-                        If enabled, three-dimensional texturing is performed.
+                        If enabled, three-dimensional texturing is performed
+                        (unless cube-mapped texturing is also enabled).
                         See <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -777,8 +778,8 @@
                 <term><constant>GL_TEXTURE_CUBE_MAP</constant></term>
                 <listitem>
                     <para>
-                        If enabled, texture coordinates are generated using the cube-mapped texture
-                        function.  See <citerefentry><refentrytitle>glTexGen</refentrytitle></citerefentry>.
+                        If enabled, cube-mapped texturing is performed.
+                        See <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>

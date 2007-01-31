@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Start Page</title>
+<style type="text/css">
+
+html, body, table
+{   color: #000;
+	font-family: Arial, Lucida, sans-serif;
+	font-size: 10pt;
+
+}
+
+#container {
+	margin: 10px;
+	font-size: 14pt;
+	text-decoration:none;
+}
+
+table.sample {
+	border-width: 1px;
+	border-spacing: 5px;
+	border-style: dotted;
+	border-color: black;
+	border-collapse: separate;
+	background-color: #F0F0F0;
+}
+table.sample th {
+	border-width: 1px;
+	padding: 5px;
+	border-style: none;
+}
+table.sample td {
+	border-width: 1px;
+	padding: 1px;
+	border-style: none;
+}
+</style>
+
+</head>
+<body>
+<h1>OpenGL 2.1 Reference Pages</h1>
+
+<p>Use the index at the left to choose any GL, GLU, or GLX reference page for viewing. The reference pages 
+(also known as "man pages") include all of the important usage information for each command.  This 
+information includes a description of all parameters, return values, error conditions, and related 
+commands.</p>
+
+<h2>Browser Compatibility</h2>
+
+<p>Many of the reference pages depend on relatively complex math equations. We've chosen the industry 
+standard, MathML, for rendering our equations. This standard is gaining widespread support, but there
+are still some growing pains. Here's what you can expect from different browsers:</p>
+<ul>
+
+<li><b>Firefox 1.5+</b>: native support is built-in, but Firefox will complain about missing 
+<a target="_new" href="http://www.mozilla.org/projects/mathml/fonts/">fonts</a>.
+Installing the recommended fonts should appease Firefox. However, it has been reported that on Mac OS X,
+additional steps are required to prevent ongoing font complaints:
+<ol>
+<li>Type <code>about:config</code> in the address bar</li>
+<li>Control-click anywhere in the list of preferences that come up and select New > String</li>
+<li>In the "New string value" dialog, enter <code>font.mathfont-family</code></li>
+<li>In the "Enter string value" enter <code>Math1, Math2, Math4</code></li>
+</ol>
+</li>
+<br /><br />
+
+<li><b>Internet Explorer 6</b>: no native support, but you'll be automatically prompted to install the
+<a href="http://www.dessci.com/en/products/mathplayer/">Design Science MathPlayer</a> plugin which 
+renders our equations beautifully.</li>
+<br /><br />
+
+<li><b>Internet Explorer 7</b>: works out of the box with native MathML support!</li>
+<br /><br />
+
+<li><b>Opera 9+</b>: no native support, but <a href="http://xml-maiden.com/userjs/mathml/">this page</a> describes a simple add-on which provides 
+decent results.</li>
+<br /><br />
+
+<li><b>Safari</b>: no native support and no known add-ons. Sorry!</li>
+
+</ul>
+
+<h2>Feedback</h2>
+
+<p>If you find any inaccuracies or typos in the reference pages, don't hesitate to inform us via the 
+<a href="http://www.opengl.org/documentation/specs/feedback/">feedback form</a>.</p>
+
+</body>
+</html>

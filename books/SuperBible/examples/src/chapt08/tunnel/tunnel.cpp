@@ -84,6 +84,10 @@ void SetupRC()
         {
         // Bind to next texture object
         glBindTexture(GL_TEXTURE_2D, textures[iLoop]);
+        
+        // Load texture, set filter and wrap modes
+        pBytes = gltLoadTGA(szTextureFiles[iLoop],&iWidth, &iHeight,
+                              &iComponents, &eFormat);
 
         // Load texture, set filter and wrap modes
         gluBuild2DMipmaps(GL_TEXTURE_2D, iComponents, iWidth, iHeight, eFormat, GL_UNSIGNED_BYTE, pBytes);

@@ -11,14 +11,17 @@
 GLU, and GLX entry points. They cover in detail how to use the commands, all of the parameters you can 
 pass in, and all of the error conditions to avoid.</P>
 
-<P>The <A HREF="http://www.opengl.org/documentation/specs/">specifications</A> are useful as the most
+<P>The <A TARGET="_new" HREF="/sdk/libs/OpenSceneGraph/glsl_quickref.pdf">GLSL Cheat Sheet</A> is a 
+one-page PDF providing a quick reference of GLSL's built-in variables.</P>
+
+<P>The <A TARGET="_new" HREF="http://www.opengl.org/documentation/specs/">specifications</A> are useful as the most
 authoratative documents about how OpenGL is intended to work. They are also the most difficult to
 read, so you may find the reference pages combined with tutorials to be a better choice. Note that the 
 specifications are currently hosted outside of the SDK itself.</P>
 
-<P>The <A HREF="http://www.opengl.org/registry/">Extension Registry</A>, also outside of the SDK, 
-contains extension specifications describing optional features of OpenGL. These documents are written
-as supplements to the core OpenGL specifications above.</P>
+<P>The <A TARGET="_new" HREF="http://www.opengl.org/registry/">extension registry</A>, also outside of the SDK, 
+contains extension headers and specifications describing optional features of OpenGL. These documents 
+are written as supplements to the core OpenGL specifications above.</P>
 
 <P><FONT SIZE="-2">Copyright &copy; 2007 Khronos Group. All rights reserved.</FONT></P>
 

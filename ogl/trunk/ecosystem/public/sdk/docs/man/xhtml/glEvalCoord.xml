@@ -16,13 +16,11 @@
                     Specifies a pointer to an array containing
                     either one or two domain coordinates.
                     The first coordinate is 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">u</mml:mi></mml:math>
-                    .
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">u</mml:mi></mml:math>.
                     The second coordinate is 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">v</mml:mi></mml:math>
-                    ,
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">v</mml:mi></mml:math>,
                     which is present only in <code class="function">glEvalCoord2</code> versions.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775313"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775312"></a><h2>Description</h2><p>
             <code class="function">glEvalCoord1</code> evaluates enabled one-dimensional maps at argument
             <em class="parameter"><code>u</code></em>.
             <code class="function">glEvalCoord2</code> does the same for two-dimensional maps using
@@ -169,7 +167,7 @@
             If neither automatic normal generation nor a normal map is enabled,
             no normal is generated for
             <code class="function">glEvalCoord2</code> commands.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713222"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713221"></a><h2>Associated Gets</h2><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_MAP1_VERTEX_3</code>
         </p><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_MAP1_VERTEX_4</code>
@@ -209,7 +207,7 @@
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_AUTO_NORMAL</code>
         </p><p>
             <a href="glGetMap.xml"><span class="citerefentry"><span class="refentrytitle">glGetMap</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711330"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711328"></a><h2>See Also</h2><p>
             <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>,
             <a href="glColor.xml"><span class="citerefentry"><span class="refentrytitle">glColor</span></span></a>,
             <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,
@@ -222,7 +220,7 @@
             <a href="glNormal.xml"><span class="citerefentry"><span class="refentrytitle">glNormal</span></span></a>,
             <a href="glTexCoord.xml"><span class="citerefentry"><span class="refentrytitle">glTexCoord</span></span></a>,
             <a href="glVertex.xml"><span class="citerefentry"><span class="refentrytitle">glVertex</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711400"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711398"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

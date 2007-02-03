@@ -180,8 +180,7 @@
                         <inlineequation><mml:math>
                             <!-- eqn: -1.0:-->
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         Floating-point values are mapped directly.
                         Neither integer nor floating-point values are clamped.
                         The initial ambient reflectance for both front- and back-facing materials
@@ -201,8 +200,7 @@
                         <inlineequation><mml:math>
                             <!-- eqn: -1.0:-->
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         Floating-point values are mapped directly.
                         Neither integer nor floating-point values are clamped.
                         The initial diffuse reflectance for both front- and back-facing materials
@@ -222,8 +220,7 @@
                         <inlineequation><mml:math>
                             <!-- eqn: -1.0:-->
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         Floating-point values are mapped directly.
                         Neither integer nor floating-point values are clamped.
                         The initial specular reflectance for both front- and back-facing materials
@@ -243,8 +240,7 @@
                         <inlineequation><mml:math>
                             <!-- eqn: -1.0:-->
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         Floating-point values are mapped directly.
                         Neither integer nor floating-point values are clamped.
                         The initial emission intensity for both front- and back-facing materials

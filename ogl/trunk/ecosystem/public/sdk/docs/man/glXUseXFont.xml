@@ -77,8 +77,7 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             each containing a single <citerefentry><refentrytitle>glBitmap</refentrytitle></citerefentry> command.
             The parameters of the <citerefentry><refentrytitle>glBitmap</refentrytitle></citerefentry> command of display list 
             <inlineequation><mml:math>
@@ -97,15 +96,12 @@
                     <mml:mo>+</mml:mo>
                     <mml:mi mathvariant="italic">i</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
             Bitmap parameters 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">xorig</mml:mi></mml:math></inlineequation>
-            , 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">yorig</mml:mi></mml:math></inlineequation>
-            , 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">width</mml:mi></mml:math></inlineequation>
-            , and 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">xorig</mml:mi></mml:math></inlineequation>, 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">yorig</mml:mi></mml:math></inlineequation>, 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">width</mml:mi></mml:math></inlineequation>,
+            and 
             <inlineequation><mml:math><mml:mi mathvariant="italic">height</mml:mi></mml:math></inlineequation>
             are computed from font metrics as
             <inlineequation><mml:math>
@@ -115,16 +111,14 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: -lbearing:-->
                 <mml:mrow>
                     <mml:mo>-</mml:mo>
                     <mml:mi mathvariant="italic">lbearing</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: rbearing - lbearing:-->
                 <mml:mrow>
@@ -132,8 +126,8 @@
                     <mml:mo>-</mml:mo>
                     <mml:mi mathvariant="italic">lbearing</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , and 
+            </mml:math></inlineequation>,
+            and 
             <inlineequation><mml:math>
                 <!-- eqn: ascent+descent:-->
                 <mml:mrow>
@@ -141,8 +135,8 @@
                     <mml:mo>+</mml:mo>
                     <mml:mi mathvariant="italic">descent</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , respectively.
+            </mml:math></inlineequation>,
+            respectively.
             <inlineequation><mml:math><mml:mi mathvariant="italic">xmove</mml:mi></mml:math></inlineequation>
             is taken from the glyph's 
             <inlineequation><mml:math><mml:mi mathvariant="italic">width</mml:mi></mml:math></inlineequation>

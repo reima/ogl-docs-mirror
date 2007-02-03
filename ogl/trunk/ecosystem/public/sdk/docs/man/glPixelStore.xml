@@ -110,51 +110,44 @@
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>0</mml:mn>
                             </mml:msub>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: b sub 1:-->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>1</mml:mn>
                             </mml:msub>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: b sub 2:-->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>2</mml:mn>
                             </mml:msub>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: b sub 3:-->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>3</mml:mn>
                             </mml:msub>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         it is stored in memory as
                         <inlineequation><mml:math>
                             <!-- eqn: b sub 3:-->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>3</mml:mn>
                             </mml:msub>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: b sub 2:-->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>2</mml:mn>
                             </mml:msub>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: b sub 1:-->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>1</mml:mn>
                             </mml:msub>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: b sub 0:-->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
@@ -284,8 +277,8 @@
                                 <mml:mo>&lt;</mml:mo>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        , then it is as if 
+                        </mml:math></inlineequation>,
+                        then it is as if 
                         <inlineequation><mml:math>
                             <!-- eqn: a  =  s:-->
                             <mml:mrow>
@@ -293,8 +286,7 @@
                                 <mml:mo>=</mml:mo>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        ).
+                        </mml:math></inlineequation>).
                         In the case of 1-bit values,
                         the location of the next row is obtained by skipping
                     </para>
@@ -460,8 +452,8 @@
                                 <mml:mo>&lt;</mml:mo>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        , then it is as if 
+                        </mml:math></inlineequation>,
+                        then it is as if 
                         <inlineequation><mml:math>
                             <!-- eqn: a = s:-->
                             <mml:mrow>
@@ -469,8 +461,7 @@
                                 <mml:mo>=</mml:mo>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        ).
+                        </mml:math></inlineequation>).
                     </para>
                     <para>
                         The word <emphasis>component</emphasis> in this description refers to the nonindex values
@@ -539,8 +530,8 @@
                                 <mml:mo>&it;</mml:mo>
                                 <mml:mi mathvariant="italic">p</mml:mi>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        , where 
+                        </mml:math></inlineequation>,
+                        where 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">p</mml:mi></mml:math></inlineequation>
                         is the number of components or indices
                         per image, as computed in the <constant>GL_PACK_IMAGE_HEIGHT</constant> section.
@@ -601,51 +592,44 @@
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>0</mml:mn>
                             </mml:msub>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: b sub 1:-->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>1</mml:mn>
                             </mml:msub>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: b sub 2:-->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>2</mml:mn>
                             </mml:msub>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: b sub 3:-->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>3</mml:mn>
                             </mml:msub>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         it is taken from memory as
                         <inlineequation><mml:math>
                             <!-- eqn: b sub 3:-->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>3</mml:mn>
                             </mml:msub>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: b sub 2:-->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>2</mml:mn>
                             </mml:msub>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: b sub 1:-->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>1</mml:mn>
                             </mml:msub>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         <inlineequation><mml:math>
                             <!-- eqn: b sub 0:-->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
@@ -775,8 +759,8 @@
                                 <mml:mo>&lt;</mml:mo>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        , then it is as if 
+                        </mml:math></inlineequation>,
+                        then it is as if 
                         <inlineequation><mml:math>
                             <!-- eqn: a = s:-->
                             <mml:mrow>
@@ -784,8 +768,7 @@
                                 <mml:mo>=</mml:mo>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        ).
+                        </mml:math></inlineequation>).
                         In the case of 1-bit values,
                         the location of the next row is obtained by skipping
                     </para>
@@ -950,8 +933,8 @@
                                 <mml:mo>&lt;</mml:mo>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        , then it is as if 
+                        </mml:math></inlineequation>,
+                        then it is as if 
                         <inlineequation><mml:math>
                             <!-- eqn: a  =  s:-->
                             <mml:mrow>
@@ -959,8 +942,7 @@
                                 <mml:mo>=</mml:mo>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        ).
+                        </mml:math></inlineequation>).
                     </para>
                     <para>
                         The word <emphasis>component</emphasis> in this description refers to the nonindex values

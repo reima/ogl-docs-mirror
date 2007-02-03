@@ -10,8 +10,8 @@
                             <mml:mn>0</mml:mn>
                             <mml:mn>1</mml:mn>
                         </mml:mfenced>
-                    </mml:math>
-                    .  The initial value is 1.0.
+                    </mml:math>.
+                    The initial value is 1.0.
                 </p></dd><dt><span class="term"><em class="parameter"><code>invert</code></em></span></dt><dd><p>
                     Specify a single boolean value representing if the coverage masks should be
                     inverted.  <code class="constant">GL_TRUE</code> and <code class="constant">GL_FALSE</code> are accepted.  The initial value
@@ -41,7 +41,7 @@
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768613"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glSampleCoverage</code> is executed between the
             execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768644"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768643"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_SAMPLE_COVERAGE_VALUE</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_SAMPLE_COVERAGE_INVERT</code>
@@ -53,10 +53,10 @@
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_SAMPLE_ALPHA_TO_ONE</code>
         </p><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_SAMPLE_COVERAGE</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775269"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775268"></a><h2>See Also</h2><p>
             <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,
             <a href="glPushAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPushAttrib</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775288"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775287"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

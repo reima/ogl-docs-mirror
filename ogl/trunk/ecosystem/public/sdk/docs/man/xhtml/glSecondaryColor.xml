@@ -35,8 +35,8 @@
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mn>-1.0</mml:mn>
-            </mml:math>
-            . (Note that this mapping does not convert
+            </mml:math>.
+            (Note that this mapping does not convert
             0 precisely to 0.0).  Floating-point values are mapped directly.
         </p><p>
             Neither floating-point nor signed integer values are clamped to the range
@@ -50,7 +50,7 @@
             before the current color is updated.  However, color components are
             clamped to this range before they are interpolated or written into a color
             buffer.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712865"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712867"></a><h2>Notes</h2><p>
             <code class="function">glSecondaryColor</code> is available only if the GL version is 1.4 or greater.
         </p><p>
             The initial value for the secondary color is (0, 0, 0, 0).
@@ -58,19 +58,19 @@
             The secondary color can be updated at any time.  In particular, <code class="function">glSecondaryColor</code> can
             be called between a call to <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding call to
             <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712910"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712912"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_SECONDARY_COLOR</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_RGBA_MODE</code>
         </p><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_COLOR_SUM</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712951"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712953"></a><h2>See Also</h2><p>
             <a href="glColor.xml"><span class="citerefentry"><span class="refentrytitle">glColor</span></span></a>,
             <a href="glIndex.xml"><span class="citerefentry"><span class="refentrytitle">glIndex</span></span></a>,
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a>,
             <a href="glLightModel.xml"><span class="citerefentry"><span class="refentrytitle">glLightModel</span></span></a>,
             <code class="function">glSecondaryColorPointer</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712987"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712989"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

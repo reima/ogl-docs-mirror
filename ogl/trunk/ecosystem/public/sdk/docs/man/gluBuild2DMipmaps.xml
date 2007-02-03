@@ -250,8 +250,8 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            .  For example,
+            </mml:math></inlineequation>.
+            For example,
             if <parameter>width</parameter> is 64 and <parameter>height</parameter> is 16
             and the implementation can store a texture of this size, the following
             mipmap levels are built: 
@@ -262,8 +262,7 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>16</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: 32  times  8:-->
                 <mml:mrow>
@@ -271,8 +270,7 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>8</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: 16  times  4:-->
                 <mml:mrow>
@@ -280,8 +278,7 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>4</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: 8  times  2:-->
                 <mml:mrow>
@@ -289,8 +286,7 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>2</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: 4  times  1:-->
                 <mml:mrow>
@@ -298,8 +294,7 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: 2  times  1:-->
                 <mml:mrow>
@@ -307,8 +302,8 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , and 
+            </mml:math></inlineequation>,
+            and 
             <inlineequation><mml:math>
                 <!-- eqn: 1  times  1:-->
                 <mml:mrow>
@@ -317,7 +312,7 @@
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
             </mml:math></inlineequation>
-            . These
+            These
             correspond to levels 0 through 6, respectively.
         </para>
         <para>
@@ -355,8 +350,7 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
         </para>
     </refsect1>
     <refsect1><title>Notes</title>

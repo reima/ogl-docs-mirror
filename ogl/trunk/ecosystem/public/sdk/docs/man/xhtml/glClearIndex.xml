@@ -21,8 +21,7 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             where 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">m</mml:mi></mml:math>
             is the number of bits in a color index stored in the frame buffer.
@@ -34,9 +33,9 @@
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_INDEX_CLEAR_VALUE</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_INDEX_BITS</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768594"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768593"></a><h2>See Also</h2><p>
             <a href="glClear.xml"><span class="citerefentry"><span class="refentrytitle">glClear</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768607"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768606"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

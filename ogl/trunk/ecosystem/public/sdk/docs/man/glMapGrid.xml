@@ -91,8 +91,7 @@
                             <mml:mo>=</mml:mo>
                             <mml:mi mathvariant="italic">un</mml:mi>
                         </mml:mrow>
-                    </mml:math></inlineequation>
-                    .
+                    </mml:math></inlineequation>.
                 </para>
             </listitem>
         </varlistentry>
@@ -151,16 +150,14 @@
             (or 
             <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
             and 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">j</mml:mi></mml:math></inlineequation>
-            )
+            <inlineequation><mml:math><mml:mi mathvariant="italic">j</mml:mi></mml:math></inlineequation>)
             integer grid coordinates,
             to the 
             <inlineequation><mml:math><mml:mi mathvariant="italic">u</mml:mi></mml:math></inlineequation>
             (or 
             <inlineequation><mml:math><mml:mi mathvariant="italic">u</mml:mi></mml:math></inlineequation>
             and 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">v</mml:mi></mml:math></inlineequation>
-            )
+            <inlineequation><mml:math><mml:mi mathvariant="italic">v</mml:mi></mml:math></inlineequation>)
             floating-point evaluation map coordinates.
             See <citerefentry><refentrytitle>glMap1</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glMap2</refentrytitle></citerefentry> for details of how 
             <inlineequation><mml:math><mml:mi mathvariant="italic">u</mml:mi></mml:math></inlineequation>

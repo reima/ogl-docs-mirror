@@ -21,12 +21,11 @@
                             <mml:mn>0</mml:mn>
                             <mml:mn>1</mml:mn>
                         </mml:mfenced>
-                    </mml:math>
-                    ,
+                    </mml:math>,
                     where 0 represents the lowest possible alpha value
                     and 1 the highest possible value.
                     The initial reference value is 0.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768551"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768548"></a><h2>Description</h2><p>
             The alpha test discards fragments depending on the outcome of a comparison
             between an incoming fragment's alpha value and a constant reference value.
             <code class="function">glAlphaFunc</code> specifies the reference value and the comparison function.
@@ -90,7 +89,7 @@
             <a href="glDepthFunc.xml"><span class="citerefentry"><span class="refentrytitle">glDepthFunc</span></span></a>,
             <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,
             <a href="glStencilFunc.xml"><span class="citerefentry"><span class="refentrytitle">glStencilFunc</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775488"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775486"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

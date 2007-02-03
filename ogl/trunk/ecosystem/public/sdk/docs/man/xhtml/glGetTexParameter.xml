@@ -49,8 +49,7 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mn>-1000</mml:mn>
-                        </mml:math>
-                        .
+                        </mml:math>.
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_MAX_LOD</code></span></dt><dd><p>
                         Returns the single-valued texture maximum level-of-detail value. The
                         initial value is 1000.
@@ -61,18 +60,15 @@
                         value is 1000.
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_WRAP_S</code></span></dt><dd><p>
                         Returns the single-valued wrapping function for texture coordinate 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math>
-                        ,
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math>,
                         a symbolic constant. The initial value is <code class="constant">GL_REPEAT</code>.
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_WRAP_T</code></span></dt><dd><p>
                         Returns the single-valued wrapping function for texture coordinate 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">t</mml:mi></mml:math>
-                        ,
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">t</mml:mi></mml:math>,
                         a symbolic constant. The initial value is <code class="constant">GL_REPEAT</code>.
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_WRAP_R</code></span></dt><dd><p>
                         Returns the single-valued wrapping function for texture coordinate 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">r</mml:mi></mml:math>
-                        ,
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">r</mml:mi></mml:math>,
                         a symbolic constant. The initial value is <code class="constant">GL_REPEAT</code>.
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_BORDER_COLOR</code></span></dt><dd><p>
                         Returns four integer or floating-point numbers that comprise the RGBA color
@@ -84,8 +80,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math>
-                        .
+                        </mml:math>.
                         Integer values are returned as a linear mapping of the internal floating-point
                         representation such that 1.0 maps to the most positive representable
                         integer and 
@@ -118,7 +113,7 @@
                         Returns a single boolean value indicating if automatic mipmap level updates
                         are enabled.
                         See <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712947"></a><h2>Notes</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712942"></a><h2>Notes</h2><p>
             <code class="constant">GL_TEXTURE_PRIORITY</code> and <code class="constant">GL_TEXTURE_RESIDENT</code> are
             available only if the GL version is 1.1 or greater.
         </p><p>
@@ -133,18 +128,18 @@
         </p><p>
             If an error is generated,
             no change is made to the contents of <em class="parameter"><code>params</code></em>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713024"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713020"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> or <em class="parameter"><code>pname</code></em> is not an
             accepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetTexParameter</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713074"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713070"></a><h2>See Also</h2><p>
             <a href="glAreTexturesResident.xml"><span class="citerefentry"><span class="refentrytitle">glAreTexturesResident</span></span></a>,
             <a href="glPrioritizeTextures.xml"><span class="citerefentry"><span class="refentrytitle">glPrioritizeTextures</span></span></a>,
             <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713099"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713095"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

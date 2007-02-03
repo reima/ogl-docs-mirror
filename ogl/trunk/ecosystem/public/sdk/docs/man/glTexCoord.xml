@@ -285,8 +285,7 @@
                     <mml:mn>0</mml:mn>
                     <mml:mn>1</mml:mn>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            ;
+            </mml:math></inlineequation>;
             a call to
             <function>glTexCoord2</function> sets them to
             <inlineequation><mml:math>
@@ -297,8 +296,7 @@
                     <mml:mn>0</mml:mn>
                     <mml:mn>1</mml:mn>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
             Similarly, <function>glTexCoord3</function> specifies the texture coordinates as
             <inlineequation><mml:math>
                 <!-- eqn: (s, t, r, 1):-->
@@ -308,8 +306,8 @@
                     <mml:mi mathvariant="italic">r</mml:mi>
                     <mml:mn>1</mml:mn>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            , and
+            </mml:math></inlineequation>,
+            and
             <function>glTexCoord4</function> defines all four components explicitly as
             <inlineequation><mml:math>
                 <!-- eqn: (s, t, r, q):-->
@@ -319,8 +317,7 @@
                     <mml:mi mathvariant="italic">r</mml:mi>
                     <mml:mi mathvariant="italic">q</mml:mi>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
         </para>
         <para>
             The current texture coordinates are part of the data

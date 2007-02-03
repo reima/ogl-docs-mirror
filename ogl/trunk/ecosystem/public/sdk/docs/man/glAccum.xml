@@ -84,8 +84,7 @@
                     <mml:mn>-1</mml:mn>
                     <mml:mn>1</mml:mn>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
             The accumulation buffer pixels are mapped one-to-one with frame buffer pixels.
         </para>
         <para>
@@ -109,8 +108,7 @@
                     <mml:mn>-1</mml:mn>
                     <mml:mn>1</mml:mn>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             the contents of an accumulation buffer pixel component are undefined.
         </para>
         <para>
@@ -133,8 +131,7 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         where 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
                         is the number of bits allocated to each color component
@@ -146,8 +143,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         which is multiplied by <parameter>value</parameter> and added to the corresponding pixel component
                         in the accumulation buffer,
                         thereby updating the accumulation buffer.
@@ -172,8 +168,7 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         multiplied by <parameter>value</parameter>,
                         and then stored in the corresponding accumulation buffer cell,
                         overwriting the current value.
@@ -216,8 +211,7 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         clamped to the range 
                         <inlineequation><mml:math>
                             <!-- eqn: [0, 2 sup n - 1]:-->
@@ -231,8 +225,8 @@
                                     <mml:mn>1</mml:mn>
                                 </mml:mrow>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        , and stored
+                        </mml:math></inlineequation>,
+                        and stored
                         in the corresponding display buffer cell.
                         The only fragment operations that are applied to this transfer are
                         pixel ownership,

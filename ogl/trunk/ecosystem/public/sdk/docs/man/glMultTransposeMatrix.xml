@@ -106,8 +106,7 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             then the current transformation is 
             <inlineequation><mml:math>
                 <!-- eqn: C  times  v:-->
@@ -116,8 +115,8 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mi mathvariant="italic">v</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , or
+            </mml:math></inlineequation>,
+            or
         </para>
         <para>
             <informalequation><mml:math>
@@ -386,8 +385,7 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mi mathvariant="italic">v</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             or
         </para>
         <para>
@@ -785,8 +783,8 @@
                 <mml:msup><mml:mi mathvariant="italic">M</mml:mi>
                 <mml:mi mathvariant="italic">T</mml:mi>
                 </mml:msup>
-            </mml:math></inlineequation>
-            , where 
+            </mml:math></inlineequation>,
+            where 
             <inlineequation><mml:math><mml:mi mathvariant="italic">T</mml:mi></mml:math></inlineequation>
             represents the transpose.
         </para>

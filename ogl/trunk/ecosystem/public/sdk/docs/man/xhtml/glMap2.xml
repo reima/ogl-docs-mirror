@@ -15,15 +15,13 @@
                     <code class="constant">GL_MAP2_TEXTURE_COORD_4</code> are accepted.
                 </p></dd><dt><span class="term"><em class="parameter"><code>u1</code></em>, </span><span class="term"><em class="parameter"><code>u2</code></em></span></dt><dd><p>
                     Specify a linear mapping of 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">u</mml:mi></mml:math>
-                    ,
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">u</mml:mi></mml:math>,
                     as presented to <a href="glEvalCoord2.xml"><span class="citerefentry"><span class="refentrytitle">glEvalCoord2</span></span></a>,
                     to 
                     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                         
                         <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>^</mml:mo></mml:mover>
-                    </mml:math>
-                    ,
+                    </mml:math>,
                     one of the two variables that are evaluated by the equations specified
                     by this command. Initially, <em class="parameter"><code>u1</code></em> is 0 and <em class="parameter"><code>u2</code></em> is 1.
                 </p></dd><dt><span class="term"><em class="parameter"><code>ustride</code></em></span></dt><dd><p>
@@ -53,8 +51,7 @@
                             </mml:mrow>
                         </mml:mfenced>
                         </mml:msub>
-                    </mml:math>
-                    ,
+                    </mml:math>,
                     where 
                     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
                     and 
@@ -74,15 +71,13 @@
                     Must be positive. The initial value is 1.
                 </p></dd><dt><span class="term"><em class="parameter"><code>v1</code></em>, </span><span class="term"><em class="parameter"><code>v2</code></em></span></dt><dd><p>
                     Specify a linear mapping of 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">v</mml:mi></mml:math>
-                    ,
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">v</mml:mi></mml:math>,
                     as presented to <a href="glEvalCoord2.xml"><span class="citerefentry"><span class="refentrytitle">glEvalCoord2</span></span></a>,
                     to 
                     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                         
                         <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>^</mml:mo></mml:mover>
-                    </mml:math>
-                    ,
+                    </mml:math>,
                     one of the two variables that are evaluated by the equations specified
                     by this command. Initially, <em class="parameter"><code>v1</code></em> is 0 and <em class="parameter"><code>v2</code></em> is 1.
                 </p></dd><dt><span class="term"><em class="parameter"><code>vstride</code></em></span></dt><dd><p>
@@ -112,8 +107,7 @@
                             </mml:mrow>
                         </mml:mfenced>
                         </mml:msub>
-                    </mml:math>
-                    ,
+                    </mml:math>,
                     where 
                     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
                     and 
@@ -133,7 +127,7 @@
                     Must be positive. The initial value is 1.
                 </p></dd><dt><span class="term"><em class="parameter"><code>points</code></em></span></dt><dd><p>
                     Specifies a pointer to the array of control points.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713184"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713178"></a><h2>Description</h2><p>
             Evaluators provide a way to use polynomial or rational polynomial mapping
             to produce vertices,
             normals,
@@ -268,8 +262,8 @@
                 </mml:mrow>
             </mml:math>
             is the 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
-            th Bernstein polynomial of degree
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>th
+            Bernstein polynomial of degree
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
             (<em class="parameter"><code>uorder</code></em> = 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -279,8 +273,7 @@
                     <mml:mo>+</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            )
+            </mml:math>)
         </p><p>
             </p><div class="informalequation"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -358,8 +351,8 @@
                 </mml:mrow>
             </mml:math>
             is the 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">j</mml:mi></mml:math>
-            th Bernstein polynomial of degree 
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">j</mml:mi></mml:math>th
+            Bernstein polynomial of degree 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">m</mml:mi></mml:math>
             (<em class="parameter"><code>vorder</code></em> = 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -369,8 +362,7 @@
                     <mml:mo>+</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            )
+            </mml:math>)
         </p><p>
             </p><div class="informalequation"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -471,8 +463,7 @@
             When <a href="glEvalCoord2.xml"><span class="citerefentry"><span class="refentrytitle">glEvalCoord2</span></span></a> presents values 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">u</mml:mi></mml:math>
             and 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">v</mml:mi></mml:math>
-            ,
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">v</mml:mi></mml:math>,
             the bivariate Bernstein polynomials are evaluated using 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -482,8 +473,7 @@
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>^</mml:mo></mml:mover>
-            </mml:math>
-            ,
+            </mml:math>,
             where
         </p><p>
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -540,23 +530,18 @@
             It can assume one of nine predefined values:
         </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_MAP2_VERTEX_3</code></span></dt><dd><p>
                         Each control point is three floating-point values representing
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">x</mml:mi></mml:math>
-                        , 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">y</mml:mi></mml:math>
-                        , and 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">z</mml:mi></mml:math>
-                        .
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">x</mml:mi></mml:math>, 
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">y</mml:mi></mml:math>,
+                        and 
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">z</mml:mi></mml:math>.
                         Internal <a href="glVertex3.xml"><span class="citerefentry"><span class="refentrytitle">glVertex3</span></span></a> commands are generated when the map is evaluated.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAP2_VERTEX_4</code></span></dt><dd><p>
                         Each control point is four floating-point values representing
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">x</mml:mi></mml:math>
-                        , 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">y</mml:mi></mml:math>
-                        , 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">z</mml:mi></mml:math>
-                        , and 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">w</mml:mi></mml:math>
-                        .
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">x</mml:mi></mml:math>, 
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">y</mml:mi></mml:math>, 
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">z</mml:mi></mml:math>,
+                        and 
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">w</mml:mi></mml:math>.
                         Internal <a href="glVertex4.xml"><span class="citerefentry"><span class="refentrytitle">glVertex4</span></span></a> commands are generated when the map is evaluated.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAP2_INDEX</code></span></dt><dd><p>
                         Each control point is a single floating-point value representing a color index.
@@ -572,10 +557,9 @@
                     </p></dd><dt><span class="term"><code class="constant">GL_MAP2_NORMAL</code></span></dt><dd><p>
                         Each control point is three floating-point values representing
                         the 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">x</mml:mi></mml:math>
-                        , 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">y</mml:mi></mml:math>
-                        , and 
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">x</mml:mi></mml:math>, 
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">y</mml:mi></mml:math>,
+                        and 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">z</mml:mi></mml:math>
                         components of a normal vector.
                         Internal <a href="glNormal.xml"><span class="citerefentry"><span class="refentrytitle">glNormal</span></span></a> commands are generated when the map is
@@ -604,10 +588,9 @@
                     </p></dd><dt><span class="term"><code class="constant">GL_MAP2_TEXTURE_COORD_3</code></span></dt><dd><p>
                         Each control point is three floating-point values representing
                         the 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math>
-                        , 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">t</mml:mi></mml:math>
-                        , and 
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math>, 
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">t</mml:mi></mml:math>,
+                        and 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">r</mml:mi></mml:math>
                         texture coordinates.
                         Internal <a href="glTexCoord3.xml"><span class="citerefentry"><span class="refentrytitle">glTexCoord3</span></span></a> commands are generated when the map is
@@ -616,12 +599,10 @@
                     </p></dd><dt><span class="term"><code class="constant">GL_MAP2_TEXTURE_COORD_4</code></span></dt><dd><p>
                         Each control point is four floating-point values representing
                         the 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math>
-                        , 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">t</mml:mi></mml:math>
-                        , 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">r</mml:mi></mml:math>
-                        , and 
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math>, 
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">t</mml:mi></mml:math>, 
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">r</mml:mi></mml:math>,
+                        and 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">q</mml:mi></mml:math>
                         texture coordinates.
                         Internal
@@ -678,8 +659,7 @@
                     </mml:mrow>
                 </mml:mfenced>
                 </mml:msub>
-            </mml:math>
-            .
+            </mml:math>.
             <em class="parameter"><code>vstride</code></em> specifies how many float or double locations are skipped to advance
             the internal memory pointer from control point
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -712,9 +692,8 @@
                     </mml:mrow>
                 </mml:mfenced>
                 </mml:msub>
-            </mml:math>
-            .
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786345"></a><h2>Notes</h2><p>
+            </mml:math>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786325"></a><h2>Notes</h2><p>
             As is the case with all GL commands that accept pointers to data,
             it is as if the contents of <em class="parameter"><code>points</code></em> were copied by <code class="function">glMap2</code> before <code class="function">glMap2</code>
             returns.
@@ -724,7 +703,7 @@
             normal vectors are generated when either
             <code class="constant">GL_MAP2_VERTEX_3</code> or <code class="constant">GL_MAP2_VERTEX_4</code> is used to generate
             vertices.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786413"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786394"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>u1</code></em> is equal to <em class="parameter"><code>u2</code></em>,
@@ -743,7 +722,7 @@
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glMap2</code> is called and the value
             of <code class="constant">GL_ACTIVE_TEXTURE</code> is not <code class="constant">GL_TEXTURE0</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786559"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786539"></a><h2>Associated Gets</h2><p>
             <a href="glGetMap.xml"><span class="citerefentry"><span class="refentrytitle">glGetMap</span></span></a>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAX_EVAL_ORDER</code>
@@ -765,7 +744,7 @@
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_MAP2_TEXTURE_COORD_3</code>
         </p><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_MAP2_TEXTURE_COORD_4</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786690"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786670"></a><h2>See Also</h2><p>
             <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>,
             <a href="glColor.xml"><span class="citerefentry"><span class="refentrytitle">glColor</span></span></a>,
             <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,
@@ -777,7 +756,7 @@
             <a href="glNormal.xml"><span class="citerefentry"><span class="refentrytitle">glNormal</span></span></a>,
             <a href="glTexCoord.xml"><span class="citerefentry"><span class="refentrytitle">glTexCoord</span></span></a>,
             <a href="glVertex.xml"><span class="citerefentry"><span class="refentrytitle">glVertex</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786755"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786736"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

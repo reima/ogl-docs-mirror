@@ -134,8 +134,8 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , and
+            </mml:math></inlineequation>,
+            and
             all entries are initialized to zero.
             The values in the previous histogram table, if any, are lost.
             If <parameter>sink</parameter> is <constant>GL_TRUE</constant>, then pixels are discarded after histogramming;

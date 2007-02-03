@@ -82,8 +82,8 @@
                         </mml:mrow>
                     </mml:math></inlineequation>
                     for some integer 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                    . All implementations support texture images that are at least 64 texels wide. The height of the 1D texture image is 1.
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
+                    All implementations support texture images that are at least 64 texels wide. The height of the 1D texture image is 1.
                 </para>
             </listitem>
         </varlistentry>

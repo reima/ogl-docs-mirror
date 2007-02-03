@@ -67,10 +67,9 @@
             where 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">d</mml:mi></mml:math>
             is the eye-coordinate distance from the eye to the vertex, and
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">a</mml:mi></mml:math>
-            , 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">b</mml:mi></mml:math>
-            , and 
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">a</mml:mi></mml:math>, 
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">b</mml:mi></mml:math>,
+            and 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">c</mml:mi></mml:math>
             are the distance attenuation coefficients (see
             <a href="glPointParameter.xml"><span class="citerefentry"><span class="refentrytitle">glPointParameter</span></span></a>).
@@ -161,17 +160,16 @@
             If point antialiasing is disabled, the actual size is determined by
             rounding the supplied size to the nearest integer.  (If the rounding
             results in the value 0, it is as if the point size were 1.)  If the rounded
-            size is odd, then the center point (
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+            size is odd, then the center point 
+            (<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mi mathvariant="italic">x</mml:mi>
-            </mml:math>
-            , 
+            </mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mi mathvariant="italic">y</mml:mi>
-            </mml:math>
-            ) of the pixel fragment
+            </mml:math>)
+            of the pixel fragment
             that represents the point is computed as
         </p><p>
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -201,17 +199,16 @@
             where 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">w</mml:mi></mml:math>
             subscripts indicate window coordinates.  All pixels that lie
-            within the square grid of the rounded size centered at (
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+            within the square grid of the rounded size centered at 
+            (<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mi mathvariant="italic">x</mml:mi>
-            </mml:math>
-            , 
+            </mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mi mathvariant="italic">y</mml:mi>
-            </mml:math>
-            ) make
+            </mml:math>)
+            make
             up the fragment.  If the size is even, the center point is
         </p><p>
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -246,8 +243,7 @@
                     <mml:mi mathvariant="italic">x</mml:mi>
                     <mml:mi mathvariant="italic">y</mml:mi>
                 </mml:mfenced>
-            </mml:math>
-            .
+            </mml:math>.
             All pixel fragments produced in rasterizing a nonantialiased point are
             assigned the same associated data, that of the vertex corresponding to the
             point.
@@ -265,8 +261,8 @@
                     <mml:mi mathvariant="italic">w</mml:mi>
                     </mml:msub>
                 </mml:mfenced>
-            </mml:math>
-            .  The coverage value for each fragment is the
+            </mml:math>.
+            The coverage value for each fragment is the
             window coordinate area of the intersection of the circular region with the
             corresponding pixel square.  This value is saved and used in the final
             rasterization step.  The data associated with each fragment is the data
@@ -294,13 +290,13 @@
             deprecated in GL versions 1.2 and greater.  Their functionality has been
             replaced by <code class="constant">GL_SMOOTH_POINT_SIZE_RANGE</code> and
             <code class="constant">GL_SMOOTH_POINT_SIZE_GRANULARITY</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713205"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713208"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>size</code></em> is less than or equal to 0.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glPointSize</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713247"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713250"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_ALIASED_POINT_SIZE_RANGE</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_POINT_SIZE</code>
@@ -318,10 +314,10 @@
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_SMOOTH_POINT_SIZE_GRANULARITY</code>
         </p><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_POINT_SMOOTH</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711406"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711401"></a><h2>See Also</h2><p>
             <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,
             <a href="glPointParameter.xml"><span class="citerefentry"><span class="refentrytitle">glPointParameter</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711425"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711420"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

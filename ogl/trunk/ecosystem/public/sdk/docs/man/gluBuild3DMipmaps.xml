@@ -237,8 +237,7 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
             For example, if <parameter>width</parameter> is 64, <parameter>height</parameter> is
             16, and <parameter>depth</parameter> is 32, and the implementation can store a texture of this
             size, the following mipmap levels are built: 
@@ -251,8 +250,7 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>32</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: 32  times  8  times  16:-->
                 <mml:mrow>
@@ -262,8 +260,7 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>16</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: 16  times  4  times  8:-->
                 <mml:mrow>
@@ -273,8 +270,7 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>8</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: 8  times  2  times  4:-->
                 <mml:mrow>
@@ -284,8 +280,7 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>4</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: 4  times  1  times  2:-->
                 <mml:mrow>
@@ -295,8 +290,7 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>2</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: 2  times  1  times  1:-->
                 <mml:mrow>
@@ -306,8 +300,7 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             and 
             <inlineequation><mml:math>
                 <!-- eqn: 1  times  1  times  1:-->
@@ -318,8 +311,8 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            . These correspond
+            </mml:math></inlineequation>.
+            These correspond
             to levels 0 through 6, respectively.
         </para>
         <para>
@@ -358,8 +351,7 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
         </para>
         <para>
             <function>gluBuild3DMipmaps</function> is only available if the GLU version is 1.3 or greater.

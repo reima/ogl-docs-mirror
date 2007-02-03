@@ -61,8 +61,7 @@
             the 16-bit line stipple pattern <parameter>pattern</parameter>,
             the repeat count <parameter>factor</parameter>,
             and an integer stipple counter 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
-            .
+            <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>.
         </para>
         <para>
             Counter 

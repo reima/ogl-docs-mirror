@@ -16,7 +16,7 @@
                     <code class="constant">GL_LIGHT_MODEL_TWO_SIDE</code> are accepted.
                 </p></dd><dt><span class="term"><em class="parameter"><code>params</code></em></span></dt><dd><p>
                     Specifies a pointer to the value or values that <em class="parameter"><code>params</code></em> will be set to.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768664"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768663"></a><h2>Description</h2><p>
             <code class="function">glLightModel</code> sets the lighting model parameter.
             <em class="parameter"><code>pname</code></em> names a parameter and <em class="parameter"><code>params</code></em> gives the new value.
             There are three lighting model parameters:
@@ -29,8 +29,7 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math>
-                        .
+                        </mml:math>.
                         Floating-point values are mapped directly.
                         Neither integer nor floating-point values are clamped.
                         The initial ambient scene intensity is (0.2, 0.2, 0.2, 1.0).
@@ -105,10 +104,10 @@
             the shininess of the material,
             and the same reflection and attenuation equations as in the RGBA case,
             determine how much above ambient the resulting index is.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775585"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775586"></a><h2>Notes</h2><p>
             <code class="constant">GL_LIGHT_MODEL_COLOR_CONTROL</code> is available only if the GL version is
             1.2 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775599"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775600"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>pname</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>pname</code></em> is
@@ -117,7 +116,7 @@
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glLightModel</code> is executed between
             the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775498"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775497"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_LIGHT_MODEL_AMBIENT</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_LIGHT_MODEL_COLOR_CONTROL</code>
@@ -127,10 +126,10 @@
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_LIGHT_MODEL_TWO_SIDE</code>
         </p><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_LIGHTING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712878"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712875"></a><h2>See Also</h2><p>
             <a href="glLight.xml"><span class="citerefentry"><span class="refentrytitle">glLight</span></span></a>,
             <a href="glMaterial.xml"><span class="citerefentry"><span class="refentrytitle">glMaterial</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712897"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712894"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

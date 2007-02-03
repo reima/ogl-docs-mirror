@@ -52,8 +52,7 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             inclusive, and y indices <em class="parameter"><code>yoffset</code></em> through 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -64,8 +63,7 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             inclusive, at the mipmap level specified by <em class="parameter"><code>level</code></em>.
         </p><p>
             The pixels in the rectangle are processed exactly as if
@@ -94,7 +92,7 @@
             No change is made to the <span class="emphasis"><em>internalformat</em></span>, <span class="emphasis"><em>width</em></span>,
             <span class="emphasis"><em>height</em></span>, or <span class="emphasis"><em>border</em></span> parameters of the specified texture
             array or to texel values outside the specified subregion.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775519"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775520"></a><h2>Notes</h2><p>
             <code class="function">glCopyTexSubImage2D</code> is available only if the GL version is 1.1 or greater.
         </p><p>
             <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_X</code>,
@@ -114,7 +112,7 @@
             When the <code class="code">ARB_imaging</code> extension is supported, the RGBA components
             read from the framebuffer may be processed by the imaging pipeline.  See
             <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a> for specific details.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775613"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775617"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if /<em class="parameter"><code>target</code></em> is not <code class="constant">GL_TEXTURE_2D</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if the texture array has not been
@@ -138,8 +136,7 @@
                         </mml:mfenced>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             where 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">max</mml:mi></mml:math>
             is the returned value of <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
@@ -155,8 +152,7 @@
                         <mml:mi mathvariant="italic">b</mml:mi>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -176,8 +172,7 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -188,8 +183,8 @@
                         <mml:mi mathvariant="italic">b</mml:mi>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math>
-            , or
+            </mml:math>,
+            or
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -209,8 +204,7 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             where 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">w</mml:mi></mml:math>
             is the <code class="constant">GL_TEXTURE_WIDTH</code>,
@@ -229,11 +223,11 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glCopyTexSubImage2D</code> is executed
             between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding
             execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711426"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713032"></a><h2>Associated Gets</h2><p>
             <a href="glGetTexImage.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexImage</span></span></a>
         </p><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_2D</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711451"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713058"></a><h2>See Also</h2><p>
             <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
             <a href="glCopyTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage1D</span></span></a>,
             <a href="glCopyTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a>,
@@ -251,7 +245,7 @@
             <a href="glTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span></a>,
             <a href="glTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>,
             <a href="glTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711550"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711410"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

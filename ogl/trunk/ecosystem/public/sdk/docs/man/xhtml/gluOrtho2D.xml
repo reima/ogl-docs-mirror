@@ -24,9 +24,8 @@
                     <mml:mo>=</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            .
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768585"></a><h2>See Also</h2><p>
+            </mml:math>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768584"></a><h2>See Also</h2><p>
             <a href="glOrtho.xml"><span class="citerefentry"><span class="refentrytitle">glOrtho</span></span></a>,
             <a href="gluPerspective.xml"><span class="citerefentry"><span class="refentrytitle">gluPerspective</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768603"></a><h2>Copyright</h2><p>

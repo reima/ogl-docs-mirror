@@ -112,8 +112,8 @@
                 </mml:mrow>
             </mml:math>.
             This pixel is said to be the 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
-            th pixel in the 
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>th
+            pixel in the 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">j</mml:mi></mml:math>th
             row.
             Pixels are returned in row order from the lowest to the highest row,
@@ -507,10 +507,10 @@
             <code class="constant">GL_ALPHA</code>, or
             <code class="constant">GL_LUMINANCE</code>,
             a single value is returned and the data for the 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
-            th pixel in the 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">j</mml:mi></mml:math>
-            th row
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>th
+            pixel in the 
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">j</mml:mi></mml:math>th
+            row
             is placed in location 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -539,7 +539,7 @@
         </p><p>
             If an error is generated,
             no change is made to the contents of <em class="parameter"><code>data</code></em>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785560"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785559"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>format</code></em> or <em class="parameter"><code>type</code></em> is not an
             accepted value.
         </p><p>
@@ -608,14 +608,14 @@
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_INDEX_MODE</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_PACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785984"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785983"></a><h2>See Also</h2><p>
             <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
             <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>,
             <a href="glPixelMap.xml"><span class="citerefentry"><span class="refentrytitle">glPixelMap</span></span></a>,
             <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>,
             <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>,
             <a href="glReadBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glReadBuffer</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786024"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786023"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

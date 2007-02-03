@@ -86,8 +86,7 @@
             It is always the case that <code class="constant">GL_AUX</code>
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
             = <code class="constant">GL_AUX0</code> + 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
-            .
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775410"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is not an accepted value.
         </p><p>
@@ -107,7 +106,7 @@
             <a href="glIndexMask.xml"><span class="citerefentry"><span class="refentrytitle">glIndexMask</span></span></a>,
             <a href="glLogicOp.xml"><span class="citerefentry"><span class="refentrytitle">glLogicOp</span></span></a>,
             <a href="glReadBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glReadBuffer</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775534"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775533"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

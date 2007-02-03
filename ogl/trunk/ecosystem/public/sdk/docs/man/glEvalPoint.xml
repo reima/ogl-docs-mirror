@@ -39,8 +39,7 @@
             <listitem>
                 <para>
                     Specifies the integer value for grid domain variable 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-                    .
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>.
                 </para>
             </listitem>
         </varlistentry>
@@ -109,15 +108,14 @@ glEvalCoord1( <mml:math>
         </para>
         <para>
             and 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-            , 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: u sub 1:-->
                 <mml:msub><mml:mi mathvariant="italic">u</mml:mi>
                 <mml:mn>1</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            , and 
+            </mml:math></inlineequation>,
+            and 
             <inlineequation><mml:math>
                 <!-- eqn: u sub 2:-->
                 <mml:msub><mml:mi mathvariant="italic">u</mml:mi>
@@ -133,8 +131,7 @@ glEvalCoord1( <mml:math>
                     <mml:mo>=</mml:mo>
                     <mml:mi mathvariant="italic">n</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             then the value computed from
             <inlineequation><mml:math>
                 <!-- eqn: i  cdot  DELTA u  +  u sub 1:-->
@@ -159,8 +156,7 @@ glEvalCoord1( <mml:math>
                 <mml:msub><mml:mi mathvariant="italic">u</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
         </para>
         <para>
             In the two-dimensional case, <function>glEvalPoint2</function>, let
@@ -219,31 +215,27 @@ glEvalCoord1( <mml:math>
         </para>
         <para>
             where 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-            , 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: u sub 1:-->
                 <mml:msub><mml:mi mathvariant="italic">u</mml:mi>
                 <mml:mn>1</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: u sub 2:-->
                 <mml:msub><mml:mi mathvariant="italic">u</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            , 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">m</mml:mi></mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">m</mml:mi></mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: v sub 1:-->
                 <mml:msub><mml:mi mathvariant="italic">v</mml:mi>
                 <mml:mn>1</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            , and 
+            </mml:math></inlineequation>,
+            and 
             <inlineequation><mml:math>
                 <!-- eqn: v sub 2:-->
                 <mml:msub><mml:mi mathvariant="italic">v</mml:mi>
@@ -292,8 +284,7 @@ glEvalCoord2( <mml:math>
                     <mml:mo>=</mml:mo>
                     <mml:mi mathvariant="italic">n</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             then the value computed from
             <inlineequation><mml:math>
                 <!-- eqn: i  cdot DELTA u  +  u sub 1:-->
@@ -318,8 +309,7 @@ glEvalCoord2( <mml:math>
                 <mml:msub><mml:mi mathvariant="italic">u</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             and if 
             <inlineequation><mml:math>
                 <!-- eqn: j = m:-->
@@ -328,8 +318,8 @@ glEvalCoord2( <mml:math>
                     <mml:mo>=</mml:mo>
                     <mml:mi mathvariant="italic">m</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , then the value computed from
+            </mml:math></inlineequation>,
+            then the value computed from
             <inlineequation><mml:math>
                 <!-- eqn: j  cdot DELTA v  +  v sub 1:-->
                 <mml:mrow>
@@ -353,8 +343,7 @@ glEvalCoord2( <mml:math>
                 <mml:msub><mml:mi mathvariant="italic">v</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
         </para>
     </refsect1>
     <refsect1><title>Associated Gets</title>

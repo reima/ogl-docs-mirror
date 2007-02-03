@@ -125,8 +125,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math>
-                        .
+                        </mml:math>.
                         All color, scale, and bias values are specified with <code class="function">glPixelTransfer</code>.
                     </p><p>
                         If <code class="constant">GL_MAP_COLOR</code> is true,
@@ -150,8 +149,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math>
-                        .
+                        </mml:math>.
                         <code class="constant">GL_MAP_COLOR</code> is specified with <code class="function">glPixelTransfer</code>.
                         The contents of the various maps are specified with <a href="glPixelMap.xml"><span class="citerefentry"><span class="refentrytitle">glPixelMap</span></span></a>.
                     </p><p>
@@ -175,8 +173,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math>
-                        .
+                        </mml:math>.
                     </p><p>
                         Similarly, if the <code class="code">ARB_imaging</code> extension is supported, each of
                         the four color components may be scaled and biased after processing by
@@ -198,8 +195,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math>
-                        .
+                        </mml:math>.
                     </p></dd><dt><span class="term"><span class="emphasis"><em>Color index</em></span></span></dt><dd><p>
                         Each color index is shifted left by <code class="constant">GL_INDEX_SHIFT</code> bits; any bits
                         beyond the number of fraction bits carried
@@ -227,8 +223,7 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         where 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
                         is <code class="constant">GL_PIXEL_MAP_I_TO_I_SIZE</code>,
@@ -257,8 +252,7 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         where 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
                         is
@@ -273,8 +267,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math>
-                        .
+                        </mml:math>.
                         The contents of the four maps is specified with <a href="glPixelMap.xml"><span class="citerefentry"><span class="refentrytitle">glPixelMap</span></span></a>.
                     </p></dd><dt><span class="term"><span class="emphasis"><em>Depth</em></span></span></dt><dd><p>
                         Each depth value is multiplied by <code class="constant">GL_DEPTH_SCALE</code>,
@@ -286,8 +279,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math>
-                        .
+                        </mml:math>.
                     </p></dd><dt><span class="term"><span class="emphasis"><em>Stencil</em></span></span></dt><dd><p>
                         Each index is shifted <code class="constant">GL_INDEX_SHIFT</code> bits just as a color index is,
                         then added to <code class="constant">GL_INDEX_OFFSET</code>.
@@ -302,8 +294,7 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         where 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
                         is <code class="constant">GL_PIXEL_MAP_S_TO_S_SIZE</code>,
@@ -827,7 +818,7 @@
             pixel transfer parameters.
             Boolean parameters are set to false if <em class="parameter"><code>param</code></em> is 0 and to true otherwise.
             <em class="parameter"><code>param</code></em> is converted to floating point before being assigned to real-valued parameters.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786786"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786779"></a><h2>Notes</h2><p>
             If a
             <a href="glColorTable.xml"><span class="citerefentry"><span class="refentrytitle">glColorTable</span></span></a>,
             <a href="glColorSubTable.xml"><span class="citerefentry"><span class="refentrytitle">glColorSubTable</span></span></a>,
@@ -855,13 +846,13 @@
             are the ones that are used.
             They may be different from the settings when the command was compiled
             into the display list.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786920"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786912"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>pname</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glPixelTransfer</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786964"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786957"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP_COLOR</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP_STENCIL</code>
@@ -921,7 +912,7 @@
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_POST_CONVOLUTION_ALPHA_SCALE</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_POST_CONVOLUTION_ALPHA_BIAS</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787326"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787319"></a><h2>See Also</h2><p>
             <a href="glCallList.xml"><span class="citerefentry"><span class="refentrytitle">glCallList</span></span></a>,
             <a href="glColorTable.xml"><span class="citerefentry"><span class="refentrytitle">glColorTable</span></span></a>,
             <a href="glColorSubTable.xml"><span class="citerefentry"><span class="refentrytitle">glColorSubTable</span></span></a>,
@@ -945,7 +936,7 @@
             <a href="glTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span></a>,
             <a href="glTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>,
             <a href="glTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787456"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787449"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

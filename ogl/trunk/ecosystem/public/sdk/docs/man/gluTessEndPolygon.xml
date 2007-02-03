@@ -76,8 +76,7 @@ gluTessEndPolygon(tobj);
             In the above example the pointers, 
             <inlineequation><mml:math><mml:mi mathvariant="italic">v1</mml:mi></mml:math></inlineequation>
             through 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">v7</mml:mi></mml:math></inlineequation>
-            , 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">v7</mml:mi></mml:math></inlineequation>, 
             should point to different
             addresses, 
             since the values stored at these addresses will not be read by

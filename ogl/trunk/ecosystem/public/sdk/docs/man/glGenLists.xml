@@ -43,8 +43,7 @@
             It returns an integer <emphasis>n</emphasis> such that <parameter>range</parameter> contiguous
             empty display lists,
             named 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-            , 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: n+1:-->
                 <mml:mrow>
@@ -52,13 +51,11 @@
                     <mml:mo>+</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: ...:-->
                 <mml:mi mathvariant="italic">...</mml:mi>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: n + range - 1:-->
                 <mml:mrow>
@@ -68,8 +65,7 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             are created.
             If <parameter>range</parameter> is 0,
             if there is no group of <parameter>range</parameter> contiguous names available,

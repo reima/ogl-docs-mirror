@@ -113,16 +113,14 @@
                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                 <mml:mi mathvariant="italic">t</mml:mi>
                 </mml:msub>
-            </mml:math>
-            .
+            </mml:math>.
             A three-component image has only a color value, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                 <mml:mi mathvariant="italic">t</mml:mi>
                 </mml:msub>
-            </mml:math>
-            .
+            </mml:math>.
             A four-component image has both a color value 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -136,8 +134,7 @@
                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                 <mml:mi mathvariant="italic">t</mml:mi>
                 </mml:msub>
-            </mml:math>
-            .
+            </mml:math>.
         </p><p>
         </p><div class="informaltable"><table border="1"><colgroup><col align="center" /><col align="center" /><col align="left" /><col align="left" /></colgroup><thead><tr><th align="center">
                         Texture Base Internal Format
@@ -1167,13 +1164,12 @@
             <code class="constant">GL_SRC0_ALPHA</code>, <code class="constant">GL_SRC1_ALPHA</code>, and <code class="constant">GL_SRC2_ALPHA</code>,
             are combined to produce a final texture color. In the following tables,
             <code class="constant">GL_SRC0_c</code> is represented by 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg0</mml:mi></mml:math>
-            , <code class="constant">GL_SRC1_c</code> is
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg0</mml:mi></mml:math>,
+            <code class="constant">GL_SRC1_c</code> is
             represented by 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg1</mml:mi></mml:math>
-            , and <code class="constant">GL_SRC2_c</code> is represented by 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg2</mml:mi></mml:math>
-            .
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg1</mml:mi></mml:math>,
+            and <code class="constant">GL_SRC2_c</code> is represented by 
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg2</mml:mi></mml:math>.
         </p><p>
             <code class="constant">GL_COMBINE_RGB</code> accepts any of <code class="constant">GL_REPLACE</code>, <code class="constant">GL_MODULATE</code>,
             <code class="constant">GL_ADD</code>, <code class="constant">GL_ADD_SIGNED</code>, <code class="constant">GL_INTERPOLATE</code>, <code class="constant">GL_SUBTRACT</code>,
@@ -1490,22 +1486,20 @@
                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                 <mml:mi mathvariant="italic">s</mml:mi>
                 </mml:msub>
-            </mml:math>
-            , 
+            </mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                 <mml:mi mathvariant="italic">c</mml:mi>
                 </mml:msub>
-            </mml:math>
-            , 
+            </mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                 <mml:mi mathvariant="italic">f</mml:mi>
                 </mml:msub>
-            </mml:math>
-            , and 
+            </mml:math>,
+            and 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
@@ -1516,10 +1510,9 @@
             alpha values.
         </p><p>
             The following table describes the values assigned to 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg0</mml:mi></mml:math>
-            , 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg1</mml:mi></mml:math>
-            , and
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg0</mml:mi></mml:math>, 
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg1</mml:mi></mml:math>,
+            and
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg2</mml:mi></mml:math>
             based upon the RGB sources and operands:
         </p><p>
@@ -1831,14 +1824,12 @@
             </mml:math>
             represent the color
             and alpha, respectively, produced from texture stage 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
-            .
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>.
         </p><p>
             The follow table describes the values assigned to 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg0</mml:mi></mml:math>
-            , 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg1</mml:mi></mml:math>
-            , and
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg0</mml:mi></mml:math>, 
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg1</mml:mi></mml:math>,
+            and
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg2</mml:mi></mml:math>
             based upon the alpha sources and operands:
         </p><p>
@@ -2003,8 +1994,7 @@
                     <mml:mn>0</mml:mn>
                     <mml:mn>1</mml:mn>
                 </mml:mfenced>
-            </mml:math>
-            .
+            </mml:math>.
         </p><p>
             If <em class="parameter"><code>pname</code></em> is <code class="constant">GL_TEXTURE_ENV_COLOR</code>,
             <em class="parameter"><code>params</code></em> is a pointer to an array that holds an RGBA color consisting of four
@@ -2030,7 +2020,7 @@
         </p><p>
             If <em class="parameter"><code>target</code></em> is <code class="constant">GL_POINT_SPRITE</code> and <em class="parameter"><code>pname</code></em> is <code class="constant">GL_COORD_REPLACE</code>, the boolean value specified 
             is used to either enable or disable point sprite texture coordinate replacement. The default value is <code class="constant">GL_FALSE</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4791864"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4791859"></a><h2>Notes</h2><p>
             <code class="constant">GL_REPLACE</code> may only be used if the GL version is 1.1 or greater.
         </p><p>
             <code class="constant">GL_TEXTURE_FILTER_CONTROL</code> and <code class="constant">GL_TEXTURE_LOD_BIAS</code> may only be
@@ -2050,7 +2040,7 @@
         </p><p>
             <code class="constant">GL_POINT_SPRITE</code> and <code class="constant">GL_COORD_REPLACE</code> are available
             only if the GL version is 2.0 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4791954"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4791949"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated when <em class="parameter"><code>target</code></em> or <em class="parameter"><code>pname</code></em> is not
             one of the accepted defined values,
             or when <em class="parameter"><code>params</code></em> should have a defined constant value
@@ -2063,9 +2053,9 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glTexEnv</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4792039"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4792034"></a><h2>Associated Gets</h2><p>
             <a href="glGetTexEnv.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexEnv</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4792052"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4792047"></a><h2>See Also</h2><p>
             <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>,
             <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
             <a href="glCopyTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage1D</span></span></a>,
@@ -2080,7 +2070,7 @@
             <a href="glTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span></a>,
             <a href="glTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>,
             <a href="glTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4792135"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4792130"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

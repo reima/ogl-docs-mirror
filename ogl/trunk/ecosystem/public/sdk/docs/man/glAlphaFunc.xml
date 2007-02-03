@@ -56,8 +56,7 @@
                             <mml:mn>0</mml:mn>
                             <mml:mn>1</mml:mn>
                         </mml:mfenced>
-                    </mml:math></inlineequation>
-                    ,
+                    </mml:math></inlineequation>,
                     where 0 represents the lowest possible alpha value
                     and 1 the highest possible value.
                     The initial reference value is 0.

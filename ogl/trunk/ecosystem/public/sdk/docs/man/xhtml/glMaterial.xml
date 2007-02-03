@@ -77,8 +77,7 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math>
-                        .
+                        </mml:math>.
                         Floating-point values are mapped directly.
                         Neither integer nor floating-point values are clamped.
                         The initial ambient reflectance for both front- and back-facing materials
@@ -92,8 +91,7 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math>
-                        .
+                        </mml:math>.
                         Floating-point values are mapped directly.
                         Neither integer nor floating-point values are clamped.
                         The initial diffuse reflectance for both front- and back-facing materials
@@ -107,8 +105,7 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math>
-                        .
+                        </mml:math>.
                         Floating-point values are mapped directly.
                         Neither integer nor floating-point values are clamped.
                         The initial specular reflectance for both front- and back-facing materials
@@ -122,8 +119,7 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math>
-                        .
+                        </mml:math>.
                         Floating-point values are mapped directly.
                         Neither integer nor floating-point values are clamped.
                         The initial emission intensity for both front- and back-facing materials
@@ -156,7 +152,7 @@
                         are the only material values used by the color index mode lighting equation.
                         Refer to the <a href="glLightModel.xml"><span class="citerefentry"><span class="refentrytitle">glLightModel</span></span></a> reference page for a discussion
                         of color index lighting.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712972"></a><h2>Notes</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712962"></a><h2>Notes</h2><p>
             The material parameters can be updated at any time.
             In particular,
             <code class="function">glMaterial</code> can be called between a call to <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding
@@ -169,7 +165,7 @@
             While the ambient, diffuse, specular and emission material parameters
             all have alpha components, only the diffuse alpha component is used in
             the lighting computation.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713030"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713021"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if either <em class="parameter"><code>face</code></em> or <em class="parameter"><code>pname</code></em> is not
             an accepted value.
         </p><p>
@@ -182,13 +178,13 @@
                 </mml:mfenced>
             </mml:math>
             is specified.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713089"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713080"></a><h2>Associated Gets</h2><p>
             <a href="glGetMaterial.xml"><span class="citerefentry"><span class="refentrytitle">glGetMaterial</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713102"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713093"></a><h2>See Also</h2><p>
             <a href="glColorMaterial.xml"><span class="citerefentry"><span class="refentrytitle">glColorMaterial</span></span></a>,
             <a href="glLight.xml"><span class="citerefentry"><span class="refentrytitle">glLight</span></span></a>,
             <a href="glLightModel.xml"><span class="citerefentry"><span class="refentrytitle">glLightModel</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713126"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713117"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

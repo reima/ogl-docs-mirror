@@ -45,8 +45,7 @@
                     The number of lights depends on the implementation,
                     but at least eight lights are supported.
                     They are identified by symbolic names of the form <constant>GL_LIGHT</constant>
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-                    ,
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>,
                     where i ranges from 0 to the value of <constant>GL_MAX_LIGHTS</constant> - 1.
                 </para>
             </listitem>
@@ -103,8 +102,7 @@
                     The number of lights depends on the implementation, but
                     at least eight lights are supported.
                     They are identified by symbolic names of the form <constant>GL_LIGHT</constant>
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-                    ,
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>,
                     where i ranges from 0 to the value of <constant>GL_MAX_LIGHTS</constant> - 1.
                 </para>
             </listitem>
@@ -142,8 +140,7 @@
         <para>
             <function>glLight</function> sets the values of individual light source parameters.
             <parameter>light</parameter> names the light and is a symbolic name of the form <constant>GL_LIGHT</constant>
-            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-            ,
+            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>,
             where i ranges from 0 to the value of <constant>GL_MAX_LIGHTS</constant> - 1.
             <parameter>pname</parameter> specifies one of ten light source parameters,
             again by symbolic name.
@@ -160,8 +157,7 @@
             <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
             is enabled and disabled using <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry> and
             <citerefentry><refentrytitle>glDisable</refentrytitle></citerefentry> with argument <constant>GL_LIGHT</constant>
-            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-            .
+            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>.
         </para>
         <para>
             The ten light parameters are as follows:
@@ -179,8 +175,7 @@
                         <inlineequation><mml:math>
                             <!-- eqn: -1.0:-->
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         Floating-point values are mapped directly.
                         Neither integer nor floating-point values are clamped.
                         The initial ambient light intensity is (0, 0, 0, 1).
@@ -199,8 +194,7 @@
                         <inlineequation><mml:math>
                             <!-- eqn: -1.0:-->
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         Floating-point values are mapped directly.
                         Neither integer nor floating-point values are clamped.
                         The initial value
@@ -221,8 +215,7 @@
                         <inlineequation><mml:math>
                             <!-- eqn: -1.0:-->
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         Floating-point values are mapped directly.
                         Neither integer nor floating-point values are clamped.
                         The initial value
@@ -293,8 +286,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>-1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -390,8 +382,7 @@
             It is always the case that <constant>GL_LIGHT</constant>
             <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
             = <constant>GL_LIGHT0</constant> + 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-            .
+            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>.
         </para>
     </refsect1>
     <refsect1><title>Errors</title>
@@ -408,8 +399,7 @@
                     <mml:mn>0</mml:mn>
                     <mml:mn>128</mml:mn>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             or if spot cutoff is specified outside the range 
             <inlineequation><mml:math>
                 <!-- eqn: [0,90]:-->

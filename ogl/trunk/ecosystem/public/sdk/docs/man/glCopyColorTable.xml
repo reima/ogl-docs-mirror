@@ -149,8 +149,7 @@
                     <mml:mn>0</mml:mn>
                     <mml:mn>1</mml:mn>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
             Each pixel is then converted to the internal format specified by
             <parameter>internalformat</parameter>. This conversion simply maps the component values of the pixel (R, G, B,
             and A) to the values included in the internal format (red, green, blue,
@@ -329,8 +328,7 @@
                         <mml:mn>1</mml:mn>
                     </mml:mrow>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
         </para>
         <para>
         </para>

@@ -21,8 +21,7 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             each containing a single <a href="glBitmap.xml"><span class="citerefentry"><span class="refentrytitle">glBitmap</span></span></a> command.
             The parameters of the <a href="glBitmap.xml"><span class="citerefentry"><span class="refentrytitle">glBitmap</span></span></a> command of display list 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -41,15 +40,12 @@
                     <mml:mo>+</mml:mo>
                     <mml:mi mathvariant="italic">i</mml:mi>
                 </mml:mrow>
-            </mml:math>
-            .
+            </mml:math>.
             Bitmap parameters 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">xorig</mml:mi></mml:math>
-            , 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">yorig</mml:mi></mml:math>
-            , 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">width</mml:mi></mml:math>
-            , and 
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">xorig</mml:mi></mml:math>, 
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">yorig</mml:mi></mml:math>, 
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">width</mml:mi></mml:math>,
+            and 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">height</mml:mi></mml:math>
             are computed from font metrics as
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -59,16 +55,14 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            , 
+            </mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
                     <mml:mo>-</mml:mo>
                     <mml:mi mathvariant="italic">lbearing</mml:mi>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -76,8 +70,8 @@
                     <mml:mo>-</mml:mo>
                     <mml:mi mathvariant="italic">lbearing</mml:mi>
                 </mml:mrow>
-            </mml:math>
-            , and 
+            </mml:math>,
+            and 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -85,8 +79,8 @@
                     <mml:mo>+</mml:mo>
                     <mml:mi mathvariant="italic">descent</mml:mi>
                 </mml:mrow>
-            </mml:math>
-            , respectively.
+            </mml:math>,
+            respectively.
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">xmove</mml:mi></mml:math>
             is taken from the glyph's 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">width</mml:mi></mml:math>
@@ -107,7 +101,7 @@
             Empty display lists are created for all glyphs that are requested and
             are not defined in <em class="parameter"><code>font</code></em>.
             <code class="function">glXUseXFont</code> is ignored if there is no current GLX context.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775481"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775477"></a><h2>Errors</h2><p>
             <code class="constant">BadFont</code> is generated if <em class="parameter"><code>font</code></em> is not a valid font.
         </p><p>
             <code class="constant">GLXBadContextState</code> is generated if the current GLX context is
@@ -116,10 +110,10 @@
             <code class="constant">GLXBadCurrentWindow</code> is generated if the drawable associated
             with the current context of the calling thread is a window, and that
             window is no longer valid.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775521"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775518"></a><h2>See Also</h2><p>
             <a href="glBitmap.xml"><span class="citerefentry"><span class="refentrytitle">glBitmap</span></span></a>,
             <a href="glXMakeCurrent.xml"><span class="citerefentry"><span class="refentrytitle">glXMakeCurrent</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775539"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775536"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

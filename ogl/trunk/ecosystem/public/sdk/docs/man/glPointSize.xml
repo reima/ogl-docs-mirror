@@ -105,10 +105,9 @@
             where 
             <inlineequation><mml:math><mml:mi mathvariant="italic">d</mml:mi></mml:math></inlineequation>
             is the eye-coordinate distance from the eye to the vertex, and
-            <inlineequation><mml:math><mml:mi mathvariant="italic">a</mml:mi></mml:math></inlineequation>
-            , 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">b</mml:mi></mml:math></inlineequation>
-            , and 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">a</mml:mi></mml:math></inlineequation>, 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">b</mml:mi></mml:math></inlineequation>,
+            and 
             <inlineequation><mml:math><mml:mi mathvariant="italic">c</mml:mi></mml:math></inlineequation>
             are the distance attenuation coefficients (see
             <citerefentry><refentrytitle>glPointParameter</refentrytitle></citerefentry>).
@@ -205,17 +204,16 @@
             If point antialiasing is disabled, the actual size is determined by
             rounding the supplied size to the nearest integer.  (If the rounding
             results in the value 0, it is as if the point size were 1.)  If the rounded
-            size is odd, then the center point (
-            <inlineequation><mml:math>
+            size is odd, then the center point 
+            (<inlineequation><mml:math>
                 <!-- eqn: x:-->
                 <mml:mi mathvariant="italic">x</mml:mi>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: y:-->
                 <mml:mi mathvariant="italic">y</mml:mi>
-            </mml:math></inlineequation>
-            ) of the pixel fragment
+            </mml:math></inlineequation>)
+            of the pixel fragment
             that represents the point is computed as
         </para>
         <para>
@@ -247,17 +245,16 @@
             where 
             <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>
             subscripts indicate window coordinates.  All pixels that lie
-            within the square grid of the rounded size centered at (
-            <inlineequation><mml:math>
+            within the square grid of the rounded size centered at 
+            (<inlineequation><mml:math>
                 <!-- eqn: x:-->
                 <mml:mi mathvariant="italic">x</mml:mi>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: y:-->
                 <mml:mi mathvariant="italic">y</mml:mi>
-            </mml:math></inlineequation>
-            ) make
+            </mml:math></inlineequation>)
+            make
             up the fragment.  If the size is even, the center point is
         </para>
         <para>
@@ -294,8 +291,7 @@
                     <mml:mi mathvariant="italic">x</mml:mi>
                     <mml:mi mathvariant="italic">y</mml:mi>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
             All pixel fragments produced in rasterizing a nonantialiased point are
             assigned the same associated data, that of the vertex corresponding to the
             point.
@@ -314,8 +310,8 @@
                     <mml:mi mathvariant="italic">w</mml:mi>
                     </mml:msub>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            .  The coverage value for each fragment is the
+            </mml:math></inlineequation>.
+            The coverage value for each fragment is the
             window coordinate area of the intersection of the circular region with the
             corresponding pixel square.  This value is saved and used in the final
             rasterization step.  The data associated with each fragment is the data

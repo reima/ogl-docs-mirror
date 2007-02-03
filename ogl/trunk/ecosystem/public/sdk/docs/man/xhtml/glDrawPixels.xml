@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glDrawPixels</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glDrawPixels"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glDrawPixels — write a block of pixels to the frame buffer</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glDrawPixels</b>(</code></td><td>GLsizei  </td><td><var class="pdparam">width</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">height</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">format</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>const GLvoid *  </td><td><var class="pdparam">data</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782046"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>width</code></em>, </span><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glDrawPixels</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glDrawPixels"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glDrawPixels — write a block of pixels to the frame buffer</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glDrawPixels</b>(</code></td><td>GLsizei  </td><td><var class="pdparam">width</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">height</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">format</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>const GLvoid *  </td><td><var class="pdparam">data</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782045"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>width</code></em>, </span><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
                     Specify the dimensions of the pixel rectangle to be written
                     into the frame buffer.
                 </p></dd><dt><span class="term"><em class="parameter"><code>format</code></em></span></dt><dd><p>
@@ -46,7 +46,7 @@
                     are accepted.
                 </p></dd><dt><span class="term"><em class="parameter"><code>data</code></em></span></dt><dd><p>
                     Specifies a pointer to the pixel data.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775254"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775253"></a><h2>Description</h2><p>
             <code class="function">glDrawPixels</code> reads pixel data from memory and writes it into the frame buffer
             relative to the current raster position, provided that the raster
             position is valid.  Use
@@ -176,8 +176,7 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         where 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">b</mml:mi></mml:math>
                         is the number of bits in a color index buffer.
@@ -190,8 +189,8 @@
                         and 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">y</mml:mi></mml:math>
                         window coordinates to the 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
-                        th fragment such that
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>th
+                        fragment such that
                         </p><div class="informalequation"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
@@ -288,15 +287,14 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         where 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">b</mml:mi></mml:math>
                         is the number of bits in the stencil buffer.
                         The resulting stencil indices are then written to the stencil buffer
                         such that the 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
-                        th index is written to location
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>th
+                        index is written to location
                     </p><p>
                         </p><div class="informalequation"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
@@ -368,8 +366,7 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math>
-                        .
+                        </mml:math>.
                         Unsigned integer data is mapped similarly:
                         the largest integer value maps to 1.0,
                         and 0 maps to 0.0.
@@ -382,8 +379,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math>
-                        .
+                        </mml:math>.
                     </p><p>
                         The GL then converts the resulting depth components to fragments
                         by attaching the current raster position color or color index and
@@ -393,8 +389,8 @@
                         and 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">y</mml:mi></mml:math>
                         window coordinates to the 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
-                        th fragment such that
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>th
+                        fragment such that
                     </p><p>
                         </p><div class="informalequation"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
@@ -471,8 +467,8 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math>
-                        . (Note that
+                        </mml:math>.
+                        (Note that
                         this mapping does not convert 0 precisely to 0.0.)
                         Unsigned integer data is mapped similarly:
                         The largest integer value maps to 1.0,
@@ -488,8 +484,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math>
-                        .
+                        </mml:math>.
                     </p><p>
                         If <code class="constant">GL_MAP_COLOR</code> is true,
                         each color component is scaled by the size of lookup table
@@ -505,8 +500,8 @@
                         and 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">y</mml:mi></mml:math>
                         window coordinates to the 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
-                        th fragment such that
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>th
+                        fragment such that
                     </p><p>
                         </p><div class="informalequation"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
@@ -742,10 +737,10 @@
             </mml:math>
             is the current raster position,
             and a given pixel is in the 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
-            th column and 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">m</mml:mi></mml:math>
-            th row
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>th
+            column and 
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">m</mml:mi></mml:math>th
+            row
             of the pixel rectangle,
             then fragments are generated for pixels whose centers are in the rectangle
             with corners at
@@ -846,7 +841,7 @@
                 </mml:msub>
             </mml:math>
             is the value of <code class="constant">GL_ZOOM_Y</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786789"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786782"></a><h2>Notes</h2><p>
             <code class="constant">GL_BGR</code> and <code class="constant">GL_BGRA</code> are only valid for <em class="parameter"><code>format</code></em> if the GL
             version is 1.2 or greater.
         </p><p>
@@ -863,7 +858,7 @@
             <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>, and
             <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code> are only valid for <em class="parameter"><code>type</code></em> if the
             GL version is 1.2 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786877"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4786870"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>format</code></em> or <em class="parameter"><code>type</code></em> is not one of
             the accepted values.
         </p><p>
@@ -921,13 +916,13 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glDrawPixels</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787222"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787216"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_POSITION</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_POSITION_VALID</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787264"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787258"></a><h2>See Also</h2><p>
             <a href="glAlphaFunc.xml"><span class="citerefentry"><span class="refentrytitle">glAlphaFunc</span></span></a>,
             <a href="glBlendFunc.xml"><span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span></a>,
             <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
@@ -942,7 +937,7 @@
             <a href="glScissor.xml"><span class="citerefentry"><span class="refentrytitle">glScissor</span></span></a>,
             <a href="glStencilFunc.xml"><span class="citerefentry"><span class="refentrytitle">glStencilFunc</span></span></a>,
             <a href="glWindowPos.xml"><span class="citerefentry"><span class="refentrytitle">glWindowPos</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787346"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787339"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

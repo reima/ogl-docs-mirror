@@ -176,13 +176,11 @@
                         If the filter width is 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">Wf</mml:mi></mml:math></inlineequation>
                         and height is 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">Hf</mml:mi></mml:math></inlineequation>
-                        ,
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">Hf</mml:mi></mml:math></inlineequation>,
                         and the source image width is 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">Ws</mml:mi></mml:math></inlineequation>
                         and height is 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">Hs</mml:mi></mml:math></inlineequation>
-                        ,
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">Hs</mml:mi></mml:math></inlineequation>,
                         then the convolved image width will be 
                         <inlineequation><mml:math>
                             <!-- eqn: Ws  -  Wf  +  1:-->
@@ -205,8 +203,7 @@
                                 <mml:mo>+</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         (If this reduction would generate an image with zero or negative width
                         and/or height, the output is simply null, with no error generated.)
                         The coordinates of the image resulting from convolution are zero

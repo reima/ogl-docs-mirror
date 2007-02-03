@@ -121,8 +121,7 @@
                 </mml:msub>
             </mml:math></inlineequation>
             is sent to the next stage of the GL if and only if the
-            (
-            <inlineequation><mml:math>
+            (<inlineequation><mml:math>
                 <!-- eqn: x sub w mod 32:-->
                 <mml:mrow>
                     <mml:msub><mml:mi mathvariant="italic">x</mml:mi>
@@ -131,9 +130,9 @@
                     <mml:mo>%</mml:mo>
                     <mml:mn>32</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            )th bit in the (
-            <inlineequation><mml:math>
+            </mml:math></inlineequation>)th
+            bit in the 
+            (<inlineequation><mml:math>
                 <!-- eqn: y sub w mod 32:-->
                 <mml:mrow>
                     <mml:msub><mml:mi mathvariant="italic">y</mml:mi>
@@ -142,8 +141,8 @@
                     <mml:mo>%</mml:mo>
                     <mml:mn>32</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            )th row
+            </mml:math></inlineequation>)th
+            row
             of the stipple pattern is 1 (one).
             When polygon stippling is disabled, it is as if the stipple pattern
             consists of all 1's.

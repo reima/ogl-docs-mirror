@@ -127,8 +127,7 @@
                     <mml:mn>0</mml:mn>
                     <mml:mn>1</mml:mn>
                 </mml:mfenced>
-            </mml:math>
-            .
+            </mml:math>.
             Each pixel is then converted to the internal format specified by
             <em class="parameter"><code>internalformat</code></em>.
             This conversion simply maps the component values of the pixel (R, G, B,
@@ -228,8 +227,7 @@
                         <mml:mn>1</mml:mn>
                     </mml:mrow>
                 </mml:mfenced>
-            </mml:math>
-            .
+            </mml:math>.
         </p><p>
             If <em class="parameter"><code>target</code></em> is <code class="constant">GL_PROXY_*</code>,
             <code class="function">glColorTable</code> recomputes and stores the values of the proxy color table's state
@@ -268,8 +266,7 @@
                     <mml:mn>0.0</mml:mn>
                     <mml:mn>1.0</mml:mn>
                 </mml:mfenced>
-            </mml:math>
-            .
+            </mml:math>.
             The color components are rescaled to
             the size of the color lookup table to form an index.
             Then a subset of the components based on the internal format of the table are
@@ -415,7 +412,7 @@
             are mapped by the post color matrix color lookup table before being
             used by the histogram operation.
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785285"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785291"></a><h2>Notes</h2><p>
             <code class="function">glColorTable</code> is present only if <code class="code">ARB_imaging</code> is returned when <a href="glGetString.xml"><span class="citerefentry"><span class="refentrytitle">glGetString</span></span></a>
             is called with an argument of <code class="constant">GL_EXTENSIONS</code>.
         </p><p>
@@ -425,7 +422,7 @@
             then <em class="parameter"><code>width</code></em> must be a power of two or a <code class="constant">GL_INVALID_VALUE</code>
             error is generated.
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785351"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785357"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not one of the allowable
             values.
         </p><p>
@@ -458,17 +455,17 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glColorTable</code> is executed
             between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding
             execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785541"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785547"></a><h2>Associated Gets</h2><p>
             <a href="glGetColorTableParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetColorTableParameter</span></span></a>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785567"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785573"></a><h2>See Also</h2><p>
             <a href="glColorSubTable.xml"><span class="citerefentry"><span class="refentrytitle">glColorSubTable</span></span></a>,
             <code class="function">glColorTableParameter</code>,
             <a href="glCopyColorTable.xml"><span class="citerefentry"><span class="refentrytitle">glCopyColorTable</span></span></a>,
             <a href="glCopyColorSubTable.xml"><span class="citerefentry"><span class="refentrytitle">glCopyColorSubTable</span></span></a>,
             <a href="glGetColorTable.xml"><span class="citerefentry"><span class="refentrytitle">glGetColorTable</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785603"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785609"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

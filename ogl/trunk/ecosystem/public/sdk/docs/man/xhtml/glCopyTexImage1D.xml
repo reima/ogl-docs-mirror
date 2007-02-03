@@ -90,13 +90,12 @@
                         </mml:mrow>
                     </mml:math>
                     for some integer 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
-                    .
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>.
                     The height of the texture image is 1.
                 </p></dd><dt><span class="term"><em class="parameter"><code>border</code></em></span></dt><dd><p>
                     Specifies the width of the border.
                     Must be either 0 or 1.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775485"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775484"></a><h2>Description</h2><p>
             <code class="function">glCopyTexImage1D</code> defines a one-dimensional texture image with pixels from the current
             <code class="constant">GL_READ_BUFFER</code>.
         </p><p>
@@ -197,8 +196,8 @@
                     <mml:mo>⁢</mml:mo>
                     <mml:mi mathvariant="italic">max</mml:mi>
                 </mml:mrow>
-            </mml:math>
-            , where
+            </mml:math>,
+            where
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">max</mml:mi></mml:math>
             is the returned value of <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
         </p><p>
@@ -234,11 +233,11 @@
             <code class="constant">GL_DEPTH_COMPONENT</code>, <code class="constant">GL_DEPTH_COMPONENT16</code>,
             <code class="constant">GL_DEPTH_COMPONENT24</code>, or <code class="constant">GL_DEPTH_COMPONENT32</code> and there is no depth
             buffer.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711368"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711366"></a><h2>Associated Gets</h2><p>
             <a href="glGetTexImage.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexImage</span></span></a>
         </p><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_1D</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711392"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711391"></a><h2>See Also</h2><p>
             <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
             <a href="glCopyTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a>,
             <a href="glCopyTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage1D</span></span></a>,
@@ -252,7 +251,7 @@
             <a href="glTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span></a>,
             <a href="glTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>,
             <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711470"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711469"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

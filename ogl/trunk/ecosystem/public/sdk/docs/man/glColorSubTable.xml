@@ -176,8 +176,7 @@
                     <mml:mo>&gt;</mml:mo>
                     <mml:mi mathvariant="italic">width</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the

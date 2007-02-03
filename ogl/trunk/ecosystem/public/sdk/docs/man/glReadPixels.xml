@@ -182,8 +182,8 @@
                 </mml:mrow>
             </mml:math></inlineequation>.
             This pixel is said to be the 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-            th pixel in the 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>th
+            pixel in the 
             <inlineequation><mml:math><mml:mi mathvariant="italic">j</mml:mi></mml:math></inlineequation>th
             row.
             Pixels are returned in row order from the lowest to the highest row,
@@ -712,10 +712,10 @@
             <constant>GL_ALPHA</constant>, or
             <constant>GL_LUMINANCE</constant>,
             a single value is returned and the data for the 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-            th pixel in the 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">j</mml:mi></mml:math></inlineequation>
-            th row
+            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>th
+            pixel in the 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">j</mml:mi></mml:math></inlineequation>th
+            row
             is placed in location 
             <inlineequation><mml:math>
                 <!-- eqn: (j) width + i:-->

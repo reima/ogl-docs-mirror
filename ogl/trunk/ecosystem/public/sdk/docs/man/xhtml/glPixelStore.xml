@@ -55,51 +55,44 @@
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>0</mml:mn>
                             </mml:msub>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>1</mml:mn>
                             </mml:msub>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>2</mml:mn>
                             </mml:msub>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>3</mml:mn>
                             </mml:msub>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         it is stored in memory as
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>3</mml:mn>
                             </mml:msub>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>2</mml:mn>
                             </mml:msub>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>1</mml:mn>
                             </mml:msub>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
@@ -215,8 +208,8 @@
                                 <mml:mo>&lt;</mml:mo>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                             </mml:mrow>
-                        </mml:math>
-                        , then it is as if 
+                        </mml:math>,
+                        then it is as if 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
@@ -224,8 +217,7 @@
                                 <mml:mo>=</mml:mo>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                             </mml:mrow>
-                        </mml:math>
-                        ).
+                        </mml:math>).
                         In the case of 1-bit values,
                         the location of the next row is obtained by skipping
                     </p><p>
@@ -380,8 +372,8 @@
                                 <mml:mo>&lt;</mml:mo>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                             </mml:mrow>
-                        </mml:math>
-                        , then it is as if 
+                        </mml:math>,
+                        then it is as if 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
@@ -389,8 +381,7 @@
                                 <mml:mo>=</mml:mo>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                             </mml:mrow>
-                        </mml:math>
-                        ).
+                        </mml:math>).
                     </p><p>
                         The word <span class="emphasis"><em>component</em></span> in this description refers to the nonindex values
                         red,
@@ -452,8 +443,8 @@
                                 <mml:mo>⁢</mml:mo>
                                 <mml:mi mathvariant="italic">p</mml:mi>
                             </mml:mrow>
-                        </mml:math>
-                        , where 
+                        </mml:math>,
+                        where 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">p</mml:mi></mml:math>
                         is the number of components or indices
                         per image, as computed in the <code class="constant">GL_PACK_IMAGE_HEIGHT</code> section.
@@ -498,51 +489,44 @@
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>0</mml:mn>
                             </mml:msub>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>1</mml:mn>
                             </mml:msub>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>2</mml:mn>
                             </mml:msub>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>3</mml:mn>
                             </mml:msub>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         it is taken from memory as
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>3</mml:mn>
                             </mml:msub>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>2</mml:mn>
                             </mml:msub>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>1</mml:mn>
                             </mml:msub>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
@@ -658,8 +642,8 @@
                                 <mml:mo>&lt;</mml:mo>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                             </mml:mrow>
-                        </mml:math>
-                        , then it is as if 
+                        </mml:math>,
+                        then it is as if 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
@@ -667,8 +651,7 @@
                                 <mml:mo>=</mml:mo>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                             </mml:mrow>
-                        </mml:math>
-                        ).
+                        </mml:math>).
                         In the case of 1-bit values,
                         the location of the next row is obtained by skipping
                     </p><p>
@@ -822,8 +805,8 @@
                                 <mml:mo>&lt;</mml:mo>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                             </mml:mrow>
-                        </mml:math>
-                        , then it is as if 
+                        </mml:math>,
+                        then it is as if 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
@@ -831,8 +814,7 @@
                                 <mml:mo>=</mml:mo>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                             </mml:mrow>
-                        </mml:math>
-                        ).
+                        </mml:math>).
                     </p><p>
                         The word <span class="emphasis"><em>component</em></span> in this description refers to the nonindex values
                         red,
@@ -1111,7 +1093,7 @@
             Likewise, <code class="function">glPixelStorei</code> can also be used to set any of the
             pixel store parameters.
             Boolean parameters are set to false if <em class="parameter"><code>param</code></em> is 0 and true otherwise.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787680"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787662"></a><h2>Notes</h2><p>
             The pixel storage modes in effect when
             <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>,
             <a href="glReadPixels.xml"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>,
@@ -1138,7 +1120,7 @@
             Pixel storage modes are client state and must be pushed and restored
             using
             <a href="glPushClientAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPushClientAttrib</span></span></a> and <a href="glPopClientAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPopClientAttrib</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787802"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787784"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>pname</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if a negative row length,
@@ -1149,7 +1131,7 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glPixelStore</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787860"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787842"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PACK_SWAP_BYTES</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PACK_LSB_FIRST</code>
@@ -1181,7 +1163,7 @@
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_UNPACK_SKIP_IMAGES</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_UNPACK_ALIGNMENT</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4788055"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4788036"></a><h2>See Also</h2><p>
             <a href="glBitmap.xml"><span class="citerefentry"><span class="refentrytitle">glBitmap</span></span></a>,
             <a href="glColorTable.xml"><span class="citerefentry"><span class="refentrytitle">glColorTable</span></span></a>,
             <a href="glColorSubTable.xml"><span class="citerefentry"><span class="refentrytitle">glColorSubTable</span></span></a>,
@@ -1203,7 +1185,7 @@
             <a href="glTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span></a>,
             <a href="glTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>,
             <a href="glTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4788174"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4788156"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

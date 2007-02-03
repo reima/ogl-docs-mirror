@@ -75,15 +75,13 @@
             <listitem>
                 <para>
                     Specify a linear mapping of 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">u</mml:mi></mml:math></inlineequation>
-                    ,
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">u</mml:mi></mml:math></inlineequation>,
                     as presented to <citerefentry><refentrytitle>glEvalCoord2</refentrytitle></citerefentry>,
                     to 
                     <inlineequation><mml:math>
                         <!-- eqn: u hat:-->
                         <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>&Hat;</mml:mo></mml:mover>
-                    </mml:math></inlineequation>
-                    ,
+                    </mml:math></inlineequation>,
                     one of the two variables that are evaluated by the equations specified
                     by this command. Initially, <parameter>u1</parameter> is 0 and <parameter>u2</parameter> is 1.
                 </para>
@@ -119,8 +117,7 @@
                             </mml:mrow>
                         </mml:mfenced>
                         </mml:msub>
-                    </mml:math></inlineequation>
-                    ,
+                    </mml:math></inlineequation>,
                     where 
                     <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
                     and 
@@ -153,15 +150,13 @@
             <listitem>
                 <para>
                     Specify a linear mapping of 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">v</mml:mi></mml:math></inlineequation>
-                    ,
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">v</mml:mi></mml:math></inlineequation>,
                     as presented to <citerefentry><refentrytitle>glEvalCoord2</refentrytitle></citerefentry>,
                     to 
                     <inlineequation><mml:math>
                         <!-- eqn: v hat:-->
                         <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>&Hat;</mml:mo></mml:mover>
-                    </mml:math></inlineequation>
-                    ,
+                    </mml:math></inlineequation>,
                     one of the two variables that are evaluated by the equations specified
                     by this command. Initially, <parameter>v1</parameter> is 0 and <parameter>v2</parameter> is 1.
                 </para>
@@ -197,8 +192,7 @@
                             </mml:mrow>
                         </mml:mfenced>
                         </mml:msub>
-                    </mml:math></inlineequation>
-                    ,
+                    </mml:math></inlineequation>,
                     where 
                     <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
                     and 
@@ -376,8 +370,8 @@
                 </mml:mrow>
             </mml:math></inlineequation>
             is the 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-            th Bernstein polynomial of degree
+            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>th
+            Bernstein polynomial of degree
             <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
             (<parameter>uorder</parameter> = 
             <inlineequation><mml:math>
@@ -387,8 +381,7 @@
                     <mml:mo>+</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            )
+            </mml:math></inlineequation>)
         </para>
         <para>
             <informalequation><mml:math>
@@ -468,8 +461,8 @@
                 </mml:mrow>
             </mml:math></inlineequation>
             is the 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">j</mml:mi></mml:math></inlineequation>
-            th Bernstein polynomial of degree 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">j</mml:mi></mml:math></inlineequation>th
+            Bernstein polynomial of degree 
             <inlineequation><mml:math><mml:mi mathvariant="italic">m</mml:mi></mml:math></inlineequation>
             (<parameter>vorder</parameter> = 
             <inlineequation><mml:math>
@@ -479,8 +472,7 @@
                     <mml:mo>+</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            )
+            </mml:math></inlineequation>)
         </para>
         <para>
             <informalequation><mml:math>
@@ -584,8 +576,7 @@
             When <citerefentry><refentrytitle>glEvalCoord2</refentrytitle></citerefentry> presents values 
             <inlineequation><mml:math><mml:mi mathvariant="italic">u</mml:mi></mml:math></inlineequation>
             and 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">v</mml:mi></mml:math></inlineequation>
-            ,
+            <inlineequation><mml:math><mml:mi mathvariant="italic">v</mml:mi></mml:math></inlineequation>,
             the bivariate Bernstein polynomials are evaluated using 
             <inlineequation><mml:math>
                 <!-- eqn: u hat:-->
@@ -595,8 +586,7 @@
             <inlineequation><mml:math>
                 <!-- eqn: v hat:-->
                 <mml:mover><mml:mi mathvariant="italic">v</mml:mi><mml:mo>&Hat;</mml:mo></mml:mover>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             where
         </para>
         <para>
@@ -661,12 +651,10 @@
                 <listitem>
                     <para>
                         Each control point is three floating-point values representing
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
-                        , 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
-                        , and 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>
-                        .
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>, 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>,
+                        and 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>.
                         Internal <citerefentry><refentrytitle>glVertex3</refentrytitle></citerefentry> commands are generated when the map is evaluated.
                     </para>
                 </listitem>
@@ -676,14 +664,11 @@
                 <listitem>
                     <para>
                         Each control point is four floating-point values representing
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
-                        , 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
-                        , 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>
-                        , and 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>
-                        .
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>, 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>, 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>,
+                        and 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>.
                         Internal <citerefentry><refentrytitle>glVertex4</refentrytitle></citerefentry> commands are generated when the map is evaluated.
                     </para>
                 </listitem>
@@ -717,10 +702,9 @@
                     <para>
                         Each control point is three floating-point values representing
                         the 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
-                        , 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
-                        , and 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>, 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>,
+                        and 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>
                         components of a normal vector.
                         Internal <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry> commands are generated when the map is
@@ -767,10 +751,9 @@
                     <para>
                         Each control point is three floating-point values representing
                         the 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
-                        , 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">t</mml:mi></mml:math></inlineequation>
-                        , and 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>, 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">t</mml:mi></mml:math></inlineequation>,
+                        and 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">r</mml:mi></mml:math></inlineequation>
                         texture coordinates.
                         Internal <citerefentry><refentrytitle>glTexCoord3</refentrytitle></citerefentry> commands are generated when the map is
@@ -785,12 +768,10 @@
                     <para>
                         Each control point is four floating-point values representing
                         the 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
-                        , 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">t</mml:mi></mml:math></inlineequation>
-                        , 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">r</mml:mi></mml:math></inlineequation>
-                        , and 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>, 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">t</mml:mi></mml:math></inlineequation>, 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">r</mml:mi></mml:math></inlineequation>,
+                        and 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">q</mml:mi></mml:math></inlineequation>
                         texture coordinates.
                         Internal
@@ -851,8 +832,7 @@
                     </mml:mrow>
                 </mml:mfenced>
                 </mml:msub>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
             <parameter>vstride</parameter> specifies how many float or double locations are skipped to advance
             the internal memory pointer from control point
             <inlineequation><mml:math>
@@ -885,8 +865,7 @@
                     </mml:mrow>
                 </mml:mfenced>
                 </mml:msub>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
         </para>
     </refsect1>
     <refsect1><title>Notes</title>

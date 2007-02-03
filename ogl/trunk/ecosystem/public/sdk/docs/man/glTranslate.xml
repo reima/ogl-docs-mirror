@@ -59,8 +59,7 @@
                     <mml:mi mathvariant="italic">y</mml:mi>
                     <mml:mi mathvariant="italic">z</mml:mi>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
             The current matrix
             (see
             <citerefentry><refentrytitle>glMatrixMode</refentrytitle></citerefentry>)

@@ -73,8 +73,7 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <emphasis>i</emphasis> pixels are filled in each column that is rasterized,
             where <emphasis>i</emphasis> is the rounded value of <parameter>width</parameter>.
             Otherwise,

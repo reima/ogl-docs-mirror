@@ -138,8 +138,7 @@
                     <mml:mi mathvariant="italic">objZ</mml:mi>
                     <mml:mi mathvariant="italic">objW</mml:mi>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <function>gluUnProject4</function> multiplies the normalized device coordinates by the inverse of
             <parameter>model</parameter> * <parameter>proj</parameter> as follows:
         </para>

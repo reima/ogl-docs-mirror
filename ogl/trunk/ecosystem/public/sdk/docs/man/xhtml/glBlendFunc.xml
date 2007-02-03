@@ -92,8 +92,7 @@
                     <mml:mi mathvariant="italic">d</mml:mi>
                     </mml:msub>
                 </mml:mfenced>
-            </mml:math>
-            .
+            </mml:math>.
             The color specified by <a href="glBlendColor.xml"><span class="citerefentry"><span class="refentrytitle">glBlendColor</span></span></a> is referred to as
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -111,8 +110,7 @@
                     <mml:mi mathvariant="italic">c</mml:mi>
                     </mml:msub>
                 </mml:mfenced>
-            </mml:math>
-            .
+            </mml:math>.
             They are understood to have integer values between 0 and
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -130,8 +128,7 @@
                     <mml:mi mathvariant="italic">A</mml:mi>
                     </mml:msub>
                 </mml:mfenced>
-            </mml:math>
-            ,
+            </mml:math>,
             where
         </p><p>
             </p><p>
@@ -215,8 +212,7 @@
                     <mml:mi mathvariant="italic">A</mml:mi>
                     </mml:msub>
                 </mml:mfenced>
-            </mml:math>
-            .
+            </mml:math>.
             The scale factors described in the table,
             denoted 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -235,8 +231,7 @@
                     <mml:mi mathvariant="italic">A</mml:mi>
                     </mml:msub>
                 </mml:mfenced>
-            </mml:math>
-            ,
+            </mml:math>,
             represent either source or destination factors.
             All scale factors have range 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -245,8 +240,7 @@
                     <mml:mn>0</mml:mn>
                     <mml:mn>1</mml:mn>
                 </mml:mfenced>
-            </mml:math>
-            .
+            </mml:math>.
         </p><p>
         </p><div class="informaltable"><table border="1"><colgroup><col align="left" /><col align="left" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
                         Parameter
@@ -963,8 +957,7 @@
                 <mml:msub><mml:mi mathvariant="italic">k</mml:mi>
                 <mml:mi mathvariant="italic">A</mml:mi>
                 </mml:msub>
-            </mml:math>
-            ,
+            </mml:math>,
             the equations reduce to simple replacement:
         </p><p>
             </p><p>
@@ -1018,7 +1011,7 @@
                 </mml:math>
             </p><p>
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787104"></a><h2>EXAMPLES</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787101"></a><h2>EXAMPLES</h2><p>
         </p><p>
             Transparency is best implemented using blend function
             (<code class="constant">GL_SRC_ALPHA</code>, <code class="constant">GL_ONE_MINUS_SRC_ALPHA</code>)
@@ -1039,16 +1032,16 @@
             Destination alpha bitplanes,
             which must be present for this blend function to operate correctly,
             store the accumulated coverage.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787185"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787181"></a><h2>Notes</h2><p>
             Incoming (source) alpha is correctly thought of as a material opacity,
-            ranging from 1.0 (
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+            ranging from 1.0 
+            (<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">K</mml:mi>
                 <mml:mi mathvariant="italic">A</mml:mi>
                 </mml:msub>
-            </mml:math>
-            ), representing complete opacity,
+            </mml:math>),
+            representing complete opacity,
             to 0.0 (0), representing complete
             transparency.
         </p><p>
@@ -1070,21 +1063,21 @@
         </p><p>
             <code class="constant">GL_DST_COLOR</code> and <code class="constant">GL_ONE_MINUS_DST_COLOR</code> are valid only for
             <em class="parameter"><code>dfactor</code></em> if the GL version is 1.4 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787310"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787308"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if either <em class="parameter"><code>sfactor</code></em> or <em class="parameter"><code>dfactor</code></em> is not an
             accepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glBlendFunc</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787361"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787358"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_BLEND_SRC</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_BLEND_DST</code>
         </p><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_BLEND</code>
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787405"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787402"></a><h2>See Also</h2><p>
             <a href="glAlphaFunc.xml"><span class="citerefentry"><span class="refentrytitle">glAlphaFunc</span></span></a>,
             <a href="glBlendColor.xml"><span class="citerefentry"><span class="refentrytitle">glBlendColor</span></span></a>,
             <a href="glBlendEquation.xml"><span class="citerefentry"><span class="refentrytitle">glBlendEquation</span></span></a>,
@@ -1095,7 +1088,7 @@
             <a href="glLogicOp.xml"><span class="citerefentry"><span class="refentrytitle">glLogicOp</span></span></a>,
             <a href="glStencilFunc.xml"><span class="citerefentry"><span class="refentrytitle">glStencilFunc</span></span></a>
             				
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787463"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787460"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

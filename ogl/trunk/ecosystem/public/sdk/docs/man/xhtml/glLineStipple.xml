@@ -19,8 +19,7 @@
             the 16-bit line stipple pattern <em class="parameter"><code>pattern</code></em>,
             the repeat count <em class="parameter"><code>factor</code></em>,
             and an integer stipple counter 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math>
-            .
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math>.
         </p><p>
             Counter 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math>
@@ -82,20 +81,20 @@
             When disabled,
             it is as if the pattern were all 1's.
             Initially, line stippling is disabled.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775525"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775524"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glLineStipple</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775556"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775554"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_LINE_STIPPLE_PATTERN</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_LINE_STIPPLE_REPEAT</code>
         </p><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_LINE_STIPPLE</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775597"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775595"></a><h2>See Also</h2><p>
             <a href="glLineWidth.xml"><span class="citerefentry"><span class="refentrytitle">glLineWidth</span></span></a>,
             <a href="glPolygonStipple.xml"><span class="citerefentry"><span class="refentrytitle">glPolygonStipple</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775616"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775614"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -123,8 +123,7 @@
                         <inlineequation><mml:math>
                             <!-- eqn: -1000:-->
                             <mml:mn>-1000</mml:mn>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -159,8 +158,7 @@
                 <listitem>
                     <para>
                         Returns the single-valued wrapping function for texture coordinate 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
-                        ,
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>,
                         a symbolic constant. The initial value is <constant>GL_REPEAT</constant>.
                     </para>
                 </listitem>
@@ -170,8 +168,7 @@
                 <listitem>
                     <para>
                         Returns the single-valued wrapping function for texture coordinate 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">t</mml:mi></mml:math></inlineequation>
-                        ,
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">t</mml:mi></mml:math></inlineequation>,
                         a symbolic constant. The initial value is <constant>GL_REPEAT</constant>.
                     </para>
                 </listitem>
@@ -181,8 +178,7 @@
                 <listitem>
                     <para>
                         Returns the single-valued wrapping function for texture coordinate 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">r</mml:mi></mml:math></inlineequation>
-                        ,
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">r</mml:mi></mml:math></inlineequation>,
                         a symbolic constant. The initial value is <constant>GL_REPEAT</constant>.
                     </para>
                 </listitem>
@@ -200,8 +196,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         Integer values are returned as a linear mapping of the internal floating-point
                         representation such that 1.0 maps to the most positive representable
                         integer and 

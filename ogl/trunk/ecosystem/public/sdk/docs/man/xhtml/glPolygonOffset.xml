@@ -28,8 +28,7 @@
                         <mml:mi mathvariant="italic">units</mml:mi>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             where 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -45,18 +44,18 @@
         </p><p>
             <code class="function">glPolygonOffset</code> is useful for rendering hidden-line images, for applying decals
             to surfaces, and for rendering solids with highlighted edges.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768561"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768560"></a><h2>Notes</h2><p>
             <code class="function">glPolygonOffset</code> is available only if the GL version is 1.1 or greater.
         </p><p>
             <code class="function">glPolygonOffset</code> has no effect on depth coordinates placed in the
             feedback buffer.
         </p><p>
             <code class="function">glPolygonOffset</code> has no effect on selection.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775239"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775238"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glPolygonOffset</code> is executed
             between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding
             execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775270"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775269"></a><h2>Associated Gets</h2><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument
             <code class="constant">GL_POLYGON_OFFSET_FILL</code>,
             <code class="constant">GL_POLYGON_OFFSET_LINE</code>,
@@ -64,7 +63,7 @@
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_POLYGON_OFFSET_FACTOR</code> or
             <code class="constant">GL_POLYGON_OFFSET_UNITS</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775315"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775314"></a><h2>See Also</h2><p>
             <a href="glDepthFunc.xml"><span class="citerefentry"><span class="refentrytitle">glDepthFunc</span></span></a>,
             <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>,

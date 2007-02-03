@@ -150,11 +150,10 @@
             Texture mapping is a technique that applies an image onto an object's surface
             as if the image were a decal or cellophane shrink-wrap.
             The image is created in texture space,
-            with an (
-            <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
-            , 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">t</mml:mi></mml:math></inlineequation>
-            ) coordinate system.
+            with an 
+            (<inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>, 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">t</mml:mi></mml:math></inlineequation>)
+            coordinate system.
             A texture is a one- or two-dimensional image and a set of parameters
             that determine how samples are derived from the image.
         </para>
@@ -192,8 +191,8 @@
                                 <mml:mi mathvariant="italic">m</mml:mi>
                                 </mml:msup>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        , there are
+                        </mml:math></inlineequation>,
+                        there are
                         <inlineequation><mml:math>
                             <!-- eqn: max ( n, m ) + 1:-->
                             <mml:mrow>
@@ -223,8 +222,7 @@
                                 <mml:mi mathvariant="italic">m</mml:mi>
                                 </mml:msup>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         Each subsequent mipmap has dimensions 
                         <inlineequation><mml:math>
                             <!-- eqn: 2 sup { k - 1 }  times  2 sup { l - 1 }:-->
@@ -249,8 +247,7 @@
                                 </mml:mfenced>
                                 </mml:msup>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         where 
                         <inlineequation><mml:math>
                             <!-- eqn: 2 sup k  times  2 sup l:-->
@@ -282,8 +279,7 @@
                                 <mml:mo>=</mml:mo>
                                 <mml:mn>0</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         At that point,
                         subsequent mipmaps have dimension 
                         <inlineequation><mml:math>
@@ -328,8 +324,7 @@
                                 <mml:mo>&times;</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         To define the mipmaps, call <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
                         <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>,
                         <citerefentry><refentrytitle>glCopyTexImage1D</refentrytitle></citerefentry>, or <citerefentry><refentrytitle>glCopyTexImage2D</refentrytitle></citerefentry>
@@ -589,8 +584,7 @@
                                     </mml:mfenced>
                                 </mml:mrow>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         where 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">N</mml:mi></mml:math></inlineequation>
                         is the size of the texture in the direction of
@@ -626,8 +620,8 @@
                                     </mml:mfenced>
                                 </mml:mrow>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        , where 
+                        </mml:math></inlineequation>,
+                        where 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">N</mml:mi></mml:math></inlineequation>
                         is the size
                         of the texture in the direction of clamping.  <constant>GL_REPEAT</constant> causes the
@@ -660,8 +654,8 @@
                                     </mml:mfenced>
                                 </mml:mrow>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        , where 
+                        </mml:math></inlineequation>,
+                        where 
                         <inlineequation><mml:math>
                             <!-- eqn: frac(s):-->
                             <mml:mrow>
@@ -673,8 +667,8 @@
                             </mml:mrow>
                         </mml:math></inlineequation>
                         represents the fractional part of
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
-                        . Border texture
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>.
+                        Border texture
                         elements are accessed only if wrapping is set to <constant>GL_CLAMP</constant>.  Initially,
                         <constant>GL_TEXTURE_WRAP_S</constant> is set to <constant>GL_REPEAT</constant>.
                     </para>
@@ -734,8 +728,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         See <citerefentry><refentrytitle>glPrioritizeTextures</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glBindTexture</refentrytitle></citerefentry> for more information.
                     </para>
                 </listitem>

@@ -325,8 +325,8 @@
             <inlineequation><mml:math>
                 <!-- eqn: -1.0:-->
                 <mml:mn>-1.0</mml:mn>
-            </mml:math></inlineequation>
-            . (Note that
+            </mml:math></inlineequation>.
+            (Note that
             this mapping does not convert 0 precisely to 0.0.)
             Floating-point values are mapped directly.
         </para>

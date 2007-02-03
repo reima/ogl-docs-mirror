@@ -23,8 +23,7 @@
                             <mml:mo>=</mml:mo>
                             <mml:mi mathvariant="italic">un</mml:mi>
                         </mml:mrow>
-                    </mml:math>
-                    .
+                    </mml:math>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>vn</code></em></span></dt><dd><p>
                     Specifies the number of partitions in the grid range interval
                     [<em class="parameter"><code>v1</code></em>, <em class="parameter"><code>v2</code></em>]
@@ -49,7 +48,7 @@
                         </mml:mrow>
                     </mml:math>
                     (<code class="function">glMapGrid2</code> only).
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775405"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775404"></a><h2>Description</h2><p>
             <code class="function">glMapGrid</code> and <a href="glEvalMesh.xml"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a> are used together to efficiently
             generate and evaluate a series of evenly-spaced map domain values.
             <a href="glEvalMesh.xml"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a> steps through the integer domain
@@ -63,16 +62,14 @@
             (or 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
             and 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">j</mml:mi></mml:math>
-            )
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">j</mml:mi></mml:math>)
             integer grid coordinates,
             to the 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">u</mml:mi></mml:math>
             (or 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">u</mml:mi></mml:math>
             and 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">v</mml:mi></mml:math>
-            )
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">v</mml:mi></mml:math>)
             floating-point evaluation map coordinates.
             See <a href="glMap1.xml"><span class="citerefentry"><span class="refentrytitle">glMap1</span></span></a> and <a href="glMap2.xml"><span class="citerefentry"><span class="refentrytitle">glMap2</span></span></a> for details of how 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">u</mml:mi></mml:math>
@@ -215,14 +212,14 @@
         </p><p>
             The mappings specified by <code class="function">glMapGrid</code> are used identically by
             <a href="glEvalMesh.xml"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a> and <a href="glEvalPoint.xml"><span class="citerefentry"><span class="refentrytitle">glEvalPoint</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713005"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713001"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if either <em class="parameter"><code>un</code></em> or <em class="parameter"><code>vn</code></em> is not
             positive.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glMapGrid</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711356"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711353"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP1_GRID_DOMAIN</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP2_GRID_DOMAIN</code>
@@ -230,13 +227,13 @@
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP1_GRID_SEGMENTS</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP2_GRID_SEGMENTS</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711408"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711406"></a><h2>See Also</h2><p>
             <a href="glEvalCoord.xml"><span class="citerefentry"><span class="refentrytitle">glEvalCoord</span></span></a>,
             <a href="glEvalMesh.xml"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a>,
             <a href="glEvalPoint.xml"><span class="citerefentry"><span class="refentrytitle">glEvalPoint</span></span></a>,
             <a href="glMap1.xml"><span class="citerefentry"><span class="refentrytitle">glMap1</span></span></a>,
             <a href="glMap2.xml"><span class="citerefentry"><span class="refentrytitle">glMap2</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711442"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711440"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

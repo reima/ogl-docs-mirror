@@ -39,8 +39,7 @@
         </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_FOG_MODE</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> is a single integer or floating-point value that specifies
                         the equation to be used to compute the fog blend factor, 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">f</mml:mi></mml:math>
-                        .
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">f</mml:mi></mml:math>.
                         Three symbolic constants are accepted:
                         <code class="constant">GL_LINEAR</code>,
                         <code class="constant">GL_EXP</code>,
@@ -49,21 +48,18 @@
                         The initial fog mode is <code class="constant">GL_EXP</code>.
                     </p></dd><dt><span class="term"><code class="constant">GL_FOG_DENSITY</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> is a single integer or floating-point value that specifies 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">density</mml:mi></mml:math>
-                        ,
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">density</mml:mi></mml:math>,
                         the fog density used in both exponential fog equations.
                         Only nonnegative densities are accepted.
                         The initial fog density is 1.
                     </p></dd><dt><span class="term"><code class="constant">GL_FOG_START</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> is a single integer or floating-point value that specifies 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">start</mml:mi></mml:math>
-                        ,
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">start</mml:mi></mml:math>,
                         the near distance used in the linear fog equation.
                         The initial near distance is 0.
                     </p></dd><dt><span class="term"><code class="constant">GL_FOG_END</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> is a single integer or floating-point value that specifies 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">end</mml:mi></mml:math>
-                        ,
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">end</mml:mi></mml:math>,
                         the far distance used in the linear fog equation.
                         The initial far distance is 1.
                     </p></dd><dt><span class="term"><code class="constant">GL_FOG_INDEX</code></span></dt><dd><p>
@@ -73,8 +69,7 @@
                             <mml:msub><mml:mi mathvariant="italic">i</mml:mi>
                             <mml:mi mathvariant="italic">f</mml:mi>
                             </mml:msub>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         the fog color index.
                         The initial fog index is 0.
                     </p></dd><dt><span class="term"><code class="constant">GL_FOG_COLOR</code></span></dt><dd><p>
@@ -84,16 +79,15 @@
                             <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                             <mml:mi mathvariant="italic">f</mml:mi>
                             </mml:msub>
-                        </mml:math>
-                        , the fog color.
+                        </mml:math>,
+                        the fog color.
                         Integer values are mapped linearly such that the most positive representable
                         value maps to 1.0,
                         and the most negative representable value maps to 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math>
-                        .
+                        </mml:math>.
                         Floating-point values are mapped directly.
                         After conversion,
                         all color components are clamped to the range 
@@ -103,8 +97,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math>
-                        .
+                        </mml:math>.
                         The initial fog color is (0, 0, 0, 0).
                     </p></dd><dt><span class="term"><code class="constant">GL_FOG_COORD_SRC</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> contains either of the following symbolic constants:
@@ -116,8 +109,7 @@
                     </p></dd></dl></div><p>
             Fog blends a fog color with each rasterized pixel fragment's post-texturing
             color using a blending factor 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">f</mml:mi></mml:math>
-            .
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">f</mml:mi></mml:math>.
             Factor 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">f</mml:mi></mml:math>
             is computed in one of three ways,
@@ -219,8 +211,7 @@
                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                 <mml:mi mathvariant="italic">r</mml:mi>
                 </mml:msub>
-            </mml:math>
-            ,
+            </mml:math>,
             are replaced by
         </p><p>
             </p><div class="informalequation"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -304,10 +295,10 @@
                 </mml:mrow>
             </mml:math></div><p>
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711793"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711781"></a><h2>Notes</h2><p>
             <code class="constant">GL_FOG_COORD_SRC</code> is available only if the GL version is 1.4 or
             greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711805"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711793"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>pname</code></em> is not an accepted value,
             or if <em class="parameter"><code>pname</code></em> is <code class="constant">GL_FOG_MODE</code> and <em class="parameter"><code>params</code></em> is not an accepted value.
         </p><p>
@@ -317,7 +308,7 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glFog</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711889"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711879"></a><h2>Associated Gets</h2><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_FOG</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_FOG_COLOR</code>
@@ -331,9 +322,9 @@
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_FOG_END</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_FOG_MODE</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711429"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711410"></a><h2>See Also</h2><p>
             <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711442"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711423"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

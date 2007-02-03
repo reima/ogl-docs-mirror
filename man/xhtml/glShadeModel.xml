@@ -33,8 +33,8 @@
                     <mml:mo>+</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            , its second vertex.
+            </mml:math>,
+            its second vertex.
             Counting similarly from 1,
             the GL gives each flat-shaded polygon the computed color of the vertex listed
             in the following table.
@@ -48,16 +48,15 @@
                         </strong></span></th><th align="center"><span class="bold"><strong>
                         Vertex
                         </strong></span></th></tr></thead><tbody><tr><td align="left">
-                        Single polygon (
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+                        Single polygon 
+                        (<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">i</mml:mi>
                                 <mml:mo>==</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math>
-                        )
+                        </mml:math>)
                         </td><td align="center">
                         1
                         </td></tr><tr><td align="left">
@@ -120,21 +119,21 @@
                         </td></tr></tbody></table></div><p>
             Flat and smooth shading are specified by <code class="function">glShadeModel</code> with <em class="parameter"><code>mode</code></em> set to
             <code class="constant">GL_FLAT</code> and <code class="constant">GL_SMOOTH</code>, respectively.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775661"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775662"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is any value other than
             <code class="constant">GL_FLAT</code> or <code class="constant">GL_SMOOTH</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glShadeModel</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775387"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775389"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_SHADE_MODEL</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775404"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775406"></a><h2>See Also</h2><p>
             <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>,
             <a href="glColor.xml"><span class="citerefentry"><span class="refentrytitle">glColor</span></span></a>,
             <a href="glLight.xml"><span class="citerefentry"><span class="refentrytitle">glLight</span></span></a>,
             <a href="glLightModel.xml"><span class="citerefentry"><span class="refentrytitle">glLightModel</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775432"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775434"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

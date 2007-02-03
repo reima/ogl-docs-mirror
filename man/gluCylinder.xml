@@ -93,8 +93,8 @@
                     <mml:mo>=</mml:mo>
                     <mml:mi mathvariant="italic">height</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            . Like a sphere,
+            </mml:math></inlineequation>.
+            Like a sphere,
             a cylinder is subdivided around the <emphasis>z</emphasis> axis into slices and along the 
             <emphasis>z</emphasis> axis into stacks.
         </para>

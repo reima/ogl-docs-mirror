@@ -100,8 +100,7 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             inclusive. The destination in the texture array may not
             include any texels outside the texture array as it was
             originally specified.
@@ -179,8 +178,7 @@
                         </mml:mfenced>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             where <emphasis>max</emphasis> is the returned value of <constant>GL_MAX_TEXTURE_SIZE</constant>.
         </para>
         <para>
@@ -195,8 +193,8 @@
                         <mml:mi mathvariant="italic">b</mml:mi>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , or
+            </mml:math></inlineequation>,
+            or
             <inlineequation><mml:math>
                 <!-- eqn: (xoffset + width)  >  (w-b):-->
                 <mml:mrow>
@@ -216,8 +214,7 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             where 
             <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>
             is the <constant>GL_TEXTURE_WIDTH</constant> and 

@@ -102,8 +102,7 @@
                                 <mml:mn>-1</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         the corresponding integer return value is undefined. The initial value is
                         (0.2, 0.2, 0.2, 1.0)
                     </para>
@@ -132,8 +131,7 @@
                                 <mml:mn>-1</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         the corresponding integer return value is undefined. The initial value is
                         (0.8, 0.8, 0.8, 1.0).
                     </para>
@@ -162,8 +160,7 @@
                                 <mml:mn>-1</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         the corresponding integer return value is undefined. The initial value is
                         (0, 0, 0, 1).
                     </para>
@@ -192,8 +189,7 @@
                                 <mml:mn>-1</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         the corresponding integer return value is undefined. The initial value is
                         (0, 0, 0, 1).
                     </para>

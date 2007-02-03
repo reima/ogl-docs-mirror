@@ -23,8 +23,8 @@
                     <mml:mo>=</mml:mo>
                     <mml:mi mathvariant="italic">height</mml:mi>
                 </mml:mrow>
-            </mml:math>
-            . Like a sphere,
+            </mml:math>.
+            Like a sphere,
             a cylinder is subdivided around the <span class="emphasis"><em>z</em></span> axis into slices and along the 
             <span class="emphasis"><em>z</em></span> axis into stacks.
         </p><p>
@@ -41,13 +41,13 @@
             ranges from 0.0 at the +<span class="emphasis"><em>y</em></span> axis, to 0.25 at the +<span class="emphasis"><em>x</em></span> axis, 
             to 0.5 at the -<span class="emphasis"><em>y</em></span> axis, to 0.75 at the \-<span class="emphasis"><em>x</em></span> axis, 
             and back to 1.0 at the +<span class="emphasis"><em>y</em></span> axis.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775310"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775311"></a><h2>See Also</h2><p>
             <a href="gluDisk.xml"><span class="citerefentry"><span class="refentrytitle">gluDisk</span></span></a>,
             <a href="gluNewQuadric.xml"><span class="citerefentry"><span class="refentrytitle">gluNewQuadric</span></span></a>,
             <a href="gluPartialDisk.xml"><span class="citerefentry"><span class="refentrytitle">gluPartialDisk</span></span></a>,
             <a href="gluQuadricTexture.xml"><span class="citerefentry"><span class="refentrytitle">gluQuadricTexture</span></span></a>, 
             <a href="gluSphere.xml"><span class="citerefentry"><span class="refentrytitle">gluSphere</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775344"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775345"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

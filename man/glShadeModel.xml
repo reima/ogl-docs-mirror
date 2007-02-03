@@ -69,8 +69,8 @@
                     <mml:mo>+</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , its second vertex.
+            </mml:math></inlineequation>,
+            its second vertex.
             Counting similarly from 1,
             the GL gives each flat-shaded polygon the computed color of the vertex listed
             in the following table.
@@ -98,16 +98,15 @@
                 <tbody>
                     <row>
                         <entry align="left">
-                        Single polygon (
-                        <inlineequation><mml:math>
+                        Single polygon 
+                        (<inlineequation><mml:math>
                             <!-- eqn: i  ==  1:-->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">i</mml:mi>
                                 <mml:mo>==</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        )
+                        </mml:math></inlineequation>)
                         </entry>
                         <entry align="center">
                         1

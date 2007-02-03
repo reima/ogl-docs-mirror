@@ -143,8 +143,7 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             then the modelview transformation 
             <inlineequation><mml:math>
                 <!-- eqn: M(v):-->
@@ -395,8 +394,8 @@
                 <mml:msup><mml:mi mathvariant="italic">M</mml:mi>
                 <mml:mi mathvariant="italic">T</mml:mi>
                 </mml:msup>
-            </mml:math></inlineequation>
-            , where 
+            </mml:math></inlineequation>,
+            where 
             <inlineequation><mml:math><mml:mi mathvariant="italic">T</mml:mi></mml:math></inlineequation>
             represents the transpose.
         </para>

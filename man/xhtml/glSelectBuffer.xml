@@ -48,8 +48,7 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             before being placed in the hit record.
         </p><p>
             An internal index into <em class="parameter"><code>buffer</code></em> is reset to 0 whenever selection mode
@@ -71,7 +70,7 @@
             and initializes the name stack to be empty.
             If the overflow bit was set when <a href="glRenderMode.xml"><span class="citerefentry"><span class="refentrytitle">glRenderMode</span></span></a> was called,
             a negative hit record count is returned.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775298"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775297"></a><h2>Notes</h2><p>
             The contents of <em class="parameter"><code>buffer</code></em> is undefined until <a href="glRenderMode.xml"><span class="citerefentry"><span class="refentrytitle">glRenderMode</span></span></a> is called
             with an argument other than <code class="constant">GL_SELECT</code>.
         </p><p>
@@ -88,13 +87,13 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glSelectBuffer</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775426"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775425"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_NAME_STACK_DEPTH</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_SELECTION_BUFFER_SIZE</code>
         </p><p>
             <a href="glGetPointerv.xml"><span class="citerefentry"><span class="refentrytitle">glGetPointerv</span></span></a> with argument <code class="constant">GL_SELECTION_BUFFER_POINTER</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775467"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775466"></a><h2>See Also</h2><p>
             <a href="glFeedbackBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span></a>,
             <a href="glInitNames.xml"><span class="citerefentry"><span class="refentrytitle">glInitNames</span></span></a>,
             <a href="glLoadName.xml"><span class="citerefentry"><span class="refentrytitle">glLoadName</span></span></a>,

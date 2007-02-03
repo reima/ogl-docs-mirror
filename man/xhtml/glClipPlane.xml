@@ -8,13 +8,12 @@
                     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                         
                         <mml:mn>-1</mml:mn>
-                    </mml:math>
-                    ,
+                    </mml:math>,
                     are accepted.
                 </p></dd><dt><span class="term"><em class="parameter"><code>equation</code></em></span></dt><dd><p>
                     Specifies the address of an array of four double-precision floating-point values.
                     These values are interpreted as a plane equation.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768510"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781931"></a><h2>Description</h2><p>
             Geometry is always clipped against the boundaries of a six-plane frustum
             in <span class="emphasis"><em>x</em></span>, <span class="emphasis"><em>y</em></span>, and <span class="emphasis"><em>z</em></span>.
             <code class="function">glClipPlane</code> allows the specification of additional planes,
@@ -46,25 +45,24 @@
             All clipping planes are initially defined as (0, 0, 0, 0) in eye coordinates
             and are
             disabled.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768660"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768659"></a><h2>Notes</h2><p>
             It is always the case that <code class="constant">GL_CLIP_PLANE</code>
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
             = <code class="constant">GL_CLIP_PLANE0</code> + 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
-            .
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775245"></a><h2>Errors</h2><p>
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775243"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>plane</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glClipPlane</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775289"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775288"></a><h2>Associated Gets</h2><p>
             <a href="glGetClipPlane.xml"><span class="citerefentry"><span class="refentrytitle">glGetClipPlane</span></span></a>
         </p><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_CLIP_PLANE</code><span class="emphasis"><em>i</em></span>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775316"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775315"></a><h2>See Also</h2><p>
             <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775330"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775328"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

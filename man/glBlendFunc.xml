@@ -135,8 +135,7 @@
                     <mml:mi mathvariant="italic">d</mml:mi>
                     </mml:msub>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
             The color specified by <citerefentry><refentrytitle>glBlendColor</refentrytitle></citerefentry> is referred to as
             <inlineequation><mml:math>
                 <!-- eqn: ( R sub c , G sub c , B sub c , A sub c ):-->
@@ -154,8 +153,7 @@
                     <mml:mi mathvariant="italic">c</mml:mi>
                     </mml:msub>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
             They are understood to have integer values between 0 and
             <inlineequation><mml:math>
                 <!-- eqn: ( k sub R , k sub G , k sub B , k sub A ):-->
@@ -173,8 +171,7 @@
                     <mml:mi mathvariant="italic">A</mml:mi>
                     </mml:msub>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             where
         </para>
         <para>
@@ -261,8 +258,7 @@
                     <mml:mi mathvariant="italic">A</mml:mi>
                     </mml:msub>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
             The scale factors described in the table,
             denoted 
             <inlineequation><mml:math>
@@ -281,8 +277,7 @@
                     <mml:mi mathvariant="italic">A</mml:mi>
                     </mml:msub>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             represent either source or destination factors.
             All scale factors have range 
             <inlineequation><mml:math>
@@ -291,8 +286,7 @@
                     <mml:mn>0</mml:mn>
                     <mml:mn>1</mml:mn>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
         </para>
         <para>
         </para>
@@ -1089,8 +1083,7 @@
                 <mml:msub><mml:mi mathvariant="italic">k</mml:mi>
                 <mml:mi mathvariant="italic">A</mml:mi>
                 </mml:msub>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             the equations reduce to simple replacement:
         </para>
         <para>
@@ -1178,14 +1171,14 @@
     <refsect1><title>Notes</title>
         <para>
             Incoming (source) alpha is correctly thought of as a material opacity,
-            ranging from 1.0 (
-            <inlineequation><mml:math>
+            ranging from 1.0 
+            (<inlineequation><mml:math>
                 <!-- eqn: K sub A:-->
                 <mml:msub><mml:mi mathvariant="italic">K</mml:mi>
                 <mml:mi mathvariant="italic">A</mml:mi>
                 </mml:msub>
-            </mml:math></inlineequation>
-            ), representing complete opacity,
+            </mml:math></inlineequation>),
+            representing complete opacity,
             to 0.0 (0), representing complete
             transparency.
         </para>

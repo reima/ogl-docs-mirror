@@ -29,15 +29,15 @@
                         </mml:mrow>
                     </mml:math>
                     for some integer 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
-                    . All implementations support texture images that are at least 64 texels wide. The height of the 1D texture image is 1.
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>.
+                    All implementations support texture images that are at least 64 texels wide. The height of the 1D texture image is 1.
                 </p></dd><dt><span class="term"><em class="parameter"><code>border</code></em></span></dt><dd><p>
                     Specifies the width of the border. Must be either 0 or 1.
                 </p></dd><dt><span class="term"><em class="parameter"><code>imageSize</code></em></span></dt><dd><p>
                     Specifies the number of unsigned bytes of image data starting at the address specified by <em class="parameter"><code>data</code></em>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>data</code></em></span></dt><dd><p>
                     Specifies a pointer to the compressed image data in memory.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775292"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775291"></a><h2>Description</h2><p>
             Texturing maps a portion of a specified texture image onto each graphical primitive for which texturing is enabled.  To enable and disable one-dimensional texturing, call <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a> and <a href="glDisable.xml"><span class="citerefentry"><span class="refentrytitle">glDisable</span></span></a> with argument <code class="constant">GL_TEXTURE_1D</code>.
         </p><p>
             <code class="function">glCompressedTexImage1D</code> loads a previously defined, and retrieved, compressed one-dimensional texture image if <em class="parameter"><code>target</code></em> is <code class="constant">GL_TEXTURE_1D</code> (see <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>).
@@ -56,7 +56,7 @@
             <code class="function">glCompressedTexImage1D</code> is available only if the GL version is 1.3 or greater.
         </p><p>
 			Non-power-of-two textures are supported if the GL version is 2.0 or greater, or if the implementation exports the <code class="constant">GL_ARB_texture_non_power_of_two</code> extension.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775469"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775468"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>internalformat</code></em> is of the generic compressed internal formats: <code class="constant">GL_COMPRESSED_ALPHA</code>,
             <code class="constant">GL_COMPRESSED_LUMINANCE</code>, <code class="constant">GL_COMPRESSED_LUMINANCE_ALPHA</code>,
             <code class="constant">GL_COMPRESSED_INTENSITY</code>, <code class="constant">GL_COMPRESSED_RGB</code>, or
@@ -84,7 +84,7 @@
             Undefined results, including abnormal program termination, are generated if
             <em class="parameter"><code>data</code></em> is not encoded in a manner consistent with the extension
             specification defining the internal compression format.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775619"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775618"></a><h2>Associated Gets</h2><p>
             <a href="glGetCompressedTexImage.xml"><span class="citerefentry"><span class="refentrytitle">glGetCompressedTexImage</span></span></a>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_TEXTURE_COMPRESSED</code>
@@ -122,7 +122,7 @@
             <a href="glTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>,
             <a href="glTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>,
             <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713002"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713001"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

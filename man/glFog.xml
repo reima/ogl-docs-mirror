@@ -126,8 +126,7 @@
                     <para>
                         <parameter>params</parameter> is a single integer or floating-point value that specifies
                         the equation to be used to compute the fog blend factor, 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">f</mml:mi></mml:math></inlineequation>
-                        .
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">f</mml:mi></mml:math></inlineequation>.
                         Three symbolic constants are accepted:
                         <constant>GL_LINEAR</constant>,
                         <constant>GL_EXP</constant>,
@@ -142,8 +141,7 @@
                 <listitem>
                     <para>
                         <parameter>params</parameter> is a single integer or floating-point value that specifies 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">density</mml:mi></mml:math></inlineequation>
-                        ,
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">density</mml:mi></mml:math></inlineequation>,
                         the fog density used in both exponential fog equations.
                         Only nonnegative densities are accepted.
                         The initial fog density is 1.
@@ -155,8 +153,7 @@
                 <listitem>
                     <para>
                         <parameter>params</parameter> is a single integer or floating-point value that specifies 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">start</mml:mi></mml:math></inlineequation>
-                        ,
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">start</mml:mi></mml:math></inlineequation>,
                         the near distance used in the linear fog equation.
                         The initial near distance is 0.
                     </para>
@@ -167,8 +164,7 @@
                 <listitem>
                     <para>
                         <parameter>params</parameter> is a single integer or floating-point value that specifies 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">end</mml:mi></mml:math></inlineequation>
-                        ,
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">end</mml:mi></mml:math></inlineequation>,
                         the far distance used in the linear fog equation.
                         The initial far distance is 1.
                     </para>
@@ -184,8 +180,7 @@
                             <mml:msub><mml:mi mathvariant="italic">i</mml:mi>
                             <mml:mi mathvariant="italic">f</mml:mi>
                             </mml:msub>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         the fog color index.
                         The initial fog index is 0.
                     </para>
@@ -201,16 +196,15 @@
                             <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                             <mml:mi mathvariant="italic">f</mml:mi>
                             </mml:msub>
-                        </mml:math></inlineequation>
-                        , the fog color.
+                        </mml:math></inlineequation>,
+                        the fog color.
                         Integer values are mapped linearly such that the most positive representable
                         value maps to 1.0,
                         and the most negative representable value maps to 
                         <inlineequation><mml:math>
                             <!-- eqn: -1.0:-->
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         Floating-point values are mapped directly.
                         After conversion,
                         all color components are clamped to the range 
@@ -220,8 +214,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         The initial fog color is (0, 0, 0, 0).
                     </para>
                 </listitem>
@@ -243,8 +236,7 @@
         <para>
             Fog blends a fog color with each rasterized pixel fragment's post-texturing
             color using a blending factor 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">f</mml:mi></mml:math></inlineequation>
-            .
+            <inlineequation><mml:math><mml:mi mathvariant="italic">f</mml:mi></mml:math></inlineequation>.
             Factor 
             <inlineequation><mml:math><mml:mi mathvariant="italic">f</mml:mi></mml:math></inlineequation>
             is computed in one of three ways,
@@ -349,8 +341,7 @@
                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                 <mml:mi mathvariant="italic">r</mml:mi>
                 </mml:msub>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             are replaced by
         </para>
         <para>

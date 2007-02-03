@@ -70,8 +70,7 @@
                     <mml:mi mathvariant="italic">y</mml:mi>
                     <mml:mi mathvariant="italic">z</mml:mi>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
             The current matrix (see <citerefentry><refentrytitle>glMatrixMode</refentrytitle></citerefentry>) is multiplied by a rotation
             matrix with the product
             replacing the current matrix, as if <citerefentry><refentrytitle>glMultMatrix</refentrytitle></citerefentry> were called
@@ -315,8 +314,7 @@
                         </mml:mfenced>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: s  =  sin (angle):-->
                 <mml:mrow>
@@ -330,8 +328,8 @@
                         </mml:mfenced>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , and
+            </mml:math></inlineequation>,
+            and
             <inlineequation><mml:math>
                 <!-- eqn: ||( x, y, z )||  =  1:-->
                 <mml:mrow>

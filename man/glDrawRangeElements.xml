@@ -173,8 +173,7 @@
                     <mml:mi mathvariant="italic">start</mml:mi>
                     <mml:mi mathvariant="italic">end</mml:mi>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             but implementations may not check for this situation. Such indices
             cause implementation-dependent behavior.
         </para>
@@ -193,8 +192,7 @@
                     <mml:mo>&lt;</mml:mo>
                     <mml:mi mathvariant="italic">start</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to an

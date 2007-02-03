@@ -12,8 +12,7 @@
                     <mml:mi mathvariant="italic">y</mml:mi>
                     <mml:mi mathvariant="italic">z</mml:mi>
                 </mml:mfenced>
-            </mml:math>
-            .
+            </mml:math>.
             The current matrix
             (see
             <a href="glMatrixMode.xml"><span class="citerefentry"><span class="refentrytitle">glMatrixMode</span></span></a>)
@@ -97,7 +96,7 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glTranslate</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775366"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775365"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MATRIX_MODE</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_COLOR_MATRIX</code>
@@ -113,7 +112,7 @@
             <a href="glPushMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glPushMatrix</span></span></a>,
             <a href="glRotate.xml"><span class="citerefentry"><span class="refentrytitle">glRotate</span></span></a>,
             <a href="glScale.xml"><span class="citerefentry"><span class="refentrytitle">glScale</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775465"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775464"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

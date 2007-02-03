@@ -119,22 +119,19 @@
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>1</mml:mn>
                 </mml:msub>
-            </mml:math>
-            ,
+            </mml:math>,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
-            </mml:math>
-            ,
+            </mml:math>,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>3</mml:mn>
                 </mml:msub>
-            </mml:math>
-            ,
+            </mml:math>,
             and
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -148,22 +145,20 @@
                 <mml:msub><mml:mi mathvariant="italic">x</mml:mi>
                 <mml:mi mathvariant="italic">o</mml:mi>
                 </mml:msub>
-            </mml:math>
-            ,
+            </mml:math>,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">y</mml:mi>
                 <mml:mi mathvariant="italic">o</mml:mi>
                 </mml:msub>
-            </mml:math>
-            ,
+            </mml:math>,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">z</mml:mi>
                 <mml:mi mathvariant="italic">o</mml:mi>
                 </mml:msub>
-            </mml:math>
-            , and
+            </mml:math>,
+            and
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">w</mml:mi>
@@ -179,29 +174,26 @@
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>1</mml:mn>
                 </mml:msub>
-            </mml:math>
-            , 
+            </mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
-            </mml:math>
-            , 
+            </mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>3</mml:mn>
                 </mml:msub>
-            </mml:math>
-            , and 
+            </mml:math>,
+            and 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>4</mml:mn>
                 </mml:msub>
-            </mml:math>
-            ).
+            </mml:math>).
             The altitude of a terrain vertex is computed by the <code class="constant">GL_OBJECT_LINEAR</code>
             coordinate generation function as its distance from sea level;
             that altitude can then be used to index the texture image to map white snow
@@ -349,22 +341,20 @@
                 <mml:msub><mml:mi mathvariant="italic">x</mml:mi>
                 <mml:mi mathvariant="italic">e</mml:mi>
                 </mml:msub>
-            </mml:math>
-            ,
+            </mml:math>,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">y</mml:mi>
                 <mml:mi mathvariant="italic">e</mml:mi>
                 </mml:msub>
-            </mml:math>
-            ,
+            </mml:math>,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">z</mml:mi>
                 <mml:mi mathvariant="italic">e</mml:mi>
                 </mml:msub>
-            </mml:math>
-            , and
+            </mml:math>,
+            and
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">w</mml:mi>
@@ -377,22 +367,19 @@
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>1</mml:mn>
                 </mml:msub>
-            </mml:math>
-            ,
+            </mml:math>,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
-            </mml:math>
-            ,
+            </mml:math>,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>3</mml:mn>
                 </mml:msub>
-            </mml:math>
-            ,
+            </mml:math>,
             and
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -525,8 +512,7 @@
                         </mml:msqrt>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math>
-            .
+            </mml:math>.
             Then the values assigned to the 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math>
             and 
@@ -604,7 +590,7 @@
             When the <code class="code">ARB_multitexture</code> extension is supported, <code class="function">glTexGen</code> set the
             texture generation parameters for the currently active texture unit,
             selected with <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785697"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785690"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated when <em class="parameter"><code>coord</code></em> or <em class="parameter"><code>pname</code></em> is not an
             accepted defined value,
             or when <em class="parameter"><code>pname</code></em> is <code class="constant">GL_TEXTURE_GEN_MODE</code> and <em class="parameter"><code>params</code></em> is not an
@@ -617,7 +603,7 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glTexGen</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785807"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785800"></a><h2>Associated Gets</h2><p>
             <a href="glGetTexGen.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexGen</span></span></a>
         </p><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_GEN_S</code>
@@ -627,7 +613,7 @@
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_GEN_R</code>
         </p><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_GEN_Q</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785867"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785860"></a><h2>See Also</h2><p>
             <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>,
             <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
             <a href="glCopyTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a>,
@@ -642,7 +628,7 @@
             <a href="glTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span></a>,
             <a href="glTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>,
             <a href="glTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785950"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785943"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

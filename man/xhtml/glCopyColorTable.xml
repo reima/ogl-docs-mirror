@@ -82,8 +82,7 @@
                     <mml:mn>0</mml:mn>
                     <mml:mn>1</mml:mn>
                 </mml:mfenced>
-            </mml:math>
-            .
+            </mml:math>.
             Each pixel is then converted to the internal format specified by
             <em class="parameter"><code>internalformat</code></em>. This conversion simply maps the component values of the pixel (R, G, B,
             and A) to the values included in the internal format (red, green, blue,
@@ -182,13 +181,12 @@
                         <mml:mn>1</mml:mn>
                     </mml:mrow>
                 </mml:mfenced>
-            </mml:math>
-            .
+            </mml:math>.
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713122"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713121"></a><h2>Notes</h2><p>
             <code class="function">glCopyColorTable</code> is available only if <code class="code">ARB_imaging</code> is returned from calling
             <a href="glGetString.xml"><span class="citerefentry"><span class="refentrytitle">glGetString</span></span></a> with an argument of <code class="constant">GL_EXTENSIONS</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713152"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713151"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated when <em class="parameter"><code>target</code></em> is not one of the
             allowable values.
         </p><p>
@@ -203,14 +201,14 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glCopyColorTable</code> is executed
             between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding
             execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713235"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713234"></a><h2>Associated Gets</h2><p>
             <a href="glGetColorTable.xml"><span class="citerefentry"><span class="refentrytitle">glGetColorTable</span></span></a>,
             <a href="glGetColorTableParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetColorTableParameter</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713253"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713252"></a><h2>See Also</h2><p>
             <a href="glColorTable.xml"><span class="citerefentry"><span class="refentrytitle">glColorTable</span></span></a>,
             <a href="glColorTableParameter.xml"><span class="citerefentry"><span class="refentrytitle">glColorTableParameter</span></span></a>,
             <a href="glReadPixels.xml"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713278"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713277"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -61,8 +61,7 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             then the current transformation is 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -71,8 +70,8 @@
                     <mml:mo>×</mml:mo>
                     <mml:mi mathvariant="italic">v</mml:mi>
                 </mml:mrow>
-            </mml:math>
-            , or
+            </mml:math>,
+            or
         </p><p>
             </p><div class="informalequation"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -332,8 +331,7 @@
                     <mml:mo>×</mml:mo>
                     <mml:mi mathvariant="italic">v</mml:mi>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             or
         </p><p>
             </p><div class="informalequation"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -717,7 +715,7 @@
                 </mml:mrow>
             </mml:math>
             matrix.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785313"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785312"></a><h2>Notes</h2><p>
             While the elements of the matrix may be specified with
             single or double precision, the GL may store or operate on these
             values in less-than-single precision.
@@ -738,11 +736,11 @@
             transformation is a rotation, and <code class="function">glMultMatrix</code> is called with a translation matrix,
             the translation is done directly on the coordinates to be transformed,
             while the rotation is done on the results of that translation.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785376"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785374"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glMultMatrix</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785406"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785405"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MATRIX_MODE</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_COLOR_MATRIX</code>
@@ -752,14 +750,14 @@
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PROJECTION_MATRIX</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_TEXTURE_MATRIX</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785471"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785469"></a><h2>See Also</h2><p>
             <a href="glLoadIdentity.xml"><span class="citerefentry"><span class="refentrytitle">glLoadIdentity</span></span></a>,
             <a href="glLoadMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glLoadMatrix</span></span></a>,
             <a href="glLoadTransposeMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glLoadTransposeMatrix</span></span></a>,
             <a href="glMatrixMode.xml"><span class="citerefentry"><span class="refentrytitle">glMatrixMode</span></span></a>,
             <a href="glMultTransposeMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glMultTransposeMatrix</span></span></a>,
             <a href="glPushMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glPushMatrix</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785511"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785510"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

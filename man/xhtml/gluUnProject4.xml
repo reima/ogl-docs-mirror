@@ -48,8 +48,7 @@
                     <mml:mi mathvariant="italic">objZ</mml:mi>
                     <mml:mi mathvariant="italic">objW</mml:mi>
                 </mml:mfenced>
-            </mml:math>
-            ,
+            </mml:math>,
             <code class="function">gluUnProject4</code> multiplies the normalized device coordinates by the inverse of
             <em class="parameter"><code>model</code></em> * <em class="parameter"><code>proj</code></em> as follows:
         </p><p>
@@ -204,14 +203,14 @@
         </p><p>
             <code class="function">gluUnProject4</code> is equivalent to <a href="gluUnProject.xml"><span class="citerefentry"><span class="refentrytitle">gluUnProject</span></span></a> when <em class="parameter"><code>clipW</code></em> is 1, <em class="parameter"><code>nearVal</code></em> is 0, and
             <em class="parameter"><code>farVal</code></em> is 1.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713202"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713201"></a><h2>Notes</h2><p>
             <code class="function">gluUnProject4</code> is available only if the GLU version is 1.3 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713219"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713218"></a><h2>See Also</h2><p>
             <a href="gluProject.xml"><span class="citerefentry"><span class="refentrytitle">gluProject</span></span></a>,
             <a href="gluUnProject.xml"><span class="citerefentry"><span class="refentrytitle">gluUnProject</span></span></a>,
             <a href="glFeedbackBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glFeedbackBuffer</span></span></a>,
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713248"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713247"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

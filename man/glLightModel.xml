@@ -115,8 +115,7 @@
                         <inlineequation><mml:math>
                             <!-- eqn: -1.0:-->
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         Floating-point values are mapped directly.
                         Neither integer nor floating-point values are clamped.
                         The initial ambient scene intensity is (0.2, 0.2, 0.2, 1.0).

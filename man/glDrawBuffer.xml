@@ -194,8 +194,7 @@
             It is always the case that <constant>GL_AUX</constant>
             <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
             = <constant>GL_AUX0</constant> + 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-            .
+            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>.
         </para>
     </refsect1>
     <refsect1><title>Errors</title>

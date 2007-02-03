@@ -9,8 +9,7 @@
             It returns an integer <span class="emphasis"><em>n</em></span> such that <em class="parameter"><code>range</code></em> contiguous
             empty display lists,
             named 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
-            , 
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -18,13 +17,11 @@
                     <mml:mo>+</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            , 
+            </mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mi mathvariant="italic">...</mml:mi>
-            </mml:math>
-            , 
+            </mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -34,28 +31,27 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             are created.
             If <em class="parameter"><code>range</code></em> is 0,
             if there is no group of <em class="parameter"><code>range</code></em> contiguous names available,
             or if any error is generated,
             no display lists are generated,
             and 0 is returned.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768593"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768592"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>range</code></em> is negative.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGenLists</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768638"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768636"></a><h2>Associated Gets</h2><p>
             <a href="glIsList.xml"><span class="citerefentry"><span class="refentrytitle">glIsList</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768651"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768649"></a><h2>See Also</h2><p>
             <a href="glCallList.xml"><span class="citerefentry"><span class="refentrytitle">glCallList</span></span></a>,
             <a href="glCallLists.xml"><span class="citerefentry"><span class="refentrytitle">glCallLists</span></span></a>,
             <a href="glDeleteLists.xml"><span class="citerefentry"><span class="refentrytitle">glDeleteLists</span></span></a>,
             <a href="glNewList.xml"><span class="citerefentry"><span class="refentrytitle">glNewList</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768538"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768678"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

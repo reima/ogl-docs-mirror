@@ -138,8 +138,7 @@
                     <mml:mi mathvariant="italic">upY</mml:mi>
                     <mml:mi mathvariant="italic">upZ</mml:mi>
                 </mml:mfenced>
-            </mml:math></inlineequation>
-            . 
+            </mml:math></inlineequation>. 
         </para>
         <para>
             Then normalize as follows: 
@@ -195,8 +194,8 @@
                         </mml:msup>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , and 
+            </mml:math></inlineequation>,
+            and 
             <inlineequation><mml:math>
                 <!-- eqn: u  =  s  times  f:-->
                 <mml:mrow>
@@ -208,8 +207,7 @@
                         <mml:mi mathvariant="italic">f</mml:mi>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
         </para>
         <para>
         </para>

@@ -40,8 +40,8 @@
                             <mml:mn>0</mml:mn>
                             <mml:mn>1</mml:mn>
                         </mml:mfenced>
-                    </mml:math></inlineequation>
-                    .  The initial value is 1.0.
+                    </mml:math></inlineequation>.
+                    The initial value is 1.0.
                 </para>
             </listitem>
         </varlistentry>

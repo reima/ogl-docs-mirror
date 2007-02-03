@@ -56,8 +56,7 @@
                                 <mml:mn>-1</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         the corresponding integer return value is undefined. The initial value is
                         (0, 0, 0, 1).
                     </p></dd><dt><span class="term"><code class="constant">GL_DIFFUSE</code></span></dt><dd><p>
@@ -80,8 +79,7 @@
                                 <mml:mn>-1</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         the corresponding integer return value is undefined. The initial value
                         for <code class="constant">GL_LIGHT0</code> is (1, 1, 1, 1); for other lights, the
                         initial value is (0, 0, 0, 0).
@@ -105,8 +103,7 @@
                                 <mml:mn>-1</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math>
-                        ,
+                        </mml:math>,
                         the corresponding integer return value is undefined. The initial value
                         for <code class="constant">GL_LIGHT0</code> is (1, 1, 1, 1); for other lights, the
                         initial value is (0, 0, 0, 0).
@@ -142,8 +139,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>-1</mml:mn>
                             </mml:mfenced>
-                        </mml:math>
-                        .
+                        </mml:math>.
                     </p></dd><dt><span class="term"><code class="constant">GL_SPOT_EXPONENT</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> returns a single integer or floating-point value representing the
                         spot exponent of the light.
@@ -179,25 +175,24 @@
                         when requested,
                         is computed by rounding the internal floating-point representation to
                         the nearest integer. The initial value is 0.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712982"></a><h2>Notes</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713251"></a><h2>Notes</h2><p>
             It is always the case that <code class="constant">GL_LIGHT</code>
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
             = <code class="constant">GL_LIGHT0</code> + 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
-            .
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>.
         </p><p>
             If an error is generated,
             no change is made to the contents of <em class="parameter"><code>params</code></em>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713035"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711141"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>light</code></em> or <em class="parameter"><code>pname</code></em> is not an
             accepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetLight</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713086"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711191"></a><h2>See Also</h2><p>
             <a href="glLight.xml"><span class="citerefentry"><span class="refentrytitle">glLight</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713099"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711204"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

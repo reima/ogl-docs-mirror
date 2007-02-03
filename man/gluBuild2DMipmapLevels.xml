@@ -253,8 +253,7 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>8</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: 8  times  4:-->
                 <mml:mrow>
@@ -262,8 +261,7 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>4</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: 4  times  2:-->
                 <mml:mrow>
@@ -271,8 +269,7 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>2</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: 2  times  1:-->
                 <mml:mrow>
@@ -280,8 +277,7 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: 1  times  1:-->
                 <mml:mrow>
@@ -289,8 +285,8 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            . These correspond to levels 2 through 6
+            </mml:math></inlineequation>.
+            These correspond to levels 2 through 6
             respectively.  If <parameter>base</parameter> is 3 and <parameter>max</parameter> is 5, then only mipmap levels
             <inlineequation><mml:math>
                 <!-- eqn: 8  times  4:-->
@@ -299,8 +295,7 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>4</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: 4  times  2:-->
                 <mml:mrow>
@@ -308,8 +303,8 @@
                     <mml:mo>&times;</mml:mo>
                     <mml:mn>2</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , and 
+            </mml:math></inlineequation>,
+            and 
             <inlineequation><mml:math>
                 <!-- eqn: 2  times  1:-->
                 <mml:mrow>
@@ -348,8 +343,7 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
         </para>
         <para>
             See the <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry> reference page for a description of the

@@ -3,13 +3,12 @@
 <!-- saved from url=(0013)about:internet -->
 <?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glEvalPoint</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glEvalPoint"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glEvalPoint — generate and evaluate a single point in a mesh</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glEvalPoint1</b>(</code>GLint <var class="pdparam">i</var><code>)</code>;</p></div><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glEvalPoint2</b>(</code>GLint <var class="pdparam">i</var>, GLint <var class="pdparam">j</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782045"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>i</code></em></span></dt><dd><p>
                     Specifies the integer value for grid domain variable 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
-                    .
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>j</code></em></span></dt><dd><p>
                     Specifies the integer value for grid domain variable 
                     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">j</mml:mi></mml:math>
                     (<code class="function">glEvalPoint2</code> only).
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768527"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768526"></a><h2>Description</h2><p>
             <a href="glMapGrid.xml"><span class="citerefentry"><span class="refentrytitle">glMapGrid</span></span></a> and <a href="glEvalMesh.xml"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a> are used in tandem to efficiently
             generate and evaluate a series of evenly spaced map domain values.
             <code class="function">glEvalPoint</code> can be used to evaluate a single grid point in the same gridspace
@@ -60,15 +59,14 @@ glEvalCoord1( <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow=
             </mml:math></div><p>
         </p><p>
             and 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
-            , 
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">u</mml:mi>
                 <mml:mn>1</mml:mn>
                 </mml:msub>
-            </mml:math>
-            , and 
+            </mml:math>,
+            and 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">u</mml:mi>
@@ -84,8 +82,7 @@ glEvalCoord1( <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow=
                     <mml:mo>=</mml:mo>
                     <mml:mi mathvariant="italic">n</mml:mi>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             then the value computed from
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -110,8 +107,7 @@ glEvalCoord1( <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow=
                 <mml:msub><mml:mi mathvariant="italic">u</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
-            </mml:math>
-            .
+            </mml:math>.
         </p><p>
             In the two-dimensional case, <code class="function">glEvalPoint2</code>, let
         </p><p>
@@ -167,31 +163,27 @@ glEvalCoord1( <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow=
             </p><p>
         </p><p>
             where 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
-            , 
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">u</mml:mi>
                 <mml:mn>1</mml:mn>
                 </mml:msub>
-            </mml:math>
-            , 
+            </mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">u</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
-            </mml:math>
-            , 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">m</mml:mi></mml:math>
-            , 
+            </mml:math>, 
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">m</mml:mi></mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">v</mml:mi>
                 <mml:mn>1</mml:mn>
                 </mml:msub>
-            </mml:math>
-            , and 
+            </mml:math>,
+            and 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">v</mml:mi>
@@ -240,8 +232,7 @@ glEvalCoord2( <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow=
                     <mml:mo>=</mml:mo>
                     <mml:mi mathvariant="italic">n</mml:mi>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             then the value computed from
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -266,8 +257,7 @@ glEvalCoord2( <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow=
                 <mml:msub><mml:mi mathvariant="italic">u</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
-            </mml:math>
-            ,
+            </mml:math>,
             and if 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -276,8 +266,8 @@ glEvalCoord2( <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow=
                     <mml:mo>=</mml:mo>
                     <mml:mi mathvariant="italic">m</mml:mi>
                 </mml:mrow>
-            </mml:math>
-            , then the value computed from
+            </mml:math>,
+            then the value computed from
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -301,9 +291,8 @@ glEvalCoord2( <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow=
                 <mml:msub><mml:mi mathvariant="italic">v</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
-            </mml:math>
-            .
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713225"></a><h2>Associated Gets</h2><p>
+            </mml:math>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713218"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP1_GRID_DOMAIN</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP2_GRID_DOMAIN</code>
@@ -311,13 +300,13 @@ glEvalCoord2( <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow=
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP1_GRID_SEGMENTS</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP2_GRID_SEGMENTS</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711332"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711325"></a><h2>See Also</h2><p>
             <a href="glEvalCoord.xml"><span class="citerefentry"><span class="refentrytitle">glEvalCoord</span></span></a>,
             <a href="glEvalMesh.xml"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a>,
             <a href="glMap1.xml"><span class="citerefentry"><span class="refentrytitle">glMap1</span></span></a>,
             <a href="glMap2.xml"><span class="citerefentry"><span class="refentrytitle">glMap2</span></span></a>,
             <a href="glMapGrid.xml"><span class="citerefentry"><span class="refentrytitle">glMapGrid</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711366"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711359"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

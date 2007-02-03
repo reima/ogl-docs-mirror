@@ -26,8 +26,7 @@
                     <mml:mi mathvariant="italic">objY</mml:mi>
                     <mml:mi mathvariant="italic">objZ</mml:mi>
                 </mml:mfenced>
-            </mml:math>
-            ,
+            </mml:math>,
             <code class="function">gluUnProject</code> multiplies the normalized device coordinates by the inverse of
             <em class="parameter"><code>model</code></em> * <em class="parameter"><code>proj</code></em> as follows:
         </p><p>
@@ -162,10 +161,10 @@
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">INV</mml:mi></mml:math>
             denotes matrix inversion. 
             W is an unused variable, included for consistent matrix notation.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712919"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712918"></a><h2>See Also</h2><p>
             <a href="gluProject.xml"><span class="citerefentry"><span class="refentrytitle">gluProject</span></span></a>,
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712937"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712936"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

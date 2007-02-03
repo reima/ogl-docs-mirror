@@ -96,8 +96,7 @@
                     <mml:mo>&gt;</mml:mo>
                     <mml:mi mathvariant="italic">width</mml:mi>
                 </mml:mrow>
-            </mml:math>
-            .
+            </mml:math>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
             <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and the buffer object's data store is currently mapped.
@@ -118,13 +117,13 @@
             <a href="glGetColorTableParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetColorTableParameter</span></span></a>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712839"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712838"></a><h2>See Also</h2><p>
             <a href="glColorTable.xml"><span class="citerefentry"><span class="refentrytitle">glColorTable</span></span></a>,
             <a href="glColorTableParameter.xml"><span class="citerefentry"><span class="refentrytitle">glColorTableParameter</span></span></a>,
             <a href="glCopyColorTable.xml"><span class="citerefentry"><span class="refentrytitle">glCopyColorTable</span></span></a>,
             <a href="glCopyColorSubTable.xml"><span class="citerefentry"><span class="refentrytitle">glCopyColorSubTable</span></span></a>,
             <a href="glGetColorTable.xml"><span class="citerefentry"><span class="refentrytitle">glGetColorTable</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712874"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712873"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

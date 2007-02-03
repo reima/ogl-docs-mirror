@@ -107,11 +107,9 @@
                     Specifies a pointer to an array containing
                     either one or two domain coordinates.
                     The first coordinate is 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">u</mml:mi></mml:math></inlineequation>
-                    .
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">u</mml:mi></mml:math></inlineequation>.
                     The second coordinate is 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">v</mml:mi></mml:math></inlineequation>
-                    ,
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">v</mml:mi></mml:math></inlineequation>,
                     which is present only in <function>glEvalCoord2</function> versions.
                 </para>
             </listitem>

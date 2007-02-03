@@ -182,8 +182,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         All color, scale, and bias values are specified with <function>glPixelTransfer</function>.
                     </para>
                     <para>
@@ -208,8 +207,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         <constant>GL_MAP_COLOR</constant> is specified with <function>glPixelTransfer</function>.
                         The contents of the various maps are specified with <citerefentry><refentrytitle>glPixelMap</refentrytitle></citerefentry>.
                     </para>
@@ -234,8 +232,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                     </para>
                     <para>
                         Similarly, if the <code>ARB_imaging</code> extension is supported, each of
@@ -258,8 +255,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -294,8 +290,7 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         where 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
                         is <constant>GL_PIXEL_MAP_I_TO_I_SIZE</constant>,
@@ -325,8 +320,7 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         where 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
                         is
@@ -341,8 +335,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         The contents of the four maps is specified with <citerefentry><refentrytitle>glPixelMap</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -360,8 +353,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -382,8 +374,7 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         where 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
                         is <constant>GL_PIXEL_MAP_S_TO_S_SIZE</constant>,

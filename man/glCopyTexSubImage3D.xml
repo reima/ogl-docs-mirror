@@ -128,8 +128,7 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             inclusive, and y indices <parameter>yoffset</parameter> through 
             <inlineequation><mml:math>
                 <!-- eqn: yoffset  +  height  -  1:-->
@@ -140,8 +139,7 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             inclusive, at z index <parameter>zoffset</parameter> and at the mipmap level specified by <parameter>level</parameter>.
         </para>
         <para>
@@ -222,8 +220,7 @@
                         </mml:mfenced>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             where 
             <inlineequation><mml:math><mml:mi mathvariant="italic">max</mml:mi></mml:math></inlineequation>
             is the returned value of <constant>GL_MAX_3D_TEXTURE_SIZE</constant>.
@@ -240,8 +237,7 @@
                         <mml:mi mathvariant="italic">b</mml:mi>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: (xoffset  +  width)  >  (w  - b):-->
                 <mml:mrow>
@@ -261,8 +257,7 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: yoffset  <   -b:-->
                 <mml:mrow>
@@ -273,8 +268,7 @@
                         <mml:mi mathvariant="italic">b</mml:mi>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: (yoffset  +  height)  >  (h  - b):-->
                 <mml:mrow>
@@ -294,8 +288,7 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: zoffset  <   -b:-->
                 <mml:mrow>
@@ -306,8 +299,8 @@
                         <mml:mi mathvariant="italic">b</mml:mi>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , or 
+            </mml:math></inlineequation>,
+            or 
             <inlineequation><mml:math>
                 <!-- eqn: zoffset  >  (d  - b):-->
                 <mml:mrow>
@@ -321,8 +314,7 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             where 
             <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>
             is the <constant>GL_TEXTURE_WIDTH</constant>,
@@ -335,10 +327,9 @@
             is the <constant>GL_TEXTURE_BORDER</constant>
             of the texture image being modified.
             Note that 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>
-            , 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">h</mml:mi></mml:math></inlineequation>
-            , and 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>, 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">h</mml:mi></mml:math></inlineequation>,
+            and 
             <inlineequation><mml:math><mml:mi mathvariant="italic">d</mml:mi></mml:math></inlineequation>
             include twice the border width.
         </para>

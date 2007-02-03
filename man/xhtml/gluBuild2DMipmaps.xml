@@ -94,7 +94,7 @@
                     <code class="constant">GLU_UNSIGNED_INT_2_10_10_10_REV</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>data</code></em></span></dt><dd><p>
                     Specifies a pointer to the image data in memory.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775508"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775507"></a><h2>Description</h2><p>
             <code class="function">gluBuild2DMipmaps</code> builds a series of prefiltered two-dimensional texture maps of decreasing
             resolutions called a mipmap. This is used for the antialiasing of
             texture-mapped primitives.
@@ -173,8 +173,8 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math>
-            .  For example,
+            </mml:math>.
+            For example,
             if <em class="parameter"><code>width</code></em> is 64 and <em class="parameter"><code>height</code></em> is 16
             and the implementation can store a texture of this size, the following
             mipmap levels are built: 
@@ -185,8 +185,7 @@
                     <mml:mo>×</mml:mo>
                     <mml:mn>16</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            , 
+            </mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -194,8 +193,7 @@
                     <mml:mo>×</mml:mo>
                     <mml:mn>8</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            , 
+            </mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -203,8 +201,7 @@
                     <mml:mo>×</mml:mo>
                     <mml:mn>4</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            ,
+            </mml:math>,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -212,8 +209,7 @@
                     <mml:mo>×</mml:mo>
                     <mml:mn>2</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            , 
+            </mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -221,8 +217,7 @@
                     <mml:mo>×</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            , 
+            </mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -230,8 +225,8 @@
                     <mml:mo>×</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math>
-            , and 
+            </mml:math>,
+            and 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -240,14 +235,14 @@
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
             </mml:math>
-            . These
+            These
             correspond to levels 0 through 6, respectively.
         </p><p>
             See the <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a> reference page for a description of the
             acceptable values for <em class="parameter"><code>format</code></em> parameter. See the <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a> 
             reference page for a description of the acceptable values 
             for <em class="parameter"><code>type</code></em> parameter.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713007"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713004"></a><h2>Notes</h2><p>
             Note that there is no direct way of querying the maximum level. This can
             be derived indirectly via <a href="glGetTexLevelParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span></a>. First, query
             for the width and height actually used at level 0.  (The width and
@@ -274,9 +269,8 @@
                         </mml:mrow>
                     </mml:mfenced>
                 </mml:mrow>
-            </mml:math>
-            .
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711408"></a><h2>Notes</h2><p>
+            </mml:math>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711402"></a><h2>Notes</h2><p>
             Formats <code class="constant">GLU_BGR</code>, and <code class="constant">GLU_BGRA</code>, and types 
             <code class="constant">GLU_UNSIGNED_BYTE_3_3_2</code>,
             <code class="constant">GLU_UNSIGNED_BYTE_2_3_3_REV</code>,
@@ -291,7 +285,7 @@
             <code class="constant">GLU_UNSIGNED_INT_10_10_10_2</code>, and
             <code class="constant">GLU_UNSIGNED_INT_2_10_10_10_REV</code> are only available if the GL version 
             is 1.2 or greater and if the GLU version is 1.3 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711483"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711476"></a><h2>Errors</h2><p>
             <code class="constant">GLU_INVALID_VALUE</code> is returned if <em class="parameter"><code>width</code></em> or <em class="parameter"><code>height</code></em> is &lt; 1.
         </p><p>
             <code class="constant">GLU_INVALID_ENUM</code> is returned if <em class="parameter"><code>internalFormat</code></em>, <em class="parameter"><code>format</code></em>, or <em class="parameter"><code>type</code></em> is not 
@@ -314,7 +308,7 @@
         </p><p>
             <code class="constant">GLU_INVALID_OPERATION</code> is returned if <em class="parameter"><code>type</code></em> is <code class="constant">GLU_UNSIGNED_INT_10_10_10_2</code> or <code class="constant">GLU_UNSIGNED_INT_2_10_10_10_REV</code>
             and <em class="parameter"><code>format</code></em> is neither <code class="constant">GLU_RGBA</code> nor <code class="constant">GLU_BGRA</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711738"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711732"></a><h2>See Also</h2><p>
             <a href="gluBuild1DMipmapLevels.xml"><span class="citerefentry"><span class="refentrytitle">gluBuild1DMipmapLevels</span></span></a>,
             <a href="gluBuild1DMipmaps.xml"><span class="citerefentry"><span class="refentrytitle">gluBuild1DMipmaps</span></span></a>,
             <a href="gluBuild2DMipmapLevels.xml"><span class="citerefentry"><span class="refentrytitle">gluBuild2DMipmapLevels</span></span></a>,
@@ -327,7 +321,7 @@
             <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>,
             <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>, 
             <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711811"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711805"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -235,22 +235,19 @@
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>1</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: p sub 2:-->
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: p sub 3:-->
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>3</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             and
             <inlineequation><mml:math>
                 <!-- eqn: p sub 4:-->
@@ -264,22 +261,20 @@
                 <mml:msub><mml:mi mathvariant="italic">x</mml:mi>
                 <mml:mi mathvariant="italic">o</mml:mi>
                 </mml:msub>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: y sub o:-->
                 <mml:msub><mml:mi mathvariant="italic">y</mml:mi>
                 <mml:mi mathvariant="italic">o</mml:mi>
                 </mml:msub>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: z sub o:-->
                 <mml:msub><mml:mi mathvariant="italic">z</mml:mi>
                 <mml:mi mathvariant="italic">o</mml:mi>
                 </mml:msub>
-            </mml:math></inlineequation>
-            , and
+            </mml:math></inlineequation>,
+            and
             <inlineequation><mml:math>
                 <!-- eqn: w sub o:-->
                 <mml:msub><mml:mi mathvariant="italic">w</mml:mi>
@@ -295,29 +290,26 @@
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>1</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: p sub 2:-->
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: p sub 3:-->
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>3</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            , and 
+            </mml:math></inlineequation>,
+            and 
             <inlineequation><mml:math>
                 <!-- eqn: p sub 4:-->
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>4</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            ).
+            </mml:math></inlineequation>).
             The altitude of a terrain vertex is computed by the <constant>GL_OBJECT_LINEAR</constant>
             coordinate generation function as its distance from sea level;
             that altitude can then be used to index the texture image to map white snow
@@ -470,22 +462,20 @@
                 <mml:msub><mml:mi mathvariant="italic">x</mml:mi>
                 <mml:mi mathvariant="italic">e</mml:mi>
                 </mml:msub>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: y sub e:-->
                 <mml:msub><mml:mi mathvariant="italic">y</mml:mi>
                 <mml:mi mathvariant="italic">e</mml:mi>
                 </mml:msub>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: z sub e:-->
                 <mml:msub><mml:mi mathvariant="italic">z</mml:mi>
                 <mml:mi mathvariant="italic">e</mml:mi>
                 </mml:msub>
-            </mml:math></inlineequation>
-            , and
+            </mml:math></inlineequation>,
+            and
             <inlineequation><mml:math>
                 <!-- eqn: w sub e:-->
                 <mml:msub><mml:mi mathvariant="italic">w</mml:mi>
@@ -498,22 +488,19 @@
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>1</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: p sub 2:-->
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             <inlineequation><mml:math>
                 <!-- eqn: p sub 3:-->
                 <mml:msub><mml:mi mathvariant="italic">p</mml:mi>
                 <mml:mn>3</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             and
             <inlineequation><mml:math>
                 <!-- eqn: p sub 4:-->
@@ -651,8 +638,7 @@
                         </mml:msqrt>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
             Then the values assigned to the 
             <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
             and 

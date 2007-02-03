@@ -83,8 +83,8 @@
                     <mml:mo>-</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , inclusive.  This region may not include any
+            </mml:math></inlineequation>,
+            inclusive.  This region may not include any
             entries outside the range of the color table, as was originally specified.
             It is not an error to specify a subtexture with width of 0, but such a
             specification has no effect.
@@ -118,8 +118,7 @@
                     <mml:mo>&gt;</mml:mo>
                     <mml:mi mathvariant="italic">width</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glCopyColorSubTable</function> is executed

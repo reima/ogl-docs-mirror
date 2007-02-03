@@ -7,33 +7,31 @@
                     and 
                     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">y</mml:mi></mml:math>
                     zoom factors for pixel write operations.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781946"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781945"></a><h2>Description</h2><p>
             <code class="function">glPixelZoom</code> specifies values for the 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">x</mml:mi></mml:math>
             and 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">y</mml:mi></mml:math>
             zoom factors.
             During the execution of <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a> or <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
-            if (
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+            if 
+            (<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mi mathvariant="italic">xr</mml:mi>
-            </mml:math>
-            , 
+            </mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mi mathvariant="italic">yr</mml:mi>
-            </mml:math>
-            ) is the current raster position,
+            </mml:math>)
+            is the current raster position,
             and a given element is in the 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">m</mml:mi></mml:math>
-            th row and 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
-            th column of the pixel rectangle,
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">m</mml:mi></mml:math>th
+            row and 
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>th
+            column of the pixel rectangle,
             then pixels whose centers are in the rectangle with corners at
         </p><p>
-            (
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+            (<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
                     <mml:mi mathvariant="italic">xr</mml:mi>
@@ -44,8 +42,7 @@
                         <mml:mi mathvariant="italic">xfactor</mml:mi>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math>
-            , 
+            </mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -57,11 +54,9 @@
                         <mml:mi mathvariant="italic">yfactor</mml:mi>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math>
-            )
+            </mml:math>)
         </p><p>
-            (
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+            (<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
                     <mml:mi mathvariant="italic">xr</mml:mi>
@@ -78,8 +73,7 @@
                         <mml:mi mathvariant="italic">xfactor</mml:mi>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math>
-            , 
+            </mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -97,8 +91,7 @@
                         <mml:mi mathvariant="italic">yfactor</mml:mi>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math>
-            )
+            </mml:math>)
         </p><p>
             are candidates for replacement.
             Any pixel whose center lies on the bottom or left edge of this rectangular
@@ -107,18 +100,18 @@
             Pixel zoom factors are not limited to positive values.
             Negative zoom factors reflect the resulting image about the current
             raster position.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775566"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4712992"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glPixelZoom</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775595"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713022"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_ZOOM_X</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_ZOOM_Y</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775624"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713050"></a><h2>See Also</h2><p>
             <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
             <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775643"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713070"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

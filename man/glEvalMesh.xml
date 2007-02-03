@@ -46,8 +46,7 @@
             <listitem>
                 <para>
                     Specify the first and last integer values for grid domain variable 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-                    .
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>.
                 </para>
             </listitem>
         </varlistentry>
@@ -86,8 +85,7 @@
             <listitem>
                 <para>
                     Specify the first and last integer values for grid domain variable 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-                    .
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>.
                 </para>
             </listitem>
         </varlistentry>
@@ -97,8 +95,7 @@
             <listitem>
                 <para>
                     Specify the first and last integer values for grid domain variable 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">j</mml:mi></mml:math></inlineequation>
-                    .
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">j</mml:mi></mml:math></inlineequation>.
                 </para>
             </listitem>
         </varlistentry>
@@ -175,8 +172,7 @@ glEnd();
         </para>
         <para>
             and 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-            , 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: u sub 1:-->
                 <mml:msub><mml:mi mathvariant="italic">u</mml:mi>
@@ -204,8 +200,8 @@ glEnd();
                     <mml:mo>=</mml:mo>
                     <mml:mi mathvariant="italic">n</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , then the
+            </mml:math></inlineequation>,
+            then the
             value computed from 
             <inlineequation><mml:math>
                 <!-- eqn: i cdot DELTA u  +  u sub 1:-->
@@ -230,8 +226,7 @@ glEnd();
                 <mml:msub><mml:mi mathvariant="italic">u</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
         </para>
         <para>
             In the two-dimensional case, <function>glEvalMesh2</function>, let
@@ -289,31 +284,27 @@ glEnd();
         </para>
         <para>
             where 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-            , 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: u sub 1:-->
                 <mml:msub><mml:mi mathvariant="italic">u</mml:mi>
                 <mml:mn>1</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: u sub 2:-->
                 <mml:msub><mml:mi mathvariant="italic">u</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            , 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">m</mml:mi></mml:math></inlineequation>
-            , 
+            </mml:math></inlineequation>, 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">m</mml:mi></mml:math></inlineequation>, 
             <inlineequation><mml:math>
                 <!-- eqn: v sub 1:-->
                 <mml:msub><mml:mi mathvariant="italic">v</mml:mi>
                 <mml:mn>1</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            , and 
+            </mml:math></inlineequation>,
+            and 
             <inlineequation><mml:math>
                 <!-- eqn: v sub 2:-->
                 <mml:msub><mml:mi mathvariant="italic">v</mml:mi>
@@ -528,8 +519,7 @@ glEnd();
                     <mml:mo>=</mml:mo>
                     <mml:mi mathvariant="italic">n</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ,
+            </mml:math></inlineequation>,
             then the value computed from 
             <inlineequation><mml:math>
                 <!-- eqn: i cdot DELTA u  +  u sub 1:-->
@@ -554,8 +544,8 @@ glEnd();
                 <mml:msub><mml:mi mathvariant="italic">u</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            , and if 
+            </mml:math></inlineequation>,
+            and if 
             <inlineequation><mml:math>
                 <!-- eqn: j = m:-->
                 <mml:mrow>
@@ -563,8 +553,8 @@ glEnd();
                     <mml:mo>=</mml:mo>
                     <mml:mi mathvariant="italic">m</mml:mi>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            , then the value computed from
+            </mml:math></inlineequation>,
+            then the value computed from
             <inlineequation><mml:math>
                 <!-- eqn: j  cdot  DELTA v  +  v sub 1:-->
                 <mml:mrow>
@@ -588,8 +578,7 @@ glEnd();
                 <mml:msub><mml:mi mathvariant="italic">v</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
-            </mml:math></inlineequation>
-            .
+            </mml:math></inlineequation>.
         </para>
     </refsect1>
     <refsect1><title>Errors</title>

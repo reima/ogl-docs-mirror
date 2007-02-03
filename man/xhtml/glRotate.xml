@@ -15,8 +15,7 @@
                     <mml:mi mathvariant="italic">y</mml:mi>
                     <mml:mi mathvariant="italic">z</mml:mi>
                 </mml:mfenced>
-            </mml:math>
-            .
+            </mml:math>.
             The current matrix (see <a href="glMatrixMode.xml"><span class="citerefentry"><span class="refentrytitle">glMatrixMode</span></span></a>) is multiplied by a rotation
             matrix with the product
             replacing the current matrix, as if <a href="glMultMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glMultMatrix</span></span></a> were called
@@ -257,8 +256,7 @@
                         </mml:mfenced>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math>
-            , 
+            </mml:math>, 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -272,8 +270,8 @@
                         </mml:mfenced>
                     </mml:mrow>
                 </mml:mrow>
-            </mml:math>
-            , and
+            </mml:math>,
+            and
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mrow>
@@ -297,7 +295,7 @@
             all objects drawn after <code class="function">glRotate</code> is called are rotated.
             Use <a href="glPushMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glPushMatrix</span></span></a> and <a href="glPopMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glPopMatrix</span></span></a> to save and restore
             the unrotated coordinate system.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713229"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713228"></a><h2>Notes</h2><p>
             This rotation follows the right-hand rule, so
             if the vector 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -310,7 +308,7 @@
             </mml:math>
             points toward the
             user, the rotation will be counterclockwise.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711330"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711329"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glRotate</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
@@ -330,7 +328,7 @@
             <a href="glPushMatrix.xml"><span class="citerefentry"><span class="refentrytitle">glPushMatrix</span></span></a>,
             <a href="glScale.xml"><span class="citerefentry"><span class="refentrytitle">glScale</span></span></a>,
             <a href="glTranslate.xml"><span class="citerefentry"><span class="refentrytitle">glTranslate</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711459"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711458"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

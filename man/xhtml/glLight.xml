@@ -6,8 +6,7 @@
                     The number of lights depends on the implementation,
                     but at least eight lights are supported.
                     They are identified by symbolic names of the form <code class="constant">GL_LIGHT</code>
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
-                    ,
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>,
                     where i ranges from 0 to the value of <code class="constant">GL_MAX_LIGHTS</code> - 1.
                 </p></dd><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
                     Specifies a single-valued light source parameter for <em class="parameter"><code>light</code></em>.
@@ -19,13 +18,12 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>param</code></em></span></dt><dd><p>
                     Specifies the value that parameter <em class="parameter"><code>pname</code></em> of light source <em class="parameter"><code>light</code></em>
                     will be set to.
-                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glLightfv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">light</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLfloat *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glLightiv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">light</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLint *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775246"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>light</code></em></span></dt><dd><p>
+                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glLightfv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">light</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLfloat *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glLightiv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">light</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLint *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775245"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>light</code></em></span></dt><dd><p>
                     Specifies a light.
                     The number of lights depends on the implementation, but
                     at least eight lights are supported.
                     They are identified by symbolic names of the form <code class="constant">GL_LIGHT</code>
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
-                    ,
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>,
                     where i ranges from 0 to the value of <code class="constant">GL_MAX_LIGHTS</code> - 1.
                 </p></dd><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
                     Specifies a light source parameter for <em class="parameter"><code>light</code></em>.
@@ -42,11 +40,10 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>params</code></em></span></dt><dd><p>
                     Specifies a pointer to the value or values that parameter <em class="parameter"><code>pname</code></em>
                     of light source <em class="parameter"><code>light</code></em> will be set to.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775409"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775407"></a><h2>Description</h2><p>
             <code class="function">glLight</code> sets the values of individual light source parameters.
             <em class="parameter"><code>light</code></em> names the light and is a symbolic name of the form <code class="constant">GL_LIGHT</code>
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
-            ,
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>,
             where i ranges from 0 to the value of <code class="constant">GL_MAX_LIGHTS</code> - 1.
             <em class="parameter"><code>pname</code></em> specifies one of ten light source parameters,
             again by symbolic name.
@@ -62,8 +59,7 @@
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
             is enabled and disabled using <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a> and
             <a href="glDisable.xml"><span class="citerefentry"><span class="refentrytitle">glDisable</span></span></a> with argument <code class="constant">GL_LIGHT</code>
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
-            .
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>.
         </p><p>
             The ten light parameters are as follows:
         </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_AMBIENT</code></span></dt><dd><p>
@@ -75,8 +71,7 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math>
-                        .
+                        </mml:math>.
                         Floating-point values are mapped directly.
                         Neither integer nor floating-point values are clamped.
                         The initial ambient light intensity is (0, 0, 0, 1).
@@ -89,8 +84,7 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math>
-                        .
+                        </mml:math>.
                         Floating-point values are mapped directly.
                         Neither integer nor floating-point values are clamped.
                         The initial value
@@ -105,8 +99,7 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math>
-                        .
+                        </mml:math>.
                         Floating-point values are mapped directly.
                         Neither integer nor floating-point values are clamped.
                         The initial value
@@ -163,8 +156,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>-1</mml:mn>
                             </mml:mfenced>
-                        </mml:math>
-                        .
+                        </mml:math>.
                     </p></dd><dt><span class="term"><code class="constant">GL_SPOT_EXPONENT</code></span></dt><dd><p>
                         <em class="parameter"><code>params</code></em> is a single integer or floating-point value that specifies
                         the intensity distribution of the light.
@@ -221,13 +213,12 @@
                         and the quadratic factor times the square of the same distance.
                         The initial attenuation factors are (1, 0, 0),
                         resulting in no attenuation.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711380"></a><h2>Notes</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711373"></a><h2>Notes</h2><p>
             It is always the case that <code class="constant">GL_LIGHT</code>
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
             = <code class="constant">GL_LIGHT0</code> + 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>
-            .
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711420"></a><h2>Errors</h2><p>
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">i</mml:mi></mml:math>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711414"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if either <em class="parameter"><code>light</code></em> or <em class="parameter"><code>pname</code></em>
             is not an accepted value.
         </p><p>
@@ -239,8 +230,7 @@
                     <mml:mn>0</mml:mn>
                     <mml:mn>128</mml:mn>
                 </mml:mfenced>
-            </mml:math>
-            ,
+            </mml:math>,
             or if spot cutoff is specified outside the range 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
@@ -256,15 +246,15 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glLight</code> is executed between
             the execution of
             <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711533"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711526"></a><h2>Associated Gets</h2><p>
             <a href="glGetLight.xml"><span class="citerefentry"><span class="refentrytitle">glGetLight</span></span></a>
         </p><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_LIGHTING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711558"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711551"></a><h2>See Also</h2><p>
             <a href="glColorMaterial.xml"><span class="citerefentry"><span class="refentrytitle">glColorMaterial</span></span></a>,
             <a href="glLightModel.xml"><span class="citerefentry"><span class="refentrytitle">glLightModel</span></span></a>,
             <a href="glMaterial.xml"><span class="citerefentry"><span class="refentrytitle">glMaterial</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711582"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711575"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

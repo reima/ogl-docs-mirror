@@ -67,15 +67,13 @@
             <listitem>
                 <para>
                     Specify a linear mapping of 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">u</mml:mi></mml:math></inlineequation>
-                    ,
+                    <inlineequation><mml:math><mml:mi mathvariant="italic">u</mml:mi></mml:math></inlineequation>,
                     as presented to <citerefentry><refentrytitle>glEvalCoord1</refentrytitle></citerefentry>,
                     to 
                     <inlineequation><mml:math>
                         <!-- eqn: u hat:-->
                         <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>&Hat;</mml:mo></mml:mover>
-                    </mml:math></inlineequation>
-                    ,
+                    </mml:math></inlineequation>,
                     the variable that is evaluated by the equations specified by this command.
                 </para>
             </listitem>
@@ -224,8 +222,8 @@
                 </mml:mrow>
             </mml:math></inlineequation>
             is the 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
-            th Bernstein polynomial of degree 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>th
+            Bernstein polynomial of degree 
             <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
             (<parameter>order</parameter> = 
             <inlineequation><mml:math>
@@ -235,8 +233,7 @@
                     <mml:mo>+</mml:mo>
                     <mml:mn>1</mml:mn>
                 </mml:mrow>
-            </mml:math></inlineequation>
-            ):
+            </mml:math></inlineequation>):
         </para>
         <para>
             <inlineequation><mml:math>
@@ -342,14 +339,13 @@
             <citerefentry><refentrytitle>glEvalCoord1</refentrytitle></citerefentry> evaluates the one-dimensional maps that are enabled.
             When
             <citerefentry><refentrytitle>glEvalCoord1</refentrytitle></citerefentry> presents a value 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">u</mml:mi></mml:math></inlineequation>
-            ,
+            <inlineequation><mml:math><mml:mi mathvariant="italic">u</mml:mi></mml:math></inlineequation>,
             the Bernstein functions are evaluated using 
             <inlineequation><mml:math>
                 <!-- eqn: u hat:-->
                 <mml:mover><mml:mi mathvariant="italic">u</mml:mi><mml:mo>&Hat;</mml:mo></mml:mover>
-            </mml:math></inlineequation>
-            , where
+            </mml:math></inlineequation>,
+            where
             <inlineequation><mml:math>
                 <!-- eqn: u hat   =   {u  -  u1} over {u2  -  u1}:-->
                 <mml:mrow>
@@ -386,12 +382,10 @@
                 <listitem>
                     <para>
                         Each control point is three floating-point values representing
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
-                        , 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
-                        , and 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>
-                        .
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>, 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>,
+                        and 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>.
                         Internal <citerefentry><refentrytitle>glVertex3</refentrytitle></citerefentry> commands are generated when the map is evaluated.
                     </para>
                 </listitem>
@@ -401,14 +395,11 @@
                 <listitem>
                     <para>
                         Each control point is four floating-point values representing
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
-                        , 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
-                        , 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>
-                        , and 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>
-                        .
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>, 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>, 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>,
+                        and 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">w</mml:mi></mml:math></inlineequation>.
                         Internal <citerefentry><refentrytitle>glVertex4</refentrytitle></citerefentry> commands are generated when the map is evaluated.
                     </para>
                 </listitem>
@@ -442,10 +433,9 @@
                     <para>
                         Each control point is three floating-point values representing
                         the 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
-                        , 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
-                        , and 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>, 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>,
+                        and 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">z</mml:mi></mml:math></inlineequation>
                         components of a normal vector.
                         Internal <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry> commands are generated when the map is
@@ -492,10 +482,9 @@
                     <para>
                         Each control point is three floating-point values representing
                         the 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
-                        , 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">t</mml:mi></mml:math></inlineequation>
-                        , and 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>, 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">t</mml:mi></mml:math></inlineequation>,
+                        and 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">r</mml:mi></mml:math></inlineequation>
                         texture coordinates.
                         Internal <citerefentry><refentrytitle>glTexCoord3</refentrytitle></citerefentry> commands are generated when the map is
@@ -510,12 +499,10 @@
                     <para>
                         Each control point is four floating-point values representing
                         the 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
-                        , 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">t</mml:mi></mml:math></inlineequation>
-                        , 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">r</mml:mi></mml:math></inlineequation>
-                        , and 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>, 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">t</mml:mi></mml:math></inlineequation>, 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">r</mml:mi></mml:math></inlineequation>,
+                        and 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">q</mml:mi></mml:math></inlineequation>
                         texture coordinates.
                         Internal

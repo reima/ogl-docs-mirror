@@ -152,13 +152,13 @@
                     <para>
                         <parameter>v</parameter> returns the order of the evaluator function.
                         One-dimensional evaluators return a single value,
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">order</mml:mi></mml:math></inlineequation>
-                        . The initial value is 1.
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">order</mml:mi></mml:math></inlineequation>.
+                        The initial value is 1.
                         Two-dimensional evaluators return two values,
                         <inlineequation><mml:math><mml:mi mathvariant="italic">uorder</mml:mi></mml:math></inlineequation>
                         and 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">vorder</mml:mi></mml:math></inlineequation>
-                        . The initial value is 1,1.
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">vorder</mml:mi></mml:math></inlineequation>.
+                        The initial value is 1,1.
                     </para>
                 </listitem>
             </varlistentry>
@@ -174,19 +174,14 @@
                         One-dimensional evaluators return two values,
                         <inlineequation><mml:math><mml:mi mathvariant="italic">u1</mml:mi></mml:math></inlineequation>
                         and 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">u2</mml:mi></mml:math></inlineequation>
-                        ,
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">u2</mml:mi></mml:math></inlineequation>,
                         as specified by <citerefentry><refentrytitle>glMap1</refentrytitle></citerefentry>.
                         Two-dimensional evaluators return four values
-                        (
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">u1</mml:mi></mml:math></inlineequation>
-                        , 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">u2</mml:mi></mml:math></inlineequation>
-                        , 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">v1</mml:mi></mml:math></inlineequation>
-                        , and 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">v2</mml:mi></mml:math></inlineequation>
-                        )
+                        (<inlineequation><mml:math><mml:mi mathvariant="italic">u1</mml:mi></mml:math></inlineequation>, 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">u2</mml:mi></mml:math></inlineequation>, 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">v1</mml:mi></mml:math></inlineequation>,
+                        and 
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">v2</mml:mi></mml:math></inlineequation>)
                         as specified by <citerefentry><refentrytitle>glMap2</refentrytitle></citerefentry>.
                         Integer values,
                         when requested,

@@ -246,8 +246,7 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         where 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">b</mml:mi></mml:math></inlineequation>
                         is the number of bits in a color index buffer.
@@ -261,8 +260,8 @@
                         and 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
                         window coordinates to the 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        th fragment such that
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>th
+                        fragment such that
                         <informalequation><mml:math>
                             <!-- eqn: x sub n  =  x sub r  +  n   mod   width:-->
                             <mml:mrow>
@@ -367,15 +366,14 @@
                                 <mml:mo>-</mml:mo>
                                 <mml:mn>1</mml:mn>
                             </mml:mrow>
-                        </mml:math></inlineequation>
-                        ,
+                        </mml:math></inlineequation>,
                         where 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">b</mml:mi></mml:math></inlineequation>
                         is the number of bits in the stencil buffer.
                         The resulting stencil indices are then written to the stencil buffer
                         such that the 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        th index is written to location
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>th
+                        index is written to location
                     </para>
                     <para>
                         <informalequation><mml:math>
@@ -455,8 +453,7 @@
                         <inlineequation><mml:math>
                             <!-- eqn: -1.0:-->
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                         Unsigned integer data is mapped similarly:
                         the largest integer value maps to 1.0,
                         and 0 maps to 0.0.
@@ -469,8 +466,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                     </para>
                     <para>
                         The GL then converts the resulting depth components to fragments
@@ -481,8 +477,8 @@
                         and 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
                         window coordinates to the 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        th fragment such that
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>th
+                        fragment such that
                     </para>
                     <para>
                         <informalequation><mml:math>
@@ -572,8 +568,8 @@
                         <inlineequation><mml:math>
                             <!-- eqn: -1.0:-->
                             <mml:mn>-1.0</mml:mn>
-                        </mml:math></inlineequation>
-                        . (Note that
+                        </mml:math></inlineequation>.
+                        (Note that
                         this mapping does not convert 0 precisely to 0.0.)
                         Unsigned integer data is mapped similarly:
                         The largest integer value maps to 1.0,
@@ -589,8 +585,7 @@
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
-                        </mml:math></inlineequation>
-                        .
+                        </mml:math></inlineequation>.
                     </para>
                     <para>
                         If <constant>GL_MAP_COLOR</constant> is true,
@@ -608,8 +603,8 @@
                         and 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">y</mml:mi></mml:math></inlineequation>
                         window coordinates to the 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        th fragment such that
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>th
+                        fragment such that
                     </para>
                     <para>
                         <informalequation><mml:math>
@@ -993,10 +988,10 @@
             </mml:math></inlineequation>
             is the current raster position,
             and a given pixel is in the 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-            th column and 
-            <inlineequation><mml:math><mml:mi mathvariant="italic">m</mml:mi></mml:math></inlineequation>
-            th row
+            <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>th
+            column and 
+            <inlineequation><mml:math><mml:mi mathvariant="italic">m</mml:mi></mml:math></inlineequation>th
+            row
             of the pixel rectangle,
             then fragments are generated for pixels whose centers are in the rectangle
             with corners at

@@ -3,13 +3,15 @@
 // Demonstrates occlusion queries
 // Program by Benjamin Lipchak
 
-#include "../../shared/SuperbibleSample.h"
+#include "../../shared/gltools.h"
 #include "../../shared/stopwatch.h" // General purpose stop watch class
 
+#undef FREEGLUT_VERSION_2_0
+#define gltPrintf(a, b, c, d)
 #include <stdio.h>
 
-GLint windowWidth = 512;                // window size
-GLint windowHeight = 512;
+GLint windowWidth = 1024;                // window size
+GLint windowHeight = 768;
 
 GLint mainMenu, bboxMenu;               // menu handles
 
@@ -97,11 +99,11 @@ void DrawModels(void)
         }
         else
         {
-            glDepthMask(GL_FALSE);
-            glColorMask(0, 0, 0, 0);
             glDisable(GL_LIGHTING);
             glDisable(GL_COLOR_MATERIAL);
             glDisable(GL_NORMALIZE);
+            glDepthMask(GL_FALSE);
+            glColorMask(0, 0, 0, 0);
         }
 
         // Draw 27 spheres in a color cube

@@ -25,9 +25,11 @@ char *shaderNames[TOTAL_SHADERS] = {"passthrough", "blur", "sharpen", "dilation"
 
 GLint whichShader = PASS_THROUGH;       // current shader
 
-GLint windowWidth = 512;                // window size
+GLboolean npotTexturesAvailable = GL_FALSE;
+
+GLint windowWidth = 1024;               // window size
 GLint windowHeight = 512;
-GLint textureWidth = 512;               // texture size
+GLint textureWidth = 1024;              // texture size
 GLint textureHeight = 512;
 
 GLint mainMenu, shaderMenu, passMenu;   // menu handles
@@ -35,6 +37,8 @@ GLint mainMenu, shaderMenu, passMenu;   // menu handles
 GLint maxTexSize;                       // maximum allowed size for 1D/2D texture
 
 GLfloat cameraPos[] = { 100.0f, 75.0f, 150.0f, 1.0f};
+GLdouble cameraZoom = 0.3;
+
 GLfloat lightPos[] = { 140.0f, 250.0f, 140.0f, 1.0f};
 GLfloat ambientLight[] = { 0.2f, 0.2f, 0.2f, 1.0f};
 GLfloat diffuseLight[] = { 0.7f, 0.7f, 0.7f, 1.0f};
@@ -204,11 +208,22 @@ void RenderScene(void)
     // Track camera angle
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluPerspective(45.0f, 1.0f, 1.0f, 1000.0f);
+    if (windowWidth > windowHeight)
+    {
+        GLdouble ar = (GLdouble)windowWidth / (GLdouble)windowHeight;
+        glFrustum(-ar * cameraZoom, ar * cameraZoom, -cameraZoom, cameraZoom, 1.0, 1000.0);
+    }
+    else
+    {
+        GLdouble ar = (GLdouble)windowHeight / (GLdouble)windowWidth;
+        glFrustum(-cameraZoom, cameraZoom, -ar * cameraZoom, ar * cameraZoom, 1.0, 1000.0);
+    }
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
     gluLookAt(cameraPos[0], cameraPos[1], cameraPos[2], 
               0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f);
+
+    glViewport(0, 0, windowWidth, windowHeight);
     
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f );
     
@@ -305,6 +320,17 @@ void SetupRC()
         fprintf(stderr, "GLSL extensions not available!\n");
         Sleep(2000);
         exit(0);
+    }
+
+    if (GLEE_VERSION_2_0 || GLEE_ARB_texture_non_power_of_two)
+    {
+        npotTexturesAvailable = GL_TRUE;
+    }
+    else
+    {
+        fprintf(stderr, "Neither OpenGL 2.0 nor GL_ARB_texture_non_power_of_two extension\n");
+        fprintf(stderr, "is available!  Shadow map will be lower resolution (lower quality).\n\n");
+        Sleep(2000);
     }
 
     // Make sure we have multitexture and cube maps!
@@ -450,16 +476,35 @@ void ChangeSize(int w, int h)
     GLint i, j;
     GLfloat xInc, yInc;
 
-    windowWidth = w;
-    windowHeight = h;
-    glViewport(0, 0, windowWidth, windowHeight);
+    windowWidth = textureWidth = w;
+    windowHeight = textureHeight = h;
 
     // find largest power-of-two texture smaller than window
-    textureWidth = textureHeight = maxTexSize;
-    while (textureWidth > windowWidth)
-        textureWidth >>= 1;
-    while (textureHeight > windowHeight)
-        textureHeight >>= 1;
+    if (!npotTexturesAvailable)
+    {
+        // Find the largest power of two that will fit in window.
+
+        // Try each width until we get one that's too big
+        i = 0;
+        while ((1 << i) <= textureWidth)
+            i++;
+        textureWidth = (1 << (i-1));
+
+        // Now for height
+        i = 0;
+        while ((1 << i) <= textureHeight)
+            i++;
+        textureHeight = (1 << (i-1));
+    }
+
+    if (textureWidth > maxTexSize)
+    {
+        textureWidth = maxTexSize;
+    }
+    if (textureHeight > maxTexSize)
+    {
+        textureHeight = maxTexSize;
+    }
 
     xInc = 1.0f / (GLfloat)textureWidth;
     yInc = 1.0f / (GLfloat)textureHeight;

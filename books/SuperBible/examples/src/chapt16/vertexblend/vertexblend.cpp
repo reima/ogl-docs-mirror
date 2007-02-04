@@ -19,14 +19,16 @@ char *shaderNames[TOTAL_SHADERS] = {"skinning"};
 GLint lightPosLoc, mv2Loc, mv2ITLoc;    // locations for uniforms
 GLint weightLoc;                        // locations for attribs
 
-GLint windowWidth = 512;                // window size
-GLint windowHeight = 512;
+GLint windowWidth = 1024;               // window size
+GLint windowHeight = 768;
 
 GLint mainMenu;                         // menu handles
 
 GLint maxTexSize;                       // maximum allowed size for 1D/2D texture
 
 GLfloat cameraPos[] = { 50.0f, 75.0f, 50.0f, 1.0f};
+GLdouble cameraZoom = 0.4;
+
 GLfloat lightPos[] =  { -50.0f, 100.0f, 50.0f, 1.0f};
 
 GLfloat elbowBend = 45.0f;
@@ -331,11 +333,21 @@ void RenderScene(void)
     // Track camera angle
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluPerspective(45.0f, 1.0f, 1.0f, 1000.0f);
+    if (windowWidth > windowHeight)
+    {
+        GLdouble ar = (GLdouble)windowWidth / (GLdouble)windowHeight;
+        glFrustum(-ar * cameraZoom, ar * cameraZoom, -cameraZoom, cameraZoom, 1.0, 1000.0);
+    }
+    else
+    {
+        GLdouble ar = (GLdouble)windowHeight / (GLdouble)windowWidth;
+        glFrustum(-cameraZoom, cameraZoom, -ar * cameraZoom, ar * cameraZoom, 1.0, 1000.0);
+    }
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
     gluLookAt(cameraPos[0], cameraPos[1], cameraPos[2], 
               0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f);
+
     glViewport(0, 0, windowWidth, windowHeight);
     
     // Clear the window with current clearing color

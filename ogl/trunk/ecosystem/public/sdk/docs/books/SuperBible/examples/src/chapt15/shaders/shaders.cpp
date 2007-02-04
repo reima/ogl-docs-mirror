@@ -3,10 +3,11 @@
 // Demonstrates GLSL shaders
 // Program by Benjamin Lipchak
 
-#include "../../shared/SuperbibleSample.h"
+#include "../../shared/gltools.h"
+#undef FREEGLUT_VERSION_2_0
 
-GLint windowWidth = 512;                // window size
-GLint windowHeight = 512;
+GLint windowWidth = 1024;                // window size
+GLint windowHeight = 768;
 
 GLboolean useVertexShader = GL_TRUE;
 GLboolean useFragmentShader = GL_TRUE;
@@ -33,8 +34,8 @@ void Link(GLboolean firstTime)
         GLchar infoLog[MAX_INFO_LOG_SIZE];
         glGetProgramInfoLog(progObj, MAX_INFO_LOG_SIZE, NULL, infoLog);
         glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
-        gltPrintf(GLUT_BITMAP_9_BY_15, 0, 0, "Error in program linkage!  Info log:");
-        gltPrintf(GLUT_BITMAP_HELVETICA_10, 2, 0, "%s", infoLog);
+        //gltPrintf(GLUT_BITMAP_9_BY_15, 0, 0, "Error in program linkage!  Info log:");
+        //gltPrintf(GLUT_BITMAP_HELVETICA_10, 2, 0, "%s", infoLog);
         glutSwapBuffers();
         Sleep(5000);
         exit(0);
@@ -156,8 +157,8 @@ void RenderScene(void)
             GLchar infoLog[MAX_INFO_LOG_SIZE];
             glGetProgramInfoLog(progObj, MAX_INFO_LOG_SIZE, NULL, infoLog);
             glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
-            gltPrintf(GLUT_BITMAP_9_BY_15, 0, 0, "Error in program validation!  Info log:");
-            gltPrintf(GLUT_BITMAP_HELVETICA_10, 2, 0, "%s", infoLog);
+            //gltPrintf(GLUT_BITMAP_9_BY_15, 0, 0, "Error in program validation!  Info log:");
+            //gltPrintf(GLUT_BITMAP_HELVETICA_10, 2, 0, "%s", infoLog);
             glutSwapBuffers();
             Sleep(5000);
             exit(0);
@@ -171,18 +172,18 @@ void RenderScene(void)
     
     glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
     glDisable(GL_DEPTH_TEST);
-    gltPrintf(GLUT_BITMAP_9_BY_15, 0, 3, "Controls:");
-    gltPrintf(GLUT_BITMAP_9_BY_15, 2, 3, "    Right-click for menu");
-    gltPrintf(GLUT_BITMAP_9_BY_15, 4, 3, "    x/X      Move +/- in x direction");
-    gltPrintf(GLUT_BITMAP_9_BY_15, 5, 3, "    y/Y      Move +/- in y direction");
-    gltPrintf(GLUT_BITMAP_9_BY_15, 6, 3, "    z/Z      Move +/- in z direction");
-    gltPrintf(GLUT_BITMAP_9_BY_15, 8, 3, "    q        Exit demo");
+    //gltPrintf(GLUT_BITMAP_9_BY_15, 0, 3, "Controls:");
+    //gltPrintf(GLUT_BITMAP_9_BY_15, 2, 3, "    Right-click for menu");
+    //gltPrintf(GLUT_BITMAP_9_BY_15, 4, 3, "    x/X      Move +/- in x direction");
+    //gltPrintf(GLUT_BITMAP_9_BY_15, 5, 3, "    y/Y      Move +/- in y direction");
+    //gltPrintf(GLUT_BITMAP_9_BY_15, 6, 3, "    z/Z      Move +/- in z direction");
+    //gltPrintf(GLUT_BITMAP_9_BY_15, 8, 3, "    q        Exit demo");
     glEnable(GL_DEPTH_TEST);
 
     if (glGetError() != GL_NO_ERROR)
     {
         glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
-        gltPrintf(GLUT_BITMAP_9_BY_15, 10, 0, "GL Error!");
+        //gltPrintf(GLUT_BITMAP_9_BY_15, 10, 0, "GL Error!");
     }
 
     // Flush drawing commands
@@ -241,7 +242,7 @@ void SetupRC()
                               !GLEE_ARB_shader_objects || 
                               !GLEE_ARB_shading_language_100))
     {
-        gltPrintf(GLUT_BITMAP_9_BY_15, 0, 3, "GLSL extensions not available!");
+        //gltPrintf(GLUT_BITMAP_9_BY_15, 0, 3, "GLSL extensions not available!");
         glutSwapBuffers();
         Sleep(2000);
         exit(0);
@@ -249,8 +250,8 @@ void SetupRC()
 
     if (!GLEE_VERSION_1_4 && !GLEE_EXT_secondary_color)
     {
-        gltPrintf(GLUT_BITMAP_9_BY_15, 0, 3, "Neither OpenGL 1.4 nor GL_EXT_secondary_color");
-        gltPrintf(GLUT_BITMAP_9_BY_15, 1, 3, " extension is available!");
+        //gltPrintf(GLUT_BITMAP_9_BY_15, 0, 3, "Neither OpenGL 1.4 nor GL_EXT_secondary_color");
+        //gltPrintf(GLUT_BITMAP_9_BY_15, 1, 3, " extension is available!");
         glutSwapBuffers();
         Sleep(2000);
         exit(0);
@@ -281,8 +282,8 @@ void SetupRC()
     {
         GLchar infoLog[MAX_INFO_LOG_SIZE];
         glGetShaderInfoLog(vShader, MAX_INFO_LOG_SIZE, NULL, infoLog);
-        gltPrintf(GLUT_BITMAP_9_BY_15, 0, 0, "Error in vertex shader compilation!  Info log:");
-        gltPrintf(GLUT_BITMAP_HELVETICA_10, 2, 0, "%s", infoLog);
+        //gltPrintf(GLUT_BITMAP_9_BY_15, 0, 0, "Error in vertex shader compilation!  Info log:");
+        //gltPrintf(GLUT_BITMAP_HELVETICA_10, 2, 0, "%s", infoLog);
         glutSwapBuffers();
         Sleep(5000);
         exit(0);
@@ -293,8 +294,8 @@ void SetupRC()
     {
         GLchar infoLog[MAX_INFO_LOG_SIZE];
         glGetShaderInfoLog(fShader, MAX_INFO_LOG_SIZE, NULL, infoLog);
-        gltPrintf(GLUT_BITMAP_9_BY_15, 0, 0, "Error in fragment shader compilation!  Info log:");
-        gltPrintf(GLUT_BITMAP_HELVETICA_10, 2, 0, "%s", infoLog);
+        //gltPrintf(GLUT_BITMAP_9_BY_15, 0, 0, "Error in fragment shader compilation!  Info log:");
+        //gltPrintf(GLUT_BITMAP_HELVETICA_10, 2, 0, "%s", infoLog);
         glutSwapBuffers();
         Sleep(5000);
         exit(0);

@@ -21,6 +21,8 @@ GLint shadowWidth = 1024;               // set based on window size
 GLint shadowHeight = 512;
 GLuint shadowTextureID;
 
+GLint maxTexSize;                       // maximum allowed size for 1D/2D texture
+
 GLfloat ambientLight[] = { 0.2f, 0.2f, 0.2f, 1.0f};
 GLfloat diffuseLight[] = { 0.7f, 0.7f, 0.7f, 1.0f};
 GLfloat noLight[]      = { 0.0f, 0.0f, 0.0f, 1.0f};
@@ -317,6 +319,8 @@ void SetupRC()
         Sleep(2000);
     }
 
+    glGetIntegerv(GL_MAX_TEXTURE_SIZE, &maxTexSize);
+
     fprintf(stdout, "Controls:\n");
     fprintf(stdout, "\tRight-click for menu\n\n");
     fprintf(stdout, "\tx/X\t\tMove +/- in x direction\n");
@@ -539,6 +543,15 @@ void ChangeSize(int w, int h)
         while ((1 << i) <= shadowHeight)
             i++;
         shadowHeight = (1 << (i-1));
+    }
+
+    if (shadowWidth > maxTexSize)
+    {
+        shadowWidth = maxTexSize;
+    }
+    if (shadowHeight > maxTexSize)
+    {
+        shadowHeight = maxTexSize;
     }
 
     RegenerateShadowMap();

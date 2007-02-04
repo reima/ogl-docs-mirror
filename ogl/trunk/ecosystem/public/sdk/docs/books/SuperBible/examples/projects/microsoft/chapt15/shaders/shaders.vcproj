@@ -122,9 +122,6 @@
 				Name="shared"
 				Filter="">
 				<File
-					RelativePath="..\..\..\..\src\shared\superbiblesample.cpp">
-				</File>
-				<File
 					RelativePath="..\..\..\..\src\shared\GLee.c">
 				</File>
 				<File
@@ -145,9 +142,6 @@
 			<Filter
 				Name="shared"
 				Filter="">
-				<File
-					RelativePath="..\..\..\..\src\shared\superbiblesample.h">
-				</File>
 			</Filter>
 		</Filter>
 		<Filter

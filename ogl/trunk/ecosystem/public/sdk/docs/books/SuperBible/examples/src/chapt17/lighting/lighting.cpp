@@ -22,12 +22,14 @@ char *shaderNames[TOTAL_SHADER_SETS] = {"simple", "diffuse", "specular", "3light
 
 GLint whichShader = SIMPLE;             // current shader
 
-GLint windowWidth = 512;                // window size
-GLint windowHeight = 512;
+GLint windowWidth = 1024;               // window size
+GLint windowHeight = 768;
 
 GLint mainMenu, shaderMenu;             // menu handles
 
 GLfloat cameraPos[] = { 100.0f, 75.0f, 150.0f, 1.0f};
+GLdouble cameraZoom = 0.4;
+
 GLfloat lightPos0[] = { 140.0f, 250.0f, 140.0f, 1.0f};
 GLfloat lightPos1[] = { -140.0f, 250.0f, 140.0f, 1.0f};
 GLfloat lightPos2[] = { 0.0f, 250.0f, -200.0f, 1.0f};
@@ -234,11 +236,22 @@ void RenderScene(void)
     // Track camera angle
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluPerspective(45.0f, 1.0f, 1.0f, 1000.0f);
+    if (windowWidth > windowHeight)
+    {
+        GLdouble ar = (GLdouble)windowWidth / (GLdouble)windowHeight;
+        glFrustum(-ar * cameraZoom, ar * cameraZoom, -cameraZoom, cameraZoom, 1.0, 1000.0);
+    }
+    else
+    {
+        GLdouble ar = (GLdouble)windowHeight / (GLdouble)windowWidth;
+        glFrustum(-cameraZoom, cameraZoom, -ar * cameraZoom, ar * cameraZoom, 1.0, 1000.0);
+    }
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
     gluLookAt(cameraPos[0], cameraPos[1], cameraPos[2], 
               0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f);
+
+    glViewport(0, 0, windowWidth, windowHeight);
     
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f );
     
@@ -395,7 +408,6 @@ void ChangeSize(int w, int h)
 {
     windowWidth = w;
     windowHeight = h;
-    glViewport(0, 0, windowWidth, windowHeight);
 }
 
 int main(int argc, char* argv[])

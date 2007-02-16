@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glBegin</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glBegin"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glBegin — delimit the vertices of a primitive or a group of like primitives</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glBegin</b>(</code>GLenum <var class="pdparam">mode</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4782015"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glBegin</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glBegin"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glBegin — delimit the vertices of a primitive or a group of like primitives</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glBegin</b>(</code>GLenum <var class="pdparam">mode</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711436"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
                     Specifies the primitive or primitives that will be created from vertices
                     presented between <code class="function">glBegin</code> and the subsequent <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
                     Ten symbolic constants are accepted:
@@ -15,7 +15,7 @@
                     <code class="constant">GL_QUADS</code>,
                     <code class="constant">GL_QUAD_STRIP</code>, and
                     <code class="constant">GL_POLYGON</code>.
-                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glEnd</b>(</code> <var class="pdparam">void</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768534"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glEnd</b>(</code><var class="pdparam">void</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4769943"></a><h2>Description</h2><p>
             <code class="function">glBegin</code> and <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a> delimit the vertices that define a primitive or
             a group of like primitives.
             <code class="function">glBegin</code> accepts a single argument that specifies in which of ten ways the
@@ -421,7 +421,7 @@
             <code class="constant">GL_TRIANGLES</code> (3),
             <code class="constant">GL_QUADS</code> (4),
             and <code class="constant">GL_QUAD_STRIP</code> (2).
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711860"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4777177"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is set to an unaccepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glBegin</code> is executed between a
@@ -465,7 +465,7 @@
             <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> is not allowed after a call to <code class="function">glBegin</code> and before
             the corresponding call to <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>,
             but an error may or may not be generated.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785125"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4767324"></a><h2>See Also</h2><p>
             <a href="glArrayElement.xml"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a>,
             <a href="glCallList.xml"><span class="citerefentry"><span class="refentrytitle">glCallList</span></span></a>,
             <a href="glCallLists.xml"><span class="citerefentry"><span class="refentrytitle">glCallLists</span></span></a>,
@@ -481,7 +481,7 @@
             <a href="glSecondaryColor.xml"><span class="citerefentry"><span class="refentrytitle">glSecondaryColor</span></span></a>,
             <a href="glTexCoord.xml"><span class="citerefentry"><span class="refentrytitle">glTexCoord</span></span></a>,
             <a href="glVertex.xml"><span class="citerefentry"><span class="refentrytitle">glVertex</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4785212"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4767407"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

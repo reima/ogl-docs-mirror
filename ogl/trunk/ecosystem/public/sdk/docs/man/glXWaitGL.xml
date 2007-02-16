@@ -20,6 +20,7 @@
         <funcsynopsis>
             <funcprototype>
                 <funcdef>void <function>glXWaitGL</function></funcdef>
+                <paramdef><parameter>void</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

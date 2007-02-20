@@ -6,10 +6,6 @@
 
 <body>
 <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
-<h1>Index</h1>
-<P>
-<H2>Tutorials available from the SDK</H2>
-
 <H2>Tutorials available from Lighthouse3D.com</H2>
 <TABLE>
 <TR>

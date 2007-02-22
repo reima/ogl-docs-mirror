@@ -68,6 +68,8 @@ void SetupRC()
     glEnable(GL_LIGHTING);
     glEnable(GL_LIGHT0);
     
+    glLightModeli(GL_LIGHT_MODEL_COLOR_CONTROL, GL_SEPARATE_SPECULAR_COLOR);
+    
     // Calculate shadow matrix
     M3DVector4f pPlane;
     m3dGetPlaneEquation(pPlane, vPoints[0], vPoints[1], vPoints[2]);

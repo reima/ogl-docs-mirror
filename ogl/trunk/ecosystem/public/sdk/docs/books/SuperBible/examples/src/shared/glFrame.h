@@ -149,18 +149,11 @@ class GLFrame
 			}
 
 
-		/////////////////////////////////////////////////////////////
-		// Perform viewing or modeling transformations
-		// Position as the camera (for viewing). Apply this transformation
-		// first as your viewing transformation
-		// The default implementation of gluLookAt can be considerably sped up
-		// since it uses doubles for everything... then again profile before you
-		// tune... ;-) You might get a boost form page fault reduction too... if
-		// no other glu routines are used...
-		// This will get called once per frame.... go ahead and inline
-        inline void ApplyCameraTransform(bool bRotOnly = false)    
-			{
-			M3DMatrix44f m;
+        /////////////////////////////////////////////////////////////
+        // Get a 4x4 transformation matrix that describes the ccamera
+        // orientation.
+        inline void GetCameraOrientation(M3DMatrix44f m)
+            {
 			M3DVector3f x, z;
 
 			// Make rotation matrix
@@ -191,8 +184,25 @@ class GLFrame
 			   M(3, 1) = 0.0;
 			   M(3, 2) = 0.0;
 			   M(3, 3) = 1.0;
-			#undef M
+			#undef M 
+            }
+            
+            
+		/////////////////////////////////////////////////////////////
+		// Perform viewing or modeling transformations
+		// Position as the camera (for viewing). Apply this transformation
+		// first as your viewing transformation
+		// The default implementation of gluLookAt can be considerably sped up
+		// since it uses doubles for everything... then again profile before you
+		// tune... ;-) You might get a boost form page fault reduction too... if
+		// no other glu routines are used...
+		// This will get called once per frame.... go ahead and inline
+        inline void ApplyCameraTransform(bool bRotOnly = false)    
+			{
+			M3DMatrix44f m;
 
+            GetCameraOrientation(m);
+            
 			// Camera Transform   
 			glMultMatrixf(m);
 		

@@ -19,6 +19,7 @@ GLboolean usePBOs = GL_FALSE;
 GLboolean useMotionBlur = GL_TRUE;
 
 GLubyte* pixels[3];                 // 3 old frames the size of window
+GLboolean frameGood[3];             // is this frame valid yet?
 GLuint currentFrame = 0;            // which old frame are we on?
 
 GLfloat angleIncrement = 1.0f;
@@ -36,6 +37,8 @@ void RenderScene(void)
         iFrames++;
     }
 
+    // Advance old frame
+    currentFrame = (currentFrame + 1) % 3;
     int lastFrame = (currentFrame + 2) % 3;
     int frameBeforeThat = (currentFrame + 1) % 3;
 
@@ -88,6 +91,7 @@ void RenderScene(void)
     {
         glReadPixels(0, 0, windowWidth, windowHeight, GL_RGB, GL_UNSIGNED_BYTE, pixels[currentFrame]);
     }
+    frameGood[currentFrame] = GL_TRUE;
 
     // Prepare the last frame by dividing colors by 4
     if (usePBOs)
@@ -115,18 +119,18 @@ void RenderScene(void)
     glBindTexture(GL_TEXTURE_2D, 2+lastFrame);
     if (usePBOs)
     {
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB8, windowWidth, windowHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, 0);
+        if (frameGood[lastFrame])
+        {
+            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB8, windowWidth, windowHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, 0);
+        }
         glBindBuffer(GL_PIXEL_UNPACK_BUFFER, 0);
     }
-    else
+    else if (frameGood[lastFrame])
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB8, windowWidth, windowHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, pixels[lastFrame]);
     }
     glActiveTexture(GL_TEXTURE2);
     glBindTexture(GL_TEXTURE_2D, 2+frameBeforeThat);
-
-    // Advance old frame
-    currentFrame = (currentFrame + 1) % 3;
 
     if (glGetError() != GL_NO_ERROR)
         fprintf(stderr, "GL Error!\n");
@@ -155,33 +159,8 @@ void RenderScene(void)
     }
 }
 
-// This function does any needed initialization on the rendering
-// context. 
-void SetupRC()
+void SetupTextures(void)
 {
-    fprintf(stdout, "Pixel Buffer Object Performance Demo\n\n");
-
-    // Make sure required functionality is available!
-    if (!GLEE_VERSION_2_1 && !GLEE_ARB_pixel_buffer_object)
-    {
-        fprintf(stderr, "PBO extension is not available!\n");
-        Sleep(2000);
-        exit(0);
-    }
-
-    fprintf(stdout, "Controls:\n");
-    fprintf(stdout, "\tRight-click for menu\n\n");
-    fprintf(stdout, "\tb\tToggle motion blur\n\n");
-    fprintf(stdout, "\tarrows\t+/- rotation speed\n\n");
-    fprintf(stdout, "\tq\t\tExit demo\n\n");
-    
-    // Colors
-    glClearColor(0.0f, 0.0f, 0.0f, 1.0f );
-    glColor4f(0.0f, 0.0f, 0.0f, 1.0f );
-
-    // Texture matrix is the only one we'll change
-    glMatrixMode(GL_TEXTURE);
-
     // Create 4 texture objects and load up original texture in all.
     // Divide colors by 2 and 4 to accommodate our additive blending
     GLint w, h, c;
@@ -231,7 +210,132 @@ void SetupRC()
         glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_ADD);
         glEnable(GL_TEXTURE_2D);
     }
+    if (!useMotionBlur)
+    {
+        glActiveTexture(GL_TEXTURE2);
+        glDisable(GL_TEXTURE_2D);
+    }
     glActiveTexture(GL_TEXTURE0);
+    glLoadIdentity();
+}
+
+// This function does any needed initialization on the rendering
+// context. 
+void SetupRC()
+{
+    pixels[0] = pixels[1] = pixels[2] = NULL;
+    frameGood[0] = frameGood[1] = frameGood[2] = GL_FALSE;
+
+    fprintf(stdout, "Pixel Buffer Object Performance Demo\n\n");
+
+    // Make sure required functionality is available!
+    if (!GLEE_VERSION_2_1 && !GLEE_ARB_pixel_buffer_object)
+    {
+        fprintf(stderr, "PBO extension is not available!\n");
+        Sleep(2000);
+        exit(0);
+    }
+    if (!GLEE_VERSION_2_0 && !GLEE_ARB_texture_non_power_of_two)
+    {
+        fprintf(stderr, "NPOT texture extension is not available!\n");
+        Sleep(2000);
+        exit(0);
+    }
+
+    // Check for minimum resources
+    GLint intVal = 0;
+    glGetIntegerv(GL_MAX_TEXTURE_UNITS, &intVal);
+    if (intVal < 3)
+    {
+        fprintf(stderr, "Fewer than 3 texture units available!\n");
+        Sleep(2000);
+        exit(0);
+    }
+    glGetIntegerv(GL_MAX_TEXTURE_SIZE, &intVal);
+    if (intVal < 1024)
+    {
+        fprintf(stderr, "1024x1024 texture not supported!\n");
+        Sleep(2000);
+        exit(0);
+    }
+
+    fprintf(stdout, "Controls:\n");
+    fprintf(stdout, "\tRight-click for menu\n\n");
+    fprintf(stdout, "\tb\tToggle motion blur\n\n");
+    fprintf(stdout, "\tp\tToggle PBO usage\n\n");
+    fprintf(stdout, "\tarrows\t+/- rotation speed\n\n");
+    fprintf(stdout, "\tq\t\tExit demo\n\n");
+    
+    // Colors
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f );
+    glColor4f(0.0f, 0.0f, 0.0f, 1.0f );
+
+    // Texture matrix is the only one we'll change
+    glMatrixMode(GL_TEXTURE);
+
+    // Set up textures
+    SetupTextures();
+}
+
+void toggleMotionBlur(void)
+{
+    useMotionBlur = !useMotionBlur;
+
+    if (useMotionBlur)
+    {
+        glutChangeToMenuEntry(2, "Toggle motion blur (currently ON)", 2);
+        glActiveTexture(GL_TEXTURE1);
+        glLoadIdentity();
+        glActiveTexture(GL_TEXTURE2);
+        glEnable(GL_TEXTURE_2D);
+    }
+    else
+    {
+        glutChangeToMenuEntry(2, "Toggle motion blur (currently OFF)", 2);
+        glActiveTexture(GL_TEXTURE2);
+        glDisable(GL_TEXTURE_2D);
+    }
+}
+
+void togglePBOs(void)
+{
+    usePBOs = !usePBOs;
+
+    if (usePBOs)
+    {
+        glutChangeToMenuEntry(1, "Toggle PBO usage (currently ON)", 1);
+
+        // first upload client memory to PBOs, then free them
+        for (int i = 0; i < 3; i++)
+        {
+            glBindBuffer(GL_PIXEL_PACK_BUFFER, i+1);
+            glBufferData(GL_PIXEL_PACK_BUFFER, windowHeight * (((windowWidth*3)+3) & ~0x3), pixels[i], GL_STREAM_COPY);
+
+            assert(pixels[i]);
+            free(pixels[i]);
+            pixels[i] = NULL;
+        }
+        glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
+    }
+    else
+    {
+        glutChangeToMenuEntry(1, "Toggle PBO usage (currently OFF)", 1);
+
+        // allocate read buffer, size of window
+        for (int i = 0; i < 3; i++)
+        {
+            assert(!pixels[i]);
+            pixels[i] = (GLubyte*)malloc(windowHeight * (((windowWidth*3)+3) & ~0x3));
+            assert(pixels[i]);
+
+            // upload PBO data, then delete
+            glBindBuffer(GL_PIXEL_PACK_BUFFER, i+1);
+            glGetBufferSubData(GL_PIXEL_PACK_BUFFER, 0, windowHeight * (((windowWidth*3)+3) & ~0x3), pixels[i]);
+        }
+        GLuint names[3] = {1, 2, 3};
+        glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
+        glDeleteBuffers(3, names);
+    }
 }
 
 void ProcessMenu(int value)
@@ -239,58 +343,11 @@ void ProcessMenu(int value)
     switch(value)
     {
     case 1:
-        usePBOs = !usePBOs;
-        if (usePBOs)
-        {
-            glutChangeToMenuEntry(1, "Toggle PBO usage (currently ON)", 1);
-
-            // first upload client memory to PBOs, then free them
-            for (int i = 0; i < 3; i++)
-            {
-                glBindBuffer(GL_PIXEL_PACK_BUFFER, i+1);
-                glBufferData(GL_PIXEL_PACK_BUFFER, windowWidth * windowHeight * 3, pixels[i], GL_STREAM_COPY);
-
-                if (pixels[i])
-                {
-                    free(pixels[i]);
-                    pixels[i] = NULL;
-                }
-            }
-            glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
-        }
-        else
-        {
-            glutChangeToMenuEntry(1, "Toggle PBO usage (currently OFF)", 1);
-
-            // allocate read buffer, size of window
-            for (int i = 0; i < 3; i++)
-            {
-                if (pixels[i])
-                {
-                    free(pixels[i]);
-                }
-                pixels[i] = (GLubyte*)malloc(windowWidth * windowHeight * 3);
-                assert(pixels[i]);
-            }
-        }
+        togglePBOs();
         break;
 
     case 2:
-        useMotionBlur = !useMotionBlur;
-        if (useMotionBlur)
-        {
-            glutChangeToMenuEntry(2, "Toggle motion blur (currently ON)", 2);
-            glActiveTexture(GL_TEXTURE1);
-            glLoadIdentity();
-            glActiveTexture(GL_TEXTURE2);
-            glEnable(GL_TEXTURE_2D);
-        }
-        else
-        {
-            glutChangeToMenuEntry(2, "Toggle motion blur (currently OFF)", 2);
-            glActiveTexture(GL_TEXTURE2);
-            glDisable(GL_TEXTURE_2D);
-        }
+        toggleMotionBlur();
         break;
 
     default:
@@ -307,21 +364,11 @@ void KeyPressFunc(unsigned char key, int x, int y)
     {
     case 'b':
     case 'B':
-        useMotionBlur = !useMotionBlur;
-        if (useMotionBlur)
-        {
-            glutChangeToMenuEntry(2, "Toggle motion blur (currently ON)", 2);
-            glActiveTexture(GL_TEXTURE1);
-            glLoadIdentity();
-            glActiveTexture(GL_TEXTURE2);
-            glEnable(GL_TEXTURE_2D);
-        }
-        else
-        {
-            glutChangeToMenuEntry(2, "Toggle motion blur (currently OFF)", 2);
-            glActiveTexture(GL_TEXTURE2);
-            glDisable(GL_TEXTURE_2D);
-        }
+        toggleMotionBlur();
+        break;
+    case 'p':
+    case 'P':
+        togglePBOs();
         break;
     case 'q':
     case 'Q':
@@ -358,15 +405,29 @@ void ChangeSize(int w, int h)
     windowWidth = w;
     windowHeight = h;
 
-    // allocate read buffer, size of window
+    SetupTextures();
+
+    // invalidate the old frames
+    frameGood[0] = frameGood[1] = frameGood[2] = GL_FALSE;
+
+    // allocate read buffers, size of window
     for (int i = 0; i < 3; i++)
     {
-        if (pixels[i])
+        if (usePBOs)
         {
-            free(pixels[i]);
+            assert(!pixels[i]);
+            glBindBuffer(GL_PIXEL_PACK_BUFFER, i+1);
+            glBufferData(GL_PIXEL_PACK_BUFFER, windowHeight * (((windowWidth*3)+3) & ~0x3), NULL, GL_STREAM_COPY);
+            glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
         }
-        pixels[i] = (GLubyte*)malloc(w * h * 3);
-        assert(pixels[i]);
+        else
+        {
+            // pixels[i] may not be set up yet on 1st time through
+            if (pixels[i])
+                free(pixels[i]);
+            pixels[i] = (GLubyte*)malloc(windowHeight * (((windowWidth*3)+3) & ~0x3));
+            assert(pixels[i]);
+        }
     }
 }
 
@@ -394,7 +455,8 @@ int main(int argc, char* argv[])
 
     for (int i = 0; i < 3; i++)
     {
-        free(pixels[i]);
+        if (!usePBOs)
+            free(pixels[i]);
     }
 
     return 0;

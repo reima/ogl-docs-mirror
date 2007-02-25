@@ -621,48 +621,45 @@ bool m3dInvertMatrix44(M3DMatrix44d dst, const M3DMatrix44d src)
 	}
 
 
+
 ///////////////////////////////////////////////////////////////////////////////////////
 // Get Window coordinates, discard Z...
-void m3dProjectXY(M3DVector2f vPointOut, const M3DMatrix44f mModelView, const M3DMatrix44f mProjection, const int iViewPort[4], const M3DVector3f vPointIn)
+void m3dProjectXY(const M3DMatrix44f mModelView, const M3DMatrix44f mProjection, const int iViewPort[4], const M3DVector3f vPointIn, M3DVector2f vPointOut)
 	{
     M3DVector4f vBack, vForth;
 
 	memcpy(vBack, vPointIn, sizeof(float)*3);
 	vBack[3] = 1.0f;
     
-    m3dTransformVector4(vForth, mModelView, vBack);
-    m3dTransformVector4(vBack, mProjection, vForth);
+    m3dTransformVector4(vForth, vBack, mModelView);
+    m3dTransformVector4(vBack, vForth, mProjection);
     
     if(!m3dCloseEnough(vBack[3], 0.0f, 0.000001f)) {
         float div = 1.0f / vBack[3];
         vBack[0] *= div;
         vBack[1] *= div;
-        //vBack[2] *= div; 
         }
 
-    vPointOut[0] = float(iViewPort[0])+(1.0f+float(vBack[0]))*float(iViewPort[2])/2.0f;
-    vPointOut[1] = float(iViewPort[1])+(1.0f+float(vBack[1]))*float(iViewPort[3])/2.0f;
 
-	// This was put in for Grand Tour... I think it's right. 
-	// .... please report any bugs
-	if(iViewPort[0] != 0)     // Cast to float is expensive... avoid if posssible
-		vPointOut[0] -= float(iViewPort[0]);
-	
-	if(iViewPort[1] != 0) 
-		vPointOut[1] -= float(iViewPort[1]);
+    vPointOut[0] = vBack[0] * 0.5 + 0.5;
+    vPointOut[1] = vBack[1] * 0.5 + 0.5;
+
+    /* Map x,y to viewport */
+    vPointOut[0] = (vPointOut[0] * iViewPort[2]) + iViewPort[0];
+    vPointOut[1] = (vPointOut[1] * iViewPort[3]) + iViewPort[1];    
 	}
     
 ///////////////////////////////////////////////////////////////////////////////////////
 // Get window coordinates, we also want Z....
-void m3dProjectXYZ(M3DVector3f vPointOut, const M3DMatrix44f mModelView, const M3DMatrix44f mProjection, const int iViewPort[4], const M3DVector3f vPointIn)
+void m3dProjectXYZ(const M3DMatrix44f mModelView, const M3DMatrix44f mProjection, const int iViewPort[4], const M3DVector3f vPointIn, M3DVector3f vPointOut)
 	{
     M3DVector4f vBack, vForth;
 
 	memcpy(vBack, vPointIn, sizeof(float)*3);
 	vBack[3] = 1.0f;
     
-    m3dTransformVector4(vForth, mModelView, vBack);
-    m3dTransformVector4(vBack, mProjection, vForth);
+    m3dTransformVector4(vForth, vBack, mModelView);
+    m3dTransformVector4(vBack, vForth, mProjection);
     
     if(!m3dCloseEnough(vBack[3], 0.0f, 0.000001f)) {
         float div = 1.0f / vBack[3];
@@ -671,16 +668,13 @@ void m3dProjectXYZ(M3DVector3f vPointOut, const M3DMatrix44f mModelView, const M
         vBack[2] *= div; 
         }
 
-    vPointOut[0] = float(iViewPort[0])+(1.0f+float(vBack[0]))*float(iViewPort[2])/2.0f;
-    vPointOut[1] = float(iViewPort[1])+(1.0f+float(vBack[1]))*float(iViewPort[3])/2.0f;
+    vPointOut[0] = vBack[0] * 0.5 + 0.5;
+    vPointOut[1] = vBack[1] * 0.5 + 0.5;
+    vPointOut[2] = vBack[2] * 0.5 + 0.5;
 
-	if(iViewPort[0] != 0)     // Cast to float is expensive... avoid if posssible
-		vPointOut[0] -= float(iViewPort[0]);
-	
-	if(iViewPort[1] != 0) 
-		vPointOut[1] -= float(iViewPort[1]);
-
- 	vPointOut[2] = vBack[2];
+    /* Map x,y to viewport */
+    vPointOut[0] = (vPointOut[0] * iViewPort[2]) + iViewPort[0];
+    vPointOut[1] = (vPointOut[1] * iViewPort[3]) + iViewPort[1];
 	}
 
 

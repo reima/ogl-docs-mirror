@@ -38,7 +38,7 @@
           <td width="50%" align="left" valign="middle"><!-- InstanceBeginEditable name="Link To Previous" -->
             <h3>&nbsp;</h3>
           <!-- InstanceEndEditable --></td>
-          <td width="81%" align="right" valign="middle"><!-- InstanceBeginEditable name="Link To Next" --><h3>&nbsp;</h3>
+          <td width="81%" align="right" valign="middle"><!-- InstanceBeginEditable name="Link To Next" --><h3><img src="http://www.shader.org/opengl/Background.png" width="9" height="9"></h3>
           <!-- InstanceEndEditable --></td>
         </tr>
       </table>

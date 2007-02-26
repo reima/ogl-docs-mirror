@@ -18,6 +18,9 @@ different rendering effects.</P>
 and has many more back at their web site. These tutorials range from your first triangle to much more
 advanced techniques.</P>
 
+<P><A HREF="./Lighthouse3D/">Lighthouse 3D</A> offers direct links to their tutorials covering the spectrum
+from GLUT to GLSL, computer graphics math to stencil shadows.</P>
+
 <P><FONT SIZE="-2">Copyright &copy; 2007 Khronos Group. All rights reserved.</FONT></P>
 
 <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>

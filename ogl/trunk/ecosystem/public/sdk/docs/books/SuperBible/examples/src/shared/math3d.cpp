@@ -641,8 +641,8 @@ void m3dProjectXY(const M3DMatrix44f mModelView, const M3DMatrix44f mProjection,
         }
 
 
-    vPointOut[0] = vBack[0] * 0.5 + 0.5;
-    vPointOut[1] = vBack[1] * 0.5 + 0.5;
+    vPointOut[0] = vBack[0] * 0.5f + 0.5f;
+    vPointOut[1] = vBack[1] * 0.5f + 0.5f;
 
     /* Map x,y to viewport */
     vPointOut[0] = (vPointOut[0] * iViewPort[2]) + iViewPort[0];
@@ -668,9 +668,9 @@ void m3dProjectXYZ(const M3DMatrix44f mModelView, const M3DMatrix44f mProjection
         vBack[2] *= div; 
         }
 
-    vPointOut[0] = vBack[0] * 0.5 + 0.5;
-    vPointOut[1] = vBack[1] * 0.5 + 0.5;
-    vPointOut[2] = vBack[2] * 0.5 + 0.5;
+    vPointOut[0] = vBack[0] * 0.5f + 0.5f;
+    vPointOut[1] = vBack[1] * 0.5f + 0.5f;
+    vPointOut[2] = vBack[2] * 0.5f + 0.5f;
 
     /* Map x,y to viewport */
     vPointOut[0] = (vPointOut[0] * iViewPort[2]) + iViewPort[0];

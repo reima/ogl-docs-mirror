@@ -1173,7 +1173,7 @@
     <refsect1><title>Notes</title>
         <para>
             <constant>GL_TEXTURE_3D</constant>, <constant>GL_TEXTURE_MIN_LOD</constant>, <constant>GL_TEXTURE_MAX_LOD</constant>,
-            <constant>GL_TEXTURE_BASE_LEVEL</constant>, and <constant>GL_TEXTURE_MAX_LEVEL</constant> are
+            <constant>GL_CLAMP_TO_EDGE</constant>, <constant>GL_TEXTURE_BASE_LEVEL</constant>, and <constant>GL_TEXTURE_MAX_LEVEL</constant> are
             available only if the GL version is 1.2 or greater.
         </para>
         <para>

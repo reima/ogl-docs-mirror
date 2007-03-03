@@ -82,11 +82,41 @@
         </variablelist>
     </refsect1>
     <refsynopsisdiv><title>C Specification</title>
+        <funcsynopsis>
+            <funcprototype>
+                <funcdef>void <function>glNormal3bv</function></funcdef>
+                <paramdef>const GLbyte * <parameter>v</parameter></paramdef>
+            </funcprototype>
+        </funcsynopsis>
+        <funcsynopsis>
+            <funcprototype>
+                <funcdef>void <function>glNormal3dv</function></funcdef>
+                <paramdef>const GLdouble * <parameter>v</parameter></paramdef>
+            </funcprototype>
+        </funcsynopsis>
+        <funcsynopsis>
+            <funcprototype>
+                <funcdef>void <function>glNormal3fv</function></funcdef>
+                <paramdef>const GLfloat * <parameter>v</parameter></paramdef>
+            </funcprototype>
+        </funcsynopsis>
+        <funcsynopsis>
+            <funcprototype>
+                <funcdef>void <function>glNormal3iv</function></funcdef>
+                <paramdef>const GLint * <parameter>v</parameter></paramdef>
+            </funcprototype>
+        </funcsynopsis>
+        <funcsynopsis>
+            <funcprototype>
+                <funcdef>void <function>glNormal3sv</function></funcdef>
+                <paramdef>const GLshort * <parameter>v</parameter></paramdef>
+            </funcprototype>
+        </funcsynopsis>
     </refsynopsisdiv>
     <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
-            <term><parameter>nx</parameter></term>
+            <term><parameter>v</parameter></term>
             <listitem>
                 <para>
                     Specifies a pointer to an array of three elements:

@@ -297,7 +297,7 @@ void RenderScene(void)
 // context. 
 void SetupRC()
 {
-    fprintf(stdout, "Shadow Mapping Demo\n\n");
+    fprintf(stdout, "FBO Shadow Mapping Demo\n\n");
 
     // Make sure required functionality is available!
     if (!GLEE_VERSION_1_4 && !GLEE_ARB_shadow)
@@ -317,18 +317,16 @@ void SetupRC()
     {
         fprintf(stderr, "GL_ARB_shadow_ambient extension not available!\n");
         fprintf(stderr, "Extra ambient rendering pass will be required.\n\n");
-        Sleep(2000);
     }
 
-    if (GLEE_VERSION_2_0 || GLEE_ARB_texture_non_power_of_two)
+    if (GLEE_ARB_texture_non_power_of_two)
     {
         npotTexturesAvailable = GL_TRUE;
     }
     else
     {
-        fprintf(stderr, "Neither OpenGL 2.0 nor GL_ARB_texture_non_power_of_two extension\n");
-        fprintf(stderr, "is available!  Shadow map will be lower resolution (lower quality).\n\n");
-        Sleep(2000);
+        fprintf(stderr, "GL_ARB_texture_non_power_of_two extension os not available!\n");
+        fprintf(stderr, "Shadow map will be lower resolution (lower quality).\n\n");
     }
 
     if (!GLEE_EXT_framebuffer_object)
@@ -341,6 +339,8 @@ void SetupRC()
     glGetIntegerv(GL_MAX_TEXTURE_SIZE, &maxTexSize);
     glGetIntegerv(GL_MAX_RENDERBUFFER_SIZE_EXT, &maxRenderbufferSize);
     maxTexSize = (maxRenderbufferSize > maxTexSize) ? maxTexSize : maxRenderbufferSize;
+    // performance suffers too much at higher texture sizes
+    maxTexSize = (maxTexSize > 2048) ? 2048 : maxTexSize;
 
     fprintf(stdout, "Controls:\n");
     fprintf(stdout, "\tRight-click for menu\n\n");
@@ -403,6 +403,8 @@ void SetupRC()
 void ChangeSize(int w, int h)
 {
     GLint i;
+    GLint origShadowWidth = shadowWidth;
+    GLint origShadowHeight = shadowHeight;
     
     windowWidth = w;
     windowHeight = h;
@@ -445,7 +447,11 @@ void ChangeSize(int w, int h)
         shadowHeight = maxTexSize;
     }
 
-    RegenerateShadowMap();
+    if ((origShadowWidth != shadowWidth) ||
+        (origShadowHeight != shadowHeight))
+    {
+        RegenerateShadowMap();
+    }
 }
 
 void ProcessMenu(int value)
@@ -624,7 +630,7 @@ int main(int argc, char* argv[])
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
     glutInitWindowSize(windowWidth, windowHeight);
-    glutCreateWindow("Shadow Mapping Demo");
+    glutCreateWindow("FBO Shadow Mapping Demo");
     glutReshapeFunc(ChangeSize);
     glutKeyboardFunc(KeyPressFunc);
     glutSpecialFunc(SpecialKeys);

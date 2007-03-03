@@ -240,7 +240,7 @@ void SetupRC()
     pixels[0] = pixels[1] = pixels[2] = NULL;
     frameGood[0] = frameGood[1] = frameGood[2] = GL_FALSE;
 
-    fprintf(stdout, "Pixel Buffer Object Performance Demo\n\n");
+    fprintf(stdout, "Pixel Buffer Object Demo\n\n");
 
     // Make sure required functionality is available!
     if (!GLEE_VERSION_2_1 && !GLEE_ARB_pixel_buffer_object)
@@ -256,9 +256,8 @@ void SetupRC()
     }
     else
     {
-        fprintf(stderr, "Neither OpenGL 2.0 nor GL_ARB_texture_non_power_of_two extension\n");
-        fprintf(stderr, "is available!  Only portion of window will be used for rendering.\n\n");
-        Sleep(2000);
+        fprintf(stderr, "GL_ARB_texture_non_power_of_two extension is not available!\n");
+        fprintf(stderr, "Only portion of window will be used for rendering.\n\n");
     }
 
     // Check for minimum resources
@@ -475,7 +474,7 @@ int main(int argc, char* argv[])
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
     glutInitWindowSize(windowWidth, windowHeight);
-    glutCreateWindow("Pixel Buffer Object Performance Demo");
+    glutCreateWindow("Pixel Buffer Object Demo");
     glutReshapeFunc(ChangeSize);
     glutKeyboardFunc(KeyPressFunc);
     glutSpecialFunc(SpecialKeys);

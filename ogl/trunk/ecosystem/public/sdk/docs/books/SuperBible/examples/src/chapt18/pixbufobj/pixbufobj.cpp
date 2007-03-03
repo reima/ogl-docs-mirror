@@ -12,9 +12,15 @@
 
 GLint windowWidth = 512;            // window size
 GLint windowHeight = 512;
+GLint dataWidth = 512;              // size of PBOs & textures
+GLint dataHeight = 512;
+GLint dataOffsetX = 0;              // offset of data within window
+GLint dataOffsetY = 0;
 
-GLint mainMenu;                     // menu handle
+GLint mainMenu;                     // menu handles
+GLint usageMenu;
 
+GLboolean npotTexturesAvailable = GL_FALSE;
 GLboolean usePBOs = GL_FALSE;
 GLboolean useMotionBlur = GL_TRUE;
 
@@ -23,6 +29,8 @@ GLboolean frameGood[3];             // is this frame valid yet?
 GLuint currentFrame = 0;            // which old frame are we on?
 
 GLfloat angleIncrement = 1.0f;
+
+GLenum usageHint = GL_STREAM_COPY;
 
 // Called to draw scene
 void RenderScene(void)
@@ -43,7 +51,7 @@ void RenderScene(void)
     int frameBeforeThat = (currentFrame + 1) % 3;
 
     // Track camera angle
-    glViewport(0, 0, windowWidth, windowHeight);
+    glViewport(dataOffsetX, dataOffsetY, dataWidth, dataHeight);
     
     // Clear the window with current clearing color
     glClear(GL_COLOR_BUFFER_BIT);
@@ -84,13 +92,14 @@ void RenderScene(void)
     if (usePBOs)
     {
         glBindBuffer(GL_PIXEL_PACK_BUFFER, currentFrame + 1);
-        glReadPixels(0, 0, windowWidth, windowHeight, GL_RGB, GL_UNSIGNED_BYTE, 0);
+        glReadPixels(dataOffsetX, dataOffsetY, dataWidth, dataHeight, GL_RGB, GL_UNSIGNED_BYTE, 0);
         glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
     }
     else
     {
-        glReadPixels(0, 0, windowWidth, windowHeight, GL_RGB, GL_UNSIGNED_BYTE, pixels[currentFrame]);
+        glReadPixels(dataOffsetX, dataOffsetY, dataWidth, dataHeight, GL_RGB, GL_UNSIGNED_BYTE, pixels[currentFrame]);
     }
+
     frameGood[currentFrame] = GL_TRUE;
 
     // Prepare the last frame by dividing colors by 4
@@ -99,11 +108,11 @@ void RenderScene(void)
         glBindBuffer(GL_PIXEL_UNPACK_BUFFER, lastFrame + 1);
         pixels[lastFrame] = (GLubyte*)glMapBuffer(GL_PIXEL_UNPACK_BUFFER, GL_READ_WRITE);
     }
-    for (int y = 0; y < windowHeight; y++)
+    for (int y = 0; y < dataHeight; y++)
     {
-        for (int x = 0; x < windowWidth; x++)
+        for (int x = 0; x < dataWidth; x++)
         {
-            GLubyte *ptr = (GLubyte *)pixels[lastFrame] + ((y*windowWidth)+x)*3;
+            GLubyte *ptr = (GLubyte *)pixels[lastFrame] + ((y*dataWidth)+x)*3;
             *(ptr + 0) >>= 2;
             *(ptr + 1) >>= 2;
             *(ptr + 2) >>= 2;
@@ -121,14 +130,15 @@ void RenderScene(void)
     {
         if (frameGood[lastFrame])
         {
-            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB8, windowWidth, windowHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, 0);
+            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB8, dataWidth, dataHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, 0);
         }
         glBindBuffer(GL_PIXEL_UNPACK_BUFFER, 0);
     }
     else if (frameGood[lastFrame])
     {
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB8, windowWidth, windowHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, pixels[lastFrame]);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB8, dataWidth, dataHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, pixels[lastFrame]);
     }
+
     glActiveTexture(GL_TEXTURE2);
     glBindTexture(GL_TEXTURE_2D, 2+frameBeforeThat);
 
@@ -182,6 +192,8 @@ void SetupTextures(void)
     glTexImage2D(GL_TEXTURE_2D, 0, c, w, h, 0, format, GL_UNSIGNED_BYTE, texels);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
     for (int y = 0; y < h; y++)
     {
         for (int x = 0; x < w; x++)
@@ -199,6 +211,8 @@ void SetupTextures(void)
         glTexImage2D(GL_TEXTURE_2D, 0, c, w, h, 0, format, GL_UNSIGNED_BYTE, texels);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
     }
     free(texels);
 
@@ -235,11 +249,16 @@ void SetupRC()
         Sleep(2000);
         exit(0);
     }
-    if (!GLEE_VERSION_2_0 && !GLEE_ARB_texture_non_power_of_two)
+
+    if (GLEE_ARB_texture_non_power_of_two)
     {
-        fprintf(stderr, "NPOT texture extension is not available!\n");
+        npotTexturesAvailable = GL_TRUE;
+    }
+    else
+    {
+        fprintf(stderr, "Neither OpenGL 2.0 nor GL_ARB_texture_non_power_of_two extension\n");
+        fprintf(stderr, "is available!  Only portion of window will be used for rendering.\n\n");
         Sleep(2000);
-        exit(0);
     }
 
     // Check for minimum resources
@@ -309,7 +328,7 @@ void togglePBOs(void)
         for (int i = 0; i < 3; i++)
         {
             glBindBuffer(GL_PIXEL_PACK_BUFFER, i+1);
-            glBufferData(GL_PIXEL_PACK_BUFFER, windowHeight * (((windowWidth*3)+3) & ~0x3), pixels[i], GL_STREAM_COPY);
+            glBufferData(GL_PIXEL_PACK_BUFFER, dataHeight * (((dataWidth*3)+3) & ~0x3), pixels[i], usageHint);
 
             assert(pixels[i]);
             free(pixels[i]);
@@ -325,12 +344,12 @@ void togglePBOs(void)
         for (int i = 0; i < 3; i++)
         {
             assert(!pixels[i]);
-            pixels[i] = (GLubyte*)malloc(windowHeight * (((windowWidth*3)+3) & ~0x3));
+            pixels[i] = (GLubyte*)malloc(dataHeight * (((dataWidth*3)+3) & ~0x3));
             assert(pixels[i]);
 
             // upload PBO data, then delete
             glBindBuffer(GL_PIXEL_PACK_BUFFER, i+1);
-            glGetBufferSubData(GL_PIXEL_PACK_BUFFER, 0, windowHeight * (((windowWidth*3)+3) & ~0x3), pixels[i]);
+            glGetBufferSubData(GL_PIXEL_PACK_BUFFER, 0, dataHeight * (((dataWidth*3)+3) & ~0x3), pixels[i]);
         }
         GLuint names[3] = {1, 2, 3};
         glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
@@ -351,6 +370,14 @@ void ProcessMenu(int value)
         break;
 
     default:
+        // we have a change of usage
+        usageHint = GL_STREAM_DRAW + (value - 3);
+        if (usePBOs)
+        {
+            // destroy then recreate PBOs
+            togglePBOs();
+            togglePBOs();
+        }
         break;
     }
 
@@ -402,22 +429,34 @@ void SpecialKeys(int key, int x, int y)
 
 void ChangeSize(int w, int h)
 {
-    windowWidth = w;
-    windowHeight = h;
+    windowWidth = dataWidth = w;
+    windowHeight = dataHeight = h;
+
+    if (!npotTexturesAvailable)
+	{
+		// make the data region the next smaller power of two
+		while (dataWidth & (dataWidth-1))
+		    dataWidth--;
+		while (dataHeight & (dataHeight-1))
+		    dataHeight--;
+
+		dataOffsetX = (windowWidth - dataWidth) / 2;
+		dataOffsetY = (windowHeight - dataHeight) / 2;
+	}
 
     SetupTextures();
 
     // invalidate the old frames
     frameGood[0] = frameGood[1] = frameGood[2] = GL_FALSE;
 
-    // allocate read buffers, size of window
+    // allocate read buffers, size of data region within window
     for (int i = 0; i < 3; i++)
     {
         if (usePBOs)
         {
             assert(!pixels[i]);
             glBindBuffer(GL_PIXEL_PACK_BUFFER, i+1);
-            glBufferData(GL_PIXEL_PACK_BUFFER, windowHeight * (((windowWidth*3)+3) & ~0x3), NULL, GL_STREAM_COPY);
+            glBufferData(GL_PIXEL_PACK_BUFFER, dataHeight * (((dataWidth*3)+3) & ~0x3), NULL, usageHint);
             glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
         }
         else
@@ -425,7 +464,7 @@ void ChangeSize(int w, int h)
             // pixels[i] may not be set up yet on 1st time through
             if (pixels[i])
                 free(pixels[i]);
-            pixels[i] = (GLubyte*)malloc(windowHeight * (((windowWidth*3)+3) & ~0x3));
+            pixels[i] = (GLubyte*)malloc(dataHeight * (((dataWidth*3)+3) & ~0x3));
             assert(pixels[i]);
         }
     }
@@ -446,9 +485,21 @@ int main(int argc, char* argv[])
     SetupRC();
 
     // Create the menus
+    usageMenu = glutCreateMenu(ProcessMenu);
+    glutAddMenuEntry("GL_STREAM_DRAW", 3);
+    glutAddMenuEntry("GL_STREAM_READ", 4);
+    glutAddMenuEntry("GL_STREAM_COPY", 5);
+    glutAddMenuEntry("GL_STATIC_DRAW", 6);
+    glutAddMenuEntry("GL_STATIC_READ", 7);
+    glutAddMenuEntry("GL_STATIC_COPY", 8);
+    glutAddMenuEntry("GL_DYNAMIC_DRAW", 9);
+    glutAddMenuEntry("GL_DYNAMIC_READ", 10);
+    glutAddMenuEntry("GL_DYNAMIC_COPY", 11);
+
     mainMenu = glutCreateMenu(ProcessMenu);
     glutAddMenuEntry("Toggle PBO usage (currently OFF)", 1);
     glutAddMenuEntry("Toggle motion blur (currently ON)", 2);
+    glutAddSubMenu("Choose PBO usage (currently GL_STREAM_COPY)", usageMenu);
     glutAttachMenu(GLUT_RIGHT_BUTTON);
 
     glutMainLoop();

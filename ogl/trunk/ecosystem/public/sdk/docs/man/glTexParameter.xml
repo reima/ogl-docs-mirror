@@ -669,7 +669,7 @@
                         represents the fractional part of
                         <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>.
                         Border texture
-                        elements are accessed only if wrapping is set to <constant>GL_CLAMP</constant>.  Initially,
+                        elements are accessed only if wrapping is set to <constant>GL_CLAMP</constant> or <constant>GL_CLAMP_TO_BORDER</constant>.  Initially,
                         <constant>GL_TEXTURE_WRAP_S</constant> is set to <constant>GL_REPEAT</constant>.
                     </para>
                 </listitem>

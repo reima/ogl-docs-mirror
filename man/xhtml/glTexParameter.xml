@@ -462,7 +462,7 @@
                         represents the fractional part of
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math>.
                         Border texture
-                        elements are accessed only if wrapping is set to <code class="constant">GL_CLAMP</code>.  Initially,
+                        elements are accessed only if wrapping is set to <code class="constant">GL_CLAMP</code> or <code class="constant">GL_CLAMP_TO_BORDER</code>.  Initially,
                         <code class="constant">GL_TEXTURE_WRAP_S</code> is set to <code class="constant">GL_REPEAT</code>.
                     </p></dd></dl></div><p>
         </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_TEXTURE_WRAP_T</code></span></dt><dd><p>
@@ -845,7 +845,7 @@
                         Specifies a boolean value that indicates if all levels of a mipmap array
                         should be automatically updated when any modification to the base level
                         mipmap is done.  The initial value is <code class="constant">GL_FALSE</code>.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787134"></a><h2>Notes</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787138"></a><h2>Notes</h2><p>
             <code class="constant">GL_TEXTURE_3D</code>, <code class="constant">GL_TEXTURE_MIN_LOD</code>, <code class="constant">GL_TEXTURE_MAX_LOD</code>,
             <code class="constant">GL_CLAMP_TO_EDGE</code>, <code class="constant">GL_TEXTURE_BASE_LEVEL</code>, and <code class="constant">GL_TEXTURE_MAX_LEVEL</code> are
             available only if the GL version is 1.2 or greater.
@@ -881,7 +881,7 @@
             For OpenGL versions 1.3 and greater, or when the <code class="code">ARB_multitexture</code> extension is supported, <code class="function">glTexParameter</code>
             specifies the texture parameters for the active texture unit, specified
             by calling <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787332"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787336"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> or <em class="parameter"><code>pname</code></em> is not
             one of the accepted defined values.
         </p><p>
@@ -890,11 +890,11 @@
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glTexParameter</code> is executed between the
             execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787406"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787410"></a><h2>Associated Gets</h2><p>
             <a href="glGetTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexParameter</span></span></a>
         </p><p>
             <a href="glGetTexLevelParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787428"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787432"></a><h2>See Also</h2><p>
             <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>,
             <a href="glBindTexture.xml"><span class="citerefentry"><span class="refentrytitle">glBindTexture</span></span></a>,
             <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
@@ -915,7 +915,7 @@
             <a href="glTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span></a>,
             <a href="glTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>,
             <a href="glTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787543"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787546"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

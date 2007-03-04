@@ -23,8 +23,6 @@ GLuint envMapTextureID;                 // envmap name
 GLint maxCubeTexSize;                   // maximum allowed size for cube map texture
 
 GLuint framebufferID;                   // FBO name
-GLuint renderbufferID;                  // renderbuffer object name
-GLint maxRenderbufferSize;              // maximum allowed size for FBO renderbuffer
 
 GLfloat ambientLight[] = { 0.4f, 0.4f, 0.4f, 1.0f};
 GLfloat diffuseLight[] = { 0.6f, 0.6f, 0.6f, 1.0f};
@@ -200,6 +198,9 @@ void RegenerateEnvMap(void)
     gluPerspective(90.0f, 1.0f, 1.0f, 125.0f);
     glViewport(0, 0, envMapSize, envMapSize);
 
+    if (useFBO)
+        glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, framebufferID);
+
     for (GLenum i = GL_TEXTURE_CUBE_MAP_POSITIVE_X; i < GL_TEXTURE_CUBE_MAP_POSITIVE_X+6; i++)
     {
         glMatrixMode(GL_MODELVIEW);
@@ -242,14 +243,29 @@ void RegenerateEnvMap(void)
             break;
         }
         
+        if (useFBO)
+        {
+            glTexImage2D(i, 0, GL_RGBA8, envMapSize, envMapSize, 0, GL_RGBA, GL_UNSIGNED_BYTE, 0);
+            glFramebufferTexture2DEXT(GL_FRAMEBUFFER_EXT, GL_COLOR_ATTACHMENT0_EXT, i, envMapTextureID, 0);
+            GLenum fboStatus = glCheckFramebufferStatusEXT(GL_FRAMEBUFFER_EXT);
+            if (fboStatus != GL_FRAMEBUFFER_COMPLETE_EXT)
+            {
+                fprintf(stderr, "FBO Error!\n");
+            }
+        }
+
         // Clear the window with current clearing color
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         // Draw objects in the scene except for the teapot
         DrawModels(GL_FALSE);
 
-        glCopyTexImage2D(i, 0, GL_RGBA8, 0, 0, envMapSize, envMapSize, 0);
+        if (!useFBO)
+            glCopyTexImage2D(i, 0, GL_RGBA8, 0, 0, envMapSize, envMapSize, 0);
     }
+
+    if (useFBO)
+        glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, 0);
 }
 
 // Called to draw scene
@@ -511,8 +527,6 @@ void SetupRC()
     }
 
     glGetIntegerv(GL_MAX_CUBE_MAP_TEXTURE_SIZE, &maxCubeTexSize);
-    glGetIntegerv(GL_MAX_RENDERBUFFER_SIZE_EXT, &maxRenderbufferSize);
-    maxCubeTexSize = (maxRenderbufferSize > maxCubeTexSize) ? maxCubeTexSize : maxRenderbufferSize;
     // performance suffers too much at higher texture sizes
     maxCubeTexSize = (maxCubeTexSize > 2048) ? 2048 : maxCubeTexSize;
 
@@ -548,17 +562,6 @@ void SetupRC()
     // Set up some renderbuffer state
     glGenFramebuffersEXT(1, &framebufferID);
     glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, framebufferID);
-    glGenRenderbuffersEXT(1, &renderbufferID);
-    glBindRenderbufferEXT(GL_RENDERBUFFER_EXT, renderbufferID);
-//    glRenderbufferStorageEXT(GL_RENDERBUFFER_EXT, GL_DEPTH_COMPONENT32, maxCubeTexSize, maxTexSize);
-//    glFramebufferRenderbufferEXT(GL_FRAMEBUFFER_EXT, GL_DEPTH_ATTACHMENT_EXT, GL_RENDERBUFFER_EXT, renderbufferID);
-    glDrawBuffer(GL_NONE);
-    glReadBuffer(GL_NONE);
-    GLenum fboStatus = glCheckFramebufferStatusEXT(GL_FRAMEBUFFER_EXT);
-    if (fboStatus != GL_FRAMEBUFFER_COMPLETE_EXT)
-    {
-        fprintf(stderr, "FBO Error!\n");
-    }
     glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, 0);
 
     // Set up textures
@@ -776,8 +779,6 @@ int main(int argc, char* argv[])
     glDeleteTextures(5, wallTextureID);
     if (glDeleteFramebuffersEXT)
         glDeleteFramebuffersEXT(1, &framebufferID);
-    if (glDeleteRenderbuffersEXT)
-        glDeleteRenderbuffersEXT(1, &renderbufferID);
 
     return 0;
 }

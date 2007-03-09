@@ -23,6 +23,8 @@ GLuint envMapTextureID;                 // envmap name
 GLint maxCubeTexSize;                   // maximum allowed size for cube map texture
 
 GLuint framebufferID;                   // FBO name
+GLenum fboInternalFormat = GL_RGBA8;
+GLenum fboBaseFormat = GL_BGRA_EXT;
 
 GLfloat ambientLight[] = { 0.4f, 0.4f, 0.4f, 1.0f};
 GLfloat diffuseLight[] = { 0.6f, 0.6f, 0.6f, 1.0f};
@@ -244,15 +246,7 @@ void RegenerateEnvMap(void)
         }
         
         if (useFBO)
-        {
-            glTexImage2D(i, 0, GL_RGBA8, envMapSize, envMapSize, 0, GL_RGBA, GL_UNSIGNED_BYTE, 0);
             glFramebufferTexture2DEXT(GL_FRAMEBUFFER_EXT, GL_COLOR_ATTACHMENT0_EXT, i, envMapTextureID, 0);
-            GLenum fboStatus = glCheckFramebufferStatusEXT(GL_FRAMEBUFFER_EXT);
-            if (fboStatus != GL_FRAMEBUFFER_COMPLETE_EXT)
-            {
-                fprintf(stderr, "FBO Error!\n");
-            }
-        }
 
         // Clear the window with current clearing color
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -261,11 +255,19 @@ void RegenerateEnvMap(void)
         DrawModels(GL_FALSE);
 
         if (!useFBO)
-            glCopyTexImage2D(i, 0, GL_RGBA8, 0, 0, envMapSize, envMapSize, 0);
+            glCopyTexImage2D(i, 0, fboInternalFormat, 0, 0, envMapSize, envMapSize, 0);
     }
 
     if (useFBO)
+    {
+        GLenum fboStatus = glCheckFramebufferStatusEXT(GL_FRAMEBUFFER_EXT);
+        if (fboStatus != GL_FRAMEBUFFER_COMPLETE_EXT)
+        {
+            fprintf(stderr, "FBO Error!\n");
+        }
+
         glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, 0);
+    }
 }
 
 // Called to draw scene
@@ -485,14 +487,20 @@ void SetupTextures(void)
     // Set up some more texture state that never changes
     glGenTextures(1, &envMapTextureID);
     glBindTexture(GL_TEXTURE_CUBE_MAP, envMapTextureID);
-    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_GENERATE_MIPMAP, 1);
+    //glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_GENERATE_MIPMAP, 1);
     glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
     glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//_MIPMAP_LINEAR);
     glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     glTexGeni(GL_S, GL_TEXTURE_GEN_MODE, GL_REFLECTION_MAP);
     glTexGeni(GL_T, GL_TEXTURE_GEN_MODE, GL_REFLECTION_MAP);
     glTexGeni(GL_R, GL_TEXTURE_GEN_MODE, GL_REFLECTION_MAP);
+
+    // this may change with window size changes
+    for (GLenum i = GL_TEXTURE_CUBE_MAP_POSITIVE_X; i < GL_TEXTURE_CUBE_MAP_POSITIVE_X+6; i++)
+    {
+        glTexImage2D(i, 0, fboInternalFormat, envMapSize, envMapSize, 0, fboBaseFormat, GL_UNSIGNED_BYTE, 0);
+    }
 }
 
 // This function does any needed initialization on the rendering
@@ -528,7 +536,7 @@ void SetupRC()
 
     glGetIntegerv(GL_MAX_CUBE_MAP_TEXTURE_SIZE, &maxCubeTexSize);
     // performance suffers too much at higher texture sizes
-    maxCubeTexSize = (maxCubeTexSize > 2048) ? 2048 : maxCubeTexSize;
+    maxCubeTexSize = (maxCubeTexSize > 1024) ? 1024 : maxCubeTexSize;
 
     fprintf(stdout, "Controls:\n");
     fprintf(stdout, "\tRight-click for menu\n\n");
@@ -559,17 +567,18 @@ void SetupRC()
     glEnable(GL_NORMALIZE);
     glEnable(GL_LIGHT0);
 
+    // Set up textures
+    SetupTextures();
+
     // Set up some renderbuffer state
     glGenFramebuffersEXT(1, &framebufferID);
     glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, framebufferID);
     glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, 0);
-
-    // Set up textures
-    SetupTextures();
 }
 
 void ChangeSize(int w, int h)
 {
+    GLint origEnvMapSize = envMapSize;
     GLint i;
     windowWidth = w;
     windowHeight = h;
@@ -599,6 +608,14 @@ void ChangeSize(int w, int h)
     if (envMapSize > maxCubeTexSize)
     {
         envMapSize = maxCubeTexSize;
+    }
+
+    if (origEnvMapSize != envMapSize)
+    {
+        for (GLenum i = GL_TEXTURE_CUBE_MAP_POSITIVE_X; i < GL_TEXTURE_CUBE_MAP_POSITIVE_X+6; i++)
+        {
+            glTexImage2D(i, 0, fboInternalFormat, envMapSize, envMapSize, 0, fboBaseFormat, GL_UNSIGNED_BYTE, 0);
+        }
     }
 }
 

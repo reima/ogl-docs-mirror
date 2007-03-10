@@ -12,8 +12,9 @@
 
 GLint windowWidth = 512;            // window size
 GLint windowHeight = 512;
-GLint dataWidth = 512;              // size of PBOs & textures
+GLint dataWidth = 512;              // dimensions of PBOs & textures
 GLint dataHeight = 512;
+GLint dataPitch = 512*3;            // size of row (padded to 4 byte boundary)
 GLint dataOffsetX = 0;              // offset of data within window
 GLint dataOffsetY = 0;
 
@@ -112,7 +113,7 @@ void RenderScene(void)
     {
         for (int x = 0; x < dataWidth; x++)
         {
-            GLubyte *ptr = (GLubyte *)pixels[lastFrame] + ((y*dataWidth)+x)*3;
+            GLubyte *ptr = (GLubyte *)pixels[lastFrame] + (y*dataPitch) + (x*3);
             *(ptr + 0) >>= 2;
             *(ptr + 1) >>= 2;
             *(ptr + 2) >>= 2;
@@ -177,6 +178,7 @@ void SetupTextures(void)
     GLenum format;
     GLbyte *texels = gltLoadTGA("reservoir.tga", &w, &h, &c, &format);
     assert(c == GL_RGB8);
+    assert((w % 4) == 0);
     for (int y = 0; y < h; y++)
     {
         for (int x = 0; x < w; x++)
@@ -327,7 +329,7 @@ void togglePBOs(void)
         for (int i = 0; i < 3; i++)
         {
             glBindBuffer(GL_PIXEL_PACK_BUFFER, i+1);
-            glBufferData(GL_PIXEL_PACK_BUFFER, dataHeight * (((dataWidth*3)+3) & ~0x3), pixels[i], usageHint);
+			glBufferData(GL_PIXEL_PACK_BUFFER, dataHeight * dataPitch, pixels[i], usageHint);
 
             assert(pixels[i]);
             free(pixels[i]);
@@ -343,12 +345,12 @@ void togglePBOs(void)
         for (int i = 0; i < 3; i++)
         {
             assert(!pixels[i]);
-            pixels[i] = (GLubyte*)malloc(dataHeight * (((dataWidth*3)+3) & ~0x3));
+            pixels[i] = (GLubyte*)malloc(dataHeight * dataPitch);
             assert(pixels[i]);
 
             // upload PBO data, then delete
             glBindBuffer(GL_PIXEL_PACK_BUFFER, i+1);
-            glGetBufferSubData(GL_PIXEL_PACK_BUFFER, 0, dataHeight * (((dataWidth*3)+3) & ~0x3), pixels[i]);
+            glGetBufferSubData(GL_PIXEL_PACK_BUFFER, 0, dataHeight * dataPitch, pixels[i]);
         }
         GLuint names[3] = {1, 2, 3};
         glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
@@ -432,16 +434,19 @@ void ChangeSize(int w, int h)
     windowHeight = dataHeight = h;
 
     if (!npotTexturesAvailable)
-	{
-		// make the data region the next smaller power of two
-		while (dataWidth & (dataWidth-1))
-		    dataWidth--;
-		while (dataHeight & (dataHeight-1))
-		    dataHeight--;
+    {
+        // make the data region the next smaller power of two
+        while (dataWidth & (dataWidth-1))
+            dataWidth--;
+        while (dataHeight & (dataHeight-1))
+            dataHeight--;
 
-		dataOffsetX = (windowWidth - dataWidth) / 2;
-		dataOffsetY = (windowHeight - dataHeight) / 2;
-	}
+        dataOffsetX = (windowWidth - dataWidth) / 2;
+        dataOffsetY = (windowHeight - dataHeight) / 2;
+    }
+
+    // by default, rows are padded to 4 bytes
+    dataPitch = (((dataWidth*3)+3) & ~0x3);
 
     SetupTextures();
 
@@ -455,7 +460,7 @@ void ChangeSize(int w, int h)
         {
             assert(!pixels[i]);
             glBindBuffer(GL_PIXEL_PACK_BUFFER, i+1);
-            glBufferData(GL_PIXEL_PACK_BUFFER, dataHeight * (((dataWidth*3)+3) & ~0x3), NULL, usageHint);
+            glBufferData(GL_PIXEL_PACK_BUFFER, dataHeight * dataPitch, NULL, usageHint);
             glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
         }
         else
@@ -463,7 +468,7 @@ void ChangeSize(int w, int h)
             // pixels[i] may not be set up yet on 1st time through
             if (pixels[i])
                 free(pixels[i]);
-            pixels[i] = (GLubyte*)malloc(dataHeight * (((dataWidth*3)+3) & ~0x3));
+            pixels[i] = (GLubyte*)malloc(dataHeight * dataPitch);
             assert(pixels[i]);
         }
     }

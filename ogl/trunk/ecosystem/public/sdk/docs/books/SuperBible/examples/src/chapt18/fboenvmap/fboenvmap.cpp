@@ -23,8 +23,8 @@ GLuint envMapTextureID;                 // envmap name
 GLint maxCubeTexSize;                   // maximum allowed size for cube map texture
 
 GLuint framebufferID;                   // FBO name
-GLenum fboInternalFormat = GL_RGBA8;
-GLenum fboBaseFormat = GL_BGRA_EXT;
+GLuint renderbufferID;                  // renderbuffer object name
+GLint maxRenderbufferSize;              // maximum allowed size for FBO renderbuffer
 
 GLfloat ambientLight[] = { 0.4f, 0.4f, 0.4f, 1.0f};
 GLfloat diffuseLight[] = { 0.6f, 0.6f, 0.6f, 1.0f};
@@ -255,7 +255,7 @@ void RegenerateEnvMap(void)
         DrawModels(GL_FALSE);
 
         if (!useFBO)
-            glCopyTexImage2D(i, 0, fboInternalFormat, 0, 0, envMapSize, envMapSize, 0);
+            glCopyTexImage2D(i, 0, GL_RGBA8, 0, 0, envMapSize, envMapSize, 0);
     }
 
     if (useFBO)
@@ -487,7 +487,7 @@ void SetupTextures(void)
     // Set up some more texture state that never changes
     glGenTextures(1, &envMapTextureID);
     glBindTexture(GL_TEXTURE_CUBE_MAP, envMapTextureID);
-    //glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_GENERATE_MIPMAP, 1);
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_GENERATE_MIPMAP, 1);
     glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
     glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
     glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MIN_FILTER, GL_LINEAR);//_MIPMAP_LINEAR);
@@ -499,7 +499,7 @@ void SetupTextures(void)
     // this may change with window size changes
     for (GLenum i = GL_TEXTURE_CUBE_MAP_POSITIVE_X; i < GL_TEXTURE_CUBE_MAP_POSITIVE_X+6; i++)
     {
-        glTexImage2D(i, 0, fboInternalFormat, envMapSize, envMapSize, 0, fboBaseFormat, GL_UNSIGNED_BYTE, 0);
+        glTexImage2D(i, 0, GL_RGBA8, envMapSize, envMapSize, 0, GL_RGBA, GL_UNSIGNED_BYTE, 0);
     }
 }
 
@@ -523,8 +523,8 @@ void SetupRC()
     }
     else
     {
-        fprintf(stderr, "GL_ARB_texture_non_power_of_two extension os not available!\n");
-        fprintf(stderr, "Shadow map will be lower resolution (lower quality).\n\n");
+        fprintf(stderr, "GL_ARB_texture_non_power_of_two extension is not available!\n");
+        fprintf(stderr, "Environment map will be lower resolution (lower quality).\n\n");
     }
 
     if (!GLEE_EXT_framebuffer_object)
@@ -535,6 +535,8 @@ void SetupRC()
     }
 
     glGetIntegerv(GL_MAX_CUBE_MAP_TEXTURE_SIZE, &maxCubeTexSize);
+    glGetIntegerv(GL_MAX_RENDERBUFFER_SIZE_EXT, &maxRenderbufferSize);
+    maxCubeTexSize = (maxRenderbufferSize > maxCubeTexSize) ? maxCubeTexSize : maxRenderbufferSize;
     // performance suffers too much at higher texture sizes
     maxCubeTexSize = (maxCubeTexSize > 1024) ? 1024 : maxCubeTexSize;
 
@@ -573,6 +575,10 @@ void SetupRC()
     // Set up some renderbuffer state
     glGenFramebuffersEXT(1, &framebufferID);
     glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, framebufferID);
+    glGenRenderbuffersEXT(1, &renderbufferID);
+    glBindRenderbufferEXT(GL_RENDERBUFFER_EXT, renderbufferID);
+    glRenderbufferStorageEXT(GL_RENDERBUFFER_EXT, GL_DEPTH_COMPONENT32, envMapSize, envMapSize);
+    glFramebufferRenderbufferEXT(GL_FRAMEBUFFER_EXT, GL_DEPTH_ATTACHMENT_EXT, GL_RENDERBUFFER_EXT, renderbufferID);
     glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, 0);
 }
 
@@ -612,9 +618,11 @@ void ChangeSize(int w, int h)
 
     if (origEnvMapSize != envMapSize)
     {
+        glRenderbufferStorageEXT(GL_RENDERBUFFER_EXT, GL_DEPTH_COMPONENT32, envMapSize, envMapSize);
+
         for (GLenum i = GL_TEXTURE_CUBE_MAP_POSITIVE_X; i < GL_TEXTURE_CUBE_MAP_POSITIVE_X+6; i++)
         {
-            glTexImage2D(i, 0, fboInternalFormat, envMapSize, envMapSize, 0, fboBaseFormat, GL_UNSIGNED_BYTE, 0);
+            glTexImage2D(i, 0, GL_RGBA8, envMapSize, envMapSize, 0, GL_RGBA, GL_UNSIGNED_BYTE, 0);
         }
     }
 }
@@ -796,6 +804,8 @@ int main(int argc, char* argv[])
     glDeleteTextures(5, wallTextureID);
     if (glDeleteFramebuffersEXT)
         glDeleteFramebuffersEXT(1, &framebufferID);
+    if (glDeleteRenderbuffersEXT)
+        glDeleteRenderbuffersEXT(1, &renderbufferID);
 
     return 0;
 }

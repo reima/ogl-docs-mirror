@@ -593,12 +593,12 @@ void ChangeSize(int w, int h)
 
     if (useFBO)
     {
-        // shadow map is limited by max supported renderbuffer size
+        // env map is limited by max supported renderbuffer size
         envMapSize = maxCubeTexSize;
     }
     else
     {
-        // shadow map is limited to size of window
+        // env map is limited to size of window
         envMapSize = (w > h) ? h : w;
     }
     
@@ -782,7 +782,7 @@ void SpecialKeys(int key, int x, int y)
 int main(int argc, char* argv[])
 {
     glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH | GLUT_MULTISAMPLE);
     glutInitWindowSize(windowWidth, windowHeight);
     glutCreateWindow("FBO Environment Mapping Demo");
     glutReshapeFunc(ChangeSize);

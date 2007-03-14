@@ -447,22 +447,6 @@ void KeyPressFunc(unsigned char key, int x, int y)
 {
     switch (key)
     {
-    case 'c':
-    case 'C':
-        currentShader = CLAMPED;
-        break;
-    case 'i':
-    case 'I':
-        currentShader = IRIS;
-        break;
-    case 't':
-    case 'T':
-        currentShader = TRIVIAL;
-        break;
-    case 'w':
-    case 'W':
-        currentShader = WHITEBALANCE;
-        break;
     case 'q':
     case 'Q':
     case 27 : /* ESC */

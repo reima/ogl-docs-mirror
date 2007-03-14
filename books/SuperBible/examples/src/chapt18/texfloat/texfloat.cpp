@@ -16,7 +16,7 @@
 GLint windowWidth = 512;            // window size
 GLint windowHeight = 512;
 
-GLfloat *fTexels;                    // read back the framebuffer to here
+GLfloat *fTexels;                   // read back the framebuffer to here
 
 GLfloat fCursorX = 0.0f;            // float cursor position [-1,1]
 GLfloat fCursorY = 0.0f;
@@ -25,16 +25,20 @@ GLint iCursorY = 0;
 
 #define CLAMPED 0
 #define TRIVIAL 1
-#define FANCY 2
-#define TOTAL_SHADERS 3
+#define IRIS 2
+#define WHITEBALANCE 3
+#define TOTAL_SHADERS 4
 
 GLuint fShader[TOTAL_SHADERS], progObj[TOTAL_SHADERS];          // shader object names
 GLboolean needsValidation[TOTAL_SHADERS];
-char *shaderNames[TOTAL_SHADERS] = {"clamped", "trivial", "fancy"};
+char *shaderNames[TOTAL_SHADERS] = {"clamped", "trivial", "iris", "whitebalance"};
 int currentShader = TRIVIAL;
 
-GLint textureWidth, textureHeight;  // texture size
+GLint npotTextureWidth, npotTextureHeight;  // texture size
+GLint potTextureWidth, potTextureHeight;
 GLint maxTexSize;
+GLboolean npotTexturesAvailable = GL_FALSE;
+GLfloat xAspect, yAspect;           // aspect ratio of quad surface
 
 GLint mainMenu;                     // menu handles
 GLint shaderMenu;
@@ -143,10 +147,10 @@ void RenderScene(void)
 
     glUseProgram(progObj[currentShader]);
 
-    if (currentShader == FANCY)
+    if ((currentShader == IRIS) || (currentShader == WHITEBALANCE))
     {
         // rough simulation of an iris:
-        // find brightest spot in neighborhood (25x25)
+        // find brightest spot in neighborhood (51x51)
         // and map that to 1.0 in shader
 
         GLfloat maxR = 0.0f;
@@ -156,19 +160,19 @@ void RenderScene(void)
         GLfloat *ptr;
 
         // map cursor location [-1,1] to texel address [0,u/v]
-        GLint centerU = (GLint)(((fCursorX + 1.0f) * 0.5f) * (GLfloat)textureWidth);
-        GLint centerV = (GLint)(((fCursorY + 1.0f) * 0.5f) * (GLfloat)textureHeight);
+        GLint centerU = (GLint)((((fCursorX / xAspect) + 1.0f) * 0.5f) * (GLfloat)npotTextureWidth);
+        GLint centerV = (GLint)((((fCursorY / yAspect) + 1.0f) * 0.5f) * (GLfloat)npotTextureHeight);
 
-        for (int v = centerV - 12; v <= centerV + 12; v++)
+        for (int v = centerV - 25; v <= centerV + 25; v++)
         {
-            for (int u = centerU - 12; u <= centerU + 12; u++)
+            for (int u = centerU - 25; u <= centerU + 25; u++)
             {
                 // check for neighborhoods that fall off the texture
-                if ((u < 0) || (u >= textureWidth) ||
-                    (v < 0) || (v >= textureHeight))
+                if ((u < 0) || (u >= npotTextureWidth) ||
+                    (v < 0) || (v >= npotTextureHeight))
                     continue;
 
-                ptr = fTexels + ((v * textureWidth + u) * 3);
+                ptr = fTexels + ((v * potTextureWidth + u) * 3);
 
                 maxR = (ptr[0] > maxR) ? ptr[0] : maxR;
                 maxG = (ptr[1] > maxG) ? ptr[1] : maxG;
@@ -186,28 +190,61 @@ void RenderScene(void)
     // Draw objects in the scene
     glBegin(GL_QUADS);
         glTexCoord2f(0.0f, 0.0f);
-        glVertex2f(-1.0f, -1.0f);
-        glTexCoord2f(0.0f, 1.0f);
-        glVertex2f(-1.0f, 1.0f);
-        glTexCoord2f(1.0f, 1.0f);
-        glVertex2f(1.0f, 1.0f);
-        glTexCoord2f(1.0f, 0.0f);
-        glVertex2f(1.0f, -1.0f);
+        glVertex2f(-1.0f * xAspect, -1.0f * yAspect);
+        glTexCoord2f(0.0f, (GLfloat)npotTextureHeight / (GLfloat)potTextureHeight);
+        glVertex2f(-1.0f * xAspect, 1.0f * yAspect);
+        glTexCoord2f((GLfloat)npotTextureWidth / (GLfloat)potTextureWidth, (GLfloat)npotTextureHeight / (GLfloat)potTextureHeight);
+        glVertex2f(1.0f * xAspect, 1.0f * yAspect);
+        glTexCoord2f((GLfloat)npotTextureWidth / (GLfloat)potTextureWidth, 0.0f);
+        glVertex2f(1.0f * xAspect, -1.0f * yAspect);
     glEnd();
 
     glUseProgram(0);
 
-    // Show cursor
-    glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
-    glBegin(GL_POINTS);
-        glVertex2f(fCursorX, fCursorY);
-    glEnd();
+    if ((currentShader == IRIS) || (currentShader == WHITEBALANCE))
+    {
+        GLfloat halfWidth = 51.0f * xAspect / npotTextureWidth;
+        GLfloat halfHeight = 51.0f * yAspect / npotTextureHeight;
+
+        // Show cursor
+        glColor4f(1.0f, 0.0f, 0.0f, 1.0f);
+        glBegin(GL_LINE_LOOP);
+            glVertex2f(fCursorX - halfWidth, fCursorY - halfHeight);
+            glVertex2f(fCursorX - halfWidth, fCursorY + halfHeight);
+            glVertex2f(fCursorX + halfWidth, fCursorY + halfHeight);
+            glVertex2f(fCursorX + halfWidth, fCursorY - halfHeight);
+        glEnd();
+    }
 
     if (glGetError() != GL_NO_ERROR)
         fprintf(stderr, "GL Error!\n");
 
     // Flush drawing commands
     glutSwapBuffers();
+}
+
+void AlterAspect()
+{
+    if (windowHeight == 0)
+    {
+        yAspect = 1.0f;
+        xAspect = 0.00001f;
+        return;
+    }
+
+    GLfloat textureAspect = (GLfloat)npotTextureWidth / (GLfloat)npotTextureHeight;
+    GLfloat windowAspect = (GLfloat)windowWidth / (GLfloat)windowHeight;
+
+    if (textureAspect > windowAspect)
+    {
+        xAspect = 1.0f;
+        yAspect = windowAspect / textureAspect;
+    }
+    else
+    {
+        yAspect = 1.0f;
+        xAspect = textureAspect / windowAspect;
+    }
 }
 
 using namespace Imf;
@@ -221,51 +258,92 @@ void SetupTextures(int whichEXR)
     switch (whichEXR)
     {
     case 0:
-        strcpy(name, "openexr-images/GoldenGate.exr");
+        strcpy(name, "openexr-images/Blobbies.exr");
         break;
     case 1:
-        strcpy(name, "openexr-images/Spirals.exr");
+        strcpy(name, "openexr-images/Desk.exr");
         break;
     case 2:
+        strcpy(name, "openexr-images/GoldenGate.exr");
+        break;
+    case 3:
+        strcpy(name, "openexr-images/MtTamWest.exr");
+        break;
+    case 4:
         strcpy(name, "openexr-images/Ocean.exr");
+        break;
+    case 5:
+        strcpy(name, "openexr-images/Spirals.exr");
+        break;
+    case 6:
+        strcpy(name, "openexr-images/StillLife.exr");
+        break;
+    case 7:
+        strcpy(name, "openexr-images/Tree.exr");
+        break;
+    default:
+        assert(0);
         break;
     }
     RgbaInputFile file(name);
     Box2i dw = file.dataWindow();
 
-    textureWidth = dw.max.x - dw.min.x + 1;
-    textureHeight = dw.max.y - dw.min.y + 1;
-    pixels.resizeErase(textureHeight, textureWidth);
+    npotTextureWidth = dw.max.x - dw.min.x + 1;
+    npotTextureHeight = dw.max.y - dw.min.y + 1;
+    pixels.resizeErase(npotTextureHeight, npotTextureWidth);
 
-    if ((textureWidth > maxTexSize) || (textureHeight > maxTexSize))
+    file.setFrameBuffer(&pixels[0][0] - dw.min.x - dw.min.y * npotTextureWidth, 1, npotTextureWidth);
+    file.readPixels(dw.min.y, dw.max.y);
+
+    // Stick the texels into a GL formatted buffer
+    potTextureWidth = npotTextureWidth;
+    potTextureHeight = npotTextureHeight;
+
+    if (!npotTexturesAvailable)
+    {
+        while (potTextureWidth & (potTextureWidth-1))
+            potTextureWidth++;
+        while (potTextureHeight & (potTextureHeight-1))
+            potTextureHeight++;
+    }
+
+    if ((potTextureWidth > maxTexSize) || (potTextureHeight > maxTexSize))
     {
         fprintf(stderr, "Texture is too big!\n");
         Sleep(2000);
         exit(0);
     }
 
-    file.setFrameBuffer(&pixels[0][0] - dw.min.x - dw.min.y * textureWidth, 1, textureWidth);
-    file.readPixels(dw.min.y, dw.max.y);
-
-    // Stick the texels into a GL formatted buffer
     if (fTexels)
         free(fTexels);
-    fTexels = (GLfloat*)malloc(textureWidth * textureHeight * 3 * sizeof(GLfloat));
+    fTexels = (GLfloat*)malloc(potTextureWidth * potTextureHeight * 3 * sizeof(GLfloat));
     GLfloat *ptr = fTexels;
-    for (int v = textureHeight-1; v >= 0; v--)
+    for (int v = 0; v < potTextureHeight; v++)
     {
-        for (int u = 0; u < textureWidth; u++)
+        for (int u = 0; u < potTextureWidth; u++)
         {
-            Rgba texel = pixels[v][u];
-            ptr[0] = texel.r;
-            ptr[1] = texel.g;
-            ptr[2] = texel.b;
+            if ((v >= npotTextureHeight) || (u >= npotTextureWidth))
+            {
+                ptr[0] = 0.0f;
+                ptr[1] = 0.0f;
+                ptr[2] = 0.0f;
+            }
+            else
+            {
+                Rgba texel = pixels[npotTextureHeight - v - 1][u];  // inverted vertically
+                ptr[0] = texel.r;
+                ptr[1] = texel.g;
+                ptr[2] = texel.b;
+            }
             ptr += 3;
         }
     }
 
+    // pick up new aspect ratio
+    AlterAspect();
+
     glTexParameteri(GL_TEXTURE_2D, GL_GENERATE_MIPMAP, 1);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB16F_ARB, textureWidth, textureHeight, 0, GL_RGB, GL_FLOAT, fTexels);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB16F_ARB, potTextureWidth, potTextureHeight, 0, GL_RGB, GL_FLOAT, fTexels);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
@@ -308,6 +386,16 @@ void SetupRC()
         exit(0);
     }
 
+    if (GLEE_ARB_texture_non_power_of_two)
+    {
+        npotTexturesAvailable = GL_TRUE;
+    }
+    else
+    {
+//        fprintf(stderr, "GL_ARB_texture_non_power_of_two extension is not available!\n");
+//        fprintf(stderr, "Only portion of window will be used for rendering.\n\n");
+    }
+
     // Check for minimum resources
     glGetIntegerv(GL_MAX_TEXTURE_SIZE, &maxTexSize);
 
@@ -320,9 +408,6 @@ void SetupRC()
     
     // Clear color
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f );
-
-    // Point size for cursor
-    glPointSize(10.0f);
 
     // Set up textures & shaders
     SetupTextures(0);
@@ -342,23 +427,15 @@ void ProcessMenu(int value)
         break;
 
     case 3:
-        currentShader = FANCY;
+        currentShader = IRIS;
         break;
 
     case 4:
-        SetupTextures(value - 4);
-        break;
-
-    case 5:
-        SetupTextures(value - 4);
-        break;
-
-    case 6:
-        SetupTextures(value - 4);
+        currentShader = WHITEBALANCE;
         break;
 
     default:
-        assert(0);
+        SetupTextures(value - 5);
         break;
     }
 
@@ -374,13 +451,17 @@ void KeyPressFunc(unsigned char key, int x, int y)
     case 'C':
         currentShader = CLAMPED;
         break;
-    case 'f':
-    case 'F':
-        currentShader = FANCY;
+    case 'i':
+    case 'I':
+        currentShader = IRIS;
         break;
     case 't':
     case 'T':
         currentShader = TRIVIAL;
+        break;
+    case 'w':
+    case 'W':
+        currentShader = WHITEBALANCE;
         break;
     case 'q':
     case 'Q':
@@ -392,12 +473,23 @@ void KeyPressFunc(unsigned char key, int x, int y)
     glutPostRedisplay();
 }
 
-void ChangeSize(int w, int h)
+void CursorUpdate(float x, float y)
 {
-    windowWidth = w;
-    windowHeight = h;
+    // now map to [-1,1]
+    fCursorX = 2.0f * (x - 0.5f);
+    fCursorY = 2.0f * (y - 0.5f);
 
-    glViewport(0, 0, w, h);
+    // and clamp to texture aspect
+    fCursorX = (fCursorX > xAspect) ? xAspect : fCursorX;
+    fCursorX = (fCursorX < -xAspect) ? -xAspect : fCursorX;
+    fCursorY = (fCursorY > yAspect) ? yAspect : fCursorY;
+    fCursorY = (fCursorY < -yAspect) ? -yAspect : fCursorY;
+
+    // finally, Y is inverted
+    fCursorY *= -1.0f;
+
+    // Refresh the Window
+    glutPostRedisplay();
 }
 
 void MouseMotion(int x, int y)
@@ -405,23 +497,8 @@ void MouseMotion(int x, int y)
     iCursorX = x;
     iCursorY = y;
 
-    // first map/clamp to [0,1]
-    fCursorX = (GLfloat)x / (GLfloat)(windowWidth-1);
-    fCursorY = (GLfloat)y / (GLfloat)(windowHeight-1);
-    fCursorX = (fCursorX > 1.0f) ? 1.0f : fCursorX;
-    fCursorY = (fCursorY > 1.0f) ? 1.0f : fCursorY;
-    fCursorX = (fCursorX < 0.0f) ? 0.0f : fCursorX;
-    fCursorY = (fCursorY < 0.0f) ? 0.0f : fCursorY;
-
-    // now map to [-1,1]
-    fCursorX = 2.0f * (fCursorX - 0.5f);
-    fCursorY = 2.0f * (fCursorY - 0.5f);
-
-    // finally, Y is inverted
-    fCursorY *= -1.0f;
-
-    // Refresh the Window
-    glutPostRedisplay();
+    CursorUpdate((GLfloat)x / (GLfloat)(windowWidth-1), 
+                 (GLfloat)y / (GLfloat)(windowHeight-1));
 }
 
 void SpecialKeys(int key, int x, int y)
@@ -454,6 +531,24 @@ void SpecialKeys(int key, int x, int y)
     MouseMotion(iCursorX, iCursorY);
 }
 
+void ChangeSize(int w, int h)
+{
+    windowWidth = w;
+    windowHeight = h;
+
+    glViewport(0, 0, w, h);
+
+    // where is the cursor in aspect-space (-xAspect,-yAspect) - (+xAspect,+yAspect)?
+    GLfloat x = fCursorX / xAspect;
+    GLfloat y = fCursorY / yAspect;
+
+    AlterAspect();
+
+    // reposition the cursor with new aspect
+    CursorUpdate((x * xAspect * 0.5f) + 0.5f, 
+                 (-y * yAspect * 0.5f) + 0.5f);
+}
+
 int main(int argc, char* argv[])
 {
     glutInit(&argc, argv);
@@ -472,12 +567,18 @@ int main(int argc, char* argv[])
     shaderMenu = glutCreateMenu(ProcessMenu);
     glutAddMenuEntry("CLAMPED", 1);
     glutAddMenuEntry("TRIVIAL", 2);
-    glutAddMenuEntry("FANCY", 3);
+    glutAddMenuEntry("IRIS", 3);
+    glutAddMenuEntry("WHITEBALANCE", 4);
 
     textureMenu = glutCreateMenu(ProcessMenu);
-    glutAddMenuEntry("GoldenGate.exr", 4);
-    glutAddMenuEntry("Spirals.exr", 5);
-    glutAddMenuEntry("Ocean.exr", 6);
+    glutAddMenuEntry("Blobbies.exr", 5);
+    glutAddMenuEntry("Desk.exr", 6);
+    glutAddMenuEntry("GoldenGate.exr", 7);
+    glutAddMenuEntry("MtTamWest.exr", 8);
+    glutAddMenuEntry("Ocean.exr", 9);
+    glutAddMenuEntry("Spirals.exr", 10);
+    glutAddMenuEntry("StillLife.exr", 11);
+    glutAddMenuEntry("Tree.exr", 12);
 
     mainMenu = glutCreateMenu(ProcessMenu);
     glutAddSubMenu("Choose tone mapping", shaderMenu);

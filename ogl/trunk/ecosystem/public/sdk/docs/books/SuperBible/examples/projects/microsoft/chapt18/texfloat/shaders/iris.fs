@@ -12,8 +12,8 @@ void main(void)
                             gl_TexCoord[0].st);
 
     // scale all color channels evenly
-    float maxMax = max(max.r, max.g);
-    maxMax = max(maxMax, max.b);
+    float maxMax = (max.r > max.g) ? max.r : max.g;
+    maxMax = (maxMax > max.b) ? maxMax : max.b;
 
     gl_FragColor.rgb = sample.rgb / maxMax;
     gl_FragColor.a = 1.0;

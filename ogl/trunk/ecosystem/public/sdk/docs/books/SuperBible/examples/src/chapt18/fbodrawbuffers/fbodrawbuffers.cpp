@@ -520,7 +520,7 @@ void SetupTextures(void)
 
 void SetupShaders(void)
 {
-    // we'll leave fied functionality vertex shading in place,
+    // we'll leave fixed functionality vertex shading in place,
     // but we'll swap between two fragment shaders
 
     // Load and compile shaders

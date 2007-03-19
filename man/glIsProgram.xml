@@ -31,10 +31,12 @@
     <refsect1><title>Description</title>
 	<para><function>glIsProgram</function> returns
 	<constant>GL_TRUE</constant> if <parameter>program</parameter>
-	is the name of a program object. If
-	<parameter>program</parameter> is zero or a non-zero value that
-	is not the name of a program object, <function>glIsProgram
-	</function> returns <constant>GL_FALSE</constant>.</para>
+	is the name of a program object previously created with 
+        <citerefentry><refentrytitle>glCreateProgram</refentrytitle></citerefentry> 
+        and not yet deleted with <citerefentry><refentrytitle>glDeleteProgram</refentrytitle></citerefentry>.
+	If <parameter>program</parameter> is zero or a non-zero value that
+	is not the name of a program object, or if an error occurs, 
+        <function>glIsProgram</function> returns <constant>GL_FALSE</constant>.</para>
     </refsect1>
     <refsect1><title>Notes</title>
 	<para><function>glIsProgram</function> is available only if the
@@ -42,6 +44,10 @@
 
 	<para>No error is generated if <parameter>program</parameter> is
 	not a valid program object name.</para>
+
+	<para>A program object marked for deletion with <citerefentry><refentrytitle>glDeleteProgram</refentrytitle></citerefentry>
+        but still in use as part of current rendering state is still considered 
+        a program object and <function>glIsProgram</function> will return <constant>GL_TRUE</constant>.</para>
     </refsect1>
     <refsect1><title>Errors</title>
 	<para><constant>GL_INVALID_OPERATION</constant> is generated if

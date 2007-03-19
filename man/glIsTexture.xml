@@ -42,6 +42,10 @@
             If <parameter>texture</parameter> is zero, or is a non-zero value that is not currently the
             name of a texture, or if an error occurs, <function>glIsTexture</function> returns <constant>GL_FALSE</constant>.
         </para>
+        <para>
+            A name returned by <citerefentry><refentrytitle>glGenTextures</refentrytitle></citerefentry>, but not yet associated with a texture
+            by calling <citerefentry><refentrytitle>glBindTexture</refentrytitle></citerefentry>, is not the name of a texture.
+        </para>
     </refsect1>
     <refsect1><title>Notes</title>
         <para>

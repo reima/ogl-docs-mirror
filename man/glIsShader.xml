@@ -31,9 +31,12 @@
     <refsect1><title>Description</title>
 	<para><function>glIsShader</function> returns
 	<constant>GL_TRUE</constant> if <parameter>shader</parameter> is
-	the name of a shader object. If <parameter>shader</parameter> is
+	the name of a shader object previously created with 
+        <citerefentry><refentrytitle>glCreateShader</refentrytitle></citerefentry> 
+        and not yet deleted with <citerefentry><refentrytitle>glDeleteShader</refentrytitle></citerefentry>. 
+        If <parameter>shader</parameter> is
 	zero or a non-zero value that is not the name of a shader
-	object, <function>glIsShader </function> returns
+	object, or if an error occurs, <function>glIsShader </function> returns
 	<constant>GL_FALSE</constant>.</para>
     </refsect1>
     <refsect1><title>Notes</title>
@@ -42,6 +45,10 @@
 
 	<para>No error is generated if <parameter>shader</parameter> is
 	not a valid shader object name.</para>
+
+	<para>A shader object marked for deletion with <citerefentry><refentrytitle>glDeleteShader</refentrytitle></citerefentry>
+        but still attached to a program object is still considered 
+        a shader object and <function>glIsShader</function> will return <constant>GL_TRUE</constant>.</para>
     </refsect1>
     <refsect1><title>Errors</title>
 	<para><constant>GL_INVALID_OPERATION</constant> is generated if

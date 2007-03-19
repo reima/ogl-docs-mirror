@@ -3,7 +3,7 @@
 // gaussian 5x5 kernel
 
 uniform sampler2D sampler0;
-uniform vec2 tc_offset[9];
+uniform vec2 tc_offset[25];
 
 void main(void)
 {

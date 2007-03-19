@@ -9,7 +9,7 @@ varying vec3 L; // eye-space light vector
 
 uniform float bloomLimit; // minimum brightness for bloom
 
-const vec3 myRed = vec3(20.0, 0.0, 0.0);
+const vec3 myRed = vec3(1.1, 0.0, 0.0);
 const vec3 myYellow = vec3(0.6, 0.5, 0.0);
 const vec3 myBlue = vec3(0.0, 0.3, 0.6);
 
@@ -61,16 +61,20 @@ void main (void)
     myInOut += distScalar;
     myInOut = clamp(myInOut, 0.0, 1.0);
 
+    // calculate diffuse lighting + 20% ambient
+    vec3 diffuse = (ambientLighting + vec3(max(0.0, dot(NN, NL))));
+
+    // colors
+    vec3 yellow = myYellow * diffuse;
+    vec3 blue = myBlue * diffuse;
+
     // red star on yellow background
-    vec3 surfColor = mix(myYellow, myRed, myInOut);
+    vec3 surfColor = mix(yellow, myRed, myInOut);
 
     // blue stripe down middle
     myInOut = smoothstep(0.0, smoothEdgeTol, 
                          abs(NV.z) - stripeThickness);
-    surfColor = mix(myBlue, surfColor, myInOut);
-
-    // calculate diffuse lighting + 20% ambient
-    surfColor *= (ambientLighting + vec3(max(0.0, dot(NN, NL))));
+    surfColor = mix(blue, surfColor, myInOut);
 
     // calculate specular lighting w/ 50% intensity
     surfColor += (specularIntensity * 
@@ -78,9 +82,9 @@ void main (void)
 
     gl_FragData[0] = vec4(surfColor, 1.0);
 
-    // bright pass: only output colors >= bloomLimit
-    vec3 brightColor = surfColor - vec3(bloomLimit);
+    // bright pass: only output colors with some component >= bloomLimit
+    vec3 brightColor = max(surfColor - vec3(bloomLimit), vec3(0.0));
     float bright = dot(brightColor, vec3(1.0));
-    bright = smoothstep(-0.05, 0.0, bright);
+    bright = smoothstep(0.0, 0.01, bright);
     gl_FragData[1] = vec4(mix(vec3(0.0), surfColor, bright), 1.0);
 }

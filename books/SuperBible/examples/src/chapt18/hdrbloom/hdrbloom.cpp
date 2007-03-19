@@ -46,7 +46,7 @@ GLdouble cameraZoom = 0.4;
 
 GLfloat lightPos[] = { 140.0f, 250.0f, 140.0f, 1.0f};
 
-GLfloat texCoordOffsets[5*5*2];
+GLfloat texCoordOffsets[4][5*5*2];
 GLfloat lightRotation = 0.0f;
 GLfloat bloomLimit = 1.0f;
 GLint tess = 75;
@@ -285,6 +285,8 @@ void SecondPass(void)
             fprintf(stderr, "FBO #2/%d Error!\n", i);
         }
 
+        glUniform2fv(offsetsLoc, 25, texCoordOffsets[i]);
+
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_BASE_LEVEL, i);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_LEVEL, i);
 
@@ -513,7 +515,7 @@ void SetupTextures(void)
     // Set up the render textures: 2 for 1st pass, 4 for 2nd
     glGenTextures(6, renderTextureID);
 
-    for (int i = 0; i < 6; i++)
+    for (int i = 0; i < 2; i++)
     {
         glBindTexture(GL_TEXTURE_2D, renderTextureID[i]);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
@@ -521,6 +523,15 @@ void SetupTextures(void)
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB16F_ARB, fboWidth, fboHeight, 0, GL_RGB, GL_FLOAT, 0);
+    }
+    for (int i = 2; i < 6; i++)
+    {
+        glBindTexture(GL_TEXTURE_2D, renderTextureID[i]);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, fboWidth, fboHeight, 0, GL_RGBA, GL_UNSIGNED_BYTE, 0);
     }
 }
 
@@ -576,9 +587,9 @@ void SetupRC()
     maxDrawBuffers = (maxDrawBuffers > maxColorAttachments) ? maxColorAttachments : maxDrawBuffers;
     maxDrawBuffers = (maxDrawBuffers > (maxTexUnits-1)) ? (maxTexUnits-1) : maxDrawBuffers;
     maxDrawBuffers = (maxDrawBuffers > 4) ? 4 : maxDrawBuffers;
-    if (maxDrawBuffers != 4)
+    if ((maxDrawBuffers != 4) || (maxTexUnits < 6))
     {
-        fprintf(stderr, "Support for at least 4 draw buffers is unavailable!\n");
+        fprintf(stderr, "Support for at least 4 draw buffers and 6 texture units is unavailable!\n");
         Sleep(2000);
         exit(0);
     }
@@ -603,6 +614,7 @@ void SetupRC()
     // Misc. state
     glDepthFunc(GL_LEQUAL);
     glShadeModel(GL_SMOOTH);
+    glHint(GL_GENERATE_MIPMAP_HINT, GL_NICEST);
 
     // Load and compile shaders
     for (i = 0; i < TOTAL_SHADER_SETS; i++)
@@ -790,26 +802,31 @@ void ChangeSize(int w, int h)
     {
         glRenderbufferStorageEXT(GL_RENDERBUFFER_EXT, GL_DEPTH_COMPONENT32, fboWidth, fboHeight);
 
-        for (i = 0; i < 6; i++)
+        for (i = 0; i < 2; i++)
         {
             glBindTexture(GL_TEXTURE_2D, renderTextureID[i]);
             glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB16F_ARB, fboWidth, fboHeight, 0, GL_RGB, GL_FLOAT, 0);
         }
-
-        xInc = 1.0f / (GLfloat)fboWidth;
-        yInc = 1.0f / (GLfloat)fboHeight;
-
-        for (i = 0; i < 5; i++)
+        for (i = 2; i < 6; i++)
         {
-            for (j = 0; j < 5; j++)
+            glBindTexture(GL_TEXTURE_2D, renderTextureID[i]);
+            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, fboWidth, fboHeight, 0, GL_RGBA, GL_UNSIGNED_BYTE, 0);
+        }
+
+        for (int k = 0; k < 4; k++)
+        {
+            xInc = 1.0f / (GLfloat)(fboWidth >> k);
+            yInc = 1.0f / (GLfloat)(fboHeight >> k);
+
+            for (i = 0; i < 5; i++)
             {
-                texCoordOffsets[(((i*5)+j)*2)+0] = (-1.0f * xInc) + ((GLfloat)i * xInc);
-                texCoordOffsets[(((i*5)+j)*2)+1] = (-1.0f * yInc) + ((GLfloat)j * yInc);
+                for (j = 0; j < 5; j++)
+                {
+                    texCoordOffsets[k][(((i*5)+j)*2)+0] = (-1.0f * xInc) + ((GLfloat)i * xInc);
+                    texCoordOffsets[k][(((i*5)+j)*2)+1] = (-1.0f * yInc) + ((GLfloat)j * yInc);
+                }
             }
         }
-        glUseProgram(progObj[GAUSSIAN]);
-        glUniform2fv(offsetsLoc, 25, texCoordOffsets);
-        glUseProgram(0);
     }
 }
 

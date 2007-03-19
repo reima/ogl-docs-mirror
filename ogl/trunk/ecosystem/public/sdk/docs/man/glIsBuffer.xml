@@ -42,6 +42,10 @@
             If <parameter>buffer</parameter> is zero, or is a non-zero value that is not currently the
             name of a buffer object, or if an error occurs, <function>glIsBuffer</function> returns <constant>GL_FALSE</constant>.
         </para>
+        <para>
+            A name returned by <citerefentry><refentrytitle>glGenBuffers</refentrytitle></citerefentry>, but not yet associated with a buffer object
+            by calling <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>, is not the name of a buffer object.
+        </para>
     </refsect1>
     <refsect1><title>Notes</title>
         <para>

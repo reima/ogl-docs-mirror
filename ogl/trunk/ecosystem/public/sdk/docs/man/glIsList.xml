@@ -30,7 +30,7 @@
             <term><parameter>list</parameter></term>
             <listitem>
                 <para>
-                    Specifies a potential display-list name.
+                    Specifies a potential display list name.
                 </para>
             </listitem>
         </varlistentry>
@@ -39,7 +39,11 @@
     <refsect1><title>Description</title>
         <para>
             <function>glIsList</function> returns <constant>GL_TRUE</constant> if <parameter>list</parameter> is the name
-            of a display list and returns <constant>GL_FALSE</constant> otherwise.
+            of a display list and returns <constant>GL_FALSE</constant> if it is not, or if an error occurs.
+        </para>
+        <para>
+            A name returned by <citerefentry><refentrytitle>glGenLists</refentrytitle></citerefentry>, but not yet associated with a display list
+            by calling <citerefentry><refentrytitle>glNewList</refentrytitle></citerefentry>, is not the name of a display list.
         </para>
     </refsect1>
     <refsect1><title>Errors</title>

@@ -879,12 +879,12 @@ void ChangeSize(int w, int h)
     {
         // Try each size until we get one larger than the window
         i = 0;
-        while ((1 << i) <= windowWidth)
+        while ((1 << i) < windowWidth)
             i++;
         fboWidth = (1 << i);
 
         i = 0;
-        while ((1 << i) <= windowHeight)
+        while ((1 << i) < windowHeight)
             i++;
         fboHeight = (1 << i);
     }

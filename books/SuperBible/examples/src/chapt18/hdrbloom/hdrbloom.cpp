@@ -23,8 +23,9 @@ char *shaderNames[TOTAL_SHADER_SETS] = {"hdrball", "gaussian", "combine", "show2
 
 GLboolean npotTexturesAvailable = GL_FALSE;
 
+GLuint pboID;                           // PBO name
 GLuint framebufferID[5];                // FBO names for 1st pass (1) and 2nd pass (4)
-GLuint renderTextureID[6];              // original scene, bright pass, and bloom results (4)
+GLuint textureID[7];                    // original scene, bright pass, and bloom results (4)
 GLuint renderbufferID;                  // renderbuffer object name
 GLint maxRenderbufferSize;              // maximum allowed size for FBO renderbuffer
 GLint maxTexSize;                       // maximum allowed size for our 2D textures
@@ -32,13 +33,14 @@ GLint maxTexUnits;                      // maximum number of texture image units
 GLint maxDrawBuffers;                   // maximum number of drawbuffers supported
 GLint maxColorAttachments;              // maximum number of FBO color attachments
 
-GLint lightPosLoc, bloomLimitLoc, offsetsLoc;
+GLint lightPosLoc, bloomLimitLoc, offsetsLoc, starIntensityLoc, afterGlowLoc;
 
 GLint windowWidth = 512;                // window size
 GLint windowHeight = 512;
 GLint fboWidth = 0;                     // set based on window size
 GLint fboHeight = 0;
 
+GLint iCursorX = 0;                     // integer cursor position [0,w/h]
 GLint mainMenu, showMenu;               // menu handles
 
 GLfloat cameraPos[] = { 50.0f, 50.0f, 150.0f, 1.0f};
@@ -47,17 +49,25 @@ GLdouble cameraZoom = 0.4;
 GLfloat lightPos[] = { 140.0f, 250.0f, 140.0f, 1.0f};
 
 GLfloat texCoordOffsets[4][5*5*2];
-GLfloat lightRotation = 0.0f;
+GLfloat lightRotation = 30.0f;
 GLfloat bloomLimit = 1.0f;
 GLint tess = 75;
 
-#define ORIG_SCENE  0
-#define BRIGHT_PASS 1
-#define PRE_BLUR    2
-#define POST_BLUR   3
-#define FULL_SCENE  4
-#define AFTER_GLOW  5
-GLint whichStopPoint = FULL_SCENE;//AFTER_GLOW;
+#define ORIG_SCENE      0
+#define BRIGHT_PASS     1
+#define PRE_BLUR        2
+#define POST_BLUR       3
+#define JUST_BLOOM      4
+#define NO_AFTER_GLOW   5
+#define JUST_AFTER_GLOW 6
+#define FULL_SCENE      7
+GLint whichStopPoint = FULL_SCENE;
+
+GLboolean afterGlowValid = GL_FALSE;
+
+GLfloat animationAngle = 0.0f;          // used to spin object
+GLfloat angleIncrement = 4.0f;          // degrees to spin per frame
+GLboolean paused = GL_FALSE;
 
 #define MAX_INFO_LOG_SIZE 2048
 
@@ -198,7 +208,11 @@ void DrawModels(void)
     glUniform3fv(lightPosLoc, 1, lightPosEye);
 
     // Draw sphere
+    glPushMatrix();
+    // spin the ball, but 5x slower because it looks better
+    glRotatef(animationAngle/5.0f, 0.0f, 1.0f, 0.0f);
     glutSolidSphere(50.0f, tess, tess);
+    glPopMatrix();
 }
 
 // 1st pass:
@@ -241,6 +255,8 @@ void FirstPass(void)
 
     glEnable(GL_DEPTH_TEST);
 
+    glUniform1f(starIntensityLoc, abs(angleIncrement));
+
     // Draw objects in the scene
     DrawModels();
 
@@ -273,11 +289,12 @@ void SecondPass(void)
         needsValidation[GAUSSIAN] = GL_FALSE;
     }
 
-    glBindTexture(GL_TEXTURE_2D, renderTextureID[1]);
+    glBindTexture(GL_TEXTURE_2D, textureID[1]);
 
     for (int i = 0; i < 4; i++)
     {
         glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, framebufferID[1+i]);
+        glViewport(0, 0, (fboWidth>>i), (fboHeight>>i));
 
         GLenum fboStatus = glCheckFramebufferStatusEXT(GL_FRAMEBUFFER_EXT);
         if (fboStatus != GL_FRAMEBUFFER_COMPLETE_EXT)
@@ -313,6 +330,15 @@ void FinalPass(void)
     glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, 0);
     glViewport(0, 0, windowWidth, windowHeight);
 
+    // set up afterglow texture
+    glActiveTexture(GL_TEXTURE5);
+    glBindBuffer(GL_PIXEL_UNPACK_BUFFER, pboID);
+//GLubyte *texels = (GLubyte *)glMapBuffer(GL_PIXEL_UNPACK_BUFFER, GL_READ_WRITE);
+//glUnmapBuffer(GL_PIXEL_UNPACK_BUFFER);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB8, fboWidth, fboHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, 0);
+    glBindBuffer(GL_PIXEL_UNPACK_BUFFER, 0);
+    glActiveTexture(GL_TEXTURE0);
+
     // Validate our shader before first use
     if (needsValidation[GAUSSIAN])
     {
@@ -337,30 +363,24 @@ void FinalPass(void)
     {
     case ORIG_SCENE:
         glUseProgram(progObj[SHOW2D]);
-        glBindTexture(GL_TEXTURE_2D, renderTextureID[0]);
+        glBindTexture(GL_TEXTURE_2D, textureID[0]);
         break;
     case BRIGHT_PASS:
     case PRE_BLUR:
         glUseProgram(progObj[SHOW2D]);
-        glBindTexture(GL_TEXTURE_2D, renderTextureID[1]);
+        glBindTexture(GL_TEXTURE_2D, textureID[1]);
         break;
     case POST_BLUR:
         glUseProgram(progObj[SHOW2D]);
         break;
+    case JUST_BLOOM:
+    case NO_AFTER_GLOW:
+    case JUST_AFTER_GLOW:
     case FULL_SCENE:
-    case AFTER_GLOW:
         glUseProgram(progObj[COMBINE]);
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, renderTextureID[0]);
-        glActiveTexture(GL_TEXTURE1);
-        glBindTexture(GL_TEXTURE_2D, renderTextureID[2]);
-        glActiveTexture(GL_TEXTURE2);
-        glBindTexture(GL_TEXTURE_2D, renderTextureID[3]);
-        glActiveTexture(GL_TEXTURE3);
-        glBindTexture(GL_TEXTURE_2D, renderTextureID[4]);
-        glActiveTexture(GL_TEXTURE4);
-        glBindTexture(GL_TEXTURE_2D, renderTextureID[5]);
-        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, 
+            ((whichStopPoint == JUST_BLOOM) || (whichStopPoint == JUST_AFTER_GLOW)) ? 0 : textureID[0]);
+        glUniform1i(afterGlowLoc, ((whichStopPoint >= JUST_AFTER_GLOW) && afterGlowValid) ? 1 : 0);
         break;
     default:
         assert(0);
@@ -377,7 +397,7 @@ void FinalPass(void)
         }
         else
         {
-            glBindTexture(GL_TEXTURE_2D, renderTextureID[2]);
+            glBindTexture(GL_TEXTURE_2D, textureID[2]);
         }
         glBegin(GL_QUADS);
             glMultiTexCoord2f(GL_TEXTURE0, 0.0f, 0.0f);
@@ -396,7 +416,7 @@ void FinalPass(void)
         }
         else
         {
-            glBindTexture(GL_TEXTURE_2D, renderTextureID[3]);
+            glBindTexture(GL_TEXTURE_2D, textureID[3]);
         }
         glBegin(GL_QUADS);
             glMultiTexCoord2f(GL_TEXTURE0, 0.0f, 0.0f);
@@ -415,7 +435,7 @@ void FinalPass(void)
         }
         else
         {
-            glBindTexture(GL_TEXTURE_2D, renderTextureID[4]);
+            glBindTexture(GL_TEXTURE_2D, textureID[4]);
         }
         glBegin(GL_QUADS);
             glMultiTexCoord2f(GL_TEXTURE0, 0.0f, 0.0f);
@@ -434,7 +454,7 @@ void FinalPass(void)
         }
         else
         {
-            glBindTexture(GL_TEXTURE_2D, renderTextureID[5]);
+            glBindTexture(GL_TEXTURE_2D, textureID[5]);
         }
         glBegin(GL_QUADS);
             glMultiTexCoord2f(GL_TEXTURE0, 0.0f, 0.0f);
@@ -470,6 +490,17 @@ void FinalPass(void)
 // Called to draw scene
 void RenderScene(void)
 {
+    if (!paused)
+    {
+        // spin objects
+        animationAngle += angleIncrement;
+        if (animationAngle == 360.0f) animationAngle = 0.0f;
+
+        // slow down over time
+        angleIncrement *= 0.99f;
+        if (abs(angleIncrement) < 0.01f) angleIncrement = 0.0f;
+    }
+
     // Track camera angle
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
@@ -493,12 +524,20 @@ void RenderScene(void)
 
     // Generate mipmaps of the bright pass results:
     // we'll use levels 0 - 3 for blurring
-    glBindTexture(GL_TEXTURE_2D, renderTextureID[1]);
+    glBindTexture(GL_TEXTURE_2D, textureID[1]);
     glGenerateMipmapEXT(GL_TEXTURE_2D);
 
     SecondPass();
 
     FinalPass();
+
+    // Read back frame for afterglow effect
+    glBindBuffer(GL_PIXEL_PACK_BUFFER, pboID);
+    glReadPixels(0, 0, fboWidth, fboHeight, GL_RGB, GL_UNSIGNED_BYTE, 0);
+//GLubyte *texels = (GLubyte *)glMapBuffer(GL_PIXEL_PACK_BUFFER, GL_READ_WRITE);
+//glUnmapBuffer(GL_PIXEL_PACK_BUFFER);
+    glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
+    afterGlowValid = GL_TRUE;
 
     // Reset state
     glUseProgram(0);
@@ -513,26 +552,35 @@ void RenderScene(void)
 void SetupTextures(void)
 {
     // Set up the render textures: 2 for 1st pass, 4 for 2nd
-    glGenTextures(6, renderTextureID);
+    glGenTextures(7, textureID);
 
     for (int i = 0; i < 2; i++)
     {
-        glBindTexture(GL_TEXTURE_2D, renderTextureID[i]);
+        glBindTexture(GL_TEXTURE_2D, textureID[i]);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB16F_ARB, fboWidth, fboHeight, 0, GL_RGB, GL_FLOAT, 0);
     }
-    for (int i = 2; i < 6; i++)
+    for (int i = 2; i < 7; i++)
     {
-        glBindTexture(GL_TEXTURE_2D, renderTextureID[i]);
+        glActiveTexture(GL_TEXTURE1 + i - 2);
+        glBindTexture(GL_TEXTURE_2D, textureID[i]);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, fboWidth, fboHeight, 0, GL_RGBA, GL_UNSIGNED_BYTE, 0);
+        if (i < 6)
+        {
+            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, fboWidth >> (i-2), fboHeight >> (i-2), 0, GL_RGBA, GL_UNSIGNED_BYTE, 0);
+        }
+        else
+        {
+            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB8, fboWidth, fboHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, 0);
+        }
     }
+    glActiveTexture(GL_TEXTURE0);
 }
 
 // This function does any needed initialization on the rendering
@@ -626,6 +674,8 @@ void SetupRC()
     glUseProgram(progObj[HDRBALL]);
     lightPosLoc = glGetUniformLocation(progObj[HDRBALL], "lightPos");
     assert(lightPosLoc != -1);
+    starIntensityLoc = glGetUniformLocation(progObj[HDRBALL], "starIntensity");
+    assert(starIntensityLoc != -1);
     bloomLimitLoc = glGetUniformLocation(progObj[HDRBALL], "bloomLimit");
     assert(bloomLimitLoc != -1);
     glUniform1f(bloomLimitLoc, bloomLimit);
@@ -651,6 +701,11 @@ void SetupRC()
     samplerLoc = glGetUniformLocation(progObj[COMBINE], "sampler4");
     assert(samplerLoc != -1);
     glUniform1i(samplerLoc, 4);
+    samplerLoc = glGetUniformLocation(progObj[COMBINE], "sampler5");
+    assert(samplerLoc != -1);
+    glUniform1i(samplerLoc, 5);
+    afterGlowLoc = glGetUniformLocation(progObj[COMBINE], "afterGlow");
+    assert(afterGlowLoc != -1);
     glUseProgram(progObj[SHOW2D]);
     samplerLoc = glGetUniformLocation(progObj[SHOW2D], "sampler0");
     assert(samplerLoc != -1);
@@ -659,6 +714,12 @@ void SetupRC()
 
     // Render textures
     SetupTextures();
+
+    // Set up a PBO for afterglow
+    glGenBuffers(1, &pboID);
+    glBindBuffer(GL_PIXEL_PACK_BUFFER, pboID);
+    glBufferData(GL_PIXEL_PACK_BUFFER, 1, NULL, GL_STREAM_COPY);
+    glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
 
     // Set up some renderbuffer state
     glGenRenderbuffersEXT(1, &renderbufferID);
@@ -672,14 +733,14 @@ void SetupRC()
     GLenum buf[2] = {GL_COLOR_ATTACHMENT0_EXT, GL_COLOR_ATTACHMENT1_EXT};
     glDrawBuffers(2, buf);
     glFramebufferRenderbufferEXT(GL_FRAMEBUFFER_EXT, GL_DEPTH_ATTACHMENT_EXT, GL_RENDERBUFFER_EXT, renderbufferID);
-    glFramebufferTexture2DEXT(GL_FRAMEBUFFER_EXT, GL_COLOR_ATTACHMENT0_EXT, GL_TEXTURE_2D, renderTextureID[0], 0);
-    glFramebufferTexture2DEXT(GL_FRAMEBUFFER_EXT, GL_COLOR_ATTACHMENT1_EXT, GL_TEXTURE_2D, renderTextureID[1], 0);
+    glFramebufferTexture2DEXT(GL_FRAMEBUFFER_EXT, GL_COLOR_ATTACHMENT0_EXT, GL_TEXTURE_2D, textureID[0], 0);
+    glFramebufferTexture2DEXT(GL_FRAMEBUFFER_EXT, GL_COLOR_ATTACHMENT1_EXT, GL_TEXTURE_2D, textureID[1], 0);
 
     // in 2nd pass (actually 4 passes) we'll render to one 2D texture at a time
     for (i = 0; i < 4; i++)
     {
         glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, framebufferID[1+i]);
-        glFramebufferTexture2DEXT(GL_FRAMEBUFFER_EXT, GL_COLOR_ATTACHMENT0_EXT, GL_TEXTURE_2D, renderTextureID[2+i], 0);
+        glFramebufferTexture2DEXT(GL_FRAMEBUFFER_EXT, GL_COLOR_ATTACHMENT0_EXT, GL_TEXTURE_2D, textureID[2+i], 0);
     }
 
     glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, 0);
@@ -688,6 +749,30 @@ void SetupRC()
 void ProcessMenu(int value)
 {
     whichStopPoint = value - 1;
+
+    if (whichStopPoint == JUST_AFTER_GLOW)
+    {
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, 0);
+        glActiveTexture(GL_TEXTURE2);
+        glBindTexture(GL_TEXTURE_2D, 0);
+        glActiveTexture(GL_TEXTURE3);
+        glBindTexture(GL_TEXTURE_2D, 0);
+        glActiveTexture(GL_TEXTURE4);
+        glBindTexture(GL_TEXTURE_2D, 0);
+    }
+    else
+    {
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, textureID[2]);
+        glActiveTexture(GL_TEXTURE2);
+        glBindTexture(GL_TEXTURE_2D, textureID[3]);
+        glActiveTexture(GL_TEXTURE3);
+        glBindTexture(GL_TEXTURE_2D, textureID[4]);
+        glActiveTexture(GL_TEXTURE4);
+        glBindTexture(GL_TEXTURE_2D, textureID[5]);
+    }
+    glActiveTexture(GL_TEXTURE0);
 
     // Refresh the Window
     glutPostRedisplay();
@@ -727,6 +812,10 @@ void KeyPressFunc(unsigned char key, int x, int y)
         glUniform1f(bloomLimitLoc, bloomLimit);
         glUseProgram(0);
         break;
+    case 'p':
+    case 'P':
+        paused = !paused;
+        break;
     case 'q':
     case 'Q':
     case 27 : /* ESC */
@@ -735,6 +824,18 @@ void KeyPressFunc(unsigned char key, int x, int y)
 
     // Refresh the Window
     glutPostRedisplay();
+}
+
+void MouseMotion(int x, int y)
+{
+    float newIncrement = (float)(x - iCursorX) / 5.0f;
+    if (((angleIncrement >= 0.0f) && (newIncrement < 0.0f)) ||
+        ((angleIncrement <= 0.0f) && (newIncrement > 0.0f)) ||
+        (abs(newIncrement) > abs(angleIncrement)))
+    {
+        angleIncrement = newIncrement;
+    }
+    iCursorX = x;
 }
 
 void SpecialKeys(int key, int x, int y)
@@ -800,17 +901,22 @@ void ChangeSize(int w, int h)
 
     if ((origWidth != fboWidth) || (origHeight != fboHeight))
     {
+        glBindBuffer(GL_PIXEL_PACK_BUFFER, pboID);
+        glBufferData(GL_PIXEL_PACK_BUFFER, fboHeight * (((fboWidth*3)+3) & ~0x3), NULL, GL_STREAM_COPY);
+        glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
+        afterGlowValid = GL_FALSE;
+
         glRenderbufferStorageEXT(GL_RENDERBUFFER_EXT, GL_DEPTH_COMPONENT32, fboWidth, fboHeight);
 
         for (i = 0; i < 2; i++)
         {
-            glBindTexture(GL_TEXTURE_2D, renderTextureID[i]);
+            glBindTexture(GL_TEXTURE_2D, textureID[i]);
             glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB16F_ARB, fboWidth, fboHeight, 0, GL_RGB, GL_FLOAT, 0);
         }
-        for (i = 2; i < 6; i++)
+        for (i = 2; i < 7; i++)
         {
-            glBindTexture(GL_TEXTURE_2D, renderTextureID[i]);
-            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, fboWidth, fboHeight, 0, GL_RGBA, GL_UNSIGNED_BYTE, 0);
+            glBindTexture(GL_TEXTURE_2D, textureID[i]);
+            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, fboWidth >> (i-2), fboHeight >> (i-2), 0, GL_RGBA, GL_UNSIGNED_BYTE, 0);
         }
 
         for (int k = 0; k < 4; k++)
@@ -835,40 +941,48 @@ int main(int argc, char* argv[])
     GLint i;
 
     glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_MULTISAMPLE);
     glutInitWindowSize(windowWidth, windowHeight);
     glutCreateWindow("High Dynamic Range Bloom Demo");
     glutReshapeFunc(ChangeSize);
     glutKeyboardFunc(KeyPressFunc);
     glutSpecialFunc(SpecialKeys);
     glutDisplayFunc(RenderScene);
+    glutIdleFunc(RenderScene);
+    glutMotionFunc(MouseMotion);
 
     SetupRC();
 
     // Create the menus
     showMenu = glutCreateMenu(ProcessMenu);
-    for (i = 0; i < 6; i++)
+    for (i = ORIG_SCENE; i <= FULL_SCENE; i++)
     {
         char menuEntry[128];
         switch (i)
         {
-        case 0:
+        case ORIG_SCENE:
             sprintf(menuEntry, "original scene");
             break;
-        case 1:
+        case BRIGHT_PASS:
             sprintf(menuEntry, "bright pass");
             break;
-        case 2:
+        case PRE_BLUR:
             sprintf(menuEntry, "pre-blur");
             break;
-        case 3:
+        case POST_BLUR:
             sprintf(menuEntry, "post-blur");
             break;
-        case 4:
-            sprintf(menuEntry, "combined scene");
+        case JUST_BLOOM:
+            sprintf(menuEntry, "just bloom");
             break;
-        case 5:
-            sprintf(menuEntry, "with afterglow");
+        case NO_AFTER_GLOW:
+            sprintf(menuEntry, "no afterglow");
+            break;
+        case JUST_AFTER_GLOW:
+            sprintf(menuEntry, "just afterglow");
+            break;
+        case FULL_SCENE:
+            sprintf(menuEntry, "combined scene");
             break;
         default:
             assert(0);
@@ -887,7 +1001,7 @@ int main(int argc, char* argv[])
 
     glutMainLoop();
 
-    glDeleteTextures(6, renderTextureID);
+    glDeleteTextures(7, textureID);
     if (glDeleteFramebuffersEXT)
         glDeleteFramebuffersEXT(5, framebufferID);
     if (glDeleteRenderbuffersEXT)

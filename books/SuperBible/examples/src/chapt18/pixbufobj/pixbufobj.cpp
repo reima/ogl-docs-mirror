@@ -329,7 +329,7 @@ void togglePBOs(void)
         for (int i = 0; i < 3; i++)
         {
             glBindBuffer(GL_PIXEL_PACK_BUFFER, i+1);
-			glBufferData(GL_PIXEL_PACK_BUFFER, dataHeight * dataPitch, pixels[i], usageHint);
+            glBufferData(GL_PIXEL_PACK_BUFFER, dataHeight * dataPitch, pixels[i], usageHint);
 
             assert(pixels[i]);
             free(pixels[i]);

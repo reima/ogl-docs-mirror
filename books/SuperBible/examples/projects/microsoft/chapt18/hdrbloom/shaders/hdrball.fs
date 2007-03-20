@@ -7,9 +7,10 @@ varying vec3 V; // object-space position
 varying vec3 N; // eye-space normal
 varying vec3 L; // eye-space light vector
 
-uniform float bloomLimit; // minimum brightness for bloom
+uniform float bloomLimit;    // minimum brightness for bloom
+uniform float starIntensity; // how bright is the star?
 
-const vec3 myRed = vec3(1.1, 0.0, 0.0);
+const vec3 myRed = vec3(1.1, 0.2, 0.2);
 const vec3 myYellow = vec3(0.6, 0.5, 0.0);
 const vec3 myBlue = vec3(0.0, 0.3, 0.6);
 
@@ -67,9 +68,10 @@ void main (void)
     // colors
     vec3 yellow = myYellow * diffuse;
     vec3 blue = myBlue * diffuse;
+    vec3 red = myRed * starIntensity;
 
     // red star on yellow background
-    vec3 surfColor = mix(yellow, myRed, myInOut);
+    vec3 surfColor = mix(yellow, red, myInOut);
 
     // blue stripe down middle
     myInOut = smoothstep(0.0, smoothEdgeTol, 
@@ -85,6 +87,6 @@ void main (void)
     // bright pass: only output colors with some component >= bloomLimit
     vec3 brightColor = max(surfColor - vec3(bloomLimit), vec3(0.0));
     float bright = dot(brightColor, vec3(1.0));
-    bright = smoothstep(0.0, 0.01, bright);
+    bright = smoothstep(0.0, 0.5, bright);
     gl_FragData[1] = vec4(mix(vec3(0.0), surfColor, bright), 1.0);
 }

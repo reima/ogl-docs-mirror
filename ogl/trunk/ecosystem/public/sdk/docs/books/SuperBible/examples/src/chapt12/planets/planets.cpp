@@ -158,7 +158,7 @@ void ProcessSelection(int xPos, int yPos)
 	// mouse cursor point (xPos, yPos) and extending two pixels
 	// in the vertical and horizontal direction
 	glLoadIdentity();
-	gluPickMatrix(xPos, viewport[3] - yPos, 2,2, viewport);
+	gluPickMatrix(xPos, viewport[3] - yPos + viewport[1], 2,2, viewport);
 
 	// Apply perspective matrix 
 	fAspect = (float)viewport[2] / (float)viewport[3];
@@ -170,6 +170,7 @@ void ProcessSelection(int xPos, int yPos)
 	// Collect the hits
 	hits = glRenderMode(GL_RENDER);
 
+    GLuint nErr = glGetError();
 	// If a single hit occurred, display the info.
 	if(hits == 1)
 		ProcessPlanet(selectBuff[3]);

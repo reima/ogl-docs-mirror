@@ -174,7 +174,7 @@ void ProcessSelection(int xPos, int yPos)
 	// (as measured from the top) subtract the height and you get it in terms 
 	// OpenGL Likes.
 	glLoadIdentity();
-	gluPickMatrix(xPos, viewport[3] - yPos, 2,2, viewport);
+	gluPickMatrix(xPos, viewport[3] - yPos + viewport[1], 2,2, viewport);
 
 	// Apply perspective matrix 
 	fAspect = (float)viewport[2] / (float)viewport[3];

@@ -51,12 +51,6 @@ void RenderScene(void)
     int lastFrame = (currentFrame + 2) % 3;
     int frameBeforeThat = (currentFrame + 1) % 3;
 
-    // Track camera angle
-    glViewport(dataOffsetX, dataOffsetY, dataWidth, dataHeight);
-    
-    // Clear the window with current clearing color
-    glClear(GL_COLOR_BUFFER_BIT);
-   
     // Rotate the texture matrix for unit 0 (current frame)
     glActiveTexture(GL_TEXTURE0);
     glTranslatef(0.5f, 0.5f, 0.0f);
@@ -445,6 +439,9 @@ void ChangeSize(int w, int h)
         dataOffsetY = (windowHeight - dataHeight) / 2;
     }
 
+    // Track camera angle
+    glViewport(dataOffsetX, dataOffsetY, dataWidth, dataHeight);
+    
     // by default, rows are padded to 4 bytes
     dataPitch = (((dataWidth*3)+3) & ~0x3);
 

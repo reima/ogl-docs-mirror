@@ -270,7 +270,7 @@ void ProcessSelection(int xPos, int yPos)
 	// mouse cursor point (xPos, yPos) and extending two pixels
 	// in the vertical and horizontal direction
 	glLoadIdentity();
-	gluPickMatrix(xPos, viewport[3] - yPos, 2,2, viewport);
+	gluPickMatrix(xPos, viewport[3] - yPos + viewport[1], 2,2, viewport);
 
 	// Apply perspective matrix 
 	gluPerspective(60.0f, fAspect, 1.0, 425.0);

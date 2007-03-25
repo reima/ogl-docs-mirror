@@ -347,6 +347,8 @@ void RenderScene(void)
         // 2nd pass: Redraw from texture w/ fragment shader outputting to multiple targets
         glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, framebufferID[1]);
         glBindTexture(GL_TEXTURE_2D, renderTextureID[0]);
+        // to enhance the blur effect, force texture 0 to use a coarser mip level
+        glGenerateMipmapEXT(GL_TEXTURE_2D);
 
         if (useDrawBuffers)
         {
@@ -511,6 +513,11 @@ void SetupTextures(void)
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+        if (i == 0)
+        {
+            // The 1st pass texture needs to be mipmapped for the enhanced blur effect
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_NEAREST);
+        }
 
         // this may change with window size changes
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, fboWidth, fboHeight, 0, GL_RGBA, GL_UNSIGNED_BYTE, 0);

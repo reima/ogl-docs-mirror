@@ -12,7 +12,7 @@ void main(void)
     for (int i = 0; i < 9; i++)
     {
         sample[i] = texture2D(sampler0, 
-                              gl_TexCoord[0].st + tc_offset[i]);
+                              gl_TexCoord[0].st + (tc_offset[i] * 3.0), 3.0);
     }
 
 //   1 2 1

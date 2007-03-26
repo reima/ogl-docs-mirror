@@ -13,8 +13,8 @@
 #include <assert.h>
 #include <stdio.h>
 
-GLint windowWidth = 512;            // window size
-GLint windowHeight = 512;
+GLint windowWidth = 1024;           // window size
+GLint windowHeight = 768;
 
 GLfloat *fTexels;                   // read back the framebuffer to here
 

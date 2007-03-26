@@ -333,8 +333,6 @@ void FinalPass(void)
     // set up afterglow texture
     glActiveTexture(GL_TEXTURE5);
     glBindBuffer(GL_PIXEL_UNPACK_BUFFER, pboID);
-//GLubyte *texels = (GLubyte *)glMapBuffer(GL_PIXEL_UNPACK_BUFFER, GL_READ_WRITE);
-//glUnmapBuffer(GL_PIXEL_UNPACK_BUFFER);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB8, fboWidth, fboHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, 0);
     glBindBuffer(GL_PIXEL_UNPACK_BUFFER, 0);
     glActiveTexture(GL_TEXTURE0);
@@ -534,8 +532,6 @@ void RenderScene(void)
     // Read back frame for afterglow effect
     glBindBuffer(GL_PIXEL_PACK_BUFFER, pboID);
     glReadPixels(0, 0, fboWidth, fboHeight, GL_RGB, GL_UNSIGNED_BYTE, 0);
-//GLubyte *texels = (GLubyte *)glMapBuffer(GL_PIXEL_PACK_BUFFER, GL_READ_WRITE);
-//glUnmapBuffer(GL_PIXEL_PACK_BUFFER);
     glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
     afterGlowValid = GL_TRUE;
 

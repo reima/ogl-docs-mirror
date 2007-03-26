@@ -1,8 +1,7 @@
 // combine.fs
 //
 // take incoming textures and
-// add them together, then
-// tonemap the result
+// add them together
 
 uniform bool afterGlow;
 

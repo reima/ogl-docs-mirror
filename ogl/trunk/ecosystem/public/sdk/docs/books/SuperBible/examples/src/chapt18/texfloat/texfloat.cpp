@@ -23,6 +23,10 @@ GLfloat fCursorY = 0.0f;
 GLint iCursorX = 0;                 // integer cursor position [0,w/h]
 GLint iCursorY = 0;
 
+GLfloat maxR = 0.0f;
+GLfloat maxG = 0.0f;
+GLfloat maxB = 0.0f;
+
 #define CLAMPED 0
 #define TRIVIAL 1
 #define IRIS 2
@@ -153,9 +157,9 @@ void RenderScene(void)
         // find brightest spot in neighborhood (51x51)
         // and map that to 1.0 in shader
 
-        GLfloat maxR = 0.0f;
-        GLfloat maxG = 0.0f;
-        GLfloat maxB = 0.0f;
+        GLfloat newMaxR = 0.0f;
+        GLfloat newMaxG = 0.0f;
+        GLfloat newMaxB = 0.0f;
 
         GLfloat *ptr;
 
@@ -174,11 +178,17 @@ void RenderScene(void)
 
                 ptr = fTexels + ((v * potTextureWidth + u) * 3);
 
-                maxR = (ptr[0] > maxR) ? ptr[0] : maxR;
-                maxG = (ptr[1] > maxG) ? ptr[1] : maxG;
-                maxB = (ptr[2] > maxB) ? ptr[2] : maxB;
+                newMaxR = (ptr[0] > newMaxR) ? ptr[0] : newMaxR;
+                newMaxG = (ptr[1] > newMaxG) ? ptr[1] : newMaxG;
+                newMaxB = (ptr[2] > newMaxB) ? ptr[2] : newMaxB;
             }
         }
+
+        // slowly adjust between new maximum and old,
+        // which simulates slow adjustment of iris
+        maxR += (newMaxR - maxR) * 0.01f;
+        maxG += (newMaxG - maxG) * 0.01f;
+        maxB += (newMaxB - maxB) * 0.01f;
 
         GLint uniformLoc = glGetUniformLocation(progObj[currentShader], "max");
         if (uniformLoc != -1)
@@ -543,6 +553,7 @@ int main(int argc, char* argv[])
     glutKeyboardFunc(KeyPressFunc);
     glutSpecialFunc(SpecialKeys);
     glutDisplayFunc(RenderScene);
+    glutIdleFunc(RenderScene);
     glutMotionFunc(MouseMotion);
 
     SetupRC();

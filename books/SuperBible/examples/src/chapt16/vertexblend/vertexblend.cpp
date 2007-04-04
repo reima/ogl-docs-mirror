@@ -99,7 +99,7 @@ void PrepareShader(GLint shaderNum)
     const GLchar *vsStringPtr[1];
     GLint success;
 
-    sprintf(fullFileName, ".\\shaders\\%s.vs", shaderNames[shaderNum]);
+    sprintf(fullFileName, "./shaders/%s.vs", shaderNames[shaderNum]);
     vsString = LoadShaderText(fullFileName);
     if (!vsString)
     {

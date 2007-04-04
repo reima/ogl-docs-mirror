@@ -109,7 +109,7 @@ void PrepareShader(GLint shaderNum)
     GLint success;
 
     // Create shader objects and specify shader text
-    sprintf(fullFileName, ".\\shaders\\%s.vs", shaderNames[shaderNum]);
+    sprintf(fullFileName, "./shaders/%s.vs", shaderNames[shaderNum]);
     vsString = LoadShaderText(fullFileName);
     if (!vsString)
     {

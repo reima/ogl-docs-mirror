@@ -3,7 +3,7 @@
 // Generic vertex transformation,
 // followed by squash/stretch
 
-uniform vec3 lightPos0;
+uniform vec3 lightPos[1];
 uniform vec3 squashStretch;
 
 void main(void)
@@ -17,7 +17,7 @@ void main(void)
     stretchedNormal *= squashStretch;
     vec3 N = normalize(gl_NormalMatrix * stretchedNormal);
     vec4 V = gl_ModelViewMatrix * stretchedCoord;
-    vec3 L = normalize(lightPos0 - V.xyz);
+    vec3 L = normalize(lightPos[0] - V.xyz);
     vec3 H = normalize(L + vec3(0.0, 0.0, 1.0));
 
     // put diffuse lighting result in primary color

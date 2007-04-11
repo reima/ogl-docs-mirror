@@ -4,7 +4,7 @@
 // diffuse and specular lighting
 // interpolated separately
 
-uniform vec3 lightPos0;
+uniform vec3 lightPos[1];
 
 void main(void)
 {
@@ -13,7 +13,7 @@ void main(void)
 
     vec3 N = normalize(gl_NormalMatrix * gl_Normal);
     vec4 V = gl_ModelViewMatrix * gl_Vertex;
-    vec3 L = normalize(lightPos0 - V.xyz);
+    vec3 L = normalize(lightPos[0] - V.xyz);
     vec3 H = normalize(L + vec3(0.0, 0.0, 1.0));
     const float specularExp = 128.0;
 

@@ -173,17 +173,17 @@ void DrawModels(void)
     }
     glPopMatrix();
 
-    GLint uniformLoc = glGetUniformLocation(progObj[whichShader], "lightPos0");
+    GLint uniformLoc = glGetUniformLocation(progObj[whichShader], "lightPos[0]");
     if (uniformLoc != -1)
     {
         glUniform3fv(uniformLoc, 1, lightPosEye0);
     }
-    uniformLoc = glGetUniformLocation(progObj[whichShader], "lightPos1");
+    uniformLoc = glGetUniformLocation(progObj[whichShader], "lightPos[1]");
     if (uniformLoc != -1)
     {
         glUniform3fv(uniformLoc, 1, lightPosEye1);
     }
-    uniformLoc = glGetUniformLocation(progObj[whichShader], "lightPos2");
+    uniformLoc = glGetUniformLocation(progObj[whichShader], "lightPos[2]");
     if (uniformLoc != -1)
     {
         glUniform3fv(uniformLoc, 1, lightPosEye2);

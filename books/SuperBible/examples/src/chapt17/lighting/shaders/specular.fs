@@ -16,8 +16,12 @@ void main(void)
     vec3 diffuse = gl_Color.rgb * intensity;
 
     // calculate specular lighting
-    intensity = max(0.0, dot(NN, NH));
-    vec3 specular = vec3(pow(intensity, specularExp));
+    vec3 specular = vec3(0.0);
+    if (intensity > 0.0)
+    {
+        intensity = max(0.0, dot(NN, NH));
+        specular = vec3(pow(intensity, specularExp));
+    }
 
     // sum the diffuse and specular components
     gl_FragColor.rgb = diffuse + specular;

@@ -1,6 +1,6 @@
 // diffuse.vs
 //
-// setup interpolants for diffuse lighting
+// set up interpolants for diffuse lighting
 
 uniform vec3 lightPos0;
 varying vec3 N, L;

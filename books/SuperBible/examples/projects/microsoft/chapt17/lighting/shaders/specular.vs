@@ -1,6 +1,6 @@
 // specular.vs
 //
-// setup interpolants for specular lighting
+// set up interpolants for specular lighting
 
 uniform vec3 lightPos0;
 varying vec3 N, L;

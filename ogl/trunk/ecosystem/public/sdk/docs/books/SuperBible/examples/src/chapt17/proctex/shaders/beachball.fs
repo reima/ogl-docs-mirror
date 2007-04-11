@@ -42,7 +42,7 @@ void main (void)
     distance.y = dot(NV, northeastHalfSpace);
     distance.z = dot(NV, northwestHalfSpace);
 
-    // setup for white caps on top and bottom
+    // set up for white caps on top and bottom
     distance.w = abs(NV.y) - 1.0 + capSize;
 
     distance = smoothstep(vec4(0.0), vec4(smoothEdgeTol), distance);

@@ -23,13 +23,16 @@ void main(void)
         vec3 NL = normalize(L[i]);
         vec3 NH = normalize(NL + vec3(0.0, 0.0, 1.0));
 
+        float NdotL = max(0.0, dot(NN, NL));
+
         // Accumulate the diffuse contributions
         gl_FragColor.rgb += gl_Color.rgb * lightCol[i] * 
-            max(0.0, dot(NN, NL));
+            NdotL;
 
         // Accumulate the specular contributions
-        gl_FragColor.rgb += lightCol[i] * 
-            pow(max(0.0, dot(NN, NH)), specularExp);
+        if (NdotL > 0.0)
+            gl_FragColor.rgb += lightCol[i] * 
+                pow(max(0.0, dot(NN, NH)), specularExp);
     }
 
     gl_FragColor.a = gl_Color.a;

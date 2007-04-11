@@ -1,6 +1,6 @@
 // 3lights.vs
 //
-// setup interpolants for 3 specular lights
+// set up interpolants for 3 specular lights
 
 uniform vec3 lightPos0;
 uniform vec3 lightPos1;

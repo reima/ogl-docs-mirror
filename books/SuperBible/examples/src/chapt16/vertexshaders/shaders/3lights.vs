@@ -3,14 +3,13 @@
 // Generic vertex transformation,
 // 3 colored lights
 
-uniform vec3 lightPos0;
-uniform vec3 lightPos1;
-uniform vec3 lightPos2;
-
+uniform vec3 lightPos[3];
 varying vec4 gl_TexCoord[4];
 
 void main(void)
 {
+    vec3 L[3], H[3];
+
     // normal MVP transform
     gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
 
@@ -23,16 +22,13 @@ void main(void)
     lightCol[1] = vec4(0.25, 1.0, 0.25, 1.0);
     lightCol[2] = vec4(0.25, 0.25, 1.0, 1.0);
 
-    // Light vectors
-    vec3 L[3], H[3];
-    L[0] = normalize(lightPos0 - V.xyz);
-    L[1] = normalize(lightPos1 - V.xyz);
-    L[2] = normalize(lightPos2 - V.xyz);
-
     gl_FrontColor = vec4(0.0);
 
     for (int i = 0; i < 3; i++)
     {
+        // Light vectors
+        L[i] = normalize(lightPos[i] - V.xyz);
+
         // Half-angles
         H[i] = normalize(L[i] + vec3(0.0, 0.0, 1.0));
 

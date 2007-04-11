@@ -170,17 +170,17 @@ void DrawModels(void)
     {
         glUniform1i(uniformLoc, 0);
     }
-    uniformLoc = glGetUniformLocation(progObj[whichShader], "lightPos0");
+    uniformLoc = glGetUniformLocation(progObj[whichShader], "lightPos[0]");
     if (uniformLoc != -1)
     {
         glUniform3fv(uniformLoc, 1, lightPos0Eye);
     }
-    uniformLoc = glGetUniformLocation(progObj[whichShader], "lightPos1");
+    uniformLoc = glGetUniformLocation(progObj[whichShader], "lightPos[1]");
     if (uniformLoc != -1)
     {
         glUniform3fv(uniformLoc, 1, lightPos1Eye);
     }
-    uniformLoc = glGetUniformLocation(progObj[whichShader], "lightPos2");
+    uniformLoc = glGetUniformLocation(progObj[whichShader], "lightPos[2]");
     if (uniformLoc != -1)
     {
         glUniform3fv(uniformLoc, 1, lightPos2Eye);

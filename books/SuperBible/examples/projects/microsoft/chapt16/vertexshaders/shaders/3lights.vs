@@ -36,12 +36,15 @@ void main(void)
         // Half-angles
         H[i] = normalize(L[i] + vec3(0.0, 0.0, 1.0));
 
+        float NdotL = max(0.0, dot(N, L[i]));
+
         // Accumulate the diffuse contributions
         gl_FrontColor += gl_Color * lightCol[i] * 
-                         vec4(max(0.0, dot(N, L[i])));
+                         vec4(NdotL);
 
         // Put N.H specular coefficients into texcoords
-        gl_TexCoord[1+i] = vec4(max(0.0, dot(N, H[i]) * 8.0 - 7.0), 
-                                0.0, 0.0, 1.0);
+        gl_TexCoord[1+i] = (NdotL > 0.0) ? 
+            vec4(max(0.0, dot(N, H[i]) * 8.0 - 7.0), 0.0, 0.0, 1.0) :
+            vec4(0.0, 0.0, 0.0, 1.0);
     }
 }

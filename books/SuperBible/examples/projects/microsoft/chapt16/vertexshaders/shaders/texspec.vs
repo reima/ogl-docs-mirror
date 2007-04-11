@@ -18,10 +18,12 @@ void main(void)
     vec3 H = normalize(L + vec3(0.0, 0.0, 1.0));
 
     // put diffuse lighting result in primary color
-    float NdotL = dot(N, L);
-    gl_FrontColor = gl_Color * vec4(max(0.0, NdotL));
+    float NdotL = max(0.0, dot(N, L));
+    gl_FrontColor = gl_Color * vec4(NdotL);
 
-    // copy (N.H)*8-7 into texcoord
-    float NdotH = max(0.0, dot(N, H) * 8.0 - 7.0);
+    // copy (N.H)*8-7 into texcoord if N.L is positive
+    float NdotH = 0.0;
+    if (NdotL > 0.0)
+        NdotH = max(0.0, dot(N, H) * 8.0 - 7.0);
     gl_TexCoord[0] = vec4(NdotH, 0.0, 0.0, 1.0);
 }

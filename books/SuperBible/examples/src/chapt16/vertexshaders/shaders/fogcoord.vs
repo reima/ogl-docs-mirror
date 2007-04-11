@@ -18,12 +18,14 @@ void main(void)
     const float specularExp = 128.0;
 
     // calculate diffuse lighting
-    float NdotL = dot(N, L);
-    vec4 diffuse = gl_Color * vec4(max(0.0, NdotL));
+    float NdotL = max(0.0, dot(N, L));
+    vec4 diffuse = gl_Color * vec4(NdotL);
 
     // calculate specular lighting
-    float NdotH = dot(N, H);
-    vec4 specular = vec4(pow(max(0.0, NdotH), specularExp));
+    float NdotH = max(0.0, dot(N, H));
+    vec4 specular = vec4(0.0);
+    if (NdotL > 0.0)
+        specular = vec4(pow(NdotH, specularExp));
 
     // calculate fog coordinate: distance from eye
     gl_FogFragCoord = length(V);

@@ -18,10 +18,12 @@ void main(void)
     const float specularExp = 128.0;
 
     // put diffuse into primary color
-    float NdotL = dot(N, L);
-    gl_FrontColor = gl_Color * vec4(max(0.0, NdotL));
+    float NdotL = max(0.0, dot(N, L));
+    gl_FrontColor = gl_Color * vec4(NdotL);
 
     // put specular into secondary color
-    float NdotH = dot(N, H);
-    gl_FrontSecondaryColor = vec4(pow(max(0.0, NdotH), specularExp));
+    float NdotH = max(0.0, dot(N, H));
+    gl_FrontSecondaryColor = (NdotL > 0.0) ? 
+                             vec4(pow(NdotH, specularExp)) : 
+                             vec4(0.0);
 }

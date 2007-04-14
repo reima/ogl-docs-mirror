@@ -4,6 +4,7 @@
 // Program by Benjamin Lipchak
 
 #include "../../shared/gltools.h"   // OpenGL toolkit
+#include "../../shared/math3d.h"
 #include <stdio.h>
 
 GLboolean ambientShadowAvailable = GL_FALSE;
@@ -32,17 +33,20 @@ GLfloat cameraPos[]    = { 100.0f, 150.0f, 200.0f, 1.0f};
 GLdouble cameraZoom = 0.3;
 
 // Called to draw scene objects
-void DrawModels(void)
+void DrawModels(GLboolean drawBasePlane)
 {
-    // Draw plane that the objects rest on
-    glColor3f(0.0f, 0.0f, 0.90f); // Blue
-    glNormal3f(0.0f, 1.0f, 0.0f);
-    glBegin(GL_QUADS);
-        glVertex3f(-100.0f, -25.0f, -100.0f);
-        glVertex3f(-100.0f, -25.0f, 100.0f);		
-        glVertex3f(100.0f,  -25.0f, 100.0f);
-        glVertex3f(100.0f,  -25.0f, -100.0f);
-    glEnd();
+    if (drawBasePlane)
+    {
+        // Draw plane that the objects rest on
+        glColor3f(0.0f, 0.0f, 0.90f); // Blue
+        glNormal3f(0.0f, 1.0f, 0.0f);
+        glBegin(GL_QUADS);
+            glVertex3f(-100.0f, -25.0f, -100.0f);
+            glVertex3f(-100.0f, -25.0f, 100.0f);
+            glVertex3f(100.0f,  -25.0f, 100.0f);
+            glVertex3f(100.0f,  -25.0f, -100.0f);
+        glEnd();
+    }
 
     // Draw red cube
     glColor3f(1.0f, 0.0f, 0.0f);
@@ -84,20 +88,19 @@ void RegenerateShadowMap(void)
 {
     GLfloat lightToSceneDistance, nearPlane, fieldOfView;
     GLfloat lightModelview[16], lightProjection[16];
+    GLfloat sceneBoundingRadius = 95.0f; // based on objects in scene
 
     // Save the depth precision for where it's useful
     lightToSceneDistance = sqrt(lightPos[0] * lightPos[0] + 
                                 lightPos[1] * lightPos[1] + 
                                 lightPos[2] * lightPos[2]);
-    nearPlane = lightToSceneDistance - 150.0f;
-    if (nearPlane < 50.0f)
-        nearPlane = 50.0f;
+    nearPlane = lightToSceneDistance - sceneBoundingRadius;
     // Keep the scene filling the depth texture
-    fieldOfView = 17000.0f / lightToSceneDistance;
+    fieldOfView = (GLfloat)m3dRadToDeg(2.0f * atan(sceneBoundingRadius / lightToSceneDistance));
 
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluPerspective(fieldOfView, 1.0f, nearPlane, nearPlane + 300.0f);
+    gluPerspective(fieldOfView, 1.0f, nearPlane, nearPlane + (2.0f * sceneBoundingRadius));
     glGetFloatv(GL_PROJECTION_MATRIX, lightProjection);
     // Switch to light's point of view
     glMatrixMode(GL_MODELVIEW);
@@ -120,8 +123,9 @@ void RegenerateShadowMap(void)
     // Overcome imprecision
     glEnable(GL_POLYGON_OFFSET_FILL);
 
-    // Draw objects in the scene
-    DrawModels();
+    // Draw objects in the scene except base plane
+    // which never shadows anything
+    DrawModels(GL_FALSE);
 
     // Copy depth values into depth texture
     glCopyTexImage2D(GL_TEXTURE_2D, 0, GL_DEPTH_COMPONENT, 
@@ -215,8 +219,8 @@ void RenderScene(void)
         glLightfv(GL_LIGHT0, GL_AMBIENT, ambientLight);
         glLightfv(GL_LIGHT0, GL_DIFFUSE, diffuseLight);
 
-        // Draw objects in the scene
-        DrawModels();
+        // Draw objects in the scene including base plane
+        DrawModels(GL_TRUE);
     }
     else
     {
@@ -236,8 +240,8 @@ void RenderScene(void)
             glLightfv(GL_LIGHT0, GL_AMBIENT, lowAmbient);
             glLightfv(GL_LIGHT0, GL_DIFFUSE, lowDiffuse);
 
-            // Draw objects in the scene
-            DrawModels();
+            // Draw objects in the scene, including base plane
+            DrawModels(GL_TRUE);
 
             // Enable alpha test so that shadowed fragments are discarded
             glAlphaFunc(GL_GREATER, 0.9f);
@@ -263,8 +267,8 @@ void RenderScene(void)
         glTexGenfv(GL_R, GL_EYE_PLANE, rPlane);
         glTexGenfv(GL_Q, GL_EYE_PLANE, qPlane);
 
-        // Draw objects in the scene
-        DrawModels();
+        // Draw objects in the scene, including base plane
+        DrawModels(GL_TRUE);
 
         glDisable(GL_ALPHA_TEST);
         glDisable(GL_TEXTURE_2D);
@@ -347,8 +351,8 @@ void SetupRC()
     // Set up some texture state that never changes
     glGenTextures(1, &shadowTextureID);
     glBindTexture(GL_TEXTURE_2D, shadowTextureID);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_DEPTH_TEXTURE_MODE, GL_INTENSITY);

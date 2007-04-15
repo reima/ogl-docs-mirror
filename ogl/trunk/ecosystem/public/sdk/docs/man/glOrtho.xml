@@ -20,8 +20,8 @@
         <funcsynopsis>
             <funcprototype>
                 <funcdef>void <function>glOrtho</function></funcdef>
-                <paramdef>GLdouble <parameter>Left</parameter></paramdef>
-                <paramdef>GLdouble <parameter>Right</parameter></paramdef>
+                <paramdef>GLdouble <parameter>left</parameter></paramdef>
+                <paramdef>GLdouble <parameter>right</parameter></paramdef>
                 <paramdef>GLdouble <parameter>bottom</parameter></paramdef>
                 <paramdef>GLdouble <parameter>top</parameter></paramdef>
                 <paramdef>GLdouble <parameter>nearVal</parameter></paramdef>
@@ -32,8 +32,8 @@
     <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
-            <term><parameter>Left</parameter></term>
-            <term><parameter>Right</parameter></term>
+            <term><parameter>left</parameter></term>
+            <term><parameter>right</parameter></term>
             <listitem>
                 <para>
                     Specify the coordinates for the left and right vertical clipping planes.
@@ -71,7 +71,7 @@
         </para>
         <para>
             <informalequation><mml:math>
-                <!-- eqn: left (  matrix {    ccol { {2 over {Right - Left}} above 0 above 0 above 0 }    ccol { 0 above {2 over {top - bottom}} above 0 above 0 }    ccol { 0 above 0 above {-2 over {farVal - nearVal}}  above 0 }    ccol { {t sub x}  above {t sub y}  above {t sub z}  above 1  } } right ):-->
+                <!-- eqn: left (  matrix {    ccol { {2 over {right - eft}} above 0 above 0 above 0 }    ccol { 0 above {2 over {top - bottom}} above 0 above 0 }    ccol { 0 above 0 above {-2 over {farVal - nearVal}}  above 0 }    ccol { {t sub x}  above {t sub y}  above {t sub z}  above 1  } } right ):-->
                 <mml:mfenced open="(" close=")">
                     <mml:mtable>
                         <mml:mtr>
@@ -81,9 +81,9 @@
                                         <mml:mn>2</mml:mn>
                                         <mml:mfenced open="" close="">
                                             <mml:mrow>
-                                                <mml:mi mathvariant="italic">Right</mml:mi>
+                                                <mml:mi mathvariant="italic">right</mml:mi>
                                                 <mml:mo>-</mml:mo>
-                                                <mml:mi mathvariant="italic">Left</mml:mi>
+                                                <mml:mi mathvariant="italic">left</mml:mi>
                                             </mml:mrow>
                                         </mml:mfenced>
                                     </mml:mfrac>
@@ -182,7 +182,7 @@
         <para>
             where
             <informalequation><mml:math>
-                <!-- eqn: t sub x  =  -{{Right  +  Left} over {Right  -  Left}}:-->
+                <!-- eqn: t sub x  =  -{{right  +  left} over {right  -  left}}:-->
                 <mml:mrow>
                     <mml:msub><mml:mi mathvariant="italic">t</mml:mi>
                     <mml:mi mathvariant="italic">x</mml:mi>
@@ -194,16 +194,16 @@
                             <mml:mfrac>
                                 <mml:mfenced open="" close="">
                                     <mml:mrow>
-                                        <mml:mi mathvariant="italic">Right</mml:mi>
+                                        <mml:mi mathvariant="italic">right</mml:mi>
                                         <mml:mo>+</mml:mo>
-                                        <mml:mi mathvariant="italic">Left</mml:mi>
+                                        <mml:mi mathvariant="italic">left</mml:mi>
                                     </mml:mrow>
                                 </mml:mfenced>
                                 <mml:mfenced open="" close="">
                                     <mml:mrow>
-                                        <mml:mi mathvariant="italic">Right</mml:mi>
+                                        <mml:mi mathvariant="italic">right</mml:mi>
                                         <mml:mo>-</mml:mo>
-                                        <mml:mi mathvariant="italic">Left</mml:mi>
+                                        <mml:mi mathvariant="italic">left</mml:mi>
                                     </mml:mrow>
                                 </mml:mfenced>
                             </mml:mfrac>
@@ -275,9 +275,9 @@
         <para>
             Typically, the matrix mode is <constant>GL_PROJECTION</constant>, and
             <inlineequation><mml:math>
-                <!-- eqn: (Left, bottom,  -nearVal):-->
+                <!-- eqn: (left, bottom,  -nearVal):-->
                 <mml:mfenced open="(" close=")">
-                    <mml:mi mathvariant="italic">Left</mml:mi>
+                    <mml:mi mathvariant="italic">left</mml:mi>
                     <mml:mi mathvariant="italic">bottom</mml:mi>
                     <mml:mrow>
                         <mml:mo>-</mml:mo>
@@ -287,9 +287,9 @@
             </mml:math></inlineequation>
             and 
             <inlineequation><mml:math>
-                <!-- eqn: (Right, top,  -nearVal):-->
+                <!-- eqn: (right, top,  -nearVal):-->
                 <mml:mfenced open="(" close=")">
-                    <mml:mi mathvariant="italic">Right</mml:mi>
+                    <mml:mi mathvariant="italic">right</mml:mi>
                     <mml:mi mathvariant="italic">top</mml:mi>
                     <mml:mrow>
                         <mml:mo>-</mml:mo>

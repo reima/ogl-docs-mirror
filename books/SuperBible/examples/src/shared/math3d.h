@@ -495,7 +495,37 @@ inline void m3dTranslationMatrix44(M3DMatrix44d m, double x, double y, double z)
 { m3dLoadIdentity44(m); m[12] = x; m[13] = y; m[14] = z; }
 
 
+// Translate matrix. Only 4x4 matrices supported
+inline void m3dTranslateMatrix44(M3DMatrix44f m, float x, float y, float z)
+{ m[12] += x; m[13] += y; m[14] += z; }
+
+inline void m3dTranslateMatrix44(M3DMatrix44d m, double x, double y, double z)
+{ m[12] += x; m[13] += y; m[14] += z; }
+
+
+// Scale matrix. Only 4x4 matrices supported
+inline void m3dScaleMatrix44(M3DMatrix44f m, float x, float y, float z)
+{ m[0] *= x; m[5] *= y; m[10] *= z; }
+
+inline void m3dScaleMatrix44(M3DMatrix44d m, double x, double y, double z)
+{ m[0] *= x; m[5] *= y; m[10] *= z; }
+
+
 // Transpose/Invert - Only 4x4 matricies supported
+#define TRANSPOSE44(dst, src)            \
+{                                        \
+    for (int j = 0; j < 4; j++)          \
+    {                                    \
+        for (int i = 0; i < 4; i++)      \
+        {                                \
+            dst[(j*4)+i] = src[(i*4)+j]; \
+        }                                \
+    }                                    \
+}
+inline void m3dTransposeMatrix44(M3DMatrix44f dst, const M3DMatrix44f src)
+{ TRANSPOSE44(dst, src); }
+inline void m3dTransposeMatrix44(M3DMatrix44d dst, const M3DMatrix44d src)
+{ TRANSPOSE44(dst, src); }
 bool m3dInvertMatrix44(M3DMatrix44f dst, const M3DMatrix44f src);
 bool m3dInvertMatrix44(M3DMatrix44d dst, const M3DMatrix44d src);
 

@@ -61,7 +61,7 @@
             (see <citerefentry><refentrytitle>glMatrixMode</refentrytitle></citerefentry>)
             is multiplied by this scale matrix,
             and the product replaces the current matrix
-            as if <function>glScale</function> were called with the following matrix
+            as if <citerefentry><refentrytitle>glMultMatrix</refentrytitle></citerefentry> were called with the following matrix
             as its argument:
         </para>
         <para>

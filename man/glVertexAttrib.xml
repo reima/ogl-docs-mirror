@@ -7,43 +7,7 @@
 	<manvolnum>3G</manvolnum>
     </refmeta>
     <refnamediv>
-	<refdescriptor>glVertexAttrib1f</refdescriptor>
-	<refname>glVertexAttrib1s</refname>
-	<refname>glVertexAttrib1d</refname>
-	<refname>glVertexAttrib2f</refname>
-	<refname>glVertexAttrib2s</refname>
-	<refname>glVertexAttrib2d</refname>
-	<refname>glVertexAttrib3f</refname>
-	<refname>glVertexAttrib3s</refname>
-	<refname>glVertexAttrib3d</refname>
-	<refname>glVertexAttrib4f</refname>
-	<refname>glVertexAttrib4s</refname>
-	<refname>glVertexAttrib4d</refname>
-	<refname>glVertexAttrib4Nub</refname>
-	<refname>glVertexAttrib1fv</refname>
-	<refname>glVertexAttrib1sv</refname>
-	<refname>glVertexAttrib1dv</refname>
-	<refname>glVertexAttrib2fv</refname>
-	<refname>glVertexAttrib2sv</refname>
-	<refname>glVertexAttrib2dv</refname>
-	<refname>glVertexAttrib3fv</refname>
-	<refname>glVertexAttrib3sv</refname>
-	<refname>glVertexAttrib3dv</refname>
-	<refname>glVertexAttrib4fv</refname>
-	<refname>glVertexAttrib4sv</refname>
-	<refname>glVertexAttrib4dv</refname>
-	<refname>glVertexAttrib4iv</refname>
-	<refname>glVertexAttrib4bv</refname>
-	<refname>glVertexAttrib4ubv</refname>
-	<refname>glVertexAttrib4usv</refname>
-	<refname>glVertexAttrib4uiv</refname>
-	<refname>glVertexAttrib4Nbv</refname>
-	<refname>glVertexAttrib4Nsv</refname>
-	<refname>glVertexAttrib4Niv</refname>
-	<refname>glVertexAttrib4Nubv</refname>
-	<refname>glVertexAttrib4Nusv</refname>
-	<refname>glVertexAttrib4Nuiv</refname>
-
+	<refname>glVertexAttrib</refname>
 	<refpurpose>Specifies the value of a generic vertex attribute</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>C Specification</title>

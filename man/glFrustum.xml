@@ -20,8 +20,8 @@
         <funcsynopsis>
             <funcprototype>
                 <funcdef>void <function>glFrustum</function></funcdef>
-                <paramdef>GLdouble <parameter>Left</parameter></paramdef>
-                <paramdef>GLdouble <parameter>Right</parameter></paramdef>
+                <paramdef>GLdouble <parameter>left</parameter></paramdef>
+                <paramdef>GLdouble <parameter>right</parameter></paramdef>
                 <paramdef>GLdouble <parameter>bottom</parameter></paramdef>
                 <paramdef>GLdouble <parameter>top</parameter></paramdef>
                 <paramdef>GLdouble <parameter>nearVal</parameter></paramdef>
@@ -33,8 +33,8 @@
     <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
-            <term><parameter>Left</parameter></term>
-            <term><parameter>Right</parameter></term>
+            <term><parameter>left</parameter></term>
+            <term><parameter>right</parameter></term>
             <listitem>
                 <para>
                     Specify the coordinates for the left and right vertical clipping planes.
@@ -74,7 +74,7 @@
         </para>
         <para>
             <informalequation><mml:math>
-                <!-- eqn:  left [      matrix {    ccol { {{2   nearVal} over {Right  -  Left}} above 0 above 0 above 0 }    ccol { 0 above {{2   nearVal} over {top  -  bottom}}   above 0 above 0 }    ccol { A      above B      above C      above -1     }    ccol { 0 above 0 above D above 0} }     right ]:-->
+                <!-- eqn:  left [      matrix {    ccol { {{2   nearVal} over {right  -  left}} above 0 above 0 above 0 }    ccol { 0 above {{2   nearVal} over {top  -  bottom}}   above 0 above 0 }    ccol { A      above B      above C      above -1     }    ccol { 0 above 0 above D above 0} }     right ]:-->
                 <mml:mfenced open="[" close="]">
                     <mml:mtable>
                         <mml:mtr>
@@ -90,9 +90,9 @@
                                         </mml:mfenced>
                                         <mml:mfenced open="" close="">
                                             <mml:mrow>
-                                                <mml:mi mathvariant="italic">Right</mml:mi>
+                                                <mml:mi mathvariant="italic">right</mml:mi>
                                                 <mml:mo>-</mml:mo>
-                                                <mml:mi mathvariant="italic">Left</mml:mi>
+                                                <mml:mi mathvariant="italic">left</mml:mi>
                                             </mml:mrow>
                                         </mml:mfenced>
                                     </mml:mfrac>
@@ -173,23 +173,23 @@
         </para>
         <para>
             <informalequation><mml:math>
-                <!-- eqn:  A  =  {Right  +  Left} over {Right  -  Left}:-->
+                <!-- eqn:  A  =  {right  +  left} over {right  -  left}:-->
                 <mml:mrow>
                     <mml:mi mathvariant="italic">A</mml:mi>
                     <mml:mo>=</mml:mo>
                     <mml:mfrac>
                         <mml:mfenced open="" close="">
                             <mml:mrow>
-                                <mml:mi mathvariant="italic">Right</mml:mi>
+                                <mml:mi mathvariant="italic">right</mml:mi>
                                 <mml:mo>+</mml:mo>
-                                <mml:mi mathvariant="italic">Left</mml:mi>
+                                <mml:mi mathvariant="italic">left</mml:mi>
                             </mml:mrow>
                         </mml:mfenced>
                         <mml:mfenced open="" close="">
                             <mml:mrow>
-                                <mml:mi mathvariant="italic">Right</mml:mi>
+                                <mml:mi mathvariant="italic">right</mml:mi>
                                 <mml:mo>-</mml:mo>
-                                <mml:mi mathvariant="italic">Left</mml:mi>
+                                <mml:mi mathvariant="italic">left</mml:mi>
                             </mml:mrow>
                         </mml:mfenced>
                     </mml:mfrac>
@@ -287,11 +287,40 @@
         </para>
         <para>
             Typically, the matrix mode is <constant>GL_PROJECTION</constant>, and
-            (<parameter>Left</parameter>, <parameter>bottom</parameter>, \-<parameter>nearVal</parameter>) and (<parameter>Right</parameter>, <parameter>top</parameter>, \-<parameter>nearVal</parameter>)
+            <inlineequation><mml:math>
+                <!-- eqn: (left, bottom,  -nearVal):-->
+                <mml:mfenced open="(" close=")">
+                    <mml:mi mathvariant="italic">left</mml:mi>
+                    <mml:mi mathvariant="italic">bottom</mml:mi>
+                    <mml:mrow>
+                        <mml:mo>-</mml:mo>
+                        <mml:mi mathvariant="italic">nearVal</mml:mi>
+                    </mml:mrow>
+                </mml:mfenced>
+            </mml:math></inlineequation>
+            and 
+            <inlineequation><mml:math>
+                <!-- eqn: (right, top,  -nearVal):-->
+                <mml:mfenced open="(" close=")">
+                    <mml:mi mathvariant="italic">right</mml:mi>
+                    <mml:mi mathvariant="italic">top</mml:mi>
+                    <mml:mrow>
+                        <mml:mo>-</mml:mo>
+                        <mml:mi mathvariant="italic">nearVal</mml:mi>
+                    </mml:mrow>
+                </mml:mfenced>
+            </mml:math></inlineequation>
             specify the points on the near clipping plane that are mapped
             to the lower left and upper right corners of the window,
             assuming that the eye is located at (0, 0, 0).
-            \-<parameter>farVal</parameter> specifies the location of the far clipping plane.
+            <inlineequation><mml:math>
+                <!-- eqn: -farVal:-->
+                <mml:mrow>
+                    <mml:mo>-</mml:mo>
+                    <mml:mi mathvariant="italic">farVal</mml:mi>
+                </mml:mrow>
+            </mml:math></inlineequation>
+            specifies the location of the far clipping plane.
             Both <parameter>nearVal</parameter> and <parameter>farVal</parameter> must be positive.
         </para>
         <para>
@@ -345,7 +374,7 @@
     <refsect1><title>Errors</title>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>nearVal</parameter> or <parameter>farVal</parameter> is not
-            positive, or if <parameter>Left</parameter> = <parameter>Right</parameter>, or <parameter>bottom</parameter> = <parameter>top</parameter>.
+            positive, or if <parameter>left</parameter> = <parameter>right</parameter>, or <parameter>bottom</parameter> = <parameter>top</parameter>.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glFrustum</function>

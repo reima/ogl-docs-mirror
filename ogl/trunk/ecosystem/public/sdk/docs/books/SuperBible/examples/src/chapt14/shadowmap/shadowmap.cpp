@@ -32,6 +32,8 @@ GLfloat lightPos[]     = { 100.0f, 300.0f, 100.0f, 1.0f};
 GLfloat cameraPos[]    = { 100.0f, 150.0f, 200.0f, 1.0f};
 GLdouble cameraZoom = 0.3;
 
+M3DMatrix44f textureMatrix;
+
 // Called to draw scene objects
 void DrawModels(GLboolean drawBasePlane)
 {
@@ -139,13 +141,17 @@ void RegenerateShadowMap(void)
     glColorMask(1, 1, 1, 1);
     glDisable(GL_POLYGON_OFFSET_FILL);
 
-    // Set up texture matrix for shadow map projection
-    glMatrixMode(GL_TEXTURE);
-    glLoadIdentity();
-    glTranslatef(0.5f, 0.5f, 0.5f);
-    glScalef(0.5f, 0.5f, 0.5f);
-    glMultMatrixf(lightProjection);
-    glMultMatrixf(lightModelview);
+    // Set up texture matrix for shadow map projection,
+    // which will be rolled into the eye linear
+    // texture coordinate generation plane equations
+    M3DMatrix44f tempMatrix;
+    m3dLoadIdentity44(tempMatrix);
+    m3dTranslateMatrix44(tempMatrix, 0.5f, 0.5f, 0.5f);
+    m3dScaleMatrix44(tempMatrix, 0.5f, 0.5f, 0.5f);
+    m3dMatrixMultiply44(textureMatrix, tempMatrix, lightProjection);
+    m3dMatrixMultiply44(tempMatrix, textureMatrix, lightModelview);
+    // transpose to get the s, t, r, and q rows for plane equations
+    m3dTransposeMatrix44(textureMatrix, tempMatrix);
 }
 
 // Called to draw scene
@@ -224,11 +230,6 @@ void RenderScene(void)
     }
     else
     {
-        GLfloat sPlane[4] = {1.0f, 0.0f, 0.0f, 0.0f};
-        GLfloat tPlane[4] = {0.0f, 1.0f, 0.0f, 0.0f};
-        GLfloat rPlane[4] = {0.0f, 0.0f, 1.0f, 0.0f};
-        GLfloat qPlane[4] = {0.0f, 0.0f, 0.0f, 1.0f};
-
         if (!ambientShadowAvailable)
         {
             GLfloat lowAmbient[4] = {0.1f, 0.1f, 0.1f, 1.0f};
@@ -262,10 +263,10 @@ void RenderScene(void)
         glEnable(GL_TEXTURE_GEN_T);
         glEnable(GL_TEXTURE_GEN_R);
         glEnable(GL_TEXTURE_GEN_Q);
-        glTexGenfv(GL_S, GL_EYE_PLANE, sPlane);
-        glTexGenfv(GL_T, GL_EYE_PLANE, tPlane);
-        glTexGenfv(GL_R, GL_EYE_PLANE, rPlane);
-        glTexGenfv(GL_Q, GL_EYE_PLANE, qPlane);
+        glTexGenfv(GL_S, GL_EYE_PLANE, &textureMatrix[0]);
+        glTexGenfv(GL_T, GL_EYE_PLANE, &textureMatrix[4]);
+        glTexGenfv(GL_R, GL_EYE_PLANE, &textureMatrix[8]);
+        glTexGenfv(GL_Q, GL_EYE_PLANE, &textureMatrix[12]);
 
         // Draw objects in the scene, including base plane
         DrawModels(GL_TRUE);

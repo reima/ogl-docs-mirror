@@ -193,7 +193,7 @@
             <citerefentry><refentrytitle>glPushClientAttrib</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glSecondaryColorPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexCoordPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glVertexAttribPointer</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>glVertexAttribPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>
         </para>
     </refsect1>

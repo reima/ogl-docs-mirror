@@ -6,9 +6,12 @@
 #include "../../shared/gltools.h"   // OpenGL toolkit
 #include <ImfRgbaFile.h>            // OpenEXR headers
 #include <ImfArray.h>
+
+#ifdef _WIN32
 #pragma comment (lib, "IlmImf.lib")
 #pragma comment (lib, "Imath.lib")
 #pragma comment (lib, "zlib.lib")
+#endif
 
 #include <assert.h>
 #include <stdio.h>
@@ -86,7 +89,7 @@ void PrepareShader(GLint shaderNum)
     GLint success;
 
     // Create shader objects and specify shader text
-    sprintf(fullFileName, ".\\shaders\\%s.fs", shaderNames[shaderNum]);
+    sprintf(fullFileName, "./shaders/%s.fs", shaderNames[shaderNum]);
     fsString = LoadShaderText(fullFileName);
     if (!fsString)
     {

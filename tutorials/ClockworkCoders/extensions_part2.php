@@ -41,7 +41,7 @@ string is:</p>
   <table width="90%" border="0" align="center" bgcolor="#EEEEEE">
   <tbody>
     <tr>
-      <td><pre>if (glewIsSupported(&quot;ARB_shading_language_100&quot;)) 
+      <td><pre>if (glewIsSupported(&quot;GL_ARB_shading_language_100&quot;)) 
 {  
    int major, minor, revision;
    const GLubyte* sVersion = glGetString(GL_SHADING_LANGUAGE_VERSION_ARB);

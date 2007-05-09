@@ -87,7 +87,7 @@ void RenderScene(void)
     if (usePBOs)
     {
         glBindBuffer(GL_PIXEL_PACK_BUFFER, currentFrame + 1);
-        glReadPixels(dataOffsetX, dataOffsetY, dataWidth, dataHeight, GL_RGB, GL_UNSIGNED_BYTE, 0);
+        glReadPixels(dataOffsetX, dataOffsetY, dataWidth, dataHeight, GL_RGB, GL_UNSIGNED_BYTE, (GLvoid*)0);
         glBindBuffer(GL_PIXEL_PACK_BUFFER, 0);
     }
     else
@@ -125,7 +125,7 @@ void RenderScene(void)
     {
         if (frameGood[lastFrame])
         {
-            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB8, dataWidth, dataHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, 0);
+            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB8, dataWidth, dataHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, (GLvoid*)0);
         }
         glBindBuffer(GL_PIXEL_UNPACK_BUFFER, 0);
     }

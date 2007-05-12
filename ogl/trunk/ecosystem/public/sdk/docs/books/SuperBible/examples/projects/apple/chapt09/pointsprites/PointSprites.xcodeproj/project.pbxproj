@@ -11,10 +11,10 @@
 		39EE2E190B1BB2DD00E21061 /* GLee.c in Sources */ = {isa = PBXBuildFile; fileRef = 39EE2E160B1BB2DD00E21061 /* GLee.c */; };
 		39EE2E1A0B1BB2DD00E21061 /* gltools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39EE2E170B1BB2DD00E21061 /* gltools.cpp */; };
 		39EE2E1B0B1BB2DD00E21061 /* math3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39EE2E180B1BB2DD00E21061 /* math3d.cpp */; };
-		39EE2E1D0B1BB2EC00E21061 /* moon.tga in Resources */ = {isa = PBXBuildFile; fileRef = 39EE2E1C0B1BB2EC00E21061 /* moon.tga */; };
-		39EE2E1F0B1BB46900E21061 /* star.tga in Resources */ = {isa = PBXBuildFile; fileRef = 39EE2E1E0B1BB46900E21061 /* star.tga */; };
 		39EE2E270B1BB4B500E21061 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39EE2E250B1BB4B500E21061 /* GLUT.framework */; };
 		39EE2E280B1BB4B500E21061 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39EE2E260B1BB4B500E21061 /* OpenGL.framework */; };
+		39F61DB20BF646AD0038F9DC /* moon.tga in Resources */ = {isa = PBXBuildFile; fileRef = 39F61DB10BF646AD0038F9DC /* moon.tga */; };
+		39F61DB40BF646C40038F9DC /* star.tga in Resources */ = {isa = PBXBuildFile; fileRef = 39F61DB30BF646C40038F9DC /* star.tga */; };
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -32,10 +32,10 @@
 		39EE2E160B1BB2DD00E21061 /* GLee.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = GLee.c; path = ../../../../src/shared/GLee.c; sourceTree = SOURCE_ROOT; };
 		39EE2E170B1BB2DD00E21061 /* gltools.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = gltools.cpp; path = ../../../../src/shared/gltools.cpp; sourceTree = SOURCE_ROOT; };
 		39EE2E180B1BB2DD00E21061 /* math3d.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = math3d.cpp; path = ../../../../src/shared/math3d.cpp; sourceTree = SOURCE_ROOT; };
-		39EE2E1C0B1BB2EC00E21061 /* moon.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = moon.tga; path = ../pointsprites/moon.tga; sourceTree = SOURCE_ROOT; };
-		39EE2E1E0B1BB46900E21061 /* star.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = star.tga; path = ../pointsprites/star.tga; sourceTree = SOURCE_ROOT; };
 		39EE2E250B1BB4B500E21061 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
 		39EE2E260B1BB4B500E21061 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		39F61DB10BF646AD0038F9DC /* moon.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = moon.tga; path = ../../../../src/chapt09/pointsprites/moon.tga; sourceTree = SOURCE_ROOT; };
+		39F61DB30BF646C40038F9DC /* star.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = star.tga; path = ../../../../src/chapt09/pointsprites/star.tga; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* PointSprites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PointSprites.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -112,8 +112,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				39EE2E1E0B1BB46900E21061 /* star.tga */,
-				39EE2E1C0B1BB2EC00E21061 /* moon.tga */,
+				39F61DB30BF646C40038F9DC /* star.tga */,
+				39F61DB10BF646AD0038F9DC /* moon.tga */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
@@ -185,8 +185,8 @@
 			files = (
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				39EE2E1D0B1BB2EC00E21061 /* moon.tga in Resources */,
-				39EE2E1F0B1BB46900E21061 /* star.tga in Resources */,
+				39F61DB20BF646AD0038F9DC /* moon.tga in Resources */,
+				39F61DB40BF646C40038F9DC /* star.tga in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +229,10 @@
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;

@@ -21,7 +21,7 @@ GLfloat fNoLight[] = { 0.0f, 0.0f, 0.0f, 0.0f };
 GLfloat fLowLight[] = { 0.25f, 0.25f, 0.25f, 1.0f };
 GLfloat fBrightLight[] = { 1.0f, 1.0f, 1.0f, 1.0f };
 
-M3DMatrix33f mShadowMatrix;
+M3DMatrix44f mShadowMatrix;
 
 
         

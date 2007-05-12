@@ -11,6 +11,7 @@
 		39657A070BB5E4CE008695DA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39657A050BB5E4CE008695DA /* OpenGL.framework */; };
 		39657A100BB5E4FD008695DA /* shadowmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39657A0F0BB5E4FD008695DA /* shadowmap.cpp */; };
 		39657A160BB5E527008695DA /* GLee.c in Sources */ = {isa = PBXBuildFile; fileRef = 39657A150BB5E527008695DA /* GLee.c */; };
+		39F61DD20BF648D10038F9DC /* math3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39F61DD10BF648D10038F9DC /* math3d.cpp */; };
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -28,6 +29,7 @@
 		39657A050BB5E4CE008695DA /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		39657A0F0BB5E4FD008695DA /* shadowmap.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = shadowmap.cpp; path = ../../../../src/chapt14/shadowmap/shadowmap.cpp; sourceTree = SOURCE_ROOT; };
 		39657A150BB5E527008695DA /* GLee.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = GLee.c; path = ../../../../src/shared/GLee.c; sourceTree = SOURCE_ROOT; };
+		39F61DD10BF648D10038F9DC /* math3d.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = math3d.cpp; path = ../../../../src/shared/math3d.cpp; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* shadowmap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shadowmap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,6 +127,7 @@
 		39657A140BB5E514008695DA /* shared */ = {
 			isa = PBXGroup;
 			children = (
+				39F61DD10BF648D10038F9DC /* math3d.cpp */,
 				39657A150BB5E527008695DA /* GLee.c */,
 			);
 			name = shared;
@@ -185,6 +188,7 @@
 			files = (
 				39657A100BB5E4FD008695DA /* shadowmap.cpp in Sources */,
 				39657A160BB5E527008695DA /* GLee.c in Sources */,
+				39F61DD20BF648D10038F9DC /* math3d.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +217,10 @@
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;

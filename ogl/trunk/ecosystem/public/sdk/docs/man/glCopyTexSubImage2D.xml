@@ -208,7 +208,7 @@
     </refsect1>
     <refsect1><title>Errors</title>
         <para>
-            <constant>GL_INVALID_ENUM</constant> is generated if /<parameter>target</parameter> is not <constant>GL_TEXTURE_2D</constant>.
+            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is not <constant>GL_TEXTURE_2D</constant>.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if the texture array has not been

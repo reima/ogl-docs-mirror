@@ -1,11 +1,11 @@
 <html>
 <head>
 <title>The Fountain Simulation - by CodeColony.de</title>
-<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_head.txt"); ?>
+<?php include("http://www.opengl.org/inc/sdk_head.txt"); ?>
 </head>
 
 <body>
-<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
+<?php include("http://www.opengl.org/inc/sdk_body_start.txt"); ?>
 <h1>The Fountain Simulation</h1>
 <h2>Before you start</h2>
 <p>
@@ -74,7 +74,7 @@ incoming fragment, i.e. the source.
 </p>
 
 <p>The code contains several comments and further hints, so take a look at it:
-<li><a href="../../FountainVS2005.zip">Visual Studio 2005 project</a></li>
+<li><a href="FountainVS2005.zip">Visual Studio 2005 project</a></li>
 </p>
 
 <hr noshade size="1">
@@ -84,6 +84,6 @@ Any comments? Contact me!<br>
 <a href="mailto:philipp.crocoll@web.de">philipp.crocoll@web.de</a><br>
 <a href="http://www.codecolony.de">www.codecolony.de</a>
 </p>
-<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
+<?php include("http://www.opengl.org/inc/sdk_footer.txt"); ?>
 </body>
 </html>

@@ -1,11 +1,11 @@
 <html>
 <head>
 <title>Camera - by CodeColony.de</title>
-<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_head.txt"); ?>
+<?php include("http://www.opengl.org/inc/sdk_head.txt"); ?>
 </head>
 
 <body>
-<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
+<?php include("http://www.opengl.org/inc/sdk_body_start.txt"); ?>
 <h1>The CodeColony Camera</h1>
 <h2>Before you start</h2>
 <p>
@@ -83,7 +83,7 @@ As you can easily see: After glLoadIdentity() you call Camera.Render() which mak
 </p>
 
 <p>You can test the camera before using it in your own projects with the following files:
-<li><a href="../../CameraVS2005.zip">Visual Studio 2005 project</a></li>
+<li><a href="CameraVS2005.zip">Visual Studio 2005 project</a></li>
 </p>
 
 <hr noshade size="1">
@@ -93,7 +93,7 @@ Any comments? Contact me!<br>
 <a href="mailto:philipp.crocoll@web.de">philipp.crocoll@web.de</a><br>
 <a href="http://www.codecolony.de">www.codecolony.de</a>
 </p>
-<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
+<?php include("http://www.opengl.org/inc/sdk_footer.txt"); ?>
 </body>
 
 </html>

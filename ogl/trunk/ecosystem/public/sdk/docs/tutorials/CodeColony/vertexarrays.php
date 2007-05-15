@@ -1,11 +1,11 @@
 <html>
 <head>
 <title>Vertex Arrays - by CodeColony.de</title>
-<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_head.txt"); ?>
+<?php include("http://www.opengl.org/inc/sdk_head.txt"); ?>
 </head>
 
 <body>
-<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
+<?php include("http://www.opengl.org/inc/sdk_body_start.txt"); ?>
 <h1>Vertex Arrays</h1>
 <h2>Before you start</h2>
 <p>
@@ -127,7 +127,7 @@ it need not be rendered several times which results in performance gains!<br>
 The second call simply renders a sequence of vertices which is suitable for rendering in point mode.
 </p>
 <p>That's all you need, you should now look at the complete source code:
-<li><a href="../../VertexArraysVS2005.zip">Visual Studio 2005 project</a></li>
+<li><a href="VertexArraysVS2005.zip">Visual Studio 2005 project</a></li>
 </p>
 
 <hr noshade size="1">
@@ -137,6 +137,6 @@ Any comments? Contact me!<br>
 <a href="mailto:philipp.crocoll@web.de">philipp.crocoll@web.de</a><br>
 <a href="http://www.codecolony.de">www.codecolony.de</a>
 </p>
-<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
+<?php include("http://www.opengl.org/inc/sdk_footer.txt"); ?>
 </body>
 </html>

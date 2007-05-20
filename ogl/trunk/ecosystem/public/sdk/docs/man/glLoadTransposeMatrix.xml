@@ -20,13 +20,13 @@
         <funcsynopsis>
             <funcprototype>
                 <funcdef>void <function>glLoadTransposeMatrixd</function></funcdef>
-                <paramdef>const GLdouble <parameter>m[16]</parameter></paramdef>
+                <paramdef>const GLdouble * <parameter>m</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
                 <funcdef>void <function>glLoadTransposeMatrixf</function></funcdef>
-                <paramdef>const GLfloat <parameter>m[16]</parameter></paramdef>
+                <paramdef>const GLfloat * <parameter>m</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -34,7 +34,7 @@
     <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
-            <term><parameter>m[16]</parameter></term>
+            <term><parameter>m</parameter></term>
             <listitem>
                 <para>
                     Specifies a pointer to 16 consecutive values, which are used as the
@@ -56,7 +56,7 @@
     <refsect1><title>Description</title>
         <para>
             <function>glLoadTransposeMatrix</function> replaces the current matrix with the one whose elements are specified by
-            <parameter>m[16]</parameter>.
+            <parameter>m</parameter>.
             The current matrix is the projection matrix,
             modelview matrix,
             or texture matrix,
@@ -106,7 +106,7 @@
             </mml:math></inlineequation>
             is the set of object coordinates
             of a vertex,
-            and <parameter>m[16]</parameter> points to an array of 
+            and <parameter>m</parameter> points to an array of 
             <inlineequation><mml:math>
                 <!-- eqn: 16:-->
                 <mml:mn>16</mml:mn>

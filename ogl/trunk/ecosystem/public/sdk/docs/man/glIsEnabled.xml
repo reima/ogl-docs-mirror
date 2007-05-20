@@ -265,14 +265,6 @@
                     </row>
                     <row>
                         <entry align="left">
-                        <emphasis role="bold">Constant</emphasis>
-                        </entry>
-                        <entry align="left">
-                        <emphasis role="bold">See</emphasis>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry align="left">
                         <constant>GL_MAP1_INDEX</constant>
                         </entry>
                         <entry align="left">
@@ -597,14 +589,6 @@
                         </entry>
                         <entry align="left">
                         <citerefentry><refentrytitle>glTexGen</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry align="left">
-                        <emphasis role="bold">Constant</emphasis>
-                        </entry>
-                        <entry align="left">
-                        <emphasis role="bold">See</emphasis>
                         </entry>
                     </row>
                     <row>

@@ -20,13 +20,13 @@
         <funcsynopsis>
             <funcprototype>
                 <funcdef>void <function>glMultTransposeMatrixd</function></funcdef>
-                <paramdef>const GLdouble <parameter>m[16]</parameter></paramdef>
+                <paramdef>const GLdouble * <parameter>m</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
         <funcsynopsis>
             <funcprototype>
                 <funcdef>void <function>glMultTransposeMatrixf</function></funcdef>
-                <paramdef>const GLfloat <parameter>m[16]</parameter></paramdef>
+                <paramdef>const GLfloat * <parameter>m</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -34,7 +34,7 @@
     <refsect1><title>Parameters</title>
         <variablelist>
         <varlistentry>
-            <term><parameter>m[16]</parameter></term>
+            <term><parameter>m</parameter></term>
             <listitem>
                 <para>
                     Points to 16 consecutive values that are used as the elements of
@@ -55,7 +55,7 @@
     </refsect1>
     <refsect1><title>Description</title>
         <para>
-            <function>glMultTransposeMatrix</function> multiplies the current matrix with the one specified using <parameter>m[16]</parameter>, and
+            <function>glMultTransposeMatrix</function> multiplies the current matrix with the one specified using <parameter>m</parameter>, and
             replaces the current matrix with the product.
         </para>
         <para>
@@ -335,7 +335,7 @@
         <para>
             Calling <function>glMultTransposeMatrix</function> with an argument of 
             <inlineequation><mml:math>
-                <!-- eqn: m[16]  =  left { m[0], m[1], ..., m[15] right }:-->
+                <!-- eqn: m  =  left { m[0], m[1], ..., m[15] right }:-->
                 <mml:mrow>
                     <mml:mrow>
                         <mml:mi mathvariant="italic">m</mml:mi>

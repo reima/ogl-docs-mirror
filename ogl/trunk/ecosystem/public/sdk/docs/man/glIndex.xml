@@ -150,7 +150,7 @@
     <refsect1><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glColor</refentrytitle></citerefentry>,
-            <function>glIndexPointer</function>
+            <citerefentry><refentrytitle>glIndexPointer</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1><title>Copyright</title>

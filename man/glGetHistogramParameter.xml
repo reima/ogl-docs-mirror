@@ -131,24 +131,6 @@
                         Green component counter size, in bits
                         </entry>
                     </row>
-                </tbody>
-            </tgroup>
-        </informaltable>
-        <informaltable frame="topbot">
-            <tgroup cols="2" align="left">
-                <colspec/>
-                <colspec/>
-                <thead>
-                    <row>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Parameter
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Description
-                        </emphasis></entry>
-                    </row>
-                </thead>
-                <tbody>
                     <row>
                         <entry align="left">
                         <constant>GL_HISTOGRAM_BLUE_SIZE</constant>

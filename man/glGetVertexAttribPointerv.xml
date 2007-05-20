@@ -7,7 +7,7 @@
 	<manvolnum>3G</manvolnum>
     </refmeta>
     <refnamediv>
-	<refname>glGetVertexAttributePointerv</refname>
+	<refname>glGetVertexAttribPointerv</refname>
 	<refpurpose>return the address of the specified generic vertex attribute pointer</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>C Specification</title>

@@ -540,7 +540,7 @@ void SetupRC()
     glGetIntegerv(GL_MAX_RENDERBUFFER_SIZE_EXT, &maxRenderbufferSize);
     maxCubeTexSize = (maxRenderbufferSize > maxCubeTexSize) ? maxCubeTexSize : maxRenderbufferSize;
     // performance suffers too much at higher texture sizes
-    maxCubeTexSize = (maxCubeTexSize > 1024) ? 1024 : maxCubeTexSize;
+ //   maxCubeTexSize = (maxCubeTexSize > 1024) ? 1024 : maxCubeTexSize;
 
     fprintf(stdout, "Controls:\n");
     fprintf(stdout, "\tRight-click for menu\n\n");
@@ -579,8 +579,9 @@ void SetupRC()
     glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, framebufferID);
     glGenRenderbuffersEXT(1, &renderbufferID);
     glBindRenderbufferEXT(GL_RENDERBUFFER_EXT, renderbufferID);
-    glRenderbufferStorageEXT(GL_RENDERBUFFER_EXT, GL_DEPTH_COMPONENT32, envMapSize, envMapSize);
+    glRenderbufferStorageEXT(GL_RENDERBUFFER_EXT, GL_DEPTH_STENCIL_EXT, envMapSize, envMapSize);
     glFramebufferRenderbufferEXT(GL_FRAMEBUFFER_EXT, GL_DEPTH_ATTACHMENT_EXT, GL_RENDERBUFFER_EXT, renderbufferID);
+    glFramebufferRenderbufferEXT(GL_FRAMEBUFFER_EXT, GL_STENCIL_ATTACHMENT_EXT, GL_RENDERBUFFER_EXT, renderbufferID);
     glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, 0);
 }
 

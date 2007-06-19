@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3954833C0B9A82CA00C3C478 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3954833B0B9A82CA00C3C478 /* OpenGL.framework */; };
-		395484CC0B9A961800C3C478 /* ThunderGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395484CB0B9A961800C3C478 /* ThunderGLView.m */; };
 		395485280B9A99E900C3C478 /* body.tga in Resources */ = {isa = PBXBuildFile; fileRef = 395485200B9A99E900C3C478 /* body.tga */; };
 		395485290B9A99E900C3C478 /* glass.tga in Resources */ = {isa = PBXBuildFile; fileRef = 395485210B9A99E900C3C478 /* glass.tga */; };
 		3954852A0B9A99E900C3C478 /* neg_x.tga in Resources */ = {isa = PBXBuildFile; fileRef = 395485220B9A99E900C3C478 /* neg_x.tga */; };
@@ -23,9 +22,10 @@
 		3954853B0B9A9A3E00C3C478 /* body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 395485380B9A9A3E00C3C478 /* body.cpp */; };
 		3954853C0B9A9A3E00C3C478 /* glass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 395485390B9A9A3E00C3C478 /* glass.cpp */; };
 		3954853D0B9A9A3E00C3C478 /* thundergl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3954853A0B9A9A3E00C3C478 /* thundergl.cpp */; };
+		39ED5E410C20A4A5007773FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ED5E3E0C20A4A5007773FF /* main.m */; };
+		39ED5E420C20A4A5007773FF /* ThunderGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ED5E400C20A4A5007773FF /* ThunderGLView.m */; };
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,14 +33,10 @@
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		32CA4F630368D1EE00C91783 /* CocoaGL_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaGL_Prefix.pch; sourceTree = "<group>"; };
 		3954833B0B9A82CA00C3C478 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
-		395484CA0B9A961800C3C478 /* ThunderGLView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ThunderGLView.h; sourceTree = "<group>"; };
-		395484CB0B9A961800C3C478 /* ThunderGLView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ThunderGLView.m; sourceTree = "<group>"; };
 		395485200B9A99E900C3C478 /* body.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = body.tga; path = ../../../../src/chapt20/CocoGL/body.tga; sourceTree = SOURCE_ROOT; };
 		395485210B9A99E900C3C478 /* glass.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = glass.tga; path = ../../../../src/chapt20/CocoGL/glass.tga; sourceTree = SOURCE_ROOT; };
 		395485220B9A99E900C3C478 /* neg_x.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = neg_x.tga; path = ../../../../src/chapt20/CocoGL/neg_x.tga; sourceTree = SOURCE_ROOT; };
@@ -55,6 +51,9 @@
 		395485380B9A9A3E00C3C478 /* body.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = body.cpp; path = ../../../../src/chapt20/CocoGL/body.cpp; sourceTree = SOURCE_ROOT; };
 		395485390B9A9A3E00C3C478 /* glass.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = glass.cpp; path = ../../../../src/chapt20/CocoGL/glass.cpp; sourceTree = SOURCE_ROOT; };
 		3954853A0B9A9A3E00C3C478 /* thundergl.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = thundergl.cpp; path = ../../../../src/chapt20/CocoGL/thundergl.cpp; sourceTree = SOURCE_ROOT; };
+		39ED5E3E0C20A4A5007773FF /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../../../src/chapt20/CocoGL/main.m; sourceTree = SOURCE_ROOT; };
+		39ED5E3F0C20A4A5007773FF /* ThunderGLView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ThunderGLView.h; path = ../../../../src/chapt20/CocoGL/ThunderGLView.h; sourceTree = SOURCE_ROOT; };
+		39ED5E400C20A4A5007773FF /* ThunderGLView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ThunderGLView.m; path = ../../../../src/chapt20/CocoGL/ThunderGLView.m; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* CocoaGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -124,10 +123,6 @@
 				395485390B9A9A3E00C3C478 /* glass.cpp */,
 				3954853A0B9A9A3E00C3C478 /* thundergl.cpp */,
 				395485300B9A99F200C3C478 /* shared */,
-				32CA4F630368D1EE00C91783 /* CocoaGL_Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
-				395484CA0B9A961800C3C478 /* ThunderGLView.h */,
-				395484CB0B9A961800C3C478 /* ThunderGLView.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -163,6 +158,9 @@
 		395485300B9A99F200C3C478 /* shared */ = {
 			isa = PBXGroup;
 			children = (
+				39ED5E3E0C20A4A5007773FF /* main.m */,
+				39ED5E3F0C20A4A5007773FF /* ThunderGLView.h */,
+				39ED5E400C20A4A5007773FF /* ThunderGLView.m */,
 				395485310B9A9A1800C3C478 /* gltools.cpp */,
 				395485320B9A9A1800C3C478 /* math3d.cpp */,
 				395485330B9A9A1800C3C478 /* VBOMesh.cpp */,
@@ -231,14 +229,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				395484CC0B9A961800C3C478 /* ThunderGLView.m in Sources */,
 				395485340B9A9A1800C3C478 /* gltools.cpp in Sources */,
 				395485350B9A9A1800C3C478 /* math3d.cpp in Sources */,
 				395485360B9A9A1800C3C478 /* VBOMesh.cpp in Sources */,
 				3954853B0B9A9A3E00C3C478 /* body.cpp in Sources */,
 				3954853C0B9A9A3E00C3C478 /* glass.cpp in Sources */,
 				3954853D0B9A9A3E00C3C478 /* thundergl.cpp in Sources */,
+				39ED5E410C20A4A5007773FF /* main.m in Sources */,
+				39ED5E420C20A4A5007773FF /* ThunderGLView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

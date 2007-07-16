@@ -13,7 +13,7 @@
 <TD><IMG SRC="images/cover1.gif" ALT="First Edition" WIDTH="145" HEIGHT="186"></TD>
 <TD><IMG SRC="images/cover2.gif" ALT="Second Edition" WIDTH="150" HEIGHT="186"></TD>
 <TD><IMG SRC="images/cover3.jpg" ALT="Third Edition" WIDTH="150" HEIGHT="186"></TD>
-<TD><A HREF="http://www.amazon.com/exec/obidos/ASIN/0321498828/"><IMG SRC="images/cover4.jpg" ALT="Fourth Edition" WIDTH="151" HEIGHT="186"></A></TD>
+<TD><A HREF="http://www.amazon.com/exec/obidos/ASIN/0321498828/khongrou-20"><IMG SRC="images/cover4.jpg" ALT="Fourth Edition" WIDTH="151" HEIGHT="186"></A></TD>
 </TR></TABLE>
 
 <P>The fourth edition of OpenGL&reg; SuperBible, the newest member of the Addison Wesley 

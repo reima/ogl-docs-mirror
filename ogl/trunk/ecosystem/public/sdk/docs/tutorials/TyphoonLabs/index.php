@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE>TyphoonLabs Hello World</TITLE>
+<TITLE>TyphoonLabs</TITLE>
 <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_head.txt"); ?>
 <style type="text/css">
 <!--

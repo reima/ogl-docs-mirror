@@ -140,7 +140,7 @@
                     <para>
                         Indicates the sampling quality of antialiased lines.
                         If a larger filter function is applied, hinting <constant>GL_NICEST</constant> can
-                        result in more pixel fragments being generated during rasterization,
+                        result in more pixel fragments being generated during rasterization.
                     </para>
                 </listitem>
             </varlistentry>
@@ -162,7 +162,7 @@
                     <para>
                         Indicates the sampling quality of antialiased points.
                         If a larger filter function is applied, hinting <constant>GL_NICEST</constant> can
-                        result in more pixel fragments being generated during rasterization,
+                        result in more pixel fragments being generated during rasterization.
                     </para>
                 </listitem>
             </varlistentry>

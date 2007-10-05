@@ -563,10 +563,8 @@
                                     <mml:mrow>
                                         <mml:mfrac>
                                             <mml:mn>-1</mml:mn>
-                                            <mml:mn>2</mml:mn>
+                                            <mml:mn>2<mml:mi mathvariant="italic">N</mml:mi></mml:mn>
                                         </mml:mfrac>
-                                        <mml:mo>&it;</mml:mo>
-                                        <mml:mi mathvariant="italic">N</mml:mi>
                                     </mml:mrow>
                                 </mml:mfenced>
                                 <mml:mrow>
@@ -576,10 +574,8 @@
                                         <mml:mrow>
                                             <mml:mfrac>
                                                 <mml:mn>1</mml:mn>
-                                                <mml:mn>2</mml:mn>
+                                                <mml:mn>2<mml:mi mathvariant="italic">N</mml:mi></mml:mn>
                                             </mml:mfrac>
-                                            <mml:mo>&it;</mml:mo>
-                                            <mml:mi mathvariant="italic">N</mml:mi>
                                         </mml:mrow>
                                     </mml:mfenced>
                                 </mml:mrow>
@@ -599,10 +595,8 @@
                                     <mml:mrow>
                                         <mml:mfrac>
                                             <mml:mn>1</mml:mn>
-                                            <mml:mn>2</mml:mn>
+                                            <mml:mn>2<mml:mi mathvariant="italic">N</mml:mi></mml:mn>
                                         </mml:mfrac>
-                                        <mml:mo>&it;</mml:mo>
-                                        <mml:mi mathvariant="italic">N</mml:mi>
                                     </mml:mrow>
                                 </mml:mfenced>
                                 <mml:mrow>
@@ -612,10 +606,8 @@
                                         <mml:mrow>
                                             <mml:mfrac>
                                                 <mml:mn>1</mml:mn>
-                                                <mml:mn>2</mml:mn>
+                                                <mml:mn>2<mml:mi mathvariant="italic">N</mml:mi></mml:mn>
                                             </mml:mfrac>
-                                            <mml:mo>&it;</mml:mo>
-                                            <mml:mi mathvariant="italic">N</mml:mi>
                                         </mml:mrow>
                                     </mml:mfenced>
                                 </mml:mrow>

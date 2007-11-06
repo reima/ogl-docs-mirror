@@ -302,9 +302,15 @@
             </mml:math></inlineequation>,
             or 
             <inlineequation><mml:math>
-                <!-- eqn: zoffset  >  (d  - b):-->
+                <!-- eqn: (zoffset  +  1)  >  (d  - b):-->
                 <mml:mrow>
-                    <mml:mi mathvariant="italic">zoffset</mml:mi>
+                     <mml:mfenced open="(" close=")">
+                        <mml:mrow>
+                            <mml:mi mathvariant="italic">zoffset</mml:mi>
+                            <mml:mo>+</mml:mo>
+                            <mml:mn>1</mml:mn>
+                        </mml:mrow>
+                    </mml:mfenced>
                     <mml:mo>&gt;</mml:mo>
                     <mml:mfenced open="(" close=")">
                         <mml:mrow>

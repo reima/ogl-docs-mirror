@@ -79,7 +79,7 @@
             <term><parameter>type</parameter></term>
             <listitem>
                 <para>
-                    Specifies the type of the values in <parameter>count</parameter>. Must be one of
+                    Specifies the type of the values in <parameter>indices</parameter>. Must be one of
                     <constant>GL_UNSIGNED_BYTE</constant>, <constant>GL_UNSIGNED_SHORT</constant>, or
                     <constant>GL_UNSIGNED_INT</constant>.
                 </para>

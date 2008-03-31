@@ -267,6 +267,8 @@ varying vec3 v; </pre>
     <p>In this example project the  phong shader with 1 light is included. You can use this as base to implement it to support more lights and/or different shading models.</p>
     <p><a href="downloads/GLSL_Lighting.zip" style="font-weight: bold">Download:
       GLSL_Lighting.zip</a> (Visual Studio 8 Project)<br>
+      <a href="downloads/GLSL_Lighting.tar.gz" style="font-weight: bold">Download:
+      GLSL_Lighting.tar.gz</a> (Linux Makefile, thanks to Liran Nuna)<br>
         <span style="font-style: italic">(If you create a project/makefile for a different platform/compiler, please send it to: christen(at)clockworkcoders.com and I will put it here.) </span></p>
     <p>&nbsp; </p>
     <p>&nbsp;</p>

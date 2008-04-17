@@ -2649,7 +2649,8 @@
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if the <parameter>params</parameter> value for
-            <constant>GL_RGB_SCALE</constant> is not one of 1.0, 2.0, or 4.0.
+            <constant>GL_RGB_SCALE</constant> or <constant>GL_ALPHA_SCALE</constant> are not one of 1.0, 2.0,
+            or 4.0.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glTexEnv</function>

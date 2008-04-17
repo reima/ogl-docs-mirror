@@ -149,9 +149,9 @@
             <parameter>pname</parameter> must be <constant>GL_TEXTURE_LOD_BIAS</constant>.  When <parameter>target</parameter> is
             <constant>GL_TEXTURE_ENV</constant>, <parameter>pname</parameter> can be <constant>GL_TEXTURE_ENV_MODE</constant>,
             <constant>GL_TEXTURE_ENV_COLOR</constant>, <constant>GL_COMBINE_RGB</constant>, <constant>GL_COMBINE_ALPHA</constant>,
-            <constant>RGB_SCALE</constant>, <constant>ALPHA_SCALE</constant>, 
-            <constant>SRC0_RGB</constant>, <constant>SRC1_RGB</constant>, <constant>SRC2_RGB</constant>,
-            <constant>SRC0_ALPHA</constant>, <constant>SRC1_ALPHA</constant>, or <constant>SRC2_ALPHA</constant>.
+            <constant>GL_RGB_SCALE</constant>, <constant>GL_ALPHA_SCALE</constant>, 
+            <constant>GL_SRC0_RGB</constant>, <constant>GL_SRC1_RGB</constant>, <constant>GL_SRC2_RGB</constant>,
+            <constant>GL_SRC0_ALPHA</constant>, <constant>GL_SRC1_ALPHA</constant>, or <constant>GL_SRC2_ALPHA</constant>.
         </para>
         <para>
             If <parameter>pname</parameter> is <constant>GL_TEXTURE_ENV_MODE</constant>,

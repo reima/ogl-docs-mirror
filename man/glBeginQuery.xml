@@ -99,8 +99,8 @@
             and essentially useless.
         </para>
         <para>
-            When <constant>SAMPLE_BUFFERS</constant> is 0, the samples-passed counter will increment once for each fragment that passes
-            the depth test.  When <constant>SAMPLE_BUFFERS</constant> is 1, an implementation may either increment the samples-passed
+            When <constant>GL_SAMPLE_BUFFERS</constant> is 0, the samples-passed counter will increment once for each fragment that passes
+            the depth test.  When <constant>GL_SAMPLE_BUFFERS</constant> is 1, an implementation may either increment the samples-passed
             counter individually for each sample of a fragment that passes the depth test, or it may choose to increment the counter for
             all samples of a fragment if any one of them passes the depth test.
         </para>

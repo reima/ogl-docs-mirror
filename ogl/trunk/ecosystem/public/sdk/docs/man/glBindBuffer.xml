@@ -75,14 +75,14 @@
         </para>
         <para>
             The state of a buffer object immediately after it is first bound is an unmapped zero-sized memory buffer with
-            <constant>READ_WRITE</constant> access and <constant>STATIC_DRAW</constant> usage.
+            <constant>GL_READ_WRITE</constant> access and <constant>GL_STATIC_DRAW</constant> usage.
         </para>
         <para>
             While a non-zero buffer object name is bound, GL operations on the target to which it is
             bound affect the bound buffer object, and queries of the target to which it is bound return state 
             from the bound buffer object. While buffer object name zero is bound, as in the initial state,
             attempts to modify or query state on the target to which it is bound generates an 
-            INVALID_OPERATION error.
+            <constant>GL_INVALID_OPERATION</constant> error.
         </para>
         <para>
             When vertex array pointer state is changed, for example by a call to 

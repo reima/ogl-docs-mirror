@@ -68,7 +68,7 @@
     </refsect1>
     <refsect1><title>Description</title>
 	<para><function>glGetVertexAttrib</function> returns in
-	<constant>params</constant> the value of a generic vertex
+	<parameter>params</parameter> the value of a generic vertex
 	attribute parameter. The generic vertex attribute to be queried
 	is specified by <parameter>index</parameter>, and the parameter
 	to be queried is specified by <parameter>pname</parameter>.</para>

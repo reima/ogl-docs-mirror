@@ -588,7 +588,7 @@
                         <constant>GL_TEXTURE_CUBE_MAP</constant>
                         </entry>
                         <entry align="left">
-                        <citerefentry><refentrytitle>glTexGen</refentrytitle></citerefentry>
+                        <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>
                         </entry>
                     </row>
                     <row>

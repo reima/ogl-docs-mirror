@@ -3609,8 +3609,8 @@
                 <listitem>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether cube-mapped texture
-                        coordinate generation is enabled.  The initial value is <constant>GL_FALSE</constant>.
-                        See <citerefentry><refentrytitle>glTexGen</refentrytitle></citerefentry>.
+                        mapping is enabled.  The initial value is <constant>GL_FALSE</constant>.
+                        See <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>

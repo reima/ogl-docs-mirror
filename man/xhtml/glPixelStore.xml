@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glPixelStore</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glPixelStore"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glPixelStore — set pixel storage modes</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glPixelStoref</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glPixelStorei</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4781916"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glPixelStore</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glPixelStore"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glPixelStore — set pixel storage modes</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glPixelStoref</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glPixelStorei</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id432827"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
                     Specifies the symbolic name of the parameter to be set.
                     Six values affect the packing of pixel data into memory:
                     <code class="constant">GL_PACK_SWAP_BYTES</code>,
@@ -23,7 +23,7 @@
                     <code class="constant">GL_UNPACK_ALIGNMENT</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>param</code></em></span></dt><dd><p>
                     Specifies the value that <em class="parameter"><code>pname</code></em> is set to.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4768590"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id419302"></a><h2>Description</h2><p>
             <code class="function">glPixelStore</code> sets pixel storage modes that affect the operation of subsequent
             <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a> and <a href="glReadPixels.xml"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a> as well as the unpacking of
             polygon stipple patterns (see <a href="glPolygonStipple.xml"><span class="citerefentry"><span class="refentrytitle">glPolygonStipple</span></span></a>), bitmaps (see
@@ -352,7 +352,7 @@
                         is the number of pixels in a row
                         (<code class="constant">GL_PACK_ROW_LENGTH</code> if it is greater than 0, the
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">width</mml:mi></mml:math>
-                        argument to <a href="glTexImage3d.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3d</span></span></a> otherwise), 
+                        argument to <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a> otherwise), 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">h</mml:mi></mml:math>
                         is the number of
                         rows in a pixel image (<code class="constant">GL_PACK_IMAGE_HEIGHT</code> if it is greater than
@@ -1093,7 +1093,7 @@
             Likewise, <code class="function">glPixelStorei</code> can also be used to set any of the
             pixel store parameters.
             Boolean parameters are set to false if <em class="parameter"><code>param</code></em> is 0 and true otherwise.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787662"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id436252"></a><h2>Notes</h2><p>
             The pixel storage modes in effect when
             <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>,
             <a href="glReadPixels.xml"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>,
@@ -1120,7 +1120,7 @@
             Pixel storage modes are client state and must be pushed and restored
             using
             <a href="glPushClientAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPushClientAttrib</span></span></a> and <a href="glPopClientAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPopClientAttrib</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787784"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id436375"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>pname</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if a negative row length,
@@ -1131,7 +1131,7 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glPixelStore</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4787842"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id436433"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PACK_SWAP_BYTES</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PACK_LSB_FIRST</code>
@@ -1163,7 +1163,7 @@
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_UNPACK_SKIP_IMAGES</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_UNPACK_ALIGNMENT</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4788036"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id436627"></a><h2>See Also</h2><p>
             <a href="glBitmap.xml"><span class="citerefentry"><span class="refentrytitle">glBitmap</span></span></a>,
             <a href="glColorTable.xml"><span class="citerefentry"><span class="refentrytitle">glColorTable</span></span></a>,
             <a href="glColorSubTable.xml"><span class="citerefentry"><span class="refentrytitle">glColorSubTable</span></span></a>,
@@ -1185,7 +1185,7 @@
             <a href="glTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span></a>,
             <a href="glTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>,
             <a href="glTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4788156"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id436747"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

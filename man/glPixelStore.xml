@@ -432,7 +432,7 @@
                         is the number of pixels in a row
                         (<constant>GL_PACK_ROW_LENGTH</constant> if it is greater than 0, the
                         <inlineequation><mml:math><mml:mi mathvariant="italic">width</mml:mi></mml:math></inlineequation>
-                        argument to <citerefentry><refentrytitle>glTexImage3d</refentrytitle></citerefentry> otherwise), 
+                        argument to <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry> otherwise), 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">h</mml:mi></mml:math></inlineequation>
                         is the number of
                         rows in a pixel image (<constant>GL_PACK_IMAGE_HEIGHT</constant> if it is greater than

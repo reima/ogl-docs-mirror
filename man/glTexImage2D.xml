@@ -800,7 +800,7 @@
             specified with <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
         </para>
         <para>
-            <constant>GL_TEXTURE_CUBEMAP</constant> and <constant>GL_PROXY_TEXTURE_CUBEMAP</constant> are available only if the GL
+            <constant>GL_TEXTURE_CUBE_MAP</constant> and <constant>GL_PROXY_TEXTURE_CUBE_MAP</constant> are available only if the GL
             version is 1.3 or greater.
         </para>
         <para>

@@ -10,7 +10,7 @@
                     <code class="constant">GL_PIXEL_UNPACK_BUFFER</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>buffer</code></em></span></dt><dd><p>
                     Specifies the name of a buffer object.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id419200"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id419209"></a><h2>Description</h2><p>
             <code class="function">glBindBuffer</code> lets you create or use a named buffer object. Calling <code class="function">glBindBuffer</code> with
             <em class="parameter"><code>target</code></em> set to
             <code class="constant">GL_ARRAY_BUFFER</code>, <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code>, <code class="constant">GL_PIXEL_PACK_BUFFER</code> or
@@ -48,7 +48,7 @@
             interpreted as a pointer to client-side memory is instead interpreted as an offset within the
             buffer object measured in basic machine units.
         </p><p>
-            While a non-zero buffer object is bound to the <code class="constant">GL_ARRAY_ELEMENT_BUFFER</code> target, 
+            While a non-zero buffer object is bound to the <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code> target, 
             the indices parameter of <a href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>, 
             <a href="glDrawRangeElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span></a>, or 
             <a href="glMultiDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span></a> that is traditionally
@@ -100,19 +100,19 @@
             Once created, a named buffer object may be re-bound to any target as often as needed. However,
             the GL implementation may make choices about how to optimize the storage of a buffer object based
             on its initial binding target.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id419573"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id419638"></a><h2>Notes</h2><p>
             <code class="function">glBindBuffer</code> is available only if the GL version is 1.5 or greater.
         </p><p>
             <code class="constant">GL_PIXEL_PACK_BUFFER</code> and <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> are 
             available only if the GL version is 2.1 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id419601"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id425388"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not one of the allowable
             values.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glBindBuffer</code> is executed
             between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding
             execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id419643"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id425432"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_ARRAY_BUFFER_BINDING</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_ELEMENT_ARRAY_BUFFER_BINDING</code>
@@ -120,12 +120,12 @@
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_PACK_BUFFER_BINDING</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id425427"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id425484"></a><h2>See Also</h2><p>
             <a href="glDeleteBuffers.xml"><span class="citerefentry"><span class="refentrytitle">glDeleteBuffers</span></span></a>,
             <a href="glGenBuffers.xml"><span class="citerefentry"><span class="refentrytitle">glGenBuffers</span></span></a>,
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>,
             <a href="glIsBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glIsBuffer</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id425454"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id425512"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2005 Addison-Wesley. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.

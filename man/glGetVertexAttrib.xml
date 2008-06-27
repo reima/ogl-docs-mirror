@@ -79,6 +79,8 @@
 	    <varlistentry>
 		<term><constant>GL_VERTEX_ATTRIB_ARRAY_BUFFER_BINDING</constant></term>
 		<listitem>
+                <para>
+                </para>
 		    <para> <parameter>params</parameter> returns a
 		    single value, the name of the buffer object currently bound to
                     the binding point corresponding to generic vertex attribute array 
@@ -90,6 +92,8 @@
 	    <varlistentry>
 		<term><constant>GL_VERTEX_ATTRIB_ARRAY_ENABLED</constant></term>
 		<listitem>
+                <para>
+                </para>
 		    <para> <parameter>params</parameter> returns a
 		    single value that is non-zero (true) if the vertex
 		    attribute array for <parameter>index</parameter> is
@@ -101,6 +105,8 @@
 	    <varlistentry>
 		<term><constant>GL_VERTEX_ATTRIB_ARRAY_SIZE</constant></term>
 		<listitem>
+                <para>
+                </para>
 		    <para> <parameter>params</parameter> returns a
 		    single value, the size of the vertex attribute array
 		    for <parameter>index</parameter>. The size is the
@@ -113,6 +119,8 @@
 	    <varlistentry>
 		<term><constant>GL_VERTEX_ATTRIB_ARRAY_STRIDE</constant></term>
 		<listitem>
+                <para>
+                </para>
 		    <para> <parameter>params</parameter> returns a
 		    single value, the array stride for (number of bytes
 		    between successive elements in) the vertex attribute
@@ -125,6 +133,8 @@
 	    <varlistentry>
 		<term><constant>GL_VERTEX_ATTRIB_ARRAY_TYPE</constant></term>
 		<listitem>
+                <para>
+                </para>
 		    <para> <parameter>params</parameter> returns a
 		    single value, a symbolic constant indicating the
 		    array type for the vertex attribute array for
@@ -144,6 +154,8 @@
 	    <varlistentry>
 		<term><constant>GL_VERTEX_ATTRIB_ARRAY_NORMALIZED</constant></term>
 		<listitem>
+                <para>
+                </para>
 		    <para> <parameter>params</parameter> returns a
 		    single value that is non-zero (true) if fixed-point
 		    data types for the vertex attribute array indicated
@@ -157,6 +169,8 @@
 	    <varlistentry>
 		<term><constant>GL_CURRENT_VERTEX_ATTRIB</constant></term>
 		<listitem>
+                <para>
+                </para>
 		    <para> <parameter>params</parameter> returns four
 		    values that represent the current value for the
 		    generic vertex attribute specified by index. Generic
@@ -209,7 +223,7 @@
 	<citerefentry><refentrytitle>glVertexAttrib</refentrytitle></citerefentry>,
 	<citerefentry><refentrytitle>glVertexAttribPointer</refentrytitle></citerefentry></para>
     </refsect1>
-    <refsect1><title>Copyright</title>
+    <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 2003-2005 3Dlabs Inc. Ltd. 
             This material may be distributed subject to the terms and conditions set forth in 

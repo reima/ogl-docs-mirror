@@ -74,6 +74,8 @@
                 <term><constant>GL_FASTEST</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         The most efficient option should be chosen.
                     </para>
                 </listitem>
@@ -81,6 +83,8 @@
             <varlistentry>
                 <term><constant>GL_NICEST</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         The most correct,
                         or highest quality,
@@ -91,6 +95,8 @@
             <varlistentry>
                 <term><constant>GL_DONT_CARE</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         No preference.
                     </para>
@@ -109,6 +115,8 @@
                 <term><constant>GL_FOG_HINT</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         Indicates the accuracy of fog calculation.
                         If per-pixel fog calculation is not efficiently supported
                         by the GL implementation,
@@ -121,6 +129,8 @@
                 <term><constant>GL_FRAGMENT_SHADER_DERIVATIVE_HINT</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         Indicates the accuracy of the derivative calculation for the GL shading language fragment processing built-in functions:
                         <constant>dFdx</constant>, <constant>dFdy</constant>, and <constant>fwidth</constant>.
                     </para>
@@ -130,6 +140,8 @@
                 <term><constant>GL_GENERATE_MIPMAP_HINT</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         Indicates the quality of filtering when generating mipmap images.
                     </para>
                 </listitem>
@@ -137,6 +149,8 @@
             <varlistentry>
                 <term><constant>GL_LINE_SMOOTH_HINT</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         Indicates the sampling quality of antialiased lines.
                         If a larger filter function is applied, hinting <constant>GL_NICEST</constant> can
@@ -147,6 +161,8 @@
             <varlistentry>
                 <term><constant>GL_PERSPECTIVE_CORRECTION_HINT</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         Indicates the quality of color, texture coordinate, and fog coordinate
                         interpolation.  If perspective-corrected parameter interpolation is not
@@ -160,6 +176,8 @@
                 <term><constant>GL_POINT_SMOOTH_HINT</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         Indicates the sampling quality of antialiased points.
                         If a larger filter function is applied, hinting <constant>GL_NICEST</constant> can
                         result in more pixel fragments being generated during rasterization.
@@ -169,6 +187,8 @@
             <varlistentry>
                 <term><constant>GL_POLYGON_SMOOTH_HINT</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         Indicates the sampling quality of antialiased polygons.
                         Hinting <constant>GL_NICEST</constant> can result in more pixel fragments being generated
@@ -180,6 +200,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_COMPRESSION_HINT</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         Indicates the quality and performance of the compressing texture images.
                         Hinting <constant>GL_FASTEST</constant> indicates that texture images should be compressed
@@ -221,7 +243,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>Copyright</title>
+    <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

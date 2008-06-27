@@ -105,6 +105,8 @@
                 <term><constant>GLX_FBCONFIG_ID</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         Must be followed by a valid XID that indicates the desired GLX frame
                         buffer configuration. When a <constant>GLX_FBCONFIG_ID</constant> is specified, all
                         attributes are ignored. The default value is <constant>GLX_DONT_CARE</constant>.
@@ -114,6 +116,8 @@
             <varlistentry>
                 <term><constant>GLX_BUFFER_SIZE</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         Must be followed by a nonnegative integer that indicates the desired
                         color index buffer size.
@@ -126,6 +130,8 @@
             <varlistentry>
                 <term><constant>GLX_LEVEL</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         Must be followed by an integer buffer-level specification.
                         This specification is honored exactly.
@@ -141,6 +147,8 @@
                 <term><constant>GLX_DOUBLEBUFFER</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         Must be followed by <constant>True</constant> or <constant>False</constant>. If
                         <constant>True</constant> is specified, then
                         only double-buffered frame buffer configurations are considered;
@@ -154,6 +162,8 @@
             <varlistentry>
                 <term><constant>GLX_STEREO</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         Must be followed by <constant>True</constant> or <constant>False</constant>. If
                         <constant>True</constant> is specified, then
@@ -169,6 +179,8 @@
                 <term><constant>GLX_AUX_BUFFERS</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         Must be followed by a nonnegative integer that indicates the desired
                         number of auxiliary buffers.
                         Configurations with the 
@@ -181,6 +193,8 @@
             <varlistentry>
                 <term><constant>GLX_RED_SIZE</constant>, <constant>GLX_GREEN_SIZE</constant>, <constant>GLX_BLUE_SIZE</constant>, <constant>GLX_ALPHA_SIZE</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         Each attribute, if present, must be followed by a nonnegative minimum size
                         specification or <constant>GLX_DONT_CARE</constant>.
@@ -197,6 +211,8 @@
                 <term><constant>GLX_DEPTH_SIZE</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         Must be followed by a nonnegative minimum size specification.
                         If this value is zero,
                         frame buffer configurations with no depth buffer are preferred.
@@ -209,6 +225,8 @@
             <varlistentry>
                 <term><constant>GLX_STENCIL_SIZE</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         Must be followed by a nonnegative integer that indicates the desired
                         number of stencil bitplanes.
@@ -223,6 +241,8 @@
                 <term><constant>GLX_ACCUM_RED_SIZE</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         Must be followed by a nonnegative minimum size specification.
                         If this value is zero,
                         frame buffer configurations with no red accumulation buffer are preferred.
@@ -235,6 +255,8 @@
             <varlistentry>
                 <term><constant>GLX_ACCUM_GREEN_SIZE</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         Must be followed by a nonnegative minimum size specification.
                         If this value is zero,
@@ -249,6 +271,8 @@
                 <term><constant>GLX_ACCUM_BLUE_SIZE</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         Must be followed by a nonnegative minimum size specification.
                         If this value is zero,
                         frame buffer configurations with no blue accumulation buffer are preferred.
@@ -262,6 +286,8 @@
                 <term><constant>GLX_ACCUM_ALPHA_SIZE</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         Must be followed by a nonnegative minimum size specification.
                         If this value is zero,
                         frame buffer configurations with no alpha accumulation buffer are preferred.
@@ -274,6 +300,8 @@
             <varlistentry>
                 <term><constant>GLX_RENDER_TYPE</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         Must be followed by a mask indicating which OpenGL rendering modes
                         the frame buffer configuration must support.
@@ -289,6 +317,8 @@
             <varlistentry>
                 <term><constant>GLX_DRAWABLE_TYPE</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         Must be followed by a mask indicating which GLX drawable types
                         the frame buffer configuration must support. Valid bits are 
@@ -306,6 +336,8 @@
                 <term><constant>GLX_X_RENDERABLE</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         Must be followed by <constant>True</constant> or <constant>False</constant>.
                         If <constant>True</constant> is specified, then only frame buffer configurations that
                         have associated X visuals (and can be used to render to Windows and/or
@@ -317,6 +349,8 @@
             <varlistentry>
                 <term><constant>GLX_X_VISUAL_TYPE</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         Must be followed by one of 
                         <constant>GLX_TRUE_COLOR</constant>,
@@ -348,6 +382,8 @@
                 <term><constant>GLX_CONFIG_CAVEAT</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         Must be followed by one of 
                         <constant>GLX_NONE</constant>,
                         <constant>GLX_SLOW_CONFIG</constant>,
@@ -364,6 +400,8 @@
             <varlistentry>
                 <term><constant>GLX_TRANSPARENT_TYPE</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         Must be followed by one of 
                         <constant>GLX_NONE</constant>,
@@ -384,6 +422,8 @@
                 <term><constant>GLX_TRANSPARENT_INDEX_VALUE</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         Must be followed by an integer value indicating the transparent
                         index value; the value must be between 0 and the maximum
                         frame buffer value for indices.
@@ -398,6 +438,8 @@
             <varlistentry>
                 <term><constant>GLX_TRANSPARENT_RED_VALUE</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         Must be followed by an integer value indicating the transparent
                         red value; the value must be between 0 and the maximum
@@ -415,6 +457,8 @@
                 <term><constant>GLX_TRANSPARENT_GREEN_VALUE</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         Must be followed by an integer value indicating the transparent
                         green value; the value must be between 0 and the maximum
                         frame buffer value for green.
@@ -431,6 +475,8 @@
                 <term><constant>GLX_TRANSPARENT_BLUE_VALUE</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         Must be followed by an integer value indicating the transparent
                         blue value; the value must be between 0 and the maximum
                         frame buffer value for blue.
@@ -445,6 +491,8 @@
             <varlistentry>
                 <term><constant>GLX_TRANSPARENT_ALPHA_VALUE</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         Must be followed by an integer value indicating the transparent
                         alpha value; the value must be between 0 and the maximum
@@ -625,7 +673,7 @@
             <citerefentry><refentrytitle>glXGetVisualFromFBConfig</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>Copyright</title>
+    <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

@@ -72,6 +72,8 @@
             <varlistentry>
                 <term><constant>GL_ALPHA_TEST</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         If enabled,
                         do alpha testing. See
@@ -82,6 +84,8 @@
             <varlistentry>
                 <term><constant>GL_AUTO_NORMAL</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         generate normal vectors when either
@@ -94,6 +98,8 @@
             <varlistentry>
                 <term><constant>GL_BLEND</constant></term>
                 <listitem>
+ 		        <para>
+		        </para>
                     <para>
                         If enabled,
                         blend the incoming RGBA color values with the values in the color
@@ -104,6 +110,8 @@
             <varlistentry>
                 <term><constant>GL_CLIP_PLANE</constant><emphasis>i</emphasis></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         clip geometry against user-defined clipping plane <emphasis>i</emphasis>.
@@ -114,6 +122,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_LOGIC_OP</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         apply the currently selected logical operation to the incoming RGBA
@@ -124,6 +134,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_MATERIAL</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         have one or more material parameters track the current color.
@@ -134,6 +146,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_SUM</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled, add the secondary color value to the computed fragment color.
                         See <citerefentry><refentrytitle>glSecondaryColor</refentrytitle></citerefentry>.
@@ -143,6 +157,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_TABLE</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         perform a color table lookup on the incoming RGBA color values.
@@ -153,6 +169,8 @@
             <varlistentry>
                 <term><constant>GL_CONVOLUTION_1D</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         perform a 1D convolution operation on incoming RGBA color values.
@@ -163,6 +181,8 @@
             <varlistentry>
                 <term><constant>GL_CONVOLUTION_2D</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         perform a 2D convolution operation on incoming RGBA color values.
@@ -173,6 +193,8 @@
             <varlistentry>
                 <term><constant>GL_CULL_FACE</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         cull polygons based on their winding in window coordinates.
@@ -183,6 +205,8 @@
             <varlistentry>
                 <term><constant>GL_DEPTH_TEST</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         do depth comparisons and update the depth buffer. Note that even if
@@ -196,6 +220,8 @@
             <varlistentry>
                 <term><constant>GL_DITHER</constant>	</term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         dither color components or indices before they are written to the
@@ -206,6 +232,8 @@
             <varlistentry>
                 <term><constant>GL_FOG</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         blend a fog color into the post-texturing color.
@@ -216,6 +244,8 @@
             <varlistentry>
                 <term><constant>GL_HISTOGRAM</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         histogram incoming RGBA color values.
@@ -226,6 +256,8 @@
             <varlistentry>
                 <term><constant>GL_INDEX_LOGIC_OP</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         apply the currently selected logical operation to the incoming index and color
@@ -237,6 +269,8 @@
             <varlistentry>
                 <term><constant>GL_LIGHT</constant><emphasis>i</emphasis></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         include light <emphasis>i</emphasis> in the evaluation of the lighting
@@ -247,6 +281,8 @@
             <varlistentry>
                 <term><constant>GL_LIGHTING</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         use the current lighting parameters to compute the vertex color or index.
@@ -259,6 +295,8 @@
             <varlistentry>
                 <term><constant>GL_LINE_SMOOTH</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         draw lines with correct filtering.
@@ -271,6 +309,8 @@
             <varlistentry>
                 <term><constant>GL_LINE_STIPPLE</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         use the current line stipple pattern when drawing lines. See
@@ -281,6 +321,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_COLOR_4</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calls to
@@ -294,6 +336,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_INDEX</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calls to
@@ -307,6 +351,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_NORMAL</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calls to
@@ -320,6 +366,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_TEXTURE_COORD_1</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calls to
@@ -335,6 +383,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_TEXTURE_COORD_2</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calls to
@@ -350,6 +400,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_TEXTURE_COORD_3</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calls to
@@ -366,6 +418,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_TEXTURE_COORD_4</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calls to
@@ -383,6 +437,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_VERTEX_3</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calls to
@@ -397,6 +453,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_VERTEX_4</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calls to
@@ -415,6 +473,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_COLOR_4</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calls to
@@ -428,6 +488,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_INDEX</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calls to
@@ -441,6 +503,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_NORMAL</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calls to
@@ -454,6 +518,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_TEXTURE_COORD_1</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calls to
@@ -469,6 +535,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_TEXTURE_COORD_2</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calls to
@@ -484,6 +552,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_TEXTURE_COORD_3</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calls to
@@ -500,6 +570,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_TEXTURE_COORD_4</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calls to
@@ -517,6 +589,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_VERTEX_3</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calls to
@@ -531,6 +605,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_VERTEX_4</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calls to
@@ -549,6 +625,8 @@
             <varlistentry>
                 <term><constant>GL_MINMAX</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         compute the minimum and maximum values of incoming RGBA color values.
@@ -559,6 +637,8 @@
             <varlistentry>
                 <term><constant>GL_MULTISAMPLE</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         use multiple fragment samples in computing the final color of a pixel.
@@ -569,6 +649,8 @@
             <varlistentry>
                 <term><constant>GL_NORMALIZE</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         normal vectors specified with <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry> are scaled to unit length
@@ -579,6 +661,8 @@
             <varlistentry>
                 <term><constant>GL_POINT_SMOOTH</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         draw points with proper filtering.
@@ -591,6 +675,8 @@
             <varlistentry>
                 <term><constant>GL_POINT_SPRITE</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         calculate texture coordinates for points based on texture
@@ -602,6 +688,8 @@
             <varlistentry>
                 <term><constant>GL_POLYGON_OFFSET_FILL</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled, and if the polygon is rendered in
                         <constant>GL_FILL</constant> mode, an offset is added to depth values of a polygon's
@@ -613,6 +701,8 @@
             <varlistentry>
                 <term><constant>GL_POLYGON_OFFSET_LINE</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled, and if the polygon is rendered in
                         <constant>GL_LINE</constant> mode, an offset is added to depth values of a polygon's
@@ -624,6 +714,8 @@
             <varlistentry>
                 <term><constant>GL_POLYGON_OFFSET_POINT</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled, an offset is added to depth values of a polygon's fragments
                         before the depth comparison is performed, if the polygon is rendered in
@@ -634,6 +726,8 @@
             <varlistentry>
                 <term><constant>GL_POLYGON_SMOOTH</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled, draw polygons with proper filtering.
                         Otherwise, draw aliased polygons. For correct antialiased polygons,
@@ -645,6 +739,8 @@
             <varlistentry>
                 <term><constant>GL_POLYGON_STIPPLE</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         use the current polygon stipple pattern when rendering
@@ -655,6 +751,8 @@
             <varlistentry>
                 <term><constant>GL_POST_COLOR_MATRIX_COLOR_TABLE</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         perform a color table lookup on RGBA color values after color matrix
@@ -666,6 +764,8 @@
             <varlistentry>
                 <term><constant>GL_POST_CONVOLUTION_COLOR_TABLE</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         perform a color table lookup on RGBA color values after convolution.
@@ -676,6 +776,8 @@
             <varlistentry>
                 <term><constant>GL_RESCALE_NORMAL</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled, normal vectors specified with <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry> are scaled to
                         unit length after transformation. See <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry>.
@@ -685,6 +787,8 @@
             <varlistentry>
                 <term><constant>GL_SAMPLE_ALPHA_TO_COVERAGE</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         compute a temporary coverage value where each bit is determined by the
@@ -696,6 +800,8 @@
             <varlistentry>
                 <term><constant>GL_SAMPLE_ALPHA_TO_ONE</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         each sample alpha value is replaced by the maximum representable alpha value.
@@ -705,6 +811,8 @@
             <varlistentry>
                 <term><constant>GL_SAMPLE_COVERAGE</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         the fragment's coverage is ANDed with the temporary coverage value.  If
@@ -717,6 +825,8 @@
             <varlistentry>
                 <term><constant>GL_SEPARABLE_2D</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled, perform a two-dimensional convolution operation using a separable
                         convolution filter on incoming RGBA color values.
@@ -727,6 +837,8 @@
             <varlistentry>
                 <term><constant>GL_SCISSOR_TEST</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         discard fragments that are outside the scissor rectangle.
@@ -737,6 +849,8 @@
             <varlistentry>
                 <term><constant>GL_STENCIL_TEST</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         do stencil testing and update the stencil buffer.
@@ -747,6 +861,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_1D</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled, one-dimensional texturing is performed
                         (unless two- or three-dimensional or cube-mapped texturing is also enabled).
@@ -757,6 +873,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_2D</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled, two-dimensional texturing is performed
                         (unless three-dimensional or cube-mapped texturing is also enabled).
@@ -767,6 +885,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_3D</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled, three-dimensional texturing is performed
                         (unless cube-mapped texturing is also enabled).
@@ -777,6 +897,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_CUBE_MAP</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled, cube-mapped texturing is performed.
                         See <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>.
@@ -786,6 +908,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_GEN_Q</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         the <emphasis>q</emphasis> texture coordinate is computed using
@@ -798,6 +922,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_GEN_R</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         the <emphasis>r</emphasis> texture coordinate is computed using
@@ -810,6 +936,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_GEN_S</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         the <emphasis>s</emphasis> texture coordinate is computed using
@@ -822,6 +950,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_GEN_T</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         the <emphasis>t</emphasis> texture coordinate is computed using
@@ -834,6 +964,8 @@
             <varlistentry>
                 <term><constant>GL_VERTEX_PROGRAM_POINT_SIZE</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         and a vertex shader is active, then the derived point size is taken from the (potentially clipped) shader builtin
@@ -844,6 +976,8 @@
             <varlistentry>
                 <term><constant>GL_VERTEX_PROGRAM_TWO_SIDE</constant></term>
                 <listitem>
+		        <para>
+		        </para>
                     <para>
                         If enabled,
                         and a vertex shader is active, it specifies that the GL will choose between front and back colors based on the
@@ -941,7 +1075,7 @@
             <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>Copyright</title>
+    <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

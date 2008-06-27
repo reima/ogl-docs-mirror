@@ -68,8 +68,6 @@
             <tgroup cols="2" align="left">
                 <colspec/>
                 <colspec/>
-                <thead>
-                </thead>
                 <tbody>
                     <row>
                         <entry align="left">
@@ -341,19 +339,8 @@
                         <entry align="left">
                         <constant>GL_LIGHT</constant><emphasis>i</emphasis>
 			where
-			<mml:math>
-			    <mml:mrow>
-				<mml:apply>
-				    <mml:leq/>
-				    <mml:mn>0</mml:mn>
-				    <mml:mi>i</mml:mi>
-			        </mml:apply>
-				<mml:mo>&lt;</mml:mo>
-				<mml:mtext>
-				    <constant>GL_MAX_LIGHTS</constant>
-				</mml:mtext>
-			    </mml:mrow>
-			</mml:math>
+				    <constant>0</constant> &lt;&#61; 		  				    <emphasis>i</emphasis> &lt;     				    <constant>GL_MAX_LIGHTS</constant>
+   
                         </entry>
                     </row>
                     <row>
@@ -1270,7 +1257,7 @@
             <citerefentry><refentrytitle>glPushClientAttrib</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>Copyright</title>
+    <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

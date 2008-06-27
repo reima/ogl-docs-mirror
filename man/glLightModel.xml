@@ -107,6 +107,8 @@
                 <term><constant>GL_LIGHT_MODEL_AMBIENT</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         <parameter>params</parameter> contains four integer or floating-point values that specify
                         the ambient RGBA intensity of the entire scene.
                         Integer values are mapped linearly such that the most positive representable
@@ -126,6 +128,8 @@
                 <term><constant>GL_LIGHT_MODEL_COLOR_CONTROL</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         <parameter>params</parameter> must be either <constant>GL_SEPARATE_SPECULAR_COLOR</constant> or
                         <constant>GL_SINGLE_COLOR</constant>.
                         <constant>GL_SINGLE_COLOR</constant> specifies that a single color is generated from the
@@ -141,6 +145,8 @@
                 <term><constant>GL_LIGHT_MODEL_LOCAL_VIEWER</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         <parameter>params</parameter> is a single integer or floating-point value that specifies
                         how specular reflection angles are computed.
                         If <parameter>params</parameter> is 0 (or 0.0), specular reflection angles take the
@@ -155,6 +161,8 @@
             <varlistentry>
                 <term><constant>GL_LIGHT_MODEL_TWO_SIDE</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         <parameter>params</parameter> is a single integer or floating-point value that specifies
                         whether one- or two-sided lighting calculations are done for polygons.
@@ -259,7 +267,7 @@
             <citerefentry><refentrytitle>glMaterial</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>Copyright</title>
+    <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

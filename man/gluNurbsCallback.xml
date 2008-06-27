@@ -84,6 +84,8 @@
                 <term><constant>GLU_NURBS_BEGIN</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         The begin callback indicates the start of a primitive. The function
                         takes a single argument of type GLenum, which can be one of 
                         <constant>GLU_LINES</constant>, <constant>GLU_LINE_STRIP</constant>, <constant>GLU_TRIANGLE_FAN</constant>, <constant>GLU_TRIANGLE_STRIP</constant>, <constant>GLU_TRIANGLES</constant>, or <constant>GLU_QUAD_STRIP</constant>. The
@@ -99,6 +101,8 @@ void begin( GLenum type );
                 <term><constant>GLU_NURBS_BEGIN_DATA</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         The same as the <constant>GLU_NURBS_BEGIN</constant> callback except that it takes an
                         additional pointer argument. This pointer is a copy of the pointer that
                         was specified at the last call to <function>gluNurbsCallbackData</function>.  The
@@ -113,6 +117,8 @@ void beginData(GLenum type, void *userData);
             <varlistentry>
                 <term><constant>GLU_NURBS_VERTEX</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         The vertex callback indicates a vertex of the primitive. The
                         coordinates of the vertex are stored in the parameter ``vertex''. All
@@ -130,6 +136,8 @@ void vertex( GLfloat *vertex );
                 <term><constant>GLU_NURBS_VERTEX_DATA</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         This is the same as the <constant>GLU_NURBS_VERTEX</constant> callback, except that
                         it takes an additional pointer argument. This pointer is a copy of the
                         pointer that was specified at the last call to
@@ -144,6 +152,8 @@ void vertexData( GLfloat *vertex, void *userData );
             <varlistentry>
                 <term><constant>GLU_NURBS_NORMAL</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         The normal callback is invoked as the vertex normal is generated.
                         The components of the normal are stored in the parameter ``normal.''
@@ -166,6 +176,8 @@ void normal( GLfloat *normal );
                 <term><constant>GLU_NURBS_NORMAL_DATA</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         The same as the <constant>GLU_NURBS_NORMAL</constant> callback except that it
                         takes an additional pointer argument. This pointer is a copy of the pointer
                         that was specified at the last call to <function>gluNurbsCallbackData</function>.  The default callback function is NULL. The function prototype for this callback function looks like:
@@ -178,6 +190,8 @@ void normalData( GLfloat *normal, void *userData );
             <varlistentry>
                 <term><constant>GLU_NURBS_COLOR</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         The color callback is invoked as the color of a vertex is generated.
                         The components of the color are stored in the parameter ``color.''
@@ -195,6 +209,8 @@ void color( GLfloat *color );
                 <term><constant>GLU_NURBS_COLOR_DATA</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         The same as the <constant>GLU_NURBS_COLOR</constant> callback except that it
                         takes an additional pointer argument. This pointer is a copy of the pointer
                         that was specified at the last call to <function>gluNurbsCallbackData</function>.  The default callback function is NULL. The function prototype for this callback function looks like:
@@ -207,6 +223,8 @@ void colorData( GLfloat *color, void *userData );
             <varlistentry>
                 <term><constant>GLU_NURBS_TEXTURE_COORD</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         The texture callback is invoked as the texture coordinates 
                         of a vertex are generated. These coordinates are stored in the parameter
@@ -233,6 +251,8 @@ void texCoord( GLfloat *texCoord );
                 <term> <constant>GLU_NURBS_TEXTURE_COORD_DATA</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         This is the same as the <constant>GLU_NURBS_TEXTURE_COORD</constant> callback, except that it
                         takes an additional pointer argument. This pointer is a copy of the pointer
                         that was specified at the last call to <function>gluNurbsCallbackData</function>.  The default callback function is NULL. The function prototype for this callback function looks like:
@@ -246,6 +266,8 @@ void texCoordData( GLfloat *texCoord, void *userData );
                 <term><constant>GLU_NURBS_END</constant></term>
                 <listitem>
                     <para>
+                    </para>
+                    <para>
                         The end callback is invoked at the end of a primitive. The default end callback function is NULL. The function prototype for this callback function looks like:
                         <programlisting>
 void end( void );
@@ -256,6 +278,8 @@ void end( void );
             <varlistentry>
                 <term><constant>GLU_NURBS_END_DATA</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         This is the same as the <constant>GLU_NURBS_END</constant> callback, except that it
                         takes an additional pointer argument. This pointer is a copy of the pointer
@@ -269,6 +293,8 @@ void endData( void  *userData );
             <varlistentry>
                 <term><constant>GLU_NURBS_ERROR</constant></term>
                 <listitem>
+                    <para>
+                    </para>
                     <para>
                         The error function is called when an error is encountered.
                         Its single argument
@@ -301,7 +327,7 @@ void endData( void  *userData );
             <citerefentry><refentrytitle>gluNurbsProperty</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>Copyright</title>
+    <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

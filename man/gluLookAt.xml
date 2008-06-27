@@ -358,7 +358,7 @@ glTranslated(-eyex, -eyey, -eyez);
             <citerefentry><refentrytitle>glFrustum</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>Copyright</title>
+    <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

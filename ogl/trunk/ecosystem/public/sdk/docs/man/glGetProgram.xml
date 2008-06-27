@@ -62,6 +62,8 @@
 	    <varlistentry>
 		<term><constant>GL_DELETE_STATUS</constant></term>
 		<listitem>
+		    <para>
+		    </para>
 		    <para> <parameter>params</parameter> returns
 		    <constant>GL_TRUE</constant> if
 		    <parameter>program</parameter> is currently flagged
@@ -73,6 +75,8 @@
 	    <varlistentry>
 		<term><constant>GL_LINK_STATUS</constant></term>
 		<listitem>
+		    <para>
+		    </para>
 		    <para> <parameter>params</parameter> returns
 		    <constant>GL_TRUE</constant> if the last link
 		    operation on <parameter>program</parameter> was
@@ -84,6 +88,8 @@
 	    <varlistentry>
 		<term><constant>GL_VALIDATE_STATUS</constant></term>
 		<listitem>
+		    <para>
+		    </para>
 		    <para> <parameter>params</parameter> returns
 		    <constant>GL_TRUE</constant> or if the last
 		    validation operation on
@@ -96,6 +102,8 @@
 	    <varlistentry>
 		<term><constant>GL_INFO_LOG_LENGTH</constant></term>
 		<listitem>
+		    <para>
+		    </para>
 		    <para> <parameter>params</parameter> returns the
 		    number of characters in the information log for
 		    <parameter>program</parameter> including the null
@@ -110,6 +118,8 @@
 	    <varlistentry>
 		<term><constant>GL_ATTACHED_SHADERS</constant></term>
 		<listitem>
+		    <para>
+		    </para>
 		    <para> <parameter>params</parameter> returns the
 		    number of shader objects attached to
 		    <parameter>program</parameter>.</para>
@@ -119,6 +129,8 @@
 	    <varlistentry>
 		<term><constant>GL_ACTIVE_ATTRIBUTES</constant></term>
 		<listitem>
+		    <para>
+		    </para>
 		    <para> <parameter>params</parameter> returns the
 		    number of active attribute variables for
 		    <parameter>program</parameter>.</para>
@@ -128,6 +140,8 @@
 	    <varlistentry>
 		<term><constant>GL_ACTIVE_ATTRIBUTE_MAX_LENGTH</constant></term>
 		<listitem>
+		    <para>
+		    </para>
 		    <para> <parameter>params</parameter> returns the
 		    length of the longest active attribute name for
 		    <parameter>program</parameter>, including the null
@@ -141,6 +155,8 @@
 	    <varlistentry>
 		<term><constant>GL_ACTIVE_UNIFORMS</constant></term>
 		<listitem>
+		    <para>
+		    </para>
 		    <para> <parameter>params</parameter> returns the
 		    number of active uniform variables for
 		    <parameter>program</parameter>.</para>
@@ -150,6 +166,8 @@
 	    <varlistentry>
 		<term><constant>GL_ACTIVE_UNIFORM_MAX_LENGTH</constant></term>
 		<listitem>
+		    <para>
+		    </para>
 		    <para> <parameter>params</parameter> returns the
 		    length of the longest active uniform variable name
 		    for <parameter>program</parameter>, including the
@@ -212,7 +230,7 @@
 	<citerefentry><refentrytitle>glLinkProgram</refentrytitle></citerefentry>,
 	<citerefentry><refentrytitle>glValidateProgram</refentrytitle></citerefentry></para>
     </refsect1>
-    <refsect1><title>Copyright</title>
+    <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 2003-2005 3Dlabs Inc. Ltd. 
             This material may be distributed subject to the terms and conditions set forth in 

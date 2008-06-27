@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
               "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry id="glBegin">
+<refentry id="glBeginQuery">
     <refmeta>
         <refmetainfo>
             <copyright>
@@ -143,7 +143,7 @@
             <citerefentry><refentrytitle>glIsQuery</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>Copyright</title>
+    <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 2005 Addison-Wesley. 
             This material may be distributed subject to the terms and conditions set forth in 

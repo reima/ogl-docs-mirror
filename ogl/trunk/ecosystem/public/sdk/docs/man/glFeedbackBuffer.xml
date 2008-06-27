@@ -129,63 +129,64 @@
             Colors are fed back as four values in RGBA mode and one value
             in color index mode.
         </para>
+
         <para>
             <para>
-                feedbackList &#x2190; feedbackItem feedbackList | feedbackItem
+                feedbackList <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> feedbackItem feedbackList | feedbackItem
             </para>
             <para>
-                feedbackItem &#x2190; point | lineSegment | polygon | bitmap | pixelRectangle | passThru
+                feedbackItem <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> point | lineSegment | polygon | bitmap | pixelRectangle | passThru
             </para>
             <para>
-                point &#x2190; <constant>GL_POINT_TOKEN</constant> vertex
+                point <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> <constant>GL_POINT_TOKEN</constant> vertex
             </para>
             <para>
-                lineSegment &#x2190; <constant>GL_LINE_TOKEN</constant> vertex vertex | <constant>GL_LINE_RESET_TOKEN</constant> vertex vertex
+                lineSegment <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> <constant>GL_LINE_TOKEN</constant> vertex vertex | <constant>GL_LINE_RESET_TOKEN</constant> vertex vertex
             </para>
             <para>
-                polygon &#x2190; <constant>GL_POLYGON_TOKEN</constant> n polySpec
+                polygon <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> <constant>GL_POLYGON_TOKEN</constant> n polySpec
             </para>
             <para>
-                polySpec &#x2190; polySpec vertex | vertex vertex vertex
+                polySpec <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> polySpec vertex | vertex vertex vertex
             </para>
             <para>
-                bitmap &#x2190; <constant>GL_BITMAP_TOKEN</constant> vertex
+                bitmap <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> <constant>GL_BITMAP_TOKEN</constant> vertex
             </para>
             <para>
-                pixelRectangle &#x2190; <constant>GL_DRAW_PIXEL_TOKEN</constant> vertex | <constant>GL_COPY_PIXEL_TOKEN</constant> vertex
+                pixelRectangle <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> <constant>GL_DRAW_PIXEL_TOKEN</constant> vertex | <constant>GL_COPY_PIXEL_TOKEN</constant> vertex
             </para>
             <para>
-                passThru &#x2190; <constant>GL_PASS_THROUGH_TOKEN</constant> value
+                passThru <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> <constant>GL_PASS_THROUGH_TOKEN</constant> value
             </para>
             <para>
-                vertex &#x2190; 2d | 3d | 3dColor | 3dColorTexture | 4dColorTexture
+                vertex <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> 2d | 3d | 3dColor | 3dColorTexture | 4dColorTexture
             </para>
             <para>
-                2d &#x2190; value value
+                2d <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> value value
             </para>
             <para>
-                3d &#x2190; value value value
+                3d <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> value value value
             </para>
             <para>
-                3dColor &#x2190; value value value color
+                3dColor <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> value value value color
             </para>
             <para>
-                3dColorTexture &#x2190; value value value color tex
+                3dColorTexture <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> value value value color tex
             </para>
             <para>
-                4dColorTexture &#x2190; value value value value color tex
+                4dColorTexture <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> value value value value color tex
             </para>
             <para>
-                color &#x2190; rgba | index
+                color <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> rgba | index
             </para>
             <para>
-                rgba &#x2190; value value value value
+                rgba <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> value value value value
             </para>
             <para>
-                index &#x2190; value
+                index <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> value
             </para>
             <para>
-                tex &#x2190; value value value value
+                tex <inlineequation><mml:math><mml:mrow><mml:mn>&#x2190;</mml:mn></mml:mrow></mml:math></inlineequation> value value value value
             </para>
             <para>
             </para>
@@ -217,11 +218,11 @@
         </para>
         <informaltable frame="topbot">
             <tgroup cols="5" align="left">
-                <colspec/>
-                <colspec/>
-                <colspec align="center"/>
-                <colspec align="center"/>
-                <colspec align="center"/>
+                <colspec colwidth="2.7*" />
+                <colspec colwidth="1.5*" />
+                <colspec colwidth="1*" align="center"/>
+                <colspec colwidth="1*" align="center"/>
+                <colspec colwidth="2.5*" align="center"/>
                 <thead>
                     <row>
                         <entry rowsep="1" align="left"><emphasis role="bold">
@@ -300,7 +301,7 @@
                         <constant>GL_3D_COLOR_TEXTURE</constant>
                         </entry>
                         <entry align="left">
-                        <emphasis>x</emphasis>, <emphasis>y</emphasis>, <emphasis>z</emphasis>,
+                        <emphasis>x</emphasis>, <emphasis>y</emphasis>, <emphasis>z</emphasis>
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math><mml:mi mathvariant="italic">k</mml:mi></mml:math></inlineequation>
@@ -408,7 +409,7 @@
             <citerefentry><refentrytitle>glSelectBuffer</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>Copyright</title>
+    <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

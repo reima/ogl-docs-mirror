@@ -111,6 +111,8 @@
             <varlistentry>
                 <term><constant>GL_ACCUM_ALPHA_BITS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of alpha bitplanes in the accumulation buffer.
@@ -120,6 +122,8 @@
             <varlistentry>
                 <term><constant>GL_ACCUM_BLUE_BITS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of blue bitplanes in the accumulation buffer.
@@ -129,6 +133,8 @@
             <varlistentry>
                 <term><constant>GL_ACCUM_CLEAR_VALUE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns four values:
                         the red, green, blue, and alpha values used to clear the accumulation buffer.
@@ -150,6 +156,8 @@
             <varlistentry>
                 <term><constant>GL_ACCUM_GREEN_BITS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of green bitplanes in the accumulation buffer.
@@ -159,6 +167,8 @@
             <varlistentry>
                 <term><constant>GL_ACCUM_RED_BITS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of red bitplanes in the accumulation buffer.
@@ -168,6 +178,8 @@
             <varlistentry>
                 <term><constant>GL_ACTIVE_TEXTURE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value indicating the active multitexture unit.
                         The initial value is <constant>GL_TEXTURE0</constant>.
@@ -178,6 +190,8 @@
             <varlistentry>
                 <term><constant>GL_ALIASED_POINT_SIZE_RANGE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns two values,
                         the smallest and largest supported sizes for aliased points.
@@ -187,6 +201,8 @@
             <varlistentry>
                 <term><constant>GL_ALIASED_LINE_WIDTH_RANGE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns two values,
                         the smallest and largest supported widths for aliased lines.
@@ -196,6 +212,8 @@
             <varlistentry>
                 <term><constant>GL_ALPHA_BIAS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the alpha bias factor used during pixel transfers. The initial value is 0.
@@ -206,6 +224,8 @@
             <varlistentry>
                 <term><constant>GL_ALPHA_BITS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of alpha bitplanes in each color buffer.
@@ -215,6 +235,8 @@
             <varlistentry>
                 <term><constant>GL_ALPHA_SCALE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the alpha scale factor used
@@ -226,6 +248,8 @@
             <varlistentry>
                 <term><constant>GL_ALPHA_TEST</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether alpha testing
                         of fragments is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -236,6 +260,8 @@
             <varlistentry>
                 <term><constant>GL_ALPHA_TEST_FUNC</constant> <parameter>params</parameter> returns one value,</term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         the symbolic name of the alpha test function. The initial value is
                         <constant>GL_ALWAYS</constant>.
@@ -246,6 +272,8 @@
             <varlistentry>
                 <term><constant>GL_ALPHA_TEST_REF</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the reference value for the alpha test. The initial value is 0.
@@ -266,6 +294,8 @@
             <varlistentry>
                 <term><constant>GL_ARRAY_BUFFER_BINDING</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value, the name of the buffer object
                         currently bound to the target <constant>GL_ARRAY_BUFFER</constant>. If no buffer object
@@ -277,6 +307,8 @@
             <varlistentry>
                 <term><constant>GL_ATTRIB_STACK_DEPTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the depth of the attribute stack.
@@ -289,6 +321,8 @@
             <varlistentry>
                 <term><constant>GL_AUTO_NORMAL</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether 2D map evaluation
                         automatically generates surface normals. The initial value is <constant>GL_FALSE</constant>.
@@ -299,6 +333,8 @@
             <varlistentry>
                 <term><constant>GL_AUX_BUFFERS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of auxiliary color buffers available.
@@ -308,6 +344,8 @@
             <varlistentry>
                 <term><constant>GL_BLEND</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether blending is
                         enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -318,6 +356,8 @@
             <varlistentry>
                 <term><constant>GL_BLEND_COLOR</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns four values,
                         the red, green, blue, and alpha values which are the components of
@@ -329,6 +369,8 @@
             <varlistentry>
                 <term><constant>GL_BLEND_DST_ALPHA</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the symbolic constant identifying the alpha destination blend
@@ -340,6 +382,8 @@
             <varlistentry>
                 <term><constant>GL_BLEND_DST_RGB</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the symbolic constant identifying the RGB destination blend
@@ -351,6 +395,8 @@
             <varlistentry>
                 <term><constant>GL_BLEND_EQUATION_RGB</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, a symbolic constant indicating whether
                         the RGB blend equation is <constant>GL_FUNC_ADD</constant>, <constant>GL_FUNC_SUBTRACT</constant>, 
@@ -362,6 +408,8 @@
             <varlistentry>
                 <term><constant>GL_BLEND_EQUATION_ALPHA</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, a symbolic constant indicating whether
                         the Alpha blend equation is <constant>GL_FUNC_ADD</constant>, <constant>GL_FUNC_SUBTRACT</constant>, 
@@ -373,6 +421,8 @@
             <varlistentry>
                 <term><constant>GL_BLEND_SRC_ALPHA</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the symbolic constant identifying the alpha source blend function. The initial
@@ -384,6 +434,8 @@
             <varlistentry>
                 <term><constant>GL_BLEND_SRC_RGB</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the symbolic constant identifying the RGB source blend function. The initial
@@ -395,6 +447,8 @@
             <varlistentry>
                 <term><constant>GL_BLUE_BIAS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the blue bias factor used during pixel transfers. The initial value is 0.
@@ -405,6 +459,8 @@
             <varlistentry>
                 <term><constant>GL_BLUE_BITS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of blue bitplanes in each color buffer.
@@ -414,6 +470,8 @@
             <varlistentry>
                 <term><constant>GL_BLUE_SCALE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the blue scale factor used during pixel transfers. The initial value is 1.
@@ -424,6 +482,8 @@
             <varlistentry>
                 <term><constant>GL_CLIENT_ACTIVE_TEXTURE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single integer value indicating the current client active
                         multitexture unit. The initial value is <constant>GL_TEXTURE0</constant>.
@@ -434,6 +494,8 @@
             <varlistentry>
                 <term><constant>GL_CLIENT_ATTRIB_STACK_DEPTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value indicating the depth of the
                         attribute stack. The initial value is 0.
@@ -444,6 +506,8 @@
             <varlistentry>
                 <term><constant>GL_CLIP_PLANE</constant><emphasis>i</emphasis></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether the specified
                         clipping plane is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -454,6 +518,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_ARRAY</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether the color array is enabled. The initial value is <constant>GL_FALSE</constant>.
                         See <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>.
@@ -463,6 +529,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_ARRAY_BUFFER_BINDING</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value, the name of the buffer object
                         associated with the color array. This buffer object would have been bound to the 
@@ -476,6 +544,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_ARRAY_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of components per color in the color array. The initial value
@@ -487,6 +557,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_ARRAY_STRIDE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the byte offset between consecutive colors in the color array. The initial
@@ -498,6 +570,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_ARRAY_TYPE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the data type of each component in the color array. The initial value
@@ -509,6 +583,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_CLEAR_VALUE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns four values:
                         the red, green, blue, and alpha values used to clear the color buffers.
@@ -530,6 +606,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_LOGIC_OP</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether a fragment's
                         RGBA color values are merged into the framebuffer using a logical
@@ -541,6 +619,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_MATERIAL</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether one or more
                         material parameters are tracking the current color. The initial value
@@ -552,6 +632,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_MATERIAL_FACE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating which materials have a parameter that is
@@ -563,6 +645,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_MATERIAL_PARAMETER</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating which material parameters are
@@ -575,6 +659,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_MATRIX</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns sixteen values:
                         the color matrix on the top of the color matrix stack. Initially
@@ -586,6 +672,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_MATRIX_STACK_DEPTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum supported depth of the projection matrix stack. The value must
@@ -597,6 +685,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_SUM</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether primary and
                         secondary color sum is enabled.
@@ -607,6 +697,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_TABLE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether the color table
                         lookup is enabled.
@@ -617,6 +709,8 @@
             <varlistentry>
                 <term><constant>GL_COLOR_WRITEMASK</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns four boolean values:
                         the red, green, blue, and alpha write enables for the color
@@ -629,6 +723,8 @@
             <varlistentry>
                 <term><constant>GL_COMPRESSED_TEXTURE_FORMATS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a <constant>GL_NUM_COMPRESSED_TEXTURE_FORMATS</constant> of symbolic
                         constants indicating which compressed texture formats are available.
@@ -639,6 +735,8 @@
             <varlistentry>
                 <term><constant>GL_CONVOLUTION_1D</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether 1D convolution
                         is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -649,6 +747,8 @@
             <varlistentry>
                 <term><constant>GL_CONVOLUTION_2D</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether 2D convolution
                         is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -659,6 +759,8 @@
             <varlistentry>
                 <term><constant>GL_CULL_FACE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether polygon culling
                         is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -669,6 +771,8 @@
             <varlistentry>
                 <term><constant>GL_CULL_FACE_MODE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating which polygon faces are to be
@@ -680,6 +784,8 @@
             <varlistentry>
                 <term><constant>GL_CURRENT_COLOR</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns four values:
                         the red, green, blue, and alpha values of the current color.
@@ -701,6 +807,8 @@
             <varlistentry>
                 <term><constant>GL_CURRENT_FOG_COORD</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the current fog coordinate.  The initial value
                         is 0.
@@ -711,6 +819,8 @@
             <varlistentry>
                 <term><constant>GL_CURRENT_INDEX</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the current color index. The initial value is 1.
@@ -721,6 +831,8 @@
             <varlistentry>
                 <term><constant>GL_CURRENT_NORMAL</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns three values:
                         the <emphasis>x</emphasis>, <emphasis>y</emphasis>, and <emphasis>z</emphasis> values of the current normal.
@@ -742,6 +854,8 @@
             <varlistentry>
                 <term><constant>GL_CURRENT_PROGRAM</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the name of the program object that is currently active, or 0 if no program object is active.
@@ -752,6 +866,8 @@
             <varlistentry>
                 <term><constant>GL_CURRENT_RASTER_COLOR</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns four values:
                         the red, green, blue, and alpha color values of the current raster position.
@@ -773,6 +889,8 @@
             <varlistentry>
                 <term><constant>GL_CURRENT_RASTER_DISTANCE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the distance from the eye to the current
                         raster position. The initial value is 0.
@@ -783,6 +901,8 @@
             <varlistentry>
                 <term><constant>GL_CURRENT_RASTER_INDEX</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the color index of the current raster position. The initial value is 1.
@@ -793,6 +913,8 @@
             <varlistentry>
                 <term><constant>GL_CURRENT_RASTER_POSITION</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns four values:
                         the <emphasis>x</emphasis>, <emphasis>y</emphasis>, <emphasis>z</emphasis>, and <emphasis>w</emphasis> components of the current
@@ -806,6 +928,8 @@
             <varlistentry>
                 <term><constant>GL_CURRENT_RASTER_POSITION_VALID</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether the current
                         raster position is valid. The initial value is <constant>GL_TRUE</constant>.
@@ -816,6 +940,8 @@
             <varlistentry>
                 <term><constant>GL_CURRENT_RASTER_SECONDARY_COLOR</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns four values:
                         the red, green, blue, and alpha secondary color values of the current raster position.
@@ -837,6 +963,8 @@
             <varlistentry>
                 <term><constant>GL_CURRENT_RASTER_TEXTURE_COORDS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns four values: the <emphasis>s</emphasis>, <emphasis>t</emphasis>, <emphasis>r</emphasis>, and <emphasis>q</emphasis>
                         texture coordinates of the current raster position. The initial value is (0, 0, 0, 1).
@@ -847,6 +975,8 @@
             <varlistentry>
                 <term><constant>GL_CURRENT_SECONDARY_COLOR</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns four values: the red, green, blue, and alpha values of the
                         current secondary color.  Integer values, if requested, are linearly mapped
@@ -865,6 +995,8 @@
             <varlistentry>
                 <term><constant>GL_CURRENT_TEXTURE_COORDS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns four values:
                         the <emphasis>s</emphasis>, <emphasis>t</emphasis>, <emphasis>r</emphasis>, and <emphasis>q</emphasis> current texture
@@ -876,6 +1008,8 @@
             <varlistentry>
                 <term><constant>GL_DEPTH_BIAS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the depth bias factor used during pixel transfers. The initial value is 0.
@@ -886,6 +1020,8 @@
             <varlistentry>
                 <term><constant>GL_DEPTH_BITS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of bitplanes in the depth buffer.
@@ -895,6 +1031,8 @@
             <varlistentry>
                 <term><constant>GL_DEPTH_CLEAR_VALUE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the value that is used to clear the depth buffer.
@@ -916,6 +1054,8 @@
             <varlistentry>
                 <term><constant>GL_DEPTH_FUNC</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the symbolic constant that indicates the depth comparison
@@ -927,6 +1067,8 @@
             <varlistentry>
                 <term><constant>GL_DEPTH_RANGE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns two values:
                         the near and far mapping limits for the depth buffer.
@@ -948,6 +1090,8 @@
             <varlistentry>
                 <term><constant>GL_DEPTH_SCALE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the depth scale factor used during pixel transfers. The initial value is 1.
@@ -958,6 +1102,8 @@
             <varlistentry>
                 <term><constant>GL_DEPTH_TEST</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether depth testing
                         of fragments is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -968,6 +1114,8 @@
             <varlistentry>
                 <term><constant>GL_DEPTH_WRITEMASK</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating if the depth buffer
                         is enabled for writing. The initial value is <constant>GL_TRUE</constant>.
@@ -978,6 +1126,8 @@
             <varlistentry>
                 <term><constant>GL_DITHER</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether dithering of
                         fragment colors and indices is enabled. The initial value is <constant>GL_TRUE</constant>.
@@ -987,6 +1137,8 @@
             <varlistentry>
                 <term><constant>GL_DOUBLEBUFFER</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether double buffering
                         is supported.
@@ -996,6 +1148,8 @@
             <varlistentry>
                 <term><constant>GL_DRAW_BUFFER</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating which buffers are being drawn to.
@@ -1007,6 +1161,8 @@
             <varlistentry>
                 <term><constant>GL_DRAW_BUFFER</constant><emphasis>i</emphasis></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating which buffers are being drawn to by the corresponding output color.
@@ -1020,6 +1176,8 @@
             <varlistentry>
                 <term><constant>GL_EDGE_FLAG</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether the current
                         edge flag is <constant>GL_TRUE</constant> or <constant>GL_FALSE</constant>. The initial value is <constant>GL_TRUE</constant>.
@@ -1030,6 +1188,8 @@
             <varlistentry>
                 <term><constant>GL_EDGE_FLAG_ARRAY</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether the edge
                         flag array is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -1040,6 +1200,8 @@
             <varlistentry>
                 <term><constant>GL_EDGE_FLAG_ARRAY_BUFFER_BINDING</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value, the name of the buffer object
                         associated with the edge flag array. This buffer object would have been bound to the 
@@ -1053,6 +1215,8 @@
             <varlistentry>
                 <term><constant>GL_EDGE_FLAG_ARRAY_STRIDE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the byte offset between consecutive edge flags in the edge flag
@@ -1064,6 +1228,8 @@
             <varlistentry>
                 <term><constant>GL_ELEMENT_ARRAY_BUFFER_BINDING</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value, the name of the buffer object
                         currently bound to the target <constant>GL_ELEMENT_ARRAY_BUFFER</constant>. If no buffer object
@@ -1075,6 +1241,8 @@
             <varlistentry>
                 <term><constant>GL_FEEDBACK_BUFFER_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the size of the feedback buffer.
                         See <citerefentry><refentrytitle>glFeedbackBuffer</refentrytitle></citerefentry>.
@@ -1084,6 +1252,8 @@
             <varlistentry>
                 <term><constant>GL_FEEDBACK_BUFFER_TYPE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the type of the feedback buffer.
                         See <citerefentry><refentrytitle>glFeedbackBuffer</refentrytitle></citerefentry>.
@@ -1093,6 +1263,8 @@
             <varlistentry>
                 <term><constant>GL_FOG</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether fogging is
                         enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -1103,6 +1275,8 @@
             <varlistentry>
                 <term><constant>GL_FOG_COORD_ARRAY</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether the fog coordinate array is enabled. The initial value is <constant>GL_FALSE</constant>.
                         See <citerefentry><refentrytitle>glFogCoordPointer</refentrytitle></citerefentry>.
@@ -1112,6 +1286,8 @@
             <varlistentry>
                 <term><constant>GL_FOG_COORD_ARRAY_BUFFER_BINDING</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value, the name of the buffer object
                         associated with the fog coordinate array. This buffer object would have been bound to the 
@@ -1125,6 +1301,8 @@
             <varlistentry>
                 <term><constant>GL_FOG_COORD_ARRAY_STRIDE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the byte offset between consecutive fog coordinates in the fog coordinate
@@ -1136,6 +1314,8 @@
             <varlistentry>
                 <term><constant>GL_FOG_COORD_ARRAY_TYPE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the type of the fog coordinate array.
                         The initial value is <constant>GL_FLOAT</constant>.
@@ -1146,6 +1326,8 @@
             <varlistentry>
                 <term><constant>GL_FOG_COORD_SRC</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, a symbolic constant indicating the source of the fog coordinate.
                         The initial value is <constant>GL_FRAGMENT_DEPTH</constant>.
@@ -1156,6 +1338,8 @@
             <varlistentry>
                 <term><constant>GL_FOG_COLOR</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns four values:
                         the red, green, blue, and alpha components of the fog color.
@@ -1177,6 +1361,8 @@
             <varlistentry>
                 <term><constant>GL_FOG_DENSITY</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the fog density parameter. The initial value is 1.
@@ -1187,6 +1373,8 @@
             <varlistentry>
                 <term><constant>GL_FOG_END</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the end factor for the linear fog equation. The initial value is 1.
@@ -1197,6 +1385,8 @@
             <varlistentry>
                 <term><constant>GL_FOG_HINT</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating the mode of the fog hint. The initial value
@@ -1208,6 +1398,8 @@
             <varlistentry>
                 <term><constant>GL_FOG_INDEX</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the fog color index. The initial value is 0.
@@ -1218,6 +1410,8 @@
             <varlistentry>
                 <term><constant>GL_FOG_MODE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating which fog equation is selected. The initial
@@ -1229,6 +1423,8 @@
             <varlistentry>
                 <term><constant>GL_FOG_START</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the start factor for the linear fog equation. The initial value is 0.
@@ -1239,6 +1435,8 @@
             <varlistentry>
                 <term><constant>GL_FRAGMENT_SHADER_DERIVATIVE_HINT</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating the mode of the derivative accuracy hint 
@@ -1251,6 +1449,8 @@
             <varlistentry>
                 <term><constant>GL_FRONT_FACE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating whether clockwise or counterclockwise
@@ -1263,6 +1463,8 @@
             <varlistentry>
                 <term><constant>GL_GENERATE_MIPMAP_HINT</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating the mode of the mipmap generation filtering
@@ -1274,6 +1476,8 @@
             <varlistentry>
                 <term><constant>GL_GREEN_BIAS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the green bias factor used during pixel transfers. The initial value is 0.
@@ -1283,6 +1487,8 @@
             <varlistentry>
                 <term><constant>GL_GREEN_BITS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of green bitplanes in each color buffer.
@@ -1292,6 +1498,8 @@
             <varlistentry>
                 <term><constant>GL_GREEN_SCALE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the green scale factor used during pixel transfers. The initial value is 1.
@@ -1302,6 +1510,8 @@
             <varlistentry>
                 <term><constant>GL_HISTOGRAM</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether histogram is
                         enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -1312,6 +1522,8 @@
             <varlistentry>
                 <term><constant>GL_INDEX_ARRAY</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether the color
                         index array is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -1322,6 +1534,8 @@
             <varlistentry>
                 <term><constant>GL_INDEX_ARRAY_BUFFER_BINDING</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value, the name of the buffer object
                         associated with the color index array. This buffer object would have been bound to the 
@@ -1335,6 +1549,8 @@
             <varlistentry>
                 <term><constant>GL_INDEX_ARRAY_STRIDE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the byte offset between consecutive color indexes in the color index
@@ -1346,6 +1562,8 @@
             <varlistentry>
                 <term><constant>GL_INDEX_ARRAY_TYPE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the data type of indexes in the color index array. The initial value is
@@ -1357,6 +1575,8 @@
             <varlistentry>
                 <term><constant>GL_INDEX_BITS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of bitplanes in each color index buffer.
@@ -1366,6 +1586,8 @@
             <varlistentry>
                 <term><constant>GL_INDEX_CLEAR_VALUE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the color index used to clear the color index buffers. The initial value
@@ -1377,6 +1599,8 @@
             <varlistentry>
                 <term><constant>GL_INDEX_LOGIC_OP</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether a fragment's index
                         values are merged into the framebuffer using a logical
@@ -1388,6 +1612,8 @@
             <varlistentry>
                 <term><constant>GL_INDEX_MODE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether the GL is in
                         color index mode (<constant>GL_TRUE</constant>) or RGBA mode (<constant>GL_FALSE</constant>).
@@ -1397,6 +1623,8 @@
             <varlistentry>
                 <term><constant>GL_INDEX_OFFSET</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the offset added to color and stencil indices during pixel
@@ -1408,6 +1636,8 @@
             <varlistentry>
                 <term><constant>GL_INDEX_SHIFT</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the amount that color and stencil indices are shifted during pixel
@@ -1419,6 +1649,8 @@
             <varlistentry>
                 <term><constant>GL_INDEX_WRITEMASK</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a mask indicating which bitplanes of each color index buffer can be
@@ -1430,6 +1662,8 @@
             <varlistentry>
                 <term><constant>GL_LIGHT</constant><emphasis>i</emphasis></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether the specified
                         light is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -1440,6 +1674,8 @@
             <varlistentry>
                 <term><constant>GL_LIGHTING</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether lighting is
                         enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -1450,6 +1686,8 @@
             <varlistentry>
                 <term><constant>GL_LIGHT_MODEL_AMBIENT</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns four values:
                         the red, green, blue, and alpha components of the ambient intensity of
@@ -1472,6 +1710,8 @@
             <varlistentry>
                 <term><constant>GL_LIGHT_MODEL_COLOR_CONTROL</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns single enumerated value indicating whether specular
                         reflection calculations are separated from normal lighting computations.
@@ -1482,6 +1722,8 @@
             <varlistentry>
                 <term><constant>GL_LIGHT_MODEL_LOCAL_VIEWER</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether specular reflection
                         calculations treat the viewer as being local to the scene. The initial
@@ -1493,6 +1735,8 @@
             <varlistentry>
                 <term><constant>GL_LIGHT_MODEL_TWO_SIDE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether separate materials
                         are used to compute lighting for front- and back-facing
@@ -1504,6 +1748,8 @@
             <varlistentry>
                 <term><constant>GL_LINE_SMOOTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether antialiasing of
                         lines is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -1514,6 +1760,8 @@
             <varlistentry>
                 <term><constant>GL_LINE_SMOOTH_HINT</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating the mode of the line antialiasing
@@ -1525,6 +1773,8 @@
             <varlistentry>
                 <term><constant>GL_LINE_STIPPLE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether stippling of lines
                         is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -1535,6 +1785,8 @@
             <varlistentry>
                 <term><constant>GL_LINE_STIPPLE_PATTERN</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the 16-bit line stipple pattern. The initial value is all 1's.
@@ -1545,6 +1797,8 @@
             <varlistentry>
                 <term><constant>GL_LINE_STIPPLE_REPEAT</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the line stipple repeat factor. The initial value is 1.
@@ -1555,6 +1809,8 @@
             <varlistentry>
                 <term><constant>GL_LINE_WIDTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the line width as specified with <citerefentry><refentrytitle>glLineWidth</refentrytitle></citerefentry>. The initial value is
@@ -1565,6 +1821,8 @@
             <varlistentry>
                 <term><constant>GL_LINE_WIDTH_GRANULARITY</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the width difference between adjacent supported widths for antialiased lines.
@@ -1575,6 +1833,8 @@
             <varlistentry>
                 <term><constant>GL_LINE_WIDTH_RANGE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns two values:
                         the smallest and largest supported widths for antialiased
@@ -1586,6 +1846,8 @@
             <varlistentry>
                 <term><constant>GL_LIST_BASE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the base offset added to all names in arrays presented to
@@ -1597,6 +1859,8 @@
             <varlistentry>
                 <term><constant>GL_LIST_INDEX</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the name of the display list currently under construction.
@@ -1609,6 +1873,8 @@
             <varlistentry>
                 <term><constant>GL_LIST_MODE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating the construction mode of the display list
@@ -1620,6 +1886,8 @@
             <varlistentry>
                 <term><constant>GL_LOGIC_OP_MODE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating the selected logic operation
@@ -1631,6 +1899,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_COLOR_4</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether
                         1D evaluation generates colors. The initial value is <constant>GL_FALSE</constant>.
@@ -1641,6 +1911,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_GRID_DOMAIN</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns two values:
                         the endpoints of the 1D map's grid domain. The initial value is (0, 1).
@@ -1651,6 +1923,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_GRID_SEGMENTS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of partitions in the 1D map's grid domain. The initial value
@@ -1662,6 +1936,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_INDEX</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether
                         1D evaluation generates color indices. The initial value is <constant>GL_FALSE</constant>.
@@ -1672,6 +1948,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_NORMAL</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether
                         1D evaluation generates normals. The initial value is <constant>GL_FALSE</constant>.
@@ -1682,6 +1960,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_TEXTURE_COORD_1</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether
                         1D evaluation generates 1D texture coordinates. The initial value is
@@ -1693,6 +1973,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_TEXTURE_COORD_2</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether
                         1D evaluation generates 2D texture coordinates. The initial value is
@@ -1704,6 +1986,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_TEXTURE_COORD_3</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether
                         1D evaluation generates 3D texture coordinates. The initial value is
@@ -1715,6 +1999,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_TEXTURE_COORD_4</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether
                         1D evaluation generates 4D texture coordinates. The initial value is
@@ -1726,6 +2012,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_VERTEX_3</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether
                         1D evaluation generates 3D vertex coordinates. The initial value is
@@ -1737,6 +2025,8 @@
             <varlistentry>
                 <term><constant>GL_MAP1_VERTEX_4</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether
                         1D evaluation generates 4D vertex coordinates. The initial value is
@@ -1748,6 +2038,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_COLOR_4</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether
                         2D evaluation generates colors. The initial value is <constant>GL_FALSE</constant>.
@@ -1758,6 +2050,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_GRID_DOMAIN</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns four values:
                         the endpoints of the 2D map's 
@@ -1773,6 +2067,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_GRID_SEGMENTS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns two values:
                         the number of partitions in the 2D map's 
@@ -1788,6 +2084,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_INDEX</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether
                         2D evaluation generates color indices. The initial value is <constant>GL_FALSE</constant>.
@@ -1798,6 +2096,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_NORMAL</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether
                         2D evaluation generates normals. The initial value is <constant>GL_FALSE</constant>.
@@ -1808,6 +2108,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_TEXTURE_COORD_1</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether
                         2D evaluation generates 1D texture coordinates. The initial value is
@@ -1819,6 +2121,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_TEXTURE_COORD_2</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether
                         2D evaluation generates 2D texture coordinates. The initial value is
@@ -1830,6 +2134,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_TEXTURE_COORD_3</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether
                         2D evaluation generates 3D texture coordinates. The initial value is
@@ -1841,6 +2147,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_TEXTURE_COORD_4</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether
                         2D evaluation generates 4D texture coordinates. The initial value is
@@ -1852,6 +2160,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_VERTEX_3</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether
                         2D evaluation generates 3D vertex coordinates. The initial value is
@@ -1863,6 +2173,8 @@
             <varlistentry>
                 <term><constant>GL_MAP2_VERTEX_4</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether
                         2D evaluation generates 4D vertex coordinates. The initial value is
@@ -1874,6 +2186,8 @@
             <varlistentry>
                 <term><constant>GL_MAP_COLOR</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating if colors and
                         color indices are to be replaced by table lookup during pixel
@@ -1885,6 +2199,8 @@
             <varlistentry>
                 <term><constant>GL_MAP_STENCIL</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating if stencil indices
                         are to be replaced by table lookup during pixel transfers. The initial
@@ -1896,6 +2212,8 @@
             <varlistentry>
                 <term><constant>GL_MATRIX_MODE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating which matrix stack is currently the
@@ -1907,6 +2225,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_3D_TEXTURE_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a rough estimate of the largest 3D texture that the GL can handle.
@@ -1919,6 +2239,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_CLIENT_ATTRIB_STACK_DEPTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value indicating the maximum supported depth
                         of the client attribute stack.
@@ -1929,6 +2251,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_ATTRIB_STACK_DEPTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum supported depth of the attribute stack. The value must be
@@ -1940,6 +2264,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_CLIP_PLANES</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum number of application-defined clipping planes. The value must be at least 6.
@@ -1950,6 +2276,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_COLOR_MATRIX_STACK_DEPTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the maximum supported depth of the color matrix
                         stack.  The value must be at least 2.
@@ -1960,6 +2288,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the maximum supported texture image units that 
                         can be used to access texture maps from the vertex shader and the fragment processor combined. 
@@ -1973,6 +2303,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_CUBE_MAP_TEXTURE_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value.
                         The value gives a rough estimate of the largest cube-map texture that
@@ -1986,6 +2318,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_DRAW_BUFFERS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the maximum number
                         of simultaneous output colors allowed from a fragment shader using the 
@@ -1997,6 +2331,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_ELEMENTS_INDICES</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the recommended maximum number of vertex array indices.
@@ -2007,6 +2343,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_ELEMENTS_VERTICES</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the recommended maximum number of vertex array vertices.
@@ -2017,6 +2355,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_EVAL_ORDER</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum equation order supported by 1D and 2D
@@ -2028,6 +2368,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_FRAGMENT_UNIFORM_COMPONENTS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum number of individual floating-point, integer, or boolean values that can be held 
@@ -2039,6 +2381,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_LIGHTS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum number of lights. The value must be at least 8.
@@ -2049,6 +2393,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_LIST_NESTING</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum recursion depth allowed during display-list
@@ -2060,6 +2406,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_MODELVIEW_STACK_DEPTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum supported depth of the modelview matrix stack. The value must
@@ -2071,6 +2419,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_NAME_STACK_DEPTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum supported depth of the selection name stack. The value must be at least 64.
@@ -2081,6 +2431,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_PIXEL_MAP_TABLE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum supported size of a <citerefentry><refentrytitle>glPixelMap</refentrytitle></citerefentry> lookup table.
@@ -2092,6 +2444,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_PROJECTION_STACK_DEPTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the maximum supported depth of the projection
                         matrix stack. The value must be at least 2.
@@ -2102,6 +2456,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_TEXTURE_COORDS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum number of texture coordinate sets available to vertex and fragment shaders.
@@ -2114,6 +2470,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_TEXTURE_IMAGE_UNITS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the maximum supported texture image units that 
                         can be used to access texture maps from the fragment shader. 
@@ -2125,6 +2483,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_TEXTURE_LOD_BIAS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum, absolute value of the texture level-of-detail bias.  The
@@ -2135,6 +2495,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_TEXTURE_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value.
                         The value gives a rough estimate of the largest texture that
@@ -2149,6 +2511,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_TEXTURE_STACK_DEPTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum supported depth of the texture matrix stack. The value must be at least 2.
@@ -2159,6 +2523,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_TEXTURE_UNITS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value indicating the number of conventional 
                         texture units supported. Each conventional texture unit includes both a texture coordinate set
@@ -2173,6 +2539,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_VARYING_FLOATS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum number of interpolators available for processing varying variables used by
@@ -2185,6 +2553,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_VERTEX_ATTRIBS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum number of 4-component generic vertex attributes accessible to a vertex shader. 
@@ -2196,6 +2566,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the maximum supported texture image units that 
                         can be used to access texture maps from the vertex shader. The value may be 0.
@@ -2206,6 +2578,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_VERTEX_UNIFORM_COMPONENTS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum number of individual floating-point, integer, or boolean values that can be held 
@@ -2217,6 +2591,8 @@
             <varlistentry>
                 <term><constant>GL_MAX_VIEWPORT_DIMS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns two values:
                         the maximum supported width and height of the viewport.
@@ -2229,6 +2605,8 @@
             <varlistentry>
                 <term><constant>GL_MINMAX</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether pixel minmax
                         values are computed.  The initial value is <constant>GL_FALSE</constant>.
@@ -2239,6 +2617,8 @@
             <varlistentry>
                 <term><constant>GL_MODELVIEW_MATRIX</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns sixteen values:
                         the modelview matrix on the top of the modelview matrix stack. Initially
@@ -2250,6 +2630,8 @@
             <varlistentry>
                 <term><constant>GL_MODELVIEW_STACK_DEPTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of matrices on the modelview matrix stack.
@@ -2261,6 +2643,8 @@
             <varlistentry>
                 <term><constant>GL_NAME_STACK_DEPTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of names on the selection name stack. The initial value is 0.
@@ -2271,6 +2655,8 @@
             <varlistentry>
                 <term><constant>GL_NORMAL_ARRAY</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value, indicating whether the normal
                         array is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -2281,6 +2667,8 @@
             <varlistentry>
                 <term><constant>GL_NORMAL_ARRAY_BUFFER_BINDING</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value, the name of the buffer object
                         associated with the normal array. This buffer object would have been bound to the 
@@ -2294,6 +2682,8 @@
             <varlistentry>
                 <term><constant>GL_NORMAL_ARRAY_STRIDE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the byte offset between consecutive normals in the normal
@@ -2305,6 +2695,8 @@
             <varlistentry>
                 <term><constant>GL_NORMAL_ARRAY_TYPE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the data type of each coordinate in the normal array. The initial value is
@@ -2316,6 +2708,8 @@
             <varlistentry>
                 <term><constant>GL_NORMALIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether normals are
                         automatically scaled to unit length after they have been transformed to
@@ -2327,6 +2721,8 @@
             <varlistentry>
                 <term><constant>GL_NUM_COMPRESSED_TEXTURE_FORMATS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single integer value indicating the number of available
                         compressed texture formats.  The minimum value is 0.
@@ -2337,6 +2733,8 @@
             <varlistentry>
                 <term><constant>GL_PACK_ALIGNMENT</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the byte alignment used for writing pixel data to memory. The initial
@@ -2348,6 +2746,8 @@
             <varlistentry>
                 <term><constant>GL_PACK_IMAGE_HEIGHT</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the image height used for writing pixel data to memory.  The initial
@@ -2359,6 +2759,8 @@
             <varlistentry>
                 <term><constant>GL_PACK_LSB_FIRST</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether single-bit
                         pixels being written to memory are written first to the least significant
@@ -2370,6 +2772,8 @@
             <varlistentry>
                 <term><constant>GL_PACK_ROW_LENGTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the row length used for writing pixel data to memory. The initial value is
@@ -2381,6 +2785,8 @@
             <varlistentry>
                 <term><constant>GL_PACK_SKIP_IMAGES</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of pixel images skipped before the first pixel is written
@@ -2392,6 +2798,8 @@
             <varlistentry>
                 <term><constant>GL_PACK_SKIP_PIXELS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of pixel locations skipped before the first pixel is written
@@ -2403,6 +2811,8 @@
             <varlistentry>
                 <term><constant>GL_PACK_SKIP_ROWS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of rows of pixel locations skipped before the first pixel is written
@@ -2414,6 +2824,8 @@
             <varlistentry>
                 <term><constant>GL_PACK_SWAP_BYTES</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether the bytes of
                         two-byte and four-byte pixel indices and components are swapped before being
@@ -2425,6 +2837,8 @@
             <varlistentry>
                 <term><constant>GL_PERSPECTIVE_CORRECTION_HINT</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating the mode of the perspective correction
@@ -2436,6 +2850,8 @@
             <varlistentry>
                 <term><constant>GL_PIXEL_MAP_A_TO_A_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the size of the alpha-to-alpha pixel translation table.
@@ -2447,6 +2863,8 @@
             <varlistentry>
                 <term><constant>GL_PIXEL_MAP_B_TO_B_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the size of the blue-to-blue pixel translation table.
@@ -2458,6 +2876,8 @@
             <varlistentry>
                 <term><constant>GL_PIXEL_MAP_G_TO_G_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the size of the green-to-green pixel translation table.
@@ -2469,6 +2889,8 @@
             <varlistentry>
                 <term><constant>GL_PIXEL_MAP_I_TO_A_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the size of the index-to-alpha pixel translation table.
@@ -2480,6 +2902,8 @@
             <varlistentry>
                 <term><constant>GL_PIXEL_MAP_I_TO_B_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the size of the index-to-blue pixel translation table.
@@ -2491,6 +2915,8 @@
             <varlistentry>
                 <term><constant>GL_PIXEL_MAP_I_TO_G_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the size of the index-to-green pixel translation table.
@@ -2502,6 +2928,8 @@
             <varlistentry>
                 <term><constant>GL_PIXEL_MAP_I_TO_I_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the size of the index-to-index pixel translation table.
@@ -2513,6 +2941,8 @@
             <varlistentry>
                 <term><constant>GL_PIXEL_MAP_I_TO_R_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the size of the index-to-red pixel translation table.
@@ -2524,6 +2954,8 @@
             <varlistentry>
                 <term><constant>GL_PIXEL_MAP_R_TO_R_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the size of the red-to-red pixel translation table.
@@ -2535,6 +2967,8 @@
             <varlistentry>
                 <term><constant>GL_PIXEL_MAP_S_TO_S_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the size of the stencil-to-stencil pixel translation table.
@@ -2546,6 +2980,8 @@
             <varlistentry>
                 <term><constant>GL_PIXEL_PACK_BUFFER_BINDING</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value, the name of the buffer object
                         currently bound to the target <constant>GL_PIXEL_PACK_BUFFER</constant>. If no buffer object
@@ -2557,6 +2993,8 @@
             <varlistentry>
                 <term><constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value, the name of the buffer object
                         currently bound to the target <constant>GL_PIXEL_UNPACK_BUFFER</constant>. If no buffer object
@@ -2568,6 +3006,8 @@
             <varlistentry>
                 <term><constant>GL_POINT_DISTANCE_ATTENUATION</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns three values,
                         the coefficients for computing the attenuation value for points.
@@ -2578,6 +3018,8 @@
             <varlistentry>
                 <term><constant>GL_POINT_FADE_THRESHOLD_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the point size threshold for determining the point size.
@@ -2588,6 +3030,8 @@
             <varlistentry>
                 <term><constant>GL_POINT_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the point size as specified by <citerefentry><refentrytitle>glPointSize</refentrytitle></citerefentry>. The initial value is 1.
@@ -2597,6 +3041,8 @@
             <varlistentry>
                 <term><constant>GL_POINT_SIZE_GRANULARITY</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the size difference between adjacent supported sizes for antialiased points.
@@ -2607,6 +3053,8 @@
             <varlistentry>
                 <term><constant>GL_POINT_SIZE_MAX</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the upper bound for the attenuated point sizes.  The initial value is 0.0.
@@ -2617,6 +3065,8 @@
             <varlistentry>
                 <term><constant>GL_POINT_SIZE_MIN</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the lower bound for the attenuated point sizes. The initial value is 1.0.
@@ -2627,6 +3077,8 @@
             <varlistentry>
                 <term><constant>GL_POINT_SIZE_RANGE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns two values:
                         the smallest and largest supported sizes for antialiased
@@ -2639,6 +3091,8 @@
             <varlistentry>
                 <term><constant>GL_POINT_SMOOTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether antialiasing of
                         points is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -2649,6 +3103,8 @@
             <varlistentry>
                 <term><constant>GL_POINT_SMOOTH_HINT</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating the mode of the point antialiasing
@@ -2660,6 +3116,8 @@
             <varlistentry>
                 <term><constant>GL_POINT_SPRITE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether point sprite is
                         enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -2669,6 +3127,8 @@
             <varlistentry>
                 <term><constant>GL_POLYGON_MODE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns two values:
                         symbolic constants indicating whether front-facing and back-facing polygons
@@ -2681,6 +3141,8 @@
             <varlistentry>
                 <term><constant>GL_POLYGON_OFFSET_FACTOR</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the scaling factor used to determine the variable offset that is added
@@ -2693,6 +3155,8 @@
             <varlistentry>
                 <term><constant>GL_POLYGON_OFFSET_UNITS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value.
                         This value is multiplied by an implementation-specific value and then
@@ -2705,6 +3169,8 @@
             <varlistentry>
                 <term><constant>GL_POLYGON_OFFSET_FILL</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether polygon offset
                         is enabled for polygons in fill mode. The initial value is <constant>GL_FALSE</constant>.
@@ -2715,6 +3181,8 @@
             <varlistentry>
                 <term><constant>GL_POLYGON_OFFSET_LINE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether polygon offset
                         is enabled for polygons in line mode. The initial value is <constant>GL_FALSE</constant>.
@@ -2725,6 +3193,8 @@
             <varlistentry>
                 <term><constant>GL_POLYGON_OFFSET_POINT</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether polygon offset
                         is enabled for polygons in point mode. The initial value is <constant>GL_FALSE</constant>.
@@ -2735,6 +3205,8 @@
             <varlistentry>
                 <term><constant>GL_POLYGON_SMOOTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether antialiasing of
                         polygons is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -2745,6 +3217,8 @@
             <varlistentry>
                 <term><constant>GL_POLYGON_SMOOTH_HINT</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating the mode of the polygon antialiasing
@@ -2756,6 +3230,8 @@
             <varlistentry>
                 <term><constant>GL_POLYGON_STIPPLE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether polygon
                         stippling is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -2766,6 +3242,8 @@
             <varlistentry>
                 <term><constant>GL_POST_COLOR_MATRIX_COLOR_TABLE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether post color
                         matrix transformation lookup is enabled.
@@ -2777,6 +3255,8 @@
             <varlistentry>
                 <term><constant>GL_POST_COLOR_MATRIX_RED_BIAS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the red bias factor applied to RGBA fragments
                         after color matrix transformations.
@@ -2788,6 +3268,8 @@
             <varlistentry>
                 <term><constant>GL_POST_COLOR_MATRIX_GREEN_BIAS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the green bias factor applied to RGBA fragments
                         after color matrix transformations.
@@ -2799,6 +3281,8 @@
             <varlistentry>
                 <term><constant>GL_POST_COLOR_MATRIX_BLUE_BIAS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the blue bias factor applied to RGBA fragments
                         after color matrix transformations.
@@ -2810,6 +3294,8 @@
             <varlistentry>
                 <term><constant>GL_POST_COLOR_MATRIX_ALPHA_BIAS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the alpha bias factor applied to RGBA fragments
                         after color matrix transformations.
@@ -2821,6 +3307,8 @@
             <varlistentry>
                 <term><constant>GL_POST_COLOR_MATRIX_RED_SCALE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the red scale factor applied to RGBA fragments
                         after color matrix transformations.
@@ -2832,6 +3320,8 @@
             <varlistentry>
                 <term><constant>GL_POST_COLOR_MATRIX_GREEN_SCALE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the green scale factor applied to RGBA fragments
                         after color matrix transformations.
@@ -2843,6 +3333,8 @@
             <varlistentry>
                 <term><constant>GL_POST_COLOR_MATRIX_BLUE_SCALE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the blue scale factor applied to RGBA fragments
                         after color matrix transformations.
@@ -2854,6 +3346,8 @@
             <varlistentry>
                 <term><constant>GL_POST_COLOR_MATRIX_ALPHA_SCALE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the alpha scale factor applied to RGBA fragments
                         after color matrix transformations.
@@ -2865,6 +3359,8 @@
             <varlistentry>
                 <term><constant>GL_POST_CONVOLUTION_COLOR_TABLE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether post convolution
                         lookup is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -2875,6 +3371,8 @@
             <varlistentry>
                 <term><constant>GL_POST_CONVOLUTION_RED_BIAS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the red bias factor applied to RGBA fragments
                         after convolution. The initial value is 0.
@@ -2885,6 +3383,8 @@
             <varlistentry>
                 <term><constant>GL_POST_CONVOLUTION_GREEN_BIAS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the green bias factor applied to RGBA fragments
                         after convolution. The initial value is 0.
@@ -2895,6 +3395,8 @@
             <varlistentry>
                 <term><constant>GL_POST_CONVOLUTION_BLUE_BIAS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the blue bias factor applied to RGBA fragments
                         after convolution. The initial value is 0.
@@ -2905,6 +3407,8 @@
             <varlistentry>
                 <term><constant>GL_POST_CONVOLUTION_ALPHA_BIAS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the alpha bias factor applied to RGBA fragments
                         after convolution. The initial value is 0.
@@ -2915,6 +3419,8 @@
             <varlistentry>
                 <term><constant>GL_POST_CONVOLUTION_RED_SCALE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the red scale factor applied to RGBA fragments
                         after convolution. The initial value is 1.
@@ -2925,6 +3431,8 @@
             <varlistentry>
                 <term><constant>GL_POST_CONVOLUTION_GREEN_SCALE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the green scale factor applied to RGBA fragments
                         after convolution. The initial value is 1.
@@ -2935,6 +3443,8 @@
             <varlistentry>
                 <term><constant>GL_POST_CONVOLUTION_BLUE_SCALE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the blue scale factor applied to RGBA fragments
                         after convolution. The initial value is 1.
@@ -2945,6 +3455,8 @@
             <varlistentry>
                 <term><constant>GL_POST_CONVOLUTION_ALPHA_SCALE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the alpha scale factor applied to RGBA fragments
                         after convolution. The initial value is 1.
@@ -2955,6 +3467,8 @@
             <varlistentry>
                 <term><constant>GL_PROJECTION_MATRIX</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns sixteen values:
                         the projection matrix on the top of the projection matrix
@@ -2966,6 +3480,8 @@
             <varlistentry>
                 <term><constant>GL_PROJECTION_STACK_DEPTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of matrices on the projection matrix stack.
@@ -2977,6 +3493,8 @@
             <varlistentry>
                 <term><constant>GL_READ_BUFFER</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating which color buffer is selected for
@@ -2990,6 +3508,8 @@
             <varlistentry>
                 <term><constant>GL_RED_BIAS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the red bias factor used during pixel transfers. The initial value is 0.
@@ -2999,6 +3519,8 @@
             <varlistentry>
                 <term><constant>GL_RED_BITS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of red bitplanes in each color buffer.
@@ -3008,6 +3530,8 @@
             <varlistentry>
                 <term><constant>GL_RED_SCALE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the red scale factor used during pixel transfers. The initial value is 1.
@@ -3018,6 +3542,8 @@
             <varlistentry>
                 <term><constant>GL_RENDER_MODE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating whether the GL is in render,
@@ -3030,6 +3556,8 @@
             <varlistentry>
                 <term><constant>GL_RESCALE_NORMAL</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns single boolean value
                         indicating whether normal rescaling is enabled.
@@ -3040,6 +3568,8 @@
             <varlistentry>
                 <term><constant>GL_RGBA_MODE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether the GL is in RGBA
                         mode (true) or color index mode (false).
@@ -3050,6 +3580,8 @@
             <varlistentry>
                 <term><constant>GL_SAMPLE_BUFFERS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single integer value indicating the number of sample buffers
                         associated with the framebuffer.
@@ -3060,6 +3592,8 @@
             <varlistentry>
                 <term><constant>GL_SAMPLE_COVERAGE_VALUE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single positive floating-point value indicating the
                         current sample coverage value.
@@ -3070,6 +3604,8 @@
             <varlistentry>
                 <term><constant>GL_SAMPLE_COVERAGE_INVERT</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating if the temporary
                         coverage value should be inverted.
@@ -3080,6 +3616,8 @@
             <varlistentry>
                 <term><constant>GL_SAMPLES</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single integer value indicating the coverage mask size.
                         See <citerefentry><refentrytitle>glSampleCoverage</refentrytitle></citerefentry>.
@@ -3089,6 +3627,8 @@
             <varlistentry>
                 <term><constant>GL_SCISSOR_BOX</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns four values:
                         the 
@@ -3110,6 +3650,8 @@
             <varlistentry>
                 <term><constant>GL_SCISSOR_TEST</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether scissoring is
                         enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -3120,6 +3662,8 @@
             <varlistentry>
                 <term><constant>GL_SECONDARY_COLOR_ARRAY</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether the secondary color array is enabled. The initial value is <constant>GL_FALSE</constant>.
                         See <citerefentry><refentrytitle>glSecondaryColorPointer</refentrytitle></citerefentry>.
@@ -3129,6 +3673,8 @@
             <varlistentry>
                 <term><constant>GL_SECONDARY_COLOR_ARRAY_BUFFER_BINDING</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value, the name of the buffer object
                         associated with the secondary color array. This buffer object would have been bound to the 
@@ -3142,6 +3688,8 @@
             <varlistentry>
                 <term><constant>GL_SECONDARY_COLOR_ARRAY_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the number of components per color in the
                         secondary color array. The initial value is 3.
@@ -3152,6 +3700,8 @@
             <varlistentry>
                 <term><constant>GL_SECONDARY_COLOR_ARRAY_STRIDE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the byte offset between consecutive colors in
                         the secondary color array.  The initial value is 0.
@@ -3162,6 +3712,8 @@
             <varlistentry>
                 <term><constant>GL_SECONDARY_COLOR_ARRAY_TYPE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value, the data type of each component in the secondary
                         color array. The initial value is <constant>GL_FLOAT</constant>.
@@ -3172,6 +3724,8 @@
             <varlistentry>
                 <term><constant>GL_SELECTION_BUFFER_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> return one value,
                         the size of the selection buffer.
@@ -3182,6 +3736,8 @@
             <varlistentry>
                 <term><constant>GL_SEPARABLE_2D</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether 2D separable
                         convolution is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -3192,6 +3748,8 @@
             <varlistentry>
                 <term><constant>GL_SHADE_MODEL</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating whether the shading mode is flat or
@@ -3203,6 +3761,8 @@
             <varlistentry>
                 <term><constant>GL_SMOOTH_LINE_WIDTH_RANGE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns two values,
                         the smallest and largest supported widths for antialiased lines.
@@ -3213,6 +3773,8 @@
             <varlistentry>
                 <term><constant>GL_SMOOTH_LINE_WIDTH_GRANULARITY</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the granularity of widths for antialiased lines.
@@ -3223,6 +3785,8 @@
             <varlistentry>
                 <term><constant>GL_SMOOTH_POINT_SIZE_RANGE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns two values,
                         the smallest and largest supported widths for antialiased points.
@@ -3233,6 +3797,8 @@
             <varlistentry>
                 <term><constant>GL_SMOOTH_POINT_SIZE_GRANULARITY</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the granularity of sizes for antialiased points.
@@ -3243,6 +3809,8 @@
             <varlistentry>
                 <term><constant>GL_STENCIL_BACK_FAIL</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating what action is taken for back-facing polygons when the stencil
@@ -3254,6 +3822,8 @@
             <varlistentry>
                 <term><constant>GL_STENCIL_BACK_FUNC</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating what function is used for back-facing polygons to compare the
@@ -3266,6 +3836,8 @@
             <varlistentry>
                 <term><constant>GL_STENCIL_BACK_PASS_DEPTH_FAIL</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating what action is taken for back-facing polygons when the stencil
@@ -3278,6 +3850,8 @@
             <varlistentry>
                 <term><constant>GL_STENCIL_BACK_PASS_DEPTH_PASS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating what action is taken for back-facing polygons when the stencil
@@ -3289,6 +3863,8 @@
             <varlistentry>
                 <term><constant>GL_STENCIL_BACK_REF</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the reference value that is compared with the contents of the stencil
@@ -3300,6 +3876,8 @@
             <varlistentry>
                 <term><constant>GL_STENCIL_BACK_VALUE_MASK</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the mask that is used for back-facing polygons to mask both the stencil reference value and the
@@ -3311,6 +3889,8 @@
             <varlistentry>
                 <term><constant>GL_STENCIL_BACK_WRITEMASK</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the mask that controls writing of the stencil bitplanes for back-facing polygons. The initial value
@@ -3322,6 +3902,8 @@
             <varlistentry>
                 <term><constant>GL_STENCIL_BITS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of bitplanes in the stencil buffer.
@@ -3331,6 +3913,8 @@
             <varlistentry>
                 <term><constant>GL_STENCIL_CLEAR_VALUE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the index to which the stencil bitplanes are cleared. The initial value is
@@ -3342,6 +3926,8 @@
             <varlistentry>
                 <term><constant>GL_STENCIL_FAIL</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating what action is taken when the stencil
@@ -3356,6 +3942,8 @@
             <varlistentry>
                 <term><constant>GL_STENCIL_FUNC</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating what function is used to compare the
@@ -3371,6 +3959,8 @@
             <varlistentry>
                 <term><constant>GL_STENCIL_PASS_DEPTH_FAIL</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating what action is taken when the stencil
@@ -3386,6 +3976,8 @@
             <varlistentry>
                 <term><constant>GL_STENCIL_PASS_DEPTH_PASS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         a symbolic constant indicating what action is taken when the stencil
@@ -3400,6 +3992,8 @@
             <varlistentry>
                 <term><constant>GL_STENCIL_REF</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the reference value that is compared with the contents of the stencil
@@ -3414,6 +4008,8 @@
             <varlistentry>
                 <term><constant>GL_STENCIL_TEST</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether stencil testing
                         of fragments is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -3424,6 +4020,8 @@
             <varlistentry>
                 <term><constant>GL_STENCIL_VALUE_MASK</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the mask that is used to mask both the stencil reference value and the
@@ -3438,6 +4036,8 @@
             <varlistentry>
                 <term><constant>GL_STENCIL_WRITEMASK</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the mask that controls writing of the stencil bitplanes. The initial value
@@ -3452,6 +4052,8 @@
             <varlistentry>
                 <term><constant>GL_STEREO</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether stereo buffers
                         (left and right) are supported.
@@ -3461,6 +4063,8 @@
             <varlistentry>
                 <term><constant>GL_SUBPIXEL_BITS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         an estimate of the number of bits of subpixel resolution that are used to
@@ -3472,6 +4076,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_1D</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether 1D texture
                         mapping is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -3482,6 +4088,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_BINDING_1D</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value, the name of the texture
                         currently bound to the target <constant>GL_TEXTURE_1D</constant>. The initial value is 0.
@@ -3492,6 +4100,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_2D</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether 2D texture
                         mapping is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -3502,6 +4112,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_BINDING_2D</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value, the name of the texture
                         currently bound to the target <constant>GL_TEXTURE_2D</constant>. The initial value is 0.
@@ -3512,6 +4124,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_3D</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether 3D texture
                         mapping is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -3522,6 +4136,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_BINDING_3D</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value, the name of the texture
                         currently bound to the target <constant>GL_TEXTURE_3D</constant>. The initial value is 0.
@@ -3532,6 +4148,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_BINDING_CUBE_MAP</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value, the name of the texture
                         currently bound to the target <constant>GL_TEXTURE_CUBE_MAP</constant>. The initial value is 0.
@@ -3542,6 +4160,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_COMPRESSION_HINT</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value indicating the mode of the texture
                         compression hint.  The initial value is <constant>GL_DONT_CARE</constant>.
@@ -3551,6 +4171,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_COORD_ARRAY</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether the texture
                         coordinate array is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -3561,6 +4183,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_COORD_ARRAY_BUFFER_BINDING</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value, the name of the buffer object
                         associated with the texture coordinate array. This buffer object would have been bound to the 
@@ -3574,6 +4198,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_COORD_ARRAY_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of coordinates per element in the texture coordinate
@@ -3585,6 +4211,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_COORD_ARRAY_STRIDE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the byte offset between consecutive elements in the texture coordinate
@@ -3596,6 +4224,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_COORD_ARRAY_TYPE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the data type of the coordinates in the texture coordinate
@@ -3607,6 +4237,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_CUBE_MAP</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether cube-mapped texture
                         mapping is enabled.  The initial value is <constant>GL_FALSE</constant>.
@@ -3617,6 +4249,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_GEN_Q</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether automatic generation
                         of the <emphasis>q</emphasis> texture coordinate is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -3627,6 +4261,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_GEN_R</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether automatic generation
                         of the <emphasis>r</emphasis> texture coordinate is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -3637,6 +4273,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_GEN_S</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether automatic generation
                         of the <emphasis>S</emphasis> texture coordinate is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -3647,6 +4285,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_GEN_T</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether automatic generation
                         of the T texture coordinate is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -3657,6 +4297,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_MATRIX</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns sixteen values:
                         the texture matrix on the top of the texture matrix stack. Initially this
@@ -3668,6 +4310,8 @@
             <varlistentry>
                 <term><constant>GL_TEXTURE_STACK_DEPTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of matrices on the texture matrix stack.
@@ -3679,6 +4323,8 @@
             <varlistentry>
                 <term><constant>GL_TRANSPOSE_COLOR_MATRIX</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns 16 values, the elements of the color matrix in row-major
                         order.
@@ -3689,6 +4335,8 @@
             <varlistentry>
                 <term><constant>GL_TRANSPOSE_MODELVIEW_MATRIX</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns 16 values, the elements of the modelview matrix in row-major
                         order.
@@ -3699,6 +4347,8 @@
             <varlistentry>
                 <term><constant>GL_TRANSPOSE_PROJECTION_MATRIX</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns 16 values, the elements of the projection matrix in row-major
                         order.
@@ -3709,6 +4359,8 @@
             <varlistentry>
                 <term><constant>GL_TRANSPOSE_TEXTURE_MATRIX</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns 16 values, the elements of the texture matrix in row-major
                         order.
@@ -3719,6 +4371,8 @@
             <varlistentry>
                 <term><constant>GL_UNPACK_ALIGNMENT</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the byte alignment used for reading pixel data from memory. The initial
@@ -3730,6 +4384,8 @@
             <varlistentry>
                 <term><constant>GL_UNPACK_IMAGE_HEIGHT</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the image height used for reading pixel data from memory.  The initial
@@ -3741,6 +4397,8 @@
             <varlistentry>
                 <term><constant>GL_UNPACK_LSB_FIRST</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether single-bit
                         pixels being read from memory are read first from the least significant
@@ -3752,6 +4410,8 @@
             <varlistentry>
                 <term><constant>GL_UNPACK_ROW_LENGTH</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the row length used for reading pixel data from memory. The initial value
@@ -3763,6 +4423,8 @@
             <varlistentry>
                 <term><constant>GL_UNPACK_SKIP_IMAGES</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of pixel images skipped before the first pixel is read
@@ -3774,6 +4436,8 @@
             <varlistentry>
                 <term><constant>GL_UNPACK_SKIP_PIXELS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of pixel locations skipped before the first pixel is read
@@ -3785,6 +4449,8 @@
             <varlistentry>
                 <term><constant>GL_UNPACK_SKIP_ROWS</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of rows of pixel locations skipped before the first pixel is read
@@ -3796,6 +4462,8 @@
             <varlistentry>
                 <term><constant>GL_UNPACK_SWAP_BYTES</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether the bytes of
                         two-byte and four-byte pixel indices and components are swapped after being
@@ -3807,6 +4475,8 @@
             <varlistentry>
                 <term><constant>GL_VERTEX_ARRAY</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether the vertex
                         array is enabled. The initial value is <constant>GL_FALSE</constant>.
@@ -3817,6 +4487,8 @@
             <varlistentry>
                 <term><constant>GL_VERTEX_ARRAY_BUFFER_BINDING</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single value, the name of the buffer object
                         associated with the vertex array. This buffer object would have been bound to the 
@@ -3830,6 +4502,8 @@
             <varlistentry>
                 <term><constant>GL_VERTEX_ARRAY_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the number of coordinates per vertex in the vertex array. The initial
@@ -3841,6 +4515,8 @@
             <varlistentry>
                 <term><constant>GL_VERTEX_ARRAY_STRIDE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the byte offset between consecutive vertices in the vertex
@@ -3852,6 +4528,8 @@
             <varlistentry>
                 <term><constant>GL_VERTEX_ARRAY_TYPE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the data type of each coordinate in the vertex array. The initial value is
@@ -3863,6 +4541,8 @@
             <varlistentry>
                 <term><constant>GL_VERTEX_PROGRAM_POINT_SIZE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether vertex
                         program point size mode is enabled. If enabled, and a vertex shader is active, then the
@@ -3876,6 +4556,8 @@
             <varlistentry>
                 <term><constant>GL_VERTEX_PROGRAM_TWO_SIDE</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns a single boolean value indicating whether vertex
                         program two-sided color mode is enabled. If enabled, and a vertex shader is active, then the
@@ -3888,6 +4570,8 @@
             <varlistentry>
                 <term><constant>GL_VIEWPORT</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns four values:
                         the 
@@ -3910,6 +4594,8 @@
             <varlistentry>
                 <term><constant>GL_ZOOM_X</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the 
@@ -3922,6 +4608,8 @@
             <varlistentry>
                 <term><constant>GL_ZOOM_Y</constant></term>
                 <listitem>
+			  <para>
+			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
                         the 
@@ -4197,7 +4885,7 @@
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>Copyright</title>
+    <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

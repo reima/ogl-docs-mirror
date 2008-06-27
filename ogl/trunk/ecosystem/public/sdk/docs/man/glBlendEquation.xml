@@ -159,9 +159,9 @@
 
         <informaltable frame="topbot">
             <tgroup cols="3" align="left">
-                <colspec/>
-                <colspec/>
-                <colspec/>
+                <colspec colwidth="1.1*" />
+                <colspec colwidth="1*" />
+                <colspec colwidth="1*" />
                 <thead>
                     <row>
                         <entry rowsep="1" align="left"><emphasis role="bold">
@@ -838,7 +838,7 @@
             <citerefentry><refentrytitle>glBlendFuncSeparate</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>Copyright</title>
+    <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

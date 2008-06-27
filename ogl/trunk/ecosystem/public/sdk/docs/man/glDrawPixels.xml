@@ -777,14 +777,21 @@
                         and alpha set to the converted alpha value.
                         After this conversion, the pixel is treated as if it had been read
                         as an RGBA pixel.
+
+                    </para>
+		    </listitem>
+		</varlistentry>
+        </variablelist>
+
+			  <para>
                         The following table summarizes the meaning of the valid constants for the
                         <emphasis>type</emphasis> parameter:
-                    </para>
+			  </para>
                     <para>
                         <informaltable frame="topbot">
                             <tgroup cols="2" align="left">
-                                <colspec/>
-                                <colspec/>
+                                <colspec colwidth="1*" />
+                                <colspec colwidth="1*" />
                                 <thead>
                                     <row>
                                         <entry rowsep="1" align="left"><emphasis role="bold">
@@ -962,9 +969,9 @@
                     </para>
                     <para>
                     </para>
-                </listitem>
-            </varlistentry>
-        </variablelist>
+                <!--/listitem-->
+            <!--/varlistentry-->
+        <!--/variablelist-->
         <para>
             The rasterization described so far assumes pixel zoom factors of 1.
             If
@@ -1217,7 +1224,7 @@
             <citerefentry><refentrytitle>glWindowPos</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>Copyright</title>
+    <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

@@ -260,11 +260,11 @@
         </para>
         <informaltable frame="topbot">
             <tgroup cols="5" align="left">
-                <colspec/>
-                <colspec align="center"/>
-                <colspec align="center"/>
-                <colspec align="center"/>
-                <colspec align="center"/>
+                <colspec colwidth="4*" />
+                <colspec colwidth="2*"  align="center"/>
+                <colspec colwidth="2*"  align="center"/>
+                <colspec colwidth="1*"  align="center"/>
+                <colspec colwidth="1*"  align="center"/>
                 <thead>
                     <row>
                         <entry rowsep="1" align="left"><emphasis role="bold">
@@ -574,7 +574,7 @@
             <citerefentry><refentrytitle>glTexSubImage3D</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>Copyright</title>
+    <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

@@ -213,13 +213,13 @@
         </para>
         <informaltable frame="topbot">
             <tgroup cols="7" align="left">
-                <colspec/>
-                <colspec align="center"/>
-                <colspec align="center"/>
-                <colspec align="center"/>
-                <colspec align="center"/>
-                <colspec align="center"/>
-                <colspec align="center"/>
+                <colspec colwidth="2.5*" />
+                <colspec colwidth="1*" align="center"/>
+                <colspec colwidth="1*"  align="center"/>
+                <colspec colwidth="1*"  align="center"/>
+                <colspec colwidth="1*"  align="center"/>
+                <colspec colwidth="1.5*"  align="center"/>
+                <colspec colwidth="1.5*"  align="center"/>
                 <thead>
                     <row>
                         <entry rowsep="1" align="left"><emphasis role="bold">
@@ -465,7 +465,7 @@
             <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>Copyright</title>
+    <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

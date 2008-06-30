@@ -488,9 +488,13 @@
             The commands are
             <citerefentry><refentrytitle>glVertex</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glColor</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glSecondaryColor</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glIndex</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glFogCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexCoord</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glMultiTexCoord</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glVertexAttrib</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEvalCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEvalPoint</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>,
@@ -554,6 +558,7 @@
             <citerefentry><refentrytitle>glFogCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glMultiTexCoord</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glVertexAttrib</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEvalCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEvalPoint</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>,
@@ -576,6 +581,7 @@
             <citerefentry><refentrytitle>glIndexPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glVertexAttribPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glInterleavedArrays</refentrytitle></citerefentry>, or
             <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry> is not allowed after a call to <function>glBegin</function> and before
             the corresponding call to <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>,
@@ -598,7 +604,8 @@
             <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glSecondaryColor</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexCoord</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glVertex</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>glVertex</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glVertexAttrib</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

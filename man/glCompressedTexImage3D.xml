@@ -59,18 +59,6 @@
             <listitem>
                 <para>
                     Specifies the format of the compressed image data stored at address <parameter>data</parameter>.
-					Must be one of the following constants:
-                    <constant>GL_COMPRESSED_ALPHA</constant>,
-                    <constant>GL_COMPRESSED_LUMINANCE</constant>,
-                    <constant>GL_COMPRESSED_LUMINANCE_ALPHA</constant>,
-                    <constant>GL_COMPRESSED_INTENSITY</constant>,
-                    <constant>GL_COMPRESSED_RGB</constant>,
-                    <constant>GL_COMPRESSED_RGBA</constant>,
-                    <constant>GL_COMPRESSED_SRGB</constant>,
-                    <constant>GL_COMPRESSED_SRGBA</constant>,
-                    <constant>GL_COMPRESSED_SRGB_ALPHA</constant>,
-                    <constant>GL_COMPRESSED_SLUMINANCE</constant>, or
-                    <constant>GL_COMPRESSED_SLUMINANCE_ALPHA</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -98,7 +86,7 @@
                     for some integer 
                     <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
                     All
-                    implementations support texture images that are at least 64 texels
+                    implementations support 3D texture images that are at least 16 texels
                     wide.
                 </para>
             </listitem>
@@ -127,8 +115,8 @@
                     for some integer 
                     <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
                     All
-                    implementations support texture images that are at least 64 texels
-                    wide.
+                    implementations support 3D texture images that are at least 16 texels
+                    high.
                 </para>
             </listitem>
         </varlistentry>
@@ -156,8 +144,8 @@
                     for some integer 
                     <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
                     All
-                    implementations support texture images that are at least 64 texels
-                    wide.
+                    implementations support 3D texture images that are at least 16 texels
+                    deep.
                 </para>
             </listitem>
         </varlistentry>
@@ -230,30 +218,13 @@
         <para>
 			Non-power-of-two textures are supported if the GL version is 2.0 or greater, or if the implementation exports the <constant>GL_ARB_texture_non_power_of_two</constant> extension.
         </para>
-        <para>
-            The 
-            <constant>GL_COMPRESSED_SRGB</constant>,
-			<constant>GL_COMPRESSED_SRGBA</constant>,
-			<constant>GL_COMPRESSED_SRGB_ALPHA</constant>,
-			<constant>GL_COMPRESSED_SLUMINANCE</constant>, and
-			<constant>GL_COMPRESSED_SLUMINANCE_ALPHA</constant> 
-			internal formats are only available if the GL version is 2.1 or greater.
-        </para>
     </refsect1>
     <refsect1><title>Errors</title>
         <para>
-            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>internalformat</parameter> is not one of these generic compressed internal formats: 
-			<constant>GL_COMPRESSED_ALPHA</constant>,
-			<constant>GL_COMPRESSED_LUMINANCE</constant>, 
-			<constant>GL_COMPRESSED_LUMINANCE_ALPHA</constant>,
-			<constant>GL_COMPRESSED_INTENSITY</constant>, 
-			<constant>GL_COMPRESSED_RGB</constant>,
-			<constant>GL_COMPRESSED_RGBA</constant>,
-			<constant>GL_COMPRESSED_SLUMINANCE</constant>,
-			<constant>GL_COMPRESSED_SLUMINANCE_ALPHA</constant>,
-			<constant>GL_COMPRESSED_SRGB</constant>,
-			<constant>GL_COMPRESSED_SRGBA</constant>, or 
-			<constant>GL_COMPRESSED_SRGB_ALPHA</constant>.
+            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>internalformat</parameter> is one of the generic compressed internal formats: <constant>GL_COMPRESSED_ALPHA</constant>,
+            <constant>GL_COMPRESSED_LUMINANCE</constant>, <constant>GL_COMPRESSED_LUMINANCE_ALPHA</constant>,
+            <constant>GL_COMPRESSED_INTENSITY</constant>, <constant>GL_COMPRESSED_RGB</constant>, or
+            <constant>GL_COMPRESSED_RGBA</constant>.
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>imageSize</parameter> is not consistent with

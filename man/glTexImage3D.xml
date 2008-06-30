@@ -151,7 +151,7 @@
                     for some integer 
                     <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
                     All
-                    implementations support texture images that are at least 64 texels
+                    implementations support 3D texture images that are at least 16 texels
                     wide.
                 </para>
             </listitem>
@@ -180,7 +180,7 @@
                     for some integer 
                     <inlineequation><mml:math><mml:mi mathvariant="italic">m</mml:mi></mml:math></inlineequation>.
                     All
-                    implementations support texture images that are at least 64 texels
+                    implementations support 3D texture images that are at least 16 texels
                     high.
                 </para>
             </listitem>
@@ -209,7 +209,7 @@
                     for some integer 
                     <inlineequation><mml:math><mml:mi mathvariant="italic">k</mml:mi></mml:math></inlineequation>.
                     All
-                    implementations support texture images that are at least 64 texels
+                    implementations support 3D texture images that are at least 16 texels
                     deep.
                 </para>
             </listitem>

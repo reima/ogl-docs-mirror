@@ -195,18 +195,20 @@
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">v</mml:mi></mml:math>
             indicates a value produced by the texture function.
         </p><p>
-        </p><div class="informaltable"><table border="1"><colgroup><col align="center" /><col align="center" /><col align="left" /><col align="left" /><col /><col /></colgroup><thead><tr><th align="center">
+        </p><div class="informaltable"><table width="100%" border="1"><colgroup><col align="center" /><col align="center" /><col align="center" /><col align="left" /><col align="left" /><col align="left" /><col align="left" /></colgroup><thead><tr><th align="center">
                         Texture Base Internal Format
                         </th><th align="center">
-                        <code class="constant">GL_REPLACE Function</code>
+                        <code class="constant">Value</code>
                         </th><th align="center">
-                        <code class="constant">GL_MODULATE Function</code>
+                        <code class="constant">GL_REPLACE</code> Function
                         </th><th align="center">
-                        <code class="constant">GL_DECAL Function</code>
+                        <code class="constant">GL_MODULATE</code> Function
                         </th><th align="center">
-                        <code class="constant">GL_BLEND Function</code>
+                        <code class="constant">GL_DECAL</code> Function
                         </th><th align="center">
-                        <code class="constant">GL_ADD Function</code>
+                        <code class="constant">GL_BLEND</code> Function
+                        </th><th align="center">
+                        <code class="constant">GL_ADD</code> Function
                         </th></tr></thead><tbody><tr><td align="center">
                         <code class="constant">GL_ALPHA</code>
                         </td><td align="center">
@@ -217,6 +219,12 @@
                                 <mml:mi mathvariant="italic">v</mml:mi>
                                 </mml:msub>
                                 <mml:mo>=</mml:mo>
+                            </mml:mrow>
+                        </mml:math>
+                        </td><td align="center">
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+                            
+                            <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                 <mml:mi mathvariant="italic">p</mml:mi>
                                 </mml:msub>
@@ -226,10 +234,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                 <mml:mi mathvariant="italic">p</mml:mi>
                                 </mml:msub>
@@ -242,10 +246,6 @@
                             
                             <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                 <mml:mi mathvariant="italic">p</mml:mi>
                                 </mml:msub>
                             </mml:mrow>
@@ -254,10 +254,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                 <mml:mi mathvariant="italic">p</mml:mi>
                                 </mml:msub>
@@ -272,6 +268,12 @@
                                 <mml:mi mathvariant="italic">v</mml:mi>
                                 </mml:msub>
                                 <mml:mo>=</mml:mo>
+                            </mml:mrow>
+                        </mml:math>
+                        </td><td align="center">
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+                            
+                            <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                                 </mml:msub>
@@ -281,10 +283,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -320,10 +318,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -345,6 +339,12 @@
                                 <mml:mi mathvariant="italic">v</mml:mi>
                                 </mml:msub>
                                 <mml:mo>=</mml:mo>
+                            </mml:mrow>
+                        </mml:math>
+                        </td><td align="center">
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+                            
+                            <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                                 </mml:msub>
@@ -354,10 +354,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -375,10 +371,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -408,10 +400,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -433,6 +421,12 @@
                                 <mml:mi mathvariant="italic">v</mml:mi>
                                 </mml:msub>
                                 <mml:mo>=</mml:mo>
+                            </mml:mrow>
+                        </mml:math>
+                        </td><td align="center">
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+                            
+                            <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                 <mml:mi mathvariant="italic">p</mml:mi>
                                 </mml:msub>
@@ -443,10 +437,6 @@
                             
                             <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                 <mml:mi mathvariant="italic">p</mml:mi>
                                 </mml:msub>
                             </mml:mrow>
@@ -457,10 +447,6 @@
                             
                             <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                 <mml:mi mathvariant="italic">p</mml:mi>
                                 </mml:msub>
                             </mml:mrow>
@@ -469,10 +455,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                 <mml:mi mathvariant="italic">p</mml:mi>
                                 </mml:msub>
@@ -488,6 +470,12 @@
                                 <mml:mi mathvariant="italic">v</mml:mi>
                                 </mml:msub>
                                 <mml:mo>=</mml:mo>
+                            </mml:mrow>
+                        </mml:math>
+                        </td><td align="center">
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+                            
+                            <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                                 </mml:msub>
@@ -497,10 +485,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -518,10 +502,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -551,10 +531,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -576,6 +552,12 @@
                                 <mml:mi mathvariant="italic">v</mml:mi>
                                 </mml:msub>
                                 <mml:mo>=</mml:mo>
+                            </mml:mrow>
+                        </mml:math>
+                        </td><td align="center">
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+                            
+                            <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                                 </mml:msub>
@@ -585,10 +567,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -605,10 +583,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -624,10 +598,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -649,6 +619,12 @@
                                 <mml:mi mathvariant="italic">v</mml:mi>
                                 </mml:msub>
                                 <mml:mo>=</mml:mo>
+                            </mml:mrow>
+                        </mml:math>
+                        </td><td align="center">
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+                            
+                            <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                                 </mml:msub>
@@ -658,10 +634,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -679,10 +651,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -712,10 +680,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -736,6 +700,12 @@
                                 <mml:mi mathvariant="italic">v</mml:mi>
                                 </mml:msub>
                                 <mml:mo>=</mml:mo>
+                            </mml:mrow>
+                        </mml:math>
+                        </td><td align="center">
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+                            
+                            <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                                 </mml:msub>
@@ -745,10 +715,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -765,10 +731,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -798,10 +760,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -823,6 +781,12 @@
                                 <mml:mi mathvariant="italic">v</mml:mi>
                                 </mml:msub>
                                 <mml:mo>=</mml:mo>
+                            </mml:mrow>
+                        </mml:math>
+                        </td><td align="center">
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+                            
+                            <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                                 </mml:msub>
@@ -832,10 +796,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -852,10 +812,6 @@
                             
                             <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                                 </mml:msub>
                             </mml:mrow>
@@ -864,10 +820,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -897,10 +849,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -922,6 +870,12 @@
                                 <mml:mi mathvariant="italic">v</mml:mi>
                                 </mml:msub>
                                 <mml:mo>=</mml:mo>
+                            </mml:mrow>
+                        </mml:math>
+                        </td><td align="center">
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+                            
+                            <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                 <mml:mi mathvariant="italic">p</mml:mi>
                                 </mml:msub>
@@ -932,9 +886,14 @@
                             
                             <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
+                                <mml:mi mathvariant="italic">p</mml:mi>
                                 </mml:msub>
-                                <mml:mo>=</mml:mo>
+                            </mml:mrow>
+                        </mml:math>
+                        </td><td align="center">
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+                            
+                            <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                 <mml:mi mathvariant="italic">p</mml:mi>
                                 </mml:msub>
@@ -945,10 +904,6 @@
                             
                             <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                 <mml:mi mathvariant="italic">p</mml:mi>
                                 </mml:msub>
                             </mml:mrow>
@@ -957,23 +912,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">p</mml:mi>
-                                </mml:msub>
-                            </mml:mrow>
-                        </mml:math>
-                        </td><td align="center">
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                            
-                            <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                 <mml:mi mathvariant="italic">p</mml:mi>
                                 </mml:msub>
@@ -989,6 +927,12 @@
                                 <mml:mi mathvariant="italic">v</mml:mi>
                                 </mml:msub>
                                 <mml:mo>=</mml:mo>
+                            </mml:mrow>
+                        </mml:math>
+                        </td><td align="center">
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+                            
+                            <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                                 </mml:msub>
@@ -998,10 +942,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -1017,10 +957,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -1050,10 +986,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -1083,10 +1015,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -1108,6 +1036,12 @@
                                 <mml:mi mathvariant="italic">v</mml:mi>
                                 </mml:msub>
                                 <mml:mo>=</mml:mo>
+                            </mml:mrow>
+                        </mml:math>
+                        </td><td align="center">
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+                            
+                            <mml:mrow>
                                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                 <mml:mi mathvariant="italic">s</mml:mi>
                                 </mml:msub>
@@ -1117,10 +1051,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -1136,10 +1066,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                 <mml:mi mathvariant="italic">p</mml:mi>
                                 </mml:msub>
@@ -1149,10 +1075,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -1168,10 +1090,6 @@
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                             
                             <mml:mrow>
-                                <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
-                                <mml:mi mathvariant="italic">v</mml:mi>
-                                </mml:msub>
-                                <mml:mo>=</mml:mo>
                                 <mml:mrow>
                                     <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                                     <mml:mi mathvariant="italic">p</mml:mi>
@@ -2056,7 +1974,7 @@
         </p><p>
             If <em class="parameter"><code>target</code></em> is <code class="constant">GL_POINT_SPRITE</code> and <em class="parameter"><code>pname</code></em> is <code class="constant">GL_COORD_REPLACE</code>, the boolean value specified 
             is used to either enable or disable point sprite texture coordinate replacement. The default value is <code class="constant">GL_FALSE</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id440880"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id440531"></a><h2>Notes</h2><p>
             <code class="constant">GL_REPLACE</code> may only be used if the GL version is 1.1 or greater.
         </p><p>
             <code class="constant">GL_TEXTURE_FILTER_CONTROL</code> and <code class="constant">GL_TEXTURE_LOD_BIAS</code> may only be
@@ -2076,7 +1994,7 @@
         </p><p>
             <code class="constant">GL_POINT_SPRITE</code> and <code class="constant">GL_COORD_REPLACE</code> are available
             only if the GL version is 2.0 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id440970"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id440621"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated when <em class="parameter"><code>target</code></em> or <em class="parameter"><code>pname</code></em> is not
             one of the accepted defined values,
             or when <em class="parameter"><code>params</code></em> should have a defined constant value
@@ -2090,9 +2008,9 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glTexEnv</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id441060"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id440710"></a><h2>Associated Gets</h2><p>
             <a href="glGetTexEnv.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexEnv</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id441073"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id440724"></a><h2>See Also</h2><p>
             <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>,
             <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
             <a href="glCopyTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage1D</span></span></a>,
@@ -2107,7 +2025,7 @@
             <a href="glTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span></a>,
             <a href="glTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>,
             <a href="glTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id441156"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

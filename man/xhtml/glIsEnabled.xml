@@ -353,9 +353,10 @@
         </p><p>
             For OpenGL versions 1.3 and greater, or when the <code class="code">ARB_multitexture</code> extension is supported, the following
             parameters return the associated value for the active texture unit:
-            <code class="constant">GL_TEXTURE_1D</code>, <code class="constant">GL_TEXTURE_BINDING_1D</code>,
-            <code class="constant">GL_TEXTURE_2D</code>, <code class="constant">GL_TEXTURE_BINDING_2D</code>,
-            <code class="constant">GL_TEXTURE_3D</code>, <code class="constant">GL_TEXTURE_BINDING_3D</code>,
+            <code class="constant">GL_TEXTURE_1D</code>,
+            <code class="constant">GL_TEXTURE_2D</code>,
+            <code class="constant">GL_TEXTURE_3D</code>,
+            <code class="constant">GL_TEXTURE_CUBE_MAP</code>,
             <code class="constant">GL_TEXTURE_GEN_S</code>,
             <code class="constant">GL_TEXTURE_GEN_T</code>,
             <code class="constant">GL_TEXTURE_GEN_R</code>,
@@ -368,17 +369,17 @@
             <code class="constant">GL_TEXTURE_COORD_ARRAY_SIZE</code>,
             <code class="constant">GL_TEXTURE_COORD_ARRAY_STRIDE</code>,
             <code class="constant">GL_TEXTURE_COORD_ARRAY_TYPE</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id362348"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id362341"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>cap</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glIsEnabled</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id362392"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id362385"></a><h2>See Also</h2><p>
             <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,
             <a href="glEnableClientState.xml"><span class="citerefentry"><span class="refentrytitle">glEnableClientState</span></span></a>,
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id362416"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

@@ -124,7 +124,7 @@
             <a href="glCallLists.xml"><span class="citerefentry"><span class="refentrytitle">glCallLists</span></span></a>,
             <a href="glDeleteLists.xml"><span class="citerefentry"><span class="refentrytitle">glDeleteLists</span></span></a>,
             <a href="glGenLists.xml"><span class="citerefentry"><span class="refentrytitle">glGenLists</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id425562"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

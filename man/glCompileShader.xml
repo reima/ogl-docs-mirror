@@ -60,8 +60,7 @@
 	OpenGL.</para>
 
 	<para><constant>GL_INVALID_OPERATION</constant> is generated if
-	<parameter>shader</parameter> is not of type
-	<constant>GL_SHADER_OBJECT</constant>.</para>
+	<parameter>shader</parameter> is not a shader object.</para>
 
 	<para><constant>GL_INVALID_OPERATION</constant> is generated if
 	<function>glCompileShader</function> is executed between the

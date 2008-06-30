@@ -1236,7 +1236,7 @@
             <citerefentry><refentrytitle>glAlphaFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBlendColor</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBlendEquation</refentrytitle></citerefentry>,
-            <function>glBlendFuncSeparate</function>,
+            <citerefentry><refentrytitle>glBlendFuncSeparate</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glClear</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawBuffer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,

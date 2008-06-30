@@ -90,8 +90,8 @@
             <function>glGetTexParameter</function> returns in <parameter>params</parameter> the value or values of the texture parameter
             specified as <parameter>pname</parameter>.
             <parameter>target</parameter> defines the target texture,
-            either <constant>GL_TEXTURE_1D</constant>, <constant>GL_TEXTURE_2D</constant>, or <constant>GL_TEXTURE_3D</constant>,
-            to specify one-, two-, or three-dimensional texturing.
+            either <constant>GL_TEXTURE_1D</constant>, <constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_3D</constant>, or <constant>GL_TEXTURE_CUBE_MAP</constant>,
+            to specify one-, two-, or three-dimensional or cube-mapped texturing.
             <parameter>pname</parameter> accepts the same symbols as <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry>,
             with the same interpretations:
         </para>

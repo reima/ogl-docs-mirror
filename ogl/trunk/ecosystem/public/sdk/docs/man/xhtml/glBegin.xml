@@ -382,9 +382,13 @@
             The commands are
             <a href="glVertex.xml"><span class="citerefentry"><span class="refentrytitle">glVertex</span></span></a>,
             <a href="glColor.xml"><span class="citerefentry"><span class="refentrytitle">glColor</span></span></a>,
+            <a href="glSecondaryColor.xml"><span class="citerefentry"><span class="refentrytitle">glSecondaryColor</span></span></a>,
             <a href="glIndex.xml"><span class="citerefentry"><span class="refentrytitle">glIndex</span></span></a>,
             <a href="glNormal.xml"><span class="citerefentry"><span class="refentrytitle">glNormal</span></span></a>,
+            <a href="glFogCoord.xml"><span class="citerefentry"><span class="refentrytitle">glFogCoord</span></span></a>,
             <a href="glTexCoord.xml"><span class="citerefentry"><span class="refentrytitle">glTexCoord</span></span></a>,
+            <a href="glMultiTexCoord.xml"><span class="citerefentry"><span class="refentrytitle">glMultiTexCoord</span></span></a>,
+            <a href="glVertexAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glVertexAttrib</span></span></a>,
             <a href="glEvalCoord.xml"><span class="citerefentry"><span class="refentrytitle">glEvalCoord</span></span></a>,
             <a href="glEvalPoint.xml"><span class="citerefentry"><span class="refentrytitle">glEvalPoint</span></span></a>,
             <a href="glArrayElement.xml"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a>,
@@ -421,7 +425,7 @@
             <code class="constant">GL_TRIANGLES</code> (3),
             <code class="constant">GL_QUADS</code> (4),
             and <code class="constant">GL_QUAD_STRIP</code> (2).
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id361976"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id361997"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is set to an unaccepted value.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glBegin</code> is executed between a
@@ -440,6 +444,7 @@
             <a href="glFogCoord.xml"><span class="citerefentry"><span class="refentrytitle">glFogCoord</span></span></a>,
             <a href="glTexCoord.xml"><span class="citerefentry"><span class="refentrytitle">glTexCoord</span></span></a>,
             <a href="glMultiTexCoord.xml"><span class="citerefentry"><span class="refentrytitle">glMultiTexCoord</span></span></a>,
+            <a href="glVertexAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glVertexAttrib</span></span></a>,
             <a href="glEvalCoord.xml"><span class="citerefentry"><span class="refentrytitle">glEvalCoord</span></span></a>,
             <a href="glEvalPoint.xml"><span class="citerefentry"><span class="refentrytitle">glEvalPoint</span></span></a>,
             <a href="glArrayElement.xml"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a>,
@@ -461,11 +466,12 @@
             <a href="glIndexPointer.xml"><span class="citerefentry"><span class="refentrytitle">glIndexPointer</span></span></a>,
             <a href="glNormalPointer.xml"><span class="citerefentry"><span class="refentrytitle">glNormalPointer</span></span></a>,
             <a href="glVertexPointer.xml"><span class="citerefentry"><span class="refentrytitle">glVertexPointer</span></span></a>,
+            <a href="glVertexAttribPointer.xml"><span class="citerefentry"><span class="refentrytitle">glVertexAttribPointer</span></span></a>,
             <a href="glInterleavedArrays.xml"><span class="citerefentry"><span class="refentrytitle">glInterleavedArrays</span></span></a>, or
             <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> is not allowed after a call to <code class="function">glBegin</code> and before
             the corresponding call to <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>,
             but an error may or may not be generated.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id362226"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id362258"></a><h2>See Also</h2><p>
             <a href="glArrayElement.xml"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a>,
             <a href="glCallList.xml"><span class="citerefentry"><span class="refentrytitle">glCallList</span></span></a>,
             <a href="glCallLists.xml"><span class="citerefentry"><span class="refentrytitle">glCallLists</span></span></a>,
@@ -480,7 +486,8 @@
             <a href="glNormal.xml"><span class="citerefentry"><span class="refentrytitle">glNormal</span></span></a>,
             <a href="glSecondaryColor.xml"><span class="citerefentry"><span class="refentrytitle">glSecondaryColor</span></span></a>,
             <a href="glTexCoord.xml"><span class="citerefentry"><span class="refentrytitle">glTexCoord</span></span></a>,
-            <a href="glVertex.xml"><span class="citerefentry"><span class="refentrytitle">glVertex</span></span></a>
+            <a href="glVertex.xml"><span class="citerefentry"><span class="refentrytitle">glVertex</span></span></a>,
+            <a href="glVertexAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glVertexAttrib</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

@@ -2230,6 +2230,7 @@
                     <para>
                         <parameter>params</parameter> returns one value,
                         a rough estimate of the largest 3D texture that the GL can handle.
+                        The value must be at least 16.
                         If the GL version is 1.2 or greater, use
                         <constant>GL_PROXY_TEXTURE_3D</constant> to determine if a texture is too large.
                         See <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>.
@@ -2308,7 +2309,7 @@
                     <para>
                         <parameter>params</parameter> returns one value.
                         The value gives a rough estimate of the largest cube-map texture that
-                        the GL can handle.
+                        the GL can handle. The value must be at least 16.
                         If the GL version is 1.3 or greater, use <constant>GL_PROXY_TEXTURE_CUBE_MAP</constant>
                         to determine if a texture is too large.
                         See <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>.
@@ -2500,7 +2501,7 @@
                     <para>
                         <parameter>params</parameter> returns one value.
                         The value gives a rough estimate of the largest texture that
-                        the GL can handle.
+                        the GL can handle. The value must be at least 64.
                         If the GL version is 1.1 or greater, use
                         <constant>GL_PROXY_TEXTURE_1D</constant> or <constant>GL_PROXY_TEXTURE_2D</constant>
                         to determine if a texture is too large.
@@ -4068,8 +4069,7 @@
                     <para>
                         <parameter>params</parameter> returns one value,
                         an estimate of the number of bits of subpixel resolution that are used to
-                        position rasterized geometry in window coordinates. The initial value
-                        is 4.
+                        position rasterized geometry in window coordinates. The value must be at least 4.
                     </para>
                 </listitem>
             </varlistentry>

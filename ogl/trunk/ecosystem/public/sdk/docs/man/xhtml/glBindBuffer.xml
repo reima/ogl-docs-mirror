@@ -10,7 +10,7 @@
                     <code class="constant">GL_PIXEL_UNPACK_BUFFER</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>buffer</code></em></span></dt><dd><p>
                     Specifies the name of a buffer object.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id419209"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id419208"></a><h2>Description</h2><p>
             <code class="function">glBindBuffer</code> lets you create or use a named buffer object. Calling <code class="function">glBindBuffer</code> with
             <em class="parameter"><code>target</code></em> set to
             <code class="constant">GL_ARRAY_BUFFER</code>, <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code>, <code class="constant">GL_PIXEL_PACK_BUFFER</code> or
@@ -125,7 +125,7 @@
             <a href="glGenBuffers.xml"><span class="citerefentry"><span class="refentrytitle">glGenBuffers</span></span></a>,
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>,
             <a href="glIsBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glIsBuffer</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id425512"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2005 Addison-Wesley. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.

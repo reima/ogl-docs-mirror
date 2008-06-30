@@ -2,16 +2,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
 <?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCopyTexSubImage2D</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glCopyTexSubImage2D"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCopyTexSubImage2D — copy a two-dimensional texture subimage</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glCopyTexSubImage2D</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">level</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">xoffset</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">yoffset</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">x</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">y</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">width</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">height</var><code>)</code>;</td></tr></table></div></div><p>
-    </p><div class="refsect1" lang="en" xml:lang="en"><a id="id4781954"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term">/<em class="parameter"><code>target</code></em></span></dt><dd><p>
+    </p><div class="refsect1" lang="en" xml:lang="en"><a id="id432845"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the target texture.
                     Must be <code class="constant">GL_TEXTURE_2D</code>,
                     <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_X</code>,
                     <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_X</code>,
                     <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Y</code>,
                     <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Y</code>,
-                    <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Z</code>,
-                    <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Z</code>, or
-                    <code class="constant">GL_PROXY_TEXTURE_CUBE_MAP</code>.
+                    <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Z</code>, or
+                    <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Z</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>level</code></em></span></dt><dd><p>
                     Specifies the level-of-detail number.
                     Level 0 is the base image level.
@@ -27,7 +26,7 @@
                     Specifies the width of the texture subimage.
                 </p></dd><dt><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
                     Specifies the height of the texture subimage.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775251"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id419381"></a><h2>Description</h2><p>
             <code class="function">glCopyTexSubImage2D</code> replaces a rectangular portion of a two-dimensional texture image or
             cube-map texture image with pixels from the current <code class="constant">GL_READ_BUFFER</code>
             (rather than from main memory, as is the case for <a href="glTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>).
@@ -92,7 +91,7 @@
             No change is made to the <span class="emphasis"><em>internalformat</em></span>, <span class="emphasis"><em>width</em></span>,
             <span class="emphasis"><em>height</em></span>, or <span class="emphasis"><em>border</em></span> parameters of the specified texture
             array or to texel values outside the specified subregion.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775520"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id425382"></a><h2>Notes</h2><p>
             <code class="function">glCopyTexSubImage2D</code> is available only if the GL version is 1.1 or greater.
         </p><p>
             <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_X</code>,
@@ -112,8 +111,14 @@
             When the <code class="code">ARB_imaging</code> extension is supported, the RGBA components
             read from the framebuffer may be processed by the imaging pipeline.  See
             <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a> for specific details.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4775617"></a><h2>Errors</h2><p>
-            <code class="constant">GL_INVALID_ENUM</code> is generated if /<em class="parameter"><code>target</code></em> is not <code class="constant">GL_TEXTURE_2D</code>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id425479"></a><h2>Errors</h2><p>
+            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not <code class="constant">GL_TEXTURE_2D</code>,
+            <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_X</code>,
+            <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_X</code>,
+            <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Y</code>,
+            <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Y</code>,
+            <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Z</code>, or
+            <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Z</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if the texture array has not been
             defined by a previous <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a> or <a href="glCopyTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a> operation.
@@ -223,11 +228,11 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glCopyTexSubImage2D</code> is executed
             between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding
             execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713032"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id426158"></a><h2>Associated Gets</h2><p>
             <a href="glGetTexImage.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexImage</span></span></a>
         </p><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_2D</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4713058"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id426183"></a><h2>See Also</h2><p>
             <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
             <a href="glCopyTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage1D</span></span></a>,
             <a href="glCopyTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a>,
@@ -245,7 +250,7 @@
             <a href="glTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span></a>,
             <a href="glTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>,
             <a href="glTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4711410"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

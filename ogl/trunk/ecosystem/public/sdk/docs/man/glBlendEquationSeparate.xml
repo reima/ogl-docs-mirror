@@ -588,7 +588,7 @@
                     </row>
                     <row>
                         <entry align="left">
-                        <constant>GL_FUNC_MIN</constant>
+                        <constant>GL_MIN</constant>
                         </entry>
                         <entry align="left">
                             <informalequation><mml:math>
@@ -689,7 +689,7 @@
                     </row>
                     <row>
                         <entry align="left">
-                        <constant>GL_FUNC_MAX</constant>
+                        <constant>GL_MAX</constant>
                         </entry>
                         <entry align="left">
                             <informalequation><mml:math>

@@ -156,8 +156,7 @@
 	OpenGL.</para>
 
 	<para><constant>GL_INVALID_OPERATION</constant> is generated if
-	<parameter>program</parameter> is not of type
-	<constant>GL_PROGRAM_OBJECT</constant>.</para>
+	<parameter>program</parameter> is not a program object.</para>
 
 	<para><constant>GL_INVALID_OPERATION</constant> is generated if
 	<function>glBindAttribLocation</function> is executed between

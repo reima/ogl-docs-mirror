@@ -33,7 +33,7 @@
             <listitem>
                 <para>
                     Specifies whether the front and/or back stencil writemask is updated.
-                    Three tokens are valid:
+                    Three symbolic constants are valid:
                     <constant>GL_FRONT</constant>,
                     <constant>GL_BACK</constant>, and
                     <constant>GL_FRONT_AND_BACK</constant>.

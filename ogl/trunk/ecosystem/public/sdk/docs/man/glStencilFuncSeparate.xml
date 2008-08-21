@@ -35,7 +35,7 @@
             <listitem>
                 <para>
                     Specifies whether front and/or back stencil state is updated.
-                    Three tokens are valid:
+                    Three symbolic constants are valid:
                     <constant>GL_FRONT</constant>,
                     <constant>GL_BACK</constant>, and
                     <constant>GL_FRONT_AND_BACK</constant>.
@@ -47,7 +47,7 @@
             <listitem>
                 <para>
                     Specifies the test function.
-                    Eight tokens are valid:
+                    Eight symbolic constants are valid:
                     <constant>GL_NEVER</constant>,
                     <constant>GL_LESS</constant>,
                     <constant>GL_LEQUAL</constant>,

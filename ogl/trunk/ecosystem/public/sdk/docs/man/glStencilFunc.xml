@@ -34,7 +34,7 @@
             <listitem>
                 <para>
                     Specifies the test function.
-                    Eight tokens are valid:
+                    Eight symbolic constants are valid:
                     <constant>GL_NEVER</constant>,
                     <constant>GL_LESS</constant>,
                     <constant>GL_LEQUAL</constant>,

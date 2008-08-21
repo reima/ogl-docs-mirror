@@ -372,7 +372,7 @@
 	<parameter>count</parameter></para>
 
 	<para>The commands
-	<function>glUniformFloatMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv</function> 
+	<function>glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv</function> 
         are used to modify a matrix or an array of matrices. The numbers in the
 	command name are interpreted as the dimensionality of the matrix.
 	The number <function>2</function> indicates a 2 &#215; 2 matrix

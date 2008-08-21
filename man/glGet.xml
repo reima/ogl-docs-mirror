@@ -726,8 +726,9 @@
 			  <para>
 			  </para>
                     <para>
-                        <parameter>params</parameter> returns a <constant>GL_NUM_COMPRESSED_TEXTURE_FORMATS</constant> of symbolic
-                        constants indicating which compressed texture formats are available.
+                        <parameter>params</parameter> returns a list of symbolic
+                        constants of length <constant>GL_NUM_COMPRESSED_TEXTURE_FORMATS</constant> 
+                        indicating which compressed texture formats are available.
                         See <citerefentry><refentrytitle>glCompressedTexImage2D</refentrytitle></citerefentry>.
                     </para>
                 </listitem>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glStencilFunc</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glStencilFunc"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glStencilFunc — set front and back function and reference value for stencil testing</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glStencilFunc</b>(</code></td><td>GLenum  </td><td><var class="pdparam">func</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">ref</var>, </td></tr><tr><td> </td><td>GLuint  </td><td><var class="pdparam">mask</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id432806"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>func</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glStencilFunc</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glStencilFunc"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glStencilFunc — set front and back function and reference value for stencil testing</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glStencilFunc</b>(</code></td><td>GLenum  </td><td><var class="pdparam">func</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">ref</var>, </td></tr><tr><td> </td><td>GLuint  </td><td><var class="pdparam">mask</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4749914"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>func</code></em></span></dt><dd><p>
                     Specifies the test function.
-                    Eight tokens are valid:
+                    Eight symbolic constants are valid:
                     <code class="constant">GL_NEVER</code>,
                     <code class="constant">GL_LESS</code>,
                     <code class="constant">GL_LEQUAL</code>,
@@ -36,7 +36,7 @@
                     Specifies a mask that is ANDed with both the reference value
                     and the stored stencil value when the test is done. The initial value
                     is all 1's.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id419327"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4748119"></a><h2>Description</h2><p>
             Stenciling,
             like depth-buffering,
             enables and disables drawing on a per-pixel basis.
@@ -132,7 +132,7 @@
                         Passes if ( <em class="parameter"><code>ref</code></em> &amp; <em class="parameter"><code>mask</code></em> ) != ( <span class="emphasis"><em>stencil</em></span> &amp; <em class="parameter"><code>mask</code></em> ).
                     </p></dd><dt><span class="term"><code class="constant">GL_ALWAYS</code></span></dt><dd><p>
                         Always passes.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id425601"></a><h2>Notes</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4750569"></a><h2>Notes</h2><p>
             Initially, the stencil test is disabled.
             If there is no stencil buffer,
             no stencil modification can occur and it is as if
@@ -141,14 +141,14 @@
             <a href="glStencilFunc.xml"><span class="citerefentry"><span class="refentrytitle">glStencilFunc</span></span></a> is the same as
             calling <a href="glStencilFuncSeparate.xml"><span class="citerefentry"><span class="refentrytitle">glStencilFuncSeparate</span></span></a>
             with <em class="parameter"><code>face</code></em> set to <code class="constant">GL_FRONT_AND_BACK</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id425647"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4750612"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>func</code></em> is not one of the eight
             accepted values.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glStencilFunc</code>
             is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id425692"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4686758"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument 
             <code class="constant">GL_STENCIL_FUNC</code>, <code class="constant">GL_STENCIL_VALUE_MASK</code>, 
             <code class="constant">GL_STENCIL_REF</code>, <code class="constant">GL_STENCIL_BACK_FUNC</code>, 
@@ -156,7 +156,7 @@
             or <code class="constant">GL_STENCIL_BITS</code>
         </p><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_STENCIL_TEST</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id425746"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id4686805"></a><h2>See Also</h2><p>
             <a href="glAlphaFunc.xml"><span class="citerefentry"><span class="refentrytitle">glAlphaFunc</span></span></a>,
             <a href="glBlendFunc.xml"><span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span></a>,
             <a href="glDepthFunc.xml"><span class="citerefentry"><span class="refentrytitle">glDepthFunc</span></span></a>,

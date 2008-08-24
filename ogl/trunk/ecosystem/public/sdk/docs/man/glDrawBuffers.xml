@@ -19,7 +19,7 @@
 	    </funcprototype>
 	</funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
 	<variablelist>
 	    <varlistentry>
 		<term><parameter>n</parameter></term>
@@ -38,7 +38,7 @@
 	    </varlistentry>
 	</variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
 	<para><function>glDrawBuffers</function> defines an array of
 	buffers into which fragment color values or fragment data will
 	be written. If no fragment shader is active, rendering
@@ -118,7 +118,7 @@
 	<citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
 	with the argument <constant>GL_AUX_BUFFERS</constant>.</para>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
 	<para><function>glDrawBuffers</function> is available only if
 	the GL version is 2.0 or greater.</para>
 
@@ -140,7 +140,7 @@
 	written into each of the buffers specified by
 	<parameter>bufs</parameter>.</para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
 	<para><constant>GL_INVALID_ENUM</constant> is generated if one of the
 	values in <parameter>bufs</parameter> is not an accepted
 	value.</para>
@@ -168,7 +168,7 @@
 	and the corresponding execution of
 	<citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.</para>
     </refsect1>
-    <refsect1><title>Associated Gets</title>
+    <refsect1 id="associatedgets"><title>Associated Gets</title>
 	<para><citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
 	with argument <constant>GL_MAX_DRAW_BUFFERS</constant></para>
 
@@ -177,7 +177,7 @@
 	<code>i</code> indicates the number of the draw buffer
 	whose value is to be queried</para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
 	<para> <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry>,
 	<citerefentry><refentrytitle>glColorMask</refentrytitle></citerefentry>,
 	<citerefentry><refentrytitle>glDrawBuffers</refentrytitle></citerefentry>,

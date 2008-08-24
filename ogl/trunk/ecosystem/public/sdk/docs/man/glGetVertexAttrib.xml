@@ -35,7 +35,7 @@
 	    </funcprototype>
 	</funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
 	<variablelist>
 	    <varlistentry>
 		<term><parameter>index</parameter></term>
@@ -66,7 +66,7 @@
 	    </varlistentry>
 	</variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
 	<para><function>glGetVertexAttrib</function> returns in
 	<parameter>params</parameter> the value of a generic vertex
 	attribute parameter. The generic vertex attribute to be queried
@@ -187,14 +187,14 @@
 	represent client-side state.</para>
 
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
 	<para><function>glGetVertexAttrib</function> is available only
 	if the GL version is 2.0 or greater.</para>
 
 	<para>If an error is generated, no change is made to the
 	contents of <parameter>params</parameter>.</para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
 	<para><constant>GL_INVALID_VALUE</constant> is generated if
 	<parameter>index</parameter> is greater than or equal to
 	<constant>GL_MAX_VERTEX_ATTRIBS</constant>.</para>
@@ -207,7 +207,7 @@
 	<parameter>pname</parameter> is
 	<constant>GL_CURRENT_VERTEX_ATTRIB</constant>.</para>
     </refsect1>
-    <refsect1><title>Associated Gets</title>
+    <refsect1 id="associatedgets"><title>Associated Gets</title>
 	<para><citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
 	with argument <constant>GL_MAX_VERTEX_ATTRIBS</constant></para>
 
@@ -215,7 +215,7 @@
 	with arguments <parameter>index</parameter> and
 	<constant>GL_VERTEX_ATTRIB_ARRAY_POINTER</constant></para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
 	<para><citerefentry><refentrytitle>glBindAttribLocation</refentrytitle></citerefentry>,
 	<citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>,
 	<citerefentry><refentrytitle>glDisableVertexAttribArray</refentrytitle></citerefentry>,

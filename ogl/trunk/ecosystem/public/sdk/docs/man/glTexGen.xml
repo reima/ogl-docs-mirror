@@ -43,7 +43,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>coord</parameter></term>
@@ -101,7 +101,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters2"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>coord</parameter></term>
@@ -146,7 +146,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>glTexGen</function> selects a texture-coordinate generation function
             or supplies coefficients for one of the functions.
@@ -722,7 +722,7 @@
             selected with <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated when <parameter>coord</parameter> or <parameter>pname</parameter> is not an
             accepted defined value,
@@ -740,7 +740,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>Associated Gets</title>
+    <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGetTexGen</refentrytitle></citerefentry>
         </para>
@@ -757,7 +757,7 @@
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_GEN_Q</constant>
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyPixels</refentrytitle></citerefentry>,

@@ -35,7 +35,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -98,7 +98,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters2"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -145,7 +145,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             Texture mapping is a technique that applies an image onto an object's surface
             as if the image were a decal or cellophane shrink-wrap.
@@ -1162,7 +1162,7 @@
             </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             <constant>GL_TEXTURE_3D</constant>, <constant>GL_TEXTURE_MIN_LOD</constant>, <constant>GL_TEXTURE_MAX_LOD</constant>,
             <constant>GL_CLAMP_TO_EDGE</constant>, <constant>GL_TEXTURE_BASE_LEVEL</constant>, and <constant>GL_TEXTURE_MAX_LEVEL</constant> are
@@ -1207,7 +1207,7 @@
             by calling <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> or <parameter>pname</parameter> is not
             one of the accepted defined values.
@@ -1221,7 +1221,7 @@
             execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry> and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>Associated Gets</title>
+    <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGetTexParameter</refentrytitle></citerefentry>
         </para>
@@ -1229,7 +1229,7 @@
             <citerefentry><refentrytitle>glGetTexLevelParameter</refentrytitle></citerefentry>
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBindTexture</refentrytitle></citerefentry>,

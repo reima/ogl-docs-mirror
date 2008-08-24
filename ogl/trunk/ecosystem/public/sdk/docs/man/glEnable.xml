@@ -24,7 +24,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>cap</parameter></term>
@@ -44,7 +44,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters2"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>cap</parameter></term>
@@ -56,13 +56,13 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>glEnable</function> and <citerefentry><refentrytitle>glDisable</refentrytitle></citerefentry> enable and disable various capabilities.
             Use <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> or <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> to determine the current setting
             of any capability. The initial value for each capability with the
-            exception of <constant>GL_DITHER</constant> is <constant>GL_FALSE</constant>. The initial value for
-            <constant>GL_DITHER</constant> is <constant>GL_TRUE</constant>.
+            exception of <constant>GL_DITHER</constant> and <constant>GL_MULTISAMPLE</constant> is <constant>GL_FALSE</constant>. The initial value for
+            <constant>GL_DITHER</constant> and <constant>GL_MULTISAMPLE</constant> is <constant>GL_TRUE</constant>.
         </para>
         <para>
             Both <function>glEnable</function> and <citerefentry><refentrytitle>glDisable</refentrytitle></citerefentry> take a single argument, <parameter>cap</parameter>,
@@ -149,7 +149,8 @@
 		        <para>
 		        </para>
                     <para>
-                        If enabled, add the secondary color value to the computed fragment color.
+                        If enabled and no fragment shader is active, 
+                        add the secondary color value to the computed fragment color.
                         See <citerefentry><refentrytitle>glSecondaryColor</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -235,7 +236,7 @@
 		        <para>
 		        </para>
                     <para>
-                        If enabled,
+                        If enabled and no fragment shader is active,
                         blend a fog color into the post-texturing color.
                         See <citerefentry><refentrytitle>glFog</refentrytitle></citerefentry>.
                     </para>
@@ -284,7 +285,7 @@
 		        <para>
 		        </para>
                     <para>
-                        If enabled,
+                        If enabled and no vertex shader is active,
                         use the current lighting parameters to compute the vertex color or index.
                         Otherwise, simply associate the current color or index with each
                         vertex. See
@@ -652,9 +653,11 @@
 		        <para>
 		        </para>
                     <para>
-                        If enabled,
-                        normal vectors specified with <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry> are scaled to unit length
-                        after transformation. See <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry>.
+                        If enabled and no vertex shader is active,
+                        normal vectors are normalized to unit length
+                        after transformation and before lighting.  See 
+                        <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry> and
+                        <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -779,8 +782,13 @@
 		        <para>
 		        </para>
                     <para>
-                        If enabled, normal vectors specified with <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry> are scaled to
-                        unit length after transformation. See <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry>.
+                        If enabled and no vertex shader is active, 
+                        normal vectors are scaled after transformation and before 
+                        lighting by a factor computed from the model-view matrix.  If the
+                        model-view matrix scales space uniformly, this has the effect of
+                        restoring the transformed normal to unit length.  See 
+                        <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry> and
+                        <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -864,7 +872,8 @@
 		        <para>
 		        </para>
                     <para>
-                        If enabled, one-dimensional texturing is performed
+                        If enabled and no fragment shader is active, 
+                        one-dimensional texturing is performed
                         (unless two- or three-dimensional or cube-mapped texturing is also enabled).
                         See <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>.
                     </para>
@@ -876,7 +885,8 @@
 		        <para>
 		        </para>
                     <para>
-                        If enabled, two-dimensional texturing is performed
+                        If enabled and no fragment shader is active, 
+                        two-dimensional texturing is performed
                         (unless three-dimensional or cube-mapped texturing is also enabled).
                         See <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>.
                     </para>
@@ -888,7 +898,8 @@
 		        <para>
 		        </para>
                     <para>
-                        If enabled, three-dimensional texturing is performed
+                        If enabled and no fragment shader is active, 
+                        three-dimensional texturing is performed
                         (unless cube-mapped texturing is also enabled).
                         See <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>.
                     </para>
@@ -900,7 +911,8 @@
 		        <para>
 		        </para>
                     <para>
-                        If enabled, cube-mapped texturing is performed.
+                        If enabled and no fragment shader is active, 
+                        cube-mapped texturing is performed.
                         See <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -911,7 +923,7 @@
 		        <para>
 		        </para>
                     <para>
-                        If enabled,
+                        If enabled and no vertex shader is active,
                         the <emphasis>q</emphasis> texture coordinate is computed using
                         the texture generation function defined with <citerefentry><refentrytitle>glTexGen</refentrytitle></citerefentry>.
                         Otherwise, the current <emphasis>q</emphasis> texture coordinate is used.
@@ -925,7 +937,7 @@
 		        <para>
 		        </para>
                     <para>
-                        If enabled,
+                        If enabled and no vertex shader is active,
                         the <emphasis>r</emphasis> texture coordinate is computed using
                         the texture generation function defined with <citerefentry><refentrytitle>glTexGen</refentrytitle></citerefentry>.
                         Otherwise, the current <emphasis>r</emphasis> texture coordinate is used.
@@ -939,7 +951,7 @@
 		        <para>
 		        </para>
                     <para>
-                        If enabled,
+                        If enabled and no vertex shader is active,
                         the <emphasis>s</emphasis> texture coordinate is computed using
                         the texture generation function defined with <citerefentry><refentrytitle>glTexGen</refentrytitle></citerefentry>.
                         Otherwise, the current <emphasis>s</emphasis> texture coordinate is used.
@@ -953,7 +965,7 @@
 		        <para>
 		        </para>
                     <para>
-                        If enabled,
+                        If enabled and no vertex shader is active,
                         the <emphasis>t</emphasis> texture coordinate is computed using
                         the texture generation function defined with <citerefentry><refentrytitle>glTexGen</refentrytitle></citerefentry>.
                         Otherwise, the current <emphasis>t</emphasis> texture coordinate is used.
@@ -967,7 +979,7 @@
 		        <para>
 		        </para>
                     <para>
-                        If enabled,
+                        If enabled
                         and a vertex shader is active, then the derived point size is taken from the (potentially clipped) shader builtin
                         <constant>gl_PointSize</constant> and clamped to the implementation-dependent point size range.
                     </para>
@@ -979,7 +991,7 @@
 		        <para>
 		        </para>
                     <para>
-                        If enabled,
+                        If enabled
                         and a vertex shader is active, it specifies that the GL will choose between front and back colors based on the
                         polygon's face direction of which the vertex being shaded is a part.  It has no effect on points or lines.
                     </para>
@@ -987,7 +999,7 @@
             </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             <constant>GL_POLYGON_OFFSET_FILL</constant>, <constant>GL_POLYGON_OFFSET_LINE</constant>,
             <constant>GL_POLYGON_OFFSET_POINT</constant>,
@@ -1028,7 +1040,7 @@
             specified with <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>cap</parameter> is not one of the values
             listed previously.
@@ -1039,7 +1051,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glAlphaFunc</refentrytitle></citerefentry>,
@@ -1062,10 +1074,12 @@
             <citerefentry><refentrytitle>glMap2</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glMaterial</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPointSize</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPolygonMode</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPolygonStipple</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glSampleCoverage</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glScissor</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glStencilFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glStencilOp</refentrytitle></citerefentry>,

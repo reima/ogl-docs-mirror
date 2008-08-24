@@ -29,7 +29,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>x</parameter></term>
@@ -60,7 +60,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>gluPickMatrix</function> creates a projection matrix that can be used to restrict drawing
             to a small region of the viewport.
@@ -91,7 +91,7 @@
             the pick matrix than the way it was subdivided without the pick matrix.
         </para>
     </refsect1>
-    <refsect1><title>EXAMPLE</title>
+    <refsect1 id="example"><title>Example</title>
         <para>
             When rendering a scene as follows:
             <programlisting>
@@ -112,7 +112,7 @@ glMatrixMode(GL_MODELVIEW);
             </programlisting>
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluPerspective</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>,

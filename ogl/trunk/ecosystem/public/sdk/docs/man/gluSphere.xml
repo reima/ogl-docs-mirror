@@ -28,7 +28,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>quad</parameter></term>
@@ -67,7 +67,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>gluSphere</function> draws a sphere of the given radius centered around the origin. The
             sphere is subdivided around the <emphasis>z</emphasis> axis into slices and along the 
@@ -112,7 +112,7 @@
             at the +<emphasis>y</emphasis> axis.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluCylinder</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>gluDisk</refentrytitle></citerefentry>,

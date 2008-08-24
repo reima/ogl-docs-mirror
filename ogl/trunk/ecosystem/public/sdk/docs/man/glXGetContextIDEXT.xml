@@ -25,7 +25,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>ctx</parameter></term>
@@ -37,7 +37,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>glXGetContextIDEXT</function> returns the XID associated with a GLXContext.
         </para>
@@ -53,13 +53,13 @@
             extension <code>EXT_import_context</code> is supported.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GLXBadContext</constant> is generated if <parameter>ctx</parameter> does not
             refer to a valid context.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glXCreateContext</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXQueryVersion</refentrytitle></citerefentry>,

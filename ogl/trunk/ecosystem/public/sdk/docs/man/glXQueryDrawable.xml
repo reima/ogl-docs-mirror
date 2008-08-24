@@ -28,7 +28,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>dpy</parameter></term>
@@ -70,7 +70,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>glXQueryDrawable</function> sets
 			<parameter>value</parameter> to the value of
@@ -145,13 +145,13 @@
             unedfined.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             A <constant>GLXBadDrawable</constant> is generated if
 			<parameter>draw</parameter> is not a valid GLXDrawable.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
 		    <citerefentry><refentrytitle>glXCreateWindow</refentrytitle></citerefentry>,
 			<citerefentry><refentrytitle>glXCreatePixmap</refentrytitle></citerefentry>,

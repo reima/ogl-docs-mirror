@@ -27,7 +27,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>quad</parameter></term>
@@ -56,7 +56,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>gluQuadricCallback</function> is used to define a new callback to be used by a quadrics object.
             If the specified callback is already defined, then it is replaced. If 
@@ -79,7 +79,7 @@
             </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluErrorString</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>gluNewQuadric</refentrytitle></citerefentry>

@@ -25,7 +25,7 @@
     </refsynopsisdiv>
     <para>
     </para>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>glXGetCurrentContext</function> returns the current context,
             as specified by <citerefentry><refentrytitle>glXMakeCurrent</refentrytitle></citerefentry>.
@@ -39,7 +39,7 @@
         <para>
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glXCreateContext</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glXGetCurrentDisplay</refentrytitle></citerefentry>,

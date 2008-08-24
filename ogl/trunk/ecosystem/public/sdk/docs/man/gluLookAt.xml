@@ -33,7 +33,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>eyeX</parameter></term>
@@ -67,7 +67,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>gluLookAt</function> creates a viewing matrix derived from an eye point, a reference
             point indicating the center of the scene, and an <emphasis>UP</emphasis> vector.  
@@ -352,7 +352,7 @@ glTranslated(-eyex, -eyey, -eyez);
             </programlisting>
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluPerspective</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glFrustum</refentrytitle></citerefentry>

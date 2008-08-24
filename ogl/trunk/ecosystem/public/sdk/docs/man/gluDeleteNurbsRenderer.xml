@@ -25,7 +25,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>nurb</parameter></term>
@@ -37,7 +37,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>gluDeleteNurbsRenderer</function> destroys the NURBS object (which was created with
             <citerefentry><refentrytitle>gluNewNurbsRenderer</refentrytitle></citerefentry>) and frees any memory it uses.
@@ -45,7 +45,7 @@
             <function>gluDeleteNurbsRenderer</function> has been called, <parameter>nurb</parameter> cannot be used again.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluNewNurbsRenderer</refentrytitle></citerefentry>
         </para>

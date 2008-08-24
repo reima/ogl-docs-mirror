@@ -24,7 +24,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>name</parameter></term>
@@ -37,7 +37,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>glGetString</function> returns a pointer to a static string
             describing some aspect of the current GL connection.
@@ -135,7 +135,7 @@
             All strings are null-terminated.
         </para>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             If an error is generated, <function>glGetString</function> returns 0.
         </para>
@@ -148,7 +148,7 @@
             <constant>GL_SHADING_LANGUAGE_VERSION</constant> is available only if the GL version is 2.0 or greater.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>name</parameter> is not an accepted value.
         </para>

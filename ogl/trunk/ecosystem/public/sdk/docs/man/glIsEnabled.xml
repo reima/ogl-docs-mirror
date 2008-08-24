@@ -24,7 +24,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>cap</parameter></term>
@@ -36,7 +36,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>glIsEnabled</function> returns <constant>GL_TRUE</constant> if <parameter>cap</parameter> is an enabled capability
             and returns <constant>GL_FALSE</constant> otherwise.
@@ -653,7 +653,7 @@
         <para>
         </para>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             If an error is generated,
             <function>glIsEnabled</function> returns 0.
@@ -724,7 +724,7 @@
             <constant>GL_TEXTURE_COORD_ARRAY_TYPE</constant>.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>cap</parameter> is not an accepted value.
         </para>
@@ -734,7 +734,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEnableClientState</refentrytitle></citerefentry>,

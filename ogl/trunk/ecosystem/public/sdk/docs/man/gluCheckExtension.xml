@@ -25,7 +25,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>extName</parameter></term>
@@ -45,7 +45,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>gluCheckExtension</function> returns <constant>GLU_TRUE</constant> if <parameter>extName</parameter> is supported otherwise 
             <constant>GLU_FALSE</constant> is returned.
@@ -58,7 +58,7 @@
             respectively, as <parameter>extString</parameter>.
         </para>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             Cases where one extension name is a substring of another are
             correctly handled.
@@ -73,7 +73,7 @@
             All strings are null-terminated.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluGetString</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetString</refentrytitle></citerefentry>,

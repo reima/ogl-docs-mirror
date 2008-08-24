@@ -27,7 +27,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>nurb</parameter></term>
@@ -65,7 +65,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>gluGetNurbsProperty</function> retrieves properties stored in a NURBS object. These
             properties affect the way that NURBS curves and surfaces
@@ -74,7 +74,7 @@
             properties are and what they do.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluNewNurbsRenderer</refentrytitle></citerefentry>, 
             <citerefentry><refentrytitle>gluNurbsProperty</refentrytitle></citerefentry>

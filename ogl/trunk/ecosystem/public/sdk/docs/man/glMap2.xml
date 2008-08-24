@@ -49,7 +49,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -229,7 +229,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             Evaluators provide a way to use polynomial or rational polynomial mapping
             to produce vertices,
@@ -868,7 +868,7 @@
             </mml:math></inlineequation>.
         </para>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             As is the case with all GL commands that accept pointers to data,
             it is as if the contents of <parameter>points</parameter> were copied by <function>glMap2</function> before <function>glMap2</function>
@@ -882,7 +882,7 @@
             vertices.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is not an accepted value.
         </para>
@@ -909,7 +909,7 @@
             of <constant>GL_ACTIVE_TEXTURE</constant> is not <constant>GL_TEXTURE0</constant>.
         </para>
     </refsect1>
-    <refsect1><title>Associated Gets</title>
+    <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGetMap</refentrytitle></citerefentry>
         </para>
@@ -944,7 +944,7 @@
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_MAP2_TEXTURE_COORD_4</constant>
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glColor</refentrytitle></citerefentry>,

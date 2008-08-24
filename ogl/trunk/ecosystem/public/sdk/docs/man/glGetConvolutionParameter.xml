@@ -34,7 +34,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -76,7 +76,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>glGetConvolutionParameter</function> retrieves convolution parameters.
             <parameter>target</parameter> determines which convolution filter is queried.
@@ -187,7 +187,7 @@
             </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is not one of the allowable
             values.
@@ -207,7 +207,7 @@
             execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glGetConvolutionFilter</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetSeparableFilter</refentrytitle></citerefentry>,

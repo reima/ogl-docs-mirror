@@ -27,7 +27,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>dpy</parameter></term>
@@ -55,7 +55,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>glXQueryVersion</function> returns the major and minor version numbers of the GLX extension
             implemented by the server associated with connection <parameter>dpy</parameter>.
@@ -68,7 +68,7 @@
             <constant>NULL</constant>. 
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <function>glXQueryVersion</function> returns <constant>False</constant> if it fails,
             <constant>True</constant> otherwise.
@@ -77,7 +77,7 @@
             <parameter>major</parameter> and <parameter>minor</parameter> are not updated when <constant>False</constant> is returned.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glXQueryExtension</refentrytitle></citerefentry>
         </para>

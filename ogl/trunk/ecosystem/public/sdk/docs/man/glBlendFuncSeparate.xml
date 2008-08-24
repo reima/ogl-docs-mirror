@@ -28,7 +28,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>srcRGB</parameter></term>
@@ -101,7 +101,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             In RGBA mode, pixels can be drawn using a function that blends
             the incoming (source) RGBA values with the RGBA values
@@ -1219,7 +1219,7 @@
         <para>
         </para>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             <function>glBlendFuncSeparate</function> is available only if the GL version is 1.4 or greater.
         </para>
@@ -1261,7 +1261,7 @@
             <parameter>dstRGB</parameter> if the GL version is 1.4 or greater.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if either <parameter>srcRGB</parameter> or <parameter>dstRGB</parameter> is not an
             accepted value.
@@ -1272,7 +1272,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>Associated Gets</title>
+    <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_BLEND_SRC_RGB</constant>
         </para>
@@ -1291,7 +1291,7 @@
         <para>
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glAlphaFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBlendColor</refentrytitle></citerefentry>,

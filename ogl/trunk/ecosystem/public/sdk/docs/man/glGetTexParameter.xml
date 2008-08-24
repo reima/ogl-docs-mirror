@@ -35,7 +35,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -85,7 +85,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>glGetTexParameter</function> returns in <parameter>params</parameter> the value or values of the texture parameter
             specified as <parameter>pname</parameter>.
@@ -270,7 +270,7 @@
             </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             <constant>GL_TEXTURE_PRIORITY</constant> and <constant>GL_TEXTURE_RESIDENT</constant> are
             available only if the GL version is 1.1 or greater.
@@ -291,7 +291,7 @@
             no change is made to the contents of <parameter>params</parameter>.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> or <parameter>pname</parameter> is not an
             accepted value.
@@ -302,7 +302,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glAreTexturesResident</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPrioritizeTextures</refentrytitle></citerefentry>,

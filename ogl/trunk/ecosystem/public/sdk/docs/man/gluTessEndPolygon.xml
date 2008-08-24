@@ -25,7 +25,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>tess</parameter></term>
@@ -37,7 +37,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <citerefentry><refentrytitle>gluTessBeginPolygon</refentrytitle></citerefentry> and <function>gluTessEndPolygon</function> delimit the
             definition of a convex, concave, or self-intersecting polygon. Within
@@ -55,7 +55,7 @@
             See <citerefentry><refentrytitle>gluTessCallback</refentrytitle></citerefentry> for descriptions of the callback functions.
         </para>
     </refsect1>
-    <refsect1><title>EXAMPLE</title>
+    <refsect1 id="example"><title>Example</title>
         <para>
             A quadrilateral with a triangular hole in it can be described like this:
             <programlisting>
@@ -83,7 +83,7 @@ gluTessEndPolygon(tobj);
             the tesselator until <function>gluTessEndPolygon</function> is called.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluNewTess</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>gluTessBeginContour</refentrytitle></citerefentry>,

@@ -34,7 +34,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>id</parameter></term>
@@ -63,7 +63,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>glGetQueryObject</function> returns in <parameter>params</parameter> a selected parameter of the query object
             specified by <parameter>id</parameter>.
@@ -94,7 +94,7 @@
             </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             If an error is generated,
             no change is made to the contents of <parameter>params</parameter>.
@@ -112,7 +112,7 @@
             <function>glGetQueryObject</function> is available only if the GL version is 1.5 or greater.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>pname</parameter> is not an accepted value.
         </para>
@@ -129,7 +129,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glBeginQuery</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEndQuery</refentrytitle></citerefentry>,

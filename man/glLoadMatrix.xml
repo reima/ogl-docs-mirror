@@ -31,7 +31,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>m</parameter></term>
@@ -53,7 +53,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>glLoadMatrix</function> replaces the current matrix with the one whose elements are specified by
             <parameter>m</parameter>.
@@ -385,7 +385,7 @@
             Projection and texture transformations are similarly defined.
         </para>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             While the elements of the matrix may be specified with
             single or double precision, the GL implementation may
@@ -393,14 +393,14 @@
             precision.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glLoadMatrix</function>
             is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>Associated Gets</title>
+    <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_MATRIX_MODE</constant>
         </para>
@@ -417,7 +417,7 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_MATRIX</constant>
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glLoadIdentity</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glMatrixMode</refentrytitle></citerefentry>,

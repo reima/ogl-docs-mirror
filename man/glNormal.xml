@@ -59,7 +59,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>nx</parameter></term>
@@ -113,7 +113,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters2"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>v</parameter></term>
@@ -133,7 +133,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             The current normal is set to the given coordinates
             whenever <function>glNormal</function> is issued.
@@ -159,14 +159,14 @@
             Normalization is initially disabled.
         </para>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             The current normal can be updated at any time.
             In particular, <function>glNormal</function> can be called between a call to <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry> and
             the corresponding call to <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>Associated Gets</title>
+    <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_CURRENT_NORMAL</constant>
         </para>
@@ -177,7 +177,7 @@
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_RESCALE_NORMAL</constant>
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glColor</refentrytitle></citerefentry>,

@@ -29,7 +29,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -116,7 +116,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>glColorSubTable</function> is used to respecify a contiguous portion of a color table previously
             defined using <citerefentry><refentrytitle>glColorTable</refentrytitle></citerefentry>.  The pixels referenced by <parameter>data</parameter> replace the
@@ -142,7 +142,7 @@
             respecified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data store.
         </para>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             <function>glColorSubTable</function> is present only if <code>ARB_imaging</code> is returned when <citerefentry><refentrytitle>glGetString</refentrytitle></citerefentry>
             is called with an argument of <constant>GL_EXTENSIONS</constant>.
@@ -150,7 +150,7 @@
         <para>
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is not one of the allowable
             values.
@@ -198,7 +198,7 @@
             execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>Associated Gets</title>
+    <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGetColorTable</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetColorTableParameter</refentrytitle></citerefentry>
@@ -207,7 +207,7 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glColorTable</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glColorTableParameter</refentrytitle></citerefentry>,

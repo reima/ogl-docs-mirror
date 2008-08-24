@@ -33,7 +33,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>winX</parameter></term>
@@ -81,7 +81,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>gluUnProject</function> maps the specified window coordinates into object 
             coordinates using <parameter>model</parameter>, <parameter>proj</parameter>, and <parameter>view</parameter>.
@@ -236,7 +236,7 @@
             W is an unused variable, included for consistent matrix notation.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluProject</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>

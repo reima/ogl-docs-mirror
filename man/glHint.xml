@@ -25,7 +25,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -57,7 +57,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             Certain aspects of GL behavior,
             when there is room for interpretation,
@@ -214,7 +214,7 @@
             </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             The interpretation of hints depends on the implementation.
             Some implementations ignore <function>glHint</function> settings.
@@ -232,7 +232,7 @@
             or greater.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if either <parameter>target</parameter> or <parameter>mode</parameter> is not
             an accepted value.

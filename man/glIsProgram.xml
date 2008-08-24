@@ -18,7 +18,7 @@
 	    </funcprototype>
 	</funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
 	<variablelist>
 	    <varlistentry>
 		<term><parameter>program</parameter></term>
@@ -28,7 +28,7 @@
 	    </varlistentry>
 	</variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
 	<para><function>glIsProgram</function> returns
 	<constant>GL_TRUE</constant> if <parameter>program</parameter>
 	is the name of a program object previously created with 
@@ -38,7 +38,7 @@
 	is not the name of a program object, or if an error occurs, 
         <function>glIsProgram</function> returns <constant>GL_FALSE</constant>.</para>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
 	<para><function>glIsProgram</function> is available only if the
 	GL version is 2.0 or greater.</para>
 
@@ -49,7 +49,7 @@
         but still in use as part of current rendering state is still considered 
         a program object and <function>glIsProgram</function> will return <constant>GL_TRUE</constant>.</para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
 	<para><constant>GL_INVALID_OPERATION</constant> is generated if
 	<function>glIsProgram</function> is executed between the
 	execution of
@@ -57,7 +57,7 @@
 	and the corresponding execution of
 	<citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.</para>
     </refsect1>
-    <refsect1><title>Associated Gets</title>
+    <refsect1 id="associatedgets"><title>Associated Gets</title>
 	<para><citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
 	with the argument <constant>GL_CURRENT_PROGRAM</constant></para>
 
@@ -91,7 +91,7 @@
 	with arguments <parameter>program</parameter> and the name of a
 	uniform variable</para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
 	<para><citerefentry><refentrytitle>glAttachShader</refentrytitle></citerefentry>,
 	<citerefentry><refentrytitle>glBindAttribLocation</refentrytitle></citerefentry>,
 	<citerefentry><refentrytitle>glCreateProgram</refentrytitle></citerefentry>,

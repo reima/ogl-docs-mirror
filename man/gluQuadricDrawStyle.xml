@@ -26,7 +26,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>quad</parameter></term>
@@ -50,7 +50,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>gluQuadricDrawStyle</function> specifies the draw style for quadrics rendered with
             <parameter>quad</parameter>. The legal values are as follows:
@@ -93,7 +93,7 @@
             </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluNewQuadric</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>gluQuadricNormals</refentrytitle></citerefentry>,

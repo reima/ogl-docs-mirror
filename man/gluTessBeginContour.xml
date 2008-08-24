@@ -33,7 +33,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>tess</parameter></term>
@@ -45,7 +45,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>gluTessBeginContour</function> and <citerefentry><refentrytitle>gluTessEndContour</refentrytitle></citerefentry> delimit the definition of a
             polygon contour. Within each <function>gluTessBeginContour</function>/<citerefentry><refentrytitle>gluTessEndContour</refentrytitle></citerefentry>
@@ -55,7 +55,7 @@
             <function>gluTessBeginContour</function> can only be called between <citerefentry><refentrytitle>gluTessBeginPolygon</refentrytitle></citerefentry> and <citerefentry><refentrytitle>gluTessEndPolygon</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluNewTess</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>gluTessBeginPolygon</refentrytitle></citerefentry>,

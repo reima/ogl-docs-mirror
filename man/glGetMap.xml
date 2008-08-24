@@ -43,7 +43,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -94,7 +94,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <citerefentry><refentrytitle>glMap1</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glMap2</refentrytitle></citerefentry> define evaluators.
             <function>glGetMap</function> returns evaluator parameters.
@@ -192,13 +192,13 @@
             </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             If an error is generated,
             no change is made to the contents of <parameter>v</parameter>.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if either <parameter>target</parameter> or <parameter>query</parameter> is not
             an accepted value.
@@ -209,7 +209,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glEvalCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glMap1</refentrytitle></citerefentry>,

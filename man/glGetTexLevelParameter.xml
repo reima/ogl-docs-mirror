@@ -37,7 +37,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -104,7 +104,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>glGetTexLevelParameter</function> returns in <parameter>params</parameter> texture parameter values for a specific
             level-of-detail value,
@@ -275,7 +275,7 @@
             </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             If an error is generated,
             no change is made to the contents of <parameter>params</parameter>.
@@ -310,7 +310,7 @@
             the texture level parameters for the active texture unit.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> or <parameter>pname</parameter> is not an
             accepted value.
@@ -341,7 +341,7 @@
             uncompressed internal format or on proxy targets.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetTexParameter</refentrytitle></citerefentry>,

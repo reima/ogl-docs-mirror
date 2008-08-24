@@ -29,7 +29,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>mode</parameter></term>
@@ -86,7 +86,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>glMultiDrawElements</function> specifies multiple sets of geometric primitives with very few subroutine
             calls. Instead of calling a GL function to pass each individual vertex,
@@ -106,7 +106,7 @@
             modified maintain their previous values.
         </para>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             <function>glMultiDrawElements</function> is available only if the GL version is 1.4 or greater.
         </para>
@@ -120,7 +120,7 @@
             when the lists are created, not when the lists are executed.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>mode</parameter> is not an accepted value.
         </para>
@@ -136,7 +136,7 @@
             the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry> and the corresponding <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>,

@@ -36,7 +36,7 @@
     <!-- eqn: ignoring delim $$ -->
     <para>
     </para>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>target</parameter></term>
@@ -282,7 +282,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             Texturing maps a portion of a specified texture image
             onto each graphical primitive for which texturing is enabled.
@@ -657,7 +657,7 @@
             A four-component image uses all of the RGBA components.
         </para>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             Texturing has no effect in color index mode.
         </para>
@@ -776,7 +776,7 @@
 			internal formats are only available if the GL version is 2.1 or greater.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is not <constant>GL_TEXTURE_3D</constant>
             or <constant>GL_PROXY_TEXTURE_3D</constant>.
@@ -888,7 +888,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>Associated Gets</title>
+    <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGetTexImage</refentrytitle></citerefentry>
         </para>
@@ -899,7 +899,7 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glColorTable</refentrytitle></citerefentry>,

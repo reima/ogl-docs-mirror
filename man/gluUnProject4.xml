@@ -37,7 +37,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>winX</parameter></term>
@@ -103,7 +103,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>gluUnProject4</function> maps the specified window coordinatesi: <parameter>winX</parameter>, <parameter>winY</parameter>, and <parameter>winZ</parameter>
             and its clip w coordinate <parameter>clipW</parameter>
@@ -298,12 +298,12 @@
             <parameter>farVal</parameter> is 1.
         </para>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             <function>gluUnProject4</function> is available only if the GLU version is 1.3 or greater.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluProject</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>gluUnProject</refentrytitle></citerefentry>,

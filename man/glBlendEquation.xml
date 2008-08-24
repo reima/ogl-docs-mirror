@@ -25,7 +25,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>mode</parameter></term>
@@ -39,7 +39,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             The blend equations determine how a new pixel (the ''source'' color)
             is combined with a pixel already in the framebuffer (the ''destination''
@@ -804,13 +804,13 @@
         <para>
         </para>
     </refsect1>
-    <refsect1><title>Notes</title>
+    <refsect1 id="notes"><title>Notes</title>
         <para>
             The <constant>GL_MIN</constant>, and <constant>GL_MAX</constant> equations do not use
             the source or destination factors, only the source and destination colors.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>mode</parameter> is not one of
             <constant>GL_FUNC_ADD</constant>, <constant>GL_FUNC_SUBTRACT</constant>, <constant>GL_FUNC_REVERSE_SUBTRACT</constant>,
@@ -822,7 +822,7 @@
             execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>Associated Gets</title>
+    <refsect1 id="associatedgets"><title>Associated Gets</title>
          <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with an argument of <constant>GL_BLEND_EQUATION_RGB</constant>
          </para>
@@ -830,7 +830,7 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with an argument of <constant>GL_BLEND_EQUATION_ALPHA</constant>
          </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glGetString</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBlendColor</refentrytitle></citerefentry>,

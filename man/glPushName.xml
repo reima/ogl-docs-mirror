@@ -24,7 +24,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>name</parameter></term>
@@ -44,7 +44,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             The name stack is used during selection mode to allow sets of rendering
             commands to be uniquely identified.
@@ -71,7 +71,7 @@
             <constant>GL_SELECT</constant> are ignored.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_STACK_OVERFLOW</constant> is generated if <function>glPushName</function> is called while the
             name stack is full.
@@ -86,7 +86,7 @@
             <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>Associated Gets</title>
+    <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_NAME_STACK_DEPTH</constant>
         </para>
@@ -94,7 +94,7 @@
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_MAX_NAME_STACK_DEPTH</constant>
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glInitNames</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glLoadName</refentrytitle></citerefentry>,

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glMapGrid</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glMapGrid"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glMapGrid — define a one- or two-dimensional mesh</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glMapGrid1d</b>(</code></td><td>GLint  </td><td><var class="pdparam">un</var>, </td></tr><tr><td> </td><td>GLdouble  </td><td><var class="pdparam">u1</var>, </td></tr><tr><td> </td><td>GLdouble  </td><td><var class="pdparam">u2</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glMapGrid1f</b>(</code></td><td>GLint  </td><td><var class="pdparam">un</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">u1</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">u2</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glMapGrid2d</b>(</code></td><td>GLint  </td><td><var class="pdparam">un</var>, </td></tr><tr><td> </td><td>GLdouble  </td><td><var class="pdparam">u1</var>, </td></tr><tr><td> </td><td>GLdouble  </td><td><var class="pdparam">u2</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">vn</var>, </td></tr><tr><td> </td><td>GLdouble  </td><td><var class="pdparam">v1</var>, </td></tr><tr><td> </td><td>GLdouble  </td><td><var class="pdparam">v2</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glMapGrid2f</b>(</code></td><td>GLint  </td><td><var class="pdparam">un</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">u1</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">u2</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">vn</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">v1</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">v2</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id419304"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>un</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glMapGrid</title><meta name="generator" content="DocBook XSL Stylesheets V1.74.0" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glMapGrid"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glMapGrid — define a one- or two-dimensional mesh</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" class="funcprototype-table"><tr><td><code class="funcdef">void <b class="fsfunc">glMapGrid1d</b>(</code></td><td>GLint <var class="pdparam">un</var>, </td></tr><tr><td> </td><td>GLdouble <var class="pdparam">u1</var>, </td></tr><tr><td> </td><td>GLdouble <var class="pdparam">u2</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" class="funcprototype-table"><tr><td><code class="funcdef">void <b class="fsfunc">glMapGrid1f</b>(</code></td><td>GLint <var class="pdparam">un</var>, </td></tr><tr><td> </td><td>GLfloat <var class="pdparam">u1</var>, </td></tr><tr><td> </td><td>GLfloat <var class="pdparam">u2</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" class="funcprototype-table"><tr><td><code class="funcdef">void <b class="fsfunc">glMapGrid2d</b>(</code></td><td>GLint <var class="pdparam">un</var>, </td></tr><tr><td> </td><td>GLdouble <var class="pdparam">u1</var>, </td></tr><tr><td> </td><td>GLdouble <var class="pdparam">u2</var>, </td></tr><tr><td> </td><td>GLint <var class="pdparam">vn</var>, </td></tr><tr><td> </td><td>GLdouble <var class="pdparam">v1</var>, </td></tr><tr><td> </td><td>GLdouble <var class="pdparam">v2</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" class="funcprototype-table"><tr><td><code class="funcdef">void <b class="fsfunc">glMapGrid2f</b>(</code></td><td>GLint <var class="pdparam">un</var>, </td></tr><tr><td> </td><td>GLfloat <var class="pdparam">u1</var>, </td></tr><tr><td> </td><td>GLfloat <var class="pdparam">u2</var>, </td></tr><tr><td> </td><td>GLint <var class="pdparam">vn</var>, </td></tr><tr><td> </td><td>GLfloat <var class="pdparam">v1</var>, </td></tr><tr><td> </td><td>GLfloat <var class="pdparam">v2</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>un</code></em></span></dt><dd><p>
                     Specifies the number of partitions in the grid range interval
                     [<em class="parameter"><code>u1</code></em>, <em class="parameter"><code>u2</code></em>].
                     Must be positive.
@@ -48,13 +48,13 @@
                         </mml:mrow>
                     </mml:math>
                     (<code class="function">glMapGrid2</code> only).
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="id419558"></a><h2>Description</h2><p>
-            <code class="function">glMapGrid</code> and <a href="glEvalMesh.xml"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a> are used together to efficiently
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
+            <code class="function">glMapGrid</code> and <a class="citerefentry" href="glEvalMesh.xml"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a> are used together to efficiently
             generate and evaluate a series of evenly-spaced map domain values.
-            <a href="glEvalMesh.xml"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a> steps through the integer domain
+            <a class="citerefentry" href="glEvalMesh.xml"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a> steps through the integer domain
             of a one- or two-dimensional grid,
             whose range is the domain of the evaluation maps specified by
-            <a href="glMap1.xml"><span class="citerefentry"><span class="refentrytitle">glMap1</span></span></a> and <a href="glMap2.xml"><span class="citerefentry"><span class="refentrytitle">glMap2</span></span></a>.
+            <a class="citerefentry" href="glMap1.xml"><span class="citerefentry"><span class="refentrytitle">glMap1</span></span></a> and <a class="citerefentry" href="glMap2.xml"><span class="citerefentry"><span class="refentrytitle">glMap2</span></span></a>.
         </p><p>
             <code class="function">glMapGrid1</code> and <code class="function">glMapGrid2</code> specify the linear grid mappings
             between the 
@@ -71,7 +71,7 @@
             and 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">v</mml:mi></mml:math>)
             floating-point evaluation map coordinates.
-            See <a href="glMap1.xml"><span class="citerefentry"><span class="refentrytitle">glMap1</span></span></a> and <a href="glMap2.xml"><span class="citerefentry"><span class="refentrytitle">glMap2</span></span></a> for details of how 
+            See <a class="citerefentry" href="glMap1.xml"><span class="citerefentry"><span class="refentrytitle">glMap1</span></span></a> and <a class="citerefentry" href="glMap2.xml"><span class="citerefentry"><span class="refentrytitle">glMap2</span></span></a> for details of how 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">u</mml:mi></mml:math>
             and 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">v</mml:mi></mml:math>
@@ -211,31 +211,31 @@
             </mml:math></div><p>
         </p><p>
             The mappings specified by <code class="function">glMapGrid</code> are used identically by
-            <a href="glEvalMesh.xml"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a> and <a href="glEvalPoint.xml"><span class="citerefentry"><span class="refentrytitle">glEvalPoint</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id426152"></a><h2>Errors</h2><p>
+            <a class="citerefentry" href="glEvalMesh.xml"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a> and <a class="citerefentry" href="glEvalPoint.xml"><span class="citerefentry"><span class="refentrytitle">glEvalPoint</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if either <em class="parameter"><code>un</code></em> or <em class="parameter"><code>vn</code></em> is not
             positive.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glMapGrid</code>
-            is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-            and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id426202"></a><h2>Associated Gets</h2><p>
-            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP1_GRID_DOMAIN</code>
+            is executed between the execution of <a class="citerefentry" href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
+            and the corresponding execution of <a class="citerefentry" href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
+            <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP1_GRID_DOMAIN</code>
         </p><p>
-            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP2_GRID_DOMAIN</code>
+            <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP2_GRID_DOMAIN</code>
         </p><p>
-            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP1_GRID_SEGMENTS</code>
+            <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP1_GRID_SEGMENTS</code>
         </p><p>
-            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP2_GRID_SEGMENTS</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="id426255"></a><h2>See Also</h2><p>
-            <a href="glEvalCoord.xml"><span class="citerefentry"><span class="refentrytitle">glEvalCoord</span></span></a>,
-            <a href="glEvalMesh.xml"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a>,
-            <a href="glEvalPoint.xml"><span class="citerefentry"><span class="refentrytitle">glEvalPoint</span></span></a>,
-            <a href="glMap1.xml"><span class="citerefentry"><span class="refentrytitle">glMap1</span></span></a>,
-            <a href="glMap2.xml"><span class="citerefentry"><span class="refentrytitle">glMap2</span></span></a>
+            <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_MAP2_GRID_SEGMENTS</code>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
+            <a class="citerefentry" href="glEvalCoord.xml"><span class="citerefentry"><span class="refentrytitle">glEvalCoord</span></span></a>,
+            <a class="citerefentry" href="glEvalMesh.xml"><span class="citerefentry"><span class="refentrytitle">glEvalMesh</span></span></a>,
+            <a class="citerefentry" href="glEvalPoint.xml"><span class="citerefentry"><span class="refentrytitle">glEvalPoint</span></span></a>,
+            <a class="citerefentry" href="glMap1.xml"><span class="citerefentry"><span class="refentrytitle">glMap1</span></span></a>,
+            <a class="citerefentry" href="glMap2.xml"><span class="citerefentry"><span class="refentrytitle">glMap2</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see
-            <a href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
+            <a class="ulink" href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
         </p></div></div></body></html>

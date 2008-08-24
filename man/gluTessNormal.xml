@@ -28,7 +28,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>tess</parameter></term>
@@ -64,7 +64,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>gluTessNormal</function> describes a normal for a polygon that the program is defining.
             All input data will be projected onto a plane perpendicular to one of 
@@ -90,7 +90,7 @@
             <function>gluTessNormal</function>.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gluTessBeginPolygon</refentrytitle></citerefentry>, 
             <citerefentry><refentrytitle>gluTessEndPolygon</refentrytitle></citerefentry>

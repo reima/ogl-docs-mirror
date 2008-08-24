@@ -27,7 +27,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>mode</parameter></term>
@@ -64,7 +64,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters2"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>mode</parameter></term>
@@ -101,7 +101,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <citerefentry><refentrytitle>glMapGrid</refentrytitle></citerefentry> and <function>glEvalMesh</function> are used in tandem to efficiently
             generate and evaluate a series of evenly-spaced map domain values.
@@ -581,7 +581,7 @@ glEnd();
             </mml:math></inlineequation>.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>mode</parameter> is not an accepted value.
         </para>
@@ -591,7 +591,7 @@ glEnd();
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>Associated Gets</title>
+    <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_MAP1_GRID_DOMAIN</constant>
         </para>
@@ -605,7 +605,7 @@ glEnd();
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_MAP2_GRID_SEGMENTS</constant>
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEvalCoord</refentrytitle></citerefentry>,

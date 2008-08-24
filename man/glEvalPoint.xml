@@ -32,7 +32,7 @@
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>i</parameter></term>
@@ -55,7 +55,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <citerefentry><refentrytitle>glMapGrid</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glEvalMesh</refentrytitle></citerefentry> are used in tandem to efficiently
             generate and evaluate a series of evenly spaced map domain values.
@@ -346,7 +346,7 @@ glEvalCoord2( <mml:math>
             </mml:math></inlineequation>.
         </para>
     </refsect1>
-    <refsect1><title>Associated Gets</title>
+    <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_MAP1_GRID_DOMAIN</constant>
         </para>
@@ -360,7 +360,7 @@ glEvalCoord2( <mml:math>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_MAP2_GRID_SEGMENTS</constant>
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glEvalCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEvalMesh</refentrytitle></citerefentry>,

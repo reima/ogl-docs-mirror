@@ -24,7 +24,7 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
         <varlistentry>
             <term><parameter>list</parameter></term>
@@ -36,7 +36,7 @@
         </varlistentry>
         </variablelist>
     </refsect1>
-    <refsect1><title>Description</title>
+    <refsect1 id="description"><title>Description</title>
         <para>
             <function>glIsList</function> returns <constant>GL_TRUE</constant> if <parameter>list</parameter> is the name
             of a display list and returns <constant>GL_FALSE</constant> if it is not, or if an error occurs.
@@ -46,7 +46,7 @@
             by calling <citerefentry><refentrytitle>glNewList</refentrytitle></citerefentry>, is not the name of a display list.
         </para>
     </refsect1>
-    <refsect1><title>Errors</title>
+    <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glIsList</function>
             is executed between the execution of
@@ -54,7 +54,7 @@
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
     </refsect1>
-    <refsect1><title>See Also</title>
+    <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glCallList</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCallLists</refentrytitle></citerefentry>,

@@ -127,7 +127,8 @@
         </variablelist>
         <para>
             The initial value of <parameter>func</parameter> is <constant>GL_LESS</constant>.
-            Initially, depth testing is disabled.
+            Initially, depth testing is disabled.  If depth testing is disabled or if no
+            depth buffer exists, it is as if the depth test always passes.
         </para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>

@@ -374,7 +374,8 @@
     <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>nearVal</parameter> or <parameter>farVal</parameter> is not
-            positive, or if <parameter>left</parameter> = <parameter>right</parameter>, or <parameter>bottom</parameter> = <parameter>top</parameter>.
+            positive, or if <parameter>left</parameter> = <parameter>right</parameter>, or <parameter>bottom</parameter> = <parameter>top</parameter>,
+            or <parameter>near</parameter> = <parameter>far</parameter>.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glFrustum</function>

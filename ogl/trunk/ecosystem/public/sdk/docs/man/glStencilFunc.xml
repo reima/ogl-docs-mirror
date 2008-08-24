@@ -89,9 +89,9 @@
             Stenciling,
             like depth-buffering,
             enables and disables drawing on a per-pixel basis.
-            You draw into the stencil planes using GL drawing primitives,
-            then render geometry and images,
-            using the stencil planes to mask out portions of the screen.
+            Stencil planes are first drawn into using GL drawing primitives, then
+            geometry and images are rendered using the stencil planes to mask out
+            portions of the screen.
             Stenciling is typically used in multipass rendering algorithms
             to achieve special effects,
             such as decals,

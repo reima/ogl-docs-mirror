@@ -102,7 +102,7 @@
 		        </para>
                     <para>
                         If enabled,
-                        blend the incoming RGBA color values with the values in the color
+                        blend the computed fragment color values with the values in the color
                         buffers. See <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -126,7 +126,7 @@
 		        </para>
                     <para>
                         If enabled,
-                        apply the currently selected logical operation to the incoming RGBA
+                        apply the currently selected logical operation to the computed fragment
                         color and color buffer values. See <citerefentry><refentrytitle>glLogicOp</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -655,7 +655,8 @@
                     <para>
                         If enabled and no vertex shader is active,
                         normal vectors are normalized to unit length
-                        after transformation and before lighting.  See 
+                        after transformation and before lighting.  This method is generally
+                        less efficient than <constant>GL_RESCALE_NORMAL</constant>. See 
                         <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry> and
                         <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>.
                     </para>
@@ -784,9 +785,10 @@
                     <para>
                         If enabled and no vertex shader is active, 
                         normal vectors are scaled after transformation and before 
-                        lighting by a factor computed from the model-view matrix.  If the
-                        model-view matrix scales space uniformly, this has the effect of
-                        restoring the transformed normal to unit length.  See 
+                        lighting by a factor computed from the modelview matrix.  If the
+                        modelview matrix scales space uniformly, this has the effect of
+                        restoring the transformed normal to unit length.  This method is generally
+                        more efficient than <constant>GL_NORMALIZE</constant>. See 
                         <citerefentry><refentrytitle>glNormal</refentrytitle></citerefentry> and
                         <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>.
                     </para>
@@ -1049,6 +1051,14 @@
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glEnable</function> or <citerefentry><refentrytitle>glDisable</refentrytitle></citerefentry>
             is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
             and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
+        </para>
+    </refsect1>
+    <refsect1 id="associatedgets"><title>Associated Gets</title>
+        <para>
+            <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>

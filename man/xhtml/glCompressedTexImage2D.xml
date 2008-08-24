@@ -143,7 +143,8 @@
             <a class="citerefentry" href="glGetTexLevelParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span></a> with arguments <code class="constant">GL_TEXTURE_INTERNAL_FORMAT</code>
             and <code class="constant">GL_TEXTURE_COMPRESSED_IMAGE_SIZE</code>
         </p><p>
-            <a class="citerefentry" href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_2D</code>
+            <a class="citerefentry" href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument
+            <code class="constant">GL_TEXTURE_2D</code> or <code class="constant">GL_TEXTURE_CUBE_MAP</code>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a class="citerefentry" href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>,
             <a class="citerefentry" href="glColorTable.xml"><span class="citerefentry"><span class="refentrytitle">glColorTable</span></span></a>,

@@ -41,7 +41,8 @@
                         Always passes.
                     </p></dd></dl></div><p>
             The initial value of <em class="parameter"><code>func</code></em> is <code class="constant">GL_LESS</code>.
-            Initially, depth testing is disabled.
+            Initially, depth testing is disabled.  If depth testing is disabled or if no
+            depth buffer exists, it is as if the depth test always passes.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
             Even if the depth buffer exists and the depth mask is non-zero, the
             depth buffer is not updated if the depth test is disabled.

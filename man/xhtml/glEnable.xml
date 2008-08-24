@@ -29,7 +29,7 @@
                     </p></dd><dt><span class="term"><code class="constant">GL_BLEND</code></span></dt><dd><p>
 		        </p><p>
                         If enabled,
-                        blend the incoming RGBA color values with the values in the color
+                        blend the computed fragment color values with the values in the color
                         buffers. See <a class="citerefentry" href="glBlendFunc.xml"><span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_CLIP_PLANE</code><span class="emphasis"><em>i</em></span></span></dt><dd><p>
 		        </p><p>
@@ -39,7 +39,7 @@
                     </p></dd><dt><span class="term"><code class="constant">GL_COLOR_LOGIC_OP</code></span></dt><dd><p>
 		        </p><p>
                         If enabled,
-                        apply the currently selected logical operation to the incoming RGBA
+                        apply the currently selected logical operation to the computed fragment
                         color and color buffer values. See <a class="citerefentry" href="glLogicOp.xml"><span class="citerefentry"><span class="refentrytitle">glLogicOp</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_COLOR_MATERIAL</code></span></dt><dd><p>
 		        </p><p>
@@ -316,7 +316,8 @@
 		        </p><p>
                         If enabled and no vertex shader is active,
                         normal vectors are normalized to unit length
-                        after transformation and before lighting.  See 
+                        after transformation and before lighting.  This method is generally
+                        less efficient than <code class="constant">GL_RESCALE_NORMAL</code>. See 
                         <a class="citerefentry" href="glNormal.xml"><span class="citerefentry"><span class="refentrytitle">glNormal</span></span></a> and
                         <a class="citerefentry" href="glNormalPointer.xml"><span class="citerefentry"><span class="refentrytitle">glNormalPointer</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_POINT_SMOOTH</code></span></dt><dd><p>
@@ -375,9 +376,10 @@
 		        </p><p>
                         If enabled and no vertex shader is active, 
                         normal vectors are scaled after transformation and before 
-                        lighting by a factor computed from the model-view matrix.  If the
-                        model-view matrix scales space uniformly, this has the effect of
-                        restoring the transformed normal to unit length.  See 
+                        lighting by a factor computed from the modelview matrix.  If the
+                        modelview matrix scales space uniformly, this has the effect of
+                        restoring the transformed normal to unit length.  This method is generally
+                        more efficient than <code class="constant">GL_NORMALIZE</code>. See 
                         <a class="citerefentry" href="glNormal.xml"><span class="citerefentry"><span class="refentrytitle">glNormal</span></span></a> and
                         <a class="citerefentry" href="glNormalPointer.xml"><span class="citerefentry"><span class="refentrytitle">glNormalPointer</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_SAMPLE_ALPHA_TO_COVERAGE</code></span></dt><dd><p>
@@ -513,6 +515,10 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glEnable</code> or <a class="citerefentry" href="glDisable.xml"><span class="citerefentry"><span class="refentrytitle">glDisable</span></span></a>
             is executed between the execution of <a class="citerefentry" href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a class="citerefentry" href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
+            <a class="citerefentry" href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a>
+        </p><p>
+            <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a class="citerefentry" href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>,
             <a class="citerefentry" href="glAlphaFunc.xml"><span class="citerefentry"><span class="refentrytitle">glAlphaFunc</span></span></a>,

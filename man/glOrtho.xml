@@ -318,6 +318,12 @@
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
         <para>
+            <constant>GL_INVALID_VALUE</constant> is generated if
+            <parameter>left</parameter> = <parameter>right</parameter>, or
+            <parameter>bottom</parameter> = <parameter>top</parameter>, or
+            <parameter>near</parameter> = <parameter>far</parameter>.
+        </para>
+        <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glOrtho</function>
             is executed between the execution of
             <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>

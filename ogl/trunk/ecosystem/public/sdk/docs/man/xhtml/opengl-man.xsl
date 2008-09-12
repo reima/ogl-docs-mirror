@@ -1,8 +1,8 @@
-<?xml version='1.0'?> 
-<xsl:stylesheet  
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"> 
+<?xml version='1.0'?>
+<xsl:stylesheet
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
-<xsl:import href="file:///usr/share/sgml/docbook/xsl-stylesheets/xhtml/docbook.xsl"/> 
+<xsl:import href="http://docbook.sourceforge.net/release/xsl/current/xhtml/docbook.xsl"/>
 
 <xsl:param name="funcsynopsis.style">ansi</xsl:param>
 <xsl:param name="citerefentry.link" select="'1'"></xsl:param>
@@ -17,23 +17,23 @@
   <html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl">
     <head>
       <xsl:call-template name="system.head.content">
-        <xsl:with-param name="node" select="$doc"/>
+	<xsl:with-param name="node" select="$doc"/>
       </xsl:call-template>
       <xsl:call-template name="head.content">
-        <xsl:with-param name="node" select="$doc"/>
+	<xsl:with-param name="node" select="$doc"/>
       </xsl:call-template>
       <xsl:call-template name="user.head.content">
-        <xsl:with-param name="node" select="$doc"/>
+	<xsl:with-param name="node" select="$doc"/>
       </xsl:call-template>
     </head>
     <body>
       <xsl:call-template name="body.attributes"/>
       <xsl:call-template name="user.header.content">
-        <xsl:with-param name="node" select="$doc"/>
+	<xsl:with-param name="node" select="$doc"/>
       </xsl:call-template>
       <xsl:apply-templates select="."/>
       <xsl:call-template name="user.footer.content">
-        <xsl:with-param name="node" select="$doc"/>
+	<xsl:with-param name="node" select="$doc"/>
       </xsl:call-template>
     </body>
   </html>
@@ -46,5 +46,4 @@
   <xsl:apply-imports/>
 </xsl:template>
 
-</xsl:stylesheet>  
-
+</xsl:stylesheet>

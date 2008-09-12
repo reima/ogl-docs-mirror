@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="KEYWORDS" content="Viewing XHTML and MathML" />
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="/favicon.ico" />
+    <title>Viewing XHTML and MathML - KhronosWiki</title>
+    <style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/wiki/skins/monobook/main.css"; /*]]>*/</style>
+    <link rel="stylesheet" type="text/css" media="print" href="/wiki/skins/common/commonPrint.css" />
+    <!--[if lt IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE50Fixes.css";</style><![endif]-->
+    <!--[if IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE55Fixes.css";</style><![endif]-->
+    <!--[if gte IE 6]><style type="text/css">@import "/wiki/skins/monobook/IE60Fixes.css";</style><![endif]-->
+    <!--[if IE]><script type="text/javascript" src="/wiki/skins/common/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+    <script type="text/javascript" src="/wiki/index.php?title=-&amp;action=raw&amp;smaxage=0&amp;gen=js"></script>    <script type="text/javascript" src="/wiki/skins/common/wikibits.js"></script>
+    <style type="text/css">/*<![CDATA[*/
+@import "/wiki/index.php?title=MediaWiki:Monobook.css&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=-&action=raw&gen=css&maxage=18000";
+/*]]>*/</style>
+
+	<!-- gmap -->
+      </head>
+  <body				class="ns-0">
+    <div id="globalWrapper">
+      <div id="column-content">
+	<div id="content">
+	  <a name="top" id="top"></a>
+		  <h1 class="firstHeading">Viewing XHTML and MathML</h1>
+	  <div id="bodyContent">
+	    <h3 id="siteSub">From Khronos Wiki</h3>
+	    <div id="contentSub"></div>
+			    <!-- start content -->
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Viewing_XHTML_and_MathML&amp;action=edit&amp;section=1" title=" Viewing XHTML and MathML">edit</a>]</div><a name="Viewing_XHTML.2BMathML"></a><h2> Viewing XHTML+MathML </h2>
+<p>The Docbook XML man pages for OpenGL use a DTD which combines Docbook 4.3 and MathML 2.0 DTDs. Using the Docbook modular stylesheets, the XML documents are converted into conformant XHTML+MathML.
+</p><p>MathML support in browsers is developing. Several tips:
+</p>
+<ul><li> The documents must be served with MIME type application/xhtml+xml. If they are served as straight XHTML, or worse yet HTML, documents, the browser will not try to render MathML content properly. (The main consequence of this, so far, is that XHTML+MathML documents have to use the ".xhtml" filename suffix when reading them from file:// URLs or in the filesystem Apache is reading them from.)
+</li><li> If you are serving .xhtml files from the Khronos Subversion repository, you must set the MIME type correctly. For an <b>existing</b> document, use
+</li></ul>
+<pre>
+svn propset svn:mime-type application/xhtml+xml filename.xhtml</pre>
+<p>You can automate this for new documents by modifying your Subversion config file (on Linux, this should be in ~/.subversion/config) to contain:
+</p>
+<pre>
+[miscellany]
+enable-auto-props = yes
+
+[auto-props]
+*.xml = svn:eol-style=native;svn:mime-type=application/xhtml+xml</pre>
+<p>This causes all files created in Subversion with a ".xml" suffix to automatically be given appropriate MIME types (and also EOL styles, which helps sharing them across Windows/Unix platforms).
+</p>
+<ul><li> For Firefox 1.5, MathML support is built-in. However, the <a href="http://www.mozilla.org/projects/mathml/fonts/" class='external text' title="http://www.mozilla.org/projects/mathml/fonts/" rel="nofollow">proper fonts</a> must be installed. This is somewhat tricky, but I have it working on Fedora Core 5 Linux (a bit of juggling with the fonts was required - removing the Adobe Symbol font despite its being recommended).
+</li><li> For IE, there are some free plugins. The most recommended seems to be <a href="http://www.dessci.com/en/products/mathplayer/" class='external text' title="http://www.dessci.com/en/products/mathplayer/" rel="nofollow">MathPlayer</a>, and it has been confirmed to work well. Some other plugins are listed <a href="http://www.w3.org/Math/Software/mathml_software_cat_plugins.html" class='external text' title="http://www.w3.org/Math/Software/mathml software cat plugins.html" rel="nofollow">here</a>. Please experiment and let us know of any plugins better than MathPlayer.
+</li><li> For test pages see the W3C's <a href="http://www.w3.org/Math/testsuite/overview.html" class='external text' title="http://www.w3.org/Math/testsuite/overview.html" rel="nofollow">MathML Test Suite</a>.
+</li></ul>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Viewing_XHTML_and_MathML&amp;action=edit&amp;section=2" title=" Viewing XHTML and MathML">edit</a>]</div><a name="OS_X_Notes"></a><h3> OS X Notes </h3>
+<p>You have to use Firefox, as Safari doesn't implement MathML.  You'll have to install the fonts from MIT from the link above.  After that, I had to edit my Firefox user preferences to get rid of a warning about needing fonts named CMSY10 and CMSX10 every time the page was displayed.  To do this in Firefox 2.0:
+</p>
+<ol><li> Type about:config in the address bar
+</li><li> Control-click anywhere in the list of preferences that come up and select New&rarr;String
+</li><li> In the "New string value" dialog, enter <tt>font.mathfont-family</tt>
+</li><li> In the "Enter string value" enter <tt>Math1, Math2, Math4</tt>
+</li></ol>
+
+	    <div class="visualClear"></div>
+	  </div>
+	</div>
+      </div>
+      <div id="column-one">
+    </div>
+</html>

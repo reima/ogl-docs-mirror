@@ -35,8 +35,8 @@ href="http://www.w3.org/Consortium/Legal/copyright-software-19980720"
 
 
 <fns:x name="mathplayer" o="MathPlayer.Factory.1">
-<object id="mmlFactory" 
-        classid="clsid:32F66A20-7614-11D4-BD11-00104BD3F987">
+<object id="mmlFactory"
+	classid="clsid:32F66A20-7614-11D4-BD11-00104BD3F987">
 </object>
 <?import namespace="mml" implementation="#mmlFactory"?>
 </fns:x>
@@ -74,8 +74,8 @@ newDoc.write(str);
 
 
 <h:p>
-in mpdialog mode, we just write out some JavaScript to display 
-dialog to the reader asking whether they want to install MathPlayer 
+in mpdialog mode, we just write out some JavaScript to display
+dialog to the reader asking whether they want to install MathPlayer
 Depending on the response we get, we then instantiate an XSL processor
 and reprocess the doc, passing $secondpass according to the
 reader response.
@@ -213,7 +213,7 @@ document.close();
      <xsl:choose>
      <xsl:when test="$docpref='mathplayer-dl'">mathplayer-dl</xsl:when>
      <xsl:when test="$docpref and fns:isinstalled(string($docpref/@o))='true'">
-           <xsl:copy-of select="$docpref/node()"/>
+	   <xsl:copy-of select="$docpref/node()"/>
      </xsl:when>
      <xsl:otherwise>
        <xsl:copy-of select="(document('')/*/fns:x[fns:isinstalled(string(@o))='true'])[1]/node()"/>
@@ -244,13 +244,13 @@ tests whether a specified ActiveX component is known to the client.
 This is used below to test for the existence of MathML rendering
 components.</h:p>
 <msxsl:script language="JScript" implements-prefix="fns">
-    function isinstalled(ax) 
+    function isinstalled(ax)
     {
     try {
-        var ActiveX = new ActiveXObject(ax);
-        return "true";
+	var ActiveX = new ActiveXObject(ax);
+	return "true";
     } catch (e) {
-        return "false";
+	return "false";
     }
 }
 </msxsl:script>
@@ -319,8 +319,8 @@ be added here if necessary</h:span>
 <!-- new if for IE frames bug -->
 <xsl:if test="system-property('xsl:vendor')='Microsoft'">
 <xsl:if test="name(msxsl:node-set($activex)/*)=''">
-<object id="mmlFactory" 
-        classid="clsid:32F66A20-7614-11D4-BD11-00104BD3F987">
+<object id="mmlFactory"
+	classid="clsid:32F66A20-7614-11D4-BD11-00104BD3F987">
 </object>
 <xsl:processing-instruction name="import">
  namespace="mml" implementation="#mmlFactory"
@@ -351,7 +351,7 @@ be added here if necessary</h:span>
 <xsl:template match="mml:math" priority="22">
 <xsl:choose>
 <xsl:when test="$activex='techexplorer-plugin'">
-<embed  type="text/mathml" height="75" width="300">
+<embed	type="text/mathml" height="75" width="300">
 <xsl:attribute name="mmldata">
 <xsl:apply-templates mode="verb" select="."/>
 </xsl:attribute>
@@ -395,10 +395,10 @@ mathplayer annotations, otherwise use first child or a presentation annotation.<
    </xsl:element>
  </xsl:when>
  <xsl:when test="mml:annotation-xml[@encoding='MathML-Presentation']">
-   <xsl:apply-templates select="mml:annotation-xml[@encoding='MathML-Presentation']/node()"/>  
+   <xsl:apply-templates select="mml:annotation-xml[@encoding='MathML-Presentation']/node()"/>
  </xsl:when>
  <xsl:otherwise>
-   <xsl:apply-templates select="*[1]"/>  
+   <xsl:apply-templates select="*[1]"/>
  </xsl:otherwise>
 </xsl:choose>
 </xsl:template>
@@ -429,7 +429,7 @@ mathplayer annotations, otherwise use first child or a presentation annotation.<
   <xsl:text>"</xsl:text>
   <xsl:call-template name="string-replace">
     <xsl:with-param name="from" select="'&quot;'"/>
-    <xsl:with-param name="to" select="'&amp;quot;'"/> 
+    <xsl:with-param name="to" select="'&amp;quot;'"/>
     <xsl:with-param name="string" select="."/>
   </xsl:call-template>
   <xsl:text>"</xsl:text>
@@ -448,18 +448,18 @@ mathplayer annotations, otherwise use first child or a presentation annotation.<
   <a name="{generate-id(.)}"/>
   <xsl:call-template name="string-replace">
     <xsl:with-param name="to" select="'&amp;gt;'"/>
-    <xsl:with-param name="from" select="'&gt;'"/> 
+    <xsl:with-param name="from" select="'&gt;'"/>
     <xsl:with-param name="string">
       <xsl:call-template name="string-replace">
-        <xsl:with-param name="to" select="'&amp;lt;'"/>
-        <xsl:with-param name="from" select="'&lt;'"/> 
-        <xsl:with-param name="string">
-          <xsl:call-template name="string-replace">
-            <xsl:with-param name="to" select="'&amp;amp;'"/>
-            <xsl:with-param name="from" select="'&amp;'"/> 
-            <xsl:with-param name="string" select="."/>
-          </xsl:call-template>
-        </xsl:with-param>
+	<xsl:with-param name="to" select="'&amp;lt;'"/>
+	<xsl:with-param name="from" select="'&lt;'"/>
+	<xsl:with-param name="string">
+	  <xsl:call-template name="string-replace">
+	    <xsl:with-param name="to" select="'&amp;amp;'"/>
+	    <xsl:with-param name="from" select="'&amp;'"/>
+	    <xsl:with-param name="string" select="."/>
+	  </xsl:call-template>
+	</xsl:with-param>
       </xsl:call-template>
     </xsl:with-param>
   </xsl:call-template>
@@ -527,13 +527,13 @@ no-entities attribute which is the IE5XSL equivalent of disable-output-encoding<
 
 
 <ie5:script>
-    function mpisinstalled() 
+    function mpisinstalled()
     {
     try {
-        var ActiveX = new ActiveXObject("MathPlayer.Factory.1");
-        return "true";
+	var ActiveX = new ActiveXObject("MathPlayer.Factory.1");
+	return "true";
     } catch (e) {
-        return "false";
+	return "false";
     }
 }
 </ie5:script>
@@ -568,7 +568,7 @@ no-entities attribute which is the IE5XSL equivalent of disable-output-encoding<
 
 <ie5:template match="mml:math">
 <ie5:if expr="mpisinstalled()=='false'">
-<embed  type="text/mathml" height="75" width="300">
+<embed	type="text/mathml" height="75" width="300">
 <ie5:attribute name="mmldata">
 <ie5:eval  doc:id="eval"  no-entities="t">'&lt;math&gt;'</ie5:eval>
 <ie5:apply-templates/>
@@ -588,11 +588,11 @@ no-entities attribute which is the IE5XSL equivalent of disable-output-encoding<
 </ie5:template>
 
 <ie5:template match="html|h:html">
-<html   xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<html	xmlns:mml="http://www.w3.org/1998/Math/MathML">
 <head>
 <ie5:if expr="mpisinstalled()=='true'">
 <object id="mmlFactory"
-        classid="clsid:32F66A20-7614-11D4-BD11-00104BD3F987">
+	classid="clsid:32F66A20-7614-11D4-BD11-00104BD3F987">
 </object>
 <ie5:pi name="IMPORT">
  namespace="mml" implementation="#mmlFactory"

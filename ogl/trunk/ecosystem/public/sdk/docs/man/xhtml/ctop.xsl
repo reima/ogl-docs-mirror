@@ -308,7 +308,7 @@ href="http://www.w3.org/Consortium/Legal/copyright-software-19980720"
       <xsl:otherwise>+</xsl:otherwise>
     </xsl:choose>
     </mml:mo>
-   </xsl:if>   
+   </xsl:if>
     <xsl:choose>
       <xsl:when test="self::mml:apply[*[1][self::mml:times] and
       *[2][self::mml:cn[not(mml:sep) and (number(.) &lt;0)]]]">
@@ -379,7 +379,7 @@ href="http://www.w3.org/Consortium/Legal/copyright-software-19980720"
       <xsl:otherwise><!--&#8290;--><!--invisible times--></xsl:otherwise>
     </xsl:choose>
     </mml:mo>
-   </xsl:if> 
+   </xsl:if>
    <xsl:if test="position()&gt;= $first">
    <xsl:apply-templates mode="c2p" select=".">
      <xsl:with-param name="p" select="3"/>
@@ -726,7 +726,7 @@ href="http://www.w3.org/Consortium/Legal/copyright-software-19980720"
 <xsl:for-each select="mml:bvar">
 <mml:mrow>
 <mml:mo>&#8706;<!-- partial --></mml:mo><mml:msup><xsl:apply-templates mode="c2p" select="node()"/>
-                     <mml:mrow><xsl:apply-templates mode="c2p" select="mml:degree/node()"/></mml:mrow>
+		     <mml:mrow><xsl:apply-templates mode="c2p" select="mml:degree/node()"/></mml:mrow>
 </mml:msup>
 </mml:mrow>
 </xsl:for-each>
@@ -1267,7 +1267,7 @@ match="mml:apply[*[1][self::mml:determinant]][*[2][self::mml:matrix]]" priority=
   <xsl:for-each select="*[position()&gt;1]">
    <xsl:if test="position() &gt; 1">
     <xsl:copy-of select="$mo"/>
-   </xsl:if>   
+   </xsl:if>
    <xsl:apply-templates mode="c2p" select=".">
      <xsl:with-param name="p" select="$this-p"/>
    </xsl:apply-templates>

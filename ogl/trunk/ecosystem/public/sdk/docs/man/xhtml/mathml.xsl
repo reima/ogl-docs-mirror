@@ -38,5 +38,5 @@ href="http://www.w3.org/Consortium/Legal/copyright-software-19980720"
 <xsl:apply-templates/>
 </xsl:otherwise>
 </xsl:choose>
-</xsl:template> 
+</xsl:template>
 </xsl:stylesheet>

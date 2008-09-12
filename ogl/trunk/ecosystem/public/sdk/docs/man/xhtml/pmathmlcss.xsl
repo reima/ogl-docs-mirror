@@ -119,7 +119,7 @@ The mrowStretch function implements stretchy brackets. It is called
 repeatedly, once for each mo child,after a span corresponding to an
 mrow. The arguments are the id of teh span and the characters to use
 for the parts of the stretch operator.
-constructed fence. The 
+constructed fence. The
 </h:p>
 
 <h:p doc:ref="css">
@@ -162,7 +162,7 @@ if ((mrowH &lt; opH * 3) &amp;&amp;(opm == ope) ) m="";
 es="";
 for ( i = 3; i &lt;= mrowH / (2*opH) ; i += 1) es += "&lt;font size='+1' face='symbol'>" + ope + "&lt;/font>&lt;br/>" ;
 opid.innerHTML="&lt;table class='lr'>&lt;tr>&lt;td>&lt;font size='+1' face='symbol'>" +
-          opt + "&lt;/font>&lt;br/>" +
+	  opt + "&lt;/font>&lt;br/>" +
        es +
        m +
        es +
@@ -242,7 +242,7 @@ position: absolute;
 display: inline;
 vertical-align: middle;
 }
-	
+
 .lr {
 display: inline;
 vertical-align: middle;
@@ -299,7 +299,7 @@ display: inline;
 }
 
 .ssa {
- position:relative; top:+0.5ex;  
+ position:relative; top:+0.5ex;
 width: 0pt;
 color: red;
 }
@@ -656,7 +656,7 @@ onmouseout="{generate-id()}.style.backgroundColor='white';"><xsl:apply-templates
 <script>
 var mrowH = <xsl:value-of select="generate-id()"/>.offsetHeight;
 <xsl:for-each select="m:mo[@stretch='true' or
-                  normalize-space(.)=$opdict[@stretch='true']/@x]">
+		  normalize-space(.)=$opdict[@stretch='true']/@x]">
 
 <xsl:variable name="o" select="normalize-space(.)"/>
 <xsl:variable name="opdictentry" select="$opdict[@x=$o]"/>
@@ -782,7 +782,7 @@ select="*[2]"/></sub>
 
 <xsl:template match="m:mfrac">
 <xsl:param name="full" select="not(ancestor::m:mfrac)"/>
-<table  class="mfrac">
+<table	class="mfrac">
 <xsl:if test="$full">
   <xsl:attribute name="style">font-size: 75% ;</xsl:attribute>
 </xsl:if>
@@ -798,8 +798,8 @@ select="*[2]"/></sub>
 </table><xsl:if test="$full"><script>
 if ( a<xsl:value-of select="generate-id()"
        />.offsetHeight >  b<xsl:value-of select="generate-id()"
-         />.offsetHeight ) b<xsl:value-of select="generate-id()
-            "/>.style.setExpression("height",a<xsl:value-of select="generate-id()"/>.offsetHeight );
+	 />.offsetHeight ) b<xsl:value-of select="generate-id()
+	    "/>.style.setExpression("height",a<xsl:value-of select="generate-id()"/>.offsetHeight );
 else a<xsl:value-of
 select="generate-id()"/>.style.setExpression("height",b<xsl:value-of
        select="generate-id()"/>.offsetHeight );

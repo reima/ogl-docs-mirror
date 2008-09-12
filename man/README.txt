@@ -10,7 +10,7 @@ XML, and XSL infrastructure may need to be installed on your system
 first.
 
 The directory tree containing the man pages is available for anonymous,
-read-only check in Khronos' Subversion server, at
+read-only checkout in Khronos' Subversion server, at
 
     https://cvs.khronos.org/svn/repos/ogl/trunk/ecosystem/public/sdk/docs/man/
 

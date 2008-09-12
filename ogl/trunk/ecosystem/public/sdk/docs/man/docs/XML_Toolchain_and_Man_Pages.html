@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="KEYWORDS" content="XML Toolchain and Man Pages,Khronos tools,Ecosystem TSG,Viewing XHTML and MathML" />
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="/favicon.ico" />
+    <title>XML Toolchain and Man Pages - KhronosWiki</title>
+    <style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/wiki/skins/monobook/main.css"; /*]]>*/</style>
+    <link rel="stylesheet" type="text/css" media="print" href="/wiki/skins/common/commonPrint.css" />
+    <!--[if lt IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE50Fixes.css";</style><![endif]-->
+    <!--[if IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE55Fixes.css";</style><![endif]-->
+    <!--[if gte IE 6]><style type="text/css">@import "/wiki/skins/monobook/IE60Fixes.css";</style><![endif]-->
+    <!--[if IE]><script type="text/javascript" src="/wiki/skins/common/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+    <script type="text/javascript" src="/wiki/index.php?title=-&amp;action=raw&amp;smaxage=0&amp;gen=js"></script>    <script type="text/javascript" src="/wiki/skins/common/wikibits.js"></script>
+    <style type="text/css">/*<![CDATA[*/
+@import "/wiki/index.php?title=MediaWiki:Monobook.css&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=-&action=raw&gen=css&maxage=18000";
+/*]]>*/</style>
+
+	<!-- gmap -->
+      </head>
+  <body				class="ns-0">
+    <div id="globalWrapper">
+      <div id="column-content">
+	<div id="content">
+	  <a name="top" id="top"></a>
+		  <h1 class="firstHeading">XML Toolchain and Man Pages</h1>
+	  <div id="bodyContent">
+	    <h3 id="siteSub">From Khronos Wiki</h3>
+	    <div id="contentSub"></div>
+			    <!-- start content -->
+<table id='toc' class='toc'><tr><td><div id='toctitle'><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="#OpenGL_Man_Pages_in_Subversion"><span class="tocnumber">1</span> <span class="toctext">OpenGL Man Pages in Subversion</span></a>
+<ul>
+<li class='toclevel-2'><a href="#Licenses"><span class="tocnumber">1.1</span> <span class="toctext">Licenses</span></a></li>
+<li class='toclevel-2'><a href="#Downloading_the_man_pages"><span class="tocnumber">1.2</span> <span class="toctext">Downloading the man pages</span></a></li>
+<li class='toclevel-2'><a href="#Reporting_Problems_and_Suggesting_Changes"><span class="tocnumber">1.3</span> <span class="toctext">Reporting Problems and Suggesting Changes</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="#Toolchain"><span class="tocnumber">2</span> <span class="toctext">Toolchain</span></a>
+<ul>
+<li class='toclevel-2'><a href="#Khronos_build_tools"><span class="tocnumber">2.1</span> <span class="toctext">Khronos build tools</span></a></li>
+<li class='toclevel-2'><a href="#Other_support_tools_.28Linux_oriented.2C_but_a_useful_base_for_Cygwin_.2F_OS_X_discussions_below.29"><span class="tocnumber">2.2</span> <span class="toctext">Other support tools (Linux oriented, but a useful base for Cygwin / OS X discussions below)</span></a></li>
+<li class='toclevel-2'><a href="#Windows_toolchain_details"><span class="tocnumber">2.3</span> <span class="toctext">Windows toolchain details</span></a></li>
+<li class='toclevel-2'><a href="#OS_X_toolchain_details"><span class="tocnumber">2.4</span> <span class="toctext">OS X toolchain details</span></a></li>
+</ul>
+</li>
+<li class='toclevel-1'><a href="#XML_Docbook_Editors"><span class="tocnumber">3</span> <span class="toctext">XML Docbook Editors</span></a></li>
+<li class='toclevel-1'><a href="#Generating_and_Viewing_Man_Pages"><span class="tocnumber">4</span> <span class="toctext">Generating and Viewing Man Pages</span></a></li>
+<li class='toclevel-1'><a href="#Next_Steps"><span class="tocnumber">5</span> <span class="toctext">Next Steps</span></a></li>
+</ul>
+</td></tr></table>
+<p><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=XML_Toolchain_and_Man_Pages&amp;action=edit&amp;section=1" title=" XML Toolchain and Man Pages">edit</a>]</div><a name="OpenGL_Man_Pages_in_Subversion"></a><h2> OpenGL Man Pages in Subversion </h2>
+<p>The Docbook OpenGL man pages are now in <a href="https://cvs.khronos.org/svn/repos/ogl/trunk/ecosystem/public/sdk/docs/man/" class='external text' title="https://cvs.khronos.org/svn/repos/ogl/trunk/ecosystem/public/sdk/docs/man/" rel="nofollow">Subversion</a>. We are using the modular stylesheets from the Docbook project, which simplifies the toolchain installation.
+</p><p>The ARB Ecosystem TSG maintains an up-to-date version of the OpenGL man pages processed into XHTML+MathML in the <a href="https://cvs.khronos.org/svn/repos/ogl/trunk/ecosystem/public/sdk/docs/man/xhtml" class='external text' title="https://cvs.khronos.org/svn/repos/ogl/trunk/ecosystem/public/sdk/docs/man/xhtml" rel="nofollow">xhtml/ directory under the man pages</a>. These pages can also be viewed in the <a href="http://www.opengl.org/sdk/docs/man/" class='external text' title="http://www.opengl.org/sdk/docs/man/" rel="nofollow">OpenGL SDK</a> on opengl.org.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=XML_Toolchain_and_Man_Pages&amp;action=edit&amp;section=2" title=" XML Toolchain and Man Pages">edit</a>]</div><a name="Licenses"></a><h3> Licenses </h3>
+<p>There are a variety of licenses from SGI, 3Dlabs, Sams Publishing, and the Khronos Group applied to different parts of the man pages. We think they all boil down to "BSD style" licenses that should allow you to modify and redistribute the man pages. However, this is <b>not</b> an official legal opinion or committment from Khronos. You must make your own judgements based on reading the licenses involved.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=XML_Toolchain_and_Man_Pages&amp;action=edit&amp;section=3" title=" XML Toolchain and Man Pages">edit</a>]</div><a name="Downloading_the_man_pages"></a><h3> Downloading the man pages </h3>
+<p><b>For Khronos Members</b>
+</p><p>Khronos members can access the man pages using their normal Subversion login.
+</p><p><b>For non-Members</b>
+</p><p>Non-members can download the man pages <b>read-only</b>, using a command like:
+</p><p><tt> svn co --username anonymous --password anonymous <a href="https://cvs.khronos.org/svn/repos/ogl/trunk/ecosystem/public/sdk/docs/man/" class='external free' title="https://cvs.khronos.org/svn/repos/ogl/trunk/ecosystem/public/sdk/docs/man/" rel="nofollow">https://cvs.khronos.org/svn/repos/ogl/trunk/ecosystem/public/sdk/docs/man/</a> man </tt>
+</p><p>Please do not attempt to access parts of the Khronos Subversion server that you do not have permission for (e.g. parts of Subversion above the specified path above). We are opening up this part of the server with some trepidation, and if it results in attacks on khronos.org, we'll have to rethink keeping it open.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=XML_Toolchain_and_Man_Pages&amp;action=edit&amp;section=4" title=" XML Toolchain and Man Pages">edit</a>]</div><a name="Reporting_Problems_and_Suggesting_Changes"></a><h3> Reporting Problems and Suggesting Changes </h3>
+<p><b>For Khronos Members</b>
+</p><p>Please report problems using the internal Khronos Bugzilla with project "OpenGL", component "Man Pages &amp; Other Documentation".
+</p><p><b>For non-Members</b>
+</p><p>Non-members can use the public Bugzilla. Please follow
+<a href="http://tinyurl.com/47hyme" class='external text' title="http://tinyurl.com/47hyme" rel="nofollow">this link</a>
+to get a bug report template with some fields filled out, or just go to the public Bugzilla and report a bug against project "OpenGL", component "Man Pages &amp; Other Documentation". You must first create an account on the public Bugzilla.
+</p><p>Khronos will attempt to fix bugs you identify, and will consider incorporating changes you suggest, but we cannot provide much in the way of technical support. If you choose to work with the man pages, you should first educate yourself on Subversion, Docbook, XSLT, and the other software described below.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=XML_Toolchain_and_Man_Pages&amp;action=edit&amp;section=5" title=" XML Toolchain and Man Pages">edit</a>]</div><a name="Toolchain"></a><h2> Toolchain </h2>
+<p>To build the man pages, you need some support tools: the Khronos build tools, GNU make, xsltproc, the Docbook 4.3, MathML 2.0, and Docbook MathML Module V1.1b1 DTDs, and the Docbook Modular Stylesheets (versions 1.69 and later should be fine).
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=XML_Toolchain_and_Man_Pages&amp;action=edit&amp;section=6" title=" XML Toolchain and Man Pages">edit</a>]</div><a name="Khronos_build_tools"></a><h3> Khronos build tools </h3>
+<p><b>For Khronos Members</b>
+</p><p>The Khronos build tools are a collection of scripts, LaTeX macros, GNUmake include files, and other material used across several projects in Khronos Subversion. To install them, check out the top-level <b>util</b> repository in <a href="https://cvs.khronos.org/svn/repos/util/" class='external text' title="https://cvs.khronos.org/svn/repos/util/" rel="nofollow">/repos/util/</a>, then follow the installation instructions for 'tools/' in <a href="https://cvs.khronos.org/svn/repos/util/trunk/README.txt" class='external text' title="https://cvs.khronos.org/svn/repos/util/trunk/README.txt" rel="nofollow">the README under /repos/util/trunk/README.txt</a>.
+</p><p><b>For non-Members</b>
+</p><p>A subset of the build tools - just enough to build the man pages - has been copied into the man page directories under <b>usr/include/make</b>. To use them, you must set the environment variable ROOT to point to the man page directory; e.g. if you checked the Subversion tree out into a path like <tt> /home/fred/man </tt>, then <tt> setenv ROOT /home/fred/man </tt> should be done before running 'make' in that directory.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=XML_Toolchain_and_Man_Pages&amp;action=edit&amp;section=7" title=" XML Toolchain and Man Pages">edit</a>]</div><a name="Other_support_tools_.28Linux_oriented.2C_but_a_useful_base_for_Cygwin_.2F_OS_X_discussions_below.29"></a><h3> Other support tools (Linux oriented, but a useful base for Cygwin / OS X discussions below) </h3>
+<p><b>xsltproc</b> is a tool that applies XSL transformation rules (defined in the modular stylesheets) to XML source (the man page sources, and supporting files that get pulled in by directives in those files).
+</p>
+<ul><li> For Ubuntu 8.04, install the <b>xsltproc</b> package
+</li><li> For Fedora Core 5 (FC5), install the <b>libxslt</b> RPM
+</li></ul>
+<p>The <b>XML Catalog</b> (which can probably be found in <tt>/etc/xml/catalog</tt>) maps references to the external PUBLIC and SYSTEM	names of a DTD (Document Type Definition, e.g. a set of files defining a particular SGML or XML schema - set of tags, syntax/semantics, etc.) into locally cached copies. Most of the docbook DTDs referenced below make use of the XML catalog. If the catalog is not updated correctly, then every time you process a file using a DTD not in the catalog, it will be retrieved over the net, which is very slow. You can determine if this is happening by invoking xsltproc with the <b>--nonet</b> argument.
+</p><p>The <b>Docbook 4.3 DTD</b> is the basic schema used in the OpenGL man pages. There are later versions of the DTD, but they do not work as well with MathML yet. Eventually we should update to Docbook 5 as 4.3 is getting rather out of date, but it still works just fine. <a href="http://www.docbook.org/" class='external text' title="http://www.docbook.org/" rel="nofollow">The Docbook website</a> is the canonical reference source for all things Docbook.
+</p>
+<ul><li> For Ubuntu 8.04, install the <b>docbook</b> package
+</li><li> For FC5, install the <b> docbook-dtds</b> RPM
+</li></ul>
+<p>The <b>MathML 2.0 DTD</b> defines the schema for MathML, a system for marking up equations.
+</p>
+<ul><li> For Ubuntu 8.04, install the <b>w3-dtd-mathml</b> package. Then, as root (e.g. using <b>sudo</b> or in a root shell), execute the following commands to put the DTDs into the system XML catalog:
+<ul><li> <tt>xmlcatalog --noout --add public "-//W3C//DTD MathML 2.0//EN"			    "file:///usr/share/xml/schema/w3c/mathml/dtd/mathml2.dtd"		 /etc/xml/catalog</tt>
+</li><li> <tt>xmlcatalog --noout --add	public "-//W3C//DTD MathML//EN"				     "file:///usr/share/xml/schema/w3c/mathml/dtd/mathml2.dtd"		  /etc/xml/catalog</tt>
+</li><li> <tt>xmlcatalog --noout --add	system "<a href="http://www.w3.org/TR/MathML2/dtd/mathml2.dtd" class='external free' title="http://www.w3.org/TR/MathML2/dtd/mathml2.dtd" rel="nofollow">http://www.w3.org/TR/MathML2/dtd/mathml2.dtd</a>"	  "file:///usr/share/xml/schema/w3c/mathml/dtd/mathml2.dtd"	       /etc/xml/catalog</tt>
+</li><li> <tt>xmlcatalog --noout --add	public "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"	     "file:///usr/share/xml/schema/w3c/mathml/dtd/xhtml-math11-f.dtd"	  /etc/xml/catalog</tt>
+</li><li> <tt>xmlcatalog --noout --add	system "<a href="http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd" class='external free' title="http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd" rel="nofollow">http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd</a>" "file:///usr/share/xml/schema/w3c/mathml/dtd/xhtml-math11-f.dtd"     /etc/xml/catalog</tt>
+</li></ul>
+</li><li> For FC5 no Fedora-specific RPM is known, but the Mandriva Linux <b>docbook-dtd-mathml2</b> RPM works; this RPM can be found on <a href="http://www.rpmfind.net/" class='external text' title="http://www.rpmfind.net/" rel="nofollow">RPMfind</a> or <a href="http://rpm.pbone.net/" class='external text' title="http://rpm.pbone.net/" rel="nofollow">Pbone</a>, or a locally cached copy is in <a href="https://cvs.khronos.org/svn/repos/ogl/trunk/ecosystem/public/sdk/docs/mathml2.0/docbook-dtd-mathml20-1.0-1mdk.noarch.rpm" class='external text' title="https://cvs.khronos.org/svn/repos/ogl/trunk/ecosystem/public/sdk/docs/mathml2.0/docbook-dtd-mathml20-1.0-1mdk.noarch.rpm" rel="nofollow">Subversion</a>.
+</li></ul>
+<p>The <b>Docbook MathML Module V1.1b1 DTD</b> adds MathML 2.0 to Docbook 4.3. This is not available in packages for Ubuntu 8.04 or FC5, but is small and easily installed:
+</p>
+<ul><li> <b>Installing from the web</b> - the original <b>dbmathml.dtd</b> file can be found at <a href="http://www.docbook.org/xml/mathml/1.1CR1/" class='external free' title="http://www.docbook.org/xml/mathml/1.1CR1/" rel="nofollow">http://www.docbook.org/xml/mathml/1.1CR1/</a>. Download this file, and as root, execute the following commands to save it and add references to the XML catalog:
+<ul><li> <tt> mkdir -p /usr/share/xml/docbook-mathml-dtd-1.1CR1 </tt>
+</li><li> <tt> cp -f dbmathml.dtd /usr/share/xml/docbook-mathml-dtd-1.1CR1 </tt>
+</li><li> <tt> xmlcatalog --noout --add public "-//OASIS//DTD DocBook MathML Module V1.1b1//EN" "file:///usr/share/xml/docbook-mathml-dtd-1.1CR1/dbmathml.dtd" /etc/xml/catalog </tt>
+</li><li> <tt> xmlcatalog --noout --add system "<a href="http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd" class='external free' title="http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd" rel="nofollow">http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd</a>" "file:///usr/share/xml/docbook-mathml-dtd-1.1CR1/dbmathml.dtd" /etc/xml/catalog </tt>
+</li></ul>
+</li><li> <b>Installing from Khronos internal copy</b> - a cached copy is located in <a href="https://cvs.khronos.org/svn/repos/ogl/trunk/ecosystem/public/sdk/docs/mathml-1.1CR1/" class='external text' title="https://cvs.khronos.org/svn/repos/ogl/trunk/ecosystem/public/sdk/docs/mathml-1.1CR1/" rel="nofollow">Subversion</a>. Running 'make' in this directory, as root, should install the DTD and update the XML catalog which maps references to the external PUBLIC and SYSTEM  names of the DTD into the locally cached copy. If the catalog is not updated correctly, then every time you run xsltproc on a file using this DTD, it will be retrieved over the net. This is very slow.
+</li></ul>
+<p>The <b>Docbook Modular Stylesheets</b> are used to transform Docbook XML documents into many other formats.
+</p>
+<ul><li> For Ubuntu 8.04, install the <b>docbook-xsl</b> package
+</li><li> For FC5, install the <b>docbook-style-xsl</b> RPM
+</li></ul>
+<p>Note that the XSLT stylesheets are incorporated from <b>xhtml/opengl-man.xsl</b> using the URI <a href="http://docbook.sourceforge.net/release/xsl/current/xhtml/docbook.xsl" class='external free' title="http://docbook.sourceforge.net/release/xsl/current/xhtml/docbook.xsl" rel="nofollow">http://docbook.sourceforge.net/release/xsl/current/xhtml/docbook.xsl</a> . If your XML catalog does not resolve this to a local reference to the installed stylesheets, processing will be very, very slow.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=XML_Toolchain_and_Man_Pages&amp;action=edit&amp;section=8" title=" XML Toolchain and Man Pages">edit</a>]</div><a name="Windows_toolchain_details"></a><h3> Windows toolchain details </h3>
+<p>Here are the steps for setting up the toolchain in Windows:
+</p><p><b>Cygwin</b>
+</p><p>Cygwin is a Linux-like environment for Windows.	It includes many of the necessary components of the toolchain.	You can grab the latest here: <a href="http://www.cygwin.com/" class='external text' title="http://www.cygwin.com/" rel="nofollow">Cygwin home</a>
+</p><p>When selecting packages, make sure to select these:
+</p>
+<ul><li> Devel/make: the GNU version of the 'make' utility
+</li><li> Doc/docbook-xml43: DocBook XML DTD 4.3
+</li><li> Doc/docbook-xsl: XSL stylesheets for the DocBook XML DTD
+</li><li> Doc/libxml2: XML C parser and toolkit (runtime and applications)
+</li><li> Doc/libxslt: The GNOME XSLT C library (runtime)
+</li><li> Interpreters/perl: Larry Wall's Practical Extracting and Report Language
+</li></ul>
+<p>Because cygwin installs its packages in slightly different locations than FC5 above, you'll need to edit the Makefile to change XSLSS, or better yet just set up a symbolic link:
+</p>
+<pre>mkdir -p /usr/share/sgml/docbook/
+ln -s /usr/share/docbook-xsl/ /usr/share/sgml/docbook/xsl-stylesheets
+</pre>
+<p><b>Khronos build tools</b>
+</p><p>You'll need to follow the instructions above in order to get the required Makefile includes like commondefs and commonrules.
+</p><p><b>MathML</b>
+</p><p>You need the MathML 2.0 DTD and the DocBook MathML Module, both described above.
+</p><p>The MathML 2.0 DTD package can be downloaded from W3C <a href="http://www.w3.org/Math/DTD/mathml2.tgz" class='external text' title="http://www.w3.org/Math/DTD/mathml2.tgz" rel="nofollow">here</a>.  I recommend unpacking it to /usr/share/xml/mathml2/.  Then issue these two commands to add it to your catalog:
+</p>
+<pre>xmlcatalog --noout --add public "-//W3C//DTD MathML 2.0//EN" \
+   "file:///usr/share/xml/mathml2/mathml2.dtd" \
+   /etc/xml/catalog
+xmlcatalog --noout --add system \
+   "<a href="http://www.w3.org/TR/MathML2/dtd/mathml2.dtd" class='external free' title="http://www.w3.org/TR/MathML2/dtd/mathml2.dtd" rel="nofollow">http://www.w3.org/TR/MathML2/dtd/mathml2.dtd</a>" \
+   "file:///usr/share/xml/mathml2/mathml2.dtd" \
+   /etc/xml/catalog
+</pre>
+<p>The DocBook MathML Module DTD can be downloaded from DockBook.org <a href="http://www.docbook.org/xml/mathml/1.1CR1/dbmathml.dtd" class='external text' title="http://www.docbook.org/xml/mathml/1.1CR1/dbmathml.dtd" rel="nofollow">here</a>.  I recommend placing it in /usr/share/xml/docbook-mathml-dtd-1.1CR1/.  Then issue these two commands to add it to your catalog:
+</p>
+<pre>xmlcatalog --noout --add public \
+   "-//OASIS//DTD DocBook MathML Module V1.1b1//EN" \
+   "file:///usr/share/xml/docbook-mathml-dtd-1.1CR1/dbmathml.dtd" \
+   /etc/xml/catalog
+xmlcatalog --noout --add system \
+   "<a href="http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd" class='external free' title="http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd" rel="nofollow">http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd</a>" \
+   "file:///usr/share/xml/docbook-mathml-dtd-1.1CR1/dbmathml.dtd" \
+   /etc/xml/catalog
+</pre>
+<p>Now you can perform a make as described below (see Generating and Viewing Man Pages).
+</p><p><b>MiKTeX</b>
+</p><p>MiKTeX is a TeX implementation for Windows, and includes pdflatex. You'll need this when we re-introduce PDF output into the toolchain.	<a href="http://www.miktex.org/" class='external text' title="http://www.miktex.org/" rel="nofollow">MiKTeX home</a>
+</p><p>After installing the latest version of MiKTeX (2.4 worked for Benj), you'll need a couple additional packages.  MiKTeX has a very handy package manager for automatically downloading and installing optional components.  You need the "mdwtools" and "fancyhdr" packages.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=XML_Toolchain_and_Man_Pages&amp;action=edit&amp;section=9" title=" XML Toolchain and Man Pages">edit</a>]</div><a name="OS_X_toolchain_details"></a><h3> OS X toolchain details </h3>
+<p>Unfortunately there aren't any handy packages for OS X.  But the good news is that most of the tools you need are already present in OS X 10.4.  The exception is subversion which you can obtain <a href="http://www.codingmonkeys.de/mbo/articles/2006/09/13/subversion-1-4-0" class='external text' title="http://www.codingmonkeys.de/mbo/articles/2006/09/13/subversion-1-4-0" rel="nofollow">here</a>.
+</p><p>In the process I used, I kept all the DTDs alongside the man page source and didn't install anything in /usr/.  I reinstall my system fairly regularly (one of the perils of working on OSes) and didn't want everything to get removed all the time.
+</p><p>1. Create a directory to put all this stuff in
+</p>
+<pre>mkdir manpages
+cd manpages
+</pre>
+<p>2. checkout man source from subversion
+</p><p>3. get docbook dtds
+</p>
+<pre>mkdir docbook-xml-4-3
+cd docbook-xml-4-3
+curl -O <a href="http://www.docbook.org/xml/4.3/docbook-xml-4.3.zip" class='external free' title="http://www.docbook.org/xml/4.3/docbook-xml-4.3.zip" rel="nofollow">http://www.docbook.org/xml/4.3/docbook-xml-4.3.zip</a>
+unzip docbook-xml-4.3.zip
+</pre>
+<p>4. get docbook-xsl from <a href="http://sourceforge.net/project/showfiles.php?group_id=21935" class='external text' title="http://sourceforge.net/project/showfiles.php?group id=21935" rel="nofollow">sourceforge</a> and expand
+</p><p>5. get mathml2 and expand
+</p>
+<pre>curl -O <a href="http://www.w3.org/Math/DTD/mathml2.tgz" class='external free' title="http://www.w3.org/Math/DTD/mathml2.tgz" rel="nofollow">http://www.w3.org/Math/DTD/mathml2.tgz</a>
+tar xzvf mathml2.tgz
+</pre>
+<p>6. get dbmathml.dtd
+</p>
+<pre>curl -O <a href="http://www.docbook.org/xml/mathml/1.1CR1/dbmathml.dtd" class='external free' title="http://www.docbook.org/xml/mathml/1.1CR1/dbmathml.dtd" rel="nofollow">http://www.docbook.org/xml/mathml/1.1CR1/dbmathml.dtd</a>
+</pre>
+<p>7. create an xml catalog - I don't know what the technically correct description for this is - but - the xml catalog routes requests for documents that would otherwise go over the internet to the documents on your local machine
+</p>
+<pre>sudo xmlcatalog --create &gt; /etc/xml/catalog
+</pre>
+<p>I only use this for the man source on my computer so I am using the default catalog to point to these local dtds.  This happens to be just fine with me.  If that doesn't work for you (for whatever reason) you could either create a custom catalog (and modify the make files) or you could install all the dtds somewhere that is accessible system wide.
+</p><p>8. add the local file locations to the xml catalog
+</p>
+<pre>xmlcatalog --noout --add public "-//W3C//DTD MathML 2.0//EN" "file:///path/to/my/dtds/mathml2/mathml2.dtd" /etc/xml/catalog
+xmlcatalog --noout --add system "<a href="http://www.w3.org/TR/MathML2/dtd/mathml2.dtd" class='external free' title="http://www.w3.org/TR/MathML2/dtd/mathml2.dtd" rel="nofollow">http://www.w3.org/TR/MathML2/dtd/mathml2.dtd</a>" "file:///path/to/dtds/mathml2/mathml2.dtd" /etc/xml/catalog
+xmlcatalog --noout --add public "-//OASIS//DTD DocBook MathML Module V1.1b1//EN" "file:///path/to/dtds/dbmathml.dtd" /etc/xml/catalog
+xmlcatalog --noout --add system "<a href="http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd" class='external free' title="http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd" rel="nofollow">http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd</a>" "file:///path/to/dtds/dbmathml.dtd" /etc/xml/catalog
+xmlcatalog --noout --add public "-//OASIS//DTD DocBook XML V4.3//EN" "file:///path/to/dtds/docbook-xml-4-3/docbookx.dtd" /etc/xml/catalog
+xmlcatalog --noout --add system "<a href="http://www.oasis-open.org/docbook/xml/4.3b2/docbookx.dtd" class='external free' title="http://www.oasis-open.org/docbook/xml/4.3b2/docbookx.dtd" rel="nofollow">http://www.oasis-open.org/docbook/xml/4.3b2/docbookx.dtd</a>" "file:///path/to/dtds/docbook-xml-4-3/docbookx.dtd" /etc/xml/catalog
+</pre>
+<p>9. modify the man page's Makefile to point to the local dtds - for me this was:
+</p>
+<pre>XSLSS   = ../../docbook-xsl-1.71.1/
+</pre>
+<p><b>Troubleshooting</b>
+</p><p>I got this working at first but it was taking forever because it was resolving the document requests over the internet.	From Jon's suggestion I modified the XSLT command in the Makefile to include "--nonet" like this:
+</p>
+<pre>XSLT    = xsltproc --nonet
+</pre>
+<p>This prevented any net lookups and with that I was able to fiddle with /etc/xml/catalog until I got the local requests working.  It is no speed demon, on my 2GHz x86 MacBook Pro the first file takes about 4 or 5 seconds to produce and subsequent ones take about 3 full seconds each.  A full build takes 10 or 15 minutes.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=XML_Toolchain_and_Man_Pages&amp;action=edit&amp;section=10" title=" XML Toolchain and Man Pages">edit</a>]</div><a name="XML_Docbook_Editors"></a><h2> XML Docbook Editors </h2>
+<p>There are a lot of XML editors out there. Jon evaluated <a href="http://www.xmlmind.com/" class='external text' title="http://www.xmlmind.com/" rel="nofollow">XMLMind</a> briefly. It is Java-based and should run on both Unix and Windows. It seems to work OK as a straight XML structure editor. There's also a WYSIWYG mode, but so far this only seems to come up by altering the &lt;?xml header on the documents to refer to the canonical URL for the Docbook DTD (under <a href="http://www.docbook.org" class='external free' title="http://www.docbook.org" rel="nofollow">http://www.docbook.org</a>), instead of the locally cached copy. This definitely <b>works</b>. But every time you run XMLMind or xsltproc on the document, it appears to go fetch the entire DTD over the net, which makes using the toolchain remarkably, and painfully slow. We don't know yet how well it works in terms of the XML it generates for new pages.
+</p><p>I (Jon) am just using a straight text editor. Once you have a man page template, adding content is easy.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=XML_Toolchain_and_Man_Pages&amp;action=edit&amp;section=11" title=" XML Toolchain and Man Pages">edit</a>]</div><a name="Generating_and_Viewing_Man_Pages"></a><h2> Generating and Viewing Man Pages </h2>
+<p>Once you have the toolchain installed, go to <a href="https://cvs.khronos.org/svn/repos/ogl/trunk/ecosystem/public/sdk/docs/man/" class='external text' title="https://cvs.khronos.org/svn/repos/ogl/trunk/ecosystem/public/sdk/docs/man/" rel="nofollow">ogl/trunk/ecosystem/public/sdk/docs/man</a> (for non-members, this is the 'man' directory you checked the pages out into) in your Subversion tree. Make sure the environment variable <tt> ROOT </tt> is correctly set as discussed above under <b>Khronos Build Tools</b>. Then just 'make'. xsltproc will transform each Docbook XML .xml document into an XHTML+MathML .xhtml document which can be viewed in modern browsers - see <a href="/wiki/index.php/Viewing_XHTML_and_MathML" title=" Viewing XHTML and MathML">Viewing XHTML and MathML</a> for details.
+</p><p>If you're getting errors, it's probably because one or more of the DTD and stylesheet packages described above are not properly installed. Please check the directions carefully to make sure everything required is installed.
+</p><p>If building is running extremely slowly, it's probably because the XML catalog is not properly updated. You can check this by going into the <b>xhtml</b> subdirectory and running
+</p>
+<ul><li> <tt> rm glAccum.xml </tt>
+</li><li> <tt> make XSLT="xsltproc --nonet" glAccum.xml </tt>
+</li></ul>
+<p>If the catalog is indeed the problem, this will generate errors instead of running extremely slowly. Again, please recheck the directions above to make sure all the steps involving updating the catalog have been performed.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=XML_Toolchain_and_Man_Pages&amp;action=edit&amp;section=12" title=" XML Toolchain and Man Pages">edit</a>]</div><a name="Next_Steps"></a><h2> Next Steps </h2>
+<ul><li> Other output formats - PDF and Unix man. The modular stylesheets include a manpages stylesheet but nobody has tried it yet. PDF will probably require using XSL-FO (formatting objects) via a converter like Apache's FOP (Formatting Objects Processor). Correctly processing MathML is likely to be difficult; we may need to include alternative representations of equations along with the MathML.
+</li></ul>
+<ul><li> Wiring up some of the editors we've mentioned previously to allow editing the man pages using the supplied DTDs and such.
+</li></ul>
+<ul><li> Creating an xsl/docbook2help.xsl stylesheet for converting into Windows help-file format (CHM).
+</li></ul>
+<ul><li> Japanese translations - requires Japanese speakers who are technically skilled and conversant with OpenGL; this would be a major project, but desirable since there's a significant developer base there that would benefit from more documentation in their own language.
+</li></ul>
+	  </div>
+	</div>
+      </div>
+    </div>
+</html>

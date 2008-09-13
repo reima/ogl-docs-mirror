@@ -22,20 +22,13 @@ the command
 
 Under 'man' you'll find the OpenGL 2.1 man pages, both the Docbook XML
 source in this directory and generated XHTML+MathML in xhtml/ , and some
-supporting build and XSL infrastructure. There are two files with
-additional documentation:
+supporting build and XSL infrastructure. There are two files in the
+OpenGL.org Wiki containing additional documentation:
 
-    docs/XML_Toolchain_and_Man_Pages.html - description of the tools
-    used to build the man pages; how to install and make use of them if
-    you want to build them yourself; and how to report problems.
+http://www.opengl.org/wiki/index.php/Getting_started/XML_Toolchain_and_Man_Pages#Toolchain
+  - Description of the tools used to build the man pages; how to install
+    and make use of them if you want to build them yourself; and how to
+    report problems.
 
-    docs/Viewing_XHTML_and_MathML.html - some brief notes on viewing
-    XHTML+MathML in different browsers.
-
-This material will probably move into the OpenGL.org technical wiki very
-soon. You can also get to it on the web at these URLs:
-
-https://cvs.khronos.org/svn/repos/ogl/trunk/ecosystem/public/sdk/docs/man/docs/XML_Toolchain_and_Man_Pages.html
-https://cvs.khronos.org/svn/repos/ogl/trunk/ecosystem/public/sdk/docs/man/docs/Viewing_XHTML_and_MathML.html
-
-(give username 'anonymous', password 'anonymous' when prompted).
+http://www.opengl.org/wiki/index.php/Getting_started/Viewing_XHTML_and_MathML
+  - Some notes on viewing XHTML+MathML documents in different browsers.

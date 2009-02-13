@@ -14,16 +14,23 @@ pass in, and all of the error conditions to avoid.</P>
 <P>The <A TARGET="_new" HREF="/sdk/libs/OpenSceneGraph/glsl_quickref.pdf">GLSL Quick Reference Guide</A> 
 is a one-page PDF providing an instant reference of GLSL's data types, built-in variables and functions.</P>
 
-<P>The <A TARGET="_new" HREF="http://www.opengl.org/documentation/specs/">specifications</A> are useful as the most
-authoratative documents about how OpenGL is intended to work. They are also the most difficult to
-read, so you may find the reference pages combined with tutorials to be a better choice. Note that the 
-specifications are currently hosted outside of the SDK itself.</P>
+<P> The <A TARGET="_new" HREF="http://www.opengl.org/registry/"> OpenGL API
+and Extension Registry</A>, hosted outside of the SDK, contains the formal
+Specifications for OpenGL and the OpenGL Shading Language, as well as
+for companion APIs like GLX and GLU. Specifications are the authoritative
+documents about how OpenGL is intended to work. They are also the most
+difficult to read, being written primarily for OpenGL implementers,
+not developers using OpenGL; so you may find the reference pages combined
+with tutorials to be a better choice. </P>
 
-<P>The <A TARGET="_new" HREF="http://www.opengl.org/registry/">extension registry</A>, also outside of the SDK, 
-contains extension headers and specifications describing optional features of OpenGL. These documents 
-are written as supplements to the core OpenGL specifications above.</P>
+<P> The Registry also contains specifications for extensions describing optional
+features of OpenGL, and header files defining interfaces for extensions.
+Extension specifications are written as supplements to the core OpenGL
+Specification. Most new features are first introduced as extensions and
+only later become part of a core OpenGL version, so using extensions is
+important to staying current with the evolution of the API. </P>
 
-<P><FONT SIZE="-2">Copyright &copy; 2007 Khronos Group. All rights reserved.</FONT></P>
+<P><FONT SIZE="-2">Copyright &copy; 2007-2009 Khronos Group. All rights reserved.</FONT></P>
 
 <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 </BODY>

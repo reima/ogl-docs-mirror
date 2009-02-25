@@ -5,7 +5,7 @@ XSLT	= xsltproc
 SED	= sed
 
 # Location of locally customized stylesheet, which imports
-# the Docbook modular stylesheets, and the specifically
+# the Docbook modular stylesheets, and specifically the
 # stylesheet to convert Docbook+MathML => XHTML+MathML
 DB2XHTML = opengl-man.xsl
 
@@ -14,7 +14,8 @@ DB2XHTML = opengl-man.xsl
 
 %.xml: ../%.xml opengl-man.xsl
 	$(XSLT) --xinclude -o $@.tmp $(DB2XHTML) $<
-	$(SED) 's/<?xml-stylesheet/<!-- saved from url=(0013)about:internet -->\n<?xml-stylesheet/g' $@.tmp > $@
+	$(SED) 's/<?xml-stylesheet/<!-- saved from url=(0013)about:internet -->\n<?xml-stylesheet/g' $@.tmp | \
+	    $(SED) 's#http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd#xhtml1-transitional.dtd#g' > $@
 	$(RM) $@.tmp
 
 # ARB Ecosystem man pages

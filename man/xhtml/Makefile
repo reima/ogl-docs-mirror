@@ -361,6 +361,7 @@ SGIGLXXML = \
     glXMakeCurrent.xml \
     glXQueryContextInfoEXT.xml \
     glXQueryContext.xml \
+    glXQueryDrawable.xml \
     glXQueryExtensionsString.xml \
     glXQueryExtension.xml \
     glXQueryServerString.xml \

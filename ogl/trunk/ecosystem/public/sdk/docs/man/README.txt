@@ -32,3 +32,25 @@ http://www.opengl.org/wiki/index.php/Getting_started/XML_Toolchain_and_Man_Pages
 
 http://www.opengl.org/wiki/index.php/Getting_started/Viewing_XHTML_and_MathML
   - Some notes on viewing XHTML+MathML documents in different browsers.
+
+------------------------------------------------------------------
+
+Special note on DTDs: the normal Docbook build process generates a
+DOCTYPE header with references to the DTD
+
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+
+While in principle this is only a namespace identifier, Internet
+Explorer nonetheless downloads the DTD, and the entity files referenced
+from within it, on every page loaded. This contributes to creating
+unacceptable load on www.w3.org, and the IE user agent has been blocked
+for these URLs. Ideally Microsoft would fix IE, but in the meantime, the
+only workaround within our control is to cache copies of the DTD and
+entity files locally in the generated xhtml/ directory and postprocess
+the generated XHTML to refer to them. This explains the presence of the
+files
+
+    xhtml/xhtml1-transitional.dtd
+    xhtml/xhtml-lat1.ent
+    xhtml/xhtml-special.ent
+    xhtml/xhtml-symbol.ent

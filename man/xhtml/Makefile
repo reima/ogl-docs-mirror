@@ -1,7 +1,7 @@
 #!gmake
 
 # XSLT processor - other possibilities like Saxon exist
-XSLT	= xsltproc
+XSLT	= xsltproc --nonet
 SED	= sed
 
 # Location of locally customized stylesheet, which imports

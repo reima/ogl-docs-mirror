@@ -11,7 +11,7 @@
 GLU, and GLX entry points. They cover in detail how to use the commands, all of the parameters you can 
 pass in, and all of the error conditions to avoid.</P>
 
-<P>The <A TARGET="_new" HREF="/sdk/libs/OpenSceneGraph/glsl_quickref.pdf">GLSL Quick Reference Guide</A> 
+<P>The <A TARGET="_new" HREF="http://www.khronos.org/files/opengl-quick-reference-card.pdf">GLSL Quick Reference Guide</A> 
 is a one-page PDF providing an instant reference of GLSL's data types, built-in variables and functions.</P>
 
 <P> The <A TARGET="_new" HREF="http://www.opengl.org/registry/"> OpenGL API

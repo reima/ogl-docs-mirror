@@ -52,34 +52,28 @@ standard, MathML, for rendering our equations. This standard is gaining widespre
 are still some growing pains. Here's what you can expect from different browsers:</p>
 <ul>
 
-<li><b>Firefox 1.5+</b>: native support is built-in, but Firefox will complain about missing
-<a target="_new" href="http://www.mozilla.org/projects/mathml/fonts/">fonts</a>.
-Installing the recommended fonts should appease Firefox. However, it has been reported that on Mac OS X,
-additional steps are required to prevent ongoing font complaints:
-<ol>
-<li>Type <code>about:config</code> in the address bar</li>
-<li>Control-click anywhere in the list of preferences that come up and select New > String</li>
-<li>In the "New string value" dialog, enter <code>font.mathfont-family</code></li>
-<li>In the "Enter string value" enter <code>Math1, Math2, Math4</code></li>
-</ol>
-</li>
+<li><b>Firefox 1.5+</b>: native support is built-in!  Firefox 3.0 will offer the best rendering quality 
+of all currently available browsers if you install the 
+<a target="_new" href="http://www.mozilla.org/projects/mathml/fonts/stix/STIXBeta.zip">STIX fonts</a>. 
+Older versions of Firefox may outright complain about missing fonts without some mild interventions.  
+See  <a target="_new" href="http://www.mozilla.org/projects/mathml/fonts/">this page</a> for tips on 
+maximizing your MathML rendering experience on Firefox.</li>
 <br /><br />
 
 <li><b>Internet Explorer 6</b>: no native support, but you'll be automatically prompted to install the
-<a target="_new" href="http://www.dessci.com/en/products/mathplayer/">Design Science MathPlayer</a> plugin which
+<a target="_new" href="http://www.dessci.com/en/products/mathplayer/">Design Science MathPlayer</a> plugin which 
 renders our equations beautifully.</li>
 <br /><br />
 
-<li><b>Internet Explorer 7</b>: works out of the box with native MathML support!</li>
+<li><b>Internet Explorer 7+</b>: works out of the box with CSS-based MathML support, but the rendering
+is sub-optimal.  We highly recommend installing the 
+<a target="_new" href="http://www.dessci.com/en/products/mathplayer/">Design Science MathPlayer</a> plugin.</li>
 <br /><br />
 
-<li><b>Opera 9.6</b>: limited support via the MathML for CSS profile.
-This works fairly well although not all MathML elements are supported.
-Earlier versions of Opera 9 have no native support, but <a target="_new"
-href="http://xml-maiden.com/userjs/mathml/">this page</a> describes a
-simple add-on which provides decent results.</li> <br /><br />
+<li><b>Opera 9.5+</b>: native support is limping along, but don't rely on it rendering correctly yet.</li>
+<br /><br />
 
-<li><b>Safari</b>: no native support and no known add-ons. Sorry!</li>
+<li><b>Safari</b> and <b>Chrome</b>: no native support and no known add-ons. Sorry!</li>
 
 </ul>
 

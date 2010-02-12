@@ -1,7 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
               "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry id="glWriteMe">
-    <refsynopsisdiv><title>WRITE ME!</title>
+<refentry id="glBeginTransformFeedback">
+    <refmeta>
+        <refmetainfo>
+            <copyright>
+                <year>2010</year>
+                <holder>Graham Sellers</holder>
+            </copyright>
+        </refmetainfo>
+        <refentrytitle>glBeginTransformFeedback</refentrytitle>
+        <manvolnum>3G</manvolnum>
+    </refmeta>
+    <refnamediv>
+        <refname>glBeginTransformFeedback</refname>
+        <refpurpose>start transform feedback operation</refpurpose>
+    </refnamediv>
+    <refsynopsisdiv><title>C Specification</title>
+        <funcsynopsis>
+            <funcprototype>
+                <funcdef>void <function>glBeginTransformFeedback</function></funcdef>
+                <paramdef>GLenum <parameter>primitiveMode</parameter></paramdef>
+            </funcprototype>
+        </funcsynopsis>
     </refsynopsisdiv>
+    <refsect1 id="parameters"><title>Parameters</title>
+        <variablelist>
+        <varlistentry>
+            <term><parameter>primitiveMode</parameter></term>
+            <listitem>
+                <para>
+                    Specify the output type of the primitives that will be recorded into the
+                    buffer objects that are bound for transform feedback.
+                </para>
+            </listitem>
+        </varlistentry>
+        </variablelist>
+    </refsect1>
+    <refsynopsisdiv><title>C Specification</title>
+        <funcsynopsis>
+            <funcprototype>
+                <funcdef>void <function>glEndTransformFeedback</function></funcdef>
+                <paramdef><parameter>void</parameter></paramdef>
+            </funcprototype>
+        </funcsynopsis>
+    </refsynopsisdiv>
+    <refsect1 id="description"><title>Description</title>
+        <para>
+            Transform feedback mode captures the values of varying variables written by the vertex shader (or, if active, the geometry shader).
+            Transform feedback is said to be active after a call to <function>glBeginTransformFeedback</function>
+            until a subsequent call to <citerefentry><refentrytitle>glEndTransformFeedback</refentrytitle></citerefentry>.
+            Transform feedback commands must be paired.
+        </para>
+        <para>
+            While transform feedback is active the <parameter>mode</parameter> parameter to
+            <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry> must match those specified
+            in the following table:
+        </para>
+        <informaltable frame="topbot">
+            <tgroup cols="2" align="left">
+                <colspec colwidth="1.1*" />
+                <colspec colwidth="1*" />
+                <thead>
+                    <row>
+                        <entry rowsep="1" align="left"><emphasis role="bold">
+                        Transform Feedback <parameter>primitiveMode</parameter>
+                        </emphasis></entry>
+                        <entry rowsep="1" align="left"><emphasis role="bold">
+                        Allowed Render Primitive <parameter>modes</parameter>
+                        </emphasis></entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_POINTS</constant>
+                        </entry>
+                        <entry align="left">
+                        <constant>GL_POINTS</constant>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_LINES</constant>
+                        </entry>
+                        <entry align="left">
+                        <constant>GL_LINES</constant>, <constant>GL_LINE_LOOP</constant>, <constant>GL_LINE_STRIP</constant>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_TRIANGLES</constant>
+                        </entry>
+                        <entry align="left">
+                        <constant>GL_TRIANGLES</constant>, <constant>GL_TRIANGLE_STRIP</constant>, <constant>GL_TRIANGLE_FAN</constant>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </refsect1>
+    <refsect1 id="errors"><title>Errors</title>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glBeginTransformFeedback</function> is executed
+            while transform feedback is active.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glEndTransformFeedback</function> is executed
+            while transform feedback is not active.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated by <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>
+            if transform feedback is active and <parameter>mode</parameter> is not one of the allowed modes.
+        </para>
+    </refsect1>
+    <refsect1 id="Copyright"><title>Copyright</title>
+        <para>
+            Copyright <trademark class="copyright"></trademark> 2010 Graham Sellers. 
+            This material may be distributed subject to the terms and conditions set forth in 
+            the Open Publication License, v 1.0, 8 June 1999.
+            <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.
+        </para>
+    </refsect1>
 </refentry>

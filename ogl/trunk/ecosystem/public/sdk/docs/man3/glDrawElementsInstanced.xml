@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
               "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry id="glDrawArraysInstanced">
+<refentry id="glDrawElementsInstanced">
     <refmeta>
         <refmetainfo>
             <copyright>
@@ -9,20 +9,21 @@
                 <holder>Graham Sellers</holder>
             </copyright>
         </refmetainfo>
-        <refentrytitle>glDrawArraysInstanced</refentrytitle>
+        <refentrytitle>glDrawElementsInstanced</refentrytitle>
         <manvolnum>3G</manvolnum>
     </refmeta>
     <refnamediv>
-        <refname>glDrawArraysInstanced</refname>
-        <refpurpose>draw multiple instances of a range of elements</refpurpose>
+        <refname>glDrawElementsInstanced</refname>
+        <refpurpose>draw multiple instances of a set of elements</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef>void <function>glDrawArraysInstanced</function></funcdef>
+                <funcdef>void <function>glDrawElementsInstanced</function></funcdef>
                 <paramdef>GLenum <parameter>mode</parameter></paramdef>
-                <paramdef>GLint <parameter>first</parameter></paramdef>
                 <paramdef>GLsizei <parameter>count</parameter></paramdef>
+                <paramdef>GLenum <parameter>type</parameter></paramdef>
+                <paramdef>const void * <parameter>indices</parameter></paramdef>
                 <paramdef>GLsizei <parameter>primcount</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
@@ -41,18 +42,27 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>first</parameter></term>
+            <term><parameter>count</parameter></term>
             <listitem>
                 <para>
-                    Specifies the starting index in the enabled arrays.
+                    Specifies the number of elements to be rendered.
                 </para>
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>count</parameter></term>
+            <term><parameter>type</parameter></term>
             <listitem>
                 <para>
-                    Specifies the number of indices to be rendered.
+                    Specifies the type of the values in <parameter>indices</parameter>. Must be one of <constant>GL_UNSIGNED_BYTE</constant>,
+                    <constant>GL_UNSIGNED_SHORT</constant>, or <constant>GL_UNSIGNED_INT</constant>.
+                </para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term><parameter>indices</parameter></term>
+            <listitem>
+                <para>
+                    Specifies a pointer to the location where the indices are stored.
                 </para>
             </listitem>
         </varlistentry>
@@ -68,19 +78,19 @@
     </refsect1>
     <refsect1 id="description"><title>Description</title>
         <para>
-            <function>glDrawArraysInstanced</function> behaves identically to <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>
-            except that <parameter>primcount</parameter> instances of the range of elements are executed and the value of the internal counter
+            <function>glDrawElementsInstanced</function> behaves identically to <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>
+            except that <parameter>primcount</parameter> instances of the set of elements are executed and the value of the internal counter
             <parameter>instanceID</parameter> advances for each iteration. <parameter>instanceID</parameter> is an internal 32-bit integer counter
             that may be read by a vertex shader as <constant>gl_InstanceID</constant>.
         </para>
         <para>
-            <function>glDrawArraysInstanced</function> has the same effect as:
-            <programlisting><![CDATA[    if ( mode or count is invalid )
+            <function>glDrawElementsInstanced</function> has the same effect as:
+            <programlisting><![CDATA[    if (mode, count, or type is invalid )
         generate appropriate error
     else {
         for (int i = 0; i < primcount ; i++) {
             instanceID = i;
-            glDrawArrays(mode, first, count);
+            glDrawElements(mode, count, type, indices);
         }
         instanceID = 0;
     }]]></programlisting>
@@ -88,7 +98,7 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <function>glDrawArraysInstanced</function> is available only if the GL version is 3.1 or greater.
+            <function>glDrawElementsInstanced</function> is available only if the GL version is 3.1 or greater.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
@@ -107,8 +117,8 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDrawElementsIndexed</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glDrawArraysInstanced</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

@@ -34,6 +34,8 @@ html, body, table
 }
 
 table.sample {
+	width: 100%;
+	text-align: left;
 	border-width: 1px;
 	border-spacing: 5px;
 	border-style: dotted;
@@ -56,7 +58,7 @@ table.sample td {
 </head>
 <body>
 <a name="top"></a>
-<h1>OpenGL 2.1 Reference Pages</h1>
+<h1>OpenGL 3.2 Reference Pages</h1>
 <br/><br/>
 
 ';
@@ -83,14 +85,14 @@ sub TableElementForFilename {
 sub BeginTable {
 	my $letter = shift;
 	print "<a name=\"$letter\"></a><br/><br/>\n";
-	print '<table width="200" align="center" class="sample">';
+	print '<table width="200" class="sample">';
 	print "\t<th>";
 	print "$letter</th>\n";
 }
 
 sub EndTable {
 	print "\t";
-	print '<tr><td><center><a href="#top">Top</a></center></td></tr>';
+	print '<tr><td><a href="#top">Top</a></td></tr>';
 	print "\n</table>\n\n";
 }
 

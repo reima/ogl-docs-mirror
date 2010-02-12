@@ -50,7 +50,6 @@ ALLXML = \
     glClearStencil.xml \
     glClientWaitSync.xml \
     glColorMask.xml \
-    glColorMaski.xml \
     glCompileShader.xml \
     glCompressedTexImage1D.xml \
     glCompressedTexImage2D.xml \
@@ -80,8 +79,6 @@ ALLXML = \
     glDepthMask.xml \
     glDepthRange.xml \
     glDetachShader.xml \
-    glDisable.xml \
-    glDisablei.xml \
     glDisableVertexAttribArray.xml \
     glDrawArrays.xml \
     glDrawArraysInstanced.xml \
@@ -89,8 +86,7 @@ ALLXML = \
     glDrawBuffers.xml \
     glDrawElements.xml \
     glDrawElementsBaseVertex.xml \
-    glDrawElements.xml \
-    glDrawElements.xml \
+    glDrawElementsInstanced.xml \
     glDrawRangeElements.xml \
     glDrawRangeElementsBaseVertex.xml \
     glEnable.xml \
@@ -215,7 +211,6 @@ ALLXML = \
     glValidateProgram.xml \
     glVertexAttrib.xml \
     glVertexAttribPointer.xml \
-    glVertexAttribIPointer.xml \
     glViewport.xml \
     glWaitSync.xml
 

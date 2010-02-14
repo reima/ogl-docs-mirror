@@ -335,12 +335,12 @@ SUBDIR_MAKERULE= \
 			echo "SKIPPING $$d: No such directory."; \
 		fi \
 	else \
-		$(ECHO) "\t(cd $$d; $(MAKE) $${RULE:=$@})"; \
-		(cd $$d; ${MAKE} $${RULE:=$@}); \
+		$(ECHO) "\t$(MAKE) -C $$d $${RULE:=$@}"; \
+		$(MAKE) -C $$d $${RULE:=$@}; \
 	fi
 
 SUBDIRS_MAKERULE= \
-	@for d in $(SUBDIRS); do $(SUBDIR_MAKERULE); done
+	+@for d in $(SUBDIRS); do $(SUBDIR_MAKERULE); done
 
 #
 # One problem with the above rules is that if a make fails, and -k is

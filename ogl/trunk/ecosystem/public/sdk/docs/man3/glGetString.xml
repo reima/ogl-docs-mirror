@@ -31,7 +31,7 @@
             <listitem>
                 <para>
                     Specifies a symbolic constant, one of
-                    <constant>GL_VENDOR</constant>, <constant>GL_RENDERER</constant>, <constant>GL_VERSION</constant>, <constant>GL_SHADING_LANGUAGE_VERSION</constant>, or <constant>GL_EXTENSIONS</constant>.
+                    <constant>GL_VENDOR</constant>, <constant>GL_RENDERER</constant>, <constant>GL_VERSION</constant>, or <constant>GL_SHADING_LANGUAGE_VERSION</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -88,16 +88,6 @@
                     </para>
                 </listitem>
             </varlistentry>
-            <varlistentry>
-                <term><constant>GL_EXTENSIONS</constant></term>
-                <listitem>
-                    <para>
-                    </para>
-                    <para>
-                        Returns a space-separated list of supported extensions to GL.
-                    </para>
-                </listitem>
-            </varlistentry>
         </variablelist>
         <para>
             Because the GL does not include queries for the performance
@@ -107,14 +97,6 @@
             Strings <constant>GL_VENDOR</constant> and <constant>GL_RENDERER</constant> together uniquely specify
             a platform. They do not change from release to release and should be used
             by platform-recognition algorithms.
-        </para>
-        <para>
-            Some applications want to make use of features that
-            are not part of the standard GL. These features
-            may be implemented as extensions to the standard GL.
-            The <constant>GL_EXTENSIONS</constant> string is a space-separated
-            list of supported GL extensions.
-            (Extension names never contain a space character.)
         </para>
         <para>
             The <constant>GL_VERSION</constant> and <constant>GL_SHADING_LANGUAGE_VERSION</constant> strings begin with a version number.
@@ -140,8 +122,8 @@
             If an error is generated, <function>glGetString</function> returns 0.
         </para>
         <para>
-            The client and server may support different versions or extensions.
-            <function>glGetString</function> always returns a compatible version number or list of extensions.
+            The client and server may support different versions.
+            <function>glGetString</function> always returns a compatible version number.
             The release number always describes the server.
         </para>
         <para>

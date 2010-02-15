@@ -16,6 +16,7 @@
 
   <html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl">
     <head>
+      <link rel="stylesheet" type="text/css" href="opengl-man.css" />
       <xsl:call-template name="system.head.content">
 	<xsl:with-param name="node" select="$doc"/>
       </xsl:call-template>

@@ -14,51 +14,12 @@ print
 sub PrintHeader {
 print '<html>
 <head>
+<link rel="stylesheet" type="text/css" href="opengl-man.css" />
 <title>OpenGL Documentation</title>
-<style type="text/css">
-
-html, body, table
-{   color: #000;
-	padding: 4px 4px;
-	margin: 0px 0 0 0;
-	text-align: center;
-	font-family: Arial, Lucida, sans-serif;
-	font-size: 10pt;
-
-}
-
-#container {
-	margin: 10px;
-	font-size: 14pt;
-	text-decoration:none;
-}
-
-table.sample {
-	width: 100%;
-	text-align: left;
-	border-width: 1px;
-	border-spacing: 5px;
-	border-style: dotted;
-	border-color: black;
-	border-collapse: separate;
-	background-color: #F0F0F0;
-}
-table.sample th {
-	border-width: 1px;
-	padding: 5px;
-	border-style: none;
-}
-table.sample td {
-	border-width: 1px;
-	padding: 1px;
-	border-style: none;
-}
-</style>
-
 </head>
 <body>
 <a name="top"></a>
-<h1>OpenGL 3.2 Reference Pages</h1>
+<center><h1>OpenGL 3.2 Reference Pages</h1></center>
 <br/><br/>
 
 ';
@@ -92,7 +53,7 @@ sub BeginTable {
 
 sub EndTable {
 	print "\t";
-	print '<tr><td><a href="#top">Top</a></td></tr>';
+	print '<tr><td align="right"><a href="#top">Top</a></td></tr>';
 	print "\n</table>\n\n";
 }
 
@@ -263,6 +224,7 @@ if ($#gl > 0)
 }
 
 
+print '<center>';
 print '<div id="container">';
 foreach (@toc)
 {
@@ -273,6 +235,7 @@ foreach (@toc)
 	print " </a></b> &nbsp; ";
 }
 print "</div>\n\n\n";
+print '</center>';
 
 # output the tables
 

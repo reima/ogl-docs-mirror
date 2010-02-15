@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
               "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry id="glClampColor">
+<refentry id="glBeginConditionalRender">
     <refmeta>
         <refmetainfo>
             <copyright>
                 <year>2009</year>
-                <holder>Khronos Group</holder>
+                <holder>2010 Khronos Group</holder>
             </copyright>
         </refmetainfo>
         <refentrytitle>glBeginConditionalRender</refentrytitle>
@@ -86,7 +86,8 @@
     <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glGenQueries</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDeleteQueries</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>glDeleteQueries</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glBeginConditionalRender</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

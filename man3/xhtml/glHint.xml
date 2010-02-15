@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glHint</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glHint"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glHint — specify implementation-specific hints</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glHint</b>(</code>GLenum <var class="pdparam">target</var>, GLenum <var class="pdparam">mode</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glHint</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glHint"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glHint — specify implementation-specific hints</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><p><code class="funcdef">void <b class="fsfunc">glHint</b>(</code>GLenum <var class="pdparam">target</var>, GLenum <var class="pdparam">mode</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies a symbolic constant indicating the behavior to be controlled.
-                    <code class="constant">GL_FOG_HINT</code>,	
-                    <code class="constant">GL_GENERATE_MIPMAP_HINT</code>,
                     <code class="constant">GL_LINE_SMOOTH_HINT</code>,
-                    <code class="constant">GL_PERSPECTIVE_CORRECTION_HINT</code>,
                     <code class="constant">GL_POINT_SMOOTH_HINT</code>,
                     <code class="constant">GL_POLYGON_SMOOTH_HINT</code>,
                     <code class="constant">GL_TEXTURE_COMPRESSION_HINT</code>, and
@@ -44,32 +41,15 @@
             The hint aspects that can be specified with <em class="parameter"><code>target</code></em>,
             along with suggested semantics,
             are as follows:
-        </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_FOG_HINT</code></span></dt><dd><p>
-                    </p><p>
-                        Indicates the accuracy of fog calculation.
-                        If per-pixel fog calculation is not efficiently supported
-                        by the GL implementation,
-                        hinting <code class="constant">GL_DONT_CARE</code> or <code class="constant">GL_FASTEST</code> can result in per-vertex
-                        calculation of fog effects.
-                    </p></dd><dt><span class="term"><code class="constant">GL_FRAGMENT_SHADER_DERIVATIVE_HINT</code></span></dt><dd><p>
+        </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_FRAGMENT_SHADER_DERIVATIVE_HINT</code></span></dt><dd><p>
                     </p><p>
                         Indicates the accuracy of the derivative calculation for the GL shading language fragment processing built-in functions:
                         <code class="constant">dFdx</code>, <code class="constant">dFdy</code>, and <code class="constant">fwidth</code>.
-                    </p></dd><dt><span class="term"><code class="constant">GL_GENERATE_MIPMAP_HINT</code></span></dt><dd><p>
-                    </p><p>
-                        Indicates the quality of filtering when generating mipmap images.
                     </p></dd><dt><span class="term"><code class="constant">GL_LINE_SMOOTH_HINT</code></span></dt><dd><p>
                     </p><p>
                         Indicates the sampling quality of antialiased lines.
                         If a larger filter function is applied, hinting <code class="constant">GL_NICEST</code> can
                         result in more pixel fragments being generated during rasterization.
-                    </p></dd><dt><span class="term"><code class="constant">GL_PERSPECTIVE_CORRECTION_HINT</code></span></dt><dd><p>
-                    </p><p>
-                        Indicates the quality of color, texture coordinate, and fog coordinate
-                        interpolation.  If perspective-corrected parameter interpolation is not
-                        efficiently supported by the GL implementation, hinting <code class="constant">GL_DONT_CARE</code>
-                        or <code class="constant">GL_FASTEST</code> can result in simple linear interpolation of colors
-                        and/or texture coordinates.
                     </p></dd><dt><span class="term"><code class="constant">GL_POINT_SMOOTH_HINT</code></span></dt><dd><p>
                     </p><p>
                         Indicates the sampling quality of antialiased points.
@@ -94,9 +74,6 @@
             Some implementations ignore <code class="function">glHint</code> settings.
         </p><p>
             <code class="constant">GL_TEXTURE_COMPRESSION_HINT</code> is available only if the GL version is 1.3
-            or greater.
-        </p><p>
-            <code class="constant">GL_GENERATE_MIPMAP_HINT</code> is available only if the GL version is 1.4
             or greater.
         </p><p>
             <code class="constant">GL_FRAGMENT_SHADER_DERIVATIVE_HINT</code> is available only if the GL version is 2.0

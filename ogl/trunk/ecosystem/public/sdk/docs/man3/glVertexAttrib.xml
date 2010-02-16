@@ -363,12 +363,7 @@
 	<para><function>glVertexAttrib</function> is available only if
 	the GL version is 2.0 or greater.</para>
 
-	<para>Generic vertex attributes can be updated at any time. In
-	particular, <function>glVertexAttrib</function> can be called
-	between a call to
-	<citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
-	and the corresponding call to
-	<citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.</para>
+	<para>Generic vertex attributes can be updated at any time.</para>
 
 	<para>It is possible for an application to bind more than one
 	attribute name to the same generic vertex attribute index. This

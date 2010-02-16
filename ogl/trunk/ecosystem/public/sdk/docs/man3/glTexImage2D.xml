@@ -953,11 +953,6 @@
             <constant>GL_PIXEL_UNPACK_BUFFER</constant> target and <parameter>data</parameter> is not evenly divisible 
             into the number of bytes needed to store in memory a datum indicated by <parameter>type</parameter>.
         </para>
-        <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glTexImage2D</function>
-            is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
-            and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
-        </para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>

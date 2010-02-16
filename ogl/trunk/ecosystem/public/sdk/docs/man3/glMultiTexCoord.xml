@@ -416,9 +416,6 @@
         </para>
         <para>
             The current texture coordinates can be updated at any time.
-            In particular,
-            <function>glMultiTexCoord</function> can be called between a call to <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry> and the corresponding
-            call to <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
         </para>
         <para>
             It is always the case that <constant>GL_TEXTURE</constant>

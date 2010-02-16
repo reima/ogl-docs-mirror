@@ -331,11 +331,6 @@
             where <emphasis>max</emphasis> is the returned value of <constant>GL_MAX_TEXTURE_SIZE</constant>.
         </para>
         <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glGetTexLevelParameter</function>
-            is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
-            and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
-        </para>
-        <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if
             <constant>GL_TEXTURE_COMPRESSED_IMAGE_SIZE</constant> is queried on texture images with an
             uncompressed internal format or on proxy targets.

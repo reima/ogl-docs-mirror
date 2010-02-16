@@ -187,12 +187,6 @@
         <para>
             <constant>GL_OUT_OF_MEMORY</constant> is generated if the GL is unable to create a data store with the specified <parameter>size</parameter>.
         </para>
-        <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glBufferData</function>
-            is executed between the execution of
-            <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry> and the corresponding execution of
-            <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
-        </para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>

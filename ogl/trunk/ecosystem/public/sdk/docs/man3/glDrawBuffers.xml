@@ -161,12 +161,6 @@
 	<parameter>n</parameter> is greater than
 	<constant>GL_MAX_DRAW_BUFFERS</constant>.</para>
 
-	<para><constant>GL_INVALID_OPERATION</constant> is generated if
-	<function>glDrawBuffers</function> is executed between the
-	execution of
-	<citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
-	and the corresponding execution of
-	<citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.</para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
 	<para><citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>

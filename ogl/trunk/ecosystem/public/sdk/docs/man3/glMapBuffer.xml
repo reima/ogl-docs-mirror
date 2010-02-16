@@ -152,11 +152,6 @@
             <constant>GL_INVALID_OPERATION</constant> is generated if <function>glUnmapBuffer</function> is executed for
             a buffer object whose data store is not currently mapped.
         </para>
-        <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glMapBuffer</function> or <function>glUnmapBuffer</function> is executed
-            between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry> and the corresponding
-            execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
-        </para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>

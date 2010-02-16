@@ -135,11 +135,6 @@ glPolygonMode(<constant>GL_FRONT</constant>, <constant>GL_LINE</constant>);
             <constant>GL_INVALID_ENUM</constant> is generated if either <parameter>face</parameter> or <parameter>mode</parameter> is not
             an accepted value.
         </para>
-        <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glPolygonMode</function>
-            is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
-            and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
-        </para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
@@ -148,7 +143,6 @@ glPolygonMode(<constant>GL_FRONT</constant>, <constant>GL_LINE</constant>);
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEdgeFlag</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glLineStipple</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glLineWidth</refentrytitle></citerefentry>,

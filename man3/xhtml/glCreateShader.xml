@@ -29,12 +29,7 @@
 	synchronization across API calls when objects are accessed from
 	different execution threads.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>This function returns 0 if an error occurs creating the
 	shader object.</p><p><code class="constant">GL_INVALID_ENUM</code> is generated if
-	<em class="parameter"><code>shaderType</code></em> is not an accepted value.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
-	<code class="function">glCreateShader</code> is executed between the
-	execution of
-	<a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-	and the corresponding execution of
-	<a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p><a href="glGetShader.xml"><span class="citerefentry"><span class="refentrytitle">glGetShader</span></span></a>
+	<em class="parameter"><code>shaderType</code></em> is not an accepted value.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p><a href="glGetShader.xml"><span class="citerefentry"><span class="refentrytitle">glGetShader</span></span></a>
 	with a valid shader object and the parameter to be queried</p><p><a href="glGetShaderInfoLog.xml"><span class="citerefentry"><span class="refentrytitle">glGetShaderInfoLog</span></span></a>
 	with a valid shader object</p><p><a href="glGetShaderSource.xml"><span class="citerefentry"><span class="refentrytitle">glGetShaderSource</span></span></a>
 	with a valid shader object</p><p><a href="glIsShader.xml"><span class="citerefentry"><span class="refentrytitle">glIsShader</span></span></a></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p><a href="glAttachShader.xml"><span class="citerefentry"><span class="refentrytitle">glAttachShader</span></span></a>,

@@ -92,10 +92,6 @@
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if none of the buffers indicated
             by <em class="parameter"><code>mode</code></em> exists.
-        </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glDrawBuffer</code>
-            is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-            and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_DRAW_BUFFER</code>
         </p><p>

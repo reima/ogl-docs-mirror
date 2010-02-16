@@ -64,13 +64,7 @@
 	and isn't accessed when
         <a href="glArrayElement.xml"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a>, <a href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>, <a href="glDrawRangeElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span></a>,
         <a href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>, <a href="glMultiDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawArrays</span></span></a>, or <a href="glMultiDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span></a>
-        is called.</p><p>Execution of <code class="function">glVertexAttribPointer</code> is
-	not allowed between the execution of
-	<a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-	and the corresponding execution of
-	<a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>,
-	but an error may or may not be generated. If no error is
-	generated, the operation is undefined.</p><p><code class="function">glVertexAttribPointer</code> is typically
+        is called.</p><p><code class="function">glVertexAttribPointer</code> is typically
 	implemented on the client side.</p><p>Generic vertex attribute array parameters are client-side
 	state and are therefore not saved or restored by
 	<a href="glPushAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPushAttrib</span></span></a>

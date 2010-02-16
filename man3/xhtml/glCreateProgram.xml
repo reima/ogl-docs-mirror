@@ -31,12 +31,7 @@
 	objects and the data associated with those attached objects are
 	shared as well.</p><p>Applications are responsible for providing the
 	synchronization across API calls when objects are accessed from
-	different execution threads.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>This function returns 0 if an error occurs creating the program object.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
-	<code class="function">glCreateProgram</code> is executed between the
-	execution of
-	<a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-	and the corresponding execution of
-	<a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p><a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
+	different execution threads.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>This function returns 0 if an error occurs creating the program object.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p><a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
 	with the argument <code class="constant">GL_CURRENT_PROGRAM</code></p><p><a href="glGetActiveAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glGetActiveAttrib</span></span></a>
 	with a valid program object and the index of an active attribute
 	variable</p><p><a href="glGetActiveUniform.xml"><span class="citerefentry"><span class="refentrytitle">glGetActiveUniform</span></span></a>

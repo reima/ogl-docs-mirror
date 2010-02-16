@@ -12,12 +12,7 @@
 	GL version is 2.0 or greater.</p><p>No error is generated if <em class="parameter"><code>program</code></em> is
 	not a valid program object name.</p><p>A program object marked for deletion with <a href="glDeleteProgram.xml"><span class="citerefentry"><span class="refentrytitle">glDeleteProgram</span></span></a>
         but still in use as part of current rendering state is still considered 
-        a program object and <code class="function">glIsProgram</code> will return <code class="constant">GL_TRUE</code>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
-	<code class="function">glIsProgram</code> is executed between the
-	execution of
-	<a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-	and the corresponding execution of
-	<a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p><a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
+        a program object and <code class="function">glIsProgram</code> will return <code class="constant">GL_TRUE</code>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p><a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
 	with the argument <code class="constant">GL_CURRENT_PROGRAM</code></p><p><a href="glGetActiveAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glGetActiveAttrib</span></span></a>
 	with arguments <em class="parameter"><code>program</code></em> and the index of
 	an active attribute variable</p><p><a href="glGetActiveUniform.xml"><span class="citerefentry"><span class="refentrytitle">glGetActiveUniform</span></span></a>

@@ -117,10 +117,6 @@
                     </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>cap</code></em> is not one of the values
             listed previously.
-        </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glEnable</code> or <a href="glDisable.xml"><span class="citerefentry"><span class="refentrytitle">glDisable</span></span></a>
-            is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-            and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a>
         </p><p>

@@ -94,12 +94,6 @@
 	<para><constant>GL_INVALID_VALUE</constant> is generated if
 	<parameter>count</parameter> is less than 0.</para>
 
-	<para><constant>GL_INVALID_OPERATION</constant> is generated if
-	<function>glShaderSource</function> is executed between the
-	execution of
-	<citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
-	and the corresponding execution of
-	<citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.</para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
 	<para><citerefentry><refentrytitle>glGetShader</refentrytitle></citerefentry>

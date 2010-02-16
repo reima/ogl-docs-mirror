@@ -245,11 +245,6 @@
             object such that the memory reads required would exceed the data store size.
         </para>
         <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glCompressedTexImage3D</function>
-            is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
-            and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
-        </para>
-        <para>
             Undefined results, including abnormal program termination, are generated if <parameter>data</parameter> is not encoded in a manner consistent with the extension specification defining the internal compression format.
         </para>
     </refsect1>

@@ -140,14 +140,6 @@
         <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>, or <citerefentry><refentrytitle>glMultiDrawElements</refentrytitle></citerefentry>
         is called.</para>
 
-	<para>Execution of <function>glVertexAttribPointer</function> is
-	not allowed between the execution of
-	<citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
-	and the corresponding execution of
-	<citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>,
-	but an error may or may not be generated. If no error is
-	generated, the operation is undefined.</para>
-
 	<para><function>glVertexAttribPointer</function> is typically
 	implemented on the client side.</para>
 

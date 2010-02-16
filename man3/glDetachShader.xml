@@ -69,12 +69,6 @@
 	<parameter>shader</parameter> is not attached to
 	<parameter>program</parameter>.</para>
 
-	<para><constant>GL_INVALID_OPERATION</constant> is generated if
-	<function>glDetachShader</function> is executed between the
-	execution of
-	<citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
-	and the corresponding execution of
-	<citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.</para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
 	<para><citerefentry><refentrytitle>glGetAttachedShaders</refentrytitle></citerefentry>

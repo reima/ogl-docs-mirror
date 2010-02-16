@@ -192,11 +192,6 @@
             <constant>GL_INVALID_ENUM</constant> is generated if either <parameter>target</parameter> or <parameter>mode</parameter> is not
             an accepted value.
         </para>
-        <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glHint</function>
-            is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
-            and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
-        </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>

@@ -103,12 +103,6 @@
             compiled into the list, and it is executed immediately.
         </para>
         <para>
-            Execution of <function>glInterleavedArrays</function> is not allowed between the execution of
-            <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry> and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>,
-            but an error may or may not be generated. If no error is generated,
-            the operation is undefined.
-        </para>
-        <para>
             <function>glInterleavedArrays</function> is typically implemented on the client side.
         </para>
         <para>

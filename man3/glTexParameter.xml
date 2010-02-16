@@ -1216,10 +1216,6 @@
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>params</parameter> should have a defined
             constant value (based on the value of <parameter>pname</parameter>) and does not.
         </para>
-        <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glTexParameter</function> is executed between the
-            execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry> and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
-        </para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>

@@ -158,11 +158,6 @@
             <constant>GL_PIXEL_UNPACK_BUFFER</constant> target and the data would be unpacked from the buffer 
             object such that the memory reads required would exceed the data store size.
         </para>
-        <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glPolygonStipple</function>
-            is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
-            and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
-        </para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>

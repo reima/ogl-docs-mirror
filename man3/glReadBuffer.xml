@@ -86,11 +86,6 @@
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>mode</parameter> specifies a buffer
             that does not exist.
         </para>
-        <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <function>glReadBuffer</function>
-            is executed between the execution of <citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
-            and the corresponding execution of <citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.
-        </para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>

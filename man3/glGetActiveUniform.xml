@@ -237,13 +237,6 @@
 	number of active uniform variables in
 	<parameter>program</parameter>.</para>
 
-	<para><constant>GL_INVALID_OPERATION</constant> is generated if
-	<function>glGetActiveUniform</function> is executed between the
-	execution of
-	<citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
-	and the corresponding execution of
-	<citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.</para>
-
 	<para><constant>GL_INVALID_VALUE</constant> is generated if
 	<parameter>bufSize</parameter> is less than 0.</para>
     </refsect1>

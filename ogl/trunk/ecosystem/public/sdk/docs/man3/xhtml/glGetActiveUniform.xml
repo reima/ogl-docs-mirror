@@ -135,12 +135,7 @@
 	<em class="parameter"><code>program</code></em> is not a program object.</p><p><code class="constant">GL_INVALID_VALUE</code> is generated if
 	<em class="parameter"><code>index</code></em> is greater than or equal to the
 	number of active uniform variables in
-	<em class="parameter"><code>program</code></em>.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
-	<code class="function">glGetActiveUniform</code> is executed between the
-	execution of
-	<a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-	and the corresponding execution of
-	<a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.</p><p><code class="constant">GL_INVALID_VALUE</code> is generated if
+	<em class="parameter"><code>program</code></em>.</p><p><code class="constant">GL_INVALID_VALUE</code> is generated if
 	<em class="parameter"><code>bufSize</code></em> is less than 0.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p><a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
 	with argument <code class="constant">GL_MAX_VERTEX_UNIFORM_COMPONENTS
 	</code> or

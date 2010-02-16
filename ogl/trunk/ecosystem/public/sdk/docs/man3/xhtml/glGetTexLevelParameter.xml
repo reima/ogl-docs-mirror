@@ -161,10 +161,6 @@
             <span class="emphasis"><em>max</em></span>,
             where <span class="emphasis"><em>max</em></span> is the returned value of <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
         </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetTexLevelParameter</code>
-            is executed between the execution of <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-            and the corresponding execution of <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if
             <code class="constant">GL_TEXTURE_COMPRESSED_IMAGE_SIZE</code> is queried on texture images with an
             uncompressed internal format or on proxy targets.

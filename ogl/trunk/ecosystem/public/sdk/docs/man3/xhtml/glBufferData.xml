@@ -75,11 +75,6 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if the reserved buffer object name 0 is bound to <em class="parameter"><code>target</code></em>.
         </p><p>
             <code class="constant">GL_OUT_OF_MEMORY</code> is generated if the GL is unable to create a data store with the specified <em class="parameter"><code>size</code></em>.
-        </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glBufferData</code>
-            is executed between the execution of
-            <a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> and the corresponding execution of
-            <a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
             <a href="glGetBufferSubData.xml"><span class="citerefentry"><span class="refentrytitle">glGetBufferSubData</span></span></a>
         </p><p>

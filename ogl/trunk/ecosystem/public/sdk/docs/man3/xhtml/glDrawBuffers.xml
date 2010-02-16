@@ -61,12 +61,7 @@
 	<code class="constant">GL_NONE</code> ) indicates a color buffer that
 	does not exist in the current GL context.</p><p><code class="constant">GL_INVALID_VALUE</code> is generated if
 	<em class="parameter"><code>n</code></em> is greater than
-	<code class="constant">GL_MAX_DRAW_BUFFERS</code>.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
-	<code class="function">glDrawBuffers</code> is executed between the
-	execution of
-	<a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-	and the corresponding execution of
-	<a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p><a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
+	<code class="constant">GL_MAX_DRAW_BUFFERS</code>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p><a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
 	with argument <code class="constant">GL_MAX_DRAW_BUFFERS</code></p><p><a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
 	with argument <code class="constant">GL_DRAW_BUFFERSi</code> where
 	<code class="code">i</code> indicates the number of the draw buffer

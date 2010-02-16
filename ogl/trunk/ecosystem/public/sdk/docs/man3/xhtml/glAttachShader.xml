@@ -31,12 +31,7 @@
 	<em class="parameter"><code>program</code></em> is not a program object.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
 	<em class="parameter"><code>shader</code></em> is not a shader object.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
 	<em class="parameter"><code>shader</code></em> is already attached to
-	<em class="parameter"><code>program</code></em>.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
-	<code class="function">glAttachShader</code> is executed between the
-	execution of
-	<a href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
-	and the corresponding execution of
-	<a href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p><a href="glGetAttachedShaders.xml"><span class="citerefentry"><span class="refentrytitle">glGetAttachedShaders</span></span></a>
+	<em class="parameter"><code>program</code></em>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p><a href="glGetAttachedShaders.xml"><span class="citerefentry"><span class="refentrytitle">glGetAttachedShaders</span></span></a>
 	with the handle of a valid program object</p><p><a href="glIsProgram.xml"><span class="citerefentry"><span class="refentrytitle">glIsProgram</span></span></a></p><p><a href="glIsShader.xml"><span class="citerefentry"><span class="refentrytitle">glIsShader</span></span></a></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p><a href="glCompileShader.xml"><span class="citerefentry"><span class="refentrytitle">glCompileShader</span></span></a>,
 	<a href="glDetachShader.xml"><span class="citerefentry"><span class="refentrytitle">glDetachShader</span></span></a>,
 	<a href="glLinkProgram.xml"><span class="citerefentry"><span class="refentrytitle">glLinkProgram</span></span></a>,

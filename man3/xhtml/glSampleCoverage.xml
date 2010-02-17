@@ -20,7 +20,7 @@
             Multisampling samples a pixel multiple times at various
             implementation-dependent subpixel locations to generate antialiasing
             effects.  Multisampling transparently antialiases points, lines, polygons,
-            bitmaps, and images if it is enabled.
+            and images if it is enabled.
         </p><p>
             <em class="parameter"><code>value</code></em> is used in constructing a temporary mask used in determining which
             samples will be used in resolving the final fragment color.  This mask is

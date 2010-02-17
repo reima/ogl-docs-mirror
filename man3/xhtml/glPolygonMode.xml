@@ -36,9 +36,6 @@
                         Polygon rasterization attributes other than <code class="constant">GL_POLYGON_MODE</code> have no effect.
                     </p></dd><dt><span class="term"><code class="constant">GL_LINE</code></span></dt><dd><p>
                         Boundary edges of the polygon are drawn as line segments.
-                        They are treated as connected line segments for line stippling;
-                        the line stipple counter and pattern are not reset between segments
-                        (see <a href="glLineStipple.xml"><span class="citerefentry"><span class="refentrytitle">glLineStipple</span></span></a>).
                         Line attributes such as
                         <code class="constant">GL_LINE_WIDTH</code> and
                         <code class="constant">GL_LINE_SMOOTH</code> control
@@ -46,9 +43,7 @@
                         Polygon rasterization attributes other than <code class="constant">GL_POLYGON_MODE</code> have no effect.
                     </p></dd><dt><span class="term"><code class="constant">GL_FILL</code></span></dt><dd><p>
                         The interior of the polygon is filled.
-                        Polygon attributes such as
-                        <code class="constant">GL_POLYGON_STIPPLE</code> and
-                        <code class="constant">GL_POLYGON_SMOOTH</code> control the rasterization of the polygon.
+                        Polygon attributes such as <code class="constant">GL_POLYGON_SMOOTH</code> control the rasterization of the polygon.
                     </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="examples"></a><h2>Examples</h2><p>
             To draw a surface with filled back-facing polygons
             and outlined front-facing polygons,
@@ -67,10 +62,8 @@ glPolygonMode(<code class="constant">GL_FRONT</code>, <code class="constant">GL_
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_POLYGON_MODE</code>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glEdgeFlag.xml"><span class="citerefentry"><span class="refentrytitle">glEdgeFlag</span></span></a>,
-            <a href="glLineStipple.xml"><span class="citerefentry"><span class="refentrytitle">glLineStipple</span></span></a>,
             <a href="glLineWidth.xml"><span class="citerefentry"><span class="refentrytitle">glLineWidth</span></span></a>,
-            <a href="glPointSize.xml"><span class="citerefentry"><span class="refentrytitle">glPointSize</span></span></a>,
-            <a href="glPolygonStipple.xml"><span class="citerefentry"><span class="refentrytitle">glPolygonStipple</span></span></a>
+            <a href="glPointSize.xml"><span class="citerefentry"><span class="refentrytitle">glPointSize</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

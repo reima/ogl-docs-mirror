@@ -22,10 +22,10 @@
             Texture names are unsigned integers. The value zero is reserved to
             represent the default texture for each texture target.
             Texture names and the corresponding texture contents are local to
-            the shared display-list space (see <a href="glXCreateContext.xml"><span class="citerefentry"><span class="refentrytitle">glXCreateContext</span></span></a>) of the current
+            the shared object space (see <a href="glXCreateContext.xml"><span class="citerefentry"><span class="refentrytitle">glXCreateContext</span></span></a>) of the current
             GL rendering context;
             two rendering contexts share texture names only if they
-            also share display lists.
+            explicitly enable sharing between contexts through the appropriate GL windows interfaces functions.
         </p><p>
             You may use <a href="glGenTextures.xml"><span class="citerefentry"><span class="refentrytitle">glGenTextures</span></span></a> to generate a set of new texture names.
         </p><p>
@@ -57,8 +57,6 @@
             using <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>, <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>, or <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>.
             For additional control over performance, use
             <a href="glPrioritizeTextures.xml"><span class="citerefentry"><span class="refentrytitle">glPrioritizeTextures</span></span></a>.
-        </p><p>
-            <code class="function">glBindTexture</code> is included in display lists.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
             <code class="function">glBindTexture</code> is available only if the GL version is 1.1 or greater.
         </p><p>

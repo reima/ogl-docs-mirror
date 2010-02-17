@@ -92,8 +92,6 @@ ALLXML = \
     glEnable.xml \
     glEnablei.xml \
     glEnableVertexAttribArray.xml \
-    glEndConditionalRender.xml \
-    glEndTransformFeedback.xml \
     glEndQuery.xml \
     glFenceSync.xml \
     glFinish.xml \

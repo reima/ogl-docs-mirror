@@ -17,9 +17,6 @@
             blending operations.
             Initially the <code class="constant">GL_BLEND_COLOR</code> is set to (0, 0, 0, 0).
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
-            <code class="function">glBlendColor</code> is part of the <code class="code">ARB_imaging</code> subset. <code class="function">glBlendColor</code> is present only
-            if <code class="code">ARB_imaging</code> is returned when <a href="glGetString.xml"><span class="citerefentry"><span class="refentrytitle">glGetString</span></span></a> is called with
-            <code class="constant">GL_EXTENSIONS</code> as its argument.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with an argument of <code class="constant">GL_BLEND_COLOR</code>

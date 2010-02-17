@@ -5,8 +5,8 @@
     <refmeta>
         <refmetainfo>
             <copyright>
-                <year>2009</year>
-                <holder>2010 Khronos Group</holder>
+                <year>2010</year>
+                <holder>Khronos Group</holder>
             </copyright>
         </refmetainfo>
         <refentrytitle>glBeginConditionalRender</refentrytitle>

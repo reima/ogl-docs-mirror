@@ -20,7 +20,7 @@
 	<code class="constant">GL_VERTEX_SHADER</code> or
 	<code class="constant">GL_FRAGMENT_SHADER</code>, depending on the value
 	of <em class="parameter"><code>shaderType</code></em>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p><code class="function">glCreateShader</code> is available only if
-	the GL version is 2.0 or greater.</p><p>Like display lists and texture objects, the name space for
+	the GL version is 2.0 or greater.</p><p>Like buffer and texture objects, the name space for
 	shader objects may be shared across a set of contexts, as long
 	as the server sides of the contexts share the same address
 	space. If the name space is shared across contexts, any attached

@@ -186,7 +186,6 @@
                     The following symbolic values are accepted:
                     <constant>GL_UNSIGNED_BYTE</constant>,
                     <constant>GL_BYTE</constant>,
-                    <constant>GL_BITMAP</constant>,
                     <constant>GL_UNSIGNED_SHORT</constant>,
                     <constant>GL_SHORT</constant>,
                     <constant>GL_UNSIGNED_INT</constant>,
@@ -259,9 +258,6 @@
             or four values,
             depending on <parameter>format</parameter>,
             to form elements.
-            If <parameter>type</parameter> is <constant>GL_BITMAP</constant>,
-            the data is considered as a string of unsigned bytes
-            (and <parameter>format</parameter> must be <constant>GL_COLOR_INDEX</constant>).
             Each data byte is treated as eight 1-bit elements,
             with bit ordering determined by <constant>GL_UNPACK_LSB_FIRST</constant>
             (see <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>).
@@ -641,10 +637,6 @@
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>type</parameter> is not a type constant.
         </para>
         <para>
-            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>type</parameter> is <constant>GL_BITMAP</constant> and
-            <parameter>format</parameter> is not <constant>GL_COLOR_INDEX</constant>.
-        </para>
-        <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>level</parameter> is less than 0.
         </para>
         <para>
@@ -762,11 +754,9 @@
             <citerefentry><refentrytitle>glCopyTexSubImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetCompressedTexImage</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glMatrixMode</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexEnv</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glTexGen</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexSubImage1D</refentrytitle></citerefentry>,

@@ -84,7 +84,6 @@
                     Must be one of
                     <constant>GL_UNSIGNED_BYTE</constant>,
                     <constant>GL_BYTE</constant>,
-                    <constant>GL_BITMAP</constant>,
                     <constant>GL_UNSIGNED_SHORT</constant>,
                     <constant>GL_SHORT</constant>,
                     <constant>GL_UNSIGNED_INT</constant>,
@@ -511,23 +510,6 @@
                     </row>
                     <row>
                         <entry align="left">
-                        <constant>GL_BITMAP</constant>
-                        </entry>
-                        <entry align="center">
-                        <inlineequation><mml:math>
-                            <!-- eqn: 1:-->
-                            <mml:mn>1</mml:mn>
-                        </mml:math></inlineequation>
-                        </entry>
-                        <entry align="center">
-                        <inlineequation><mml:math>
-                            <!-- eqn: 1:-->
-                            <mml:mn>1</mml:mn>
-                        </mml:math></inlineequation>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry align="left">
                         <constant>GL_UNSIGNED_SHORT</constant>
                         </entry>
                         <entry align="center">
@@ -750,15 +732,7 @@
             accepted value.
         </para>
         <para>
-            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>type</parameter> is <constant>GL_BITMAP</constant> and <parameter>format</parameter> is
-            not <constant>GL_COLOR_INDEX</constant> or <constant>GL_STENCIL_INDEX</constant>.
-        </para>
-        <para>
             <constant>GL_INVALID_VALUE</constant> is generated if either <parameter>width</parameter> or <parameter>height</parameter> is negative.
-        </para>
-        <para>
-            <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>format</parameter> is <constant>GL_COLOR_INDEX</constant>
-            and the color buffers store RGBA color components.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>format</parameter> is <constant>GL_STENCIL_INDEX</constant>

@@ -75,8 +75,7 @@
         <para>
             <function>glPixelStore</function> sets pixel storage modes that affect the operation of subsequent
             <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry> as well as the unpacking of
-            polygon stipple patterns (see <citerefentry><refentrytitle>glPolygonStipple</refentrytitle></citerefentry>), bitmaps (see
-            <citerefentry><refentrytitle>glBitmap</refentrytitle></citerefentry>), texture patterns (see <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
+            texture patterns (see <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glTexSubImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexSubImage2D</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glTexSubImage3D</refentrytitle></citerefentry>).
         </para>
@@ -94,7 +93,6 @@
                         If true,
                         byte ordering for multibyte color components,
                         depth components,
-                        color indices,
                         or stencil indices
                         is reversed.
                         That is,
@@ -169,7 +167,6 @@
                         bits are ordered within a byte from least significant to most significant;
                         otherwise,
                         the first bit in each byte is the most significant one.
-                        This parameter is significant for bitmap data only.
                     </para>
                 </listitem>
             </varlistentry>
@@ -554,10 +551,8 @@
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexSubImage1D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glTexSubImage2D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glTexSubImage3D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glBitmap</refentrytitle></citerefentry>, and
-            <citerefentry><refentrytitle>glPolygonStipple</refentrytitle></citerefentry>.
+            <citerefentry><refentrytitle>glTexSubImage2D</refentrytitle></citerefentry>, and
+            <citerefentry><refentrytitle>glTexSubImage3D</refentrytitle></citerefentry>
         </para>
         <para>
             They are as follows:
@@ -570,7 +565,6 @@
                         If true,
                         byte ordering for multibyte color components,
                         depth components,
-                        color indices,
                         or stencil indices
                         is reversed.
                         That is,
@@ -645,7 +639,6 @@
                         bits are ordered within a byte from least significant to most significant;
                         otherwise,
                         the first bit in each byte is the most significant one.
-                        This is relevant only for bitmap data.
                     </para>
                 </listitem>
             </varlistentry>
@@ -958,10 +951,8 @@
                         <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>,
                         <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
                         <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
-                        <citerefentry><refentrytitle>glTexSubImage1D</refentrytitle></citerefentry>,
-                        <citerefentry><refentrytitle>glTexSubImage2D</refentrytitle></citerefentry>,
-                        <citerefentry><refentrytitle>glBitmap</refentrytitle></citerefentry>, or
-                        <citerefentry><refentrytitle>glPolygonStipple</refentrytitle></citerefentry>.
+                        <citerefentry><refentrytitle>glTexSubImage1D</refentrytitle></citerefentry> or
+                        <citerefentry><refentrytitle>glTexSubImage2D</refentrytitle></citerefentry>.
                         Setting <constant>GL_UNPACK_SKIP_PIXELS</constant> to 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>
                         is equivalent to incrementing
@@ -1415,20 +1406,9 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glBitmap</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glColorTable</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glColorSubTable</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glConvolutionFilter1D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glConvolutionFilter2D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glSeparableFilter2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glHistogram</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glMinmax</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPixelMap</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelZoom</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPolygonStipple</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPushClientAttrib</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,

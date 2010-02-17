@@ -29,7 +29,6 @@
                     Must be one of
                     <code class="constant">GL_UNSIGNED_BYTE</code>,
                     <code class="constant">GL_BYTE</code>,
-                    <code class="constant">GL_BITMAP</code>,
                     <code class="constant">GL_UNSIGNED_SHORT</code>,
                     <code class="constant">GL_SHORT</code>,
                     <code class="constant">GL_UNSIGNED_INT</code>,
@@ -67,11 +66,6 @@
             (see <a href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>) while a block of pixels is
             requested, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data store
             rather than a pointer to client memory.
-        </p><p>
-            When the <code class="code">ARB_imaging</code> extension is supported, the pixel data may
-            be processed by additional operations including color table lookup,
-            color matrix transformations, convolutions, histograms, and minimum and
-            maximum pixel value computations.
         </p><p>
             <code class="function">glReadPixels</code> returns values from each pixel with lower left corner at
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -344,18 +338,6 @@
                             </mml:mfrac>
                         </mml:math>
                         </td></tr><tr><td align="left">
-                        <code class="constant">GL_BITMAP</code>
-                        </td><td align="center">
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                            
-                            <mml:mn>1</mml:mn>
-                        </mml:math>
-                        </td><td align="center">
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                            
-                            <mml:mn>1</mml:mn>
-                        </mml:math>
-                        </td></tr><tr><td align="left">
                         <code class="constant">GL_UNSIGNED_SHORT</code>
                         </td><td align="center">
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -543,13 +525,7 @@
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>format</code></em> or <em class="parameter"><code>type</code></em> is not an
             accepted value.
         </p><p>
-            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>type</code></em> is <code class="constant">GL_BITMAP</code> and <em class="parameter"><code>format</code></em> is
-            not <code class="constant">GL_COLOR_INDEX</code> or <code class="constant">GL_STENCIL_INDEX</code>.
-        </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if either <em class="parameter"><code>width</code></em> or <em class="parameter"><code>height</code></em> is negative.
-        </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>format</code></em> is <code class="constant">GL_COLOR_INDEX</code>
-            and the color buffers store RGBA color components.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>format</code></em> is <code class="constant">GL_STENCIL_INDEX</code>
             and there is no stencil buffer.

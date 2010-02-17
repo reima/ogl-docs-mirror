@@ -71,7 +71,7 @@
 	vertex and fragment processing.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p><code class="function">glUseProgram</code> is available only if the
 	GL version is 2.0 or greater.</p><p>While a program object is in use, the state that controls
 	the disabled fixed functionality may also be updated using the
-	normal OpenGL calls.</p><p>Like display lists and texture objects, the name space for
+	normal OpenGL calls.</p><p>Like buffer and texture objects, the name space for
 	program objects may be shared across a set of contexts, as long
 	as the server sides of the contexts share the same address
 	space. If the name space is shared across contexts, any attached

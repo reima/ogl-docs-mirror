@@ -90,8 +90,7 @@
             Because the internal texture image is an RGBA image,
             pixel formats <code class="constant">GL_COLOR_INDEX</code>,
             <code class="constant">GL_STENCIL_INDEX</code>,
-            and <code class="constant">GL_DEPTH_COMPONENT</code> are not accepted,
-            and pixel type <code class="constant">GL_BITMAP</code> is not accepted.
+            and <code class="constant">GL_DEPTH_COMPONENT</code> are not accepted.
         </p><p>
             If the selected texture image does not contain four components,
             the following mappings are applied.
@@ -207,7 +206,6 @@
             <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>,
             <a href="glReadPixels.xml"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>,
             <a href="glTexEnv.xml"><span class="citerefentry"><span class="refentrytitle">glTexEnv</span></span></a>,
-            <a href="glTexGen.xml"><span class="citerefentry"><span class="refentrytitle">glTexGen</span></span></a>,
             <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>,
             <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>,
             <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>,

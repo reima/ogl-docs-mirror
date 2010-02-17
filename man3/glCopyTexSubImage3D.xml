@@ -176,20 +176,8 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <function>glCopyTexSubImage3D</function> is available only if the GL version is 1.2 or greater.
-        </para>
-        <para>
-            Texturing has no effect in color index mode.
-        </para>
-        <para>
             <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry> modes affect texture images
             in exactly the way they affect <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>.
-        </para>
-        <para>
-            When the <code>ARB_imaging</code> extension is supported, the RGBA components
-            copied from the framebuffer may be processed by the imaging pipeline, as
-            if they were a two-dimensional texture.  See <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry> for
-            specific details.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

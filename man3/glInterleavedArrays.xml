@@ -96,13 +96,6 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <function>glInterleavedArrays</function> is available only if the GL version is 1.1 or greater.
-        </para>
-        <para>
-            If <function>glInterleavedArrays</function> is called while compiling a display list, it is not
-            compiled into the list, and it is executed immediately.
-        </para>
-        <para>
             <function>glInterleavedArrays</function> is typically implemented on the client side.
         </para>
         <para>

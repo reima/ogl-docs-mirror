@@ -65,10 +65,10 @@
             there is no default buffer object for each buffer object target. Instead, <parameter>buffer</parameter> set to zero
             effectively unbinds any buffer object previously bound, and restores client memory usage for that buffer object target.
             Buffer object names and the corresponding buffer object contents are local to
-            the shared display-list space (see <citerefentry><refentrytitle>glXCreateContext</refentrytitle></citerefentry>) of the current
+            the shared object space (see <citerefentry><refentrytitle>glXCreateContext</refentrytitle></citerefentry>) of the current
             GL rendering context;
             two rendering contexts share buffer object names only if they
-            also share display lists.
+            explicitly enable sharing between contexts through the appropriate GL windows interfaces functions.
         </para>
         <para>
             You may use <citerefentry><refentrytitle>glGenBuffers</refentrytitle></citerefentry> to generate a set of new buffer object names.

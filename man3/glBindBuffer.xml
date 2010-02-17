@@ -105,12 +105,6 @@
         <para>
             While a non-zero buffer object is bound to the <constant>GL_PIXEL_PACK_BUFFER</constant> target, 
             the following commands are affected: <citerefentry><refentrytitle>glGetCompressedTexImage</refentrytitle></citerefentry>, 
-            <citerefentry><refentrytitle>glGetConvolutionFilter</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetHistogram</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetMinmax</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetPixelMap</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetPolygonStipple</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetSeparableFilter</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetTexImage</refentrytitle></citerefentry>, and 
             <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry>. The pointer parameter that is 
             traditionally interpreted as a pointer to client-side memory where the pixels are to be packed is instead 
@@ -118,21 +112,14 @@
         </para>
         <para>
             While a non-zero buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target, 
-            the following commands are affected: <citerefentry><refentrytitle>glBitmap</refentrytitle></citerefentry>, 
-            <citerefentry><refentrytitle>glColorSubTable</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glColorTable</refentrytitle></citerefentry>,
+            the following commands are affected: 
             <citerefentry><refentrytitle>glCompressedTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCompressedTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCompressedTexImage3D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCompressedTexSubImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCompressedTexSubImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCompressedTexSubImage3D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glConvolutionFilter1D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glConvolutionFilter2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPixelMap</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPolygonStipple</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glSeparableFilter2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>,
@@ -155,11 +142,6 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <function>glBindBuffer</function> is available only if the GL version is 1.5 or greater.
-        </para>
-        <para>
-            <constant>GL_PIXEL_PACK_BUFFER</constant> and <constant>GL_PIXEL_UNPACK_BUFFER</constant> are 
-            available only if the GL version is 2.1 or greater.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

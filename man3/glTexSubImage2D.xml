@@ -122,7 +122,6 @@
                     The following symbolic values are accepted:
                     <constant>GL_UNSIGNED_BYTE</constant>,
                     <constant>GL_BYTE</constant>,
-                    <constant>GL_BITMAP</constant>,
                     <constant>GL_UNSIGNED_SHORT</constant>,
                     <constant>GL_SHORT</constant>,
                     <constant>GL_UNSIGNED_INT</constant>,
@@ -225,10 +224,6 @@
         </para>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>type</parameter> is not a type constant.
-        </para>
-        <para>
-            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>type</parameter> is <constant>GL_BITMAP</constant> and
-            <parameter>format</parameter> is not <constant>GL_COLOR_INDEX</constant>.
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>level</parameter> is less than 0.
@@ -389,7 +384,6 @@
             <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexEnv</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glTexGen</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>,

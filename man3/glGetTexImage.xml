@@ -155,8 +155,7 @@
             Because the internal texture image is an RGBA image,
             pixel formats <constant>GL_COLOR_INDEX</constant>,
             <constant>GL_STENCIL_INDEX</constant>,
-            and <constant>GL_DEPTH_COMPONENT</constant> are not accepted,
-            and pixel type <constant>GL_BITMAP</constant> is not accepted.
+            and <constant>GL_DEPTH_COMPONENT</constant> are not accepted.
         </para>
         <para>
             If the selected texture image does not contain four components,
@@ -300,7 +299,6 @@
             <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexEnv</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glTexGen</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>,

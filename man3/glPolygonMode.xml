@@ -89,9 +89,6 @@
                 <listitem>
                     <para>
                         Boundary edges of the polygon are drawn as line segments.
-                        They are treated as connected line segments for line stippling;
-                        the line stipple counter and pattern are not reset between segments
-                        (see <citerefentry><refentrytitle>glLineStipple</refentrytitle></citerefentry>).
                         Line attributes such as
                         <constant>GL_LINE_WIDTH</constant> and
                         <constant>GL_LINE_SMOOTH</constant> control
@@ -105,9 +102,7 @@
                 <listitem>
                     <para>
                         The interior of the polygon is filled.
-                        Polygon attributes such as
-                        <constant>GL_POLYGON_STIPPLE</constant> and
-                        <constant>GL_POLYGON_SMOOTH</constant> control the rasterization of the polygon.
+                        Polygon attributes such as <constant>GL_POLYGON_SMOOTH</constant> control the rasterization of the polygon.
                     </para>
                 </listitem>
             </varlistentry>
@@ -144,10 +139,8 @@ glPolygonMode(<constant>GL_FRONT</constant>, <constant>GL_LINE</constant>);
     <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glEdgeFlag</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glLineStipple</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glLineWidth</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPointSize</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPolygonStipple</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>glPointSize</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

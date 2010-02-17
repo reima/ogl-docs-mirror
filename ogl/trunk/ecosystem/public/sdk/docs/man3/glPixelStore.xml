@@ -79,12 +79,6 @@
             <citerefentry><refentrytitle>glBitmap</refentrytitle></citerefentry>), texture patterns (see <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glTexSubImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexSubImage2D</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glTexSubImage3D</refentrytitle></citerefentry>).
-            Additionally, if the <code>ARB_imaging</code> extension is supported, pixel
-            storage modes affect convolution filters
-            (see <citerefentry><refentrytitle>glConvolutionFilter1D</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glConvolutionFilter2D</refentrytitle></citerefentry>, and
-            <citerefentry><refentrytitle>glSeparableFilter2D</refentrytitle></citerefentry>, color table (see <citerefentry><refentrytitle>glColorTable</refentrytitle></citerefentry>, and
-            <citerefentry><refentrytitle>glColorSubTable</refentrytitle></citerefentry>, and unpacking histogram (See <citerefentry><refentrytitle>glHistogram</refentrytitle></citerefentry>),
-            and minmax (See <citerefentry><refentrytitle>glMinmax</refentrytitle></citerefentry>) data.
         </para>
         <para>
             <parameter>pname</parameter> is a symbolic constant indicating the parameter to be set, and
@@ -566,12 +560,6 @@
             <citerefentry><refentrytitle>glPolygonStipple</refentrytitle></citerefentry>.
         </para>
         <para>
-            Additionally, if the <code>ARB_imaging</code> extension is supported,
-            <citerefentry><refentrytitle>glColorTable</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glColorSubTable</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glConvolutionFilter1D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glConvolutionFilter2D</refentrytitle></citerefentry>, and
-            <citerefentry><refentrytitle>glSeparableFilter2D</refentrytitle></citerefentry>.
             They are as follows:
         </para>
         <variablelist>
@@ -1358,30 +1346,6 @@
         </para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
-        <para>
-            The pixel storage modes in effect when
-            <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glTexSubImage1D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glTexSubImage2D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glTexSubImage3D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glBitmap</refentrytitle></citerefentry>,
-            or <citerefentry><refentrytitle>glPolygonStipple</refentrytitle></citerefentry> is placed in a display list control the interpretation
-            of memory data.
-            Likewise, if the <code>ARB_imaging</code> extension is supported, the pixel
-            storage modes in effect when
-            <citerefentry><refentrytitle>glColorTable</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glColorSubTable</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glConvolutionFilter1D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glConvolutionFilter2D</refentrytitle></citerefentry>, of
-            <citerefentry><refentrytitle>glSeparableFilter2D</refentrytitle></citerefentry> is placed in a display list control the
-            interpretation of memory data.
-            The pixel storage modes in effect when a display list is executed are
-            not significant.
-        </para>
         <para>
             Pixel storage modes are client state and must be pushed and restored
             using

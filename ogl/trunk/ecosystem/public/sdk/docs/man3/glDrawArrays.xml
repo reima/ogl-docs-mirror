@@ -96,15 +96,6 @@
         <para>
             <function>glDrawArrays</function> is available only if the GL version is 1.1 or greater.
         </para>
-        <para>
-            <function>glDrawArrays</function> is included in display lists. If <function>glDrawArrays</function> is entered into a
-            display list,
-            the necessary array data (determined by the array pointers and
-            enables) is also
-            entered into the display list. Because the array pointers and
-            enables are client-side state, their values affect display lists
-            when the lists are created, not when the lists are executed.
-        </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
         <para>

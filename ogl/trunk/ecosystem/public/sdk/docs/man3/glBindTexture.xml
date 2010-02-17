@@ -64,10 +64,10 @@
             Texture names are unsigned integers. The value zero is reserved to
             represent the default texture for each texture target.
             Texture names and the corresponding texture contents are local to
-            the shared display-list space (see <citerefentry><refentrytitle>glXCreateContext</refentrytitle></citerefentry>) of the current
+            the shared object space (see <citerefentry><refentrytitle>glXCreateContext</refentrytitle></citerefentry>) of the current
             GL rendering context;
             two rendering contexts share texture names only if they
-            also share display lists.
+            explicitly enable sharing between contexts through the appropriate GL windows interfaces functions.
         </para>
         <para>
             You may use <citerefentry><refentrytitle>glGenTextures</refentrytitle></citerefentry> to generate a set of new texture names.
@@ -104,9 +104,6 @@
             using <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>, or <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>.
             For additional control over performance, use
             <citerefentry><refentrytitle>glPrioritizeTextures</refentrytitle></citerefentry>.
-        </para>
-        <para>
-            <function>glBindTexture</function> is included in display lists.
         </para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>

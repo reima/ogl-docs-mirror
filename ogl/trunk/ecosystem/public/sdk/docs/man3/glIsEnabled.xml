@@ -659,53 +659,7 @@
             <function>glIsEnabled</function> returns 0.
         </para>
         <para>
-            <constant>GL_COLOR_LOGIC_OP</constant>,
-            <constant>GL_COLOR_ARRAY</constant>,
-            <constant>GL_EDGE_FLAG_ARRAY</constant>,
-            <constant>GL_INDEX_ARRAY</constant>,
-            <constant>GL_INDEX_LOGIC_OP</constant>,
-            <constant>GL_NORMAL_ARRAY</constant>,
-            <constant>GL_POLYGON_OFFSET_FILL</constant>,
-            <constant>GL_POLYGON_OFFSET_LINE</constant>,
-            <constant>GL_POLYGON_OFFSET_POINT</constant>,
-            <constant>GL_TEXTURE_COORD_ARRAY</constant>, and
-            <constant>GL_VERTEX_ARRAY</constant>
-            are available only
-            if the GL version is 1.1 or greater.
-        </para>
-        <para>
-            <constant>GL_RESCALE_NORMAL</constant>, and <constant>GL_TEXTURE_3D</constant> are available only if the GL
-            version is 1.2 or greater.
-        </para>
-        <para>
-            <constant>GL_MULTISAMPLE</constant>,
-            <constant>GL_SAMPLE_ALPHA_TO_COVERAGE</constant>,
-            <constant>GL_SAMPLE_ALPHA_TO_ONE</constant>,
-            <constant>GL_SAMPLE_COVERAGE</constant>,
-            <constant>GL_TEXTURE_CUBE_MAP</constant>
-            are available only if the GL version is 1.3 or greater.
-        </para>
-        <para>
-            <constant>GL_FOG_COORD_ARRAY</constant> and <constant>GL_SECONDARY_COLOR_ARRAY</constant>
-            are available only if the GL version is 1.4 or greater.
-        </para>
-        <para>
-            <constant>GL_POINT_SPRITE</constant>,
-            <constant>GL_VERTEX_PROGRAM_POINT_SIZE</constant>, and
-            <constant>GL_VERTEX_PROGRAM_TWO_SIDE</constant>
-            are available only if the GL version is 2.0 or greater.
-        </para>
-        <para>
-            <constant>GL_COLOR_TABLE</constant>, <constant>GL_CONVOLUTION_1D</constant>, <constant>GL_CONVOLUTION_2D</constant>,
-            <constant>GL_HISTOGRAM</constant>, <constant>GL_MINMAX</constant>,
-            <constant>GL_POST_COLOR_MATRIX_COLOR_TABLE</constant>,
-            <constant>GL_POST_CONVOLUTION_COLOR_TABLE</constant>, and
-            <constant>GL_SEPARABLE_2D</constant> are available only if <code>ARB_imaging</code> is
-            returned when <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> is called with <constant>GL_EXTENSIONS</constant>.
-        </para>
-        <para>
-            For OpenGL versions 1.3 and greater, or when the <code>ARB_multitexture</code> extension is supported, the following
-            parameters return the associated value for the active texture unit:
+            The following parameters return the associated value for the active texture unit:
             <constant>GL_TEXTURE_1D</constant>,
             <constant>GL_TEXTURE_2D</constant>,
             <constant>GL_TEXTURE_3D</constant>,

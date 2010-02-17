@@ -1192,20 +1192,6 @@
             Blending affects only RGBA rendering.
             It is ignored by color index renderers.
         </para>
-        <para>
-            <constant>GL_CONSTANT_COLOR</constant>, <constant>GL_ONE_MINUS_CONSTANT_COLOR</constant>,
-            <constant>GL_CONSTANT_ALPHA</constant>, <constant>GL_ONE_MINUS_CONSTANT_ALPHA</constant> are available only
-            if the GL version is 1.4 or greater or if the <code>ARB_imaging</code> is
-            supported by your implementation.
-        </para>
-        <para>
-            <constant>GL_SRC_COLOR</constant> and <constant>GL_ONE_MINUS_SRC_COLOR</constant> are valid only for
-            <parameter>sfactor</parameter> if the GL version is 1.4 or greater.
-        </para>
-        <para>
-            <constant>GL_DST_COLOR</constant> and <constant>GL_ONE_MINUS_DST_COLOR</constant> are valid only for
-            <parameter>dfactor</parameter> if the GL version is 1.4 or greater.
-        </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
         <para>

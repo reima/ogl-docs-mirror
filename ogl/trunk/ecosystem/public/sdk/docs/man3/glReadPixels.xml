@@ -137,12 +137,6 @@
             rather than a pointer to client memory.
         </para>
         <para>
-            When the <code>ARB_imaging</code> extension is supported, the pixel data may
-            be processed by additional operations including color table lookup,
-            color matrix transformations, convolutions, histograms, and minimum and
-            maximum pixel value computations.
-        </para>
-        <para>
             <function>glReadPixels</function> returns values from each pixel with lower left corner at
             <inlineequation><mml:math>
                 <!-- eqn: (x + i, y + j):-->

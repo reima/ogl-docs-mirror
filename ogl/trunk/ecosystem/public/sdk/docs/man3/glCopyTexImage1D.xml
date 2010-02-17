@@ -235,39 +235,10 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <function>glCopyTexImage1D</function> is available only if the GL version is 1.1 or greater.
-        </para>
-        <para>
-            Texturing has no effect in color index mode.
-        </para>
-        <para>
             1, 2, 3, and 4 are not accepted values for <parameter>internalformat</parameter>.
         </para>
         <para>
             An image with 0 width indicates a NULL texture.
-        </para>
-        <para>
-            When the <code>ARB_imaging</code> extension is supported, the RGBA components copied from the framebuffer may be processed by the imaging pipeline.  See <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry> for specific details.
-        </para>
-        <para>
-            <constant>GL_DEPTH_COMPONENT</constant>, <constant>GL_DEPTH_COMPONENT16</constant>,
-            <constant>GL_DEPTH_COMPONENT24</constant>, and <constant>GL_DEPTH_COMPONENT32</constant> are available only
-            if the GL version is 1.4 or greater.
-        </para>
-        <para>
-			Non-power-of-two textures are supported if the GL version is 2.0 or greater, or if the implementation exports the <constant>GL_ARB_texture_non_power_of_two</constant> extension.
-        </para>
-        <para>
-            The 
-			<constant>GL_SRGB</constant>,
-			<constant>GL_SRGB8</constant>,
-			<constant>GL_SRGB_ALPHA</constant>,
-			<constant>GL_SRGB8_ALPHA8</constant>,
-			<constant>GL_SLUMINANCE</constant>,
-			<constant>GL_SLUMINANCE8</constant>,
-			<constant>GL_SLUMINANCE_ALPHA</constant>, and
-			<constant>GL_SLUMINANCE8_ALPHA8</constant>
-			internal formats are only available if the GL version is 2.1 or greater.  See <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry> for specific details about sRGB conversion.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

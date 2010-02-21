@@ -152,7 +152,6 @@ ALLXML = \
     glHint.xml \
     glIsBuffer.xml \
     glIsEnabled.xml \
-    glIsEnabledi.xml \
     glIsFramebuffer.xml \
     glIsProgram.xml \
     glIsRenderbuffer.xml \

@@ -174,7 +174,6 @@ ALLXML = \
     glPolygonMode.xml \
     glPolygonOffset.xml \
     glPrimitiveRestartIndex.xml \
-    glProgramParameteri.xml \
     glProvokingVertex.xml \
     glReadBuffer.xml \
     glReadPixels.xml \

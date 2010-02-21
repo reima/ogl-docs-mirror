@@ -19,7 +19,7 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef>void <function>glMultiDrawElements</function></funcdef>
+                <funcdef>void <function>glMultiDrawElementsBaseVertex</function></funcdef>
                 <paramdef>GLenum <parameter>mode</parameter></paramdef>
                 <paramdef>const GLsizei *<parameter>count</parameter></paramdef>
                 <paramdef>GLenum <parameter>type</parameter></paramdef>

@@ -11,13 +11,25 @@
                     The width of the multisample texture's image, in texels.
                 </p></dd><dt><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
                     The height of the multisample texture's image, in texels.
-                </p></dd><dt><span class="term"><em class="parameter"><code>depth</code></em></span></dt><dd><p>
-                    The depth of the multisample texture's image, in texels.
                 </p></dd><dt><span class="term"><em class="parameter"><code>fixedsamplelocations</code></em></span></dt><dd><p>
                     Specifies whether the image will use identical sample locations and the same number of samples for all texels in the image, and the sample locations will not
                     depend on the internal format or size of the image.
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
             <code class="function">glTexImage3DMultisample</code> establishes the data storage, format, dimensions and number of samples of a multisample texture's image.
+        </p><p>
+            <em class="parameter"><code>target</code></em> must be <code class="constant">GL_TEXTURE_2D_MULTISAMPLE_ARRAY</code> or <code class="constant">GL_PROXY_TEXTURE_2D_MULTISAMPLE_ARRAY</code>.
+            <em class="parameter"><code>width</code></em> and <em class="parameter"><code>height</code></em>are the dimensions in texels of the texture, and must
+            be in the range zero to <code class="constant">GL_MAX_TEXTURE_SIZE</code> - 1. <em class="parameter"><code>depth</code></em> is the number of array slices in the array texture's image.
+            <em class="parameter"><code>samples</code></em> specifies the number of samples in the image and must be in the range zero to <code class="constant">GL_MAX_SAMPLES</code> - 1.
+        </p><p>
+            <em class="parameter"><code>internalformat</code></em> must be a color-renderable, depth-renderable, or stencil-renderable format.
+        </p><p>
+            If <em class="parameter"><code>fixedsamplelocations</code></em> is <code class="constant">GL_TRUE</code>, the image will use identical sample locations and the same
+            number of samples for all texels in the image, and the sample locations will not depend on the internal format or size of the image.
+        </p><p>
+            When a multisample texture is accessed in a shader, the access takes one vector of integers describing which texel to fetch and an integer
+            corresponding to the sample numbers describing which sample within the texel to fetch. No standard sampling instructions are allowed on the
+            multisample texture targets.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>internalformat</code></em> is a depth- or stencil-renderable format and <em class="parameter"><code>samples</code></em>
             is greater than the value of <code class="constant">GL_MAX_DEPTH_TEXTURE_SAMPLES</code>.
@@ -28,14 +40,16 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>internalformat</code></em> is a signed or unsigned integer format and <em class="parameter"><code>samples</code></em>
             is greater than the value of <code class="constant">GL_MAX_INTEGER_SAMPLES</code>.
         </p><p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if either <em class="parameter"><code>width</code></em> or <em class="parameter"><code>height</code></em> is greater than <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
+            <code class="constant">GL_INVALID_VALUE</code> is generated if either <em class="parameter"><code>width</code></em> or <em class="parameter"><code>height</code></em> negative or is greater than <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
+        </p><p>
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>depth</code></em> is negative or is greater than <code class="constant">GL_MAX_ARRAY_TEXTURE_LAYERS</code>.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>samples</code></em> is greater than <code class="constant">GL_MAX_SAMPLES</code>.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>,
             <a href="glTexImage2DMultisample.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2DMultisample</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
-            Copyright <span class="trademark"></span>© 2010 Graham Sellers. 
+            Copyright <span class="trademark"></span>© 2010 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
             <a href="http://opencontent.org/openpub/" target="_top">http://opencontent.org/openpub/</a>.

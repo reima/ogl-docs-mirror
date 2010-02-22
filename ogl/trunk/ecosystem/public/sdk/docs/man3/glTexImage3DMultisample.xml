@@ -6,7 +6,7 @@
         <refmetainfo>
             <copyright>
                 <year>2010</year>
-                <holder>Graham Sellers</holder>
+                <holder>Khronos Group</holder>
             </copyright>
         </refmetainfo>
         <refentrytitle>glTexImage3DMultisample</refentrytitle>
@@ -73,14 +73,6 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>depth</parameter></term>
-            <listitem>
-                <para>
-                    The depth of the multisample texture's image, in texels.
-                </para>
-            </listitem>
-        </varlistentry>
-        <varlistentry>
             <term><parameter>fixedsamplelocations</parameter></term>
             <listitem>
                 <para>
@@ -94,6 +86,24 @@
     <refsect1 id="description"><title>Description</title>
         <para>
             <function>glTexImage3DMultisample</function> establishes the data storage, format, dimensions and number of samples of a multisample texture's image.
+        </para>
+        <para>
+            <parameter>target</parameter> must be <constant>GL_TEXTURE_2D_MULTISAMPLE_ARRAY</constant> or <constant>GL_PROXY_TEXTURE_2D_MULTISAMPLE_ARRAY</constant>.
+            <parameter>width</parameter> and <parameter>height</parameter>are the dimensions in texels of the texture, and must
+            be in the range zero to <constant>GL_MAX_TEXTURE_SIZE</constant> - 1. <parameter>depth</parameter> is the number of array slices in the array texture's image.
+            <parameter>samples</parameter> specifies the number of samples in the image and must be in the range zero to <constant>GL_MAX_SAMPLES</constant> - 1.
+        </para>
+        <para>
+            <parameter>internalformat</parameter> must be a color-renderable, depth-renderable, or stencil-renderable format.
+        </para>
+        <para>
+            If <parameter>fixedsamplelocations</parameter> is <constant>GL_TRUE</constant>, the image will use identical sample locations and the same
+            number of samples for all texels in the image, and the sample locations will not depend on the internal format or size of the image.
+        </para>
+        <para>
+            When a multisample texture is accessed in a shader, the access takes one vector of integers describing which texel to fetch and an integer
+            corresponding to the sample numbers describing which sample within the texel to fetch. No standard sampling instructions are allowed on the
+            multisample texture targets.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
@@ -110,7 +120,10 @@
             is greater than the value of <constant>GL_MAX_INTEGER_SAMPLES</constant>.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if either <parameter>width</parameter> or <parameter>height</parameter> is greater than <constant>GL_MAX_TEXTURE_SIZE</constant>.
+            <constant>GL_INVALID_VALUE</constant> is generated if either <parameter>width</parameter> or <parameter>height</parameter> negative or is greater than <constant>GL_MAX_TEXTURE_SIZE</constant>.
+        </para>
+        <para>
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>depth</parameter> is negative or is greater than <constant>GL_MAX_ARRAY_TEXTURE_LAYERS</constant>.
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>samples</parameter> is greater than <constant>GL_MAX_SAMPLES</constant>.
@@ -124,7 +137,7 @@
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"></trademark> 2010 Graham Sellers. 
+            Copyright <trademark class="copyright"></trademark> 2010 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
             <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.

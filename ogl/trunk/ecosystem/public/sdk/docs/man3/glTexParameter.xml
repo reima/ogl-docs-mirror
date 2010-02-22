@@ -547,13 +547,8 @@
                     <para>
                         Sets the wrap parameter for texture coordinate 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
-                        to either <constant>GL_CLAMP</constant>,
-                        <constant>GL_CLAMP_TO_BORDER</constant>, <constant>GL_CLAMP_TO_EDGE</constant>, <constant>GL_MIRRORED_REPEAT</constant>, or
-                        <constant>GL_REPEAT</constant>.  <constant>GL_CLAMP</constant> causes 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
-                        coordinates to be clamped to the
-                        range [0,1] and is useful for preventing wrapping artifacts when mapping a
-                        single image onto an object.  <constant>GL_CLAMP_TO_BORDER</constant> causes the 
+                        to either <constant>GL_CLAMP_TO_EDGE</constant>, <constant>GL_MIRRORED_REPEAT</constant>, or
+                        <constant>GL_REPEAT</constant>.  <constant>GL_CLAMP_TO_BORDER</constant> causes the 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
                         coordinate to be clamped to the range
                         <inlineequation><mml:math>
@@ -660,9 +655,7 @@
                         </mml:math></inlineequation>
                         represents the fractional part of
                         <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>.
-                        Border texture
-                        elements are accessed only if wrapping is set to <constant>GL_CLAMP</constant> or <constant>GL_CLAMP_TO_BORDER</constant>.  Initially,
-                        <constant>GL_TEXTURE_WRAP_S</constant> is set to <constant>GL_REPEAT</constant>.
+                        Initially, <constant>GL_TEXTURE_WRAP_S</constant> is set to <constant>GL_REPEAT</constant>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -676,8 +669,7 @@
                     <para>
                         Sets the wrap parameter for texture coordinate 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">t</mml:mi></mml:math></inlineequation>
-                        to either <constant>GL_CLAMP</constant>,
-                        <constant>GL_CLAMP_TO_BORDER</constant>, <constant>GL_CLAMP_TO_EDGE</constant>, <constant>GL_MIRRORED_REPEAT</constant>, or
+                        to either <constant>GL_CLAMP_TO_EDGE</constant>, <constant>GL_MIRRORED_REPEAT</constant>, or
                         <constant>GL_REPEAT</constant>.  See the discussion under <constant>GL_TEXTURE_WRAP_S</constant>.
                         Initially, <constant>GL_TEXTURE_WRAP_T</constant> is set to <constant>GL_REPEAT</constant>.
                     </para>
@@ -689,8 +681,7 @@
                     <para>
                         Sets the wrap parameter for texture coordinate 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">r</mml:mi></mml:math></inlineequation>
-                        to either <constant>GL_CLAMP</constant>,
-                        <constant>GL_CLAMP_TO_BORDER</constant>, <constant>GL_CLAMP_TO_EDGE</constant>, <constant>GL_MIRRORED_REPEAT</constant>, or
+                        to either <constant>GL_CLAMP_TO_EDGE</constant>, <constant>GL_MIRRORED_REPEAT</constant>, or
                         <constant>GL_REPEAT</constant>.  See the discussion under <constant>GL_TEXTURE_WRAP_S</constant>.
                         Initially, <constant>GL_TEXTURE_WRAP_R</constant> is set to <constant>GL_REPEAT</constant>.
                     </para>
@@ -1164,27 +1155,6 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <constant>GL_TEXTURE_3D</constant>, <constant>GL_TEXTURE_MIN_LOD</constant>, <constant>GL_TEXTURE_MAX_LOD</constant>,
-            <constant>GL_CLAMP_TO_EDGE</constant>, <constant>GL_TEXTURE_BASE_LEVEL</constant>, and <constant>GL_TEXTURE_MAX_LEVEL</constant> are
-            available only if the GL version is 1.2 or greater.
-        </para>
-        <para>
-            <constant>GL_CLAMP_TO_BORDER</constant> is available only if the GL version is 1.3 or greater.
-        </para>
-        <para>
-            <constant>GL_MIRRORED_REPEAT</constant>, <constant>GL_TEXTURE_COMPARE_MODE</constant>,
-            <constant>GL_TEXTURE_COMPARE_FUNC</constant>, <constant>GL_DEPTH_TEXTURE_MODE</constant>, and
-            <constant>GL_GENERATE_MIPMAP</constant> are available only if the GL version is 1.4 or
-            greater.
-        </para>
-        <para>
-            <constant>GL_TEXTURE_COMPARE_FUNC</constant> allows the following additional comparison modes only
-            if the GL version is 1.5 or greater:
-            <constant>GL_LESS</constant>, <constant>GL_GREATER</constant>,
-            <constant>GL_EQUAL</constant>, <constant>GL_NOTEQUAL</constant>,
-            <constant>GL_ALWAYS</constant>, and <constant>GL_NEVER</constant>.
-        </para>
-        <para>
             Suppose that a program has enabled texturing (by calling <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry> with
             argument <constant>GL_TEXTURE_1D</constant>, <constant>GL_TEXTURE_2D</constant>, or <constant>GL_TEXTURE_3D</constant>) and
             has set <constant>GL_TEXTURE_MIN_FILTER</constant> to one of the functions that requires a
@@ -1202,8 +1172,7 @@
             texture elements.
         </para>
         <para>
-            For OpenGL versions 1.3 and greater, or when the <code>ARB_multitexture</code> extension is supported, <function>glTexParameter</function>
-            specifies the texture parameters for the active texture unit, specified
+            <function>glTexParameter</function> specifies the texture parameters for the active texture unit, specified
             by calling <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
         </para>
     </refsect1>
@@ -1235,10 +1204,8 @@
             <citerefentry><refentrytitle>glCopyTexSubImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexSubImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexSubImage3D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPrioritizeTextures</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexEnv</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,

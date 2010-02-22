@@ -98,13 +98,6 @@
 		    back right color buffer.</para>
 		</listitem>
 	    </varlistentry>
-	    <varlistentry>
-		<term><constant>GL_AUXi</constant></term>
-		<listitem>
-		    <para>The fragment color/data value is written into
-		    auxiliary buffer <code>i</code>.</para>
-		</listitem>
-	    </varlistentry>
 	</variablelist>
 
 	<para>Except for <constant>GL_NONE</constant>, the preceding
@@ -113,17 +106,9 @@
 	supported is implementation dependent and can be queried by
 	calling
 	<citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
-	with the argument <constant>GL_MAX_DRAW_BUFFERS</constant>. The
-	number of auxiliary buffers can be queried by calling
-	<citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
-	with the argument <constant>GL_AUX_BUFFERS</constant>.</para>
+	with the argument <constant>GL_MAX_DRAW_BUFFERS</constant>.</para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
-	<para><function>glDrawBuffers</function> is available only if
-	the GL version is 2.0 or greater.</para>
-
-	<para>It is always the case that <constant>GL_AUXi</constant> =
-	<constant>GL_AUX0</constant> + <code>i</code>.</para>
 
 	<para>The symbolic constants <constant>GL_FRONT</constant>,
 	<constant>GL_BACK</constant>, <constant>GL_LEFT</constant>,

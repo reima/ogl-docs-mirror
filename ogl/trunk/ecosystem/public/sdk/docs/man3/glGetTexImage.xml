@@ -130,7 +130,7 @@
             <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry> (<constant>GL_TEXTURE_3D</constant>).
             <parameter>level</parameter> specifies the level-of-detail number of the desired image.
             <parameter>format</parameter> and <parameter>type</parameter> specify the format and type of the desired image array.
-            See the reference pages <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>
+            See the reference page for <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>
             for a description of the acceptable values for the <parameter>format</parameter> and <parameter>type</parameter>
             parameters, respectively.
         </para>
@@ -153,8 +153,7 @@
             (including border if one was specified)
             for 2D images.
             Because the internal texture image is an RGBA image,
-            pixel formats <constant>GL_COLOR_INDEX</constant>,
-            <constant>GL_STENCIL_INDEX</constant>,
+            pixel formats <constant>GL_STENCIL_INDEX</constant>,
             and <constant>GL_DEPTH_COMPONENT</constant> are not accepted.
         </para>
         <para>
@@ -191,25 +190,7 @@
             no change is made to the contents of <parameter>img</parameter>.
         </para>
         <para>
-            The types <constant>GL_UNSIGNED_BYTE_3_3_2</constant>,
-            <constant>GL_UNSIGNED_BYTE_2_3_3_REV</constant>,
-            <constant>GL_UNSIGNED_SHORT_5_6_5</constant>,
-            <constant>GL_UNSIGNED_SHORT_5_6_5_REV</constant>,
-            <constant>GL_UNSIGNED_SHORT_4_4_4_4</constant>,
-            <constant>GL_UNSIGNED_SHORT_4_4_4_4_REV</constant>,
-            <constant>GL_UNSIGNED_SHORT_5_5_5_1</constant>,
-            <constant>GL_UNSIGNED_SHORT_1_5_5_5_REV</constant>,
-            <constant>GL_UNSIGNED_INT_8_8_8_8</constant>,
-            <constant>GL_UNSIGNED_INT_8_8_8_8_REV</constant>,
-            <constant>GL_UNSIGNED_INT_10_10_10_2</constant>,
-            <constant>GL_UNSIGNED_INT_2_10_10_10_REV</constant>,
-            and the formats
-            <constant>GL_BGR</constant>, and <constant>GL_BGRA</constant> are available only if the GL version is
-            1.2 or greater.
-        </para>
-        <para>
-            For OpenGL versions 1.3 and greater, or when the <code>ARB_multitexture</code> extension is supported, <function>glGetTexImage</function> returns
-            the texture image for the active texture unit.
+            <function>glGetTexImage</function> returns the texture image for the active texture unit.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
@@ -296,7 +277,6 @@
     <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexEnv</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,

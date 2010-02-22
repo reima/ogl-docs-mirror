@@ -108,10 +108,6 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <function>glBindTexture</function> is available only if the GL version is 1.1 or greater.
-        </para>
-        <para>
-            <constant>GL_TEXTURE_CUBE_MAP</constant> is available only if the GL version is 1.3 or greater.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
@@ -137,13 +133,11 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glAreTexturesResident</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDeleteTextures</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGenTextures</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetTexParameter</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glIsTexture</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPrioritizeTextures</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry>

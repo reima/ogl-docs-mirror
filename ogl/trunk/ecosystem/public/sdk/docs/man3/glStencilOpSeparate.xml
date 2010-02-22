@@ -229,10 +229,6 @@
         </para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
-	<para>
-            <function>glStencilOpSeparate</function> is available only if
-            the GL version is 2.0 or greater.
-        </para>
         <para>
             Initially the stencil test is disabled.
             If there is no stencil buffer,
@@ -264,7 +260,6 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glAlphaFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDepthFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,

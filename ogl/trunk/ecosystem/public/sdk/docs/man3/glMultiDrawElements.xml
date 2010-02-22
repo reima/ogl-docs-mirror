@@ -100,9 +100,7 @@
         </para>
         <para>
             Vertex attributes that are modified by <function>glMultiDrawElements</function> have an
-            unspecified value after <function>glMultiDrawElements</function> returns. For example, if
-            <constant>GL_COLOR_ARRAY</constant> is enabled, the value of the current color is
-            undefined after <function>glMultiDrawElements</function> executes. Attributes that aren't
+            unspecified value after <function>glMultiDrawElements</function> returns. Attributes that aren't
             modified maintain their previous values.
         </para>
     </refsect1>
@@ -125,18 +123,9 @@
     <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glEdgeFlagPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glFogCoordPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetPointerv</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glIndexPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glInterleavedArrays</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glSecondaryColorPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glTexCoordPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

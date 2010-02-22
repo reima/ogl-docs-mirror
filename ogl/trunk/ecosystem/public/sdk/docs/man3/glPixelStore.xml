@@ -74,7 +74,7 @@
     <refsect1 id="description"><title>Description</title>
         <para>
             <function>glPixelStore</function> sets pixel storage modes that affect the operation of subsequent
-            <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry> as well as the unpacking of
+            <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry> as well as the unpacking of
             texture patterns (see <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glTexSubImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexSubImage2D</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glTexSubImage3D</refentrytitle></citerefentry>).
@@ -546,7 +546,7 @@
         <para>
             The other six of the twelve storage parameters affect how pixel data is
             read from client memory.
-            These values are significant for <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>,
+            These values are significant for
             <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>,
@@ -948,7 +948,6 @@
                         These values are provided as a convenience to the programmer;
                         they provide no functionality that cannot be duplicated by
                         incrementing the pointer passed to
-                        <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>,
                         <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
                         <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
                         <citerefentry><refentrytitle>glTexSubImage1D</refentrytitle></citerefentry> or
@@ -1406,9 +1405,7 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPixelZoom</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,

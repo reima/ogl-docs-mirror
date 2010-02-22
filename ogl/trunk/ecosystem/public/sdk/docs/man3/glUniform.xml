@@ -396,12 +396,6 @@
 	matrices.</para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
-	<para><function>glUniform</function> is available only if the GL
-	version is 2.0 or greater.</para>
-
-	<para><function>glUniformMatrix{2x3|3x2|2x4|4x2|3x4|4x3}fv</function> 
-        is available only if the GL version is 2.1 or greater.</para>
-
 	<para><function>glUniform1i</function> and
 	<function>glUniform1iv</function> are the only two functions
 	that may be used to load uniform variables defined as sampler

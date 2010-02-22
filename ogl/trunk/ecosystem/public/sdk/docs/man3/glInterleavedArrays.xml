@@ -125,17 +125,10 @@
         <para>
             <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glClientActiveTexture</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glEdgeFlagPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEnableClientState</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetPointerv</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glIndexPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glSecondaryColorPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glTexCoordPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

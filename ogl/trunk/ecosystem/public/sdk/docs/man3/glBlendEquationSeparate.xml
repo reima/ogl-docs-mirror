@@ -733,9 +733,6 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <function>glBlendEquationSeparate</function> is available only if the GL version is 2.0 or greater.
-        </para>
-        <para>
             The <constant>GL_MIN</constant>, and <constant>GL_MAX</constant> equations do not use
             the source or destination factors, only the source and destination colors.
         </para>

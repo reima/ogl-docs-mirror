@@ -91,9 +91,6 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <function>glPolygonOffset</function> is available only if the GL version is 1.1 or greater.
-        </para>
-        <para>
             <function>glPolygonOffset</function> has no effect on depth coordinates placed in the
             feedback buffer.
         </para>

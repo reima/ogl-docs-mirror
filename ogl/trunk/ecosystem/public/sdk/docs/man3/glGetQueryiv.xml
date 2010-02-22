@@ -92,9 +92,6 @@
             If an error is generated,
             no change is made to the contents of <parameter>params</parameter>.
         </para>
-        <para>
-            <function>glGetQueryiv</function> is available only if the GL version is 1.5 or greater.
-        </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
         <para>

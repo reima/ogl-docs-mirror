@@ -115,13 +115,6 @@
             <function>glUnmapBuffer</function> returns <constant>GL_FALSE</constant>.
         </para>
         <para>
-            <function>glMapBuffer</function> and <function>glUnmapBuffer</function> are available only if the GL version is 1.5 or greater.
-        </para>
-        <para>
-            <constant>GL_PIXEL_PACK_BUFFER</constant> and <constant>GL_PIXEL_UNPACK_BUFFER</constant> are 
-            available only if the GL version is 2.1 or greater.
-        </para>
-        <para>
             Parameter values passed to GL commands may not be sourced from the returned pointer. No error will be generated,
             but results will be undefined and will likely vary across GL implementations.
         </para>

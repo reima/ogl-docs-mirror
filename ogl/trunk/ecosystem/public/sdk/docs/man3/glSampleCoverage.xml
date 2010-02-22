@@ -85,7 +85,6 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <function>glSampleCoverage</function> is available only if the GL version is 1.3 or greater.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

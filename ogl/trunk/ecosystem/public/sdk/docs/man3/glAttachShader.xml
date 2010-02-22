@@ -64,10 +64,6 @@
 	is called to detach it from all program objects to which it is
 	attached.</para>
     </refsect1>
-    <refsect1 id="notes"><title>Notes</title>
-	<para><function>glAttachShader</function>
-	is available only if the GL version is 2.0 or greater.</para>
-    </refsect1>
     <refsect1 id="errors"><title>Errors</title>
 	<para><constant>GL_INVALID_VALUE</constant> is generated if either
 	<parameter>program</parameter> or <parameter>shader</parameter>

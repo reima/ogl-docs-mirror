@@ -149,13 +149,6 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <function>glBufferData</function> is available only if the GL version is 1.5 or greater.
-        </para>
-        <para>
-            Targets <constant>GL_PIXEL_PACK_BUFFER</constant> and <constant>GL_PIXEL_UNPACK_BUFFER</constant> are available 
-            only if the GL version is 2.1 or greater.
-        </para>
-        <para>
             If <parameter>data</parameter> is <constant>NULL</constant>, a data store of the specified size is still created,
             but its contents remain uninitialized and thus undefined.
         </para>

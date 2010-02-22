@@ -38,10 +38,8 @@
                     <constant>GL_BACK_RIGHT</constant>,
                     <constant>GL_FRONT</constant>,
                     <constant>GL_BACK</constant>,
-                    <constant>GL_LEFT</constant>,
-                    <constant>GL_RIGHT</constant>, and
-                    <constant>GL_AUX</constant><emphasis>i</emphasis>,
-                    where <emphasis>i</emphasis> is between 0 and the value of <constant>GL_AUX_BUFFERS</constant> minus 1.
+                    <constant>GL_LEFT</constant>, and
+                    <constant>GL_RIGHT</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -55,7 +53,6 @@
             <citerefentry><refentrytitle>glCopyTexSubImage3D</refentrytitle></citerefentry>, and
             <citerefentry><refentrytitle>glCopyPixels</refentrytitle></citerefentry> commands.
             <parameter>mode</parameter> accepts one of twelve or more predefined values.
-            (<constant>GL_AUX0</constant> through <constant>GL_AUX3</constant> are always defined.)
             In a fully configured system,
             <constant>GL_FRONT</constant>,
             <constant>GL_LEFT</constant>, and

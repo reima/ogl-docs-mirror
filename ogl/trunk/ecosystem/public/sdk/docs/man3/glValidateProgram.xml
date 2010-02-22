@@ -62,9 +62,6 @@
 	to produce identical information strings.</para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
-	<para><function>glValidateProgram</function> is available only
-	if the GL version is 2.0 or greater.</para>
-
 	<para>This function mimics the validation operation that OpenGL
 	implementations must perform when rendering commands are issued
 	while programmable shaders are part of current state. The error

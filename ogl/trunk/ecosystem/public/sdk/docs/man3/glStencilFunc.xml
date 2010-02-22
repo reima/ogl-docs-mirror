@@ -271,7 +271,6 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glAlphaFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDepthFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,

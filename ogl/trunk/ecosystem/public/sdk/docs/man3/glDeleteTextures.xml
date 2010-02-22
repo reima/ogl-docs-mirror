@@ -60,7 +60,6 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <function>glDeleteTextures</function> is available only if the GL version is 1.1 or greater.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
@@ -75,14 +74,12 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glAreTexturesResident</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBindTexture</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGenTextures</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetTexParameter</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPrioritizeTextures</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry>

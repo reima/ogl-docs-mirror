@@ -44,8 +44,8 @@
     <refsect1 id="description"><title>Description</title>
         <para>
             <function>glClear</function> sets the bitplane area of the window to values previously selected
-            by <function>glClearColor</function>, <function>glClearIndex</function>, <function>glClearDepth</function>,
-            <function>glClearStencil</function>, and <function>glClearAccum</function>.
+            by <function>glClearColor</function>, <function>glClearDepth</function>, and
+            <function>glClearStencil</function>.
             Multiple color buffers can be cleared simultaneously by selecting
             more than one buffer at a time using <citerefentry><refentrytitle>glDrawBuffer</refentrytitle></citerefentry>.
         </para>
@@ -139,10 +139,8 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <function>glClearAccum</function>,
             <function>glClearColor</function>,
             <function>glClearDepth</function>,
-            <function>glClearIndex</function>,
             <function>glClearStencil</function>,
             <citerefentry><refentrytitle>glColorMask</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDepthMask</refentrytitle></citerefentry>,

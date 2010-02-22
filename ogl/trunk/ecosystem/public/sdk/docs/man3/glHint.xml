@@ -178,14 +178,6 @@
             The interpretation of hints depends on the implementation.
             Some implementations ignore <function>glHint</function> settings.
         </para>
-        <para>
-            <constant>GL_TEXTURE_COMPRESSION_HINT</constant> is available only if the GL version is 1.3
-            or greater.
-        </para>
-        <para>
-            <constant>GL_FRAGMENT_SHADER_DERIVATIVE_HINT</constant> is available only if the GL version is 2.0
-            or greater.
-        </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
         <para>

@@ -80,13 +80,6 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <function>glBufferSubData</function> is available only if the GL version is 1.5 or greater.
-        </para>
-        <para>
-            Targets <constant>GL_PIXEL_PACK_BUFFER</constant> and <constant>GL_PIXEL_UNPACK_BUFFER</constant> are available 
-            only if the GL version is 2.1 or greater.
-        </para>
-        <para>
             When replacing the entire data store, consider using <function>glBufferSubData</function> rather
             than completely recreating the data store with <function>glBufferData</function>.  This avoids the cost of
             reallocating the data store.

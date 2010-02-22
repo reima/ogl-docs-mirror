@@ -75,8 +75,7 @@
 	shader objects, compile attached shader objects, detach shader
 	objects, delete shader objects, and attach additional shader
 	objects. None of these operations affects the information log or
-	the program that is part of the program object.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p><code class="function">glLinkProgram</code>
-	is available only if the GL version is 2.0 or greater.</p><p>If the link operation is unsuccessful, any information about a previous link operation on <em class="parameter"><code>program</code></em>
+	the program that is part of the program object.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>If the link operation is unsuccessful, any information about a previous link operation on <em class="parameter"><code>program</code></em>
 	is lost (i.e., a failed link does not restore the old state of <em class="parameter"><code>program</code></em>
 	). Certain information can still be retrieved from <em class="parameter"><code>program</code></em>
 	even after an unsuccessful link operation. See for instance <a href="glGetActiveAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glGetActiveAttrib</span></span></a>

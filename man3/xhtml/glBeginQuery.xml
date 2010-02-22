@@ -35,9 +35,6 @@
             the depth test.  When <code class="constant">GL_SAMPLE_BUFFERS</code> is 1, an implementation may either increment the samples-passed
             counter individually for each sample of a fragment that passes the depth test, or it may choose to increment the counter for
             all samples of a fragment if any one of them passes the depth test.
-        </p><p>
-            <code class="function">glBeginQuery</code> and <a href="glEndQuery.xml"><span class="citerefentry"><span class="refentrytitle">glEndQuery</span></span></a>
-            are available only if the GL version is 1.5 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not <code class="constant">GL_SAMPLES_PASSED</code>.
         </p><p>

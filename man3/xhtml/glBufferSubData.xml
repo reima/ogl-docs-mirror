@@ -21,11 +21,6 @@
             <em class="parameter"><code>data</code></em>.  An error is thrown if <em class="parameter"><code>offset</code></em> and <em class="parameter"><code>size</code></em>
             together define a range beyond the bounds of the buffer object's data store.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
-            <code class="function">glBufferSubData</code> is available only if the GL version is 1.5 or greater.
-        </p><p>
-            Targets <code class="constant">GL_PIXEL_PACK_BUFFER</code> and <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> are available 
-            only if the GL version is 2.1 or greater.
-        </p><p>
             When replacing the entire data store, consider using <code class="function">glBufferSubData</code> rather
             than completely recreating the data store with <code class="function">glBufferData</code>.  This avoids the cost of
             reallocating the data store.

@@ -94,11 +94,6 @@
                         Returns the residence priority of the target texture (or the named
                         texture bound to it). The initial value is 1.
                         See <a href="glPrioritizeTextures.xml"><span class="citerefentry"><span class="refentrytitle">glPrioritizeTextures</span></span></a>.
-                    </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_RESIDENT</code></span></dt><dd><p>
-                        Returns the residence status of the target texture.
-                        If the value returned in <em class="parameter"><code>params</code></em> is <code class="constant">GL_TRUE</code>, the texture is
-                        resident in texture memory.
-                        See <a href="glAreTexturesResident.xml"><span class="citerefentry"><span class="refentrytitle">glAreTexturesResident</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_COMPARE_MODE</code></span></dt><dd><p>
                         Returns a single-valued texture comparison mode, a symbolic constant.  The
                         initial value is <code class="constant">GL_NONE</code>. See <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>.
@@ -114,26 +109,12 @@
                         are enabled.
                         See <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>.
                     </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
-            <code class="constant">GL_TEXTURE_PRIORITY</code> and <code class="constant">GL_TEXTURE_RESIDENT</code> are
-            available only if the GL version is 1.1 or greater.
-        </p><p>
-            <code class="constant">GL_TEXTURE_3D</code>,
-            <code class="constant">GL_TEXTURE_MIN_LOD</code>, <code class="constant">GL_TEXTURE_MAX_LOD</code>, <code class="constant">GL_TEXTURE_BASE_LEVEL</code>,
-            <code class="constant">GL_TEXTURE_MAX_LEVEL</code>, and <code class="constant">GL_TEXTURE_WRAP_R</code> are available only
-            if the GL version is 1.2 or greater.
-        </p><p>
-            <code class="constant">GL_TEXTURE_COMPARE_MODE</code>, <code class="constant">GL_TEXTURE_COMPARE_FUNC</code>, and
-            <code class="constant">GL_GENERATE_MIPMAP</code> is available only if the GL version is 1.4 or
-            greater.
-        </p><p>
             If an error is generated,
             no change is made to the contents of <em class="parameter"><code>params</code></em>.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> or <em class="parameter"><code>pname</code></em> is not an
             accepted value.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
-            <a href="glAreTexturesResident.xml"><span class="citerefentry"><span class="refentrytitle">glAreTexturesResident</span></span></a>,
-            <a href="glPrioritizeTextures.xml"><span class="citerefentry"><span class="refentrytitle">glPrioritizeTextures</span></span></a>,
             <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006

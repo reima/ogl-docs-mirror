@@ -51,8 +51,7 @@
 	OpenGL vertex attributes using this command, as they are bound
 	automatically when needed. Any attribute binding that occurs
 	after the program object has been linked will not take effect
-	until the next time the program object is linked.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p><code class="function">glBindAttribLocation</code> is available
-	only if the GL version is 2.0 or greater.</p><p><code class="function">glBindAttribLocation</code> can be called
+	until the next time the program object is linked.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p><code class="function">glBindAttribLocation</code> can be called
 	before any vertex shader objects are bound to the specified
 	program object. It is also permissible to bind a generic
 	attribute index to an attribute variable name that is never used

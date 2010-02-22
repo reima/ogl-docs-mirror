@@ -74,81 +74,22 @@
                     <code class="constant">GL_SRGB_ALPHA</code>, or 
                     <code class="constant">GL_SRGB8_ALPHA8</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>width</code></em></span></dt><dd><p>
-                    Specifies the width of the texture image including the border if any. If the GL version does not support non-power-of-two sizes, this value must be 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                        
-                        <mml:mrow>
-                            <mml:msup><mml:mn>2</mml:mn>
-                            <mml:mi mathvariant="italic">n</mml:mi>
-                            </mml:msup>
-                            <mml:mo>+</mml:mo>
-                            <mml:mrow>
-                                <mml:mn>2</mml:mn>
-                                <mml:mo>⁡</mml:mo>
-                                <mml:mfenced open="(" close=")">
-                                    <mml:mi mathvariant="italic">border</mml:mi>
-                                </mml:mfenced>
-                            </mml:mrow>
-                        </mml:mrow>
-                    </mml:math>
-                    for some integer 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>.
-                    All
-                    implementations support 3D texture images that are at least 16 texels
+                    Specifies the width of the texture image.
+                    All implementations support 3D texture images that are at least 16 texels
                     wide.
                 </p></dd><dt><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
-                    Specifies the height of the texture image including the border if any. If the GL version does not support non-power-of-two sizes, this value must be 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                        
-                        <mml:mrow>
-                            <mml:msup><mml:mn>2</mml:mn>
-                            <mml:mi mathvariant="italic">m</mml:mi>
-                            </mml:msup>
-                            <mml:mo>+</mml:mo>
-                            <mml:mrow>
-                                <mml:mn>2</mml:mn>
-                                <mml:mo>⁡</mml:mo>
-                                <mml:mfenced open="(" close=")">
-                                    <mml:mi mathvariant="italic">border</mml:mi>
-                                </mml:mfenced>
-                            </mml:mrow>
-                        </mml:mrow>
-                    </mml:math>
-                    for some integer 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">m</mml:mi></mml:math>.
-                    All
-                    implementations support 3D texture images that are at least 16 texels
+                    Specifies the height of the texture image.
+                    All implementations support 3D texture images that are at least 16 texels
                     high.
                 </p></dd><dt><span class="term"><em class="parameter"><code>depth</code></em></span></dt><dd><p>
-                    Specifies the depth of the texture image including the border if any. If the GL version does not support non-power-of-two sizes, this value must be 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                        
-                        <mml:mrow>
-                            <mml:msup><mml:mn>2</mml:mn>
-                            <mml:mi mathvariant="italic">k</mml:mi>
-                            </mml:msup>
-                            <mml:mo>+</mml:mo>
-                            <mml:mrow>
-                                <mml:mn>2</mml:mn>
-                                <mml:mo>⁡</mml:mo>
-                                <mml:mfenced open="(" close=")">
-                                    <mml:mi mathvariant="italic">border</mml:mi>
-                                </mml:mfenced>
-                            </mml:mrow>
-                        </mml:mrow>
-                    </mml:math>
-                    for some integer 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">k</mml:mi></mml:math>.
-                    All
-                    implementations support 3D texture images that are at least 16 texels
+                    Specifies the depth of the texture image.
+                    All implementations support 3D texture images that are at least 16 texels
                     deep.
                 </p></dd><dt><span class="term"><em class="parameter"><code>border</code></em></span></dt><dd><p>
-                    Specifies the width of the border.
-                    Must be either 0 or 1.
+                    This value must now be 0 since texture borders are no longer supported.
                 </p></dd><dt><span class="term"><em class="parameter"><code>format</code></em></span></dt><dd><p>
                     Specifies the format of the pixel data.
                     The following symbolic values are accepted:
-                    <code class="constant">GL_COLOR_INDEX</code>,
                     <code class="constant">GL_RED</code>,
                     <code class="constant">GL_GREEN</code>,
                     <code class="constant">GL_BLUE</code>,
@@ -197,8 +138,7 @@
             level-of-detail number
             (see <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>),
             and number of color components provided.
-            The last three arguments describe how the image is represented in memory;
-            they are identical to the pixel formats used for <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>.
+            The last three arguments describe how the image is represented in memory.
         </p><p>
             If <em class="parameter"><code>target</code></em> is <code class="constant">GL_PROXY_TEXTURE_3D</code>, no data is read from <em class="parameter"><code>data</code></em>, but
             all of the texture image state is recalculated, checked for
@@ -240,22 +180,7 @@
         </p><p>
             <em class="parameter"><code>format</code></em> determines the composition of each element in <em class="parameter"><code>data</code></em>.
             It can assume one of these symbolic values:
-        </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_COLOR_INDEX</code></span></dt><dd><p>
-                        Each element is a single value,
-                        a color index.
-                        The GL converts it to fixed point
-                        (with an unspecified number of zero bits to the right of the binary point),
-                        shifted left or right depending on the value and sign of <code class="constant">GL_INDEX_SHIFT</code>,
-                        and added to <code class="constant">GL_INDEX_OFFSET</code>
-                        (see <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>).
-                        The resulting index is converted to a set of color components
-                        using the
-                        <code class="constant">GL_PIXEL_MAP_I_TO_R</code>,
-                        <code class="constant">GL_PIXEL_MAP_I_TO_G</code>,
-                        <code class="constant">GL_PIXEL_MAP_I_TO_B</code>, and
-                        <code class="constant">GL_PIXEL_MAP_I_TO_A</code> tables,
-                        and clamped to the range [0,1].
-                    </p></dd><dt><span class="term"><code class="constant">GL_RED</code></span></dt><dd><p>
+        </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_RED</code></span></dt><dd><p>
                         Each element is a single red component.
                         The GL converts it to floating point and assembles it into an RGBA element
                         by attaching 0 for green and blue, and 1 for alpha.
@@ -328,9 +253,6 @@
                         added to the signed bias <code class="constant">GL_c_BIAS</code>,
                         and clamped to the range [0,1] (see <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>).
                     </p></dd></dl></div><p>
-            Refer to the <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a> reference page for a description of
-            the acceptable values for the <em class="parameter"><code>type</code></em> parameter.
-        </p><p>
             If an application wants to store the texture at a certain
             resolution or in a certain format, it can request the resolution
             and format with <em class="parameter"><code>internalFormat</code></em>. The GL will choose an internal
@@ -466,12 +388,6 @@
             A three-component image uses the R, G, and B values.
             A four-component image uses all of the RGBA components.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
-            Texturing has no effect in color index mode.
-        </p><p>
-            The texture image can be represented by the same data formats
-            as the pixels in a <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a> command,
-            except that <code class="constant">GL_STENCIL_INDEX</code> and <code class="constant">GL_DEPTH_COMPONENT</code>
-            cannot be used.
             <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> and <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a> modes affect texture images
             in exactly the way they affect <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>.
         </p><p>
@@ -595,7 +511,6 @@
             <a href="glCopyTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage1D</span></span></a>,
             <a href="glCopyTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage2D</span></span></a>,
             <a href="glCopyTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage3D</span></span></a>,
-            <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>,
             <a href="glGetCompressedTexImage.xml"><span class="citerefentry"><span class="refentrytitle">glGetCompressedTexImage</span></span></a>,
             <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>,
             <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>,

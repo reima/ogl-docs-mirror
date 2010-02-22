@@ -45,8 +45,6 @@
             <code class="function">glPolygonOffset</code> is useful for rendering hidden-line images, for applying decals
             to surfaces, and for rendering solids with highlighted edges.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
-            <code class="function">glPolygonOffset</code> is available only if the GL version is 1.1 or greater.
-        </p><p>
             <code class="function">glPolygonOffset</code> has no effect on depth coordinates placed in the
             feedback buffer.
         </p><p>

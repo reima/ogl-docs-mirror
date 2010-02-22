@@ -46,7 +46,6 @@
             with the retrieved texture image.  These data can be used by the respective
             texture or subtexture loading routine used for loading <em class="parameter"><code>target</code></em> textures.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
-            <code class="function">glGetCompressedTexImage</code> is available only if the GL version is 1.3 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>lod</code></em> is less than zero or greater
             than the maximum number of LODs permitted by the implementation.
@@ -76,7 +75,6 @@
             <a href="glCompressedTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCompressedTexSubImage1D</span></span></a>,
             <a href="glCompressedTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCompressedTexSubImage2D</span></span></a>,
             <a href="glCompressedTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glCompressedTexSubImage3D</span></span></a>,
-            <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>,
             <a href="glReadPixels.xml"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>,
             <a href="glTexEnv.xml"><span class="citerefentry"><span class="refentrytitle">glTexEnv</span></span></a>,
             <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>,

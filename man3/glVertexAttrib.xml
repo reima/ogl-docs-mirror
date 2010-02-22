@@ -360,9 +360,6 @@
 	other generic vertex attributes.</para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
-	<para><function>glVertexAttrib</function> is available only if
-	the GL version is 2.0 or greater.</para>
-
 	<para>Generic vertex attributes can be updated at any time.</para>
 
 	<para>It is possible for an application to bind more than one

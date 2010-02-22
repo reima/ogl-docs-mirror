@@ -1190,7 +1190,6 @@
         </para>
         <para>
             Blending affects only RGBA rendering.
-            It is ignored by color index renderers.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
@@ -1214,7 +1213,6 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glAlphaFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBlendColor</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBlendEquation</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBlendFuncSeparate</refentrytitle></citerefentry>,

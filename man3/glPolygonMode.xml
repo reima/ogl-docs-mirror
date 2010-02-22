@@ -32,10 +32,7 @@
             <listitem>
                 <para>
                     Specifies the polygons that <parameter>mode</parameter> applies to.
-                    Must be
-                    <constant>GL_FRONT</constant> for front-facing polygons,
-                    <constant>GL_BACK</constant> for back-facing polygons,
-                    or <constant>GL_FRONT_AND_BACK</constant> for front- and back-facing polygons.
+                    Must be <constant>GL_FRONT_AND_BACK</constant> for front- and back-facing polygons.
                 </para>
             </listitem>
         </varlistentry>
@@ -58,9 +55,7 @@
         <para>
             <function>glPolygonMode</function> controls the interpretation of polygons for rasterization.
             <parameter>face</parameter> describes which polygons <parameter>mode</parameter> applies to:
-            front-facing polygons (<constant>GL_FRONT</constant>),
-            back-facing polygons (<constant>GL_BACK</constant>),
-            or both (<constant>GL_FRONT_AND_BACK</constant>).
+            both front and back-facing polygons (<constant>GL_FRONT_AND_BACK</constant>).
             The polygon mode affects only the final rasterization of polygons.
             In particular,
             a polygon's vertices are lit and
@@ -110,11 +105,10 @@
     </refsect1>
     <refsect1 id="examples"><title>Examples</title>
         <para>
-            To draw a surface with filled back-facing polygons
-            and outlined front-facing polygons,
+            To draw a surface with outlined polygons,
             call
             <programlisting>
-glPolygonMode(<constant>GL_FRONT</constant>, <constant>GL_LINE</constant>);
+glPolygonMode(<constant>GL_FRONT_AND_BACK</constant>, <constant>GL_LINE</constant>);
             </programlisting>
         </para>
     </refsect1>
@@ -138,7 +132,6 @@ glPolygonMode(<constant>GL_FRONT</constant>, <constant>GL_LINE</constant>);
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glEdgeFlag</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glLineWidth</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPointSize</refentrytitle></citerefentry>
         </para>

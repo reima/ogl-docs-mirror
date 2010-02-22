@@ -59,9 +59,6 @@
         </para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
-	<para><function>glGetVertexAttribPointerv</function>
-	is available only if the GL version is 2.0 or greater.</para>
-
 	<para>The pointer returned is client-side state.</para>
 
 	<para>The initial value for each pointer is 0.</para>

@@ -100,7 +100,6 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <function>glGetCompressedTexImage</function> is available only if the GL version is 1.3 or greater.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
@@ -145,7 +144,6 @@
             <citerefentry><refentrytitle>glCompressedTexSubImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCompressedTexSubImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCompressedTexSubImage3D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexEnv</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,

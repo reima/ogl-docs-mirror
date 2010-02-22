@@ -131,27 +131,8 @@
             <term><parameter>width</parameter></term>
             <listitem>
                 <para>
-                    Specifies the width of the texture image including the border if any. If the GL version does not support non-power-of-two sizes, this value must be 
-                    <inlineequation><mml:math>
-                        <!-- eqn: 2 sup n  +  2 ( border ):-->
-                        <mml:mrow>
-                            <mml:msup><mml:mn>2</mml:mn>
-                            <mml:mi mathvariant="italic">n</mml:mi>
-                            </mml:msup>
-                            <mml:mo>+</mml:mo>
-                            <mml:mrow>
-                                <mml:mn>2</mml:mn>
-                                <mml:mo>&af;</mml:mo>
-                                <mml:mfenced open="(" close=")">
-                                    <mml:mi mathvariant="italic">border</mml:mi>
-                                </mml:mfenced>
-                            </mml:mrow>
-                        </mml:mrow>
-                    </mml:math></inlineequation>
-                    for some integer 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>.
-                    All
-                    implementations support 3D texture images that are at least 16 texels
+                    Specifies the width of the texture image.
+                    All implementations support 3D texture images that are at least 16 texels
                     wide.
                 </para>
             </listitem>
@@ -160,27 +141,8 @@
             <term><parameter>height</parameter></term>
             <listitem>
                 <para>
-                    Specifies the height of the texture image including the border if any. If the GL version does not support non-power-of-two sizes, this value must be 
-                    <inlineequation><mml:math>
-                        <!-- eqn: 2 sup m  +  2 ( border ):-->
-                        <mml:mrow>
-                            <mml:msup><mml:mn>2</mml:mn>
-                            <mml:mi mathvariant="italic">m</mml:mi>
-                            </mml:msup>
-                            <mml:mo>+</mml:mo>
-                            <mml:mrow>
-                                <mml:mn>2</mml:mn>
-                                <mml:mo>&af;</mml:mo>
-                                <mml:mfenced open="(" close=")">
-                                    <mml:mi mathvariant="italic">border</mml:mi>
-                                </mml:mfenced>
-                            </mml:mrow>
-                        </mml:mrow>
-                    </mml:math></inlineequation>
-                    for some integer 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">m</mml:mi></mml:math></inlineequation>.
-                    All
-                    implementations support 3D texture images that are at least 16 texels
+                    Specifies the height of the texture image.
+                    All implementations support 3D texture images that are at least 16 texels
                     high.
                 </para>
             </listitem>
@@ -189,27 +151,8 @@
             <term><parameter>depth</parameter></term>
             <listitem>
                 <para>
-                    Specifies the depth of the texture image including the border if any. If the GL version does not support non-power-of-two sizes, this value must be 
-                    <inlineequation><mml:math>
-                        <!-- eqn: 2 sup k  +  2 ( border ):-->
-                        <mml:mrow>
-                            <mml:msup><mml:mn>2</mml:mn>
-                            <mml:mi mathvariant="italic">k</mml:mi>
-                            </mml:msup>
-                            <mml:mo>+</mml:mo>
-                            <mml:mrow>
-                                <mml:mn>2</mml:mn>
-                                <mml:mo>&af;</mml:mo>
-                                <mml:mfenced open="(" close=")">
-                                    <mml:mi mathvariant="italic">border</mml:mi>
-                                </mml:mfenced>
-                            </mml:mrow>
-                        </mml:mrow>
-                    </mml:math></inlineequation>
-                    for some integer 
-                    <inlineequation><mml:math><mml:mi mathvariant="italic">k</mml:mi></mml:math></inlineequation>.
-                    All
-                    implementations support 3D texture images that are at least 16 texels
+                    Specifies the depth of the texture image.
+                    All implementations support 3D texture images that are at least 16 texels
                     deep.
                 </para>
             </listitem>
@@ -218,8 +161,7 @@
             <term><parameter>border</parameter></term>
             <listitem>
                 <para>
-                    Specifies the width of the border.
-                    Must be either 0 or 1.
+                    This value must now be 0 since texture borders are no longer supported.
                 </para>
             </listitem>
         </varlistentry>
@@ -229,7 +171,6 @@
                 <para>
                     Specifies the format of the pixel data.
                     The following symbolic values are accepted:
-                    <constant>GL_COLOR_INDEX</constant>,
                     <constant>GL_RED</constant>,
                     <constant>GL_GREEN</constant>,
                     <constant>GL_BLUE</constant>,
@@ -297,8 +238,7 @@
             level-of-detail number
             (see <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry>),
             and number of color components provided.
-            The last three arguments describe how the image is represented in memory;
-            they are identical to the pixel formats used for <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>.
+            The last three arguments describe how the image is represented in memory.
         </para>
         <para>
             If <parameter>target</parameter> is <constant>GL_PROXY_TEXTURE_3D</constant>, no data is read from <parameter>data</parameter>, but
@@ -347,27 +287,6 @@
             It can assume one of these symbolic values:
         </para>
         <variablelist>
-            <varlistentry>
-                <term><constant>GL_COLOR_INDEX</constant></term>
-                <listitem>
-                    <para>
-                        Each element is a single value,
-                        a color index.
-                        The GL converts it to fixed point
-                        (with an unspecified number of zero bits to the right of the binary point),
-                        shifted left or right depending on the value and sign of <constant>GL_INDEX_SHIFT</constant>,
-                        and added to <constant>GL_INDEX_OFFSET</constant>
-                        (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
-                        The resulting index is converted to a set of color components
-                        using the
-                        <constant>GL_PIXEL_MAP_I_TO_R</constant>,
-                        <constant>GL_PIXEL_MAP_I_TO_G</constant>,
-                        <constant>GL_PIXEL_MAP_I_TO_B</constant>, and
-                        <constant>GL_PIXEL_MAP_I_TO_A</constant> tables,
-                        and clamped to the range [0,1].
-                    </para>
-                </listitem>
-            </varlistentry>
             <varlistentry>
                 <term><constant>GL_RED</constant></term>
                 <listitem>
@@ -505,10 +424,6 @@
                 </listitem>
             </varlistentry>
         </variablelist>
-        <para>
-            Refer to the <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry> reference page for a description of
-            the acceptable values for the <parameter>type</parameter> parameter.
-        </para>
         <para>
             If an application wants to store the texture at a certain
             resolution or in a certain format, it can request the resolution
@@ -655,13 +570,6 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            Texturing has no effect in color index mode.
-        </para>
-        <para>
-            The texture image can be represented by the same data formats
-            as the pixels in a <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry> command,
-            except that <constant>GL_STENCIL_INDEX</constant> and <constant>GL_DEPTH_COMPONENT</constant>
-            cannot be used.
             <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry> modes affect texture images
             in exactly the way they affect <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>.
         </para>
@@ -813,7 +721,6 @@
             <citerefentry><refentrytitle>glCopyTexSubImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexSubImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexSubImage3D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetCompressedTexImage</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>,

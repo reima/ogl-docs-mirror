@@ -131,9 +131,6 @@
         is called.</para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
-	<para><function>glVertexAttribPointer</function> is available
-	only if the GL version is 2.0 or greater.</para>
-
 	<para>Each generic vertex attribute array is initially disabled
 	and isn't accessed when
         <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>,
@@ -143,16 +140,6 @@
 	<para><function>glVertexAttribPointer</function> is typically
 	implemented on the client side.</para>
 
-	<para>Generic vertex attribute array parameters are client-side
-	state and are therefore not saved or restored by
-	<citerefentry><refentrytitle>glPushAttrib</refentrytitle></citerefentry>
-	and
-	<citerefentry><refentrytitle>glPopAttrib</refentrytitle></citerefentry>.
-	Use
-	<citerefentry><refentrytitle>glPushClientAttrib</refentrytitle></citerefentry>
-	and
-	<citerefentry><refentrytitle>glPopClientAttrib</refentrytitle></citerefentry>
-	instead.</para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
 	<para><constant>GL_INVALID_VALUE</constant> is generated if
@@ -198,28 +185,18 @@
 	<constant>GL_VERTEX_ATTRIB_ARRAY_POINTER</constant></para>
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
-	<para><citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>,
-	<citerefentry><refentrytitle>glBindAttribLocation</refentrytitle></citerefentry>,
+	    <para>
+        <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>,
+        <citerefentry><refentrytitle>glBindAttribLocation</refentrytitle></citerefentry>,
         <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>,
-	<citerefentry><refentrytitle>glDisableVertexAttribArray</refentrytitle></citerefentry>,
-	<citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
-	<citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
-	<citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>,
-	<citerefentry><refentrytitle>glEnableVertexAttribArray</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glEdgeFlagPointer</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glFogCoordPointer</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glIndexPointer</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glInterleavedArrays</refentrytitle></citerefentry>,
+        <citerefentry><refentrytitle>glDisableVertexAttribArray</refentrytitle></citerefentry>,
+        <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
+        <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
+        <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>,
+        <citerefentry><refentrytitle>glEnableVertexAttribArray</refentrytitle></citerefentry>,
         <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>,
         <citerefentry><refentrytitle>glMultiDrawElements</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>,
-	<citerefentry><refentrytitle>glPopClientAttrib</refentrytitle></citerefentry>,
-	<citerefentry><refentrytitle>glPushClientAttrib</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glSecondaryColorPointer</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glTexCoordPointer</refentrytitle></citerefentry>,
-	<citerefentry><refentrytitle>glVertexAttrib</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>
+        <citerefentry><refentrytitle>glVertexAttrib</refentrytitle></citerefentry>,
 	</para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

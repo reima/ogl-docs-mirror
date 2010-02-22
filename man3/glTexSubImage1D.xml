@@ -76,7 +76,6 @@
                 <para>
                     Specifies the format of the pixel data.
                     The following symbolic values are accepted:
-                    <constant>GL_COLOR_INDEX</constant>,
                     <constant>GL_RED</constant>,
                     <constant>GL_GREEN</constant>,
                     <constant>GL_BLUE</constant>,
@@ -305,7 +304,6 @@
             <citerefentry><refentrytitle>glCopyTexSubImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexSubImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexSubImage3D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexEnv</refentrytitle></citerefentry>,

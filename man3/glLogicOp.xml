@@ -227,10 +227,6 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            Color index logical operations are always supported. RGBA logical
-            operations are supported only if the GL version is 1.1 or greater.
-        </para>
-        <para>
             When more than one RGBA color or index buffer is enabled for drawing,
             logical operations are performed separately for each enabled buffer,
             using for the destination value the contents of that buffer
@@ -252,7 +248,6 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glAlphaFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawBuffer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,

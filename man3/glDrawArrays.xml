@@ -81,20 +81,16 @@
             enabled array to construct a sequence of geometric primitives,
             beginning with element <parameter>first</parameter>. <parameter>mode</parameter> specifies what kind of
             primitives are constructed and how the array elements
-            construct those primitives. If <constant>GL_VERTEX_ARRAY</constant> is not enabled, no
-            geometric primitives are generated.
+            construct those primitives.
         </para>
         <para>
             Vertex attributes that are modified by <function>glDrawArrays</function> have an
-            unspecified value after <function>glDrawArrays</function> returns. For example, if
-            <constant>GL_COLOR_ARRAY</constant> is enabled, the value of the current color is
-            undefined after <function>glDrawArrays</function> executes. Attributes that aren't
+            unspecified value after <function>glDrawArrays</function> returns. Attributes that aren't
             modified remain well defined.
         </para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <function>glDrawArrays</function> is available only if the GL version is 1.1 or greater.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
@@ -112,18 +108,9 @@
     <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glEdgeFlagPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glFogCoordPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetPointerv</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glIndexPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glInterleavedArrays</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glNormalPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glSecondaryColorPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glTexCoordPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glVertexPointer</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

@@ -102,9 +102,6 @@
 	until the next time the program object is linked.</para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
-	<para><function>glBindAttribLocation</function> is available
-	only if the GL version is 2.0 or greater.</para>
-
 	<para><function>glBindAttribLocation</function> can be called
 	before any vertex shader objects are bound to the specified
 	program object. It is also permissible to bind a generic

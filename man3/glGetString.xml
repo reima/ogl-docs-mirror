@@ -126,9 +126,6 @@
             <function>glGetString</function> always returns a compatible version number.
             The release number always describes the server.
         </para>
-        <para>
-            <constant>GL_SHADING_LANGUAGE_VERSION</constant> is available only if the GL version is 2.0 or greater.
-        </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
         <para>

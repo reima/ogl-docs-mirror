@@ -220,17 +220,6 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_TEXTURE_RESIDENT</constant></term>
-                <listitem>
-                    <para>
-                        Returns the residence status of the target texture.
-                        If the value returned in <parameter>params</parameter> is <constant>GL_TRUE</constant>, the texture is
-                        resident in texture memory.
-                        See <citerefentry><refentrytitle>glAreTexturesResident</refentrytitle></citerefentry>.
-                    </para>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
                 <term><constant>GL_TEXTURE_COMPARE_MODE</constant></term>
                 <listitem>
                     <para>
@@ -272,21 +261,6 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <constant>GL_TEXTURE_PRIORITY</constant> and <constant>GL_TEXTURE_RESIDENT</constant> are
-            available only if the GL version is 1.1 or greater.
-        </para>
-        <para>
-            <constant>GL_TEXTURE_3D</constant>,
-            <constant>GL_TEXTURE_MIN_LOD</constant>, <constant>GL_TEXTURE_MAX_LOD</constant>, <constant>GL_TEXTURE_BASE_LEVEL</constant>,
-            <constant>GL_TEXTURE_MAX_LEVEL</constant>, and <constant>GL_TEXTURE_WRAP_R</constant> are available only
-            if the GL version is 1.2 or greater.
-        </para>
-        <para>
-            <constant>GL_TEXTURE_COMPARE_MODE</constant>, <constant>GL_TEXTURE_COMPARE_FUNC</constant>, and
-            <constant>GL_GENERATE_MIPMAP</constant> is available only if the GL version is 1.4 or
-            greater.
-        </para>
-        <para>
             If an error is generated,
             no change is made to the contents of <parameter>params</parameter>.
         </para>
@@ -299,8 +273,6 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glAreTexturesResident</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPrioritizeTextures</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry>
         </para>
     </refsect1>

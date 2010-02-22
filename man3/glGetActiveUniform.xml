@@ -212,17 +212,8 @@
 	will be unmodified.</para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
-	<para><function>glGetActiveUniform</function> is available only
-	if the GL version is 2.0 or greater.</para>
-
-	<para><constant>GL_FLOAT_MAT2x3</constant>,
-	<constant>GL_FLOAT_MAT2x4</constant>,
-	<constant>GL_FLOAT_MAT3x2</constant>,
-	<constant>GL_FLOAT_MAT3x4</constant>,
-	<constant>GL_FLOAT_MAT4x2</constant>, and
-	<constant>GL_FLOAT_MAT4x3</constant>
-	will only be returned as a <parameter>type</parameter>
-        if the GL version is 2.1 or greater.</para>
+	    <para>
+      </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
 	<para><constant>GL_INVALID_VALUE</constant> is generated if

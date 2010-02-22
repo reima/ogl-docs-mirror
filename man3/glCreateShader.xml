@@ -52,9 +52,6 @@
 	of <parameter>shaderType</parameter>.</para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
-	<para><function>glCreateShader</function> is available only if
-	the GL version is 2.0 or greater.</para>
-
 	<para>Like buffer and texture objects, the name space for
 	shader objects may be shared across a set of contexts, as long
 	as the server sides of the contexts share the same address

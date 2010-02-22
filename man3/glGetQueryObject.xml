@@ -108,9 +108,6 @@
             <function>glGetQueryObject</function>, the results of the most recent query will be returned.  In this case,
             when issuing a new query, the results of the previous query are discarded.
         </para>
-        <para>
-            <function>glGetQueryObject</function> is available only if the GL version is 1.5 or greater.
-        </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
         <para>

@@ -58,51 +58,6 @@
 	installed on the vertex processor, the OpenGL fixed
 	functionality will be disabled as follows.</para>
 
-	<itemizedlist>
-	    <listitem>
-		<para>The modelview matrix is not applied to vertex
-		coordinates.</para>
-	    </listitem>
-	    <listitem>
-		<para>The projection matrix is not applied to vertex
-		coordinates.</para>
-	    </listitem>
-	    <listitem>
-		<para>The texture matrices are not applied to texture
-		coordinates.</para>
-	    </listitem>
-	    <listitem>
-		<para>Normals are not transformed to eye
-		coordinates.</para>
-	    </listitem>
-	    <listitem>
-		<para>Normals are not rescaled or normalized.</para>
-	    </listitem>
-	    <listitem>
-		<para>Normalization of
-		<constant>GL_AUTO_NORMAL</constant> evaluated normals is
-		not performed.</para>
-	    </listitem>
-	    <listitem>
-		<para>Texture coordinates are not generated
-		automatically.</para>
-	    </listitem>
-	    <listitem>
-		<para>Per-vertex lighting is not performed.</para>
-	    </listitem>
-	    <listitem>
-		<para>Color material computations are not
-		performed.</para>
-	    </listitem>
-	    <listitem>
-		<para>Color index lighting is not performed.</para>
-	    </listitem>
-	    <listitem>
-		<para>This list also applies when setting the current
-		raster position.</para>
-	    </listitem>
-	</itemizedlist>
-
 	<para>The executable that is installed on the vertex processor
 	is expected to implement any or all of the desired functionality
 	from the preceding list. Similarly, if an executable is
@@ -116,12 +71,6 @@
 	    </listitem>
 	    <listitem>
 		<para>Texture application is not applied.</para>
-	    </listitem>
-	    <listitem>
-		<para>Color sum is not applied.</para>
-	    </listitem>
-	    <listitem>
-		<para>Fog is not applied.</para>
 	    </listitem>
 	</itemizedlist>
 
@@ -162,9 +111,6 @@
 	vertex and fragment processing.</para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
-	<para><function>glUseProgram</function> is available only if the
-	GL version is 2.0 or greater.</para>
-
 	<para>While a program object is in use, the state that controls
 	the disabled fixed functionality may also be updated using the
 	normal OpenGL calls.</para>

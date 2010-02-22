@@ -119,7 +119,6 @@
             <citerefentry><refentrytitle>glCompressedTexSubImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCompressedTexSubImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCompressedTexSubImage3D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>,

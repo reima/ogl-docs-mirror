@@ -104,10 +104,6 @@
             counter individually for each sample of a fragment that passes the depth test, or it may choose to increment the counter for
             all samples of a fragment if any one of them passes the depth test.
         </para>
-        <para>
-            <function>glBeginQuery</function> and <citerefentry><refentrytitle>glEndQuery</refentrytitle></citerefentry>
-            are available only if the GL version is 1.5 or greater.
-        </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
         <para>

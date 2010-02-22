@@ -11,7 +11,6 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>format</code></em></span></dt><dd><p>
                     Specifies the format of the pixel data.
                     The following symbolic values are accepted:
-                    <code class="constant">GL_COLOR_INDEX</code>,
                     <code class="constant">GL_STENCIL_INDEX</code>,
                     <code class="constant">GL_DEPTH_COMPONENT</code>,
                     <code class="constant">GL_RED</code>,
@@ -115,15 +114,7 @@
         </p><p>
             <em class="parameter"><code>format</code></em> specifies the format for the returned pixel values;
             accepted values are:
-        </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_COLOR_INDEX</code></span></dt><dd><p>
-                        Color indices are read from the color buffer
-                        selected by <a href="glReadBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glReadBuffer</span></span></a>.
-                        Each index is converted to fixed point,
-                        shifted left or right depending on the value and sign of <code class="constant">GL_INDEX_SHIFT</code>,
-                        and added to <code class="constant">GL_INDEX_OFFSET</code>.
-                        If <code class="constant">GL_MAP_COLOR</code> is <code class="constant">GL_TRUE</code>,
-                        indices are replaced by their mappings in the table <code class="constant">GL_PIXEL_MAP_I_TO_I</code>.
-                    </p></dd><dt><span class="term"><code class="constant">GL_STENCIL_INDEX</code></span></dt><dd><p>
+        </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_STENCIL_INDEX</code></span></dt><dd><p>
                         Stencil values are read from the stencil buffer.
                         Each index is converted to fixed point,
                         shifted left or right depending on the value and sign of <code class="constant">GL_INDEX_SHIFT</code>,
@@ -242,7 +233,7 @@
             Finally, the indices or components
             are converted to the proper format,
             as specified by <em class="parameter"><code>type</code></em>.
-            If <em class="parameter"><code>format</code></em> is <code class="constant">GL_COLOR_INDEX</code> or <code class="constant">GL_STENCIL_INDEX</code>
+            If <em class="parameter"><code>format</code></em> is <code class="constant">GL_STENCIL_INDEX</code>
             and <em class="parameter"><code>type</code></em> is not <code class="constant">GL_FLOAT</code>,
             each index is masked with the mask value given in the following table.
             If <em class="parameter"><code>type</code></em> is <code class="constant">GL_FLOAT</code>, then each integer index is converted to
@@ -480,7 +471,6 @@
                         </td></tr></tbody></table></div><p>
             Return values are placed in memory as follows.
             If <em class="parameter"><code>format</code></em> is
-            <code class="constant">GL_COLOR_INDEX</code>,
             <code class="constant">GL_STENCIL_INDEX</code>,
             <code class="constant">GL_DEPTH_COMPONENT</code>,
             <code class="constant">GL_RED</code>,
@@ -551,21 +541,6 @@
             <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code>
             and <em class="parameter"><code>format</code></em> is neither <code class="constant">GL_RGBA</code> nor <code class="constant">GL_BGRA</code>.
         </p><p>
-            The formats <code class="constant">GL_BGR</code>, and <code class="constant">GL_BGRA</code> and types
-            <code class="constant">GL_UNSIGNED_BYTE_3_3_2</code>,
-            <code class="constant">GL_UNSIGNED_BYTE_2_3_3_REV</code>,
-            <code class="constant">GL_UNSIGNED_SHORT_5_6_5</code>,
-            <code class="constant">GL_UNSIGNED_SHORT_5_6_5_REV</code>,
-            <code class="constant">GL_UNSIGNED_SHORT_4_4_4_4</code>,
-            <code class="constant">GL_UNSIGNED_SHORT_4_4_4_4_REV</code>,
-            <code class="constant">GL_UNSIGNED_SHORT_5_5_5_1</code>,
-            <code class="constant">GL_UNSIGNED_SHORT_1_5_5_5_REV</code>,
-            <code class="constant">GL_UNSIGNED_INT_8_8_8_8</code>,
-            <code class="constant">GL_UNSIGNED_INT_8_8_8_8_REV</code>,
-            <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>, and
-            <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code> are available only if the GL version
-            is 1.2 or greater.
-        </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
             <code class="constant">GL_PIXEL_PACK_BUFFER</code> target and the buffer object's data store is currently mapped.
         </p><p>
@@ -582,7 +557,6 @@
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_PACK_BUFFER_BINDING</code>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
-            <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>,
             <a href="glPixelMap.xml"><span class="citerefentry"><span class="refentrytitle">glPixelMap</span></span></a>,
             <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>,
             <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>,

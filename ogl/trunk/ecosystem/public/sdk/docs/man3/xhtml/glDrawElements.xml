@@ -35,17 +35,12 @@
             enabled array, starting at <em class="parameter"><code>indices</code></em> to construct a sequence of
             geometric primitives. <em class="parameter"><code>mode</code></em> specifies what kind of primitives are
             constructed and how the array elements construct these primitives. If
-            more than one array is enabled, each is used. If
-            <code class="constant">GL_VERTEX_ARRAY</code> is not enabled, no geometric primitives are
-            constructed.
+            more than one array is enabled, each is used.
         </p><p>
             Vertex attributes that are modified by <code class="function">glDrawElements</code> have an
-            unspecified value after <code class="function">glDrawElements</code> returns. For example, if
-            <code class="constant">GL_COLOR_ARRAY</code> is enabled, the value of the current color is
-            undefined after <code class="function">glDrawElements</code> executes. Attributes that aren't
+            unspecified value after <code class="function">glDrawElements</code> returns.  Attributes that aren't
             modified maintain their previous values.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
-            <code class="function">glDrawElements</code> is available only if the GL version is 1.1 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is not an accepted value.
         </p><p>
@@ -55,18 +50,9 @@
             enabled array or the element array and the buffer object's data store is currently mapped.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glArrayElement.xml"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a>,
-            <a href="glColorPointer.xml"><span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span></a>,
             <a href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>,
             <a href="glDrawRangeElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span></a>,
-            <a href="glEdgeFlagPointer.xml"><span class="citerefentry"><span class="refentrytitle">glEdgeFlagPointer</span></span></a>,
-            <a href="glFogCoordPointer.xml"><span class="citerefentry"><span class="refentrytitle">glFogCoordPointer</span></span></a>,
             <a href="glGetPointerv.xml"><span class="citerefentry"><span class="refentrytitle">glGetPointerv</span></span></a>,
-            <a href="glIndexPointer.xml"><span class="citerefentry"><span class="refentrytitle">glIndexPointer</span></span></a>,
-            <a href="glInterleavedArrays.xml"><span class="citerefentry"><span class="refentrytitle">glInterleavedArrays</span></span></a>,
-            <a href="glNormalPointer.xml"><span class="citerefentry"><span class="refentrytitle">glNormalPointer</span></span></a>,
-            <a href="glSecondaryColorPointer.xml"><span class="citerefentry"><span class="refentrytitle">glSecondaryColorPointer</span></span></a>,
-            <a href="glTexCoordPointer.xml"><span class="citerefentry"><span class="refentrytitle">glTexCoordPointer</span></span></a>,
-            <a href="glVertexPointer.xml"><span class="citerefentry"><span class="refentrytitle">glVertexPointer</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI

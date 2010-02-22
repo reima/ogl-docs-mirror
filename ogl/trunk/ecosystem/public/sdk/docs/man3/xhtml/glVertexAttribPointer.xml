@@ -59,22 +59,12 @@
         <a href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>, 
         <a href="glMultiDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span></a>, or 
         <a href="glDrawRangeElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span></a>
-        is called.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p><code class="function">glVertexAttribPointer</code> is available
-	only if the GL version is 2.0 or greater.</p><p>Each generic vertex attribute array is initially disabled
+        is called.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>Each generic vertex attribute array is initially disabled
 	and isn't accessed when
         <a href="glArrayElement.xml"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a>, <a href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>, <a href="glDrawRangeElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span></a>,
         <a href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>, <a href="glMultiDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawArrays</span></span></a>, or <a href="glMultiDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span></a>
         is called.</p><p><code class="function">glVertexAttribPointer</code> is typically
-	implemented on the client side.</p><p>Generic vertex attribute array parameters are client-side
-	state and are therefore not saved or restored by
-	<a href="glPushAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPushAttrib</span></span></a>
-	and
-	<a href="glPopAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPopAttrib</span></span></a>.
-	Use
-	<a href="glPushClientAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPushClientAttrib</span></span></a>
-	and
-	<a href="glPopClientAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPopClientAttrib</span></span></a>
-	instead.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_VALUE</code> is generated if
+	implemented on the client side.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_VALUE</code> is generated if
 	<em class="parameter"><code>index</code></em> is greater than or equal to
 	<code class="constant">GL_MAX_VERTEX_ATTRIBS</code>.</p><p><code class="constant">GL_INVALID_VALUE</code> is generated if
 	<em class="parameter"><code>size</code></em> is not 1, 2, 3, or 4.</p><p><code class="constant">GL_INVALID_ENUM</code> is generated if
@@ -89,28 +79,18 @@
 	with arguments <em class="parameter"><code>index</code></em> and <code class="constant">GL_VERTEX_ATTRIB_ARRAY_BUFFER_BINDING</code></p><p><a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument 
         <code class="constant">GL_ARRAY_BUFFER_BINDING</code></p><p><a href="glGetVertexAttribPointerv.xml"><span class="citerefentry"><span class="refentrytitle">glGetVertexAttribPointerv</span></span></a>
 	with arguments <em class="parameter"><code>index</code></em> and
-	<code class="constant">GL_VERTEX_ATTRIB_ARRAY_POINTER</code></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p><a href="glArrayElement.xml"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a>,
-	<a href="glBindAttribLocation.xml"><span class="citerefentry"><span class="refentrytitle">glBindAttribLocation</span></span></a>,
+	<code class="constant">GL_VERTEX_ATTRIB_ARRAY_POINTER</code></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
+        <a href="glArrayElement.xml"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a>,
+        <a href="glBindAttribLocation.xml"><span class="citerefentry"><span class="refentrytitle">glBindAttribLocation</span></span></a>,
         <a href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>,
-        <a href="glColorPointer.xml"><span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span></a>,
-	<a href="glDisableVertexAttribArray.xml"><span class="citerefentry"><span class="refentrytitle">glDisableVertexAttribArray</span></span></a>,
-	<a href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>,
-	<a href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>,
-	<a href="glDrawRangeElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span></a>,
-	<a href="glEnableVertexAttribArray.xml"><span class="citerefentry"><span class="refentrytitle">glEnableVertexAttribArray</span></span></a>,
-        <a href="glEdgeFlagPointer.xml"><span class="citerefentry"><span class="refentrytitle">glEdgeFlagPointer</span></span></a>,
-        <a href="glFogCoordPointer.xml"><span class="citerefentry"><span class="refentrytitle">glFogCoordPointer</span></span></a>,
-        <a href="glIndexPointer.xml"><span class="citerefentry"><span class="refentrytitle">glIndexPointer</span></span></a>,
-        <a href="glInterleavedArrays.xml"><span class="citerefentry"><span class="refentrytitle">glInterleavedArrays</span></span></a>,
+        <a href="glDisableVertexAttribArray.xml"><span class="citerefentry"><span class="refentrytitle">glDisableVertexAttribArray</span></span></a>,
+        <a href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>,
+        <a href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>,
+        <a href="glDrawRangeElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span></a>,
+        <a href="glEnableVertexAttribArray.xml"><span class="citerefentry"><span class="refentrytitle">glEnableVertexAttribArray</span></span></a>,
         <a href="glMultiDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawArrays</span></span></a>,
         <a href="glMultiDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span></a>,
-        <a href="glNormalPointer.xml"><span class="citerefentry"><span class="refentrytitle">glNormalPointer</span></span></a>,
-	<a href="glPopClientAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPopClientAttrib</span></span></a>,
-	<a href="glPushClientAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPushClientAttrib</span></span></a>,
-        <a href="glSecondaryColorPointer.xml"><span class="citerefentry"><span class="refentrytitle">glSecondaryColorPointer</span></span></a>,
-        <a href="glTexCoordPointer.xml"><span class="citerefentry"><span class="refentrytitle">glTexCoordPointer</span></span></a>,
-	<a href="glVertexAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glVertexAttrib</span></span></a>,
-        <a href="glVertexPointer.xml"><span class="citerefentry"><span class="refentrytitle">glVertexPointer</span></span></a>
+        <a href="glVertexAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glVertexAttrib</span></span></a>,
 	</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2003-2005 3Dlabs Inc. Ltd. 
             This material may be distributed subject to the terms and conditions set forth in 

@@ -48,11 +48,6 @@
                         The data store contents are modified by reading data from the GL, and used as the source for GL
                         drawing and image specification commands.
                     </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
-            <code class="function">glBufferData</code> is available only if the GL version is 1.5 or greater.
-        </p><p>
-            Targets <code class="constant">GL_PIXEL_PACK_BUFFER</code> and <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> are available 
-            only if the GL version is 2.1 or greater.
-        </p><p>
             If <em class="parameter"><code>data</code></em> is <code class="constant">NULL</code>, a data store of the specified size is still created,
             but its contents remain uninitialized and thus undefined.
         </p><p>

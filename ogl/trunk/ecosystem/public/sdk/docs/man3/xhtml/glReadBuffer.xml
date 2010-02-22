@@ -10,10 +10,8 @@
                     <code class="constant">GL_BACK_RIGHT</code>,
                     <code class="constant">GL_FRONT</code>,
                     <code class="constant">GL_BACK</code>,
-                    <code class="constant">GL_LEFT</code>,
-                    <code class="constant">GL_RIGHT</code>, and
-                    <code class="constant">GL_AUX</code><span class="emphasis"><em>i</em></span>,
-                    where <span class="emphasis"><em>i</em></span> is between 0 and the value of <code class="constant">GL_AUX_BUFFERS</code> minus 1.
+                    <code class="constant">GL_LEFT</code>, and
+                    <code class="constant">GL_RIGHT</code>.
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
             <code class="function">glReadBuffer</code> specifies a color buffer as the source for subsequent
             <a href="glReadPixels.xml"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>, <a href="glCopyTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage1D</span></span></a>, <a href="glCopyTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a>,
@@ -21,7 +19,6 @@
             <a href="glCopyTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage3D</span></span></a>, and
             <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a> commands.
             <em class="parameter"><code>mode</code></em> accepts one of twelve or more predefined values.
-            (<code class="constant">GL_AUX0</code> through <code class="constant">GL_AUX3</code> are always defined.)
             In a fully configured system,
             <code class="constant">GL_FRONT</code>,
             <code class="constant">GL_LEFT</code>, and

@@ -10,8 +10,8 @@
                     <code class="constant">GL_STENCIL_BUFFER_BIT</code>.
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
             <code class="function">glClear</code> sets the bitplane area of the window to values previously selected
-            by <code class="function">glClearColor</code>, <code class="function">glClearIndex</code>, <code class="function">glClearDepth</code>,
-            <code class="function">glClearStencil</code>, and <code class="function">glClearAccum</code>.
+            by <code class="function">glClearColor</code>, <code class="function">glClearDepth</code>, and
+            <code class="function">glClearStencil</code>.
             Multiple color buffers can be cleared simultaneously by selecting
             more than one buffer at a time using <a href="glDrawBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glDrawBuffer</span></span></a>.
         </p><p>
@@ -59,10 +59,8 @@
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_STENCIL_CLEAR_VALUE</code>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
-            <code class="function">glClearAccum</code>,
             <code class="function">glClearColor</code>,
             <code class="function">glClearDepth</code>,
-            <code class="function">glClearIndex</code>,
             <code class="function">glClearStencil</code>,
             <a href="glColorMask.xml"><span class="citerefentry"><span class="refentrytitle">glColorMask</span></span></a>,
             <a href="glDepthMask.xml"><span class="citerefentry"><span class="refentrytitle">glDepthMask</span></span></a>,

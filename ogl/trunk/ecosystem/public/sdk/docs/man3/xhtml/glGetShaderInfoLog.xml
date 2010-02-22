@@ -24,8 +24,7 @@
 	may contain diagnostic messages, warning messages, and other
 	information about the last compile operation. When a shader
 	object is created, its information log will be a string of
-	length 0.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p><code class="function">glGetShaderInfoLog</code> is available only
-	if the GL version is 2.0 or greater.</p><p>The information log for a shader object is the OpenGL
+	length 0.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>The information log for a shader object is the OpenGL
 	implementer's primary mechanism for conveying information about
 	the compilation process. Therefore, the information log can be
 	helpful to application developers during the development

@@ -90,8 +90,7 @@
 	for generic vertex attribute 0. This is the only generic vertex
 	attribute with this property; calls to set other standard vertex
 	attributes can be freely mixed with calls to set any of the
-	other generic vertex attributes.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p><code class="function">glVertexAttrib</code> is available only if
-	the GL version is 2.0 or greater.</p><p>Generic vertex attributes can be updated at any time.</p><p>It is possible for an application to bind more than one
+	other generic vertex attributes.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>Generic vertex attributes can be updated at any time.</p><p>It is possible for an application to bind more than one
 	attribute name to the same generic vertex attribute index. This
 	is referred to as aliasing, and it is allowed only if just one
 	of the aliased attribute variables is active in the vertex

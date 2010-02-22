@@ -25,8 +25,6 @@
                     </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
             If an error is generated,
             no change is made to the contents of <em class="parameter"><code>params</code></em>.
-        </p><p>
-            <code class="function">glGetQueryiv</code> is available only if the GL version is 1.5 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> or <em class="parameter"><code>pname</code></em> is not an
             accepted value.

@@ -270,8 +270,7 @@
                         <em class="parameter"><code>params</code></em> returns one value,
                         a rough estimate of the largest 3D texture that the GL can handle.
                         The value must be at least 16.
-                        If the GL version is 1.2 or greater, use
-                        <code class="constant">GL_PROXY_TEXTURE_3D</code> to determine if a texture is too large.
+                        Use <code class="constant">GL_PROXY_TEXTURE_3D</code> to determine if a texture is too large.
                         See <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_CLIP_PLANES</code></span></dt><dd><p>
 			  </p><p>
@@ -291,7 +290,7 @@
                         <em class="parameter"><code>params</code></em> returns one value.
                         The value gives a rough estimate of the largest cube-map texture that
                         the GL can handle. The value must be at least 16.
-                        If the GL version is 1.3 or greater, use <code class="constant">GL_PROXY_TEXTURE_CUBE_MAP</code>
+                        Use <code class="constant">GL_PROXY_TEXTURE_CUBE_MAP</code>
                         to determine if a texture is too large.
                         See <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_DRAW_BUFFERS</code></span></dt><dd><p>
@@ -332,8 +331,7 @@
                         <em class="parameter"><code>params</code></em> returns one value.
                         The value gives a rough estimate of the largest texture that
                         the GL can handle. The value must be at least 64.
-                        If the GL version is 1.1 or greater, use
-                        <code class="constant">GL_PROXY_TEXTURE_1D</code> or <code class="constant">GL_PROXY_TEXTURE_2D</code>
+                        Use <code class="constant">GL_PROXY_TEXTURE_1D</code> or <code class="constant">GL_PROXY_TEXTURE_2D</code>
                         to determine if a texture is too large.
                         See <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a> and <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_VARYING_FLOATS</code></span></dt><dd><p>
@@ -597,7 +595,7 @@
                         a symbolic constant indicating what action is taken when the stencil
                         test fails. The initial value is <code class="constant">GL_KEEP</code>.
                         See <a href="glStencilOp.xml"><span class="citerefentry"><span class="refentrytitle">glStencilOp</span></span></a>.
-                        If the GL version is 2.0 or greater, this stencil state only affects non-polygons
+                        This stencil state only affects non-polygons
                         and front-facing polygons.  Back-facing polygons use separate stencil state.
                         See <a href="glStencilOpSeparate.xml"><span class="citerefentry"><span class="refentrytitle">glStencilOpSeparate</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_STENCIL_FUNC</code></span></dt><dd><p>
@@ -607,7 +605,7 @@
                         stencil reference value with the stencil buffer value. The initial value
                         is <code class="constant">GL_ALWAYS</code>.
                         See <a href="glStencilFunc.xml"><span class="citerefentry"><span class="refentrytitle">glStencilFunc</span></span></a>.
-                        If the GL version is 2.0 or greater, this stencil state only affects non-polygons
+                        This stencil state only affects non-polygons
                         and front-facing polygons.  Back-facing polygons use separate stencil state.
                         See <a href="glStencilFuncSeparate.xml"><span class="citerefentry"><span class="refentrytitle">glStencilFuncSeparate</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_STENCIL_PASS_DEPTH_FAIL</code></span></dt><dd><p>
@@ -617,7 +615,7 @@
                         test passes,
                         but the depth test fails. The initial value is <code class="constant">GL_KEEP</code>.
                         See <a href="glStencilOp.xml"><span class="citerefentry"><span class="refentrytitle">glStencilOp</span></span></a>.
-                        If the GL version is 2.0 or greater, this stencil state only affects non-polygons
+                        This stencil state only affects non-polygons
                         and front-facing polygons.  Back-facing polygons use separate stencil state.
                         See <a href="glStencilOpSeparate.xml"><span class="citerefentry"><span class="refentrytitle">glStencilOpSeparate</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_STENCIL_PASS_DEPTH_PASS</code></span></dt><dd><p>
@@ -626,7 +624,7 @@
                         a symbolic constant indicating what action is taken when the stencil
                         test passes and the depth test passes. The initial value is <code class="constant">GL_KEEP</code>.
                         See <a href="glStencilOp.xml"><span class="citerefentry"><span class="refentrytitle">glStencilOp</span></span></a>.
-                        If the GL version is 2.0 or greater, this stencil state only affects non-polygons
+                        This stencil state only affects non-polygons
                         and front-facing polygons.  Back-facing polygons use separate stencil state.
                         See <a href="glStencilOpSeparate.xml"><span class="citerefentry"><span class="refentrytitle">glStencilOpSeparate</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_STENCIL_REF</code></span></dt><dd><p>
@@ -635,7 +633,7 @@
                         the reference value that is compared with the contents of the stencil
                         buffer. The initial value is 0.
                         See <a href="glStencilFunc.xml"><span class="citerefentry"><span class="refentrytitle">glStencilFunc</span></span></a>.
-                        If the GL version is 2.0 or greater, this stencil state only affects non-polygons
+                        This stencil state only affects non-polygons
                         and front-facing polygons.  Back-facing polygons use separate stencil state.
                         See <a href="glStencilFuncSeparate.xml"><span class="citerefentry"><span class="refentrytitle">glStencilFuncSeparate</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_STENCIL_TEST</code></span></dt><dd><p>
@@ -649,7 +647,7 @@
                         the mask that is used to mask both the stencil reference value and the
                         stencil buffer value before they are compared. The initial value is all 1's.
                         See <a href="glStencilFunc.xml"><span class="citerefentry"><span class="refentrytitle">glStencilFunc</span></span></a>.
-                        If the GL version is 2.0 or greater, this stencil state only affects non-polygons
+                        This stencil state only affects non-polygons
                         and front-facing polygons.  Back-facing polygons use separate stencil state.
                         See <a href="glStencilFuncSeparate.xml"><span class="citerefentry"><span class="refentrytitle">glStencilFuncSeparate</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_STENCIL_WRITEMASK</code></span></dt><dd><p>
@@ -658,7 +656,7 @@
                         the mask that controls writing of the stencil bitplanes. The initial value
                         is all 1's.
                         See <a href="glStencilMask.xml"><span class="citerefentry"><span class="refentrytitle">glStencilMask</span></span></a>.
-                        If the GL version is 2.0 or greater, this stencil state only affects non-polygons
+                        This stencil state only affects non-polygons
                         and front-facing polygons.  Back-facing polygons use separate stencil state.
                         See <a href="glStencilMaskSeparate.xml"><span class="citerefentry"><span class="refentrytitle">glStencilMaskSeparate</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_STEREO</code></span></dt><dd><p>

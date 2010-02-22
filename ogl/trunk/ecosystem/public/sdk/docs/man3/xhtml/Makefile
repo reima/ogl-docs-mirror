@@ -115,9 +115,8 @@ ALLXML = \
     glGet.xml \
     glGetActiveAttrib.xml \
     glGetActiveUniform.xml \
-    glGetUniformBlock.xml \
-    glGetUniformBlockIndex.xml \
-    glGetUniformBlockName.xml \
+    glGetActiveUniformBlock.xml \
+    glGetActiveUniformBlockName.xml \
     glGetActiveUniformName.xml \
     glGetAttachedShaders.xml \
     glGetAttribLocation.xml \
@@ -145,6 +144,7 @@ ALLXML = \
     glGetTexParameter.xml \
     glGetTransformFeedbackVarying.xml \
     glGetUniform.xml \
+    glGetUniformBlockIndex.xml \
     glGetUniformIndices.xml \
     glGetUniformLocation.xml \
     glGetVertexAttrib.xml \

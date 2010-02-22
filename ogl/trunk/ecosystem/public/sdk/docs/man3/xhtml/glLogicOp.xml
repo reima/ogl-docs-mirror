@@ -110,9 +110,6 @@
             the logical operation is applied independently to each bit pair of the
             source and destination indices or colors.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
-            Color index logical operations are always supported. RGBA logical
-            operations are supported only if the GL version is 1.1 or greater.
-        </p><p>
             When more than one RGBA color or index buffer is enabled for drawing,
             logical operations are performed separately for each enabled buffer,
             using for the destination value the contents of that buffer
@@ -124,7 +121,6 @@
         </p><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_COLOR_LOGIC_OP</code> or <code class="constant">GL_INDEX_LOGIC_OP</code>.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
-            <a href="glAlphaFunc.xml"><span class="citerefentry"><span class="refentrytitle">glAlphaFunc</span></span></a>,
             <a href="glBlendFunc.xml"><span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span></a>,
             <a href="glDrawBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glDrawBuffer</span></span></a>,
             <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>,

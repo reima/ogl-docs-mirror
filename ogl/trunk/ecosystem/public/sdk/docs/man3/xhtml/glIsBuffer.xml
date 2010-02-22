@@ -11,7 +11,6 @@
             A name returned by <a href="glGenBuffers.xml"><span class="citerefentry"><span class="refentrytitle">glGenBuffers</span></span></a>, but not yet associated with a buffer object
             by calling <a href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>, is not the name of a buffer object.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
-            <code class="function">glIsBuffer</code> is available only if the GL version is 1.5 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>,

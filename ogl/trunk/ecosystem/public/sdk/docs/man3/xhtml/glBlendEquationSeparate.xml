@@ -642,8 +642,6 @@
             Initially, both the RGB blend equation and the alpha blend equation are set to <code class="constant">GL_FUNC_ADD</code>.
         </p><p>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
-            <code class="function">glBlendEquationSeparate</code> is available only if the GL version is 2.0 or greater.
-        </p><p>
             The <code class="constant">GL_MIN</code>, and <code class="constant">GL_MAX</code> equations do not use
             the source or destination factors, only the source and destination colors.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>

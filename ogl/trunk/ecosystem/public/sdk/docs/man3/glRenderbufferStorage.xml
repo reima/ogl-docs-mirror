@@ -19,7 +19,7 @@
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef>void *<function>glRenderbufferStorage</function></funcdef>
+                <funcdef>void <function>glRenderbufferStorage</function></funcdef>
                 <paramdef>GLenum <parameter>target</parameter></paramdef>
                 <paramdef>GLenum <parameter>internalformat</parameter></paramdef>
                 <paramdef>GLsizei <parameter>width</parameter></paramdef>

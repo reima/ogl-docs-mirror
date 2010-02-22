@@ -48,11 +48,6 @@
             If an error is generated, <code class="function">glMapBuffer</code> returns <code class="constant">NULL</code>, and
             <code class="function">glUnmapBuffer</code> returns <code class="constant">GL_FALSE</code>.
         </p><p>
-            <code class="function">glMapBuffer</code> and <code class="function">glUnmapBuffer</code> are available only if the GL version is 1.5 or greater.
-        </p><p>
-            <code class="constant">GL_PIXEL_PACK_BUFFER</code> and <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> are 
-            available only if the GL version is 2.1 or greater.
-        </p><p>
             Parameter values passed to GL commands may not be sourced from the returned pointer. No error will be generated,
             but results will be undefined and will likely vary across GL implementations.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>

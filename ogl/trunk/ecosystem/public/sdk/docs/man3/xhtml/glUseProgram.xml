@@ -24,21 +24,12 @@
 	processor will cause the corresponding fixed functionality of
 	OpenGL to be disabled. Specifically, if an executable is
 	installed on the vertex processor, the OpenGL fixed
-	functionality will be disabled as follows.</p><div class="itemizedlist"><ul type="disc"><li><p>The modelview matrix is not applied to vertex
-		coordinates.</p></li><li><p>The projection matrix is not applied to vertex
-		coordinates.</p></li><li><p>The texture matrices are not applied to texture
-		coordinates.</p></li><li><p>Normals are not transformed to eye
-		coordinates.</p></li><li><p>Normals are not rescaled or normalized.</p></li><li><p>Normalization of
-		<code class="constant">GL_AUTO_NORMAL</code> evaluated normals is
-		not performed.</p></li><li><p>Texture coordinates are not generated
-		automatically.</p></li><li><p>Per-vertex lighting is not performed.</p></li><li><p>Color material computations are not
-		performed.</p></li><li><p>Color index lighting is not performed.</p></li><li><p>This list also applies when setting the current
-		raster position.</p></li></ul></div><p>The executable that is installed on the vertex processor
+	functionality will be disabled as follows.</p><p>The executable that is installed on the vertex processor
 	is expected to implement any or all of the desired functionality
 	from the preceding list. Similarly, if an executable is
 	installed on the fragment processor, the OpenGL fixed
 	functionality will be disabled as follows.</p><div class="itemizedlist"><ul type="disc"><li><p>Texture environment and texture functions are not
-		applied.</p></li><li><p>Texture application is not applied.</p></li><li><p>Color sum is not applied.</p></li><li><p>Fog is not applied.</p></li></ul></div><p>Again, the fragment shader that is installed is expected
+		applied.</p></li><li><p>Texture application is not applied.</p></li></ul></div><p>Again, the fragment shader that is installed is expected
 	to implement any or all of the desired functionality from the
 	preceding list.</p><p>While a program object is in use, applications are free to
 	modify attached shader objects, compile attached shader objects,
@@ -68,8 +59,7 @@
 	fixed functionality will be used for vertex processing. If
 	<em class="parameter"><code>program</code></em> is 0, the programmable processors
 	will be disabled, and fixed functionality will be used for both
-	vertex and fragment processing.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p><code class="function">glUseProgram</code> is available only if the
-	GL version is 2.0 or greater.</p><p>While a program object is in use, the state that controls
+	vertex and fragment processing.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>While a program object is in use, the state that controls
 	the disabled fixed functionality may also be updated using the
 	normal OpenGL calls.</p><p>Like buffer and texture objects, the name space for
 	program objects may be shared across a set of contexts, as long

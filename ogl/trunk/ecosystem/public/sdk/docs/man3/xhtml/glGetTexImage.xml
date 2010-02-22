@@ -67,7 +67,7 @@
             <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a> (<code class="constant">GL_TEXTURE_3D</code>).
             <em class="parameter"><code>level</code></em> specifies the level-of-detail number of the desired image.
             <em class="parameter"><code>format</code></em> and <em class="parameter"><code>type</code></em> specify the format and type of the desired image array.
-            See the reference pages <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a> and <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>
+            See the reference page for <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>
             for a description of the acceptable values for the <em class="parameter"><code>format</code></em> and <em class="parameter"><code>type</code></em>
             parameters, respectively.
         </p><p>
@@ -88,8 +88,7 @@
             (including border if one was specified)
             for 2D images.
             Because the internal texture image is an RGBA image,
-            pixel formats <code class="constant">GL_COLOR_INDEX</code>,
-            <code class="constant">GL_STENCIL_INDEX</code>,
+            pixel formats <code class="constant">GL_STENCIL_INDEX</code>,
             and <code class="constant">GL_DEPTH_COMPONENT</code> are not accepted.
         </p><p>
             If the selected texture image does not contain four components,
@@ -120,24 +119,7 @@
             If an error is generated,
             no change is made to the contents of <em class="parameter"><code>img</code></em>.
         </p><p>
-            The types <code class="constant">GL_UNSIGNED_BYTE_3_3_2</code>,
-            <code class="constant">GL_UNSIGNED_BYTE_2_3_3_REV</code>,
-            <code class="constant">GL_UNSIGNED_SHORT_5_6_5</code>,
-            <code class="constant">GL_UNSIGNED_SHORT_5_6_5_REV</code>,
-            <code class="constant">GL_UNSIGNED_SHORT_4_4_4_4</code>,
-            <code class="constant">GL_UNSIGNED_SHORT_4_4_4_4_REV</code>,
-            <code class="constant">GL_UNSIGNED_SHORT_5_5_5_1</code>,
-            <code class="constant">GL_UNSIGNED_SHORT_1_5_5_5_REV</code>,
-            <code class="constant">GL_UNSIGNED_INT_8_8_8_8</code>,
-            <code class="constant">GL_UNSIGNED_INT_8_8_8_8_REV</code>,
-            <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>,
-            <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code>,
-            and the formats
-            <code class="constant">GL_BGR</code>, and <code class="constant">GL_BGRA</code> are available only if the GL version is
-            1.2 or greater.
-        </p><p>
-            For OpenGL versions 1.3 and greater, or when the <code class="code">ARB_multitexture</code> extension is supported, <code class="function">glGetTexImage</code> returns
-            the texture image for the active texture unit.
+            <code class="function">glGetTexImage</code> returns the texture image for the active texture unit.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em>, <em class="parameter"><code>format</code></em>, or <em class="parameter"><code>type</code></em> is not
             an accepted value.
@@ -203,7 +185,6 @@
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_PACK_BUFFER_BINDING</code>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>,
-            <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>,
             <a href="glReadPixels.xml"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>,
             <a href="glTexEnv.xml"><span class="citerefentry"><span class="refentrytitle">glTexEnv</span></span></a>,
             <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>,

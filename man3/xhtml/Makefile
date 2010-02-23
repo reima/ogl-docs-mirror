@@ -29,6 +29,7 @@ ALLXML = \
     glBindBufferBase.xml \
     glBindBufferRange.xml \
     glBindFragDataLocation.xml \
+    glBindFragDataLocationIndexed.xml \
     glBindFramebuffer.xml \
     glBindRenderbuffer.xml \
     glBindTexture.xml \
@@ -71,6 +72,7 @@ ALLXML = \
     glDeleteProgram.xml \
     glDeleteQueries.xml \
     glDeleteRenderbuffers.xml \
+    glDeleteSamplers.xml \
     glDeleteShader.xml \
     glDeleteSync.xml \
     glDeleteTextures.xml \
@@ -110,6 +112,7 @@ ALLXML = \
     glGenFramebuffers.xml \
     glGenQueries.xml \
     glGenRenderbuffers.xml \
+    glGenSamplers.xml \
     glGenTextures.xml \
     glGenVertexArrays.xml \
     glGet.xml \
@@ -125,15 +128,16 @@ ALLXML = \
     glGetBufferSubData.xml \
     glGetCompressedTexImage.xml \
     glGetError.xml \
+    glGetFragDataIndex.xml \
     glGetFragDataLocation.xml \
     glGetFramebufferAttachmentParameter.xml \
-    glGetMultisample.xml \
-    glGetPointerv.xml \
+    glGetMultisample.xml glGetPointerv.xml \
     glGetProgram.xml \
     glGetProgramInfoLog.xml \
     glGetQueryObject.xml \
     glGetQueryiv.xml \
     glGetRenderbufferParameter.xml \
+    glGetSamplerParameter.xml \
     glGetShader.xml \
     glGetShaderInfoLog.xml \
     glGetShaderSource.xml \
@@ -156,6 +160,7 @@ ALLXML = \
     glIsProgram.xml \
     glIsRenderbuffer.xml \
     glIsQuery.xml \
+    glIsSampler.xml \
     glIsShader.xml \
     glIsSync.xml \
     glIsTexture.xml \
@@ -175,12 +180,14 @@ ALLXML = \
     glPolygonOffset.xml \
     glPrimitiveRestartIndex.xml \
     glProvokingVertex.xml \
+    glQueryCounter.xml \
     glReadBuffer.xml \
     glReadPixels.xml \
     glRenderbufferStorage.xml \
     glRenderbufferStorageMultisample.xml \
     glSampleCoverage.xml \
     glSampleMaski.xml \
+    glSamplerParameter.xml \
     glScissor.xml \
     glShaderSource.xml \
     glStencilFunc.xml \
@@ -206,6 +213,7 @@ ALLXML = \
     glUseProgram.xml \
     glValidateProgram.xml \
     glVertexAttrib.xml \
+    glVertexAttribDivisor.xml \
     glVertexAttribPointer.xml \
     glViewport.xml \
     glWaitSync.xml

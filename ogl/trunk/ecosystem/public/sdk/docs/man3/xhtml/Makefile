@@ -32,6 +32,7 @@ ALLXML = \
     glBindFragDataLocationIndexed.xml \
     glBindFramebuffer.xml \
     glBindRenderbuffer.xml \
+    glBindSampler.xml \
     glBindTexture.xml \
     glBindVertexArray.xml \
     glBlendColor.xml \

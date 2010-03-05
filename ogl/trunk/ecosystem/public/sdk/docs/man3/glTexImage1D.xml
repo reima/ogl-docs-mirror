@@ -61,34 +61,26 @@
                 <para>
                     Specifies the number of color components in the texture.
                     Must be 1, 2, 3, or 4, or one of the following symbolic constants:
-                    <constant>GL_ALPHA</constant>,
                     <constant>GL_ALPHA4</constant>,
                     <constant>GL_ALPHA8</constant>,
                     <constant>GL_ALPHA12</constant>,
                     <constant>GL_ALPHA16</constant>,
-                    <constant>GL_COMPRESSED_ALPHA</constant>,
-                    <constant>GL_COMPRESSED_LUMINANCE</constant>,
-                    <constant>GL_COMPRESSED_LUMINANCE_ALPHA</constant>,
-                    <constant>GL_COMPRESSED_INTENSITY</constant>,
                     <constant>GL_COMPRESSED_RGB</constant>,
                     <constant>GL_COMPRESSED_RGBA</constant>,
                     <constant>GL_DEPTH_COMPONENT</constant>,
                     <constant>GL_DEPTH_COMPONENT16</constant>,
                     <constant>GL_DEPTH_COMPONENT24</constant>,
                     <constant>GL_DEPTH_COMPONENT32</constant>,
-                    <constant>GL_LUMINANCE</constant>,
                     <constant>GL_LUMINANCE4</constant>,
                     <constant>GL_LUMINANCE8</constant>,
                     <constant>GL_LUMINANCE12</constant>,
                     <constant>GL_LUMINANCE16</constant>,
-                    <constant>GL_LUMINANCE_ALPHA</constant>,
                     <constant>GL_LUMINANCE4_ALPHA4</constant>,
                     <constant>GL_LUMINANCE6_ALPHA2</constant>,
                     <constant>GL_LUMINANCE8_ALPHA8</constant>,
                     <constant>GL_LUMINANCE12_ALPHA4</constant>,
                     <constant>GL_LUMINANCE12_ALPHA12</constant>,
                     <constant>GL_LUMINANCE16_ALPHA16</constant>,
-                    <constant>GL_INTENSITY</constant>,
                     <constant>GL_INTENSITY4</constant>,
                     <constant>GL_INTENSITY8</constant>,
                     <constant>GL_INTENSITY12</constant>,
@@ -147,13 +139,10 @@
                     <constant>GL_RED</constant>,
                     <constant>GL_GREEN</constant>,
                     <constant>GL_BLUE</constant>,
-                    <constant>GL_ALPHA</constant>,
                     <constant>GL_RGB</constant>,
                     <constant>GL_BGR</constant>,
-                    <constant>GL_RGBA</constant>,
-                    <constant>GL_BGRA</constant>,
-                    <constant>GL_LUMINANCE</constant>, and
-                    <constant>GL_LUMINANCE_ALPHA</constant>.
+                    <constant>GL_RGBA</constant>, and
+                    <constant>GL_BGRA</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -364,35 +353,6 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_LUMINANCE</constant></term>
-                <listitem>
-                    <para>
-                        Each element is a single luminance value.
-                        The GL converts it to floating point,
-                        then assembles it into an RGBA element by replicating the luminance value
-                        three times for red, green, and blue and attaching 1 for alpha.
-                        Each component is then multiplied by the signed scale factor <constant>GL_c_SCALE</constant>,
-                        added to the signed bias <constant>GL_c_BIAS</constant>,
-                        and clamped to the range [0,1]
-                        (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
-                    </para>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
-                <term><constant>GL_LUMINANCE_ALPHA</constant></term>
-                <listitem>
-                    <para>
-                        Each element is a luminance/alpha pair.
-                        The GL converts it to floating point,
-                        then assembles it into an RGBA element by replicating the luminance value
-                        three times for red, green, and blue.
-                        Each component is then multiplied by the signed scale factor <constant>GL_c_SCALE</constant>,
-                        added to the signed bias <constant>GL_c_BIAS</constant>,
-                        and clamped to the range [0,1] (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
-                    </para>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
                 <term><constant>GL_DEPTH_COMPONENT</constant></term>
                 <listitem>
                     <para>
@@ -553,8 +513,7 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry> modes affect texture images
-            in exactly the way they affect <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>.
+            <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry> modes affect texture images.
         </para>
         <para>
             Internal formats other than 1, 2, 3, or 4 may be

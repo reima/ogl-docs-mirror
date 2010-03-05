@@ -75,10 +75,8 @@
         <para>
             <citerefentry><refentrytitle>glClear</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glColor</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glColorPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDepthMask</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glIndex</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glIndexPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glIndexMask</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glStencilMask</refentrytitle></citerefentry>
         </para>

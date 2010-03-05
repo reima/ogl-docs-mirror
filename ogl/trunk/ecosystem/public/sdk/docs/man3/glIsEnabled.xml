@@ -73,7 +73,7 @@
                     </row>
                     <row>
                         <entry align="left">
-                        <constant>GL_CLIP_PLANE</constant><emphasis>i</emphasis>
+                        <constant>GL_CLIP_DISTANCE</constant><emphasis>i</emphasis>
                         </entry>
                         <entry align="left">
                         <citerefentry><refentrytitle>glClipPlane</refentrytitle></citerefentry>

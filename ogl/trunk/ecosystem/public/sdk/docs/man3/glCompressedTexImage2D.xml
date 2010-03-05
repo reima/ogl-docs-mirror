@@ -157,10 +157,8 @@
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
         <para>
-            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>internalformat</parameter> is one of the generic compressed internal formats: <constant>GL_COMPRESSED_ALPHA</constant>,
-            <constant>GL_COMPRESSED_LUMINANCE</constant>, <constant>GL_COMPRESSED_LUMINANCE_ALPHA</constant>,
-            <constant>GL_COMPRESSED_INTENSITY</constant>, <constant>GL_COMPRESSED_RGB</constant>, or
-            <constant>GL_COMPRESSED_RGBA</constant>.
+            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>internalformat</parameter> is one of the generic compressed internal formats:
+            <constant>GL_COMPRESSED_RGB</constant> or <constant>GL_COMPRESSED_RGBA</constant>.
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>imageSize</parameter> is not consistent with

@@ -431,9 +431,7 @@
     <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glClientActiveTexture</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexCoord</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glTexCoordPointer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glVertex</refentrytitle></citerefentry>
         </para>
     </refsect1>

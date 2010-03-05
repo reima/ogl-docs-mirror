@@ -121,7 +121,6 @@
             <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawRangeElements</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetPointerv</refentrytitle></citerefentry>,
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

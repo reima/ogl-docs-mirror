@@ -82,7 +82,6 @@
     <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glCullFace</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glLightModel</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

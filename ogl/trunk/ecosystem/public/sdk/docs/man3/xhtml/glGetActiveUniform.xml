@@ -25,8 +25,7 @@
 	user-defined uniform variables, or both. Built-in uniform
 	variables have a prefix of "gl_" and reference
 	existing OpenGL state or values derived from such state (e.g.,
-	<em class="parameter"><code>gl_Fog</code></em>,
-	<em class="parameter"><code>gl_ModelViewMatrix</code></em>, etc., see the OpenGL
+	<em class="parameter"><code>gl_DepthRangeParameters</code></em>, see the OpenGL
 	Shading Language specification for a complete list.)
 	User-defined uniform variables have arbitrary names and obtain
 	their values from the application through calls to

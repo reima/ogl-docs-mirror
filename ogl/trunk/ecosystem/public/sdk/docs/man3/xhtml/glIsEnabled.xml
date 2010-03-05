@@ -20,7 +20,7 @@
                         </td><td align="left">
                         <a href="glBlendFunc.xml"><span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span></a>, <a href="glLogicOp.xml"><span class="citerefentry"><span class="refentrytitle">glLogicOp</span></span></a>
                         </td></tr><tr><td align="left">
-                        <code class="constant">GL_CLIP_PLANE</code><span class="emphasis"><em>i</em></span>
+                        <code class="constant">GL_CLIP_DISTANCE</code><span class="emphasis"><em>i</em></span>
                         </td><td align="left">
                         <a href="glClipPlane.xml"><span class="citerefentry"><span class="refentrytitle">glClipPlane</span></span></a>
                         </td></tr><tr><td align="left">

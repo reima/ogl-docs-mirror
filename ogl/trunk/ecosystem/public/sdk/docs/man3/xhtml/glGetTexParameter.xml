@@ -103,7 +103,7 @@
                     </p></dd><dt><span class="term"><code class="constant">GL_DEPTH_TEXTURE_MODE</code></span></dt><dd><p>
                         Returns a single-valued texture format indicating how the depth values
                         should be converted into color components.  The initial value is
-                        <code class="constant">GL_LUMINANCE</code>.  See <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>.
+                        <code class="constant">GL_R</code>.  See <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_GENERATE_MIPMAP</code></span></dt><dd><p>
                         Returns a single boolean value indicating if automatic mipmap level updates
                         are enabled.

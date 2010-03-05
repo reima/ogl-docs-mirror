@@ -93,11 +93,6 @@
                         the symbolic constant identifying the RGB source blend function. The initial
                         value is <code class="constant">GL_ONE</code>.
                         See <a href="glBlendFunc.xml"><span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span></a> and <a href="glBlendFuncSeparate.xml"><span class="citerefentry"><span class="refentrytitle">glBlendFuncSeparate</span></span></a>.
-                    </p></dd><dt><span class="term"><code class="constant">GL_CLIP_PLANE</code><span class="emphasis"><em>i</em></span></span></dt><dd><p>
-			  </p><p>
-                        <em class="parameter"><code>params</code></em> returns a single boolean value indicating whether the specified
-                        clipping plane is enabled. The initial value is <code class="constant">GL_FALSE</code>.
-                        See <a href="glClipPlane.xml"><span class="citerefentry"><span class="refentrytitle">glClipPlane</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_COLOR_CLEAR_VALUE</code></span></dt><dd><p>
 			  </p><p>
                         <em class="parameter"><code>params</code></em> returns four values:
@@ -272,10 +267,10 @@
                         The value must be at least 16.
                         Use <code class="constant">GL_PROXY_TEXTURE_3D</code> to determine if a texture is too large.
                         See <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>.
-                    </p></dd><dt><span class="term"><code class="constant">GL_MAX_CLIP_PLANES</code></span></dt><dd><p>
+                    </p></dd><dt><span class="term"><code class="constant">GL_MAX_CLIP_DISTANCES</code></span></dt><dd><p>
 			  </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
-                        the maximum number of application-defined clipping planes. The value must be at least 6.
+                        the maximum number of application-defined clipping distances. The value must be at least 8.
                         See <a href="glClipPlane.xml"><span class="citerefentry"><span class="refentrytitle">glClipPlane</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS</code></span></dt><dd><p>
 			  </p><p>
@@ -803,16 +798,12 @@
             <a href="glGetBufferParameteriv.xml"><span class="citerefentry"><span class="refentrytitle">glGetBufferParameteriv</span></span></a>,
             <a href="glGetBufferPointerv.xml"><span class="citerefentry"><span class="refentrytitle">glGetBufferPointerv</span></span></a>,
             <a href="glGetBufferSubData.xml"><span class="citerefentry"><span class="refentrytitle">glGetBufferSubData</span></span></a>,
-            <a href="glGetClipPlane.xml"><span class="citerefentry"><span class="refentrytitle">glGetClipPlane</span></span></a>,
             <a href="glGetCompressedTexImage.xml"><span class="citerefentry"><span class="refentrytitle">glGetCompressedTexImage</span></span></a>,
             <a href="glGetError.xml"><span class="citerefentry"><span class="refentrytitle">glGetError</span></span></a>,
-            <a href="glGetPixelMap.xml"><span class="citerefentry"><span class="refentrytitle">glGetPixelMap</span></span></a>,
-            <a href="glGetPointerv.xml"><span class="citerefentry"><span class="refentrytitle">glGetPointerv</span></span></a>,
             <a href="glGetProgram.xml"><span class="citerefentry"><span class="refentrytitle">glGetProgram</span></span></a>,
             <a href="glGetProgramInfoLog.xml"><span class="citerefentry"><span class="refentrytitle">glGetProgramInfoLog</span></span></a>,
             <a href="glGetQueryiv.xml"><span class="citerefentry"><span class="refentrytitle">glGetQueryiv</span></span></a>,
             <a href="glGetQueryObject.xml"><span class="citerefentry"><span class="refentrytitle">glGetQueryObject</span></span></a>,
-            <a href="glGetSeparableFilter.xml"><span class="citerefentry"><span class="refentrytitle">glGetSeparableFilter</span></span></a>,
             <a href="glGetShader.xml"><span class="citerefentry"><span class="refentrytitle">glGetShader</span></span></a>,
             <a href="glGetShaderInfoLog.xml"><span class="citerefentry"><span class="refentrytitle">glGetShaderInfoLog</span></span></a>,
             <a href="glGetShaderSource.xml"><span class="citerefentry"><span class="refentrytitle">glGetShaderSource</span></span></a>,

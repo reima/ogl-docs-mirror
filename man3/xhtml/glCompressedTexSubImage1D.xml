@@ -54,18 +54,14 @@
             specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data store.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
-            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>format</code></em> is one of these generic compressed internal formats: 
-            <code class="constant">GL_COMPRESSED_ALPHA</code>,
-            <code class="constant">GL_COMPRESSED_LUMINANCE</code>, 
-            <code class="constant">GL_COMPRESSED_LUMINANCE_ALPHA</code>,
-            <code class="constant">GL_COMPRESSED_INTENSITY</code>,             
-            <code class="constant">GL_COMPRESSED_RGB</code>,
-            <code class="constant">GL_COMPRESSED_RGBA</code>,
-			<code class="constant">GL_COMPRESSED_SLUMINANCE</code>,
-			<code class="constant">GL_COMPRESSED_SLUMINANCE_ALPHA</code>,
-			<code class="constant">GL_COMPRESSED_SRGB</code>,
-			<code class="constant">GL_COMPRESSED_SRGBA</code>, or
-			<code class="constant">GL_COMPRESSED_SRGB_ALPHA</code>.
+          <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>internalformat</code></em> is one of the generic compressed internal formats:
+          <code class="constant">GL_COMPRESSED_RGB</code>,
+          <code class="constant">GL_COMPRESSED_RGBA</code>.
+          <code class="constant">GL_COMPRESSED_SLUMINANCE</code>,
+          <code class="constant">GL_COMPRESSED_SLUMINANCE_ALPHA</code>,
+          <code class="constant">GL_COMPRESSED_SRGB</code>,
+          <code class="constant">GL_COMPRESSED_SRGBA</code>, or
+          <code class="constant">GL_COMPRESSED_SRGB_ALPHA</code>.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>imageSize</code></em> is not consistent with
             the format, dimensions, and contents of the specified compressed image

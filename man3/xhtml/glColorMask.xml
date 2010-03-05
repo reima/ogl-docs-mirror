@@ -25,10 +25,8 @@
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glClear.xml"><span class="citerefentry"><span class="refentrytitle">glClear</span></span></a>,
             <a href="glColor.xml"><span class="citerefentry"><span class="refentrytitle">glColor</span></span></a>,
-            <a href="glColorPointer.xml"><span class="citerefentry"><span class="refentrytitle">glColorPointer</span></span></a>,
             <a href="glDepthMask.xml"><span class="citerefentry"><span class="refentrytitle">glDepthMask</span></span></a>,
             <a href="glIndex.xml"><span class="citerefentry"><span class="refentrytitle">glIndex</span></span></a>,
-            <a href="glIndexPointer.xml"><span class="citerefentry"><span class="refentrytitle">glIndexPointer</span></span></a>,
             <a href="glIndexMask.xml"><span class="citerefentry"><span class="refentrytitle">glIndexMask</span></span></a>,
             <a href="glStencilMask.xml"><span class="citerefentry"><span class="refentrytitle">glStencilMask</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>

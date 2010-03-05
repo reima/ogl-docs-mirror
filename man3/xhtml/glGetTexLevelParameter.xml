@@ -32,8 +32,6 @@
                     <code class="constant">GL_TEXTURE_GREEN_SIZE</code>,
                     <code class="constant">GL_TEXTURE_BLUE_SIZE</code>,
                     <code class="constant">GL_TEXTURE_ALPHA_SIZE</code>,
-                    <code class="constant">GL_TEXTURE_LUMINANCE_SIZE</code>,
-                    <code class="constant">GL_TEXTURE_INTENSITY_SIZE</code>,
                     <code class="constant">GL_TEXTURE_DEPTH_SIZE</code>,
                     <code class="constant">GL_TEXTURE_COMPRESSED</code>, and
                     <code class="constant">GL_TEXTURE_COMPRESSED_IMAGE_SIZE</code>

@@ -12,34 +12,26 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>internalFormat</code></em></span></dt><dd><p>
                     Specifies the number of color components in the texture.
                     Must be 1, 2, 3, or 4, or one of the following symbolic constants:
-                    <code class="constant">GL_ALPHA</code>,
                     <code class="constant">GL_ALPHA4</code>,
                     <code class="constant">GL_ALPHA8</code>,
                     <code class="constant">GL_ALPHA12</code>,
                     <code class="constant">GL_ALPHA16</code>,
-                    <code class="constant">GL_COMPRESSED_ALPHA</code>,
-                    <code class="constant">GL_COMPRESSED_LUMINANCE</code>,
-                    <code class="constant">GL_COMPRESSED_LUMINANCE_ALPHA</code>,
-                    <code class="constant">GL_COMPRESSED_INTENSITY</code>,
                     <code class="constant">GL_COMPRESSED_RGB</code>,
                     <code class="constant">GL_COMPRESSED_RGBA</code>,
                     <code class="constant">GL_DEPTH_COMPONENT</code>,
                     <code class="constant">GL_DEPTH_COMPONENT16</code>,
                     <code class="constant">GL_DEPTH_COMPONENT24</code>,
                     <code class="constant">GL_DEPTH_COMPONENT32</code>,
-                    <code class="constant">GL_LUMINANCE</code>,
                     <code class="constant">GL_LUMINANCE4</code>,
                     <code class="constant">GL_LUMINANCE8</code>,
                     <code class="constant">GL_LUMINANCE12</code>,
                     <code class="constant">GL_LUMINANCE16</code>,
-                    <code class="constant">GL_LUMINANCE_ALPHA</code>,
                     <code class="constant">GL_LUMINANCE4_ALPHA4</code>,
                     <code class="constant">GL_LUMINANCE6_ALPHA2</code>,
                     <code class="constant">GL_LUMINANCE8_ALPHA8</code>,
                     <code class="constant">GL_LUMINANCE12_ALPHA4</code>,
                     <code class="constant">GL_LUMINANCE12_ALPHA12</code>,
                     <code class="constant">GL_LUMINANCE16_ALPHA16</code>,
-                    <code class="constant">GL_INTENSITY</code>,
                     <code class="constant">GL_INTENSITY4</code>,
                     <code class="constant">GL_INTENSITY8</code>,
                     <code class="constant">GL_INTENSITY12</code>,
@@ -80,13 +72,10 @@
                     <code class="constant">GL_RED</code>,
                     <code class="constant">GL_GREEN</code>,
                     <code class="constant">GL_BLUE</code>,
-                    <code class="constant">GL_ALPHA</code>,
                     <code class="constant">GL_RGB</code>,
                     <code class="constant">GL_BGR</code>,
-                    <code class="constant">GL_RGBA</code>,
-                    <code class="constant">GL_BGRA</code>,
-                    <code class="constant">GL_LUMINANCE</code>, and
-                    <code class="constant">GL_LUMINANCE_ALPHA</code>.
+                    <code class="constant">GL_RGBA</code>, and
+                    <code class="constant">GL_BGRA</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>type</code></em></span></dt><dd><p>
                     Specifies the data type of the pixel data.
                     The following symbolic values are accepted:
@@ -218,23 +207,6 @@
                         added to the signed bias <code class="constant">GL_c_BIAS</code>,
                         and clamped to the range [0,1]
                         (see <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>).
-                    </p></dd><dt><span class="term"><code class="constant">GL_LUMINANCE</code></span></dt><dd><p>
-                        Each element is a single luminance value.
-                        The GL converts it to floating point,
-                        then assembles it into an RGBA element by replicating the luminance value
-                        three times for red, green, and blue and attaching 1 for alpha.
-                        Each component is then multiplied by the signed scale factor <code class="constant">GL_c_SCALE</code>,
-                        added to the signed bias <code class="constant">GL_c_BIAS</code>,
-                        and clamped to the range [0,1]
-                        (see <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>).
-                    </p></dd><dt><span class="term"><code class="constant">GL_LUMINANCE_ALPHA</code></span></dt><dd><p>
-                        Each element is a luminance/alpha pair.
-                        The GL converts it to floating point,
-                        then assembles it into an RGBA element by replicating the luminance value
-                        three times for red, green, and blue.
-                        Each component is then multiplied by the signed scale factor <code class="constant">GL_c_SCALE</code>,
-                        added to the signed bias <code class="constant">GL_c_BIAS</code>,
-                        and clamped to the range [0,1] (see <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>).
                     </p></dd><dt><span class="term"><code class="constant">GL_DEPTH_COMPONENT</code></span></dt><dd><p>
                         Each element is a single depth value.
                         The GL converts it to floating point, multiplies by the signed scale factor
@@ -378,8 +350,7 @@
         </p><p>
 			Depth textures can be treated as LUMINANCE, INTENSITY or ALPHA textures during texture filtering and application. Image-based shadowing can be enabled by comparing texture r coordinates to depth texture values to generate a boolean result.  See <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a> for details on texture comparison.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
-            <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> and <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a> modes affect texture images
-            in exactly the way they affect <a href="glDrawPixels.xml"><span class="citerefentry"><span class="refentrytitle">glDrawPixels</span></span></a>.
+            <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> and <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a> modes affect texture images.
         </p><p>
             Internal formats other than 1, 2, 3, or 4 may be
             used only if the GL version is 1.1 or greater.

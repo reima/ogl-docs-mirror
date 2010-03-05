@@ -5,9 +5,14 @@
                     Specifies the target to which the buffer object is bound.
                     The symbolic constant must be
                     <code class="constant">GL_ARRAY_BUFFER</code>,
+                    <code class="constant">GL_COPY_READ_BUFFER</code>,
+                    <code class="constant">GL_COPY_WRITE_BUFFER</code>,
                     <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code>,
-                    <code class="constant">GL_PIXEL_PACK_BUFFER</code>, or
-                    <code class="constant">GL_PIXEL_UNPACK_BUFFER</code>.
+                    <code class="constant">GL_PIXEL_PACK_BUFFER</code>,
+                    <code class="constant">GL_PIXEL_UNPACK_BUFFER</code>,
+                    <code class="constant">GL_TEXTURE_BUFFER</code>,
+                    <code class="constant">GL_TRANSFORM_FEEDBACK_BUFFER</code>, or
+                    <code class="constant">GL_UNIFORM_BUFFER</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>buffer</code></em></span></dt><dd><p>
                     Specifies the name of a buffer object.
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
@@ -39,27 +44,20 @@
             attempts to modify or query state on the target to which it is bound generates an 
             <code class="constant">GL_INVALID_OPERATION</code> error.
         </p><p>
-            When vertex array pointer state is changed, for example by a call to 
-            <a href="glNormalPointer.xml"><span class="citerefentry"><span class="refentrytitle">glNormalPointer</span></span></a>, 
-            the current buffer object binding (<code class="constant">GL_ARRAY_BUFFER_BINDING</code>) is copied into the 
-            corresponding client state for the vertex array type being changed, for example 
-            <code class="constant">GL_NORMAL_ARRAY_BUFFER_BINDING</code>. While a non-zero buffer object is bound to the 
-            <code class="constant">GL_ARRAY_BUFFER</code> target, the vertex array pointer parameter that is traditionally
-            interpreted as a pointer to client-side memory is instead interpreted as an offset within the
+            When a non-zero buffer object is bound to the <code class="constant">GL_ARRAY_BUFFER</code> target, 
+            the vertex array pointer parameter is interpreted as an offset within the
             buffer object measured in basic machine units.
         </p><p>
             While a non-zero buffer object is bound to the <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code> target, 
             the indices parameter of <a href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>, 
             <a href="glDrawRangeElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span></a>, or 
-            <a href="glMultiDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span></a> that is traditionally
-            interpreted as a pointer to client-side memory is instead interpreted as an offset within the
-            buffer object measured in basic machine units.
+            <a href="glMultiDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span></a> is interpreted as an 
+            offset within the buffer object measured in basic machine units.
         </p><p>
             While a non-zero buffer object is bound to the <code class="constant">GL_PIXEL_PACK_BUFFER</code> target, 
             the following commands are affected: <a href="glGetCompressedTexImage.xml"><span class="citerefentry"><span class="refentrytitle">glGetCompressedTexImage</span></span></a>, 
             <a href="glGetTexImage.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexImage</span></span></a>, and 
-            <a href="glReadPixels.xml"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>. The pointer parameter that is 
-            traditionally interpreted as a pointer to client-side memory where the pixels are to be packed is instead 
+            <a href="glReadPixels.xml"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>. The pointer parameter is
             interpreted as an offset within the buffer object measured in basic machine units.
         </p><p>
             While a non-zero buffer object is bound to the <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target, 
@@ -75,9 +73,8 @@
             <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>,
             <a href="glTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span></a>,
             <a href="glTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>, and 
-            <a href="glTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>. The pointer parameter that is 
-            traditionally interpreted as a pointer to client-side memory from which the pixels are to be unpacked is 
-            instead interpreted as an offset within the buffer object measured in basic machine units.
+            <a href="glTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>. The pointer parameter is 
+            interpreted as an offset within the buffer object measured in basic machine units.
         </p><p>
             A buffer object binding created with <code class="function">glBindBuffer</code> remains active until a different
             buffer object name is bound to the same target, or until the bound buffer object is

@@ -65,13 +65,10 @@
                     <constant>GL_RED</constant>,
                     <constant>GL_GREEN</constant>,
                     <constant>GL_BLUE</constant>,
-                    <constant>GL_ALPHA</constant>,
                     <constant>GL_RGB</constant>,
                     <constant>GL_BGR</constant>,
-                    <constant>GL_RGBA</constant>,
-                    <constant>GL_BGRA</constant>,
-                    <constant>GL_LUMINANCE</constant>, and
-                    <constant>GL_LUMINANCE_ALPHA</constant>.
+                    <constant>GL_RGBA</constant>, and
+                    <constant>GL_BGRA</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -235,11 +232,6 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_ALPHA</constant></term>
-                <listitem>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
                 <term><constant>GL_RGB</constant></term>
                 <listitem>
                 </listitem>
@@ -257,106 +249,6 @@
             <varlistentry>
                 <term><constant>GL_BGRA</constant></term>
                 <listitem>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
-                <term><constant>GL_LUMINANCE</constant></term>
-                <listitem>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
-                <term><constant>GL_LUMINANCE_ALPHA</constant></term>
-                <listitem>
-                    <para>
-                        Processing differs depending on whether color buffers store color indices
-                        or RGBA color components.
-                        If color indices are stored,
-                        they are read from the color buffer selected by <citerefentry><refentrytitle>glReadBuffer</refentrytitle></citerefentry>.
-                        Each index is converted to fixed point,
-                        shifted left or right depending on the value and sign of <constant>GL_INDEX_SHIFT</constant>,
-                        and added to <constant>GL_INDEX_OFFSET</constant>.
-                        Indices are then replaced by the red,
-                        green,
-                        blue,
-                        and alpha values obtained by indexing the tables
-                        <constant>GL_PIXEL_MAP_I_TO_R</constant>,
-                        <constant>GL_PIXEL_MAP_I_TO_G</constant>,
-                        <constant>GL_PIXEL_MAP_I_TO_B</constant>, and
-                        <constant>GL_PIXEL_MAP_I_TO_A</constant>.
-                        Each table must be of size 
-                        <inlineequation><mml:math>
-                            <!-- eqn: 2 sup n:-->
-                            <mml:msup><mml:mn>2</mml:mn>
-                            <mml:mi mathvariant="italic">n</mml:mi>
-                            </mml:msup>
-                        </mml:math></inlineequation>,
-                        but 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">n</mml:mi></mml:math></inlineequation>
-                        may be different for
-                        different tables.
-                        Before an index is used to look up a value in a table of
-                        size 
-                        <inlineequation><mml:math>
-                            <!-- eqn: 2 sup n:-->
-                            <mml:msup><mml:mn>2</mml:mn>
-                            <mml:mi mathvariant="italic">n</mml:mi>
-                            </mml:msup>
-                        </mml:math></inlineequation>,
-                        it must be masked against 
-                        <inlineequation><mml:math>
-                            <!-- eqn: 2 sup n - 1:-->
-                            <mml:mrow>
-                                <mml:msup><mml:mn>2</mml:mn>
-                                <mml:mi mathvariant="italic">n</mml:mi>
-                                </mml:msup>
-                                <mml:mo>-</mml:mo>
-                                <mml:mn>1</mml:mn>
-                            </mml:mrow>
-                        </mml:math></inlineequation>.
-                    </para>
-                    <para>
-                        If RGBA color components are stored in the color buffers,
-                        they are read from the color buffer selected by <citerefentry><refentrytitle>glReadBuffer</refentrytitle></citerefentry>.
-                        Each color component is converted to floating point such that zero intensity
-                        maps to 0.0 and full intensity maps to 1.0.
-                        Each component is then multiplied by <constant>GL_c_SCALE</constant> and
-                        added to <constant>GL_c_BIAS</constant>,
-                        where <emphasis>c</emphasis> is RED, GREEN, BLUE, or ALPHA.
-                        Finally,
-                        if <constant>GL_MAP_COLOR</constant> is <constant>GL_TRUE</constant>,
-                        each component is clamped to the range 
-                        <inlineequation><mml:math>
-                            <!-- eqn: [0,1]:-->
-                            <mml:mfenced open="[" close="]">
-                                <mml:mn>0</mml:mn>
-                                <mml:mn>1</mml:mn>
-                            </mml:mfenced>
-                        </mml:math></inlineequation>,
-                        scaled to the size of its corresponding table, and is then
-                        replaced by its mapping in the table
-                        <constant>GL_PIXEL_MAP_c_TO_c</constant>,
-                        where <emphasis>c</emphasis> is R, G, B, or A.
-                    </para>
-                    <para>
-                        Unneeded data is then discarded.
-                        For example,
-                        <constant>GL_RED</constant> discards the green, blue, and alpha components,
-                        while <constant>GL_RGB</constant> discards only the alpha component.
-                        <constant>GL_LUMINANCE</constant> computes a single-component value as the sum of
-                        the red,
-                        green,
-                        and blue components,
-                        and <constant>GL_LUMINANCE_ALPHA</constant> does the same,
-                        while keeping alpha as a second value.
-                        The final values are clamped to the range 
-                        <inlineequation><mml:math>
-                            <!-- eqn: [0,1]:-->
-                            <mml:mfenced open="[" close="]">
-                                <mml:mn>0</mml:mn>
-                                <mml:mn>1</mml:mn>
-                            </mml:mfenced>
-                        </mml:math></inlineequation>.
-                    </para>
                 </listitem>
             </varlistentry>
         </variablelist>
@@ -383,13 +275,10 @@
             <constant>GL_RED</constant>,
             <constant>GL_GREEN</constant>,
             <constant>GL_BLUE</constant>,
-            <constant>GL_ALPHA</constant>,
             <constant>GL_RGB</constant>,
             <constant>GL_BGR</constant>,
-            <constant>GL_RGBA</constant>,
-            <constant>GL_BGRA</constant>,
-            <constant>GL_LUMINANCE</constant>, or
-            <constant>GL_LUMINANCE_ALPHA</constant> and <parameter>type</parameter> is not <constant>GL_FLOAT</constant>,
+            <constant>GL_RGBA</constant>, or
+            <constant>GL_BGRA</constant> and <parameter>type</parameter> is not <constant>GL_FLOAT</constant>,
             each component is multiplied by the multiplier shown in the following table.
             If type is <constant>GL_FLOAT</constant>, then each component is passed as is
             (or converted to the client's single-precision floating-point format if
@@ -667,10 +556,8 @@
             <constant>GL_STENCIL_INDEX</constant>,
             <constant>GL_DEPTH_COMPONENT</constant>,
             <constant>GL_RED</constant>,
-            <constant>GL_GREEN</constant>,
+            <constant>GL_GREEN</constant>, or
             <constant>GL_BLUE</constant>,
-            <constant>GL_ALPHA</constant>, or
-            <constant>GL_LUMINANCE</constant>,
             a single value is returned and the data for the 
             <inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>th
             pixel in the 
@@ -690,8 +577,7 @@
                 </mml:mrow>
             </mml:math></inlineequation>.
             <constant>GL_RGB</constant> and <constant>GL_BGR</constant> return three values,
-            <constant>GL_RGBA</constant> and <constant>GL_BGRA</constant> return four values,
-            and <constant>GL_LUMINANCE_ALPHA</constant> returns two values for each pixel,
+            <constant>GL_RGBA</constant> and <constant>GL_BGRA</constant> return four values for each pixel,
             with all values corresponding to a single pixel occupying contiguous space
             in <parameter>data</parameter>.
             Storage parameters set by <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>,

@@ -82,7 +82,7 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_CLIP_PLANE</constant><emphasis>i</emphasis></term>
+                <term><constant>GL_CLIP_DISTANCE</constant><emphasis>i</emphasis></term>
                 <listitem>
 		        <para>
 		        </para>

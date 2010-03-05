@@ -85,8 +85,6 @@
                     <constant>GL_TEXTURE_GREEN_SIZE</constant>,
                     <constant>GL_TEXTURE_BLUE_SIZE</constant>,
                     <constant>GL_TEXTURE_ALPHA_SIZE</constant>,
-                    <constant>GL_TEXTURE_LUMINANCE_SIZE</constant>,
-                    <constant>GL_TEXTURE_INTENSITY_SIZE</constant>,
                     <constant>GL_TEXTURE_DEPTH_SIZE</constant>,
                     <constant>GL_TEXTURE_COMPRESSED</constant>, and
                     <constant>GL_TEXTURE_COMPRESSED_IMAGE_SIZE</constant>

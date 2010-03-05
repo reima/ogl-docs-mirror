@@ -237,18 +237,6 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_CLIP_PLANE</constant><emphasis>i</emphasis></term>
-                <listitem>
-			  <para>
-			  </para>
-                    <para>
-                        <parameter>params</parameter> returns a single boolean value indicating whether the specified
-                        clipping plane is enabled. The initial value is <constant>GL_FALSE</constant>.
-                        See <citerefentry><refentrytitle>glClipPlane</refentrytitle></citerefentry>.
-                    </para>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
                 <term><constant>GL_COLOR_CLEAR_VALUE</constant></term>
                 <listitem>
 			  <para>
@@ -598,13 +586,13 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_MAX_CLIP_PLANES</constant></term>
+                <term><constant>GL_MAX_CLIP_DISTANCES</constant></term>
                 <listitem>
 			  <para>
 			  </para>
                     <para>
                         <parameter>params</parameter> returns one value,
-                        the maximum number of application-defined clipping planes. The value must be at least 6.
+                        the maximum number of application-defined clipping distances. The value must be at least 8.
                         See <citerefentry><refentrytitle>glClipPlane</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -1706,16 +1694,12 @@
             <citerefentry><refentrytitle>glGetBufferParameteriv</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetBufferPointerv</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetBufferSubData</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetClipPlane</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetCompressedTexImage</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetError</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetPixelMap</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetPointerv</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetProgram</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetProgramInfoLog</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetQueryiv</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetQueryObject</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetSeparableFilter</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetShader</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetShaderInfoLog</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetShaderSource</refentrytitle></citerefentry>,

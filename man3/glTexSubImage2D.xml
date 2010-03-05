@@ -199,8 +199,7 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry> modes affect texture images
-            in exactly the way they affect <citerefentry><refentrytitle>glDrawPixels</refentrytitle></citerefentry>.
+            <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry> modes affect texture images.
         </para>
         <para>
             <function>glTexSubImage2D</function> specifies a two-dimensional subtexture for the current texture unit,

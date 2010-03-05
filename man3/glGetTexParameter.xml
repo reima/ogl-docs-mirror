@@ -243,7 +243,7 @@
                     <para>
                         Returns a single-valued texture format indicating how the depth values
                         should be converted into color components.  The initial value is
-                        <constant>GL_LUMINANCE</constant>.  See <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry>.
+                        <constant>GL_R</constant>.  See <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>

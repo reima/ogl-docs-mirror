@@ -50,10 +50,6 @@
             affect.  The number of texture units an implementation supports is
             implementation dependent, but must be at least 2.
         </para>
-        <para>
-            Vertex arrays are client-side GL resources, which are selected by the
-            <citerefentry><refentrytitle>glClientActiveTexture</refentrytitle></citerefentry> routine.
-        </para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
@@ -74,7 +70,6 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glClientActiveTexture</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glMultiTexCoord</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry>
         </para>

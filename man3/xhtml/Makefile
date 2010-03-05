@@ -132,7 +132,7 @@ ALLXML = \
     glGetFragDataIndex.xml \
     glGetFragDataLocation.xml \
     glGetFramebufferAttachmentParameter.xml \
-    glGetMultisample.xml glGetPointerv.xml \
+    glGetMultisample.xml \
     glGetProgram.xml \
     glGetProgramInfoLog.xml \
     glGetQueryObject.xml \

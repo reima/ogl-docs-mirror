@@ -101,15 +101,11 @@
                     Specifies the format of the pixel data.
                     The following symbolic values are accepted:
                     <constant>GL_RED</constant>,
-                    <constant>GL_GREEN</constant>,
-                    <constant>GL_BLUE</constant>,
-                    <constant>GL_ALPHA</constant>,
+                    <constant>GL_RG</constant>,
                     <constant>GL_RGB</constant>,
                     <constant>GL_BGR</constant>,
-                    <constant>GL_RGBA</constant>,
-                    <constant>GL_BGRA</constant>,
-                    <constant>GL_LUMINANCE</constant>, and
-                    <constant>GL_LUMINANCE_ALPHA</constant>.
+                    <constant>GL_RGBA</constant>, and
+                    <constant>GL_BGRA</constant>.
                 </para>
             </listitem>
         </varlistentry>

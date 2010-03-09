@@ -73,26 +73,67 @@
                 <para>
                     Specifies the number of color components in the texture.
                     Must be one of the following symbolic constants:
-                    <constant>GL_RGBA32F</constant>, <constant>GL_RGBA32I</constant>, <constant>GL_RGBA32UI</constant>,
-                    <constant>GL_RGBA16</constant>, <constant>GL_RGBA16F</constant>, <constant>GL_RGBA16I</constant>,
-                    <constant>GL_RGBA16UI</constant>, <constant>GL_RGBA8</constant>, <constant>GL_RGBA8UI</constant>,
-                    <constant>GL_SRGB8_ALPHA8</constant>, <constant>GL_RGB10_A2</constant>, <constant>GL_RGBA10_A2UI</constant>,
-                    <constant>GL_R11_G11_B10F</constant>, <constant>GL_RG32F</constant>, <constant>GL_RG32I</constant>,
-                    <constant>GL_RG32UI</constant>, <constant>GL_RG16</constant>, <constant>GL_RG16F</constant>,
-                    <constant>GL_RGB16I</constant>, <constant>GL_RGB16UI</constant>, <constant>GL_RG8</constant>,
-                    <constant>GL_RG8I</constant>, <constant>GL_RG8UI</constant>, <constant>GL_R23F</constant>,
-                    <constant>GL_R32I</constant>, <constant>GL_R32UI</constant>, <constant>GL_R16F</constant>, <constant>GL_R16I</constant>,
-                    <constant>GL_R16UI</constant>, <constant>GL_R8</constant>, <constant>GL_R8I</constant>, <constant>GL_R8UI</constant>,
-                    <constant>GL_RGBA16_UNORM</constant>, <constant>GL_RGBA8_SNORM</constant>, <constant>GL_RGB32F</constant>,
-                    <constant>GL_RGB32I</constant>, <constant>GL_RGB32UI</constant>, <constant>GL_RGB16_SNORM</constant>,
-                    <constant>GL_RGB16F</constant>, <constant>GL_RGB16I</constant>, <constant>GL_RGB16UI</constant>,
-                    <constant>GL_RGB16</constant>, <constant>GL_RGB8_SNORM</constant>, <constant>GL_RGB8</constant>,
-                    <constant>GL_RGB8I</constant>, <constant>GL_RGB8UI</constant>, <constant>GL_SRGB8</constant>, <constant>GL_RGB9_E5</constant>,
-                    <constant>GL_RG16_SNORM</constant>, <constant>GL_RG8_SNORM</constant>, <constant>GL_COMPRESSED_RG_RGTC2</constant>,
-                    <constant>GL_COMPRESSED_SIGNED_RG_RGTC2</constant>, <constant>GL_R16_SNORM</constant>, <constant>GL_R8_SNORM</constant>,
-                    <constant>GL_COMPRESSED_RED_RGTC1</constant>, <constant>GL_COMPRESSED_SIGNED_RED_RGTC1</constant>,
-                    <constant>GL_DEPTH_COMPONENT32F</constant>, <constant>GL_DEPTH_COMPONENT24</constant>, <constant>GL_DEPTH_COMPONENT16</constant>,
-                    <constant>GL_DEPTH32F_STENCIL8</constant>, <constant>GL_DEPTH24_STENCIL8</constant>.
+                    <constant>GL_RGBA32F</constant>,
+                    <constant>GL_RGBA32I</constant>,
+                    <constant>GL_RGBA32UI</constant>,
+                    <constant>GL_RGBA16</constant>,
+                    <constant>GL_RGBA16F</constant>,
+                    <constant>GL_RGBA16I</constant>,
+                    <constant>GL_RGBA16UI</constant>,
+                    <constant>GL_RGBA8</constant>,
+                    <constant>GL_RGBA8UI</constant>,
+                    <constant>GL_SRGB8_ALPHA8</constant>,
+                    <constant>GL_RGB10_A2</constant>,
+                    <constant>GL_RGBA10_A2UI</constant>,
+                    <constant>GL_R11_G11_B10F</constant>,
+                    <constant>GL_RG32F</constant>,
+                    <constant>GL_RG32I</constant>,
+                    <constant>GL_RG32UI</constant>,
+                    <constant>GL_RG16</constant>,
+                    <constant>GL_RG16F</constant>,
+                    <constant>GL_RGB16I</constant>,
+                    <constant>GL_RGB16UI</constant>,
+                    <constant>GL_RG8</constant>,
+                    <constant>GL_RG8I</constant>,
+                    <constant>GL_RG8UI</constant>,
+                    <constant>GL_R23F</constant>,
+                    <constant>GL_R32I</constant>,
+                    <constant>GL_R32UI</constant>,
+                    <constant>GL_R16F</constant>,
+                    <constant>GL_R16I</constant>,
+                    <constant>GL_R16UI</constant>,
+                    <constant>GL_R8</constant>,
+                    <constant>GL_R8I</constant>,
+                    <constant>GL_R8UI</constant>,
+                    <constant>GL_RGBA16_UNORM</constant>,
+                    <constant>GL_RGBA8_SNORM</constant>,
+                    <constant>GL_RGB32F</constant>,
+                    <constant>GL_RGB32I</constant>,
+                    <constant>GL_RGB32UI</constant>,
+                    <constant>GL_RGB16_SNORM</constant>,
+                    <constant>GL_RGB16F</constant>,
+                    <constant>GL_RGB16I</constant>,
+                    <constant>GL_RGB16UI</constant>,
+                    <constant>GL_RGB16</constant>,
+                    <constant>GL_RGB8_SNORM</constant>,
+                    <constant>GL_RGB8</constant>,
+                    <constant>GL_RGB8I</constant>,
+                    <constant>GL_RGB8UI</constant>,
+                    <constant>GL_SRGB8</constant>,
+                    <constant>GL_RGB9_E5</constant>,
+                    <constant>GL_RG16_SNORM</constant>,
+                    <constant>GL_RG8_SNORM</constant>,
+                    <constant>GL_COMPRESSED_RG_RGTC2</constant>,
+                    <constant>GL_COMPRESSED_SIGNED_RG_RGTC2</constant>,
+                    <constant>GL_R16_SNORM</constant>,
+                    <constant>GL_R8_SNORM</constant>,
+                    <constant>GL_COMPRESSED_RED_RGTC1</constant>,
+                    <constant>GL_COMPRESSED_SIGNED_RED_RGTC1</constant>,
+                    <constant>GL_DEPTH_COMPONENT32F</constant>,
+                    <constant>GL_DEPTH_COMPONENT24</constant>,
+                    <constant>GL_DEPTH_COMPONENT16</constant>,
+                    <constant>GL_DEPTH32F_STENCIL8</constant>,
+                    <constant>GL_DEPTH24_STENCIL8</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -141,15 +182,11 @@
                     Specifies the format of the pixel data.
                     The following symbolic values are accepted:
                     <constant>GL_RED</constant>,
-                    <constant>GL_GREEN</constant>,
-                    <constant>GL_BLUE</constant>,
-                    <constant>GL_ALPHA</constant>,
+                    <constant>GL_RG</constant>,
                     <constant>GL_RGB</constant>,
                     <constant>GL_BGR</constant>,
-                    <constant>GL_RGBA</constant>,
-                    <constant>GL_BGRA</constant>,
-                    <constant>GL_LUMINANCE</constant>, and
-                    <constant>GL_LUMINANCE_ALPHA</constant>.
+                    <constant>GL_RGBA</constant>, and
+                    <constant>GL_BGRA</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -299,35 +336,6 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_ALPHA</constant></term>
-                <listitem>
-                    <para>
-                        Each element is a single alpha component.
-                        The GL converts it to floating point and assembles it into an RGBA element
-                        by attaching 0 for red, green, and blue.
-                        Each component is then multiplied by the signed scale factor <constant>GL_c_SCALE</constant>,
-                        added to the signed bias <constant>GL_c_BIAS</constant>,
-                        and clamped to the range [0,1]
-                        (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
-                    </para>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
-                <term><constant>GL_INTENSITY</constant></term>
-                <listitem>
-                    <para>
-                        Each element is a single intensity value.
-                        The GL converts it to floating point,
-                        then assembles it into an RGBA element by replicating the intensity value
-                        three times for red, green, blue, and alpha.
-                        Each component is then multiplied by the signed scale factor <constant>GL_c_SCALE</constant>,
-                        added to the signed bias <constant>GL_c_BIAS</constant>,
-                        and clamped to the range [0,1]
-                        (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
-                    </para>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
                 <term><constant>GL_RGB</constant></term>
                 <listitem>
                 </listitem>
@@ -363,35 +371,6 @@
                     </para>
                 </listitem>
             </varlistentry>
-            <varlistentry>
-                <term><constant>GL_LUMINANCE</constant></term>
-                <listitem>
-                    <para>
-                        Each element is a single luminance value.
-                        The GL converts it to floating point,
-                        then assembles it into an RGBA element by replicating the luminance value
-                        three times for red, green, and blue and attaching 1 for alpha.
-                        Each component is then multiplied by the signed scale factor <constant>GL_c_SCALE</constant>,
-                        added to the signed bias <constant>GL_c_BIAS</constant>,
-                        and clamped to the range [0,1]
-                        (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
-                    </para>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
-                <term><constant>GL_LUMINANCE_ALPHA</constant></term>
-                <listitem>
-                    <para>
-                        Each element is a luminance/alpha pair.
-                        The GL converts it to floating point,
-                        then assembles it into an RGBA element by replicating the luminance value
-                        three times for red, green, and blue.
-                        Each component is then multiplied by the signed scale factor <constant>GL_c_SCALE</constant>,
-                        added to the signed bias <constant>GL_c_BIAS</constant>,
-                        and clamped to the range [0,1] (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
-                    </para>
-                </listitem>
-            </varlistentry>
         </variablelist>
         <para>
             If an application wants to store the texture at a certain
@@ -399,30 +378,20 @@
             and format with <parameter>internalFormat</parameter>. The GL will choose an internal
             representation that closely approximates that requested by <parameter>internalFormat</parameter>, but
             it may not match exactly.
-            (The representations specified by <constant>GL_LUMINANCE</constant>,
-            <constant>GL_LUMINANCE_ALPHA</constant>, <constant>GL_RGB</constant>,
-            and <constant>GL_RGBA</constant> must match exactly. The numeric values 1, 2, 3, and 4
-            may also be used to specify the above representations.)
+            (The representations specified by <constant>GL_RED</constant>, <constant>GL_RG</constant>, <constant>GL_RGB</constant>,
+            and <constant>GL_RGBA</constant> must match exactly.)
         </para>
         <para>
         	If the <parameter>internalFormat</parameter> parameter is one of the generic compressed formats,
-        	<constant>GL_COMPRESSED_ALPHA</constant>,
-        	<constant>GL_COMPRESSED_INTENSITY</constant>,
-        	<constant>GL_COMPRESSED_LUMINANCE</constant>,
-        	<constant>GL_COMPRESSED_LUMINANCE_ALPHA</constant>,
         	<constant>GL_COMPRESSED_RGB</constant>, or
         	<constant>GL_COMPRESSED_RGBA</constant>, the GL will replace the internal format with the symbolic constant for a specific internal format and compress the texture before storage.  If no corresponding internal format is available, or the GL can not compress that image for any reason, the internal format is instead replaced with a corresponding base internal format.
         </para>
         <para>
             If the <parameter>internalFormat</parameter> parameter is 			
             <constant>GL_SRGB</constant>,
-			<constant>GL_SRGB8</constant>,
-			<constant>GL_SRGB_ALPHA</constant>,
-			<constant>GL_SRGB8_ALPHA8</constant>,
-			<constant>GL_SLUMINANCE</constant>,
-			<constant>GL_SLUMINANCE8</constant>,
-			<constant>GL_SLUMINANCE_ALPHA</constant>, or
-			<constant>GL_SLUMINANCE8_ALPHA8</constant>, the texture is treated as if the red, green, blue, or luminance components are encoded in the sRGB color space.    Any alpha component is left unchanged.  The conversion from the sRGB encoded component 
+			      <constant>GL_SRGB8</constant>,
+			      <constant>GL_SRGB_ALPHA</constant>, or
+			      <constant>GL_SRGB8_ALPHA8</constant>, the texture is treated as if the red, green, blue, or luminance components are encoded in the sRGB color space.    Any alpha component is left unchanged.  The conversion from the sRGB encoded component 
 			<inlineequation><mml:math>
                     <mml:msub><mml:mi mathvariant="italic">c</mml:mi>
                     <mml:mi mathvariant="italic">s</mml:mi>
@@ -542,10 +511,6 @@
             <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry> modes affect texture images.
         </para>
         <para>
-            Internal formats other than 1, 2, 3, or 4 may be used only if the GL
-            version is 1.1 or greater.
-        </para>
-        <para>
             <parameter>data</parameter> may be a null pointer.
             In this case texture memory is
             allocated to accommodate a texture of width <parameter>width</parameter>, height <parameter>height</parameter>,
@@ -593,7 +558,7 @@
             where <emphasis>max</emphasis> is the returned value of <constant>GL_MAX_TEXTURE_SIZE</constant>.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>internalFormat</parameter> is not 1, 2, 3, 4, or one of the
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>internalFormat</parameter> is not one of the
             accepted resolution and format symbolic constants.
         </para>
         <para>

@@ -225,16 +225,6 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_TEXTURE_LUMINANCE_SIZE</constant>,</term>
-                <listitem>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
-                <term><constant>GL_TEXTURE_INTENSITY_SIZE</constant>,</term>
-                <listitem>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
                 <term><constant>GL_TEXTURE_DEPTH_SIZE</constant></term>
                 <listitem>
                     <para>

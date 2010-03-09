@@ -125,7 +125,6 @@
                     <constant>GL_TEXTURE_WRAP_S</constant>,
                     <constant>GL_TEXTURE_WRAP_T</constant>,
                     <constant>GL_TEXTURE_WRAP_R</constant>,
-                    <constant>GL_TEXTURE_BORDER_COLOR</constant>,
                     <constant>GL_TEXTURE_PRIORITY</constant>,
                     <constant>GL_TEXTURE_COMPARE_MODE</constant>,
                     <constant>GL_TEXTURE_COMPARE_FUNC</constant>,
@@ -373,7 +372,7 @@
                                     <para>
                                         Returns the weighted average of the four texture elements
                                         that are closest to the center of the pixel being textured.
-                                        These can include border texture elements,
+                                        These can include items wrapped or repeated from other parts of a texture,
                                         depending on the values of <constant>GL_TEXTURE_WRAP_S</constant> and <constant>GL_TEXTURE_WRAP_T</constant>,
                                         and on the exact mapping.
                                     </para>
@@ -471,7 +470,7 @@
                                     <para>
                                         Returns the weighted average of the four texture elements
                                         that are closest to the center of the pixel being textured.
-                                        These can include border texture elements,
+                                        These can include items wrapped or repeated from other parts of a texture,
                                         depending on the values of <constant>GL_TEXTURE_WRAP_S</constant> and <constant>GL_TEXTURE_WRAP_T</constant>,
                                         and on the exact mapping.
                                     </para>
@@ -548,38 +547,7 @@
                         Sets the wrap parameter for texture coordinate 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
                         to either <constant>GL_CLAMP_TO_EDGE</constant>, <constant>GL_MIRRORED_REPEAT</constant>, or
-                        <constant>GL_REPEAT</constant>.  <constant>GL_CLAMP_TO_BORDER</constant> causes the 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
-                        coordinate to be clamped to the range
-                        <inlineequation><mml:math>
-                            <!-- eqn: left [ {-1 over 2N}, 1 + {1 over 2N} right ]:-->
-                            <mml:mfenced open="[" close="]">
-                                <mml:mfenced open="" close="">
-                                    <mml:mrow>
-                                        <mml:mfrac>
-                                            <mml:mn>-1</mml:mn>
-                                            <mml:mn>2<mml:mi mathvariant="italic">N</mml:mi></mml:mn>
-                                        </mml:mfrac>
-                                    </mml:mrow>
-                                </mml:mfenced>
-                                <mml:mrow>
-                                    <mml:mn>1</mml:mn>
-                                    <mml:mo>+</mml:mo>
-                                    <mml:mfenced open="" close="">
-                                        <mml:mrow>
-                                            <mml:mfrac>
-                                                <mml:mn>1</mml:mn>
-                                                <mml:mn>2<mml:mi mathvariant="italic">N</mml:mi></mml:mn>
-                                            </mml:mfrac>
-                                        </mml:mrow>
-                                    </mml:mfenced>
-                                </mml:mrow>
-                            </mml:mfenced>
-                        </mml:math></inlineequation>,
-                        where 
-                        <inlineequation><mml:math><mml:mi mathvariant="italic">N</mml:mi></mml:math></inlineequation>
-                        is the size of the texture in the direction of
-                        clamping.<constant>GL_CLAMP_TO_EDGE</constant> causes 
+                        <constant>GL_REPEAT</constant>. <constant>GL_CLAMP_TO_EDGE</constant> causes 
                         <inlineequation><mml:math><mml:mi mathvariant="italic">s</mml:mi></mml:math></inlineequation>
                         coordinates to be clamped to the
                         range 
@@ -688,18 +656,6 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_TEXTURE_BORDER_COLOR</constant></term>
-                <listitem>
-                    <para>
-                        Sets a border color.  <parameter>params</parameter> contains four values that comprise the RGBA
-                        color of the texture border.  Integer color components are interpreted
-                        linearly such that the most positive integer maps to 1.0, and the most
-                        negative integer maps to -1.0.  The values are clamped to the range [0,1]
-                        when they are specified.  Initially, the border color is (0, 0, 0, 0).
-                    </para>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
                 <term><constant>GL_TEXTURE_PRIORITY</constant></term>
                 <listitem>
                     <para>
@@ -734,8 +690,7 @@
                                         texture coordinate should
                                         be compared to the value in the currently bound depth texture.  See the
                                         discussion of <constant>GL_TEXTURE_COMPARE_FUNC</constant> for details of how the comparison
-                                        is evaluated.  The result of the comparison is assigned to luminance,
-                                        intensity, or alpha (as specified by <constant>GL_DEPTH_TEXTURE_MODE</constant>).
+                                        is evaluated.  The result of the comparison is assigned to the red channel (as specified by <constant>GL_DEPTH_TEXTURE_MODE</constant>).
                                     </para>
                                 </listitem>
                             </varlistentry>
@@ -743,7 +698,7 @@
                                 <term><constant>GL_NONE</constant></term>
                                 <listitem>
                                     <para>
-                                        Specifies that the luminance, intensity, or alpha (as specified by
+                                        Specifies that the red channel (as specified by
                                         <constant>GL_DEPTH_TEXTURE_MODE</constant>) should be assigned the
                                         appropriate value from the currently bound depth texture.
                                     </para>
@@ -1125,7 +1080,7 @@
                         </mml:math></inlineequation>
                         is the depth texture value sampled from the currently bound depth texture.
                         <inlineequation><mml:math><mml:mi mathvariant="italic">result</mml:mi></mml:math></inlineequation>
-                        is assigned to the either the luminance, intensity, or alpha (as
+                        is assigned to the the red channel (as
                         specified by <constant>GL_DEPTH_TEXTURE_MODE</constant>.)
                     </para>
                 </listitem>
@@ -1136,8 +1091,7 @@
                     <para>
                         Specifies a single symbolic constant indicating how depth values should be
                         treated during filtering and texture application.  Accepted values are
-                        <constant>GL_LUMINANCE</constant>, <constant>GL_INTENSITY</constant>, and <constant>GL_ALPHA</constant>.  The initial value
-                        is <constant>GL_LUMINANCE</constant>.
+                        <constant>GL_R</constant>.
                     </para>
                 </listitem>
             </varlistentry>

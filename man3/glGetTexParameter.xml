@@ -154,6 +154,38 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_TEXTURE_SWIZZLE_R</constant></term>
+                <listitem>
+                    <para>
+                        Returns the red component swizzle. The initial value is <constant>GL_RED</constant>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_TEXTURE_SWIZZLE_G</constant></term>
+                <listitem>
+                    <para>
+                        Returns the green component swizzle. The initial value is <constant>GL_GREEN</constant>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_TEXTURE_SWIZZLE_B</constant></term>
+                <listitem>
+                    <para>
+                        Returns the blue component swizzle. The initial value is <constant>GL_BLUE</constant>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_TEXTURE_SWIZZLE_A</constant></term>
+                <listitem>
+                    <para>
+                        Returns the alpha component swizzle. The initial value is <constant>GL_ALPHA</constant>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_TEXTURE_WRAP_S</constant></term>
                 <listitem>
                     <para>
@@ -263,6 +295,11 @@
         <para>
             If an error is generated,
             no change is made to the contents of <parameter>params</parameter>.
+        </para>
+        <para>
+            <constant>GL_TEXTURE_SWIZZLE_R</constant>, <constant>GL_TEXTURE_SWIZZLE_G</constant>,
+            <constant>GL_TEXTURE_SWIZZLE_B</constant>, and <constant>GL_TEXTURE_SWIZZLE_A</constant> 
+            are available only if the GL version is 3.3 or greater.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

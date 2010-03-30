@@ -57,14 +57,9 @@
             object previously returned from a call to <citerefentry><refentrytitle>glGenFramebuffers</refentrytitle></citerefentry>, or zero to break the existing
             binding of a framebuffer object to <parameter>target</parameter>.
         </para>
-        <para>
-            If no framebuffer with name <parameter>framebuffer</parameter> exists, one is created when it is first bound. If the bind is successful no change
-            is made to the state of the bound framebuffer object, and any previous binding to <parameter>target</parameter> is broken.
-        </para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <function>glBindFramebuffer</function> is available only if the GL version is 3.0 or greater.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

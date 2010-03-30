@@ -28,6 +28,16 @@
 		<paramdef>GLdouble <parameter>v0</parameter></paramdef>
 	    </funcprototype>
 	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI1i</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>GLint <parameter>v0</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI1ui</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>GLuint <parameter>v0</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
 		<funcdef>void <function>glVertexAttrib2f</function></funcdef>
 		<paramdef>GLuint <parameter>index</parameter></paramdef>
 		<paramdef>GLfloat <parameter>v0</parameter></paramdef>
@@ -44,6 +54,18 @@
 		<paramdef>GLuint <parameter>index</parameter></paramdef>
 		<paramdef>GLdouble <parameter>v0</parameter></paramdef>
 		<paramdef>GLdouble <parameter>v1</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI2i</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>GLint <parameter>v0</parameter></paramdef>
+		<paramdef>GLint <parameter>v1</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI2ui</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>GLuint <parameter>v0</parameter></paramdef>
+		<paramdef>GLuint <parameter>v1</parameter></paramdef>
 	    </funcprototype>
 	    <funcprototype>
 		<funcdef>void <function>glVertexAttrib3f</function></funcdef>
@@ -65,6 +87,20 @@
 		<paramdef>GLdouble <parameter>v0</parameter></paramdef>
 		<paramdef>GLdouble <parameter>v1</parameter></paramdef>
 		<paramdef>GLdouble <parameter>v2</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI3i</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>GLint <parameter>v0</parameter></paramdef>
+		<paramdef>GLint <parameter>v1</parameter></paramdef>
+		<paramdef>GLint <parameter>v2</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI3ui</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>GLoint <parameter>v0</parameter></paramdef>
+		<paramdef>GLoint <parameter>v1</parameter></paramdef>
+		<paramdef>GLoint <parameter>v2</parameter></paramdef>
 	    </funcprototype>
 	    <funcprototype>
 		<funcdef>void <function>glVertexAttrib4f</function></funcdef>
@@ -97,6 +133,22 @@
 		<paramdef>GLubyte <parameter>v1</parameter></paramdef>
 		<paramdef>GLubyte <parameter>v2</parameter></paramdef>
 		<paramdef>GLubyte <parameter>v3</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI4i</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>GLint <parameter>v0</parameter></paramdef>
+		<paramdef>GLint <parameter>v1</parameter></paramdef>
+		<paramdef>GLint <parameter>v2</parameter></paramdef>
+		<paramdef>GLint <parameter>v3</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI4ui</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>GLuint <parameter>v0</parameter></paramdef>
+		<paramdef>GLuint <parameter>v1</parameter></paramdef>
+		<paramdef>GLuint <parameter>v2</parameter></paramdef>
+		<paramdef>GLuint <parameter>v3</parameter></paramdef>
 	    </funcprototype>
 	</funcsynopsis>
     </refsynopsisdiv>
@@ -141,6 +193,16 @@
 		<paramdef>const GLdouble *<parameter>v</parameter></paramdef>
 	    </funcprototype>
 	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI1iv</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>const GLint *<parameter>v</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI1uiv</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>const GLuint *<parameter>v</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
 		<funcdef>void <function>glVertexAttrib2fv</function></funcdef>
 		<paramdef>GLuint <parameter>index</parameter></paramdef>
 		<paramdef>const GLfloat *<parameter>v</parameter></paramdef>
@@ -156,6 +218,16 @@
 		<paramdef>const GLdouble *<parameter>v</parameter></paramdef>
 	    </funcprototype>
 	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI2iv</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>const GLint *<parameter>v</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI2uiv</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>const GLuint *<parameter>v</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
 		<funcdef>void <function>glVertexAttrib3fv</function></funcdef>
 		<paramdef>GLuint <parameter>index</parameter></paramdef>
 		<paramdef>const GLfloat *<parameter>v</parameter></paramdef>
@@ -169,6 +241,16 @@
 		<funcdef>void <function>glVertexAttrib3dv</function></funcdef>
 		<paramdef>GLuint <parameter>index</parameter></paramdef>
 		<paramdef>const GLdouble *<parameter>v</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI3iv</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>const GLint *<parameter>v</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI3uiv</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>const GLuint *<parameter>v</parameter></paramdef>
 	    </funcprototype>
 	    <funcprototype>
 		<funcdef>void <function>glVertexAttrib4fv</function></funcdef>
@@ -240,6 +322,36 @@
 		<paramdef>GLuint <parameter>index</parameter></paramdef>
 		<paramdef>const GLuint *<parameter>v</parameter></paramdef>
 	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI4bv</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>const GLbyte *<parameter>v</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI4ubv</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>const GLubyte *<parameter>v</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI4sv</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>const GLshort *<parameter>v</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI4usv</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>const GLushort *<parameter>v</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI4iv</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>const GLint *<parameter>v</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribI4uiv</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>const GLuint *<parameter>v</parameter></paramdef>
+	    </funcprototype>
 	</funcsynopsis>
     </refsynopsisdiv>
     <refsect1 id="parameters2"><title>Parameters</title>
@@ -256,6 +368,142 @@
 		<listitem>
 		    <para>Specifies a pointer to an array of values to
 		    be used for the generic vertex attribute.</para>
+		</listitem>
+	    </varlistentry>
+	</variablelist>
+    </refsect1>
+    <refsynopsisdiv><title>C Specification</title>
+	<funcsynopsis>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribP1ui</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>GLenum <parameter>type</parameter></paramdef>
+		<paramdef>GLboolean <parameter>normalized</parameter></paramdef>
+		<paramdef>GLuint <parameter>value</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribP2ui</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>GLenum <parameter>type</parameter></paramdef>
+		<paramdef>GLboolean <parameter>normalized</parameter></paramdef>
+		<paramdef>GLuint <parameter>value</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribP3ui</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>GLenum <parameter>type</parameter></paramdef>
+		<paramdef>GLboolean <parameter>normalized</parameter></paramdef>
+		<paramdef>GLuint <parameter>value</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribP4ui</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>GLenum <parameter>type</parameter></paramdef>
+		<paramdef>GLboolean <parameter>normalized</parameter></paramdef>
+		<paramdef>GLuint <parameter>value</parameter></paramdef>
+	    </funcprototype>
+	</funcsynopsis>
+    </refsynopsisdiv>
+    <refsect1 id="parameters"><title>Parameters</title>
+	<variablelist>
+	    <varlistentry>
+		<term><parameter>index</parameter></term>
+		<listitem>
+		    <para>Specifies the index of the generic vertex
+		    attribute to be modified.</para>
+		</listitem>
+	    </varlistentry>
+	    <varlistentry>
+		<term><parameter>type</parameter></term>
+		<listitem>
+		    <para>Type of packing used on the data.  Currently
+                    accepts: <constant>GL_INT_10_10_10_2</constant> and
+                    <constant>GL_UNSIGNED_INT_10_10_10_2</constant></para>
+		</listitem>
+	    </varlistentry>
+	    <varlistentry>
+		<term><parameter>normalized</parameter></term>
+		<listitem>
+		    <para>If <constant>GL_TRUE</constant>, then the values are to be 
+                    converted to floating point values by normalizing. Otherwise,
+                    they are converted directly to floating point values.</para>
+		</listitem>
+	    </varlistentry>
+	    <varlistentry>
+		<term>
+		    <parameter>value</parameter>
+		</term>
+		<listitem>
+		    <para>Specifies the new packed value to be used for the
+		    specified vertex attribute.</para>
+		</listitem>
+	    </varlistentry>
+	</variablelist>
+    </refsect1>
+    <refsynopsisdiv><title>C Specification</title>
+	<funcsynopsis>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribP1uiv</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>GLenum <parameter>type</parameter></paramdef>
+		<paramdef>GLboolean <parameter>normalized</parameter></paramdef>
+		<paramdef>GLuint *<parameter>value</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribP2uiv</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>GLenum <parameter>type</parameter></paramdef>
+		<paramdef>GLboolean <parameter>normalized</parameter></paramdef>
+		<paramdef>GLuint *<parameter>value</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribP3uiv</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>GLenum <parameter>type</parameter></paramdef>
+		<paramdef>GLboolean <parameter>normalized</parameter></paramdef>
+		<paramdef>GLuint *<parameter>value</parameter></paramdef>
+	    </funcprototype>
+	    <funcprototype>
+		<funcdef>void <function>glVertexAttribP4uiv</function></funcdef>
+		<paramdef>GLuint <parameter>index</parameter></paramdef>
+		<paramdef>GLenum <parameter>type</parameter></paramdef>
+		<paramdef>GLboolean <parameter>normalized</parameter></paramdef>
+		<paramdef>GLuint *<parameter>value</parameter></paramdef>
+	    </funcprototype>
+	</funcsynopsis>
+    </refsynopsisdiv>
+    <refsect1 id="parameters"><title>Parameters</title>
+	<variablelist>
+	    <varlistentry>
+		<term><parameter>index</parameter></term>
+		<listitem>
+		    <para>Specifies the index of the generic vertex
+		    attribute to be modified.</para>
+		</listitem>
+	    </varlistentry>
+	    <varlistentry>
+		<term><parameter>type</parameter></term>
+		<listitem>
+		    <para>Type of packing used on the data.  Currently
+                    accepts: <constant>GL_INT_10_10_10_2</constant> and
+                    <constant>GL_UNSIGNED_INT_10_10_10_2</constant></para>
+		</listitem>
+	    </varlistentry>
+	    <varlistentry>
+		<term><parameter>normalized</parameter></term>
+		<listitem>
+		    <para>If <constant>GL_TRUE</constant>, then the values are to be 
+                    converted to floating point values by normalizing. Otherwise,
+                    they are converted directly to floating point values.</para>
+		</listitem>
+	    </varlistentry>
+	    <varlistentry>
+		<term>
+		    <parameter>value</parameter>
+		</term>
+		<listitem>
+		    <para>Specifies the pointer to an array of packed values to be 
+                    used for the specified vertex attribute.</para>
 		</listitem>
 	    </varlistentry>
 	</variablelist>
@@ -301,14 +549,31 @@
 	whether the arguments are of type short, float, int, double,
 	unsigned byte, unsigned short, or unsigned int. When
 	<function>v</function> is appended to the name, the commands can
-	take a pointer to an array of such values. The commands
-	containing <function>N</function> indicate that the arguments
-	will be passed as fixed-point values that are scaled to a
-	normalized range according to the component conversion rules
-	defined by the OpenGL specification. Signed values are
-	understood to represent fixed-point values in the range [-1,1],
-	and unsigned values are understood to represent fixed-point
-	values in the range [0,1].</para>
+	take a pointer to an array of such values.</para>
+
+        <para>Additional capitalized letters can indicate further alterations
+        to the default behavior of the glVertexAttrib function:</para>
+
+        <para>
+            The commands containing <function>N</function> indicate that 
+            the arguments will be passed as fixed-point values that are 
+            scaled to a normalized range according to the component 
+            conversion rules defined by the OpenGL specification. Signed
+            values are understood to represent fixed-point values in the
+            range [-1,1], and unsigned values are understood to represent
+            fixed-point values in the range [0,1].
+        </para>
+
+        <para>
+            The commands containing <function>I</function> indicate that 
+            the arguments are extended to full signed or unsigned integers.
+        </para>
+
+        <para>
+            The commands containing <function>P</function> indicate that 
+            the arguments are stored as packed components within a larger
+            natural type.
+        </para>
 
 	<para>OpenGL Shading Language attribute variables are allowed to
 	be of type mat2, mat3, or mat4. Attributes of these types may be
@@ -376,11 +641,21 @@
 	<para>There is no provision for binding standard vertex
 	attributes; therefore, it is not possible to alias generic
 	attributes with standard attributes.</para>
+
+        <para>
+            <function>glVertexAttribP</function> versions are available only if the GL version is 3.3 or higher.
+        </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
 	<para><constant>GL_INVALID_VALUE</constant> is generated if
 	<parameter>index</parameter> is greater than or equal to
 	<constant>GL_MAX_VERTEX_ATTRIBS</constant>.</para>
+
+	<para><constant>GL_INVALID_ENUM</constant> is generated if
+	<function>glVertexAttribP</function> is used with a 
+        <parameter>type</parameter> other than
+	<constant>GL_INT_10_10_10_2</constant> or
+        <constant>GL_UNSIGNED_INT_10_10_10_2</constant>.</para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
 	<para><citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>

@@ -66,8 +66,28 @@
         <para>
             <citerefentry><refentrytitle>glGenTextures</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBindTexture</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glCompressedTexImage1D</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glCompressedTexImage2D</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glCompressedTexImage3D</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glCompressedTexSubImage1D</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glCompressedTexSubImage2D</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glCompressedTexSubImage3D</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glCopyTexImage1D</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glCopyTexImage2D</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glCopyTexSubImage1D</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glCopyTexSubImage2D</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glCopyTexSubImage3D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDeleteTextures</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>glIsTexture</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glTexImage2DMultisample</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glTexImage3DMultisample</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glTexSubImage1D</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glTexSubImage2D</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glTexSubImage3D</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry>,
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

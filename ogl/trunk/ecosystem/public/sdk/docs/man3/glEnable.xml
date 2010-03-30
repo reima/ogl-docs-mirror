@@ -222,6 +222,19 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_PRIMITIVE_RESTART</constant></term>
+                <listitem>
+		        <para>
+		        </para>
+                    <para>
+                        Enables primitive restarting.  If enabled, any one of the draw commands 
+                        which transfers a set of generic attribute array elements to the GL will restart 
+                        the primitive when the index of the vertex is equal to the primitive restart index.
+                        See <citerefentry><refentrytitle>glPrimitiveRestartIndex</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_SAMPLE_ALPHA_TO_COVERAGE</constant></term>
                 <listitem>
 		        <para>
@@ -301,6 +314,11 @@
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>cap</parameter> is not one of the values
             listed previously.
+        </para>
+    </refsect1>
+    <refsect1 id="notes"><title>Notes</title>
+        <para>
+            <constant>GL_PRIMITIVE_RESTART</constant> is available only if the GL version is 3.1 or greater.
         </para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>

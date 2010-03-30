@@ -52,14 +52,9 @@
             is the name of a renderbuffer object previously returned from a call to <citerefentry><refentrytitle>glGenRenderbuffers</refentrytitle></citerefentry>,
             or zero to break the existing binding of a renderbuffer object to <parameter>target</parameter>.
         </para>
-        <para>
-            If no renderbuffer with name <parameter>renderbuffer</parameter> exists, one is created when it is first bound. If the bind is successful no change
-            is made to the state of the bound renderbuffer object, and any previous binding to <parameter>target</parameter> is broken.
-        </para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <function>glBindRenderbuffer</function> is available only if the GL version is 3.0 or greater.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

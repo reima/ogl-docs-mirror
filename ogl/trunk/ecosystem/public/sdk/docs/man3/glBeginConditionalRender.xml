@@ -86,8 +86,7 @@
     <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glGenQueries</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDeleteQueries</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glBeginConditionalRender</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>glDeleteQueries</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

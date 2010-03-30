@@ -641,6 +641,19 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MAX_DUALSOURCE_DRAW_BUFFERS</constant></term>
+                <listitem>
+			  <para>
+			  </para>
+                    <para>
+                        <parameter>params</parameter> returns one value, the maximum number
+                        of active draw buffers when using dual-source  blending.
+                        See <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry> and 
+                        <citerefentry><refentrytitle>glBlendFuncSeparate</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_ELEMENTS_INDICES</constant></term>
                 <listitem>
 			  <para>
@@ -1111,6 +1124,18 @@
                         <parameter>params</parameter> returns a single boolean value indicating if the temporary
                         coverage value should be inverted.
                         See <citerefentry><refentrytitle>glSampleCoverage</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_SAMPLER_BINDING</constant></term>
+                <listitem>
+			  <para>
+			  </para>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the name of the sampler object
+                        currently bound to the active texture unit.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindSampler</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1677,6 +1702,10 @@
             <constant>GL_TEXTURE_1D</constant>, <constant>GL_TEXTURE_BINDING_1D</constant>,
             <constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_BINDING_2D</constant>,
             <constant>GL_TEXTURE_3D</constant> and <constant>GL_TEXTURE_BINDING_3D</constant>.
+        </para>
+        <para>
+            <constant>GL_MAX_DUALSOURCE_DRAW_BUFFERS</constant> and <constant>GL_SAMPLER_BINDING</constant> 
+            are available only if the GL version is 3.3 or greater.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

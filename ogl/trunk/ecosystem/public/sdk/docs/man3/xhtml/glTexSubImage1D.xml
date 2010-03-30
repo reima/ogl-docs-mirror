@@ -17,15 +17,11 @@
                     Specifies the format of the pixel data.
                     The following symbolic values are accepted:
                     <code class="constant">GL_RED</code>,
-                    <code class="constant">GL_GREEN</code>,
-                    <code class="constant">GL_BLUE</code>,
-                    <code class="constant">GL_ALPHA</code>,
+                    <code class="constant">GL_RG</code>,
                     <code class="constant">GL_RGB</code>,
                     <code class="constant">GL_BGR</code>,
-                    <code class="constant">GL_RGBA</code>,
-                    <code class="constant">GL_BGRA</code>,
-                    <code class="constant">GL_LUMINANCE</code>, and
-                    <code class="constant">GL_LUMINANCE_ALPHA</code>.
+                    <code class="constant">GL_RGBA</code>, and
+                    <code class="constant">GL_BGRA</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>type</code></em></span></dt><dd><p>
                     Specifies the data type of the pixel data.
                     The following symbolic values are accepted:

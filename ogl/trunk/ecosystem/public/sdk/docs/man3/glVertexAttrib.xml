@@ -404,7 +404,7 @@
 	    </funcprototype>
 	</funcsynopsis>
     </refsynopsisdiv>
-    <refsect1 id="parameters"><title>Parameters</title>
+    <refsect1 id="parameters3"><title>Parameters</title>
 	<variablelist>
 	    <varlistentry>
 		<term><parameter>index</parameter></term>
@@ -472,7 +472,7 @@
 	    </funcprototype>
 	</funcsynopsis>
     </refsynopsisdiv>
-    <refsect1 id="parameters"><title>Parameters</title>
+    <refsect1 id="parameters4"><title>Parameters</title>
 	<variablelist>
 	    <varlistentry>
 		<term><parameter>index</parameter></term>

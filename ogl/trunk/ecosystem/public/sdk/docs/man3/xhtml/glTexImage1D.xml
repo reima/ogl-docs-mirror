@@ -11,31 +11,17 @@
                     Level <span class="emphasis"><em>n</em></span> is the <span class="emphasis"><em>n</em></span>th mipmap reduction image.
                 </p></dd><dt><span class="term"><em class="parameter"><code>internalFormat</code></em></span></dt><dd><p>
                     Specifies the number of color components in the texture.
-                    Must be 1, 2, 3, or 4, or one of the following symbolic constants:
-                    <code class="constant">GL_ALPHA4</code>,
-                    <code class="constant">GL_ALPHA8</code>,
-                    <code class="constant">GL_ALPHA12</code>,
-                    <code class="constant">GL_ALPHA16</code>,
+                    Must be one of the following symbolic constants:
+                    <code class="constant">GL_COMPRESSED_RED</code>,
+                    <code class="constant">GL_COMPRESSED_RG</code>,
                     <code class="constant">GL_COMPRESSED_RGB</code>,
                     <code class="constant">GL_COMPRESSED_RGBA</code>,
+                    <code class="constant">GL_COMPRESSED_SRGB</code>,
+                    <code class="constant">GL_COMPRESSED_SRGB_ALPHA</code>,
                     <code class="constant">GL_DEPTH_COMPONENT</code>,
                     <code class="constant">GL_DEPTH_COMPONENT16</code>,
                     <code class="constant">GL_DEPTH_COMPONENT24</code>,
                     <code class="constant">GL_DEPTH_COMPONENT32</code>,
-                    <code class="constant">GL_LUMINANCE4</code>,
-                    <code class="constant">GL_LUMINANCE8</code>,
-                    <code class="constant">GL_LUMINANCE12</code>,
-                    <code class="constant">GL_LUMINANCE16</code>,
-                    <code class="constant">GL_LUMINANCE4_ALPHA4</code>,
-                    <code class="constant">GL_LUMINANCE6_ALPHA2</code>,
-                    <code class="constant">GL_LUMINANCE8_ALPHA8</code>,
-                    <code class="constant">GL_LUMINANCE12_ALPHA4</code>,
-                    <code class="constant">GL_LUMINANCE12_ALPHA12</code>,
-                    <code class="constant">GL_LUMINANCE16_ALPHA16</code>,
-                    <code class="constant">GL_INTENSITY4</code>,
-                    <code class="constant">GL_INTENSITY8</code>,
-                    <code class="constant">GL_INTENSITY12</code>,
-                    <code class="constant">GL_INTENSITY16</code>,
                     <code class="constant">GL_R3_G3_B2</code>,
                     <code class="constant">GL_RGB</code>,
                     <code class="constant">GL_RGB4</code>,
@@ -52,10 +38,6 @@
                     <code class="constant">GL_RGB10_A2</code>,
                     <code class="constant">GL_RGBA12</code>,
                     <code class="constant">GL_RGBA16</code>,
-                    <code class="constant">GL_SLUMINANCE</code>,
-                    <code class="constant">GL_SLUMINANCE8</code>,
-                    <code class="constant">GL_SLUMINANCE_ALPHA</code>,
-                    <code class="constant">GL_SLUMINANCE8_ALPHA8</code>,
                     <code class="constant">GL_SRGB</code>,
                     <code class="constant">GL_SRGB8</code>,
                     <code class="constant">GL_SRGB_ALPHA</code>, or 
@@ -70,8 +52,7 @@
                     Specifies the format of the pixel data.
                     The following symbolic values are accepted:
                     <code class="constant">GL_RED</code>,
-                    <code class="constant">GL_GREEN</code>,
-                    <code class="constant">GL_BLUE</code>,
+                    <code class="constant">GL_RG</code>,
                     <code class="constant">GL_RGB</code>,
                     <code class="constant">GL_BGR</code>,
                     <code class="constant">GL_RGBA</code>, and
@@ -160,35 +141,10 @@
                         added to the signed bias <code class="constant">GL_c_BIAS</code>,
                         and clamped to the range [0,1]
                         (see <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>).
-                    </p></dd><dt><span class="term"><code class="constant">GL_GREEN</code></span></dt><dd><p>
-                        Each element is a single green component.
+                    </p></dd><dt><span class="term"><code class="constant">GL_RG</code></span></dt><dd><p>
+                        Each element is a single red/green double
                         The GL converts it to floating point and assembles it into an RGBA element
-                        by attaching 0 for red and blue, and 1 for alpha.
-                        Each component is then multiplied by the signed scale factor <code class="constant">GL_c_SCALE</code>,
-                        added to the signed bias <code class="constant">GL_c_BIAS</code>,
-                        and clamped to the range [0,1]
-                        (see <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>).
-                    </p></dd><dt><span class="term"><code class="constant">GL_BLUE</code></span></dt><dd><p>
-                        Each element is a single blue component.
-                        The GL converts it to floating point and assembles it into an RGBA element
-                        by attaching 0 for red and green, and 1 for alpha.
-                        Each component is then multiplied by the signed scale factor <code class="constant">GL_c_SCALE</code>,
-                        added to the signed bias <code class="constant">GL_c_BIAS</code>,
-                        and clamped to the range [0,1]
-                        (see <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>).
-                    </p></dd><dt><span class="term"><code class="constant">GL_ALPHA</code></span></dt><dd><p>
-                        Each element is a single alpha component.
-                        The GL converts it to floating point and assembles it into an RGBA element
-                        by attaching 0 for red, green, and blue.
-                        Each component is then multiplied by the signed scale factor <code class="constant">GL_c_SCALE</code>,
-                        added to the signed bias <code class="constant">GL_c_BIAS</code>,
-                        and clamped to the range [0,1]
-                        (see <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>).
-                    </p></dd><dt><span class="term"><code class="constant">GL_INTENSITY</code></span></dt><dd><p>
-                        Each element is a single intensity value.
-                        The GL converts it to floating point,
-                        then assembles it into an RGBA element by replicating the intensity value
-                        three times for red, green, blue, and alpha.
+                        by attaching 0 for blue, and 1 for alpha.
                         Each component is then multiplied by the signed scale factor <code class="constant">GL_c_SCALE</code>,
                         added to the signed bias <code class="constant">GL_c_BIAS</code>,
                         and clamped to the range [0,1]
@@ -218,28 +174,19 @@
             and format with <em class="parameter"><code>internalFormat</code></em>. The GL will choose an internal
             representation that closely approximates that requested by <em class="parameter"><code>internalFormat</code></em>, but
             it may not match exactly.
-            (The representations specified by <code class="constant">GL_LUMINANCE</code>,
-            <code class="constant">GL_LUMINANCE_ALPHA</code>, <code class="constant">GL_RGB</code>,
-            and <code class="constant">GL_RGBA</code> must match exactly. The numeric values 1, 2, 3, and 4
-            may also be used to specify the above representations.)
+            (The representations specified by <code class="constant">GL_RED</code>, <code class="constant">GL_RG</code>,
+            <code class="constant">GL_RGB</code> and <code class="constant">GL_RGBA</code> must match exactly.)
         </p><p>
         	If the <em class="parameter"><code>internalFormat</code></em> parameter is one of the generic compressed formats,
-        	<code class="constant">GL_COMPRESSED_ALPHA</code>,
-        	<code class="constant">GL_COMPRESSED_INTENSITY</code>,
-        	<code class="constant">GL_COMPRESSED_LUMINANCE</code>,
-        	<code class="constant">GL_COMPRESSED_LUMINANCE_ALPHA</code>,
+        	<code class="constant">GL_COMPRESSED_RED</code>, <code class="constant">GL_COMPRESSED_RG</code>,
         	<code class="constant">GL_COMPRESSED_RGB</code>, or
         	<code class="constant">GL_COMPRESSED_RGBA</code>, the GL will replace the internal format with the symbolic constant for a specific internal format and compress the texture before storage.  If no corresponding internal format is available, or the GL can not compress that image for any reason, the internal format is instead replaced with a corresponding base internal format.
         </p><p>
             If the <em class="parameter"><code>internalFormat</code></em> parameter is 			
             <code class="constant">GL_SRGB</code>,
 			<code class="constant">GL_SRGB8</code>,
-			<code class="constant">GL_SRGB_ALPHA</code>,
-			<code class="constant">GL_SRGB8_ALPHA8</code>,
-			<code class="constant">GL_SLUMINANCE</code>,
-			<code class="constant">GL_SLUMINANCE8</code>,
-			<code class="constant">GL_SLUMINANCE_ALPHA</code>, or
-			<code class="constant">GL_SLUMINANCE8_ALPHA8</code>, the texture is treated as if the red, green, blue, or luminance components are encoded in the sRGB color space.    Any alpha component is left unchanged.  The conversion from the sRGB encoded component 
+			<code class="constant">GL_SRGB_ALPHA</code>or
+			<code class="constant">GL_SRGB8_ALPHA8</code>, the texture is treated as if the red, green, or blue components are encoded in the sRGB color space.    Any alpha component is left unchanged.  The conversion from the sRGB encoded component 
 			<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                     <mml:msub><mml:mi mathvariant="italic">c</mml:mi>
                     <mml:mi mathvariant="italic">s</mml:mi>
@@ -348,12 +295,9 @@
             A three-component image uses the R, G, and B values.
             A four-component image uses all of the RGBA components.
         </p><p>
-			Depth textures can be treated as LUMINANCE, INTENSITY or ALPHA textures during texture filtering and application. Image-based shadowing can be enabled by comparing texture r coordinates to depth texture values to generate a boolean result.  See <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a> for details on texture comparison.
+			     Image-based shadowing can be enabled by comparing texture r coordinates to depth texture values to generate a boolean result.  See <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a> for details on texture comparison.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
             <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> and <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a> modes affect texture images.
-        </p><p>
-            Internal formats other than 1, 2, 3, or 4 may be
-            used only if the GL version is 1.1 or greater.
         </p><p>
             <em class="parameter"><code>data</code></em> may be a null pointer. In this case texture memory is
             allocated to accommodate a texture of width <em class="parameter"><code>width</code></em>.
@@ -390,7 +334,7 @@
             </mml:math>,
             where <span class="emphasis"><em>max</em></span> is the returned value of <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
         </p><p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>internalFormat</code></em> is not 1, 2, 3, 4, or
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>internalFormat</code></em> is not 
             one of the accepted resolution and format symbolic constants.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> is less than 0

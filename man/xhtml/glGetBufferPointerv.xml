@@ -31,7 +31,7 @@
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if the reserved buffer object name 0 is bound to <em class="parameter"><code>target</code></em>.
         </p><p>
-            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetBufferParameteriv</code>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glGetBufferPointerv</code>
             is executed between the execution of <a class="citerefentry" href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a class="citerefentry" href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>

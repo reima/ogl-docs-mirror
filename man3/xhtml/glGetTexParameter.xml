@@ -58,6 +58,14 @@
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_MAX_LEVEL</code></span></dt><dd><p>
                         Returns the single-valued maximum texture mipmap array level.  The initial
                         value is 1000.
+                    </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_SWIZZLE_R</code></span></dt><dd><p>
+                        Returns the red component swizzle. The initial value is <code class="constant">GL_RED</code>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_SWIZZLE_G</code></span></dt><dd><p>
+                        Returns the green component swizzle. The initial value is <code class="constant">GL_GREEN</code>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_SWIZZLE_B</code></span></dt><dd><p>
+                        Returns the blue component swizzle. The initial value is <code class="constant">GL_BLUE</code>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_SWIZZLE_A</code></span></dt><dd><p>
+                        Returns the alpha component swizzle. The initial value is <code class="constant">GL_ALPHA</code>.
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_WRAP_S</code></span></dt><dd><p>
                         Returns the single-valued wrapping function for texture coordinate 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math>,
@@ -111,6 +119,10 @@
                     </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
             If an error is generated,
             no change is made to the contents of <em class="parameter"><code>params</code></em>.
+        </p><p>
+            <code class="constant">GL_TEXTURE_SWIZZLE_R</code>, <code class="constant">GL_TEXTURE_SWIZZLE_G</code>,
+            <code class="constant">GL_TEXTURE_SWIZZLE_B</code>, and <code class="constant">GL_TEXTURE_SWIZZLE_A</code> 
+            are available only if the GL version is 3.3 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> or <em class="parameter"><code>pname</code></em> is not an
             accepted value.

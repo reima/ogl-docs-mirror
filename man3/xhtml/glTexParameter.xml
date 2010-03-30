@@ -40,7 +40,6 @@
                     <code class="constant">GL_TEXTURE_WRAP_S</code>,
                     <code class="constant">GL_TEXTURE_WRAP_T</code>,
                     <code class="constant">GL_TEXTURE_WRAP_R</code>,
-                    <code class="constant">GL_TEXTURE_BORDER_COLOR</code>,
                     <code class="constant">GL_TEXTURE_PRIORITY</code>,
                     <code class="constant">GL_TEXTURE_COMPARE_MODE</code>,
                     <code class="constant">GL_TEXTURE_COMPARE_FUNC</code>,
@@ -258,7 +257,7 @@
                                     </p></dd><dt><span class="term"><code class="constant">GL_LINEAR</code></span></dt><dd><p>
                                         Returns the weighted average of the four texture elements
                                         that are closest to the center of the pixel being textured.
-                                        These can include border texture elements,
+                                        These can include items wrapped or repeated from other parts of a texture,
                                         depending on the values of <code class="constant">GL_TEXTURE_WRAP_S</code> and <code class="constant">GL_TEXTURE_WRAP_T</code>,
                                         and on the exact mapping.
                                     </p></dd><dt><span class="term"><code class="constant">GL_NEAREST_MIPMAP_NEAREST</code></span></dt><dd><p>
@@ -312,7 +311,7 @@
                                     </p></dd><dt><span class="term"><code class="constant">GL_LINEAR</code></span></dt><dd><p>
                                         Returns the weighted average of the four texture elements
                                         that are closest to the center of the pixel being textured.
-                                        These can include border texture elements,
+                                        These can include items wrapped or repeated from other parts of a texture,
                                         depending on the values of <code class="constant">GL_TEXTURE_WRAP_S</code> and <code class="constant">GL_TEXTURE_WRAP_T</code>,
                                         and on the exact mapping.
                                     </p></dd></dl></div><p>
@@ -341,38 +340,7 @@
                         Sets the wrap parameter for texture coordinate 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math>
                         to either <code class="constant">GL_CLAMP_TO_EDGE</code>, <code class="constant">GL_MIRRORED_REPEAT</code>, or
-                        <code class="constant">GL_REPEAT</code>.  <code class="constant">GL_CLAMP_TO_BORDER</code> causes the 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math>
-                        coordinate to be clamped to the range
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                            
-                            <mml:mfenced open="[" close="]">
-                                <mml:mfenced open="" close="">
-                                    <mml:mrow>
-                                        <mml:mfrac>
-                                            <mml:mn>-1</mml:mn>
-                                            <mml:mn>2<mml:mi mathvariant="italic">N</mml:mi></mml:mn>
-                                        </mml:mfrac>
-                                    </mml:mrow>
-                                </mml:mfenced>
-                                <mml:mrow>
-                                    <mml:mn>1</mml:mn>
-                                    <mml:mo>+</mml:mo>
-                                    <mml:mfenced open="" close="">
-                                        <mml:mrow>
-                                            <mml:mfrac>
-                                                <mml:mn>1</mml:mn>
-                                                <mml:mn>2<mml:mi mathvariant="italic">N</mml:mi></mml:mn>
-                                            </mml:mfrac>
-                                        </mml:mrow>
-                                    </mml:mfenced>
-                                </mml:mrow>
-                            </mml:mfenced>
-                        </mml:math>,
-                        where 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">N</mml:mi></mml:math>
-                        is the size of the texture in the direction of
-                        clamping.<code class="constant">GL_CLAMP_TO_EDGE</code> causes 
+                        <code class="constant">GL_REPEAT</code>. <code class="constant">GL_CLAMP_TO_EDGE</code> causes 
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math>
                         coordinates to be clamped to the
                         range 
@@ -462,12 +430,6 @@
                         to either <code class="constant">GL_CLAMP_TO_EDGE</code>, <code class="constant">GL_MIRRORED_REPEAT</code>, or
                         <code class="constant">GL_REPEAT</code>.  See the discussion under <code class="constant">GL_TEXTURE_WRAP_S</code>.
                         Initially, <code class="constant">GL_TEXTURE_WRAP_R</code> is set to <code class="constant">GL_REPEAT</code>.
-                    </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_BORDER_COLOR</code></span></dt><dd><p>
-                        Sets a border color.  <em class="parameter"><code>params</code></em> contains four values that comprise the RGBA
-                        color of the texture border.  Integer color components are interpreted
-                        linearly such that the most positive integer maps to 1.0, and the most
-                        negative integer maps to -1.0.  The values are clamped to the range [0,1]
-                        when they are specified.  Initially, the border color is (0, 0, 0, 0).
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_PRIORITY</code></span></dt><dd><p>
                         Specifies the texture residence priority of the currently bound texture.
                         Permissible values are in the range 
@@ -490,10 +452,9 @@
                                         texture coordinate should
                                         be compared to the value in the currently bound depth texture.  See the
                                         discussion of <code class="constant">GL_TEXTURE_COMPARE_FUNC</code> for details of how the comparison
-                                        is evaluated.  The result of the comparison is assigned to luminance,
-                                        intensity, or alpha (as specified by <code class="constant">GL_DEPTH_TEXTURE_MODE</code>).
+                                        is evaluated.  The result of the comparison is assigned to the red channel (as specified by <code class="constant">GL_DEPTH_TEXTURE_MODE</code>).
                                     </p></dd><dt><span class="term"><code class="constant">GL_NONE</code></span></dt><dd><p>
-                                        Specifies that the luminance, intensity, or alpha (as specified by
+                                        Specifies that the red channel (as specified by
                                         <code class="constant">GL_DEPTH_TEXTURE_MODE</code>) should be assigned the
                                         appropriate value from the currently bound depth texture.
                                     </p></dd></dl></div><p>
@@ -817,13 +778,12 @@
                         </mml:math>
                         is the depth texture value sampled from the currently bound depth texture.
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">result</mml:mi></mml:math>
-                        is assigned to the either the luminance, intensity, or alpha (as
+                        is assigned to the the red channel (as
                         specified by <code class="constant">GL_DEPTH_TEXTURE_MODE</code>.)
                     </p></dd><dt><span class="term"><code class="constant">GL_DEPTH_TEXTURE_MODE</code></span></dt><dd><p>
                         Specifies a single symbolic constant indicating how depth values should be
                         treated during filtering and texture application.  Accepted values are
-                        <code class="constant">GL_LUMINANCE</code>, <code class="constant">GL_INTENSITY</code>, and <code class="constant">GL_ALPHA</code>.  The initial value
-                        is <code class="constant">GL_LUMINANCE</code>.
+                        <code class="constant">GL_R</code>.
                     </p></dd><dt><span class="term"><code class="constant">GL_GENERATE_MIPMAP</code></span></dt><dd><p>
                         Specifies a boolean value that indicates if all levels of a mipmap array
                         should be automatically updated when any modification to the base level

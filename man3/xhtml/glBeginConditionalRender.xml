@@ -26,8 +26,7 @@
             or if <code class="function">glEndConditionalRender</code> is called while conditional rendering is inactive.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glGenQueries.xml"><span class="citerefentry"><span class="refentrytitle">glGenQueries</span></span></a>,
-            <a href="glDeleteQueries.xml"><span class="citerefentry"><span class="refentrytitle">glDeleteQueries</span></span></a>,
-            <a href="glBeginConditionalRender.xml"><span class="citerefentry"><span class="refentrytitle">glBeginConditionalRender</span></span></a>
+            <a href="glDeleteQueries.xml"><span class="citerefentry"><span class="refentrytitle">glDeleteQueries</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2009 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 

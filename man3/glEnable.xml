@@ -297,6 +297,16 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_TEXTURE_CUBE_MAP_SEAMLESS</constant></term>
+                <listitem>
+		        <para>
+		        </para>
+                    <para>
+                        If enabled, modifies the way sampling is performed on cube map textures.  See the spec for more information.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_VERTEX_PROGRAM_POINT_SIZE</constant></term>
                 <listitem>
 		        <para>
@@ -319,6 +329,9 @@
     <refsect1 id="notes"><title>Notes</title>
         <para>
             <constant>GL_PRIMITIVE_RESTART</constant> is available only if the GL version is 3.1 or greater.
+        </para>
+        <para>
+            <constant>GL_TEXTURE_CUBE_MAP_SEAMLESS</constant> is available only if the GL version is 3.2 or greater.
         </para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>

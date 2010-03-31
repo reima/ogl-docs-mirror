@@ -56,16 +56,16 @@
             32 x <emphasis>M</emphasis> + <emphasis>B</emphasis>.
         </para>
     </refsect1>
-    <refsect1 id="errors"><title>Errors</title>
-        <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>maskIndex</parameter> is greater than or equal to the value
-            of <constant>GL_MAX_SAMPLE_MASK_WORDS</constant>.
-        </para>
-    </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
             <function>glSampleMaski</function> is available only if the GL version is 3.2 or greater, or if the <code>ARB_texture_multisample</code>
             extension is supported.
+        </para>
+    </refsect1>
+    <refsect1 id="errors"><title>Errors</title>
+        <para>
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>maskIndex</parameter> is greater than or equal to the value
+            of <constant>GL_MAX_SAMPLE_MASK_WORDS</constant>.
         </para>
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>

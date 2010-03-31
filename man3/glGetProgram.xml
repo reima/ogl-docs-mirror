@@ -42,6 +42,8 @@
 		    <constant>GL_ACTIVE_ATTRIBUTES</constant>,
 		    <constant>GL_ACTIVE_ATTRIBUTE_MAX_LENGTH</constant>,
 		    <constant>GL_ACTIVE_UNIFORMS</constant>,
+		    <constant>GL_ACTIVE_UNIFORM_BLOCKS</constant>,
+		    <constant>GL_ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH</constant>,
 		    <constant>GL_ACTIVE_UNIFORM_MAX_LENGTH</constant>.</para>
 		</listitem>
 	    </varlistentry>
@@ -180,8 +182,11 @@
 	</variablelist>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
-	<para><function>glGetProgram</function> is available only if the
-	GL version is 2.0 or greater.</para>
+	<para>
+            <constant>GL_ACTIVE_UNIFORM_BLOCKS</constant> and
+            <constant>GL_ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH</constant>
+            is available only if the GL version 3.1 or greater.
+        </para>
 
 	<para>If an error is generated, no change is made to the
 	contents of <parameter>params</parameter>.</para>

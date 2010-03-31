@@ -52,6 +52,15 @@
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
+    <refsynopsisdiv><title>C Specification</title>
+        <funcsynopsis>
+            <funcprototype>
+                <funcdef>void <function>glGetInteger64v</function></funcdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLint64 * <parameter>params</parameter></paramdef>
+            </funcprototype>
+        </funcsynopsis>
+    </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
     <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
@@ -66,6 +75,66 @@
         </varlistentry>
         <varlistentry>
             <term><parameter>params</parameter></term>
+            <listitem>
+                <para>
+                    Returns the value or values of the specified parameter.
+                </para>
+            </listitem>
+        </varlistentry>
+        </variablelist>
+    </refsect1>
+    <refsynopsisdiv><title>C Specification</title>
+        <funcsynopsis>
+            <funcprototype>
+                <funcdef>void <function>glGetBooleani_v</function></funcdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLuint <parameter>index</parameter></paramdef>
+                <paramdef>GLboolean * <parameter>data</parameter></paramdef>
+            </funcprototype>
+        </funcsynopsis>
+    </refsynopsisdiv>
+    <refsynopsisdiv><title>C Specification</title>
+        <funcsynopsis>
+            <funcprototype>
+                <funcdef>void <function>glGetIntegeri_v</function></funcdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLuint <parameter>index</parameter></paramdef>
+                <paramdef>GLint * <parameter>data</parameter></paramdef>
+            </funcprototype>
+        </funcsynopsis>
+    </refsynopsisdiv>
+    <refsynopsisdiv><title>C Specification</title>
+        <funcsynopsis>
+            <funcprototype>
+                <funcdef>void <function>glGetInteger64i_v</function></funcdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLuint <parameter>index</parameter></paramdef>
+                <paramdef>GLint64 * <parameter>data</parameter></paramdef>
+            </funcprototype>
+        </funcsynopsis>
+    </refsynopsisdiv>
+    <!-- eqn: ignoring delim $$ -->
+    <refsect1 id="parameters"><title>Parameters</title>
+        <variablelist>
+        <varlistentry>
+            <term><parameter>pname</parameter></term>
+            <listitem>
+                <para>
+                    Specifies the parameter value to be returned.
+                    The symbolic constants in the list below are accepted.
+                </para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term><parameter>index</parameter></term>
+            <listitem>
+                <para>
+                    Specifies the index of the particular element being queried.
+                </para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term><parameter>data</parameter></term>
             <listitem>
                 <para>
                     Returns the value or values of the specified parameter.
@@ -598,6 +667,19 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS</constant></term>
+                <listitem>
+			  <para>
+			  </para>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        the number of words for fragment shader uniform variables in all uniform
+                        blocks (including default). The value must be at least 1.
+                        See <citerefentry><refentrytitle>glUniform</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS</constant></term>
                 <listitem>
 			  <para>
@@ -609,6 +691,31 @@
                         unit, then that counts as using two texture image units against this limit.
                         The value must be at least 2.
                         See <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS</constant></term>
+                <listitem>
+			  <para>
+			  </para>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        the number of words for vertex shader uniform variables in all uniform
+                        blocks (including default). The value must be at least 1.
+                        See <citerefentry><refentrytitle>glUniform</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_COMBINED_UNIFORM_BLOCKS</constant></term>
+                <listitem>
+			  <para>
+			  </para>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        the maximum number of uniform blocks per program.  The value must be at least 24.
+                        See <citerefentry><refentrytitle>glUniformBlockBinding</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -691,6 +798,33 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_MAX_FRAGMENT_UNIFORM_BLOCKS</constant></term>
+                <listitem>
+			  <para>
+			  </para>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        the maximum number of uniform blocks per fragment shader.  The value must be at least 12.
+                        See <citerefentry><refentrytitle>glUniformBlockBinding</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_RECTANGLE_TEXTURE_SIZE</constant></term>
+                <listitem>
+			  <para>
+			  </para>
+                    <para>
+                        <parameter>params</parameter> returns one value.
+                        The value gives a rough estimate of the largest rectangular texture that
+                        the GL can handle. The value must be at least 1024.
+                        Use <constant>GL_PROXY_RECTANGLE_TEXTURE</constant>
+                        to determine if a texture is too large.
+                        See <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_MAX_TEXTURE_IMAGE_UNITS</constant></term>
                 <listitem>
 			  <para>
@@ -727,6 +861,31 @@
                         Use <constant>GL_PROXY_TEXTURE_1D</constant> or <constant>GL_PROXY_TEXTURE_2D</constant>
                         to determine if a texture is too large.
                         See <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TEXTURE_BUFFER_SIZE</constant></term>
+                <listitem>
+			  <para>
+			  </para>
+                    <para>
+                        <parameter>params</parameter> returns one value.
+                        The value gives the maximum number of texels allowed in the texel array of a texture buffer object.
+                        Value must be at least 65536.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_UNIFORM_BLOCK_SIZE</constant></term>
+                <listitem>
+			  <para>
+			  </para>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        the maximum size in basic machine units of a uniform block.  
+                        The value must be at least 16384.
+                        See <citerefentry><refentrytitle>glUniformBlockBinding</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -779,6 +938,18 @@
                         the maximum number of individual floating-point, integer, or boolean values that can be held 
                         in uniform variable storage for a vertex shader. The value must be at least 512.
                         See <citerefentry><refentrytitle>glUniform</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_VERTEX_UNIFORM_BLOCKS</constant></term>
+                <listitem>
+			  <para>
+			  </para>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        the maximum number of uniform blocks per vertex shader.  The value must be at least 12.
+                        See <citerefentry><refentrytitle>glUniformBlockBinding</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1548,6 +1719,42 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_TEXTURE_BUFFER_BINDING</constant></term>
+                <listitem>
+			  <para>
+			  </para>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the name of the texture buffer object
+                        currently bound.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_UNIFORM_BUFFER_BINDING</constant></term>
+                <listitem>
+			  <para>
+			  </para>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the name of the uniform buffer object
+                        currently bound.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glUniformBlockBinding</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_UNIFORM_BUFFER_OFFSET_ALIGNMENT</constant></term>
+                <listitem>
+			  <para>
+			  </para>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the minimum required alignment
+                        for uniform buffer sizes and offset.  The initial value is 1.
+                        See <citerefentry><refentrytitle>glUniformBlockBinding</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_UNPACK_ALIGNMENT</constant></term>
                 <listitem>
 			  <para>
@@ -1704,6 +1911,19 @@
             <constant>GL_TEXTURE_3D</constant> and <constant>GL_TEXTURE_BINDING_3D</constant>.
         </para>
         <para>
+            <constant>GL_MAX_RECTANGLE_TEXTURE_SIZE</constant>, <constant>GL_MAX_TEXTURE_BUFFER_SIZE</constant>, 
+            <constant>GL_UNIFORM_BUFFER_BINDING</constant>, <constant>GL_TEXTURE_BUFFER_BINDING</constant>,
+            <constant>GL_MAX_VERTEX_UNIFORM_BLOCKS</constant>, <constant>GL_MAX_FRAGMENT_UNIFORM_BLOCKS</constant>,
+            <constant>GL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS</constant>,<constant>GL_MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS</constant>
+            <constant>GL_MAX_COMBINED_UNIFORM_BLOCKS</constant>, <constant>GL_MAX_UNIFORM_BLOCK_SIZE</constant>,
+            and <constant>GL_UNIFORM_BUFFER_OFFSET_ALIGNMENT</constant>
+            are available only if the GL version is 3.1 or greater.
+        </para>
+        <para>
+            <function>glGetInteger64v</function> and <function>glGetInteger64i_v</function> are available only if 
+            the GL version is 3.2 or greater.
+        </para>
+        <para>
             <constant>GL_MAX_DUALSOURCE_DRAW_BUFFERS</constant> and <constant>GL_SAMPLER_BINDING</constant> 
             are available only if the GL version is 3.3 or greater.
         </para>
@@ -1713,6 +1933,9 @@
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>pname</parameter> is not an accepted value.
         </para>
         <para>
+            <constant>GL_INVALID_VALUE</constant> is generated on any of <function>glGetBooleani_v</function>,
+            <function>glGetIntegeri_v</function>, or <function>glGetInteger64i_v</function> if 
+            <parameter>index</parameter> is outside of the valid range for the indexed state <parameter>target</parameter>.
         </para>
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>

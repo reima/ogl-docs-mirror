@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glGet</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGet"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGet — return the value or values of a selected parameter</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetBooleanv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLboolean *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetDoublev</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLdouble *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetFloatv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetIntegerv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glGet</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGet"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGet — return the value or values of a selected parameter</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetBooleanv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLboolean *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetDoublev</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLdouble *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetFloatv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetIntegerv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetInteger64v</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint64 *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
                     Specifies the parameter value to be returned.
                     The symbolic constants in the list below are accepted.
                 </p></dd><dt><span class="term"><em class="parameter"><code>params</code></em></span></dt><dd><p>
+                    Returns the value or values of the specified parameter.
+                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetBooleani_v</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLuint  </td><td><var class="pdparam">index</var>, </td></tr><tr><td> </td><td>GLboolean *  </td><td><var class="pdparam">data</var><code>)</code>;</td></tr></table></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetIntegeri_v</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLuint  </td><td><var class="pdparam">index</var>, </td></tr><tr><td> </td><td>GLint *  </td><td><var class="pdparam">data</var><code>)</code>;</td></tr></table></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetInteger64i_v</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLuint  </td><td><var class="pdparam">index</var>, </td></tr><tr><td> </td><td>GLint64 *  </td><td><var class="pdparam">data</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters2"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
+                    Specifies the parameter value to be returned.
+                    The symbolic constants in the list below are accepted.
+                </p></dd><dt><span class="term"><em class="parameter"><code>index</code></em></span></dt><dd><p>
+                    Specifies the index of the particular element being queried.
+                </p></dd><dt><span class="term"><em class="parameter"><code>data</code></em></span></dt><dd><p>
                     Returns the value or values of the specified parameter.
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
             These four commands return values for simple state variables in GL.
@@ -272,6 +279,12 @@
                         <em class="parameter"><code>params</code></em> returns one value,
                         the maximum number of application-defined clipping distances. The value must be at least 8.
                         See <a href="glClipPlane.xml"><span class="citerefentry"><span class="refentrytitle">glClipPlane</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS</code></span></dt><dd><p>
+			  </p><p>
+                        <em class="parameter"><code>params</code></em> returns one value,
+                        the number of words for fragment shader uniform variables in all uniform
+                        blocks (including default). The value must be at least 1.
+                        See <a href="glUniform.xml"><span class="citerefentry"><span class="refentrytitle">glUniform</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS</code></span></dt><dd><p>
 			  </p><p>
                         <em class="parameter"><code>params</code></em> returns one value, the maximum supported texture image units that 
@@ -280,6 +293,17 @@
                         unit, then that counts as using two texture image units against this limit.
                         The value must be at least 2.
                         See <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS</code></span></dt><dd><p>
+			  </p><p>
+                        <em class="parameter"><code>params</code></em> returns one value,
+                        the number of words for vertex shader uniform variables in all uniform
+                        blocks (including default). The value must be at least 1.
+                        See <a href="glUniform.xml"><span class="citerefentry"><span class="refentrytitle">glUniform</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_MAX_COMBINED_UNIFORM_BLOCKS</code></span></dt><dd><p>
+			  </p><p>
+                        <em class="parameter"><code>params</code></em> returns one value,
+                        the maximum number of uniform blocks per program.  The value must be at least 24.
+                        See <a href="glUniformBlockBinding.xml"><span class="citerefentry"><span class="refentrytitle">glUniformBlockBinding</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_CUBE_MAP_TEXTURE_SIZE</code></span></dt><dd><p>
 			  </p><p>
                         <em class="parameter"><code>params</code></em> returns one value.
@@ -316,6 +340,19 @@
                         the maximum number of individual floating-point, integer, or boolean values that can be held 
                         in uniform variable storage for a fragment shader. The value must be at least 64.
                         See <a href="glUniform.xml"><span class="citerefentry"><span class="refentrytitle">glUniform</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_MAX_FRAGMENT_UNIFORM_BLOCKS</code></span></dt><dd><p>
+			  </p><p>
+                        <em class="parameter"><code>params</code></em> returns one value,
+                        the maximum number of uniform blocks per fragment shader.  The value must be at least 12.
+                        See <a href="glUniformBlockBinding.xml"><span class="citerefentry"><span class="refentrytitle">glUniformBlockBinding</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_MAX_RECTANGLE_TEXTURE_SIZE</code></span></dt><dd><p>
+			  </p><p>
+                        <em class="parameter"><code>params</code></em> returns one value.
+                        The value gives a rough estimate of the largest rectangular texture that
+                        the GL can handle. The value must be at least 1024.
+                        Use <code class="constant">GL_PROXY_RECTANGLE_TEXTURE</code>
+                        to determine if a texture is too large.
+                        See <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_TEXTURE_IMAGE_UNITS</code></span></dt><dd><p>
 			  </p><p>
                         <em class="parameter"><code>params</code></em> returns one value, the maximum supported texture image units that 
@@ -335,6 +372,17 @@
                         Use <code class="constant">GL_PROXY_TEXTURE_1D</code> or <code class="constant">GL_PROXY_TEXTURE_2D</code>
                         to determine if a texture is too large.
                         See <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a> and <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_MAX_TEXTURE_BUFFER_SIZE</code></span></dt><dd><p>
+			  </p><p>
+                        <em class="parameter"><code>params</code></em> returns one value.
+                        The value gives the maximum number of texels allowed in the texel array of a texture buffer object.
+                        Value must be at least 65536.
+                    </p></dd><dt><span class="term"><code class="constant">GL_MAX_UNIFORM_BLOCK_SIZE</code></span></dt><dd><p>
+			  </p><p>
+                        <em class="parameter"><code>params</code></em> returns one value,
+                        the maximum size in basic machine units of a uniform block.  
+                        The value must be at least 16384.
+                        See <a href="glUniformBlockBinding.xml"><span class="citerefentry"><span class="refentrytitle">glUniformBlockBinding</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_VARYING_FLOATS</code></span></dt><dd><p>
 			  </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
@@ -359,6 +407,11 @@
                         the maximum number of individual floating-point, integer, or boolean values that can be held 
                         in uniform variable storage for a vertex shader. The value must be at least 512.
                         See <a href="glUniform.xml"><span class="citerefentry"><span class="refentrytitle">glUniform</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_MAX_VERTEX_UNIFORM_BLOCKS</code></span></dt><dd><p>
+			  </p><p>
+                        <em class="parameter"><code>params</code></em> returns one value,
+                        the maximum number of uniform blocks per vertex shader.  The value must be at least 12.
+                        See <a href="glUniformBlockBinding.xml"><span class="citerefentry"><span class="refentrytitle">glUniformBlockBinding</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_VIEWPORT_DIMS</code></span></dt><dd><p>
 			  </p><p>
                         <em class="parameter"><code>params</code></em> returns two values:
@@ -718,6 +771,21 @@
                         <em class="parameter"><code>params</code></em> returns a single boolean value indicating whether cube-mapped texture
                         mapping is enabled.  The initial value is <code class="constant">GL_FALSE</code>.
                         See <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_BUFFER_BINDING</code></span></dt><dd><p>
+			  </p><p>
+                        <em class="parameter"><code>params</code></em> returns a single value, the name of the texture buffer object
+                        currently bound.  The initial value is 0.
+                        See <a href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_UNIFORM_BUFFER_BINDING</code></span></dt><dd><p>
+			  </p><p>
+                        <em class="parameter"><code>params</code></em> returns a single value, the name of the uniform buffer object
+                        currently bound.  The initial value is 0.
+                        See <a href="glUniformBlockBinding.xml"><span class="citerefentry"><span class="refentrytitle">glUniformBlockBinding</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_UNIFORM_BUFFER_OFFSET_ALIGNMENT</code></span></dt><dd><p>
+			  </p><p>
+                        <em class="parameter"><code>params</code></em> returns a single value, the minimum required alignment
+                        for uniform buffer sizes and offset.  The initial value is 1.
+                        See <a href="glUniformBlockBinding.xml"><span class="citerefentry"><span class="refentrytitle">glUniformBlockBinding</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_UNPACK_ALIGNMENT</code></span></dt><dd><p>
 			  </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
@@ -800,11 +868,25 @@
             <code class="constant">GL_TEXTURE_2D</code>, <code class="constant">GL_TEXTURE_BINDING_2D</code>,
             <code class="constant">GL_TEXTURE_3D</code> and <code class="constant">GL_TEXTURE_BINDING_3D</code>.
         </p><p>
+            <code class="constant">GL_MAX_RECTANGLE_TEXTURE_SIZE</code>, <code class="constant">GL_MAX_TEXTURE_BUFFER_SIZE</code>, 
+            <code class="constant">GL_UNIFORM_BUFFER_BINDING</code>, <code class="constant">GL_TEXTURE_BUFFER_BINDING</code>,
+            <code class="constant">GL_MAX_VERTEX_UNIFORM_BLOCKS</code>, <code class="constant">GL_MAX_FRAGMENT_UNIFORM_BLOCKS</code>,
+            <code class="constant">GL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS</code>,<code class="constant">GL_MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS</code>
+            <code class="constant">GL_MAX_COMBINED_UNIFORM_BLOCKS</code>, <code class="constant">GL_MAX_UNIFORM_BLOCK_SIZE</code>,
+            and <code class="constant">GL_UNIFORM_BUFFER_OFFSET_ALIGNMENT</code>
+            are available only if the GL version is 3.1 or greater.
+        </p><p>
+            <code class="function">glGetInteger64v</code> and <code class="function">glGetInteger64i_v</code> are available only if 
+            the GL version is 3.2 or greater.
+        </p><p>
             <code class="constant">GL_MAX_DUALSOURCE_DRAW_BUFFERS</code> and <code class="constant">GL_SAMPLER_BINDING</code> 
             are available only if the GL version is 3.3 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>pname</code></em> is not an accepted value.
         </p><p>
+            <code class="constant">GL_INVALID_VALUE</code> is generated on any of <code class="function">glGetBooleani_v</code>,
+            <code class="function">glGetIntegeri_v</code>, or <code class="function">glGetInteger64i_v</code> if 
+            <em class="parameter"><code>index</code></em> is outside of the valid range for the indexed state <em class="parameter"><code>target</code></em>.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glGetActiveUniform.xml"><span class="citerefentry"><span class="refentrytitle">glGetActiveUniform</span></span></a>,
             <a href="glGetAttachedShaders.xml"><span class="citerefentry"><span class="refentrytitle">glGetAttachedShaders</span></span></a>,

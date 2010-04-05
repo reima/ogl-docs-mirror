@@ -18,15 +18,7 @@
                     they are converted directly to floating point values.</p></dd><dt><span class="term">
 		    <em class="parameter"><code>value</code></em>
 		</span></dt><dd><p>Specifies the new packed value to be used for the
-		    specified vertex attribute.</p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef">void <b class="fsfunc">glVertexAttribP1uiv</b>(</code></td><td>GLuint  </td><td><var class="pdparam">index</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>GLboolean  </td><td><var class="pdparam">normalized</var>, </td></tr><tr><td> </td><td>GLuint * </td><td><var class="pdparam">value</var><code>)</code>;</td></tr></table><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef">void <b class="fsfunc">glVertexAttribP2uiv</b>(</code></td><td>GLuint  </td><td><var class="pdparam">index</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>GLboolean  </td><td><var class="pdparam">normalized</var>, </td></tr><tr><td> </td><td>GLuint * </td><td><var class="pdparam">value</var><code>)</code>;</td></tr></table><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" style="padding-bottom: 1em"><tr><td><code class="funcdef">void <b class="fsfunc">glVertexAttribP3uiv</b>(</code></td><td>GLuint  </td><td><var class="pdparam">index</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>GLboolean  </td><td><var class="pdparam">normalized</var>, </td></tr><tr><td> </td><td>GLuint * </td><td><var class="pdparam">value</var><code>)</code>;</td></tr></table><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glVertexAttribP4uiv</b>(</code></td><td>GLuint  </td><td><var class="pdparam">index</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>GLboolean  </td><td><var class="pdparam">normalized</var>, </td></tr><tr><td> </td><td>GLuint * </td><td><var class="pdparam">value</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters4"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>index</code></em></span></dt><dd><p>Specifies the index of the generic vertex
-		    attribute to be modified.</p></dd><dt><span class="term"><em class="parameter"><code>type</code></em></span></dt><dd><p>Type of packing used on the data.  Currently
-                    accepts: <code class="constant">GL_INT_10_10_10_2</code> and
-                    <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code></p></dd><dt><span class="term"><em class="parameter"><code>normalized</code></em></span></dt><dd><p>If <code class="constant">GL_TRUE</code>, then the values are to be 
-                    converted to floating point values by normalizing. Otherwise,
-                    they are converted directly to floating point values.</p></dd><dt><span class="term">
-		    <em class="parameter"><code>value</code></em>
-		</span></dt><dd><p>Specifies the pointer to an array of packed values to be 
-                    used for the specified vertex attribute.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>OpenGL defines a number of standard vertex attributes that
+		    specified vertex attribute.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>OpenGL defines a number of standard vertex attributes that
 	applications can modify with standard API entry points (color,
 	normal, texture coordinates, etc.). The
 	<code class="function">glVertexAttrib</code> family of entry points
@@ -127,6 +119,11 @@
 	only in the absence of aliasing.</p><p>There is no provision for binding standard vertex
 	attributes; therefore, it is not possible to alias generic
 	attributes with standard attributes.</p><p>
+            <code class="function">glVertexAttrib4bv</code>, <code class="function">glVertexAttrib4sv</code>, 
+            <code class="function">glVertexAttrib4iv</code>, <code class="function">glVertexAttrib4ubv</code>, 
+            <code class="function">glVertexAttrib4usv</code>, <code class="function">glVertexAttrib4uiv</code>, and
+            <code class="function">glVertexAttrib4N</code> versions are available only if the GL version is 3.1 or higher.
+        </p><p>
             <code class="function">glVertexAttribP</code> versions are available only if the GL version is 3.3 or higher.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_VALUE</code> is generated if
 	<em class="parameter"><code>index</code></em> is greater than or equal to

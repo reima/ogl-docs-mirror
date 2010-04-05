@@ -115,6 +115,9 @@
                         If enabled,
                         do stencil testing and update the stencil buffer.
                         See <a href="glStencilFunc.xml"><span class="citerefentry"><span class="refentrytitle">glStencilFunc</span></span></a> and <a href="glStencilOp.xml"><span class="citerefentry"><span class="refentrytitle">glStencilOp</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_CUBE_MAP_SEAMLESS</code></span></dt><dd><p>
+		        </p><p>
+                        If enabled, modifies the way sampling is performed on cube map textures.  See the spec for more information.
                     </p></dd><dt><span class="term"><code class="constant">GL_VERTEX_PROGRAM_POINT_SIZE</code></span></dt><dd><p>
 		        </p><p>
                         If enabled
@@ -125,6 +128,8 @@
             listed previously.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
             <code class="constant">GL_PRIMITIVE_RESTART</code> is available only if the GL version is 3.1 or greater.
+        </p><p>
+            <code class="constant">GL_TEXTURE_CUBE_MAP_SEAMLESS</code> is available only if the GL version is 3.2 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a>
         </p><p>

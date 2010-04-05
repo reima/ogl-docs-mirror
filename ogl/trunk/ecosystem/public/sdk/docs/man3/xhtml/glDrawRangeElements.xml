@@ -8,12 +8,14 @@
                     <code class="constant">GL_LINE_STRIP</code>,
                     <code class="constant">GL_LINE_LOOP</code>,
                     <code class="constant">GL_LINES</code>,
+                    <code class="constant">GL_LINE_STRIP_ADJACENCY</code>,
+                    <code class="constant">GL_LINES_ADJACENCY</code>,
                     <code class="constant">GL_TRIANGLE_STRIP</code>,
                     <code class="constant">GL_TRIANGLE_FAN</code>,
                     <code class="constant">GL_TRIANGLES</code>,
-                    <code class="constant">GL_QUAD_STRIP</code>,
-                    <code class="constant">GL_QUADS</code>,
-                    and <code class="constant">GL_POLYGON</code> are accepted.
+                    <code class="constant">GL_TRIANGLE_STRIP_ADJACENCY</code> and
+                    <code class="constant">GL_TRIANGLES_ADJACENCY</code>
+                    are accepted.
                 </p></dd><dt><span class="term"><em class="parameter"><code>start</code></em></span></dt><dd><p>
                     Specifies the minimum array index contained in <em class="parameter"><code>indices</code></em>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>end</code></em></span></dt><dd><p>
@@ -72,6 +74,11 @@
             unspecified value after <code class="function">glDrawRangeElements</code> returns. Attributes that aren't
             modified maintain their previous values.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
+            <code class="constant">GL_LINE_STRIP_ADJACENCY</code>,
+            <code class="constant">GL_LINES_ADJACENCY</code>,
+            <code class="constant">GL_TRIANGLE_STRIP_ADJACENCY</code> and
+            <code class="constant">GL_TRIANGLES_ADJACENCY</code>
+            are available only if the GL version is 3.2 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             It is an error for indices to lie outside the range 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">

@@ -68,6 +68,8 @@
                     <constant>GL_DEPTH_COMPONENT16</constant>,
                     <constant>GL_DEPTH_COMPONENT24</constant>,
                     <constant>GL_DEPTH_COMPONENT32</constant>,
+                    <constant>GL_RED</constant>,
+                    <constant>GL_RG</constant>,
                     <constant>GL_RGB</constant>,
                     <constant>GL_R3_G3_B2</constant>,
                     <constant>GL_RGB4</constant>,

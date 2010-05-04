@@ -1,4 +1,4 @@
-ï»¿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
               "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
 <refentry id="glTexImage1D">
@@ -72,6 +72,8 @@
                     <constant>GL_DEPTH_COMPONENT24</constant>,
                     <constant>GL_DEPTH_COMPONENT32</constant>,
                     <constant>GL_R3_G3_B2</constant>,
+                    <constant>GL_RED</constant>,
+                    <constant>GL_RG</constant>,
                     <constant>GL_RGB</constant>,
                     <constant>GL_RGB4</constant>,
                     <constant>GL_RGB5</constant>,
@@ -437,7 +439,7 @@
             A four-component image uses all of the RGBA components.
         </para>
         <para>
-			     Image-based shadowingÂ canÂ beÂ enabledÂ byÂ comparing texture r coordinates to depth texture values to generate a boolean result.  See <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry> for details on texture comparison.
+			     Image-based shadowing can be enabled by comparing texture r coordinates to depth texture values to generate a boolean result.  See <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry> for details on texture comparison.
         </para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>

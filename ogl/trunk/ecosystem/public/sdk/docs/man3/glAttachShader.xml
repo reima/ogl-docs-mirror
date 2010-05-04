@@ -81,32 +81,32 @@
 
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
-	    <para>
-        <citerefentry><refentrytitle>glGetAttachedShaders</refentrytitle></citerefentry>
+       <para>
+          <citerefentry><refentrytitle>glGetAttachedShaders</refentrytitle></citerefentry>
 	      with the handle of a valid program object
-      </para>
-	    <para>
-        <citerefentry><refentrytitle>glGetShaderInfoLog</refentrytitle></citerefentry>
-      </para>
-	    <para>
-        <citerefentry><refentrytitle>glGetShaderSource</refentrytitle></citerefentry>
-      </para>
-	    <para>
-        <citerefentry><refentrytitle>glIsProgram</refentrytitle></citerefentry>
-      </para>
-	    <para>
-        <citerefentry><refentrytitle>glIsShader</refentrytitle></citerefentry>
-      </para>
+       </para>
+       <para>
+          <citerefentry><refentrytitle>glGetShaderInfoLog</refentrytitle></citerefentry>
+       </para>
+       <para>
+          <citerefentry><refentrytitle>glGetShaderSource</refentrytitle></citerefentry>
+       </para>
+       <para>
+          <citerefentry><refentrytitle>glIsProgram</refentrytitle></citerefentry>
+       </para>
+       <para>
+          <citerefentry><refentrytitle>glIsShader</refentrytitle></citerefentry>
+	 </para>
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
-	  <para>
-      <citerefentry><refentrytitle>glCompileShader</refentrytitle></citerefentry>,
-      <citerefentry><refentrytitle>glCreateShader</refentrytitle></citerefentry>,
-      <citerefentry><refentrytitle>glDeleteShader</refentrytitle></citerefentry>,
-	    <citerefentry><refentrytitle>glDetachShader</refentrytitle></citerefentry>,
+	 <para>
+          <citerefentry><refentrytitle>glCompileShader</refentrytitle></citerefentry>,
+          <citerefentry><refentrytitle>glCreateShader</refentrytitle></citerefentry>,
+          <citerefentry><refentrytitle>glDeleteShader</refentrytitle></citerefentry>,
+          <citerefentry><refentrytitle>glDetachShader</refentrytitle></citerefentry>,
 	    <citerefentry><refentrytitle>glLinkProgram</refentrytitle></citerefentry>,
 	    <citerefentry><refentrytitle>glShaderSource</refentrytitle></citerefentry>
-    </para>
+       </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>

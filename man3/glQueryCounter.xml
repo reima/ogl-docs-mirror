@@ -14,7 +14,7 @@
     </refmeta>
     <refnamediv>
         <refname>glQueryCounter</refname>
-        <refpurpose>record the current time into a query object</refpurpose>
+        <refpurpose>record the GL time into a query object after all previous commands have reached the GL server but have not yet necessarily executed.</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
@@ -31,7 +31,7 @@
             <term><parameter>id</parameter></term>
             <listitem>
                 <para>
-                    Specify the name of a query object into which to record the current time.
+                    Specify the name of a query object into which to record the GL time.
                 </para>
             </listitem>
         </varlistentry>

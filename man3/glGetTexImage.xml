@@ -68,8 +68,7 @@
                     Specifies a pixel format for the returned data.
                     The supported formats are
                     <constant>GL_RED</constant>,
-                    <constant>GL_GREEN</constant>,
-                    <constant>GL_BLUE</constant>,
+                    <constant>GL_RG</constant>,
                     <constant>GL_RGB</constant>,
                     <constant>GL_BGR</constant>,
                     <constant>GL_RGBA</constant> and 

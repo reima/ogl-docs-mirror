@@ -1731,6 +1731,18 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_TIMESTAMP</constant></term>
+                <listitem>
+			  <para>
+			  </para>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the 64-bit value of the current
+                        GL time.
+                        See <citerefentry><refentrytitle>glQueryCounter</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_UNIFORM_BUFFER_BINDING</constant></term>
                 <listitem>
 			  <para>
@@ -1924,8 +1936,8 @@
             the GL version is 3.2 or greater.
         </para>
         <para>
-            <constant>GL_MAX_DUALSOURCE_DRAW_BUFFERS</constant> and <constant>GL_SAMPLER_BINDING</constant> 
-            are available only if the GL version is 3.3 or greater.
+            <constant>GL_MAX_DUALSOURCE_DRAW_BUFFERS</constant>, <constant>GL_SAMPLER_BINDING</constant>, and
+            <constant>GL_TIMESTAMP</constant> are available only if the GL version is 3.3 or greater.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

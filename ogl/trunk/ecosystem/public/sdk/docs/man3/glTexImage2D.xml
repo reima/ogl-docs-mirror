@@ -452,7 +452,7 @@
             A four-component image uses all of the RGBA components.
         </para>
         <para>
-			      Image-based shadowing can be enabled by comparing texture r coordinates to depth texture values to generate a boolean result.  See <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry> for details on texture comparison.
+			      Image-based shadowing can be enabled by comparing texture r coordinates to depth texture values to generate a boolean result.  See <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry> for details on texture comparison.
         </para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>

@@ -194,18 +194,10 @@
                         added to the signed bias <code class="constant">GL_c_BIAS</code>,
                         and clamped to the range [0,1]
                         (see <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>).
-                    </p></dd><dt><span class="term"><code class="constant">GL_GREEN</code></span></dt><dd><p>
-                        Each element is a single green component.
-                        The GL converts it to floating point and assembles it into an RGBA element
-                        by attaching 0 for red and blue, and 1 for alpha.
-                        Each component is then multiplied by the signed scale factor <code class="constant">GL_c_SCALE</code>,
-                        added to the signed bias <code class="constant">GL_c_BIAS</code>,
-                        and clamped to the range [0,1]
-                        (see <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>).
-                    </p></dd><dt><span class="term"><code class="constant">GL_BLUE</code></span></dt><dd><p>
-                        Each element is a single blue component.
-                        The GL converts it to floating point and assembles it into an RGBA element
-                        by attaching 0 for red and green, and 1 for alpha.
+                    </p></dd><dt><span class="term"><code class="constant">GL_RG</code></span></dt><dd><p>
+                        Each element is a red and green pair.
+                        The GL converts each to floating point and assembles it into an RGBA element
+                        by attaching 0 for blue, and 1 for alpha.
                         Each component is then multiplied by the signed scale factor <code class="constant">GL_c_SCALE</code>,
                         added to the signed bias <code class="constant">GL_c_BIAS</code>,
                         and clamped to the range [0,1]
@@ -234,6 +226,7 @@
             and <code class="constant">GL_RGBA</code> must match exactly.)
         </p><p>
         	If the <em class="parameter"><code>internalFormat</code></em> parameter is one of the generic compressed formats,
+        	<code class="constant">GL_COMPRESSED_RED</code>, <code class="constant">GL_COMPRESSED_RG</code>,
         	<code class="constant">GL_COMPRESSED_RGB</code>, or
         	<code class="constant">GL_COMPRESSED_RGBA</code>, the GL will replace the internal format with the symbolic constant for a specific internal format and compress the texture before storage.  If no corresponding internal format is available, or the GL can not compress that image for any reason, the internal format is instead replaced with a corresponding base internal format.
         </p><p>

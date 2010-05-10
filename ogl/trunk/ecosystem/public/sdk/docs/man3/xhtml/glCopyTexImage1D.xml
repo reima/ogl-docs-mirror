@@ -21,6 +21,8 @@
                     <code class="constant">GL_DEPTH_COMPONENT16</code>,
                     <code class="constant">GL_DEPTH_COMPONENT24</code>,
                     <code class="constant">GL_DEPTH_COMPONENT32</code>,
+                    <code class="constant">GL_RED</code>,
+                    <code class="constant">GL_RG</code>,
                     <code class="constant">GL_RGB</code>,
                     <code class="constant">GL_R3_G3_B2</code>,
                     <code class="constant">GL_RGB4</code>,
@@ -47,24 +49,24 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>width</code></em></span></dt><dd><p>
                     Specifies the width of the texture image.
                     Must be 0 or 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+                    <span class="ERROR">&lt;math&gt;
                         
-                        <mml:mrow>
-                            <mml:msup><mml:mn>2</mml:mn>
-                            <mml:mi mathvariant="italic">n</mml:mi>
-                            </mml:msup>
-                            <mml:mo>+</mml:mo>
-                            <mml:mrow>
-                                <mml:mn>2</mml:mn>
-                                <mml:mo>⁡</mml:mo>
-                                <mml:mfenced open="(" close=")">
-                                    <mml:mi mathvariant="italic">border</mml:mi>
-                                </mml:mfenced>
-                            </mml:mrow>
-                        </mml:mrow>
-                    </mml:math>
+                        <span class="ERROR">&lt;mrow&gt;
+                            <span class="ERROR">&lt;msup&gt;<span class="ERROR">&lt;mn&gt;2&lt;/mn&gt;</span>
+                            <span class="ERROR">&lt;mi&gt;n&lt;/mi&gt;</span>
+                            &lt;/msup&gt;</span>
+                            <span class="ERROR">&lt;mo&gt;+&lt;/mo&gt;</span>
+                            <span class="ERROR">&lt;mrow&gt;
+                                <span class="ERROR">&lt;mn&gt;2&lt;/mn&gt;</span>
+                                <span class="ERROR">&lt;mo&gt;&lt;/mo&gt;</span>
+                                <span class="ERROR">&lt;mfenced&gt;
+                                    <span class="ERROR">&lt;mi&gt;border&lt;/mi&gt;</span>
+                                &lt;/mfenced&gt;</span>
+                            &lt;/mrow&gt;</span>
+                        &lt;/mrow&gt;</span>
+                    &lt;/math&gt;</span>
                     for some integer 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>.
+                    <span class="ERROR">&lt;math&gt;<span class="ERROR">&lt;mi&gt;n&lt;/mi&gt;</span>&lt;/math&gt;</span>.
                     The height of the texture image is 1.
                 </p></dd><dt><span class="term"><em class="parameter"><code>border</code></em></span></dt><dd><p>
                     Specifies the width of the border.
@@ -74,28 +76,28 @@
             <code class="constant">GL_READ_BUFFER</code>.
         </p><p>
             The screen-aligned pixel row with left corner at 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+            <span class="ERROR">&lt;math&gt;
                 
-                <mml:mfenced open="(" close=")">
-                    <mml:mi mathvariant="italic">x</mml:mi>
-                    <mml:mi mathvariant="italic">y</mml:mi>
-                </mml:mfenced>
-            </mml:math>
+                <span class="ERROR">&lt;mfenced&gt;
+                    <span class="ERROR">&lt;mi&gt;x&lt;/mi&gt;</span>
+                    <span class="ERROR">&lt;mi&gt;y&lt;/mi&gt;</span>
+                &lt;/mfenced&gt;</span>
+            &lt;/math&gt;</span>
             and with a length of 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+            <span class="ERROR">&lt;math&gt;
                 
-                <mml:mrow>
-                    <mml:mi mathvariant="italic">width</mml:mi>
-                    <mml:mo>+</mml:mo>
-                    <mml:mrow>
-                        <mml:mn>2</mml:mn>
-                        <mml:mo>⁡</mml:mo>
-                        <mml:mfenced open="(" close=")">
-                            <mml:mi mathvariant="italic">border</mml:mi>
-                        </mml:mfenced>
-                    </mml:mrow>
-                </mml:mrow>
-            </mml:math>
+                <span class="ERROR">&lt;mrow&gt;
+                    <span class="ERROR">&lt;mi&gt;width&lt;/mi&gt;</span>
+                    <span class="ERROR">&lt;mo&gt;+&lt;/mo&gt;</span>
+                    <span class="ERROR">&lt;mrow&gt;
+                        <span class="ERROR">&lt;mn&gt;2&lt;/mn&gt;</span>
+                        <span class="ERROR">&lt;mo&gt;&lt;/mo&gt;</span>
+                        <span class="ERROR">&lt;mfenced&gt;
+                            <span class="ERROR">&lt;mi&gt;border&lt;/mi&gt;</span>
+                        &lt;/mfenced&gt;</span>
+                    &lt;/mrow&gt;</span>
+                &lt;/mrow&gt;</span>
+            &lt;/math&gt;</span>
             defines the texture array
             at the mipmap level specified by <em class="parameter"><code>level</code></em>.
             <em class="parameter"><code>internalformat</code></em> specifies the internal format of the texture array.
@@ -104,18 +106,18 @@
             <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a> had been called, but the process stops just before
             final conversion.
             At this point all pixel component values are clamped to the range 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+            <span class="ERROR">&lt;math&gt;
                 
-                <mml:mfenced open="[" close="]">
-                    <mml:mn>0</mml:mn>
-                    <mml:mn>1</mml:mn>
-                </mml:mfenced>
-            </mml:math>
+                <span class="ERROR">&lt;mfenced&gt;
+                    <span class="ERROR">&lt;mn&gt;0&lt;/mn&gt;</span>
+                    <span class="ERROR">&lt;mn&gt;1&lt;/mn&gt;</span>
+                &lt;/mfenced&gt;</span>
+            &lt;/math&gt;</span>
             and then converted to the texture's internal format for storage in the texel
             array.
         </p><p>
             Pixel ordering is such that lower 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">x</mml:mi></mml:math>
+            <span class="ERROR">&lt;math&gt;<span class="ERROR">&lt;mi&gt;x&lt;/mi&gt;</span>&lt;/math&gt;</span>
             screen coordinates correspond to
             lower texture coordinates.
         </p><p>
@@ -138,18 +140,18 @@
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> may be generated if <em class="parameter"><code>level</code></em> is greater
             than 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+            <span class="ERROR">&lt;math&gt;
                 
-                <mml:mrow>
-                    <mml:msub><mml:mi mathvariant="italic">log</mml:mi>
-                    <mml:mn>2</mml:mn>
-                    </mml:msub>
-                    <mml:mo>⁢</mml:mo>
-                    <mml:mi mathvariant="italic">max</mml:mi>
-                </mml:mrow>
-            </mml:math>,
+                <span class="ERROR">&lt;mrow&gt;
+                    <span class="ERROR">&lt;msub&gt;<span class="ERROR">&lt;mi&gt;log&lt;/mi&gt;</span>
+                    <span class="ERROR">&lt;mn&gt;2&lt;/mn&gt;</span>
+                    &lt;/msub&gt;</span>
+                    <span class="ERROR">&lt;mo&gt;&lt;/mo&gt;</span>
+                    <span class="ERROR">&lt;mi&gt;max&lt;/mi&gt;</span>
+                &lt;/mrow&gt;</span>
+            &lt;/math&gt;</span>,
             where
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">max</mml:mi></mml:math>
+            <span class="ERROR">&lt;math&gt;<span class="ERROR">&lt;mi&gt;max&lt;/mi&gt;</span>&lt;/math&gt;</span>
             is the returned value of <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>internalformat</code></em> is not an allowable value.
@@ -158,22 +160,22 @@
             2 + <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if non-power-of-two textures are not supported and the <em class="parameter"><code>width</code></em> cannot be represented as 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+            <span class="ERROR">&lt;math&gt;
                 
-                <mml:mrow>
-                    <mml:msup><mml:mn>2</mml:mn>
-                    <mml:mi mathvariant="italic">n</mml:mi>
-                    </mml:msup>
-                    <mml:mo>+</mml:mo>
-                    <mml:mrow>
-                        <mml:mn>2</mml:mn>
-                        <mml:mo>⁡</mml:mo>
-                        <mml:mfenced open="(" close=")">
-                            <mml:mi mathvariant="italic">border</mml:mi>
-                        </mml:mfenced>
-                    </mml:mrow>
-                </mml:mrow>
-            </mml:math>
+                <span class="ERROR">&lt;mrow&gt;
+                    <span class="ERROR">&lt;msup&gt;<span class="ERROR">&lt;mn&gt;2&lt;/mn&gt;</span>
+                    <span class="ERROR">&lt;mi&gt;n&lt;/mi&gt;</span>
+                    &lt;/msup&gt;</span>
+                    <span class="ERROR">&lt;mo&gt;+&lt;/mo&gt;</span>
+                    <span class="ERROR">&lt;mrow&gt;
+                        <span class="ERROR">&lt;mn&gt;2&lt;/mn&gt;</span>
+                        <span class="ERROR">&lt;mo&gt;&lt;/mo&gt;</span>
+                        <span class="ERROR">&lt;mfenced&gt;
+                            <span class="ERROR">&lt;mi&gt;border&lt;/mi&gt;</span>
+                        &lt;/mfenced&gt;</span>
+                    &lt;/mrow&gt;</span>
+                &lt;/mrow&gt;</span>
+            &lt;/math&gt;</span>
             for some integer value of <span class="emphasis"><em>n</em></span>.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>border</code></em> is not 0 or 1.

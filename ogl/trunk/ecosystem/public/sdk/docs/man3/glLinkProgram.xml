@@ -167,6 +167,8 @@
 	<para><constant>GL_INVALID_OPERATION</constant>
 	is generated if <parameter>program</parameter>
 	is not a program object.</para>
+	<para><constant>GL_INVALID_OPERATION</constant>
+	is generated if transform feedback mode is active.</para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
 	<para><citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>

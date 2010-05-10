@@ -75,17 +75,8 @@
 		texture image unit,</para>
 	    </listitem>
 	    <listitem>
-		<para>any active sampler in the current program object
-		refers to a texture image unit where fixed-function
-		fragment processing accesses a texture target that does
-		not match the sampler type, or</para>
-	    </listitem>
-	    <listitem>
-		<para>the sum of the number of active samplers in the
-		program and the number of texture image units enabled
-		for fixed-function fragment processing exceeds the
-		combined limit on the total number of texture image
-		units allowed.</para>
+	    <para>the number of active samplers in the program exceeds the maximum
+	    number of texture image units allowed.</para>
 	    </listitem>
 	</itemizedlist>
 
@@ -102,13 +93,6 @@
 
 	<para><constant>GL_INVALID_OPERATION</constant> is generated if
 	<parameter>program</parameter> is not a program object.</para>
-
-	<para><constant>GL_INVALID_OPERATION</constant> is generated if
-	<function>glValidateProgram</function> is executed between the
-	execution of
-	<citerefentry><refentrytitle>glBegin</refentrytitle></citerefentry>
-	and the corresponding execution of
-	<citerefentry><refentrytitle>glEnd</refentrytitle></citerefentry>.</para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
 	<para><citerefentry><refentrytitle>glGetProgram</refentrytitle></citerefentry>

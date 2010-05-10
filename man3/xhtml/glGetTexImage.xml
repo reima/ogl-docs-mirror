@@ -15,16 +15,15 @@
                     Specifies the level-of-detail number of the desired image.
                     Level 0 is the base image level.
                     Level 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
+                    <span class="ERROR">&lt;math&gt;<span class="ERROR">&lt;mi&gt;n&lt;/mi&gt;</span>&lt;/math&gt;</span>
                     is the 
-                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>th
+                    <span class="ERROR">&lt;math&gt;<span class="ERROR">&lt;mi&gt;n&lt;/mi&gt;</span>&lt;/math&gt;</span>th
                     mipmap reduction image.
                 </p></dd><dt><span class="term"><em class="parameter"><code>format</code></em></span></dt><dd><p>
                     Specifies a pixel format for the returned data.
                     The supported formats are
                     <code class="constant">GL_RED</code>,
-                    <code class="constant">GL_GREEN</code>,
-                    <code class="constant">GL_BLUE</code>,
+                    <code class="constant">GL_RG</code>,
                     <code class="constant">GL_RGB</code>,
                     <code class="constant">GL_BGR</code>,
                     <code class="constant">GL_RGBA</code> and 
@@ -125,20 +124,20 @@
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> may be generated if <em class="parameter"><code>level</code></em> is greater
             than 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+            <span class="ERROR">&lt;math&gt;
                 
-                <mml:mrow>
-                    <mml:msub><mml:mi mathvariant="italic">log</mml:mi>
-                    <mml:mn>2</mml:mn>
-                    </mml:msub>
-                    <mml:mo>⁡</mml:mo>
-                    <mml:mfenced open="(" close=")">
-                        <mml:mi mathvariant="italic">max</mml:mi>
-                    </mml:mfenced>
-                </mml:mrow>
-            </mml:math>,
+                <span class="ERROR">&lt;mrow&gt;
+                    <span class="ERROR">&lt;msub&gt;<span class="ERROR">&lt;mi&gt;log&lt;/mi&gt;</span>
+                    <span class="ERROR">&lt;mn&gt;2&lt;/mn&gt;</span>
+                    &lt;/msub&gt;</span>
+                    <span class="ERROR">&lt;mo&gt;&lt;/mo&gt;</span>
+                    <span class="ERROR">&lt;mfenced&gt;
+                        <span class="ERROR">&lt;mi&gt;max&lt;/mi&gt;</span>
+                    &lt;/mfenced&gt;</span>
+                &lt;/mrow&gt;</span>
+            &lt;/math&gt;</span>,
             where 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">max</mml:mi></mml:math>
+            <span class="ERROR">&lt;math&gt;<span class="ERROR">&lt;mi&gt;max&lt;/mi&gt;</span>&lt;/math&gt;</span>
             is the returned value of <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is returned if <em class="parameter"><code>type</code></em> is one of

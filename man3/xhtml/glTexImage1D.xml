@@ -23,6 +23,8 @@
                     <code class="constant">GL_DEPTH_COMPONENT24</code>,
                     <code class="constant">GL_DEPTH_COMPONENT32</code>,
                     <code class="constant">GL_R3_G3_B2</code>,
+                    <code class="constant">GL_RED</code>,
+                    <code class="constant">GL_RG</code>,
                     <code class="constant">GL_RGB</code>,
                     <code class="constant">GL_RGB4</code>,
                     <code class="constant">GL_RGB5</code>,
@@ -295,7 +297,7 @@
             A three-component image uses the R, G, and B values.
             A four-component image uses all of the RGBA components.
         </p><p>
-			     Image-based shadowing can be enabled by comparing texture r coordinates to depth texture values to generate a boolean result.  See <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a> for details on texture comparison.
+            Image-based shadowing can be enabled by comparing texture r coordinates to depth texture values to generate a boolean result.  See <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a> for details on texture comparison.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
             <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> and <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a> modes affect texture images.
         </p><p>

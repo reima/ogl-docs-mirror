@@ -6,7 +6,7 @@
         <refmetainfo>
             <copyright>
                 <year>2010</year>
-                <holder>Graham Sellers</holder>
+                <holder>Khronos Group</holder>
             </copyright>
         </refmetainfo>
         <refentrytitle>glGetTransformFeedbackVarying</refentrytitle>
@@ -157,7 +157,7 @@
         </para>
     </refsect1>    <refsect1 id="Copyright"><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"></trademark> 2010 Graham Sellers. 
+            Copyright <trademark class="copyright"></trademark> 2010 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
             <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.

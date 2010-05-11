@@ -62,6 +62,7 @@
                     The following symbolic values are accepted:
                     <constant>GL_STENCIL_INDEX</constant>,
                     <constant>GL_DEPTH_COMPONENT</constant>,
+                    <constant>GL_DEPTH_STENCIL</constant>,
                     <constant>GL_RED</constant>,
                     <constant>GL_GREEN</constant>,
                     <constant>GL_BLUE</constant>,
@@ -84,6 +85,7 @@
                     <constant>GL_SHORT</constant>,
                     <constant>GL_UNSIGNED_INT</constant>,
                     <constant>GL_INT</constant>,
+                    <constant>GL_HALF_FLOAT</constant>,
                     <constant>GL_FLOAT</constant>,
                     <constant>GL_UNSIGNED_BYTE_3_3_2</constant>,
                     <constant>GL_UNSIGNED_BYTE_2_3_3_REV</constant>,
@@ -95,8 +97,12 @@
                     <constant>GL_UNSIGNED_SHORT_1_5_5_5_REV</constant>,
                     <constant>GL_UNSIGNED_INT_8_8_8_8</constant>,
                     <constant>GL_UNSIGNED_INT_8_8_8_8_REV</constant>,
-                    <constant>GL_UNSIGNED_INT_10_10_10_2</constant>, or
-                    <constant>GL_UNSIGNED_INT_2_10_10_10_REV</constant>.
+                    <constant>GL_UNSIGNED_INT_10_10_10_2</constant>,
+                    <constant>GL_UNSIGNED_INT_2_10_10_10_REV</constant>,
+                    <constant>GL_UNSIGNED_INT_24_8</constant>,
+                    <constant>GL_UNSIGNED_INT_10F_11F_11F_REV</constant>,
+                    <constant>GL_UNSIGNED_INT_5_9_9_9_REV</constant>, or
+                    <constant>GL_FLOAT_32_UNSIGNED_INT_24_8_REV</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -134,7 +140,7 @@
         <para>
             <function>glReadPixels</function> returns values from each pixel with lower left corner at
             <inlineequation><mml:math>
-                <!-- eqn: (x + i, y + j):-->
+                <!-- eqn: (x + i, y + j): -->
                 <mml:mfenced open="(" close=")">
                     <mml:mrow>
                         <mml:mi mathvariant="italic">x</mml:mi>
@@ -150,7 +156,7 @@
             </mml:math></inlineequation>
             for 
             <inlineequation><mml:math>
-                <!-- eqn: 0 <= i < width:-->
+                <!-- eqn: 0 <= i < width: -->
                 <mml:mrow>
                     <mml:mn>0</mml:mn>
                     <mml:mo>&lt;=</mml:mo>
@@ -161,7 +167,7 @@
             </mml:math></inlineequation>
             and
             <inlineequation><mml:math>
-                <!-- eqn: 0 <= j < height:-->
+                <!-- eqn: 0 <= j < height: -->
                 <mml:mrow>
                     <mml:mn>0</mml:mn>
                     <mml:mo>&lt;=</mml:mo>
@@ -207,12 +213,21 @@
                         added to <constant>GL_DEPTH_BIAS</constant>,
                         and finally clamped to the range 
                         <inlineequation><mml:math>
-                            <!-- eqn: [0,1]:-->
+                            <!-- eqn: [0,1]: -->
                             <mml:mfenced open="[" close="]">
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
                             </mml:mfenced>
                         </mml:math></inlineequation>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_DEPTH_STENCIL</constant></term>
+                <listitem>
+                    <para>
+                        Values are taken from both the depth and stencil buffers. The <parameter>type</parameter> parameter
+                        must be <constant>GL_UNSIGNED_INT_24_8</constant> or <constant>GL_FLOAT_32_UNSIGNED_INT_24_8_REV</constant>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -311,7 +326,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: 2 sup 8 - 1:-->
+                            <!-- eqn: 2 sup 8 - 1: -->
                             <mml:mrow>
                                 <mml:msup><mml:mn>2</mml:mn>
                                 <mml:mn>8</mml:mn>
@@ -323,7 +338,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: (2 sup 8 - 1) c:-->
+                            <!-- eqn: (2 sup 8 - 1) c: -->
                             <mml:mrow>
                                 <mml:mfenced open="(" close=")">
                                     <mml:mrow>
@@ -346,7 +361,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: 2 sup 7 - 1:-->
+                            <!-- eqn: 2 sup 7 - 1: -->
                             <mml:mrow>
                                 <mml:msup><mml:mn>2</mml:mn>
                                 <mml:mn>7</mml:mn>
@@ -358,7 +373,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: {(2 sup 8 - 1) c - 1} / 2:-->
+                            <!-- eqn: {(2 sup 8 - 1) c - 1} / 2: -->
                             <mml:mfrac>
                                 <mml:mfenced open="" close="">
                                     <mml:mrow>
@@ -388,7 +403,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: 2 sup 16 - 1:-->
+                            <!-- eqn: 2 sup 16 - 1: -->
                             <mml:mrow>
                                 <mml:msup><mml:mn>2</mml:mn>
                                 <mml:mn>16</mml:mn>
@@ -400,7 +415,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: (2 sup 16 - 1) c:-->
+                            <!-- eqn: (2 sup 16 - 1) c: -->
                             <mml:mrow>
                                 <mml:mfenced open="(" close=")">
                                     <mml:mrow>
@@ -423,7 +438,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: 2 sup 15 - 1:-->
+                            <!-- eqn: 2 sup 15 - 1: -->
                             <mml:mrow>
                                 <mml:msup><mml:mn>2</mml:mn>
                                 <mml:mn>15</mml:mn>
@@ -435,7 +450,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: {(2 sup 16 - 1) c - 1} / 2:-->
+                            <!-- eqn: {(2 sup 16 - 1) c - 1} / 2: -->
                             <mml:mfrac>
                                 <mml:mfenced open="" close="">
                                     <mml:mrow>
@@ -465,7 +480,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: 2 sup 32 - 1:-->
+                            <!-- eqn: 2 sup 32 - 1: -->
                             <mml:mrow>
                                 <mml:msup><mml:mn>2</mml:mn>
                                 <mml:mn>32</mml:mn>
@@ -477,7 +492,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: (2 sup 32 - 1) c:-->
+                            <!-- eqn: (2 sup 32 - 1) c: -->
                             <mml:mrow>
                                 <mml:mfenced open="(" close=")">
                                     <mml:mrow>
@@ -500,7 +515,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: 2 sup 31 - 1:-->
+                            <!-- eqn: 2 sup 31 - 1: -->
                             <mml:mrow>
                                 <mml:msup><mml:mn>2</mml:mn>
                                 <mml:mn>31</mml:mn>
@@ -512,7 +527,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: {(2 sup 32 - 1) c - 1} / 2:-->
+                            <!-- eqn: {(2 sup 32 - 1) c - 1} / 2: -->
                             <mml:mfrac>
                                 <mml:mfenced open="" close="">
                                     <mml:mrow>
@@ -538,6 +553,17 @@
                     </row>
                     <row>
                         <entry align="left">
+                        <constant>GL_HALF_FLOAT</constant>
+                        </entry>
+                        <entry align="center">
+                        none
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">c</mml:mi></mml:math></inlineequation>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
                         <constant>GL_FLOAT</constant>
                         </entry>
                         <entry align="center">
@@ -545,6 +571,494 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math><mml:mi mathvariant="italic">c</mml:mi></mml:math></inlineequation>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_UNSIGNED_BYTE_3_3_2</constant>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: 2 sup N - 1: -->
+                            <mml:mrow>
+                                <mml:msup><mml:mn>2</mml:mn>
+                                <mml:mn>N</mml:mn>
+                                </mml:msup>
+                                <mml:mo>-</mml:mo>
+                                <mml:mn>1</mml:mn>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: (2 sup N - 1) c: -->
+                            <mml:mrow>
+                                <mml:mfenced open="(" close=")">
+                                    <mml:mrow>
+                                        <mml:msup><mml:mn>2</mml:mn>
+                                        <mml:mn>N</mml:mn>
+                                        </mml:msup>
+                                        <mml:mo>-</mml:mo>
+                                        <mml:mn>1</mml:mn>
+                                    </mml:mrow>
+                                </mml:mfenced>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:mi mathvariant="italic">c</mml:mi>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_UNSIGNED_BYTE_2_3_3_REV</constant>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: 2 sup N - 1: -->
+                            <mml:mrow>
+                                <mml:msup><mml:mn>2</mml:mn>
+                                <mml:mn>N</mml:mn>
+                                </mml:msup>
+                                <mml:mo>-</mml:mo>
+                                <mml:mn>1</mml:mn>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: (2 sup N - 1) c: -->
+                            <mml:mrow>
+                                <mml:mfenced open="(" close=")">
+                                    <mml:mrow>
+                                        <mml:msup><mml:mn>2</mml:mn>
+                                        <mml:mn>N</mml:mn>
+                                        </mml:msup>
+                                        <mml:mo>-</mml:mo>
+                                        <mml:mn>1</mml:mn>
+                                    </mml:mrow>
+                                </mml:mfenced>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:mi mathvariant="italic">c</mml:mi>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_UNSIGNED_SHORT_5_6_5</constant>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: 2 sup N - 1: -->
+                            <mml:mrow>
+                                <mml:msup><mml:mn>2</mml:mn>
+                                <mml:mn>N</mml:mn>
+                                </mml:msup>
+                                <mml:mo>-</mml:mo>
+                                <mml:mn>1</mml:mn>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: (2 sup N - 1) c: -->
+                            <mml:mrow>
+                                <mml:mfenced open="(" close=")">
+                                    <mml:mrow>
+                                        <mml:msup><mml:mn>2</mml:mn>
+                                        <mml:mn>N</mml:mn>
+                                        </mml:msup>
+                                        <mml:mo>-</mml:mo>
+                                        <mml:mn>1</mml:mn>
+                                    </mml:mrow>
+                                </mml:mfenced>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:mi mathvariant="italic">c</mml:mi>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_UNSIGNED_SHORT_5_6_5_REV</constant>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: 2 sup N - 1: -->
+                            <mml:mrow>
+                                <mml:msup><mml:mn>2</mml:mn>
+                                <mml:mn>N</mml:mn>
+                                </mml:msup>
+                                <mml:mo>-</mml:mo>
+                                <mml:mn>1</mml:mn>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: (2 sup N - 1) c: -->
+                            <mml:mrow>
+                                <mml:mfenced open="(" close=")">
+                                    <mml:mrow>
+                                        <mml:msup><mml:mn>2</mml:mn>
+                                        <mml:mn>N</mml:mn>
+                                        </mml:msup>
+                                        <mml:mo>-</mml:mo>
+                                        <mml:mn>1</mml:mn>
+                                    </mml:mrow>
+                                </mml:mfenced>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:mi mathvariant="italic">c</mml:mi>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_UNSIGNED_SHORT_4_4_4_4</constant>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: 2 sup N - 1: -->
+                            <mml:mrow>
+                                <mml:msup><mml:mn>2</mml:mn>
+                                <mml:mn>N</mml:mn>
+                                </mml:msup>
+                                <mml:mo>-</mml:mo>
+                                <mml:mn>1</mml:mn>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: (2 sup N - 1) c: -->
+                            <mml:mrow>
+                                <mml:mfenced open="(" close=")">
+                                    <mml:mrow>
+                                        <mml:msup><mml:mn>2</mml:mn>
+                                        <mml:mn>N</mml:mn>
+                                        </mml:msup>
+                                        <mml:mo>-</mml:mo>
+                                        <mml:mn>1</mml:mn>
+                                    </mml:mrow>
+                                </mml:mfenced>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:mi mathvariant="italic">c</mml:mi>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_UNSIGNED_SHORT_4_4_4_4_REV</constant>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: 2 sup N - 1: -->
+                            <mml:mrow>
+                                <mml:msup><mml:mn>2</mml:mn>
+                                <mml:mn>N</mml:mn>
+                                </mml:msup>
+                                <mml:mo>-</mml:mo>
+                                <mml:mn>1</mml:mn>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: (2 sup N - 1) c: -->
+                            <mml:mrow>
+                                <mml:mfenced open="(" close=")">
+                                    <mml:mrow>
+                                        <mml:msup><mml:mn>2</mml:mn>
+                                        <mml:mn>N</mml:mn>
+                                        </mml:msup>
+                                        <mml:mo>-</mml:mo>
+                                        <mml:mn>1</mml:mn>
+                                    </mml:mrow>
+                                </mml:mfenced>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:mi mathvariant="italic">c</mml:mi>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_UNSIGNED_SHORT_5_5_5_1</constant>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: 2 sup N - 1: -->
+                            <mml:mrow>
+                                <mml:msup><mml:mn>2</mml:mn>
+                                <mml:mn>N</mml:mn>
+                                </mml:msup>
+                                <mml:mo>-</mml:mo>
+                                <mml:mn>1</mml:mn>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: (2 sup N - 1) c: -->
+                            <mml:mrow>
+                                <mml:mfenced open="(" close=")">
+                                    <mml:mrow>
+                                        <mml:msup><mml:mn>2</mml:mn>
+                                        <mml:mn>N</mml:mn>
+                                        </mml:msup>
+                                        <mml:mo>-</mml:mo>
+                                        <mml:mn>1</mml:mn>
+                                    </mml:mrow>
+                                </mml:mfenced>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:mi mathvariant="italic">c</mml:mi>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_UNSIGNED_SHORT_1_5_5_5_REV</constant>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: 2 sup N - 1: -->
+                            <mml:mrow>
+                                <mml:msup><mml:mn>2</mml:mn>
+                                <mml:mn>N</mml:mn>
+                                </mml:msup>
+                                <mml:mo>-</mml:mo>
+                                <mml:mn>1</mml:mn>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: (2 sup N - 1) c: -->
+                            <mml:mrow>
+                                <mml:mfenced open="(" close=")">
+                                    <mml:mrow>
+                                        <mml:msup><mml:mn>2</mml:mn>
+                                        <mml:mn>N</mml:mn>
+                                        </mml:msup>
+                                        <mml:mo>-</mml:mo>
+                                        <mml:mn>1</mml:mn>
+                                    </mml:mrow>
+                                </mml:mfenced>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:mi mathvariant="italic">c</mml:mi>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_UNSIGNED_INT_8_8_8_8</constant>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: 2 sup N - 1: -->
+                            <mml:mrow>
+                                <mml:msup><mml:mn>2</mml:mn>
+                                <mml:mn>N</mml:mn>
+                                </mml:msup>
+                                <mml:mo>-</mml:mo>
+                                <mml:mn>1</mml:mn>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: (2 sup N - 1) c: -->
+                            <mml:mrow>
+                                <mml:mfenced open="(" close=")">
+                                    <mml:mrow>
+                                        <mml:msup><mml:mn>2</mml:mn>
+                                        <mml:mn>N</mml:mn>
+                                        </mml:msup>
+                                        <mml:mo>-</mml:mo>
+                                        <mml:mn>1</mml:mn>
+                                    </mml:mrow>
+                                </mml:mfenced>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:mi mathvariant="italic">c</mml:mi>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_UNSIGNED_INT_8_8_8_8_REV</constant>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: 2 sup N - 1: -->
+                            <mml:mrow>
+                                <mml:msup><mml:mn>2</mml:mn>
+                                <mml:mn>N</mml:mn>
+                                </mml:msup>
+                                <mml:mo>-</mml:mo>
+                                <mml:mn>1</mml:mn>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: (2 sup N - 1) c: -->
+                            <mml:mrow>
+                                <mml:mfenced open="(" close=")">
+                                    <mml:mrow>
+                                        <mml:msup><mml:mn>2</mml:mn>
+                                        <mml:mn>N</mml:mn>
+                                        </mml:msup>
+                                        <mml:mo>-</mml:mo>
+                                        <mml:mn>1</mml:mn>
+                                    </mml:mrow>
+                                </mml:mfenced>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:mi mathvariant="italic">c</mml:mi>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_UNSIGNED_INT_10_10_10_2</constant>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: 2 sup N - 1: -->
+                            <mml:mrow>
+                                <mml:msup><mml:mn>2</mml:mn>
+                                <mml:mn>N</mml:mn>
+                                </mml:msup>
+                                <mml:mo>-</mml:mo>
+                                <mml:mn>1</mml:mn>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: (2 sup N - 1) c: -->
+                            <mml:mrow>
+                                <mml:mfenced open="(" close=")">
+                                    <mml:mrow>
+                                        <mml:msup><mml:mn>2</mml:mn>
+                                        <mml:mn>N</mml:mn>
+                                        </mml:msup>
+                                        <mml:mo>-</mml:mo>
+                                        <mml:mn>1</mml:mn>
+                                    </mml:mrow>
+                                </mml:mfenced>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:mi mathvariant="italic">c</mml:mi>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_UNSIGNED_INT_2_10_10_10_REV</constant>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: 2 sup N - 1: -->
+                            <mml:mrow>
+                                <mml:msup><mml:mn>2</mml:mn>
+                                <mml:mn>N</mml:mn>
+                                </mml:msup>
+                                <mml:mo>-</mml:mo>
+                                <mml:mn>1</mml:mn>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: (2 sup N - 1) c: -->
+                            <mml:mrow>
+                                <mml:mfenced open="(" close=")">
+                                    <mml:mrow>
+                                        <mml:msup><mml:mn>2</mml:mn>
+                                        <mml:mn>N</mml:mn>
+                                        </mml:msup>
+                                        <mml:mo>-</mml:mo>
+                                        <mml:mn>1</mml:mn>
+                                    </mml:mrow>
+                                </mml:mfenced>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:mi mathvariant="italic">c</mml:mi>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_UNSIGNED_INT_24_8</constant>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: 2 sup N - 1: -->
+                            <mml:mrow>
+                                <mml:msup><mml:mn>2</mml:mn>
+                                <mml:mn>N</mml:mn>
+                                </mml:msup>
+                                <mml:mo>-</mml:mo>
+                                <mml:mn>1</mml:mn>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math>
+                            <!-- eqn: (2 sup N - 1) c: -->
+                            <mml:mrow>
+                                <mml:mfenced open="(" close=")">
+                                    <mml:mrow>
+                                        <mml:msup><mml:mn>2</mml:mn>
+                                        <mml:mn>N</mml:mn>
+                                        </mml:msup>
+                                        <mml:mo>-</mml:mo>
+                                        <mml:mn>1</mml:mn>
+                                    </mml:mrow>
+                                </mml:mfenced>
+                                <mml:mo>&it;</mml:mo>
+                                <mml:mi mathvariant="italic">c</mml:mi>
+                            </mml:mrow>
+                        </mml:math></inlineequation>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_UNSIGNED_INT_10F_11F_11F_REV</constant>
+                        </entry>
+                        <entry align="center">
+                        --
+                        </entry>
+                        <entry align="left">
+                        Special
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_UNSIGNED_INT_5_9_9_9_REV</constant>
+                        </entry>
+                        <entry align="center">
+                        --
+                        </entry>
+                        <entry align="left">
+                        Special
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
+                        <constant>GL_FLOAT_32_UNSIGNED_INT_24_8_REV</constant>
+                        </entry>
+                        <entry align="center">
+                        none
+                        </entry>
+                        <entry align="center">
+                        <inlineequation><mml:math><mml:mi mathvariant="italic">c</mml:mi></mml:math></inlineequation> (Depth Only)
                         </entry>
                     </row>
                 </tbody>
@@ -565,7 +1079,7 @@
             row
             is placed in location 
             <inlineequation><mml:math>
-                <!-- eqn: (j) width + i:-->
+                <!-- eqn: (j) width + i: -->
                 <mml:mrow>
                     <mml:mfenced open="(" close=")">
                         <mml:mi mathvariant="italic">j</mml:mi>
@@ -613,6 +1127,14 @@
             and there is no depth buffer.
         </para>
         <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>format</parameter> is <constant>GL_DEPTH_STENCIL</constant>
+            and there is no depth buffer or if there is no stencil buffer.
+        </para>
+        <para>
+            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>format</parameter> is <constant>GL_DEPTH_STENCIL</constant>
+            and <parameter>type</parameter> is not <constant>GL_UNSIGNED_INT_24_8</constant> or <constant>GL_FLOAT_32_UNSIGNED_INT_24_8_REV</constant>.
+        </para>
+        <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>type</parameter> is one of
             <constant>GL_UNSIGNED_BYTE_3_3_2</constant>,
             <constant>GL_UNSIGNED_BYTE_2_3_3_REV</constant>,
@@ -645,6 +1167,11 @@
             <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to the
             <constant>GL_PIXEL_PACK_BUFFER</constant> target and <parameter>data</parameter> is not evenly divisible 
             into the number of bytes needed to store in memory a datum indicated by <parameter>type</parameter>.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if <constant>GL_READ_FRAMEBUFFER_BINDING</constant>
+            is non-zero, the read framebuffer is complete, and the value of <constant>GL_SAMPLE_BUFFERS</constant>
+            for the read framebuffer is greater than zero.
         </para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>

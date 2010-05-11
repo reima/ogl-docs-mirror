@@ -5,9 +5,14 @@
                     Specifies the target buffer object being mapped.
                     The symbolic constant must be
                     <code class="constant">GL_ARRAY_BUFFER</code>,
+                    <code class="constant">GL_COPY_READ_BUFFER</code>,
+                    <code class="constant">GL_COPY_WRITE_BUFFER</code>,
                     <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code>,
-                    <code class="constant">GL_PIXEL_PACK_BUFFER</code>, or
-                    <code class="constant">GL_PIXEL_UNPACK_BUFFER</code>.
+                    <code class="constant">GL_PIXEL_PACK_BUFFER</code>,
+                    <code class="constant">GL_PIXEL_UNPACK_BUFFER</code>,
+                    <code class="constant">GL_TEXTURE_BUFFER</code>,
+                    <code class="constant">GL_TRANSFORM_FEEDBACK_BUFFER</code> or
+                    <code class="constant">GL_UNIFORM_BUFFER</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>access</code></em></span></dt><dd><p>
                     Specifies the access policy, indicating whether it will be possible to read from, write to,
                     or both read from and write to the buffer object's mapped data store. The symbolic constant must be
@@ -16,9 +21,14 @@
                     Specifies the target buffer object being unmapped.
                     The symbolic constant must be
                     <code class="constant">GL_ARRAY_BUFFER</code>,
+                    <code class="constant">GL_COPY_READ_BUFFER</code>,
+                    <code class="constant">GL_COPY_WRITE_BUFFER</code>,
                     <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code>,
-                    <code class="constant">GL_PIXEL_PACK_BUFFER</code>, or
-                    <code class="constant">GL_PIXEL_UNPACK_BUFFER</code>.
+                    <code class="constant">GL_PIXEL_PACK_BUFFER</code>,
+                    <code class="constant">GL_PIXEL_UNPACK_BUFFER</code>,
+                    <code class="constant">GL_TEXTURE_BUFFER</code>,
+                    <code class="constant">GL_TRANSFORM_FEEDBACK_BUFFER</code> or
+                    <code class="constant">GL_UNIFORM_BUFFER</code>.
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
             <code class="function">glMapBuffer</code> maps to the client's address space the entire data store of the buffer object 
             currently bound to <em class="parameter"><code>target</code></em>. The data can then be directly read and/or written relative to 
@@ -51,9 +61,16 @@
             Parameter values passed to GL commands may not be sourced from the returned pointer. No error will be generated,
             but results will be undefined and will likely vary across GL implementations.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
-            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not 
-            <code class="constant">GL_ARRAY_BUFFER</code>, <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code>, 
-            <code class="constant">GL_PIXEL_PACK_BUFFER</code>, or <code class="constant">GL_PIXEL_UNPACK_BUFFER</code>.
+            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not
+            <code class="constant">GL_ARRAY_BUFFER</code>,
+            <code class="constant">GL_COPY_READ_BUFFER</code>,
+            <code class="constant">GL_COPY_WRITE_BUFFER</code>,
+            <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code>,
+            <code class="constant">GL_PIXEL_PACK_BUFFER</code>,
+            <code class="constant">GL_PIXEL_UNPACK_BUFFER</code>,
+            <code class="constant">GL_TEXTURE_BUFFER</code>,
+            <code class="constant">GL_TRANSFORM_FEEDBACK_BUFFER</code> or
+            <code class="constant">GL_UNIFORM_BUFFER</code>.
         </p><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>access</code></em> is not 
             <code class="constant">GL_READ_ONLY</code>, <code class="constant">GL_WRITE_ONLY</code>, or <code class="constant">GL_READ_WRITE</code>.
@@ -75,6 +92,8 @@
             <a href="glGetBufferParameteriv.xml"><span class="citerefentry"><span class="refentrytitle">glGetBufferParameteriv</span></span></a> with argument <code class="constant">GL_BUFFER_MAPPED</code>,  <code class="constant">GL_BUFFER_ACCESS</code>, or <code class="constant">GL_BUFFER_USAGE</code>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>,
+            <a href="glBindBufferBase.xml"><span class="citerefentry"><span class="refentrytitle">glBindBufferBase</span></span></a>,
+            <a href="glBindBufferRange.xml"><span class="citerefentry"><span class="refentrytitle">glBindBufferRange</span></span></a>,
             <a href="glBufferData.xml"><span class="citerefentry"><span class="refentrytitle">glBufferData</span></span></a>,
             <a href="glBufferSubData.xml"><span class="citerefentry"><span class="refentrytitle">glBufferSubData</span></span></a>,
             <a href="glDeleteBuffers.xml"><span class="citerefentry"><span class="refentrytitle">glDeleteBuffers</span></span></a>

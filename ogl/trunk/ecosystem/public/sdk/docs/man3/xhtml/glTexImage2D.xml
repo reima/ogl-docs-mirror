@@ -5,6 +5,8 @@
     </p><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the target texture.
                     Must be <code class="constant">GL_TEXTURE_2D</code>, <code class="constant">GL_PROXY_TEXTURE_2D</code>,
+                    <code class="constant">GL_TEXTURE_1D_ARRAY</code>, <code class="constant">GL_PROXY_TEXTURE_1D_ARRAY</code>,
+                    <code class="constant">GL_TEXTURE_RECTANGLE</code>, <code class="constant">GL_PROXY_TEXTURE_RECTANGLE</code>,
                     <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_X</code>,
                     <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_X</code>,
                     <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Y</code>,
@@ -16,6 +18,8 @@
                     Specifies the level-of-detail number.
                     Level 0 is the base image level.
                     Level <span class="emphasis"><em>n</em></span> is the <span class="emphasis"><em>n</em></span>th mipmap reduction image.
+                    If <em class="parameter"><code>target</code></em> is <code class="constant">GL_TEXTURE_RECTANGLE</code> or
+                    <code class="constant">GL_PROXY_TEXTURE_RECTANGLE</code>, <em class="parameter"><code>level</code></em> must be 0.
                 </p></dd><dt><span class="term"><em class="parameter"><code>internalFormat</code></em></span></dt><dd><p>
                     Specifies the number of color components in the texture.
                     Must be one of the following symbolic constants:
@@ -56,11 +60,13 @@
                     All implementations support texture images that are at least 64 texels
                     wide.
                 </p></dd><dt><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
-                    Specifies the height of the texture image.
+                    Specifies the height of the texture image, or the size of the texture
+                    array, in the case of the <code class="constant">GL_TEXTURE_1D_ARRAY</code> and
+                    <code class="constant">GL_PROXY_TEXTURE_1D_ARRAY</code> targets.
                     All implementations support texture images that are at least 64 texels
                     high.
                 </p></dd><dt><span class="term"><em class="parameter"><code>border</code></em></span></dt><dd><p>
-                    This value must now be 0 since texture borders are no longer supported.
+                    This value must now be 0.
                 </p></dd><dt><span class="term"><em class="parameter"><code>format</code></em></span></dt><dd><p>
                     Specifies the format of the pixel data.
                     The following symbolic values are accepted:
@@ -95,29 +101,28 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>data</code></em></span></dt><dd><p>
                     Specifies a pointer to the image data in memory.
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
-            Texturing maps a portion of a specified texture image onto each graphical primitive for which texturing is enabled.  To enable and disable two-dimensional texturing, call <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a> and <a href="glDisable.xml"><span class="citerefentry"><span class="refentrytitle">glDisable</span></span></a> with argument <code class="constant">GL_TEXTURE_2D</code>.  To enable and disable texturing using cube-mapped texture, call <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a> and <a href="glDisable.xml"><span class="citerefentry"><span class="refentrytitle">glDisable</span></span></a> with argument <code class="constant">GL_TEXTURE_CUBE_MAP</code>.
+            Texturing allows elements of an image array to be read by shaders.
         </p><p>
             To define texture images, call <code class="function">glTexImage2D</code>.
             The arguments describe the parameters of the texture image,
-            such as height,
-            width,
-            width of the border,
-            level-of-detail number
+            such as height, width, width of the border, level-of-detail number
             (see <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>),
             and number of color components provided.
             The last three arguments describe how the image is represented in memory.
         </p><p>
-            If <em class="parameter"><code>target</code></em> is <code class="constant">GL_PROXY_TEXTURE_2D</code> or <code class="constant">GL_PROXY_TEXTURE_CUBE_MAP</code>, no data is read from <em class="parameter"><code>data</code></em>, but
+            If <em class="parameter"><code>target</code></em> is <code class="constant">GL_PROXY_TEXTURE_2D</code>, <code class="constant">GL_PROXY_TEXTURE_1D_ARRAY</code>,
+            <code class="constant">GL_PROXY_TEXTURE_CUBE_MAP</code>, or <code class="constant">GL_PROXY_TEXTURE_RECTANGLE</code>,
+            no data is read from <em class="parameter"><code>data</code></em>, but
             all of the texture image state is recalculated, checked for
             consistency, and checked
             against the implementation's capabilities. If the implementation cannot
             handle a texture of the requested texture size, it sets
             all of the image state to 0,
             but does not generate an error (see <a href="glGetError.xml"><span class="citerefentry"><span class="refentrytitle">glGetError</span></span></a>). To query for an
-            entire mipmap array, use an image array level greater than or equal to
-            1.
+            entire mipmap array, use an image array level greater than or equal to 1.
         </p><p>
-            If <em class="parameter"><code>target</code></em> is <code class="constant">GL_TEXTURE_2D</code>, or one of the <code class="constant">GL_TEXTURE_CUBE_MAP</code>
+            If <em class="parameter"><code>target</code></em> is <code class="constant">GL_TEXTURE_2D</code>, <code class="constant">GL_TEXTURE_RECTANGLE</code>
+            or one of the <code class="constant">GL_TEXTURE_CUBE_MAP</code>
             targets, data is read from <em class="parameter"><code>data</code></em> as a sequence of signed or unsigned
             bytes, shorts, or longs, or single-precision floating-point values,
             depending on <em class="parameter"><code>type</code></em>.  These values are grouped into sets of one, two,
@@ -126,12 +131,14 @@
             with bit ordering determined by <code class="constant">GL_UNPACK_LSB_FIRST</code>
             (see <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>).
         </p><p>
+            If <em class="parameter"><code>target</code></em> is <code class="constant">GL_TEXTURE_1D_ARRAY</code>, data is interpreted
+            as an array of one-dimensional images.
+        </p><p>
             If a non-zero named buffer object is bound to the <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target 
             (see <a href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>) while a texture image is
             specified, <em class="parameter"><code>data</code></em> is treated as a byte offset into the buffer object's data store.
         </p><p>
-            The first element corresponds to the lower left corner of the texture
-            image.
+            The first element corresponds to the lower left corner of the texture image.
             Subsequent elements progress left-to-right through the remaining texels
             in the lowest row of the texture image, and then in successively higher
             rows of the texture image.
@@ -175,7 +182,11 @@
                         The GL converts it to floating point, multiplies by the signed scale factor
                         <code class="constant">GL_DEPTH_SCALE</code>, adds the signed bias <code class="constant">GL_DEPTH_BIAS</code>,
                         and clamps to the range [0,1] (see <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>).
-                    </p></dd></dl></div><p>
+                    </p></dd><dt><span class="term"><code class="constant">GL_DEPTH_STENCIL</code></span></dt><dd><p>
+                        Each element is a pair of depth and stencil values. The depth component of
+                        the pair is interpreted as in <code class="constant">GL_DEPTH_COMPONENT</code>. The stencil
+                        component is interpreted based on specified the depth + stencil internal format.
+                     </p></dd></dl></div><p>
             If an application wants to store the texture at a certain
             resolution or in a certain format, it can request the resolution
             and format with <em class="parameter"><code>internalFormat</code></em>. The GL will choose an internal
@@ -185,113 +196,114 @@
             <code class="constant">GL_RG</code>, <code class="constant">GL_RGB</code>,
             and <code class="constant">GL_RGBA</code> must match exactly.)
         </p><p>
-        	If the <em class="parameter"><code>internalFormat</code></em> parameter is one of the generic compressed formats,
-        	<code class="constant">GL_COMPRESSED_RED</code>, <code class="constant">GL_COMPRESSED_RG</code>,
-        	<code class="constant">GL_COMPRESSED_RGB</code>, or
-        	<code class="constant">GL_COMPRESSED_RGBA</code>, the GL will replace the internal format with the symbolic constant for a specific internal format and compress the texture before storage.  If no corresponding internal format is available, or the GL can not compress that image for any reason, the internal format is instead replaced with a corresponding base internal format.
+            If the <em class="parameter"><code>internalFormat</code></em> parameter is one of the generic compressed formats,
+            <code class="constant">GL_COMPRESSED_RED</code>, <code class="constant">GL_COMPRESSED_RG</code>,
+            <code class="constant">GL_COMPRESSED_RGB</code>, or
+            <code class="constant">GL_COMPRESSED_RGBA</code>, the GL will replace the internal format with the symbolic constant for a specific internal format and compress the texture before storage.  If no corresponding internal format is available, or the GL can not compress that image for any reason, the internal format is instead replaced with a corresponding base internal format.
         </p><p>
-            If the <em class="parameter"><code>internalFormat</code></em> parameter is 			
+            If the <em class="parameter"><code>internalFormat</code></em> parameter is             
             <code class="constant">GL_SRGB</code>,
             <code class="constant">GL_SRGB8</code>,
             <code class="constant">GL_SRGB_ALPHA</code>, or
             <code class="constant">GL_SRGB8_ALPHA8</code>, the texture is treated as if the red, green, or blue components are encoded in the sRGB color space.    Any alpha component is left unchanged.  The conversion from the sRGB encoded component 
-			<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                     <mml:msub><mml:mi mathvariant="italic">c</mml:mi>
                     <mml:mi mathvariant="italic">s</mml:mi>
                     </mml:msub>
             </mml:math>
-			to a linear component 
-			<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+            to a linear component 
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                     <mml:msub><mml:mi mathvariant="italic">c</mml:mi>
                     <mml:mi mathvariant="italic">l</mml:mi>
                     </mml:msub>
             </mml:math>
             is:
-		</p><p>
-			<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-			<mml:mrow>
-				<mml:msub>
-				  <mml:mi mathvariant="italic">c</mml:mi>
-				  <mml:mi mathvariant="italic">l</mml:mi>
-				</mml:msub>
-				<mml:mo>=</mml:mo>
-				<mml:mrow>
-				  <mml:mo>{</mml:mo>
-			
-				  <mml:mtable columnalign="left">
-					<mml:mtr>
-					  <mml:mtd columnalign="left">
-						<mml:mfrac>
-						  <mml:msub>
-							<mml:mi mathvariant="italic">c</mml:mi>
-							<mml:mi mathvariant="italic">s</mml:mi>
-						  </mml:msub>
-						  <mml:mn>12.92</mml:mn>
-						</mml:mfrac>
-					  </mml:mtd>
-					  <mml:mtd columnalign="left">
-						<mml:mrow>
-						  <mml:mspace width="1ex"></mml:mspace>
-						  <mml:mo>if</mml:mo>
-						  <mml:mspace width="1ex"></mml:mspace>
-						</mml:mrow>
-						<mml:msub>
-						  <mml:mi mathvariant="italic">c</mml:mi>
-						  <mml:mi mathvariant="italic">s</mml:mi>
-						</mml:msub>
-						<mml:mo>≤</mml:mo>
-						<mml:mn>0.04045</mml:mn>
-					  </mml:mtd>
-					</mml:mtr>
-					<mml:mtr>
-					<mml:mtd columnalign="left">
-					<mml:msup>
-					  <mml:mrow>
-						<mml:mo>(</mml:mo>
-						<mml:mfrac>
-						  <mml:mrow>
-							<mml:msub>
-							  <mml:mi>c</mml:mi>
-							  <mml:mi>s</mml:mi>
-							</mml:msub>
-							<mml:mo>+</mml:mo>
-							<mml:mn>0.055</mml:mn>
-						  </mml:mrow>
-						  <mml:mn>1.055</mml:mn>
-						</mml:mfrac>
-						<mml:mo>)</mml:mo>
-					  </mml:mrow>
-					  <mml:mn>2.4</mml:mn>
-					</mml:msup>
-					</mml:mtd>
-          			  <mml:mtd columnalign="left">
-						<mml:mrow>
-						  <mml:mspace width="1ex"></mml:mspace>
-						  <mml:mo>if</mml:mo>
-						  <mml:mspace width="1ex"></mml:mspace>
-						</mml:mrow>
-						<mml:msub>
-						  <mml:mi mathvariant="italic">c</mml:mi>
-						  <mml:mi mathvariant="italic">s</mml:mi>
-						</mml:msub>
-						<mml:mo>&gt;</mml:mo>
-						<mml:mn>0.04045</mml:mn>
-					  </mml:mtd>
-					</mml:mtr>
-				  </mml:mtable>
-				</mml:mrow>
-				</mml:mrow>
-			</mml:math>
-		</p><p>
-			Assume 		
-			<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-								<mml:msub><mml:mi mathvariant="italic">c</mml:mi>
-								<mml:mi mathvariant="italic">s</mml:mi>
-								</mml:msub>
-						</mml:math>
-			is the sRGB component in the range [0,1].
+        </p><p>
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+            <mml:mrow>
+                <mml:msub>
+                  <mml:mi mathvariant="italic">c</mml:mi>
+                  <mml:mi mathvariant="italic">l</mml:mi>
+                </mml:msub>
+                <mml:mo>=</mml:mo>
+                <mml:mrow>
+                  <mml:mo>{</mml:mo>
+            
+                  <mml:mtable columnalign="left">
+                    <mml:mtr>
+                      <mml:mtd columnalign="left">
+                        <mml:mfrac>
+                          <mml:msub>
+                            <mml:mi mathvariant="italic">c</mml:mi>
+                            <mml:mi mathvariant="italic">s</mml:mi>
+                          </mml:msub>
+                          <mml:mn>12.92</mml:mn>
+                        </mml:mfrac>
+                      </mml:mtd>
+                      <mml:mtd columnalign="left">
+                        <mml:mrow>
+                          <mml:mspace width="1ex"></mml:mspace>
+                          <mml:mo>if</mml:mo>
+                          <mml:mspace width="1ex"></mml:mspace>
+                        </mml:mrow>
+                        <mml:msub>
+                          <mml:mi mathvariant="italic">c</mml:mi>
+                          <mml:mi mathvariant="italic">s</mml:mi>
+                        </mml:msub>
+                        <mml:mo>≤</mml:mo>
+                        <mml:mn>0.04045</mml:mn>
+                      </mml:mtd>
+                    </mml:mtr>
+                    <mml:mtr>
+                    <mml:mtd columnalign="left">
+                    <mml:msup>
+                      <mml:mrow>
+                        <mml:mo>(</mml:mo>
+                        <mml:mfrac>
+                          <mml:mrow>
+                            <mml:msub>
+                              <mml:mi>c</mml:mi>
+                              <mml:mi>s</mml:mi>
+                            </mml:msub>
+                            <mml:mo>+</mml:mo>
+                            <mml:mn>0.055</mml:mn>
+                          </mml:mrow>
+                          <mml:mn>1.055</mml:mn>
+                        </mml:mfrac>
+                        <mml:mo>)</mml:mo>
+                      </mml:mrow>
+                      <mml:mn>2.4</mml:mn>
+                    </mml:msup>
+                    </mml:mtd>
+                        <mml:mtd columnalign="left">
+                        <mml:mrow>
+                          <mml:mspace width="1ex"></mml:mspace>
+                          <mml:mo>if</mml:mo>
+                          <mml:mspace width="1ex"></mml:mspace>
+                        </mml:mrow>
+                        <mml:msub>
+                          <mml:mi mathvariant="italic">c</mml:mi>
+                          <mml:mi mathvariant="italic">s</mml:mi>
+                        </mml:msub>
+                        <mml:mo>&gt;</mml:mo>
+                        <mml:mn>0.04045</mml:mn>
+                      </mml:mtd>
+                    </mml:mtr>
+                  </mml:mtable>
+                </mml:mrow>
+                </mml:mrow>
+            </mml:math>
+        </p><p>
+            Assume         
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+                                <mml:msub><mml:mi mathvariant="italic">c</mml:mi>
+                                <mml:mi mathvariant="italic">s</mml:mi>
+                                </mml:msub>
+                        </mml:math>
+            is the sRGB component in the range [0,1].
        </p><p>
-            Use the <code class="constant">GL_PROXY_TEXTURE_2D</code> or <code class="constant">GL_PROXY_TEXTURE_CUBE_MAP</code> target to try out a resolution and
+            Use the <code class="constant">GL_PROXY_TEXTURE_2D</code>, <code class="constant">GL_PROXY_TEXTURE_1D_ARRAY</code>,
+            <code class="constant">GL_PROXY_TEXTURE_RECTANGLE</code>, or <code class="constant">GL_PROXY_TEXTURE_CUBE_MAP</code> target to try out a resolution and
             format. The implementation will
             update and recompute its best match for the requested storage resolution
             and format. To then query this state, call <a href="glGetTexLevelParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span></a>.
@@ -299,11 +311,13 @@
         </p><p>
             A one-component texture image uses only the red component of the RGBA
             color extracted from <em class="parameter"><code>data</code></em>.
-            A two-component image uses the R and A values.
+            A two-component image uses the R and G values.
             A three-component image uses the R, G, and B values.
             A four-component image uses all of the RGBA components.
         </p><p>
-			      Image-based shadowing can be enabled by comparing texture r coordinates to depth texture values to generate a boolean result.  See <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a> for details on texture comparison.
+                  Image-based shadowing can be enabled by comparing texture r coordinates to
+                  depth texture values to generate a boolean result.
+                  See <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a> for details on texture comparison.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
             <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> and <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a> modes affect texture images.
         </p><p>
@@ -318,22 +332,33 @@
             <code class="function">glTexImage2D</code> specifies the two-dimensional texture for the current texture unit,
             specified with <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
-            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not <code class="constant">GL_TEXTURE_2D</code>,
+            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not
+            <code class="constant">GL_TEXTURE_2D</code>,
+            <code class="constant">GL_TEXTURE_1D_ARRAY</code>,
+            <code class="constant">GL_TEXTURE_RECTANGLE</code>,
             <code class="constant">GL_PROXY_TEXTURE_2D</code>,
+            <code class="constant">GL_PROXY_TEXTURE_1D_ARRAY</code>,
+            <code class="constant">GL_PROXY_TEXTURE_RECTANGLE</code>,
             <code class="constant">GL_PROXY_TEXTURE_CUBE_MAP</code>,
-			<code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_X</code>,
-			<code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_X</code>,
-			<code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Y</code>,
-			<code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Y</code>,
-			<code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Z</code>, or 
-			<code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Z</code>.
+            <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_X</code>,
+            <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_X</code>,
+            <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Y</code>,
+            <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Y</code>,
+            <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Z</code>, or
+            <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Z</code>.
         </p><p>
-			<code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is one of the six cube map 2D image targets and the width and height parameters are not equal.
+            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is one of the six cube map 2D image targets and the width and height parameters are not equal.
         </p><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>type</code></em> is not a type constant.
         </p><p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> or <em class="parameter"><code>height</code></em> is less than 0
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> is less than 0
             or greater than 2 + <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
+        </p><p>
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>target</code></em> is not <code class="constant">GL_TEXTURE_1D_ARRAY</code> or
+            <code class="constant">GL_PROXY_TEXTURE_1D_ARRAY</code> and <em class="parameter"><code>height</code></em> is less than 0 or greater than 2 + <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
+        </p><p>
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>target</code></em> is <code class="constant">GL_TEXTURE_1D_ARRAY</code> or
+            <code class="constant">GL_PROXY_TEXTURE_1D_ARRAY</code> and <em class="parameter"><code>height</code></em> is less than 0 or greater than <code class="constant">GL_MAX_ARRAY_TEXTURE_LAYERS</code>.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>level</code></em> is less than 0.
         </p><p>
@@ -378,13 +403,14 @@
             for some
             integer value of <span class="emphasis"><em>k</em></span>.
         </p><p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>border</code></em> is not 0 or 1.
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>border</code></em> is not 0.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>type</code></em> is one of
             <code class="constant">GL_UNSIGNED_BYTE_3_3_2</code>,
             <code class="constant">GL_UNSIGNED_BYTE_2_3_3_REV</code>,
-            <code class="constant">GL_UNSIGNED_SHORT_5_6_5</code>, or
-            <code class="constant">GL_UNSIGNED_SHORT_5_6_5_REV</code>
+            <code class="constant">GL_UNSIGNED_SHORT_5_6_5</code>,
+            <code class="constant">GL_UNSIGNED_SHORT_5_6_5_REV</code>, or
+            <code class="constant">GL_UNSIGNED_INT_10F_11F_11F_REV</code>,
             and <em class="parameter"><code>format</code></em> is not <code class="constant">GL_RGB</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>type</code></em> is one of
@@ -394,23 +420,26 @@
             <code class="constant">GL_UNSIGNED_SHORT_1_5_5_5_REV</code>,
             <code class="constant">GL_UNSIGNED_INT_8_8_8_8</code>,
             <code class="constant">GL_UNSIGNED_INT_8_8_8_8_REV</code>,
-            <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>, or
-            <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code>
+            <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>,
+            <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code>, or
+            <code class="constant">GL_UNSIGNED_INT_5_9_9_9_REV</code>,
             and <em class="parameter"><code>format</code></em> is neither <code class="constant">GL_RGBA</code> nor <code class="constant">GL_BGRA</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>target</code></em> is not
-            <code class="constant">GL_TEXTURE_2D</code> or <code class="constant">GL_PROXY_TEXTURE_2D</code> and <em class="parameter"><code>internalFormat</code></em> is
+            <code class="constant">GL_TEXTURE_2D</code>, <code class="constant">GL_PROXY_TEXTURE_2D</code>,
+            <code class="constant">GL_TEXTURE_RECTANGLE</code>, or <code class="constant">GL_PROXY_TEXTURE_RECTANGLE</code>,
+            and <em class="parameter"><code>internalFormat</code></em> is
             <code class="constant">GL_DEPTH_COMPONENT</code>, <code class="constant">GL_DEPTH_COMPONENT16</code>,
-            <code class="constant">GL_DEPTH_COMPONENT24</code>, or <code class="constant">GL_DEPTH_COMPONENT32</code>.
+            <code class="constant">GL_DEPTH_COMPONENT24</code>, or <code class="constant">GL_DEPTH_COMPONENT32F</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>format</code></em> is
             <code class="constant">GL_DEPTH_COMPONENT</code> and <em class="parameter"><code>internalFormat</code></em> is not
             <code class="constant">GL_DEPTH_COMPONENT</code>, <code class="constant">GL_DEPTH_COMPONENT16</code>,
-            <code class="constant">GL_DEPTH_COMPONENT24</code>, or <code class="constant">GL_DEPTH_COMPONENT32</code>.
+            <code class="constant">GL_DEPTH_COMPONENT24</code>, or <code class="constant">GL_DEPTH_COMPONENT32F</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>internalFormat</code></em> is
             <code class="constant">GL_DEPTH_COMPONENT</code>, <code class="constant">GL_DEPTH_COMPONENT16</code>,
-            <code class="constant">GL_DEPTH_COMPONENT24</code>, or <code class="constant">GL_DEPTH_COMPONENT32</code>, and <em class="parameter"><code>format</code></em> is
+            <code class="constant">GL_DEPTH_COMPONENT24</code>, or <code class="constant">GL_DEPTH_COMPONENT32F</code>, and <em class="parameter"><code>format</code></em> is
             not <code class="constant">GL_DEPTH_COMPONENT</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
@@ -423,15 +452,15 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
             <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> target and <em class="parameter"><code>data</code></em> is not evenly divisible 
             into the number of bytes needed to store in memory a datum indicated by <em class="parameter"><code>type</code></em>.
+        </p><p>
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>target</code></em> is <code class="constant">GL_TEXTURE_RECTANGLE</code>
+            or <code class="constant">GL_PROXY_TEXTURE_RECTANGLE</code> and <em class="parameter"><code>level</code></em> is not 0.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
             <a href="glGetTexImage.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexImage</span></span></a>
-        </p><p>
-            <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_2D</code> or <code class="constant">GL_TEXTURE_CUBE_MAP</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>,
-            <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
             <a href="glCopyTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage1D</span></span></a>,
             <a href="glCopyTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a>,
             <a href="glCopyTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage1D</span></span></a>,
@@ -439,7 +468,6 @@
             <a href="glCopyTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage3D</span></span></a>,
             <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>,
             <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>,
-            <a href="glTexEnv.xml"><span class="citerefentry"><span class="refentrytitle">glTexEnv</span></span></a>,
             <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>,
             <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>,
             <a href="glTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span></a>,

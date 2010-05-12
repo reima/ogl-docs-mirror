@@ -76,7 +76,7 @@
                         <constant>GL_CLIP_DISTANCE</constant><emphasis>i</emphasis>
                         </entry>
                         <entry align="left">
-                        <citerefentry><refentrytitle>glClipPlane</refentrytitle></citerefentry>
+                        <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>
                         </entry>
                     </row>
                     <row>
@@ -85,14 +85,6 @@
                         </entry>
                         <entry align="left">
                         <citerefentry><refentrytitle>glLogicOp</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry align="left">
-                        <constant>GL_COLOR_SUM</constant>
-                        </entry>
-                        <entry align="left">
-                        <citerefentry><refentrytitle>glSecondaryColor</refentrytitle></citerefentry>
                         </entry>
                     </row>
                     <row>
@@ -177,6 +169,14 @@
                     </row>
                     <row>
                         <entry align="left">
+                        <constant>GL_PRIMITIVE_RESTART</constant> 
+                        </entry>
+                        <entry align="left">
+                        <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glPrimitiveRestartIndex</refentrytitle></citerefentry>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
                         <constant>GL_SAMPLE_ALPHA_TO_COVERAGE</constant>
                         </entry>
                         <entry align="left">
@@ -217,47 +217,7 @@
                     </row>
                     <row>
                         <entry align="left">
-                        <constant>GL_TEXTURE_1D</constant>
-                        </entry>
-                        <entry align="left">
-                        <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry align="left">
-                        <constant>GL_TEXTURE_2D</constant>
-                        </entry>
-                        <entry align="left">
-                        <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry align="left">
-                        <constant>GL_TEXTURE_3D</constant>
-                        </entry>
-                        <entry align="left">
-                        <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry align="left">
-                        <constant>GL_TEXTURE_CUBE_MAP</constant>
-                        </entry>
-                        <entry align="left">
-                        <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry align="left">
                         <constant>GL_VERTEX_PROGRAM_POINT_SIZE</constant>
-                        </entry>
-                        <entry align="left">
-                        <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry align="left">
-                        <constant>GL_VERTEX_PROGRAM_TWO_SIDE</constant>
                         </entry>
                         <entry align="left">
                         <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>
@@ -272,14 +232,7 @@
     <refsect1 id="notes"><title>Notes</title>
         <para>
             If an error is generated,
-            <function>glIsEnabled</function> returns 0.
-        </para>
-        <para>
-            The following parameters return the associated value for the active texture unit:
-            <constant>GL_TEXTURE_1D</constant>,
-            <constant>GL_TEXTURE_2D</constant>,
-            <constant>GL_TEXTURE_3D</constant>,
-            <constant>GL_TEXTURE_CUBE_MAP</constant>.
+            <function>glIsEnabled</function> returns <constant>GL_FALSE</constant>.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
@@ -290,7 +243,6 @@
     <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glEnableClientState</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
         </para>
     </refsect1>

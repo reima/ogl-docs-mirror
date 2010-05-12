@@ -590,7 +590,6 @@
             <citerefentry><refentrytitle>glGetCompressedTexImage</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glTexEnv</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexSubImage1D</refentrytitle></citerefentry>,

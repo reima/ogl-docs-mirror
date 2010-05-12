@@ -15,9 +15,9 @@
                     Specifies the level-of-detail number of the desired image.
                     Level 0 is the base image level.
                     Level 
-                    <span class="ERROR">&lt;math&gt;<span class="ERROR">&lt;mi&gt;n&lt;/mi&gt;</span>&lt;/math&gt;</span>
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>
                     is the 
-                    <span class="ERROR">&lt;math&gt;<span class="ERROR">&lt;mi&gt;n&lt;/mi&gt;</span>&lt;/math&gt;</span>th
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>th
                     mipmap reduction image.
                 </p></dd><dt><span class="term"><em class="parameter"><code>format</code></em></span></dt><dd><p>
                     Specifies a pixel format for the returned data.
@@ -124,20 +124,20 @@
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> may be generated if <em class="parameter"><code>level</code></em> is greater
             than 
-            <span class="ERROR">&lt;math&gt;
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
-                <span class="ERROR">&lt;mrow&gt;
-                    <span class="ERROR">&lt;msub&gt;<span class="ERROR">&lt;mi&gt;log&lt;/mi&gt;</span>
-                    <span class="ERROR">&lt;mn&gt;2&lt;/mn&gt;</span>
-                    &lt;/msub&gt;</span>
-                    <span class="ERROR">&lt;mo&gt;&lt;/mo&gt;</span>
-                    <span class="ERROR">&lt;mfenced&gt;
-                        <span class="ERROR">&lt;mi&gt;max&lt;/mi&gt;</span>
-                    &lt;/mfenced&gt;</span>
-                &lt;/mrow&gt;</span>
-            &lt;/math&gt;</span>,
+                <mml:mrow>
+                    <mml:msub><mml:mi mathvariant="italic">log</mml:mi>
+                    <mml:mn>2</mml:mn>
+                    </mml:msub>
+                    <mml:mo>⁡</mml:mo>
+                    <mml:mfenced open="(" close=")">
+                        <mml:mi mathvariant="italic">max</mml:mi>
+                    </mml:mfenced>
+                </mml:mrow>
+            </mml:math>,
             where 
-            <span class="ERROR">&lt;math&gt;<span class="ERROR">&lt;mi&gt;max&lt;/mi&gt;</span>&lt;/math&gt;</span>
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">max</mml:mi></mml:math>
             is the returned value of <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is returned if <em class="parameter"><code>type</code></em> is one of
@@ -182,7 +182,6 @@
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>,
             <a href="glReadPixels.xml"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>,
-            <a href="glTexEnv.xml"><span class="citerefentry"><span class="refentrytitle">glTexEnv</span></span></a>,
             <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>,
             <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>,
             <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>,

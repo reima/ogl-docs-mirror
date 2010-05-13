@@ -87,9 +87,7 @@
 		        <para>
 		        </para>
                     <para>
-                        If enabled,
-                        clip geometry against user-defined clipping plane <emphasis>i</emphasis>.
-                        See <citerefentry><refentrytitle>glClipPlane</refentrytitle></citerefentry>.
+                        If enabled, clip geometry against user-defined half space <emphasis>i</emphasis>.
                     </para>
                 </listitem>
             </varlistentry>

@@ -217,7 +217,6 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-        <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>,
         <citerefentry><refentrytitle>glBindAttribLocation</refentrytitle></citerefentry>,
         <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>,
         <citerefentry><refentrytitle>glDisableVertexAttribArray</refentrytitle></citerefentry>,
@@ -227,7 +226,7 @@
         <citerefentry><refentrytitle>glEnableVertexAttribArray</refentrytitle></citerefentry>,
         <citerefentry><refentrytitle>glMultiDrawArrays</refentrytitle></citerefentry>,
         <citerefentry><refentrytitle>glMultiDrawElements</refentrytitle></citerefentry>,
-        <citerefentry><refentrytitle>glVertexAttrib</refentrytitle></citerefentry>,
+        <citerefentry><refentrytitle>glVertexAttrib</refentrytitle></citerefentry>
     </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

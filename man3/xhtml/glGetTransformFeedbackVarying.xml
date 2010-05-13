@@ -33,7 +33,7 @@
             including the null terminator, is specified by <em class="parameter"><code>bufSize</code></em>.
         </p><p>
             The length of the longest varying name in program is given by <code class="constant">GL_TRANSFORM_FEEDBACK_VARYING_MAX_LENGTH</code>,
-            which can be queried with <a href="glGetProgramiv.xml"><span class="citerefentry"><span class="refentrytitle">glGetProgramiv</span></span></a>.
+            which can be queried with <a href="glGetProgram.xml"><span class="citerefentry"><span class="refentrytitle">glGetProgram</span></span></a>.
         </p><p>
             For the selected varying variable, its type is returned into <em class="parameter"><code>type</code></em>. The size of
             the varying is returned into <em class="parameter"><code>size</code></em>. The value in <em class="parameter"><code>size</code></em> is

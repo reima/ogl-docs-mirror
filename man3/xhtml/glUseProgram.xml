@@ -70,7 +70,7 @@
 	with a valid program object and the location of a uniform
 	variable</p><p><a href="glGetUniformLocation.xml"><span class="citerefentry"><span class="refentrytitle">glGetUniformLocation</span></span></a>
 	with a valid program object and the name of a uniform
-	variable</p><p><a href="glIsProgram.xml"><span class="citerefentry"><span class="refentrytitle">glIsProgram</span></span></a></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p><a href="gllAttachShader.xml"><span class="citerefentry"><span class="refentrytitle">gllAttachShader</span></span></a>,
+	variable</p><p><a href="glIsProgram.xml"><span class="citerefentry"><span class="refentrytitle">glIsProgram</span></span></a></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p><a href="glAttachShader.xml"><span class="citerefentry"><span class="refentrytitle">glAttachShader</span></span></a>,
 	<a href="glBindAttribLocation.xml"><span class="citerefentry"><span class="refentrytitle">glBindAttribLocation</span></span></a>,
 	<a href="glCompileShader.xml"><span class="citerefentry"><span class="refentrytitle">glCompileShader</span></span></a>,
 	<a href="glCreateProgram.xml"><span class="citerefentry"><span class="refentrytitle">glCreateProgram</span></span></a>,

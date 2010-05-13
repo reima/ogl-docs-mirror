@@ -111,7 +111,7 @@
             <constant>GL_MAX_ELEMENTS_VERTICES</constant> and <constant>GL_MAX_ELEMENTS_INDICES</constant>.
             If 
             <inlineequation><mml:math>
-                <!-- eqn: end  -  start  +  1:-->
+                <!-- eqn: end  -  start  +  1: -->
                 <mml:mrow>
                     <mml:mi mathvariant="italic">end</mml:mi>
                     <mml:mo>-</mml:mo>
@@ -125,7 +125,7 @@
             <constant>GL_MAX_ELEMENTS_INDICES</constant>, then the call may operate at reduced
             performance.  There is no requirement that all vertices in the range
             <inlineequation><mml:math>
-                <!-- eqn: [start, end]:-->
+                <!-- eqn: [start, end]: -->
                 <mml:mfenced open="[" close="]">
                     <mml:mi mathvariant="italic">start</mml:mi>
                     <mml:mi mathvariant="italic">end</mml:mi>
@@ -161,7 +161,7 @@
         <para>
             It is an error for indices to lie outside the range 
             <inlineequation><mml:math>
-                <!-- eqn: [start, end]:-->
+                <!-- eqn: [start, end]: -->
                 <mml:mfenced open="[" close="]">
                     <mml:mi mathvariant="italic">start</mml:mi>
                     <mml:mi mathvariant="italic">end</mml:mi>
@@ -179,7 +179,7 @@
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if 
             <inlineequation><mml:math>
-                <!-- eqn: end < start:-->
+                <!-- eqn: end < start: -->
                 <mml:mrow>
                     <mml:mi mathvariant="italic">end</mml:mi>
                     <mml:mo>&lt;</mml:mo>
@@ -202,9 +202,9 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glArrayElement</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glDrawElementsBaseVertex</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

@@ -35,7 +35,7 @@
                     Specify a single floating-point sample coverage value.  The value is
                     clamped to the range 
                     <inlineequation><mml:math>
-                        <!-- eqn: [0 ,1]:-->
+                        <!-- eqn: [0 ,1]: -->
                         <mml:mfenced open="[" close="]">
                             <mml:mn>0</mml:mn>
                             <mml:mn>1</mml:mn>
@@ -113,8 +113,7 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPushAttrib</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

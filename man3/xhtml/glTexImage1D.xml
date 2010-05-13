@@ -411,7 +411,6 @@
             <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>,
             <a href="glCompressedTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCompressedTexImage1D</span></span></a>,
             <a href="glCompressedTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCompressedTexSubImage1D</span></span></a>,
-            <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
             <a href="glCopyTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage1D</span></span></a>,
             <a href="glCopyTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage1D</span></span></a>,
             <a href="glGetCompressedTexImage.xml"><span class="citerefentry"><span class="refentrytitle">glGetCompressedTexImage</span></span></a>,

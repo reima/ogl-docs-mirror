@@ -74,10 +74,7 @@
     <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glClear</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glColor</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDepthMask</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glIndex</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glIndexMask</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glStencilMask</refentrytitle></citerefentry>
         </para>
     </refsect1>

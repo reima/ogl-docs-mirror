@@ -58,12 +58,9 @@
     <refsect1 id="description"><title>Description</title>
         <para>
             <function>glBindBuffer</function> binds a buffer object to the specified buffer binding point. Calling <function>glBindBuffer</function> with
-            <parameter>target</parameter> set to
-            <constant>GL_ARRAY_BUFFER</constant>, <constant>GL_ELEMENT_ARRAY_BUFFER</constant>, <constant>GL_PIXEL_PACK_BUFFER</constant> or
-            <constant>GL_PIXEL_UNPACK_BUFFER</constant> and <parameter>buffer</parameter> set to the name
+            <parameter>target</parameter> set to one of the accepted symbolic constants and <parameter>buffer</parameter> set to the name
             of a buffer object binds that buffer object name to the target. If no buffer object with name <parameter>buffer</parameter>
-            exists, one is created with that name.
-            When a buffer object is bound to a target, the previous binding for that
+            exists, one is created with that name. When a buffer object is bound to a target, the previous binding for that
             target is automatically broken.
         </para>
         <para>
@@ -162,6 +159,8 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
+            The <constant>GL_COPY_READ_BUFFER</constant>, <constant>GL_UNIFORM_BUFFER</constant> and
+            <constant>GL_TEXTURE_BUFFER</constant> targets are available only if the GL version is 3.1 or greater.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

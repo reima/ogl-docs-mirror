@@ -92,7 +92,7 @@
             length <parameter>width</parameter> replaces the portion of the
             texture array with x indices <parameter>xoffset</parameter> through 
             <inlineequation><mml:math>
-                <!-- eqn: xoffset  +  width  -  1:-->
+                <!-- eqn: xoffset  +  width  -  1: -->
                 <mml:mrow>
                     <mml:mi mathvariant="italic">xoffset</mml:mi>
                     <mml:mo>+</mml:mo>
@@ -107,11 +107,11 @@
         </para>
         <para>
             The pixels in the row are processed exactly as if
-            <citerefentry><refentrytitle>glCopyPixels</refentrytitle></citerefentry> had been called, but the process stops just before
+            <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry> had been called, but the process stops just before
             final conversion.
             At this point, all pixel component values are clamped to the range 
             <inlineequation><mml:math>
-                <!-- eqn: [0,1]:-->
+                <!-- eqn: [0,1]: -->
                 <mml:mfenced open="[" close="]">
                     <mml:mn>0</mml:mn>
                     <mml:mn>1</mml:mn>
@@ -152,7 +152,7 @@
         <para>
             <constant>GL_INVALID_VALUE</constant> may be generated if 
             <inlineequation><mml:math>
-                <!-- eqn: level  >  log sub 2(max):-->
+                <!-- eqn: level  >  log sub 2(max): -->
                 <mml:mrow>
                     <mml:mi mathvariant="italic">level</mml:mi>
                     <mml:mo>&gt;</mml:mo>
@@ -172,7 +172,7 @@
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if 
             <inlineequation><mml:math>
-                <!-- eqn: xoffset  <   -b:-->
+                <!-- eqn: xoffset  <   -b: -->
                 <mml:mrow>
                     <mml:mi mathvariant="italic">xoffset</mml:mi>
                     <mml:mo>&lt;</mml:mo>
@@ -184,7 +184,7 @@
             </mml:math></inlineequation>,
             or
             <inlineequation><mml:math>
-                <!-- eqn: (xoffset + width)  >  (w-b):-->
+                <!-- eqn: (xoffset + width)  >  (w-b): -->
                 <mml:mrow>
                     <mml:mfenced open="(" close=")">
                         <mml:mrow>
@@ -226,7 +226,6 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glCopyPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexSubImage2D</refentrytitle></citerefentry>,

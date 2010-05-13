@@ -20,7 +20,6 @@
             <a href="glColorMask.xml"><span class="citerefentry"><span class="refentrytitle">glColorMask</span></span></a>,
             <a href="glDepthFunc.xml"><span class="citerefentry"><span class="refentrytitle">glDepthFunc</span></span></a>,
             <a href="glDepthRange.xml"><span class="citerefentry"><span class="refentrytitle">glDepthRange</span></span></a>,
-            <a href="glIndexMask.xml"><span class="citerefentry"><span class="refentrytitle">glIndexMask</span></span></a>,
             <a href="glStencilMask.xml"><span class="citerefentry"><span class="refentrytitle">glStencilMask</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006

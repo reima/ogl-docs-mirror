@@ -93,21 +93,7 @@
 	attribute bound to an attribute variable in a vertex shader is
 	not updated while the vertex shader is executing, the vertex
 	shader will repeatedly use the current value for the generic
-	vertex attribute.</p><p>The generic vertex attribute with index 0 is the same as
-	the vertex position attribute previously defined by OpenGL. A
-	<a href="glVertex2.xml"><span class="citerefentry"><span class="refentrytitle">glVertex2</span></span></a>,
-	<a href="glVertex3.xml"><span class="citerefentry"><span class="refentrytitle">glVertex3</span></span></a>,
-	or
-	<a href="glVertex4.xml"><span class="citerefentry"><span class="refentrytitle">glVertex4</span></span></a>
-	command is completely equivalent to the corresponding
-	<code class="function">glVertexAttrib</code> command with an index
-	argument of 0. A vertex shader can access generic vertex
-	attribute 0 by using the built-in attribute variable
-	<em class="parameter"><code>gl_Vertex</code></em>. There are no current values
-	for generic vertex attribute 0. This is the only generic vertex
-	attribute with this property; calls to set other standard vertex
-	attributes can be freely mixed with calls to set any of the
-	other generic vertex attributes.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>Generic vertex attributes can be updated at any time.</p><p>It is possible for an application to bind more than one
+	vertex attribute.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>Generic vertex attributes can be updated at any time.</p><p>It is possible for an application to bind more than one
 	attribute name to the same generic vertex attribute index. This
 	is referred to as aliasing, and it is allowed only if just one
 	of the aliased attribute variables is active in the vertex
@@ -139,7 +125,6 @@
 	variable name</p><p><a href="glGetVertexAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glGetVertexAttrib</span></span></a>
 	with arguments <code class="constant">GL_CURRENT_VERTEX_ATTRIB</code> and
 	<em class="parameter"><code>index</code></em></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p><a href="glBindAttribLocation.xml"><span class="citerefentry"><span class="refentrytitle">glBindAttribLocation</span></span></a>,
-	<a href="glVertex.xml"><span class="citerefentry"><span class="refentrytitle">glVertex</span></span></a>,
 	<a href="glVertexAttribPointer.xml"><span class="citerefentry"><span class="refentrytitle">glVertexAttribPointer</span></span></a></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2003-2005 3Dlabs Inc. Ltd. 
             This material may be distributed subject to the terms and conditions set forth in 

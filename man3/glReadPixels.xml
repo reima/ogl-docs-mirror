@@ -1184,8 +1184,6 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glCopyPixels</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPixelMap</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glReadBuffer</refentrytitle></citerefentry>

@@ -101,7 +101,6 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glGetUniformIndex</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetActiveUniform</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetActiveUniformName</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glLinkProgram</refentrytitle></citerefentry>

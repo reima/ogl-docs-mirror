@@ -186,7 +186,7 @@
             <citerefentry><refentrytitle>glGetBufferSubData</refentrytitle></citerefentry>
         </para>
         <para>
-            <citerefentry><refentrytitle>glGetBufferParameteriv</refentrytitle></citerefentry> with argument <constant>GL_BUFFER_SIZE</constant> or <constant>GL_BUFFER_USAGE</constant>
+            <citerefentry><refentrytitle>glGetBufferParameter</refentrytitle></citerefentry> with argument <constant>GL_BUFFER_SIZE</constant> or <constant>GL_BUFFER_USAGE</constant>
         </para>
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>

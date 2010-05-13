@@ -1071,10 +1071,6 @@
             Likewise, <code class="function">glPixelStorei</code> can also be used to set any of the
             pixel store parameters.
             Boolean parameters are set to false if <em class="parameter"><code>param</code></em> is 0 and true otherwise.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
-            Pixel storage modes are client state and must be pushed and restored
-            using
-            <a href="glPushClientAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPushClientAttrib</span></span></a> and <a href="glPopClientAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glPopClientAttrib</span></span></a>.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>pname</code></em> is not an accepted value.
         </p><p>

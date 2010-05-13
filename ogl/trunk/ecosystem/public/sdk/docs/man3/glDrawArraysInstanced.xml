@@ -116,7 +116,7 @@
     <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDrawElementsIndexed</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>glDrawElementsInstanced</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

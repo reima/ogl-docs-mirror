@@ -539,22 +539,6 @@
 	not updated while the vertex shader is executing, the vertex
 	shader will repeatedly use the current value for the generic
 	vertex attribute.</para>
-
-	<para>The generic vertex attribute with index 0 is the same as
-	the vertex position attribute previously defined by OpenGL. A
-	<citerefentry><refentrytitle>glVertex2</refentrytitle></citerefentry>,
-	<citerefentry><refentrytitle>glVertex3</refentrytitle></citerefentry>,
-	or
-	<citerefentry><refentrytitle>glVertex4</refentrytitle></citerefentry>
-	command is completely equivalent to the corresponding
-	<function>glVertexAttrib</function> command with an index
-	argument of 0. A vertex shader can access generic vertex
-	attribute 0 by using the built-in attribute variable
-	<parameter>gl_Vertex</parameter>. There are no current values
-	for generic vertex attribute 0. This is the only generic vertex
-	attribute with this property; calls to set other standard vertex
-	attributes can be freely mixed with calls to set any of the
-	other generic vertex attributes.</para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
 	<para>Generic vertex attributes can be updated at any time.</para>
@@ -614,7 +598,6 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
 	<para><citerefentry><refentrytitle>glBindAttribLocation</refentrytitle></citerefentry>,
-	<citerefentry><refentrytitle>glVertex</refentrytitle></citerefentry>,
 	<citerefentry><refentrytitle>glVertexAttribPointer</refentrytitle></citerefentry></para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

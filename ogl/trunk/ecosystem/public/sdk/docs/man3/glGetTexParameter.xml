@@ -65,7 +65,6 @@
                     <constant>GL_TEXTURE_WRAP_T</constant>,
                     <constant>GL_TEXTURE_WRAP_R</constant>,
                     <constant>GL_TEXTURE_BORDER_COLOR</constant>,
-                    <constant>GL_TEXTURE_PRIORITY</constant>,
                     <constant>GL_TEXTURE_RESIDENT</constant>,
                     <constant>GL_TEXTURE_COMPARE_MODE</constant>,
                     <constant>GL_TEXTURE_COMPARE_FUNC</constant>,
@@ -121,7 +120,7 @@
                         Returns the single-valued texture minimum level-of-detail value.  The
                         initial value is 
                         <inlineequation><mml:math>
-                            <!-- eqn: -1000:-->
+                            <!-- eqn: -1000: -->
                             <mml:mn>-1000</mml:mn>
                         </mml:math></inlineequation>.
                     </para>
@@ -223,7 +222,7 @@
                         of the texture border.
                         Floating-point values are returned in the range 
                         <inlineequation><mml:math>
-                            <!-- eqn: [0,1]:-->
+                            <!-- eqn: [0,1]: -->
                             <mml:mfenced open="[" close="]">
                                 <mml:mn>0</mml:mn>
                                 <mml:mn>1</mml:mn>
@@ -233,21 +232,11 @@
                         representation such that 1.0 maps to the most positive representable
                         integer and 
                         <inlineequation><mml:math>
-                            <!-- eqn: -1.0:-->
+                            <!-- eqn: -1.0: -->
                             <mml:mn>-1.0</mml:mn>
                         </mml:math></inlineequation>
                         maps to the most negative representable
                         integer. The initial value is (0, 0, 0, 0).
-                    </para>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
-                <term><constant>GL_TEXTURE_PRIORITY</constant></term>
-                <listitem>
-                    <para>
-                        Returns the residence priority of the target texture (or the named
-                        texture bound to it). The initial value is 1.
-                        See <citerefentry><refentrytitle>glPrioritizeTextures</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>

@@ -107,7 +107,7 @@
             texture image.  The texels referenced by <parameter>data</parameter> replace the portion of the
             existing texture array with x indices <parameter>xoffset</parameter> and 
             <inlineequation><mml:math>
-                <!-- eqn: xoffset  +  width  -  1:-->
+                <!-- eqn: xoffset  +  width  -  1: -->
                 <mml:mrow>
                     <mml:mi mathvariant="italic">xoffset</mml:mi>
                     <mml:mo>+</mml:mo>
@@ -199,7 +199,6 @@
             <citerefentry><refentrytitle>glCompressedTexImage3D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCompressedTexSubImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCompressedTexSubImage3D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glCopyPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexSubImage1D</refentrytitle></citerefentry>,

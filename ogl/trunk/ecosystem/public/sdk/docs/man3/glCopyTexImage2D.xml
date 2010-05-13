@@ -117,7 +117,7 @@
                     Specifies the width of the texture image.
                     Must be 0 or 
                     <inlineequation><mml:math>
-                        <!-- eqn: 2 sup n  +  2 ( border ):-->
+                        <!-- eqn: 2 sup n  +  2 ( border ): -->
                         <mml:mrow>
                             <mml:msup><mml:mn>2</mml:mn>
                             <mml:mi mathvariant="italic">n</mml:mi>
@@ -144,7 +144,7 @@
                     Specifies the height of the texture image.
                     Must be 0 or 
                     <inlineequation><mml:math>
-                        <!-- eqn: 2 sup m  +  2 ( border ):-->
+                        <!-- eqn: 2 sup m  +  2 ( border ): -->
                         <mml:mrow>
                             <mml:msup><mml:mn>2</mml:mn>
                             <mml:mi mathvariant="italic">m</mml:mi>
@@ -185,7 +185,7 @@
             The screen-aligned pixel rectangle with lower left corner at (<parameter>x</parameter>,
             <parameter>y</parameter>) and with a width of 
             <inlineequation><mml:math>
-                <!-- eqn: width  +  2 ( border ):-->
+                <!-- eqn: width  +  2 ( border ): -->
                 <mml:mrow>
                     <mml:mi mathvariant="italic">width</mml:mi>
                     <mml:mo>+</mml:mo>
@@ -200,7 +200,7 @@
             </mml:math></inlineequation>
             and a height of
             <inlineequation><mml:math>
-                <!-- eqn: height  +  2 ( border ):-->
+                <!-- eqn: height  +  2 ( border ): -->
                 <mml:mrow>
                     <mml:mi mathvariant="italic">height</mml:mi>
                     <mml:mo>+</mml:mo>
@@ -219,11 +219,11 @@
         </para>
         <para>
             The pixels in the rectangle are processed exactly as if
-            <citerefentry><refentrytitle>glCopyPixels</refentrytitle></citerefentry> had been called, but the process stops just before
+            <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry> had been called, but the process stops just before
             final conversion.
             At this point all pixel component values are clamped to the range 
             <inlineequation><mml:math>
-                <!-- eqn: [0,1]:-->
+                <!-- eqn: [0,1]: -->
                 <mml:mfenced open="[" close="]">
                     <mml:mn>0</mml:mn>
                     <mml:mn>1</mml:mn>
@@ -278,7 +278,7 @@
             <constant>GL_INVALID_VALUE</constant> may be generated if <parameter>level</parameter> is greater
             than 
             <inlineequation><mml:math>
-                <!-- eqn: log sub 2 max:-->
+                <!-- eqn: log sub 2 max: -->
                 <mml:mrow>
                     <mml:msub><mml:mi mathvariant="italic">log</mml:mi>
                     <mml:mn>2</mml:mn>
@@ -299,7 +299,7 @@
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if non-power-of-two textures are not supported and the <parameter>width</parameter> or <parameter>depth</parameter> cannot be represented as  
             <inlineequation><mml:math>
-                <!-- eqn: 2 sup k  +  2 ( border ):-->
+                <!-- eqn: 2 sup k  +  2 ( border ): -->
                 <mml:mrow>
                     <mml:msup><mml:mn>2</mml:mn>
                     <mml:mi mathvariant="italic">k</mml:mi>
@@ -341,7 +341,6 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glCopyPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexSubImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexSubImage2D</refentrytitle></citerefentry>,

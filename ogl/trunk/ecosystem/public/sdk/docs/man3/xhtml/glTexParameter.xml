@@ -16,8 +16,7 @@
                     <code class="constant">GL_TEXTURE_MAX_LEVEL</code>,
                     <code class="constant">GL_TEXTURE_WRAP_S</code>,
                     <code class="constant">GL_TEXTURE_WRAP_T</code>,
-                    <code class="constant">GL_TEXTURE_WRAP_R</code>,
-                    <code class="constant">GL_TEXTURE_PRIORITY</code>,
+                    <code class="constant">GL_TEXTURE_WRAP_R</code>
                     <code class="constant">GL_TEXTURE_COMPARE_MODE</code>,
                     <code class="constant">GL_TEXTURE_COMPARE_FUNC</code>,
                     <code class="constant">GL_DEPTH_TEXTURE_MODE</code>, or
@@ -39,8 +38,7 @@
                     <code class="constant">GL_TEXTURE_MAX_LEVEL</code>,
                     <code class="constant">GL_TEXTURE_WRAP_S</code>,
                     <code class="constant">GL_TEXTURE_WRAP_T</code>,
-                    <code class="constant">GL_TEXTURE_WRAP_R</code>,
-                    <code class="constant">GL_TEXTURE_PRIORITY</code>,
+                    <code class="constant">GL_TEXTURE_WRAP_R</code>
                     <code class="constant">GL_TEXTURE_COMPARE_MODE</code>,
                     <code class="constant">GL_TEXTURE_COMPARE_FUNC</code>,
                     <code class="constant">GL_DEPTH_TEXTURE_MODE</code>, or
@@ -430,17 +428,6 @@
                         to either <code class="constant">GL_CLAMP_TO_EDGE</code>, <code class="constant">GL_MIRRORED_REPEAT</code>, or
                         <code class="constant">GL_REPEAT</code>.  See the discussion under <code class="constant">GL_TEXTURE_WRAP_S</code>.
                         Initially, <code class="constant">GL_TEXTURE_WRAP_R</code> is set to <code class="constant">GL_REPEAT</code>.
-                    </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_PRIORITY</code></span></dt><dd><p>
-                        Specifies the texture residence priority of the currently bound texture.
-                        Permissible values are in the range 
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                            
-                            <mml:mfenced open="[" close="]">
-                                <mml:mn>0</mml:mn>
-                                <mml:mn>1</mml:mn>
-                            </mml:mfenced>
-                        </mml:math>.
-                        See <a href="glPrioritizeTextures.xml"><span class="citerefentry"><span class="refentrytitle">glPrioritizeTextures</span></span></a> and <a href="glBindTexture.xml"><span class="citerefentry"><span class="refentrytitle">glBindTexture</span></span></a> for more information.
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_COMPARE_MODE</code></span></dt><dd><p>
                         Specifies the texture comparison mode for currently bound depth textures.
                         That is, a texture whose internal format is <code class="constant">GL_DEPTH_COMPONENT_*</code>; see
@@ -819,7 +806,6 @@
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>,
             <a href="glBindTexture.xml"><span class="citerefentry"><span class="refentrytitle">glBindTexture</span></span></a>,
-            <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
             <a href="glCopyTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage1D</span></span></a>,
             <a href="glCopyTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a>,
             <a href="glCopyTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage1D</span></span></a>,

@@ -477,7 +477,7 @@
         <para>
             <constant>GL_INVALID_VALUE</constant> may be generated if <parameter>level</parameter> is greater than 
             <inlineequation><mml:math>
-                <!-- eqn: log sub 2 (max):-->
+                <!-- eqn: log sub 2 (max): -->
                 <mml:mrow>
                     <mml:msub><mml:mi mathvariant="italic">log</mml:mi>
                     <mml:mn>2</mml:mn>
@@ -501,7 +501,7 @@
         <para>
 			<constant>GL_INVALID_VALUE</constant> is generated if non-power-of-two textures are not supported and the <parameter>width</parameter> cannot be represented as
 			<inlineequation><mml:math>
-                <!-- eqn: 2 sup n  +  2(border):-->
+                <!-- eqn: 2 sup n  +  2(border): -->
                 <mml:mrow>
                     <mml:msup><mml:mn>2</mml:mn>
                     <mml:mi mathvariant="italic">n</mml:mi>
@@ -584,7 +584,6 @@
             <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCompressedTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCompressedTexSubImage1D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glCopyPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexSubImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetCompressedTexImage</refentrytitle></citerefentry>,

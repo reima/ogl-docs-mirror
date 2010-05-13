@@ -49,9 +49,8 @@
         <para>
             <function>glReadBuffer</function> specifies a color buffer as the source for subsequent
             <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glCopyTexImage1D</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glCopyTexImage2D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glCopyTexSubImage1D</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glCopyTexSubImage2D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glCopyTexSubImage3D</refentrytitle></citerefentry>, and
-            <citerefentry><refentrytitle>glCopyPixels</refentrytitle></citerefentry> commands.
+            <citerefentry><refentrytitle>glCopyTexSubImage1D</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glCopyTexSubImage2D</refentrytitle></citerefentry>, and
+            <citerefentry><refentrytitle>glCopyTexSubImage3D</refentrytitle></citerefentry> commands.
             <parameter>mode</parameter> accepts one of twelve or more predefined values.
             In a fully configured system,
             <constant>GL_FRONT</constant>,
@@ -91,7 +90,6 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>glCopyPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexSubImage1D</refentrytitle></citerefentry>,

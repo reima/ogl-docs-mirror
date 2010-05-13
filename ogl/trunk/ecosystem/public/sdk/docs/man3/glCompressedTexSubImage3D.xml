@@ -135,7 +135,7 @@
             texture image.  The texels referenced by <parameter>data</parameter> replace the portion of the
             existing texture array with x indices <parameter>xoffset</parameter> and
             <inlineequation><mml:math>
-                <!-- eqn: xoffset  +  width  -  1:-->
+                <!-- eqn: xoffset  +  width  -  1: -->
                 <mml:mrow>
                     <mml:mi mathvariant="italic">xoffset</mml:mi>
                     <mml:mo>+</mml:mo>
@@ -146,7 +146,7 @@
             </mml:math></inlineequation>,
             and the y indices <parameter>yoffset</parameter> and
             <inlineequation><mml:math>
-                <!-- eqn: yoffset  +  height  -  1:-->
+                <!-- eqn: yoffset  +  height  -  1: -->
                 <mml:mrow>
                     <mml:mi mathvariant="italic">yoffset</mml:mi>
                     <mml:mo>+</mml:mo>
@@ -157,7 +157,7 @@
             </mml:math></inlineequation>,
             and the z indices <parameter>zoffset</parameter> and
             <inlineequation><mml:math>
-                <!-- eqn: zoffset  +  depth  -  1:-->
+                <!-- eqn: zoffset  +  depth  -  1: -->
                 <mml:mrow>
                     <mml:mi mathvariant="italic">zoffset</mml:mi>
                     <mml:mo>+</mml:mo>
@@ -249,7 +249,6 @@
             <citerefentry><refentrytitle>glCompressedTexImage3D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCompressedTexSubImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCompressedTexSubImage2D</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glCopyPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexSubImage1D</refentrytitle></citerefentry>,

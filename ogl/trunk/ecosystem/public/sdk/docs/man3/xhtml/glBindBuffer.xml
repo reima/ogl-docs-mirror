@@ -17,12 +17,9 @@
                     Specifies the name of a buffer object.
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
             <code class="function">glBindBuffer</code> binds a buffer object to the specified buffer binding point. Calling <code class="function">glBindBuffer</code> with
-            <em class="parameter"><code>target</code></em> set to
-            <code class="constant">GL_ARRAY_BUFFER</code>, <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code>, <code class="constant">GL_PIXEL_PACK_BUFFER</code> or
-            <code class="constant">GL_PIXEL_UNPACK_BUFFER</code> and <em class="parameter"><code>buffer</code></em> set to the name
+            <em class="parameter"><code>target</code></em> set to one of the accepted symbolic constants and <em class="parameter"><code>buffer</code></em> set to the name
             of a buffer object binds that buffer object name to the target. If no buffer object with name <em class="parameter"><code>buffer</code></em>
-            exists, one is created with that name.
-            When a buffer object is bound to a target, the previous binding for that
+            exists, one is created with that name. When a buffer object is bound to a target, the previous binding for that
             target is automatically broken.
         </p><p>
             Buffer object names are unsigned integers. The value zero is reserved, but
@@ -105,6 +102,8 @@
             the GL implementation may make choices about how to optimize the storage of a buffer object based
             on its initial binding target.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
+            The <code class="constant">GL_COPY_READ_BUFFER</code>, <code class="constant">GL_UNIFORM_BUFFER</code> and
+            <code class="constant">GL_TEXTURE_BUFFER</code> targets are available only if the GL version is 3.1 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not one of the allowable
             values.

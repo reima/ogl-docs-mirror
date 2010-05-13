@@ -63,7 +63,6 @@
             <citerefentry><refentrytitle>glColorMask</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDepthFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDepthRange</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glIndexMask</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glStencilMask</refentrytitle></citerefentry>
         </para>
     </refsect1>

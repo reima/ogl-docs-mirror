@@ -21,9 +21,7 @@
                         buffers. See <a href="glBlendFunc.xml"><span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_CLIP_DISTANCE</code><span class="emphasis"><em>i</em></span></span></dt><dd><p>
 		        </p><p>
-                        If enabled,
-                        clip geometry against user-defined clipping plane <span class="emphasis"><em>i</em></span>.
-                        See <a href="glClipPlane.xml"><span class="citerefentry"><span class="refentrytitle">glClipPlane</span></span></a>.
+                        If enabled, clip geometry against user-defined half space <span class="emphasis"><em>i</em></span>.
                     </p></dd><dt><span class="term"><code class="constant">GL_COLOR_LOGIC_OP</code></span></dt><dd><p>
 		        </p><p>
                         If enabled,

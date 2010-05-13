@@ -61,8 +61,7 @@
                     <constant>GL_TEXTURE_MAX_LEVEL</constant>,
                     <constant>GL_TEXTURE_WRAP_S</constant>,
                     <constant>GL_TEXTURE_WRAP_T</constant>,
-                    <constant>GL_TEXTURE_WRAP_R</constant>,
-                    <constant>GL_TEXTURE_PRIORITY</constant>,
+                    <constant>GL_TEXTURE_WRAP_R</constant>
                     <constant>GL_TEXTURE_COMPARE_MODE</constant>,
                     <constant>GL_TEXTURE_COMPARE_FUNC</constant>,
                     <constant>GL_DEPTH_TEXTURE_MODE</constant>, or
@@ -124,8 +123,7 @@
                     <constant>GL_TEXTURE_MAX_LEVEL</constant>,
                     <constant>GL_TEXTURE_WRAP_S</constant>,
                     <constant>GL_TEXTURE_WRAP_T</constant>,
-                    <constant>GL_TEXTURE_WRAP_R</constant>,
-                    <constant>GL_TEXTURE_PRIORITY</constant>,
+                    <constant>GL_TEXTURE_WRAP_R</constant>
                     <constant>GL_TEXTURE_COMPARE_MODE</constant>,
                     <constant>GL_TEXTURE_COMPARE_FUNC</constant>,
                     <constant>GL_DEPTH_TEXTURE_MODE</constant>, or
@@ -656,23 +654,6 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_TEXTURE_PRIORITY</constant></term>
-                <listitem>
-                    <para>
-                        Specifies the texture residence priority of the currently bound texture.
-                        Permissible values are in the range 
-                        <inlineequation><mml:math>
-                            <!-- eqn: [0,1]:-->
-                            <mml:mfenced open="[" close="]">
-                                <mml:mn>0</mml:mn>
-                                <mml:mn>1</mml:mn>
-                            </mml:mfenced>
-                        </mml:math></inlineequation>.
-                        See <citerefentry><refentrytitle>glPrioritizeTextures</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glBindTexture</refentrytitle></citerefentry> for more information.
-                    </para>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
                 <term><constant>GL_TEXTURE_COMPARE_MODE</constant></term>
                 <listitem>
                     <para>
@@ -1152,7 +1133,6 @@
         <para>
             <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBindTexture</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glCopyPixels</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexSubImage1D</refentrytitle></citerefentry>,

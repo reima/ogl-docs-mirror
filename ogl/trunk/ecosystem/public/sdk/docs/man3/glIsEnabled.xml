@@ -97,6 +97,14 @@
                     </row>
                     <row>
                         <entry align="left">
+                        <constant>GL_DEPTH_CLAMP</constant>
+                        </entry>
+                        <entry align="left">
+                        <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
                         <constant>GL_DEPTH_TEST</constant>
                         </entry>
                         <entry align="left">
@@ -113,10 +121,10 @@
                     </row>
                     <row>
                         <entry align="left">
-                        <constant>GL_INDEX_LOGIC_OP</constant>
+                        <constant>GL_FRAMEBUFFER_SRGB</constant>
                         </entry>
                         <entry align="left">
-                        <citerefentry><refentrytitle>glLogicOp</refentrytitle></citerefentry>
+                        <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>
                         </entry>
                     </row>
                     <row>
@@ -169,6 +177,14 @@
                     </row>
                     <row>
                         <entry align="left">
+                        <constant>GL_PROGRAM_POINT_SIZE</constant>
+                        </entry>
+                        <entry align="left">
+                        <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
                         <constant>GL_PRIMITIVE_RESTART</constant> 
                         </entry>
                         <entry align="left">
@@ -201,6 +217,14 @@
                     </row>
                     <row>
                         <entry align="left">
+                        <constant>GL_SAMPLE_MASK</constant>
+                        </entry>
+                        <entry align="left">
+                        <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry align="left">
                         <constant>GL_SCISSOR_TEST</constant>
                         </entry>
                         <entry align="left">
@@ -217,7 +241,7 @@
                     </row>
                     <row>
                         <entry align="left">
-                        <constant>GL_VERTEX_PROGRAM_POINT_SIZE</constant>
+                        <constant>GL_TEXTURE_CUBEMAP_SEAMLESS</constant>
                         </entry>
                         <entry align="left">
                         <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>

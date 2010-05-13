@@ -96,7 +96,6 @@
         <para>
             <citerefentry><refentrytitle>glColorMask</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDepthMask</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glIndexMask</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glStencilFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glStencilFuncSeparate</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glStencilMask</refentrytitle></citerefentry>,

@@ -98,50 +98,50 @@
                         That is,
                         if a four-byte component consists of bytes
                         <inlineequation><mml:math>
-                            <!-- eqn: b sub 0:-->
+                            <!-- eqn: b sub 0: -->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>0</mml:mn>
                             </mml:msub>
                         </mml:math></inlineequation>,
                         <inlineequation><mml:math>
-                            <!-- eqn: b sub 1:-->
+                            <!-- eqn: b sub 1: -->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>1</mml:mn>
                             </mml:msub>
                         </mml:math></inlineequation>,
                         <inlineequation><mml:math>
-                            <!-- eqn: b sub 2:-->
+                            <!-- eqn: b sub 2: -->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>2</mml:mn>
                             </mml:msub>
                         </mml:math></inlineequation>,
                         <inlineequation><mml:math>
-                            <!-- eqn: b sub 3:-->
+                            <!-- eqn: b sub 3: -->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>3</mml:mn>
                             </mml:msub>
                         </mml:math></inlineequation>,
                         it is stored in memory as
                         <inlineequation><mml:math>
-                            <!-- eqn: b sub 3:-->
+                            <!-- eqn: b sub 3: -->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>3</mml:mn>
                             </mml:msub>
                         </mml:math></inlineequation>,
                         <inlineequation><mml:math>
-                            <!-- eqn: b sub 2:-->
+                            <!-- eqn: b sub 2: -->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>2</mml:mn>
                             </mml:msub>
                         </mml:math></inlineequation>,
                         <inlineequation><mml:math>
-                            <!-- eqn: b sub 1:-->
+                            <!-- eqn: b sub 1: -->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>1</mml:mn>
                             </mml:msub>
                         </mml:math></inlineequation>,
                         <inlineequation><mml:math>
-                            <!-- eqn: b sub 0:-->
+                            <!-- eqn: b sub 0: -->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>0</mml:mn>
                             </mml:msub>
@@ -183,7 +183,7 @@
                     </para>
                     <para>
                         <informalequation><mml:math>
-                            <!-- eqn: k  =   left {      lpile { n l above {a over s} left ceiling { s n l } over a right ceiling}         lpile {s  >=  a above s  <  a }:-->
+                            <!-- eqn: k  =   left {      lpile { n l above {a over s} left ceiling { s n l } over a right ceiling}         lpile {s  >=  a above s  <  a }: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">k</mml:mi>
                                 <mml:mo>=</mml:mo>
@@ -262,7 +262,7 @@
                         is the size, in bytes, of a single component
                         (if 
                         <inlineequation><mml:math>
-                            <!-- eqn: a < s:-->
+                            <!-- eqn: a < s: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">a</mml:mi>
                                 <mml:mo>&lt;</mml:mo>
@@ -271,7 +271,7 @@
                         </mml:math></inlineequation>,
                         then it is as if 
                         <inlineequation><mml:math>
-                            <!-- eqn: a  =  s:-->
+                            <!-- eqn: a  =  s: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">a</mml:mi>
                                 <mml:mo>=</mml:mo>
@@ -283,7 +283,7 @@
                     </para>
                     <para>
                         <inlineequation><mml:math>
-                            <!-- eqn: k  =  8 a left ceiling { n l } over { 8 a } right ceiling:-->
+                            <!-- eqn: k  =  8 a left ceiling { n l } over { 8 a } right ceiling: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">k</mml:mi>
                                 <mml:mo>=</mml:mo>
@@ -348,7 +348,7 @@
                     </para>
                     <para>
                         <informalequation><mml:math>
-                            <!-- eqn: k  =   left {        lpile { n l h above {a over s} left ceiling { s n l h } over a right ceiling}        lpile {s  >=  a above s  <  a }:-->
+                            <!-- eqn: k  =   left {        lpile { n l h above {a over s} left ceiling { s n l h } over a right ceiling}        lpile {s  >=  a above s  <  a }: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">k</mml:mi>
                                 <mml:mo>=</mml:mo>
@@ -437,7 +437,7 @@
                         is the size, in bytes, of a single
                         component (if 
                         <inlineequation><mml:math>
-                            <!-- eqn: a < s:-->
+                            <!-- eqn: a < s: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">a</mml:mi>
                                 <mml:mo>&lt;</mml:mo>
@@ -446,7 +446,7 @@
                         </mml:math></inlineequation>,
                         then it is as if 
                         <inlineequation><mml:math>
-                            <!-- eqn: a = s:-->
+                            <!-- eqn: a = s: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">a</mml:mi>
                                 <mml:mo>=</mml:mo>
@@ -482,7 +482,7 @@
                         is equivalent to incrementing
                         the pointer by 
                         <inlineequation><mml:math>
-                            <!-- eqn: i n:-->
+                            <!-- eqn: i n: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">i</mml:mi>
                                 <mml:mo>&it;</mml:mo>
@@ -498,7 +498,7 @@
                         is equivalent to incrementing
                         the pointer by 
                         <inlineequation><mml:math>
-                            <!-- eqn: j m:-->
+                            <!-- eqn: j m: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">j</mml:mi>
                                 <mml:mo>&it;</mml:mo>
@@ -515,7 +515,7 @@
                         is equivalent to incrementing
                         the pointer by 
                         <inlineequation><mml:math>
-                            <!-- eqn: k p:-->
+                            <!-- eqn: k p: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">k</mml:mi>
                                 <mml:mo>&it;</mml:mo>
@@ -570,50 +570,50 @@
                         That is,
                         if a four-byte component consists of bytes
                         <inlineequation><mml:math>
-                            <!-- eqn: b sub 0:-->
+                            <!-- eqn: b sub 0: -->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>0</mml:mn>
                             </mml:msub>
                         </mml:math></inlineequation>,
                         <inlineequation><mml:math>
-                            <!-- eqn: b sub 1:-->
+                            <!-- eqn: b sub 1: -->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>1</mml:mn>
                             </mml:msub>
                         </mml:math></inlineequation>,
                         <inlineequation><mml:math>
-                            <!-- eqn: b sub 2:-->
+                            <!-- eqn: b sub 2: -->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>2</mml:mn>
                             </mml:msub>
                         </mml:math></inlineequation>,
                         <inlineequation><mml:math>
-                            <!-- eqn: b sub 3:-->
+                            <!-- eqn: b sub 3: -->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>3</mml:mn>
                             </mml:msub>
                         </mml:math></inlineequation>,
                         it is taken from memory as
                         <inlineequation><mml:math>
-                            <!-- eqn: b sub 3:-->
+                            <!-- eqn: b sub 3: -->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>3</mml:mn>
                             </mml:msub>
                         </mml:math></inlineequation>,
                         <inlineequation><mml:math>
-                            <!-- eqn: b sub 2:-->
+                            <!-- eqn: b sub 2: -->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>2</mml:mn>
                             </mml:msub>
                         </mml:math></inlineequation>,
                         <inlineequation><mml:math>
-                            <!-- eqn: b sub 1:-->
+                            <!-- eqn: b sub 1: -->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>1</mml:mn>
                             </mml:msub>
                         </mml:math></inlineequation>,
                         <inlineequation><mml:math>
-                            <!-- eqn: b sub 0:-->
+                            <!-- eqn: b sub 0: -->
                             <mml:msub><mml:mi mathvariant="italic">b</mml:mi>
                             <mml:mn>0</mml:mn>
                             </mml:msub>
@@ -655,7 +655,7 @@
                     </para>
                     <para>
                         <informalequation><mml:math>
-                            <!-- eqn: k  =   left {       lpile { n l above {a over s} left ceiling { s n l } over a right ceiling }        lpile { s  >=  a above s  <  a }:-->
+                            <!-- eqn: k  =   left {       lpile { n l above {a over s} left ceiling { s n l } over a right ceiling }        lpile { s  >=  a above s  <  a }: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">k</mml:mi>
                                 <mml:mo>=</mml:mo>
@@ -734,7 +734,7 @@
                         is the size, in bytes, of a single component
                         (if 
                         <inlineequation><mml:math>
-                            <!-- eqn: a < s:-->
+                            <!-- eqn: a < s: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">a</mml:mi>
                                 <mml:mo>&lt;</mml:mo>
@@ -743,7 +743,7 @@
                         </mml:math></inlineequation>,
                         then it is as if 
                         <inlineequation><mml:math>
-                            <!-- eqn: a = s:-->
+                            <!-- eqn: a = s: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">a</mml:mi>
                                 <mml:mo>=</mml:mo>
@@ -755,7 +755,7 @@
                     </para>
                     <para>
                         <inlineequation><mml:math>
-                            <!-- eqn: k  =  8 a left ceiling { n l } over { 8 a } right ceiling:-->
+                            <!-- eqn: k  =  8 a left ceiling { n l } over { 8 a } right ceiling: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">k</mml:mi>
                                 <mml:mo>=</mml:mo>
@@ -820,7 +820,7 @@
                     </para>
                     <para>
                         <informalequation><mml:math>
-                            <!-- eqn: k  =   left {       lpile { n l h above {a over s} left ceiling { s n l h } over a right ceiling }        lpile { s   >=  a above s  <  a }:-->
+                            <!-- eqn: k  =   left {       lpile { n l h above {a over s} left ceiling { s n l h } over a right ceiling }        lpile { s   >=  a above s  <  a }: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">k</mml:mi>
                                 <mml:mo>=</mml:mo>
@@ -908,7 +908,7 @@
                         is the size, in bytes, of a single component
                         (if 
                         <inlineequation><mml:math>
-                            <!-- eqn: a < s:-->
+                            <!-- eqn: a < s: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">a</mml:mi>
                                 <mml:mo>&lt;</mml:mo>
@@ -917,7 +917,7 @@
                         </mml:math></inlineequation>,
                         then it is as if 
                         <inlineequation><mml:math>
-                            <!-- eqn: a  =  s:-->
+                            <!-- eqn: a  =  s: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">a</mml:mi>
                                 <mml:mo>=</mml:mo>
@@ -957,7 +957,7 @@
                         is equivalent to incrementing
                         the pointer by 
                         <inlineequation><mml:math>
-                            <!-- eqn: i n:-->
+                            <!-- eqn: i n: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">i</mml:mi>
                                 <mml:mo>&it;</mml:mo>
@@ -973,7 +973,7 @@
                         is equivalent to incrementing
                         the pointer by 
                         <inlineequation><mml:math>
-                            <!-- eqn: j k:-->
+                            <!-- eqn: j k: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">j</mml:mi>
                                 <mml:mo>&it;</mml:mo>
@@ -1073,7 +1073,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: left [ 0,\(if right ):-->
+                            <!-- eqn: left [ 0,\(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
                                 <mml:infinity/>
@@ -1093,7 +1093,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: left [ 0, \(if right ):-->
+                            <!-- eqn: left [ 0, \(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
                                 <mml:infinity/>
@@ -1113,7 +1113,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: left [ 0,\(if right ):-->
+                            <!-- eqn: left [ 0,\(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
                                 <mml:infinity/>
@@ -1133,7 +1133,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: left [ 0,\(if right ):-->
+                            <!-- eqn: left [ 0,\(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
                                 <mml:infinity/>
@@ -1153,7 +1153,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: left [ 0,\(if right ):-->
+                            <!-- eqn: left [ 0,\(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
                                 <mml:infinity/>
@@ -1215,7 +1215,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: left [ 0,\(if right ):-->
+                            <!-- eqn: left [ 0,\(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
                                 <mml:infinity/>
@@ -1235,7 +1235,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: left [ 0,\(if right ):-->
+                            <!-- eqn: left [ 0,\(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
                                 <mml:infinity/>
@@ -1255,7 +1255,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: left [ 0,\(if right ):-->
+                            <!-- eqn: left [ 0,\(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
                                 <mml:infinity/>
@@ -1275,7 +1275,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: left [ 0,\(if right ):-->
+                            <!-- eqn: left [ 0,\(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
                                 <mml:infinity/>
@@ -1295,7 +1295,7 @@
                         </entry>
                         <entry align="center">
                         <inlineequation><mml:math>
-                            <!-- eqn: left [ 0,\(if right ):-->
+                            <!-- eqn: left [ 0,\(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
                                 <mml:infinity/>
@@ -1333,13 +1333,6 @@
             Likewise, <function>glPixelStorei</function> can also be used to set any of the
             pixel store parameters.
             Boolean parameters are set to false if <parameter>param</parameter> is 0 and true otherwise.
-        </para>
-    </refsect1>
-    <refsect1 id="notes"><title>Notes</title>
-        <para>
-            Pixel storage modes are client state and must be pushed and restored
-            using
-            <citerefentry><refentrytitle>glPushClientAttrib</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glPopClientAttrib</refentrytitle></citerefentry>.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

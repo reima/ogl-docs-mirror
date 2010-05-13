@@ -734,7 +734,6 @@
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum number of application-defined clipping distances. The value must be at least 8.
-                        See <citerefentry><refentrytitle>glClipPlane</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1001,7 +1000,7 @@
                     <para>
                         <parameter>params</parameter> returns one value.
                         The value indicates the maximum supported size for renderbuffers.
-                        See <citerefentry><refentrytitle>glFramebufferRenderBuffer</refentrytitle></citerefentry>.
+                        See <citerefentry><refentrytitle>glFramebufferRenderbuffer</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1604,7 +1603,7 @@
                         reading. The initial value is <constant>GL_BACK</constant> if there is a back buffer,
                         otherwise it is <constant>GL_FRONT</constant>.
                         See
-                        <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glAccum</refentrytitle></citerefentry>.
+                        <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -2452,7 +2451,7 @@
             <citerefentry><refentrytitle>glGetActiveUniform</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetAttachedShaders</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetAttribLocation</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetBufferParameteriv</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetBufferParameter</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetBufferPointerv</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetBufferSubData</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetCompressedTexImage</refentrytitle></citerefentry>,

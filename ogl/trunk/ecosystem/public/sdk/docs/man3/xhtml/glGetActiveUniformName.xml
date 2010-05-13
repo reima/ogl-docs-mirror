@@ -18,7 +18,7 @@
             that were (or would have been) written into <em class="parameter"><code>uniformName</code></em> (not including the nul-terminator) will be placed in the variable whose address
             is specified in <em class="parameter"><code>length</code></em>. If <em class="parameter"><code>length</code></em> is <code class="code">NULL</code>, no length is returned. The length of the longest uniform
             name in <em class="parameter"><code>program</code></em> is given by the value of <code class="constant">GL_ACTIVE_UNIFORM_MAX_LENGTH</code>, which can be queried with
-            <a href="glGetProgramiv.xml"><span class="citerefentry"><span class="refentrytitle">glGetProgramiv</span></span></a>.
+            <a href="glGetProgram.xml"><span class="citerefentry"><span class="refentrytitle">glGetProgram</span></span></a>.
         </p><p>
             If <code class="function">glGetActiveUniformName</code> is not successful, nothing is written to <em class="parameter"><code>length</code></em> or <em class="parameter"><code>uniformName</code></em>.
         </p><p>
@@ -39,7 +39,7 @@
             <a href="glLinkProgram.xml"><span class="citerefentry"><span class="refentrytitle">glLinkProgram</span></span></a> has been issued.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glGetActiveUniform.xml"><span class="citerefentry"><span class="refentrytitle">glGetActiveUniform</span></span></a>,
-            <a href="glGetActiveUniformIndices.xml"><span class="citerefentry"><span class="refentrytitle">glGetActiveUniformIndices</span></span></a>,
+            <a href="glGetUniformIndices.xml"><span class="citerefentry"><span class="refentrytitle">glGetUniformIndices</span></span></a>,
             <a href="glLinkProgram.xml"><span class="citerefentry"><span class="refentrytitle">glLinkProgram</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2010 Khronos Group. 

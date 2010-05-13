@@ -20,7 +20,6 @@
                     <code class="constant">GL_TEXTURE_WRAP_T</code>,
                     <code class="constant">GL_TEXTURE_WRAP_R</code>,
                     <code class="constant">GL_TEXTURE_BORDER_COLOR</code>,
-                    <code class="constant">GL_TEXTURE_PRIORITY</code>,
                     <code class="constant">GL_TEXTURE_RESIDENT</code>,
                     <code class="constant">GL_TEXTURE_COMPARE_MODE</code>,
                     <code class="constant">GL_TEXTURE_COMPARE_FUNC</code>,
@@ -98,10 +97,6 @@
                         </mml:math>
                         maps to the most negative representable
                         integer. The initial value is (0, 0, 0, 0).
-                    </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_PRIORITY</code></span></dt><dd><p>
-                        Returns the residence priority of the target texture (or the named
-                        texture bound to it). The initial value is 1.
-                        See <a href="glPrioritizeTextures.xml"><span class="citerefentry"><span class="refentrytitle">glPrioritizeTextures</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_COMPARE_MODE</code></span></dt><dd><p>
                         Returns a single-valued texture comparison mode, a symbolic constant.  The
                         initial value is <code class="constant">GL_NONE</code>. See <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>.

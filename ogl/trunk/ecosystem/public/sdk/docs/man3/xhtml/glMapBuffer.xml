@@ -89,7 +89,7 @@
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
             <a href="glGetBufferPointerv.xml"><span class="citerefentry"><span class="refentrytitle">glGetBufferPointerv</span></span></a> with argument <code class="constant">GL_BUFFER_MAP_POINTER</code>
         </p><p>
-            <a href="glGetBufferParameteriv.xml"><span class="citerefentry"><span class="refentrytitle">glGetBufferParameteriv</span></span></a> with argument <code class="constant">GL_BUFFER_MAPPED</code>,  <code class="constant">GL_BUFFER_ACCESS</code>, or <code class="constant">GL_BUFFER_USAGE</code>
+            <a href="glGetBufferParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetBufferParameter</span></span></a> with argument <code class="constant">GL_BUFFER_MAPPED</code>,  <code class="constant">GL_BUFFER_ACCESS</code>, or <code class="constant">GL_BUFFER_USAGE</code>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>,
             <a href="glBindBufferBase.xml"><span class="citerefentry"><span class="refentrytitle">glBindBufferBase</span></span></a>,

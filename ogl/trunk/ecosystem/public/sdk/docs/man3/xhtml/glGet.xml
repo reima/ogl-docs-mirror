@@ -308,7 +308,6 @@
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
                         the maximum number of application-defined clipping distances. The value must be at least 8.
-                        See <a href="glClipPlane.xml"><span class="citerefentry"><span class="refentrytitle">glClipPlane</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS</code></span></dt><dd><p>
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
@@ -428,7 +427,7 @@
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value.
                         The value indicates the maximum supported size for renderbuffers.
-                        See <a href="glFramebufferRenderBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glFramebufferRenderBuffer</span></span></a>.
+                        See <a href="glFramebufferRenderbuffer.xml"><span class="citerefentry"><span class="refentrytitle">glFramebufferRenderbuffer</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_ARRAY_TEXTURE_LAYERS</code></span></dt><dd><p>
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value.
@@ -688,7 +687,7 @@
                         reading. The initial value is <code class="constant">GL_BACK</code> if there is a back buffer,
                         otherwise it is <code class="constant">GL_FRONT</code>.
                         See
-                        <a href="glReadPixels.xml"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a> and <a href="glAccum.xml"><span class="citerefentry"><span class="refentrytitle">glAccum</span></span></a>.
+                        <a href="glReadPixels.xml"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_SAMPLE_BUFFERS</code></span></dt><dd><p>
               </p><p>
                         <em class="parameter"><code>params</code></em> returns a single integer value indicating the number of sample buffers
@@ -1105,7 +1104,7 @@
             <a href="glGetActiveUniform.xml"><span class="citerefentry"><span class="refentrytitle">glGetActiveUniform</span></span></a>,
             <a href="glGetAttachedShaders.xml"><span class="citerefentry"><span class="refentrytitle">glGetAttachedShaders</span></span></a>,
             <a href="glGetAttribLocation.xml"><span class="citerefentry"><span class="refentrytitle">glGetAttribLocation</span></span></a>,
-            <a href="glGetBufferParameteriv.xml"><span class="citerefentry"><span class="refentrytitle">glGetBufferParameteriv</span></span></a>,
+            <a href="glGetBufferParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetBufferParameter</span></span></a>,
             <a href="glGetBufferPointerv.xml"><span class="citerefentry"><span class="refentrytitle">glGetBufferPointerv</span></span></a>,
             <a href="glGetBufferSubData.xml"><span class="citerefentry"><span class="refentrytitle">glGetBufferSubData</span></span></a>,
             <a href="glGetCompressedTexImage.xml"><span class="citerefentry"><span class="refentrytitle">glGetCompressedTexImage</span></span></a>,

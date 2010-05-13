@@ -111,7 +111,7 @@
         </para>
         <para>
             The length of the longest varying name in program is given by <constant>GL_TRANSFORM_FEEDBACK_VARYING_MAX_LENGTH</constant>,
-            which can be queried with <citerefentry><refentrytitle>glGetProgramiv</refentrytitle></citerefentry>.
+            which can be queried with <citerefentry><refentrytitle>glGetProgram</refentrytitle></citerefentry>.
         </para>
         <para>
             For the selected varying variable, its type is returned into <parameter>type</parameter>. The size of

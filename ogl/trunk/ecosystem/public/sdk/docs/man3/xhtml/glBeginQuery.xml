@@ -26,7 +26,11 @@
             If <em class="parameter"><code>target</code></em> is <code class="constant">GL_SAMPLES_PASSED</code>, <em class="parameter"><code>target</code></em> must be an unused name,
             or the name of an existing occlusion query object.
             When <code class="function">glBeginQuery</code> is executed, the query object's samples-passed counter is reset to 0.  Subsequent
-            rendering will increment the counter once for every sample that passes the depth test.  When <code class="function">glEndQuery</code>
+            rendering will increment the counter for every sample that passes the depth test.  If the value of <code class="constant">GL_SAMPLE_BUFFERS</code>
+            is 0, then the samples-passed count is incremented by 1 for each fragment. If the value of <code class="constant">GL_SAMPLE_BUFFERS</code>
+            is 1, then the samples-passed count is incremented by the number of samples whose coverage bit is set. However, implementations, at their
+            discression may instead increase the samples-passed count by the value of <code class="constant">GL_SAMPLES</code> if any sample in the fragment
+            is covered. When <code class="function">glEndQuery</code>
             is executed, the samples-passed counter is assigned to the query object's result value.  This value can be queried by
             calling <a href="glGetQueryObject.xml"><span class="citerefentry"><span class="refentrytitle">glGetQueryObject</span></span></a> with <em class="parameter"><code>pname</code></em>
             <code class="constant">GL_QUERY_RESULT</code>.
@@ -94,6 +98,9 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>id</code></em> is 0.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>id</code></em> is the name of an already active query object.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>id</code></em> refers to an existing query object whose type
+            does not does not match <em class="parameter"><code>target</code></em>.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glDeleteQueries.xml"><span class="citerefentry"><span class="refentrytitle">glDeleteQueries</span></span></a>,
             <a href="glGenQueries.xml"><span class="citerefentry"><span class="refentrytitle">glGenQueries</span></span></a>,

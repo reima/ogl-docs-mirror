@@ -81,7 +81,7 @@
             that were (or would have been) written into <parameter>uniformName</parameter> (not including the nul-terminator) will be placed in the variable whose address
             is specified in <parameter>length</parameter>. If <parameter>length</parameter> is <code>NULL</code>, no length is returned. The length of the longest uniform
             name in <parameter>program</parameter> is given by the value of <constant>GL_ACTIVE_UNIFORM_MAX_LENGTH</constant>, which can be queried with
-            <citerefentry><refentrytitle>glGetProgramiv</refentrytitle></citerefentry>.
+            <citerefentry><refentrytitle>glGetProgram</refentrytitle></citerefentry>.
         </para>
         <para>
             If <function>glGetActiveUniformName</function> is not successful, nothing is written to <parameter>length</parameter> or <parameter>uniformName</parameter>.
@@ -113,7 +113,7 @@
     <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glGetActiveUniform</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetActiveUniformIndices</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetUniformIndices</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glLinkProgram</refentrytitle></citerefentry>
         </para>
     </refsect1>

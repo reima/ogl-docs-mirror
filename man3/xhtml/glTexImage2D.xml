@@ -153,35 +153,31 @@
                         by attaching 0 for green and blue, and 1 for alpha.
                         Each component is then multiplied by the signed scale factor <code class="constant">GL_c_SCALE</code>,
                         added to the signed bias <code class="constant">GL_c_BIAS</code>,
-                        and clamped to the range [0,1]
-                        (see <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>).
+                        and clamped to the range [0,1].
                     </p></dd><dt><span class="term"><code class="constant">GL_RG</code></span></dt><dd><p>
                         Each element is a red/green double.
                         The GL converts it to floating point and assembles it into an RGBA element
                         by attaching 0 for blue, and 1 for alpha.
                         Each component is then multiplied by the signed scale factor <code class="constant">GL_c_SCALE</code>,
                         added to the signed bias <code class="constant">GL_c_BIAS</code>,
-                        and clamped to the range [0,1]
-                        (see <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>).
+                        and clamped to the range [0,1].
                     </p></dd><dt><span class="term"><code class="constant">GL_RGB</code></span></dt><dd></dd><dt><span class="term"><code class="constant">GL_BGR</code></span></dt><dd><p>
                         Each element is an RGB triple.
                         The GL converts it to floating point and assembles it into an RGBA element
                         by attaching 1 for alpha.
                         Each component is then multiplied by the signed scale factor <code class="constant">GL_c_SCALE</code>,
                         added to the signed bias <code class="constant">GL_c_BIAS</code>,
-                        and clamped to the range [0,1]
-                        (see <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>).
+                        and clamped to the range [0,1].
                     </p></dd><dt><span class="term"><code class="constant">GL_RGBA</code></span></dt><dd></dd><dt><span class="term"><code class="constant">GL_BGRA</code></span></dt><dd><p>
                         Each element contains all four components.
                         Each component is multiplied by the signed scale factor <code class="constant">GL_c_SCALE</code>,
                         added to the signed bias <code class="constant">GL_c_BIAS</code>,
-                        and clamped to the range [0,1]
-                        (see <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>).
+                        and clamped to the range [0,1].
                     </p></dd><dt><span class="term"><code class="constant">GL_DEPTH_COMPONENT</code></span></dt><dd><p>
                         Each element is a single depth value.
                         The GL converts it to floating point, multiplies by the signed scale factor
                         <code class="constant">GL_DEPTH_SCALE</code>, adds the signed bias <code class="constant">GL_DEPTH_BIAS</code>,
-                        and clamps to the range [0,1] (see <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>).
+                        and clamps to the range [0,1].
                     </p></dd><dt><span class="term"><code class="constant">GL_DEPTH_STENCIL</code></span></dt><dd><p>
                         Each element is a pair of depth and stencil values. The depth component of
                         the pair is interpreted as in <code class="constant">GL_DEPTH_COMPONENT</code>. The stencil
@@ -319,7 +315,7 @@
                   depth texture values to generate a boolean result.
                   See <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a> for details on texture comparison.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
-            <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> and <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a> modes affect texture images.
+            The <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> mode affects texture images.
         </p><p>
             <em class="parameter"><code>data</code></em> may be a null pointer.
             In this case, texture memory is
@@ -467,7 +463,6 @@
             <a href="glCopyTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage2D</span></span></a>,
             <a href="glCopyTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexSubImage3D</span></span></a>,
             <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>,
-            <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>,
             <a href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>,
             <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a>,
             <a href="glTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span></a>,

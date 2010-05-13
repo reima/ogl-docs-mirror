@@ -90,6 +90,7 @@ ALLXML = \
     glDrawElements.xml \
     glDrawElementsBaseVertex.xml \
     glDrawElementsInstanced.xml \
+    glDrawElementsInstancedBaseVertex.xml \
     glDrawRangeElements.xml \
     glDrawRangeElementsBaseVertex.xml \
     glEnable.xml \

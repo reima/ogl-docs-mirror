@@ -56,7 +56,7 @@
                         not flushed, but data within the corresponding subrange of the buffer are undefined.
                         This flag may only be used in conjunction with <code class="constant">GL_MAP_WRITE_BIT</code>.
                         When this option is selected, flushing is strictly limited to regions that are
-                        explicitly indicated with calls to <a href="FlushMappedBufferRange.xml"><span class="citerefentry"><span class="refentrytitle">FlushMappedBufferRange</span></span></a>
+                        explicitly indicated with calls to <a href="glFlushMappedBufferRange.xml"><span class="citerefentry"><span class="refentrytitle">glFlushMappedBufferRange</span></span></a>
                         prior to unmap; if this option is not selected <a href="glUnmapBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glUnmapBuffer</span></span></a>
                         will automatically flush the entire mapped range when called.
                     </p></li><li><p>

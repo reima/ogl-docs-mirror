@@ -124,10 +124,7 @@
             into client memory starting at location <parameter>data</parameter>.
             Several parameters control the processing of the pixel data before
             it is placed into client memory.
-            These parameters are set with three commands:
-            <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>, and
-            <citerefentry><refentrytitle>glPixelMap</refentrytitle></citerefentry>.
+            These parameters are set with <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>.
             This reference page describes the effects on <function>glReadPixels</function> of most,
             but not all of the parameters specified by these three commands.
         </para>
@@ -267,14 +264,6 @@
                 </listitem>
             </varlistentry>
         </variablelist>
-        <para>
-            The shift,
-            scale,
-            bias,
-            and lookup factors just described are all specified by
-            <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>.
-            The lookup table contents themselves are specified by <citerefentry><refentrytitle>glPixelMap</refentrytitle></citerefentry>.
-        </para>
         <para>
             Finally, the indices or components
             are converted to the proper format,
@@ -1185,7 +1174,6 @@
     <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glReadBuffer</refentrytitle></citerefentry>
         </para>
     </refsect1>

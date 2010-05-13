@@ -57,10 +57,7 @@
             into client memory starting at location <em class="parameter"><code>data</code></em>.
             Several parameters control the processing of the pixel data before
             it is placed into client memory.
-            These parameters are set with three commands:
-            <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>,
-            <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>, and
-            <a href="glPixelMap.xml"><span class="citerefentry"><span class="refentrytitle">glPixelMap</span></span></a>.
+            These parameters are set with <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>.
             This reference page describes the effects on <code class="function">glReadPixels</code> of most,
             but not all of the parameters specified by these three commands.
         </p><p>
@@ -142,13 +139,6 @@
                         Values are taken from both the depth and stencil buffers. The <em class="parameter"><code>type</code></em> parameter
                         must be <code class="constant">GL_UNSIGNED_INT_24_8</code> or <code class="constant">GL_FLOAT_32_UNSIGNED_INT_24_8_REV</code>.
                     </p></dd><dt><span class="term"><code class="constant">GL_RED</code></span></dt><dd></dd><dt><span class="term"><code class="constant">GL_GREEN</code></span></dt><dd></dd><dt><span class="term"><code class="constant">GL_BLUE</code></span></dt><dd></dd><dt><span class="term"><code class="constant">GL_RGB</code></span></dt><dd></dd><dt><span class="term"><code class="constant">GL_BGR</code></span></dt><dd></dd><dt><span class="term"><code class="constant">GL_RGBA</code></span></dt><dd></dd><dt><span class="term"><code class="constant">GL_BGRA</code></span></dt><dd></dd></dl></div><p>
-            The shift,
-            scale,
-            bias,
-            and lookup factors just described are all specified by
-            <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>.
-            The lookup table contents themselves are specified by <a href="glPixelMap.xml"><span class="citerefentry"><span class="refentrytitle">glPixelMap</span></span></a>.
-        </p><p>
             Finally, the indices or components
             are converted to the proper format,
             as specified by <em class="parameter"><code>type</code></em>.
@@ -894,7 +884,6 @@
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_PACK_BUFFER_BINDING</code>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>,
-            <a href="glPixelTransfer.xml"><span class="citerefentry"><span class="refentrytitle">glPixelTransfer</span></span></a>,
             <a href="glReadBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glReadBuffer</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006

@@ -128,7 +128,7 @@
                         not flushed, but data within the corresponding subrange of the buffer are undefined.
                         This flag may only be used in conjunction with <constant>GL_MAP_WRITE_BIT</constant>.
                         When this option is selected, flushing is strictly limited to regions that are
-                        explicitly indicated with calls to <citerefentry><refentrytitle>FlushMappedBufferRange</refentrytitle></citerefentry>
+                        explicitly indicated with calls to <citerefentry><refentrytitle>glFlushMappedBufferRange</refentrytitle></citerefentry>
                         prior to unmap; if this option is not selected <citerefentry><refentrytitle>glUnmapBuffer</refentrytitle></citerefentry>
                         will automatically flush the entire mapped range when called.
                     </para>

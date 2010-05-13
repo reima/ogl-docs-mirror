@@ -344,7 +344,6 @@
         <para>
             <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glClipPlane</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCullFace</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDepthFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDepthRange</refentrytitle></citerefentry>,

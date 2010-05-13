@@ -135,7 +135,6 @@
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>,
             <a href="glBlendFunc.xml"><span class="citerefentry"><span class="refentrytitle">glBlendFunc</span></span></a>,
-            <a href="glClipPlane.xml"><span class="citerefentry"><span class="refentrytitle">glClipPlane</span></span></a>,
             <a href="glCullFace.xml"><span class="citerefentry"><span class="refentrytitle">glCullFace</span></span></a>,
             <a href="glDepthFunc.xml"><span class="citerefentry"><span class="refentrytitle">glDepthFunc</span></span></a>,
             <a href="glDepthRange.xml"><span class="citerefentry"><span class="refentrytitle">glDepthRange</span></span></a>,

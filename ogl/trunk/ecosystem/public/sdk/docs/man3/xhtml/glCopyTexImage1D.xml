@@ -103,7 +103,7 @@
             <em class="parameter"><code>internalformat</code></em> specifies the internal format of the texture array.
         </p><p>
             The pixels in the row are processed exactly as if
-            <a href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a> had been called, but the process stops just before
+            <a href="glReadPixels.xml"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a> had been called, but the process stops just before
             final conversion.
             At this point all pixel component values are clamped to the range 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">

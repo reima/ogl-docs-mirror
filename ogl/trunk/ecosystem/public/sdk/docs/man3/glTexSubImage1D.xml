@@ -136,7 +136,7 @@
             The texels referenced by <parameter>data</parameter> replace the portion of the
             existing texture array with x indices <parameter>xoffset</parameter> and
             <inlineequation><mml:math>
-                <!-- eqn: xoffset + width - 1:-->
+                <!-- eqn: xoffset + width - 1: -->
                 <mml:mrow>
                     <mml:mi mathvariant="italic">xoffset</mml:mi>
                     <mml:mo>+</mml:mo>
@@ -159,7 +159,7 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry> modes affect texture images.
+            <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry> modes affect texture images.
         </para>
         <para>
             <function>glTexSubImage1D</function> specifies a one-dimensional subtexture for the current texture unit,
@@ -185,7 +185,7 @@
             <constant>GL_INVALID_VALUE</constant> may be generated if <parameter>level</parameter> is greater
             than 
             <inlineequation><mml:math>
-                <!-- eqn: log sub 2:-->
+                <!-- eqn: log sub 2: -->
                 <mml:msub><mml:mi mathvariant="italic">log</mml:mi>
                 <mml:mn>2</mml:mn>
                 </mml:msub>
@@ -196,7 +196,7 @@
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if 
             <inlineequation><mml:math>
-                <!-- eqn: xoffset  <   -b:-->
+                <!-- eqn: xoffset  <   -b: -->
                 <mml:mrow>
                     <mml:mi mathvariant="italic">xoffset</mml:mi>
                     <mml:mo>&lt;</mml:mo>
@@ -208,7 +208,7 @@
             </mml:math></inlineequation>,
             or if 
             <inlineequation><mml:math>
-                <!-- eqn: (xoffset + width)  >  (w  -  b):-->
+                <!-- eqn: (xoffset + width)  >  (w  -  b): -->
                 <mml:mrow>
                     <mml:mfenced open="(" close=")">
                         <mml:mrow>
@@ -300,7 +300,6 @@
             <citerefentry><refentrytitle>glCopyTexSubImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexSubImage3D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>,

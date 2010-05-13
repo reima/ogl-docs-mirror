@@ -55,7 +55,7 @@
         <para>
             <citerefentry><refentrytitle>glGenSamplers</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBindSampler</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDeleteSampler</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>glDeleteSamplers</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

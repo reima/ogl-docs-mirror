@@ -178,7 +178,7 @@
                         at progressively lower resolutions.
                         If the texture has dimensions 
                         <inlineequation><mml:math>
-                            <!-- eqn: 2 sup n  times  2 sup m:-->
+                            <!-- eqn: 2 sup n  times  2 sup m: -->
                             <mml:mrow>
                                 <mml:msup><mml:mn>2</mml:mn>
                                 <mml:mi mathvariant="italic">n</mml:mi>
@@ -191,7 +191,7 @@
                         </mml:math></inlineequation>,
                         there are
                         <inlineequation><mml:math>
-                            <!-- eqn: max ( n, m ) + 1:-->
+                            <!-- eqn: max ( n, m ) + 1: -->
                             <mml:mrow>
                                 <mml:mrow>
                                     <mml:mi mathvariant="italic">max</mml:mi>
@@ -209,7 +209,7 @@
                         The first mipmap is the original texture,
                         with dimensions 
                         <inlineequation><mml:math>
-                            <!-- eqn: 2 sup n  times  2 sup m:-->
+                            <!-- eqn: 2 sup n  times  2 sup m: -->
                             <mml:mrow>
                                 <mml:msup><mml:mn>2</mml:mn>
                                 <mml:mi mathvariant="italic">n</mml:mi>
@@ -222,7 +222,7 @@
                         </mml:math></inlineequation>.
                         Each subsequent mipmap has dimensions 
                         <inlineequation><mml:math>
-                            <!-- eqn: 2 sup { k - 1 }  times  2 sup { l - 1 }:-->
+                            <!-- eqn: 2 sup { k - 1 }  times  2 sup { l - 1 }: -->
                             <mml:mrow>
                                 <mml:msup><mml:mn>2</mml:mn>
                                 <mml:mfenced open="" close="">
@@ -247,7 +247,7 @@
                         </mml:math></inlineequation>,
                         where 
                         <inlineequation><mml:math>
-                            <!-- eqn: 2 sup k  times  2 sup l:-->
+                            <!-- eqn: 2 sup k  times  2 sup l: -->
                             <mml:mrow>
                                 <mml:msup><mml:mn>2</mml:mn>
                                 <mml:mi mathvariant="italic">k</mml:mi>
@@ -261,7 +261,7 @@
                         are the dimensions of the previous mipmap,
                         until either 
                         <inlineequation><mml:math>
-                            <!-- eqn: k  =  0:-->
+                            <!-- eqn: k  =  0: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">k</mml:mi>
                                 <mml:mo>=</mml:mo>
@@ -270,7 +270,7 @@
                         </mml:math></inlineequation>
                         or 
                         <inlineequation><mml:math>
-                            <!-- eqn: l = 0:-->
+                            <!-- eqn: l = 0: -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">l</mml:mi>
                                 <mml:mo>=</mml:mo>
@@ -280,7 +280,7 @@
                         At that point,
                         subsequent mipmaps have dimension 
                         <inlineequation><mml:math>
-                            <!-- eqn: 1  times  2 sup { l - 1 }:-->
+                            <!-- eqn: 1  times  2 sup { l - 1 }: -->
                             <mml:mrow>
                                 <mml:mn>1</mml:mn>
                                 <mml:mo>&times;</mml:mo>
@@ -297,7 +297,7 @@
                         </mml:math></inlineequation>
                         or 
                         <inlineequation><mml:math>
-                            <!-- eqn: 2 sup { k - 1}  times  1:-->
+                            <!-- eqn: 2 sup { k - 1}  times  1: -->
                             <mml:mrow>
                                 <mml:msup><mml:mn>2</mml:mn>
                                 <mml:mfenced open="" close="">
@@ -315,7 +315,7 @@
                         until the final mipmap,
                         which has dimension 
                         <inlineequation><mml:math>
-                            <!-- eqn: 1  times  1:-->
+                            <!-- eqn: 1  times  1: -->
                             <mml:mrow>
                                 <mml:mn>1</mml:mn>
                                 <mml:mo>&times;</mml:mo>
@@ -329,7 +329,7 @@
                         Level 0 is the original texture;
                         level 
                         <inlineequation><mml:math>
-                            <!-- eqn: max ( n, m ):-->
+                            <!-- eqn: max ( n, m ): -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">max</mml:mi>
                                 <mml:mo>&af;</mml:mo>
@@ -341,7 +341,7 @@
                         </mml:math></inlineequation>
                         is the final 
                         <inlineequation><mml:math>
-                            <!-- eqn: 1  times  1:-->
+                            <!-- eqn: 1  times  1: -->
                             <mml:mrow>
                                 <mml:mn>1</mml:mn>
                                 <mml:mo>&times;</mml:mo>
@@ -550,7 +550,7 @@
                         coordinates to be clamped to the
                         range 
                         <inlineequation><mml:math>
-                            <!-- eqn: left [ {1 over 2N}, 1 - {1 over 2N} right ]:-->
+                            <!-- eqn: left [ {1 over 2N}, 1 - {1 over 2N} right ]: -->
                             <mml:mfenced open="[" close="]">
                                 <mml:mfenced open="" close="">
                                     <mml:mrow>
@@ -595,7 +595,7 @@
                         texture coordinate is
                         set to 
                         <inlineequation><mml:math>
-                            <!-- eqn: 1 - frac(s):-->
+                            <!-- eqn: 1 - frac(s): -->
                             <mml:mrow>
                                 <mml:mn>1</mml:mn>
                                 <mml:mo>-</mml:mo>
@@ -610,7 +610,7 @@
                         </mml:math></inlineequation>,
                         where 
                         <inlineequation><mml:math>
-                            <!-- eqn: frac(s):-->
+                            <!-- eqn: frac(s): -->
                             <mml:mrow>
                                 <mml:mi mathvariant="italic">frac</mml:mi>
                                 <mml:mo>&af;</mml:mo>
@@ -716,7 +716,7 @@
                                         </entry>
                                         <entry align="left">
                                             <informalequation><mml:math>
-                                                <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}:-->
+                                                <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}: -->
                                                 <mml:mrow>
                                                     <mml:mi mathvariant="italic">result</mml:mi>
                                                     <mml:mo>=</mml:mo>
@@ -767,7 +767,7 @@
                                         </entry>
                                         <entry align="left">
                                             <informalequation><mml:math>
-                                                <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}:-->
+                                                <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}: -->
                                                 <mml:mrow>
                                                     <mml:mi mathvariant="italic">result</mml:mi>
                                                     <mml:mo>=</mml:mo>
@@ -818,7 +818,7 @@
                                         </entry>
                                         <entry align="left">
                                             <informalequation><mml:math>
-                                                <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}:-->
+                                                <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}: -->
                                                 <mml:mrow>
                                                     <mml:mi mathvariant="italic">result</mml:mi>
                                                     <mml:mo>=</mml:mo>
@@ -869,7 +869,7 @@
                                         </entry>
                                         <entry align="left">
                                             <informalequation><mml:math>
-                                                <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}:-->
+                                                <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}: -->
                                                 <mml:mrow>
                                                     <mml:mi mathvariant="italic">result</mml:mi>
                                                     <mml:mo>=</mml:mo>
@@ -920,7 +920,7 @@
                                         </entry>
                                         <entry align="left">
                                             <informalequation><mml:math>
-                                                <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}:-->
+                                                <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}: -->
                                                 <mml:mrow>
                                                     <mml:mi mathvariant="italic">result</mml:mi>
                                                     <mml:mo>=</mml:mo>
@@ -971,7 +971,7 @@
                                         </entry>
                                         <entry align="left">
                                             <informalequation><mml:math>
-                                                <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}:-->
+                                                <!-- eqn: result  =  left {   cpile {1.0 above 0.0}        lpile {r <= {D sub t} above r > {D sub t}}: -->
                                                 <mml:mrow>
                                                     <mml:mi mathvariant="italic">result</mml:mi>
                                                     <mml:mo>=</mml:mo>
@@ -1054,7 +1054,7 @@
                         where <inlineequation><mml:math><mml:mi mathvariant="italic">r</mml:mi></mml:math></inlineequation>
                         is the current interpolated texture coordinate, and 
                         <inlineequation><mml:math>
-                            <!-- eqn: D sub t:-->
+                            <!-- eqn: D sub t: -->
                             <mml:msub><mml:mi mathvariant="italic">D</mml:mi>
                             <mml:mi mathvariant="italic">t</mml:mi>
                             </mml:msub>
@@ -1139,7 +1139,6 @@
             <citerefentry><refentrytitle>glCopyTexSubImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexSubImage3D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>,

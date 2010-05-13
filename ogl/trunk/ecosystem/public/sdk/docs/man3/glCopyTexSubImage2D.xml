@@ -180,7 +180,7 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry> modes affect texture images.
+            <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry> modes affect texture images.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
@@ -318,7 +318,6 @@
             <citerefentry><refentrytitle>glCopyTexSubImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glCopyTexSubImage3D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glReadBuffer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,

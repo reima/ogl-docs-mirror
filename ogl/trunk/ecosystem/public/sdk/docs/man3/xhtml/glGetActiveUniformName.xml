@@ -28,7 +28,7 @@
         </p><p>
             <em class="parameter"><code>uniformIndex</code></em> must be an active uniform index of the program <em class="parameter"><code>program</code></em>, in the range zero to
             <code class="constant">GL_ACTIVE_UNIFORMS</code> - 1. The value of <code class="constant">GL_ACTIVE_UNIFORMS</code> can be queried with
-            <a href="glGetProgramiv.xml"><span class="citerefentry"><span class="refentrytitle">glGetProgramiv</span></span></a>.
+            <a href="glGetProgram.xml"><span class="citerefentry"><span class="refentrytitle">glGetProgram</span></span></a>.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>uniformIndex</code></em> is greater than or equal to the value
             of <code class="constant">GL_ACTIVE_UNIFORMS</code>.
@@ -40,6 +40,7 @@
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glGetActiveUniform.xml"><span class="citerefentry"><span class="refentrytitle">glGetActiveUniform</span></span></a>,
             <a href="glGetUniformIndices.xml"><span class="citerefentry"><span class="refentrytitle">glGetUniformIndices</span></span></a>,
+            <a href="glGetProgram.xml"><span class="citerefentry"><span class="refentrytitle">glGetProgram</span></span></a>,
             <a href="glLinkProgram.xml"><span class="citerefentry"><span class="refentrytitle">glLinkProgram</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2010 Khronos Group. 

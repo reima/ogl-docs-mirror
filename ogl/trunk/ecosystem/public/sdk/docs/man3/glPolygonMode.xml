@@ -116,7 +116,7 @@ glPolygonMode(<constant>GL_FRONT_AND_BACK</constant>, <constant>GL_LINE</constan
         <para>
             Vertices are marked as boundary or nonboundary with an edge flag.
             Edge flags are generated internally by the GL when it decomposes
-            polygons; they can be set explicitly using <citerefentry><refentrytitle>glEdgeFlag</refentrytitle></citerefentry>.
+            triangle stips and fans.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

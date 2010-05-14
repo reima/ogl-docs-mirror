@@ -20,8 +20,8 @@
             than or equal to the value of <code class="constant">GL_MAX_VERTEX_ATTRIBUTES</code>.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glVertexAttribPointer.xml"><span class="citerefentry"><span class="refentrytitle">glVertexAttribPointer</span></span></a>,
-            <a href="glEnableVertexAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glEnableVertexAttrib</span></span></a>,
-            <a href="glDisableVertexAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glDisableVertexAttrib</span></span></a>
+            <a href="glEnableVertexArray.xml"><span class="citerefentry"><span class="refentrytitle">glEnableVertexArray</span></span></a>,
+            <a href="glDisableVertexArray.xml"><span class="citerefentry"><span class="refentrytitle">glDisableVertexArray</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2010 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 

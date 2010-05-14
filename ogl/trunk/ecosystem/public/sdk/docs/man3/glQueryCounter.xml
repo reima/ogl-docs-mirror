@@ -81,7 +81,7 @@
             <citerefentry><refentrytitle>glEndQuery</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDeleteQueries</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetQueryObject</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glGetQuery</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetQueryiv</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
         </para>
     </refsect1>

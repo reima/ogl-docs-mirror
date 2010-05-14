@@ -65,8 +65,8 @@
         <para>
             <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDrawElements</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDrawArraysBaseVertex</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDrawElementsBaseVertex</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>glDrawElementsBaseVertex</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glDrawElementsInstancedBaseVertex</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

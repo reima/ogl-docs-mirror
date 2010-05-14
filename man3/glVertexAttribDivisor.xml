@@ -71,8 +71,8 @@
     <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glVertexAttribPointer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glEnableVertexArray</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDisableVertexArray</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>glEnableVertexAttribArray</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glDisableVertexAttribArray</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

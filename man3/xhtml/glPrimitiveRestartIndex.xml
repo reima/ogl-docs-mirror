@@ -14,8 +14,9 @@
             the same parameters, but only transferring the immediately following element through the end of the
             originally specified elements.
         </p><p>
-            When either <a href="glDrawArraysBaseVertex.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArraysBaseVertex</span></span></a> or
-            <a href="glDrawElementsBaseVertex.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElementsBaseVertex</span></span></a> is used, the primitive restart
+            When either <a href="glDrawElementsBaseVertex.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElementsBaseVertex</span></span></a>,
+            <a href="glDrawElementsInstancedBaseVertex.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElementsInstancedBaseVertex</span></span></a> or
+            <a href="glMultiDrawElementsBaseVertex.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElementsBaseVertex</span></span></a> is used, the primitive restart
             comparison occurs before the basevertex offset is added to the array index.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
             <code class="function">glPrimitiveRestartIndex</code> is available only if the GL version is 3.1 or greater.

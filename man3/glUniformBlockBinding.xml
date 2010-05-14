@@ -87,7 +87,7 @@
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
-            <citerefentry><refentrytitle>glGetActiveUniformBlockiv</refentrytitle></citerefentry> with argument <constant>GL_UNIFORM_BLOCK_BINDING</constant>
+            <citerefentry><refentrytitle>glGetActiveUniformBlock</refentrytitle></citerefentry> with argument <constant>GL_UNIFORM_BLOCK_BINDING</constant>
         </para>
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
@@ -95,6 +95,7 @@
             <citerefentry><refentrytitle>glLinkProgram</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBindBufferBase</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBindBufferRange</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glGetActiveUniformBlock</refentrytitle></citerefentry>
         </para>
     </refsect1>
 

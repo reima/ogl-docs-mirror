@@ -50,8 +50,9 @@
             originally specified elements.
         </para>
         <para>
-            When either <citerefentry><refentrytitle>glDrawArraysBaseVertex</refentrytitle></citerefentry> or
-            <citerefentry><refentrytitle>glDrawElementsBaseVertex</refentrytitle></citerefentry> is used, the primitive restart
+            When either <citerefentry><refentrytitle>glDrawElementsBaseVertex</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glDrawElementsInstancedBaseVertex</refentrytitle></citerefentry> or
+            <citerefentry><refentrytitle>glMultiDrawElementsBaseVertex</refentrytitle></citerefentry> is used, the primitive restart
             comparison occurs before the basevertex offset is added to the array index.
         </para>
     </refsect1>

@@ -21,7 +21,7 @@
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glGenRenderbuffers.xml"><span class="citerefentry"><span class="refentrytitle">glGenRenderbuffers</span></span></a>,
             <a href="glBindRenderbuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindRenderbuffer</span></span></a>,
-            <a href="glRenderbufferStorageMultisampleMultisample.xml"><span class="citerefentry"><span class="refentrytitle">glRenderbufferStorageMultisampleMultisample</span></span></a>,
+            <a href="glRenderbufferStorageMultisample.xml"><span class="citerefentry"><span class="refentrytitle">glRenderbufferStorageMultisample</span></span></a>,
             <a href="glFramebufferRenderbuffer.xml"><span class="citerefentry"><span class="refentrytitle">glFramebufferRenderbuffer</span></span></a>,
             <a href="glDeleteRenderbuffers.xml"><span class="citerefentry"><span class="refentrytitle">glDeleteRenderbuffers</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>

@@ -72,7 +72,7 @@
         <para>
             <citerefentry><refentrytitle>glGenRenderbuffers</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glBindRenderbuffer</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glRenderbufferStorageMultisampleMultisample</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glRenderbufferStorageMultisample</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glFramebufferRenderbuffer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDeleteRenderbuffers</refentrytitle></citerefentry>
         </para>

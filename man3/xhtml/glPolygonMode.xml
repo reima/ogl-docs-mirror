@@ -48,7 +48,7 @@ glPolygonMode(<code class="constant">GL_FRONT_AND_BACK</code>, <code class="cons
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
             Vertices are marked as boundary or nonboundary with an edge flag.
             Edge flags are generated internally by the GL when it decomposes
-            polygons; they can be set explicitly using <a href="glEdgeFlag.xml"><span class="citerefentry"><span class="refentrytitle">glEdgeFlag</span></span></a>.
+            triangle stips and fans.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if either <em class="parameter"><code>face</code></em> or <em class="parameter"><code>mode</code></em> is not
             an accepted value.

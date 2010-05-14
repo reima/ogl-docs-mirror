@@ -237,8 +237,7 @@
                         by attaching 0 for green and blue, and 1 for alpha.
                         Each component is then multiplied by the signed scale factor <constant>GL_c_SCALE</constant>,
                         added to the signed bias <constant>GL_c_BIAS</constant>,
-                        and clamped to the range [0,1]
-                        (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
+                        and clamped to the range [0,1].
                     </para>
                 </listitem>
             </varlistentry>
@@ -251,8 +250,7 @@
                         by attaching 0 for blue, and 1 for alpha.
                         Each component is then multiplied by the signed scale factor <constant>GL_c_SCALE</constant>,
                         added to the signed bias <constant>GL_c_BIAS</constant>,
-                        and clamped to the range [0,1]
-                        (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
+                        and clamped to the range [0,1].
                     </para>
                 </listitem>
             </varlistentry>
@@ -270,8 +268,7 @@
                         by attaching 1 for alpha.
                         Each component is then multiplied by the signed scale factor <constant>GL_c_SCALE</constant>,
                         added to the signed bias <constant>GL_c_BIAS</constant>,
-                        and clamped to the range [0,1]
-                        (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
+                        and clamped to the range [0,1].
                     </para>
                 </listitem>
             </varlistentry>
@@ -287,8 +284,7 @@
                         Each element contains all four components.
                         Each component is multiplied by the signed scale factor <constant>GL_c_SCALE</constant>,
                         added to the signed bias <constant>GL_c_BIAS</constant>,
-                        and clamped to the range [0,1]
-                        (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
+                        and clamped to the range [0,1].
                     </para>
                 </listitem>
             </varlistentry>
@@ -299,7 +295,7 @@
                         Each element is a single depth value.
                         The GL converts it to floating point, multiplies by the signed scale factor
                         <constant>GL_DEPTH_SCALE</constant>, adds the signed bias <constant>GL_DEPTH_BIAS</constant>,
-                        and clamps to the range [0,1] (see <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>).
+                        and clamps to the range [0,1].
                     </para>
                 </listitem>
             </varlistentry>
@@ -444,7 +440,7 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry> modes affect texture images.
+            <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry> modes affect texture images.
         </para>
         <para>
             <parameter>data</parameter> may be a null pointer. In this case texture memory is
@@ -588,7 +584,6 @@
             <citerefentry><refentrytitle>glCopyTexSubImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glGetCompressedTexImage</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPixelStore</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glPixelTransfer</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexSubImage1D</refentrytitle></citerefentry>,

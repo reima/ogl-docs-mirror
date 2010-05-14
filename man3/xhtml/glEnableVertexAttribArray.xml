@@ -15,7 +15,6 @@
     <a href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>,
     <a href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>,
     <a href="glDrawRangeElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span></a>,
-    <a href="glArrayElement.xml"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a>,
     <a href="glMultiDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawElements</span></span></a>,
     or
     <a href="glMultiDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glMultiDrawArrays</span></span></a>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
@@ -27,7 +26,7 @@
     <code class="constant">GL_VERTEX_ATTRIB_ARRAY_ENABLED</code>
     <em class="parameter"><code></code></em></p><p><a href="glGetVertexAttribPointerv.xml"><span class="citerefentry"><span class="refentrytitle">glGetVertexAttribPointerv</span></span></a>
     with arguments <em class="parameter"><code>index</code></em> and
-    <code class="constant">GL_VERTEX_ATTRIB_ARRAY_POINTER</code></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p><a href="glArrayElement.xml"><span class="citerefentry"><span class="refentrytitle">glArrayElement</span></span></a>,
+    <code class="constant">GL_VERTEX_ATTRIB_ARRAY_POINTER</code></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
     <a href="glBindAttribLocation.xml"><span class="citerefentry"><span class="refentrytitle">glBindAttribLocation</span></span></a>,
     <a href="glDrawArrays.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArrays</span></span></a>,
     <a href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>,

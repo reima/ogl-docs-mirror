@@ -67,9 +67,6 @@
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_COLOR_WRITEMASK</constant>
         </para>
-        <para>
-            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_RGBA_MODE</constant>
-        </para>
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>

@@ -125,10 +125,7 @@
     </refsect1>
     <refsect1 id="description"><title>Description</title>
         <para>
-            Texturing maps a portion of a specified texture image onto each graphical
-            primitive for which texturing is enabled.  To enable and disable
-            three-dimensional texturing, call <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glDisable</refentrytitle></citerefentry> with argument
-            <constant>GL_TEXTURE_3D</constant>.
+            Texturing allows elements of an image array to be read by shaders.
         </para>
         <para>
             <function>glCompressedTexSubImage3D</function> redefines a contiguous subregion of an existing three-dimensional
@@ -172,8 +169,9 @@
             but such a specification has no effect.
         </para>
         <para>
-            <parameter>format</parameter> must be an extension-specified
-            compressed-texture format.  The <parameter>format</parameter> of the compressed texture
+            <parameter>internalformat</parameter> must be a known compressed image format (such as <constant>GL_RGTC</constant>)
+            or an extension-specified compressed-texture format.
+            The <parameter>format</parameter> of the compressed texture
             image is selected by the GL implementation that compressed it (see
             <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>) and should be queried at the time the texture was
             compressed with <citerefentry><refentrytitle>glGetTexLevelParameter</refentrytitle></citerefentry>.
@@ -182,10 +180,6 @@
             If a non-zero named buffer object is bound to the <constant>GL_PIXEL_UNPACK_BUFFER</constant> target 
             (see <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>) while a texture image is
             specified, <parameter>data</parameter> is treated as a byte offset into the buffer object's data store.
-        </para>
-    </refsect1>
-    <refsect1 id="notes"><title>Notes</title>
-        <para>
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

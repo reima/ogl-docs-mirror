@@ -123,6 +123,10 @@
             values.
         </para>
         <para>
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>target</parameter> is not a name returned from
+            a previous call to <citerefentry><refentrytitle>glGenTextures</refentrytitle></citerefentry>.
+        </para>
+        <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>texture</parameter> was previously created with a target
             that doesn't match that of <parameter>target</parameter>.
         </para>

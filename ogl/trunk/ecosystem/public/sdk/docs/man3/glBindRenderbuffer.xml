@@ -48,7 +48,7 @@
     <refsect1 id="description"><title>Description</title>
         <para>
             <function>glBindRenderbuffer</function> binds the renderbuffer object with name <parameter>renderbuffer</parameter> to the renderbuffer target specified
-            by <parameter>target</parameter>. <parameter>target</parameter> must be either <constant>GL_RENDERBUFFER</constant>. <parameter>renderbuffer</parameter>
+            by <parameter>target</parameter>. <parameter>target</parameter> must be <constant>GL_RENDERBUFFER</constant>. <parameter>renderbuffer</parameter>
             is the name of a renderbuffer object previously returned from a call to <citerefentry><refentrytitle>glGenRenderbuffers</refentrytitle></citerefentry>,
             or zero to break the existing binding of a renderbuffer object to <parameter>target</parameter>.
         </para>
@@ -69,9 +69,9 @@
     <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glGenRenderbuffers</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glDeleteRenderbuffers</refentrytitle></citerefentry>
-            <citerefentry><refentrytitle>glRenderbufferStorage</refentrytitle></citerefentry>
-            <citerefentry><refentrytitle>glRenderbufferStorageMultisample</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>glDeleteRenderbuffers</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glRenderbufferStorage</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glRenderbufferStorageMultisample</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glIsRenderbuffer</refentrytitle></citerefentry>
         </para>
     </refsect1>

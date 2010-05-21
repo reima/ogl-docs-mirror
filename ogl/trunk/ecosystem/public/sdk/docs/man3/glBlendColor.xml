@@ -48,7 +48,7 @@
             The <constant>GL_BLEND_COLOR</constant> may be used to calculate the source and destination
             blending factors. The color components are clamped to the range 
             <inlineequation><mml:math>
-                <!-- eqn: [0,1]:-->
+                <!-- eqn: [0,1]: -->
                 <mml:mfenced open="[" close="]">
                     <mml:mn>0</mml:mn>
                     <mml:mn>1</mml:mn>
@@ -57,14 +57,6 @@
             before being stored. See <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry> for a complete description of the
             blending operations.
             Initially the <constant>GL_BLEND_COLOR</constant> is set to (0, 0, 0, 0).
-        </para>
-    </refsect1>
-    <refsect1 id="notes"><title>Notes</title>
-        <para>
-        </para>
-    </refsect1>
-    <refsect1 id="errors"><title>Errors</title>
-        <para>
         </para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>

@@ -182,9 +182,6 @@
             <citerefentry><refentrytitle>glGetTexLevelParameter</refentrytitle></citerefentry> with arguments <constant>GL_TEXTURE_INTERNAL_FORMAT</constant>
             and <constant>GL_TEXTURE_COMPRESSED_IMAGE_SIZE</constant>
         </para>
-        <para>
-            <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_1D</constant>
-        </para>
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>

@@ -32,7 +32,7 @@
             <term><parameter>n</parameter></term>
             <listitem>
                 <para>
-                    Specifies the number of vertexa array objects to be deleted.
+                    Specifies the number of vertex array objects to be deleted.
                 </para>
             </listitem>
         </varlistentry>

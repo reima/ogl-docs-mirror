@@ -58,10 +58,6 @@
             existing textures.
         </para>
     </refsect1>
-    <refsect1 id="notes"><title>Notes</title>
-        <para>
-        </para>
-    </refsect1>
     <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>n</parameter> is negative.

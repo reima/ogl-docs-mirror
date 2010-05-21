@@ -106,6 +106,10 @@
             the accepted values.
         </para>
         <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if a geometry shader is active and <parameter>mode</parameter>
+            is incompatible with the input primitive type of the geometry shader in the currently installed program object.
+        </para>
+        <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>count</parameter> or <parameter>primcount</parameter> are negative.
         </para>
         <para>

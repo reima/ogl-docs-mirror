@@ -40,24 +40,16 @@
     </refsect1>
     <refsect1 id="description"><title>Description</title>
     <para><function>glDrawBuffers</function> defines an array of
-    buffers into which fragment color values or fragment data will
-    be written. If no fragment shader is active, rendering
-    operations will generate only one fragment color per fragment
-    and it will be written into each of the buffers specified by
-    <parameter>bufs</parameter>. If a fragment shader is active and
-    it writes a value to the output variable
-    <code>gl_FragColor</code>, then that value will be
-    written into each of the buffers specified by
-    <parameter>bufs</parameter>. If a fragment shader is active and
-    it writes a value to one or more elements of the output array
-    variable <code>gl_FragData[]</code>, then the value of
-    <code>gl_FragData[0] </code> will be written into the
-    first buffer specified by <parameter>bufs</parameter>, the value
-    of <code>gl_FragData[1] </code> will be written into the
-    second buffer specified by <parameter>bufs</parameter>, and so
-    on up to <code>gl_FragData[n-1]</code>. The draw buffer
-    used for <code>gl_FragData[n]</code> and beyond is
-    implicitly set to be <constant>GL_NONE</constant>.</para>
+    buffers into which outputs from the fragment shader data will
+    be written. If a fragment shader writes a value
+    to one or more user defined output
+    variables, then the value of each variable will be written into the
+    buffer specified at a location within <parameter>bufs</parameter>
+    corresponding to the location assigned to that user defined output.
+    The draw buffer used for user defined outputs assigned to locations
+    greater than or equal to <parameter>n</parameter> is implicitly set
+    to <constant>GL_NONE</constant> and any data written to such an output
+    is discarded.</para>
 
     <para>The symbolic constants contained in
     <parameter>bufs</parameter> may be any of the following:</para>
@@ -66,36 +58,45 @@
         <varlistentry>
         <term><constant>GL_NONE</constant></term>
         <listitem>
-            <para>The fragment color/data value is not written into
+            <para>The fragment shader output value is not written into
             any color buffer.</para>
         </listitem>
         </varlistentry>
         <varlistentry>
         <term><constant>GL_FRONT_LEFT</constant></term>
         <listitem>
-            <para>The fragment color/data value is written into the
+            <para>The fragment shader output value is written into the
             front left color buffer.</para>
         </listitem>
         </varlistentry>
         <varlistentry>
         <term><constant>GL_FRONT_RIGHT</constant></term>
         <listitem>
-            <para>The fragment color/data value is written into the
+            <para>The fragment shader output value is written into the
             front right color buffer.</para>
         </listitem>
         </varlistentry>
         <varlistentry>
         <term><constant>GL_BACK_LEFT</constant></term>
         <listitem>
-            <para>The fragment color/data value is written into the
+            <para>The fragment shader output value is written into the
             back left color buffer.</para>
         </listitem>
         </varlistentry>
         <varlistentry>
         <term><constant>GL_BACK_RIGHT</constant></term>
         <listitem>
-            <para>The fragment color/data value is written into the
+            <para>The fragment shader output value is written into the
             back right color buffer.</para>
+        </listitem>
+        </varlistentry>
+        <varlistentry>
+        <term><constant>GL_COLOR_ATTACHMENT<emphasis>n</emphasis></term>
+        <listitem>
+            <para>The fragment shader output value is written into the
+            <emphasis>n</emphasis>th color attachment of the current framebuffer.
+            <emphasis>n</emphasis> may range from 0 to the value of
+            <constant>GL_MAX_COLOR_ATTACHMENTS</constant>.</para>
         </listitem>
         </varlistentry>
     </variablelist>
@@ -117,9 +118,8 @@
     <parameter>bufs</parameter> array since they may refer to
     multiple buffers.</para>
 
-    <para>If a fragment shader writes to neither
-    <code>gl_FragColor</code> nor
-    <code>gl_FragData</code>, the values of the fragment
+    <para>If a fragment shader does not write to a user defined output variable,
+    the values of the fragment
     colors following shader execution are undefined. For each
     fragment generated in this situation, a different value may be
     written into each of the buffers specified by
@@ -129,6 +129,16 @@
     <para><constant>GL_INVALID_ENUM</constant> is generated if one of the
     values in <parameter>bufs</parameter> is not an accepted
     value.</para>
+    
+    <para><constant>GL_INVALID_ENUM</constant> is generated if the GL is bound
+    to the default framebuffer and one or more of the values in
+    <parameter>bufs</parameter> is one of the <constant>GL_COLOR_ATTACHMENT<emphasis>n</emphasis></constant>
+    tokens.</para>
+
+    <para><constant>GL_INVALID_ENUM</constant> is generated if the GL is bound
+    to a framebuffer object and one or more of the values in <parameter>bufs</parameter>
+    is anything other than <constant>GL_NONE</constant> or one of the
+    <constant>GL_COLOR_ATTACHMENTS<emphasis>n</emphasis></constant> tokens.</para>
 
     <para><constant>GL_INVALID_ENUM</constant> is generated if
     <parameter>n</parameter> is less than 0.</para>
@@ -152,8 +162,8 @@
     with argument <constant>GL_MAX_DRAW_BUFFERS</constant></para>
 
     <para><citerefentry><refentrytitle>glGet</refentrytitle></citerefentry>
-    with argument <constant>GL_DRAW_BUFFERSi</constant> where
-    <code>i</code> indicates the number of the draw buffer
+    with argument <constant>GL_DRAW_BUFFER<emphasis>i</emphasis></constant> where
+    <code><emphasis>i</emphasis></code> indicates the number of the draw buffer
     whose value is to be queried</para>
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>

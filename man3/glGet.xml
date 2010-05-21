@@ -625,19 +625,6 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_INDEX_LOGIC_OP</constant></term>
-                <listitem>
-              <para>
-              </para>
-                    <para>
-                        <parameter>params</parameter> returns a single boolean value indicating whether a fragment's index
-                        values are merged into the framebuffer using a logical
-                        operation. The initial value is <constant>GL_FALSE</constant>.
-                        See <citerefentry><refentrytitle>glLogicOp</refentrytitle></citerefentry>.
-                    </para>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
                 <term><constant>GL_LINE_SMOOTH</constant></term>
                 <listitem>
               <para>
@@ -720,7 +707,7 @@
                     <para>
                         <parameter>params</parameter> returns one value,
                         a rough estimate of the largest 3D texture that the GL can handle.
-                        The value must be at least 16.
+                        The value must be at least 64.
                         Use <constant>GL_PROXY_TEXTURE_3D</constant> to determine if a texture is too large.
                         See <citerefentry><refentrytitle>glTexImage3D</refentrytitle></citerefentry>.
                     </para>
@@ -760,7 +747,7 @@
                         can be used to access texture maps from the vertex shader and the fragment processor combined. 
                         If both the vertex shader and the fragment processing stage access the same texture image
                         unit, then that counts as using two texture image units against this limit.
-                        The value must be at least 2.
+                        The value must be at least 48.
                         See <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -809,7 +796,7 @@
               </para>
                     <para>
                         <parameter>params</parameter> returns one value,
-                        the maximum number of uniform blocks per program.  The value must be at least 24.
+                        the maximum number of uniform blocks per program.  The value must be at least 36.
                         See <citerefentry><refentrytitle>glUniformBlockBinding</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -822,7 +809,7 @@
                     <para>
                         <parameter>params</parameter> returns one value.
                         The value gives a rough estimate of the largest cube-map texture that
-                        the GL can handle. The value must be at least 16.
+                        the GL can handle. The value must be at least 1024.
                         Use <constant>GL_PROXY_TEXTURE_CUBE_MAP</constant>
                         to determine if a texture is too large.
                         See <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>.
@@ -836,8 +823,8 @@
               </para>
                     <para>
                         <parameter>params</parameter> returns one value, the maximum number
-                        of simultaneous output colors allowed from a fragment shader using the 
-                        <code>gl_FragData</code> built-in array.  The value must be at least 1.
+                        of simultaneous outputs that may be written in a fragment shader.
+                        The value must be at least 8.
                         See <citerefentry><refentrytitle>glDrawBuffers</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -849,7 +836,7 @@
               </para>
                     <para>
                         <parameter>params</parameter> returns one value, the maximum number
-                        of active draw buffers when using dual-source  blending.
+                        of active draw buffers when using dual-source  blending. The value must be at least 1.
                         See <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry> and 
                         <citerefentry><refentrytitle>glBlendFuncSeparate</refentrytitle></citerefentry>.
                     </para>
@@ -887,7 +874,7 @@
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum number of individual floating-point, integer, or boolean values that can be held 
-                        in uniform variable storage for a fragment shader. The value must be at least 64.
+                        in uniform variable storage for a fragment shader. The value must be at least 1024.
                         See <citerefentry><refentrytitle>glUniform</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -960,7 +947,7 @@
                     <para>
                         <parameter>params</parameter> returns one value, the maximum supported texture image units that 
                         can be used to access texture maps from the fragment shader. 
-                        The value must be at least 2.
+                        The value must be at least 16.
                         See <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -973,7 +960,7 @@
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum, absolute value of the texture level-of-detail bias.  The
-                        value must be at least 4.
+                        value must be at least 2.0.
                     </para>
                 </listitem>
             </varlistentry>
@@ -985,8 +972,8 @@
                     <para>
                         <parameter>params</parameter> returns one value.
                         The value gives a rough estimate of the largest texture that
-                        the GL can handle. The value must be at least 64.
-                        Use <constant>GL_PROXY_TEXTURE_1D</constant> or <constant>GL_PROXY_TEXTURE_2D</constant>
+                        the GL can handle. The value must be at least 1024.
+                        Use a proxy texture target such as <constant>GL_PROXY_TEXTURE_1D</constant> or <constant>GL_PROXY_TEXTURE_2D</constant>
                         to determine if a texture is too large.
                         See <citerefentry><refentrytitle>glTexImage1D</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glTexImage2D</refentrytitle></citerefentry>.
                     </para>
@@ -1100,7 +1087,7 @@
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum number of individual floating-point, integer, or boolean values that can be held 
-                        in uniform variable storage for a vertex shader. The value must be at least 512.
+                        in uniform variable storage for a vertex shader. The value must be at least 1024.
                         See <citerefentry><refentrytitle>glUniform</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -1124,7 +1111,7 @@
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum number of individual floating-point, integer, or boolean values that can be held 
-                        in uniform variable storage for a geometry shader. The value must be at least 512.
+                        in uniform variable storage for a geometry shader. The value must be at least 1024.
                         See <citerefentry><refentrytitle>glUniform</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -1295,7 +1282,7 @@
               </para>
                     <para>
                         <parameter>params</parameter> returns a single integer value indicating the number of available
-                        compressed texture formats.  The minimum value is 0.
+                        compressed texture formats.  The minimum value is 4.
                         See <citerefentry><refentrytitle>glCompressedTexImage2D</refentrytitle></citerefentry>.
                     </para>
                 </listitem>
@@ -1473,7 +1460,8 @@
               </para>
                     <para>
                         <parameter>params</parameter> returns one value,
-                        the point size as specified by <citerefentry><refentrytitle>glPointSize</refentrytitle></citerefentry>. The initial value is 1.
+                        the point size as specified by <citerefentry><refentrytitle>glPointSize</refentrytitle></citerefentry>.
+                        The initial value is 1.
                     </para>
                 </listitem>
             </varlistentry>

@@ -6,7 +6,11 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>clamp</code></em></span></dt><dd><p>
                     Specifies whether to apply color clamping. <em class="parameter"><code>clamp</code></em> must be <code class="constant">GL_TRUE</code> or <code class="constant">GL_FALSE</code>.
                 </p></dd></dl></div></div><div class="refsect1" title="Description"><a id="description"></a><h2>Description</h2><p>
-            WRITE ME!
+            <code class="function">glClampColor</code> controls color clamping that is performed during <a class="citerefentry" href="glReadPixels.xml"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>.
+            <em class="parameter"><code>target</code></em> must be <code class="constant">GL_CLAMP_READ_COLOR</code>. If <em class="parameter"><code>clamp</code></em> is <code class="constant">GL_TRUE</code>,
+            read color clamping is enabled; if <em class="parameter"><code>clamp</code></em> is <code class="constant">GL_FALSE</code>, read color clamping is disabled. If
+            <em class="parameter"><code>clamp</code></em> is <code class="constant">GL_FIXED_ONLY</code>, read color clamping is enabled only if the selected read buffer has
+            fixed point components and disabled otherwise.
         </p></div><div class="refsect1" title="Errors"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not
             <code class="constant">GL_CLAMP_READ_COLOR</code>.

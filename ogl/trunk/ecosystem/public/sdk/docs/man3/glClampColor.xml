@@ -47,7 +47,11 @@
     </refsect1>
     <refsect1 id="description"><title>Description</title>
         <para>
-            WRITE ME!
+            <function>glClampColor</function> controls color clamping that is performed during <citerefentry><refentrytitle>glReadPixels</refentrytitle></citerefentry>.
+            <parameter>target</parameter> must be <constant>GL_CLAMP_READ_COLOR</constant>. If <parameter>clamp</parameter> is <constant>GL_TRUE</constant>,
+            read color clamping is enabled; if <parameter>clamp</parameter> is <constant>GL_FALSE</constant>, read color clamping is disabled. If
+            <parameter>clamp</parameter> is <constant>GL_FIXED_ONLY</constant>, read color clamping is enabled only if the selected read buffer has
+            fixed point components and disabled otherwise.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

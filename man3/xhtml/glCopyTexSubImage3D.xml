@@ -28,7 +28,7 @@
             than from main memory, as is the case for <a class="citerefentry" href="glTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>).
         </p><p>
             The screen-aligned pixel rectangle with lower left corner at
-            (<em class="parameter"><code>x</code></em>,\ <em class="parameter"><code>y</code></em>) and with
+            (<em class="parameter"><code>x</code></em>, <em class="parameter"><code>y</code></em>) and with
             width <em class="parameter"><code>width</code></em> and height <em class="parameter"><code>height</code></em> replaces the portion of the
             texture array with x indices <em class="parameter"><code>xoffset</code></em> through 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">

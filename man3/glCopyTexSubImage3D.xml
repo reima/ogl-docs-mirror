@@ -116,7 +116,7 @@
         </para>
         <para>
             The screen-aligned pixel rectangle with lower left corner at
-            (<parameter>x</parameter>,\ <parameter>y</parameter>) and with
+            (<parameter>x</parameter>, <parameter>y</parameter>) and with
             width <parameter>width</parameter> and height <parameter>height</parameter> replaces the portion of the
             texture array with x indices <parameter>xoffset</parameter> through 
             <inlineequation><mml:math>

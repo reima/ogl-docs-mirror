@@ -41,8 +41,6 @@
                     </p></li></ul></div><p>
         </p><p>
             Additionally, if an error occurs, zero is returned.
-        </p></div><div class="refsect1" title="Notes"><a id="notes"></a><h2>Notes</h2><p>
-            <code class="function">glCheckFramebufferStatus</code> is available only if the GL version is 3.0 or greater.
         </p></div><div class="refsect1" title="Errors"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not <code class="constant">GL_DRAW_FRAMEBUFFER</code>,
             <code class="constant">GL_READ_FRAMEBUFFER</code> or <code class="constant">GL_FRAMEBUFFER</code>.

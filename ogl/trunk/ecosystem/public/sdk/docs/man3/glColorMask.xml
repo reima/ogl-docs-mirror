@@ -61,8 +61,6 @@
             changes are either enabled or disabled for entire color components.
         </para>
     </refsect1>
-    <refsect1 id="errors"><title>Errors</title>
-    </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_COLOR_WRITEMASK</constant>

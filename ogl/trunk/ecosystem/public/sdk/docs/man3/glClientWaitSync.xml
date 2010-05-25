@@ -142,15 +142,12 @@
             Additionally, if an error occurs, zero is returned.
         </para>
     </refsect1>
-    <refsect1 id="notes"><title>Notes</title>
-        <para>
-            <function>glCheckFramebufferStatus</function> is available only if the GL version is 3.0 or greater.
-        </para>
-    </refsect1>
     <refsect1 id="errors"><title>Errors</title>
         <para>
-            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>target</parameter> is not <constant>GL_DRAW_FRAMEBUFFER</constant>,
-            <constant>GL_READ_FRAMEBUFFER</constant> or <constant>GL_FRAMEBUFFER</constant>.
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>sync</parameter> is not the name of an existing sync object.
+        </para>
+        <para>
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>flags</parameter> contains any bits other than <constant>GL_SYNC_FLUSH_COMMANDS_BIT</constant>.
         </para>
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>

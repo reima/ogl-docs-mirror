@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glTexBuffer</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glTexBuffer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glTexBuffer — attach the storage for a buffer object to the active buffer texture</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glTexBuffer</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">internalFormat</var>, </td></tr><tr><td> </td><td>Gluint </td><td><var class="pdparam">buffer</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glTexBuffer</title><meta name="generator" content="DocBook XSL Stylesheets V1.75.2" /></head><body><div class="refentry" title="glTexBuffer"><a id="glTexBuffer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glTexBuffer — attach the storage for a buffer object to the active buffer texture</p></div><div class="refsynopsisdiv" title="C Specification"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" class="funcprototype-table"><tr><td><code class="funcdef">void <b class="fsfunc">glTexBuffer</b>(</code></td><td>GLenum <var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">internalFormat</var>, </td></tr><tr><td> </td><td>Gluint<var class="pdparam">buffer</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1" title="Parameters"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the target of the operation and must be <code class="constant">GL_TEXTURE_BUFFER</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>internalFormat</code></em></span></dt><dd><p>
                     Specifies the internal format of the data in the store belonging to <em class="parameter"><code>buffer</code></em>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>buffer</code></em></span></dt><dd><p>
                     Specifies the name of the buffer object whose storage to attach to the active buffer texture.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" title="Description"><a id="description"></a><h2>Description</h2><p>
             <code class="function">glTexBuffer</code> attaches the storage for the buffer object named <em class="parameter"><code>buffer</code></em> to the active
             buffer texture, and specifies the internal format for the texel array found in the attached buffer object. If <em class="parameter"><code>buffer</code></em>
             is zero, any buffer object attached to the buffer texture is detached and no new buffer object is attached. If <em class="parameter"><code>buffer</code></em>
@@ -34,28 +34,28 @@
             The number of texels in the texel array is then clamped to the implementation-dependent limit <code class="constant">GL_MAX_TEXTURE_BUFFER_SIZE</code>.
             When a buffer texture is accessed in a shader, the results of a texel fetch are undefined if the specified texel coordinate is negative, or
             greater than or equal to the clamped number of texels in the texel array.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" title="Errors"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not <code class="constant">GL_TEXTURE_BUFFER</code>.
         </p><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>internalFormat</code></em> is not one of the accepted tokens.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>buffer</code></em> is not zero or the name of an existing buffer object.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" title="Notes"><a id="notes"></a><h2>Notes</h2><p>
             <code class="function">glTexBuffer</code> is available only if the GL version is 3.1 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p><a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
-    with argument <code class="constant">GL_MAX_TEXTURE_BUFFER_SIZE</code></p><p><a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
-    with argument <code class="constant">GL_TEXTURE_BINDING_BUFFER</code></p><p><a href="glGetTexLevelParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span></a>
-    with argument <code class="constant">GL_TEXTURE_BUFFER_DATA_STORE_BINDING</code></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
-            <a href="glGenBuffers.xml"><span class="citerefentry"><span class="refentrytitle">glGenBuffers</span></span></a>,
-            <a href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>,
-            <a href="glBufferData.xml"><span class="citerefentry"><span class="refentrytitle">glBufferData</span></span></a>,
-            <a href="glDeleteBuffers.xml"><span class="citerefentry"><span class="refentrytitle">glDeleteBuffers</span></span></a>,
-            <a href="glGenTextures.xml"><span class="citerefentry"><span class="refentrytitle">glGenTextures</span></span></a>,
-            <a href="glBindTexture.xml"><span class="citerefentry"><span class="refentrytitle">glBindTexture</span></span></a>,
-            <a href="glDeleteTextures.xml"><span class="citerefentry"><span class="refentrytitle">glDeleteTextures</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" title="Associated Gets"><a id="associatedgets"></a><h2>Associated Gets</h2><p><a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
+    with argument <code class="constant">GL_MAX_TEXTURE_BUFFER_SIZE</code></p><p><a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
+    with argument <code class="constant">GL_TEXTURE_BINDING_BUFFER</code></p><p><a class="citerefentry" href="glGetTexLevelParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span></a>
+    with argument <code class="constant">GL_TEXTURE_BUFFER_DATA_STORE_BINDING</code></p></div><div class="refsect1" title="See Also"><a id="seealso"></a><h2>See Also</h2><p>
+            <a class="citerefentry" href="glGenBuffers.xml"><span class="citerefentry"><span class="refentrytitle">glGenBuffers</span></span></a>,
+            <a class="citerefentry" href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>,
+            <a class="citerefentry" href="glBufferData.xml"><span class="citerefentry"><span class="refentrytitle">glBufferData</span></span></a>,
+            <a class="citerefentry" href="glDeleteBuffers.xml"><span class="citerefentry"><span class="refentrytitle">glDeleteBuffers</span></span></a>,
+            <a class="citerefentry" href="glGenTextures.xml"><span class="citerefentry"><span class="refentrytitle">glGenTextures</span></span></a>,
+            <a class="citerefentry" href="glBindTexture.xml"><span class="citerefentry"><span class="refentrytitle">glBindTexture</span></span></a>,
+            <a class="citerefentry" href="glDeleteTextures.xml"><span class="citerefentry"><span class="refentrytitle">glDeleteTextures</span></span></a>
+        </p></div><div class="refsect1" title="Copyright"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2010 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
-            <a href="http://opencontent.org/openpub/" target="_top">http://opencontent.org/openpub/</a>.
+            <a class="ulink" href="http://opencontent.org/openpub/" target="_top">http://opencontent.org/openpub/</a>.
         </p></div></div></body></html>

@@ -125,7 +125,6 @@
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
         <para>
-        <para>
           <constant>GL_INVALID_ENUM</constant> is generated if <parameter>internalformat</parameter> is not
           a supported specific compressed internal formats, or is one of the generic
           compressed internal formats:

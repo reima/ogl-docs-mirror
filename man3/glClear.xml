@@ -31,10 +31,9 @@
             <listitem>
                 <para>
                     Bitwise OR of masks that indicate the buffers to be cleared.
-                    The four masks are
+                    The three masks are
                     <constant>GL_COLOR_BUFFER_BIT</constant>,
-                    <constant>GL_DEPTH_BUFFER_BIT</constant>,
-                    <constant>GL_ACCUM_BUFFER_BIT</constant>, and
+                    <constant>GL_DEPTH_BUFFER_BIT</constant>, and
                     <constant>GL_STENCIL_BUFFER_BIT</constant>.
                 </para>
             </listitem>
@@ -87,14 +86,6 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_ACCUM_BUFFER_BIT</constant></term>
-                <listitem>
-                    <para>
-                        Indicates the accumulation buffer.
-                    </para>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
                 <term><constant>GL_STENCIL_BUFFER_BIT</constant></term>
                 <listitem>
                     <para>
@@ -116,19 +107,13 @@
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if any bit other than the four defined
+            <constant>GL_INVALID_VALUE</constant> is generated if any bit other than the three defined
             bits is set in <parameter>mask</parameter>.
         </para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
-            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_ACCUM_CLEAR_VALUE</constant>
-        </para>
-        <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_DEPTH_CLEAR_VALUE</constant>
-        </para>
-        <para>
-            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_INDEX_CLEAR_VALUE</constant>
         </para>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_COLOR_CLEAR_VALUE</constant>

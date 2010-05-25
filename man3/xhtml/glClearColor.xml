@@ -18,7 +18,7 @@
                     <mml:mn>1</mml:mn>
                 </mml:mfenced>
             </mml:math>.
-        </p></div><div class="refsect1" title="Errors"><a id="errors"></a><h2>Errors</h2></div><div class="refsect1" title="Associated Gets"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" title="Associated Gets"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
             <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_COLOR_CLEAR_VALUE</code>
         </p></div><div class="refsect1" title="See Also"><a id="seealso"></a><h2>See Also</h2><p>
             <a class="citerefentry" href="glClear.xml"><span class="citerefentry"><span class="refentrytitle">glClear</span></span></a>

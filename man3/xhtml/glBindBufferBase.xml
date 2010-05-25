@@ -14,7 +14,9 @@
             by <em class="parameter"><code>target</code></em>. Each <em class="parameter"><code>target</code></em> represents an indexed
             array of buffer binding points, as well as a single general binding point that can be used by
             other buffer manipulation functions such as <a class="citerefentry" href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>
-            or <a class="citerefentry" href="glMapBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glMapBuffer</span></span></a>.
+            or <a class="citerefentry" href="glMapBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glMapBuffer</span></span></a>. In addition to binding
+            <em class="parameter"><code>buffer</code></em> to the indexed buffer binding target, <code class="function">glBindBufferBase</code>
+            also binds <em class="parameter"><code>buffer</code></em> to the generic buffer binding point specified by <em class="parameter"><code>target</code></em>.
         </p></div><div class="refsect1" title="Notes"><a id="notes"></a><h2>Notes</h2><p>
             <code class="function">glBindBufferBase</code> is available only if the GL version is 3.0 or greater.
         </p><p>

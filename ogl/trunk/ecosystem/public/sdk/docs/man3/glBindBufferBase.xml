@@ -62,7 +62,9 @@
             by <parameter>target</parameter>. Each <parameter>target</parameter> represents an indexed
             array of buffer binding points, as well as a single general binding point that can be used by
             other buffer manipulation functions such as <citerefentry><refentrytitle>glBindBuffer</refentrytitle></citerefentry>
-            or <citerefentry><refentrytitle>glMapBuffer</refentrytitle></citerefentry>.
+            or <citerefentry><refentrytitle>glMapBuffer</refentrytitle></citerefentry>. In addition to binding
+            <parameter>buffer</parameter> to the indexed buffer binding target, <function>glBindBufferBase</function>
+            also binds <parameter>buffer</parameter> to the generic buffer binding point specified by <parameter>target</parameter>.
         </para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>

@@ -34,9 +34,9 @@
                     Specifies which texture unit to make active. The number
                     of texture units is implementation dependent, but must be at least
                     two. <parameter>texture</parameter> must be one of 
-                    <constant>GL_TEXTURE</constant><inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>,
+                    <constant>GL_TEXTURE<emphasis>i</emphasis></constant>,
                     where
-                    i ranges from 0 (<constant>GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS</constant> - 1). 
+                    <emphasis>i</emphasis> ranges from 0 (<constant>GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS</constant> - 1). 
                     The initial value is <constant>GL_TEXTURE0</constant>.
                 </para>
             </listitem>
@@ -53,8 +53,8 @@
     <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>texture</parameter> is not one of
-            <constant>GL_TEXTURE</constant><inlineequation><mml:math><mml:mi mathvariant="italic">i</mml:mi></mml:math></inlineequation>,
-            where i ranges from 0 to (<constant>GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS</constant> - 1).
+            <constant>GL_TEXTURE<emphasis>i</emphasis></constant>,
+            where <emphasis>i</emphasis> ranges from 0 to (<constant>GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS</constant> - 1).
         </para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>

@@ -102,6 +102,9 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
+            Varying out varyings may have locations assigned explicitly in the shader text using a <code>location</code>
+            layout qualifier. If a shader statically assigns a location to a varying out variable in the shader text,
+            that location is used and any location assigned with <function>glBindFragDataLocation</function> is ignored.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

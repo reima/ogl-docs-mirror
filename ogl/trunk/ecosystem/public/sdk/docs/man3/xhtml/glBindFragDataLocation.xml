@@ -28,6 +28,9 @@
                         More than one varying out variable is bound to the same color number.
                     </p></li></ul></div><p>
         </p></div><div class="refsect1" title="Notes"><a id="notes"></a><h2>Notes</h2><p>
+            Varying out varyings may have indexed locations assigned explicitly in the shader text using a <code class="code">location</code>
+            layout qualifier. If a shader statically assigns a location to a varying out variable in the shader text,
+            that location is used and any location assigned with <code class="function">glBindFragDataLocation</code> is ignored.
         </p></div><div class="refsect1" title="Errors"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>colorNumber</code></em> is greater than or equal to <code class="constant">GL_MAX_DRAW_BUFFERS</code>.
         </p><p>

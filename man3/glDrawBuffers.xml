@@ -91,7 +91,7 @@
         </listitem>
         </varlistentry>
         <varlistentry>
-        <term><constant>GL_COLOR_ATTACHMENT<emphasis>n</emphasis></term>
+        <term><constant>GL_COLOR_ATTACHMENT<emphasis>n</emphasis></constant></term>
         <listitem>
             <para>The fragment shader output value is written into the
             <emphasis>n</emphasis>th color attachment of the current framebuffer.

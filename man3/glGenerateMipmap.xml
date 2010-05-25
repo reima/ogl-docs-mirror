@@ -18,7 +18,7 @@
     </refnamediv>
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
-s            <funcprototype>
+            <funcprototype>
                 <funcdef>void <function>glGenerateMipmap</function></funcdef>
                 <paramdef>GLenum <parameter>target</parameter></paramdef>
             </funcprototype>
@@ -31,7 +31,7 @@ s            <funcprototype>
             <term><parameter>target</parameter></term>
             <listitem>
                 <para>
-                    Specifies the target to which the texture whose mimaps to generate is bound. <parameter> target must
+                    Specifies the target to which the texture whose mimaps to generate is bound. <parameter>target</parameter> must
                     be <constant>GL_TEXTURE_1D</constant>, <constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_3D</constant>,
                     <constant>GL_TEXTURE_1D_ARRAY</constant>, <constant>GL_TEXTURE_2D_ARRAY</constant> or
                     <constant>GL_TEXTURE_CUBE_MAP</constant>.
@@ -61,7 +61,7 @@ s            <funcprototype>
                 </mml:mrow>
             </mml:math></inlineequation>
             through
-            <inlinequation><mml:math>
+            <inlineequation><mml:math>
                 <mml:mrow>
                     <mml:mi mathvariant="italic">q</mml:mi>
                 </mml:mrow>

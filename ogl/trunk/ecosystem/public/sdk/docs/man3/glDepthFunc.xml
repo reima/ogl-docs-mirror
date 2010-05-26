@@ -134,7 +134,9 @@
     <refsect1 id="notes"><title>Notes</title>
         <para>
             Even if the depth buffer exists and the depth mask is non-zero, the
-            depth buffer is not updated if the depth test is disabled.
+            depth buffer is not updated if the depth test is disabled. In order to
+            unconditionally write to the depth buffer, the depth test should be enabled
+            and set to <constant>GL_ALWAYS</constant>.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

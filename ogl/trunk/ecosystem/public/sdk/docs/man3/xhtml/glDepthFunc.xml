@@ -45,7 +45,9 @@
             depth buffer exists, it is as if the depth test always passes.
         </p></div><div class="refsect1" title="Notes"><a id="notes"></a><h2>Notes</h2><p>
             Even if the depth buffer exists and the depth mask is non-zero, the
-            depth buffer is not updated if the depth test is disabled.
+            depth buffer is not updated if the depth test is disabled. In order to
+            unconditionally write to the depth buffer, the depth test should be enabled
+            and set to <code class="constant">GL_ALWAYS</code>.
         </p></div><div class="refsect1" title="Errors"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>func</code></em> is not an accepted value.
         </p></div><div class="refsect1" title="Associated Gets"><a id="associatedgets"></a><h2>Associated Gets</h2><p>

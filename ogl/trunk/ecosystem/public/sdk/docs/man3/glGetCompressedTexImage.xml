@@ -34,7 +34,7 @@
             <listitem>
                 <para>
                     Specifies which texture is to be obtained.
-                    <constant>GL_TEXTURE_1D</constant>, <constant>GL_TEXTURE_2D</constant>, and <constant>GL_TEXTURE_3D</constant>
+                    <constant>GL_TEXTURE_1D</constant>, <constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_3D</constant>,
                     <constant>GL_TEXTURE_CUBE_MAP_POSITIVE_X</constant>,
                     <constant>GL_TEXTURE_CUBE_MAP_NEGATIVE_X</constant>,
                     <constant>GL_TEXTURE_CUBE_MAP_POSITIVE_Y</constant>,
@@ -98,10 +98,6 @@
             texture or subtexture loading routine used for loading <parameter>target</parameter> textures.
         </para>
     </refsect1>
-    <refsect1 id="notes"><title>Notes</title>
-        <para>
-        </para>
-    </refsect1>
     <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>lod</parameter> is less than zero or greater
@@ -152,7 +148,6 @@
             <citerefentry><refentrytitle>glTexSubImage1D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexSubImage2D</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glTexSubImage3D</refentrytitle></citerefentry>
-            				     
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

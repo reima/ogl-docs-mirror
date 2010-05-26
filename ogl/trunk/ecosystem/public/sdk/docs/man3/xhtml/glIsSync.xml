@@ -8,8 +8,7 @@
             If <em class="parameter"><code>sync</code></em> is not the name of a sync object, or if an error occurs, <code class="function">glIsSync</code> returns
             <code class="constant">GL_FALSE</code>. Note that zero is not the name of a sync object.
         </p></div><div class="refsect1" title="Notes"><a id="notes"></a><h2>Notes</h2><p>
-            <code class="function">glIsBuffer</code> is available only if the GL version is 3.2 or greater.
-        </p></div><div class="refsect1" title="Errors"><a id="errors"></a><h2>Errors</h2><p>
+            <code class="function">glIsSync</code> is available only if the GL version is 3.2 or greater.
         </p></div><div class="refsect1" title="See Also"><a id="seealso"></a><h2>See Also</h2><p>
             <a class="citerefentry" href="glFenceSync.xml"><span class="citerefentry"><span class="refentrytitle">glFenceSync</span></span></a>,
             <a class="citerefentry" href="glWaitSync.xml"><span class="citerefentry"><span class="refentrytitle">glWaitSync</span></span></a>,

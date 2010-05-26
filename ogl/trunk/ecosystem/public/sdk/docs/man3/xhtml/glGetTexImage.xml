@@ -3,7 +3,12 @@
 <!-- saved from url=(0013)about:internet -->
 <?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glGetTexImage</title><meta name="generator" content="DocBook XSL Stylesheets V1.75.2" /></head><body><div class="refentry" title="glGetTexImage"><a id="glGetTexImage"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetTexImage — return a texture image</p></div><div class="refsynopsisdiv" title="C Specification"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" class="funcprototype-table"><tr><td><code class="funcdef">void <b class="fsfunc">glGetTexImage</b>(</code></td><td>GLenum <var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLint <var class="pdparam">level</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">format</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">type</var>, </td></tr><tr><td> </td><td>GLvoid * <var class="pdparam">img</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1" title="Parameters"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies which texture is to be obtained.
-                    <code class="constant">GL_TEXTURE_1D</code>, <code class="constant">GL_TEXTURE_2D</code>, <code class="constant">GL_TEXTURE_3D</code>,
+                    <code class="constant">GL_TEXTURE_1D</code>,
+                    <code class="constant">GL_TEXTURE_2D</code>,
+                    <code class="constant">GL_TEXTURE_3D</code>,
+                    <code class="constant">GL_TEXTURE_1D_ARRAY</code>,
+                    <code class="constant">GL_TEXTURE_2D_ARRAY</code>,
+                    <code class="constant">GL_TEXTURE_RECTANGLE</code>,
                     <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_X</code>,
                     <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_X</code>,
                     <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Y</code>,
@@ -22,12 +27,25 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>format</code></em></span></dt><dd><p>
                     Specifies a pixel format for the returned data.
                     The supported formats are
+                    <code class="constant">GL_STENCIL_INDEX</code>,
+                    <code class="constant">GL_DEPTH_COMPONENT</code>,
+                    <code class="constant">GL_DEPTH_STENCIL</code>,
                     <code class="constant">GL_RED</code>,
+                    <code class="constant">GL_GREEN</code>,
+                    <code class="constant">GL_BLUE</code>,
                     <code class="constant">GL_RG</code>,
                     <code class="constant">GL_RGB</code>,
+                    <code class="constant">GL_RGBA</code>,
                     <code class="constant">GL_BGR</code>,
-                    <code class="constant">GL_RGBA</code> and 
-                    <code class="constant">GL_BGRA</code>.
+                    <code class="constant">GL_BGRA</code>,
+                    <code class="constant">GL_RED_INTEGER</code>,
+                    <code class="constant">GL_GREEN_INTEGER</code>,
+                    <code class="constant">GL_BLUE_INTEGER</code>,
+                    <code class="constant">GL_RG_INTEGER</code>,
+                    <code class="constant">GL_RGB_INTEGER</code>,
+                    <code class="constant">GL_RGBA_INTEGER</code>,
+                    <code class="constant">GL_BGR_INTEGER</code>,
+                    <code class="constant">GL_BGRA_INTEGER</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>type</code></em></span></dt><dd><p>
                     Specifies a pixel type for the returned data.
                     The supported types are
@@ -37,6 +55,7 @@
                     <code class="constant">GL_SHORT</code>,
                     <code class="constant">GL_UNSIGNED_INT</code>,
                     <code class="constant">GL_INT</code>,
+                    <code class="constant">GL_HALF_FLOAT</code>,
                     <code class="constant">GL_FLOAT</code>,
                     <code class="constant">GL_UNSIGNED_BYTE_3_3_2</code>,
                     <code class="constant">GL_UNSIGNED_BYTE_2_3_3_REV</code>,
@@ -48,8 +67,12 @@
                     <code class="constant">GL_UNSIGNED_SHORT_1_5_5_5_REV</code>,
                     <code class="constant">GL_UNSIGNED_INT_8_8_8_8</code>,
                     <code class="constant">GL_UNSIGNED_INT_8_8_8_8_REV</code>,
-                    <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>, and
-                    <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code>.
+                    <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>,
+                    <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code>,
+                    <code class="constant">GL_UNSIGNED_INT_24_8</code>,
+                    <code class="constant">GL_UNSIGNED_INT_10F_11F_11F_REV</code>,
+                    <code class="constant">GL_UNSIGNED_INT_5_9_9_9_REV</code>, and
+                    <code class="constant">GL_FLOAT_32_UNSIGNED_INT_24_8_REV</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>img</code></em></span></dt><dd><p>
                     Returns the texture image.
                     Should be a pointer to an array of the type specified by <em class="parameter"><code>type</code></em>.
@@ -57,10 +80,12 @@
             <code class="function">glGetTexImage</code> returns a texture image into <em class="parameter"><code>img</code></em>.
             <em class="parameter"><code>target</code></em> specifies whether the desired texture image is one specified by
             <a class="citerefentry" href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a> (<code class="constant">GL_TEXTURE_1D</code>),
-            <a class="citerefentry" href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a> (<code class="constant">GL_TEXTURE_2D</code> or any of
+            <a class="citerefentry" href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a> (<code class="constant">GL_TEXTURE_1D_ARRAY</code>, <code class="constant">GL_TEXTURE_RECTANGLE</code>,
+            <code class="constant">GL_TEXTURE_2D</code> or any of
             <code class="constant">GL_TEXTURE_CUBE_MAP_*</code>),
             or
-            <a class="citerefentry" href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a> (<code class="constant">GL_TEXTURE_3D</code>).
+            <a class="citerefentry" href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a> (<code class="constant">GL_TEXTURE_2D_ARRAY</code>,
+            <code class="constant">GL_TEXTURE_3D</code>).
             <em class="parameter"><code>level</code></em> specifies the level-of-detail number of the desired image.
             <em class="parameter"><code>format</code></em> and <em class="parameter"><code>type</code></em> specify the format and type of the desired image array.
             See the reference page for <a class="citerefentry" href="glTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage1D</span></span></a>
@@ -78,14 +103,9 @@
             when called with the same <em class="parameter"><code>format</code></em> and <em class="parameter"><code>type</code></em>,
             with <span class="emphasis"><em>x</em></span> and <span class="emphasis"><em>y</em></span> set to 0,
             <span class="emphasis"><em>width</em></span> set to the width of the texture image
-            (including border if one was specified),
             and <span class="emphasis"><em>height</em></span> set to 1 for 1D images,
             or to the height of the texture image
-            (including border if one was specified)
             for 2D images.
-            Because the internal texture image is an RGBA image,
-            pixel formats <code class="constant">GL_STENCIL_INDEX</code>,
-            and <code class="constant">GL_DEPTH_COMPONENT</code> are not accepted.
         </p><p>
             If the selected texture image does not contain four components,
             the following mappings are applied.
@@ -143,8 +163,9 @@
             <code class="constant">GL_INVALID_OPERATION</code> is returned if <em class="parameter"><code>type</code></em> is one of
             <code class="constant">GL_UNSIGNED_BYTE_3_3_2</code>,
             <code class="constant">GL_UNSIGNED_BYTE_2_3_3_REV</code>,
-            <code class="constant">GL_UNSIGNED_SHORT_5_6_5</code>, or
-            <code class="constant">GL_UNSIGNED_SHORT_5_6_5_REV</code> and <em class="parameter"><code>format</code></em> is not <code class="constant">GL_RGB</code>.
+            <code class="constant">GL_UNSIGNED_SHORT_5_6_5</code>,
+            <code class="constant">GL_UNSIGNED_SHORT_5_6_5_REV</code>, or
+            <code class="constant">GL_UNSIGNED_INT_10F_11F_11F_REV</code> and <em class="parameter"><code>format</code></em> is not <code class="constant">GL_RGB</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is returned if <em class="parameter"><code>type</code></em> is one of
             <code class="constant">GL_UNSIGNED_SHORT_4_4_4_4</code>,
@@ -153,8 +174,9 @@
             <code class="constant">GL_UNSIGNED_SHORT_1_5_5_5_REV</code>,
             <code class="constant">GL_UNSIGNED_INT_8_8_8_8</code>,
             <code class="constant">GL_UNSIGNED_INT_8_8_8_8_REV</code>,
-            <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>, or
-            <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code>, and <em class="parameter"><code>format</code></em> is neither <code class="constant">GL_RGBA</code>
+            <code class="constant">GL_UNSIGNED_INT_10_10_10_2</code>,
+            <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code>, or
+            <code class="constant">GL_UNSIGNED_INT_5_9_9_9_REV</code> and <em class="parameter"><code>format</code></em> is neither <code class="constant">GL_RGBA</code>
             or <code class="constant">GL_BGRA</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to the
@@ -171,8 +193,6 @@
             <a class="citerefentry" href="glGetTexLevelParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span></a> with argument <code class="constant">GL_TEXTURE_WIDTH</code>
         </p><p>
             <a class="citerefentry" href="glGetTexLevelParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span></a> with argument <code class="constant">GL_TEXTURE_HEIGHT</code>
-        </p><p>
-            <a class="citerefentry" href="glGetTexLevelParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span></a> with argument <code class="constant">GL_TEXTURE_BORDER</code>
         </p><p>
             <a class="citerefentry" href="glGetTexLevelParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexLevelParameter</span></span></a> with argument <code class="constant">GL_TEXTURE_INTERNAL_FORMAT</code>
         </p><p>
@@ -191,7 +211,8 @@
             <a class="citerefentry" href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>
         </p></div><div class="refsect1" title="Copyright"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
-            Silicon Graphics, Inc. This document is licensed under the SGI
+            Silicon Graphics, Inc. Copyright <span class="trademark"></span>© 2010
+            Khronos Group. This document is licensed under the SGI
             Free Software B License. For details, see
             <a class="ulink" href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
         </p></div></div></body></html>

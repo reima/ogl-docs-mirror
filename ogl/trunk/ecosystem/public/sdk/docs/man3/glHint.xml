@@ -33,7 +33,6 @@
                 <para>
                     Specifies a symbolic constant indicating the behavior to be controlled.
                     <constant>GL_LINE_SMOOTH_HINT</constant>,
-                    <constant>GL_POINT_SMOOTH_HINT</constant>,
                     <constant>GL_POLYGON_SMOOTH_HINT</constant>,
                     <constant>GL_TEXTURE_COMPRESSION_HINT</constant>, and
                     <constant>GL_FRAGMENT_SHADER_DERIVATIVE_HINT</constant>
@@ -126,18 +125,6 @@
                     </para>
                     <para>
                         Indicates the sampling quality of antialiased lines.
-                        If a larger filter function is applied, hinting <constant>GL_NICEST</constant> can
-                        result in more pixel fragments being generated during rasterization.
-                    </para>
-                </listitem>
-            </varlistentry>
-            <varlistentry>
-                <term><constant>GL_POINT_SMOOTH_HINT</constant></term>
-                <listitem>
-                    <para>
-                    </para>
-                    <para>
-                        Indicates the sampling quality of antialiased points.
                         If a larger filter function is applied, hinting <constant>GL_NICEST</constant> can
                         result in more pixel fragments being generated during rasterization.
                     </para>

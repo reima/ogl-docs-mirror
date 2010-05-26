@@ -109,9 +109,6 @@
             stencil test fails and passes,
             respectively.
         </p></div><div class="refsect1" title="Notes"><a id="notes"></a><h2>Notes</h2><p>
-            <code class="constant">GL_DECR_WRAP</code> and <code class="constant">GL_INCR_WRAP</code> are available only if the GL
-            version is 1.4 or greater.
-        </p><p>
             Initially the stencil test is disabled.
             If there is no stencil buffer,
             no stencil modification can occur
@@ -123,7 +120,7 @@
             with <em class="parameter"><code>face</code></em> set to <code class="constant">GL_FRONT_AND_BACK</code>.
         </p></div><div class="refsect1" title="Errors"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>sfail</code></em>,
-            <em class="parameter"><code>dpfail</code></em>, or <em class="parameter"><code>dppass</code></em> is any value other than the eight defined constant values.
+            <em class="parameter"><code>dpfail</code></em>, or <em class="parameter"><code>dppass</code></em> is any value other than the defined constant values.
         </p></div><div class="refsect1" title="Associated Gets"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
             <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument 
             <code class="constant">GL_STENCIL_FAIL</code>, <code class="constant">GL_STENCIL_PASS_DEPTH_PASS</code>, 

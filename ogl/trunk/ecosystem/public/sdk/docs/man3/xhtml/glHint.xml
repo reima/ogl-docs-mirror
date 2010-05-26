@@ -4,7 +4,6 @@
 <?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glHint</title><meta name="generator" content="DocBook XSL Stylesheets V1.75.2" /></head><body><div class="refentry" title="glHint"><a id="glHint"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glHint — specify implementation-specific hints</p></div><div class="refsynopsisdiv" title="C Specification"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" class="funcprototype-table"><tr><td><code class="funcdef">void <b class="fsfunc">glHint</b>(</code></td><td>GLenum <var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">mode</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1" title="Parameters"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies a symbolic constant indicating the behavior to be controlled.
                     <code class="constant">GL_LINE_SMOOTH_HINT</code>,
-                    <code class="constant">GL_POINT_SMOOTH_HINT</code>,
                     <code class="constant">GL_POLYGON_SMOOTH_HINT</code>,
                     <code class="constant">GL_TEXTURE_COMPRESSION_HINT</code>, and
                     <code class="constant">GL_FRAGMENT_SHADER_DERIVATIVE_HINT</code>
@@ -48,11 +47,6 @@
                     </p></dd><dt><span class="term"><code class="constant">GL_LINE_SMOOTH_HINT</code></span></dt><dd><p>
                     </p><p>
                         Indicates the sampling quality of antialiased lines.
-                        If a larger filter function is applied, hinting <code class="constant">GL_NICEST</code> can
-                        result in more pixel fragments being generated during rasterization.
-                    </p></dd><dt><span class="term"><code class="constant">GL_POINT_SMOOTH_HINT</code></span></dt><dd><p>
-                    </p><p>
-                        Indicates the sampling quality of antialiased points.
                         If a larger filter function is applied, hinting <code class="constant">GL_NICEST</code> can
                         result in more pixel fragments being generated during rasterization.
                     </p></dd><dt><span class="term"><code class="constant">GL_POLYGON_SMOOTH_HINT</code></span></dt><dd><p>

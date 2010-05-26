@@ -70,10 +70,6 @@
             with <parameter>face</parameter> set to <constant>GL_FRONT_AND_BACK</constant>.
         </para>
     </refsect1>
-    <refsect1 id="errors"><title>Errors</title>
-        <para>
-        </para>
-    </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument 

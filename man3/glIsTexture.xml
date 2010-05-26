@@ -47,14 +47,6 @@
             by calling <citerefentry><refentrytitle>glBindTexture</refentrytitle></citerefentry>, is not the name of a texture.
         </para>
     </refsect1>
-    <refsect1 id="notes"><title>Notes</title>
-        <para>
-        </para>
-    </refsect1>
-    <refsect1 id="errors"><title>Errors</title>
-        <para>
-        </para>
-    </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>glBindTexture</refentrytitle></citerefentry>,

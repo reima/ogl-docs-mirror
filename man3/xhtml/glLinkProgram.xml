@@ -38,7 +38,7 @@
         by the implementation has been exceeded.</p></li><li class="listitem"><p>The <code class="function">main</code> function is missing
         for the vertex, geometry or fragment shader.</p></li><li class="listitem"><p>A varying variable actually used in the fragment
         shader is not declared in the same way (or is not
-        declared at all) in the vertex shader.</p></li><li class="listitem"><p>A reference to a function or variable name is
+        declared at all) in the vertex shader, or geometry shader shader if present.</p></li><li class="listitem"><p>A reference to a function or variable name is
         unresolved.</p></li><li class="listitem"><p>A shared global is declared with two different
         types or two different initial values.</p></li><li class="listitem"><p>One or more of the attached shader objects has not
         been successfully compiled.</p></li><li class="listitem"><p>Binding a generic attribute matrix caused some
@@ -129,6 +129,7 @@
     <a class="citerefentry" href="glUseProgram.xml"><span class="citerefentry"><span class="refentrytitle">glUseProgram</span></span></a>,
     <a class="citerefentry" href="glValidateProgram.xml"><span class="citerefentry"><span class="refentrytitle">glValidateProgram</span></span></a></p></div><div class="refsect1" title="Copyright"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2003-2005 3Dlabs Inc. Ltd. 
+            Copyright <span class="trademark"></span>© 2010 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
             <a class="ulink" href="http://opencontent.org/openpub/" target="_top">http://opencontent.org/openpub/</a>.

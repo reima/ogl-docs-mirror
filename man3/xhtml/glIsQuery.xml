@@ -10,8 +10,6 @@
         </p><p>
             A name returned by <a class="citerefentry" href="glGenQueries.xml"><span class="citerefentry"><span class="refentrytitle">glGenQueries</span></span></a>, but not yet associated with a query object
             by calling <a class="citerefentry" href="glBeginQuery.xml"><span class="citerefentry"><span class="refentrytitle">glBeginQuery</span></span></a>, is not the name of a query object.
-        </p></div><div class="refsect1" title="Notes"><a id="notes"></a><h2>Notes</h2><p>
-        </p></div><div class="refsect1" title="Errors"><a id="errors"></a><h2>Errors</h2><p>
         </p></div><div class="refsect1" title="See Also"><a id="seealso"></a><h2>See Also</h2><p>
             <a class="citerefentry" href="glBeginQuery.xml"><span class="citerefentry"><span class="refentrytitle">glBeginQuery</span></span></a>,
             <a class="citerefentry" href="glDeleteQueries.xml"><span class="citerefentry"><span class="refentrytitle">glDeleteQueries</span></span></a>,

@@ -54,11 +54,6 @@
             be returned.
         </para>
     </refsect1>
-    <refsect1 id="notes"><title>Notes</title>
-        <para>
-            <function>glGetFragDataLocation</function> is available only if the GL version is 3.0 or greater.
-        </para>
-    </refsect1>
     <refsect1 id="errors"><title>Errors</title>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>program</parameter> is not the name of a program object.

@@ -51,7 +51,7 @@
             After a buffer object is deleted, it has no contents,
             and its name is free for reuse (for example by <citerefentry><refentrytitle>glGenBuffers</refentrytitle></citerefentry>).
             If a buffer object that is currently bound is deleted, the binding reverts
-            to 0 (the absence of any buffer object, which reverts to client memory usage).
+            to 0 (the absence of any buffer object).
         </para>
         <para>
             <function>glDeleteBuffers</function> silently ignores 0's and names that do not correspond to

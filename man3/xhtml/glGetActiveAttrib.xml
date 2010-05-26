@@ -69,8 +69,16 @@
     <code class="constant">GL_FLOAT_MAT2x4</code>,
     <code class="constant">GL_FLOAT_MAT3x2</code>,
     <code class="constant">GL_FLOAT_MAT3x4</code>,
-    <code class="constant">GL_FLOAT_MAT4x2</code>, or
-    <code class="constant">GL_FLOAT_MAT4x3</code> may be returned. The
+    <code class="constant">GL_FLOAT_MAT4x2</code>,
+    <code class="constant">GL_FLOAT_MAT4x3</code>,
+    <code class="constant">GL_INT</code>,
+    <code class="constant">GL_INT_VEC2</code>,
+    <code class="constant">GL_INT_VEC3</code>,
+    <code class="constant">GL_INT_VEC4</code>,
+    <code class="constant">GL_UNSIGNED_INT_VEC</code>,
+    <code class="constant">GL_UNSIGNED_INT_VEC2</code>,
+    <code class="constant">GL_UNSIGNED_INT_VEC3</code>, or
+    <code class="constant">GL_UNSIGNED_INT_VEC4</code> may be returned. The
     <em class="parameter"><code>size</code></em> argument will return the size of the
     attribute, in units of the type returned in
     <em class="parameter"><code>type</code></em>.</p><p>The list of active attribute variables may include both
@@ -99,6 +107,7 @@
     <a class="citerefentry" href="glVertexAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glVertexAttrib</span></span></a>,
     <a class="citerefentry" href="glVertexAttribPointer.xml"><span class="citerefentry"><span class="refentrytitle">glVertexAttribPointer</span></span></a></p></div><div class="refsect1" title="Copyright"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2003-2005 3Dlabs Inc. Ltd. 
+            Copyright <span class="trademark"></span>© 2010 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
             <a class="ulink" href="http://opencontent.org/openpub/" target="_top">http://opencontent.org/openpub/</a>.

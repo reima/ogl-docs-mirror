@@ -196,6 +196,7 @@
         <para>
             <citerefentry><refentrytitle>glBlendFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glColorMask</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glDrawBuffers</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glLogicOp</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glReadBuffer</refentrytitle></citerefentry>
         </para>

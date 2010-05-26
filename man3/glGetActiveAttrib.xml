@@ -147,8 +147,16 @@
     <constant>GL_FLOAT_MAT2x4</constant>,
     <constant>GL_FLOAT_MAT3x2</constant>,
     <constant>GL_FLOAT_MAT3x4</constant>,
-    <constant>GL_FLOAT_MAT4x2</constant>, or
-    <constant>GL_FLOAT_MAT4x3</constant> may be returned. The
+    <constant>GL_FLOAT_MAT4x2</constant>,
+    <constant>GL_FLOAT_MAT4x3</constant>,
+    <constant>GL_INT</constant>,
+    <constant>GL_INT_VEC2</constant>,
+    <constant>GL_INT_VEC3</constant>,
+    <constant>GL_INT_VEC4</constant>,
+    <constant>GL_UNSIGNED_INT_VEC</constant>,
+    <constant>GL_UNSIGNED_INT_VEC2</constant>,
+    <constant>GL_UNSIGNED_INT_VEC3</constant>, or
+    <constant>GL_UNSIGNED_INT_VEC4</constant> may be returned. The
     <parameter>size</parameter> argument will return the size of the
     attribute, in units of the type returned in
     <parameter>type</parameter>.</para>
@@ -203,6 +211,7 @@
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 2003-2005 3Dlabs Inc. Ltd. 
+            Copyright <trademark class="copyright"></trademark> 2010 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
             <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.

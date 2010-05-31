@@ -152,7 +152,7 @@
             <listitem>
                 <para>
                     Specifies the height of the texture image.
-                    All implementations support 3D texture images that are at least 16 texels
+                    All implementations support 3D texture images that are at least 256 texels
                     high.
                 </para>
             </listitem>
@@ -161,9 +161,9 @@
             <term><parameter>depth</parameter></term>
             <listitem>
                 <para>
-                    Specifies the depth of the texture image.
-                    All implementations support 3D texture images that are at least 16 texels
-                    deep.
+                    Specifies the depth of the texture image, or the number of layers in a texture array.
+                    All implementations support 3D texture images that are at least 256 texels
+                    deep, and texture arrays that are at least 256 layers deep.
                 </para>
             </listitem>
         </varlistentry>
@@ -171,7 +171,7 @@
             <term><parameter>border</parameter></term>
             <listitem>
                 <para>
-                    This value must now be 0 since texture borders are no longer supported.
+                    This value must be 0.
                 </para>
             </listitem>
         </varlistentry>
@@ -545,7 +545,7 @@
             accepted resolution and format symbolic constants.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>width</parameter>, <parameter>height</parameter>, or <parameter>depth</parameter> is less than 0 or greater than 2 + <constant>GL_MAX_TEXTURE_SIZE</constant>.
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>width</parameter>, <parameter>height</parameter>, or <parameter>depth</parameter> is less than 0 or greater than <constant>GL_MAX_TEXTURE_SIZE</constant>.
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if non-power-of-two textures are not supported and the <parameter>width</parameter>, <parameter>height</parameter>, or <parameter>depth</parameter> cannot be represented as 
@@ -614,9 +614,6 @@
     <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGetTexImage</refentrytitle></citerefentry>
-        </para>
-        <para>
-            <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_3D</constant>
         </para>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>

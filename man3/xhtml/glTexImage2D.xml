@@ -57,16 +57,16 @@
                     <code class="constant">GL_SRGB8_ALPHA8</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>width</code></em></span></dt><dd><p>
                     Specifies the width of the texture image.
-                    All implementations support texture images that are at least 64 texels
+                    All implementations support texture images that are at least 1024 texels
                     wide.
                 </p></dd><dt><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
-                    Specifies the height of the texture image, or the size of the texture
+                    Specifies the height of the texture image, or the number of layers in a texture
                     array, in the case of the <code class="constant">GL_TEXTURE_1D_ARRAY</code> and
                     <code class="constant">GL_PROXY_TEXTURE_1D_ARRAY</code> targets.
-                    All implementations support texture images that are at least 64 texels
-                    high.
+                    All implementations support 2D texture images that are at least 1024 texels
+                    high, and texture arrays that are at least 256 layers deep.
                 </p></dd><dt><span class="term"><em class="parameter"><code>border</code></em></span></dt><dd><p>
-                    This value must now be 0.
+                    This value must be 0.
                 </p></dd><dt><span class="term"><em class="parameter"><code>format</code></em></span></dt><dd><p>
                     Specifies the format of the pixel data.
                     The following symbolic values are accepted:
@@ -348,10 +348,10 @@
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>type</code></em> is not a type constant.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> is less than 0
-            or greater than 2 + <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
+            or greater than <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>target</code></em> is not <code class="constant">GL_TEXTURE_1D_ARRAY</code> or
-            <code class="constant">GL_PROXY_TEXTURE_1D_ARRAY</code> and <em class="parameter"><code>height</code></em> is less than 0 or greater than 2 + <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
+            <code class="constant">GL_PROXY_TEXTURE_1D_ARRAY</code> and <em class="parameter"><code>height</code></em> is less than 0 or greater than <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>target</code></em> is <code class="constant">GL_TEXTURE_1D_ARRAY</code> or
             <code class="constant">GL_PROXY_TEXTURE_1D_ARRAY</code> and <em class="parameter"><code>height</code></em> is less than 0 or greater than <code class="constant">GL_MAX_ARRAY_TEXTURE_LAYERS</code>.
@@ -377,7 +377,7 @@
             accepted resolution and format symbolic constants.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> or <em class="parameter"><code>height</code></em> is less than 0
-            or greater than 2 + <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
+            or greater than <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if non-power-of-two textures are not supported and the <em class="parameter"><code>width</code></em> or <em class="parameter"><code>height</code></em> cannot be represented as 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">

@@ -246,7 +246,7 @@
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>width</parameter> is less than 0 or greater than
-            2 + <constant>GL_MAX_TEXTURE_SIZE</constant>.
+            <constant>GL_MAX_TEXTURE_SIZE</constant>.
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if non-power-of-two textures are not supported and the <parameter>width</parameter> cannot be represented as 
@@ -281,9 +281,6 @@
     <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGetTexImage</refentrytitle></citerefentry>
-        </para>
-        <para>
-            <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_1D</constant>
         </para>
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>

@@ -285,9 +285,6 @@
             <citerefentry><refentrytitle>glGetTexImage</refentrytitle></citerefentry>
         </para>
         <para>
-            <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_1D</constant>
-        </para>
-        <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_PIXEL_UNPACK_BUFFER_BINDING</constant>
         </para>
     </refsect1>

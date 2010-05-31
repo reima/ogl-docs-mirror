@@ -89,14 +89,14 @@
                     wide.
                 </p></dd><dt><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
                     Specifies the height of the texture image.
-                    All implementations support 3D texture images that are at least 16 texels
+                    All implementations support 3D texture images that are at least 256 texels
                     high.
                 </p></dd><dt><span class="term"><em class="parameter"><code>depth</code></em></span></dt><dd><p>
-                    Specifies the depth of the texture image.
-                    All implementations support 3D texture images that are at least 16 texels
-                    deep.
+                    Specifies the depth of the texture image, or the number of layers in a texture array.
+                    All implementations support 3D texture images that are at least 256 texels
+                    deep, and texture arrays that are at least 256 layers deep.
                 </p></dd><dt><span class="term"><em class="parameter"><code>border</code></em></span></dt><dd><p>
-                    This value must now be 0 since texture borders are no longer supported.
+                    This value must be 0.
                 </p></dd><dt><span class="term"><em class="parameter"><code>format</code></em></span></dt><dd><p>
                     Specifies the format of the pixel data.
                     The following symbolic values are accepted:
@@ -382,7 +382,7 @@
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>internalFormat</code></em> is not one of the
             accepted resolution and format symbolic constants.
         </p><p>
-            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em>, <em class="parameter"><code>height</code></em>, or <em class="parameter"><code>depth</code></em> is less than 0 or greater than 2 + <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em>, <em class="parameter"><code>height</code></em>, or <em class="parameter"><code>depth</code></em> is less than 0 or greater than <code class="constant">GL_MAX_TEXTURE_SIZE</code>.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if non-power-of-two textures are not supported and the <em class="parameter"><code>width</code></em>, <em class="parameter"><code>height</code></em>, or <em class="parameter"><code>depth</code></em> cannot be represented as 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -440,8 +440,6 @@
             into the number of bytes needed to store in memory a datum indicated by <em class="parameter"><code>type</code></em>.
         </p></div><div class="refsect1" title="Associated Gets"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
             <a class="citerefentry" href="glGetTexImage.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexImage</span></span></a>
-        </p><p>
-            <a class="citerefentry" href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a> with argument <code class="constant">GL_TEXTURE_3D</code>
         </p><p>
             <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
         </p></div><div class="refsect1" title="See Also"><a id="seealso"></a><h2>See Also</h2><p>

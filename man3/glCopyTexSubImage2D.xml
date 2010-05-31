@@ -307,9 +307,6 @@
         <para>
             <citerefentry><refentrytitle>glGetTexImage</refentrytitle></citerefentry>
         </para>
-        <para>
-            <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry> with argument <constant>GL_TEXTURE_2D</constant>
-        </para>
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>

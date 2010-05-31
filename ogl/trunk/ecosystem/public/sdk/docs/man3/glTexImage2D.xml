@@ -113,7 +113,7 @@
             <listitem>
                 <para>
                     Specifies the width of the texture image.
-                    All implementations support texture images that are at least 64 texels
+                    All implementations support texture images that are at least 1024 texels
                     wide.
                 </para>
             </listitem>
@@ -122,11 +122,11 @@
             <term><parameter>height</parameter></term>
             <listitem>
                 <para>
-                    Specifies the height of the texture image, or the size of the texture
+                    Specifies the height of the texture image, or the number of layers in a texture
                     array, in the case of the <constant>GL_TEXTURE_1D_ARRAY</constant> and
                     <constant>GL_PROXY_TEXTURE_1D_ARRAY</constant> targets.
-                    All implementations support texture images that are at least 64 texels
-                    high.
+                    All implementations support 2D texture images that are at least 1024 texels
+                    high, and texture arrays that are at least 256 layers deep.
                 </para>
             </listitem>
         </varlistentry>
@@ -134,7 +134,7 @@
             <term><parameter>border</parameter></term>
             <listitem>
                 <para>
-                    This value must now be 0.
+                    This value must be 0.
                 </para>
             </listitem>
         </varlistentry>
@@ -515,11 +515,11 @@
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>width</parameter> is less than 0
-            or greater than 2 + <constant>GL_MAX_TEXTURE_SIZE</constant>.
+            or greater than <constant>GL_MAX_TEXTURE_SIZE</constant>.
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>target</parameter> is not <constant>GL_TEXTURE_1D_ARRAY</constant> or
-            <constant>GL_PROXY_TEXTURE_1D_ARRAY</constant> and <parameter>height</parameter> is less than 0 or greater than 2 + <constant>GL_MAX_TEXTURE_SIZE</constant>.
+            <constant>GL_PROXY_TEXTURE_1D_ARRAY</constant> and <parameter>height</parameter> is less than 0 or greater than <constant>GL_MAX_TEXTURE_SIZE</constant>.
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>target</parameter> is <constant>GL_TEXTURE_1D_ARRAY</constant> or
@@ -550,7 +550,7 @@
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>width</parameter> or <parameter>height</parameter> is less than 0
-            or greater than 2 + <constant>GL_MAX_TEXTURE_SIZE</constant>.
+            or greater than <constant>GL_MAX_TEXTURE_SIZE</constant>.
         </para>
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if non-power-of-two textures are not supported and the <parameter>width</parameter> or <parameter>height</parameter> cannot be represented as 

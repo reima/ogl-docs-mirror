@@ -49,7 +49,7 @@
             <term><parameter>pname</parameter></term>
             <listitem>
                 <para>
-                    Specifies the symbolic name of a single-valued texture parameter.
+                    Specifies the symbolic name of a single-valued sampler parameter.
                     <parameter>pname</parameter> can be one of the following:
                     <constant>GL_TEXTURE_WRAP_S</constant>,
                     <constant>GL_TEXTURE_WRAP_T</constant>,
@@ -106,7 +106,7 @@
             <term><parameter>pname</parameter></term>
             <listitem>
                 <para>
-                    Specifies the symbolic name of a texture parameter.
+                    Specifies the symbolic name of a sampler parameter.
                     <parameter>pname</parameter> can be one of the following:
                     <constant>GL_TEXTURE_WRAP_S</constant>,
                     <constant>GL_TEXTURE_WRAP_T</constant>,
@@ -642,11 +642,21 @@
                 <term><constant>GL_TEXTURE_BORDER_COLOR</constant></term>
                 <listitem>
                     <para>
-                        Sets a border color.  <parameter>params</parameter> contains four values that comprise the RGBA
-                        color of the texture border.  Integer color components are interpreted
-                        linearly such that the most positive integer maps to 1.0, and the most
-                        negative integer maps to -1.0.  The values are clamped to the range [0,1]
-                        when they are specified.  Initially, the border color is (0, 0, 0, 0).
+                        The data in <parameter>params</parameter> specifies four values that define the border values that
+                        should be used for border texels. If a texel is sampled from the border of the texture, the
+                        values of <constant>GL_TEXTURE_BORDER_COLOR</constant> are interpreted as an RGBA color to match the
+                        texture's internal format and substituted for the non-existent texel data. If the texture contains depth
+                        components, the first component of <constant>GL_TEXTURE_BORDER_COLOR</constant> is interpreted as a depth value.
+                        The initial value is
+                        <inlineequation><mml:math>
+                            <mml:mrow>
+                                <mml:mfenced open="(" close=")">
+                                    <mml:mrow>
+                                        <mml:mn>0.0</mml:mn>, <mml:mn>0.0</mml:mn>, <mml:mn>0.0</mml:mn>, <mml:mn>0.0</mml:mn>
+                                    </mml:mrow>
+                                </mml:mfenced>
+                            </mml:mrow>
+                        </mml:math></inlineequation>.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1073,6 +1083,14 @@
         <para>
             <function>glSamplerParameter</function> is available only if the GL version is 3.3 or higher.
         </para>
+        <para>
+            If a sampler object is bound to a texture unit and that unit is used to sample from a texture, the parameters in the sampler
+            are used to sample from the texture, rather than the equivalent parameters in the texture object bound to that unit. This
+            introduces the possibility of sampling from the same texture object with different sets of sampler state, which may lead to
+            a condition where a texture is <emphasis>incomplete</emphasis> with respect to one sampler object and not with respect to
+            another. Thus, completeness can be considered a function of a sampler object and a texture object bound to a single
+            texture unit, rather than a property of the texture object itself.
+        </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
         <para>
@@ -1095,7 +1113,8 @@
             <citerefentry><refentrytitle>glBindSampler</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDeleteSamplers</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glIsSampler</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>glBindTexture</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>glBindTexture</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glTexParameter</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

@@ -22,6 +22,7 @@
 <table width="200" class="sample">	<th>B</th>
 	<tr><td><a target="pagedisp" href="glBeginConditionalRender.xml">glBeginConditionalRender</a></td></tr>
 	<tr><td><a target="pagedisp" href="glBeginQuery.xml">glBeginQuery</a></td></tr>
+	<tr><td><a target="pagedisp" href="glBeginQueryIndexed.xml">glBeginQueryIndexed</a></td></tr>
 	<tr><td><a target="pagedisp" href="glBeginTransformFeedback.xml">glBeginTransformFeedback</a></td></tr>
 	<tr><td><a target="pagedisp" href="glBindAttribLocation.xml">glBindAttribLocation</a></td></tr>
 	<tr><td><a target="pagedisp" href="glBindBuffer.xml">glBindBuffer</a></td></tr>
@@ -33,6 +34,7 @@
 	<tr><td><a target="pagedisp" href="glBindRenderbuffer.xml">glBindRenderbuffer</a></td></tr>
 	<tr><td><a target="pagedisp" href="glBindSampler.xml">glBindSampler</a></td></tr>
 	<tr><td><a target="pagedisp" href="glBindTexture.xml">glBindTexture</a></td></tr>
+	<tr><td><a target="pagedisp" href="glBindTransformFeedback.xml">glBindTransformFeedback</a></td></tr>
 	<tr><td><a target="pagedisp" href="glBindVertexArray.xml">glBindVertexArray</a></td></tr>
 	<tr><td><a target="pagedisp" href="glBlendColor.xml">glBlendColor</a></td></tr>
 	<tr><td><a target="pagedisp" href="glBlendEquation.xml">glBlendEquation</a></td></tr>
@@ -84,6 +86,7 @@
 	<tr><td><a target="pagedisp" href="glDeleteSamplers.xml">glDeleteSamplers</a></td></tr>
 	<tr><td><a target="pagedisp" href="glDeleteShader.xml">glDeleteShader</a></td></tr>
 	<tr><td><a target="pagedisp" href="glDeleteTextures.xml">glDeleteTextures</a></td></tr>
+	<tr><td><a target="pagedisp" href="glDeleteTransformFeedbacks.xml">glDeleteTransformFeedbacks</a></td></tr>
 	<tr><td><a target="pagedisp" href="glDeleteVertexArrays.xml">glDeleteVertexArrays</a></td></tr>
 	<tr><td><a target="pagedisp" href="glDepthFunc.xml">glDepthFunc</a></td></tr>
 	<tr><td><a target="pagedisp" href="glDepthMask.xml">glDepthMask</a></td></tr>
@@ -92,15 +95,19 @@
 	<tr><td><a target="pagedisp" href="glDisable.xml">glDisable</a></td></tr>
 	<tr><td><a target="pagedisp" href="glDisableVertexAttribArray.xml">glDisableVertexAttribArray</a></td></tr>
 	<tr><td><a target="pagedisp" href="glDrawArrays.xml">glDrawArrays</a></td></tr>
+	<tr><td><a target="pagedisp" href="glDrawArraysIndirect.xml">glDrawArraysIndirect</a></td></tr>
 	<tr><td><a target="pagedisp" href="glDrawArraysInstanced.xml">glDrawArraysInstanced</a></td></tr>
 	<tr><td><a target="pagedisp" href="glDrawBuffer.xml">glDrawBuffer</a></td></tr>
 	<tr><td><a target="pagedisp" href="glDrawBuffers.xml">glDrawBuffers</a></td></tr>
 	<tr><td><a target="pagedisp" href="glDrawElements.xml">glDrawElements</a></td></tr>
 	<tr><td><a target="pagedisp" href="glDrawElementsBaseVertex.xml">glDrawElementsBaseVertex</a></td></tr>
+	<tr><td><a target="pagedisp" href="glDrawElementsIndirect.xml">glDrawElementsIndirect</a></td></tr>
 	<tr><td><a target="pagedisp" href="glDrawElementsInstanced.xml">glDrawElementsInstanced</a></td></tr>
 	<tr><td><a target="pagedisp" href="glDrawElementsInstancedBaseVertex.xml">glDrawElementsInstancedBaseVertex</a></td></tr>
 	<tr><td><a target="pagedisp" href="glDrawRangeElements.xml">glDrawRangeElements</a></td></tr>
 	<tr><td><a target="pagedisp" href="glDrawRangeElementsBaseVertex.xml">glDrawRangeElementsBaseVertex</a></td></tr>
+	<tr><td><a target="pagedisp" href="glDrawTransformFeedback.xml">glDrawTransformFeedback</a></td></tr>
+	<tr><td><a target="pagedisp" href="glDrawTransformFeedbackStream.xml">glDrawTransformFeedbackStream</a></td></tr>
 	<tr><td align="right"><a href="#top">Top</a></td></tr>
 </table>
 
@@ -110,6 +117,7 @@
 	<tr><td><a target="pagedisp" href="glEnableVertexAttribArray.xml">glEnableVertexAttribArray</a></td></tr>
 	<tr><td><a target="pagedisp" href="glEndConditionalRender.xml">glEndConditionalRender</a></td></tr>
 	<tr><td><a target="pagedisp" href="glEndQuery.xml">glEndQuery</a></td></tr>
+	<tr><td><a target="pagedisp" href="glEndQueryIndexed.xml">glEndQueryIndexed</a></td></tr>
 	<tr><td><a target="pagedisp" href="glEndTransformFeedback.xml">glEndTransformFeedback</a></td></tr>
 	<tr><td align="right"><a href="#top">Top</a></td></tr>
 </table>
@@ -136,10 +144,14 @@
 	<tr><td><a target="pagedisp" href="glGenRenderbuffers.xml">glGenRenderbuffers</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGenSamplers.xml">glGenSamplers</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGenTextures.xml">glGenTextures</a></td></tr>
+	<tr><td><a target="pagedisp" href="glGenTransformFeedbacks.xml">glGenTransformFeedbacks</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGenVertexArrays.xml">glGenVertexArrays</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGenerateMipmap.xml">glGenerateMipmap</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGet.xml">glGet</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGetActiveAttrib.xml">glGetActiveAttrib</a></td></tr>
+	<tr><td><a target="pagedisp" href="glGetActiveSubroutineName.xml">glGetActiveSubroutineName</a></td></tr>
+	<tr><td><a target="pagedisp" href="glGetActiveSubroutineUniform.xml">glGetActiveSubroutineUniform</a></td></tr>
+	<tr><td><a target="pagedisp" href="glGetActiveSubroutineUniformName.xml">glGetActiveSubroutineUniformName</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGetActiveUniform.xml">glGetActiveUniform</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGetActiveUniformBlock.xml">glGetActiveUniformBlock</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGetActiveUniformBlockName.xml">glGetActiveUniformBlockName</a></td></tr>
@@ -157,6 +169,8 @@
 	<tr><td><a target="pagedisp" href="glGetMultisample.xml">glGetMultisample</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGetProgram.xml">glGetProgram</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGetProgramInfoLog.xml">glGetProgramInfoLog</a></td></tr>
+	<tr><td><a target="pagedisp" href="glGetProgramStage.xml">glGetProgramStage</a></td></tr>
+	<tr><td><a target="pagedisp" href="glGetQueryIndexed.xml">glGetQueryIndexed</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGetQueryObject.xml">glGetQueryObject</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGetQueryiv.xml">glGetQueryiv</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGetRenderbufferParameter.xml">glGetRenderbufferParameter</a></td></tr>
@@ -165,6 +179,8 @@
 	<tr><td><a target="pagedisp" href="glGetShaderInfoLog.xml">glGetShaderInfoLog</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGetShaderSource.xml">glGetShaderSource</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGetString.xml">glGetString</a></td></tr>
+	<tr><td><a target="pagedisp" href="glGetSubroutineIndex.xml">glGetSubroutineIndex</a></td></tr>
+	<tr><td><a target="pagedisp" href="glGetSubroutineUniformLocation.xml">glGetSubroutineUniformLocation</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGetSync.xml">glGetSync</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGetTexImage.xml">glGetTexImage</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGetTexLevelParameter.xml">glGetTexLevelParameter</a></td></tr>
@@ -174,6 +190,7 @@
 	<tr><td><a target="pagedisp" href="glGetUniformBlockIndex.xml">glGetUniformBlockIndex</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGetUniformIndices.xml">glGetUniformIndices</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGetUniformLocation.xml">glGetUniformLocation</a></td></tr>
+	<tr><td><a target="pagedisp" href="glGetUniformSubroutine.xml">glGetUniformSubroutine</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGetVertexAttrib.xml">glGetVertexAttrib</a></td></tr>
 	<tr><td><a target="pagedisp" href="glGetVertexAttribPointerv.xml">glGetVertexAttribPointerv</a></td></tr>
 	<tr><td align="right"><a href="#top">Top</a></td></tr>
@@ -197,6 +214,7 @@
 	<tr><td><a target="pagedisp" href="glIsShader.xml">glIsShader</a></td></tr>
 	<tr><td><a target="pagedisp" href="glIsSync.xml">glIsSync</a></td></tr>
 	<tr><td><a target="pagedisp" href="glIsTexture.xml">glIsTexture</a></td></tr>
+	<tr><td><a target="pagedisp" href="glIsTransformFeedback.xml">glIsTransformFeedback</a></td></tr>
 	<tr><td><a target="pagedisp" href="glIsVertexArray.xml">glIsVertexArray</a></td></tr>
 	<tr><td align="right"><a href="#top">Top</a></td></tr>
 </table>
@@ -221,6 +239,8 @@
 
 <a name="P"></a><br/><br/>
 <table width="200" class="sample">	<th>P</th>
+	<tr><td><a target="pagedisp" href="glPatchParameter.xml">glPatchParameter</a></td></tr>
+	<tr><td><a target="pagedisp" href="glPauseTransformFeedback.xml">glPauseTransformFeedback</a></td></tr>
 	<tr><td><a target="pagedisp" href="glPixelStore.xml">glPixelStore</a></td></tr>
 	<tr><td><a target="pagedisp" href="glPointParameter.xml">glPointParameter</a></td></tr>
 	<tr><td><a target="pagedisp" href="glPointSize.xml">glPointSize</a></td></tr>
@@ -243,6 +263,7 @@
 	<tr><td><a target="pagedisp" href="glReadPixels.xml">glReadPixels</a></td></tr>
 	<tr><td><a target="pagedisp" href="glRenderbufferStorage.xml">glRenderbufferStorage</a></td></tr>
 	<tr><td><a target="pagedisp" href="glRenderbufferStorageMultisample.xml">glRenderbufferStorageMultisample</a></td></tr>
+	<tr><td><a target="pagedisp" href="glResumeTransformFeedback.xml">glResumeTransformFeedback</a></td></tr>
 	<tr><td align="right"><a href="#top">Top</a></td></tr>
 </table>
 
@@ -281,6 +302,7 @@
 <table width="200" class="sample">	<th>U</th>
 	<tr><td><a target="pagedisp" href="glUniform.xml">glUniform</a></td></tr>
 	<tr><td><a target="pagedisp" href="glUniformBlockBinding.xml">glUniformBlockBinding</a></td></tr>
+	<tr><td><a target="pagedisp" href="glUniformSubroutines.xml">glUniformSubroutines</a></td></tr>
 	<tr><td><a target="pagedisp" href="glUnmapBuffer.xml">glUnmapBuffer</a></td></tr>
 	<tr><td><a target="pagedisp" href="glUseProgram.xml">glUseProgram</a></td></tr>
 	<tr><td align="right"><a href="#top">Top</a></td></tr>

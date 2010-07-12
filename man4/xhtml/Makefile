@@ -7,25 +7,58 @@ SED	= sed
 # Location of locally customized stylesheet, which imports
 # the Docbook modular stylesheets, and specifically the
 # stylesheet to convert Docbook+MathML => XHTML+MathML
-DB2XHTML = opengl-man.xsl
+DB2XHTML = ../../mancommon/opengl-man.xsl
 
 .SUFFIXES: .gl .xml .html .xhtml .ck.xhtml .tex .pdf .3G .tar .tar.gz
 .PHONY: man html pdf tex
 
-%.xml: ../%.xml opengl-man.xsl
+%.xml: ../%.xml ../../mancommon/opengl-man.xsl
 	$(XSLT) --xinclude -o $@.tmp $(DB2XHTML) $<
 	$(SED) 's/<?xml-stylesheet/<!-- saved from url=(0013)about:internet -->\n<?xml-stylesheet/g' $@.tmp | \
 	    $(SED) 's#http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd#xhtml1-transitional.dtd#g' > $@
 	$(RM) $@.tmp
 
-ALLXML = \
-    glActiveTexture.xml \
-    glAttachShader.xml \
-    glBeginConditionalRender.xml \
-    glBeginQuery.xml \
+GL_ARB_draw_indirect_entries = \
+    glDrawArraysIndirect.xml \
+    glDrawElementsIndirect.xml
+	
+GL_ARB_shader_subroutine_entries = \
+    glGetActiveSubroutineName.xml \
+    glGetActiveSubroutineUniform.xml \
+    glGetActiveSubroutineUniformName.xml \
+    glGetProgramStage.xml \
+    glGetSubroutineIndex.xml \
+    glGetSubroutineUniformLocation.xml \
+    glGetUniformSubroutine.xml \
+    glUniformSubroutines.xml
+
+GL_ARB_tessellation_shader_entries = \
+    glPatchParameter.xml
+
+GL_ARB_transform_feedback2_entries = \
+    glBindTransformFeedback.xml \
+    glDeleteTransformFeedbacks.xml \
+    glGenTransformFeedbacks.xml \
+    glIsTransformFeedback.xml \
+    glPauseTransformFeedback.xml \
+    glResumeTransformFeedback.xml \
+    glDrawTransformFeedback.xml
+
+GL_ARB_transform_feedback3_entries = \
+    glDrawTransformFeedbackStream.xml \
+    glBeginQueryIndexed.xml \
+    glEndQueryIndexed.xml \
+    glGetQueryIndexed.xml
+
+MODIFIEDFORGL4XML = \
+    glDrawArrays.xml
 
 GL4XML = \
-    glViewport.xml
+    $(GL_ARB_draw_indirect_entries) \
+    $(GL_ARB_shader_subroutine_entries) \
+    $(GL_ARB_tessellation_shader_entries) \
+    $(GL_ARB_transform_feedback2_entries) \
+    $(GL_ARB_transform_feedback3_entries)
 
 OTHERXML = \
     glBeginTransformFeedback.xml \
@@ -225,7 +258,7 @@ OTHERXML = \
     glViewport.xml \
     glWaitSync.xml
 
-XML    = $(ALLXML) $(GL4XML)
+XML    = $(MODIFIEDFORGL4XML) $(GL4XML)
 
 default: $(XML)
 

@@ -42,7 +42,7 @@
 
 <xsl:template match="/">
   <xsl:processing-instruction name="xml-stylesheet">
-   <xsl:text>type="text/xsl" href="mathml.xsl"</xsl:text>
+   <xsl:text>type="text/xsl" href="../../mancommon/mathml.xsl"</xsl:text>
   </xsl:processing-instruction>
   <xsl:apply-imports/>
 </xsl:template>

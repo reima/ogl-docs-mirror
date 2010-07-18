@@ -9,7 +9,7 @@
                 <holder>Khronos Group.</holder>
             </copyright>
         </refmetainfo>
-        <refentrytitle>glDrawArraysIndirect</refentrytitle>
+        <refentrytitle>glDrawTransformFeedback</refentrytitle>
         <manvolnum>3G</manvolnum>
     </refmeta>
     <refnamediv>

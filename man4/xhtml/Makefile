@@ -47,7 +47,6 @@ GL_ARB_transform_feedback2_entries = \
 GL_ARB_transform_feedback3_entries = \
     glDrawTransformFeedbackStream.xml \
     glBeginQueryIndexed.xml \
-    glEndQueryIndexed.xml \
     glGetQueryIndexed.xml
 
 MODIFIEDFORGL4XML = \

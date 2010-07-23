@@ -50,6 +50,7 @@ GL_ARB_transform_feedback3_entries = \
     glGetQueryIndexed.xml
 
 MODIFIEDFORGL4XML = \
+	glCreateShader.xml \
     glDrawArrays.xml
 
 GL4XML = \

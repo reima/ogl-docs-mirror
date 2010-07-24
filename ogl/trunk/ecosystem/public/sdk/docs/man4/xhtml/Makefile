@@ -49,8 +49,13 @@ GL_ARB_transform_feedback3_entries = \
     glBeginQueryIndexed.xml \
     glGetQueryIndexed.xml
 
+GL_ARB_viewport_array_entries = \
+    glScissorArray.xml \
+    glViewportArray.xml \
+    glViewportIndexed.xml
+
 MODIFIEDFORGL4XML = \
-	glCreateShader.xml \
+    glCreateShader.xml \
     glDrawArrays.xml
 
 GL4XML = \
@@ -59,6 +64,9 @@ GL4XML = \
     $(GL_ARB_tessellation_shader_entries) \
     $(GL_ARB_transform_feedback2_entries) \
     $(GL_ARB_transform_feedback3_entries)
+
+GL41XML = \
+    $(GL_ARB_viewport_array_entries)
 
 OTHERXML = \
     glBeginTransformFeedback.xml \
@@ -258,7 +266,7 @@ OTHERXML = \
     glViewport.xml \
     glWaitSync.xml
 
-XML    = $(MODIFIEDFORGL4XML) $(GL4XML)
+XML    = $(GL41XML) $(GL4XML) $(MODIFIEDFORGL4XML)
 
 default: $(XML)
 

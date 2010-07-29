@@ -50,9 +50,27 @@ GL_ARB_transform_feedback3_entries = \
     glGetQueryIndexed.xml
 
 GL_ARB_viewport_array_entries = \
+    glDepthRangeArray.xml \
+    glDepthRangeIndexed.xml \
     glScissorArray.xml \
+    glScissorIndexed.xml \
     glViewportArray.xml \
     glViewportIndexed.xml
+
+GL_ARB_get_program_binary_entries = \
+    glGetProgramBinary.xml \
+    glProgramBinary.xml \
+    glProgramParameter.xml
+
+GL_ARB_ES2_compatibility_entries = \
+    glReleaseShaderCompiler.xml \
+    glShaderBinary.xml \
+    glGetShaderPrecisionFormat.xml
+
+GL_ARB_separate_shader_objects_entries = \
+    glUseProgramStages.xml \
+    glActiveShaderProgram.xml \
+    glCreateShaderProgram.xml
 
 MODIFIEDFORGL4XML = \
     glCreateShader.xml \
@@ -66,7 +84,10 @@ GL4XML = \
     $(GL_ARB_transform_feedback3_entries)
 
 GL41XML = \
-    $(GL_ARB_viewport_array_entries)
+    $(GL_ARB_viewport_array_entries) \
+    $(GL_ARB_get_program_binary_entries) \
+    $(GL_ARB_ES2_compatibility_entries) \
+    $(GL_ARB_separate_shader_objects_entries)
 
 OTHERXML = \
     glBeginTransformFeedback.xml \

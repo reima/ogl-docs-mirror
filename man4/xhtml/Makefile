@@ -70,11 +70,23 @@ GL_ARB_ES2_compatibility_entries = \
 GL_ARB_separate_shader_objects_entries = \
     glUseProgramStages.xml \
     glActiveShaderProgram.xml \
-    glCreateShaderProgram.xml
+    glCreateShaderProgram.xml \
+    glBindProgramPipeline.xml \
+    glGenProgramPipelines.xml \
+    glDeleteProgramPipelines.xml \
+    glIsProgramPipeline.xml \
+    glGetProgramPipeline.xml \
+    glValidateProgramPipeline.xml \
+    glGetProgramPipelineInfoLog.xml
 
 MODIFIEDFORGL4XML = \
+    glClearDepth.xml \
     glCreateShader.xml \
-    glDrawArrays.xml
+    glDepthRange.xml \
+    glDrawArrays.xml \
+    glGetVertexAttrib.xml \
+    glVertexAttrib.xml \
+    glVertexAttribPointer.xml \
 
 GL4XML = \
     $(GL_ARB_draw_indirect_entries) \
@@ -115,7 +127,6 @@ OTHERXML = \
     glClear.xml \
     glClearColor.xml \
     glClearBuffer.xml \
-    glClearDepth.xml \
     glClearStencil.xml \
     glClientWaitSync.xml \
     glColorMask.xml \
@@ -147,7 +158,6 @@ OTHERXML = \
     glDeleteVertexArrays.xml \
     glDepthFunc.xml \
     glDepthMask.xml \
-    glDepthRange.xml \
     glDetachShader.xml \
     glDisableVertexAttribArray.xml \
     glDrawArrays.xml \
@@ -220,7 +230,6 @@ OTHERXML = \
     glGetUniformBlockIndex.xml \
     glGetUniformIndices.xml \
     glGetUniformLocation.xml \
-    glGetVertexAttrib.xml \
     glGetVertexAttribPointerv.xml \
     glHint.xml \
     glIsBuffer.xml \
@@ -281,9 +290,7 @@ OTHERXML = \
     glUnmapBuffer.xml \
     glUseProgram.xml \
     glValidateProgram.xml \
-    glVertexAttrib.xml \
     glVertexAttribDivisor.xml \
-    glVertexAttribPointer.xml \
     glViewport.xml \
     glWaitSync.xml
 

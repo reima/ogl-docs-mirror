@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="../../mancommon/mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="../../mancommon/opengl-man.css" /><title>glCreateShaderProgram</title><meta name="generator" content="DocBook XSL Stylesheets V1.75.2" /></head><body><div class="refentry" title="glCreateShaderProgram"><a id="glCreateShaderProgram"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCreateShaderProgram — create a stand-alone program from an array of null-terminated source code strings</p></div><div class="refsynopsisdiv" title="C Specification"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" class="funcprototype-table"><tr><td><code class="funcdef">GLuint <b class="fsfunc">glCreateShaderProgram</b>(</code></td><td>GLenum <var class="pdparam">type</var>, </td></tr><tr><td> </td><td>GLsizei <var class="pdparam">count</var>, </td></tr><tr><td> </td><td>const char **<var class="pdparam">strings</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1" title="Parameters"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>type</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="../../mancommon/mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="../../mancommon/opengl-man.css" /><title>glCreateShaderProgram</title><meta name="generator" content="DocBook XSL Stylesheets V1.75.2" /></head><body><div class="refentry" title="glCreateShaderProgram"><a id="glCreateShaderProgram"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCreateShaderProgramv — create a stand-alone program from an array of null-terminated source code strings</p></div><div class="refsynopsisdiv" title="C Specification"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" class="funcprototype-table"><tr><td><code class="funcdef">GLuint <b class="fsfunc">glCreateShaderProgramv</b>(</code></td><td>GLenum <var class="pdparam">type</var>, </td></tr><tr><td> </td><td>GLsizei <var class="pdparam">count</var>, </td></tr><tr><td> </td><td>const char **<var class="pdparam">strings</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1" title="Parameters"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>type</code></em></span></dt><dd><p>
                 Specifies the type of shader to create.
             </p></dd><dt><span class="term"><em class="parameter"><code>count</code></em></span></dt><dd><p>
                 Specifies the number of source code strings in the array <em class="parameter"><code>strings</code></em>.
@@ -13,13 +13,13 @@
             refers to an array of <em class="parameter"><code>count</code></em> strings from which to create the shader executables.
        </p><p>
             <code class="function">glCreateShaderProgram</code> is equivalent (assuming no errors are generated) to:
-       </p><pre class="programlisting">    const uint shader = glCreateShader(type);
+       </p><pre class="programlisting">    const GLuint shader = glCreateShader(type);
     if (shader) {
         glShaderSource(shader, count, strings, NULL);
         glCompileShader(shader);
-        const uint program = glCreateProgram();
+        const GLuint program = glCreateProgram();
         if (program) {
-            int compiled = GL_FALSE;
+            GLint compiled = GL_FALSE;
             glGetShaderiv(shader, GL_COMPILE_STATUS, &amp;compiled);
             glProgramParameteri(program, GL_PROGRAM_SEPARABLE, GL_TRUE);
             if (compiled) {
@@ -33,7 +33,10 @@
         return program;
     } else {
         return 0;
-    }</pre></div><div class="refsect1" title="Errors"><a id="errors"></a><h2>Errors</h2><p>
+    }</pre><p>
+        The program object created by <code class="function">glCreateShaderProgram</code> has its <code class="constant">GL_PROGRAM_SEPARABLE</code>
+        status set to <code class="constant">GL_TRUE</code>.
+    </p></div><div class="refsect1" title="Errors"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>pipeline</code></em> is not
             a name previously returned from a call to <a class="citerefentry" href="glGenProgramPipelines.xml"><span class="citerefentry"><span class="refentrytitle">glGenProgramPipelines</span></span></a>
             or if such a name has been deleted by a call to
@@ -42,11 +45,10 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>program</code></em> refers
             to a program object that has not been successfully linked.
         </p></div><div class="refsect1" title="See Also"><a id="seealso"></a><h2>See Also</h2><p>
-            <a class="citerefentry" href="glGenProgramPipelines.xml"><span class="citerefentry"><span class="refentrytitle">glGenProgramPipelines</span></span></a>,
-            <a class="citerefentry" href="glDeleteProgramPipelines.xml"><span class="citerefentry"><span class="refentrytitle">glDeleteProgramPipelines</span></span></a>,
-            <a class="citerefentry" href="glIsProgramPipeline.xml"><span class="citerefentry"><span class="refentrytitle">glIsProgramPipeline</span></span></a>,
-            <a class="citerefentry" href="glUseProgram.xml"><span class="citerefentry"><span class="refentrytitle">glUseProgram</span></span></a>,
-            <a class="citerefentry" href="glUniform.xml"><span class="citerefentry"><span class="refentrytitle">glUniform</span></span></a>
+            <a class="citerefentry" href="glCreateShader.xml"><span class="citerefentry"><span class="refentrytitle">glCreateShader</span></span></a>,
+            <a class="citerefentry" href="glCreateProgram.xml"><span class="citerefentry"><span class="refentrytitle">glCreateProgram</span></span></a>,
+            <a class="citerefentry" href="glCompileShader.xml"><span class="citerefentry"><span class="refentrytitle">glCompileShader</span></span></a>,
+            <a class="citerefentry" href="glLinkProgram.xml"><span class="citerefentry"><span class="refentrytitle">glLinkProgram</span></span></a>
         </p></div><div class="refsect1" title="Copyright"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2010 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 

@@ -66,8 +66,19 @@
             binary representation with <citerefentry><refentrytitle>glGetProgramBinary</refentrytitle></citerefentry>.
             The implementation may use this information to store information that may be useful for a future
             query of the program's binary. It is recommended to set <constant>GL_PROGRAM_BINARY_RETRIEVABLE_HINT</constant>
-            for the program to <constant>GL_TRUE</constant> before calling <constant>glLinkProgram</constant>, or
+            for the program to <constant>GL_TRUE</constant> before calling
+            <citerefentry><refentrytitle>glLinkProgram</refentrytitle></citerefentry>, and
             using the program at run-time if the binary is to be retrieved later.
+        </para>
+        <para>
+            If <parameter>pname</parameter> is <constant>GL_PROGRAM_SEPARABLE</constant>, <parameter>value</parameter>
+            must be <constant>GL_TRUE</constant> or <constant>GL_FALSE</constant> and indicates whether
+            <parameter>program</parameter> can be bound to individual pipeline stages via
+            <citerefentry><refentrytitle>glUseProgramStages</refentrytitle></citerefentry>. A program's
+            <constant>GL_PROGRAM_SEPARABLE</constant> parameter must be set to <constant>GL_TRUE</constant>
+            <emphasis>before</emphasis> <citerefentry><refentrytitle>glLinkProgram</refentrytitle></citerefentry>
+            is called in order for it to be usable with a program pipeline object. The initial state of
+            <constant>GL_PROGRAM_SEPARABLE</constant> is <constant>GL_FALSE</constant>.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

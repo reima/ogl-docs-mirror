@@ -41,7 +41,7 @@
             <function>glIsTransformFeedback</function> returns <constant>GL_TRUE</constant> if <parameter>id</parameter> is currently the name of a transform feedback
             object. If <parameter>id</parameter> is zero, or if <constant>id</constant> is not the name of a transform feedback object, or if an error
             occurs, <function>glIsTransformFeedback</function> returns <constant>GL_FALSE</constant>. If <parameter>id</parameter> is a name returned by
-            <citerefentry><refentrytitle>glGenTransformFeedbacks</refentrytitle></citerefentry>, by that has not yet been bound through a call to
+            <citerefentry><refentrytitle>glGenTransformFeedbacks</refentrytitle></citerefentry>, but that has not yet been bound through a call to
             <citerefentry><refentrytitle>glBindTransformFeedback</refentrytitle></citerefentry>, then the name is not a transform feedback object and <function>glIsTransformFeedback</function>
             returns <constant>GL_FALSE</constant>.
         </para>

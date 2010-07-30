@@ -221,7 +221,8 @@
 <programlisting><![CDATA[    void glViewportIndexedf(GLuint index, GLfloat x, GLfloat y, GLfloat w, GLfloat h)
     {
         const float v[4]  = { x, y, w, h };
-        glViewportArrayv(index, 1, v);}]]></programlisting>
+        glViewportArrayv(index, 1, v);
+    }]]></programlisting>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
         <para>

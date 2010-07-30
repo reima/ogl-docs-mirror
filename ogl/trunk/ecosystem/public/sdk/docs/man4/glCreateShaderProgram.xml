@@ -13,13 +13,13 @@
         <manvolnum>3G</manvolnum>
     </refmeta>
     <refnamediv>
-        <refname>glCreateShaderProgram</refname>
+        <refname>glCreateShaderProgramv</refname>
         <refpurpose>create a stand-alone program from an array of null-terminated source code strings</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef>GLuint <function>glCreateShaderProgram</function></funcdef>
+                <funcdef>GLuint <function>glCreateShaderProgramv</function></funcdef>
                 <paramdef>GLenum <parameter>type</parameter></paramdef>
                 <paramdef>GLsizei <parameter>count</parameter></paramdef>
                 <paramdef>const char **<parameter>strings</parameter></paramdef>
@@ -63,13 +63,13 @@
        <para>
             <function>glCreateShaderProgram</function> is equivalent (assuming no errors are generated) to:
        </para>
-<programlisting><![CDATA[    const uint shader = glCreateShader(type);
+<programlisting><![CDATA[    const GLuint shader = glCreateShader(type);
     if (shader) {
         glShaderSource(shader, count, strings, NULL);
         glCompileShader(shader);
-        const uint program = glCreateProgram();
+        const GLuint program = glCreateProgram();
         if (program) {
-            int compiled = GL_FALSE;
+            GLint compiled = GL_FALSE;
             glGetShaderiv(shader, GL_COMPILE_STATUS, &compiled);
             glProgramParameteri(program, GL_PROGRAM_SEPARABLE, GL_TRUE);
             if (compiled) {

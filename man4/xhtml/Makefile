@@ -7,12 +7,15 @@ SED	= sed
 # Location of locally customized stylesheet, which imports
 # the Docbook modular stylesheets, and specifically the
 # stylesheet to convert Docbook+MathML => XHTML+MathML
-DB2XHTML = ../../mancommon/opengl-man.xsl
+DB2XHTML = opengl-man.xsl
+# ../../mancommon/opengl-man.xsl
 
 .SUFFIXES: .gl .xml .html .xhtml .ck.xhtml .tex .pdf .3G .tar .tar.gz
 .PHONY: man html pdf tex
 
-%.xml: ../%.xml ../../mancommon/opengl-man.xsl
+# ../../mancommon/opengl-man.xsl
+
+%.xml: ../%.xml $(DB2XHTML)
 	$(XSLT) --xinclude -o $@.tmp $(DB2XHTML) $<
 	$(SED) 's/<?xml-stylesheet/<!-- saved from url=(0013)about:internet -->\n<?xml-stylesheet/g' $@.tmp | \
 	    $(SED) 's#http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd#xhtml1-transitional.dtd#g' > $@
@@ -101,7 +104,11 @@ GL41XML = \
     $(GL_ARB_ES2_compatibility_entries) \
     $(GL_ARB_separate_shader_objects_entries)
 
-OTHERXML = \
+UNMODIFIEDXML = \
+    glActiveTexture.xml \
+    glAttachShader.xml \
+    glBeginConditionalRender.xml \
+    glBeginQuery.xml \
     glBeginTransformFeedback.xml \
     glBindAttribLocation.xml \
     glBindBuffer.xml \
@@ -171,7 +178,6 @@ OTHERXML = \
     glDrawRangeElements.xml \
     glDrawRangeElementsBaseVertex.xml \
     glEnable.xml \
-    glEnablei.xml \
     glEnableVertexAttribArray.xml \
     glEndQuery.xml \
     glFenceSync.xml \
@@ -180,9 +186,6 @@ OTHERXML = \
     glFlushMappedBufferRange.xml \
     glFramebufferRenderbuffer.xml \
     glFramebufferTexture.xml \
-    glFramebufferTexture1D.xml \
-    glFramebufferTexture2D.xml \
-    glFramebufferTexture3D.xml \
     glFramebufferTextureFace.xml \
     glFramebufferTextureLayer.xml \
     glFrontFace.xml \
@@ -294,7 +297,9 @@ OTHERXML = \
     glViewport.xml \
     glWaitSync.xml
 
-XML    = $(GL41XML) $(GL4XML) $(MODIFIEDFORGL4XML)
+MODIFIEDXML = \
+
+XML    = $(GL4XML) $(GL41XML) $(MODIFIEDFORGL4XML) $(UNMODIFIEDXML)
 
 default: $(XML)
 

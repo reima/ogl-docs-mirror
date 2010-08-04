@@ -45,6 +45,7 @@
             <constant>GL_ACTIVE_UNIFORM_BLOCKS</constant>,
             <constant>GL_ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH</constant>,
             <constant>GL_ACTIVE_UNIFORM_MAX_LENGTH</constant>,
+            <constant>GL_PROGRAM_BINARY_LENGTH</constant>,
             <constant>GL_TRANSFORM_FEEDBACK_BUFFER_MODE</constant>,
             <constant>GL_TRANSFORM_FEEDBACK_VARYINGS</constant>,
             <constant>GL_TRANSFORM_FEEDBACK_VARYING_MAX_LENGTH</constant>,
@@ -183,6 +184,20 @@
             character buffer required to store the longest
             uniform variable name). If no active uniform
             variables exist, 0 is returned.</para>
+        </listitem>
+        </varlistentry>
+
+        <varlistentry>
+        <term><constant>GL_PROGRAM_BINARY_LENGTH</constant></term>
+        <listitem>
+            <para>
+            </para>
+            <para> <parameter>params</parameter> returns the
+            length of the program binary, in bytes that will be returned by
+            a call to <citerefentry><refentrytitle>glGetProgramBinary</refentrytitle></citerefentry>.
+            When a progam's <constant>GL_LINK_STATUS</constant> is <constant>GL_FALSE</constant>,
+            its program binary length is zero.
+            </para>
         </listitem>
         </varlistentry>
 

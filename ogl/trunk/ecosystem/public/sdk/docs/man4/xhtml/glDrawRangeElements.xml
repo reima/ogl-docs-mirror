@@ -13,8 +13,8 @@
                     <code class="constant">GL_TRIANGLE_STRIP</code>,
                     <code class="constant">GL_TRIANGLE_FAN</code>,
                     <code class="constant">GL_TRIANGLES</code>,
-                    <code class="constant">GL_TRIANGLE_STRIP_ADJACENCY</code> and
-                    <code class="constant">GL_TRIANGLES_ADJACENCY</code>
+                    <code class="constant">GL_TRIANGLE_STRIP_ADJACENCY</code>,
+                    <code class="constant">GL_TRIANGLES_ADJACENCY</code> and <code class="constant">GL_PATCHES</code>
                     are accepted.
                 </p></dd><dt><span class="term"><em class="parameter"><code>start</code></em></span></dt><dd><p>
                     Specifies the minimum array index contained in <em class="parameter"><code>indices</code></em>.

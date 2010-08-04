@@ -80,7 +80,8 @@ GL_ARB_separate_shader_objects_entries = \
     glIsProgramPipeline.xml \
     glGetProgramPipeline.xml \
     glValidateProgramPipeline.xml \
-    glGetProgramPipelineInfoLog.xml
+    glGetProgramPipelineInfoLog.xml \
+    glProgramUniform.xml
 
 MODIFIEDFORGL4XML = \
     glClearDepth.xml \

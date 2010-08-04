@@ -15,6 +15,7 @@
             <code class="constant">GL_ACTIVE_UNIFORM_BLOCKS</code>,
             <code class="constant">GL_ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH</code>,
             <code class="constant">GL_ACTIVE_UNIFORM_MAX_LENGTH</code>,
+            <code class="constant">GL_PROGRAM_BINARY_LENGTH</code>,
             <code class="constant">GL_TRANSFORM_FEEDBACK_BUFFER_MODE</code>,
             <code class="constant">GL_TRANSFORM_FEEDBACK_VARYINGS</code>,
             <code class="constant">GL_TRANSFORM_FEEDBACK_VARYING_MAX_LENGTH</code>,
@@ -69,7 +70,13 @@
             null termination character (i.e., the size of the
             character buffer required to store the longest
             uniform variable name). If no active uniform
-            variables exist, 0 is returned.</p></dd><dt><span class="term"><code class="constant">GL_TRANSFORM_FEEDBACK_BUFFER_MODE</code></span></dt><dd><p>
+            variables exist, 0 is returned.</p></dd><dt><span class="term"><code class="constant">GL_PROGRAM_BINARY_LENGTH</code></span></dt><dd><p>
+            </p><p> <em class="parameter"><code>params</code></em> returns the
+            length of the program binary, in bytes that will be returned by
+            a call to <a href="glGetProgramBinary.xml"><span class="citerefentry"><span class="refentrytitle">glGetProgramBinary</span></span></a>.
+            When a progam's <code class="constant">GL_LINK_STATUS</code> is <code class="constant">GL_FALSE</code>,
+            its program binary length is zero.
+            </p></dd><dt><span class="term"><code class="constant">GL_TRANSFORM_FEEDBACK_BUFFER_MODE</code></span></dt><dd><p>
             </p><p> <em class="parameter"><code>params</code></em> returns a symbolic constant
             indicating the buffer mode used when transform feedback is active.
             This may be <code class="constant">GL_SEPARATE_ATTRIBS</code> or

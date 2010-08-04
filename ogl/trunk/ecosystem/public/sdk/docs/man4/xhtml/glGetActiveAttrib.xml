@@ -56,8 +56,9 @@
     and this count does not include the null termination character.
     If the length of the returned string is not required, a value of
     <code class="constant">NULL</code> can be passed in the
-    <em class="parameter"><code>length</code></em> argument.</p><p>The <em class="parameter"><code>type</code></em> argument will return a
-    pointer to the attribute variable's data type. The symbolic
+    <em class="parameter"><code>length</code></em> argument.</p><p>The <em class="parameter"><code>type</code></em> argument specifies a
+    pointer to a variable into which the attribute variable's data type
+    will be written. The symbolic
     constants <code class="constant">GL_FLOAT</code>,
     <code class="constant">GL_FLOAT_VEC2</code>,
     <code class="constant">GL_FLOAT_VEC3</code>,
@@ -77,8 +78,22 @@
     <code class="constant">GL_INT_VEC4</code>,
     <code class="constant">GL_UNSIGNED_INT_VEC</code>,
     <code class="constant">GL_UNSIGNED_INT_VEC2</code>,
-    <code class="constant">GL_UNSIGNED_INT_VEC3</code>, or
-    <code class="constant">GL_UNSIGNED_INT_VEC4</code> may be returned. The
+    <code class="constant">GL_UNSIGNED_INT_VEC3</code>,
+    <code class="constant">GL_UNSIGNED_INT_VEC4</code>,
+    <code class="constant">DOUBLE</code>,
+    <code class="constant">DOUBLE_VEC2</code>,
+    <code class="constant">DOUBLE_VEC3</code>,
+    <code class="constant">DOUBLE_VEC4</code>,
+    <code class="constant">DOUBLE_MAT2</code>,
+    <code class="constant">DOUBLE_MAT3</code>,
+    <code class="constant">DOUBLE_MAT4</code>,
+    <code class="constant">DOUBLE_MAT2x3</code>,
+    <code class="constant">DOUBLE_MAT2x4</code>,
+    <code class="constant">DOUBLE_MAT3x2</code>,
+    <code class="constant">DOUBLE_MAT3x4</code>,
+    <code class="constant">DOUBLE_MAT4x2</code>, or
+    <code class="constant">DOUBLE_MAT4x3</code>
+     may be returned. The
     <em class="parameter"><code>size</code></em> argument will return the size of the
     attribute, in units of the type returned in
     <em class="parameter"><code>type</code></em>.</p><p>The list of active attribute variables may include both

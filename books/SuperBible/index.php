@@ -7,39 +7,45 @@
 <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
 <H1>OpenGL SuperBible</H1>
 <H2>Comprehensive Tutorial and Reference</H2>
-<H4>by Richard S. Wright, Benjamin Lipchak, and Nicholas Haemel</H4>
+<H4>by Richard S. Wright, Nicholas Haemel, Graham Sellers and Benjamin Lipchak</H4>
 
 <TABLE CELLSPACING="20"><TR>
 <TD><IMG SRC="images/cover1.gif" ALT="First Edition" WIDTH="145" HEIGHT="186"></TD>
 <TD><IMG SRC="images/cover2.gif" ALT="Second Edition" WIDTH="150" HEIGHT="186"></TD>
 <TD><IMG SRC="images/cover3.jpg" ALT="Third Edition" WIDTH="150" HEIGHT="186"></TD>
-<TD><A HREF="http://www.amazon.com/exec/obidos/ASIN/0321498828/khongrou-20"><IMG SRC="images/cover4.jpg" ALT="Fourth Edition" WIDTH="151" HEIGHT="186"></A></TD>
+<TD><IMG SRC="images/cover4.jpg" ALT="Fourth Edition" WIDTH="151" HEIGHT="186"></TD>
+<TD><A HREF="http://www.amazon.com/exec/obidos/ASIN/0321712617/khongrou-20"><IMG SRC="images/cover5.jpg" ALT="Fifth Edition" WIDTH="151" HEIGHT="186"></A></TD>
 </TR></TABLE>
 
-<P>The fourth edition of OpenGL&reg; SuperBible, the newest member of the Addison Wesley 
+<P>The fifth edition of OpenGL&reg; SuperBible, the newest member of the Addison Wesley 
 OpenGL Technical Library, is now available!</P>
 
-<P>OpenGL SuperBible, Fourth Edition, begins by illuminating the core techniques of 
-&quot;classic&quot; OpenGL graphics programming, from drawing in space to geometric 
-transformations, from lighting to texture mapping. The authors cover newer OpenGL 
-capabilities, including OpenGL 2.1’s powerful programmable pipeline, vertex and fragment 
-shaders, and advanced buffers. They also present thorough, up-to-date introductions to 
-OpenGL implementations on multiple platforms, including Windows, Mac OS X, GNU/Linux, 
-UNIX, and embedded systems.</P>
+<P>OpenGL SuperBible, Fifth Edition is the definitive programmer’s guide, tutorial, and
+reference for the world’s leading 3D API for real-time computer graphics, OpenGL 3.3.
+The best all-around introduction to OpenGL for developers at all levels of experience,
+it clearly explains both the API and essential associated programming concepts. Readers
+will find up-to-date, hands-on guidance on all facets of modern OpenGL development,
+including transformations, texture mapping, shaders, advanced buffers, geometry management,
+and much more. Fully revised to reflect ARB’s official OpenGL 3.3 specification, this
+edition also contains a new start-to-finish tutorial on OpenGL for the iPhone, iPod touch, and iPad.</P>
 
 <P>Coverage includes:
 <UL>
-<LI>An entirely new chapter on OpenGL ES programming for handhelds</LI>
-<LI>Completely rewritten chapters on OpenGL for Mac OS X and GNU/Linux</LI>
-<LI>Up-to-the-minute coverage of OpenGL on Windows Vista</LI>
-<LI>New material on floating-point color buffers and off-screen rendering</LI>
-<LI>In-depth introductions to 3D modeling and object composition</LI>
-<LI>Expert techniques for utilizing OpenGL’s programmable shading language</LI>
-<LI>Thorough coverage of curves, surfaces, interactive graphics, textures, shadows, and much more</LI>
-<LI>A fully updated API reference, and an all-new section of full-color images</LI>
+
+
+<LI>A practical introduction to the essentials of real-time 3D graphics</LI>
+<LI>Core OpenGL 3.X techniques for rendering, transformations, and texturing</LI>
+<LI>Using both stock and custom shaders—and starting to write your own</LI>
+<LI>Cross-platform OpenGL: Windows (including Windows 7), Mac OS X, GNU/Linux, UNIX, and embedded systems</LI>
+<LI>OpenGL programming for iPhone, iPod touch, and iPad: step-by-step guidance and complete example programs</LI>
+<LI>Advanced buffer techniques, including full-definition rendering with floating point buffers and textures</LI>
+<LI>Fragment operations: controlling the end of the graphics pipeline</LI>
+<LI>Advanced shader usage and geometry management</LI>
+<LI>A fully updated API reference, now based on the official ARB (Core) OpenGL 3.3 manual pages</LI>
+<LI>New bonus materials and sample code on a companion Web site</LI>
 </UL>
 
-<H2>Sample Code</H2>
+<H2>Sample Code From Fourth Edition</H2>
 
 <TABLE>
 <TR><TD>Complete source code for all platforms (182 MB):</TD><TD><A HREF="http://www.starstonesoftware.com/files/SB-AllSource.zip">SB-AllSource.zip</A></TD></TR>

@@ -21,7 +21,7 @@
             <funcprototype>
                 <funcdef>void <function>glBindSampler</function></funcdef>
                 <paramdef>GLuint <parameter>unit</parameter></paramdef>
-                <paramdef>GLuint <parameter>texture</parameter></paramdef>
+                <paramdef>GLuint <parameter>sampler</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>

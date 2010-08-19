@@ -71,7 +71,7 @@
             <term><parameter>layer</parameter></term>
             <listitem>
                 <para>
-                    Specifies the level of <parameter>texture</parameter> to attach.
+                    Specifies the layer of <parameter>texture</parameter> to attach.
                 </para>
             </listitem>
         </varlistentry>

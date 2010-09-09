@@ -228,7 +228,7 @@
                         <entry align="left"><constant>GL_RG32F</constant></entry>
                         <entry align="left">float</entry>
                         <entry align="left">2</entry>
-                        <entry align="left">YES</entry>
+                        <entry align="left">NO</entry>
                         <entry align="center">R</entry>
                         <entry align="center">G</entry>
                         <entry align="center">0</entry>

@@ -8,10 +8,10 @@
 <H1>Documentation</H1>
 
 <P>The <A HREF="./man/">reference pages</A> (aka man pages) include complete descriptions of all OpenGL,
-GLU, and GLX entry points. They cover in detail how to use the commands, all of the parameters you can 
+GLU, and GLX entry points. They cover in detail how to use the commands, all of the parameters you can
 pass in, and all of the error conditions to avoid.</P>
 
-<P>The <A TARGET="_new" HREF="http://www.khronos.org/files/opengl-quick-reference-card.pdf">GLSL Quick Reference Guide</A> 
+<P>The <A TARGET="_new" HREF="http://www.khronos.org/files/opengl-quick-reference-card.pdf">GLSL Quick Reference Guide</A>
 is a one-page PDF providing an instant reference of GLSL's data types, built-in variables and functions.</P>
 
 <P> The <A TARGET="_new" HREF="http://www.opengl.org/registry/"> OpenGL API
@@ -30,7 +30,7 @@ Specification. Most new features are first introduced as extensions and
 only later become part of a core OpenGL version, so using extensions is
 important to staying current with the evolution of the API. </P>
 
-<P><FONT SIZE="-2">Copyright &copy; 2007-2009 Khronos Group. All rights reserved.</FONT></P>
+<P><FONT SIZE="-2">Copyright &copy; 2007-2010 Khronos Group. All rights reserved.</FONT></P>
 
 <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 </BODY>

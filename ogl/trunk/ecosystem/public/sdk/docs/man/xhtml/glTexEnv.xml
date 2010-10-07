@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glTexEnv</title><meta name="generator" content="DocBook XSL Stylesheets V1.73.2" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glTexEnv"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glTexEnv — set texture environment parameters</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glTexEnvf</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div><p></p><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glTexEnvi</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">param</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glTexEnv</title><meta name="generator" content="DocBook XSL Stylesheets V1.75.2" /></head><body><div class="refentry" title="glTexEnv"><a id="glTexEnv"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glTexEnv — set texture environment parameters</p></div><div class="refsynopsisdiv" title="C Specification"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" class="funcprototype-table"><tr><td><code class="funcdef">void <b class="fsfunc">glTexEnvf</b>(</code></td><td>GLenum <var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat <var class="pdparam">param</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div><p></p><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" class="funcprototype-table"><tr><td><code class="funcdef">void <b class="fsfunc">glTexEnvi</b>(</code></td><td>GLenum <var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint <var class="pdparam">param</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1" title="Parameters"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies a texture environment.
                     May be <code class="constant">GL_TEXTURE_ENV</code>, <code class="constant">GL_TEXTURE_FILTER_CONTROL</code> or <code class="constant">GL_POINT_SPRITE</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
@@ -33,7 +34,7 @@
                     a single boolean value for the point sprite texture coordinate replacement,
                     a single floating-point value for the texture level-of-detail bias,
                     or 1.0, 2.0, or 4.0 when specifying the <code class="constant">GL_RGB_SCALE</code> or <code class="constant">GL_ALPHA_SCALE</code>.
-                </p></dd></dl></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glTexEnvfv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLfloat *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glTexEnviv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLint *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters2"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+                </p></dd></dl></div></div><div class="refsynopsisdiv" title="C Specification"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" class="funcprototype-table"><tr><td><code class="funcdef">void <b class="fsfunc">glTexEnvfv</b>(</code></td><td>GLenum <var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLfloat * <var class="pdparam">params</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" class="funcprototype-table"><tr><td><code class="funcdef">void <b class="fsfunc">glTexEnviv</b>(</code></td><td>GLenum <var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>const GLint * <var class="pdparam">params</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1" title="Parameters"><a id="parameters2"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies a texture environment.
                     May be either <code class="constant">GL_TEXTURE_ENV</code>, or <code class="constant">GL_TEXTURE_FILTER_CONTROL</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
@@ -44,13 +45,13 @@
                     Specifies a pointer to a parameter array that contains
                     either a single symbolic constant, single floating-point number, or an RGBA
                     color.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" title="Description"><a id="description"></a><h2>Description</h2><p>
             A texture environment specifies how texture values are interpreted when a
             fragment is textured.  When <em class="parameter"><code>target</code></em> is <code class="constant">GL_TEXTURE_FILTER_CONTROL</code>,
             <em class="parameter"><code>pname</code></em> must be <code class="constant">GL_TEXTURE_LOD_BIAS</code>.  When <em class="parameter"><code>target</code></em> is
             <code class="constant">GL_TEXTURE_ENV</code>, <em class="parameter"><code>pname</code></em> can be <code class="constant">GL_TEXTURE_ENV_MODE</code>,
             <code class="constant">GL_TEXTURE_ENV_COLOR</code>, <code class="constant">GL_COMBINE_RGB</code>, <code class="constant">GL_COMBINE_ALPHA</code>,
-            <code class="constant">GL_RGB_SCALE</code>, <code class="constant">GL_ALPHA_SCALE</code>, 
+            <code class="constant">GL_RGB_SCALE</code>, <code class="constant">GL_ALPHA_SCALE</code>,
             <code class="constant">GL_SRC0_RGB</code>, <code class="constant">GL_SRC1_RGB</code>, <code class="constant">GL_SRC2_RGB</code>,
             <code class="constant">GL_SRC0_ALPHA</code>, <code class="constant">GL_SRC1_ALPHA</code>, or <code class="constant">GL_SRC2_ALPHA</code>.
         </p><p>
@@ -78,7 +79,7 @@
             <mml:mi mathvariant="italic">t</mml:mi></mml:msub></mml:math>,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:msub><mml:mi mathvariant="italic">I</mml:mi>
             <mml:mi mathvariant="italic">t</mml:mi></mml:msub></mml:math>
-            to texture source components.  
+            to texture source components.
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:msub><mml:mi mathvariant="italic">C</mml:mi>
             <mml:mi mathvariant="italic">s</mml:mi></mml:msub></mml:math>
             and
@@ -177,17 +178,17 @@
             The following table shows how the RGBA color is produced for each
             of the first five texture functions that can be chosen.
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">C</mml:mi></mml:math>
-            is a triple of color values (RGB) and 
+            is a triple of color values (RGB) and
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">A</mml:mi></mml:math>
             is the associated alpha value.
             RGBA values extracted from a texture image are in the range [0,1].
-            The subscript 
+            The subscript
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">p</mml:mi></mml:math>
             refers to the color computed from the previous texture stage (or the incoming fragment if processing texture stage 0),
-            the subscript 
+            the subscript
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">s</mml:mi></mml:math>
             to the texture source color,
-            the subscript 
+            the subscript
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">c</mml:mi></mml:math>
             to the texture environment color,
             and the subscript
@@ -1109,12 +1110,12 @@
             <code class="constant">GL_SRC0_RGB</code>, <code class="constant">GL_SRC1_RGB</code>, <code class="constant">GL_SRC2_RGB</code>,
             <code class="constant">GL_SRC0_ALPHA</code>, <code class="constant">GL_SRC1_ALPHA</code>, and <code class="constant">GL_SRC2_ALPHA</code>,
             are combined to produce a final texture color. In the following tables,
-            <code class="constant">GL_SRC0_c</code> is represented by 
+            <code class="constant">GL_SRC0_c</code> is represented by
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg0</mml:mi></mml:math>,
             <code class="constant">GL_SRC1_c</code> is
-            represented by 
+            represented by
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg1</mml:mi></mml:math>,
-            and <code class="constant">GL_SRC2_c</code> is represented by 
+            and <code class="constant">GL_SRC2_c</code> is represented by
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg2</mml:mi></mml:math>.
         </p><p>
             <code class="constant">GL_COMBINE_RGB</code> accepts any of <code class="constant">GL_REPLACE</code>, <code class="constant">GL_MODULATE</code>,
@@ -1202,9 +1203,11 @@
                         </mml:math>
                         </td></tr><tr><td align="left">
                         <code class="constant">GL_DOT3_RGB</code>
+                        or
+                        <code class="constant">GL_DOT3_RGBA</code>
                         </td><td align="left">
+                        
                         <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                            
                             <mml:mrow>
                                 <mml:mn>4</mml:mn>
                                 <mml:mo>×</mml:mo>
@@ -1212,98 +1215,90 @@
                                     <mml:mrow>
                                         <mml:mfenced open="(" close=")">
                                             <mml:mrow>
-                                                <mml:mfenced open="" close="">
-                                                    <mml:msub><mml:mi mathvariant="italic">Arg0</mml:mi>
-                                                    <mml:mi mathvariant="italic">r</mml:mi>
-                                                    </mml:msub>
+                                                <mml:mfenced open="(" close=")">
+                                                    <mml:mrow>
+                                                        <mml:mfenced open="" close="">
+                                                            <mml:msub><mml:mi mathvariant="italic">Arg0</mml:mi>
+                                                            <mml:mi mathvariant="italic">r</mml:mi>
+                                                            </mml:msub>
+                                                        </mml:mfenced>
+                                                        <mml:mo>-</mml:mo>
+                                                        <mml:mn>0.5</mml:mn>
+                                                    </mml:mrow>
                                                 </mml:mfenced>
-                                                <mml:mo>-</mml:mo>
-                                                <mml:mn>0.5</mml:mn>
+                                                <mml:mo>×</mml:mo>
+                                                <mml:mfenced open="(" close=")">
+                                                    <mml:mrow>
+                                                        <mml:mfenced open="" close="">
+                                                            <mml:msub><mml:mi mathvariant="italic">Arg1</mml:mi>
+                                                            <mml:mi mathvariant="italic">r</mml:mi>
+                                                            </mml:msub>
+                                                        </mml:mfenced>
+                                                        <mml:mo>-</mml:mo>
+                                                        <mml:mn>0.5</mml:mn>
+                                                    </mml:mrow>
+                                                </mml:mfenced>
                                             </mml:mrow>
                                         </mml:mfenced>
-                                        <mml:mo>×</mml:mo>
+                                        <mml:mo>+</mml:mo>
                                         <mml:mfenced open="(" close=")">
                                             <mml:mrow>
-                                                <mml:mfenced open="" close="">
-                                                    <mml:msub><mml:mi mathvariant="italic">Arg1</mml:mi>
-                                                    <mml:mi mathvariant="italic">r</mml:mi>
-                                                    </mml:msub>
+                                                <mml:mfenced open="(" close=")">
+                                                    <mml:mrow>
+                                                        <mml:mfenced open="" close="">
+                                                            <mml:msub><mml:mi mathvariant="italic">Arg0</mml:mi>
+                                                            <mml:mi mathvariant="italic">g</mml:mi>
+                                                            </mml:msub>
+                                                        </mml:mfenced>
+                                                        <mml:mo>-</mml:mo>
+                                                        <mml:mn>0.5</mml:mn>
+                                                    </mml:mrow>
                                                 </mml:mfenced>
-                                                <mml:mo>-</mml:mo>
-                                                <mml:mn>0.5</mml:mn>
+                                                <mml:mo>×</mml:mo>
+                                                <mml:mfenced open="(" close=")">
+                                                    <mml:mrow>
+                                                        <mml:mfenced open="" close="">
+                                                            <mml:msub><mml:mi mathvariant="italic">Arg1</mml:mi>
+                                                            <mml:mi mathvariant="italic">g</mml:mi>
+                                                            </mml:msub>
+                                                        </mml:mfenced>
+                                                        <mml:mo>-</mml:mo>
+                                                        <mml:mn>0.5</mml:mn>
+                                                    </mml:mrow>
+                                                </mml:mfenced>
+                                            </mml:mrow>
+                                        </mml:mfenced>
+                                        <mml:mo>+</mml:mo>
+                                        <mml:mfenced open="(" close=")">
+                                            <mml:mrow>
+                                                <mml:mfenced open="(" close=")">
+                                                    <mml:mrow>
+                                                        <mml:mfenced open="" close="">
+                                                            <mml:msub><mml:mi mathvariant="italic">Arg0</mml:mi>
+                                                            <mml:mi mathvariant="italic">b</mml:mi>
+                                                            </mml:msub>
+                                                        </mml:mfenced>
+                                                        <mml:mo>-</mml:mo>
+                                                        <mml:mn>0.5</mml:mn>
+                                                    </mml:mrow>
+                                                </mml:mfenced>
+                                                <mml:mo>×</mml:mo>
+                                                <mml:mfenced open="(" close=")">
+                                                    <mml:mrow>
+                                                        <mml:mfenced open="" close="">
+                                                            <mml:msub><mml:mi mathvariant="italic">Arg1</mml:mi>
+                                                            <mml:mi mathvariant="italic">b</mml:mi>
+                                                            </mml:msub>
+                                                        </mml:mfenced>
+                                                        <mml:mo>-</mml:mo>
+                                                        <mml:mn>0.5</mml:mn>
+                                                    </mml:mrow>
+                                                </mml:mfenced>
                                             </mml:mrow>
                                         </mml:mfenced>
                                     </mml:mrow>
                                 </mml:mfenced>
                             </mml:mrow>
-                        </mml:math>
-                        +
-                        </td></tr><tr><td align="left">
-                        or
-                        </td><td align="left">
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                            
-                            <mml:mfenced open="(" close=")">
-                                <mml:mrow>
-                                    <mml:mfenced open="(" close=")">
-                                        <mml:mrow>
-                                            <mml:mfenced open="" close="">
-                                                <mml:msub><mml:mi mathvariant="italic">Arg0</mml:mi>
-                                                <mml:mi mathvariant="italic">g</mml:mi>
-                                                </mml:msub>
-                                            </mml:mfenced>
-                                            <mml:mo>-</mml:mo>
-                                            <mml:mn>0.5</mml:mn>
-                                        </mml:mrow>
-                                    </mml:mfenced>
-                                    <mml:mo>×</mml:mo>
-                                    <mml:mfenced open="(" close=")">
-                                        <mml:mrow>
-                                            <mml:mfenced open="" close="">
-                                                <mml:msub><mml:mi mathvariant="italic">Arg1</mml:mi>
-                                                <mml:mi mathvariant="italic">g</mml:mi>
-                                                </mml:msub>
-                                            </mml:mfenced>
-                                            <mml:mo>-</mml:mo>
-                                            <mml:mn>0.5</mml:mn>
-                                        </mml:mrow>
-                                    </mml:mfenced>
-                                </mml:mrow>
-                            </mml:mfenced>
-                        </mml:math>
-                        +
-                        </td></tr><tr><td align="left">
-                        <code class="constant">GL_DOT3_RGBA</code>
-                        </td><td align="left">
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
-                            
-                            <mml:mfenced open="(" close=")">
-                                <mml:mrow>
-                                    <mml:mfenced open="(" close=")">
-                                        <mml:mrow>
-                                            <mml:mfenced open="" close="">
-                                                <mml:msub><mml:mi mathvariant="italic">Arg0</mml:mi>
-                                                <mml:mi mathvariant="italic">b</mml:mi>
-                                                </mml:msub>
-                                            </mml:mfenced>
-                                            <mml:mo>-</mml:mo>
-                                            <mml:mn>0.5</mml:mn>
-                                        </mml:mrow>
-                                    </mml:mfenced>
-                                    <mml:mo>×</mml:mo>
-                                    <mml:mfenced open="(" close=")">
-                                        <mml:mrow>
-                                            <mml:mfenced open="" close="">
-                                                <mml:msub><mml:mi mathvariant="italic">Arg1</mml:mi>
-                                                <mml:mi mathvariant="italic">b</mml:mi>
-                                                </mml:msub>
-                                            </mml:mfenced>
-                                            <mml:mo>-</mml:mo>
-                                            <mml:mn>0.5</mml:mn>
-                                        </mml:mrow>
-                                    </mml:mfenced>
-                                </mml:mrow>
-                            </mml:mfenced>
                         </mml:math>
                         </td></tr></tbody></table></div><p>
             The scalar results for <code class="constant">GL_DOT3_RGB</code> and <code class="constant">GL_DOT3_RGBA</code> are placed
@@ -1394,7 +1389,7 @@
                             </mml:mrow>
                         </mml:math>
                         </td></tr></tbody></table></div><p>
-            In the following tables, the value 
+            In the following tables, the value
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
@@ -1402,7 +1397,7 @@
                 </mml:msub>
             </mml:math>
             represents the color sampled
-            from the currently bound texture, 
+            from the currently bound texture,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
@@ -1410,7 +1405,7 @@
                 </mml:msub>
             </mml:math>
             represents the constant
-            texture-environment color, 
+            texture-environment color,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
@@ -1418,7 +1413,7 @@
                 </mml:msub>
             </mml:math>
             represents the primary color of the
-            incoming fragment, and 
+            incoming fragment, and
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
@@ -1426,7 +1421,7 @@
                 </mml:msub>
             </mml:math>
             represents the color computed from the
-            previous texture stage or 
+            previous texture stage or
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
@@ -1439,20 +1434,20 @@
                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                 <mml:mi mathvariant="italic">s</mml:mi>
                 </mml:msub>
-            </mml:math>, 
+            </mml:math>,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                 <mml:mi mathvariant="italic">c</mml:mi>
                 </mml:msub>
-            </mml:math>, 
+            </mml:math>,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
                 <mml:mi mathvariant="italic">f</mml:mi>
                 </mml:msub>
             </mml:math>,
-            and 
+            and
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
@@ -1462,8 +1457,8 @@
             represent the respective
             alpha values.
         </p><p>
-            The following table describes the values assigned to 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg0</mml:mi></mml:math>, 
+            The following table describes the values assigned to
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg0</mml:mi></mml:math>,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg1</mml:mi></mml:math>,
             and
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg2</mml:mi></mml:math>
@@ -1761,14 +1756,14 @@
                             </mml:mrow>
                         </mml:math>
                         </td></tr></tbody></table></div><p>
-            For <code class="constant">GL_TEXTUREn</code> sources, 
+            For <code class="constant">GL_TEXTUREn</code> sources,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">C</mml:mi>
                 <mml:mi mathvariant="italic">s</mml:mi>
                 </mml:msub>
             </mml:math>
-            and 
+            and
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:msub><mml:mi mathvariant="italic">A</mml:mi>
@@ -1776,11 +1771,11 @@
                 </mml:msub>
             </mml:math>
             represent the color
-            and alpha, respectively, produced from texture stage 
+            and alpha, respectively, produced from texture stage
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">n</mml:mi></mml:math>.
         </p><p>
-            The follow table describes the values assigned to 
-            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg0</mml:mi></mml:math>, 
+            The follow table describes the values assigned to
+            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg0</mml:mi></mml:math>,
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg1</mml:mi></mml:math>,
             and
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">Arg2</mml:mi></mml:math>
@@ -1940,7 +1935,7 @@
                         </td></tr></tbody></table></div><p>
             The RGB and alpha results of the texture function are multipled by the
             values of <code class="constant">GL_RGB_SCALE</code> and <code class="constant">GL_ALPHA_SCALE</code>, respectively, and
-            clamped to the range 
+            clamped to the range
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mfenced open="[" close="]">
@@ -1971,9 +1966,9 @@
             <code class="constant">GL_TEXTURE_ENV_MODE</code> defaults to <code class="constant">GL_MODULATE</code> and
             <code class="constant">GL_TEXTURE_ENV_COLOR</code> defaults to (0, 0, 0, 0).
         </p><p>
-            If <em class="parameter"><code>target</code></em> is <code class="constant">GL_POINT_SPRITE</code> and <em class="parameter"><code>pname</code></em> is <code class="constant">GL_COORD_REPLACE</code>, the boolean value specified 
+            If <em class="parameter"><code>target</code></em> is <code class="constant">GL_POINT_SPRITE</code> and <em class="parameter"><code>pname</code></em> is <code class="constant">GL_COORD_REPLACE</code>, the boolean value specified
             is used to either enable or disable point sprite texture coordinate replacement. The default value is <code class="constant">GL_FALSE</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1" title="Notes"><a id="notes"></a><h2>Notes</h2><p>
             <code class="constant">GL_REPLACE</code> may only be used if the GL version is 1.1 or greater.
         </p><p>
             <code class="constant">GL_TEXTURE_FILTER_CONTROL</code> and <code class="constant">GL_TEXTURE_LOD_BIAS</code> may only be
@@ -1993,7 +1988,7 @@
         </p><p>
             <code class="constant">GL_POINT_SPRITE</code> and <code class="constant">GL_COORD_REPLACE</code> are available
             only if the GL version is 2.0 or greater.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1" title="Errors"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated when <em class="parameter"><code>target</code></em> or <em class="parameter"><code>pname</code></em> is not
             one of the accepted defined values,
             or when <em class="parameter"><code>params</code></em> should have a defined constant value
@@ -2007,9 +2002,9 @@
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glTexEnv</code>
             is executed between the execution of <a class="citerefentry" href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a class="citerefentry" href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1" title="Associated Gets"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
             <a class="citerefentry" href="glGetTexEnv.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexEnv</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1" title="See Also"><a id="seealso"></a><h2>See Also</h2><p>
             <a class="citerefentry" href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>,
             <a class="citerefentry" href="glCopyPixels.xml"><span class="citerefentry"><span class="refentrytitle">glCopyPixels</span></span></a>,
             <a class="citerefentry" href="glCopyTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage1D</span></span></a>,
@@ -2024,7 +2019,7 @@
             <a class="citerefentry" href="glTexSubImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage1D</span></span></a>,
             <a class="citerefentry" href="glTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>,
             <a class="citerefentry" href="glTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1" title="Copyright"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

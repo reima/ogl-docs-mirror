@@ -14,7 +14,7 @@
     </refmeta>
     <refnamediv>
         <refname>glBlitFramebuffer</refname>
-        <refpurpose>bind a vertex array object</refpurpose>
+        <refpurpose>copy a block of pixels from the read framebuffer to the draw framebuffer</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>C Specification</title>
         <funcsynopsis>

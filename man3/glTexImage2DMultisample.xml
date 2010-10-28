@@ -35,7 +35,7 @@
             <term><parameter>target</parameter></term>
             <listitem>
                 <para>
-                    Specifies the target of the operation. <parameter>target</parameter> must be <constant>GL_TEXTURE_2D_MULTISAMPLE_ARRAY</constant> or <constant>GL_PROXY_TEXTURE_2D_MULTISAMPLE_ARRAY</constant>.
+                    Specifies the target of the operation. <parameter>target</parameter> must be <constant>GL_TEXTURE_2D_MULTISAMPLE</constant> or <constant>GL_PROXY_TEXTURE_2D_MULTISAMPLE</constant>.
                 </para>
             </listitem>
         </varlistentry>

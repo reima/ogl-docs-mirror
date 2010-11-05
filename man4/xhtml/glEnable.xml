@@ -44,6 +44,17 @@
                         If enabled,
                         cull polygons based on their winding in window coordinates.
                         See <a href="glCullFace.xml"><span class="citerefentry"><span class="refentrytitle">glCullFace</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_DEPTH_CLAMP</code></span></dt><dd><p>
+                </p><p>
+                        If enabled,
+                        the
+                        
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+                            <mml:mo>-</mml:mo><mml:msub><mml:mi>w</mml:mi><mml:mi>c</mml:mi></mml:msub><mml:mo>≤</mml:mo><mml:msub><mml:mi>z</mml:mi><mml:mi>c</mml:mi></mml:msub><mml:mo>≤</mml:mo><mml:msub><mml:mi>w</mml:mi><mml:mi>c</mml:mi></mml:msub>
+                        </mml:math>
+                        plane equation is ignored by view volume clipping (effectively, there is no near or
+                        far plane clipping).
+                        See <a href="glDepthRange.xml"><span class="citerefentry"><span class="refentrytitle">glDepthRange</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_DEPTH_TEST</code></span></dt><dd><p>
                 </p><p>
                         If enabled,

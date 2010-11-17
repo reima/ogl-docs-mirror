@@ -59,12 +59,21 @@
                 </para>
             </listitem>
         </varlistentry>
+        <varlistentry>
+            <term><parameter>stream</parameter></term>
+            <listitem>
+                <para>
+                    Specifies the index of the transform feedback stream from which to retrieve a primitive count.
+                </para>
+            </listitem>
+        </varlistentry>
         </variablelist>
     </refsect1>
     <refsect1 id="description"><title>Description</title>
         <para>
             <function>glDrawTransformFeedbackStream</function> draws primitives of a type specified by <parameter>mode</parameter> using
-            a count retrieved from the transform feedback specified by <parameter>id</parameter>. Calling <function>glDrawTransformFeedbackStream</function>
+            a count retrieved from the transform feedback stream specified by <parameter>stream</parameter> of the transform feedback object
+            specified by <parameter>id</parameter>. Calling <function>glDrawTransformFeedbackStream</function>
             is equivalent to calling <citerefentry><refentrytitle>glDrawArrays</refentrytitle></citerefentry> with <parameter>mode</parameter>
             as specified, <parameter>first</parameter> set to zero, and <parameter>count</parameter> set to the number of vertices captured
             on vertex stream <parameter>stream</parameter> the last time transform feedback was active on the transform feedback object named

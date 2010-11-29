@@ -33,7 +33,7 @@
                 <para>
                     Specifies which texture unit to make active. The number
                     of texture units is implementation dependent, but must be at least
-                    two. <parameter>texture</parameter> must be one of 
+                    48. <parameter>texture</parameter> must be one of 
                     <constant>GL_TEXTURE<emphasis>i</emphasis></constant>,
                     where
                     <emphasis>i</emphasis> ranges from 0 (<constant>GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS</constant> - 1). 

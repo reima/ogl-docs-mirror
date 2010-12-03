@@ -1,11 +1,11 @@
 <html>
 <head>
 <title>Vertex Arrays - by CodeColony.de</title>
-<?php include("/home/virtual/opengl.org/var/www/html/inc/sdk_head.txt"); ?>
+<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_head.txt"); ?>
 </head>
 
 <body>
-<?php include("/home/virtual/opengl.org/var/www/html/inc/sdk_body_start.txt"); ?>
+<?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
 <h1>Vertex Arrays</h1>
 <h2>Before you start</h2>
 <p>

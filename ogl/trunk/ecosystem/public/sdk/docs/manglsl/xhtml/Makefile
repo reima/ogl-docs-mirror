@@ -89,7 +89,18 @@ Geometric_Functions = \
 
 Matrix_Functions = \
     matrixCompMult.xml \
-    outerProduct.xml
+    outerProduct.xml \
+    transpose.xml \
+    determinant.xml \
+    inverse.xml
+
+Vector_Relational_Functions = \
+    lessThan.xml \
+    lessThanEqual.xml \
+    greaterThan.xml \
+    greaterThanEqual.xml \
+    equal.xml \
+    notequal.xml
 
 GLSLXML = \
     $(Angle_and_Trigonometry_Functions) \
@@ -97,7 +108,8 @@ GLSLXML = \
     $(Common_Functions) \
     $(FloatingPoint_Pack_and_Unpack_Functions) \
     $(Geometric_Functions) \
-    $(Matrix_Functions)
+    $(Matrix_Functions) \
+    $(Vector_Relational_Functions)
 
 XML    = $(GLSLXML)
 

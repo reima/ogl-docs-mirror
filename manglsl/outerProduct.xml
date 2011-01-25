@@ -34,6 +34,36 @@
                 <paramdef>vec4 <parameter>r</parameter></paramdef>
             </funcprototype>
             <funcprototype>
+                <funcdef>mat2x3 <function>outerProduct</function></funcdef>
+                <paramdef>vec3 <parameter>c</parameter></paramdef>
+                <paramdef>vec2 <parameter>r</parameter></paramdef>
+            </funcprototype>
+            <funcprototype>
+                <funcdef>mat3x2 <function>outerProduct</function></funcdef>
+                <paramdef>vec2 <parameter>c</parameter></paramdef>
+                <paramdef>vec3 <parameter>r</parameter></paramdef>
+            </funcprototype>
+            <funcprototype>
+                <funcdef>mat2x4 <function>outerProduct</function></funcdef>
+                <paramdef>vec4 <parameter>c</parameter></paramdef>
+                <paramdef>vec2 <parameter>r</parameter></paramdef>
+            </funcprototype>
+            <funcprototype>
+                <funcdef>mat4x2 <function>outerProduct</function></funcdef>
+                <paramdef>vec2 <parameter>c</parameter></paramdef>
+                <paramdef>vec4 <parameter>r</parameter></paramdef>
+            </funcprototype>
+            <funcprototype>
+                <funcdef>mat3x4 <function>outerProduct</function></funcdef>
+                <paramdef>vec4 <parameter>c</parameter></paramdef>
+                <paramdef>vec3 <parameter>r</parameter></paramdef>
+            </funcprototype>
+            <funcprototype>
+                <funcdef>mat4x3 <function>outerProduct</function></funcdef>
+                <paramdef>vec3 <parameter>c</parameter></paramdef>
+                <paramdef>vec4 <parameter>r</parameter></paramdef>
+            </funcprototype>
+            <funcprototype>
                 <funcdef>dmat2 <function>outerProduct</function></funcdef>
                 <paramdef>dvec2 <parameter>c</parameter></paramdef>
                 <paramdef>dvec2 <parameter>r</parameter></paramdef>
@@ -46,6 +76,36 @@
             <funcprototype>
                 <funcdef>dmat4 <function>outerProduct</function></funcdef>
                 <paramdef>dvec4 <parameter>c</parameter></paramdef>
+                <paramdef>dvec4 <parameter>r</parameter></paramdef>
+            </funcprototype>
+            <funcprototype>
+                <funcdef>dmat2x3 <function>outerProduct</function></funcdef>
+                <paramdef>dvec3 <parameter>c</parameter></paramdef>
+                <paramdef>dvec2 <parameter>r</parameter></paramdef>
+            </funcprototype>
+            <funcprototype>
+                <funcdef>dmat3x2 <function>outerProduct</function></funcdef>
+                <paramdef>dvec2 <parameter>c</parameter></paramdef>
+                <paramdef>dvec3 <parameter>r</parameter></paramdef>
+            </funcprototype>
+            <funcprototype>
+                <funcdef>dmat2x4 <function>outerProduct</function></funcdef>
+                <paramdef>dvec4 <parameter>c</parameter></paramdef>
+                <paramdef>dvec2 <parameter>r</parameter></paramdef>
+            </funcprototype>
+            <funcprototype>
+                <funcdef>dmat4x2 <function>outerProduct</function></funcdef>
+                <paramdef>dvec2 <parameter>c</parameter></paramdef>
+                <paramdef>dvec4 <parameter>r</parameter></paramdef>
+            </funcprototype>
+            <funcprototype>
+                <funcdef>dmat3x4 <function>outerProduct</function></funcdef>
+                <paramdef>dvec4 <parameter>c</parameter></paramdef>
+                <paramdef>dvec3 <parameter>r</parameter></paramdef>
+            </funcprototype>
+            <funcprototype>
+                <funcdef>dmat4x3 <function>outerProduct</function></funcdef>
+                <paramdef>dvec3 <parameter>c</parameter></paramdef>
                 <paramdef>dvec4 <parameter>r</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>

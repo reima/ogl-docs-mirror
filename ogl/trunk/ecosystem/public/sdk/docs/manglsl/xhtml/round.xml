@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>round</title><meta name="generator" content="DocBook XSL Stylesheets V1.75.2" /></head><body><div class="refentry" title="round"><a id="round"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>round — find the nearest integer less than or equal to the parameter</p></div><div class="refsynopsisdiv" title="Declaration"><h2>Declaration</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" class="funcprototype-table"><tr><td><code class="funcdef">genType <b class="fsfunc">round</b>(</code></td><td>genType <var class="pdparam">x</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" class="funcprototype-table"><tr><td><code class="funcdef">genDType <b class="fsfunc">round</b>(</code></td><td>genDType <var class="pdparam">x</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1" title="Parameters"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>x</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>round</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="round"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>round — find the nearest integer less than or equal to the parameter</p></div><div class="refsynopsisdiv"><h2>Declaration</h2><div class="funcsynopsis"><p><code class="funcdef">genType <b class="fsfunc">round</b>(</code>genType <var class="pdparam">x</var><code>)</code>;</p></div><div class="funcsynopsis"><p><code class="funcdef">genDType <b class="fsfunc">round</b>(</code>genDType <var class="pdparam">x</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>x</code></em></span></dt><dd><p>
                     Specify the value to evaluate.
-                </p></dd></dl></div></div><div class="refsect1" title="Description"><a id="description"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
             <code class="function">round</code> returns a value equal to the nearest integer to <em class="parameter"><code>x</code></em>.
             The fraction 0.5 will round in a direction chosen by the implementation, presumably the direction that is
             fastest. This includes the possibility that <code class="function">round</code>(<em class="parameter"><code>x</code></em>) returns the
-            same value as <a class="citerefentry" href="roundEven.xml"><span class="citerefentry"><span class="refentrytitle">roundEven</span></span></a>(<em class="parameter"><code>x</code></em>)
+            same value as <a href="roundEven.xml"><span class="citerefentry"><span class="refentrytitle">roundEven</span></span></a>(<em class="parameter"><code>x</code></em>)
             for all values of <em class="parameter"><code>x</code></em>.
-        </p></div><div class="refsect1" title="Version Support"><a id="versions"></a><h2>Version Support</h2><div class="informaltable"><table border="1"><colgroup><col align="left" /><col align="center" /><col align="center" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="versions"></a><h2>Version Support</h2><div class="informaltable"><table border="1"><colgroup><col align="left" /><col align="center" /><col align="center" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
                         Function
                         </strong></span></th><th align="left"><span class="bold"><strong>
                         Version 4.00
@@ -21,12 +21,12 @@
                             <span class="emphasis"><em>Y</em></span>
                         </th><th align="center">
                             <span class="emphasis"><em>Y</em></span>
-                        </th></tr></thead></table></div></div><div class="refsect1" title="See Also"><a id="seealso"></a><h2>See Also</h2><p>
-            <a class="citerefentry" href="floor.xml"><span class="citerefentry"><span class="refentrytitle">floor</span></span></a>,
-            <a class="citerefentry" href="roundEven.xml"><span class="citerefentry"><span class="refentrytitle">roundEven</span></span></a>
-        </p></div><div class="refsect1" title="Copyright"><a id="Copyright"></a><h2>Copyright</h2><p>
+                        </th></tr></thead></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
+            <a href="floor.xml"><span class="citerefentry"><span class="refentrytitle">floor</span></span></a>,
+            <a href="roundEven.xml"><span class="citerefentry"><span class="refentrytitle">roundEven</span></span></a>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2011 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
-            <a class="ulink" href="http://opencontent.org/openpub/" target="_top">http://opencontent.org/openpub/</a>.
+            <a href="http://opencontent.org/openpub/" target="_top">http://opencontent.org/openpub/</a>.
         </p></div></div></body></html>

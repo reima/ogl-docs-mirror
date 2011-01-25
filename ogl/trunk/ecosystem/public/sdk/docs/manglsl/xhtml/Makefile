@@ -55,12 +55,49 @@ Common_Functions = \
     roundEven.xml \
     ceil.xml \
     fract.xml \
-    mod.xml
+    mod.xml \
+    modf.xml \
+    min.xml \
+    max.xml \
+    clamp.xml \
+    mix.xml \
+    step.xml \
+    smoothstep.xml \
+    isnan.xml \
+    isinf.xml \
+    floatBitsToInt.xml \
+    intBitsToFloat.xml \
+    fma.xml \
+    frexp.xml \
+    ldexp.xml
+
+FloatingPoint_Pack_and_Unpack_Functions = \
+    packUnorm2x16.xml \
+    unpackUnorm2x16.xml \
+    packDouble2x32.xml \
+    unpackDouble2x32.xml
+
+Geometric_Functions = \
+    length.xml \
+    distance.xml \
+    dot.xml \
+    cross.xml \
+    normalize.xml \
+    faceforward.xml \
+    reflect.xml \
+    refract.xml
+
+Matrix_Functions = \
+    matrixCompMult.xml \
+    outerProduct.xml
 
 GLSLXML = \
     $(Angle_and_Trigonometry_Functions) \
     $(Exponential_Functions) \
-    $(Common_Functions)
+    $(Common_Functions) \
+    $(FloatingPoint_Pack_and_Unpack_Functions) \
+    $(Geometric_Functions) \
+    $(Matrix_Functions)
 
 XML    = $(GLSLXML)
 

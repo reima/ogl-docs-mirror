@@ -105,6 +105,17 @@ Vector_Relational_Functions = \
     all.xml \
     not.xml
 
+Integer_Functions = \
+    uaddCarry.xml \
+    usubBorrow.xml \
+    umulExtended.xml \
+    bitfieldExtract.xml \
+    bitfieldInsert.xml \
+    bitfieldReverse.xml \
+    bitCount.xml \
+    findLSB.xml \
+    findMSB.xml
+
 GLSLXML = \
     $(Angle_and_Trigonometry_Functions) \
     $(Exponential_Functions) \
@@ -112,7 +123,8 @@ GLSLXML = \
     $(FloatingPoint_Pack_and_Unpack_Functions) \
     $(Geometric_Functions) \
     $(Matrix_Functions) \
-    $(Vector_Relational_Functions)
+    $(Vector_Relational_Functions) \
+    $(Integer_Functions)
 
 XML    = $(GLSLXML)
 

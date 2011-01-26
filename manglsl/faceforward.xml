@@ -62,7 +62,7 @@
     </refsect1>
     <refsect1 id="description"><title>Description</title>
         <para>
-            <function>faceforward</function> returns orients a vector to point away from a surface defined by its normal.
+            <function>faceforward</function> orients a vector to point away from a surface as defined by its normal.
             If <citerefentry><refentrytitle>dot</refentrytitle></citerefentry><code>(<parameter>Nref</parameter>, <parameter>I</parameter>) &lt; 0</code>
             <function>faceforward</function> returns <parameter>N</parameter>, otherwise it returns <code>-<parameter>N</parameter></code>.
         </para>

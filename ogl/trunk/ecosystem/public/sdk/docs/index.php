@@ -7,12 +7,29 @@
 <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
 <H1>Documentation</H1>
 
-<P>The <A HREF="./man/">reference pages</A> (aka man pages) include complete descriptions of all OpenGL,
-GLU, and GLX entry points. They cover in detail how to use the commands, all of the parameters you can
-pass in, and all of the error conditions to avoid.</P>
+<H2>The OpenGL Reference Pages</H2>
 
-<P>The <A TARGET="_new" HREF="http://www.khronos.org/files/opengl-quick-reference-card.pdf">GLSL Quick Reference Guide</A>
-is a one-page PDF providing an instant reference of GLSL's data types, built-in variables and functions.</P>
+<P>The <A HREF="./man4/">reference pages for OpenGL 4.1</A> include complete descriptions of all OpenGL
+commands contained in the Core Profile of the OpenGL 4.1 Specification.</P>
+
+<P>The <A HREF="./man3/">reference pages for OpenGL 3.3</A> include complete descriptions of all OpenGL
+commands contained in the Core Profile of the OpenGL 3.3 Specification.</P>
+
+The legacy <A HREF="./man/">OpenGL 2.1 reference pages</A> include descriptions of all OpenGL commands
+contained in the OpenGL 2.1 Specification, including commands that have been deprecated and removed in
+more modern versions of OpenGL (but are still included in compatibility profiles of OpenGL).
+Also included are descriptions of GLU and GLX entry points.
+
+<H2>Quick Reference Cards</H2>
+
+<P>Several quick reference guides are available in PDF format from the links below. The quick reference guides
+are fold-out annotated lists of the functions included in OpenGL, along with their parameters and other useful
+information.</P>
+
+<UL>
+<LI>The <A HREF="http://www.khronos.org/files/opengl41-quick-reference-card.pdf">OpenGL 4.1 Quick Reference Guide (including GLSL 4.10)</A></LI>
+<LI>The <A HREF="http://www.khronos.org/files/opengl-quick-reference-card.pdf">OpenGL 3.2 Quick Reference Guide (including GLSL 1.50)</A></LI>
+</UL>
 
 <P> The <A TARGET="_new" HREF="http://www.opengl.org/registry/"> OpenGL API
 and Extension Registry</A>, hosted outside of the SDK, contains the formal
@@ -30,7 +47,7 @@ Specification. Most new features are first introduced as extensions and
 only later become part of a core OpenGL version, so using extensions is
 important to staying current with the evolution of the API. </P>
 
-<P><FONT SIZE="-2">Copyright &copy; 2007-2010 Khronos Group. All rights reserved.</FONT></P>
+<P><FONT SIZE="-2">Copyright &copy; 2007-2011 Khronos Group. All rights reserved.</FONT></P>
 
 <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 </BODY>

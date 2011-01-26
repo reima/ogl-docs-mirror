@@ -100,7 +100,10 @@ Vector_Relational_Functions = \
     greaterThan.xml \
     greaterThanEqual.xml \
     equal.xml \
-    notequal.xml
+    notEqual.xml \
+    any.xml \
+    all.xml \
+    not.xml
 
 GLSLXML = \
     $(Angle_and_Trigonometry_Functions) \

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
               "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry id="notEqual">
+<refentry id="all">
     <refmeta>
         <refmetainfo>
             <copyright>
@@ -9,29 +9,18 @@
                 <holder>Khronos Group</holder>
             </copyright>
         </refmetainfo>
-        <refentrytitle>notEqual</refentrytitle>
+        <refentrytitle>all</refentrytitle>
         <manvolnum>3G</manvolnum>
     </refmeta>
     <refnamediv>
-        <refname>notEqual</refname>
-        <refpurpose>perform a component-wise not-equal-to comparison of two vectors</refpurpose>
+        <refname>all</refname>
+        <refpurpose>check whether all elements of a boolean vector are true</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef>bvec <function>notEqual</function></funcdef>
-                <paramdef>vec <parameter>x</parameter></paramdef>
-                <paramdef>vec <parameter>y</parameter></paramdef>
-            </funcprototype>
-            <funcprototype>
-                <funcdef>bvec <function>notEqual</function></funcdef>
-                <paramdef>ivec <parameter>x</parameter></paramdef>
-                <paramdef>ivec <parameter>y</parameter></paramdef>
-            </funcprototype>
-            <funcprototype>
-                <funcdef>bvec <function>notEqual</function></funcdef>
-                <paramdef>uvec <parameter>x</parameter></paramdef>
-                <paramdef>uvec <parameter>y</parameter></paramdef>
+                <funcdef>bool <function>all</function></funcdef>
+                <paramdef>bvec <parameter>x</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -41,15 +30,7 @@
             <term><parameter>x</parameter></term>
             <listitem>
                 <para>
-                    Specifies the first vector to be used in the comparison operation.
-                </para>
-            </listitem>
-        </varlistentry>
-        <varlistentry>
-            <term><parameter>x</parameter></term>
-            <listitem>
-                <para>
-                    Specifies the second vector to be used in the comparison operation.
+                    Specifies the vector to be tested for truth.
                 </para>
             </listitem>
         </varlistentry>
@@ -57,8 +38,20 @@
     </refsect1>
     <refsect1 id="description"><title>Description</title>
         <para>
-            <function>notEqual</function> returns a boolean vector in which each element <emphasis>i</emphasis> is computed
-            as <parameter>x</parameter>[<emphasis>i</emphasis>] != <parameter>y</parameter>[<emphasis>i</emphasis>].
+            <function>any</function> returns true if all elements of <parameter>x</parameter> are true and false otherwise.
+            It is functionally equivalent to:
+        </para>
+        <para>
+        <programlisting><![CDATA[    bool all(bvec x)       // bvec can be bvec2, bvec3 or bvec4
+    {
+        bool result = true;
+        int i;
+        for (i = 0; i < x.length(); ++x)
+        {
+            result &= x[i];
+        }
+        return result;
+    }]]></programlisting>
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>
@@ -81,7 +74,7 @@
                     </row>
                     <row>
                         <entry>
-                            notEqual
+                            all
                         </entry>
                         <entry>
                             <emphasis>Y</emphasis>
@@ -96,13 +89,7 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>lessThan</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>lessThannotEqual</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>greaterThan</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>greaterThanEqual</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>equal</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>any</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>all</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>not</refentrytitle></citerefentry>
         </para>
     </refsect1>

@@ -3,6 +3,7 @@
 # XSLT processor - other possibilities like Saxon exist
 XSLT	= xsltproc --nonet
 SED	= sed
+PERL = perl
 
 # Location of locally customized stylesheet, which imports
 # the Docbook modular stylesheets, and specifically the
@@ -128,7 +129,12 @@ GLSLXML = \
 
 XML    = $(GLSLXML)
 
-default: $(XML)
+default: all
+
+index.html: makeindex.pl $(XML) Makefile
+	$(PERL) makeindex.pl $(dir $<) $(dir $<).. > $@
+
+all: $(XML) index.html Makefile
 
 clean:
 	$(RM) $(TEX_FILES) *.log *.aux *.toc *.dvi *.out

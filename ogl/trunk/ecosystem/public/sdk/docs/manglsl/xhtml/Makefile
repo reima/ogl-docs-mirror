@@ -117,6 +117,17 @@ Integer_Functions = \
     findLSB.xml \
     findMSB.xml
 
+Texture_Query_Functions = \
+    textureSize.xml \
+    textureQueryLod.xml
+
+Texel_Lookup_Functions = \
+    texture.xml \
+    textureProj.xml \
+    textureLod.xml \
+    textureOffset.xml \
+    texelFetch.xml
+
 GLSLXML = \
     $(Angle_and_Trigonometry_Functions) \
     $(Exponential_Functions) \
@@ -125,7 +136,9 @@ GLSLXML = \
     $(Geometric_Functions) \
     $(Matrix_Functions) \
     $(Vector_Relational_Functions) \
-    $(Integer_Functions)
+    $(Integer_Functions) \
+    $(Texture_Query_Functions) \
+    $(Texel_Lookup_Functions)
 
 XML    = $(GLSLXML)
 

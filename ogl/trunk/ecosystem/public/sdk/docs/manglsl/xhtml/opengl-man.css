@@ -26,6 +26,11 @@ div.funcsynopsis
     font-family: monospace;
 }
 
+div.funcsynopsis table
+{
+    font-family: monospace;
+}
+
 div.informaltable table
 {
     border-width: 1px;

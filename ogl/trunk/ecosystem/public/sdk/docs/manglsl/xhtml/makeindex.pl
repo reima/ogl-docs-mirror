@@ -15,7 +15,7 @@ sub PrintHeader {
 print '<html>
 <head>
 <link rel="stylesheet" type="text/css" href="../../mancommon/opengl-man.css" />
-<title>OpenGL Shad</title>
+<title>OpenGL Shading Language Reference Pages</title>
 </head>
 <body>
 <a name="top"></a>

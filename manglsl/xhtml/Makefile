@@ -126,7 +126,21 @@ Texel_Lookup_Functions = \
     textureProj.xml \
     textureLod.xml \
     textureOffset.xml \
-    texelFetch.xml
+    texelFetch.xml \
+    texelFetchOffset.xml \
+    textureProjOffset.xml \
+    textureLodOffset.xml \
+    textureProjLod.xml \
+    textureProjLodOffset.xml \
+    textureGrad.xml \
+    textureGradOffset.xml \
+    textureProjGrad.xml \
+    textureProjGradOffset.xml
+
+Texture_Gather_Functions = \
+    textureGather.xml \
+    textureGatherOffset.xml \
+    textureGatherOffsets.xml
 
 GLSLXML = \
     $(Angle_and_Trigonometry_Functions) \
@@ -138,7 +152,8 @@ GLSLXML = \
     $(Vector_Relational_Functions) \
     $(Integer_Functions) \
     $(Texture_Query_Functions) \
-    $(Texel_Lookup_Functions)
+    $(Texel_Lookup_Functions) \
+    $(Texture_Gather_Functions)
 
 XML    = $(GLSLXML)
 

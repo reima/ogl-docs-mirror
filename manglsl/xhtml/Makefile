@@ -142,6 +142,10 @@ Texture_Gather_Functions = \
     textureGatherOffset.xml \
     textureGatherOffsets.xml
 
+Derivative_Functions = \
+    dFdx.xml \
+    fwidth.xml
+
 GLSLXML = \
     $(Angle_and_Trigonometry_Functions) \
     $(Exponential_Functions) \
@@ -153,7 +157,8 @@ GLSLXML = \
     $(Integer_Functions) \
     $(Texture_Query_Functions) \
     $(Texel_Lookup_Functions) \
-    $(Texture_Gather_Functions)
+    $(Texture_Gather_Functions) \
+    $(Derivative_Functions)
 
 XML    = $(GLSLXML)
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
               "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry id="texelFetch">
+<refentry id="textureLodOffsetOffset">
     <refmeta>
         <refmetainfo>
             <copyright>
@@ -9,66 +9,70 @@
                 <holder>Khronos Group</holder>
             </copyright>
         </refmetainfo>
-        <refentrytitle>texelFetch</refentrytitle>
+        <refentrytitle>textureLodOffset</refentrytitle>
         <manvolnum>3G</manvolnum>
     </refmeta>
     <refnamediv>
-        <refname>texelFetch</refname>
-        <refpurpose>perform a lookup of a single texel within a texture</refpurpose>
+        <refname>textureLodOffset</refname>
+        <refpurpose>perform a texture lookup with explicit level-of-detail and offset</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef>gvec4 <function>texelFetch</function></funcdef>
+                <funcdef>gvec4 <function>textureLodOffset</function></funcdef>
                 <paramdef>gsampler1D <parameter>sampler</parameter></paramdef>
-                <paramdef>int <parameter>P</parameter></paramdef>
-                <paramdef>int <parameter>lod</parameter></paramdef>
+                <paramdef>float <parameter>P</parameter></paramdef>
+                <paramdef>float <parameter>lod</parameter></paramdef>
+                <paramdef>int <parameter>offset</parameter></paramdef>
             </funcprototype>
             <funcprototype>
-                <funcdef>gvec4 <function>texelFetch</function></funcdef>
+                <funcdef>gvec4 <function>textureLodOffset</function></funcdef>
                 <paramdef>gsampler2D <parameter>sampler</parameter></paramdef>
-                <paramdef>ivec2 <parameter>P</parameter></paramdef>
-                <paramdef>int <parameter>lod</parameter></paramdef>
+                <paramdef>vec2 <parameter>P</parameter></paramdef>
+                <paramdef>float <parameter>lod</parameter></paramdef>
+                <paramdef>ivec2 <parameter>offset</parameter></paramdef>
             </funcprototype>
             <funcprototype>
-                <funcdef>gvec4 <function>texelFetch</function></funcdef>
+                <funcdef>gvec4 <function>textureLodOffset</function></funcdef>
                 <paramdef>gsampler3D <parameter>sampler</parameter></paramdef>
-                <paramdef>ivec3 <parameter>P</parameter></paramdef>
-                <paramdef>int <parameter>lod</parameter></paramdef>
+                <paramdef>vec3 <parameter>P</parameter></paramdef>
+                <paramdef>float <parameter>lod</parameter></paramdef>
+                <paramdef>ivec3 <parameter>offset</parameter></paramdef>
             </funcprototype>
             <funcprototype>
-                <funcdef>gvec4 <function>texelFetch</function></funcdef>
-                <paramdef>gsampler2DRect <parameter>sampler</parameter></paramdef>
-                <paramdef>ivec2 <parameter>P</parameter></paramdef>
+                <funcdef>float <function>textureLodOffset</function></funcdef>
+                <paramdef>sampler1DShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>vec3 <parameter>P</parameter></paramdef>
+                <paramdef>float <parameter>lod</parameter></paramdef>
+                <paramdef>int <parameter>offset</parameter></paramdef>
             </funcprototype>
             <funcprototype>
-                <funcdef>gvec4 <function>texelFetch</function></funcdef>
+                <funcdef>float <function>textureLodOffset</function></funcdef>
+                <paramdef>sampler2DShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>vec4 <parameter>P</parameter></paramdef>
+                <paramdef>float <parameter>lod</parameter></paramdef>
+                <paramdef>ivec2 <parameter>offset</parameter></paramdef>
+            </funcprototype>
+            <funcprototype>
+                <funcdef>gvec4 <function>textureLodOffset</function></funcdef>
                 <paramdef>gsampler1DArray <parameter>sampler</parameter></paramdef>
-                <paramdef>ivec2 <parameter>P</parameter></paramdef>
-                <paramdef>int <parameter>lod</parameter></paramdef>
+                <paramdef>vec2 <parameter>P</parameter></paramdef>
+                <paramdef>float <parameter>lod</parameter></paramdef>
+                <paramdef>int <parameter>offset</parameter></paramdef>
             </funcprototype>
             <funcprototype>
-                <funcdef>gvec4 <function>texelFetch</function></funcdef>
+                <funcdef>gvec4 <function>textureLodOffset</function></funcdef>
                 <paramdef>gsampler2DArray <parameter>sampler</parameter></paramdef>
-                <paramdef>ivec3 <parameter>P</parameter></paramdef>
-                <paramdef>int <parameter>lod</parameter></paramdef>
+                <paramdef>vec3 <parameter>P</parameter></paramdef>
+                <paramdef>float <parameter>lod</parameter></paramdef>
+                <paramdef>ivec2 <parameter>offset</parameter></paramdef>
             </funcprototype>
             <funcprototype>
-                <funcdef>gvec4 <function>texelFetch</function></funcdef>
-                <paramdef>gsamplerBuffer <parameter>sampler</parameter></paramdef>
-                <paramdef>int <parameter>P</parameter></paramdef>
-            </funcprototype>
-            <funcprototype>
-                <funcdef>gvec4 <function>texelFetch</function></funcdef>
-                <paramdef>gsampler2DMS <parameter>sampler</parameter></paramdef>
-                <paramdef>ivec2 <parameter>P</parameter></paramdef>
-                <paramdef>sample <parameter>sample</parameter></paramdef>
-            </funcprototype>
-            <funcprototype>
-                <funcdef>gvec4 <function>texelFetch</function></funcdef>
-                <paramdef>gsampler2DMSArray <parameter>sampler</parameter></paramdef>
-                <paramdef>ivec3 <parameter>P</parameter></paramdef>
-                <paramdef>sample <parameter>sample</parameter></paramdef>
+                <funcdef>float <function>textureLodOffset</function></funcdef>
+                <paramdef>sampler1DArrayShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>vec3 <parameter>P</parameter></paramdef>
+                <paramdef>float <parameter>lod</parameter></paramdef>
+                <paramdef>int <parameter>offset</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -86,7 +90,7 @@
             <term><parameter>P</parameter></term>
             <listitem>
                 <para>
-                    Specifies the texture coordinates at which texture will be sampled.
+                    Specifies the texture coordinates at which the texture will be sampled.
                 </para>
             </listitem>
         </varlistentry>
@@ -94,15 +98,15 @@
             <term><parameter>lod</parameter></term>
             <listitem>
                 <para>
-                    If present, specifies the level-of-detail within the texture from which the texel will be fetched.
+                    Specifies the explicit level-of-detail from which texels will be fetched.
                 </para>
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>sample</parameter></term>
+            <term><parameter>offset</parameter></term>
             <listitem>
                 <para>
-                    For multisampled fetches, specifies which sample within the texel from which which will be returned.
+                    Specifies the offset that will be applied to <parameter>P</parameter> before texels are fetched.
                 </para>
             </listitem>
         </varlistentry>
@@ -110,11 +114,10 @@
     </refsect1>
     <refsect1 id="description"><title>Description</title>
         <para>
-            <function>texelFetch</function> performs a lookup of a single texel from texture coordinate <parameter>P</parameter>
-            in the texture bound to <parameter>sampler</parameter>. The array layer is specified in the last component of
-            <parameter>P</parameter> for array forms. The <parameter>lod</parameter> parameter (if present) specifies the level-of-detail
-            from which the texel will be fetched. The <parameter>sample</parameter> specifies which sample within the texel will be
-            returned when reading from a multi-sample texure.
+            <function>textureLodOffset</function> performs a texture lookup at coordinate <parameter>P</parameter> from the
+            texture bound to <parameter>sampler</parameter> with an exlicit level-of-detail as specified in <parameter>lod</parameter>.
+            Behavior is the same as in <citerefentry><refentrytitle>textureLod</refentrytitle></citerefentry> except that before
+            sampling, <parameter>offset</parameter> is added to <parameter>P</parameter>.
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>
@@ -137,7 +140,7 @@
                     </row>
                     <row>
                         <entry>
-                            texelFetch
+                            textureLodOffset
                         </entry>
                         <entry>
                             <emphasis>Y</emphasis>
@@ -154,17 +157,16 @@
         <para>
             <citerefentry><refentrytitle>texture</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>textureProj</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureLod</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>textureOffset</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>texelFetch</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>texelFetchOffset</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>textureProj</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>textureProjOffset</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureLodOffset</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureProjLod</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureProjLodOffset</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>textureLod</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>textureGrad</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>textureGradOffset</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureProjGrad</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureProjGradOffset</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>textureLodOffsetGrad</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>textureLodOffsetGradOffset</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

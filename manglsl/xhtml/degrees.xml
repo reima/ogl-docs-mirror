@@ -4,14 +4,14 @@
 <?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>degrees</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="radians"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>degrees — convert a quantity in radians to degrees</p></div><div class="refsynopsisdiv"><h2>Declaration</h2><div class="funcsynopsis"><p><code class="funcdef">genType <b class="fsfunc">degrees</b>(</code>genType <var class="pdparam">radians</var><code>)</code>;</p></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>radians</code></em></span></dt><dd><p>
                     Specify the quantity, in radians, to be converted to degrees.
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
-            <code class="function">radians</code> converts a quantity, specified in radians into degrees. That is,
+            <code class="function">degrees</code> converts a quantity, specified in radians into degrees. That is,
             the return value is
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 
                 <mml:mfrac>
                     <mml:mrow>
                         <mml:mn>180</mml:mn><mml:mo>⋅</mml:mo>
-                        <mml:mi mathvariant="italic">degrees</mml:mi>
+                        <mml:mi mathvariant="italic">radians</mml:mi>
                     </mml:mrow>
                     <mml:pi definitionURL="" encoding=""></mml:pi>
                 </mml:mfrac>
@@ -29,7 +29,7 @@
                         </th><th align="center">
                             <span class="emphasis"><em>Y</em></span>
                         </th></tr></thead></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
-            <a href="degrees.xml"><span class="citerefentry"><span class="refentrytitle">degrees</span></span></a>,
+            <a href="radians.xml"><span class="citerefentry"><span class="refentrytitle">radians</span></span></a>,
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2011 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 

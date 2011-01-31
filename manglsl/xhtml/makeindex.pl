@@ -74,7 +74,7 @@ opendir(DIR,$ARGV[0]) or die "couldn't open directory";
 
 @files = readdir(DIR);
 close(DIR);
-@files = sort @files;
+@files = sort {uc($a) cmp uc($b)} @files;
 
 PrintHeader();
 
@@ -195,7 +195,7 @@ if ($#glsl > 0)
 	{
 		$name = $_;
 		$name =~ s/^gl//;
-		$firstletter = substr($name, 0, 1);
+		$firstletter = uc(substr($name, 0, 1));
 		if ($firstletter ne $currentletter)
 		{
 			push (@toc, $firstletter);
@@ -229,7 +229,7 @@ if ($#glsl > 0)
 	{
 		$name = $_;
 		$name =~ s/^gl//;
-		$firstletter = substr($name, 0, 1);
+		$firstletter = uc(substr($name, 0, 1));
 		if ($firstletter ne $currentletter)
 		{
 			if ($opentable == 1)

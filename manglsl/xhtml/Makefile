@@ -146,6 +146,23 @@ Derivative_Functions = \
     dFdx.xml \
     fwidth.xml
 
+Interpolation_Functions = \
+    interpolateAtCentroid.xml \
+    interpolateAtSample.xml \
+    interpolateAtOffset.xml
+
+Noise_Functions = \
+    noise.xml
+
+Geometry_Shader_Functions = \
+    EmitStreamVertex.xml \
+    EmitVertex.xml \
+    EndStreamPrimitive.xml \
+    EndPrimitive.xml
+
+Invocation_Control_Functions = \
+    barrier.xml
+
 GLSLXML = \
     $(Angle_and_Trigonometry_Functions) \
     $(Exponential_Functions) \
@@ -158,7 +175,11 @@ GLSLXML = \
     $(Texture_Query_Functions) \
     $(Texel_Lookup_Functions) \
     $(Texture_Gather_Functions) \
-    $(Derivative_Functions)
+    $(Derivative_Functions) \
+    $(Interpolation_Functions) \
+    $(Noise_Functions) \
+    $(Geometry_Shader_Functions) \
+    $(Invocation_Control_Functions)
 
 XML    = $(GLSLXML)
 

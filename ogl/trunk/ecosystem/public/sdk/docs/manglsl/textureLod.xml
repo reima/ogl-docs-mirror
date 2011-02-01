@@ -111,7 +111,7 @@
     <refsect1 id="description"><title>Description</title>
         <para>
             <function>textureLod</function> performs a texture lookup at coordinate <parameter>P</parameter> from the
-            texture bound to <parameter>sampler</parameter> with an exlicit level-of-detail as specified in <parameter>lod</parameter>.
+            texture bound to <parameter>sampler</parameter> with an explicit level-of-detail as specified in <parameter>lod</parameter>.
             <parameter>lod</parameter> specifies
             <inlineequation><mml:math><mml:msub><mml:mi>&lambda;</mml:mi><mml:mi>base</mml:mi></mml:msub></mml:math></inlineequation>
             and sets the partial derivatives as follows:
@@ -268,13 +268,9 @@
             <citerefentry><refentrytitle>texelFetch</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>texelFetchOffset</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>textureLodOffset</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureLodOffset</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureLodLod</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureLodLodOffset</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>textureGrad</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>textureGradOffset</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureLodGrad</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureLodGradOffset</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>textureLodGrad</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

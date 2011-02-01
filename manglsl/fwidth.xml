@@ -63,18 +63,7 @@
                     </row>
                     <row>
                         <entry>
-                            dFdx
-                        </entry>
-                        <entry>
-                            <emphasis>Y</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>Y</emphasis>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry>
-                            dFdy
+                            fwidth
                         </entry>
                         <entry>
                             <emphasis>Y</emphasis>

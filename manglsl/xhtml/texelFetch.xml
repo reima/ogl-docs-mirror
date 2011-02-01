@@ -28,19 +28,24 @@
                         </th><th align="center">
                             <span class="emphasis"><em>Y</em></span>
                         </th></tr></thead></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
+            <a href="texelFetch.xml"><span class="citerefentry"><span class="refentrytitle">texelFetch</span></span></a>,
             <a href="texture.xml"><span class="citerefentry"><span class="refentrytitle">texture</span></span></a>,
-            <a href="textureProj.xml"><span class="citerefentry"><span class="refentrytitle">textureProj</span></span></a>,
-            <a href="textureLod.xml"><span class="citerefentry"><span class="refentrytitle">textureLod</span></span></a>,
-            <a href="textureOffset.xml"><span class="citerefentry"><span class="refentrytitle">textureOffset</span></span></a>,
-            <a href="texelFetchOffset.xml"><span class="citerefentry"><span class="refentrytitle">texelFetchOffset</span></span></a>,
-            <a href="textureProjOffset.xml"><span class="citerefentry"><span class="refentrytitle">textureProjOffset</span></span></a>,
-            <a href="textureLodOffset.xml"><span class="citerefentry"><span class="refentrytitle">textureLodOffset</span></span></a>,
-            <a href="textureProjLod.xml"><span class="citerefentry"><span class="refentrytitle">textureProjLod</span></span></a>,
-            <a href="textureProjLodOffset.xml"><span class="citerefentry"><span class="refentrytitle">textureProjLodOffset</span></span></a>,
+            <a href="textureGather.xml"><span class="citerefentry"><span class="refentrytitle">textureGather</span></span></a>,
+            <a href="textureGatherOffset.xml"><span class="citerefentry"><span class="refentrytitle">textureGatherOffset</span></span></a>,
+            <a href="textureGatherOffsets.xml"><span class="citerefentry"><span class="refentrytitle">textureGatherOffsets</span></span></a>,
             <a href="textureGrad.xml"><span class="citerefentry"><span class="refentrytitle">textureGrad</span></span></a>,
             <a href="textureGradOffset.xml"><span class="citerefentry"><span class="refentrytitle">textureGradOffset</span></span></a>,
+            <a href="textureLod.xml"><span class="citerefentry"><span class="refentrytitle">textureLod</span></span></a>,
+            <a href="textureLodOffset.xml"><span class="citerefentry"><span class="refentrytitle">textureLodOffset</span></span></a>,
+            <a href="textureOffset.xml"><span class="citerefentry"><span class="refentrytitle">textureOffset</span></span></a>,
+            <a href="textureProj.xml"><span class="citerefentry"><span class="refentrytitle">textureProj</span></span></a>,
             <a href="textureProjGrad.xml"><span class="citerefentry"><span class="refentrytitle">textureProjGrad</span></span></a>,
-            <a href="textureProjGradOffset.xml"><span class="citerefentry"><span class="refentrytitle">textureProjGradOffset</span></span></a>
+            <a href="textureProjGradOffset.xml"><span class="citerefentry"><span class="refentrytitle">textureProjGradOffset</span></span></a>,
+            <a href="textureProjLod.xml"><span class="citerefentry"><span class="refentrytitle">textureProjLod</span></span></a>,
+            <a href="textureProjLodOffset.xml"><span class="citerefentry"><span class="refentrytitle">textureProjLodOffset</span></span></a>,
+            <a href="textureProjOffset.xml"><span class="citerefentry"><span class="refentrytitle">textureProjOffset</span></span></a>,
+            <a href="textureQueryLod.xml"><span class="citerefentry"><span class="refentrytitle">textureQueryLod</span></span></a>,
+            <a href="textureSize.xml"><span class="citerefentry"><span class="refentrytitle">textureSize</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2011 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 

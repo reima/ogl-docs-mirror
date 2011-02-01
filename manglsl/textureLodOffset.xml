@@ -115,7 +115,7 @@
     <refsect1 id="description"><title>Description</title>
         <para>
             <function>textureLodOffset</function> performs a texture lookup at coordinate <parameter>P</parameter> from the
-            texture bound to <parameter>sampler</parameter> with an exlicit level-of-detail as specified in <parameter>lod</parameter>.
+            texture bound to <parameter>sampler</parameter> with an explicit level-of-detail as specified in <parameter>lod</parameter>.
             Behavior is the same as in <citerefentry><refentrytitle>textureLod</refentrytitle></citerefentry> except that before
             sampling, <parameter>offset</parameter> is added to <parameter>P</parameter>.
         </para>

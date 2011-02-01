@@ -11,7 +11,7 @@
                     Specifies the offset that will be applied to <em class="parameter"><code>P</code></em> before texels are fetched.
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
             <code class="function">textureLodOffset</code> performs a texture lookup at coordinate <em class="parameter"><code>P</code></em> from the
-            texture bound to <em class="parameter"><code>sampler</code></em> with an exlicit level-of-detail as specified in <em class="parameter"><code>lod</code></em>.
+            texture bound to <em class="parameter"><code>sampler</code></em> with an explicit level-of-detail as specified in <em class="parameter"><code>lod</code></em>.
             Behavior is the same as in <a href="textureLod.xml"><span class="citerefentry"><span class="refentrytitle">textureLod</span></span></a> except that before
             sampling, <em class="parameter"><code>offset</code></em> is added to <em class="parameter"><code>P</code></em>.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="versions"></a><h2>Version Support</h2><div class="informaltable"><table border="1"><colgroup><col align="left" /><col align="center" /><col align="center" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>

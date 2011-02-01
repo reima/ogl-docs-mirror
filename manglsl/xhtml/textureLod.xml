@@ -9,7 +9,7 @@
                     Specifies the explicit level-of-detail
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
             <code class="function">textureLod</code> performs a texture lookup at coordinate <em class="parameter"><code>P</code></em> from the
-            texture bound to <em class="parameter"><code>sampler</code></em> with an exlicit level-of-detail as specified in <em class="parameter"><code>lod</code></em>.
+            texture bound to <em class="parameter"><code>sampler</code></em> with an explicit level-of-detail as specified in <em class="parameter"><code>lod</code></em>.
             <em class="parameter"><code>lod</code></em> specifies
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:msub><mml:mi>λ</mml:mi><mml:mi>base</mml:mi></mml:msub></mml:math>
             and sets the partial derivatives as follows:
@@ -141,13 +141,9 @@
             <a href="texelFetch.xml"><span class="citerefentry"><span class="refentrytitle">texelFetch</span></span></a>,
             <a href="texelFetchOffset.xml"><span class="citerefentry"><span class="refentrytitle">texelFetchOffset</span></span></a>,
             <a href="textureLodOffset.xml"><span class="citerefentry"><span class="refentrytitle">textureLodOffset</span></span></a>,
-            <a href="textureLodOffset.xml"><span class="citerefentry"><span class="refentrytitle">textureLodOffset</span></span></a>,
-            <a href="textureLodLod.xml"><span class="citerefentry"><span class="refentrytitle">textureLodLod</span></span></a>,
-            <a href="textureLodLodOffset.xml"><span class="citerefentry"><span class="refentrytitle">textureLodLodOffset</span></span></a>,
             <a href="textureGrad.xml"><span class="citerefentry"><span class="refentrytitle">textureGrad</span></span></a>,
             <a href="textureGradOffset.xml"><span class="citerefentry"><span class="refentrytitle">textureGradOffset</span></span></a>,
-            <a href="textureLodGrad.xml"><span class="citerefentry"><span class="refentrytitle">textureLodGrad</span></span></a>,
-            <a href="textureLodGradOffset.xml"><span class="citerefentry"><span class="refentrytitle">textureLodGradOffset</span></span></a>
+            <a href="textureLodGrad.xml"><span class="citerefentry"><span class="refentrytitle">textureLodGrad</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2011 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 

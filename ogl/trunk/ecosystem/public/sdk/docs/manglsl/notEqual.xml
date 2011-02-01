@@ -97,7 +97,7 @@
     <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>lessThan</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>lessThannotEqual</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>lessThanEqual</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>greaterThan</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>greaterThanEqual</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>equal</refentrytitle></citerefentry>,

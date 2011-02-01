@@ -152,19 +152,24 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
+            <citerefentry><refentrytitle>texelFetch</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>texture</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureProj</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureLod</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureOffset</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>texelFetchOffset</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureProjOffset</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureLodOffset</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureProjLod</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureProjLodOffset</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>textureGather</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>textureGatherOffset</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>textureGatherOffsets</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>textureGrad</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>textureGradOffset</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>textureLod</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>textureLodOffset</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>textureOffset</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>textureProj</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>textureProjGrad</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>textureProjGradOffset</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>textureProjGradOffset</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>textureProjLod</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>textureProjLodOffset</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>textureProjOffset</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>textureQueryLod</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>textureSize</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

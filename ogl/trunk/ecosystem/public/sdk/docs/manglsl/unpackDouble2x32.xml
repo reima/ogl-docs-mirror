@@ -14,7 +14,7 @@
     </refmeta>
     <refnamediv>
         <refname>unpackDouble2x32</refname>
-        <refpurpose>create a double-precision value from a pair of unsigned integers</refpurpose>
+        <refpurpose>produce two unsigned integers containing the bit encoding of a double precision floating point value</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
         <funcsynopsis>

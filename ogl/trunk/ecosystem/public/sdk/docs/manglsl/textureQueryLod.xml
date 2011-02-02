@@ -107,6 +107,7 @@
     </refsect1>
     <refsect1 id="description"><title>Description</title>
         <para>
+            <emphasis>Available only in the fragment shader</emphasis>,
             <function>textureQueryLod</function> computes the level-of-detail that would be used to sample from
             a texture. The mipmap array(s) that would be accessed is returned in the <emphasis>x</emphasis> component
             of the return value. The computed level-of-detail relative to the base level is returned in the

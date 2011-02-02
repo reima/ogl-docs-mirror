@@ -99,7 +99,7 @@
                 <paramdef>gsampler2DMS <parameter>sampler</parameter></paramdef>
             </funcprototype>
             <funcprototype>
-                <funcdef>ivec2 <function>textureSize</function></funcdef>
+                <funcdef>ivec3 <function>textureSize</function></funcdef>
                 <paramdef>gsampler2DMSArray <parameter>sampler</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>

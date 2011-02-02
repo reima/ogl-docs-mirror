@@ -47,8 +47,6 @@ Specification. Most new features are first introduced as extensions and
 only later become part of a core OpenGL version, so using extensions is
 important to staying current with the evolution of the API. </P>
 
-<P><FONT SIZE="-2">Copyright &copy; 2007-2011 Khronos Group. All rights reserved.</FONT></P>
-
 <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 </BODY>
 </HTML>

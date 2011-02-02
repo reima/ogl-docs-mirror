@@ -45,7 +45,7 @@
             </listitem>
         </varlistentry>
         <varlistentry>
-            <term><parameter>carry</parameter></term>
+            <term><parameter>borrow</parameter></term>
             <listitem>
                 <para>
                     Specifies the variable to receive the borrow output of the difference.

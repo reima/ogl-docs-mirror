@@ -44,7 +44,7 @@
             </funcprototype>
             <funcprototype>
                 <funcdef>mat3x4 <function>transpose</function></funcdef>
-                <paramdef>mat3x4 <parameter>m</parameter></paramdef>
+                <paramdef>mat4x3 <parameter>m</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>mat4x2 <function>transpose</function></funcdef>
@@ -80,7 +80,7 @@
             </funcprototype>
             <funcprototype>
                 <funcdef>dmat3x4 <function>transpose</function></funcdef>
-                <paramdef>dmat3x4 <parameter>m</parameter></paramdef>
+                <paramdef>dmat4x3 <parameter>m</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>dmat4x2 <function>transpose</function></funcdef>

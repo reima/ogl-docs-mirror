@@ -6,6 +6,7 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>P</code></em></span></dt><dd><p>
                     Specifies the texture coordinates at which the level-of-detail will be queried.
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
+            <span class="emphasis"><em>Available only in the fragment shader</em></span>,
             <code class="function">textureQueryLod</code> computes the level-of-detail that would be used to sample from
             a texture. The mipmap array(s) that would be accessed is returned in the <span class="emphasis"><em>x</em></span> component
             of the return value. The computed level-of-detail relative to the base level is returned in the

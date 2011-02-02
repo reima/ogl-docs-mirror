@@ -5,7 +5,7 @@
                     Specifies the first vector to be used in the subtraction operation.
                 </p></dd><dt><span class="term"><em class="parameter"><code>y</code></em></span></dt><dd><p>
                     Specifies the second vector to be used in the subtraction operation.
-                </p></dd><dt><span class="term"><em class="parameter"><code>carry</code></em></span></dt><dd><p>
+                </p></dd><dt><span class="term"><em class="parameter"><code>borrow</code></em></span></dt><dd><p>
                     Specifies the variable to receive the borrow output of the difference.
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
             <code class="function">usubBorrow</code> subtracts two 32-bit unsigned integer variables (scalars or vectors) and generates

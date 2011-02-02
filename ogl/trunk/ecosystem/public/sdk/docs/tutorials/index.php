@@ -21,11 +21,11 @@ advanced techniques.</P>
 <P><A HREF="./Lighthouse3D/">Lighthouse 3D</A> offers direct links to their tutorials covering the spectrum
 from GLUT to GLSL, computer graphics math to stencil shadows.</P>
 
+<p><a href="./OGLSamples">OpenGL Samples Pack</a> is a collection of OpenGL samples based on the OpenGL "core profile" specifications. The project aims to promote the new OpenGL features making easier version transitions for OpenGL programmers with a complementary documentation for the OpenGL specification.</p>
+
 <P><A HREF="./TyphoonLabs/">TyphoonLabs</A> GLSL Course will show the student all about GLSL shaders, from
 the language specs to advanced shader techniques, advancing through the needed steps to setup shaders in the
 OpenGL host application.</P>
-
-<P><FONT SIZE="-2">Copyright &copy; 2007 Khronos Group. All rights reserved.</FONT></P>
 
 <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 </BODY>

@@ -32,6 +32,12 @@
 
 	<ul>
 		<li>
+			<a href="http://www.g-truc.net/project-0026.html#menu">G-Truc Creation project page</a>
+		</li>
+		<li>
+			<a href="https://sourceforge.net/projects/ogl-samples/">SourceForge.net project page</a>
+		</li>
+		<li>
 			<a href="https://sourceforge.net/apps/trac/ogl-samples/report/1">View active tickets</a>
 		</li>
 		<li>

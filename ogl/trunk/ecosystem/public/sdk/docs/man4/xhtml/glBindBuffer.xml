@@ -7,6 +7,7 @@
                     <code class="constant">GL_ARRAY_BUFFER</code>,
                     <code class="constant">GL_COPY_READ_BUFFER</code>,
                     <code class="constant">GL_COPY_WRITE_BUFFER</code>,
+                    <code class="constant">GL_DRAW_INDIRECT_BUFFER</code>,
                     <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code>,
                     <code class="constant">GL_PIXEL_PACK_BUFFER</code>,
                     <code class="constant">GL_PIXEL_UNPACK_BUFFER</code>,
@@ -45,6 +46,11 @@
             When a non-zero buffer object is bound to the <code class="constant">GL_ARRAY_BUFFER</code> target, 
             the vertex array pointer parameter is interpreted as an offset within the
             buffer object measured in basic machine units.
+        </p><p>
+            When a non-zero buffer object is bound to the <code class="constant">GL_DRAW_INDIRECT_BUFFER</code> target,
+            parameters for draws issued through <a href="glDrawArraysIndirect.xml"><span class="citerefentry"><span class="refentrytitle">glDrawArraysIndirect</span></span></a>
+            and <a href="glDrawElementsIndirect.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElementsIndirect</span></span></a> are sourced
+            from that buffer object.
         </p><p>
             While a non-zero buffer object is bound to the <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code> target, 
             the indices parameter of <a href="glDrawElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElements</span></span></a>, 
@@ -116,6 +122,8 @@
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_COPY_READ_BUFFER_BINDING</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_COPY_WRITE_BUFFER_BINDING</code>
+        </p><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_DRAW_INDIRECT_BUFFER_BINDING</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_ELEMENT_ARRAY_BUFFER_BINDING</code>
         </p><p>

@@ -102,7 +102,7 @@
     }]]></programlisting>
         </para>
         <para>
-            If a buffer is bound to the <constant>GL_INDIRECT_BUFFER</constant> binding at the time
+            If a buffer is bound to the <constant>GL_DRAW_INDIRECT_BUFFER</constant> binding at the time
             of a call to <function>glDrawElementsIndirect</function>, <parameter>indirect</parameter>
             is interpreted as an offset, in basic machine units, into that buffer and the parameter
             data is read from the buffer rather than from client memory.
@@ -131,7 +131,7 @@
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if a non-zero buffer object name is bound to an
-            enabled array or to the <constant>GL_INDIRECT_BUFFER</constant> binding and the buffer object's data store is currently mapped.
+            enabled array or to the <constant>GL_DRAW_INDIRECT_BUFFER</constant> binding and the buffer object's data store is currently mapped.
         </para>
         <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if a geometry shader is active and <parameter>mode</parameter>

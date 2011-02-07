@@ -36,6 +36,7 @@
                     <constant>GL_ARRAY_BUFFER</constant>,
                     <constant>GL_COPY_READ_BUFFER</constant>,
                     <constant>GL_COPY_WRITE_BUFFER</constant>,
+                    <constant>GL_DRAW_INDIRECT_BUFFER</constant>,
                     <constant>GL_ELEMENT_ARRAY_BUFFER</constant>,
                     <constant>GL_PIXEL_PACK_BUFFER</constant>,
                     <constant>GL_PIXEL_UNPACK_BUFFER</constant>,
@@ -91,6 +92,12 @@
             When a non-zero buffer object is bound to the <constant>GL_ARRAY_BUFFER</constant> target, 
             the vertex array pointer parameter is interpreted as an offset within the
             buffer object measured in basic machine units.
+        </para>
+        <para>
+            When a non-zero buffer object is bound to the <constant>GL_DRAW_INDIRECT_BUFFER</constant> target,
+            parameters for draws issued through <citerefentry><refentrytitle>glDrawArraysIndirect</refentrytitle></citerefentry>
+            and <citerefentry><refentrytitle>glDrawElementsIndirect</refentrytitle></citerefentry> are sourced
+            from that buffer object.
         </para>
         <para>
             While a non-zero buffer object is bound to the <constant>GL_ELEMENT_ARRAY_BUFFER</constant> target, 
@@ -182,6 +189,9 @@
         </para>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_COPY_WRITE_BUFFER_BINDING</constant>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_DRAW_INDIRECT_BUFFER_BINDING</constant>
         </para>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_ELEMENT_ARRAY_BUFFER_BINDING</constant>

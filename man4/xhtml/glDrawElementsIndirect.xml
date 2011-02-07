@@ -51,7 +51,7 @@
                                           cmd-&gt;baseVertex);
     }</pre><p>
         </p><p>
-            If a buffer is bound to the <code class="constant">GL_INDIRECT_BUFFER</code> binding at the time
+            If a buffer is bound to the <code class="constant">GL_DRAW_INDIRECT_BUFFER</code> binding at the time
             of a call to <code class="function">glDrawElementsIndirect</code>, <em class="parameter"><code>indirect</code></em>
             is interpreted as an offset, in basic machine units, into that buffer and the parameter
             data is read from the buffer rather than from client memory.
@@ -72,7 +72,7 @@
             binding, or if such a buffer's data store is currently mapped.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if a non-zero buffer object name is bound to an
-            enabled array or to the <code class="constant">GL_INDIRECT_BUFFER</code> binding and the buffer object's data store is currently mapped.
+            enabled array or to the <code class="constant">GL_DRAW_INDIRECT_BUFFER</code> binding and the buffer object's data store is currently mapped.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if a geometry shader is active and <em class="parameter"><code>mode</code></em>
             is incompatible with the input primitive type of the geometry shader in the currently installed program object.

@@ -59,10 +59,34 @@
                 <colspec colwidth="1.1*" />
                 <colspec colwidth="1*" align="center" />
                 <colspec colwidth="1*" align="center" />
+                <colspec colwidth="1*" align="center" />
+                <colspec colwidth="1*" align="center" />
+                <colspec colwidth="1*" align="center" />
+                <colspec colwidth="1*" align="center" />
+                <colspec colwidth="1*" align="center" />
+                <colspec colwidth="1*" align="center" />
                 <thead>
                     <row>
                         <entry rowsep="1" align="left"><emphasis role="bold">
                         Function
+                        </emphasis></entry>
+                        <entry rowsep="1" align="left"><emphasis role="bold">
+                        Version 1.10
+                        </emphasis></entry>
+                        <entry rowsep="1" align="left"><emphasis role="bold">
+                        Version 1.20
+                        </emphasis></entry>
+                        <entry rowsep="1" align="left"><emphasis role="bold">
+                        Version 1.30
+                        </emphasis></entry>
+                        <entry rowsep="1" align="left"><emphasis role="bold">
+                        Version 1.40
+                        </emphasis></entry>
+                        <entry rowsep="1" align="left"><emphasis role="bold">
+                        Version 1.50
+                        </emphasis></entry>
+                        <entry rowsep="1" align="left"><emphasis role="bold">
+                        Version 3.30
                         </emphasis></entry>
                         <entry rowsep="1" align="left"><emphasis role="bold">
                         Version 4.00
@@ -73,7 +97,83 @@
                     </row>
                     <row>
                         <entry>
-                            abs
+                            abs (genType)
+                        </entry>
+                        <entry>
+                            <emphasis>Y</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>Y</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>Y</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>Y</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>Y</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>Y</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>Y</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>Y</emphasis>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            abs (genIType)
+                        </entry>
+                        <entry>
+                            <emphasis>-</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>-</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>Y</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>Y</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>Y</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>Y</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>Y</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>Y</emphasis>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            abs (genDType)
+                        </entry>
+                        <entry>
+                            <emphasis>-</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>-</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>-</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>-</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>-</emphasis>
+                        </entry>
+                        <entry>
+                            <emphasis>-</emphasis>
                         </entry>
                         <entry>
                             <emphasis>Y</emphasis>

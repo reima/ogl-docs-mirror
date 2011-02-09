@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
               "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry id="cosh">
+<refentry id="barrier">
     <refmeta>
         <refmetainfo>
             <copyright>
@@ -9,60 +9,36 @@
                 <holder>Khronos Group</holder>
             </copyright>
         </refmetainfo>
-        <refentrytitle>cosh</refentrytitle>
+        <refentrytitle>barrier</refentrytitle>
         <manvolnum>3G</manvolnum>
     </refmeta>
     <refnamediv>
-        <refname>cosh</refname>
-        <refpurpose>return the hyperbolic cosine of the parameter</refpurpose>
+        <refname>barrier</refname>
+        <refpurpose>synchronize execution of multiple shader invocations</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef>genType <function>cosh</function></funcdef>
-                <paramdef>genType <parameter>x</parameter></paramdef>
+                <funcdef>void <function>barrier</function></funcdef>
+                <paramdef>void</paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1 id="parameters"><title>Parameters</title>
-        <variablelist>
-        <varlistentry>
-            <term><parameter>x</parameter></term>
-            <listitem>
-                <para>
-                    Specify the value whose hyperbolic cosine to return.
-                </para>
-            </listitem>
-        </varlistentry>
-        </variablelist>
-    </refsect1>
     <refsect1 id="description"><title>Description</title>
         <para>
-            <function>cosh</function> returns the hyperbolic cosine of
-            <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>.
-            The hyperbolic cosine of <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
-            is computed as
-            <inlineequation><mml:math>
-              <mml:mrow>
-                <mml:mfrac>
-                  <mml:mrow>
-                    <mml:msup>
-                      <mml:mi>e</mml:mi>
-                      <mml:mi>x</mml:mi>
-                    </mml:msup>
-                    <mml:mo>&plus;</mml:mo>
-                    <mml:msup>
-                      <mml:mi>e</mml:mi>
-                      <mml:mrow>
-                        <mml:mo>&minus;</mml:mo>
-                        <mml:mi>x</mml:mi>
-                      </mml:mrow>
-                    </mml:msup>
-                  </mml:mrow>
-                  <mml:mn>2</mml:mn>
-                </mml:mfrac>
-              </mml:mrow>
-            </mml:math></inlineequation>.
+            <emphasis>Available only in the Tessellation Control Shader</emphasis>, <function>barrier</function> provides
+            a partially defined order of execution between shader invocations. For any given static instance of <function>barrier</function>,
+            all tessellation control shader invocations for a single input patch must enter it before any will be allowed
+            to continue beyond it. This ensures that values written by one invocation prior to a given static instance
+            of <function>barrier</function> can be safely read by other invocations after their call to the same static
+            instance of <function>barrier</function>. Because invocations may execute in undefined order between these
+            <function>barrier</function> calls, the values of a per-vertex or per-patch output variable will be undefined
+            in a number of cases.
+        </para>
+        <para>
+            <function>barrier</function> may only be placed inside the function <code>main()</code> of the tessellation
+            control shader and may not be called within any control flow. Barriers are also disallowed after a return
+            statement in the function <code>main()</code>.
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>
@@ -109,7 +85,7 @@
                     </row>
                     <row>
                         <entry>
-                            cosh
+                            barrier
                         </entry>
                         <entry>
                             <emphasis>-</emphasis>
@@ -118,16 +94,16 @@
                             <emphasis>-</emphasis>
                         </entry>
                         <entry>
-                            <emphasis>Y</emphasis>
+                            <emphasis>-</emphasis>
                         </entry>
                         <entry>
-                            <emphasis>Y</emphasis>
+                            <emphasis>-</emphasis>
                         </entry>
                         <entry>
-                            <emphasis>Y</emphasis>
+                            <emphasis>-</emphasis>
                         </entry>
                         <entry>
-                            <emphasis>Y</emphasis>
+                            <emphasis>-</emphasis>
                         </entry>
                         <entry>
                             <emphasis>Y</emphasis>
@@ -139,13 +115,7 @@
                 </thead>
             </tgroup>
         </informaltable>
-    </refsect1>
-    <refsect1 id="seealso"><title>See Also</title>
-        <para>
-            <citerefentry><refentrytitle>sin</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>cos</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>sinh</refentrytitle></citerefentry>
-        </para>
+
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>

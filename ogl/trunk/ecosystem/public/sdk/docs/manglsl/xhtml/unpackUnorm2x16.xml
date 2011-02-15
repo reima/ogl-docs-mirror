@@ -14,8 +14,20 @@
         </p><p>
             The first component of the returned vector will be extracted from the least significant bits of the input;
             the last component will be extracted from the most significant bits.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="versions"></a><h2>Version Support</h2><div class="informaltable"><table border="1"><colgroup><col align="left" /><col align="center" /><col align="center" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="versions"></a><h2>Version Support</h2><div class="informaltable"><table border="1"><colgroup><col align="left" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
                         Function
+                        </strong></span></th><th align="left"><span class="bold"><strong>
+                        Version 1.10
+                        </strong></span></th><th align="left"><span class="bold"><strong>
+                        Version 1.20
+                        </strong></span></th><th align="left"><span class="bold"><strong>
+                        Version 1.30
+                        </strong></span></th><th align="left"><span class="bold"><strong>
+                        Version 1.40
+                        </strong></span></th><th align="left"><span class="bold"><strong>
+                        Version 1.50
+                        </strong></span></th><th align="left"><span class="bold"><strong>
+                        Version 3.30
                         </strong></span></th><th align="left"><span class="bold"><strong>
                         Version 4.00
                         </strong></span></th><th align="left"><span class="bold"><strong>
@@ -23,17 +35,53 @@
                         </strong></span></th></tr><tr><th align="left">
                             unpackUnorm2x16
                         </th><th align="center">
+                            <span class="emphasis"><em>-</em></span>
+                        </th><th align="center">
+                            <span class="emphasis"><em>-</em></span>
+                        </th><th align="center">
+                            <span class="emphasis"><em>-</em></span>
+                        </th><th align="center">
+                            <span class="emphasis"><em>-</em></span>
+                        </th><th align="center">
+                            <span class="emphasis"><em>-</em></span>
+                        </th><th align="center">
+                            <span class="emphasis"><em>-</em></span>
+                        </th><th align="center">
                             <span class="emphasis"><em>Y</em></span>
                         </th><th align="center">
                             <span class="emphasis"><em>Y</em></span>
                         </th></tr><tr><th align="left">
                             unpackUnorm4x8
                         </th><th align="center">
+                            <span class="emphasis"><em>-</em></span>
+                        </th><th align="center">
+                            <span class="emphasis"><em>-</em></span>
+                        </th><th align="center">
+                            <span class="emphasis"><em>-</em></span>
+                        </th><th align="center">
+                            <span class="emphasis"><em>-</em></span>
+                        </th><th align="center">
+                            <span class="emphasis"><em>-</em></span>
+                        </th><th align="center">
+                            <span class="emphasis"><em>-</em></span>
+                        </th><th align="center">
                             <span class="emphasis"><em>Y</em></span>
                         </th><th align="center">
                             <span class="emphasis"><em>Y</em></span>
                         </th></tr><tr><th align="left">
                             unpackSnorm4x8
+                        </th><th align="center">
+                            <span class="emphasis"><em>-</em></span>
+                        </th><th align="center">
+                            <span class="emphasis"><em>-</em></span>
+                        </th><th align="center">
+                            <span class="emphasis"><em>-</em></span>
+                        </th><th align="center">
+                            <span class="emphasis"><em>-</em></span>
+                        </th><th align="center">
+                            <span class="emphasis"><em>-</em></span>
+                        </th><th align="center">
+                            <span class="emphasis"><em>-</em></span>
                         </th><th align="center">
                             <span class="emphasis"><em>Y</em></span>
                         </th><th align="center">

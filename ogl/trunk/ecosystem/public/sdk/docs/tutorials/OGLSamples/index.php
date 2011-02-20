@@ -19,6 +19,7 @@
 
   <body>
     <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
+	<img src="./glew.png" alt="GLEW Logo" width="49" height="38">
     <h1>OpenGL Samples Pack</h1>
 
 	  <p>
@@ -34,8 +35,8 @@
 	  <p>
 		  These samples use
 		  <a href="http://freeglut.sf.net/">FreeGLUT</a> to create window and an OpenGL context,
-		  <a href="http://glew.sourceforge.net/">GLEW</a> to load the OpenGL implementation,
-		  <a href="http://glm.g-truc.net">GLM</a> as math library and to replace OpenGL fixed pipeline functions and
+		  <a href="http://www.opengl.org/sdk/libs/GLEW/">GLEW</a> to load the OpenGL implementation,
+		  <a href="http://www.opengl.org/sdk/libs/GLM/">GLM</a> as math library and to replace OpenGL fixed pipeline functions and
 		  <a href="http://www.g-truc.net/project-0024.html">GLI</a> to load images.
 	  </p>
 	  <p>

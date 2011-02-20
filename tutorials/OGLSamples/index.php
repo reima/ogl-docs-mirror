@@ -19,7 +19,7 @@
 
   <body>
     <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_body_start.txt"); ?>
-	<img src="./glew.png" alt="GLEW Logo" width="49" height="38">
+
     <h1>OpenGL Samples Pack</h1>
 
 	  <p>

@@ -40,7 +40,7 @@
 	  </p>
 	  <p>
 		  The source code is under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT licence</a>.
-		  I build with Visual C++ 2005 - 2010 only through <a href="http://www.cmake.org/cmake/resources/software.html">CMake</a> at the moment.
+		  It build with Visual C++ 2005 - 2010 only through <a href="http://www.cmake.org/cmake/resources/software.html">CMake</a> at the moment.
 	  </p>
 
 	  <ul>

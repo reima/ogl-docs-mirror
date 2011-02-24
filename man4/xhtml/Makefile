@@ -83,6 +83,9 @@ GL_ARB_separate_shader_objects_entries = \
     glGetProgramPipelineInfoLog.xml \
     glProgramUniform.xml
 
+GL_ARB_sample_shading_entries = \
+    glMinSampleShading.xml
+
 MODIFIEDFORGL4XML = \
     glClearDepth.xml \
     glCreateShader.xml \
@@ -97,7 +100,8 @@ GL4XML = \
     $(GL_ARB_shader_subroutine_entries) \
     $(GL_ARB_tessellation_shader_entries) \
     $(GL_ARB_transform_feedback2_entries) \
-    $(GL_ARB_transform_feedback3_entries)
+    $(GL_ARB_transform_feedback3_entries) \
+    $(GL_ARB_sample_shading_entries)
 
 GL41XML = \
     $(GL_ARB_viewport_array_entries) \

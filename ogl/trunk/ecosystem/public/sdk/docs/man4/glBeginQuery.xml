@@ -85,7 +85,7 @@
             object depends on its type and is as follows.
         </para>
         <para>
-            If <parameter>target</parameter> is <constant>GL_SAMPLES_PASSED</constant>, <parameter>target</parameter> must be an unused name,
+            If <parameter>target</parameter> is <constant>GL_SAMPLES_PASSED</constant>, <parameter>id</parameter> must be an unused name,
             or the name of an existing occlusion query object.
             When <function>glBeginQuery</function> is executed, the query object's samples-passed counter is reset to 0.  Subsequent
             rendering will increment the counter for every sample that passes the depth test.  If the value of <constant>GL_SAMPLE_BUFFERS</constant>
@@ -98,7 +98,7 @@
             <constant>GL_QUERY_RESULT</constant>.
         </para>
         <para>
-            If <parameter>target</parameter> is <constant>GL_ANY_SAMPLES_PASSED</constant>, <parameter>target</parameter> must be an unused name,
+            If <parameter>target</parameter> is <constant>GL_ANY_SAMPLES_PASSED</constant>, <parameter>id</parameter> must be an unused name,
             or the name of an existing boolean occlusion query object.
             When <function>glBeginQuery</function> is executed, the query object's samples-passed flag is reset to <constant>GL_FALSE</constant>.
             Subsequent rendering causes the flag to be set to <constant>GL_TRUE</constant> if any sample passes the depth test.  When
@@ -107,7 +107,7 @@
             <constant>GL_QUERY_RESULT</constant>.
         </para>
         <para>
-            If <parameter>target</parameter> is <constant>GL_PRIMITIVES_GENERATED</constant>, <parameter>target</parameter> must be an unused
+            If <parameter>target</parameter> is <constant>GL_PRIMITIVES_GENERATED</constant>, <parameter>id</parameter> must be an unused
             name, or the name of an existing primitive query object previously bound to the <constant>GL_PRIMITIVES_GENERATED</constant> query binding.
             When <function>glBeginQuery</function> is executed, the query object's primitives-generated counter is reset to 0.  Subsequent
             rendering will increment the counter once for every vertex that is emitted from the geometry shader, or from the vertex shader if
@@ -116,7 +116,7 @@
             <constant>GL_QUERY_RESULT</constant>.
         </para>
         <para>
-            If <parameter>target</parameter> is <constant>GL_TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN</constant>, <parameter>target</parameter> must be
+            If <parameter>target</parameter> is <constant>GL_TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN</constant>, <parameter>id</parameter> must be
             an unused name, or the name of an existing primitive query object previously bound to the <constant>GL_TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN</constant>
             query binding. When <function>glBeginQuery</function> is executed, the query object's primitives-written counter is reset to 0.  Subsequent
             rendering will increment the counter once for every vertex that is written into the bound transform feedback buffer(s).  If transform feedback
@@ -126,7 +126,7 @@
             <constant>GL_QUERY_RESULT</constant>.
         </para>
         <para>
-            If <parameter>target</parameter> is <constant>GL_TIME_ELAPSED</constant>, <parameter>target</parameter> must be
+            If <parameter>target</parameter> is <constant>GL_TIME_ELAPSED</constant>, <parameter>id</parameter> must be
             an unused name, or the name of an existing timer query object previously bound to the <constant>GL_TIME_ELAPSED</constant>
             query binding. When <function>glBeginQuery</function> is executed, the query object's time counter is reset to 0.  When <function>glEndQuery</function>
             is executed, the elapsed server time that has passed since the call to <function>glBeginQuery</function> is written into the query object's

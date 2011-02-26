@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
           "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry id="glGetActiveUniform">
+<refentry id="glGetActiveUniformsiv">
     <refmeta>
     <refentrytitle>glGetActiveUniformsiv</refentrytitle>
     <manvolnum>3G</manvolnum>
@@ -13,7 +13,7 @@
     <refsynopsisdiv><title>C Specification</title>
     <funcsynopsis>
         <funcprototype>
-        <funcdef>void <function>glGetActiveUniform</function></funcdef>
+        <funcdef>void <function>glGetActiveUniformsiv</function></funcdef>
         <paramdef>GLuint <parameter>program</parameter></paramdef>
         <paramdef>GLsizei <parameter>uniformCount</parameter></paramdef>
         <paramdef>const GLuint *<parameter>uniformIndices</parameter></paramdef>

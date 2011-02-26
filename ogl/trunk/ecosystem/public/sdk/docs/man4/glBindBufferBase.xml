@@ -20,9 +20,9 @@
         <funcsynopsis>
             <funcprototype>
                 <funcdef>void <function>glBindBufferBase</function></funcdef>
-                <paramdef>GLenum<parameter>target</parameter></paramdef>
-                <paramdef>GLuint<parameter>index</parameter></paramdef>
-                <paramdef>GLuint<parameter>buffer</parameter></paramdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLuint <parameter>index</parameter></paramdef>
+                <paramdef>GLuint <parameter>buffer</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -69,9 +69,6 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <function>glBindBufferBase</function> is available only if the GL version is 3.0 or greater.
-        </para>
-        <para>
             Calling <function>glBindBufferBase</function> is equivalent to calling
             <citerefentry><refentrytitle>glBindBufferRange</refentrytitle></citerefentry> with <parameter>offset</parameter>
             zero and <parameter>size</parameter> equal to the size of the buffer.
@@ -85,6 +82,10 @@
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>index</parameter> is greater
             than or equal to the number of <parameter>target</parameter>-specific indexed binding points.
+        </para>
+        <para>
+            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>buffer</parameter> does
+            not have an associated data store, or if the size of that store is zero.
         </para>
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>

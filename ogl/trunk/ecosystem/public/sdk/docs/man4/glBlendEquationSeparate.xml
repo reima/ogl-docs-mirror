@@ -23,11 +23,26 @@
                 <paramdef>GLenum <parameter>modeRGB</parameter></paramdef>
                 <paramdef>GLenum <parameter>modeAlpha</parameter></paramdef>
             </funcprototype>
+            <funcprototype>
+                <funcdef>void <function>glBlendEquationSeparatei</function></funcdef>
+                <paramdef>GLuint <parameter>buf</parameter></paramdef>
+                <paramdef>GLenum <parameter>modeRGB</parameter></paramdef>
+                <paramdef>GLenum <parameter>modeAlpha</parameter></paramdef>
+            </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
     <refsect1 id="parameters"><title>Parameters</title>
         <variablelist>
+        <varlistentry>
+            <term><parameter>buf</parameter></term>
+            <listitem>
+                <para>
+                    for <function>glBlendEquationSeparatei</function>, specifies the index of the draw buffer for which
+                    to set the blend equations.
+                </para>
+            </listitem>
+        </varlistentry>
         <varlistentry>
             <term><parameter>modeRGB</parameter></term>
             <listitem>
@@ -54,8 +69,10 @@
         <para>
             The blend equations determines how a new pixel (the ''source'' color)
             is combined with a pixel already in the framebuffer (the ''destination''
-            color).  This function specifies one blend equation for the RGB-color 
-            components and one blend equation for the alpha component.
+            color).  These functions specifie one blend equation for the RGB-color 
+            components and one blend equation for the alpha component. <function>glBlendEquationSeparatei</function>
+            specifies the blend equations for a single draw buffer whereas <function>glBlendEquationSeparate</function>
+            sets the blend equations for all draw buffers.
         </para>
         <para>
             The blend equations use the source and destination blend factors

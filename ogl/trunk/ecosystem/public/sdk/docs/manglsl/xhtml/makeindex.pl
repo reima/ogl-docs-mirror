@@ -27,6 +27,11 @@ print '<html>
 
 sub PrintFooter {
 print '
+<P>
+<center>
+<small>OpenGL Shading Language (GLSL) Reference Pages Copyright &copy 2011 Khronos Group, Inc.</small>
+</center>
+</P>
 </body>
 </html>
 ';

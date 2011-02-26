@@ -123,6 +123,7 @@ ALLXML = \
     glGetActiveUniformBlock.xml \
     glGetActiveUniformBlockName.xml \
     glGetActiveUniformName.xml \
+    glGetActiveUniformsiv.xml \
     glGetAttachedShaders.xml \
     glGetAttribLocation.xml \
     glGetBufferParameter.xml \

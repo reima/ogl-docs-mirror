@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE>OpenGL SDK</TITLE>
+<TITLE>OpenGL Shading Language (GLSL) Reference Pages</TITLE>
 <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_head.txt"); ?>
 </HEAD>
 <BODY>

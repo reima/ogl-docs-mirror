@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE>OpenGL Shading Language Reference Pages</TITLE>
+<TITLE>OpenGL Shading Language (GLSL) Reference Pages</TITLE>
 </HEAD>
 <FRAMESET ROWS="160,*">
   <FRAME SCROLLING="no" NORESIZE FRAMEBORDER="0" MARGINWIDTH="0" MARGINHEIGHT="0" SRC="top.php">

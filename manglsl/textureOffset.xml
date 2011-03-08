@@ -174,7 +174,7 @@
                     </row>
                     <row>
                         <entry>
-                            textureLod
+                            textureOffset
                         </entry>
                         <entry>
                             <emphasis>-</emphasis>
@@ -203,7 +203,7 @@
                     </row>
                     <row>
                         <entry>
-                            textureLod (gsampler2DRect{Shadow})
+                            textureOffset (gsampler2DRect{Shadow})
                         </entry>
                         <entry>
                             <emphasis>-</emphasis>

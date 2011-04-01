@@ -137,6 +137,7 @@
         <para>
             <citerefentry><refentrytitle>glDepthFunc</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glDepthRange</refentrytitle></citerefentry>,
+            <citerefentry><refentrytitle>glDepthRangeIndexed</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glViewportArray</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>glViewport</refentrytitle></citerefentry>

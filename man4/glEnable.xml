@@ -128,7 +128,7 @@
             which can assume one of the following values:
         </para>
         <para>
-            Some of the GL's capabilities are indicated. <function>glEnablei</function> and <function>glDisablei</function> enable and disable
+            Some of the GL's capabilities are indexed. <function>glEnablei</function> and <function>glDisablei</function> enable and disable
             indexed capabilities.
         </para>
         <variablelist>
@@ -220,6 +220,21 @@
                         If enabled,
                         dither color components or indices before they are written to the
                         color buffer.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_FRAMEBUFFER_SRGB</constant>    </term>
+                <listitem>
+                <para>
+                </para>
+                    <para>
+                        If enabled
+                        and the value of <constant>GL_FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING</constant> for the
+                        framebuffer attachment corresponding to the destination buffer is <constant>GL_SRGB</constant>,
+                        the R, G, and B destination color values (after conversion from fixed-point to floating-point)
+                        are considered to be encoded for the sRGB color space and hence are linearized prior to
+                        their use in blending.
                     </para>
                 </listitem>
             </varlistentry>
@@ -352,6 +367,31 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_SAMPLE_SHADING</constant></term>
+                <listitem>
+                <para>
+                </para>
+                    <para>
+                        If enabled, the active fragment shader is run once for each covered sample, or at
+                        fraction of this rate as determined by the current value of <constant>GL_MIN_SAMPLE_SHADING_VALUE</constant>.
+                        See <citerefentry><refentrytitle>glMinSampleShading</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_SAMPLE_MASK</constant></term>
+                <listitem>
+                <para>
+                </para>
+                    <para>
+                        If enabled, the sample coverage mask generated for a fragment during rasterization
+                        will be ANDed with the value of <constant>GL_SAMPLE_MASK_VALUE</constant> before
+                        shading occurs.
+                        See <citerefentry><refentrytitle>glSampleMaski</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_SCISSOR_TEST</constant></term>
                 <listitem>
                 <para>
@@ -381,7 +421,10 @@
                 <para>
                 </para>
                     <para>
-                        If enabled, modifies the way sampling is performed on cube map textures.  See the spec for more information.
+                        If enabled, cubemap textures are sampled such that when linearly sampling from the border
+                        between two adjacent faces, texels from both faces are used to generate the final sample
+                        value. When disabled, texels from only a single face are used to construct the final
+                        sample value.
                     </para>
                 </listitem>
             </varlistentry>
@@ -460,7 +503,7 @@
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 1991-2006
-            Silicon Graphics, Inc. Copyright <trademark class="copyright"></trademark> 2010 Khronos Group.
+            Silicon Graphics, Inc. Copyright <trademark class="copyright"></trademark> 2010-2011 Khronos Group.
             This document is licensed under the SGI
             Free Software B License. For details, see
             <ulink url="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</ulink>.

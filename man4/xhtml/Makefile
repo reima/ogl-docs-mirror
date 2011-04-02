@@ -191,7 +191,6 @@ UNMODIFIEDXML = \
     glFlushMappedBufferRange.xml \
     glFramebufferRenderbuffer.xml \
     glFramebufferTexture.xml \
-    glFramebufferTextureFace.xml \
     glFramebufferTextureLayer.xml \
     glFrontFace.xml \
     glGenBuffers.xml \

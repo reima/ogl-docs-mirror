@@ -167,6 +167,7 @@ Builtin_Variables = \
     gl_InstanceID.xml \
     gl_PointSize.xml \
     gl_Position.xml \
+    gl_PrimitiveIDIn.xml \
     gl_VertexID.xml
 
 GLSLXML = \

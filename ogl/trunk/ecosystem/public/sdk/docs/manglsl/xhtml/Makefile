@@ -163,6 +163,12 @@ Geometry_Shader_Functions = \
 Invocation_Control_Functions = \
     barrier.xml
 
+Builtin_Variables = \
+    gl_InstanceID.xml \
+    gl_PointSize.xml \
+    gl_Position.xml \
+    gl_VertexID.xml
+
 GLSLXML = \
     $(Angle_and_Trigonometry_Functions) \
     $(Exponential_Functions) \
@@ -179,7 +185,9 @@ GLSLXML = \
     $(Interpolation_Functions) \
     $(Noise_Functions) \
     $(Geometry_Shader_Functions) \
-    $(Invocation_Control_Functions)
+    $(Invocation_Control_Functions) \
+    \
+    $(Builtin_Variables)
 
 XML    = $(GLSLXML)
 

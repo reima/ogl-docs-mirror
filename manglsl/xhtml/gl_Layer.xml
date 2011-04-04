@@ -89,7 +89,7 @@
                         </th><th align="center">
                             <span class="emphasis"><em>Y</em></span>  
                         </th></tr></thead></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
-            <a href="gl_InstanceID.xml"><span class="citerefentry"><span class="refentrytitle">gl_InstanceID</span></span></a>
+            <a href="gl_ViewportIndex.xml"><span class="citerefentry"><span class="refentrytitle">gl_ViewportIndex</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2011 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 

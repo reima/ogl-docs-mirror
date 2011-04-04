@@ -19,7 +19,8 @@ DB2XHTML = opengl-man.xsl
 %.xml: ../%.xml $(DB2XHTML)
 	$(XSLT) --xinclude -o $@.tmp $(DB2XHTML) $<
 	$(SED) 's/<?xml-stylesheet/<!-- saved from url=(0013)about:internet -->\n<?xml-stylesheet/g' $@.tmp | \
-	    $(SED) 's#http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd#xhtml1-transitional.dtd#g' > $@
+	    $(SED) 's#http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd#xhtml1-transitional.dtd#g' | \
+	    $(SED) 's#</title># - OpenGL Shading Language (GLSL)</title>#g' > $@
 	$(RM) $@.tmp
 
 Angle_and_Trigonometry_Functions = \

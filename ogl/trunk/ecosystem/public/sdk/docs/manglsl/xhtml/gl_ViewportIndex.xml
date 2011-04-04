@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>gl_ViewportIndex</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gl_ViewportIndex"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gl_ViewportIndex — contains the index of the viewport to be used in viewport transformation and scissoring</p></div><div class="refsynopsisdiv"><h2>Declaration</h2><div class="funcsynopsis"><code class="function">out int gl_ViewportIndex;</code></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /> - OpenGL Shading Language
+      <title>gl_ViewportIndex</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gl_ViewportIndex"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gl_ViewportIndex — contains the index of the viewport to be used in viewport transformation and scissoring</p></div><div class="refsynopsisdiv"><h2>Declaration</h2><div class="funcsynopsis"><code class="function">out int gl_ViewportIndex;</code></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
             In the geometry language, <code class="function">gl_ViewportIndex</code> is used to specify the index
             of the viewport to which the next primitive emitted from the shader should be drawn. Primitives generated
             by the geometry shader will undergo viewport transformation and scissor testing using the viewport
@@ -15,7 +16,7 @@
             the value of <code class="function">gl_ViewportIndex</code> is undefined for executions of the shader that take
             that path.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="versions"></a><h2>Version Support</h2><div class="informaltable"><table border="1"><colgroup><col align="left" /><col align="center" /><col align="center" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
-                        Function
+                        Variable
                         </strong></span></th><th align="left"><span class="bold"><strong>
                         Version 1.10
                         </strong></span></th><th align="left"><span class="bold"><strong>

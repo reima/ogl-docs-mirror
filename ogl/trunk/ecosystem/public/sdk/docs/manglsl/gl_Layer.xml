@@ -189,7 +189,7 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>gl_InstanceID</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>gl_ViewportIndex</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

@@ -14,7 +14,7 @@
     </refmeta>
     <refnamediv>
         <refname>gl_FrontFacing</refname>
-        <refpurpose>establishes a depth value for the current fragment</refpurpose>
+        <refpurpose>indicates whether a primitive is front or back facing</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
         <funcsynopsis>

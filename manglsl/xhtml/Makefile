@@ -165,11 +165,27 @@ Invocation_Control_Functions = \
     barrier.xml
 
 Builtin_Variables = \
+    gl_ClipDistance.xml \
+    gl_FragCoord.xml \
+    gl_FragDepth.xml \
+    gl_FrontFacing.xml \
     gl_InstanceID.xml \
+    gl_InvocationID.xml \
+    gl_Layer.xml \
+    gl_PatchVerticesIn.xml \
+    gl_PointCoord.xml \
     gl_PointSize.xml \
     gl_Position.xml \
+    gl_PrimitiveID.xml \
     gl_PrimitiveIDIn.xml \
-    gl_VertexID.xml
+    gl_SampleID.xml \
+    gl_SampleMask.xml \
+    gl_SamplePosition.xml \
+    gl_TessCoord.xml \
+    gl_TessLevelInner.xml \
+    gl_TessLevelOuter.xml \
+    gl_VertexID.xml \
+    gl_ViewportIndex.xml
 
 GLSLXML = \
     $(Angle_and_Trigonometry_Functions) \

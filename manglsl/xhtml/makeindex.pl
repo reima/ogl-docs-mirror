@@ -84,6 +84,7 @@ close(DIR);
 PrintHeader();
 
 my @glsl;
+my @builtins;
 
 my @realEntrypoints;
 my @pageNames;
@@ -178,10 +179,13 @@ foreach (@files)
 		}
 
 		#if ($needIndexEntry)
+		if (substr($_, 0, 3) eq "gl_")
 		{
-			{
-				push (@glsl, $_);
-			}
+    		push (@builtins, $_);
+	    }
+	    else
+		{
+			push (@glsl, $_);
 		}
 	}
 }
@@ -199,7 +203,6 @@ if ($#glsl > 0)
 	foreach (@glsl)
 	{
 		$name = $_;
-		$name =~ s/^gl//;
 		$firstletter = uc(substr($name, 0, 1));
 		if ($firstletter ne $currentletter)
 		{
@@ -220,6 +223,10 @@ foreach (@toc)
 	print $_;
 	print " </a></b> &nbsp; ";
 }
+if ($#builtins > 0)
+{
+    print '<br/><b><a href="#Built-in Variables" style="text-decoration:none">Built-in Variables</a></b>';
+}
 print "</div>\n\n\n";
 print '</center>';
 
@@ -233,7 +240,6 @@ if ($#glsl > 0)
 	foreach (@glsl)
 	{
 		$name = $_;
-		$name =~ s/^gl//;
 		$firstletter = uc(substr($name, 0, 1));
 		if ($firstletter ne $currentletter)
 		{
@@ -251,6 +257,16 @@ if ($#glsl > 0)
 	{
 		EndTable();
 	}
+}
+
+if ($#builtins > 0)
+{
+    BeginTable("Built-in Variables");
+    foreach (@builtins)
+    {
+        TableElementForFilename($_);
+    }
+    EndTable();
 }
 
 PrintFooter();

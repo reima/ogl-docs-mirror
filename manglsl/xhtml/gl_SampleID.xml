@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>gl_ViewportIndex - OpenGL Shading Language (GLSL)</title><meta name="generator" content="DocBook XSL Stylesheets V1.75.2" /></head><body><div class="refentry" title="gl_ViewportIndex"><a id="gl_ViewportIndex"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gl_ViewportIndex — contains the index of the viewport to be used in viewport transformation and scissoring</p></div><div class="refsynopsisdiv" title="Declaration"><h2>Declaration</h2><div class="funcsynopsis"><code class="function">out int gl_ViewportIndex;</code></div></div><div class="refsect1" title="Description"><a id="description"></a><h2>Description</h2><p>
-            In the geometry language, <code class="function">gl_ViewportIndex</code> is used to specify the index
-            of the viewport to which the next primitive emitted from the shader should be drawn. Primitives generated
-            by the geometry shader will undergo viewport transformation and scissor testing using the viewport
-            transformation and scissor rectangle selected by the value of <code class="function">gl_ViewportIndex</code>.
-            The viewport index used will come from one of the vertices in the primitive being shaded. However, which
-            vertex the viewport index comes from is implementation-defined, and so it is recommended to use the same
-            viewport index for all vertices of a primitive. If a geometry shader does not assign a value to
-            <code class="function">gl_ViewportIndex</code>, viewport transform and scissor rectangle zero will be used.
-            If a geometry shader statically assigns a value to <code class="function">gl_ViewportIndex</code> and there
-            is a path through the shader that does not assign a value to <code class="function">gl_ViewportIndex</code>,
-            the value of <code class="function">gl_ViewportIndex</code> is undefined for executions of the shader that take
-            that path.
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>gl_SampleID - OpenGL Shading Language (GLSL)</title><meta name="generator" content="DocBook XSL Stylesheets V1.75.2" /></head><body><div class="refentry" title="gl_SampleID"><a id="gl_SampleID"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gl_SampleID — contains the index of the sample currently being processed</p></div><div class="refsynopsisdiv" title="Declaration"><h2>Declaration</h2><div class="funcsynopsis"><code class="function">in int gl_SampleID;</code></div></div><div class="refsect1" title="Description"><a id="description"></a><h2>Description</h2><p>
+            <code class="function">gl_SampleID</code> is a fragment language input variable that contains
+            the index of the sample currently being processed. This variable is in the range
+            0 to <code class="function">gl_NumSamples</code> - 1, where <code class="function">gl_NumSamples</code>
+            is the total number of samples in each fragment for the current framebuffer (and thus 1 if
+            rendering to a non-multisample buffer). Any static use of this variable in a fragment
+            shader causes the entire shader to be evaluated per-sample rather than per-fragment.
+        </p><p>
+            When rendering to a non-multisample buffer, or if multisample rasterization is disabled,
+            <code class="function">gl_SampleID</code> will always be zero. <code class="function">gl_NumSamples</code>
+            is the sample count of the framebuffer regardless of whether multisample rasterization is
+            enabled or not.
         </p></div><div class="refsect1" title="Version Support"><a id="versions"></a><h2>Version Support</h2><div class="informaltable"><table border="1"><colgroup><col align="left" /><col align="center" /><col align="center" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
                         Variable
                         </strong></span></th><th align="left"><span class="bold"><strong>
@@ -33,7 +32,7 @@
                         </strong></span></th><th align="left"><span class="bold"><strong>
                         Version 4.10
                         </strong></span></th></tr><tr><th align="left">
-                            gl_ViewportIndex
+                            gl_SampleID
                         </th><th align="center">
                             <span class="emphasis"><em>-</em></span>  
                         </th><th align="center">
@@ -43,15 +42,15 @@
                         </th><th align="center">
                             <span class="emphasis"><em>-</em></span>  
                         </th><th align="center">
-                            <span class="emphasis"><em>Y</em></span>  
+                            <span class="emphasis"><em>-</em></span>  
                         </th><th align="center">
-                            <span class="emphasis"><em>Y</em></span>  
+                            <span class="emphasis"><em>-</em></span>  
                         </th><th align="center">
                             <span class="emphasis"><em>Y</em></span>  
                         </th><th align="center">
                             <span class="emphasis"><em>Y</em></span>  
                         </th></tr></thead></table></div></div><div class="refsect1" title="See Also"><a id="seealso"></a><h2>See Also</h2><p>
-            <a class="citerefentry" href="gl_Layer.xml"><span class="citerefentry"><span class="refentrytitle">gl_Layer</span></span></a>
+            <a class="citerefentry" href="gl_SamplePosition.xml"><span class="citerefentry"><span class="refentrytitle">gl_SamplePosition</span></span></a>
         </p></div><div class="refsect1" title="Copyright"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2011 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 

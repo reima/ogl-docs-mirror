@@ -7,7 +7,7 @@
         </p><div class="funcsynopsis"><pre class="programlisting">    out gl_PerVertex {
         vec4 gl_PointSize;
         float gl_PointSize;
-        gl_ClipDistance[];
+        float gl_ClipDistance[];
     };</pre></div></div><div class="refsect1" title="Description"><a id="description"></a><h2>Description</h2><p>
             In the vertex, tessellation evaluation and geoemtry languages, a single
             global instance of the <code class="function">gl_PerVertex</code> named block is available and

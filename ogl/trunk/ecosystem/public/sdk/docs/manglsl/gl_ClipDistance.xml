@@ -25,14 +25,14 @@
 <programlisting><![CDATA[    out gl_PerVertex {
         vec4 gl_Position;
         float gl_PointSize;
-        gl_ClipDistance[];
+        float gl_ClipDistance[];
     };]]></programlisting>
         </funcsynopsis>
         <para>
             In the fragment language, it is intrinsically declared as:
         </para>
         <funcsynopsis>
-            <function>in float gl_InstanceID[];</function>
+            <function>in float gl_ClipDistance[];</function>
         </funcsynopsis>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>

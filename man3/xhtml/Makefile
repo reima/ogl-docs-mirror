@@ -106,7 +106,6 @@ ALLXML = \
     glFramebufferTexture1D.xml \
     glFramebufferTexture2D.xml \
     glFramebufferTexture3D.xml \
-    glFramebufferTextureFace.xml \
     glFramebufferTextureLayer.xml \
     glFrontFace.xml \
     glGenBuffers.xml \

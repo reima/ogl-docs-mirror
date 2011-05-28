@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
               "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry id="gl_SampleID">
+<refentry id="gl_NumSamples">
     <refmeta>
         <refmetainfo>
             <copyright>
@@ -9,33 +9,24 @@
                 <holder>Khronos Group</holder>
             </copyright>
         </refmetainfo>
-        <refentrytitle>gl_SampleID</refentrytitle>
+        <refentrytitle>gl_NumSamples</refentrytitle>
         <manvolnum>3G</manvolnum>
     </refmeta>
     <refnamediv>
-        <refname>gl_SampleID</refname>
-        <refpurpose>contains the index of the sample currently being processed</refpurpose>
+        <refname>gl_NumSamples</refname>
+        <refpurpose>contains the total number of samples in the framebuffer</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
         <funcsynopsis>
-            <function>in int gl_SampleID;</function>
+            <function>in int gl_NumSamples;</function>
         </funcsynopsis>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
-            <function>gl_SampleID</function> is a fragment language input variable that contains
-            the index of the sample currently being processed. This variable is in the range
-            0 to <citerefentry><refentrytitle>gl_NumSamples</refentrytitle></citerefentry> - 1, where
-            <citerefentry><refentrytitle>gl_NumSamples</refentrytitle></citerefentry>
-            is the total number of samples in each fragment for the current framebuffer (and thus 1 if
-            rendering to a non-multisample buffer). Any static use of this variable in a fragment
-            shader causes the entire shader to be evaluated per-sample rather than per-fragment.
-        </para>
-        <para>
-            When rendering to a non-multisample buffer, or if multisample rasterization is disabled,
-            <function>gl_SampleID</function> will always be zero. <citerefentry><refentrytitle>gl_NumSamples</refentrytitle></citerefentry>
-            is the sample count of the framebuffer regardless of whether multisample rasterization is
-            enabled or not.
+            <function>gl_NumSamples</function> is a fragment language input variable that contains
+            the number of samples in the framebuffer, or 1 if rendering to a non-multisample framebuffer.
+            <function>gl_NumSamples</function> is the sample count of the framebuffer regardless
+            of whether multisample rasterization is enabled or not.
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>
@@ -82,7 +73,7 @@
                     </row>
                     <row>
                         <entry>
-                            gl_SampleID
+                            gl_NumSamples
                         </entry>
                         <entry>
                             <emphasis>-</emphasis>  <!-- 1.10, OpenGL 2.0 -->
@@ -116,7 +107,7 @@
     <refsect1 id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>gl_SamplePosition</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>gl_NumSamples</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>gl_SampleID</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

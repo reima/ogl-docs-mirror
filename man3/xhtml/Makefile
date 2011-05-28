@@ -15,7 +15,8 @@ DB2XHTML = opengl-man.xsl
 %.xml: ../%.xml opengl-man.xsl
 	$(XSLT) --xinclude -o $@.tmp $(DB2XHTML) $<
 	$(SED) 's/<?xml-stylesheet/<!-- saved from url=(0013)about:internet -->\n<?xml-stylesheet/g' $@.tmp | \
-	    $(SED) 's#http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd#xhtml1-transitional.dtd#g' > $@
+	    $(SED) 's#http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd#xhtml1-transitional.dtd#g' | \
+	    $(SED) 's#</title># - OpenGL 3.3 Reference Pages</title>#g' > $@
 	$(RM) $@.tmp
 
 ALLXML = \

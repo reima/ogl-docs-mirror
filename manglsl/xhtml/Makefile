@@ -172,6 +172,7 @@ Builtin_Variables = \
     gl_InstanceID.xml \
     gl_InvocationID.xml \
     gl_Layer.xml \
+    gl_NumSamples.xml \
     gl_PatchVerticesIn.xml \
     gl_PointCoord.xml \
     gl_PointSize.xml \

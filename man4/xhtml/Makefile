@@ -87,11 +87,6 @@ GL_ARB_separate_shader_objects_entries = \
 GL_ARB_sample_shading_entries = \
     glMinSampleShading.xml
 
-GL_EXT_texture_storage_entries = \
-    glTexStorage1D.xml \
-    glTexStorage2D.xml \
-    glTexStorage3D.xml
-
 MODIFIEDFORGL4XML = \
     glClearDepth.xml \
     glCreateShader.xml \
@@ -114,9 +109,6 @@ GL41XML = \
     $(GL_ARB_get_program_binary_entries) \
     $(GL_ARB_ES2_compatibility_entries) \
     $(GL_ARB_separate_shader_objects_entries)
-
-GL42XML = \
-    $(GL_EXT_texture_storage_entries)
 
 UNMODIFIEDXML = \
     glActiveTexture.xml \
@@ -313,7 +305,7 @@ UNMODIFIEDXML = \
 
 MODIFIEDXML = \
 
-XML    = $(GL4XML) $(GL41XML) $(GL42XML) $(MODIFIEDFORGL4XML) $(UNMODIFIEDXML)
+XML    = $(GL4XML) $(GL41XML) $(MODIFIEDFORGL4XML) $(UNMODIFIEDXML)
 
 default: $(XML)
 

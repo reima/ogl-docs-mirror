@@ -136,17 +136,6 @@
         </varlistentry>
 
         <varlistentry>
-        <term><constant>GL_ACTIVE_ATOMIC_COUNTER_BUFFERS</constant></term>
-        <listitem>
-            <para>
-            </para>
-            <para> <parameter>params</parameter> returns the
-            number of active attribute atomic counter buffers used by
-            <parameter>program</parameter>.</para>
-        </listitem>
-        </varlistentry>
-
-        <varlistentry>
         <term><constant>GL_ACTIVE_ATTRIBUTES</constant></term>
         <listitem>
             <para>
@@ -338,7 +327,7 @@
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 2003-2005 3Dlabs Inc. Ltd. 
-            Copyright <trademark class="copyright"></trademark> 2010-2011 Khronos Group.
+            Copyright <trademark class="copyright"></trademark> 2010 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
             <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
+<!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glTexStorage2D - OpenGL 4.2 Reference Pages</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glTexStorage2D"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glTexStorage2D — simultaneously specify storage for all levels of a two-dimensional or one-dimensional array texture</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glTexStorage2D</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">levels</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">internalformat</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">width</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">height</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+                    Specify the target of the operation. <em class="parameter"><code>target</code></em> must be
+                    one of <code class="constant">GL_TEXTURE_2D</code>, <code class="constant">GL_PROXY_TEXTURE_2D</code>,
+                    <code class="constant">GL_TEXTURE_1D_ARRAY</code>, <code class="constant">GL_PROXY_TEXTURE_1D_ARRAY</code>,
+                    <code class="constant">GL_TEXTURE_RECTANGLE</code>, <code class="constant">GL_PROXY_TEXTURE_RECTANGLE</code>,
+                    or <code class="constant">GL_PROXY_TEXTURE_CUBE_MAP</code>.
+                </p></dd><dt><span class="term"><em class="parameter"><code>levels</code></em></span></dt><dd><p>
+                    Specify the number of texture levels.
+                </p></dd><dt><span class="term"><em class="parameter"><code>internalformat</code></em></span></dt><dd><p>
+                    Specifies the sized internal format to be used to store texture image data.
+                </p></dd><dt><span class="term"><em class="parameter"><code>width</code></em></span></dt><dd><p>
+                    Specifies the width of the texture, in texels.
+                </p></dd><dt><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
+                    Specifies the height of the texture, in texels.
+                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
+            <code class="function">glTexStorage2D</code> specifies the storage requirements for all levels
+            of a two-dimensional texture or one-dimensional texture array simultaneously. Once a texture is specified with this
+            command, the format and dimensions of all levels become immutable unless it is a proxy
+            texture. The contents of the image may still be modified, however, its storage requirements
+            may not change. Such a texture is referred to as an <span class="emphasis"><em>immutable-format</em></span>
+            texture.
+        </p><p>
+            The behavior of <code class="function">glTexStorage2D</code> depends on the <em class="parameter"><code>target</code></em> parameter.
+            When <em class="parameter"><code>target</code></em> is <code class="constant">GL_TEXTURE_2D</code>, <code class="constant">GL_PROXY_TEXTURE_2D</code>,
+            <code class="constant">GL_TEXTURE_RECTANGLE</code>, <code class="constant">GL_PROXY_TEXTURE_RECTANGLE</code> or <code class="constant">GL_PROXY_TEXTURE_CUBE_MAP</code>,
+            calling <code class="function">glTexStorage2D</code> is equivalent, assuming no errors are generated,
+            to executing the following pseudo-code:
+        </p><pre class="programlisting">    for (i = 0; i &lt; levels; i++)
+    {
+        glTexImage2D(target, i, internalformat, width, height, 0, format, type, NULL);
+        width = max(1, (width / 2));
+        height = max(1, (height / 2));
+    }</pre><p>
+            When <em class="parameter"><code>target</code></em> is <code class="constant">GL_TEXTURE_CUBE_MAP</code>, <code class="function">glTexStorage2D</code>
+            is equivalent to:
+        </p><pre class="programlisting">    for (i = 0; i &lt; levels; i++)
+    {
+        for (face in (+X, -X, +Y, -Y, +Z, -Z))
+        {
+            glTexImage2D(face, i, internalformat, width, height, 0, format, type, NULL);
+        }
+        width = max(1, (width / 2));
+        height = max(1, (height / 2));
+    }</pre><p>
+            When <em class="parameter"><code>target</code></em> is <code class="constant">GL_TEXTURE_1D</code> or <code class="constant">GL_TEXTURE_1D_ARRAY</code>,
+            <code class="function">glTexStorage2D</code> is equivalent to:
+        </p><pre class="programlisting">    for (i = 0; i &lt; levels; i++)
+    {
+        glTexImage2D(target, i, internalformat, width, height, 0, format, type, NULL);
+        width = max(1, (width / 2));
+    }</pre><p>
+            Since no texture data is actually provided, the values used in the pseudo-code
+            for <em class="parameter"><code>format</code></em> and <em class="parameter"><code>type</code></em> are
+            irrelevant and may be considered to be any values that are legal for the
+            chosen <em class="parameter"><code>internalformat</code></em> enumerant. Upon success,
+            the value of <code class="constant">GL_TEXTURE_IMMUTABLE_FORMAT</code> becomes
+            <code class="constant">GL_TRUE</code>. The value of <code class="constant">GL_TEXTURE_IMMUTABLE_FORMAT</code>
+            may be discovered by calling <a href="glGetTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexParameter</span></span></a>
+            with <em class="parameter"><code>pname</code></em> set to <code class="constant">GL_TEXTURE_IMMUTABLE_FORMAT</code>.
+            No further changes to the dimensions or format of the texture object may be
+            made. Using any command that might alter the dimensions or format of the
+            texture object (such as <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a> or
+            another call to <code class="function">glTexStorage2D</code>) will result in the
+            generation of a <code class="constant">GL_INVALID_OPERATION</code> error, even if it
+            would not, in fact, alter the dimensions or format of the object.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
+            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>internalformat</code></em> is not a
+            valid sized internal format.
+        </p><p>
+            <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not
+            one of the accepted target enumerants.
+        </p><p>
+            <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>width</code></em> or <em class="parameter"><code>levels</code></em>
+            are less than 1.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>target</code></em> is <code class="constant">GL_TEXTURE_1D_ARRAY</code>
+            or <code class="constant">GL_PROXY_TEXTURE_1D_ARRAY</code> and <em class="parameter"><code>levels</code></em> is greater than <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+  <mml:mrow>
+    <mml:mfenced open="&#x230A;" close="&#x230B;">
+      <mml:mrow>
+        <mml:msub>
+          <mml:mi>log</mml:mi>
+          <mml:mn>2</mml:mn>
+        </mml:msub>
+        <mml:mfenced open="(" close=")">
+          <mml:mi>width</mml:mi>
+        </mml:mfenced>
+      </mml:mrow>
+    </mml:mfenced>
+    <mml:mo>+</mml:mo>
+    <mml:mn>1</mml:mn>
+  </mml:mrow>
+</mml:math>.
+        </p><p>
+            <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>target</code></em> is not <code class="constant">GL_TEXTURE_1D_ARRAY</code>
+            or <code class="constant">GL_PROXY_TEXTURE_1D_ARRAY</code> and <em class="parameter"><code>levels</code></em> is greater than <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
+  <mml:mrow>
+    <mml:mfenced open="&#x230A;" close="&#x230B;">
+      <mml:mrow>
+        <mml:msub>
+          <mml:mi>log</mml:mi>
+          <mml:mn>2</mml:mn>
+        </mml:msub>
+        <mml:mfenced open="(" close=")">
+          <mml:mrow>
+            <mml:mi>max</mml:mi>
+            <mml:mfenced open="(" close=")">
+              <mml:mrow>
+                <mml:mi>width</mml:mi>
+                <mml:mo>,</mml:mo>
+                <mml:mtext fontfamily="Times New Roman"> </mml:mtext>
+                <mml:mi>height</mml:mi>
+              </mml:mrow>
+            </mml:mfenced>
+          </mml:mrow>
+        </mml:mfenced>
+      </mml:mrow>
+    </mml:mfenced>
+    <mml:mo>+</mml:mo>
+    <mml:mn>1</mml:mn>
+  </mml:mrow>
+</mml:math>.
+    </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
+            <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>,
+            <a href="glTexStorage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexStorage1D</span></span></a>,
+            <a href="glTexStorage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexStorage3D</span></span></a>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
+            Copyright <span class="trademark"></span>© 2011 Khronos Group. 
+            This material may be distributed subject to the terms and conditions set forth in 
+            the Open Publication License, v 1.0, 8 June 1999.
+            <a href="http://opencontent.org/openpub/" target="_top">http://opencontent.org/openpub/</a>.
+        </p></div></div></body></html>

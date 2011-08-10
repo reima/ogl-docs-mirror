@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glGetTexParameter</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetTexParameter"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetTexParameter — return texture parameter values</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetTexParameterfv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetTexParameteriv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glGetTexParameter - OpenGL 4.2 Reference Pages</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetTexParameter"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetTexParameter — return texture parameter values</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetTexParameterfv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetTexParameteriv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetTexParameterIiv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetTexParameterIuiv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLuint *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies the symbolic name of the target texture.
                     <code class="constant">GL_TEXTURE_1D</code>,
                     <code class="constant">GL_TEXTURE_2D</code>,
                     <code class="constant">GL_TEXTURE_1D_ARRAY</code>,
                     <code class="constant">GL_TEXTURE_2D_ARRAY</code>,
                     <code class="constant">GL_TEXTURE_3D</code>,
-                    <code class="constant">GL_TEXTURE_RECTANGLE</code>, and
-                    <code class="constant">GL_TEXTURE_CUBE_MAP</code>
+                    <code class="constant">GL_TEXTURE_RECTANGLE</code>,
+                    <code class="constant">GL_TEXTURE_CUBE_MAP</code>, and
+                    <code class="constant">GL_TEXTURE_CUBE_MAP_ARRAY</code>
                     are accepted.
                 </p></dd><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
                     Specifies the symbolic name of a texture parameter.
@@ -17,6 +18,7 @@
                     <code class="constant">GL_TEXTURE_BORDER_COLOR</code>,
                     <code class="constant">GL_TEXTURE_COMPARE_MODE</code>,
                     <code class="constant">GL_TEXTURE_COMPARE_FUNC</code>,
+                    <code class="constant">GL_TEXTURE_IMMUTABLE_FORMAT</code>,
                     <code class="constant">GL_TEXTURE_LOD_BIAS</code>,
                     <code class="constant">GL_TEXTURE_MAG_FILTER</code>,
                     <code class="constant">GL_TEXTURE_MAX_LEVEL</code>,
@@ -43,9 +45,10 @@
             <code class="constant">GL_TEXTURE_3D</code>,
             <code class="constant">GL_TEXTURE_1D_ARRAY</code>,
             <code class="constant">GL_TEXTURE_2D_ARRAY</code>,
-            <code class="constant">GL_TEXTURE_RECTANGLE</code>, and
-            <code class="constant">GL_TEXTURE_CUBE_MAP</code>
-            specify one-, two-, or three-dimensional, one-dimensional array, two-dimensional array, rectangle or cube-mapped texturing, respectively.
+            <code class="constant">GL_TEXTURE_RECTANGLE</code>,
+            <code class="constant">GL_TEXTURE_CUBE_MAP</code>,
+            <code class="constant">GL_TEXTURE_CUBE_MAP_ARRAY</code>
+            specify one-, two-, or three-dimensional, one-dimensional array, two-dimensional array, rectangle, cube-mapped or cube-mapped array texturing, respectively.
             <em class="parameter"><code>pname</code></em> accepts the same symbols as <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>,
             with the same interpretations:
         </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_TEXTURE_MAG_FILTER</code></span></dt><dd><p>
@@ -117,6 +120,14 @@
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_COMPARE_FUNC</code></span></dt><dd><p>
                         Returns a single-valued texture comparison function, a symbolic constant.  The
                         initial value is <code class="constant">GL_LEQUAL</code>. See <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>.
+                    </p></dd></dl></div><p>
+        In addition to the parameters that may be set with <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>,
+        <code class="function">glGetTexParameter</code> accepts the following read-only parameters:
+    </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_TEXTURE_IMMUTABLE_FORMAT</code></span></dt><dd><p>
+                        Returns non-zero if the texture has an immutable format. Textures become
+                        immutable if their storage is specified with <a href="glTexStorage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexStorage1D</span></span></a>,
+                        <a href="glTexStorage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexStorage2D</span></span></a> or <a href="glTexStorage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexStorage3D</span></span></a>.
+                        The initial value is <code class="constant">GL_FALSE</code>.
                     </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
             If an error is generated,
             no change is made to the contents of <em class="parameter"><code>params</code></em>.
@@ -124,10 +135,13 @@
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> or <em class="parameter"><code>pname</code></em> is not an
             accepted value.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
-            <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>
+            <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>,
+            <a href="glTexStorage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexStorage1D</span></span></a>,
+            <a href="glTexStorage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexStorage2D</span></span></a>,
+            <a href="glTexStorage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexStorage3D</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
-            Silicon Graphics, Inc. Copyright <span class="trademark"></span>© 2010
+            Silicon Graphics, Inc. Copyright <span class="trademark"></span>© 2010-2011
             Khronos Group. This document is licensed under the SGI
             Free Software B License. For details, see
             <a href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.

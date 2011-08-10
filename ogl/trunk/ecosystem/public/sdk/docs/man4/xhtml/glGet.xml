@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glGet</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGet"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGet — return the value or values of a selected parameter</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetBooleanv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLboolean *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetDoublev</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLdouble *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetFloatv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetIntegerv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetInteger64v</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint64 *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glGet - OpenGL 4.2 Reference Pages</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGet"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGet — return the value or values of a selected parameter</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetBooleanv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLboolean *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetDoublev</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLdouble *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetFloatv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLfloat *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetIntegerv</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetInteger64v</b>(</code></td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint64 *  </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
                     Specifies the parameter value to be returned.
                     The symbolic constants in the list below are accepted.
                 </p></dd><dt><span class="term"><em class="parameter"><code>params</code></em></span></dt><dd><p>
@@ -328,6 +328,9 @@
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
                         the maximum number of samples in a color multisample texture.
+                    </p></dd><dt><span class="term"><code class="constant">GL_MAX_COMBINED_ATOMIC_COUNTERS</code></span></dt><dd><p>
+              </p><p>
+                        <em class="parameter"><code>params</code></em> returns a single value, the maximum number of atomic counters available to all active shaders.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS</code></span></dt><dd><p>
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
@@ -393,6 +396,9 @@
                         <em class="parameter"><code>params</code></em> returns one value,
                         the recommended maximum number of vertex array vertices.
                         See <a href="glDrawRangeElements.xml"><span class="citerefentry"><span class="refentrytitle">glDrawRangeElements</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_MAX_FRAGMENT_ATOMIC_COUNTERS</code></span></dt><dd><p>
+              </p><p>
+                        <em class="parameter"><code>params</code></em> returns a single value, the maximum number of atomic counters available to fragment shaders.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_FRAGMENT_INPUT_COMPONENTS</code></span></dt><dd><p>
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
@@ -416,6 +422,9 @@
                         <em class="parameter"><code>params</code></em> returns one value,
                         the maximum number of uniform blocks per fragment shader.  The value must be at least 12.
                         See <a href="glUniformBlockBinding.xml"><span class="citerefentry"><span class="refentrytitle">glUniformBlockBinding</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_MAX_GEOMETRY_ATOMIC_COUNTERS</code></span></dt><dd><p>
+              </p><p>
+                        <em class="parameter"><code>params</code></em> returns a single value, the maximum number of atomic counters available to geometry shaders.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_GEOMETRY_INPUT_COMPONENTS</code></span></dt><dd><p>
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
@@ -444,6 +453,12 @@
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
                         the maximum number of samples supported in integer format multisample buffers.
+                    </p></dd><dt><span class="term"><code class="constant">GL_MIN_MAP_BUFFER_ALIGNMENT</code></span></dt><dd><p>
+              </p><p>
+                        <em class="parameter"><code>params</code></em> returns one value,
+                        the minimum alignment in basic machine units of pointers returned from<a href="glMapBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glMapBuffer</span></span></a>
+                        and <a href="glMapBufferRange.xml"><span class="citerefentry"><span class="refentrytitle">glMapBufferRange</span></span></a>. This value must be a power of two and must
+                        be at least 64.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_PROGRAM_TEXEL_OFFSET</code></span></dt><dd><p>
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
@@ -473,6 +488,12 @@
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
                         the maximum <a href="glWaitSync.xml"><span class="citerefentry"><span class="refentrytitle">glWaitSync</span></span></a> timeout interval.
+                    </p></dd><dt><span class="term"><code class="constant">GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS</code></span></dt><dd><p>
+              </p><p>
+                        <em class="parameter"><code>params</code></em> returns a single value, the maximum number of atomic counters available to tessellation control shaders.
+                    </p></dd><dt><span class="term"><code class="constant">GL_MAX_TESS_EVALUATION_ATOMIC_COUNTERS</code></span></dt><dd><p>
+              </p><p>
+                        <em class="parameter"><code>params</code></em> returns a single value, the maximum number of atomic counters available to tessellation evaluation shaders.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_TEXTURE_BUFFER_SIZE</code></span></dt><dd><p>
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value.
@@ -521,6 +542,9 @@
                         vertex and fragment shaders. This value represents the number of individual floating-point 
                         values that can be interpolated; varying variables declared as vectors, matrices, and arrays 
                         will all consume multiple interpolators. The value must be at least 32.
+                    </p></dd><dt><span class="term"><code class="constant">GL_MAX_VERTEX_ATOMIC_COUNTERS</code></span></dt><dd><p>
+              </p><p>
+                        <em class="parameter"><code>params</code></em> returns a single value, the maximum number of atomic counters available to vertex shaders.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_VERTEX_ATTRIBS</code></span></dt><dd><p>
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
@@ -1172,6 +1196,14 @@
             <code class="constant">GL_VIEWPORT_BOUNDS_RANGE</code>, <code class="constant">GL_LAYER_PROVOKING_VERTEX</code>,
             and <code class="constant">GL_VIEWPORT_INDEX_PROVOKING_VERTEX</code>
             are available only if the GL version is 4.1 or greater.
+        </p><p>
+            <code class="constant">GL_MAX_VERTEX_ATOMIC_COUNTERS</code>,
+            <code class="constant">GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS</code>,
+            <code class="constant">GL_MAX_TESS_EVALUATION_ATOMIC_COUNTERS</code>,
+            <code class="constant">GL_MAX_GEOMETRY_ATOMIC_COUNTERS</code>,
+            <code class="constant">GL_MAX_FRAMGENT_ATOMIC_COUNTERS</code>, and
+            <code class="constant">GL_MIN_MAP_BUFFER_ALIGNMENT</code> are accepted by <em class="parameter"><code>pname</code></em>
+            of the GL version is 4.2 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>pname</code></em> is not an accepted value.
         </p><p>
@@ -1204,8 +1236,8 @@
             <a href="glGetVertexAttribPointerv.xml"><span class="citerefentry"><span class="refentrytitle">glGetVertexAttribPointerv</span></span></a>,
             <a href="glIsEnabled.xml"><span class="citerefentry"><span class="refentrytitle">glIsEnabled</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
-            Copyright <span class="trademark"></span>© 1991-2006
-            Silicon Graphics, Inc. This document is licensed under the SGI
-            Free Software B License. For details, see
+            Copyright <span class="trademark"></span>© 1991-2006 Silicon Graphics, Inc.
+            Copyright <span class="trademark"></span>© 2010-2011 Khronos Group.
+            This document is licensed under the SGI Free Software B License. For details, see
             <a href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
         </p></div></div></body></html>

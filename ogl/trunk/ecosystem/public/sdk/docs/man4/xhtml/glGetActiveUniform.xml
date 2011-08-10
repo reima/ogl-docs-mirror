@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glGetActiveUniform</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetActiveUniform"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetActiveUniform — Returns information about an active uniform variable for the specified program object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetActiveUniform</b>(</code></td><td>GLuint  </td><td><var class="pdparam">program</var>, </td></tr><tr><td> </td><td>GLuint  </td><td><var class="pdparam">index</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">bufSize</var>, </td></tr><tr><td> </td><td>GLsizei * </td><td><var class="pdparam">length</var>, </td></tr><tr><td> </td><td>GLint * </td><td><var class="pdparam">size</var>, </td></tr><tr><td> </td><td>GLenum * </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>GLchar * </td><td><var class="pdparam">name</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>program</code></em></span></dt><dd><p>Specifies the program object to be
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glGetActiveUniform - OpenGL 4.2 Reference Pages</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetActiveUniform"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetActiveUniform — Returns information about an active uniform variable for the specified program object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetActiveUniform</b>(</code></td><td>GLuint  </td><td><var class="pdparam">program</var>, </td></tr><tr><td> </td><td>GLuint  </td><td><var class="pdparam">index</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">bufSize</var>, </td></tr><tr><td> </td><td>GLsizei * </td><td><var class="pdparam">length</var>, </td></tr><tr><td> </td><td>GLint * </td><td><var class="pdparam">size</var>, </td></tr><tr><td> </td><td>GLenum * </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>GLchar * </td><td><var class="pdparam">name</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>program</code></em></span></dt><dd><p>Specifies the program object to be
             queried.</p></dd><dt><span class="term"><em class="parameter"><code>index</code></em></span></dt><dd><p>Specifies the index of the uniform variable to
             be queried.</p></dd><dt><span class="term"><em class="parameter"><code>bufSize</code></em></span></dt><dd><p>Specifies the maximum number of characters
             OpenGL is allowed to write in the character buffer
@@ -360,6 +360,130 @@
                             <code class="constant">GL_UNSIGNED_INT_SAMPLER_2D_RECT</code>
                         </td><td align="left">
                             <code class="constant">usampler2DRect</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_IMAGE_1D</code>
+                        </td><td align="left">
+                            <code class="constant">image1D</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_IMAGE_2D</code>
+                        </td><td align="left">
+                            <code class="constant">image2D</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_IMAGE_3D</code>
+                        </td><td align="left">
+                            <code class="constant">image3D</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_IMAGE_2D_RECT</code>
+                        </td><td align="left">
+                            <code class="constant">image2DRect</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_IMAGE_CUBE</code>
+                        </td><td align="left">
+                            <code class="constant">imageCube</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_IMAGE_BUFFER</code>
+                        </td><td align="left">
+                            <code class="constant">imageBuffer</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_IMAGE_1D_ARRAY</code>
+                        </td><td align="left">
+                            <code class="constant">image1DArray</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_IMAGE_2D_ARRAY</code>
+                        </td><td align="left">
+                            <code class="constant">image2DArray</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_IMAGE_2D_MULTISAMPLE</code>
+                        </td><td align="left">
+                            <code class="constant">image2DMS</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_IMAGE_2D_MULTISAMPLE_ARRAY</code>
+                        </td><td align="left">
+                            <code class="constant">image2DMSArray</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_INT_IMAGE_1D</code>
+                        </td><td align="left">
+                            <code class="constant">iimage1D</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_INT_IMAGE_2D</code>
+                        </td><td align="left">
+                            <code class="constant">iimage2D</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_INT_IMAGE_3D</code>
+                        </td><td align="left">
+                            <code class="constant">iimage3D</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_INT_IMAGE_2D_RECT</code>
+                        </td><td align="left">
+                            <code class="constant">iimage2DRect</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_INT_IMAGE_CUBE</code>
+                        </td><td align="left">
+                            <code class="constant">iimageCube</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_INT_IMAGE_BUFFER</code>
+                        </td><td align="left">
+                            <code class="constant">iimageBuffer</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_INT_IMAGE_1D_ARRAY</code>
+                        </td><td align="left">
+                            <code class="constant">iimage1DArray</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_INT_IMAGE_2D_ARRAY</code>
+                        </td><td align="left">
+                            <code class="constant">iimage2DArray</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_INT_IMAGE_2D_MULTISAMPLE</code>
+                        </td><td align="left">
+                            <code class="constant">iimage2DMS</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_INT_IMAGE_2D_MULTISAMPLE_ARRAY</code>
+                        </td><td align="left">
+                            <code class="constant">iimage2DMSArray</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_1D</code>
+                        </td><td align="left">
+                            <code class="constant">uimage1D</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_2D</code>
+                        </td><td align="left">
+                            <code class="constant">uimage2D</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_3D</code>
+                        </td><td align="left">
+                            <code class="constant">uimage3D</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_2D_RECT</code>
+                        </td><td align="left">
+                            <code class="constant">uimage2DRect</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_CUBE</code>
+                        </td><td align="left">
+                            <code class="constant">uimageCube</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_BUFFER</code>
+                        </td><td align="left">
+                            <code class="constant">uimageBuffer</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_1D_ARRAY</code>
+                        </td><td align="left">
+                            <code class="constant">uimage1DArray</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_2D_ARRAY</code>
+                        </td><td align="left">
+                            <code class="constant">uimage2DArray</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_2D_MULTISAMPLE</code>
+                        </td><td align="left">
+                            <code class="constant">uimage2DMS</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_2D_MULTISAMPLE_ARRAY</code>
+                        </td><td align="left">
+                            <code class="constant">uimage2DMSArray</code>
+                        </td></tr><tr><td align="left">
+                            <code class="constant">GL_UNSIGNED_INT_ATOMIC_COUNTER</code>
+                        </td><td align="left">
+                            <code class="constant">atomic_uint</code>
                         </td></tr></tbody></table></div><p>
     </p><p>If one or more elements of an array are active, the name
     of the array is returned in <em class="parameter"><code>name</code></em>, the
@@ -404,6 +528,42 @@
             <code class="constant">GL_DOUBLE_MAT3x4</code>, <code class="constant">GL_DOUBLE_MAT4x2</code>,
             and <code class="constant">GL_DOUBLE_MAT4x3</code> are only available if the GL
             version is 4.1 or higher.
+        </p><p>
+            The image types,
+                            <code class="constant">GL_IMAGE_1D</code>,
+                            <code class="constant">GL_IMAGE_2D</code>,
+                            <code class="constant">GL_IMAGE_3D</code>,
+                            <code class="constant">GL_IMAGE_2D_RECT</code>,
+                            <code class="constant">GL_IMAGE_CUBE</code>,
+                            <code class="constant">GL_IMAGE_BUFFER</code>,
+                            <code class="constant">GL_IMAGE_1D_ARRAY</code>,
+                            <code class="constant">GL_IMAGE_2D_ARRAY</code>,
+                            <code class="constant">GL_IMAGE_2D_MULTISAMPLE</code>,
+                            <code class="constant">GL_IMAGE_2D_MULTISAMPLE_ARRAY</code>,
+                            <code class="constant">GL_INT_IMAGE_1D</code>,
+                            <code class="constant">GL_INT_IMAGE_2D</code>,
+                            <code class="constant">GL_INT_IMAGE_3D</code>,
+                            <code class="constant">GL_INT_IMAGE_2D_RECT</code>,
+                            <code class="constant">GL_INT_IMAGE_CUBE</code>,
+                            <code class="constant">GL_INT_IMAGE_BUFFER</code>,
+                            <code class="constant">GL_INT_IMAGE_1D_ARRAY</code>,
+                            <code class="constant">GL_INT_IMAGE_2D_ARRAY</code>,
+                            <code class="constant">GL_INT_IMAGE_2D_MULTISAMPLE</code>,
+                            <code class="constant">GL_INT_IMAGE_2D_MULTISAMPLE_ARRAY</code>,
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_1D</code>,
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_2D</code>,
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_3D</code>,
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_2D_RECT</code>,
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_CUBE</code>,
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_BUFFER</code>,
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_1D_ARRAY</code>,
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_2D_ARRAY</code>,
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_2D_MULTISAMPLE</code>,
+                            <code class="constant">GL_UNSIGNED_INT_IMAGE_2D_MULTISAMPLE_ARRAY</code>,
+            and the atomic counter type,
+                            <code class="constant">GL_UNSIGNED_INT_ATOMIC_COUNTER</code>
+            are only available if the GL
+            version is 4.2 or higher.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_VALUE</code> is generated if
     <em class="parameter"><code>program</code></em> is not a value generated by
     OpenGL.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if

@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE>OpenGL 3.3 Reference Pages</TITLE>
+<TITLE>OpenGL 4.2 Reference Pages</TITLE>
 </HEAD>
 <FRAMESET COLS="280,*">
   <FRAME FRAMEBORDER="0" MARGINWIDTH="0" MARGINHEIGHT="0" SRC="xhtml/index.html">

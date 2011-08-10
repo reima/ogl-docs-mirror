@@ -34,6 +34,7 @@
                     Specifies the target to which the buffer object is bound.
                     The symbolic constant must be
                     <constant>GL_ARRAY_BUFFER</constant>,
+                    <constant>GL_ATOMIC_COUNTER_BUFFER</constant>,
                     <constant>GL_COPY_READ_BUFFER</constant>,
                     <constant>GL_COPY_WRITE_BUFFER</constant>,
                     <constant>GL_DRAW_INDIRECT_BUFFER</constant>,
@@ -148,10 +149,11 @@
             <constant>GL_TRANSFORM_FEEDABCK_BUFFER</constant> binding.
         </para>
         <para>
-            Likewise, the <constant>GL_UNIFORM_BUFFER</constant> buffer binding point may be used, but does not directly affect
-            uniform buffer state. <citerefentry><refentrytitle>glBindBufferBase</refentrytitle></citerefentry>
+            Likewise, the <constant>GL_UNIFORM_BUFFER</constant> and <constant>GL_ATOMIC_COUNTER_BUFFER</constant> buffer binding points may
+            be used, but do not directly affect uniform buffer or atomic counter buffer state, respectively.
+            <citerefentry><refentrytitle>glBindBufferBase</refentrytitle></citerefentry>
             or <citerefentry><refentrytitle>glBindBufferRange</refentrytitle></citerefentry> must be used to bind a buffer to
-            an indexed uniform buffer binding point.
+            an indexed uniform buffer or atomic counter buffer binding point.
         </para>
         <para>
             A buffer object binding created with <function>glBindBuffer</function> remains active until a different
@@ -169,6 +171,9 @@
             The <constant>GL_COPY_READ_BUFFER</constant>, <constant>GL_UNIFORM_BUFFER</constant> and
             <constant>GL_TEXTURE_BUFFER</constant> targets are available only if the GL version is 3.1 or greater.
         </para>
+        <para>
+            The <constant>GL_ATOMIC_COUNTER_BUFER</constant> target is available only if the GL version is 4.2 or greater.
+        </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
         <para>
@@ -183,6 +188,9 @@
     <refsect1 id="associatedgets"><title>Associated Gets</title>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_ARRAY_BUFFER_BINDING</constant>
+        </para>
+        <para>
+            <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_ATOMIC_COUNTER_BUFFER_BINDING</constant>
         </para>
         <para>
             <citerefentry><refentrytitle>glGet</refentrytitle></citerefentry> with argument <constant>GL_COPY_READ_BUFFER_BINDING</constant>
@@ -223,7 +231,8 @@
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"></trademark> 2005 Addison-Wesley. 
+            Copyright <trademark class="copyright"></trademark> 2005 Addison-Wesley.
+            Copyright <trademark class="copyright"></trademark> 2010-2011 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
             <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.

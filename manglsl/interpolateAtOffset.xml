@@ -73,7 +73,7 @@
         <informaltable frame="topbot">
             #VARTABLECOLS#
                 <thead>
-                    #VARTABLEHEADER#
+                    #FUNCTABLEHEADER#
                     <row>
                         <entry>interpolateAtoOffset</entry>#newin40#
                     </row>

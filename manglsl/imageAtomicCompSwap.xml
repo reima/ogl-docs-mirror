@@ -204,7 +204,7 @@
         <informaltable frame="topbot">
             #VARTABLECOLS#
                 <thead>
-                    #VARTABLEHEADER#
+                    #FUNCTABLEHEADER#
                     <row>
                         <entry>imageAtomicCompSwap</entry>#newin42#
                     </row>

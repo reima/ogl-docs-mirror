@@ -47,7 +47,7 @@
         <informaltable frame="topbot">
             #VARTABLECOLS#
                 <thead>
-                    #VARTABLEHEADER#
+                    #FUNCTABLEHEADER#
                     <row>
                         <entry>EndStreamPrimitive</entry>#newin40#
                     </row>

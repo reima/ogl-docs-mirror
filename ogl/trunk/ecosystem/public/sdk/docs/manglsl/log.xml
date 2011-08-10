@@ -47,7 +47,7 @@
         <informaltable frame="topbot">
             #VARTABLECOLS#
                 <thead>
-                    #VARTABLEHEADER#
+                    #FUNCTABLEHEADER#
                     <row>
                         <entry>log (genType)</entry>#newin11#
                     </row>

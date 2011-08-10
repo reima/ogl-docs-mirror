@@ -258,7 +258,7 @@
         <informaltable frame="topbot">
             #VARTABLECOLS#
                 <thead>
-                    #VARTABLEHEADER#
+                    #FUNCTABLEHEADER#
                     <row>
                         <entry>textureGrad</entry>#newin13#
                     </row>

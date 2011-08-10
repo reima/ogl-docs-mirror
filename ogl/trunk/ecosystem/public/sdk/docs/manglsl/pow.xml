@@ -58,7 +58,7 @@
         <informaltable frame="topbot">
             #VARTABLECOLS#
                 <thead>
-                    #VARTABLEHEADER#
+                    #FUNCTABLEHEADER#
                     <row>
                         <entry>pow</entry>#newin11#
                     </row>

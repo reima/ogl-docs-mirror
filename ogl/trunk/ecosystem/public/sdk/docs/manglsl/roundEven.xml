@@ -53,7 +53,7 @@
         <informaltable frame="topbot">
             #VARTABLECOLS#
                 <thead>
-                    #VARTABLEHEADER#
+                    #FUNCTABLEHEADER#
                     <row>
                         <entry>roundEven (genType)</entry>#newin13#
                     </row>

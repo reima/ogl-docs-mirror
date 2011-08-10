@@ -45,7 +45,7 @@
         <informaltable frame="topbot">
             #VARTABLECOLS#
                 <thead>
-                    #VARTABLEHEADER#
+                    #FUNCTABLEHEADER#
                     <row>
                         <entry>sin</entry>#newin11#
                     </row>

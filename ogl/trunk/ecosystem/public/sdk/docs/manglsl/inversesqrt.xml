@@ -53,7 +53,7 @@
         <informaltable frame="topbot">
             #VARTABLECOLS#
                 <thead>
-                    #VARTABLEHEADER#
+                    #FUNCTABLEHEADER#
                     <row>
                         <entry>inversesqrt (genType)</entry>#newin13#
                     </row>

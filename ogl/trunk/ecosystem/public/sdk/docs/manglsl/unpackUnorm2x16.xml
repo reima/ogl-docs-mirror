@@ -73,7 +73,7 @@
         <informaltable frame="topbot">
             #VARTABLECOLS#
                 <thead>
-                    #VARTABLEHEADER#
+                    #FUNCTABLEHEADER#
                     <row>
                         <entry>unpackUnorm2x16</entry>#newin41#
                     </row>

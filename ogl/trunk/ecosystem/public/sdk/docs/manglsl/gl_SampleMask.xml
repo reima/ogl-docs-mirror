@@ -28,7 +28,7 @@
             fragment will become the logical AND of the coverage mask and the output <function>gl_SampleMask</function>.
             That is, setting a bit in <function>gl_SampleMask</function> to zero will cause the
             corresponding sample to be considered uncovered for the purposes of multisample fragment operations. However,
-            setting sample mask bits back to one will ever enable samples not covered by the original primitive.
+            setting sample mask bits back to one will never enable samples not covered by the original primitive.
             Bit <emphasis>B</emphasis> of mask <function>gl_SampleMask[M]</function> corresponds to sample
             32 * <emphasis>M</emphasis> + <emphasis>B</emphasis>. This array must be sized in the fragment shader
             either implicitly or explicitly to be the same size as the implementation-dependent maximum
@@ -43,8 +43,9 @@
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>
         <informaltable frame="topbot">
-            <tgroup cols="3" align="left">
+            <tgroup cols="10" align="left">
                 <colspec colwidth="1.1*" />
+                <colspec colwidth="1*" align="center" />
                 <colspec colwidth="1*" align="center" />
                 <colspec colwidth="1*" align="center" />
                 <colspec colwidth="1*" align="center" />
@@ -82,6 +83,9 @@
                         <entry rowsep="1" align="left"><emphasis role="bold">
                         Version 4.10
                         </emphasis></entry>
+                        <entry rowsep="1" align="left"><emphasis role="bold">
+                        Version 4.20
+                        </emphasis></entry>
                     </row>
                     <row>
                         <entry>
@@ -111,6 +115,9 @@
                         <entry>
                             <emphasis>Y</emphasis>  <!-- 4.10, OpenGL 4.1 -->
                         </entry>
+                        <entry>
+                            <emphasis>Y</emphasis>  <!-- 4.20, OpenGL 4.2 -->
+                        </entry>
                     </row>
                 </thead>
             </tgroup>
@@ -118,6 +125,7 @@
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
+            <citerefentry><refentrytitle>gl_SampleMaskIn</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>gl_SampleID</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>gl_SamplePosition</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>gl_FragCoord</refentrytitle></citerefentry>

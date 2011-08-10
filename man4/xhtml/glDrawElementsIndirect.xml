@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glDrawElementsIndirect</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glDrawArraysIndirect"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glDrawElementsIndirect — render indexed primitives from array data, taking parameters from memory</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glDrawElementsIndirect</b>(</code></td><td>GLenum  </td><td><var class="pdparam">mode</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>const void * </td><td><var class="pdparam">indirect</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glDrawElementsIndirect - OpenGL 4.2 Reference Pages</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glDrawArraysIndirect"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glDrawElementsIndirect — render indexed primitives from array data, taking parameters from memory</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glDrawElementsIndirect</b>(</code></td><td>GLenum  </td><td><var class="pdparam">mode</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">type</var>, </td></tr><tr><td> </td><td>const void * </td><td><var class="pdparam">indirect</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>mode</code></em></span></dt><dd><p>
                     Specifies what kind of primitives to render.
                     Symbolic constants
                     <code class="constant">GL_POINTS</code>,
@@ -24,8 +24,8 @@
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
             <code class="function">glDrawElementsIndirect</code> specifies multiple indexed geometric primitives
             with very few subroutine calls. <code class="function">glDrawElementsIndirect</code> behaves
-            similarly to <a href="glDrawElementsInstancedBaseVertex.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElementsInstancedBaseVertex</span></span></a>,
-            execpt that the parameters to <a href="glDrawElementsInstancedBaseVertex.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElementsInstancedBaseVertex</span></span></a>
+            similarly to <a href="glDrawElementsInstancedBaseVertexBaseInstance.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElementsInstancedBaseVertexBaseInstance</span></span></a>,
+            execpt that the parameters to <a href="glDrawElementsInstancedBaseVertexBaseInstance.xml"><span class="citerefentry"><span class="refentrytitle">glDrawElementsInstancedBaseVertexBaseInstance</span></span></a>
             are stored in memory at the address given by <em class="parameter"><code>indirect</code></em>.
         </p><p>
             The parameters addressed by <em class="parameter"><code>indirect</code></em> are packed into a structure
@@ -35,7 +35,7 @@
         uint  primCount;
         uint  firstIndex;
         uint  baseVertex;
-        uint  reservedMustBeZero;
+        uint  baseInstance;
     } DrawElementsIndirectCommand;</pre><p>
         </p><p>
             <code class="function">glDrawElementsIndirect</code> is equivalent to:
@@ -43,12 +43,13 @@
 </p><pre class="programlisting">    void glDrawElementsIndirect(GLenum mode, GLenum type, const void * indirect)
     {
         const DrawElementsIndirectCommand *cmd  = (const DrawElementsIndirectCommand *)indirect;
-        glDrawElementsInstancedBaseVertex(mode,
-                                          cmd-&gt;count,
-                                          type,
-                                          cmd-&gt;firstIndex + size-of-type,
-                                          cmd-&gt;primCount,
-                                          cmd-&gt;baseVertex);
+        glDrawElementsInstancedBaseVertexBaseInstance(mode,
+                                                      cmd-&gt;count,
+                                                      type,
+                                                      cmd-&gt;firstIndex + size-of-type,
+                                                      cmd-&gt;primCount,
+                                                      cmd-&gt;baseVertex,
+                                                      cmd-&gt;baseInstance);
     }</pre><p>
         </p><p>
             If a buffer is bound to the <code class="constant">GL_DRAW_INDIRECT_BUFFER</code> binding at the time
@@ -65,6 +66,11 @@
             Vertex attributes that are modified by <code class="function">glDrawElementsIndirect</code> have an
             unspecified value after <code class="function">glDrawElementsIndirect</code> returns. Attributes that aren't
             modified remain well defined.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
+            The <em class="parameter"><code>baseInstance</code></em> member of the <em class="parameter"><code>DrawElementsIndirectCommand</code></em>
+            structure is defined only if the GL version is 4.2 or greater. For versions of the GL less than 4.2,
+            this parameter is present but is reserved and should be set to zero. On earlier versions of the GL,
+            behavior is undefined if it is non-zero.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>mode</code></em> is not an accepted value.
         </p><p>

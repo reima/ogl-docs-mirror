@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glMapBufferRange</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glMapBufferRange"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glMapBufferRange — map a section of a buffer object's data store</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void *<b class="fsfunc">glMapBufferRange</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLintptr  </td><td><var class="pdparam">offset</var>, </td></tr><tr><td> </td><td>GLsizeiptr  </td><td><var class="pdparam">length</var>, </td></tr><tr><td> </td><td>GLbitfield  </td><td><var class="pdparam">access</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glMapBufferRange - OpenGL 4.2 Reference Pages</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glMapBufferRange"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glMapBufferRange — map a section of a buffer object's data store</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void *<b class="fsfunc">glMapBufferRange</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLintptr  </td><td><var class="pdparam">offset</var>, </td></tr><tr><td> </td><td>GLsizeiptr  </td><td><var class="pdparam">length</var>, </td></tr><tr><td> </td><td>GLbitfield  </td><td><var class="pdparam">access</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specifies a binding to which the target buffer is bound.
                 </p></dd><dt><span class="term"><em class="parameter"><code>offset</code></em></span></dt><dd><p>
                     Specifies a the starting offset within the buffer of the range to be mapped.
@@ -12,6 +12,7 @@
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
             <code class="function">glMapBufferRange</code> maps all or part of the data store of a buffer object into the client's address
             space. <em class="parameter"><code>target</code></em> specifies the target to which the buffer is bound and must be one of <code class="constant">GL_ARRAY_BUFFER</code>,
+            <code class="constant">GL_ATOMIC_COUNTER_BUFFER</code>,
             <code class="constant">GL_COPY_READ_BUFFER</code>, <code class="constant">GL_COPY_WRITE_BUFFER</code>, <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code>,
             <code class="constant">GL_PIXEL_PACK_BUFFER</code>, <code class="constant">GL_PIXEL_UNPACK_BUFFER</code>, <code class="constant">GL_TEXTURE_BUFFER</code>,
             <code class="constant">GL_TRANSFORM_FEEDBACK_BUFFER</code>, or <code class="constant">GL_UNIFORM_BUFFER</code>. <em class="parameter"><code>offset</code></em> and
@@ -67,6 +68,15 @@
                     </p></li></ul></div><p>
         </p><p>
             If an error occurs, <code class="function">glMapBufferRange</code> returns a <code class="code">NULL</code> pointer.
+            If no error occurs, the returned pointer will reflect an alignment of at least <code class="constant">GL_MIN_MAP_BUFFER_ALIGNMENT</code>
+            basic machine units. The value of <code class="constant">GL_MIN_MAP_BUFFER_ALIGNMENT</code> can be retrieved by calling
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with <em class="parameter"><code>pname</code></em> set to
+            <code class="constant">GL_MIN_MAP_BUFFER_ALIGNMENT</code> and must be a power of two that is at least 64. Subtracting <em class="parameter"><code>offset</code></em>
+            from this returned pointed will always produce a multiple of <code class="constant">GL_MIN_MAP_BUFFER_ALINMENT</code>.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
+            Alignment of the returned pointer is guaranteed only if the version
+            of the GL version is 4.2 or greater. Also, the <code class="constant">GL_ATOMIC_COUNTER_BUFFER</code>
+            target is accepted only if the GL version is 4.2 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if either of <em class="parameter"><code>offset</code></em> or <em class="parameter"><code>length</code></em> is negative,
             or if <em class="parameter"><code>offset</code></em> + <em class="parameter"><code>length</code></em> is greater than the value of <code class="constant">GL_BUFFER_SIZE</code>.
@@ -92,7 +102,7 @@
             <a href="glFlushMappedBufferRange.xml"><span class="citerefentry"><span class="refentrytitle">glFlushMappedBufferRange</span></span></a>,
             <a href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
-            Copyright <span class="trademark"></span>© 2010 Khronos Group. 
+            Copyright <span class="trademark"></span>© 2010-2011 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
             <a href="http://opencontent.org/openpub/" target="_top">http://opencontent.org/openpub/</a>.

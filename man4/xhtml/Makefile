@@ -10,16 +10,16 @@ SED	= sed
 DB2XHTML = opengl-man.xsl
 # ../../mancommon/opengl-man.xsl
 
+PREPROCESSOR = preproc.sed
+
 .SUFFIXES: .gl .xml .html .xhtml .ck.xhtml .tex .pdf .3G .tar .tar.gz
 .PHONY: man html pdf tex
 
 # ../../mancommon/opengl-man.xsl
 
-%.xml: ../%.xml $(DB2XHTML)
+%.xml: ../%.xml $(DB2XHTML) $(PREPROCESSOR)
 	$(XSLT) --xinclude -o $@.tmp $(DB2XHTML) $<
-	$(SED) 's/<?xml-stylesheet/<!-- saved from url=(0013)about:internet -->\n<?xml-stylesheet/g' $@.tmp | \
-	    $(SED) 's#http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd#xhtml1-transitional.dtd#g' | \
-	    $(SED) 's#</title># - OpenGL 4.1 Reference Pages</title>#g' > $@
+	$(SED) -f $(PREPROCESSOR) $@.tmp > $@
 	$(RM) $@.tmp
 
 GL_ARB_draw_indirect_entries = \
@@ -87,6 +87,29 @@ GL_ARB_separate_shader_objects_entries = \
 GL_ARB_sample_shading_entries = \
     glMinSampleShading.xml
 
+GL_ARB_base_instance_entries = \
+    glDrawArraysInstancedBaseInstance.xml \
+    glDrawElementsInstancedBaseInstance.xml \
+    glDrawElementsInstancedBaseVertexBaseInstance.xml
+
+GL_EXT_texture_storage_entries = \
+    glTexStorage1D.xml \
+    glTexStorage2D.xml \
+    glTexStorage3D.xml
+
+GL_XXX_internal_format_query_entries = \
+    glGetInternalFormativ.xml
+
+GL_ARB_transform_feedback_instanced_entries = \
+    glDrawTransformFeedbackInstanced.xml \
+    glDrawTransformFeedbackStreamInstanced.xml
+
+GL_ARB_shader_atomic_counters_entries = \
+    glGetActiveAtomicCounterBufferiv.xml
+
+GL_ARB_shader_image_load_store_entries = \
+    glMemoryBarrier.xml
+
 MODIFIEDFORGL4XML = \
     glClearDepth.xml \
     glCreateShader.xml \
@@ -109,6 +132,14 @@ GL41XML = \
     $(GL_ARB_get_program_binary_entries) \
     $(GL_ARB_ES2_compatibility_entries) \
     $(GL_ARB_separate_shader_objects_entries)
+
+GL42XML = \
+    $(GL_ARB_base_instance_entries) \
+    $(GL_EXT_texture_storage_entries) \
+    $(GL_XXX_internal_format_query_entries) \
+    $(GL_ARB_transform_feedback_instanced_entries) \
+    $(GL_ARB_shader_atomic_counters_entries) \
+    $(GL_ARB_shader_image_load_store_entries)
 
 UNMODIFIEDXML = \
     glActiveTexture.xml \
@@ -305,7 +336,7 @@ UNMODIFIEDXML = \
 
 MODIFIEDXML = \
 
-XML    = $(GL4XML) $(GL41XML) $(MODIFIEDFORGL4XML) $(UNMODIFIEDXML)
+XML    = $(GL4XML) $(GL41XML) $(GL42XML) $(MODIFIEDFORGL4XML) $(UNMODIFIEDXML)
 
 default: $(XML)
 

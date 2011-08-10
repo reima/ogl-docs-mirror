@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
 <!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glGetActiveUniformsiv</title><meta name="generator" content="DocBook XSL Stylesheets V1.75.2" /></head><body><div class="refentry" title="glGetActiveUniformsiv"><a id="glGetActiveUniformsiv"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetActiveUniformsiv — Returns information about several active uniform variables for the specified program object</p></div><div class="refsynopsisdiv" title="C Specification"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0" class="funcprototype-table"><tr><td><code class="funcdef">void <b class="fsfunc">glGetActiveUniformsiv</b>(</code></td><td>GLuint <var class="pdparam">program</var>, </td></tr><tr><td> </td><td>GLsizei <var class="pdparam">uniformCount</var>, </td></tr><tr><td> </td><td>const GLuint *<var class="pdparam">uniformIndices</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint *<var class="pdparam">params</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1" title="Parameters"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>program</code></em></span></dt><dd><p>Specifies the program object to be queried.</p></dd><dt><span class="term"><em class="parameter"><code>uniformCount</code></em></span></dt><dd><p>Specifies both the number of elements in the array of indices <em class="parameter"><code>uniformIndices</code></em> and the
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glGetActiveUniformsiv - OpenGL 4.2 Reference Pages</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glGetActiveUniformsiv"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glGetActiveUniformsiv — Returns information about several active uniform variables for the specified program object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glGetActiveUniformsiv</b>(</code></td><td>GLuint  </td><td><var class="pdparam">program</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">uniformCount</var>, </td></tr><tr><td> </td><td>const GLuint * </td><td><var class="pdparam">uniformIndices</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">pname</var>, </td></tr><tr><td> </td><td>GLint * </td><td><var class="pdparam">params</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>program</code></em></span></dt><dd><p>Specifies the program object to be queried.</p></dd><dt><span class="term"><em class="parameter"><code>uniformCount</code></em></span></dt><dd><p>Specifies both the number of elements in the array of indices <em class="parameter"><code>uniformIndices</code></em> and the
             number of parameters written to <em class="parameter"><code>params</code></em> upon successful return.</p></dd><dt><span class="term"><em class="parameter"><code>uniformIndices</code></em></span></dt><dd><p>Specifies the address of an array of <em class="parameter"><code>uniformCount</code></em> integers containing the indices of
             uniforms within <em class="parameter"><code>program</code></em> whose parameter <em class="parameter"><code>pname</code></em> pname.</p></dd><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>Specifies the property of the each uniform in <em class="parameter"><code>uniformIndices</code></em> that should be
             written into the corresponding element of <em class="parameter"><code>params</code></em>.</p></dd><dt><span class="term"><em class="parameter"><code>params</code></em></span></dt><dd><p>Specifies the address of an array of <em class="parameter"><code>uniformCount</code></em> integers which are to
-            receive the value of <em class="parameter"><code>pname</code></em> for each uniform in <em class="parameter"><code>uniformIndices</code></em>.</p></dd></dl></div></div><div class="refsect1" title="Description"><a id="description"></a><h2>Description</h2><p>
+            receive the value of <em class="parameter"><code>pname</code></em> for each uniform in <em class="parameter"><code>uniformIndices</code></em>.</p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
             <code class="function">glGetActiveUniformsiv</code> queries the value of the parameter named <em class="parameter"><code>pname</code></em>
             for each of the uniforms within <em class="parameter"><code>program</code></em> whose indices are specified in the array of
             <em class="parameter"><code>uniformCount</code></em> unsigned integers <em class="parameter"><code>uniformIndices</code></em>. Upon success,
@@ -334,14 +334,17 @@
         </p><p>
             If <em class="parameter"><code>pname</code></em> is <code class="constant">GL_UNIFORM_OFFSET</code>, then an array of uniform buffer
             offsets is returned. For uniforms in a named uniform block, the returned value will be its offset, in basic
-            machine units, relative to the beginning of the uniform block in the buffer object data store. For uniforms
-            in the default uniform block, -1 will be returned.
+            machine units, relative to the beginning of the uniform block in the buffer object data store.
+            For atomic counter uniforms, the returned value will be its offset relative to the beginning of its active
+            atomic counter buffer.
+            For all other uniforms, -1 will be returned.
         </p><p>
             If <em class="parameter"><code>pname</code></em> is <code class="constant">GL_UNIFORM_ARRAY_STRIDE</code>, then an array identifying the
-            stride between elements, in basic machine units, of each of the uniforms specified by the corresponding array of
-            <em class="parameter"><code>uniformIndices</code></em> is returned.  The stride of a uniform associated with the default uniform
-            block is -1.  Note that this information only makes sense for uniforms that are arrays. For uniforms that are
-            not arrays, but are declared in a named uniform block, an array stride of zero is returned.
+            stride between elements of each of the uniforms specified by the corresponding array of
+            <em class="parameter"><code>uniformIndices</code></em> is returned.
+            For uniforms in named uniform blocks and for uniforms declared as atomic counters, the stride is the difference,
+            in basic machine units, of consecutive elements in an array, or zero for uniforms not declared as an array.
+            For all other uniforms, a stride of -1 will be returned.
         </p><p>
             If <em class="parameter"><code>pname</code></em> is <code class="constant">GL_UNIFORM_MATRIX_STRIDE</code>, then an array identifying the stride
             between columns of a column-major matrix or rows of a row-major matrix, in basic machine units, of each of the uniforms
@@ -354,7 +357,13 @@
             of the uniforms specified by the corresponding array of <em class="parameter"><code>uniformIndices</code></em> is a row-major matrix or not is returned. A
             value of one indicates a row-major matrix, and a value of zero indicates a column-major matrix, a matrix in the default
             uniform block, or a non-matrix.
-        </p></div><div class="refsect1" title="Notes"><a id="notes"></a><h2>Notes</h2><p>
+        </p><p>
+            If <em class="parameter"><code>pname</code></em> is <code class="constant">GL_UNIFORM_ATOMIC_COUNTER_BUFFER_INDEX</code>, then an array
+            identifying the active atomic counter buffer index of each of the uniforms specified by the corresponding array
+            of <em class="parameter"><code>uniformIndices</code></em> is returned. For uniforms other than atomic counters, the returned buffer
+            index is -1. The returned indices may be passed to <a href="glGetActiveAtomicCounterBufferiv.xml"><span class="citerefentry"><span class="refentrytitle">glGetActiveAtomicCounterBufferiv</span></span></a>
+            to query the properties of the associated buffer, and not necessarily the binding point specified in the uniform declaration.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
             The double types, <code class="constant">GL_DOUBLE</code>, <code class="constant">GL_DOUBLE_VEC2</code>,
             <code class="constant">GL_DOUBLE_VEC3</code>, <code class="constant">GL_DOUBLE_VEC4</code>,
             <code class="constant">GL_DOUBLE_MAT2</code>, <code class="constant">GL_DOUBLE_MAT3</code>,
@@ -363,29 +372,32 @@
             <code class="constant">GL_DOUBLE_MAT3x4</code>, <code class="constant">GL_DOUBLE_MAT4x2</code>,
             and <code class="constant">GL_DOUBLE_MAT4x3</code> are only available if the GL
             version is 4.1 or higher.
-        </p></div><div class="refsect1" title="Errors"><a id="errors"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_VALUE</code> is generated if
+        </p><p>
+            <code class="constant">GL_UNIFORM_ATOMIC_COUNTER_BUFFER_INDEX</code> is only accepted by <em class="parameter"><code>pname</code></em>
+            if the GL version is 4.2 or higher.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_VALUE</code> is generated if
     <em class="parameter"><code>program</code></em> is not a value generated by
     OpenGL.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if
     <em class="parameter"><code>program</code></em> is not a program object.</p><p><code class="constant">GL_INVALID_VALUE</code> is generated if
     <em class="parameter"><code>uniformCount</code></em> is greater than or equal to the
     value of <code class="constant">GL_ACTIVE_UNIFORMS</code> for
     <em class="parameter"><code>program</code></em>.</p><p><code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>pname</code></em>
-    is not an accepted token.</p></div><div class="refsect1" title="Associated Gets"><a id="associatedgets"></a><h2>Associated Gets</h2><p><a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
+    is not an accepted token.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p><a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a>
     with argument <code class="constant">GL_MAX_VERTEX_UNIFORM_COMPONENTS</code>,
     <code class="constant">GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS</code>,
     <code class="constant">GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS</code>,
     <code class="constant">GL_MAX_GEOMETRY_UNIFORM_COMPONENTS</code>,
     <code class="constant">GL_MAX_FRAGMENT_UNIFORM_COMPONENTS</code>, or
-    <code class="constant">GL_MAX_COMBINED_UNIFORM_COMPONENTS</code>.</p><p><a class="citerefentry" href="glGetProgram.xml"><span class="citerefentry"><span class="refentrytitle">glGetProgram</span></span></a>
+    <code class="constant">GL_MAX_COMBINED_UNIFORM_COMPONENTS</code>.</p><p><a href="glGetProgram.xml"><span class="citerefentry"><span class="refentrytitle">glGetProgram</span></span></a>
     with argument <code class="constant">GL_ACTIVE_UNIFORMS</code> or
-    <code class="constant">GL_ACTIVE_UNIFORM_MAX_LENGTH</code>.</p><p><a class="citerefentry" href="glIsProgram.xml"><span class="citerefentry"><span class="refentrytitle">glIsProgram</span></span></a></p></div><div class="refsect1" title="See Also"><a id="seealso"></a><h2>See Also</h2><p><a class="citerefentry" href="glGetUniform.xml"><span class="citerefentry"><span class="refentrytitle">glGetUniform</span></span></a>,
-    <a class="citerefentry" href="glGetActiveUniform.xml"><span class="citerefentry"><span class="refentrytitle">glGetActiveUniform</span></span></a>,
-    <a class="citerefentry" href="glGetUniformLocation.xml"><span class="citerefentry"><span class="refentrytitle">glGetUniformLocation</span></span></a>,
-    <a class="citerefentry" href="glLinkProgram.xml"><span class="citerefentry"><span class="refentrytitle">glLinkProgram</span></span></a>,
-    <a class="citerefentry" href="glUniform.xml"><span class="citerefentry"><span class="refentrytitle">glUniform</span></span></a>,
-    <a class="citerefentry" href="glUseProgram.xml"><span class="citerefentry"><span class="refentrytitle">glUseProgram</span></span></a></p></div><div class="refsect1" title="Copyright"><a id="Copyright"></a><h2>Copyright</h2><p>
+    <code class="constant">GL_ACTIVE_UNIFORM_MAX_LENGTH</code>.</p><p><a href="glIsProgram.xml"><span class="citerefentry"><span class="refentrytitle">glIsProgram</span></span></a></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p><a href="glGetUniform.xml"><span class="citerefentry"><span class="refentrytitle">glGetUniform</span></span></a>,
+    <a href="glGetActiveUniform.xml"><span class="citerefentry"><span class="refentrytitle">glGetActiveUniform</span></span></a>,
+    <a href="glGetUniformLocation.xml"><span class="citerefentry"><span class="refentrytitle">glGetUniformLocation</span></span></a>,
+    <a href="glLinkProgram.xml"><span class="citerefentry"><span class="refentrytitle">glLinkProgram</span></span></a>,
+    <a href="glUniform.xml"><span class="citerefentry"><span class="refentrytitle">glUniform</span></span></a>,
+    <a href="glUseProgram.xml"><span class="citerefentry"><span class="refentrytitle">glUseProgram</span></span></a></p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 2011 Khronos Group
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
-            <a class="ulink" href="http://opencontent.org/openpub/" target="_top">http://opencontent.org/openpub/</a>.
+            <a href="http://opencontent.org/openpub/" target="_top">http://opencontent.org/openpub/</a>.
         </p></div></div></body></html>

@@ -778,6 +778,18 @@
                     </para>
                 </listitem>
             </varlistentry>
+            <!-- ARB_shader_atomic_counters -->
+            <varlistentry>
+                <term><constant>GL_MAX_COMBINED_ATOMIC_COUNTERS</constant></term>
+                <listitem>
+              <para>
+              </para>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the maximum number of atomic counters available to all active shaders.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <!-- // ARB_shader_atomic_counters -->
             <varlistentry>
                 <term><constant>GL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS</constant></term>
                 <listitem>
@@ -920,6 +932,18 @@
                     </para>
                 </listitem>
             </varlistentry>
+            <!-- ARB_shader_atomic_counters -->
+            <varlistentry>
+                <term><constant>GL_MAX_FRAGMENT_ATOMIC_COUNTERS</constant></term>
+                <listitem>
+              <para>
+              </para>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the maximum number of atomic counters available to fragment shaders.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <!-- // ARB_shader_atomic_counters -->
             <varlistentry>
                 <term><constant>GL_MAX_FRAGMENT_INPUT_COMPONENTS</constant></term>
                 <listitem>
@@ -971,6 +995,18 @@
                     </para>
                 </listitem>
             </varlistentry>
+            <!-- ARB_shader_atomic_counter -->
+            <varlistentry>
+                <term><constant>GL_MAX_GEOMETRY_ATOMIC_COUNTERS</constant></term>
+                <listitem>
+              <para>
+              </para>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the maximum number of atomic counters available to geometry shaders.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <!-- // ARB_shader_atomic_counter -->
             <varlistentry>
                 <term><constant>GL_MAX_GEOMETRY_INPUT_COMPONENTS</constant></term>
                 <listitem>
@@ -1038,6 +1074,19 @@
                     <para>
                         <parameter>params</parameter> returns one value,
                         the maximum number of samples supported in integer format multisample buffers.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MIN_MAP_BUFFER_ALIGNMENT</constant></term>
+                <listitem>
+              <para>
+              </para>
+                    <para>
+                        <parameter>params</parameter> returns one value,
+                        the minimum alignment in basic machine units of pointers returned from<citerefentry><refentrytitle>glMapBuffer</refentrytitle></citerefentry>
+                        and <citerefentry><refentrytitle>glMapBufferRange</refentrytitle></citerefentry>. This value must be a power of two and must
+                        be at least 64.
                     </para>
                 </listitem>
             </varlistentry>
@@ -1112,6 +1161,28 @@
                     </para>
                 </listitem>
             </varlistentry>
+            <!-- ARB_shader_atomic_counters -->
+            <varlistentry>
+                <term><constant>GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS</constant></term>
+                <listitem>
+              <para>
+              </para>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the maximum number of atomic counters available to tessellation control shaders.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><constant>GL_MAX_TESS_EVALUATION_ATOMIC_COUNTERS</constant></term>
+                <listitem>
+              <para>
+              </para>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the maximum number of atomic counters available to tessellation evaluation shaders.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <!-- // ARB_shader_atomic_counters -->
             <varlistentry>
                 <term><constant>GL_MAX_TEXTURE_BUFFER_SIZE</constant></term>
                 <listitem>
@@ -1223,6 +1294,18 @@
                     </para>
                 </listitem>
             </varlistentry>
+            <!-- ARB_shader_atomic_counters -->
+            <varlistentry>
+                <term><constant>GL_MAX_VERTEX_ATOMIC_COUNTERS</constant></term>
+                <listitem>
+              <para>
+              </para>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the maximum number of atomic counters available to vertex shaders.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <!-- /ARB_shader_atomic_counters -->
             <varlistentry>
                 <term><constant>GL_MAX_VERTEX_ATTRIBS</constant></term>
                 <listitem>
@@ -2568,7 +2651,7 @@
                     </para>
                 </listitem>
             </varlistentry>
-        </variablelist>
+            </variablelist>
         <para>
             Many of the boolean parameters can also be queried more easily using
             <citerefentry><refentrytitle>glIsEnabled</refentrytitle></citerefentry>.
@@ -2586,6 +2669,15 @@
             <constant>GL_VIEWPORT_BOUNDS_RANGE</constant>, <constant>GL_LAYER_PROVOKING_VERTEX</constant>,
             and <constant>GL_VIEWPORT_INDEX_PROVOKING_VERTEX</constant>
             are available only if the GL version is 4.1 or greater.
+        </para>
+        <para>
+            <constant>GL_MAX_VERTEX_ATOMIC_COUNTERS</constant>,
+            <constant>GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS</constant>,
+            <constant>GL_MAX_TESS_EVALUATION_ATOMIC_COUNTERS</constant>,
+            <constant>GL_MAX_GEOMETRY_ATOMIC_COUNTERS</constant>,
+            <constant>GL_MAX_FRAMGENT_ATOMIC_COUNTERS</constant>, and
+            <constant>GL_MIN_MAP_BUFFER_ALIGNMENT</constant> are accepted by <parameter>pname</parameter>
+            of the GL version is 4.2 or greater.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
@@ -2628,9 +2720,9 @@
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"></trademark> 1991-2006
-            Silicon Graphics, Inc. This document is licensed under the SGI
-            Free Software B License. For details, see
+            Copyright <trademark class="copyright"></trademark> 1991-2006 Silicon Graphics, Inc.
+            Copyright <trademark class="copyright"></trademark> 2010-2011 Khronos Group.
+            This document is licensed under the SGI Free Software B License. For details, see
             <ulink url="http://oss.sgi.com/projects/FreeB/">http://oss.sgi.com/projects/FreeB/</ulink>.
         </para>
     </refsect1>

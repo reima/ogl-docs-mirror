@@ -23,6 +23,10 @@
                 <paramdef>uint <parameter>p</parameter></paramdef>
             </funcprototype>
             <funcprototype>
+                <funcdef>vec2 <function>unpackSnorm2x16</function></funcdef>
+                <paramdef>uint <parameter>p</parameter></paramdef>
+            </funcprototype>
+            <funcprototype>
                 <funcdef>vec4 <function>unpackUnorm4x8</function></funcdef>
                 <paramdef>uint <parameter>p</parameter></paramdef>
             </funcprototype>
@@ -46,7 +50,7 @@
     </refsect1>
     <refsect1 id="description"><title>Description</title>
         <para>
-            <function>unpackUnorm2x16</function>, <function>unpackUnorm4x8</function> and <function>unpackSnorm4x8</function> unpack
+            <function>unpackUnorm2x16</function>, <function>unpackSnorm2x16</function>, <function>unpackUnorm4x8</function> and <function>unpackSnorm4x8</function> unpack
             single 32-bit unsigned integers, specified in the parameter <parameter>p</parameter> into a pair of 16-bit unsigned integers,
             four 8-bit unsigned integers or four 8-bit signed integers. Then, each component is converted to a normalized floating-point
             value to generate the returned two- or four-component vector.
@@ -55,6 +59,7 @@
             The conversion for unpacked fixed point value <emphasis>f</emphasis> to floating-point is performed as follows:
             <itemizedlist>
                 <listitem><function>packUnorm2x16</function>: <code>f / 65535.0</code></listitem>
+                <listitem><function>packSnorm2x16</function>: <code><citerefentry><refentrytitle>clamp</refentrytitle></citerefentry>(f / 32727.0, -1.0, 1.0)</code></listitem>
                 <listitem><function>packUnorm4x8</function>: <code>f / 255.0</code></listitem>
                 <listitem><function>packSnorm4x8</function>: <code><citerefentry><refentrytitle>clamp</refentrytitle></citerefentry>(f / 127.0, -1.0, 1.0)</code></listitem>
             </itemizedlist>
@@ -66,132 +71,20 @@
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>
         <informaltable frame="topbot">
-            <tgroup cols="9" align="left">
-                <colspec colwidth="1.1*" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
+            #VARTABLECOLS#
                 <thead>
+                    #VARTABLEHEADER#
                     <row>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Function
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 1.10
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 1.20
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 1.30
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 1.40
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 1.50
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 3.30
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 4.00
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 4.10
-                        </emphasis></entry>
+                        <entry>unpackUnorm2x16</entry>#newin41#
                     </row>
                     <row>
-                        <entry>
-                            unpackUnorm2x16
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>Y</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>Y</emphasis>
-                        </entry>
+                        <entry>unpackSnorm2x16</entry>#newin42#
                     </row>
                     <row>
-                        <entry>
-                            unpackUnorm4x8
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>Y</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>Y</emphasis>
-                        </entry>
+                        <entry>unpackUnorm4x8</entry>#newin41#
                     </row>
                     <row>
-                        <entry>
-                            unpackSnorm4x8
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>Y</emphasis>
-                        </entry>
-                        <entry>
-                            <emphasis>Y</emphasis>
-                        </entry>
+                        <entry>unpackSnorm4x8</entry>#newin41#
                     </row>
                 </thead>
             </tgroup>

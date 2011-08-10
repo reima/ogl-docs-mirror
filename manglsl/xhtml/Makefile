@@ -10,17 +10,19 @@ PERL = perl
 # stylesheet to convert Docbook+MathML => XHTML+MathML
 DB2XHTML = opengl-man.xsl
 # ../../mancommon/opengl-man.xsl
+PREPROCESSOR = preprocess.sed
+POSTPROCESSOR = postprocess.sed
 
 .SUFFIXES: .gl .xml .html .xhtml .ck.xhtml .tex .pdf .3G .tar .tar.gz
 .PHONY: man html pdf tex
 
 # ../../mancommon/opengl-man.xsl
 
-%.xml: ../%.xml $(DB2XHTML)
-	$(XSLT) --xinclude -o $@.tmp $(DB2XHTML) $<
-	$(SED) 's/<?xml-stylesheet/<!-- saved from url=(0013)about:internet -->\n<?xml-stylesheet/g' $@.tmp | \
-	    $(SED) 's#http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd#xhtml1-transitional.dtd#g' | \
-	    $(SED) 's#</title># - OpenGL Shading Language (GLSL)</title>#g' > $@
+%.xml: ../%.xml $(DB2XHTML) $(PREPROCESSOR) $(POSTPROCESSOR)
+	$(SED) -f $(PREPROCESSOR) $< > $@.pre
+	$(XSLT) --xinclude -o $@.tmp $(DB2XHTML) $@.pre
+	$(SED) -f $(POSTPROCESSOR) $@.tmp > $@
+	$(RM) $@.pre
 	$(RM) $@.tmp
 
 Angle_and_Trigonometry_Functions = \
@@ -77,7 +79,9 @@ FloatingPoint_Pack_and_Unpack_Functions = \
     packUnorm2x16.xml \
     unpackUnorm2x16.xml \
     packDouble2x32.xml \
-    unpackDouble2x32.xml
+    unpackDouble2x32.xml \
+    packHalf2x16.xml \
+    unpackHalf2x16.xml
 
 Geometric_Functions = \
     length.xml \
@@ -164,6 +168,24 @@ Geometry_Shader_Functions = \
 Invocation_Control_Functions = \
     barrier.xml
 
+Atomic_Counter_Functions = \
+    atomicCounterIncrement.xml \
+    atomicCounterDecrement.xml \
+    atomicCounter.xml
+
+Image_Functions = \
+    imageLoad.xml \
+    imageStore.xml \
+    imageAtomicAdd.xml \
+    imageAtomicAnd.xml \
+    imageAtomicOr.xml \
+    imageAtomicXor.xml \
+    imageAtomicMin.xml \
+    imageAtomicMax.xml \
+    imageAtomicExchange.xml \
+    imageAtomicCompSwap.xml \
+    memoryBarrier.xml
+
 Builtin_Variables = \
     gl_ClipDistance.xml \
     gl_FragCoord.xml \
@@ -181,6 +203,7 @@ Builtin_Variables = \
     gl_PrimitiveIDIn.xml \
     gl_SampleID.xml \
     gl_SampleMask.xml \
+    gl_SampleMaskIn.xml \
     gl_SamplePosition.xml \
     gl_TessCoord.xml \
     gl_TessLevelInner.xml \
@@ -205,6 +228,8 @@ GLSLXML = \
     $(Noise_Functions) \
     $(Geometry_Shader_Functions) \
     $(Invocation_Control_Functions) \
+    $(Atomic_Counter_Functions) \
+    $(Image_Functions) \
     \
     $(Builtin_Variables)
 

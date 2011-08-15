@@ -86,7 +86,8 @@
             Since no texture data is actually provided, the values used in the pseudo-code
             for <parameter>format</parameter> and <parameter>type</parameter> are
             irrelevant and may be considered to be any values that are legal for the
-            chosen <parameter>internalformat</parameter> enumerant. Upon success,
+            chosen <parameter>internalformat</parameter> enumerant. <parameter>internalformat</parameter>
+            must be one of the sized internal formats given in Table 1 below. Upon success,
             the value of <constant>GL_TEXTURE_IMMUTABLE_FORMAT</constant> becomes
             <constant>GL_TRUE</constant>. The value of <constant>GL_TEXTURE_IMMUTABLE_FORMAT</constant>
             may be discovered by calling <citerefentry><refentrytitle>glGetTexParameter</refentrytitle></citerefentry>
@@ -97,6 +98,9 @@
             another call to <function>glTexStorage1D</function>) will result in the
             generation of a <constant>GL_INVALID_OPERATION</constant> error, even if it
             would not, in fact, alter the dimensions or format of the object.
+        </para>
+        <para>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="internalformattable.xml" />
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

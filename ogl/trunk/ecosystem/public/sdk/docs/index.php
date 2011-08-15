@@ -9,8 +9,8 @@
 
 <H2>The OpenGL Reference Pages</H2>
 
-<P>The <A HREF="./man4/">reference pages for OpenGL 4.1</A> include complete descriptions of all OpenGL
-commands contained in the Core Profile of the OpenGL 4.1 Specification.</P>
+<P>The <A HREF="./man4/">reference pages for OpenGL 4.2</A> include complete descriptions of all OpenGL
+commands contained in the Core Profile of the OpenGL 4.2 Specification.</P>
 
 <P>The <A HREF="./man3/">reference pages for OpenGL 3.3</A> include complete descriptions of all OpenGL
 commands contained in the Core Profile of the OpenGL 3.3 Specification.</P>
@@ -30,7 +30,7 @@ are fold-out annotated lists of the functions included in OpenGL, along with the
 information.</P>
 
 <UL>
-<LI>The <A HREF="http://www.khronos.org/files/opengl41-quick-reference-card.pdf">OpenGL 4.1 Quick Reference Guide (including GLSL 4.10)</A></LI>
+<LI>The <A HREF="http://www.khronos.org/files/opengl42-quick-reference-card.pdf">OpenGL 4.2 Quick Reference Guide (including GLSL 4.20)</A></LI>
 <LI>The <A HREF="http://www.khronos.org/files/opengl-quick-reference-card.pdf">OpenGL 3.2 Quick Reference Guide (including GLSL 1.50)</A></LI>
 </UL>
 
@@ -49,6 +49,9 @@ Extension specifications are written as supplements to the core OpenGL
 Specification. Most new features are first introduced as extensions and
 only later become part of a core OpenGL version, so using extensions is
 important to staying current with the evolution of the API. </P>
+
+<P> Please use the <A HREF="http://www.opengl.org/documentation/specs/feedback/">feedback form</A>
+to let us know about any issues you find. </P>
 
 <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 </BODY>

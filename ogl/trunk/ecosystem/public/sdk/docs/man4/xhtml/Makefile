@@ -338,6 +338,14 @@ MODIFIEDXML = \
 
 XML    = $(GL4XML) $(GL41XML) $(GL42XML) $(MODIFIEDFORGL4XML) $(UNMODIFIEDXML)
 
+glTexImage1D.xml \
+glTexImage2D.xml \
+glTexImage3D.xml \
+glTexStorage1D.xml \
+glTexStorage2D.xml \
+glTexStorage3D.xml \
+    : ../internalformattable.xml ../baseformattable.xml ../compressedformattable.xml
+
 default: $(XML)
 
 clean:

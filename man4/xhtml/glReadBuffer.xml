@@ -10,8 +10,9 @@
                     <code class="constant">GL_BACK_RIGHT</code>,
                     <code class="constant">GL_FRONT</code>,
                     <code class="constant">GL_BACK</code>,
-                    <code class="constant">GL_LEFT</code>, and
-                    <code class="constant">GL_RIGHT</code>.
+                    <code class="constant">GL_LEFT</code>,
+                    <code class="constant">GL_RIGHT</code>, and the constants
+                    <code class="constant">GL_COLOR_ATTACHMENT<span class="emphasis"><em>i</em></span></code>.
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
             <code class="function">glReadBuffer</code> specifies a color buffer as the source for subsequent
             <a href="glReadPixels.xml"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>, <a href="glCopyTexImage1D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage1D</span></span></a>, <a href="glCopyTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a>,
@@ -26,6 +27,9 @@
             <code class="constant">GL_RIGHT</code> name the front right buffer, and
             <code class="constant">GL_BACK_LEFT</code> and
             <code class="constant">GL_BACK</code> name the back left buffer.
+            Further more, the constants <code class="constant">GL_COLOR_ATTACHMENT<span class="emphasis"><em>i</em></span></code> may be used to indicate the
+            <span class="emphasis"><em>i</em></span><sup>th</sup> color attachment where <span class="emphasis"><em>i</em></span> ranges from zero to the
+            value of <code class="constant">GL_MAX_COLOR_ATTACHMENTS</code> minus one.
         </p><p>
             Nonstereo double-buffered configurations have only a front left and a
             back left buffer.
@@ -52,8 +56,9 @@
             <a href="glDrawBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glDrawBuffer</span></span></a>,
             <a href="glReadPixels.xml"><span class="citerefentry"><span class="refentrytitle">glReadPixels</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
-            Copyright <span class="trademark"></span>© 1991-2006
-            Silicon Graphics, Inc. This document is licensed under the SGI
+            Copyright <span class="trademark"></span>© 1991-2006 Silicon Graphics, Inc.
+            Copyright <span class="trademark"></span>© 2011 Khronos Group.
+            This document is licensed under the SGI
             Free Software B License. For details, see
             <a href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
         </p></div></div></body></html>

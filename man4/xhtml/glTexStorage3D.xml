@@ -48,19 +48,22 @@
             for <em class="parameter"><code>format</code></em> and <em class="parameter"><code>type</code></em> are
             irrelevant and may be considered to be any values that are legal for the
             chosen <em class="parameter"><code>internalformat</code></em> enumerant. <em class="parameter"><code>internalformat</code></em>
-            must be one of the sized internal formats given in Table 1 below. Upon success,
+            must be one of the sized internal formats given in Table 1 below, one of the sized depth-component
+            formats <code class="constant">GL_DEPTH_COMPONENT32F</code>, <code class="constant">GL_DEPTH_COMPONENT24</code>, or
+            <code class="constant">GL_DEPTH_COMPONENT16</code>, or one of the combined depth-stencil formats,
+            <code class="constant">GL_DEPTH32F_STENCIL8</code>, or <code class="constant">GL_DEPTH24_STENCIL8</code>. Upon success,
             the value of <code class="constant">GL_TEXTURE_IMMUTABLE_FORMAT</code> becomes
             <code class="constant">GL_TRUE</code>. The value of <code class="constant">GL_TEXTURE_IMMUTABLE_FORMAT</code>
             may be discovered by calling <a href="glGetTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glGetTexParameter</span></span></a>
             with <em class="parameter"><code>pname</code></em> set to <code class="constant">GL_TEXTURE_IMMUTABLE_FORMAT</code>.
             No further changes to the dimensions or format of the texture object may be
             made. Using any command that might alter the dimensions or format of the
-            texture object (such as <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a> or
+            texture object (such as <a href="glTexImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage3D</span></span></a> or
             another call to <code class="function">glTexStorage3D</code>) will result in the
             generation of a <code class="constant">GL_INVALID_OPERATION</code> error, even if it
             would not, in fact, alter the dimensions or format of the object.
         </p><p>
-            </p><div class="table"><a id="id4876043"></a><p class="title"><b>Table 1. Sized Internal Formats</b></p><table summary="Sized Internal Formats" border="1"><colgroup><col align="left" /><col align="left" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
+            </p><div class="table"><a id="id4876064"></a><p class="title"><b>Table 1. Sized Internal Formats</b></p><table summary="Sized Internal Formats" border="1"><colgroup><col align="left" /><col align="left" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
             Sized Internal Format
             </strong></span></th><th align="left"><span class="bold"><strong>
             Base Internal Format

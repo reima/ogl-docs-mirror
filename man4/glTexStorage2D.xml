@@ -125,7 +125,10 @@
             for <parameter>format</parameter> and <parameter>type</parameter> are
             irrelevant and may be considered to be any values that are legal for the
             chosen <parameter>internalformat</parameter> enumerant. <parameter>internalformat</parameter>
-            must be one of the sized internal formats given in Table 1 below. Upon success,
+            must be one of the sized internal formats given in Table 1 below, one of the sized depth-component
+            formats <constant>GL_DEPTH_COMPONENT32F</constant>, <constant>GL_DEPTH_COMPONENT24</constant>, or
+            <constant>GL_DEPTH_COMPONENT16</constant>, or one of the combined depth-stencil formats,
+            <constant>GL_DEPTH32F_STENCIL8</constant>, or <constant>GL_DEPTH24_STENCIL8</constant>. Upon success,
             the value of <constant>GL_TEXTURE_IMMUTABLE_FORMAT</constant> becomes
             <constant>GL_TRUE</constant>. The value of <constant>GL_TEXTURE_IMMUTABLE_FORMAT</constant>
             may be discovered by calling <citerefentry><refentrytitle>glGetTexParameter</refentrytitle></citerefentry>

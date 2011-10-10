@@ -108,6 +108,7 @@ GL_ARB_shader_atomic_counters_entries = \
     glGetActiveAtomicCounterBufferiv.xml
 
 GL_ARB_shader_image_load_store_entries = \
+    glBindImageTexture.xml \
     glMemoryBarrier.xml
 
 MODIFIEDFORGL4XML = \

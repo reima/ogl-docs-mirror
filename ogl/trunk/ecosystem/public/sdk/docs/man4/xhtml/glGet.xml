@@ -223,13 +223,13 @@
                         The initial value of <code class="constant">GL_DRAW_BUFFER0</code> is <code class="constant">GL_BACK</code> if there
                         are back buffers, otherwise it is <code class="constant">GL_FRONT</code>.  The
                         initial values of draw buffers for all other output colors is <code class="constant">GL_NONE</code>.
-                    </p></dd><dt><span class="term"><code class="constant">GL_DRAW_FRAMEBFUFER_BINDING</code></span></dt><dd><p>
+                    </p></dd><dt><span class="term"><code class="constant">GL_DRAW_FRAMEBUFFER_BINDING</code></span></dt><dd><p>
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
                         the name of the framebuffer object currently bound to the <code class="constant">GL_DRAW_FRAMEBUFFER</code> target.
                         If the default framebuffer is bound, this value will be zero. The initial value is zero.
                         See <a href="glBindFramebuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindFramebuffer</span></span></a>.
-                    </p></dd><dt><span class="term"><code class="constant">GL_READ_FRAMEBFUFER_BINDING</code></span></dt><dd><p>
+                    </p></dd><dt><span class="term"><code class="constant">GL_READ_FRAMEBUFFER_BINDING</code></span></dt><dd><p>
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
                         the name of the framebuffer object currently bound to the <code class="constant">GL_READ_FRAMEBUFFER</code> target.

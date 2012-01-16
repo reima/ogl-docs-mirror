@@ -559,7 +559,7 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_DRAW_FRAMEBFUFER_BINDING</constant></term>
+                <term><constant>GL_DRAW_FRAMEBUFFER_BINDING</constant></term>
                 <listitem>
               <para>
               </para>
@@ -572,7 +572,7 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><constant>GL_READ_FRAMEBFUFER_BINDING</constant></term>
+                <term><constant>GL_READ_FRAMEBUFFER_BINDING</constant></term>
                 <listitem>
               <para>
               </para>

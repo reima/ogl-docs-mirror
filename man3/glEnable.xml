@@ -224,6 +224,21 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_FRAMEBUFFER_SRGB</constant>    </term>
+                <listitem>
+                <para>
+                </para>
+                    <para>
+                        If enabled
+                        and the value of <constant>GL_FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING</constant> for the
+                        framebuffer attachment corresponding to the destination buffer is <constant>GL_SRGB</constant>,
+                        the R, G, and B destination color values (after conversion from fixed-point to floating-point)
+                        are considered to be encoded for the sRGB color space and hence are linearized prior to
+                        their use in blending.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_LINE_SMOOTH</constant></term>
                 <listitem>
                 <para>

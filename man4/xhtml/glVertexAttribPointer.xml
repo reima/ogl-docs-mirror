@@ -12,13 +12,15 @@
             <code class="constant">GL_SHORT</code>,
             <code class="constant">GL_UNSIGNED_SHORT</code>,
             <code class="constant">GL_INT</code>, and
-            <code class="constant">GL_UNSIGNED_INT</code> are accepted by both functions. Additionally
+            <code class="constant">GL_UNSIGNED_INT</code> are accepted by <code class="function">glVertexAttribPointer</code> and <code class="function">glVertexAttribIPointer</code>. Additionally
             <code class="constant">GL_HALF_FLOAT</code>,
             <code class="constant">GL_FLOAT</code>,
             <code class="constant">GL_DOUBLE</code>,
             <code class="constant">GL_FIXED</code>,
             <code class="constant">GL_INT_2_10_10_10_REV</code>, and
             <code class="constant">GL_UNSIGNED_INT_2_10_10_10_REV</code> are accepted by <code class="function">glVertexAttribPointer</code>.
+            <code class="constant">GL_DOUBLE</code> is also accepted by <code class="function">glVertexAttribLPointer</code> and is
+            the only token accepted by the <em class="parameter"><code>type</code></em> parameter for that function.
             The initial value is <code class="constant">GL_FLOAT</code>.</p></dd><dt><span class="term"><em class="parameter"><code>normalized</code></em></span></dt><dd><p>For <code class="function">glVertexAttribPointer</code>, specifies whether fixed-point data values
             should be normalized (<code class="constant">GL_TRUE</code>)
             or converted directly as fixed-point values

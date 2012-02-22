@@ -21,7 +21,7 @@
             as a single general binding point that can be used by other buffer manipulation functions such as
             <a href="glBindBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glBindBuffer</span></span></a> or
             <a href="glMapBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glMapBuffer</span></span></a>. In addition to binding
-            a range of <em class="parameter"><code>buffer</code></em> to the indexed buffer binding target, <code class="function">glBindBufferBase</code>
+            a range of <em class="parameter"><code>buffer</code></em> to the indexed buffer binding target, <code class="function">glBindBufferRange</code>
             also binds the range to the generic buffer binding point specified by <em class="parameter"><code>target</code></em>.
         </p><p>
             <em class="parameter"><code>offset</code></em> specifies the offset in basic machine units into the buffer object

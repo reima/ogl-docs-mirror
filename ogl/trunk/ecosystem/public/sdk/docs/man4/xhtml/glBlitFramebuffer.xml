@@ -51,7 +51,7 @@
                 integer values.</p></li><li><p>The read buffer contains signed integer values and any draw buffer does not contain signed integer values.</p></li></ul></div><p>
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>mask</code></em> contains <code class="constant">GL_DEPTH_BUFFER_BIT</code> or
-            <code class="constant">GL_DEPTH_BUFFER_BIT</code> and the source and destination depth and stencil formats do not match.
+            <code class="constant">GL_STENCIL_BUFFER_BIT</code> and the source and destination depth and stencil formats do not match.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>filter</code></em> is <code class="constant">GL_LINEAR</code> and the read buffer
             contains integer data.

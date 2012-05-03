@@ -140,7 +140,8 @@ GL42XML = \
     $(GL_XXX_internal_format_query_entries) \
     $(GL_ARB_transform_feedback_instanced_entries) \
     $(GL_ARB_shader_atomic_counters_entries) \
-    $(GL_ARB_shader_image_load_store_entries)
+    $(GL_ARB_shader_image_load_store_entries) \
+    removedTypes.xml
 
 UNMODIFIEDXML = \
     glActiveTexture.xml \

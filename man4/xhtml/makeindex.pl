@@ -19,7 +19,7 @@ print '<html>
 </head>
 <body>
 <a name="top"></a>
-<center><h1>OpenGL 4.2 Reference Pages</h1></center>
+<center><h1>OpenGL 4 Reference Pages</h1></center>
 <br/><br/>
 
 ';

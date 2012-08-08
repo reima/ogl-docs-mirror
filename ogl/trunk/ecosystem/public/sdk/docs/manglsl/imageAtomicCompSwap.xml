@@ -22,54 +22,63 @@
                 <funcdef>uint <function>imageAtomicCompSwap</function></funcdef>
                 <paramdef>gimage1D <parameter>image</parameter></paramdef>
                 <paramdef>int <parameter>P</parameter></paramdef>
+                <paramdef>uint <parameter>compare</parameter></paramdef>
                 <paramdef>uint <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>uint <function>imageAtomicCompSwap</function></funcdef>
                 <paramdef>gimage2D <parameter>image</parameter></paramdef>
                 <paramdef>ivec2 <parameter>P</parameter></paramdef>
+                <paramdef>uint <parameter>compare</parameter></paramdef>
                 <paramdef>uint <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>uint <function>imageAtomicCompSwap</function></funcdef>
                 <paramdef>gimage3D <parameter>image</parameter></paramdef>
                 <paramdef>ivec3 <parameter>P</parameter></paramdef>
+                <paramdef>uint <parameter>compare</parameter></paramdef>
                 <paramdef>uint <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>uint <function>imageAtomicCompSwap</function></funcdef>
                 <paramdef>gimage2DRect <parameter>image</parameter></paramdef>
                 <paramdef>ivec2 <parameter>P</parameter></paramdef>
+                <paramdef>uint <parameter>compare</parameter></paramdef>
                 <paramdef>uint <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>uint <function>imageAtomicCompSwap</function></funcdef>
                 <paramdef>gimageCube <parameter>image</parameter></paramdef>
                 <paramdef>ivec3 <parameter>P</parameter></paramdef>
+                <paramdef>uint <parameter>compare</parameter></paramdef>
                 <paramdef>uint <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>uint <function>imageAtomicCompSwap</function></funcdef>
                 <paramdef>gbufferImage <parameter>image</parameter></paramdef>
                 <paramdef>int <parameter>P</parameter></paramdef>
+                <paramdef>uint <parameter>compare</parameter></paramdef>
                 <paramdef>uint <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>uint <function>imageAtomicCompSwap</function></funcdef>
                 <paramdef>gimage1DArray <parameter>image</parameter></paramdef>
                 <paramdef>ivec2 <parameter>P</parameter></paramdef>
+                <paramdef>uint <parameter>compare</parameter></paramdef>
                 <paramdef>uint <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>uint <function>imageAtomicCompSwap</function></funcdef>
                 <paramdef>gimage2DArray <parameter>image</parameter></paramdef>
                 <paramdef>ivec3 <parameter>P</parameter></paramdef>
+                <paramdef>uint <parameter>compare</parameter></paramdef>
                 <paramdef>uint <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>uint <function>imageAtomicCompSwap</function></funcdef>
                 <paramdef>gimageCubeArray <parameter>image</parameter></paramdef>
                 <paramdef>ivec3 <parameter>P</parameter></paramdef>
+                <paramdef>uint <parameter>compare</parameter></paramdef>
                 <paramdef>uint <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
@@ -77,6 +86,7 @@
                 <paramdef>gimage2DMS <parameter>image</parameter></paramdef>
                 <paramdef>ivec2 <parameter>P</parameter></paramdef>
                 <paramdef>int <parameter>sample</parameter></paramdef>
+                <paramdef>uint <parameter>compare</parameter></paramdef>
                 <paramdef>uint <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
@@ -84,60 +94,70 @@
                 <paramdef>gimage2DMSArray <parameter>image</parameter></paramdef>
                 <paramdef>ivec3 <parameter>P</parameter></paramdef>
                 <paramdef>int <parameter>sample</parameter></paramdef>
+                <paramdef>uint <parameter>compare</parameter></paramdef>
                 <paramdef>uint <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>int <function>imageAtomicCompSwap</function></funcdef>
                 <paramdef>gimage1D <parameter>image</parameter></paramdef>
                 <paramdef>int <parameter>P</parameter></paramdef>
+                <paramdef>int <parameter>compare</parameter></paramdef>
                 <paramdef>int <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>int <function>imageAtomicCompSwap</function></funcdef>
                 <paramdef>gimage2D <parameter>image</parameter></paramdef>
                 <paramdef>ivec2 <parameter>P</parameter></paramdef>
+                <paramdef>int <parameter>compare</parameter></paramdef>
                 <paramdef>int <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>int <function>imageAtomicCompSwap</function></funcdef>
                 <paramdef>gimage3D <parameter>image</parameter></paramdef>
                 <paramdef>ivec3 <parameter>P</parameter></paramdef>
+                <paramdef>int <parameter>compare</parameter></paramdef>
                 <paramdef>int <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>int <function>imageAtomicCompSwap</function></funcdef>
                 <paramdef>gimage2DRect <parameter>image</parameter></paramdef>
                 <paramdef>ivec2 <parameter>P</parameter></paramdef>
+                <paramdef>int <parameter>compare</parameter></paramdef>
                 <paramdef>int <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>int <function>imageAtomicCompSwap</function></funcdef>
                 <paramdef>gimageCube <parameter>image</parameter></paramdef>
                 <paramdef>ivec3 <parameter>P</parameter></paramdef>
+                <paramdef>int <parameter>compare</parameter></paramdef>
                 <paramdef>int <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>int <function>imageAtomicCompSwap</function></funcdef>
                 <paramdef>gbufferImage <parameter>image</parameter></paramdef>
                 <paramdef>int <parameter>P</parameter></paramdef>
+                <paramdef>int <parameter>compare</parameter></paramdef>
                 <paramdef>int <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>int <function>imageAtomicCompSwap</function></funcdef>
                 <paramdef>gimage1DArray <parameter>image</parameter></paramdef>
                 <paramdef>ivec2 <parameter>P</parameter></paramdef>
+                <paramdef>int <parameter>compare</parameter></paramdef>
                 <paramdef>int <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>int <function>imageAtomicCompSwap</function></funcdef>
                 <paramdef>gimage2DArray <parameter>image</parameter></paramdef>
                 <paramdef>ivec3 <parameter>P</parameter></paramdef>
+                <paramdef>int <parameter>compare</parameter></paramdef>
                 <paramdef>int <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>int <function>imageAtomicCompSwap</function></funcdef>
                 <paramdef>gimageCubeArray <parameter>image</parameter></paramdef>
                 <paramdef>ivec3 <parameter>P</parameter></paramdef>
+                <paramdef>int <parameter>compare</parameter></paramdef>
                 <paramdef>int <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
@@ -145,6 +165,7 @@
                 <paramdef>gimage2DMS <parameter>image</parameter></paramdef>
                 <paramdef>ivec2 <parameter>P</parameter></paramdef>
                 <paramdef>int <parameter>sample</parameter></paramdef>
+                <paramdef>int <parameter>compare</parameter></paramdef>
                 <paramdef>int <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
@@ -152,6 +173,7 @@
                 <paramdef>gimage2DMSArray <parameter>image</parameter></paramdef>
                 <paramdef>ivec3 <parameter>P</parameter></paramdef>
                 <paramdef>int <parameter>sample</parameter></paramdef>
+                <paramdef>int <parameter>compare</parameter></paramdef>
                 <paramdef>int <parameter>data</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
@@ -183,10 +205,18 @@
             </listitem>
         </varlistentry>
         <varlistentry>
+            <term><parameter>compare</parameter></term>
+            <listitem>
+                <para>
+                    Specifies the value to compare with the content of the image.
+                </para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
             <term><parameter>data</parameter></term>
             <listitem>
                 <para>
-                    Specifies the data of which to take the compare and conditionally store with that stored in the image.
+                    Specifies the value to store in the image if <parameter>compare</parameter> is equal to the existing image content.
                 </para>
             </listitem>
         </varlistentry>
@@ -194,8 +224,8 @@
     </refsect1>
     <refsect1 id="description"><title>Description</title>
         <para>
-            <function>imageAtomicCompSwap</function> atomically compares the value of <parameter>data</parameter>
-            with that of the texel at coordinate <parameter>P</parameter> and <parameter>sample</parameter> in the
+            <function>imageAtomicCompSwap</function> atomically compares the value of <parameter>compare</parameter>
+            with that of the texel at coordinate <parameter>P</parameter> and <parameter>sample</parameter> (for multisampled forms) in the
             image bound to uint <parameter>image</parameter>. If the values are equal, <parameter>data</parameter> is
             stored into the texel, otherwise it is discarded. It returns the new value of the texel.
         </para>

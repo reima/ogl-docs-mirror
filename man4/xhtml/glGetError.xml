@@ -51,6 +51,12 @@
                         The state of the GL is undefined,
                         except for the state of the error flags,
                         after this error is recorded.
+                    </p></dd><dt><span class="term"><code class="constant">GL_STACK_UNDERFLOW</code></span></dt><dd><p>
+                        An attempt has been made to perform an operation that would
+                        cause an internal stack to underflow.
+                    </p></dd><dt><span class="term"><code class="constant">GL_STACK_OVERFLOW</code></span></dt><dd><p>
+                        An attempt has been made to perform an operation that would
+                        cause an internal stack to overflow.
                     </p></dd></dl></div><p>
             When an error flag is set,
             results of a GL operation are undefined only if <code class="constant">GL_OUT_OF_MEMORY</code>
@@ -62,7 +68,10 @@
             If <code class="function">glGetError</code> itself generates an error, it returns 0.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
-            Silicon Graphics, Inc. This document is licensed under the SGI
+            Silicon Graphics, Inc.
+            Copyright <span class="trademark"></span>© 2012
+            Khronos Group.
+            This document is licensed under the SGI
             Free Software B License. For details, see
             <a href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
         </p></div></div></body></html>

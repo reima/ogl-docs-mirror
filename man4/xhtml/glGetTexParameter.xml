@@ -14,11 +14,13 @@
                     are accepted.
                 </p></dd><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
                     Specifies the symbolic name of a texture parameter.
+                    <code class="constant">GL_DEPTH_STENCIL_TEXTURE_MODE</code>,
                     <code class="constant">GL_TEXTURE_BASE_LEVEL</code>,
                     <code class="constant">GL_TEXTURE_BORDER_COLOR</code>,
                     <code class="constant">GL_TEXTURE_COMPARE_MODE</code>,
                     <code class="constant">GL_TEXTURE_COMPARE_FUNC</code>,
                     <code class="constant">GL_TEXTURE_IMMUTABLE_FORMAT</code>,
+                    <code class="constant">GL_TEXTURE_IMMUTABLE_LEVELS</code>,
                     <code class="constant">GL_TEXTURE_LOD_BIAS</code>,
                     <code class="constant">GL_TEXTURE_MAG_FILTER</code>,
                     <code class="constant">GL_TEXTURE_MAX_LEVEL</code>,
@@ -30,6 +32,10 @@
                     <code class="constant">GL_TEXTURE_SWIZZLE_B</code>,
                     <code class="constant">GL_TEXTURE_SWIZZLE_A</code>,
                     <code class="constant">GL_TEXTURE_SWIZZLE_RGBA</code>,
+                    <code class="constant">GL_TEXTURE_VIEW_MIN_LAYER</code>,
+                    <code class="constant">GL_TEXTURE_VIEW_MIN_LEVEL</code>,
+                    <code class="constant">GL_TEXTURE_VIEW_NUM_LAYERS</code>,
+                    <code class="constant">GL_TEXTURE_VIEW_NUM_LEVELS</code>,
                     <code class="constant">GL_TEXTURE_WRAP_S</code>,
                     <code class="constant">GL_TEXTURE_WRAP_T</code>, and
                     <code class="constant">GL_TEXTURE_WRAP_R</code>
@@ -51,7 +57,10 @@
             specify one-, two-, or three-dimensional, one-dimensional array, two-dimensional array, rectangle, cube-mapped or cube-mapped array texturing, respectively.
             <em class="parameter"><code>pname</code></em> accepts the same symbols as <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>,
             with the same interpretations:
-        </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_TEXTURE_MAG_FILTER</code></span></dt><dd><p>
+        </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_DEPTH_STENCIL_TEXTURE_MODE</code></span></dt><dd><p>
+                        Returns the single-value depth stencil texture mode, a symbolic constant.
+                        The initial value is <code class="constant">GL_DEPTH_COMPONENT</code>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_MAG_FILTER</code></span></dt><dd><p>
                         Returns the single-valued texture magnification filter,
                         a symbolic constant. The initial value is <code class="constant">GL_LINEAR</code>.
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_MIN_FILTER</code></span></dt><dd><p>
@@ -120,6 +129,21 @@
                     </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_COMPARE_FUNC</code></span></dt><dd><p>
                         Returns a single-valued texture comparison function, a symbolic constant.  The
                         initial value is <code class="constant">GL_LEQUAL</code>. See <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_VIEW_MIN_LEVEL</code></span></dt><dd><p>
+                        Returns a single-valued base level of a texture view relative to its parent.  The
+                        initial value is 0. See <a href="glTextureView.xml"><span class="citerefentry"><span class="refentrytitle">glTextureView</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_VIEW_NUM_LEVELS</code></span></dt><dd><p>
+                        Returns a single-valued number of levels of detail of a texture view.
+                        See <a href="glTextureView.xml"><span class="citerefentry"><span class="refentrytitle">glTextureView</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_VIEW_MIN_LAYER</code></span></dt><dd><p>
+                        Returns a single-valued first level of a texture array view relative to its parent.
+                        See <a href="glTextureView.xml"><span class="citerefentry"><span class="refentrytitle">glTextureView</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_VIEW_NUM_LAYERS</code></span></dt><dd><p>
+                        Returns a single-valued number of layers in a texture array view.
+                        See <a href="glTextureView.xml"><span class="citerefentry"><span class="refentrytitle">glTextureView</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_IMMUTABLE_LEVELS</code></span></dt><dd><p>
+                        Returns a single-valued number of immutable texture levels in a texture view.
+                        See <a href="glTextureView.xml"><span class="citerefentry"><span class="refentrytitle">glTextureView</span></span></a>.
                     </p></dd></dl></div><p>
         In addition to the parameters that may be set with <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>,
         <code class="function">glGetTexParameter</code> accepts the following read-only parameters:
@@ -131,6 +155,10 @@
                     </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
             If an error is generated,
             no change is made to the contents of <em class="parameter"><code>params</code></em>.
+        </p><p>
+            <code class="constant">GL_DEPTH_STENCIL_TEXTURE_MODE</code>, <code class="constant">GL_TEXTURE_VIEW_MIN_LEVEL</code>,
+            <code class="constant">GL_TEXTURE_VIEW_NUM_LEVELS</code>, <code class="constant">GL_TEXTURE_VIEW_MIN_LAYER</code>,
+            <code class="constant">GL_TEXTURE_VIEW_NUM_LAYERS</code> and <code class="constant">GL_TEXTURE_IMMUTABLE_LEVELS</code> are available only if the GL version is 4.3 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> or <em class="parameter"><code>pname</code></em> is not an
             accepted value.
@@ -138,10 +166,11 @@
             <a href="glTexParameter.xml"><span class="citerefentry"><span class="refentrytitle">glTexParameter</span></span></a>,
             <a href="glTexStorage1D.xml"><span class="citerefentry"><span class="refentrytitle">glTexStorage1D</span></span></a>,
             <a href="glTexStorage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexStorage2D</span></span></a>,
-            <a href="glTexStorage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexStorage3D</span></span></a>
+            <a href="glTexStorage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexStorage3D</span></span></a>,
+            <a href="glTextureView.xml"><span class="citerefentry"><span class="refentrytitle">glTextureView</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
-            Silicon Graphics, Inc. Copyright <span class="trademark"></span>© 2010-2011
+            Silicon Graphics, Inc. Copyright <span class="trademark"></span>© 2010-2012
             Khronos Group. This document is licensed under the SGI
             Free Software B License. For details, see
             <a href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.

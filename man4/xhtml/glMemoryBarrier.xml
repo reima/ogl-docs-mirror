@@ -6,7 +6,8 @@
                     <code class="constant">GL_ELEMENT_ARRAY_BARRIER_BIT</code>, <code class="constant">GL_UNIFORM_BARRIER_BIT</code>, <code class="constant">GL_TEXTURE_FETCH_BARRIER_BIT</code>,
                     <code class="constant">GL_SHADER_IMAGE_ACCESS_BARRIER_BIT</code>, <code class="constant">GL_COMMAND_BARRIER_BIT</code>, <code class="constant">GL_PIXEL_BUFFER_BARRIER_BIT</code>,
                     <code class="constant">GL_TEXTURE_UPDATE_BARRIER_BIT</code>, <code class="constant">GL_BUFFER_UPDATE_BARRIER_BIT</code>,
-                    <code class="constant">GL_FRAMEBUFFER_BARRIER_BIT</code>, <code class="constant">GL_TRANSFORM_FEEDBACK_BARRIER_BIT</code> or <code class="constant">GL_ATOMIC_COUNTER_BARRIER_BIT</code>.
+                    <code class="constant">GL_FRAMEBUFFER_BARRIER_BIT</code>, <code class="constant">GL_TRANSFORM_FEEDBACK_BARRIER_BIT</code>, <code class="constant">GL_ATOMIC_COUNTER_BARRIER_BIT</code>,
+                    or <code class="constant">GL_SHADER_STORAGE_BARRIER_BIT</code>.
                     If the special value <code class="constant">GL_ALL_BARRIER_BITS</code> is specified, all supported barriers will be inserted.
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
             <code class="function">glMemoryBarrier</code> defines a barrier ordering the memory transactions issued prior to the
@@ -87,6 +88,9 @@
                     </p></dd><dt><span class="term"><code class="constant">GL_ATOMIC_COUNTER_BARRIER_BIT</code></span></dt><dd><p>
                         Accesses to atomic counters after the
                         barrier will reflect writes prior to the barrier.
+                    </p></dd><dt><span class="term"><code class="constant">GL_SHADER_STORAGE_BARRIER_BIT</code></span></dt><dd><p>
+                        Accesses to shader storage blocks after the
+                        barrier will reflect writes prior to the barrier.
                     </p></dd></dl></div><p>
         </p><p>
             If <em class="parameter"><code>barriers</code></em> is <code class="constant">GL_ALL_BARRIER_BITS</code>, shader memory accesses
@@ -141,6 +145,8 @@
                 passes is necessary.</p></li></ul></div><p>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
             <code class="function">glMemoryBarrier</code> is available only if the GL version is 4.2 or higher.
+        </p><p>
+            <code class="constant">GL_SHADER_STORAGE_BARRIER_BIT</code> is available only if the GL version is 4.3 or higher.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>barriers</code></em> contains any bits
             other than those listed above, or is not the special value <code class="constant">GL_ALL_BARRIER_BITS</code>.

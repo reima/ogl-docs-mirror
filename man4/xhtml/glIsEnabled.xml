@@ -40,6 +40,14 @@
                         </td><td align="left">
                         <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>
                         </td></tr><tr><td align="left">
+                        <code class="constant">GL_DEBUG_OUTPUT</code>
+                        </td><td align="left">
+                        <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>
+                        </td></tr><tr><td align="left">
+                        <code class="constant">GL_DEBUG_OUTPUT_SYNCHRONOUS</code>
+                        </td><td align="left">
+                        <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>
+                        </td></tr><tr><td align="left">
                         <code class="constant">GL_DEPTH_TEST</code>
                         </td><td align="left">
                         <a href="glDepthFunc.xml"><span class="citerefentry"><span class="refentrytitle">glDepthFunc</span></span></a>, <a href="glDepthRange.xml"><span class="citerefentry"><span class="refentrytitle">glDepthRange</span></span></a>
@@ -115,6 +123,8 @@
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
             If an error is generated,
             <code class="function">glIsEnabled</code> and <code class="function">glIsEnabledi</code> return <code class="constant">GL_FALSE</code>.
+        </p><p>
+            <code class="constant">GL_DEBUG_OUTPUT</code> and <code class="constant">GL_DEBUG_OUTPUT_SYNCHRONOUS</code> are available only if the GL version is 4.3 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>cap</code></em> is not an accepted value.
         </p><p>

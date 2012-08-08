@@ -94,17 +94,17 @@
                 <thead>
                     #VARTABLEHEADER#
                     <row>
-                        <entry>gl_ClipDistance</entry>#newin11#
+                        <entry>gl_ClipDistance</entry>#newin13#
                     </row>
                 </thead>
             </tgroup>
         </informaltable>
-        <para>Versions 1.10 to 1.40 - vertex shader only.</para>
+        <para>Versions 1.30 to 1.40 - vertex shader only.</para>
         <para>Versions 1.50 to 3.30 - vertex and geometry shaders only.</para>
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>gl_PointSize</refentrytitle></citerefentry>, <citerefentry><refentrytitle>gl_ClipDistance</refentrytitle></citerefentry>
+            <citerefentry><refentrytitle>gl_PointSize</refentrytitle></citerefentry>
         </para>
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>

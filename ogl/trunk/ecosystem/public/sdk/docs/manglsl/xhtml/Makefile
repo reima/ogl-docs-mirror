@@ -124,7 +124,8 @@ Integer_Functions = \
 
 Texture_Query_Functions = \
     textureSize.xml \
-    textureQueryLod.xml
+    textureQueryLod.xml \
+    textureQueryLevels.xml
 
 Texel_Lookup_Functions = \
     texture.xml \
@@ -184,17 +185,39 @@ Image_Functions = \
     imageAtomicMax.xml \
     imageAtomicExchange.xml \
     imageAtomicCompSwap.xml \
-    memoryBarrier.xml
+    imageSize.xml
+
+Barrier_Functions =\
+    memoryBarrier.xml \
+    memoryBarrierAtomicCounter.xml \
+    memoryBarrierBuffer.xml \
+    memoryBarrierImage.xml \
+    memoryBarrierShared.xml \
+    groupMemoryBarrier.xml
+
+Atomic_Memory_Functions = \
+    atomicAdd.xml \
+    atomicMin.xml \
+    atomicMax.xml \
+    atomicAnd.xml \
+    atomicOr.xml \
+    atomicXor.xml \
+    atomicExchange.xml \
+    atomicCompSwap.xml
 
 Builtin_Variables = \
     gl_ClipDistance.xml \
     gl_FragCoord.xml \
     gl_FragDepth.xml \
     gl_FrontFacing.xml \
+    gl_GlobalInvocationID.xml \
     gl_InstanceID.xml \
     gl_InvocationID.xml \
     gl_Layer.xml \
+    gl_LocalInvocationID.xml \
+    gl_LocalInvocationIndex.xml \
     gl_NumSamples.xml \
+    gl_NumWorkGroups.xml \
     gl_PatchVerticesIn.xml \
     gl_PointCoord.xml \
     gl_PointSize.xml \
@@ -209,7 +232,9 @@ Builtin_Variables = \
     gl_TessLevelInner.xml \
     gl_TessLevelOuter.xml \
     gl_VertexID.xml \
-    gl_ViewportIndex.xml
+    gl_ViewportIndex.xml \
+    gl_WorkGroupID.xml \
+    gl_WorkGroupSize.xml
 
 GLSLXML = \
     $(Angle_and_Trigonometry_Functions) \
@@ -230,6 +255,8 @@ GLSLXML = \
     $(Invocation_Control_Functions) \
     $(Atomic_Counter_Functions) \
     $(Image_Functions) \
+    $(Barrier_Functions) \
+    $(Atomic_Memory_Functions) \
     \
     $(Builtin_Variables)
 

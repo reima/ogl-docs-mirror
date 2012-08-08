@@ -5,7 +5,7 @@
     <refmeta>
         <refmetainfo>
             <copyright>
-                <year>2011</year>
+                <year>2012</year>
                 <holder>Khronos Group</holder>
             </copyright>
         </refmetainfo>
@@ -18,7 +18,10 @@
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
         <funcsynopsis>
-            <function>out int gl_Layer;</function>
+            <function>out int gl_Layer; // Geometry stage</function>
+        </funcsynopsis>
+        <funcsynopsis>
+            <function>in int gl_Layer; // Fragment stage</function>
         </funcsynopsis>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
@@ -111,77 +114,26 @@
             cube map array, <function>gl_Layer</function> should be set to
             <inlineequation><mml:math><mml:mn>5</mml:mn><mml:mo>*</mml:mo><mml:mn>6</mml:mn><mml:mo>+</mml:mo><mml:mn>2</mml:mn></mml:math></inlineequation>.
         </para>
+        <para>
+            The input variable <function>gl_Layer</function> in the fragment language will have the same value that was written to the
+            output variable <function>gl_Layer</function> in the geometry language. If the geometry stage does not dynamically assign a
+            value to <function>gl_Layer</function>, the value of <function>gl_Layer</function> in the fragment stage will be undefined.  If the geometry stage
+            makes no static assignment to <function>gl_Layer</function>, the input <function>gl_Layer</function> in the fragment stage will be zero.  Otherwise,
+            the fragment stage will read the same value written by the geometry stage, even if that value is out of
+            range.  If a fragment shader contains a static access to <function>gl_Layer</function>, it will count against the implementation
+            defined limit for the maximum number of inputs to the fragment stage.
+        </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>
         <informaltable frame="topbot">
-            <tgroup cols="3" align="left">
-                <colspec colwidth="1.1*" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
+            #VARTABLECOLS#
                 <thead>
+                    #FUNCTABLEHEADER#
                     <row>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Variable
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 1.10
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 1.20
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 1.30
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 1.40
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 1.50
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 3.30
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 4.00
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 4.10
-                        </emphasis></entry>
+                        <entry>gl_Layer (geometry stage)</entry>#newin15#
                     </row>
                     <row>
-                        <entry>
-                            gl_Layer
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>  <!-- 1.10, OpenGL 2.0 -->
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>  <!-- 1.20, OpenGL 2.1 -->
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>  <!-- 1.30, OpenGL 3.0 -->
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>  <!-- 1.40, OpenGL 3.1 -->
-                        </entry>
-                        <entry>
-                            <emphasis>Y</emphasis>  <!-- 1.50, OpenGL 3.2 -->
-                        </entry>
-                        <entry>
-                            <emphasis>Y</emphasis>  <!-- 3.30, OpenGL 3.3 -->
-                        </entry>
-                        <entry>
-                            <emphasis>Y</emphasis>  <!-- 4.00, OpenGL 4.0 -->
-                        </entry>
-                        <entry>
-                            <emphasis>Y</emphasis>  <!-- 4.10, OpenGL 4.1 -->
-                        </entry>
+                        <entry>gl_Layer (fragment stage)</entry>#newin43#
                     </row>
                 </thead>
             </tgroup>
@@ -194,7 +146,7 @@
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"></trademark> 2011 Khronos Group. 
+            Copyright <trademark class="copyright"></trademark> 2011-2012 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
             <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.

@@ -5,7 +5,7 @@
     <refmeta>
         <refmetainfo>
             <copyright>
-                <year>2011</year>
+                <year>2012</year>
                 <holder>Khronos Group</holder>
             </copyright>
         </refmetainfo>
@@ -84,6 +84,12 @@
                 <paramdef>sampler1DArrayShadow <parameter>sampler</parameter></paramdef>
                 <paramdef>vec3 <parameter>P</parameter></paramdef>
                 <paramdef>int <parameter>offset</parameter></paramdef>
+            </funcprototype>
+            <funcprototype>
+                <funcdef>float <function>textureOffset</function></funcdef>
+                <paramdef>sampler2DArrayShadow <parameter>sampler</parameter></paramdef>
+                <paramdef>vec4 <parameter>P</parameter></paramdef>
+                <paramdef>vec2 <parameter>offset</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
     </refsynopsisdiv>
@@ -169,7 +175,7 @@
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"></trademark> 2011 Khronos Group. 
+            Copyright <trademark class="copyright"></trademark> 2011-2012 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
             <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.

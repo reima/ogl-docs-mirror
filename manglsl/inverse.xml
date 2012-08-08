@@ -68,7 +68,7 @@
                 <thead>
                     #FUNCTABLEHEADER#
                     <row>
-                        <entry>inverse (float)</entry>#newin15#
+                        <entry>inverse (float)</entry>#newin14#
                     </row>
                     <row>
                         <entry>inverse (double)</entry>#newin40#

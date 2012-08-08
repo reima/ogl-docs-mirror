@@ -111,6 +111,109 @@ GL_ARB_shader_image_load_store_entries = \
     glBindImageTexture.xml \
     glMemoryBarrier.xml
 
+# START OF OPENGL 4.3 EXTENSIONS
+
+# GL_ARB_arrays_of_arrays has no new entry points
+GL_ARB_arrays_of_arrays_entries =
+
+GL_ARB_multi_draw_indirect_entries = \
+    glMultiDrawArraysIndirect.xml \
+    glMultiDrawElementsIndirect.xml
+
+# ES3_compatibility does not have any new entry points
+GL_ARB_ES3_compatibility_enries =
+
+GL_ARB_clear_buffer_object_entries = \
+    glClearBufferData.xml \
+    glClearBufferSubData.xml
+
+GL_ARB_compute_shader_entries = \
+    glDispatchCompute.xml \
+    glDispatchComputeIndirect.xml
+
+GL_ARB_copy_image_entries = \
+    glCopyImageSubData.xml
+
+GL_ARB_debug_group_entries = \
+    glPushDebugGroup.xml \
+    glPopDebugGroup.xml
+
+GL_ARB_debug_label_entries = \
+    glObjectLabel.xml \
+    glObjectPtrLabel.xml \
+    glGetObjectLabel.xml \
+    glGetObjectPtrLabel.xml
+
+# GL_ARB_debug_output2 has no new entry points
+GL_ARB_debug_output2_entries =
+
+GL_ARB_debug_output_entries = \
+    glDebugMessageControl.xml \
+    glDebugMessageInsert.xml \
+    glDebugMessageCallback.xml \
+    glGetDebugMessageLog.xml
+# Add glGetPointerv to glGet.xml
+
+# GL_ARB_explicit_uniform_location has no new entry points
+GL_ARB_explicit_uniform_location_entries =
+
+# GL_ARB_fragment_layer_viewport has no new entry points
+GL_ARB_fragment_layer_viewport_entries =
+
+GL_ARB_framebuffer_no_attachments_entries = \
+    glFramebufferParameteri.xml \
+    glGetFramebufferParameter.xml
+
+# GL_ARB_internalformat_query2 adds glGetInternalFormati64v to glGetInternalFormativ
+GL_ARB_internalformat_query2_entries =
+
+GL_ARB_invalidate_subdata_entries = \
+    glInvalidateTexSubImage.xml \
+    glInvalidateTexImage.xml \
+    glInvalidateBufferSubData.xml \
+    glInvalidateBufferData.xml \
+    glInvalidateFramebuffer.xml \
+    glInvalidateSubFramebuffer.xml
+
+GL_ARB_program_interface_query_entries = \
+    glGetProgramInterface.xml \
+    glGetProgramResourceIndex.xml \
+    glGetProgramResourceName.xml \
+    glGetProgramResource.xml \
+    glGetProgramResourceLocation.xml \
+    glGetProgramResourceLocationIndex.xml
+
+# GL_ARB_robust_buffer_access_behavior does not define any new entry points
+GL_ARB_robust_buffer_access_behavior_entries =
+
+# GL_ARB_shader_image_size does not define any new entry points
+GL_ARB_shader_image_size_entries =
+
+GL_ARB_shader_storage_buffer_object_entries = \
+    glShaderStorageBlockBinding.xml
+
+# GL_ARB_stencil_texturing does not define any new entry points
+GL_ARB_stencil_texturing_entries =
+
+GL_ARB_texture_buffer_range_entries = \
+    glTexBufferRange.xml
+
+# GL_ARB_texture_query_levels does not define any new entry points
+GL_ARB_texture_query_levels =
+
+GL_ARB_texture_storage_multisample_entries = \
+    glTexStorage2DMultisample.xml \
+    glTexStorage3DMultisample.xml
+
+GL_ARB_texture_view_entries = \
+    glTextureView.xml
+
+GL_ARB_vertex_attrib_binding_entries = \
+    glVertexAttribBinding.xml \
+    glVertexAttribFormat.xml \
+    glVertexBindingDivisor.xml \
+    glBindVertexBuffer.xml
+
 MODIFIEDFORGL4XML = \
     glClearDepth.xml \
     glCreateShader.xml \
@@ -118,7 +221,7 @@ MODIFIEDFORGL4XML = \
     glDrawArrays.xml \
     glGetVertexAttrib.xml \
     glVertexAttrib.xml \
-    glVertexAttribPointer.xml \
+    glVertexAttribPointer.xml
 
 GL4XML = \
     $(GL_ARB_draw_indirect_entries) \
@@ -142,6 +245,24 @@ GL42XML = \
     $(GL_ARB_shader_atomic_counters_entries) \
     $(GL_ARB_shader_image_load_store_entries) \
     removedTypes.xml
+
+GL43XML = \
+    $(GL_ARB_multi_draw_indirect_entries) \
+    $(GL_ARB_ES3_compatibility_enries) \
+    $(GL_ARB_clear_buffer_object_entries) \
+    $(GL_ARB_compute_shader_entries) \
+    $(GL_ARB_copy_image_entries) \
+    $(GL_ARB_invalidate_subdata_entries) \
+    $(GL_ARB_texture_buffer_range_entries) \
+    $(GL_ARB_texture_storage_multisample_entries) \
+    $(GL_ARB_vertex_attrib_binding_entries) \
+    $(GL_ARB_shader_storage_buffer_object_entries) \
+    $(GL_ARB_debug_group_entries) \
+    $(GL_ARB_debug_label_entries) \
+    $(GL_ARB_framebuffer_no_attachments_entries) \
+    $(GL_ARB_program_interface_query_entries) \
+    $(GL_ARB_debug_output_entries) \
+    $(GL_ARB_texture_view_entries)
 
 UNMODIFIEDXML = \
     glActiveTexture.xml \
@@ -338,7 +459,7 @@ UNMODIFIEDXML = \
 
 MODIFIEDXML = \
 
-XML    = $(GL4XML) $(GL41XML) $(GL42XML) $(MODIFIEDFORGL4XML) $(UNMODIFIEDXML)
+XML    = $(GL4XML) $(GL41XML) $(GL42XML) $(GL43XML) $(MODIFIEDFORGL4XML) $(UNMODIFIEDXML)
 
 glTexImage1D.xml \
 glTexImage2D.xml \

@@ -15,6 +15,7 @@
             <code class="constant">GL_ACTIVE_UNIFORM_BLOCKS</code>,
             <code class="constant">GL_ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH</code>,
             <code class="constant">GL_ACTIVE_UNIFORM_MAX_LENGTH</code>,
+            <code class="constant">GL_COMPUTE_WORK_GROUP_SIZE</code>
             <code class="constant">GL_PROGRAM_BINARY_LENGTH</code>,
             <code class="constant">GL_TRANSFORM_FEEDBACK_BUFFER_MODE</code>,
             <code class="constant">GL_TRANSFORM_FEEDBACK_VARYINGS</code>,
@@ -79,6 +80,13 @@
             a call to <a href="glGetProgramBinary.xml"><span class="citerefentry"><span class="refentrytitle">glGetProgramBinary</span></span></a>.
             When a progam's <code class="constant">GL_LINK_STATUS</code> is <code class="constant">GL_FALSE</code>,
             its program binary length is zero.
+            </p></dd><dt><span class="term"><code class="constant">GL_COMPUTE_WORK_GROUP_SIZE</code></span></dt><dd><p>
+            </p><p> <em class="parameter"><code>params</code></em> returns an
+            array of three integers containing the local work group size of
+            the compute program as specified by its input layout qualifier(s).
+            <em class="parameter"><code>program</code></em> must be the name of a program object
+            that has been previously linked successfully and contains a binary
+            for the compute shader stage.
             </p></dd><dt><span class="term"><code class="constant">GL_TRANSFORM_FEEDBACK_BUFFER_MODE</code></span></dt><dd><p>
             </p><p> <em class="parameter"><code>params</code></em> returns a symbolic constant
             indicating the buffer mode used when transform feedback is active.
@@ -103,6 +111,9 @@
         <code class="constant">GL_GEOMETRY_VERTICES_OUT</code>, <code class="constant">GL_GEOMETRY_INPUT_TYPE</code>
         and <code class="constant">GL_GEOMETRY_OUTPUT_TYPE</code> are accepted only if the GL
         version is 3.2 or greater.
+    </p><p>
+        <code class="constant">GL_COMPUTE_WORK_GROUP_SIZE</code> is accepted only if the
+        GL version is 4.3 or greater.
     </p><p>If an error is generated, no change is made to the
     contents of <em class="parameter"><code>params</code></em>.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p><code class="constant">GL_INVALID_VALUE</code>
     is generated if <em class="parameter"><code>program</code></em>
@@ -113,7 +124,9 @@
     <code class="constant">GL_GEOMETRY_INPUT_TYPE</code>, or <code class="constant">GL_GEOMETRY_OUTPUT_TYPE</code>,
     and <em class="parameter"><code>program</code></em> does not contain a geometry shader.</p><p><code class="constant">GL_INVALID_ENUM</code>
     is generated if <em class="parameter"><code>pname</code></em>
-    is not an accepted value.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p><a href="glGetActiveAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glGetActiveAttrib</span></span></a>
+    is not an accepted value.</p><p><code class="constant">GL_INVALID_OPERATION</code> is generated if <em class="parameter"><code>pname</code></em>
+    is <code class="constant">GL_COMPUTE_WORK_GROUP_SIZE</code> and <em class="parameter"><code>program</code></em>
+    does not contain a binary for the compute shader stage.</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p><a href="glGetActiveAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glGetActiveAttrib</span></span></a>
     with argument <em class="parameter"><code>program</code></em></p><p><a href="glGetActiveUniform.xml"><span class="citerefentry"><span class="refentrytitle">glGetActiveUniform</span></span></a>
     with argument <em class="parameter"><code>program</code></em></p><p><a href="glGetAttachedShaders.xml"><span class="citerefentry"><span class="refentrytitle">glGetAttachedShaders</span></span></a>
     with argument <em class="parameter"><code>program</code></em></p><p><a href="glGetProgramInfoLog.xml"><span class="citerefentry"><span class="refentrytitle">glGetProgramInfoLog</span></span></a>

@@ -44,9 +44,12 @@
             for the uniform block identified by <em class="parameter"><code>uniformBlockIndex</code></em> is returned. The number of elements that will be written to
             <em class="parameter"><code>params</code></em> is the value of <code class="constant">GL_UNIFORM_BLOCK_ACTIVE_UNIFORMS</code> for <em class="parameter"><code>uniformBlockIndex</code></em>.
         </p><p>
-            If <em class="parameter"><code>pname</code></em> is <code class="constant">GL_UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER</code>, <code class="constant">GL_UNIFORM_BLOCK_REFERENCED_BY_GEOMETRY_SHADER</code>,
-            or <code class="constant">GL_UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER</code>, then a boolean value indicating whether the uniform block identified by
-            <em class="parameter"><code>uniformBlockIndex</code></em> is referenced by the vertex, geometry, or fragment programming stages of program, respectively, is returned.
+            If <em class="parameter"><code>pname</code></em> is <code class="constant">GL_UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER</code>, <code class="constant">GL_UNIFORM_BLOCK_REFERENCED_BY_TESS_CONTROL_SHADER</code>,
+            <code class="constant">GL_UNIFORM_BLOCK_REFERENCED_BY_TESS_EVALUATION_SHADER</code>, <code class="constant">GL_UNIFORM_BLOCK_REFERENCED_BY_GEOMETRY_SHADER</code>,
+            <code class="constant">GL_UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER</code>, or <code class="constant">GL_UNIFORM_BLOCK_REFERENCED_BY_COMPUTE_SHADER</code>
+            then a boolean value indicating whether the uniform block identified by
+            <em class="parameter"><code>uniformBlockIndex</code></em> is referenced by the vertex, tessellation control, tessellation evaluation, geometry, fragment or compute
+            programming stages of program, respectively, is returned.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>uniformBlockIndex</code></em> is greater than or equal to the value
             of <code class="constant">GL_ACTIVE_UNIFORM_BLOCKS</code> or is not the index of an active uniform block in <em class="parameter"><code>program</code></em>.
@@ -57,6 +60,9 @@
             <a href="glLinkProgram.xml"><span class="citerefentry"><span class="refentrytitle">glLinkProgram</span></span></a> has been called in the past.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
             <code class="function">glGetActiveUniformBlockiv</code> is available only if the GL version is 3.1 or greater.
+        </p><p>
+            <code class="constant">GL_UNIFORM_BLOCK_REFERENCED_BY_COMPUTE_SHADER</code> is accepted only if the GL version is 4.3
+            or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
             <a href="glGetActiveUniformBlockName.xml"><span class="citerefentry"><span class="refentrytitle">glGetActiveUniformBlockName</span></span></a>,
             <a href="glGetUniformBlockIndex.xml"><span class="citerefentry"><span class="refentrytitle">glGetUniformBlockIndex</span></span></a>,

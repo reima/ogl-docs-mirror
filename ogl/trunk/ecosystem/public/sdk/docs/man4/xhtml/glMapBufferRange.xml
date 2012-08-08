@@ -13,7 +13,8 @@
             <code class="function">glMapBufferRange</code> maps all or part of the data store of a buffer object into the client's address
             space. <em class="parameter"><code>target</code></em> specifies the target to which the buffer is bound and must be one of <code class="constant">GL_ARRAY_BUFFER</code>,
             <code class="constant">GL_ATOMIC_COUNTER_BUFFER</code>,
-            <code class="constant">GL_COPY_READ_BUFFER</code>, <code class="constant">GL_COPY_WRITE_BUFFER</code>, <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code>,
+            <code class="constant">GL_COPY_READ_BUFFER</code>, <code class="constant">GL_COPY_WRITE_BUFFER</code>, <code class="constant">GL_DRAW_INDIRECT_BUFFER</code>,
+            <code class="constant">GL_DISPATCH_INDIRECT_BUFFER</code>, <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code>,
             <code class="constant">GL_PIXEL_PACK_BUFFER</code>, <code class="constant">GL_PIXEL_UNPACK_BUFFER</code>, <code class="constant">GL_TEXTURE_BUFFER</code>,
             <code class="constant">GL_TRANSFORM_FEEDBACK_BUFFER</code>, or <code class="constant">GL_UNIFORM_BUFFER</code>. <em class="parameter"><code>offset</code></em> and
             <em class="parameter"><code>length</code></em> indicate the range of data in the buffer object htat is to be mapped, in terms of basic machine units.
@@ -77,6 +78,9 @@
             Alignment of the returned pointer is guaranteed only if the version
             of the GL version is 4.2 or greater. Also, the <code class="constant">GL_ATOMIC_COUNTER_BUFFER</code>
             target is accepted only if the GL version is 4.2 or greater.
+        </p><p>
+            The <code class="constant">GL_DISPATCH_INDIRECT_BUFFER</code> target is accepted only if the
+            GL version is 4.3 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if either of <em class="parameter"><code>offset</code></em> or <em class="parameter"><code>length</code></em> is negative,
             or if <em class="parameter"><code>offset</code></em> + <em class="parameter"><code>length</code></em> is greater than the value of <code class="constant">GL_BUFFER_SIZE</code>.

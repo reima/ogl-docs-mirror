@@ -10,6 +10,7 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
                     Specifies the symbolic name of a single-valued texture parameter.
                     <em class="parameter"><code>pname</code></em> can be one of the following:
+                    <code class="constant">GL_DEPTH_STENCIL_TEXTURE_MODE</code>,
                     <code class="constant">GL_TEXTURE_BASE_LEVEL</code>,
                     <code class="constant">GL_TEXTURE_COMPARE_FUNC</code>,
                     <code class="constant">GL_TEXTURE_COMPARE_MODE</code>,
@@ -37,6 +38,7 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>pname</code></em></span></dt><dd><p>
                     Specifies the symbolic name of a texture parameter.
                     <em class="parameter"><code>pname</code></em> can be one of the following:
+                    <code class="constant">GL_DEPTH_STENCIL_TEXTURE_MODE</code>,
                     <code class="constant">GL_TEXTURE_BASE_LEVEL</code>,
                     <code class="constant">GL_TEXTURE_BORDER_COLOR</code>,
                     <code class="constant">GL_TEXTURE_COMPARE_FUNC</code>,
@@ -65,7 +67,16 @@
             either <code class="constant">GL_TEXTURE_1D</code>, <code class="constant">GL_TEXTURE_2D</code>, <code class="constant">GL_TEXTURE_1D_ARRAY</code>,
             <code class="constant">GL_TEXTURE_2D_ARRAY</code>, <code class="constant">GL_TEXTURE_RECTANGLE</code>, or <code class="constant">GL_TEXTURE_3D</code>.
             The following symbols are accepted in <em class="parameter"><code>pname</code></em>:
-        </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_TEXTURE_BASE_LEVEL</code></span></dt><dd><p>
+        </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_DEPTH_STENCIL_TEXTURE_MODE</code></span></dt><dd><p>
+                        Specifies the mode used to read from depth-stencil format textures. <em class="parameter"><code>params</code></em>
+                        must be one of <code class="constant">GL_DEPTH_COMPONENT</code> or <code class="constant">GL_STENCIL_COMPONENT</code>.
+                        If the depth stencil mode is <code class="constant">GL_DEPTH_COMPONENT</code>, then reads from depth-stencil
+                        format textures will return the depth component of the texel in
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:msub><mml:mi>R</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:math> and the stencil component
+                        will be discarded. If the depth stencil mode is <code class="constant">GL_STENCIL_COMPONENT</code> then
+                        the stencil component is returned in <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:msub><mml:mi>R</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:math>
+                        and the depth component is discarded. The initial value is <code class="constant">GL_DEPTH_COMPONENT</code>.
+                    </p></dd></dl></div><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_TEXTURE_BASE_LEVEL</code></span></dt><dd><p>
                         Specifies the index of the lowest defined mipmap level. This is an
                         integer value. The initial value is 0.
                     </p></dd></dl></div><p>
@@ -927,6 +938,8 @@
         </p><p>
             <code class="function">glTexParameter</code> specifies the texture parameters for the active texture unit, specified
             by calling <a href="glActiveTexture.xml"><span class="citerefentry"><span class="refentrytitle">glActiveTexture</span></span></a>.
+        </p><p>
+            <code class="constant">GL_DEPTH_STENCIL_TEXTURE_MODE</code> is available only if the GL version is 4.3 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> or <em class="parameter"><code>pname</code></em> is not
             one of the accepted defined values.

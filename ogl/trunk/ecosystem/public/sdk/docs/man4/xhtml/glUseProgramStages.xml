@@ -17,7 +17,7 @@
             pipeline object <em class="parameter"><code>pipeline</code></em>. <em class="parameter"><code>stages</code></em> must be
             a logical combination of <code class="constant">GL_VERTEX_SHADER_BIT</code>,
             <code class="constant">GL_TESS_CONTROL_SHADER_BIT</code>, <code class="constant">GL_TESS_EVALUATION_SHADER_BIT</code>,
-            <code class="constant">GL_GEOMETRY_SHADER_BIT</code>, and <code class="constant">GL_FRAGMENT_SHADER_BIT</code>.
+            <code class="constant">GL_GEOMETRY_SHADER_BIT</code>, <code class="constant">GL_FRAGMENT_SHADER_BIT</code> and <code class="constant">GL_COMPUTE_SHADER_BIT</code>.
             Additionally, the special value <code class="constant">GL_ALL_SHADER_BITS</code> may be specified to
             indicate that all executables contained in <em class="parameter"><code>program</code></em> should be
             installed in <em class="parameter"><code>pipeline</code></em>.
@@ -29,7 +29,9 @@
             executable for a given stage, it is as if the pipeline object has no programmable stage configured
             for the indicated shader stages. If <em class="parameter"><code>stages</code></em> contains bits other than those
             listed above, and is not equal to <code class="constant">GL_ALL_SHADER_BITS</code>, an error is generated.
-       </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
+       </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
+            The <code class="constant">GL_COMPUTE_SHADER_BIT</code> bit is available only if the GL version is 4.3 or greater.
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>shaders</code></em> contains
             set bits that are not recognized, and is not the reserved value <code class="constant">GL_ALL_SHADER_BITS</code>.
         </p><p>

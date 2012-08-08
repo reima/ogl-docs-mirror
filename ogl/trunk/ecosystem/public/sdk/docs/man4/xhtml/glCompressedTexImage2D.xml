@@ -20,12 +20,10 @@
                     Specifies the format of the compressed image data stored at address <em class="parameter"><code>data</code></em>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>width</code></em></span></dt><dd><p>
                     Specifies the width of the texture image.
-                    All implementations support 2D texture images that are at least 64 texels
-                    wide and cube-mapped texture images that are at least 16 texels wide.
+                    All implementations support 2D texture and cube map texture images that are at least 16384 texels wide.
                 </p></dd><dt><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
                     Specifies the height of the texture image.
-                    All implementations support 2D texture images that are at least 64 texels
-                    high and cube-mapped texture images that are at least 16 texels high.
+                    All implementations support 2D texture and cube map texture images that are at least 16384 texels high.
                 </p></dd><dt><span class="term"><em class="parameter"><code>border</code></em></span></dt><dd><p>
                     This value must be 0.
                 </p></dd><dt><span class="term"><em class="parameter"><code>imageSize</code></em></span></dt><dd><p>
@@ -124,15 +122,39 @@
     </mml:mfenced>
   </mml:mrow>
 </mml:math>
+        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
+            The specific compressed internal formats <code class="constant">GL_COMPRESSED_RGB8_ETC2</code>,
+          <code class="constant">GL_COMPRESSED_SRGB8_ETC2</code>,
+          <code class="constant">GL_COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2</code>,
+          <code class="constant">GL_COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2</code>,
+          <code class="constant">GL_COMPRESSED_RGBA8_ETC2_EAC</code>,
+          <code class="constant">GL_COMPRESSED_SRGB8_ALPHA8_ETC2_EAC</code>,
+          <code class="constant">GL_COMPRESSED_R11_EAC</code>,
+          <code class="constant">GL_COMPRESSED_SIGNED_R11_EAC</code>,
+          <code class="constant">GL_COMPRESSED_RG11_EAC</code>, and
+          <code class="constant">GL_COMPRESSED_SIGNED_RG11_EAC</code> are available only if the GL version
+          is 4.3 or higher.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
-          <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>internalformat</code></em> is not one of the generic
+          <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>internalformat</code></em> is not one of the specific
           compressed internal formats:
-          <code class="constant">GL_COMPRESSED_RED</code>,
-          <code class="constant">GL_COMPRESSED_RG</code>,
-          <code class="constant">GL_COMPRESSED_RGB</code>,
-          <code class="constant">GL_COMPRESSED_RGBA</code>.
-          <code class="constant">GL_COMPRESSED_SRGB</code>, or
-          <code class="constant">GL_COMPRESSED_SRGB_ALPHA</code>.
+          <code class="constant">GL_COMPRESSED_RED_RGTC1</code>,
+          <code class="constant">GL_COMPRESSED_SIGNED_RED_RGTC1</code>,
+          <code class="constant">GL_COMPRESSED_RG_RGTC2</code>,
+          <code class="constant">GL_COMPRESSED_SIGNED_RG_RGTC2</code>.
+          <code class="constant">GL_COMPRESSED_RGBA_BPTC_UNORM</code>,
+          <code class="constant">GL_COMPRESSED_SRGB_ALPHA_BPTC_UNORM</code>,
+          <code class="constant">GL_COMPRESSED_RGB_BPTC_SIGNED_FLOAT</code>,
+          <code class="constant">GL_COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT</code>,
+          <code class="constant">GL_COMPRESSED_RGB8_ETC2</code>,
+          <code class="constant">GL_COMPRESSED_SRGB8_ETC2</code>,
+          <code class="constant">GL_COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2</code>,
+          <code class="constant">GL_COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2</code>,
+          <code class="constant">GL_COMPRESSED_RGBA8_ETC2_EAC</code>,
+          <code class="constant">GL_COMPRESSED_SRGB8_ALPHA8_ETC2_EAC</code>,
+          <code class="constant">GL_COMPRESSED_R11_EAC</code>,
+          <code class="constant">GL_COMPRESSED_SIGNED_R11_EAC</code>,
+          <code class="constant">GL_COMPRESSED_RG11_EAC</code>, or
+          <code class="constant">GL_COMPRESSED_SIGNED_RG11_EAC</code>.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>imageSize</code></em> is not consistent with
             the format, dimensions, and contents of the specified compressed image

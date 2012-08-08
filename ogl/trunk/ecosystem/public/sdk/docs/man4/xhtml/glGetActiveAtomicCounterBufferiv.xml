@@ -44,14 +44,18 @@
             If <em class="parameter"><code>pname</code></em> is <code class="constant">GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_VERTEX_SHADER</code>,
             <code class="constant">GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_CONTROL_SHADER</code>,
             <code class="constant">GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_EVALUATION_SHADER</code>,
-            <code class="constant">GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_GEOMETRY_SHADER</code>, or
-            <code class="constant">GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_FRAGMENT_SHADER</code>, then a boolean value indicating
+            <code class="constant">GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_GEOMETRY_SHADER</code>,
+            <code class="constant">GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_FRAGMENT_SHADER</code>,
+            <code class="constant">GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_COMPUTE_SHADER</code> then a boolean value indicating
             whether the atomic counter buffer identified by <em class="parameter"><code>bufferIndex</code></em> is referenced by the vertex,
-            tessellation control, tessellation evaluation, geometry or fragment processing stages of <em class="parameter"><code>program</code></em>,
+            tessellation control, tessellation evaluation, geometry, fragment or compute processing stages of <em class="parameter"><code>program</code></em>,
             respectively, is returned.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
             <code class="function">glGetActiveAtomicCounterBufferiv</code> is available only if the
             GL version is 4.2 or higher.
+        </p><p>
+            <code class="constant">GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_COMPUTE_SHADER</code> is available
+            only of the GL version is 4.3 or higher.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>program</code></em> is not the name of a program
             object for which <a href="glLinkProgram.xml"><span class="citerefentry"><span class="refentrytitle">glLinkProgram</span></span></a> has been called in the past.

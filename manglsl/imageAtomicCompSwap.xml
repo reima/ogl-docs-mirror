@@ -227,7 +227,8 @@
             <function>imageAtomicCompSwap</function> atomically compares the value of <parameter>compare</parameter>
             with that of the texel at coordinate <parameter>P</parameter> and <parameter>sample</parameter> (for multisampled forms) in the
             image bound to uint <parameter>image</parameter>. If the values are equal, <parameter>data</parameter> is
-            stored into the texel, otherwise it is discarded. It returns the new value of the texel.
+            stored into the texel, otherwise it is discarded. It returns the original value of the texel regardless of
+            the result of the comparison operation.
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>
@@ -257,7 +258,7 @@
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"></trademark> 2011 Khronos Group. 
+            Copyright <trademark class="copyright"></trademark> 2011-2012 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
             <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.

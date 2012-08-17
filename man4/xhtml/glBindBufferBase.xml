@@ -4,7 +4,8 @@
 <?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>glBindBufferBase - OpenGL 4 Reference Pages</title><meta name="generator" content="DocBook XSL Stylesheets V1.69.1" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glBindBufferBase"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glBindBufferBase — bind a buffer object to an indexed buffer target</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glBindBufferBase</b>(</code></td><td>GLenum  </td><td><var class="pdparam">target</var>, </td></tr><tr><td> </td><td>GLuint  </td><td><var class="pdparam">index</var>, </td></tr><tr><td> </td><td>GLuint  </td><td><var class="pdparam">buffer</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>target</code></em></span></dt><dd><p>
                     Specify the target of the bind operation. <em class="parameter"><code>target</code></em> must be
                     one of <code class="constant">GL_ATOMIC_COUNTER_BUFFER</code>,
-                    <code class="constant">GL_TRANSFORM_FEEDBACK_BUFFER</code> or <code class="constant">GL_UNIFORM_BUFFER</code>.
+                    <code class="constant">GL_TRANSFORM_FEEDBACK_BUFFER</code>, <code class="constant">GL_UNIFORM_BUFFER</code> or
+                    <code class="constant">GL_SHADER_STORAGE_BUFFER</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>index</code></em></span></dt><dd><p>
                     Specify the index of the binding point within the array specified by <em class="parameter"><code>target</code></em>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>buffer</code></em></span></dt><dd><p>
@@ -22,10 +23,15 @@
             Calling <code class="function">glBindBufferBase</code> is equivalent to calling
             <a href="glBindBufferRange.xml"><span class="citerefentry"><span class="refentrytitle">glBindBufferRange</span></span></a> with <em class="parameter"><code>offset</code></em>
             zero and <em class="parameter"><code>size</code></em> equal to the size of the buffer.
+        </p><p>
+            The <code class="constant">GL_ATOMIC_COUNTER_BUFER</code> target is available only if the GL version is 4.2 or greater.
+        </p><p>
+            The <code class="constant">GL_SHADER_STORAGE_BUFFER</code> target is available only if the GL version is 4.3 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not
             <code class="constant">GL_ATOMIC_COUNTER_BUFFER</code>,
-            <code class="constant">GL_TRANSFORM_FEEDBACK_BUFFER</code> or <code class="constant">GL_UNIFORM_BUFFER</code>.
+            <code class="constant">GL_TRANSFORM_FEEDBACK_BUFFER</code>, <code class="constant">GL_UNIFORM_BUFFER</code> or
+            <code class="constant">GL_SHADER_STORAGE_BUFFER</code>.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if <em class="parameter"><code>index</code></em> is greater
             than or equal to the number of <em class="parameter"><code>target</code></em>-specific indexed binding points.

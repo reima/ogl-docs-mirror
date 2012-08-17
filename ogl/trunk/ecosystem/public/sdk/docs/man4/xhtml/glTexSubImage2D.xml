@@ -9,8 +9,9 @@
                     <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_X</code>,
                     <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Y</code>,
                     <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Y</code>,
-                    <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Z</code>, or
-                    <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Z</code>.
+                    <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Z</code>,
+                    <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Z</code>,
+                    or <code class="constant">GL_TEXTURE_1D_ARRAY</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>level</code></em></span></dt><dd><p>
                     Specifies the level-of-detail number.
                     Level 0 is the base image level.
@@ -59,11 +60,9 @@
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
             Texturing maps a portion of a specified texture image
             onto each graphical primitive for which texturing is enabled.
-            To enable and disable two-dimensional texturing, call <a href="glEnable.xml"><span class="citerefentry"><span class="refentrytitle">glEnable</span></span></a>
-            and <a href="glDisable.xml"><span class="citerefentry"><span class="refentrytitle">glDisable</span></span></a> with argument <code class="constant">GL_TEXTURE_2D</code>.
         </p><p>
             <code class="function">glTexSubImage2D</code> redefines a contiguous subregion of an existing two-dimensional
-            texture image.
+            or one-dimensional arary texture image.
             The texels referenced by <em class="parameter"><code>data</code></em> replace the portion of the
             existing texture array with x indices <em class="parameter"><code>xoffset</code></em> and 
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
@@ -108,8 +107,9 @@
             <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_X</code>,
             <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Y</code>,
             <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Y</code>,
-            <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Z</code>, or
-            <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Z</code>.
+            <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Z</code>,
+            <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Z</code>, or
+            <code class="constant">GL_TEXTURE_1D_ARRAY</code>.
         </p><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>format</code></em> is not an accepted
             format constant.

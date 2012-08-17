@@ -13,6 +13,7 @@
                     <code class="constant">GL_ELEMENT_ARRAY_BUFFER</code>,
                     <code class="constant">GL_PIXEL_PACK_BUFFER</code>,
                     <code class="constant">GL_PIXEL_UNPACK_BUFFER</code>,
+                    <code class="constant">GL_SHADER_STORAGE_BUFFER</code>,
                     <code class="constant">GL_TEXTURE_BUFFER</code>,
                     <code class="constant">GL_TRANSFORM_FEEDBACK_BUFFER</code>, or
                     <code class="constant">GL_UNIFORM_BUFFER</code>.
@@ -101,11 +102,12 @@
             or <a href="glBindBufferRange.xml"><span class="citerefentry"><span class="refentrytitle">glBindBufferRange</span></span></a>. This will affect the generic
             <code class="constant">GL_TRANSFORM_FEEDABCK_BUFFER</code> binding.
         </p><p>
-            Likewise, the <code class="constant">GL_UNIFORM_BUFFER</code> and <code class="constant">GL_ATOMIC_COUNTER_BUFFER</code> buffer binding points may
-            be used, but do not directly affect uniform buffer or atomic counter buffer state, respectively.
+            Likewise, the <code class="constant">GL_UNIFORM_BUFFER</code>, <code class="constant">GL_ATOMIC_COUNTER_BUFFER</code> and <code class="constant">GL_SHADER_STORAGE_BUFFER</code>
+            buffer binding points may
+            be used, but do not directly affect uniform buffer, atomic counter buffer or shader storage buffer state, respectively.
             <a href="glBindBufferBase.xml"><span class="citerefentry"><span class="refentrytitle">glBindBufferBase</span></span></a>
             or <a href="glBindBufferRange.xml"><span class="citerefentry"><span class="refentrytitle">glBindBufferRange</span></span></a> must be used to bind a buffer to
-            an indexed uniform buffer or atomic counter buffer binding point.
+            an indexed uniform buffer, atomic counter buffer or shader storage buffer binding point.
         </p><p>
             A buffer object binding created with <code class="function">glBindBuffer</code> remains active until a different
             buffer object name is bound to the same target, or until the bound buffer object is
@@ -120,7 +122,7 @@
         </p><p>
             The <code class="constant">GL_ATOMIC_COUNTER_BUFER</code> target is available only if the GL version is 4.2 or greater.
         </p><p>
-            The <code class="constant">GL_DISPATCH_INDIRECT_BUFFER</code> target is available only if the GL version is 4.3 or greater.
+            The <code class="constant">GL_DISPATCH_INDIRECT_BUFFER</code> and <code class="constant">GL_SHADER_STORAGE_BUFFER</code> targets are available only if the GL version is 4.3 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>target</code></em> is not one of the allowable
             values.
@@ -145,6 +147,8 @@
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_PACK_BUFFER_BINDING</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_PIXEL_UNPACK_BUFFER_BINDING</code>
+        </p><p>
+            <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_SHADER_STORAGE_BUFFER_BINDING</code>
         </p><p>
             <a href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_TRANSFORM_FEEDBACK_BUFFER_BINDING</code>
         </p><p>

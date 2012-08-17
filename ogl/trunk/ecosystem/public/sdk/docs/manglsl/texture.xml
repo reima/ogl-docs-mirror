@@ -45,13 +45,13 @@
             <funcprototype>
                 <funcdef>float <function>texture</function></funcdef>
                 <paramdef>sampler1DShadow <parameter>sampler</parameter></paramdef>
-                <paramdef>float <parameter>P</parameter></paramdef>
+                <paramdef>vec3 <parameter>P</parameter></paramdef>
                 <paramdef>[float <parameter>bias</parameter>]</paramdef>
             </funcprototype>
             <funcprototype>
                 <funcdef>float <function>texture</function></funcdef>
                 <paramdef>sampler2DShadow <parameter>sampler</parameter></paramdef>
-                <paramdef>vec2 <parameter>P</parameter></paramdef>
+                <paramdef>vec3 <parameter>P</parameter></paramdef>
                 <paramdef>[float <parameter>bias</parameter>]</paramdef>
             </funcprototype>
             <funcprototype>

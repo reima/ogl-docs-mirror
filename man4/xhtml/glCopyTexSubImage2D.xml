@@ -9,8 +9,9 @@
                     <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_X</code>,
                     <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Y</code>,
                     <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Y</code>,
-                    <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Z</code>, or
-                    <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Z</code>.
+                    <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Z</code>,
+                    <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Z</code>, or
+                    <code class="constant">GL_TEXTURE_1D_ARRAY</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>level</code></em></span></dt><dd><p>
                     Specifies the level-of-detail number.
                     Level 0 is the base image level.
@@ -27,8 +28,9 @@
                 </p></dd><dt><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
                     Specifies the height of the texture subimage.
                 </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
-            <code class="function">glCopyTexSubImage2D</code> replaces a rectangular portion of a two-dimensional texture image or
-            cube-map texture image with pixels from the current <code class="constant">GL_READ_BUFFER</code>
+            <code class="function">glCopyTexSubImage2D</code> replaces a rectangular portion of a two-dimensional texture image,
+            cube-map texture image or a linear portion of a number of slices of a one-dimensional array texture
+            with pixels from the current <code class="constant">GL_READ_BUFFER</code>
             (rather than from main memory, as is the case for <a href="glTexSubImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage2D</span></span></a>).
         </p><p>
             The screen-aligned pixel rectangle with lower left corner at
@@ -84,6 +86,10 @@
             It is not an error to specify a subtexture with zero width or height, but
             such a specification has no effect.
         </p><p>
+            When <em class="parameter"><code>target</code></em> is <code class="constant">GL_TEXTURE_1D_ARRAY</code>
+            then the y coordinate and height are treated as the start slice and number
+            of slices to modify.
+        </p><p>
             If any of the pixels within the specified rectangle of the current
             <code class="constant">GL_READ_BUFFER</code> are outside the read window associated with the current
             rendering context, then the values obtained for those pixels are undefined.
@@ -99,8 +105,9 @@
             <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_X</code>,
             <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Y</code>,
             <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Y</code>,
-            <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Z</code>, or
-            <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Z</code>.
+            <code class="constant">GL_TEXTURE_CUBE_MAP_POSITIVE_Z</code>,
+            <code class="constant">GL_TEXTURE_CUBE_MAP_NEGATIVE_Z</code>, or
+            <code class="constant">GL_TEXTURE_1D_ARRAY</code>.
         </p><p>
             <code class="constant">GL_INVALID_OPERATION</code> is generated if the texture array has not been
             defined by a previous <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a> or <a href="glCopyTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glCopyTexImage2D</span></span></a> operation.
@@ -224,7 +231,8 @@
             <a href="glTexSubImage3D.xml"><span class="citerefentry"><span class="refentrytitle">glTexSubImage3D</span></span></a>
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
-            Silicon Graphics, Inc. This document is licensed under the SGI
+            Silicon Graphics, Inc. Copyright <span class="trademark"></span>© 2012 Khronos Group.
+            This document is licensed under the SGI
             Free Software B License. For details, see
             <a href="http://oss.sgi.com/projects/FreeB/" target="_top">http://oss.sgi.com/projects/FreeB/</a>.
         </p></div></div></body></html>

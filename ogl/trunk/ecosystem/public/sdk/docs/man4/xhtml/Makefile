@@ -25,7 +25,7 @@ PREPROCESSOR = preproc.sed
 GL_ARB_draw_indirect_entries = \
     glDrawArraysIndirect.xml \
     glDrawElementsIndirect.xml
-	
+
 GL_ARB_shader_subroutine_entries = \
     glGetActiveSubroutineName.xml \
     glGetActiveSubroutineUniform.xml \
@@ -326,7 +326,6 @@ UNMODIFIEDXML = \
     glDepthFunc.xml \
     glDepthMask.xml \
     glDetachShader.xml \
-    glDisableVertexAttribArray.xml \
     glDrawArrays.xml \
     glDrawArraysInstanced.xml \
     glDrawBuffer.xml \
@@ -339,7 +338,6 @@ UNMODIFIEDXML = \
     glDrawRangeElementsBaseVertex.xml \
     glEnable.xml \
     glEnableVertexAttribArray.xml \
-    glEndQuery.xml \
     glFenceSync.xml \
     glFinish.xml \
     glFlush.xml \
@@ -450,7 +448,6 @@ UNMODIFIEDXML = \
     glTransformFeedbackVaryings.xml \
     glUniform.xml \
     glUniformBlockBinding.xml \
-    glUnmapBuffer.xml \
     glUseProgram.xml \
     glValidateProgram.xml \
     glVertexAttribDivisor.xml \

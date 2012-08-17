@@ -9,6 +9,7 @@
             <code class="constant">GL_VALIDATE_STATUS</code>,
             <code class="constant">GL_INFO_LOG_LENGTH</code>,
             <code class="constant">GL_ATTACHED_SHADERS</code>,
+            <code class="constant">GL_ACTIVE_ATOMIC_COUNTER_BUFFERS</code>,
             <code class="constant">GL_ACTIVE_ATTRIBUTES</code>,
             <code class="constant">GL_ACTIVE_ATTRIBUTE_MAX_LENGTH</code>,
             <code class="constant">GL_ACTIVE_UNIFORMS</code>,

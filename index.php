@@ -30,6 +30,7 @@ are fold-out annotated lists of the functions included in OpenGL, along with the
 information.</P>
 
 <UL>
+<LI>The <A HREF="http://www.khronos.org/files/opengl43-quick-reference-card.pdf">OpenGL 4.3 Quick Reference Guide (including GLSL 4.30)</A></LI>
 <LI>The <A HREF="http://www.khronos.org/files/opengl42-quick-reference-card.pdf">OpenGL 4.2 Quick Reference Guide (including GLSL 4.20)</A></LI>
 <LI>The <A HREF="http://www.khronos.org/files/opengl-quick-reference-card.pdf">OpenGL 3.2 Quick Reference Guide (including GLSL 1.50)</A></LI>
 </UL>

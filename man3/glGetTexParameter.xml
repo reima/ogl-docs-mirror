@@ -33,6 +33,22 @@
                 <paramdef>GLint * <parameter>params</parameter></paramdef>
             </funcprototype>
         </funcsynopsis>
+        <funcsynopsis>
+            <funcprototype>
+                <funcdef>void <function>glGetTexParameterIiv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLint * <parameter>params</parameter></paramdef>
+            </funcprototype>
+        </funcsynopsis>
+        <funcsynopsis>
+            <funcprototype>
+                <funcdef>void <function>glGetTexParameterIuiv</function></funcdef>
+                <paramdef>GLenum <parameter>target</parameter></paramdef>
+                <paramdef>GLenum <parameter>pname</parameter></paramdef>
+                <paramdef>GLuint * <parameter>params</parameter></paramdef>
+            </funcprototype>
+        </funcsynopsis>
     </refsynopsisdiv>
     <!-- eqn: ignoring delim $$ -->
     <refsect1 id="parameters"><title>Parameters</title>

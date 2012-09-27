@@ -138,6 +138,7 @@ SGIGLXML = \
     glDrawArrays.xml \
     glDrawBuffer.xml \
     glDrawElements.xml \
+    glDrawElementsInstanced.xml \
     glDrawPixels.xml \
     glDrawRangeElements.xml \
     glEdgeFlagPointer.xml \

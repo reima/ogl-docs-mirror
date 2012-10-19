@@ -9,7 +9,7 @@
 
 <H2>The OpenGL Reference Pages</H2>
 
-<P>The <A HREF="./man4/">reference pages for OpenGL 4</A> include complete descriptions of all OpenGL
+<P>The <A HREF="./man/">reference pages for OpenGL 4</A> include complete descriptions of all OpenGL
 commands contained in the OpenGL 4 Specification.</P>
 
 <P>The <A HREF="./man3/">reference pages for OpenGL 3.3</A> include complete descriptions of all OpenGL
@@ -18,7 +18,7 @@ commands contained in the Core Profile of the OpenGL 3.3 Specification.</P>
 <P>The <A HREF="./manglsl/">reference pages for the OpenGL Shading Lanaguage (GLSL)</A> include 
 descriptions of all OpenGL Shading Language built-in functions and variables.</P>
 
-The legacy <A HREF="./man/">OpenGL 2.1 reference pages</A> include descriptions of all OpenGL commands
+The legacy <A HREF="./man2/">OpenGL 2.1 reference pages</A> include descriptions of all OpenGL commands
 contained in the OpenGL 2.1 Specification, including commands that have been deprecated and removed in
 more modern versions of OpenGL (but are still included in compatibility profiles of OpenGL).
 Also included are descriptions of GLU and GLX entry points.

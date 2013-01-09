@@ -187,7 +187,7 @@
     <parameter>stride</parameter> is negative.</para>
 
     <para><constant>GL_INVALID_OPERATION</constant> is generated if <parameter>size</parameter>
-    is <constant>GL_BGRA</constant> and <parameter>type</parameter> is not
+    is <constant>GL_BGRA</constant> and <parameter>type</parameter> is not <constant>GL_UNSIGNED_BYTE</constant>,
     <constant>GL_INT_2_10_10_10_REV</constant> or <constant>GL_UNSIGNED_INT_2_10_10_10_REV</constant>.</para>
 
     <para><constant>GL_INVALID_OPERATION</constant> is generated if <parameter>type</parameter>

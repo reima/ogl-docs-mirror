@@ -21,7 +21,7 @@
     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="Tutorial Text" -->
     <h2 align="center"><img src="screenshot_load.gif" alt="tutorial image" width="302" height="244"></h2>
     <h2>A Simple Vertex Shader</h2>
-    <p>This vertex shader scales all vertices in x and y direction. This doesn't really make much sense, but it is a good example to get started with. All vertices of our primitive (or object or scene) will go through this program. gl_Vertex is the current vertex which is being processed by this program. The vertex has the same (untransformed) values like you specify in glVertex3f(x,y,z) in your C++ program. The gl_ModelViewProjectionMatrix is the concatenated modelview and projection matrix.  I assume you know what the modelview and projection matrices are, otherwise you can look it up in the <a href="http://www.opengl.org/sdk/docs/man/xhtml/glMatrixMode.xml" target="_blank">OpenGL SDK</a>. </p>
+    <p>This vertex shader scales all vertices in x and y direction. This doesn't really make much sense, but it is a good example to get started with. All vertices of our primitive (or object or scene) will go through this program. gl_Vertex is the current vertex which is being processed by this program. The vertex has the same (untransformed) values like you specify in glVertex3f(x,y,z) in your C++ program. The gl_ModelViewProjectionMatrix is the concatenated modelview and projection matrix.  I assume you know what the modelview and projection matrices are, otherwise you can look it up in the <a href="http://www.opengl.org/sdk/docs/man2/xhtml/glMatrixMode.xml" target="_blank">OpenGL SDK</a>. </p>
     <table width="90%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
         <td><pre>void main(void)

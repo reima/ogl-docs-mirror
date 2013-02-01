@@ -55,7 +55,7 @@ uniform gl_LightSourceParameters gl_LightSource[gl_MaxLights];
       </tr>
     </table>
     <h3>Material Parameters</h3>
-    <p>You can access the values you set in C++ with <a href="http://www.opengl.org/sdk/docs/man/xhtml/glMaterial.xml" target="_blank">glMaterial</a> using the GLSL built-in variables gl_FrontMateral and gl_BackMaterial.</p>
+    <p>You can access the values you set in C++ with <a href="http://www.opengl.org/sdk/docs/man2/xhtml/glMaterial.xml" target="_blank">glMaterial</a> using the GLSL built-in variables gl_FrontMateral and gl_BackMaterial.</p>
     <table width="48%" border="0" align="center" bordercolor="#0000CC" bgcolor="#EEEEEE">
       <tr>
         <td><pre>struct gl_MaterialParameters  

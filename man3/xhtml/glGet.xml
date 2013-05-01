@@ -351,7 +351,7 @@
                         of simultaneous outputs that may be written in a fragment shader.
                         The value must be at least 8.
                         See <a href="glDrawBuffers.xml"><span class="citerefentry"><span class="refentrytitle">glDrawBuffers</span></span></a>.
-                    </p></dd><dt><span class="term"><code class="constant">GL_MAX_DUALSOURCE_DRAW_BUFFERS</code></span></dt><dd><p>
+                    </p></dd><dt><span class="term"><code class="constant">GL_MAX_DUAL_SOURCE_DRAW_BUFFERS</code></span></dt><dd><p>
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value, the maximum number
                         of active draw buffers when using dual-source  blending. The value must be at least 1.
@@ -395,7 +395,7 @@
                         <em class="parameter"><code>params</code></em> returns one value.
                         The value gives a rough estimate of the largest rectangular texture that
                         the GL can handle. The value must be at least 1024.
-                        Use <code class="constant">GL_PROXY_RECTANGLE_TEXTURE</code>
+                        Use <code class="constant">GL_PROXY_TEXTURE_RECTANGLE</code>
                         to determine if a texture is too large.
                         See <a href="glTexImage2D.xml"><span class="citerefentry"><span class="refentrytitle">glTexImage2D</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_TEXTURE_IMAGE_UNITS</code></span></dt><dd><p>
@@ -911,7 +911,7 @@
               </p><p>
                         <em class="parameter"><code>params</code></em> returns a single value indicating the mode of the texture
                         compression hint.  The initial value is <code class="constant">GL_DONT_CARE</code>.
-                    </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_BUFFER_BINDING</code></span></dt><dd><p>
+                    </p></dd><dt><span class="term"><code class="constant">GL_TEXTURE_BINDING_BUFFER</code></span></dt><dd><p>
               </p><p>
                         <em class="parameter"><code>params</code></em> returns a single value, the name of the texture buffer object
                         currently bound.  The initial value is 0.
@@ -1072,7 +1072,7 @@
             <code class="constant">GL_TEXTURE_3D</code> and <code class="constant">GL_TEXTURE_BINDING_3D</code>.
         </p><p>
             <code class="constant">GL_MAX_RECTANGLE_TEXTURE_SIZE</code>, <code class="constant">GL_MAX_TEXTURE_BUFFER_SIZE</code>, 
-            <code class="constant">GL_UNIFORM_BUFFER_BINDING</code>, <code class="constant">GL_TEXTURE_BUFFER_BINDING</code>,
+            <code class="constant">GL_UNIFORM_BUFFER_BINDING</code>, <code class="constant">GL_TEXTURE_BINDING_BUFFER</code>,
             <code class="constant">GL_MAX_VERTEX_UNIFORM_BLOCKS</code>, <code class="constant">GL_MAX_FRAGMENT_UNIFORM_BLOCKS</code>,
             <code class="constant">GL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS</code>, <code class="constant">GL_MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS</code>
             <code class="constant">GL_MAX_COMBINED_UNIFORM_BLOCKS</code>, <code class="constant">GL_MAX_UNIFORM_BLOCK_SIZE</code>,
@@ -1087,7 +1087,7 @@
             <code class="function">glGetInteger64v</code> and <code class="function">glGetInteger64i_v</code> are available only if 
             the GL version is 3.2 or greater.
         </p><p>
-            <code class="constant">GL_MAX_DUALSOURCE_DRAW_BUFFERS</code>, <code class="constant">GL_SAMPLER_BINDING</code>, and
+            <code class="constant">GL_MAX_DUAL_SOURCE_DRAW_BUFFERS</code>, <code class="constant">GL_SAMPLER_BINDING</code>, and
             <code class="constant">GL_TIMESTAMP</code> are available only if the GL version is 3.3 or greater.
         </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>pname</code></em> is not an accepted value.

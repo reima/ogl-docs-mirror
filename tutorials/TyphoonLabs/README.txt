@@ -1,1 +1,1 @@
-TyphoonLabs folder, maintained by Jacobo Rodriguez Villar [jacobo.rodriguez@typhoonlabs.com]
+TyphoonLabs folder, maintained by Jacobo Rodriguez Villar [jrodriguez@parallel-games.com]

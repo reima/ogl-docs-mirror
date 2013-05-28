@@ -544,27 +544,6 @@
             or greater than <constant>GL_MAX_TEXTURE_SIZE</constant>.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if non-power-of-two textures are not supported and the <parameter>width</parameter> or <parameter>height</parameter> cannot be represented as 
-            <inlineequation><mml:math>
-                <!-- eqn: 2 sup k  +  2(border): -->
-                <mml:mrow>
-                    <mml:msup><mml:mn>2</mml:mn>
-                    <mml:mi mathvariant="italic">k</mml:mi>
-                    </mml:msup>
-                    <mml:mo>+</mml:mo>
-                    <mml:mrow>
-                        <mml:mn>2</mml:mn>
-                        <mml:mo>&af;</mml:mo>
-                        <mml:mfenced open="(" close=")">
-                            <mml:mi mathvariant="italic">border</mml:mi>
-                        </mml:mfenced>
-                    </mml:mrow>
-                </mml:mrow>
-            </mml:math></inlineequation>
-            for some
-            integer value of <emphasis>k</emphasis>.
-        </para>
-        <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>border</parameter> is not 0.
         </para>
         <para>

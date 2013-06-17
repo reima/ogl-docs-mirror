@@ -805,6 +805,14 @@
                         <em class="parameter"><code>params</code></em> a single value, the name of the currently bound program pipeline
                         object, or zero if no program pipeline object is bound.
                         See <a href="glBindProgramPipeline.xml"><span class="citerefentry"><span class="refentrytitle">glBindProgramPipeline</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_PROGRAM_POINT_SIZE</code></span></dt><dd><p>
+              </p><p>
+                        <em class="parameter"><code>params</code></em> returns a single boolean value indicating whether vertex
+                        program point size mode is enabled. If enabled, then the
+                        point size is taken from the shader built-in <code class="code">gl_PointSize</code>. If disabled,
+                        then the point size is taken from the point state as specified
+                        by <a href="glPointSize.xml"><span class="citerefentry"><span class="refentrytitle">glPointSize</span></span></a>.
+                        The initial value is <code class="constant">GL_FALSE</code>.
                     </p></dd><dt><span class="term"><code class="constant">GL_PROVOKING_VERTEX</code></span></dt><dd><p>
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,

@@ -107,7 +107,8 @@
         </para>
         <para>
             <parameter>severity</parameter> may be one of <constant>GL_DEBUG_SEVERITY_LOW</constant>, <constant>GL_DEBUG_SEVERITY_MEDIUM</constant>,
-            or <constant>GL_DEBUG_SEVERITY_HIGH</constant> to select messages of low, medium or high severity messages. It may also take the
+            or <constant>GL_DEBUG_SEVERITY_HIGH</constant> to select messages of low, medium or high severity messages or to
+            <constant>GL_DEBUG_SEVERITY_NOTIFICATION</constant> for notifications. It may also take the
             value <constant>GL_DONT_CARE</constant>. If <parameter>severity</parameter> is not <constant>GL_DONT_CARE</constant> then only
             messages whose severity matches <parameter>severity</parameter> will be referenced.
         </para>
@@ -130,7 +131,7 @@
             may produce no messages at all.
         </para>
         <para>
-            <constant>GL_DEBUG_TYPE_MARKER</constant>, <constant>GL_DEBUG_TYPE_PUSH_GROUP</constant> and <constant>GL_DEBUG_TYPE_POP_GROUP</constant>
+            <constant>GL_DEBUG_TYPE_MARKER</constant>, <constant>GL_DEBUG_TYPE_PUSH_GROUP</constant>, <constant>GL_DEBUG_TYPE_POP_GROUP</constant>, and <constant>GL_DEBUG_SEVERITY_NOTIFICATION</constant>
             are available only if the GL version is 4.3 or higher.
         </para>
     </refsect1>

@@ -92,7 +92,7 @@
             <constant>GL_DEBUG_TYPE_UNDEFINED_BEHAVIOR</constant>, <constant>GL_DEBUG_TYPE_PORTABILITY</constant>,
             <constant>GL_DEBUG_TYPE_PERFORMANCE</constant>, <constant>GL_DEBUG_TYPE_MARKER</constant>, <constant>GL_DEBUG_TYPE_PUSH_GROUP</constant>, <constant>GL_DEBUG_TYPE_POP_GROUP</constant>, or <constant>GL_DEBUG_TYPE_OTHER</constant>.
             <parameter>severity</parameter> indicates the severity of the message and may be <constant>GL_DEBUG_SEVERITY_LOW</constant>,
-            <constant>GL_DEBUG_SEVERITY_MEDIUM</constant>, or <constant>GL_DEBUG_SEVERITY_HIGH</constant>.
+            <constant>GL_DEBUG_SEVERITY_MEDIUM</constant>, <constant>GL_DEBUG_SEVERITY_HIGH</constant> or <constant>GL_DEBUG_SEVERITY_NOTIFICATION</constant>.
             <parameter>id</parameter> is available for application defined use and may be any value. This value
             will be recorded and used to identify the message.
         </para>
@@ -106,7 +106,7 @@
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
-            <constant>GL_DEBUG_TYPE_MARKER</constant>, <constant>GL_DEBUG_TYPE_PUSH_GROUP</constant> and <constant>GL_DEBUG_TYPE_POP_GROUP</constant>
+            <constant>GL_DEBUG_TYPE_MARKER</constant>, <constant>GL_DEBUG_TYPE_PUSH_GROUP</constant>, <constant>GL_DEBUG_TYPE_POP_GROUP</constant>, and <constant>GL_DEBUG_SEVERITY_NOTIFICATION</constant>
             are available only if the GL version is 4.3 or higher.
         </para>
     </refsect1>

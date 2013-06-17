@@ -1948,6 +1948,21 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_PROGRAM_POINT_SIZE</constant></term>
+                <listitem>
+              <para>
+              </para>
+                    <para>
+                        <parameter>params</parameter> returns a single boolean value indicating whether vertex
+                        program point size mode is enabled. If enabled, then the
+                        point size is taken from the shader built-in <code>gl_PointSize</code>. If disabled,
+                        then the point size is taken from the point state as specified
+                        by <citerefentry><refentrytitle>glPointSize</refentrytitle></citerefentry>.
+                        The initial value is <constant>GL_FALSE</constant>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_PROVOKING_VERTEX</constant></term>
                 <listitem>
               <para>

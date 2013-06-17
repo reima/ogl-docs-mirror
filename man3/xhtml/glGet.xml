@@ -274,17 +274,6 @@
                         <em class="parameter"><code>params</code></em> returns one value,
                         the line width as specified with <a href="glLineWidth.xml"><span class="citerefentry"><span class="refentrytitle">glLineWidth</span></span></a>. The initial value is
                         1.
-                    </p></dd><dt><span class="term"><code class="constant">GL_LINE_WIDTH_GRANULARITY</code></span></dt><dd><p>
-              </p><p>
-                        <em class="parameter"><code>params</code></em> returns one value,
-                        the width difference between adjacent supported widths for antialiased lines.
-                        See <a href="glLineWidth.xml"><span class="citerefentry"><span class="refentrytitle">glLineWidth</span></span></a>.
-                    </p></dd><dt><span class="term"><code class="constant">GL_LINE_WIDTH_RANGE</code></span></dt><dd><p>
-              </p><p>
-                        <em class="parameter"><code>params</code></em> returns two values:
-                        the smallest and largest supported widths for antialiased
-                        lines.
-                        See <a href="glLineWidth.xml"><span class="citerefentry"><span class="refentrytitle">glLineWidth</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_LOGIC_OP_MODE</code></span></dt><dd><p>
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
@@ -613,6 +602,14 @@
                         <em class="parameter"><code>params</code></em> returns one value,
                         the current primitive restart index. The initial value is 0.
                         See <a href="glPrimitiveRestartIndex.xml"><span class="citerefentry"><span class="refentrytitle">glPrimitiveRestartIndex</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_PROGRAM_POINT_SIZE</code></span></dt><dd><p>
+              </p><p>
+                        <em class="parameter"><code>params</code></em> returns a single boolean value indicating whether vertex
+                        program point size mode is enabled. If enabled, then the
+                        point size is taken from the shader built-in <code class="code">gl_PointSize</code>. If disabled,
+                        then the point size is taken from the point state as specified
+                        by <a href="glPointSize.xml"><span class="citerefentry"><span class="refentrytitle">glPointSize</span></span></a>.
+                        The initial value is <code class="constant">GL_FALSE</code>.
                     </p></dd><dt><span class="term"><code class="constant">GL_PROVOKING_VERTEX</code></span></dt><dd><p>
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
@@ -1037,14 +1034,6 @@
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
                         the flags with which the context was created (such as debugging functionality).
-                    </p></dd><dt><span class="term"><code class="constant">GL_VERTEX_PROGRAM_POINT_SIZE</code></span></dt><dd><p>
-              </p><p>
-                        <em class="parameter"><code>params</code></em> returns a single boolean value indicating whether vertex
-                        program point size mode is enabled. If enabled, and a vertex shader is active, then the
-                        point size is taken from the shader built-in <code class="code">gl_PointSize</code>. If disabled,
-                        and a vertex shader is active, then the point size is taken from the point state as specified
-                        by <a href="glPointSize.xml"><span class="citerefentry"><span class="refentrytitle">glPointSize</span></span></a>.
-                        The initial value is <code class="constant">GL_FALSE</code>.
                     </p></dd><dt><span class="term"><code class="constant">GL_VIEWPORT</code></span></dt><dd><p>
               </p><p>
                         <em class="parameter"><code>params</code></em> returns four values:

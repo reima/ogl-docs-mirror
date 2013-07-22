@@ -30,7 +30,7 @@ are fold-out annotated lists of the functions included in OpenGL, along with the
 information.</P>
 
 <ul>
-<li> <a href="http://www.opengl.org/sdk/docs/reference_card/opengl44-quick-referenced-card.pdf">
+<li> <a href="http://www.opengl.org/sdk/docs/reference_card/opengl44-quick-reference-card.pdf">
      OpenGL 4.4 Reference Card </a></li>
 <li> <a href="http://www.opengl.org/sdk/docs/reference_card/opengl43-quick-reference-card.pdf">
      OpenGL 4.3 Reference Card </a></li>

@@ -1,0 +1,21 @@
+Files imported to Subversion from khronos.org/public_html/files/opengl/
+
+    Name Here				Name in khronos.org files area
+
+    opengl44-quick-referenced-card.pdf	    opengl/OpenGL44-0713-Web.pdf
+    opengl43-quick-reference-card.pdf	    opengl/OpenGL43-0812-WEB.pdf
+    opengl42-quick-reference-card.pdf	    opengl/opengl42-quick-reference-card.pdf
+    opengl42-core-quick-reference-card.pdf  opengl/OpenGL42-Core-Profile.pdf
+    opengl32-quick-reference-card.pdf	    opengl/OpenGL-RefCard-Aug09b.pdf
+    opengl40-quick-reference-card.pdf	    opengl/OpenGL-ReferenceCard-Feb10-WEB.pdf
+    opengl41-quick-reference-card.pdf	    opengl/OpenGL-ReferenceCard-Jul26-WEB.pdf
+
+Other files, not copied into Subversion - these mostly appear to be
+duplicates of the above, with different checksums. There may be
+differences in background colors etc.
+
+    opengl/OpenGL40-0210-web.pdf
+    opengl/OpenGL41-0610-web.pdf
+    opengl/OpenGL42-0711-web.pdf
+    opengl/OpenGL-ReferenceCard-4.2-0711-WEB.PDF (identical to opengl42-quick-reference-card.pdf)
+    opengl/OpenGL-20th-Booklet.pdf

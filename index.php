@@ -15,7 +15,7 @@ commands contained in the OpenGL 4 Specification.</P>
 <P>The <A HREF="./man3/">reference pages for OpenGL 3.3</A> include complete descriptions of all OpenGL
 commands contained in the Core Profile of the OpenGL 3.3 Specification.</P>
 
-<P>The <A HREF="./manglsl/">reference pages for the OpenGL Shading Lanaguage (GLSL)</A> include 
+<P>The <A HREF="./manglsl/">reference pages for the OpenGL Shading Lanaguage (GLSL)</A> include
 descriptions of all OpenGL Shading Language built-in functions and variables.</P>
 
 The legacy <A HREF="./man2/">OpenGL 2.1 reference pages</A> include descriptions of all OpenGL commands
@@ -29,11 +29,22 @@ Also included are descriptions of GLU and GLX entry points.
 are fold-out annotated lists of the functions included in OpenGL, along with their parameters and other useful
 information.</P>
 
-<UL>
-<LI>The <A HREF="http://www.khronos.org/files/opengl43-quick-reference-card.pdf">OpenGL 4.3 Quick Reference Guide (including GLSL 4.30)</A></LI>
-<LI>The <A HREF="http://www.khronos.org/files/opengl42-quick-reference-card.pdf">OpenGL 4.2 Quick Reference Guide (including GLSL 4.20)</A></LI>
-<LI>The <A HREF="http://www.khronos.org/files/opengl-quick-reference-card.pdf">OpenGL 3.2 Quick Reference Guide (including GLSL 1.50)</A></LI>
-</UL>
+<ul>
+<li> <a href="http://www.opengl.org/sdk/docs/reference_card/opengl44-quick-referenced-card.pdf">
+     OpenGL 4.4 Reference Card </a></li>
+<li> <a href="http://www.opengl.org/sdk/docs/reference_card/opengl43-quick-reference-card.pdf">
+     OpenGL 4.3 Reference Card </a></li>
+<li> <a href="http://www.opengl.org/sdk/docs/reference_card/opengl42-quick-reference-card.pdf">
+     OpenGL 4.2 Reference Card </a></li>
+<li> <a href="http://www.opengl.org/sdk/docs/reference_card/opengl42-core-quick-reference-card.pdf">
+     OpenGL 4.2 (Core Profile) Reference Card </a></li>
+<li> <a href="http://www.opengl.org/sdk/docs/reference_card/opengl41-quick-reference-card.pdf">
+     OpenGL 4.1 Reference Card </a></li>
+<li> <a href="http://www.opengl.org/sdk/docs/reference_card/opengl40-quick-reference-card.pdf">
+     OpenGL 4.0 Reference Card </a></li>
+<li> <a href="http://www.opengl.org/sdk/docs/reference_card/opengl32-quick-reference-card.pdf">
+     OpenGL 3.2 Reference Card </a></li>
+</ul>
 
 <P> The <A TARGET="_new" HREF="http://www.opengl.org/registry/"> OpenGL API
 and Extension Registry</A>, hosted outside of the SDK, contains the formal

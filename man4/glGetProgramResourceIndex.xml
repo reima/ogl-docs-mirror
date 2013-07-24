@@ -141,6 +141,15 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_TRANSFORM_FEEDBACK_BUFFER</constant></term>
+                <listitem>
+                    <para>
+                        The query is targeted at the set of active buffer binding points to which output variables in the
+                        <constant>GL_TRANSFORM_FEEDBACK_VARYING</constant> interface are written.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_BUFFER_VARIABLE</constant></term>
                 <listitem>
                     <para>
@@ -176,6 +185,11 @@
         <para>
             <constant>GL_INVALID_ENUM</constant> is generated if <parameter>programInterface</parameter>
             is not one of the accepted interface types.
+        </para>
+        <para>
+            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>programInterface</parameter> is
+            <constant>GL_ATOMIC_COUNTER_BUFFER</constant> or <constant>GL_TRANSFORM_FEEDBACK_BUFFER</constant>, since active atomic
+            counter and transform feedback buffer resources are not assigned name strings.
         </para>
         <para>
             Although not an error, <constant>GL_INVALID_INDEX</constant> is returned if <parameter>name</parameter>

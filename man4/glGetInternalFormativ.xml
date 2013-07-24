@@ -328,6 +328,13 @@
             <constant>GL_VIEW_CLASS_RGTC1_RED</constant>, <constant>GL_VIEW_CLASS_RGTC2_RG</constant>, <constant>GL_VIEW_CLASS_BPTC_UNORM</constant>, and
             <constant>GL_VIEW_CLASS_BPTC_FLOAT</constant>.
         </para>
+        <para>
+            If <parameter>pname</parameter> is <constant>GL_CLEAR_TEXTURE</constant> then the presence of support for using the
+            <citerefentry><refentrytitle>glClearTexImage</refentrytitle></citerefentry> and <citerefentry><refentrytitle>glClearTexSubImage</refentrytitle></citerefentry>
+            commands with the resource is written to <parameter>params</parameter>. Possible values written are  <constant>GL_FULL_SUPPORT</constant>,
+            <constant>GL_CAVEAT_SUPPORT</constant>, or <constant>GL_NONE</constant> to indicate
+            full support, limited support or no support at all, respectively. If the resource or operation is not supported, <constant>GL_NONE</constant> is returned.
+        </para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>
@@ -409,6 +416,10 @@
             <constant>GL_TEXTURE_VIEW</constant>, and
             <constant>GL_VIEW_COMPATIBILITY_CLASS</constant> are supported only if the GL
             version is 4.3 or higher.
+        </para>
+        <para>
+            The <constant>GL_CLEAR_TEXTURE</constant> token is accepted for <parameter>pname</parameter> only
+            if the GL version is 4.4 or higher.
         </para>
         </refsect1>
     <refsect1 id="errors"><title>Errors</title>

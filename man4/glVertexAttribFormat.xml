@@ -109,9 +109,11 @@
             <code>GLdouble</code>, respectively; the values <constant>GL_UNSIGNED_BYTE</constant>,
             <constant>GL_UNSIGNED_SHORT</constant>, and <constant>GL_UNSIGNED_INT</constant> indicate types
             <code>GLubyte</code>, <code>GLushort</code>, and <code>GLuint</code>, 
-            respectively; and the values <constant>GL_INT_2_10_10_10_REV</constant> and
+            respectively; the values <constant>GL_INT_2_10_10_10_REV</constant> and
             <constant>GL_UNSIGNED_INT_2_10_10_10_REV</constant> indicating respectively four signed or
-            unsigned elements packed into a single <code>GLuint</code>.
+            unsigned elements packed into a single <code>GLuint</code>; and the value
+            <constant>GL_UNSIGNED_INT_10F_11F_11F_REV</constant> indicating three floating point values
+            packed into a single <code>GLuint</code>.
         </para>
         <para>
             <function>glVertexAttribLFormat</function> is used to specify layout for
@@ -141,6 +143,12 @@
             for 64-bit vertex attributes. Data for an array specified by 
             <function>glVertexAttribIFormat</function> will always be left as integer values;
             such data are referred to as pure integers.
+        </para>
+    </refsect1>
+    <refsect1 id="notes"><title>Notes</title>
+            <para>
+            <constant>GL_UNSIGNED_INT_10F_11F_11F_REV</constant> is accepted for <parameter>type</parameter>
+            only if the GL version is 4.4 or higher.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

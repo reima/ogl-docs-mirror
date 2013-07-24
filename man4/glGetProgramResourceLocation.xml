@@ -63,7 +63,9 @@
             be one of <constant>GL_UNIFORM</constant>, <constant>GL_PROGRAM_INPUT</constant>, <constant>GL_PROGRAM_OUTPUT</constant>,
             <constant>GL_VERTEX_SUBROUTINE_UNIFORM</constant>, <constant>GL_TESS_CONTROL_SUBROUTINE_UNIFORM</constant>,
             <constant>GL_TESS_EVALUATION_SUBROUTINE_UNIFORM</constant>, <constant>GL_GEOMETRY_SUBROUTINE_UNIFORM</constant>,
-            <constant>GL_FRAGMENT_SUBROUTINE_UNIFORM</constant>, or <constant>GL_COMPUTE_SUBROUTINE_UNIFORM</constant>.
+            <constant>GL_FRAGMENT_SUBROUTINE_UNIFORM</constant>, <constant>GL_COMPUTE_SUBROUTINE_UNIFORM</constant>, or <constant>GL_TRANSFORM_FEEDBACK_BUFFER</constant>.
+       </para>
+       <para>
             The value -1 will be returned if an error occurs, if <parameter>name</parameter> does not identify an active variable on
             <parameter>programInterface</parameter>, or if <parameter>name</parameter> identifies an active variable that does
             not have a valid location assigned, as described above.  The locations

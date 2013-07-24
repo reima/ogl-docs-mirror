@@ -124,8 +124,9 @@
             chosen <parameter>internalformat</parameter> enumerant. <parameter>internalformat</parameter>
             must be one of the sized internal formats given in Table 1 below, one of the sized depth-component
             formats <constant>GL_DEPTH_COMPONENT32F</constant>, <constant>GL_DEPTH_COMPONENT24</constant>, or
-            <constant>GL_DEPTH_COMPONENT16</constant>, or one of the combined depth-stencil formats,
-            <constant>GL_DEPTH32F_STENCIL8</constant>, or <constant>GL_DEPTH24_STENCIL8</constant>. Upon success,
+            <constant>GL_DEPTH_COMPONENT16</constant>, one of the combined depth-stencil formats,
+            <constant>GL_DEPTH32F_STENCIL8</constant>, or <constant>GL_DEPTH24_STENCIL8</constant>, or the
+            stencil-only format, <constant>GL_STENCIL_INDEX8</constant>. Upon success,
             the value of <constant>GL_TEXTURE_IMMUTABLE_FORMAT</constant> becomes
             <constant>GL_TRUE</constant>. The value of <constant>GL_TEXTURE_IMMUTABLE_FORMAT</constant>
             may be discovered by calling <citerefentry><refentrytitle>glGetTexParameter</refentrytitle></citerefentry>
@@ -139,6 +140,12 @@
         </para>
         <para>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="internalformattable.xml" />
+        </para>
+    </refsect1>
+    <refsect1 id="notes"><title>Notes</title>
+        <para>
+            <constant>GL_STENCIL_INDEX8</constant> is accepted for <parameter>internalformat</parameter>
+            only if the GL version is 4.4 or higher.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

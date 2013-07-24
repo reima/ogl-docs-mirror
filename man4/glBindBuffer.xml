@@ -42,6 +42,7 @@
                     <constant>GL_ELEMENT_ARRAY_BUFFER</constant>,
                     <constant>GL_PIXEL_PACK_BUFFER</constant>,
                     <constant>GL_PIXEL_UNPACK_BUFFER</constant>,
+                    <constant>GL_QUERY_BUFFER</constant>,
                     <constant>GL_SHADER_STORAGE_BUFFER</constant>,
                     <constant>GL_TEXTURE_BUFFER</constant>,
                     <constant>GL_TRANSFORM_FEEDBACK_BUFFER</constant>, or
@@ -164,6 +165,11 @@
             an indexed uniform buffer, atomic counter buffer or shader storage buffer binding point.
         </para>
         <para>
+            The <constant>GL_QUERY_BUFFER</constant> binding point is used to specify a buffer object that is to
+            receive the results of query objects through calls to the <citerefentry><refentrytitle>glGetQueryObject</refentrytitle></citerefentry>
+            family of commands.
+        </para>
+        <para>
             A buffer object binding created with <function>glBindBuffer</function> remains active until a different
             buffer object name is bound to the same target, or until the bound buffer object is
             deleted with <citerefentry><refentrytitle>glDeleteBuffers</refentrytitle></citerefentry>.
@@ -184,6 +190,9 @@
         </para>
         <para>
             The <constant>GL_DISPATCH_INDIRECT_BUFFER</constant> and <constant>GL_SHADER_STORAGE_BUFFER</constant> targets are available only if the GL version is 4.3 or greater.
+        </para>
+        <para>
+            The <constant>GL_QUERY_BUFFER</constant> target is available only if the GL version is 4.4 or greater.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>
@@ -249,7 +258,7 @@
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 2005 Addison-Wesley.
-            Copyright <trademark class="copyright"></trademark> 2010-2011 Khronos Group.
+            Copyright <trademark class="copyright"></trademark> 2010-2013 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
             <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.

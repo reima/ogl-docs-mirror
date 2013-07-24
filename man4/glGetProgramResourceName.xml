@@ -215,6 +215,11 @@
             than or equal to the number of entries in the active resource list for
             <parameter>programInterface</parameter>.
         </para>
+        <para>
+            <constant>GL_INVALID_ENUM</constant> is generated if <parameter>programInterface</parameter> is
+            <constant>GL_ATOMIC_COUNTER_BUFFER</constant> or <constant>GL_TRANSFORM_FEEDBACK_BUFFER</constant>, since active atomic
+            counter and transform feedback buffer resources are not assigned name strings.
+        </para>
     </refsect1>
     <refsect1 id="seealso"><title>See Also</title>
         <para>

@@ -172,6 +172,15 @@
                     </para>
                 </listitem>
             </varlistentry>
+            <varlistentry>
+                <term><constant>GL_TRANSFORM_FEEDBACK_BUFFER</constant></term>
+                <listitem>
+                    <para>
+                        The query is targeted at the set of active buffer binding points to which output variables in the
+                        <constant>GL_TRANSFORM_FEEDBACK_VARYING</constant> interface are written.
+                    </para>
+                </listitem>
+            </varlistentry>
         </variablelist>
         <para>
             <parameter>pname</parameter> identifies the property of <parameter>programInterface</parameter>
@@ -223,6 +232,17 @@
         <para>
             <constant>GL_INVALID_VALUE</constant> is generated if <parameter>bufSize</parameter> is
             zero.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> is generated if <parameter>pname</parameter> is <constant>GL_MAX_NAME_LENGTH</constant> and
+            <parameter>programInterface</parameter> is <constant>GL_ATOMIC_COUNTER_BUFFER</constant> or <constant>GL_TRANSFORM_FEEDBACK_BUFFER</constant>,
+            since active atomic counter and transform feedback buffer resources are not assigned name strings.
+        </para>
+        <para>
+            <constant>GL_INVALID_OPERATION</constant> error is generated if <parameter>pname</parameter> is
+            <constant>GL_MAX_NUM_ACTIVE_VARIABLES</constant> and <parameter>programInterface</parameter> is not <constant>GL_UNIFORM_BLOCK</constant>,
+            <constant>GL_SHADER_STORAGE_BLOCK</constant>, <constant>GL_ATOMIC_COUNTER_BUFFER</constant>, or
+            <constant>GL_TRANSFORM_FEEDBACK_BUFFER</constant>.
         </para>
         <para>
             If not NULL, <parameter>length</parameter> and <parameter>label</parameter> should be addresses

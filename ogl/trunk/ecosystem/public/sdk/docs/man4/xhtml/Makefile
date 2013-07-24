@@ -214,6 +214,21 @@ GL_ARB_vertex_attrib_binding_entries = \
     glVertexBindingDivisor.xml \
     glBindVertexBuffer.xml
 
+GL_ARB_buffer_storage_entries = \
+    glBufferStorage.xml
+
+GL_ARB_clear_texture_entries = \
+    glClearTexImage.xml \
+    glClearTexSubImage.xml
+
+GL_ARB_multi_bind_entries = \
+    glBindBuffersBase.xml \
+    glBindBuffersRange.xml \
+    glBindTextures.xml \
+    glBindImageTextures.xml \
+    glBindSamplers.xml \
+    glBindVertexBuffers.xml
+
 MODIFIEDFORGL4XML = \
     glClearDepth.xml \
     glCreateShader.xml \
@@ -263,6 +278,11 @@ GL43XML = \
     $(GL_ARB_program_interface_query_entries) \
     $(GL_ARB_debug_output_entries) \
     $(GL_ARB_texture_view_entries)
+
+GL44XML = \
+    $(GL_ARB_buffer_storage_entries) \
+    $(GL_ARB_clear_texture_entries) \
+    $(GL_ARB_multi_bind_entries)
 
 UNMODIFIEDXML = \
     glActiveTexture.xml \
@@ -456,7 +476,7 @@ UNMODIFIEDXML = \
 
 MODIFIEDXML = \
 
-XML    = $(GL4XML) $(GL41XML) $(GL42XML) $(GL43XML) $(MODIFIEDFORGL4XML) $(UNMODIFIEDXML)
+XML    = $(GL4XML) $(GL41XML) $(GL42XML) $(GL43XML) $(GL44XML) $(MODIFIEDFORGL4XML) $(UNMODIFIEDXML)
 
 glTexImage1D.xml \
 glTexImage2D.xml \
@@ -466,7 +486,10 @@ glTexStorage2D.xml \
 glTexStorage3D.xml \
     : ../internalformattable.xml ../baseformattable.xml ../compressedformattable.xml
 
-default: $(XML)
+default: $(XML) index.html
+
+index.html: Makefile
+	./makeindex.pl . .. > $@
 
 clean:
 	$(RM) $(TEX_FILES) *.log *.aux *.toc *.dvi *.out

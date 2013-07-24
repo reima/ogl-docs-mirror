@@ -126,8 +126,17 @@
                     <constant>GL_RG</constant>,
                     <constant>GL_RGB</constant>,
                     <constant>GL_BGR</constant>,
-                    <constant>GL_RGBA</constant>, and
-                    <constant>GL_BGRA</constant>.
+                    <constant>GL_RGBA</constant>,
+                    <constant>GL_BGRA</constant>,
+                    <constant>GL_RED_INTEGER</constant>,
+                    <constant>GL_RG_INTEGER</constant>,
+                    <constant>GL_RGB_INTEGER</constant>,
+                    <constant>GL_BGR_INTEGER</constant>,
+                    <constant>GL_RGBA_INTEGER</constant>,
+                    <constant>GL_BGRA_INTEGER</constant>,
+                    <constant>GL_STENCIL_INDEX</constant>,
+                    <constant>GL_DEPTH_COMPONENT</constant>,
+                    <constant>GL_DEPTH_STENCIL</constant>.
                 </para>
             </listitem>
         </varlistentry>
@@ -460,6 +469,10 @@
         <para>
             <function>glTexImage3D</function> specifies the three-dimensional texture for the current texture unit,
             specified with <citerefentry><refentrytitle>glActiveTexture</refentrytitle></citerefentry>.
+        </para>
+        <para>
+            <constant>GL_STENCIL_INDEX</constant> may be used for <parameter>format</parameter> only if the GL
+            version is 4.4 or higher.
         </para>
     </refsect1>
     <refsect1 id="errors"><title>Errors</title>

@@ -56,11 +56,13 @@
     </refsect1>
     <refsect1 id="description"><title>Description</title>
         <para>
-            <function>glGetProgramResourceLocation</function> returns the fragment color index assigned
+            <function>glGetProgramResourceLocationIndex</function> returns the fragment color index assigned
             to the variable named <parameter>name</parameter> in interface <parameter>programInterface</parameter> of program
             object <parameter>program</parameter>.  <parameter>program</parameter> must be the name of a program that has been
             linked successfully. <parameter>programInterface</parameter> must
-            be one of <constant>PROGRAM_OUTPUT</constant>.
+            be <constant>PROGRAM_OUTPUT</constant>.
+        </para>
+        <para>
             The value -1 will be returned if an error occurs, if <parameter>name</parameter> does not identify an active variable on
             <parameter>programInterface</parameter>, or if <parameter>name</parameter> identifies an active variable that does
             not have a valid location assigned, as described above.  The locations

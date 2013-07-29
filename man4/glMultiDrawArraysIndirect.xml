@@ -93,7 +93,7 @@
             each element of which takes the form (in C):
             <programlisting><![CDATA[    typedef  struct {
         uint  count;
-        uint  primCount;
+        uint  instanceCount;
         uint  first;
         uint  baseInstance;
     } DrawArraysIndirectCommand;]]></programlisting>
@@ -114,7 +114,7 @@
             cmd = (const DrawArraysIndirectCommand  *)indirect + n;
         }
 
-        glDrawArraysInstancedBaseInstance(mode,  cmd->first,  cmd->count,  cmd->primCount, cmd->baseInstance);
+        glDrawArraysInstancedBaseInstance(mode,  cmd->first,  cmd->count,  cmd->instanceCount, cmd->baseInstance);
     }]]></programlisting>
         </para>
         <para>
@@ -181,7 +181,7 @@
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"></trademark> 2012 Khronos Group.
+            Copyright <trademark class="copyright"></trademark> 2012-2013 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
             <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.

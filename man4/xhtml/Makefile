@@ -97,8 +97,8 @@ GL_EXT_texture_storage_entries = \
     glTexStorage2D.xml \
     glTexStorage3D.xml
 
-GL_XXX_internal_format_query_entries = \
-    glGetInternalFormativ.xml
+GL_ARB_internal_format_query_entries = \
+    glGetInternalformativ.xml
 
 GL_ARB_transform_feedback_instanced_entries = \
     glDrawTransformFeedbackInstanced.xml \
@@ -255,7 +255,7 @@ GL41XML = \
 GL42XML = \
     $(GL_ARB_base_instance_entries) \
     $(GL_EXT_texture_storage_entries) \
-    $(GL_XXX_internal_format_query_entries) \
+    $(GL_ARB_internal_format_query_entries) \
     $(GL_ARB_transform_feedback_instanced_entries) \
     $(GL_ARB_shader_atomic_counters_entries) \
     $(GL_ARB_shader_image_load_store_entries) \

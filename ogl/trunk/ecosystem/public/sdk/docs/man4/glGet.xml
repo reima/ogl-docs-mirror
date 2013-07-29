@@ -1003,7 +1003,7 @@
               </para>
                     <para>
                         <parameter>params</parameter> returns one value,
-                        the maximum number of uniform blocks per program.  The value must be at least 36.
+                        the maximum number of uniform blocks per program.  The value must be at least 70.
                         See <citerefentry><refentrytitle>glUniformBlockBinding</refentrytitle></citerefentry>.
                     </para>
                 </listitem>

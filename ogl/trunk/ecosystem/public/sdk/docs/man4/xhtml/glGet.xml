@@ -410,7 +410,7 @@
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_COMBINED_UNIFORM_BLOCKS</code></span></dt><dd><p>
               </p><p>
                         <em class="parameter"><code>params</code></em> returns one value,
-                        the maximum number of uniform blocks per program.  The value must be at least 36.
+                        the maximum number of uniform blocks per program.  The value must be at least 70.
                         See <a class="citerefentry" href="glUniformBlockBinding.xml"><span class="citerefentry"><span class="refentrytitle">glUniformBlockBinding</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS</code></span></dt><dd><p>
               </p><p>

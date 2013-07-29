@@ -1272,6 +1272,12 @@
                         two-byte and four-byte pixel indices and components are swapped after being
                         read from memory. The initial value is <code class="constant">GL_FALSE</code>.
                         See <a class="citerefentry" href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a>.
+                    </p></dd><dt><span class="term"><code class="constant">GL_VERTEX_ARRAY_BINDING</code></span></dt><dd><p>
+              </p><p>
+                        <em class="parameter"><code>params</code></em> returns a single value, the name of the vertex array object
+                        currently bound to the context. If no vertex array object
+                        is bound to the context, 0 is returned.  The initial value is 0.
+                        See <a class="citerefentry" href="glBindVertexArray.xml"><span class="citerefentry"><span class="refentrytitle">glBindVertexArray</span></span></a>.
                     </p></dd><dt><span class="term"><code class="constant">GL_VERTEX_BINDING_DIVISOR</code></span></dt><dd><p>
               </p><p>
                         Accepted by the indexed forms. <em class="parameter"><code>params</code></em> returns a single integer value representing the instance step

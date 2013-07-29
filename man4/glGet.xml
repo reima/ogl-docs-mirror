@@ -2941,6 +2941,19 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_VERTEX_ARRAY_BINDING</constant></term>
+                <listitem>
+              <para>
+              </para>
+                    <para>
+                        <parameter>params</parameter> returns a single value, the name of the vertex array object
+                        currently bound to the context. If no vertex array object
+                        is bound to the context, 0 is returned.  The initial value is 0.
+                        See <citerefentry><refentrytitle>glBindVertexArray</refentrytitle></citerefentry>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_VERTEX_BINDING_DIVISOR</constant></term>
                 <listitem>
               <para>

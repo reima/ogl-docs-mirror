@@ -372,6 +372,22 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
+                <term><constant>GL_RASTERIZER_DISCARD</constant></term>
+                <listitem>
+                <para>
+                </para>
+                    <para>
+                        If enabled,
+                        primitives are discarded after the optional transform feedback stage,
+                        but before rasterization. Furthermore, when enabled, <citerefentry><refentrytitle>glClear</refentrytitle></citerefentry>,
+                        <citerefentry><refentrytitle>glClearBufferData</refentrytitle></citerefentry>,
+                        <citerefentry><refentrytitle>glClearBufferSubData</refentrytitle></citerefentry>,
+                        <citerefentry><refentrytitle>glClearTexImage</refentrytitle></citerefentry>, and
+                        <citerefentry><refentrytitle>glClearTexSubImage</refentrytitle></citerefentry> are ignored.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
                 <term><constant>GL_SAMPLE_ALPHA_TO_COVERAGE</constant></term>
                 <listitem>
                 <para>

@@ -5,7 +5,7 @@
     <refmeta>
         <refmetainfo>
             <copyright>
-                <year>2012</year>
+                <year>2012-2013</year>
                 <holder>Khronos Group</holder>
             </copyright>
         </refmetainfo>
@@ -56,9 +56,10 @@
         <para>
             <function>atomicCompSwap</function> performs an atomic comparison of <parameter>compare</parameter> with the contents of
             <parameter>mem</parameter>. If the content of <parameter>mem</parameter> is equal to <parameter>compare</parameter>,
-            then the content of <parameter>data</parameter> is written into <parameter>mem</parameter> and is returned from
-            the function. Otherwise, the original contents of <parameter>mem</parameter>
-            are returned. The contents of the memory being updated by the atomic operation are
+            then the content of <parameter>data</parameter> is written into <parameter>mem</parameter>,
+            otherwise the content of <parameter>mem</parameter> is unmodifed.
+            The function returns the original content of <parameter>mem</parameter> regardless of the
+            outcome of the comparison. The contents of the memory being updated by the atomic operation are
             guaranteed not to be modified by any other assignment or atomic memory function in any shader
             invocation between the time the original value is read and the time the new value is written.
         </para>
@@ -95,7 +96,7 @@
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"></trademark> 2011-2012 Khronos Group.
+            Copyright <trademark class="copyright"></trademark> 2011-2013 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
             <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.

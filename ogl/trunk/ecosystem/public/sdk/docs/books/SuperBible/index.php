@@ -22,10 +22,10 @@
 OpenGL Technical Library, is now available!</P>
 
 <P>
-OpenGL® SuperBible, Sixth Edition, is the definitive programmer’s guide, tutorial, and
-reference for the world’s leading 3D API for real-time computer graphics, OpenGL 4.3.
+OpenGL&reg; SuperBible, Sixth Edition, is the definitive programmer's guide, tutorial, and
+reference for the world's leading 3D API for real-time computer graphics, OpenGL 4.3.
 The best all-around introduction to OpenGL for developers at all levels of experience,
-it clearly explains both the newest API and indispensable related concepts. You’ll find
+it clearly explains both the newest API and indispensable related concepts. You'll find
 up-to-date, hands-on guidance for all facets of modern OpenGL development on both
 desktop and mobile platforms, including transformations, texture mapping, shaders, buffers,
 geometry management, and much more.
@@ -48,7 +48,7 @@ graphics hardware.
 <LI>Writing your own shaders, with examples to get you started</LI>
 <LI>Cross-platform OpenGL, including essential platform-specific API initialization material for Linux, OS X, and Windows</LI>
 <LI>Vertex processing, drawing commands, primitive processing, fragments, and framebuffers</LI>
-<LI>Using compute shaders to harness today’s graphics cards for more than graphics</LI>
+<LI>Using compute shaders to harness today's graphics cards for more than graphics</LI>
 <LI>Monitoring and controlling the OpenGL graphics pipeline</LI>
 <LI>Advanced rendering: light simulation, artistic and non-photo-realistic rendering, and deferred shading</LI>
 <LI>Modern OpenGL debugging and performance optimization</LI>

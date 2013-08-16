@@ -244,10 +244,6 @@
             does not also contain <constant>GL_MAP_PERSISTENT_BIT</constant>.
         </para>
         <para>
-            <constant>GL_INVALID_VALUE</constant> is generated if <parameter>flags</parameter> contains <constant>GL_MAP_WRITE_BIT</constant>, but
-            does not contain <constant>GL_DYNAMIC_STORAGE_BIT</constant>.
-        </para>
-        <para>
             <constant>GL_INVALID_OPERATION</constant> is generated if the <constant>GL_BUFFER_IMMUTABLE_STORAGE</constant> flag of the buffer
             bound to <parameter>target</parameter> is <constant>GL_TRUE</constant>.
         </para>

@@ -70,7 +70,7 @@
     <refsect1 id="description"><title>Description</title>
         <para>
             <function>gluLookAt</function> creates a viewing matrix derived from an eye point, a reference
-            point indicating the center of the scene, and an <emphasis>UP</emphasis> vector.  
+            point indicating the center of the scene, and an <emphasis>UP</emphasis> vector.
         </para>
         <para>
             The matrix
@@ -79,17 +79,17 @@
             When a typical projection matrix is used,
             the center of the scene therefore maps to the center of the viewport.
             Similarly, the direction described by the <emphasis>UP</emphasis>
-            vector projected onto the viewing plane is mapped to the positive <emphasis>y</emphasis> 
+            vector projected onto the viewing plane is mapped to the positive <emphasis>y</emphasis>
             axis so that it points upward in the viewport.
             The <emphasis>UP</emphasis> vector must not be parallel to the line of sight from the
             eye point to the reference point.
         </para>
         <para>
-            Let 
+            Let
         </para>
         <para>
             <informalequation><mml:math>
-                <!-- eqn: F  =  left (   matrix {    ccol { centerX - eyeX above 	  centerY - eyeY above 	  centerZ - eyeZ } }    right ):-->
+                <!-- eqn: F  =  left (   matrix {    ccol { centerX - eyeX above          centerY - eyeY above    centerZ - eyeZ } }    right ):-->
                 <mml:mrow>
                     <mml:mi mathvariant="italic">F</mml:mi>
                     <mml:mo>=</mml:mo>
@@ -130,7 +130,7 @@
         <para>
         </para>
         <para>
-            Let <emphasis>UP</emphasis> be the vector 
+            Let <emphasis>UP</emphasis> be the vector
             <inlineequation><mml:math>
                 <!-- eqn: (upX, upY, upZ):-->
                 <mml:mfenced open="(" close=")">
@@ -138,10 +138,10 @@
                     <mml:mi mathvariant="italic">upY</mml:mi>
                     <mml:mi mathvariant="italic">upZ</mml:mi>
                 </mml:mfenced>
-            </mml:math></inlineequation>. 
+            </mml:math></inlineequation>.
         </para>
         <para>
-            Then normalize as follows: 
+            Then normalize as follows:
             <informalequation><mml:math>
                 <!-- eqn: f  =  F over {|| F ||}:-->
                 <mml:mrow>
@@ -180,7 +180,7 @@
         <para>
         </para>
         <para>
-            Finally, let 
+            Finally, let
             <inlineequation><mml:math>
                 <!-- eqn: s  =  f  times  UP sup prime:-->
                 <mml:mrow>
@@ -195,14 +195,21 @@
                     </mml:mrow>
                 </mml:mrow>
             </mml:math></inlineequation>,
-            and 
+            and
             <inlineequation><mml:math>
-                <!-- eqn: u  =  s  times  f:-->
+                <!-- eqn: u  =  ( s over {|| s ||} )  times  f:-->
                 <mml:mrow>
                     <mml:mi mathvariant="italic">u</mml:mi>
                     <mml:mo>=</mml:mo>
                     <mml:mrow>
-                        <mml:mi mathvariant="italic">s</mml:mi>
+                        <mml:mfenced open="(" close=")">
+                            <mml:mfrac>
+                                <mml:mi mathvariant="italic">s</mml:mi>
+                                <mml:mfenced open="&DoubleVerticalBar;" close="&DoubleVerticalBar;">
+                                    <mml:mi mathvariant="italic">s</mml:mi>
+                                </mml:mfenced>
+                            </mml:mfrac>
+                        </mml:mfenced>
                         <mml:mo>&times;</mml:mo>
                         <mml:mi mathvariant="italic">f</mml:mi>
                     </mml:mrow>
@@ -345,7 +352,7 @@
             </mml:math></informalequation>
         </para>
         <para>
-            and <function>gluLookAt</function> is equivalent to 
+            and <function>gluLookAt</function> is equivalent to
             <programlisting>
 glMultMatrixf(M);
 glTranslated(-eyex, -eyey, -eyez);

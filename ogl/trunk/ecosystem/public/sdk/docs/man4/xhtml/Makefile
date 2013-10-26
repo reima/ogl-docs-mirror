@@ -478,6 +478,8 @@ MODIFIEDXML = \
 
 XML    = $(GL4XML) $(GL41XML) $(GL42XML) $(GL43XML) $(GL44XML) $(MODIFIEDFORGL4XML) $(UNMODIFIEDXML)
 
+default: $(XML) index.html
+
 glTexImage1D.xml \
 glTexImage2D.xml \
 glTexImage3D.xml \
@@ -485,8 +487,6 @@ glTexStorage1D.xml \
 glTexStorage2D.xml \
 glTexStorage3D.xml \
     : ../internalformattable.xml ../baseformattable.xml ../compressedformattable.xml
-
-default: $(XML) index.html
 
 index.html: Makefile
 	./makeindex.pl . .. > $@

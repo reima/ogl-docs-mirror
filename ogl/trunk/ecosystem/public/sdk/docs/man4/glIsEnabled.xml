@@ -2,13 +2,13 @@
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
               "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
 <refentry id="glIsEnabled">
+    <refentryinfo>
+        <copyright>
+            <year>1991-2006</year>
+            <holder>Silicon Graphics, Inc.</holder>
+        </copyright>
+    </refentryinfo>
     <refmeta>
-        <refmetainfo>
-            <copyright>
-                <year>1991-2006</year>
-                <holder>Silicon Graphics, Inc.</holder>
-            </copyright>
-        </refmetainfo>
         <refentrytitle>glIsEnabled</refentrytitle>
         <manvolnum>3G</manvolnum>
     </refmeta>
@@ -186,7 +186,7 @@
                     </row>
                     <row>
                         <entry align="left">
-                        <constant>GL_POLYGON_OFFSET_FILL</constant> 
+                        <constant>GL_POLYGON_OFFSET_FILL</constant>
                         </entry>
                         <entry align="left">
                         <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry>
@@ -194,7 +194,7 @@
                     </row>
                     <row>
                         <entry align="left">
-                        <constant>GL_POLYGON_OFFSET_LINE</constant> 
+                        <constant>GL_POLYGON_OFFSET_LINE</constant>
                         </entry>
                         <entry align="left">
                         <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry>
@@ -202,7 +202,7 @@
                     </row>
                     <row>
                         <entry align="left">
-                        <constant>GL_POLYGON_OFFSET_POINT</constant> 
+                        <constant>GL_POLYGON_OFFSET_POINT</constant>
                         </entry>
                         <entry align="left">
                         <citerefentry><refentrytitle>glPolygonOffset</refentrytitle></citerefentry>
@@ -218,7 +218,7 @@
                     </row>
                     <row>
                         <entry align="left">
-                        <constant>GL_PRIMITIVE_RESTART</constant> 
+                        <constant>GL_PRIMITIVE_RESTART</constant>
                         </entry>
                         <entry align="left">
                         <citerefentry><refentrytitle>glEnable</refentrytitle></citerefentry>, <citerefentry><refentrytitle>glPrimitiveRestartIndex</refentrytitle></citerefentry>

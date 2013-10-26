@@ -31,9 +31,9 @@
     <refsect1 id="description"><title>Description</title>
     <para><function>glIsShader</function> returns
     <constant>GL_TRUE</constant> if <parameter>shader</parameter> is
-    the name of a shader object previously created with 
-        <citerefentry><refentrytitle>glCreateShader</refentrytitle></citerefentry> 
-        and not yet deleted with <citerefentry><refentrytitle>glDeleteShader</refentrytitle></citerefentry>. 
+    the name of a shader object previously created with
+        <citerefentry><refentrytitle>glCreateShader</refentrytitle></citerefentry>
+        and not yet deleted with <citerefentry><refentrytitle>glDeleteShader</refentrytitle></citerefentry>.
         If <parameter>shader</parameter> is
     zero or a non-zero value that is not the name of a shader
     object, or if an error occurs, <function>glIsShader </function> returns
@@ -44,7 +44,7 @@
     not a valid shader object name.</para>
 
     <para>A shader object marked for deletion with <citerefentry><refentrytitle>glDeleteShader</refentrytitle></citerefentry>
-        but still attached to a program object is still considered 
+        but still attached to a program object is still considered
         a shader object and <function>glIsShader</function> will return <constant>GL_TRUE</constant>.</para>
     </refsect1>
     <refsect1 id="associatedgets"><title>Associated Gets</title>
@@ -72,8 +72,8 @@
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"></trademark> 2003-2005 3Dlabs Inc. Ltd. 
-            This material may be distributed subject to the terms and conditions set forth in 
+            Copyright <trademark class="copyright"></trademark> 2003-2005 3Dlabs Inc. Ltd.
+            This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
             <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.
         </para>

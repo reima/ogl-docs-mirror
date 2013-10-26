@@ -123,33 +123,7 @@
         <paramdef>GLuint <parameter>v2</parameter></paramdef>
         <paramdef>GLuint <parameter>v3</parameter></paramdef>
         </funcprototype>
-    </funcsynopsis>
-    </refsynopsisdiv>
-    <refsect1 id="parameters"><title>Parameters</title>
-    <variablelist>
-        <varlistentry>
-        <term><parameter>location</parameter></term>
-        <listitem>
-            <para>Specifies the location of the uniform variable
-            to be modified.</para>
-        </listitem>
-        </varlistentry>
-        <varlistentry>
-        <term>
-            <parameter>v0</parameter>,
-            <parameter>v1</parameter>,
-            <parameter>v2</parameter>,
-            <parameter>v3</parameter>
-        </term>
-        <listitem>
-            <para>Specifies the new values to be used for the
-            specified uniform variable.</para>
-        </listitem>
-        </varlistentry>
-    </variablelist>
-    </refsect1>
-    <refsynopsisdiv><title>C Specification</title>
-    <funcsynopsis>
+            <!-- Vector commands -->
         <funcprototype>
         <funcdef>void <function>glUniform1fv</function></funcdef>
         <paramdef>GLint <parameter>location</parameter></paramdef>
@@ -222,39 +196,7 @@
         <paramdef>GLsizei <parameter>count</parameter></paramdef>
         <paramdef>const GLuint *<parameter>value</parameter></paramdef>
         </funcprototype>
-    </funcsynopsis>
-    </refsynopsisdiv>
-    <refsect1 id="parameters2"><title>Parameters</title>
-    <variablelist>
-        <varlistentry>
-        <term><parameter>location</parameter></term>
-        <listitem>
-            <para>Specifies the location of the uniform value to
-            be modified.</para>
-        </listitem>
-        </varlistentry>
-        <varlistentry>
-        <term><parameter>count</parameter></term>
-        <listitem>
-            <para>Specifies the number of elements that are to
-            be modified. This should be 1 if the targeted
-            uniform variable is not an array, and 1 or more if it is
-            an array.</para>
-        </listitem>
-        </varlistentry>
-        <varlistentry>
-        <term><parameter>value</parameter></term>
-        <listitem>
-            <para>Specifies a pointer to an array of
-            <parameter>count</parameter> values that will be
-            used to update the specified uniform
-            variable.</para>
-        </listitem>
-        </varlistentry>
-    </variablelist>
-    </refsect1>
-    <refsynopsisdiv><title>C Specification</title>
-    <funcsynopsis>
+            <!-- Matrix commands -->
         <funcprototype>
         <funcdef>void <function>glUniformMatrix2fv</function></funcdef>
         <paramdef>GLint <parameter>location</parameter></paramdef>
@@ -320,39 +262,64 @@
         </funcprototype>
     </funcsynopsis>
     </refsynopsisdiv>
-    <refsect1 id="parameters3"><title>Parameters</title>
+    <refsect1 id="parameters"><title>Parameters</title>
     <variablelist>
         <varlistentry>
         <term><parameter>location</parameter></term>
         <listitem>
-            <para>Specifies the location of the uniform value to
-            be modified.</para>
+            <para>Specifies the location of the uniform variable
+            to be modified.</para>
         </listitem>
         </varlistentry>
         <varlistentry>
         <term><parameter>count</parameter></term>
         <listitem>
-            <para>Specifies the number of matrices that are to
-            be modified. This should be 1 if the targeted
-            uniform variable is not an array of matrices, and 1 or more if it is
-            an array of matrices.</para>
+            <para>
+                For the vector (<function>glUniform*v</function>) commands,
+                specifies the number of elements that are to be modified.
+                This should be 1 if the targeted uniform variable is not an
+                array, and 1 or more if it is an array.
+            </para>
+            <para>
+                For the matrix (<function>glUniformMatrix*</function>)
+                commands, specifies the number of matrices that are to be
+                modified. This should be 1 if the targeted uniform variable
+                is not an array of matrices, and 1 or more if it is an array
+                of matrices.
+            </para>
         </listitem>
         </varlistentry>
         <varlistentry>
         <term><parameter>transpose</parameter></term>
         <listitem>
-            <para>Specifies whether to transpose the matrix as
-            the values are loaded into the uniform
-            variable.</para>
+            <para>
+                For the matrix commands, specifies whether to transpose the
+                matrix as the values are loaded into the uniform variable.
+            </para>
+        </listitem>
+        </varlistentry>
+        <varlistentry>
+        <term>
+            <parameter>v0</parameter>,
+            <parameter>v1</parameter>,
+            <parameter>v2</parameter>,
+            <parameter>v3</parameter>
+        </term>
+        <listitem>
+            <para>
+                For the scalar commands, specifies the new values to be used
+                for the specified uniform variable.
+            </para>
         </listitem>
         </varlistentry>
         <varlistentry>
         <term><parameter>value</parameter></term>
         <listitem>
-            <para>Specifies a pointer to an array of
-            <parameter>count</parameter> values that will be
-            used to update the specified uniform
-            variable.</para>
+            <para>
+                For the vector and matrix commands, specifies a pointer to
+                an array of <parameter>count</parameter> values that will be
+                used to update the specified uniform variable.
+            </para>
         </listitem>
         </varlistentry>
     </variablelist>
@@ -434,7 +401,7 @@
     <parameter>count</parameter></para>
 
     <para>The commands
-    <function>glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv</function> 
+    <function>glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv</function>
         are used to modify a matrix or an array of matrices. The numbers in the
     command name are interpreted as the dimensionality of the matrix.
     The number <function>2</function> indicates a 2 &#215; 2 matrix
@@ -443,7 +410,7 @@
     <function>4</function> indicates a 4 &#215; 4 matrix (i.e., 16
     values). Non-square matrix dimensionality is explicit, with the first
         number representing the number of columns and the second number
-        representing the number of rows.  For example, 
+        representing the number of rows.  For example,
         <function>2x4</function> indicates a 2 &#215; 4 matrix with 2 columns
         and 4 rows (i.e., 8 values).
         If <parameter>transpose</parameter> is
@@ -550,9 +517,9 @@
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"></trademark> 2003-2005 3Dlabs Inc. Ltd. 
+            Copyright <trademark class="copyright"></trademark> 2003-2005 3Dlabs Inc. Ltd.
             Copyright <trademark class="copyright"></trademark> 2010 Khronos Group.
-            This material may be distributed subject to the terms and conditions set forth in 
+            This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
             <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.
         </para>

@@ -47,3 +47,14 @@ distoss:
 	$(SUBDIRS_MAKERULE)
 
 include $(COMMONRULES)
+
+DOCBOOK4DTD = http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd
+XMLLINT = xmllint --noout --xinclude --dtdvalid $(DOCBOOK4DTD)
+
+validate:
+	$(XMLLINT) [a-t]*.xml
+
+tarball:
+	tar czf m.tgz index.php xhtml/*.*
+	echo slatturniphorse
+	scp m.tgz jleech@secure3.khronos.org:~

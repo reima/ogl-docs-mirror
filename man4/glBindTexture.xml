@@ -2,13 +2,13 @@
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
               "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
 <refentry id="glBindTexture">
+    <refentryinfo>
+        <copyright>
+            <year>1991-2006</year>
+            <holder>Silicon Graphics, Inc.</holder>
+        </copyright>
+    </refentryinfo>
     <refmeta>
-        <refmetainfo>
-            <copyright>
-                <year>1991-2006</year>
-                <holder>Silicon Graphics, Inc.</holder>
-            </copyright>
-        </refmetainfo>
         <refentrytitle>glBindTexture</refentrytitle>
         <manvolnum>3G</manvolnum>
     </refmeta>
@@ -105,7 +105,7 @@
         <para>
             While a texture is bound, GL operations on the target to which it is
             bound affect the bound texture, and queries of the target to which it
-            is bound return state from the bound texture. 
+            is bound return state from the bound texture.
             In effect, the texture targets become aliases for the textures currently
             bound to them, and the texture name zero refers to the default textures
             that were bound to them at initialization.

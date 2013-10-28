@@ -33,46 +33,59 @@
         <varlistentry>
         <term><parameter>uniformCount</parameter></term>
         <listitem>
-            <para>Specifies both the number of elements in the array of indices <parameter>uniformIndices</parameter> and the
-            number of parameters written to <parameter>params</parameter> upon successful return.</para>
+            <para>Specifies both the number of elements in the array of
+            indices <parameter>uniformIndices</parameter> and the number of
+            parameters written to <parameter>params</parameter> upon
+            successful return.</para>
         </listitem>
         </varlistentry>
         <varlistentry>
         <term><parameter>uniformIndices</parameter></term>
         <listitem>
-            <para>Specifies the address of an array of <parameter>uniformCount</parameter> integers containing the indices of
-            uniforms within <parameter>program</parameter> whose parameter <parameter>pname</parameter> pname.</para>
+            <para>Specifies the address of an array of
+            <parameter>uniformCount</parameter> integers containing the
+            indices of uniforms within <parameter>program</parameter> whose
+            parameter <parameter>pname</parameter> should be queried.</para>
         </listitem>
         </varlistentry>
         <varlistentry>
         <term><parameter>pname</parameter></term>
         <listitem>
-            <para>Specifies the property of the each uniform in <parameter>uniformIndices</parameter> that should be
-            written into the corresponding element of <parameter>params</parameter>.</para>
+            <para>Specifies the property of each uniform in
+            <parameter>uniformIndices</parameter> that should be written
+            into the corresponding element of
+            <parameter>params</parameter>.</para>
         </listitem>
         </varlistentry>
         <varlistentry>
         <term><parameter>params</parameter></term>
         <listitem>
-            <para>Specifies the address of an array of <parameter>uniformCount</parameter> integers which are to
-            receive the value of <parameter>pname</parameter> for each uniform in <parameter>uniformIndices</parameter>.</para>
+            <para>Specifies the address of an array of
+            <parameter>uniformCount</parameter> integers which are to
+            receive the value of <parameter>pname</parameter> for each
+            uniform in <parameter>uniformIndices</parameter>.</para>
         </listitem>
         </varlistentry>
     </variablelist>
     </refsect1>
     <refsect1 id="description"><title>Description</title>
         <para>
-            <function>glGetActiveUniformsiv</function> queries the value of the parameter named <parameter>pname</parameter>
-            for each of the uniforms within <parameter>program</parameter> whose indices are specified in the array of
-            <parameter>uniformCount</parameter> unsigned integers <parameter>uniformIndices</parameter>. Upon success,
-            the value of the parameter for each uniform is written into the corresponding entry in the array whose
-            address is given in <parameter>params</parameter>. If an error is generated, nothing is written into
-            <parameter>params</parameter>.
+            <function>glGetActiveUniformsiv</function> queries the value of
+            the parameter named <parameter>pname</parameter> for each of the
+            uniforms within <parameter>program</parameter> whose indices are
+            specified in the array of <parameter>uniformCount</parameter>
+            unsigned integers <parameter>uniformIndices</parameter>. Upon
+            success, the value of the parameter for each uniform is written
+            into the corresponding entry in the array whose address is given
+            in <parameter>params</parameter>. If an error is generated,
+            nothing is written into <parameter>params</parameter>.
         </para>
         <para>
-            If <parameter>pname</parameter> is <constant>GL_UNIFORM_TYPE</constant>, then an array identifying the types
-            of uniforms specified by the corresponding array of <parameter>uniformIndices</parameter> is returned. The
-            returned types can be any of the values from the following table:
+            If <parameter>pname</parameter> is
+            <constant>GL_UNIFORM_TYPE</constant>, then an array identifying
+            the types of uniforms specified by the corresponding array of
+            <parameter>uniformIndices</parameter> is returned. The returned
+            types can be any of the values from the following table:
         <informaltable frame="topbot">
             <tgroup cols="2" align="left">
                 <colspec colwidth="1.1*" />

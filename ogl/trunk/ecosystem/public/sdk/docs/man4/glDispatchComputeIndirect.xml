@@ -63,8 +63,7 @@
             A call to <function>glDispatchComputeIndirect</function> is equivalent, assuming no
             errors are generated, to:
             <programlisting><![CDATA[    cmd = (const DispatchIndirectCommand  *)indirect;
-    glDispatchComputeIndirect(cmd->num_groups_x, cmd->num_groups_y, cmd->num_groups_z);
-    }]]></programlisting>
+    glDispatchComputeIndirect(cmd->num_groups_x, cmd->num_groups_y, cmd->num_groups_z);]]></programlisting>
         </para>
         <para>
             Unlike <citerefentry><refentrytitle>glDispatchCompute</refentrytitle></citerefentry>,

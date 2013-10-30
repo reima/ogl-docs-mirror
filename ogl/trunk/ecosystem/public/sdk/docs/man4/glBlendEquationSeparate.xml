@@ -68,7 +68,7 @@
         <para>
             The blend equations determines how a new pixel (the ''source'' color)
             is combined with a pixel already in the framebuffer (the ''destination''
-            color).  These functions specifie one blend equation for the RGB-color
+            color).  These functions specify one blend equation for the RGB-color
             components and one blend equation for the alpha component. <function>glBlendEquationSeparatei</function>
             specifies the blend equations for a single draw buffer whereas <function>glBlendEquationSeparate</function>
             sets the blend equations for all draw buffers.

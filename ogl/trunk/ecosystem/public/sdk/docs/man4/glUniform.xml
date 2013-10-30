@@ -402,18 +402,18 @@
 
     <para>The commands
     <function>glUniformMatrix{2|3|4|2x3|3x2|2x4|4x2|3x4|4x3}fv</function>
-        are used to modify a matrix or an array of matrices. The numbers in the
+    are used to modify a matrix or an array of matrices. The numbers in the
     command name are interpreted as the dimensionality of the matrix.
     The number <function>2</function> indicates a 2 &#215; 2 matrix
     (i.e., 4 values), the number <function>3</function> indicates a
     3 &#215; 3 matrix (i.e., 9 values), and the number
     <function>4</function> indicates a 4 &#215; 4 matrix (i.e., 16
     values). Non-square matrix dimensionality is explicit, with the first
-        number representing the number of columns and the second number
-        representing the number of rows.  For example,
-        <function>2x4</function> indicates a 2 &#215; 4 matrix with 2 columns
-        and 4 rows (i.e., 8 values).
-        If <parameter>transpose</parameter> is
+    number representing the number of columns and the second number
+    representing the number of rows.  For example,
+    <function>2x4</function> indicates a 2 &#215; 4 matrix with 2 columns
+    and 4 rows (i.e., 8 values).
+    If <parameter>transpose</parameter> is
     <constant>GL_FALSE</constant>, each matrix is assumed to be
     supplied in column major order. If
     <parameter>transpose</parameter> is

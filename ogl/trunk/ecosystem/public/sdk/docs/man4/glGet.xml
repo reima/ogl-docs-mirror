@@ -135,7 +135,7 @@
     </refsect1>
     <refsect1 id="description"><title>Description</title>
         <para>
-            These four commands return values for simple state variables in GL.
+            These commands return values for simple state variables in GL.
             <parameter>pname</parameter> is a symbolic constant indicating the state variable to be returned,
             and <parameter>data</parameter> is a pointer to an array of the indicated type in
             which to place the returned data.

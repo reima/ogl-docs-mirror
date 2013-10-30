@@ -65,8 +65,6 @@
                 <term><constant>GL_VENDOR</constant></term>
                 <listitem>
                     <para>
-                    </para>
-                    <para>
                         Returns the company responsible for this GL implementation.
                         This name does not change from release to release.
                     </para>
@@ -75,8 +73,6 @@
             <varlistentry>
                 <term><constant>GL_RENDERER</constant></term>
                 <listitem>
-                    <para>
-                    </para>
                     <para>
                         Returns the name of the renderer.
                         This name is typically specific to a particular configuration of a hardware
@@ -89,8 +85,6 @@
                 <term><constant>GL_VERSION</constant></term>
                 <listitem>
                     <para>
-                    </para>
-                    <para>
                         Returns a version or release number.
                     </para>
                 </listitem>
@@ -98,8 +92,6 @@
             <varlistentry>
                 <term><constant>GL_SHADING_LANGUAGE_VERSION</constant></term>
                 <listitem>
-                    <para>
-                    </para>
                     <para>
                         Returns a version or release number for the shading language.
                     </para>
@@ -115,8 +107,6 @@
             <varlistentry>
                 <term><constant>GL_EXTENSIONS</constant></term>
                 <listitem>
-                    <para>
-                    </para>
                     <para>
                         For <function>glGetStringi</function> only, returns the extension string
                         supported by the implementation at <parameter>index</parameter>.

@@ -8,19 +8,15 @@ SED	= sed
 # the Docbook modular stylesheets, and specifically the
 # stylesheet to convert Docbook+MathML => XHTML+MathML
 DB2XHTML = opengl-man.xsl
-# ../../mancommon/opengl-man.xsl
 
 PREPROCESSOR = preproc.sed
 
 .SUFFIXES: .gl .xml .html .xhtml .ck.xhtml .tex .pdf .3G .tar .tar.gz
 .PHONY: man html pdf tex
 
-# ../../mancommon/opengl-man.xsl
-
 %.xml: ../%.xml $(DB2XHTML) $(PREPROCESSOR)
-	$(XSLT) --xinclude -o $@.tmp $(DB2XHTML) $<
-	$(SED) -f $(PREPROCESSOR) $@.tmp > $@
-	$(RM) $@.tmp
+	$(XSLT) --xinclude -o $@ $(DB2XHTML) $<
+	$(SED) -i -f $(PREPROCESSOR) $@
 
 GL_ARB_draw_indirect_entries = \
     glDrawArraysIndirect.xml \

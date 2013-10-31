@@ -65,18 +65,19 @@
         <informaltable frame="topbot">
             <tgroup cols="11" align="left">
                 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="vartablecols.xml" xpointer="xpointer(//colspec)" />
-                <thead>
-                    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="vartableheader.xml" />
-                </thead>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="vartableheader.xml" />
                 <tbody>
                     <row>
-                        <entry>gl_PointSize (vertex shader)</entry>#newin11#
+                        <entry>gl_PointSize (vertex shader)</entry>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(row/new11/entry)" />
                     </row>
                     <row>
-                        <entry>gl_PointSize (geometry shader)</entry>#newin15#
+                        <entry>gl_PointSize (geometry shader)</entry>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(row/new15/entry)" />
                     </row>
                     <row>
-                        <entry>gl_PointSize (tessellation evaluation shader)</entry>#newin40#
+                        <entry>gl_PointSize (tessellation evaluation shader)</entry>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(row/new40/entry)" />
                     </row>
                 </tbody>
             </tgroup>

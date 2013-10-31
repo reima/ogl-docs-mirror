@@ -4,7 +4,7 @@
 <refentry id="textureGrad">
     <refentryinfo>
         <copyright>
-            <year>2011</year>
+            <year>2011-2013</year>
             <holder>Khronos Group</holder>
         </copyright>
     </refentryinfo>
@@ -258,18 +258,19 @@
         <informaltable frame="topbot">
             <tgroup cols="11" align="left">
                 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="vartablecols.xml" xpointer="xpointer(//colspec)" />
-                <thead>
-                    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="functableheader.xml" />
-                </thead>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="functableheader.xml" />
                 <tbody>
                     <row>
-                        <entry>textureGrad</entry>#newin13#
+                        <entry>textureGrad</entry>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(row/new13/entry)" />
                     </row>
                     <row>
-                        <entry>textureGrad (gsampler2DRect{Shadow})</entry>#newin14#
+                        <entry>textureGrad (gsampler2DRect{Shadow})</entry>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(row/new14/entry)" />
                     </row>
                     <row>
-                        <entry>textureGrad (gsamplerCubeArray)</entry>#newin40#
+                        <entry>textureGrad (gsamplerCubeArray)</entry>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(row/new40/entry)" />
                     </row>
                 </tbody>
             </tgroup>
@@ -299,7 +300,7 @@
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"></trademark> 2011 Khronos Group. 
+            Copyright <trademark class="copyright"></trademark> 2011-2013 Khronos Group. 
             This material may be distributed subject to the terms and conditions set forth in 
             the Open Publication License, v 1.0, 8 June 1999.
             <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.

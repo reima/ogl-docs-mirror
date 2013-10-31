@@ -5,25 +5,26 @@ XSLT	= xsltproc --nonet
 SED	= sed
 PERL = perl
 
+# XIFILES are referred to by XInclude directives in man pages
+XIFILES = \
+    ../functableheader.xml \
+    ../vartablecols.xml \
+    ../vartableheader.xml \
+    ../version.xml
+
 # Location of locally customized stylesheet, which imports
 # the Docbook modular stylesheets, and specifically the
 # stylesheet to convert Docbook+MathML => XHTML+MathML
 DB2XHTML = opengl-man.xsl
 # ../../mancommon/opengl-man.xsl
-PREPROCESSOR = preprocess.sed
-POSTPROCESSOR = postprocess.sed
 
 .SUFFIXES: .gl .xml .html .xhtml .ck.xhtml .tex .pdf .3G .tar .tar.gz
 .PHONY: man html pdf tex
 
 # ../../mancommon/opengl-man.xsl
 
-%.xml: ../%.xml $(DB2XHTML) $(PREPROCESSOR) $(POSTPROCESSOR)
-	$(SED) -f $(PREPROCESSOR) $< > $@.pre
-	$(XSLT) --xinclude -o $@.tmp $(DB2XHTML) $@.pre
-	$(SED) -f $(POSTPROCESSOR) $@.tmp > $@
-	$(RM) $@.pre
-	$(RM) $@.tmp
+%.xml: ../%.xml $(DB2XHTML) $(XIFILES)
+	$(XSLT) --xinclude -o $@ $(DB2XHTML) $<
 
 Angle_and_Trigonometry_Functions = \
     radians.xml \

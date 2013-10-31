@@ -4,7 +4,7 @@
 <refentry id="sign">
     <refentryinfo>
         <copyright>
-            <year>2011</year>
+            <year>2011-2013</year>
             <holder>Khronos Group</holder>
         </copyright>
     </refentryinfo>
@@ -58,18 +58,19 @@
         <informaltable frame="topbot">
             <tgroup cols="11" align="left">
                 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="vartablecols.xml" xpointer="xpointer(//colspec)" />
-                <thead>
-                    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="functableheader.xml" />
-                </thead>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="functableheader.xml" />
                 <tbody>
                     <row>
-                        <entry>sign (genType)</entry>#newin13#
+                        <entry>sign (genType)</entry>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(row/new13/entry)" />
                     </row>
                     <row>
-                        <entry>sign (genIType)</entry>#newin15#
+                        <entry>sign (genIType)</entry>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(row/new15/entry)" />
                     </row>
                     <row>
-                        <entry>sign (genDType)</entry>#newin40#
+                        <entry>sign (genDType)</entry>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(row/new40/entry)" />
                     </row>
                 </tbody>
             </tgroup>

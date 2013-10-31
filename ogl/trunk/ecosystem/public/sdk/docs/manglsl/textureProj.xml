@@ -117,16 +117,19 @@
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>
         <informaltable frame="topbot">
-            #VARTABLECOLS#
+            <tgroup cols="11" align="left">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="vartablecols.xml" xpointer="xpointer(//colspec)" />
                 <thead>
-                    #FUNCTABLEHEADER#
+                    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="functableheader.xml" />
+                </thead>
+                <tbody>
                     <row>
                         <entry>textureProj</entry>#newin13#
                     </row>
                     <row>
                         <entry>textureProj (gsampler2DRect{Shadow})</entry>#newin14#
                     </row>
-                </thead>
+                </tbody>
             </tgroup>
         </informaltable>
     </refsect1>

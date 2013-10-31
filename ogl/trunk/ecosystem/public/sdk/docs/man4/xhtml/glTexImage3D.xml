@@ -164,7 +164,7 @@
             <em class="parameter"><code>internalFormat</code></em> may be one of the base internal formats shown in
             Table 1, below
         </p><p>
-            </p><div class="table"><a id="idp11842416"></a><p class="title"><strong>Table 1. Base Internal Formats</strong></p><div class="table-contents"><table summary="Base Internal Formats" border="1"><colgroup><col align="left" /><col align="left" /><col align="left" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
+            </p><div class="table"><a id="idp10050176"></a><p class="title"><strong>Table 1. Base Internal Formats</strong></p><div class="table-contents"><table summary="Base Internal Formats" border="1"><colgroup><col align="left" /><col align="left" /><col align="left" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
             Base Internal Format
             </strong></span></th><th align="left"><span class="bold"><strong>
             RGBA, Depth and Stencil Values
@@ -175,7 +175,7 @@
             <em class="parameter"><code>internalFormat</code></em> may also be one of the sized internal formats
             shown in Table 2, below
         </p><p>
-            </p><div class="table"><a id="idp13141888"></a><p class="title"><strong>Table 2. Sized Internal Formats</strong></p><div class="table-contents"><table summary="Sized Internal Formats" border="1"><colgroup><col align="left" /><col align="left" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
+            </p><div class="table"><a id="idp8684400"></a><p class="title"><strong>Table 2. Sized Internal Formats</strong></p><div class="table-contents"><table summary="Sized Internal Formats" border="1"><colgroup><col align="left" /><col align="left" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
             Sized Internal Format
             </strong></span></th><th align="left"><span class="bold"><strong>
             Base Internal Format
@@ -194,7 +194,7 @@
             Finally, <em class="parameter"><code>internalFormat</code></em> may also be one of the generic or compressed
             compressed texture formats shown in Table 3 below
         </p><p>
-            </p><div class="table"><a id="idp10731184"></a><p class="title"><strong>Table 3. Compressed Internal Formats</strong></p><div class="table-contents"><table summary="Compressed Internal Formats" border="1"><colgroup><col align="left" /><col align="left" /><col align="left" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
+            </p><div class="table"><a id="idp10176224"></a><p class="title"><strong>Table 3. Compressed Internal Formats</strong></p><div class="table-contents"><table summary="Compressed Internal Formats" border="1"><colgroup><col align="left" /><col align="left" /><col align="left" /></colgroup><thead><tr><th align="left"><span class="bold"><strong>
             Compressed Internal Format
             </strong></span></th><th align="left"><span class="bold"><strong>
             Base Internal Format

@@ -53,7 +53,7 @@
     <refsect1 id="description"><title>Description</title>
         <para>
             <function>distance</function> returns the distance between the two points <parameter>p0</parameter> and <parameter>p1</parameter>. i.e.,
-            <code><citerefentry><refentrytitle>length</refentrytitle></citerefentry>(<parameter>p0</parameter>, <parameter>p1</parameter>);</code>
+            <code><function>length</function>(<parameter>p0</parameter>, <parameter>p1</parameter>);</code>
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>

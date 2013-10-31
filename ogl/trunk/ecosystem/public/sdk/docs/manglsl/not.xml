@@ -39,7 +39,7 @@
     <refsect1 id="description"><title>Description</title>
         <para>
             <function>not</function> logically inverts the boolean vector <parameter>x</parameter>. It returns
-            a new boolean vector for which each element <emphasis>i</emphasis> is computed as <code>!<parameter>x</parameter>[<emphasis>i</emphasis>]</code>.
+            a new boolean vector for which each element <emphasis>i</emphasis> is computed as <code>!<parameter>x</parameter>[<parameter>i</parameter>]</code>.
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>

@@ -17,9 +17,9 @@
         <refpurpose>contains the window-relative coordinates of the current fragment</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
-        <funcsynopsis>
+        <para>
             <function>in vec4 gl_FragCoord;</function>
-        </funcsynopsis>
+        </para>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>

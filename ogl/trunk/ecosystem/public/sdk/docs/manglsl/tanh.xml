@@ -43,16 +43,24 @@
             The hyperbolic tangent of <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation>
             is computed as
             <inlineequation><mml:math>
-              <mml:mrow>
-                <mml:mfrac>
-                  <mml:mrow>
-                    sinh(<mml:mi>x</mml:mi>)
-                  </mml:mrow>
-                  <mml:mrow>
-                    cosh(<mml:mi>x</mml:mi>)
-                  </mml:mrow>
-                </mml:mfrac>
-              </mml:mrow>
+                <mml:mrow>
+                    <mml:mfrac>
+                        <mml:mrow>
+                            <mml:mi mathvariant="italic">sinh</mml:mi>
+                            <mml:mo>&af;</mml:mo>
+                            <mml:mfenced open="(" close=")">
+                                <mml:mi>x</mml:mi>
+                            </mml:mfenced>
+                        </mml:mrow>
+                        <mml:mrow>
+                            <mml:mi mathvariant="italic">cosh</mml:mi>
+                            <mml:mo>&af;</mml:mo>
+                            <mml:mfenced open="(" close=")">
+                                <mml:mi>x</mml:mi>
+                            </mml:mfenced>
+                        </mml:mrow>
+                    </mml:mfrac>
+                </mml:mrow>
             </mml:math></inlineequation>.
         </para>
     </refsect1>

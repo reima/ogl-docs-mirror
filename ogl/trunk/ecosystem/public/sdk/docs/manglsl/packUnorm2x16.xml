@@ -58,10 +58,10 @@
             The conversion for component <parameter>c</parameter> of <parameter>v</parameter> to fixed-point is
             performed as follows:
             <itemizedlist>
-                <listitem><function>packUnorm2x16</function>: <code><citerefentry><refentrytitle>round</refentrytitle></citerefentry>(<citerefentry><refentrytitle>clamp</refentrytitle></citerefentry>(<parameter>c</parameter>, 0.0, 1.0) * 65535.0)</code></listitem>
-                <listitem><function>packSnorm2x16</function>: <code><citerefentry><refentrytitle>round</refentrytitle></citerefentry>(<citerefentry><refentrytitle>clamp</refentrytitle></citerefentry>(<parameter>c</parameter>, -1.0, 1.0) * 32767.0)</code></listitem>
-                <listitem><function>packUnorm4x8</function>: <code><citerefentry><refentrytitle>round</refentrytitle></citerefentry>(<citerefentry><refentrytitle>clamp</refentrytitle></citerefentry>(<parameter>c</parameter>, 0.0, 1.0) * 255.0)</code></listitem>
-                <listitem><function>packSnorm4x8</function>: <code><citerefentry><refentrytitle>round</refentrytitle></citerefentry>(<citerefentry><refentrytitle>clamp</refentrytitle></citerefentry>(<parameter>c</parameter>, -1.0, 1.0) * 127.0)</code></listitem>
+                <listitem><para><function>packUnorm2x16</function>: <code><function>round</function>(<function>clamp</function>(<parameter>c</parameter>, 0.0, 1.0) * 65535.0)</code></para></listitem>
+                <listitem><para><function>packSnorm2x16</function>: <code><function>round</function>(<function>clamp</function>(<parameter>c</parameter>, -1.0, 1.0) * 32767.0)</code></para></listitem>
+                <listitem><para><function>packUnorm4x8</function>: <code><function>round</function>(<function>clamp</function>(<parameter>c</parameter>, 0.0, 1.0) * 255.0)</code></para></listitem>
+                <listitem><para><function>packSnorm4x8</function>: <code><function>round</function>(<function>clamp</function>(<parameter>c</parameter>, -1.0, 1.0) * 127.0)</code></para></listitem>
             </itemizedlist>
         </para>
         <para>

@@ -17,9 +17,9 @@
         <refpurpose>contains the coordinate of the vertex within the current patch</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
-        <funcsynopsis>
+        <para>
             <function>in vec3 gl_TessCoord;</function>
-        </funcsynopsis>
+        </para>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
@@ -30,76 +30,15 @@
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>
         <informaltable frame="topbot">
-            <tgroup cols="3" align="left">
-                <colspec colwidth="1.1*" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <colspec colwidth="1*" align="center" />
-                <thead>
+            <tgroup cols="11" align="left">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="vartablecols.xml" xpointer="xpointer(//colspec)" />
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="functableheader.xml" />
+                <tbody>
                     <row>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Variable
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 1.10
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 1.20
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 1.30
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 1.40
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 1.50
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 3.30
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 4.00
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Version 4.10
-                        </emphasis></entry>
+                        <entry>gl_TessCoord</entry>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(row/new40/entry)" />
                     </row>
-                    <row>
-                        <entry>
-                            gl_TessCoord
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>  <!-- 1.10, OpenGL 2.0 -->
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>  <!-- 1.20, OpenGL 2.1 -->
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>  <!-- 1.30, OpenGL 3.0 -->
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>  <!-- 1.40, OpenGL 3.1 -->
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>  <!-- 1.50, OpenGL 3.2 -->
-                        </entry>
-                        <entry>
-                            <emphasis>-</emphasis>  <!-- 3.30, OpenGL 3.3 -->
-                        </entry>
-                        <entry>
-                            <emphasis>Y</emphasis>  <!-- 4.00, OpenGL 4.0 -->
-                        </entry>
-                        <entry>
-                            <emphasis>Y</emphasis>  <!-- 4.10, OpenGL 4.1 -->
-                        </entry>
-                    </row>
-                </thead>
+                </tbody>
             </tgroup>
         </informaltable>
     </refsect1>

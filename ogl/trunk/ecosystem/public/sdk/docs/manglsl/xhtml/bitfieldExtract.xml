@@ -13,7 +13,6 @@
             For unsigned data types, the most significant bits of the result will be set to zero. For signed data types, the most significant bits will be set to the value of
             bit <em class="parameter"><code>offset</code></em> + <em class="parameter"><code>base</code></em> - 1 (i.e., it is <span class="emphasis"><em>sign extended</em></span> to the width of the return type).
         </p><p>
-        </p><p>
             If <em class="parameter"><code>bits</code></em> is zero, the result will be zero. The result will be undefined if <em class="parameter"><code>offset</code></em> or <em class="parameter"><code>bits</code></em> is negative,
             or if the sum of <em class="parameter"><code>offset</code></em> and <em class="parameter"><code>bits</code></em> is greater than the number of bits used to store the operand.
         </p></div><div class="refsect1"><a id="versions"></a><h2>Version Support</h2><div class="informaltable"><table border="1"><colgroup><col align="left" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /></colgroup><thead><tr><th align="left"> 

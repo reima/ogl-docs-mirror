@@ -17,9 +17,9 @@
         <refpurpose>contains the number of vertices in the current patch</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
-        <funcsynopsis>
+        <para>
             <function>in int gl_PatchVerticesIn;</function>
-        </funcsynopsis>
+        </para>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>

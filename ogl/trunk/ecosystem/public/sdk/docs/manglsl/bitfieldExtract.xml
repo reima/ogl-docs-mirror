@@ -67,8 +67,8 @@
         <para>
             For unsigned data types, the most significant bits of the result will be set to zero. For signed data types, the most significant bits will be set to the value of
             bit <parameter>offset</parameter> + <parameter>base</parameter> - 1 (i.e., it is <emphasis>sign extended</emphasis> to the width of the return type).
-        <para>
         </para>
+        <para>
             If <parameter>bits</parameter> is zero, the result will be zero. The result will be undefined if <parameter>offset</parameter> or <parameter>bits</parameter> is negative,
             or if the sum of <parameter>offset</parameter> and <parameter>bits</parameter> is greater than the number of bits used to store the operand.
         </para>

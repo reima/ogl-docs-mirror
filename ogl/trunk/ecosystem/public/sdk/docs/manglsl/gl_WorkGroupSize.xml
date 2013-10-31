@@ -17,9 +17,9 @@
         <refpurpose>contains the size of the workgroup operated on by a compute shader</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
-        <funcsynopsis>
+        <para>
             <function>const uvec3 gl_WorkGroupSize</function>
-        </funcsynopsis>
+        </para>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>

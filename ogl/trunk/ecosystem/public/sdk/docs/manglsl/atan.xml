@@ -78,9 +78,9 @@
             that the angle lies in. The values returned by <function>atan</function> in this case are in the range
             <inlineequation><mml:math>
                 <mml:list order="numeric">
-                    <mml:csymbol><mml:mo>&minus;</mml:mo><mml:pi/></mml:csymbol>
+                    <mml:mrow><mml:mo>&minus;</mml:mo><mml:pi/></mml:mrow>
                     <mml:pi/>
-                    </mml:list>
+                </mml:list>
             </mml:math></inlineequation>. Results are undefined if <inlineequation><mml:math><mml:mi mathvariant="italic">x</mml:mi></mml:math></inlineequation> is zero.
         </para>
         <para>
@@ -92,7 +92,7 @@
                     <mml:mrow>
                         <mml:mo>&minus;</mml:mo>
                         <mml:mfrac>
-                            <mml:csymbol><mml:pi/></mml:csymbol>
+                            <mml:pi/>
                             <mml:mn>2</mml:mn>
                         </mml:mfrac>
                     </mml:mrow>

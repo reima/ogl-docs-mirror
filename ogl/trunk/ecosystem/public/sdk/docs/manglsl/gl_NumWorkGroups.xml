@@ -17,9 +17,9 @@
         <refpurpose>contains the number of workgroups that have been dispatched to a compute shader</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
-        <funcsynopsis>
+        <para>
             <function>in uvec3 gl_NumWorkGroups</function>
-        </funcsynopsis>
+        </para>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>

@@ -21,13 +21,13 @@
             <function>gl_PointSize</function> is a member of the <function>gl_PerVertex</function>
             named block:
         </para>
-        <funcsynopsis>
+        <para>
 <programlisting><![CDATA[    out gl_PerVertex {
         vec4 gl_Position;
         float gl_PointSize;
         float gl_ClipDistance[];
     };]]></programlisting>
-        </funcsynopsis>
+        </para>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>

@@ -53,7 +53,7 @@
     <refsect1 id="description"><title>Description</title>
         <para>
             For a given incident vector <parameter>I</parameter> and surface normal <parameter>N</parameter> <function>reflect</function> returns
-            the reflection direction calculated as <code><parameter>I</parameter> - 2.0 * <citerefentry><refentrytitle>dot</refentrytitle></citerefentry>(<parameter>N</parameter>, <parameter>I</parameter>) * <parameter>N</parameter></code>.
+            the reflection direction calculated as <code><parameter>I</parameter> - 2.0 * <function>dot</function>(<parameter>N</parameter>, <parameter>I</parameter>) * <parameter>N</parameter></code>.
         </para>
         <para>
             <parameter>N</parameter> should be normalized in order to achieve the desired result.

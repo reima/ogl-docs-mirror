@@ -46,7 +46,7 @@
                     <mml:mrow>
                         <mml:mo>&minus;</mml:mo>
                         <mml:mfrac>
-                            <mml:csymbol><mml:pi/></mml:csymbol>
+                            <mml:pi/>
                             <mml:mn>2</mml:mn>
                         </mml:mfrac>
                     </mml:mrow>

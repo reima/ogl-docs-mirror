@@ -17,9 +17,9 @@
         <refpurpose>specifies the sample coverage mask for the current fragment</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
-        <funcsynopsis>
+        <para>
             <function>out int gl_SampleMask[];</function>
-        </funcsynopsis>
+        </para>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>

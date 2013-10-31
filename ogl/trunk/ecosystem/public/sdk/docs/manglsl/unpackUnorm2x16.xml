@@ -58,10 +58,10 @@
         <para>
             The conversion for unpacked fixed point value <emphasis>f</emphasis> to floating-point is performed as follows:
             <itemizedlist>
-                <listitem><function>packUnorm2x16</function>: <code>f / 65535.0</code></listitem>
-                <listitem><function>packSnorm2x16</function>: <code><citerefentry><refentrytitle>clamp</refentrytitle></citerefentry>(f / 32727.0, -1.0, 1.0)</code></listitem>
-                <listitem><function>packUnorm4x8</function>: <code>f / 255.0</code></listitem>
-                <listitem><function>packSnorm4x8</function>: <code><citerefentry><refentrytitle>clamp</refentrytitle></citerefentry>(f / 127.0, -1.0, 1.0)</code></listitem>
+                <listitem><para><function>packUnorm2x16</function>: <code>f / 65535.0</code></para></listitem>
+                <listitem><para><function>packSnorm2x16</function>: <code><function>clamp</function>(f / 32727.0, -1.0, 1.0)</code></para></listitem>
+                <listitem><para><function>packUnorm4x8</function>: <code>f / 255.0</code></para></listitem>
+                <listitem><para><function>packSnorm4x8</function>: <code><function>clamp</function>(f / 127.0, -1.0, 1.0)</code></para></listitem>
             </itemizedlist>
         </para>
         <para>

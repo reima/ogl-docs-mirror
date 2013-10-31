@@ -17,10 +17,12 @@
         <refpurpose>contains the index of the current primitive</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
-        <funcsynopsis>
-            <function>in int gl_PrimitiveID;</function> (Tessellation control, tessellation evaluation and fragment languages)<sbr/>
+        <para>
+            <function>in int gl_PrimitiveID;</function> (Tessellation control, tessellation evaluation and fragment languages)
+        </para>
+        <para>
             <function>out int gl_PrimitiveID;</function> (Geometry language)
-        </funcsynopsis>
+        </para>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>

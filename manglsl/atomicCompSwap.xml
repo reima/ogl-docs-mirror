@@ -75,12 +75,11 @@
         <informaltable frame="topbot">
             <tgroup cols="11" align="left">
                 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="vartablecols.xml" xpointer="xpointer(//colspec)" />
-                <thead>
-                    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="functableheader.xml" />
-                </thead>
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="functableheader.xml" />
                 <tbody>
                     <row>
-                        <entry>atomicCompSwap</entry>#newin43#
+                        <entry>atomicCompSwap</entry>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(row/new43/entry)" />
                     </row>
                 </tbody>
             </tgroup>

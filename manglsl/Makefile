@@ -51,8 +51,14 @@ include $(COMMONRULES)
 DOCBOOK4DTD = http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd
 XMLLINT = xmllint --noout --xinclude --dtdvalid $(DOCBOOK4DTD)
 
+# XIFILES are referred to by XInclude directives in man pages
+XIFILES = \
+	functableheader.xml \
+	vartablecols.xml \
+	vartableheader.xml \
+	version.xml
 VFILES = \
-    $(wildcard [a-z]*.xml)
+    $(filter-out $(XIFILES),$(wildcard [a-z]*.xml))
 
 validate:
 	$(XMLLINT) $(VFILES)

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>gl_Layer</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="gl_Layer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gl_Layer — contains the selected layer of a multi-layer framebuffer attachment</p></div><div class="refsynopsisdiv"><h2>Declaration</h2><div class="funcsynopsis"><code class="function">out int gl_Layer; // Geometry stage</code></div><div class="funcsynopsis"><code class="function">in int gl_Layer; // Fragment stage</code></div></div><div class="refsect1"><a id="description"></a><h2>Description</h2><p>
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="opengl-man.css" /><title>gl_Layer</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="gl_Layer"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gl_Layer — contains the selected layer of a multi-layer framebuffer attachment</p></div><div class="refsynopsisdiv"><h2>Declaration</h2><p>
+            <code class="function">out int gl_Layer; // Geometry stage</code>
+        </p><p>
+            <code class="function">in int gl_Layer; // Fragment stage</code>
+        </p></div><div class="refsect1"><a id="description"></a><h2>Description</h2><p>
             In the geometry language, <code class="function">gl_Layer</code> is used to select a specific
             layer (or face and layer of cube map) in a multi-layer framebuffer attachment. The actual
             layer used will come from one of the vertices in the primitive being shaded. Which vertex
@@ -22,31 +26,31 @@
                         Face Value
                         </strong></span></th><th align="left"><span class="bold"><strong>
                         Resulting Target
-                        </strong></span></th></tr><tr><th align="left">
+                        </strong></span></th></tr></thead><tbody><tr><td align="left">
                             0
-                        </th><th align="center">
+                        </td><td align="center">
                             <code class="constant">GL_TEXTURE_CUBEMAP_POSITIVE_X</code>
-                        </th></tr><tr><th align="left">
+                        </td></tr><tr><td align="left">
                             1
-                        </th><th align="center">
+                        </td><td align="center">
                             <code class="constant">GL_TEXTURE_CUBEMAP_NEGATIVE_X</code>
-                        </th></tr><tr><th align="left">
+                        </td></tr><tr><td align="left">
                             2
-                        </th><th align="center">
+                        </td><td align="center">
                             <code class="constant">GL_TEXTURE_CUBEMAP_POSITIVE_Y</code>
-                        </th></tr><tr><th align="left">
+                        </td></tr><tr><td align="left">
                             3
-                        </th><th align="center">
+                        </td><td align="center">
                             <code class="constant">GL_TEXTURE_CUBEMAP_NEGATIVE_Y</code>
-                        </th></tr><tr><th align="left">
+                        </td></tr><tr><td align="left">
                             4
-                        </th><th align="center">
+                        </td><td align="center">
                             <code class="constant">GL_TEXTURE_CUBEMAP_POSITIVE_Z</code>
-                        </th></tr><tr><th align="left">
+                        </td></tr><tr><td align="left">
                             5
-                        </th><th align="center">
+                        </td><td align="center">
                             <code class="constant">GL_TEXTURE_CUBEMAP_NEGATIVE_Z</code>
-                        </th></tr></thead></table></div><p>
+                        </td></tr></tbody></table></div><p>
         </p><p>
             For example, to render to the positive y cube map face located in the 5<sup>th</sup> layer of the
             cube map array, <code class="function">gl_Layer</code> should be set to

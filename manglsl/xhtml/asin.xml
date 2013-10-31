@@ -11,7 +11,7 @@
                     <mml:mrow>
                         <mml:mo>−</mml:mo>
                         <mml:mfrac>
-                            <mml:csymbol encoding="" definitionURL=""><mml:pi definitionURL="" encoding=""></mml:pi></mml:csymbol>
+                            <mml:pi definitionURL="" encoding=""></mml:pi>
                             <mml:mn>2</mml:mn>
                         </mml:mfrac>
                     </mml:mrow>

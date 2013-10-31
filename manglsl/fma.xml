@@ -67,15 +67,27 @@
             In use cases where the return value is eventually consumed by a variable declared as
             <code>precise</code>:
             <itemizedlist>
-                <listitem><function>fma</function>() is considered a single operation, whereas the
-                expression <code>a * b + c</code> consumed by a variable declared as <code>precise</code>
-                is considered two operations.</listitem>
-                <listitem>The precision of <function>fma</function>() can differ from the precision
-                of the expression <code>a * b + c</code>.</listitem>
-                <listitem><function>fma</function>() will be computed with the same precision as any
-                other <function>fma</function>() consumed by a <code>precise</code> variable,
-                giving invariant results for the same input values of <parameter>a</parameter>,
-                <parameter>b</parameter> and <parameter>c</parameter>.</listitem>
+                <listitem>
+                    <para>
+                        <function>fma</function>() is considered a single operation, whereas the
+                        expression <code>a * b + c</code> consumed by a variable declared as <code>precise</code>
+                        is considered two operations.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        The precision of <function>fma</function>() can differ from the precision
+                        of the expression <code>a * b + c</code>.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <function>fma</function>() will be computed with the same precision as any
+                        other <function>fma</function>() consumed by a <code>precise</code> variable,
+                        giving invariant results for the same input values of <parameter>a</parameter>,
+                        <parameter>b</parameter> and <parameter>c</parameter>.
+                    </para>
+                </listitem>
             </itemizedlist>
             Otherwise, in the absense of <code>precise</code> consumption, there are no
             special constraints on the number of operations or difference in precision between

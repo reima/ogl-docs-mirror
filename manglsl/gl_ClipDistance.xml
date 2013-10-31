@@ -21,24 +21,23 @@
             <function>gl_ClipDistance</function> is a member of the <function>gl_PerVertex</function>
             named block:
         </para>
-        <funcsynopsis>
-<programlisting><![CDATA[    out gl_PerVertex {
+        <para><programlisting><![CDATA[    out gl_PerVertex {
         vec4 gl_Position;
         float gl_PointSize;
         float gl_ClipDistance[];
     };]]></programlisting>
-        </funcsynopsis>
+        </para>
         <para>
             In the fragment language, it is intrinsically declared as:
         </para>
-        <funcsynopsis>
+        <para>
             <function>in float gl_ClipDistance[];</function>
-        </funcsynopsis>
+        </para>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
             The <function>gl_ClipDistance</function> variable provides a forward compatible
-            mechanism for controlling user clipping. The element <function>gl_ClipDistance[<emphasis>i</emphasis>]</function>
+            mechanism for controlling user clipping. The element <parameter>gl_ClipDistance</parameter>[<emphasis>i</emphasis>]
             specifies a clip distance for each user clip plane <emphasis>i</emphasis>. A distance of 0.0 means that
             the vertex is on the plane, a positive distance means that the vertex is insider the clip plane, and a negative
             distance means that the point is outside the clip plane. The clip distances will be linearly interpolated across

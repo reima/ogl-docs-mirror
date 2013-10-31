@@ -6,7 +6,7 @@
                     Specifies the normal vector.
                 </p></dd></dl></div></div><div class="refsect1"><a id="description"></a><h2>Description</h2><p>
             For a given incident vector <em class="parameter"><code>I</code></em> and surface normal <em class="parameter"><code>N</code></em> <code class="function">reflect</code> returns
-            the reflection direction calculated as <code class="code"><em class="parameter"><code>I</code></em> - 2.0 * <a class="citerefentry" href="dot.xml"><span class="citerefentry"><span class="refentrytitle">dot</span></span></a>(<em class="parameter"><code>N</code></em>, <em class="parameter"><code>I</code></em>) * <em class="parameter"><code>N</code></em></code>.
+            the reflection direction calculated as <code class="code"><em class="parameter"><code>I</code></em> - 2.0 * <code class="function">dot</code>(<em class="parameter"><code>N</code></em>, <em class="parameter"><code>I</code></em>) * <em class="parameter"><code>N</code></em></code>.
         </p><p>
             <em class="parameter"><code>N</code></em> should be normalized in order to achieve the desired result.
         </p></div><div class="refsect1"><a id="versions"></a><h2>Version Support</h2><div class="informaltable"><table border="1"><colgroup><col align="left" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /><col align="center" /></colgroup><thead><tr><th align="left"> 

@@ -17,9 +17,9 @@
         <refpurpose>establishes a depth value for the current fragment</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
-        <funcsynopsis>
+        <para>
             <function>out float gl_FragDepth;</function>
-        </funcsynopsis>
+        </para>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>

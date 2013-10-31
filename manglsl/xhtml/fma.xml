@@ -11,13 +11,19 @@
             returning <code class="code">a * b + c</code>.
             In use cases where the return value is eventually consumed by a variable declared as
             <code class="code">precise</code>:
-            </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><code class="function">fma</code>() is considered a single operation, whereas the
-                expression <code class="code">a * b + c</code> consumed by a variable declared as <code class="code">precise</code>
-                is considered two operations.</li><li class="listitem">The precision of <code class="function">fma</code>() can differ from the precision
-                of the expression <code class="code">a * b + c</code>.</li><li class="listitem"><code class="function">fma</code>() will be computed with the same precision as any
-                other <code class="function">fma</code>() consumed by a <code class="code">precise</code> variable,
-                giving invariant results for the same input values of <em class="parameter"><code>a</code></em>,
-                <em class="parameter"><code>b</code></em> and <em class="parameter"><code>c</code></em>.</li></ul></div><p>
+            </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+                        <code class="function">fma</code>() is considered a single operation, whereas the
+                        expression <code class="code">a * b + c</code> consumed by a variable declared as <code class="code">precise</code>
+                        is considered two operations.
+                    </p></li><li class="listitem"><p>
+                        The precision of <code class="function">fma</code>() can differ from the precision
+                        of the expression <code class="code">a * b + c</code>.
+                    </p></li><li class="listitem"><p>
+                        <code class="function">fma</code>() will be computed with the same precision as any
+                        other <code class="function">fma</code>() consumed by a <code class="code">precise</code> variable,
+                        giving invariant results for the same input values of <em class="parameter"><code>a</code></em>,
+                        <em class="parameter"><code>b</code></em> and <em class="parameter"><code>c</code></em>.
+                    </p></li></ul></div><p>
             Otherwise, in the absense of <code class="code">precise</code> consumption, there are no
             special constraints on the number of operations or difference in precision between
             <code class="function">fma</code>() and the expression <code class="code">a * b + c</code>.

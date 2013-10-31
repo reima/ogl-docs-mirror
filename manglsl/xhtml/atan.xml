@@ -24,9 +24,9 @@
             that the angle lies in. The values returned by <code class="function">atan</code> in this case are in the range
             <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll">
                 <mml:list order="numeric">
-                    <mml:csymbol encoding="" definitionURL=""><mml:mo>−</mml:mo><mml:pi definitionURL="" encoding=""></mml:pi></mml:csymbol>
+                    <mml:mrow><mml:mo>−</mml:mo><mml:pi definitionURL="" encoding=""></mml:pi></mml:mrow>
                     <mml:pi definitionURL="" encoding=""></mml:pi>
-                    </mml:list>
+                </mml:list>
             </mml:math>. Results are undefined if <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" overflow="scroll"><mml:mi mathvariant="italic">x</mml:mi></mml:math> is zero.
         </p><p>
             For the second overload, <code class="function">atan</code> returns the angle whose tangent is
@@ -37,7 +37,7 @@
                     <mml:mrow>
                         <mml:mo>−</mml:mo>
                         <mml:mfrac>
-                            <mml:csymbol encoding="" definitionURL=""><mml:pi definitionURL="" encoding=""></mml:pi></mml:csymbol>
+                            <mml:pi definitionURL="" encoding=""></mml:pi>
                             <mml:mn>2</mml:mn>
                         </mml:mfrac>
                     </mml:mrow>

@@ -47,3 +47,13 @@ distoss:
 	$(SUBDIRS_MAKERULE)
 
 include $(COMMONRULES)
+
+DOCBOOK4DTD = http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd
+XMLLINT = xmllint --noout --xinclude --dtdvalid $(DOCBOOK4DTD)
+
+VFILES = \
+    $(wildcard [a-z]*.xml)
+
+validate:
+	$(XMLLINT) $(VFILES)
+

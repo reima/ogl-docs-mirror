@@ -53,9 +53,8 @@ XMLLINT = xmllint --noout --xinclude --dtdvalid $(DOCBOOK4DTD)
 
 # XIFILES are referred to by XInclude directives in man pages
 XIFILES = \
-	functableheader.xml \
-	vartablecols.xml \
-	vartableheader.xml \
+	funchead.xml \
+	varhead.xml \
 	version.xml
 VFILES = \
     $(filter-out $(XIFILES),$(wildcard [a-z]*.xml))

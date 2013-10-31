@@ -7,9 +7,8 @@ PERL = perl
 
 # XIFILES are referred to by XInclude directives in man pages
 XIFILES = \
-    ../functableheader.xml \
-    ../vartablecols.xml \
-    ../vartableheader.xml \
+    ../funchead.xml \
+    ../varhead.xml \
     ../version.xml
 
 # Location of locally customized stylesheet, which imports

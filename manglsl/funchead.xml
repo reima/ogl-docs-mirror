@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
+              "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
+<funchead>
+    <!-- Table header for GLSL function Version Support section. All these
+         elements are included within a
+            <tgroup cols="11" align="left">
+         element, followed by per-variable <tbody> support rows -->
+    <colspec colwidth="1.1*" />
+    <colspec colwidth="1*" align="center" colname="firstvers" />
+    <colspec colwidth="1*" align="center" />
+    <colspec colwidth="1*" align="center" />
+    <colspec colwidth="1*" align="center" />
+    <colspec colwidth="1*" align="center" />
+    <colspec colwidth="1*" align="center" />
+    <colspec colwidth="1*" align="center" />
+    <colspec colwidth="1*" align="center" />
+    <colspec colwidth="1*" align="center" />
+    <colspec colwidth="1*" align="center" colname="lastvers" />
+    <spanspec spanname="allvers" namest="firstvers" nameend="lastvers" />
+    <thead>
+        <row>
+            <entry morerows="1" rowsep="1" align="left">
+                <emphasis role="bold">Function Name</emphasis>
+            </entry>
+            <entry rowsep="1" spanname="allvers">
+                <emphasis role="bold">OpenGL Shading Language Version</emphasis>
+            </entry>
+        </row>
+        <row>
+            <!-- First column is filled by "morerows" entry above -->
+            <entry rowsep="1" align="left">
+                <emphasis role="bold">1.10</emphasis>
+            </entry>
+            <entry rowsep="1" align="left">
+                <emphasis role="bold">1.20</emphasis>
+            </entry>
+            <entry rowsep="1" align="left">
+                <emphasis role="bold">1.30</emphasis>
+            </entry>
+            <entry rowsep="1" align="left">
+                <emphasis role="bold">1.40</emphasis>
+            </entry>
+            <entry rowsep="1" align="left">
+                <emphasis role="bold">1.50</emphasis>
+            </entry>
+            <entry rowsep="1" align="left">
+                <emphasis role="bold">3.30</emphasis>
+            </entry>
+            <entry rowsep="1" align="left">
+                <emphasis role="bold">4.00</emphasis>
+            </entry>
+            <entry rowsep="1" align="left">
+                <emphasis role="bold">4.10</emphasis>
+            </entry>
+            <entry rowsep="1" align="left">
+                <emphasis role="bold">4.20</emphasis>
+            </entry>
+            <entry>
+                <emphasis role="bold">4.30</emphasis>
+            </entry>
+        </row>
+    </thead>
+</funchead>

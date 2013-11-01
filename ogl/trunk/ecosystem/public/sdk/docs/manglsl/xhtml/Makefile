@@ -15,15 +15,15 @@ XIFILES = \
 # the Docbook modular stylesheets, and specifically the
 # stylesheet to convert Docbook+MathML => XHTML+MathML
 DB2XHTML = opengl-man.xsl
-# ../../mancommon/opengl-man.xsl
+
+PREPROCESSOR = preproc.sed
 
 .SUFFIXES: .gl .xml .html .xhtml .ck.xhtml .tex .pdf .3G .tar .tar.gz
 .PHONY: man html pdf tex
 
-# ../../mancommon/opengl-man.xsl
-
 %.xml: ../%.xml $(DB2XHTML) $(XIFILES)
 	$(XSLT) --xinclude -o $@ $(DB2XHTML) $<
+	$(SED) -i -f $(PREPROCESSOR) $@
 
 Angle_and_Trigonometry_Functions = \
     radians.xml \
@@ -273,4 +273,4 @@ clean:
 	$(RM) $(TEX_FILES) *.log *.aux *.toc *.dvi *.out
 
 clobber: clean
-	$(RM) $(XML) $(PDF_FILES)
+	$(RM) $(XML) $(PDF_FILES) index.html

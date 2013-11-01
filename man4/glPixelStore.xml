@@ -208,7 +208,7 @@
                                                         </mml:mfrac>
                                                     </mml:mfenced>
                                                     <mml:mo>&it;</mml:mo>
-                                                    <mml:mfenced open="&LeftCeiling;" close="&RightCeiling;">
+                                                    <mml:mfenced open="&lceil;" close="&rceil;">
                                                         <mml:mfrac>
                                                             <mml:mfenced open="" close="">
                                                                 <mml:mrow>
@@ -294,7 +294,7 @@
                                     <mml:mo>&it;</mml:mo>
                                     <mml:mi mathvariant="italic">a</mml:mi>
                                     <mml:mo>&it;</mml:mo>
-                                    <mml:mfenced open="&LeftCeiling;" close="&RightCeiling;">
+                                    <mml:mfenced open="&lceil;" close="&rceil;">
                                         <mml:mfrac>
                                             <mml:mfenced open="" close="">
                                                 <mml:mrow>
@@ -375,7 +375,7 @@
                                                         </mml:mfrac>
                                                     </mml:mfenced>
                                                     <mml:mo>&it;</mml:mo>
-                                                    <mml:mfenced open="&LeftCeiling;" close="&RightCeiling;">
+                                                    <mml:mfenced open="&lceil;" close="&rceil;">
                                                         <mml:mfrac>
                                                             <mml:mfenced open="" close="">
                                                                 <mml:mrow>
@@ -680,7 +680,7 @@
                                                         </mml:mfrac>
                                                     </mml:mfenced>
                                                     <mml:mo>&it;</mml:mo>
-                                                    <mml:mfenced open="&LeftCeiling;" close="&RightCeiling;">
+                                                    <mml:mfenced open="&lceil;" close="&rceil;">
                                                         <mml:mfrac>
                                                             <mml:mfenced open="" close="">
                                                                 <mml:mrow>
@@ -766,7 +766,7 @@
                                     <mml:mo>&it;</mml:mo>
                                     <mml:mi mathvariant="italic">a</mml:mi>
                                     <mml:mo>&it;</mml:mo>
-                                    <mml:mfenced open="&LeftCeiling;" close="&RightCeiling;">
+                                    <mml:mfenced open="&lceil;" close="&rceil;">
                                         <mml:mfrac>
                                             <mml:mfenced open="" close="">
                                                 <mml:mrow>
@@ -847,7 +847,7 @@
                                                         </mml:mfrac>
                                                     </mml:mfenced>
                                                     <mml:mo>&it;</mml:mo>
-                                                    <mml:mfenced open="&LeftCeiling;" close="&RightCeiling;">
+                                                    <mml:mfenced open="&lceil;" close="&rceil;">
                                                         <mml:mfrac>
                                                             <mml:mfenced open="" close="">
                                                                 <mml:mrow>

@@ -2,46 +2,56 @@
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
           "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
 <refentry id="glUniform">
+    <refentryinfo>
+        <copyright>
+            <year>2003-2005</year>
+            <holder>3Dlabs Inc. Ltd.</holder>
+        </copyright>
+        <copyright>
+            <year>2010-2013</year>
+            <holder>Khronos Group</holder>
+        </copyright>
+    </refentryinfo>
     <refmeta>
-    <refentrytitle>glUniform</refentrytitle>
-    <manvolnum>3G</manvolnum>
+        <refentrytitle>glUniform</refentrytitle>
+        <manvolnum>3G</manvolnum>
     </refmeta>
     <refnamediv>
     <refdescriptor>glUniform</refdescriptor>
-    <refname>glUniform1f</refname>
-    <refname>glUniform2f</refname>
-    <refname>glUniform3f</refname>
-    <refname>glUniform4f</refname>
-    <refname>glUniform1i</refname>
-    <refname>glUniform2i</refname>
-    <refname>glUniform3i</refname>
-    <refname>glUniform4i</refname>
-    <refname>glUniform1ui</refname>
-    <refname>glUniform2ui</refname>
-    <refname>glUniform3ui</refname>
-    <refname>glUniform4ui</refname>
-    <refname>glUniform1fv</refname>
-    <refname>glUniform2fv</refname>
-    <refname>glUniform3fv</refname>
-    <refname>glUniform4fv</refname>
-    <refname>glUniform1iv</refname>
-    <refname>glUniform2iv</refname>
-    <refname>glUniform3iv</refname>
-    <refname>glUniform4iv</refname>
-    <refname>glUniform1uiv</refname>
-    <refname>glUniform2uiv</refname>
-    <refname>glUniform3uiv</refname>
-    <refname>glUniform4uiv</refname>
-    <refname>glUniformMatrix2fv</refname>
-    <refname>glUniformMatrix3fv</refname>
-    <refname>glUniformMatrix4fv</refname>
-    <refname>glUniformMatrix2x3fv</refname>
-    <refname>glUniformMatrix3x2fv</refname>
-    <refname>glUniformMatrix2x4fv</refname>
-    <refname>glUniformMatrix4x2fv</refname>
-    <refname>glUniformMatrix3x4fv</refname>
-    <refname>glUniformMatrix4x3fv</refname>
-    <refpurpose>Specify the value of a uniform variable for the current program object</refpurpose>
+        <refname>glUniform1f</refname>
+        <refname>glUniform2f</refname>
+        <refname>glUniform3f</refname>
+        <refname>glUniform4f</refname>
+        <refname>glUniform1i</refname>
+        <refname>glUniform2i</refname>
+        <refname>glUniform3i</refname>
+        <refname>glUniform4i</refname>
+        <refname>glUniform1ui</refname>
+        <refname>glUniform2ui</refname>
+        <refname>glUniform3ui</refname>
+        <refname>glUniform4ui</refname>
+        <refname>glUniform1fv</refname>
+        <refname>glUniform2fv</refname>
+        <refname>glUniform3fv</refname>
+        <refname>glUniform4fv</refname>
+        <refname>glUniform1iv</refname>
+        <refname>glUniform2iv</refname>
+        <refname>glUniform3iv</refname>
+        <refname>glUniform4iv</refname>
+        <refname>glUniform1uiv</refname>
+        <refname>glUniform2uiv</refname>
+        <refname>glUniform3uiv</refname>
+        <refname>glUniform4uiv</refname>
+        <refname>glUniformMatrix2fv</refname>
+        <refname>glUniformMatrix3fv</refname>
+        <refname>glUniformMatrix4fv</refname>
+        <refname>glUniformMatrix2x3fv</refname>
+        <refname>glUniformMatrix3x2fv</refname>
+        <refname>glUniformMatrix2x4fv</refname>
+        <refname>glUniformMatrix4x2fv</refname>
+        <refname>glUniformMatrix3x4fv</refname>
+        <refname>glUniformMatrix4x3fv</refname>
+        <refpurpose>Specify the value of a uniform variable for the current program object</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>C Specification</title>
     <funcsynopsis>
@@ -518,7 +528,7 @@
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>
             Copyright <trademark class="copyright"></trademark> 2003-2005 3Dlabs Inc. Ltd.
-            Copyright <trademark class="copyright"></trademark> 2010 Khronos Group.
+            Copyright <trademark class="copyright"></trademark> 2010-2013 Khronos Group.
             This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
             <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.

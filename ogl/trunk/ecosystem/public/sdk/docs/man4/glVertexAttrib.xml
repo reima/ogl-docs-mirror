@@ -2,13 +2,23 @@
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
           "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
 <refentry id="glVertexAttrib">
+    <refentryinfo>
+        <copyright>
+            <year>2003-2005</year>
+            <holder>3Dlabs Inc. Ltd.</holder>
+        </copyright>
+        <copyright>
+            <year>2010-2013</year>
+            <holder>Khronos Group</holder>
+        </copyright>
+    </refentryinfo>
     <refmeta>
-    <refentrytitle>glVertexAttrib</refentrytitle>
-    <manvolnum>3G</manvolnum>
+        <refentrytitle>glVertexAttrib</refentrytitle>
+        <manvolnum>3G</manvolnum>
     </refmeta>
     <refnamediv>
-    <refname>glVertexAttrib</refname>
-    <refpurpose>Specifies the value of a generic vertex attribute</refpurpose>
+        <refname>glVertexAttrib</refname>
+        <refpurpose>Specifies the value of a generic vertex attribute</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>C Specification</title>
     <funcsynopsis>

@@ -7,6 +7,10 @@
             <year>2005</year>
             <holder>Sams Publishing</holder>
         </copyright>
+        <copyright>
+            <year>2011-2013</year>
+            <holder>Khronos Group</holder>
+        </copyright>
     </refentryinfo>
     <refmeta>
         <refentrytitle>glGetBufferPointerv</refentrytitle>

@@ -60,7 +60,7 @@
             to the variable named <parameter>name</parameter> in interface <parameter>programInterface</parameter> of program
             object <parameter>program</parameter>.  <parameter>program</parameter> must be the name of a program that has been
             linked successfully. <parameter>programInterface</parameter> must
-            be <constant>PROGRAM_OUTPUT</constant>.
+            be <constant>GL_PROGRAM_OUTPUT</constant>.
         </para>
         <para>
             The value -1 will be returned if an error occurs, if <parameter>name</parameter> does not identify an active variable on

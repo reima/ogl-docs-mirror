@@ -111,7 +111,7 @@
             dimensional texture, the application would use <parameter>zoffset</parameter> equal to zero and
             <parameter>depth</parameter> equal to one. Cube map textures are treated as an array of six
             slices in the z-dimension, where a value of <parameter>zoffset</parameter> is interpreted as
-            specifying face <constant>TEXTURE_CUBE_MAP_POSITIVE_X</constant> + <parameter>zoffset</parameter>.
+            specifying face <constant>GL_TEXTURE_CUBE_MAP_POSITIVE_X</constant> + <parameter>zoffset</parameter>.
         </para>
         <para>
             <parameter>level</parameter> must be greater than or equal to zero and be

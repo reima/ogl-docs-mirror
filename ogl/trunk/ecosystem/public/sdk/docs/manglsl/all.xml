@@ -42,16 +42,16 @@
             It is functionally equivalent to:
         </para>
         <para>
-        <programlisting><![CDATA[    bool all(bvec x)       // bvec can be bvec2, bvec3 or bvec4
+        <programlisting>    bool all(bvec x)       // bvec can be bvec2, bvec3 or bvec4
     {
         bool result = true;
         int i;
-        for (i = 0; i < x.length(); ++i)
+        for (i = 0; i &lt; x.length(); ++i)
         {
-            result &= x[i];
+            result &amp;= x[i];
         }
         return result;
-    }]]></programlisting>
+    }</programlisting>
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>

@@ -280,11 +280,11 @@
                    <constant>GL_RGBA16</constant>,
                    <constant>GL_RGBA16_SNORM</constant></entry>
             <entry><constant>GL_COMPRESSED_RGB_S3TC_DXT1_EXT</constant>,
-                   <constant>COMPRESSED_SRGB_S3TC_DXT1_EXT</constant>,
-                   <constant>COMPRESSED_RGBA_S3TC_DXT1_EXT</constant>,
-                   <constant>COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT</constant>,
-                   <constant>COMPRESSED_RED_RGTC1</constant>,
-                   <constant>COMPRESSED_SIGNED_RED_RGTC1</constant></entry>
+                   <constant>GL_COMPRESSED_SRGB_S3TC_DXT1_EXT</constant>,
+                   <constant>GL_COMPRESSED_RGBA_S3TC_DXT1_EXT</constant>,
+                   <constant>GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT</constant>,
+                   <constant>GL_COMPRESSED_RED_RGTC1</constant>,
+                   <constant>GL_COMPRESSED_SIGNED_RED_RGTC1</constant></entry>
         </row>
     </tbody>
 </tgroup>

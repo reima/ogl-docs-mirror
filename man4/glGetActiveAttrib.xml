@@ -168,19 +168,19 @@
     <constant>GL_UNSIGNED_INT_VEC2</constant>,
     <constant>GL_UNSIGNED_INT_VEC3</constant>,
     <constant>GL_UNSIGNED_INT_VEC4</constant>,
-    <constant>DOUBLE</constant>,
-    <constant>DOUBLE_VEC2</constant>,
-    <constant>DOUBLE_VEC3</constant>,
-    <constant>DOUBLE_VEC4</constant>,
-    <constant>DOUBLE_MAT2</constant>,
-    <constant>DOUBLE_MAT3</constant>,
-    <constant>DOUBLE_MAT4</constant>,
-    <constant>DOUBLE_MAT2x3</constant>,
-    <constant>DOUBLE_MAT2x4</constant>,
-    <constant>DOUBLE_MAT3x2</constant>,
-    <constant>DOUBLE_MAT3x4</constant>,
-    <constant>DOUBLE_MAT4x2</constant>, or
-    <constant>DOUBLE_MAT4x3</constant>
+    <constant>GL_DOUBLE</constant>,
+    <constant>GL_DOUBLE_VEC2</constant>,
+    <constant>GL_DOUBLE_VEC3</constant>,
+    <constant>GL_DOUBLE_VEC4</constant>,
+    <constant>GL_DOUBLE_MAT2</constant>,
+    <constant>GL_DOUBLE_MAT3</constant>,
+    <constant>GL_DOUBLE_MAT4</constant>,
+    <constant>GL_DOUBLE_MAT2x3</constant>,
+    <constant>GL_DOUBLE_MAT2x4</constant>,
+    <constant>GL_DOUBLE_MAT3x2</constant>,
+    <constant>GL_DOUBLE_MAT3x4</constant>,
+    <constant>GL_DOUBLE_MAT4x2</constant>, or
+    <constant>GL_DOUBLE_MAT4x3</constant>
      may be returned. The
     <parameter>size</parameter> argument will return the size of the
     attribute, in units of the type returned in

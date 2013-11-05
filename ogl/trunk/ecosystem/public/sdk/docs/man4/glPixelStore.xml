@@ -1082,7 +1082,7 @@
                             <!-- eqn: left [ 0,\(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
-                                <mml:infinity/>
+                                <mml:mn>&infin;</mml:mn>
                             </mml:mfenced>
                         </mml:math></inlineequation>
                         </entry>
@@ -1102,7 +1102,7 @@
                             <!-- eqn: left [ 0, \(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
-                                <mml:infinity/>
+                                <mml:mn>&infin;</mml:mn>
                             </mml:mfenced>
                         </mml:math></inlineequation>
                         </entry>
@@ -1122,7 +1122,7 @@
                             <!-- eqn: left [ 0,\(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
-                                <mml:infinity/>
+                                <mml:mn>&infin;</mml:mn>
                             </mml:mfenced>
                         </mml:math></inlineequation>
                         </entry>
@@ -1142,7 +1142,7 @@
                             <!-- eqn: left [ 0,\(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
-                                <mml:infinity/>
+                                <mml:mn>&infin;</mml:mn>
                             </mml:mfenced>
                         </mml:math></inlineequation>
                         </entry>
@@ -1162,7 +1162,7 @@
                             <!-- eqn: left [ 0,\(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
-                                <mml:infinity/>
+                                <mml:mn>&infin;</mml:mn>
                             </mml:mfenced>
                         </mml:math></inlineequation>
                         </entry>
@@ -1224,7 +1224,7 @@
                             <!-- eqn: left [ 0,\(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
-                                <mml:infinity/>
+                                <mml:mn>&infin;</mml:mn>
                             </mml:mfenced>
                         </mml:math></inlineequation>
                         </entry>
@@ -1244,7 +1244,7 @@
                             <!-- eqn: left [ 0,\(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
-                                <mml:infinity/>
+                                <mml:mn>&infin;</mml:mn>
                             </mml:mfenced>
                         </mml:math></inlineequation>
                         </entry>
@@ -1264,7 +1264,7 @@
                             <!-- eqn: left [ 0,\(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
-                                <mml:infinity/>
+                                <mml:mn>&infin;</mml:mn>
                             </mml:mfenced>
                         </mml:math></inlineequation>
                         </entry>
@@ -1284,7 +1284,7 @@
                             <!-- eqn: left [ 0,\(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
-                                <mml:infinity/>
+                                <mml:mn>&infin;</mml:mn>
                             </mml:mfenced>
                         </mml:math></inlineequation>
                         </entry>
@@ -1304,7 +1304,7 @@
                             <!-- eqn: left [ 0,\(if right ): -->
                             <mml:mfenced open="[" close=")">
                                 <mml:mn>0</mml:mn>
-                                <mml:infinity/>
+                                <mml:mn>&infin;</mml:mn>
                             </mml:mfenced>
                         </mml:math></inlineequation>
                         </entry>

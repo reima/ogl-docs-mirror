@@ -260,7 +260,7 @@
             must be equal to 6. If the new texture's target is <constant>GL_TEXTURE_CUBE_MAP_ARRAY</constant>,
             then <parameter>numlayers</parameter> counts layer-faces rather than layers, and the clamped
             <parameter>numlayers</parameter> must be a multiple of 6. If the new texture's target is <constant>GL_TEXTURE_CUBE_MAP</constant> or
-            <constant>GL_TEXTURE_CUBE_MAP_ARRAY</constant>, the width and height of the original texture's 
+            <constant>GL_TEXTURE_CUBE_MAP_ARRAY</constant>, the width and height of the original texture's
             levels must be equal.
         </para>
         <para>
@@ -269,21 +269,21 @@
             <constant>GL_TEXTURE_CUBE_MAP_ARRAY</constant> with 6 layer-faces.
         </para>
         <para>
-            If <parameter>target</parameter> is <constant>GL_TEXTURE_1D</constant>, <constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_3D</constant>, <constant>GL_TEXTURE_RECTANGLE</constant>, or 
+            If <parameter>target</parameter> is <constant>GL_TEXTURE_1D</constant>, <constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_3D</constant>, <constant>GL_TEXTURE_RECTANGLE</constant>, or
             <constant>GL_TEXTURE_2D_MULTISAMPLE</constant>, <parameter>numlayers</parameter> must equal 1.
         </para>
         <para>
-            The dimensions of the original texture must be less than or equal to the maximum 
+            The dimensions of the original texture must be less than or equal to the maximum
             supported dimensions of the new target. For example, if the original texture has a <constant>GL_TEXTURE_2D_ARRAY</constant>
             target and its width is greater than <constant>GL_MAX_CUBE_MAP_TEXTURE_SIZE</constant>, an error
             will be generated if <function>glTextureView</function> is called to create a <constant>GL_TEXTURE_CUBE_MAP</constant>
             view.
         </para>
         <para>
-            Texture commands that take a <parameter>level</parameter> or <parameter>layer</parameter> parameter, such as 
-            <citerefentry><refentrytitle>glTexSubImage2D</refentrytitle></citerefentry>, interpret that parameter to be relative to the view of the 
-            texture. i.e. the mipmap level of the data store that would be updated via 
-            <citerefentry><refentrytitle>TexSubImage2D</refentrytitle></citerefentry> would be the sum of <parameter>level</parameter> and the value of 
+            Texture commands that take a <parameter>level</parameter> or <parameter>layer</parameter> parameter, such as
+            <citerefentry><refentrytitle>glTexSubImage2D</refentrytitle></citerefentry>, interpret that parameter to be relative to the view of the
+            texture. i.e. the mipmap level of the data store that would be updated via
+            <citerefentry><refentrytitle>TexSubImage2D</refentrytitle></citerefentry> would be the sum of <parameter>level</parameter> and the value of
             <constant>GL_TEXTURE_VIEW_MIN_LEVEL</constant>.
         </para>
     </refsect1>
@@ -348,8 +348,8 @@
     </refsect1>
     <refsect1 id="Copyright"><title>Copyright</title>
         <para>
-            Copyright <trademark class="copyright"></trademark> 2013 Khronos Group. 
-            This material may be distributed subject to the terms and conditions set forth in 
+            Copyright <trademark class="copyright"></trademark> 2013 Khronos Group.
+            This material may be distributed subject to the terms and conditions set forth in
             the Open Publication License, v 1.0, 8 June 1999.
             <ulink url="http://opencontent.org/openpub/">http://opencontent.org/openpub/</ulink>.
         </para>

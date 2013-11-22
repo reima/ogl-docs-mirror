@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
               "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<refentry id="atomixMax">
+<refentry id="atomicMax">
     <refentryinfo>
         <copyright>
             <year>2012-2013</year>
@@ -9,22 +9,22 @@
         </copyright>
     </refentryinfo>
     <refmeta>
-        <refentrytitle>atomixMax</refentrytitle>
+        <refentrytitle>atomicMax</refentrytitle>
         <manvolnum>3G</manvolnum>
     </refmeta>
     <refnamediv>
-        <refname>atomixMax</refname>
+        <refname>atomicMax</refname>
         <refpurpose>perform an atomic max operation to a variable</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>Declaration</title>
         <funcsynopsis>
             <funcprototype>
-                <funcdef>int <function>atomixMax</function></funcdef>
+                <funcdef>int <function>atomicMax</function></funcdef>
                 <paramdef>inout int <parameter>mem</parameter></paramdef>
                 <paramdef>int <parameter>data</parameter></paramdef>
             </funcprototype>
             <funcprototype>
-                <funcdef>uint <function>atomixMax</function></funcdef>
+                <funcdef>uint <function>atomicMax</function></funcdef>
                 <paramdef>inout uint <parameter>mem</parameter></paramdef>
                 <paramdef>uint <parameter>data</parameter></paramdef>
             </funcprototype>
@@ -59,21 +59,21 @@
             invocation between the time the original value is read and the time the new value is written.
         </para>
         <para>
-            Atomic memory functions are supported only for a limited set of variables.  A shader will fail to compile 
-            if the value passed to the mem argument of  an atomic memory function does not correspond to a buffer or 
-            shared variable.  It is acceptable to pass an element of an array or a single component of a vector to the 
-            mem argument of an atomic memory function, as long as the underlying array or vector is a buffer or 
+            Atomic memory functions are supported only for a limited set of variables.  A shader will fail to compile
+            if the value passed to the mem argument of  an atomic memory function does not correspond to a buffer or
+            shared variable.  It is acceptable to pass an element of an array or a single component of a vector to the
+            mem argument of an atomic memory function, as long as the underlying array or vector is a buffer or
             shared variable.
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>
         <informaltable frame="topbot">
             <tgroup cols="11" align="left">
-                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="funchead.xml" xpointer="xpointer(/funchead/*)" />
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="funchead.xml" xpointer="xpointer(/*/*)" />
                 <tbody>
                     <row>
-                        <entry>atomixMax</entry>
-                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(row/new43/entry)" />
+                        <entry>atomicMax</entry>
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='43']/*)" />
                     </row>
                 </tbody>
             </tgroup>

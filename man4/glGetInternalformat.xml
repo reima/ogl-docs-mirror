@@ -9,11 +9,11 @@
         </copyright>
     </refentryinfo>
     <refmeta>
-        <refentrytitle>glGetInternalformativ</refentrytitle>
+        <refentrytitle>glGetInternalformat</refentrytitle>
         <manvolnum>3G</manvolnum>
     </refmeta>
     <refnamediv>
-        <refname>glGetInternalformativ</refname>
+        <refname>glGetInternalformat</refname>
         <refpurpose>retrieve information about implementation-dependent support for internal formats</refpurpose>
     </refnamediv>
     <refsynopsisdiv><title>C Specification</title>

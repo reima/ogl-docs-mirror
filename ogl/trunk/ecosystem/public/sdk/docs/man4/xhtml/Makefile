@@ -94,7 +94,7 @@ GL_EXT_texture_storage_entries = \
     glTexStorage3D.xml
 
 GL_ARB_internal_format_query_entries = \
-    glGetInternalformativ.xml
+    glGetInternalformat.xml
 
 GL_ARB_transform_feedback_instanced_entries = \
     glDrawTransformFeedbackInstanced.xml \

@@ -59,21 +59,21 @@
             invocation between the time the original value is read and the time the new value is written.
         </para>
         <para>
-            Atomic memory functions are supported only for a limited set of variables.  A shader will fail to compile 
-            if the value passed to the mem argument of  an atomic memory function does not correspond to a buffer or 
-            shared variable.  It is acceptable to pass an element of an array or a single component of a vector to the 
-            mem argument of an atomic memory function, as long as the underlying array or vector is a buffer or 
+            Atomic memory functions are supported only for a limited set of variables.  A shader will fail to compile
+            if the value passed to the mem argument of  an atomic memory function does not correspond to a buffer or
+            shared variable.  It is acceptable to pass an element of an array or a single component of a vector to the
+            mem argument of an atomic memory function, as long as the underlying array or vector is a buffer or
             shared variable.
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>
         <informaltable frame="topbot">
             <tgroup cols="11" align="left">
-                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="funchead.xml" xpointer="xpointer(/funchead/*)" />
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="funchead.xml" xpointer="xpointer(/*/*)" />
                 <tbody>
                     <row>
                         <entry>atomicAdd</entry>
-                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(row/new43/entry)" />
+                        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='43']/*)" />
                     </row>
                 </tbody>
             </tgroup>

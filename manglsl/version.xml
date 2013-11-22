@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook MathML Module V1.1b1//EN"
               "http://www.oasis-open.org/docbook/xml/mathml/1.1CR1/dbmathml.dtd">
-<row>
-    <!-- Element sets are selected with XInclude from the new## elements
-         below to obtain table elements used in "Version Support" sections
-         of the man pages. -->
-    <new11>
+<root>
+    <!-- Element sets are selected with XInclude from the row elements below
+         using the role attribute to obtain table elements for the "Version
+         Support" sections of the man pages. -->
+    <row role="11">
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
@@ -16,8 +16,8 @@
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
-    </new11>
-    <new12>
+    </row>
+    <row role="12">
         <entry>-</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
@@ -28,8 +28,8 @@
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
-    </new12>
-    <new13>
+    </row>
+    <row role="13">
         <entry>-</entry>
         <entry>-</entry>
         <entry>&#x2714;</entry>
@@ -40,8 +40,8 @@
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
-    </new13>
-    <new14>
+    </row>
+    <row role="14">
         <entry>-</entry>
         <entry>-</entry>
         <entry>-</entry>
@@ -52,8 +52,8 @@
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
-    </new14>
-    <new15>
+    </row>
+    <row role="15">
         <entry>-</entry>
         <entry>-</entry>
         <entry>-</entry>
@@ -64,8 +64,8 @@
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
-    </new15>
-    <new33>
+    </row>
+    <row role="33">
         <entry>-</entry>
         <entry>-</entry>
         <entry>-</entry>
@@ -76,8 +76,8 @@
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
-    </new33>
-    <new40>
+    </row>
+    <row role="40">
         <entry>-</entry>
         <entry>-</entry>
         <entry>-</entry>
@@ -88,8 +88,8 @@
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
-    </new40>
-    <new41>
+    </row>
+    <row role="41">
         <entry>-</entry>
         <entry>-</entry>
         <entry>-</entry>
@@ -100,8 +100,8 @@
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
-    </new41>
-    <new42>
+    </row>
+    <row role="42">
         <entry>-</entry>
         <entry>-</entry>
         <entry>-</entry>
@@ -112,8 +112,8 @@
         <entry>-</entry>
         <entry>&#x2714;</entry>
         <entry>&#x2714;</entry>
-    </new42>
-    <new43>
+    </row>
+    <row role="43">
         <entry>-</entry>
         <entry>-</entry>
         <entry>-</entry>
@@ -124,5 +124,5 @@
         <entry>-</entry>
         <entry>-</entry>
         <entry>&#x2714;</entry>
-    </new43>
-</row>
+    </row>
+</root>

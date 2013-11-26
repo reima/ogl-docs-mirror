@@ -125,7 +125,7 @@
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>
-        <informaltable frame="topbot">
+        <informaltable>
             <tgroup cols="11" align="left">
                 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="funchead.xml" xpointer="xpointer(/*/*)" />
                 <tbody>

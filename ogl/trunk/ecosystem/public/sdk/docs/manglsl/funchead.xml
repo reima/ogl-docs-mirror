@@ -20,40 +20,42 @@
     <spanspec spanname="allvers" namest="firstvers" nameend="lastvers" />
     <thead>
         <row>
-            <entry morerows="1" rowsep="1" align="left">
-                <emphasis role="bold">Function Name</emphasis>
+            <entry rowsep="0">
+                <!-- Until morerows= is fixed WRT cell borders, do this --> 
             </entry>
-            <entry rowsep="1" spanname="allvers">
+            <entry spanname="allvers">
                 <emphasis role="bold">OpenGL Shading Language Version</emphasis>
             </entry>
         </row>
         <row>
-            <!-- First column is filled by "morerows" entry above -->
-            <entry rowsep="1" align="left">
+            <entry>
+                <emphasis role="bold">Function Name</emphasis>
+            </entry>
+            <entry>
                 <emphasis role="bold">1.10</emphasis>
             </entry>
-            <entry rowsep="1" align="left">
+            <entry>
                 <emphasis role="bold">1.20</emphasis>
             </entry>
-            <entry rowsep="1" align="left">
+            <entry>
                 <emphasis role="bold">1.30</emphasis>
             </entry>
-            <entry rowsep="1" align="left">
+            <entry>
                 <emphasis role="bold">1.40</emphasis>
             </entry>
-            <entry rowsep="1" align="left">
+            <entry>
                 <emphasis role="bold">1.50</emphasis>
             </entry>
-            <entry rowsep="1" align="left">
+            <entry>
                 <emphasis role="bold">3.30</emphasis>
             </entry>
-            <entry rowsep="1" align="left">
+            <entry>
                 <emphasis role="bold">4.00</emphasis>
             </entry>
-            <entry rowsep="1" align="left">
+            <entry>
                 <emphasis role="bold">4.10</emphasis>
             </entry>
-            <entry rowsep="1" align="left">
+            <entry>
                 <emphasis role="bold">4.20</emphasis>
             </entry>
             <entry>

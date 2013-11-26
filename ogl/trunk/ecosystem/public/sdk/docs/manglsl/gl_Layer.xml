@@ -44,18 +44,18 @@
             will render to <inlineequation><mml:math><mml:mi>face</mml:mi></mml:math></inlineequation>
             of the cube defined in <inlineequation><mml:math><mml:mi>layer</mml:mi></mml:math></inlineequation>.
             The face values are as follows:
-        <informaltable frame="topbot">
+        <informaltable>
             <tgroup cols="2" align="left">
                 <colspec colwidth="1.1*" />
                 <colspec colwidth="1*" align="center" />
                 <thead>
                     <row>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Face Value
-                        </emphasis></entry>
-                        <entry rowsep="1" align="left"><emphasis role="bold">
-                        Resulting Target
-                        </emphasis></entry>
+                        <entry>
+                            <emphasis role="bold"> Face Value </emphasis>
+                        </entry> 
+                        <entry>
+                            <emphasis role="bold"> Resulting Target </emphasis>
+                        </entry>
                     </row>
                 </thead>
                 <tbody>
@@ -127,7 +127,7 @@
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>
-        <informaltable frame="topbot">
+        <informaltable>
             <tgroup cols="11" align="left">
                 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="funchead.xml" xpointer="xpointer(/*/*)" />
                 <tbody>

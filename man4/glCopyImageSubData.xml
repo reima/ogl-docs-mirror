@@ -224,34 +224,52 @@
             which are selected by a zero-based face index.
         </para>
         <para>
-            For the purposes of CopyImageSubData, two internal formats
-    are considered compatible if any of the following conditions are
-    met:
-     * the formats are the same,
-     * the formats are considered compatible according to the
-       compatibility rules used for texture views as defined in
-       section 3.9.X. In particular, if both internal formats are listed
-       in the same entry of Table 3.X.2, they are considered compatible, or
-     * one format is compressed and the other is uncompressed and
-       Table 4.X.1 lists the two formats in the same row.
-    If the formats are not compatible INVALID_OPERATION is generated.
+            For the purposes of CopyImageSubData, two internal formats are considered compatible if
+            any of the following conditions are met:
+
+            <itemizedlist>
+               <listitem>
+                    <para> 
+                        the formats are the same, 
+                    </para>
+               </listitem>
+               <listitem>
+                    <para> 
+                        the formats are considered compatible according
+                        to the compatibility rules used for texture
+                        views as defined in section 3.9.X. In
+                        particular, if both internal formats are listed
+                        in the same entry of Table 3.X.2, they are
+                        considered compatible, or
+                    </para> 
+               </listitem>
+               <listitem>
+                    <para> 
+                        one format is compressed and the other is
+                        uncompressed and Table 4.X.1 lists the two
+                        formats in the same row.
+                    </para> 
+               </listitem>
+            </itemizedlist>
+
+            If the formats are not compatible, an INVALID_OPERATION error is generated.
         </para>
-<table frame="topbot"><title>Sized Internal Formats</title>
+<table><title>Sized Internal Formats</title>
 <tgroup cols="3" align="left">
-    <colspec align="left"/>
-    <colspec align="left"/>
-    <colspec align="left"/>
+    <colspec colwidth="1*" />
+    <colspec colwidth="2*" />
+    <colspec colwidth="4*" />
     <thead>
         <row>
-            <entry rowsep="1" align="left"><emphasis role="bold">
-            Texel / Block Size
-            </emphasis></entry>
-            <entry rowsep="1" align="left"><emphasis role="bold">
-            Uncompressed Internal Format
-            </emphasis></entry>
-            <entry rowsep="1" align="left"><emphasis role="bold">
-            Compressed Internal Format(s)
-            </emphasis></entry>
+            <entry>
+                <emphasis role="bold"> Texel / Block Size </emphasis>
+            </entry>
+            <entry>
+                <emphasis role="bold"> Uncompressed Internal Format </emphasis>
+            </entry>
+            <entry>
+                <emphasis role="bold"> Compressed Internal Format(s) </emphasis>
+            </entry>
         </row>
     </thead>
     <tbody>

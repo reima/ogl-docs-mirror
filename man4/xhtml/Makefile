@@ -484,6 +484,8 @@ glTexStorage2D.xml \
 glTexStorage3D.xml \
     : ../internalformattable.xml ../baseformattable.xml ../compressedformattable.xml
 
+glTexBuffer.xml glTexBufferRange.xml: ../texboformattable.xml
+
 index.html: Makefile
 	./makeindex.pl . .. > $@
 

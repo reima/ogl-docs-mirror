@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<table frame="topbot">
+<table>
     <title>Base Internal Formats</title>
     <tgroup cols="3" align="left">
-        <colspec align="left"/>
-        <colspec align="left"/>
-        <colspec align="left"/>
+        <colspec/>
+        <colspec/>
+        <colspec/>
         <thead>
             <row>
-                <entry rowsep="1" align="left">
+                <entry>
                     <emphasis role="bold">Base Internal Format</emphasis>
                 </entry>
-                <entry rowsep="1" align="left">
+                <entry>
                     <emphasis role="bold">RGBA, Depth and Stencil Values</emphasis>
                 </entry>
-                <entry rowsep="1" align="left">
+                <entry>
                     <emphasis role="bold">Internal Components</emphasis>
                 </entry>
             </row>

@@ -110,60 +110,60 @@
             with the target of the parent texture, given in <parameter>origtexture</parameter>
             as specified in the following table:
         </para>
-        <informaltable frame="topbot">
+        <informaltable>
             <tgroup cols="2" align="left">
                 <colspec colnum="1" colname="col1" colwidth="1*"/>
                 <colspec colnum="2" colname="col2" colwidth="2*"/>
                 <thead>
                     <row>
-                        <entry rowsep="1" align="center">Original Target</entry>
-                        <entry rowsep="1" align="center">Compatible New Targets</entry>
+                        <entry>Original Target</entry>
+                        <entry>Compatible New Targets</entry>
                     </row>
                 </thead>
                 <tbody>
                     <row>
-                        <entry align="left"><constant>GL_TEXTURE_1D</constant></entry>
-                        <entry align="left"><constant>GL_TEXTURE_1D</constant>, <constant>GL_TEXTURE_1D_ARRAY</constant></entry>
+                        <entry><constant>GL_TEXTURE_1D</constant></entry>
+                        <entry><constant>GL_TEXTURE_1D</constant>, <constant>GL_TEXTURE_1D_ARRAY</constant></entry>
                     </row>
                     <row>
-                        <entry align="left"><constant>GL_TEXTURE_2D</constant></entry>
-                        <entry align="left"><constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_2D_ARRAY</constant></entry>
+                        <entry><constant>GL_TEXTURE_2D</constant></entry>
+                        <entry><constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_2D_ARRAY</constant></entry>
                     </row>
                     <row>
-                        <entry align="left"><constant>GL_TEXTURE_3D</constant></entry>
-                        <entry align="left"><constant>GL_TEXTURE_3D</constant></entry>
+                        <entry><constant>GL_TEXTURE_3D</constant></entry>
+                        <entry><constant>GL_TEXTURE_3D</constant></entry>
                     </row>
                     <row>
-                        <entry align="left"><constant>GL_TEXTURE_CUBE_MAP</constant></entry>
-                        <entry align="left"><constant>GL_TEXTURE_CUBE_MAP</constant>, <constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_2D_ARRAY</constant>, <constant>GL_TEXTUER_CUBE_MAP_ARRAY</constant></entry>
+                        <entry><constant>GL_TEXTURE_CUBE_MAP</constant></entry>
+                        <entry><constant>GL_TEXTURE_CUBE_MAP</constant>, <constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_2D_ARRAY</constant>, <constant>GL_TEXTUER_CUBE_MAP_ARRAY</constant></entry>
                     </row>
                     <row>
-                        <entry align="left"><constant>GL_TEXTURE_RECTANGLE</constant></entry>
-                        <entry align="left"><constant>GL_TEXTURE_RECTANGLE</constant></entry>
+                        <entry><constant>GL_TEXTURE_RECTANGLE</constant></entry>
+                        <entry><constant>GL_TEXTURE_RECTANGLE</constant></entry>
                     </row>
                     <row>
-                        <entry align="left"><constant>GL_TEXTURE_BUFFER</constant></entry>
-                        <entry align="left"><emphasis>none</emphasis></entry>
+                        <entry><constant>GL_TEXTURE_BUFFER</constant></entry>
+                        <entry><emphasis>none</emphasis></entry>
                     </row>
                     <row>
-                        <entry align="left"><constant>GL_TEXTURE_1D_ARRAY</constant></entry>
-                        <entry align="left"><constant>GL_TEXTURE_1D</constant>, <constant>GL_TEXTURE_1D_ARRAY</constant></entry>
+                        <entry><constant>GL_TEXTURE_1D_ARRAY</constant></entry>
+                        <entry><constant>GL_TEXTURE_1D</constant>, <constant>GL_TEXTURE_1D_ARRAY</constant></entry>
                     </row>
                     <row>
-                        <entry align="left"><constant>GL_TEXTURE_2D_ARRAY</constant></entry>
-                        <entry align="left"><constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_2D_ARRAY</constant></entry>
+                        <entry><constant>GL_TEXTURE_2D_ARRAY</constant></entry>
+                        <entry><constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_2D_ARRAY</constant></entry>
                     </row>
                     <row>
-                        <entry align="left"><constant>GL_TEXTURE_CUBE_MAP_ARRAY</constant></entry>
-                        <entry align="left"><constant>GL_TEXTURE_CUBE_MAP</constant>, <constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_2D_ARRAY</constant>, <constant>GL_TEXTUER_CUBE_MAP_ARRAY</constant></entry>
+                        <entry><constant>GL_TEXTURE_CUBE_MAP_ARRAY</constant></entry>
+                        <entry><constant>GL_TEXTURE_CUBE_MAP</constant>, <constant>GL_TEXTURE_2D</constant>, <constant>GL_TEXTURE_2D_ARRAY</constant>, <constant>GL_TEXTUER_CUBE_MAP_ARRAY</constant></entry>
                     </row>
                     <row>
-                        <entry align="left"><constant>GL_TEXTURE_2D_MULTISAMPLE</constant></entry>
-                        <entry align="left"><constant>GL_TEXTURE_2D_MULTISAMPLE</constant>, <constant>GL_TEXTURE_MULTISAMPLE_ARRAY</constant></entry>
+                        <entry><constant>GL_TEXTURE_2D_MULTISAMPLE</constant></entry>
+                        <entry><constant>GL_TEXTURE_2D_MULTISAMPLE</constant>, <constant>GL_TEXTURE_MULTISAMPLE_ARRAY</constant></entry>
                     </row>
                     <row>
-                        <entry align="left"><constant>GL_TEXTURE_2D_MULTISAMPLE_ARRAY</constant></entry>
-                        <entry align="left"><constant>GL_TEXTURE_2D_MULTISAMPLE</constant>, <constant>GL_TEXTURE_MULTISAMPLE_ARRAY</constant></entry>
+                        <entry><constant>GL_TEXTURE_2D_MULTISAMPLE_ARRAY</constant></entry>
+                        <entry><constant>GL_TEXTURE_2D_MULTISAMPLE</constant>, <constant>GL_TEXTURE_MULTISAMPLE_ARRAY</constant></entry>
                     </row>
                 </tbody>
             </tgroup>
@@ -178,71 +178,71 @@
             <parameter>internalformat</parameter> must be compatible with the internal format
             of the parent texture as specified in the following table:
         </para>
-        <informaltable frame="topbot">
+        <informaltable>
             <tgroup cols="2" align="left">
                 <colspec colnum="1" colname="col1" colwidth="1*"/>
                 <colspec colnum="2" colname="col2" colwidth="2*"/>
                 <thead>
                     <row>
-                        <entry align="center">Class</entry>
-                        <entry align="center">Internal Formats</entry>
+                        <entry>Class</entry>
+                        <entry>Internal Formats</entry>
                     </row>
                 </thead>
                 <tbody>
                     <row>
-                        <entry align="left">128-bit</entry>
-                        <entry align="left"><constant>GL_RGBA32F</constant>, <constant>GL_RGBA32UI</constant>, <constant>GL_RGBA32I</constant></entry>
+                        <entry>128-bit</entry>
+                        <entry><constant>GL_RGBA32F</constant>, <constant>GL_RGBA32UI</constant>, <constant>GL_RGBA32I</constant></entry>
                     </row>
                     <row>
-                        <entry align="left">96-bit</entry>
-                        <entry align="left"><constant>GL_RGB32F</constant>, <constant>GL_RGB32UI</constant>, <constant>GL_RGB32I</constant></entry>
+                        <entry>96-bit</entry>
+                        <entry><constant>GL_RGB32F</constant>, <constant>GL_RGB32UI</constant>, <constant>GL_RGB32I</constant></entry>
                     </row>
                     <row>
-                        <entry align="left">64-bit</entry>
-                        <entry align="left"><constant>GL_RGBA16F</constant>, <constant>GL_RG32F</constant>, <constant>GL_RGBA16UI</constant>,
+                        <entry>64-bit</entry>
+                        <entry><constant>GL_RGBA16F</constant>, <constant>GL_RG32F</constant>, <constant>GL_RGBA16UI</constant>,
                         <constant>GL_RG32UI</constant>, <constant>GL_RGBA16I</constant>, <constant>GL_RG32I</constant>, <constant>GL_RGBA16</constant>, <constant>GL_RGBA16_SNORM</constant></entry>
                     </row>
                     <row>
-                        <entry align="left">48-bit</entry>
-                        <entry align="left"><constant>GL_RGB16</constant>, <constant>GL_RGB16_SNORM</constant>, <constant>GL_RGB16F</constant>, <constant>GL_RGB16UI</constant>, <constant>GL_RGB16I</constant></entry>
+                        <entry>48-bit</entry>
+                        <entry><constant>GL_RGB16</constant>, <constant>GL_RGB16_SNORM</constant>, <constant>GL_RGB16F</constant>, <constant>GL_RGB16UI</constant>, <constant>GL_RGB16I</constant></entry>
                     </row>
                     <row>
-                        <entry align="left">32-bit</entry>
-                        <entry align="left"><constant>GL_RG16F</constant>, <constant>GL_R11F_G11F_B10F</constant>, <constant>GL_R32F</constant>, <constant>GL_RGB10_A2UI</constant>,
+                        <entry>32-bit</entry>
+                        <entry><constant>GL_RG16F</constant>, <constant>GL_R11F_G11F_B10F</constant>, <constant>GL_R32F</constant>, <constant>GL_RGB10_A2UI</constant>,
                                             <constant>GL_RGBA8UI</constant>, <constant>GL_RG16UI</constant>, <constant>GL_R32UI</constant>, <constant>GL_RGBA8I</constant>,
                                             <constant>GL_RG16I</constant>, <constant>GL_R32I</constant>, <constant>GL_RGB10_A2</constant>, <constant>GL_RGBA8</constant>,
                                             <constant>GL_RG16</constant>, <constant>GL_RGBA8_SNORM</constant>, <constant>GL_RG16_SNORM</constant>, <constant>GL_SRGB8_ALPHA8</constant>,
                                             <constant>GL_RGB9_E5</constant></entry>
                     </row>
                     <row>
-                        <entry align="left">24-bit</entry>
-                        <entry align="left"><constant>GL_RGB8</constant>, <constant>GL_RGB8_SNORM</constant>, <constant>GL_SRGB8</constant>,
+                        <entry>24-bit</entry>
+                        <entry><constant>GL_RGB8</constant>, <constant>GL_RGB8_SNORM</constant>, <constant>GL_SRGB8</constant>,
                                             <constant>GL_RGB8UI</constant>, <constant>GL_RGB8I</constant></entry>
                     </row>
                     <row>
-                        <entry align="left">16-bit</entry>
-                        <entry align="left"><constant>GL_R16F</constant>, <constant>GL_RG8UI</constant>, <constant>GL_R16UI</constant>, <constant>GL_RG8I</constant>,
+                        <entry>16-bit</entry>
+                        <entry><constant>GL_R16F</constant>, <constant>GL_RG8UI</constant>, <constant>GL_R16UI</constant>, <constant>GL_RG8I</constant>,
                                             <constant>GL_R16I</constant>, <constant>GL_RG8</constant>, <constant>GL_R16</constant>, <constant>GL_RG8_SNORM</constant>, <constant>GL_R16_SNORM</constant></entry>
                     </row>
                     <row>
-                        <entry align="left">8-bit</entry>
-                        <entry align="left"><constant>GL_R8UI</constant>, <constant>GL_R8I</constant>, <constant>GL_R8</constant>, <constant>GL_R8_SNORM</constant></entry>
+                        <entry>8-bit</entry>
+                        <entry><constant>GL_R8UI</constant>, <constant>GL_R8I</constant>, <constant>GL_R8</constant>, <constant>GL_R8_SNORM</constant></entry>
                     </row>
                     <row>
-                        <entry align="left"><constant>GL_RGTC1_RED</constant></entry>
-                        <entry align="left"><constant>GL_COMPRESSED_RED_RGTC1</constant>, <constant>GL_COMPRESSED_SIGNED_RED_RGTC1</constant></entry>
+                        <entry><constant>GL_RGTC1_RED</constant></entry>
+                        <entry><constant>GL_COMPRESSED_RED_RGTC1</constant>, <constant>GL_COMPRESSED_SIGNED_RED_RGTC1</constant></entry>
                     </row>
                     <row>
-                        <entry align="left"><constant>GL_RGTC2_RG</constant></entry>
-                        <entry align="left"><constant>GL_COMPRESSED_RG_RGTC2</constant>, <constant>GL_COMPRESSED_SIGNED_RG_RGTC2</constant></entry>
+                        <entry><constant>GL_RGTC2_RG</constant></entry>
+                        <entry><constant>GL_COMPRESSED_RG_RGTC2</constant>, <constant>GL_COMPRESSED_SIGNED_RG_RGTC2</constant></entry>
                     </row>
                     <row>
-                        <entry align="left"><constant>GL_BPTC_UNORM</constant></entry>
-                        <entry align="left"><constant>GL_COMPRESSED_RGBA_BPTC_UNORM</constant>, <constant>GL_COMPRESSED_SRGB_ALPHA_BPTC_UNORM</constant></entry>
+                        <entry><constant>GL_BPTC_UNORM</constant></entry>
+                        <entry><constant>GL_COMPRESSED_RGBA_BPTC_UNORM</constant>, <constant>GL_COMPRESSED_SRGB_ALPHA_BPTC_UNORM</constant></entry>
                     </row>
                     <row>
-                        <entry align="left"><constant>GL_BPTC_FLOAT</constant></entry>
-                        <entry align="left"><constant>GL_COMPRESSED_RGB_BPTC_SIGNED_FLOAT</constant>, <constant>GL_COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT</constant></entry>
+                        <entry><constant>GL_BPTC_FLOAT</constant></entry>
+                        <entry><constant>GL_COMPRESSED_RGB_BPTC_SIGNED_FLOAT</constant>, <constant>GL_COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT</constant></entry>
                     </row>
                 </tbody>
             </tgroup>

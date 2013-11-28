@@ -486,11 +486,8 @@ glTexStorage3D.xml \
 
 glTexBuffer.xml glTexBufferRange.xml: ../texboformattable.xml
 
-index.html: Makefile
-	./makeindex.pl . .. > $@
+index.html: Makefile makeindex.py $(XML)
+	./makeindex.py . .. $@
 
-clean:
-	$(RM) $(TEX_FILES) *.log *.aux *.toc *.dvi *.out
-
-clobber: clean
-	$(RM) $(XML) $(PDF_FILES)
+clean clobber: clean
+	$(RM) $(XML) index.html

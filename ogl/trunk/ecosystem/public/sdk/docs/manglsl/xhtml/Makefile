@@ -264,13 +264,10 @@ XML    = $(GLSLXML)
 
 default: all
 
-index.html: makeindex.pl $(XML) Makefile
-	$(PERL) makeindex.pl $(dir $<) $(dir $<).. > $@
+index.html: makeindex.py $(XML) Makefile
+	./makeindex.py . .. $@
 
 all: $(XML) index.html Makefile
 
-clean:
-	$(RM) $(TEX_FILES) *.log *.aux *.toc *.dvi *.out
-
-clobber: clean
-	$(RM) $(XML) $(PDF_FILES) index.html
+clean clobber: clean
+	$(RM) $(XML) index.html

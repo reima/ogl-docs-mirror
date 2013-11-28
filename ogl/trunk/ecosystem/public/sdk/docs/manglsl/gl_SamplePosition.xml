@@ -16,20 +16,23 @@
         <refname>gl_SamplePosition</refname>
         <refpurpose>contains the location of the current sample within the current fragment</refpurpose>
     </refnamediv>
-    <refsynopsisdiv><title>Declaration</title>
-        <para>
-            <function>in vec2 gl_SamplePosition;</function>
-        </para>
+    <refsynopsisdiv>
+        <title>Declaration</title>
+        <fieldsynopsis>
+            <modifier>in</modifier>
+            <type>vec2</type>
+            <varname>gl_SamplePosition</varname>
+        </fieldsynopsis>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
-            <function>gl_SamplePosition</function> is a fragment language input variable that contains
+            <varname>gl_SamplePosition</varname> is a fragment language input variable that contains
             the location within a fragment of the sample currently being processed. The x and y components
-            of <function>gl_SamplePosition</function> contain the sub-pixel coordinate of the current
+            of <varname>gl_SamplePosition</varname> contain the sub-pixel coordinate of the current
             sample and will have values in the range 0.0 to 1.0. The sub-pixel coordinates of the center
-            of the pixel are always (0.5, 0.5). Any static use of <function>gl_SamplePosition</function>
+            of the pixel are always (0.5, 0.5). Any static use of <varname>gl_SamplePosition</varname>
             causes the entire fragment shader to be evaluated per-sample rather than per-fragment. When rendering
-            to a non-multisample buffer, or if multisample rasterization is disabled, <function>gl_SamplePosition</function>
+            to a non-multisample buffer, or if multisample rasterization is disabled, <varname>gl_SamplePosition</varname>
             will be (0.5, 0.5).
         </para>
     </refsect1>

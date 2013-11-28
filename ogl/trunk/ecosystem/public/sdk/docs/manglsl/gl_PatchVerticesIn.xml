@@ -16,16 +16,19 @@
         <refname>gl_PatchVerticesIn</refname>
         <refpurpose>contains the number of vertices in the current patch</refpurpose>
     </refnamediv>
-    <refsynopsisdiv><title>Declaration</title>
-        <para>
-            <function>in int gl_PatchVerticesIn;</function>
-        </para>
+    <refsynopsisdiv>
+        <title>Declaration</title>
+        <fieldsynopsis>
+            <modifier>in</modifier>
+            <type>int</type>
+            <varname>gl_PatchVerticesIn</varname>
+        </fieldsynopsis>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
-            Available only in the tessellation control and evaluation languages, <function>gl_PatchVerticesIn</function>
+            Available only in the tessellation control and evaluation languages, <varname>gl_PatchVerticesIn</varname>
             contains the number of vertices in the input being processed by the shader. A single tessellation control or
-            evaluation shader can read patches of differing sizes, and so th value of <function>gl_PatchVertexIn</function>
+            evaluation shader can read patches of differing sizes, and so th value of <varname>gl_PatchVertexIn</varname>
             may differ between patches.
         </para>
     </refsect1>

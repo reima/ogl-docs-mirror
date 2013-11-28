@@ -16,18 +16,21 @@
         <refname>gl_WorkGroupID</refname>
         <refpurpose>contains the index of the workgroup currently being operated on by a compute shader</refpurpose>
     </refnamediv>
-    <refsynopsisdiv><title>Declaration</title>
-        <para>
-            <function>in uvec3 gl_WorkGroupID</function>
-        </para>
+    <refsynopsisdiv>
+        <title>Declaration</title>
+        <fieldsynopsis>
+            <modifier>in</modifier>
+            <type>uvec3</type>
+            <varname>gl_WorkGroupID</varname>
+        </fieldsynopsis>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
-            In the compute language, <function>gl_WorkGroupID</function>
+            In the compute language, <varname>gl_WorkGroupID</varname>
             contains the 3-dimensional index of the global work group
             that the current compute shader invocation is executing within. The possible values range
-            across the parameters passed into <function>glDispatchCompute</function>, i.e., from (0, 0, 0) to
-            (<function>gl_NumWorkGroups.x</function> - 1, <function>gl_NumWorkGroups.y</function> - 1, <function>gl_NumWorkGroups.z</function> - 1).
+            across the parameters passed into <varname>glDispatchCompute</varname>, i.e., from (0, 0, 0) to
+            (<varname>gl_NumWorkGroups.x</varname> - 1, <varname>gl_NumWorkGroups.y</varname> - 1, <varname>gl_NumWorkGroups.z</varname> - 1).
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>

@@ -16,47 +16,46 @@
         <refname>gl_PointSize</refname>
         <refpurpose>contains size of rasterized points, in pixels</refpurpose>
     </refnamediv>
-    <refsynopsisdiv><title>Declaration</title>
+    <refsynopsisdiv>
+        <title>Declaration</title>
         <para>
-            <function>gl_PointSize</function> is a member of the <function>gl_PerVertex</function>
-            named block:
-        </para>
-        <para>
-<programlisting><![CDATA[    out gl_PerVertex {
+            <varname>gl_PointSize</varname> is a member of the
+            <varname>gl_PerVertex</varname> named block:
+<programlisting>    out gl_PerVertex {
         vec4 gl_Position;
         float gl_PointSize;
         float gl_ClipDistance[];
-    };]]></programlisting>
+    };</programlisting>
         </para>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
             In the vertex, tessellation evaluation and geometry languages, a single
-            global instance of the <function>gl_PerVertex</function> named block is available and
-            its <function>gl_PointSize</function> member is an output that receives the
+            global instance of the <varname>gl_PerVertex</varname> named block is available and
+            its <varname>gl_PointSize</varname> member is an output that receives the
             intended size of the point to be rasterized, in pixels. It may be written at any time
             during shader execution. If <constant>GL_PROGRAM_POINT_SIZE</constant> is enabled,
-            <function>gl_PointSize</function> is used to determine the size of rasterized
+            <varname>gl_PointSize</varname> is used to determine the size of rasterized
             points, otherwise it is ignored by the rasterization stage.
         </para>
         <para>
-            In the tessellation control language, the <function>gl_PerVertex</function> named block
-            is used to construct an array, <function>gl_out[]</function>, whose members become
+            In the tessellation control language, the <varname>gl_PerVertex</varname> named block
+            is used to construct an array, <varname>gl_out[]</varname>, whose members become
             available as inputs to the subsequent tessellation evaluation shader.
         </para>
         <para>
-            The value of <function>gl_PointSize</function> (or the <function>gl_PointSize</function> member of the <function>gl_out[]</function>
+            The value of <varname>gl_PointSize</varname> (or the <varname>gl_PointSize</varname> member of the <varname>gl_out[]</varname>
             array, in the case of the tessellation control shader)
             is undefined after the vertex, tessellation control, and tessellation evaluation
             shading stages if the corresponding shader executable does
             not write to gl_PointSize. It is also undefined after the geometry processing stage if the geometry shader executable calls
             <citerefentry><refentrytitle>EmitVertex</refentrytitle></citerefentry> without having
-            written <function>gl_PointSize</function> since the last call to <citerefentry><refentrytitle>EmitVertex</refentrytitle></citerefentry>
+            written <varname>gl_PointSize</varname> since the last call to <citerefentry><refentrytitle>EmitVertex</refentrytitle></citerefentry>
             (or hasn't written it at all).
         </para>
         <para>
             In the tessellation control, tessellation evaluation and geometry languages,
-            the <function>gl_PerVertex</function> named block is used to construct an array, <function>gl_in[]</function>
+            the <varname>gl_PerVertex</varname> named block is used to construct an array, <varname>gl_in[]</varname>
             of per-vertex or per-control point inputs whose content represents the corresponding
             outputs written by the previous stage.
          </para>

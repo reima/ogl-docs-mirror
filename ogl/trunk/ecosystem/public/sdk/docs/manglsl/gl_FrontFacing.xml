@@ -16,18 +16,21 @@
         <refname>gl_FrontFacing</refname>
         <refpurpose>indicates whether a primitive is front or back facing</refpurpose>
     </refnamediv>
-    <refsynopsisdiv><title>Declaration</title>
-        <para>
-            <function>in bool gl_FrontFacing;</function>
-        </para>
+    <refsynopsisdiv>
+        <title>Declaration</title>
+        <fieldsynopsis>
+            <modifier>in</modifier>
+            <type>bool</type>
+            <varname>gl_FrontFacing</varname>
+        </fieldsynopsis>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
-            Available only in the fragment language, <function>gl_FrontFacing</function> is an input variable
+            Available only in the fragment language, <varname>gl_FrontFacing</varname> is an input variable
             whose value is <function>true</function> if the fragment belongs to a front-facing primitive and
             false otherwise. The determination of whether a triangle primitive is front-facing is made by
             examining the sign of the area of the triangle, including a possible reversal of this sign
-            as controlled by <function>glFrontFace</function>. One way to compute this area is:
+            as controlled by <varname>glFrontFace</varname>. One way to compute this area is:
         </para>
         <para>
             <inlineequation><mml:math>

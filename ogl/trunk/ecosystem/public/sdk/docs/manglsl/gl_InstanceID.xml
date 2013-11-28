@@ -16,18 +16,21 @@
         <refname>gl_InstanceID</refname>
         <refpurpose>contains the index of the current primitive in an instanced draw command</refpurpose>
     </refnamediv>
-    <refsynopsisdiv><title>Declaration</title>
-        <para>
-            <function>in int gl_InstanceID;</function>
-        </para>
+    <refsynopsisdiv>
+        <title>Declaration</title>
+        <fieldsynopsis>
+            <modifier>in</modifier>
+            <type>int</type>
+            <varname>gl_InstanceID</varname>
+        </fieldsynopsis>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
-            <function>gl_InstanceID</function> is a vertex language input variable that
+            <varname>gl_InstanceID</varname> is a vertex language input variable that
             holds the integer index of the current primitive in an instanced draw
-            command such as <function>glDrawArraysInstanced</function>. If the current
+            command such as <varname>glDrawArraysInstanced</varname>. If the current
             primitive does not originate from an instanced draw command, the value
-            of <function>gl_InstanceID</function> is zero.
+            of <varname>gl_InstanceID</varname> is zero.
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>

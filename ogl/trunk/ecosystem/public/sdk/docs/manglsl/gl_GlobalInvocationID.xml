@@ -16,18 +16,21 @@
         <refname>gl_GlobalInvocationID</refname>
         <refpurpose>contains the global index of work item currently being operated on by a compute shader</refpurpose>
     </refnamediv>
-    <refsynopsisdiv><title>Declaration</title>
-        <para>
-            <function>in uvec3 gl_GlobalInvocationID</function>
-        </para>
+    <refsynopsisdiv>
+        <title>Declaration</title>
+        <fieldsynopsis>
+            <modifier>in</modifier>
+            <type>uvec3</type>
+            <varname>gl_GlobalInvocationID</varname>
+        </fieldsynopsis>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
-            In the compute language, <function>gl_GlobalInvocationID</function>
+            In the compute language, <varname>gl_GlobalInvocationID</varname>
             is a derived input variable containing the n-dimensional index of the
             work invocation within the global work group that the current shader is
-            executing on. The value of <function>gl_GlobalInvocationID</function> is equal to
-            <function>gl_WorkGroupID</function> * <function>gl_WorkGroupSize</function> + <function>gl_LocalInvocationID</function>.
+            executing on. The value of <varname>gl_GlobalInvocationID</varname> is equal to
+            <varname>gl_WorkGroupID</varname> * <varname>gl_WorkGroupSize</varname> + <varname>gl_LocalInvocationID</varname>.
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>

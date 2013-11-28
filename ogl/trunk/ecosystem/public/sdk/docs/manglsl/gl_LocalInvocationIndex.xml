@@ -16,20 +16,23 @@
         <refname>gl_LocalInvocationIndex</refname>
         <refpurpose>contains the local linear index of work item currently being operated on by a compute shader</refpurpose>
     </refnamediv>
-    <refsynopsisdiv><title>Declaration</title>
-        <para>
-            <function>in uint gl_LocalInvocationIndex</function>
-        </para>
+    <refsynopsisdiv>
+        <title>Declaration</title>
+        <fieldsynopsis>
+            <modifier>in</modifier>
+            <type>uint</type>
+            <varname>gl_LocalInvocationIndex</varname>
+        </fieldsynopsis>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
-            In the compute language, <function>gl_LocalInvocationIndex</function>
+            In the compute language, <varname>gl_LocalInvocationIndex</varname>
             is a derived input variable containing the 1-dimensional linearized index of the
             work invocation within the work group that the current shader is
-            executing on. The value of <function>gl_LocalInvocationIndex</function> is equal to
-            <function>gl_LocalInvocationID.z</function> * <function>gl_WorkGroupSize.x</function> * <function>gl_WorkGroupSize.y</function> +
-            <function>gl_LocalInvocationID.y</function> * <function>gl_WorkGroupSize.x</function> +
-            <function>gl_LocalInvocationID.x</function>.
+            executing on. The value of <varname>gl_LocalInvocationIndex</varname> is equal to
+            <varname>gl_LocalInvocationID.z</varname> * <varname>gl_WorkGroupSize.x</varname> * <varname>gl_WorkGroupSize.y</varname> +
+            <varname>gl_LocalInvocationID.y</varname> * <varname>gl_WorkGroupSize.x</varname> +
+            <varname>gl_LocalInvocationID.x</varname>.
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>

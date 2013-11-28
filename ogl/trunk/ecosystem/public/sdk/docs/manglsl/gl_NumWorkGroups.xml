@@ -16,18 +16,21 @@
         <refname>gl_NumWorkGroups</refname>
         <refpurpose>contains the number of workgroups that have been dispatched to a compute shader</refpurpose>
     </refnamediv>
-    <refsynopsisdiv><title>Declaration</title>
-        <para>
-            <function>in uvec3 gl_NumWorkGroups</function>
-        </para>
+    <refsynopsisdiv>
+        <title>Declaration</title>
+        <fieldsynopsis>
+            <modifier>in</modifier>
+            <type>uvec3</type>
+            <varname>gl_NumWorkGroups</varname>
+        </fieldsynopsis>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
-            In the compute language, <function>gl_NumWorkGroups</function>
+            In the compute language, <varname>gl_NumWorkGroups</varname>
             contains the total number of work groups that will execute the compute
-            shader. The components of <function>gl_NumWorkGroups</function> are equal to the <parameter>num_groups_x</parameter>,
+            shader. The components of <varname>gl_NumWorkGroups</varname> are equal to the <parameter>num_groups_x</parameter>,
             <parameter>num_groups_y</parameter>, and <parameter>num_groups_z</parameter> parameters passed to the
-            <function>glDispatchCompute</function> command.
+            <varname>glDispatchCompute</varname> command.
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>

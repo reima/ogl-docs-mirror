@@ -16,20 +16,23 @@
         <refname>gl_InvocationID</refname>
         <refpurpose>contains the invocation index of the current shader</refpurpose>
     </refnamediv>
-    <refsynopsisdiv><title>Declaration</title>
-        <para>
-            <function>in int gl_InvocationID;</function>
-        </para>
+    <refsynopsisdiv>
+        <title>Declaration</title>
+        <fieldsynopsis>
+            <modifier>in</modifier>
+            <type>int</type>
+            <varname>gl_InvocationID</varname>
+        </fieldsynopsis>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
-            In the tessellation control language, <function>gl_InvocationID</function>
+            In the tessellation control language, <varname>gl_InvocationID</varname>
             contains the index of the output patch vertex assigned to the shader invocation.
             It is assigned an integer value in the range [0, N-1] where N is the number of output
             patch vertices.
         </para>
         <para>
-            In the geometry language, <function>gl_InvocationID</function> identifies
+            In the geometry language, <varname>gl_InvocationID</varname> identifies
             the invocation number assigned to the geometry shader invocation. It is assigned
             an integer value in the range [0, N-1] where N is the number of geometry shader
             invocations per primitive.

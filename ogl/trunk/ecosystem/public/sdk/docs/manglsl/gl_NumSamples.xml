@@ -16,16 +16,19 @@
         <refname>gl_NumSamples</refname>
         <refpurpose>contains the total number of samples in the framebuffer</refpurpose>
     </refnamediv>
-    <refsynopsisdiv><title>Declaration</title>
-        <para>
-            <function>in int gl_NumSamples;</function>
-        </para>
+    <refsynopsisdiv>
+        <title>Declaration</title>
+        <fieldsynopsis>
+            <modifier>in</modifier>
+            <type>bool</type>
+            <varname>gl_NumSamples</varname>
+        </fieldsynopsis>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
-            <function>gl_NumSamples</function> is a fragment language input variable that contains
+            <varname>gl_NumSamples</varname> is a fragment language input variable that contains
             the number of samples in the framebuffer, or 1 if rendering to a non-multisample framebuffer.
-            <function>gl_NumSamples</function> is the sample count of the framebuffer regardless
+            <varname>gl_NumSamples</varname> is the sample count of the framebuffer regardless
             of whether multisample rasterization is enabled or not.
         </para>
     </refsect1>

@@ -16,14 +16,17 @@
         <refname>gl_SampleID</refname>
         <refpurpose>contains the index of the sample currently being processed</refpurpose>
     </refnamediv>
-    <refsynopsisdiv><title>Declaration</title>
-        <para>
-            <function>in int gl_SampleID;</function>
-        </para>
+    <refsynopsisdiv>
+        <title>Declaration</title>
+        <fieldsynopsis>
+            <modifier>in</modifier>
+            <type>int</type>
+            <varname>gl_SampleID</varname>
+        </fieldsynopsis>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
-            <function>gl_SampleID</function> is a fragment language input variable that contains
+            <varname>gl_SampleID</varname> is a fragment language input variable that contains
             the index of the sample currently being processed. This variable is in the range
             0 to <citerefentry><refentrytitle>gl_NumSamples</refentrytitle></citerefentry> - 1, where
             <citerefentry><refentrytitle>gl_NumSamples</refentrytitle></citerefentry>
@@ -33,7 +36,7 @@
         </para>
         <para>
             When rendering to a non-multisample buffer, or if multisample rasterization is disabled,
-            <function>gl_SampleID</function> will always be zero. <citerefentry><refentrytitle>gl_NumSamples</refentrytitle></citerefentry>
+            <varname>gl_SampleID</varname> will always be zero. <citerefentry><refentrytitle>gl_NumSamples</refentrytitle></citerefentry>
             is the sample count of the framebuffer regardless of whether multisample rasterization is
             enabled or not.
         </para>

@@ -16,19 +16,22 @@
         <refname>gl_LocalInvocationID</refname>
         <refpurpose>contains the index of work item currently being operated on by a compute shader</refpurpose>
     </refnamediv>
-    <refsynopsisdiv><title>Declaration</title>
-        <para>
-            <function>in uvec3 gl_LocalInvocationID</function>
-        </para>
+    <refsynopsisdiv>
+        <title>Declaration</title>
+        <fieldsynopsis>
+            <modifier>in</modifier>
+            <type>uvec3</type>
+            <varname>gl_LocalInvocationID</varname>
+        </fieldsynopsis>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
-            In the compute language, <function>gl_LocalInvocationID</function>
+            In the compute language, <varname>gl_LocalInvocationID</varname>
             is an input variable containing the n-dimensional index of the local
             work invocation within the work group that the current shader is
             executing in. The possible values for this variable range across
-            the local work group size, i.e., (0,0,0) to (<function>gl_WorkGroupSize.x</function> - 1,
-            <function>gl_WorkGroupSize.y</function> - 1, <function>gl_WorkGroupSize.z</function> - 1).
+            the local work group size, i.e., (0,0,0) to (<varname>gl_WorkGroupSize.x</varname> - 1,
+            <varname>gl_WorkGroupSize.y</varname> - 1, <varname>gl_WorkGroupSize.z</varname> - 1).
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>

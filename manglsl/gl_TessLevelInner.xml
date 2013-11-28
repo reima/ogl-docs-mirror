@@ -16,23 +16,34 @@
         <refname>gl_TessLevelInner</refname>
         <refpurpose>contains the inner tessellation levels for the current patch</refpurpose>
     </refnamediv>
-    <refsynopsisdiv><title>Declaration</title>
+    <refsynopsisdiv>
+        <title>Declaration</title>
         <para>
-            <function>patch out float gl_TessLevelInner[2];</function> (tessellation control language)
+            <programlisting>// In tessellation control shaders</programlisting>
+            <fieldsynopsis>
+                <modifier>out</modifier>
+                <type>float</type>
+                <varname>gl_TessLevelInner[2]</varname>
+            </fieldsynopsis>
         </para>
         <para>
-            <function>patch in float gl_TessLevelInner[2];</function> (tessellation evaluation languge)
+            <programlisting>// In tessellation evaluation shaders</programlisting>
+            <fieldsynopsis>
+                <modifier>in</modifier>
+                <type>float</type>
+                <varname>gl_TessLevelInner[2]</varname>
+            </fieldsynopsis>
         </para>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
-            Available only in the tessellation control and evaluation languages, <function>gl_TessLevelInner</function>
+            Available only in the tessellation control and evaluation languages, <varname>gl_TessLevelInner</varname>
             is used to assign values to the corresponding inner tesellation levels of the current patch. The values written
-            into <function>gl_TessLevelInner</function> by the tessellation control shader are used by the tessellation
+            into <varname>gl_TessLevelInner</varname> by the tessellation control shader are used by the tessellation
             primitive generator to control primitive tessellation and may be read by the subsequent tessellation evaluation shader.
         </para>
         <para>
-            As inputs to the tessellation evaluation shader, <function>gl_TessLevelInner</function> contains the values
+            As inputs to the tessellation evaluation shader, <varname>gl_TessLevelInner</varname> contains the values
             written by the tessellation control shader, if present. If no tessellation control shader is present, it
             contains the default tessellation level.
         </para>

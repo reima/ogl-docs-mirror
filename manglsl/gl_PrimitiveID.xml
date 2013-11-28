@@ -16,17 +16,29 @@
         <refname>gl_PrimitiveID</refname>
         <refpurpose>contains the index of the current primitive</refpurpose>
     </refnamediv>
-    <refsynopsisdiv><title>Declaration</title>
+    <refsynopsisdiv>
+        <title>Declaration</title>
         <para>
-            <function>in int gl_PrimitiveID;</function> (Tessellation control, tessellation evaluation and fragment languages)
+            <programlisting>// In tessellation control, tessellation evaluation, and
+// fragment shaders</programlisting>
+            <fieldsynopsis>
+                <modifier>in</modifier>
+                <type>int</type>
+                <varname>gl_PrimitiveID</varname>
+            </fieldsynopsis>
         </para>
         <para>
-            <function>out int gl_PrimitiveID;</function> (Geometry language)
+            <programlisting>// In geometry shaders</programlisting>
+            <fieldsynopsis>
+                <modifier>out</modifier>
+                <type>int</type>
+                <varname>gl_PrimitiveID</varname>
+            </fieldsynopsis>
         </para>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
-            <function>gl_PrimitiveID</function> is a tessellation control, tessellation evaluation
+            <varname>gl_PrimitiveID</varname> is a tessellation control, tessellation evaluation
             and fragment language input variable. For the tessellation control and tessellation
             evaluation languages, it holds the number of primitives processed by
             the shader since the current set of rendering primitives was started. The first
@@ -37,12 +49,12 @@
             index has no effect on the primitive ID counter.
         </para>
         <para>
-            In the geometry language, <function>gl_PrimitiveID</function> is an output
-            variable that is passed to the corresponding <function>gl_PrimitiveID</function> input
-            variable in the fragment shader. If no geomery shader is present then <function>gl_PrimitiveID</function>
+            In the geometry language, <varname>gl_PrimitiveID</varname> is an output
+            variable that is passed to the corresponding <varname>gl_PrimitiveID</varname> input
+            variable in the fragment shader. If no geomery shader is present then <varname>gl_PrimitiveID</varname>
             in the fragment language behaves identically as it would in the tessellation control and evaluation
-            languages. If a geometry shader is present but does not write to <function>gl_PrimitiveID</function>,
-            the value of <function>gl_PrimitiveID</function> in the fragment shader is undefined.
+            languages. If a geometry shader is present but does not write to <varname>gl_PrimitiveID</varname>,
+            the value of <varname>gl_PrimitiveID</varname> in the fragment shader is undefined.
         </para>
     </refsect1>
     <refsect1 id="versions"><title>Version Support</title>
@@ -51,11 +63,11 @@
                 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="funchead.xml" xpointer="xpointer(/*/*)" />
                 <tbody>
                     <row>
-                        <entry><function>gl_PrimitiveID</function> (Fragment and Geometry Languages)</entry>
+                        <entry><varname>gl_PrimitiveID</varname> (Fragment and Geometry Languages)</entry>
                         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='15']/*)" />
                     </row>
                     <row>
-                        <entry><function>gl_PrimitiveID</function> (Tessellation Control and Evaluation Languages)</entry>
+                        <entry><varname>gl_PrimitiveID</varname> (Tessellation Control and Evaluation Languages)</entry>
                         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='40']/*)" />
                     </row>
                 </tbody>

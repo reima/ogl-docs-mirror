@@ -16,14 +16,17 @@
         <refname>gl_TessCoord</refname>
         <refpurpose>contains the coordinate of the vertex within the current patch</refpurpose>
     </refnamediv>
-    <refsynopsisdiv><title>Declaration</title>
-        <para>
-            <function>in vec3 gl_TessCoord;</function>
-        </para>
+    <refsynopsisdiv>
+        <title>Declaration</title>
+        <fieldsynopsis>
+            <modifier>in</modifier>
+            <type>vec3</type>
+            <varname>gl_TessCoord</varname>
+        </fieldsynopsis>
     </refsynopsisdiv>
     <refsect1 id="description"><title>Description</title>
         <para>
-            Available only in the tessellation cevaluation language, <function>gl_TessCoord</function>
+            Available only in the tessellation cevaluation language, <varname>gl_TessCoord</varname>
             specifies the three component (u, v, w) vector identifying the position of the vertex being
             processed by the shader relative to the primitive being tessellated.
         </para>

@@ -79,29 +79,28 @@
         <para>
             The parameters addressed by <parameter>indirect</parameter> are packed into a structure
             that takes the form (in C):
-            <programlisting><![CDATA[    typedef  struct {
+            <programlisting>    typedef  struct {
         uint  count;
         uint  primCount;
         uint  firstIndex;
         uint  baseVertex;
         uint  baseInstance;
-    } DrawElementsIndirectCommand;]]></programlisting>
+    } DrawElementsIndirectCommand;</programlisting>
         </para>
         <para>
             <function>glDrawElementsIndirect</function> is equivalent to:
         </para>
         <para>
-<programlisting><![CDATA[    void glDrawElementsIndirect(GLenum mode, GLenum type, const void * indirect)
-    {
+<programlisting>    void glDrawElementsIndirect(GLenum mode, GLenum type, const void * indirect) {
         const DrawElementsIndirectCommand *cmd  = (const DrawElementsIndirectCommand *)indirect;
         glDrawElementsInstancedBaseVertexBaseInstance(mode,
-                                                      cmd->count,
+                                                      cmd-&gt;count,
                                                       type,
-                                                      cmd->firstIndex + size-of-type,
-                                                      cmd->primCount,
-                                                      cmd->baseVertex,
-                                                      cmd->baseInstance);
-    }]]></programlisting>
+                                                      cmd-&gt;firstIndex + size-of-type,
+                                                      cmd-&gt;primCount,
+                                                      cmd-&gt;baseVertex,
+                                                      cmd-&gt;baseInstance);
+    }</programlisting>
         </para>
         <para>
             If a buffer is bound to the <constant>GL_DRAW_INDIRECT_BUFFER</constant> binding at the time

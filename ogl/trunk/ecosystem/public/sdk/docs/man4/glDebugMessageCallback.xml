@@ -51,13 +51,13 @@
             the function whose address is given in <parameter>callback</parameter>. The callback function
             should have the following prototype (in C), or be otherwise compatible with such a prototype:
         </para>
-<programlisting><![CDATA[        typedef void (APIENTRY *DEBUGPROC)(GLenum source,
-                                           GLenum type,
-                                           GLuint id,
-                                           GLenum severity,
-                                           GLsizei length,
-                                           const GLchar* message,
-                                           void* userParam);]]></programlisting>
+<programlisting>        typedef void (APIENTRY *DEBUGPROC)(GLenum source,
+            GLenum type,
+            GLuint id,
+            GLenum severity,
+            GLsizei length,
+            const GLchar *message,
+            void *userParam);</programlisting>
         <para>
             This function is defined to have the same calling convention as the GL API functions. In
             most cases this is defined as <code>APIENTRY</code>, although it will vary depending

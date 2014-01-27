@@ -77,11 +77,10 @@
             Calling <function>glTexStorage1D</function> is equivalent, assuming no errors are generated,
             to executing the following pseudo-code:
         </para>
-<programlisting><![CDATA[    for (i = 0; i < levels; i++)
-    {
+<programlisting>    for (i = 0; i &lt; levels; i++) {
         glTexImage1D(target, i, internalformat, width, 0, format, type, NULL);
         width = max(1, (width / 2));
-    }]]></programlisting>
+    }</programlisting>
         <para>
             Since no texture data is actually provided, the values used in the pseudo-code
             for <parameter>format</parameter> and <parameter>type</parameter> are

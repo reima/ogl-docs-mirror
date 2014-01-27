@@ -70,11 +70,11 @@
             <parameter>R</parameter> is calculated as:
         </para>
         <para>
-            <programlisting><![CDATA[    k = 1.0 - eta * eta * (1.0 - dot(N, I) * dot(N, I));
-    if (k < 0.0)
+            <programlisting>    k = 1.0 - eta * eta * (1.0 - dot(N, I) * dot(N, I));
+    if (k &lt; 0.0)
         R = genType(0.0);       // or genDType(0.0)
     else
-        R = eta * I - (eta * dot(N, I) + sqrt(k)) * N;]]></programlisting>
+        R = eta * I - (eta * dot(N, I) + sqrt(k)) * N;</programlisting>
         </para>
         <para>
             The input parameters <parameter>I</parameter> and <parameter>N</parameter> should be normalized in order to achieve the desired result.

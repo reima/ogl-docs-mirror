@@ -99,38 +99,34 @@
         <para>
             The parameters addressed by <parameter>indirect</parameter> are packed into a structure
             that takes the form (in C):
-            <programlisting><![CDATA[    typedef  struct {
+            <programlisting>    typedef  struct {
         uint  count;
         uint  instanceCount;
         uint  firstIndex;
         uint  baseVertex;
         uint  baseInstance;
-    } DrawElementsIndirectCommand;]]></programlisting>
+    } DrawElementsIndirectCommand;</programlisting>
         </para>
         <para>
             A single call to <function>glMultiDrawElementsIndirect</function> is equivalent, assuming no errors
             are generated to:
-            <programlisting><![CDATA[    GLsizei n;
-    for (n = 0; n < drawcount; n++)
-    {
-        const DrawElementsIndirectCommand  *cmd;
-        if (stride != 0)
-        {
+            <programlisting>    GLsizei n;
+    for (n = 0; n &lt; drawcount; n++) {
+        const DrawElementsIndirectCommand *cmd;
+        if (stride != 0) {
             cmd = (const DrawElementsIndirectCommand  *)((uintptr)indirect + n * stride);
-        }
-        else
-        {
+        } else {
             cmd = (const DrawElementsIndirectCommand  *)indirect + n;
         }
 
         glDrawElementsInstancedBaseVertexBaseInstance(mode,
-                                                      cmd->count,
+                                                      cmd-&gt;count,
                                                       type,
-                                                      cmd->firstIndex + size-of-type,
-                                                      cmd->instanceCount,
-                                                      cmd->baseVertex,
-                                                      cmd->baseInstance);
-    }]]></programlisting>
+                                                      cmd-&gt;firstIndex + size-of-type,
+                                                      cmd-&gt;instanceCount,
+                                                      cmd-&gt;baseVertex,
+                                                      cmd-&gt;baseInstance);
+    }</programlisting>
         </para>
         <para>
             If a buffer is bound to the <constant>GL_DRAW_INDIRECT_BUFFER</constant> binding at the time

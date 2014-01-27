@@ -80,17 +80,13 @@
             buffers that are currently bound to the referenced binding points. Assuming no errors are generated, it is equivalent to the following
             pseudo-code, which calls <citerefentry><refentrytitle>glBindBufferRange</refentrytitle></citerefentry>:
         </para>
-<programlisting><![CDATA[    for (i = 0; i < count; i++)
-    {
-        if (buffers != NULL)
-        {
+<programlisting>    for (i = 0; i &lt; count; i++) {
+        if (buffers != NULL) {
             glBindBufferRange(target, first + i, buffers[i], offsets[i], sizes[i]);
-        }
-        else
-        {
+        } else {
             glBindBufferBase(target, first + i, 0);
         }
-    }]]></programlisting>
+    }</programlisting>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>
         <para>

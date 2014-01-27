@@ -73,13 +73,13 @@
         <para>
             <function>glBindSamplers</function> is equivalent to the following pseudo code:
         </para>
-<programlisting><![CDATA[    for (i = 0; i < count; i++) {
+<programlisting>    for (i = 0; i &lt; count; i++) {
         if (samplers == NULL) {
             glBindSampler(first + i, 0);
         } else {
             glBindSampler(first + i, samplers[i]);
         }
-    }]]></programlisting>
+    }</programlisting>
     <para>
         Each entry in <parameter>samplers</parameter> will be checked individually and if found
         to be invalid, the state for that sampler unit will not be changed and an error will be

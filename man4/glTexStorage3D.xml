@@ -99,24 +99,22 @@
             calling <function>glTexStorage3D</function> is equivalent, assuming no errors are generated,
             to executing the following pseudo-code:
         </para>
-<programlisting><![CDATA[    for (i = 0; i < levels; i++)
-    {
+<programlisting>    for (i = 0; i &lt; levels; i++) {
         glTexImage3D(target, i, internalformat, width, height, depth, 0, format, type, NULL);
         width = max(1, (width / 2));
         height = max(1, (height / 2));
         depth = max(1, (depth / 2));
-    }]]></programlisting>
+    }</programlisting>
         <para>
             When <parameter>target</parameter> is <constant>GL_TEXTURE_2D_ARRAY</constant>, <constant>GL_PROXY_TEXTURE_2D_ARRAY</constant>,
             <constant>GL_TEXTURE_CUBE_MAP_ARRAY</constant>, or <constant>GL_PROXY_TEXTURE_CUBE_MAP_ARRAY</constant>, <function>glTexStorage3D</function>
             is equivalent to:
         </para>
-<programlisting><![CDATA[    for (i = 0; i < levels; i++)
-    {
+<programlisting>    for (i = 0; i &lt; levels; i++) {
         glTexImage3D(target, i, internalformat, width, height, depth, 0, format, type, NULL);
         width = max(1, (width / 2));
         height = max(1, (height / 2));
-    }]]></programlisting>
+    }</programlisting>
         <para>
             Since no texture data is actually provided, the values used in the pseudo-code
             for <parameter>format</parameter> and <parameter>type</parameter> are

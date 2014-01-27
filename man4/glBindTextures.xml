@@ -72,7 +72,7 @@
             With the exception that the active texture selector maintains its current value,
             <function>glBindTextures</function> is equivalent to the following pseudo code:
         </para>
-<programlisting><![CDATA[    for (i = 0; i < count; i++) {
+<programlisting>    for (i = 0; i &lt; count; i++) {
         GLuint texture;
         if (textures == NULL) {
             texture = 0;
@@ -88,7 +88,7 @@
                 glBindTexture(target, 0);
             }
         }
-    }]]></programlisting>
+    }</programlisting>
     <para>
         Each entry in <parameter>textures</parameter> will be checked individually and if found
         to be invalid, the state for that texture unit will not be changed and an error will be

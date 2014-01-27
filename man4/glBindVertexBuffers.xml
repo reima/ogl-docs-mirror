@@ -99,13 +99,13 @@
         <para>
             <function>glBindVertexBuffers</function> is equivalent to the following pseudo code:
         </para>
-<programlisting><![CDATA[    for (i = 0; i < count; i++) {
+<programlisting>    for (i = 0; i &lt; count; i++) {
         if (buffers == NULL) {
             glBindVertexBuffer(first + i, 0, 0, 16);
         } else {
             glBindVertexBuffer(first + i, buffers[i], offsets[i], strides[i]);
         }
-    }]]></programlisting>
+    }</programlisting>
     <para>
         Each entry in <parameter>buffers</parameter> will be checked individually and if found
         to be invalid, the state for that vertex buffer binding point will not be changed and an error will be

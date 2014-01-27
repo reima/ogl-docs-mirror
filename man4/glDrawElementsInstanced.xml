@@ -95,15 +95,15 @@
         </para>
         <para>
             <function>glDrawElementsInstanced</function> has the same effect as:
-            <programlisting><![CDATA[    if (mode, count, or type is invalid )
+            <programlisting>    if (mode, count, or type is invalid )
         generate appropriate error
     else {
-        for (int i = 0; i < primcount ; i++) {
+        for (int i = 0; i &lt; primcount ; i++) {
             instanceID = i;
             glDrawElements(mode, count, type, indices);
         }
         instanceID = 0;
-    }]]></programlisting>
+    }</programlisting>
         </para>
     </refsect1>
     <refsect1 id="notes"><title>Notes</title>

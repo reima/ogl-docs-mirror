@@ -121,10 +121,10 @@
             <function>textureGather</function> returns the value:
         </para>
         <para>
-<programlisting><![CDATA[    vec4(Sample_i0_j1(P, base).comp,
+<programlisting>    vec4(Sample_i0_j1(P, base).comp,
          Sample_i1_j1(P, base).comp,
          Sample_i1_j0(P, base).comp,
-         Sample_i0_j9(P, base).comp);]]></programlisting>
+         Sample_i0_j1(P, base).comp);</programlisting>
     </para>
     <para>
         If specified, the value of <parameter>comp</parameter> must ba constant integer expression with a value

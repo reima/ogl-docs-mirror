@@ -53,17 +53,17 @@
         <para>
             The parameters addressed by <parameter>indirect</parameter> are packed a structure,
             which takes the form (in C):
-            <programlisting><![CDATA[    typedef  struct {
+            <programlisting>    typedef  struct {
         uint  num_groups_x;
         uint  num_groups_y;
         uint  num_groups_z;
-    } DispatchIndirectCommand;]]></programlisting>
+    } DispatchIndirectCommand;</programlisting>
         </para>
         <para>
             A call to <function>glDispatchComputeIndirect</function> is equivalent, assuming no
             errors are generated, to:
-            <programlisting><![CDATA[    cmd = (const DispatchIndirectCommand  *)indirect;
-    glDispatchComputeIndirect(cmd->num_groups_x, cmd->num_groups_y, cmd->num_groups_z);]]></programlisting>
+            <programlisting>    cmd = (const DispatchIndirectCommand  *)indirect;
+    glDispatchComputeIndirect(cmd-&gt;num_groups_x, cmd-&gt;num_groups_y, cmd-&gt;num_groups_z);</programlisting>
         </para>
         <para>
             Unlike <citerefentry><refentrytitle>glDispatchCompute</refentrytitle></citerefentry>,

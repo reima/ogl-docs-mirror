@@ -86,10 +86,9 @@
             <function>smoothstep</function> is equivalent to:
         </para>
         <para>
-<programlisting><![CDATA[    genType t;  /* Or genDType t; */
+<programlisting>    genType t;  /* Or genDType t; */
     t = clamp((x - edge0) / (edge1 - edge0), 0.0, 1.0);
-    return t * t * (3.0 - 2.0 * t);
-]]></programlisting>
+    return t * t * (3.0 - 2.0 * t);</programlisting>
         </para>
         <para>
             Results are undefined if <parameter>edge0</parameter> &ge; <parameter>edge1</parameter>.

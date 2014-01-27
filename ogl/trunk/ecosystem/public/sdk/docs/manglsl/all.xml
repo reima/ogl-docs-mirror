@@ -38,7 +38,7 @@
     </refsect1>
     <refsect1 id="description"><title>Description</title>
         <para>
-            <function>any</function> returns true if all elements of <parameter>x</parameter> are true and false otherwise.
+            <function>all</function> returns true if all elements of <parameter>x</parameter> are true and false otherwise.
             It is functionally equivalent to:
         </para>
         <para>

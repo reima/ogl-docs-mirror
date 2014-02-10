@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<informaltable>
+<informaltable xmlns="http://docbook.org/ns/docbook" version="5.0">
     <tgroup cols="8" align="left">
         <colspec colnum="1" colname="col1" colwidth="1*"   />
         <colspec colnum="2" colname="col2" colwidth="2*"   />

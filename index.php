@@ -9,7 +9,7 @@
 
 <H2>The OpenGL Reference Pages</H2>
 
-<P>The <A HREF="./man/">reference pages for OpenGL 4</A> include complete descriptions of all OpenGL
+<P>The <A HREF="./man4/">reference pages for OpenGL 4</A> include complete descriptions of all OpenGL
 commands contained in the OpenGL 4 Specification.</P>
 
 <P>The <A HREF="./man3/">reference pages for OpenGL 3.3</A> include complete descriptions of all OpenGL

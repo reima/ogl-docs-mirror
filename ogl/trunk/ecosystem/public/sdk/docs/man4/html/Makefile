@@ -716,7 +716,7 @@ XML    = $(APIXML) $(GLSLXML)
 # Generate just a few files, for testing
 #XML = glViewport.xhtml glTexImage2D.xhtml glPixelStore.xhtml
 
-default: $(XML) index.php
+default: $(XML) indices
 
 # Dependencies on XIncluded files
 
@@ -736,10 +736,10 @@ $(GLSLXML): $(GLSLXIFILES)
 $(XML): %.xhtml: ../%.xml $(DB2XHTML)
 	$(XSLT) --xinclude --noout $(DB2XHTML) $<
 
-index.php: Makefile makeindex.py $(XML)
-	./makeindex.py . .. $@
+indices: Makefile makeindex.py $(XML)
+	./makeindex.py . .. index.php indexflat.php
 
 clean:
-	$(RM) $(XML)
+	$(RM) $(XML) index.php indexflat.php
 
 clobber: clean

@@ -1,9 +1,9 @@
-<HTML>
-<HEAD>
-<TITLE>OpenGL 4 Reference Pages</TITLE>
-</HEAD>
-<FRAMESET COLS="280,*">
-  <FRAME FRAMEBORDER="0" MARGINWIDTH="0" MARGINHEIGHT="0" SRC="html/index.php">
-  <FRAME NAME="pagedisplay" FRAMEBORDER="0" MARGINWIDTH="20" MARGINHEIGHT="20" SRC="html/start.html">
-</FRAMESET>
-</HTML>
+<html>
+<head>
+<title>OpenGL 4 Reference Pages</title>
+</head>
+<frameset cols="280,*">
+  <frame frameborder="0" marginwidth="0" marginheight="0" src="html/index-flat.php">
+  <frame name="pagedisplay" frameborder="0" marginwidth="20" marginheight="20" src="html/start.html">
+</frameset>
+</html>

@@ -3,23 +3,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="REFRESH" content="10; url=../../man4/index.php" />
+<meta http-equiv="REFRESH" content="5; url=../../man4/html/textureGather.xhtml" />
 </head>
 <body>
 
-<p> The OpenGL Shading Language reference pages have been updated to HTML5 format and
-relocated. You should only have reached this page from a stale search
-engine link (these will eventually update), or a link or bookmark (which
-you are encouraged to update, if possible).</p>
+<p> The OpenGL Shading Language reference pages have been updated to HTML5 format
+and relocated. You should only have reached this page from a stale
+search engine link (these will eventually update), or a link or bookmark
+(which you are encouraged to update, if possible).</p>
 
-<p> If you are using a modern browser, wait to be redirected to the
-new index page, or click <a href="../../man4/index.php">here</a>. </p>
+<p> If you are using a modern browser, you can:</p>
+
+<ul>
+<li> <p> Wait to be redirected to the new reference page.</p> </li>
+<li> <p> Click to go directly to the <a href="../../man4/html/textureGather.xhtml">new
+     reference page</a>. </p> </li>
+<li> <p> Click to go to the new <a href="../../man4/index.php">index
+      page</a>. </p> </li>
+</ul>
 
 <p> If you are are using Internet Explorer 8 or earlier versions of IE
 which cannot properly display HTML5, and cannot upgrade to a modern
-browser, click <a href="../docbook4/xhtml/textureGather.xml">here</a> for a cached
-copy of the old page. Note that these old pages will not be updated and
-will eventually be removed. </p>
+browser, there is a <a href="../docbook4/xhtml/textureGather.xml">cached copy of
+the old page</a> available. Note that these old pages will not be
+updated and will eventually be removed. </p>
 
 </body>
 </html>

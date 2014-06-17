@@ -40,7 +40,7 @@
                 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="varhead.xml" xpointer="xpointer(/*/*)"/>
                 <tbody>
                     <row>
-                        <entry>gl_FrontFacing</entry>
+                        <entry>gl_InstanceID</entry>
                         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="version.xml" xpointer="xpointer(/*/*[@role='14']/*)"/>
                     </row>
                 </tbody>

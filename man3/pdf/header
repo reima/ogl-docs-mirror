@@ -43,7 +43,7 @@ Utility Library (GLU) and the OpenGL&reg; extension to the X Window System (GLX)
     </para>
     <para>
 If you find any inaccuracies or typos in the reference pages, don't hesitate to inform us via 
-the online <ulink url="http://www.opengl.org/documentation/specs/feedback/"><citetitle>specification feedback form.</citetitle></ulink>
+the online <ulink url="https://www.khronos.org/bugzilla/enter_bug.cgi?product=OpenGL"><citetitle>bugtracker.</citetitle></ulink>
 
     </para>
   </abstract>

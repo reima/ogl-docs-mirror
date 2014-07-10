@@ -66,9 +66,7 @@ extensions and only later become part of a core OpenGL version, so using
 extensions is important to staying current with the evolution of the
 API. </p>
 
-<p> Please use the <a
-href="http://www.opengl.org/documentation/specs/feedback/">feedback
-form</a> to let us know about any issues you find. </p>
+<p>Please use the <a href="https://www.khronos.org/bugzilla/enter_bug.cgi?product=OpenGL">public bugtracker</a> to let us know about any issues you find.</p>
 
 <?php include("/home/virtual/opengl.org/var/www/html/sdk/inc/sdk_footer.txt"); ?>
 </body>

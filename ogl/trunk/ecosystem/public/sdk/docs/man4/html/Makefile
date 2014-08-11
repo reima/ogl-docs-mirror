@@ -13,6 +13,11 @@ DB2XHTML = opengl-man.xsl
 
 ############################ API pages ############################
 
+# APIXIFILES are XIncludes used by multiple APi pages
+APIXIFILES = \
+    ../apifunchead.xml \
+    ../apiversion.xml
+
 GL_ARB_draw_indirect_entries = \
     glDrawArraysIndirect.xhtml \
     glDrawElementsIndirect.xhtml
@@ -142,8 +147,8 @@ GL_ARB_debug_output_entries = \
     glDebugMessageControl.xhtml \
     glDebugMessageInsert.xhtml \
     glDebugMessageCallback.xhtml \
-    glGetDebugMessageLog.xhtml
-# Add glGetPointerv to glGet.xhtml
+    glGetDebugMessageLog.xhtml \
+    glGetPointerv.xhtml
 
 # GL_ARB_explicit_uniform_location has no new entry points
 GL_ARB_explicit_uniform_location_entries =
@@ -274,6 +279,30 @@ GL44XML = \
     $(GL_ARB_buffer_storage_entries) \
     $(GL_ARB_clear_texture_entries) \
     $(GL_ARB_multi_bind_entries)
+
+GL45XML = \
+    glBindTextureUnit.xhtml \
+    glCreateBuffers.xhtml \
+    glCreateFramebuffers.xhtml \
+    glCreateProgramPipelines.xhtml \
+    glCreateQueries.xhtml \
+    glCreateRenderbuffers.xhtml \
+    glCreateSamplers.xhtml \
+    glCreateTextures.xhtml \
+    glCreateTransformFeedbacks.xhtml \
+    glCreateVertexArrays.xhtml \
+    glGetTextureSubImage.xhtml \
+    glGetCompressedTextureSubImage.xhtml \
+    glGetTransformFeedback.xhtml \
+    glGetVertexArrayIndexed.xhtml \
+    glGetVertexArrayiv.xhtml \
+    glTransformFeedbackBufferBase.xhtml \
+    glTransformFeedbackBufferRange.xhtml \
+    glVertexArrayElementBuffer.xhtml \
+    glClipControl.xhtml \
+    glGetGraphicsResetStatus.xhtml \
+    glTextureBarrier.xhtml \
+    gl_HelperInvocation.xhtml
 
 UNMODIFIEDXML = \
     glActiveTexture.xhtml \
@@ -457,6 +486,7 @@ UNMODIFIEDXML = \
     glTransformFeedbackVaryings.xhtml \
     glUniform.xhtml \
     glUniformBlockBinding.xhtml \
+    glUnmapBuffer.xhtml \
     glUseProgram.xhtml \
     glValidateProgram.xhtml \
     glVertexAttribDivisor.xhtml \
@@ -465,7 +495,7 @@ UNMODIFIEDXML = \
 
 MODIFIEDXML = \
 
-APIXML	= $(GL4XML) $(GL41XML) $(GL42XML) $(GL43XML) $(GL44XML) $(MODIFIEDFORGL4XML) $(UNMODIFIEDXML)
+APIXML	= $(GL4XML) $(GL41XML) $(GL42XML) $(GL43XML) $(GL44XML) $(GL45XML) $(MODIFIEDFORGL4XML) $(UNMODIFIEDXML)
 
 ############################ GLSL pages ############################
 
@@ -573,6 +603,7 @@ Integer_Functions = \
     findMSB.xhtml
 
 Texture_Query_Functions = \
+    textureSamples.xhtml \
     textureSize.xhtml \
     textureQueryLod.xhtml \
     textureQueryLevels.xhtml
@@ -635,6 +666,7 @@ Image_Functions = \
     imageAtomicMax.xhtml \
     imageAtomicExchange.xhtml \
     imageAtomicCompSwap.xhtml \
+    imageSamples.xhtml \
     imageSize.xhtml
 
 Barrier_Functions =\
@@ -657,6 +689,7 @@ Atomic_Memory_Functions = \
 
 Builtin_Variables = \
     gl_ClipDistance.xhtml \
+    gl_CullDistance.xhtml \
     gl_FragCoord.xhtml \
     gl_FragDepth.xhtml \
     gl_FrontFacing.xhtml \
@@ -730,7 +763,24 @@ glTexStorage3D.xhtml \
 
 glTexBuffer.xhtml glTexBufferRange.xhtml: ../texboformattable.xml
 
+glBindBuffer.xml \
+glBufferData.xhtml \
+glBufferStorage.xhtml \
+glBufferSubData.xhtml \
+glClearBufferData.xhtml \
+glClearBufferSubData.xhtml \
+glCopyBufferSubData.xhtml \
+glFlushMappedBufferRange.xhtml \
+glGetBufferParameter.xhtml \
+glGetBufferPointerv.xhtml \
+glGetBufferSubData.xhtml \
+glMapBufferRange.xhtml \
+glMapBuffer.xhtml \
+    : ../bufferbindings.xml
+
 # These are very conservative dependencies
+$(APIXML): $(APIXIFILES)
+
 $(GLSLXML): $(GLSLXIFILES)
 
 $(XML): %.xhtml: ../%.xml $(DB2XHTML)

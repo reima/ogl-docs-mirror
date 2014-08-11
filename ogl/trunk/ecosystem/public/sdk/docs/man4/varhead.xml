@@ -2,10 +2,12 @@
 <varhead xmlns="http://docbook.org/ns/docbook" version="5.0">
     <!-- Table header for GLSL variable Version Support section. All these
          elements are included within a
-            <tgroup cols="11" align="left">
+            <tgroup cols="13" align="left">
          element, followed by per-variable <tbody> support rows -->
     <colspec colwidth="1.1*" />
     <colspec colwidth="1*" align="center" colname="firstvers" />
+    <colspec colwidth="1*" align="center" />
+    <colspec colwidth="1*" align="center" />
     <colspec colwidth="1*" align="center" />
     <colspec colwidth="1*" align="center" />
     <colspec colwidth="1*" align="center" />
@@ -58,6 +60,12 @@
             </entry>
             <entry>
                 <emphasis role="bold">4.30</emphasis>
+            </entry>
+            <entry>
+                <emphasis role="bold">4.40</emphasis>
+            </entry>
+            <entry>
+                <emphasis role="bold">4.50</emphasis>
             </entry>
         </row>
     </thead>

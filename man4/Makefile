@@ -41,6 +41,8 @@ XIFILES = baseformattable.xml \
 	  compressedformattable.xml \
 	  internalformattable.xml \
 	  texboformattable.xml \
+	  apifunchead.xml \
+	  apiversion.xml \
 	  funchead.xml \
 	  varhead.xml \
 	  version.xml

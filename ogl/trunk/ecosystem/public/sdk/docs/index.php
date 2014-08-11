@@ -33,6 +33,8 @@ the functions included in OpenGL, along with their parameters and other
 useful information.</p>
 
 <ul>
+<li> <a href="http://www.opengl.org/sdk/docs/reference_card/opengl45-reference-card.pdf">
+     OpenGL 4.5 Reference Card </a></li>
 <li> <a href="http://www.opengl.org/sdk/docs/reference_card/opengl44-quick-reference-card.pdf">
      OpenGL 4.4 Reference Card </a></li>
 <li> <a href="http://www.opengl.org/sdk/docs/reference_card/opengl43-quick-reference-card.pdf">

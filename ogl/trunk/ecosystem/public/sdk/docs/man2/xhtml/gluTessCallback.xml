@@ -1,6 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
-<!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluTessCallback</title><meta name="generator" content="DocBook XSL Stylesheets V1.73.2" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="gluTessCallback"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluTessCallback — define a callback for a tessellation object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">gluTessCallback</b>(</code></td><td>GLUtesselator*  </td><td><var class="pdparam">tess</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">which</var>, </td></tr><tr><td> </td><td>_GLUfuncptr  </td><td><var class="pdparam">CallBackFunc</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>tess</code></em></span></dt><dd><p>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd"><!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>gluTessCallback</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="gluTessCallback"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>gluTessCallback — define a callback for a tessellation object</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">gluTessCallback</strong>(</code></td><td>GLUtesselator* <var class="pdparam">tess</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">which</var>, </td></tr><tr><td> </td><td>_GLUfuncptr <var class="pdparam">CallBackFunc</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term"><em class="parameter"><code>tess</code></em></span></dt><dd><p>
                     Specifies the tessellation object (created with <a class="citerefentry" href="gluNewTess.xml"><span class="citerefentry"><span class="refentrytitle">gluNewTess</span></span></a>).
                 </p></dd><dt><span class="term"><em class="parameter"><code>which</code></em></span></dt><dd><p>
                     Specifies the callback being defined. The following values are valid:
@@ -18,7 +18,7 @@
                     <code class="constant">GLU_TESS_ERROR_DATA</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>CallBackFunc</code></em></span></dt><dd><p>
                     Specifies the function to be called.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1"><a id="description"></a><h2>Description</h2><p>
             <code class="function">gluTessCallback</code> is used to indicate a callback to be used by a tessellation object.
             If the specified callback is already defined, then it is replaced. If 
             <em class="parameter"><code>CallBackFunc</code></em> is NULL, then the existing callback becomes undefined.
@@ -31,7 +31,7 @@
             that the <span class="emphasis"><em>polygon_data</em></span> parameter used by some of the functions is
             a copy of the pointer that was specified when 
             <a class="citerefentry" href="gluTessBeginPolygon.xml"><span class="citerefentry"><span class="refentrytitle">gluTessBeginPolygon</span></span></a> was called. The legal callbacks are as follows:
-        </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GLU_TESS_BEGIN</code></span></dt><dd><p>
+        </p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="constant">GLU_TESS_BEGIN</code></span></dt><dd><p>
                         The begin callback is invoked like <a class="citerefentry" href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a> to indicate the start of 
                         a (triangle) primitive. The function takes a single argument of type
                         GLenum. If the <code class="constant">GLU_TESS_BOUNDARY_ONLY</code> property is set to
@@ -202,7 +202,7 @@ void error( GLenum errno );
                         </p><pre class="programlisting">
 void errorData( GLenum errno, void *polygon_data );
                         </pre><p>
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="example"></a><h2>Example</h2><p>
+                    </p></dd></dl></div></div><div class="refsect1"><a id="example"></a><h2>Example</h2><p>
             Polygons tessellated can be rendered directly like this:
             </p><pre class="programlisting">
 gluTessCallback(tobj, GLU_TESS_BEGIN, glBegin);
@@ -218,7 +218,7 @@ gluTessEndPolygon(tobj);
             </pre><p>
             Typically, the tessellated polygon should be stored in a display list so that
             it does not need to be retessellated every time it is rendered.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1"><a id="seealso"></a><h2>See Also</h2><p>
             <a class="citerefentry" href="gluErrorString.xml"><span class="citerefentry"><span class="refentrytitle">gluErrorString</span></span></a>,
             <a class="citerefentry" href="gluNewTess.xml"><span class="citerefentry"><span class="refentrytitle">gluNewTess</span></span></a>,
             <a class="citerefentry" href="gluTessBeginContour.xml"><span class="citerefentry"><span class="refentrytitle">gluTessBeginContour</span></span></a>,
@@ -229,7 +229,7 @@ gluTessEndPolygon(tobj);
             <a class="citerefentry" href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>,
             <a class="citerefentry" href="glEdgeFlag.xml"><span class="citerefentry"><span class="refentrytitle">glEdgeFlag</span></span></a>,
             <a class="citerefentry" href="glVertex.xml"><span class="citerefentry"><span class="refentrytitle">glVertex</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

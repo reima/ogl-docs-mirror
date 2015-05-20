@@ -1,6 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
-<!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCopyPixels</title><meta name="generator" content="DocBook XSL Stylesheets V1.73.2" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glCopyPixels"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCopyPixels — copy pixels in the frame buffer</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">void <b class="fsfunc">glCopyPixels</b>(</code></td><td>GLint  </td><td><var class="pdparam">x</var>, </td></tr><tr><td> </td><td>GLint  </td><td><var class="pdparam">y</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">width</var>, </td></tr><tr><td> </td><td>GLsizei  </td><td><var class="pdparam">height</var>, </td></tr><tr><td> </td><td>GLenum  </td><td><var class="pdparam">type</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>x</code></em>, </span><span class="term"><em class="parameter"><code>y</code></em></span></dt><dd><p>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd"><!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glCopyPixels</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="glCopyPixels"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glCopyPixels — copy pixels in the frame buffer</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">void <strong class="fsfunc">glCopyPixels</strong>(</code></td><td>GLint <var class="pdparam">x</var>, </td></tr><tr><td> </td><td>GLint <var class="pdparam">y</var>, </td></tr><tr><td> </td><td>GLsizei <var class="pdparam">width</var>, </td></tr><tr><td> </td><td>GLsizei <var class="pdparam">height</var>, </td></tr><tr><td> </td><td>GLenum <var class="pdparam">type</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term"><em class="parameter"><code>x</code></em>, </span><span class="term"><em class="parameter"><code>y</code></em></span></dt><dd><p>
                     Specify the window coordinates of the lower left corner
                     of the rectangular region of pixels to be copied.
                 </p></dd><dt><span class="term"><em class="parameter"><code>width</code></em>, </span><span class="term"><em class="parameter"><code>height</code></em></span></dt><dd><p>
@@ -14,7 +14,7 @@
                     <code class="constant">GL_COLOR</code>,
                     <code class="constant">GL_DEPTH</code>,
                     and <code class="constant">GL_STENCIL</code> are accepted.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1"><a id="description"></a><h2>Description</h2><p>
             <code class="function">glCopyPixels</code> copies a screen-aligned rectangle of pixels
             from the specified frame buffer location to a region relative to the
             current raster position.
@@ -87,7 +87,7 @@
         </p><p>
             <em class="parameter"><code>type</code></em> specifies whether color, depth, or stencil data is to be copied.
             The details of the transfer for each data type are as follows:
-        </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GL_COLOR</code></span></dt><dd><p>
+        </p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="constant">GL_COLOR</code></span></dt><dd><p>
                         Indices or RGBA colors are read from the buffer currently specified as the
                         read source buffer (see <a class="citerefentry" href="glReadBuffer.xml"><span class="citerefentry"><span class="refentrytitle">glReadBuffer</span></span></a>).
                         If the GL is in color index mode,
@@ -441,7 +441,7 @@
                 </mml:msub>
             </mml:math>
             is the value of <code class="constant">GL_ZOOM_Y</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="examples"></a><h2>Examples</h2><p>
+        </p></div><div class="refsect1"><a id="examples"></a><h2>Examples</h2><p>
             To copy the color pixel in the lower left corner of the window to the current raster position,
             use
         </p><p>
@@ -449,10 +449,10 @@
 glCopyPixels(0, 0, 1, 1, <code class="constant">GL_COLOR</code>);
             </pre><p>
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1"><a id="notes"></a><h2>Notes</h2><p>
             Modes specified by <a class="citerefentry" href="glPixelStore.xml"><span class="citerefentry"><span class="refentrytitle">glPixelStore</span></span></a> have no effect on the operation
             of <code class="function">glCopyPixels</code>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">GL_INVALID_ENUM</code> is generated if <em class="parameter"><code>type</code></em> is not an accepted value.
         </p><p>
             <code class="constant">GL_INVALID_VALUE</code> is generated if either <em class="parameter"><code>width</code></em> or <em class="parameter"><code>height</code></em> is negative.
@@ -466,11 +466,11 @@ glCopyPixels(0, 0, 1, 1, <code class="constant">GL_COLOR</code>);
             <code class="constant">GL_INVALID_OPERATION</code> is generated if <code class="function">glCopyPixels</code>
             is executed between the execution of <a class="citerefentry" href="glBegin.xml"><span class="citerefentry"><span class="refentrytitle">glBegin</span></span></a>
             and the corresponding execution of <a class="citerefentry" href="glEnd.xml"><span class="citerefentry"><span class="refentrytitle">glEnd</span></span></a>.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
+        </p></div><div class="refsect1"><a id="associatedgets"></a><h2>Associated Gets</h2><p>
             <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_POSITION</code>
         </p><p>
             <a class="citerefentry" href="glGet.xml"><span class="citerefentry"><span class="refentrytitle">glGet</span></span></a> with argument <code class="constant">GL_CURRENT_RASTER_POSITION_VALID</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1"><a id="seealso"></a><h2>See Also</h2><p>
             <a class="citerefentry" href="glColorTable.xml"><span class="citerefentry"><span class="refentrytitle">glColorTable</span></span></a>,
             <a class="citerefentry" href="glConvolutionFilter1D.xml"><span class="citerefentry"><span class="refentrytitle">glConvolutionFilter1D</span></span></a>,
             <a class="citerefentry" href="glConvolutionFilter2D.xml"><span class="citerefentry"><span class="refentrytitle">glConvolutionFilter2D</span></span></a>,
@@ -487,7 +487,7 @@ glCopyPixels(0, 0, 1, 1, <code class="constant">GL_COLOR</code>);
             <a class="citerefentry" href="glSeparableFilter2D.xml"><span class="citerefentry"><span class="refentrytitle">glSeparableFilter2D</span></span></a>,
             <a class="citerefentry" href="glStencilFunc.xml"><span class="citerefentry"><span class="refentrytitle">glStencilFunc</span></span></a>,
             <a class="citerefentry" href="glWindowPos.xml"><span class="citerefentry"><span class="refentrytitle">glWindowPos</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

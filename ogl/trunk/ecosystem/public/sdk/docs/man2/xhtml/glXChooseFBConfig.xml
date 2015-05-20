@@ -1,6 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
-<!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXChooseFBConfig</title><meta name="generator" content="DocBook XSL Stylesheets V1.73.2" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXChooseFBConfig"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXChooseFBConfig — return a list of GLX frame buffer configurations that match the specified attributes</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" summary="Function synopsis" cellspacing="0" cellpadding="0"><tr><td><code class="funcdef">GLXFBConfig * <b class="fsfunc">glXChooseFBConfig</b>(</code></td><td>Display *  </td><td><var class="pdparam">dpy</var>, </td></tr><tr><td> </td><td>int  </td><td><var class="pdparam">screen</var>, </td></tr><tr><td> </td><td>const int *  </td><td><var class="pdparam">attrib_list</var>, </td></tr><tr><td> </td><td>int *  </td><td><var class="pdparam">nelements</var><code>)</code>;</td></tr></table></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>dpy</code></em></span></dt><dd><p>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd"><!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXChooseFBConfig</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="glXChooseFBConfig"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXChooseFBConfig — return a list of GLX frame buffer configurations that match the specified attributes</p></div><div class="refsynopsisdiv"><h2>C Specification</h2><div class="funcsynopsis"><table border="0" class="funcprototype-table" summary="Function synopsis" style="cellspacing: 0; cellpadding: 0;"><tr><td><code class="funcdef">GLXFBConfig * <strong class="fsfunc">glXChooseFBConfig</strong>(</code></td><td>Display * <var class="pdparam">dpy</var>, </td></tr><tr><td> </td><td>int <var class="pdparam">screen</var>, </td></tr><tr><td> </td><td>const int * <var class="pdparam">attrib_list</var>, </td></tr><tr><td> </td><td>int * <var class="pdparam">nelements</var><code>)</code>;</td></tr></table><div class="funcprototype-spacer"> </div></div></div><div class="refsect1"><a id="parameters"></a><h2>Parameters</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term"><em class="parameter"><code>dpy</code></em></span></dt><dd><p>
                     Specifies the connection to the X server.
                 </p></dd><dt><span class="term"><em class="parameter"><code>screen</code></em></span></dt><dd><p>
                     Specifies the screen number.
@@ -9,7 +9,7 @@
                     The last attribute must be <code class="constant">None</code>.
                 </p></dd><dt><span class="term"><em class="parameter"><code>nelements</code></em></span></dt><dd><p>
                     Returns the number of elements in the list returned by <code class="function">glXChooseFBConfig</code>.
-                </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="description"></a><h2>Description</h2><p>
+                </p></dd></dl></div></div><div class="refsect1"><a id="description"></a><h2>Description</h2><p>
             <code class="function">glXChooseFBConfig</code> returns GLX frame buffer configurations that match the attributes
             specified in <em class="parameter"><code>attrib_list</code></em>, or <code class="constant">NULL</code> if no matches are found.
             If <em class="parameter"><code>attrib_list</code></em> is <code class="constant">NULL</code>, then <code class="function">glXChooseFBConfig</code> returns an array of GLX
@@ -39,7 +39,7 @@
             defined below.  
         </p><p>
             The interpretations of the various GLX visual attributes are as follows:
-        </p><div class="variablelist"><dl><dt><span class="term"><code class="constant">GLX_FBCONFIG_ID</code></span></dt><dd><p>
+        </p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="constant">GLX_FBCONFIG_ID</code></span></dt><dd><p>
                     </p><p>
                         Must be followed by a valid XID that indicates the desired GLX frame
                         buffer configuration. When a <code class="constant">GLX_FBCONFIG_ID</code> is specified, all
@@ -280,7 +280,7 @@
             order (i.e., configurations
             that are considered equal by a lower numbered rule are sorted by the higher
             numbered rule):
-        </p><div class="variablelist"><dl><dt><span class="term">1.</span></dt><dd><p>
+        </p><div class="variablelist"><dl class="variablelist"><dt><span class="term">1.</span></dt><dd><p>
                         By <code class="constant">GLX_CONFIG_CAVEAT</code> where the precedence is <code class="constant">GLX_NONE</code>,
                         <code class="constant">GLX_SLOW_CONFIG</code>, and <code class="constant">GLX_NON_CONFORMANT_CONFIG</code>.
                     </p></dd><dt><span class="term">2.</span></dt><dd><p>
@@ -312,8 +312,8 @@
                         By <code class="constant">GLX_X_VISUAL_TYPE</code> where the precedence order is
                         <code class="constant">GLX_TRUE_COLOR</code>, <code class="constant">GLX_DIRECT_COLOR</code>, <code class="constant">GLX_PSEUDO_COLOR</code>,
                         <code class="constant">GLX_STATIC_COLOR</code>, <code class="constant">GLX_GRAY_SCALE</code>, <code class="constant">GLX_STATIC_GRAY</code>.
-                    </p></dd></dl></div></div><div class="refsect1" lang="en" xml:lang="en"><a id="examples"></a><h2>Examples</h2><p>
-        </p><div class="variablelist"><dl><dt><span class="term"><em class="parameter"><code>attrib_list</code></em> =</span></dt><dd><p>
+                    </p></dd></dl></div></div><div class="refsect1"><a id="examples"></a><h2>Examples</h2><p>
+        </p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><em class="parameter"><code>attrib_list</code></em> =</span></dt><dd><p>
                         {<code class="constant">GLX_RENDER_TYPE</code>, <code class="constant">GLX_RGBA_BIT</code>,
                         <code class="constant">GLX_RED_SIZE</code>, 4,
                         <code class="constant">GLX_GREEN_SIZE</code>, 4,
@@ -332,7 +332,7 @@
             a depth buffer,
             a stencil buffer,
             or an accumulation buffer.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1"><a id="notes"></a><h2>Notes</h2><p>
             <code class="function">glXChooseFBConfig</code> is available only if the GLX version is 1.3 or greater.
         </p><p>
             If the GLX version is 1.1 or 1.0, the GL version must be 1.0.
@@ -352,15 +352,15 @@
             from changing the selection algorithm used by <code class="function">glXChooseFBConfig</code>.
             Therefore, selections may change from release to release
             of the client-side library.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="errors"></a><h2>Errors</h2><p>
+        </p></div><div class="refsect1"><a id="errors"></a><h2>Errors</h2><p>
             <code class="constant">NULL</code> is returned if an undefined GLX attribute is
             encountered in <em class="parameter"><code>attrib_list</code></em>, if <em class="parameter"><code>screen</code></em> is invalid, or if <em class="parameter"><code>dpy</code></em> does
             not support the GLX extension.
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1"><a id="seealso"></a><h2>See Also</h2><p>
             <a class="citerefentry" href="glXGetFBConfigAttrib.xml"><span class="citerefentry"><span class="refentrytitle">glXGetFBConfigAttrib</span></span></a>,
             <a class="citerefentry" href="glXGetFBConfigs.xml"><span class="citerefentry"><span class="refentrytitle">glXGetFBConfigs</span></span></a>,
             <a class="citerefentry" href="glXGetVisualFromFBConfig.xml"><span class="citerefentry"><span class="refentrytitle">glXGetVisualFromFBConfig</span></span></a>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

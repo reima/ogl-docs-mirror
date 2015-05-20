@@ -1,6 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd">
-<!-- saved from url=(0013)about:internet -->
-<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXIntro</title><meta name="generator" content="DocBook XSL Stylesheets V1.73.2" /></head><body><div class="refentry" lang="en" xml:lang="en"><a id="glXIntro"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXIntro — Introduction to OpenGL in the X window system</p></div><div class="refsect1" lang="en" xml:lang="en"><a id="overview"></a><h2>Overview</h2><p>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "xhtml1-transitional.dtd"><!-- saved from url=(0013)about:internet -->
+<?xml-stylesheet type="text/xsl" href="mathml.xsl"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:pref="http://www.w3.org/2002/Math/preference" pref:renderer="mathplayer-dl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>glXIntro</title><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><div class="refentry"><a id="glXIntro"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>glXIntro — Introduction to OpenGL in the X window system</p></div><div class="refsect1"><a id="overview"></a><h2>Overview</h2><p>
         </p><p>
             OpenGL (called GL in other pages) is a high-performance 3D-oriented
             renderer.  It is available in the X window system through the GLX extension.
@@ -56,7 +56,7 @@
             Synchronization can be explicitly specified using by calling <a class="citerefentry" href="glXWaitGL.xml"><span class="citerefentry"><span class="refentrytitle">glXWaitGL</span></span></a>,
             <a class="citerefentry" href="glXWaitX.xml"><span class="citerefentry"><span class="refentrytitle">glXWaitX</span></span></a>, <code class="function">XSync</code>, and <code class="function">XFlush</code>.
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="examples"></a><h2>Examples</h2><p>
+        </p></div><div class="refsect1"><a id="examples"></a><h2>Examples</h2><p>
             Below is a minimal example of creating an RGBA-format X window that's
             compatible with OpenGL using GLX 1.3 commands.  The window is cleared to
             yellow when the program runs.  The program does minimal error checking; all
@@ -167,7 +167,7 @@ int main( int argc, char *argv[] )
 }
             </pre><p>
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="notes"></a><h2>Notes</h2><p>
+        </p></div><div class="refsect1"><a id="notes"></a><h2>Notes</h2><p>
             An X color map must be created and passed to <code class="function">XCreateWindow</code>.
         </p><p>
             A GLX context must be created and bound to a GLX drawable before OpenGL
@@ -185,7 +185,7 @@ int main( int argc, char *argv[] )
             <span class="emphasis"><em>visualID</em></span>, <span class="emphasis"><em>screen</em></span>, and <span class="emphasis"><em>depth</em></span> elements, as well as other
             X-specific information.
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="usingglxextensions"></a><h2>Using GLX Extensions</h2><p>
+        </p></div><div class="refsect1"><a id="usingglxextensions"></a><h2>Using GLX Extensions</h2><p>
             All supported GLX extensions will have a corresponding definition in glx.h
             and a token in the extension string returned by
             <a class="citerefentry" href="glXQueryExtensionsString.xml"><span class="citerefentry"><span class="refentrytitle">glXQueryExtensionsString</span></span></a>.  For example, if the
@@ -197,7 +197,7 @@ int main( int argc, char *argv[] )
         </p><p>
             OpenGL itself is capable of being extended.
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="glx11glx12andglx13"></a><h2>GLX 1.1, GLX 1.2, and GLX 1.3</h2><p>
+        </p></div><div class="refsect1"><a id="glx11glx12andglx13"></a><h2>GLX 1.1, GLX 1.2, and GLX 1.3</h2><p>
             GLX 1.3 is now supported and is backward compatible with GLX 1.1 and GLX
             1.2.  It introduces new functionality (namely GLXFBConfigs) that supersedes
             the GLX 1.2 functionality.  GLX 1.2 commands are supported, but their use in
@@ -227,7 +227,7 @@ int main( int argc, char *argv[] )
             will be defined if GLX 1.2 calls are supported, and GLX_VERSION_1_3 will be
             defined if GLX 1.3 calls are supported.
         </p><p>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="seealso"></a><h2>See Also</h2><p>
+        </p></div><div class="refsect1"><a id="seealso"></a><h2>See Also</h2><p>
             <a class="citerefentry" href="glFinish.xml"><span class="citerefentry"><span class="refentrytitle">glFinish</span></span></a>,
             <a class="citerefentry" href="glFlush.xml"><span class="citerefentry"><span class="refentrytitle">glFlush</span></span></a>,
             <a class="citerefentry" href="glXChooseVisual.xml"><span class="citerefentry"><span class="refentrytitle">glXChooseVisual</span></span></a>,
@@ -268,7 +268,7 @@ int main( int argc, char *argv[] )
             <code class="function">XCreateColormap</code>,
             <code class="function">XCreateWindow</code>,
             <code class="function">XSync</code>
-        </p></div><div class="refsect1" lang="en" xml:lang="en"><a id="Copyright"></a><h2>Copyright</h2><p>
+        </p></div><div class="refsect1"><a id="Copyright"></a><h2>Copyright</h2><p>
             Copyright <span class="trademark"></span>© 1991-2006
             Silicon Graphics, Inc. This document is licensed under the SGI
             Free Software B License. For details, see

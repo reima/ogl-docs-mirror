@@ -97,9 +97,9 @@
     </refsect1>
     <refsect1 xml:id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>packUnorm2x16</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>packUnorm4x8</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>packSnorm4x8</refentrytitle></citerefentry>
+            <!-- FIX: link to packUnorm --> <function>packUnorm2x16</function>,
+            <!-- FIX: link to packUnorm --> <function>packUnorm4x8</function>,
+            <!-- FIX: link to packUnorm --> <function>packSnorm4x8</function>
         </para>
     </refsect1>
     <refsect1 xml:id="Copyright"><title>Copyright</title>

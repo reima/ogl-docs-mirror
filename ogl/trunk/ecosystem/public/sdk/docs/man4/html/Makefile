@@ -783,8 +783,10 @@ $(APIXML): $(APIXIFILES)
 
 $(GLSLXML): $(GLSLXIFILES)
 
+# OLINKARGS = --stringparam collect.xref.targets "only"
+
 $(XML): %.xhtml: ../%.xml $(DB2XHTML)
-	$(XSLT) --xinclude --noout $(DB2XHTML) $<
+	$(XSLT) $(OLINKARGS) --xinclude --noout $(DB2XHTML) $<
 
 indices: Makefile makeindex.py $(XML)
 	./makeindex.py . .. index.php indexflat.php

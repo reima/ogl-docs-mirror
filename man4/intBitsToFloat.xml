@@ -67,7 +67,7 @@
     <refsect1 xml:id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>floatBitsToInt</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>floatBitsToUint</refentrytitle></citerefentry>,
+            <!-- FIX: link to floatBitsToInt --> <function>floatBitsToUint</function>,
             <citerefentry><refentrytitle>isnan</refentrytitle></citerefentry>,
             <citerefentry><refentrytitle>isinf</refentrytitle></citerefentry>
         </para>

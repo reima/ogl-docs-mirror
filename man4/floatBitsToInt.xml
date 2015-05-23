@@ -68,7 +68,7 @@
     <refsect1 xml:id="seealso"><title>See Also</title>
         <para>
             <citerefentry><refentrytitle>intBitsToFloat</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>uintBitsToFloat</refentrytitle></citerefentry>
+            <!-- FIX: link to intBitsToFloat --> <function>uintBitsToFloat</function>
         </para>
     </refsect1>
     <refsect1 xml:id="Copyright"><title>Copyright</title>

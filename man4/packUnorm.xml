@@ -97,10 +97,11 @@
     </refsect1>
     <refsect1 xml:id="seealso"><title>See Also</title>
         <para>
-            <citerefentry><refentrytitle>unpackUnorm2x16</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>unpackSnorm2x16</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>unpackUnorm4x8</refentrytitle></citerefentry>,
-            <citerefentry><refentrytitle>unpackSnorm4x8</refentrytitle></citerefentry>
+            <!-- These should be <citerefentry><refentrytitle> or perhaps <olink>s -->
+            <!-- FIX: link to unpackUnorm --> <function>unpackUnorm2x16</function>,
+            <!-- FIX: link to unpackUnorm --> <function>unpackSnorm2x16</function>,
+            <!-- FIX: link to unpackUnorm --> <function>unpackUnorm4x8</function>,
+            <!-- FIX: link to unpackUnorm --> <function>unpackSnorm4x8</function>
         </para>
     </refsect1>
     <refsect1 xml:id="Copyright"><title>Copyright</title>
